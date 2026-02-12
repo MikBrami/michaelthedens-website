@@ -1,0 +1,123 @@
+  <!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Michael Thedens – Infrastructure Architect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>Michael Thedens</h1>
+  <p>Enterprise Infrastructure · AI Systems · Server Architecture</p>
+</header>
+
+<section class="configurator">
+  <div class="card">
+    <h2 id="modelBadge"></h2>
+
+    <div class="grid">
+      <label>Modell
+        <select id="model"></select>
+      </label>
+
+      <label>Workload
+        <select id="workload">
+          <option value="general">General</option>
+          <option value="database">Database</option>
+          <option value="storage">Storage</option>
+          <option value="ai">AI</option>
+          <option value="edge">Edge</option>
+        </select>
+      </label>
+
+      <label>CPU Vendor
+        <select id="cpuVendor">
+          <option value="AMD">AMD</option>
+          <option value="Intel">Intel</option>
+        </select>
+      </label>
+
+      <label>CPU Modell
+        <select id="cpuModel"></select>
+      </label>
+
+      <label>CPU Anzahl
+        <input type="number" id="cpuCount" min="1" max="2">
+      </label>
+
+      <label>Kerne pro CPU
+        <input type="number" id="coresPerCpu">
+      </label>
+
+      <label>TDP
+        <input type="number" id="cpuTdp">
+      </label>
+
+      <label>RAM DIMMs
+        <input type="number" id="ramDimms">
+      </label>
+
+      <label>RAM pro DIMM (GB)
+        <input type="number" id="ramPerDimm">
+      </label>
+
+      <label>Drives
+        <input type="number" id="driveCount">
+      </label>
+
+      <label>Drive Typ
+        <select id="driveType">
+          <option value="SAS">SAS</option>
+          <option value="SATA">SATA</option>
+          <option value="NVMe">NVMe</option>
+        </select>
+      </label>
+
+      <label>RAID
+        <select id="raid">
+          <option value="none">None</option>
+          <option value="1">1</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="10">10</option>
+        </select>
+      </label>
+
+      <label>GPUs
+        <input type="number" id="gpuCount">
+      </label>
+
+      <label>PSU Watt
+        <input type="number" id="psuWatt">
+      </label>
+
+      <label>PSU Anzahl
+        <input type="number" id="psuCount">
+      </label>
+
+      <label>NIC Speed (GbE)
+        <input type="number" id="nicSpeed">
+      </label>
+    </div>
+
+    <button id="applyDefaultBtn" class="primary">Empfohlene Konfiguration</button>
+
+    <h3>Zusammenfassung</h3>
+    <ul id="summary"></ul>
+
+    <h3>Validierung</h3>
+    <ul id="checks"></ul>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Michael Thedens · michaelthedens.de
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+          
