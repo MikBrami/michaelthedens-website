@@ -1,1 +1,415 @@
-{"schemaVersion":2,"platformVersion":"2.0","sourceOfTruth":"TAIL Knowledge Base","dataAsOf":"2026-07-14","dataFreshness":"current","dataAgeDays":0,"lastSuccessfulUpdate":"2026-07-14T21:35:27.181Z","lastForecastRun":"2026-07-14T21:35:27.181Z","newlyProcessedArticles":0,"totalArticles":8,"articleCount":8,"processStatus":"ok","error":null,"warnings":[],"inbox":{"status":"ok","updatedAt":"2026-07-14T21:40:00.000Z","newItems":0,"totalItems":0,"duplicateItems":0,"relevantItems":0,"sourceErrors":[]},"pipeline":{"status":"ok","steps":[{"id":"knowledge_base","label":"TAIL Knowledge Base","status":"ok","detail":"8 Artikel · Datenstand 2026-07-14"},{"id":"inbox","label":"TAIL Inbox","status":"ok","detail":"0 Inbox-Items · 0 Duplikate · 0 Quellenfehler"},{"id":"forecast_engine","label":"Forecast Engine","status":"ok","detail":"5/5 Pflicht-Forecasts erzeugt"},{"id":"dashboard_build","label":"Dashboard Build","status":"ok","detail":"Dashboard JSON wurde aus Knowledge Base und Pipeline-Metadaten erzeugt."}]},"tailIndex":79,"indexStatus":"orange","markets":[{"id":"server_dram","label":"Server DRAM","score":85,"status":"red","signals":4},{"id":"dram","label":"DRAM","score":85,"status":"red","signals":2},{"id":"hbm","label":"HBM","score":83,"status":"red","signals":4},{"id":"enterprise_ssd","label":"Enterprise SSD","score":75,"status":"orange","signals":2},{"id":"nand","label":"NAND","score":75,"status":"orange","signals":2},{"id":"ai_infrastructure","label":"AI Infrastructure","score":72,"status":"orange","signals":2},{"id":"semiconductors","label":"Semiconductors","score":48,"status":"yellow","signals":1},{"id":"supply_chain","label":"Supply Chain","score":48,"status":"yellow","signals":1}],"manufacturers":[{"name":"SK hynix","score":84,"mentions":6},{"name":"Samsung","score":84,"mentions":5},{"name":"Micron","score":83,"mentions":4},{"name":"Meta","score":78,"mentions":1},{"name":"Nvidia","score":77,"mentions":1},{"name":"Sandisk","score":75,"mentions":2},{"name":"TSMC","score":73,"mentions":1},{"name":"Kioxia","score":59,"mentions":1},{"name":"Huawei","score":48,"mentions":1},{"name":"SwaySure","score":48,"mentions":1}],"forecasts":[{"id":"dram","market":"DRAM","status":"red","momentum":"⬆️","relevanceScore":84,"confidenceScore":92,"horizon":"2026–2027","direction":"strong_up","keyThesis":"Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.","supportingSignals":[{"id":"tail-2026-07-14-server-dram","date":"2026-07-14","title":"Server-DRAM-Knappheit verschärft sich Richtung 2027","signal":"Supply-Engpass","score":88,"summary":"AI-Server, höhere Speicherkapazität pro System und begrenzte Wafer-Allokation erhöhen das Risiko einer strukturellen Server-DRAM-Unterversorgung 2027."},{"id":"tail-2026-07-14-dram-prices","date":"2026-07-14","title":"DRAM-Preissignale bleiben klar aufwärtsgerichtet","signal":"Preisdruck aufwärts","score":70,"summary":"Servermix, HBM-Priorisierung und vorsichtige Kapazitätsplanung stützen Vertrags- und Spotpreise."}],"counterSignals":[],"sourceArticleIds":["tail-2026-07-14-server-dram","tail-2026-07-14-dram-prices"],"lastUpdated":"2026-07-14T21:35:27.181Z"},{"id":"hbm","market":"HBM","status":"red","momentum":"⬆️⬆️","relevanceScore":83,"confidenceScore":88,"horizon":"2026–2028","direction":"strong_up","keyThesis":"HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.","supportingSignals":[{"id":"tail-2026-07-14-skhynix-2030","date":"2026-07-14","title":"SK hynix sieht möglichen Nachfrageüberhang über 2030 hinaus","signal":"Supply-Engpass","score":86,"summary":"Der Kapazitätsaufbau kann mit AI-getriebener Nachfrage und steigendem Speicherinhalt pro System möglicherweise langfristig nicht Schritt halten."},{"id":"tail-2026-07-14-hyperscaler-lta","date":"2026-07-14","title":"Hyperscaler sichern Memory und Flash über mehrjährige LTAs","signal":"Kapazitätsbindung","score":78,"summary":"Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."},{"id":"tail-2026-07-14-nvidia-skhynix-hbm4","date":"2026-07-14","title":"Nvidia und SK hynix verzahnen HBM4- und AI-Infrastrukturentwicklung","signal":"Kapazitätsbindung","score":77,"summary":"Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung."},{"id":"tail-2026-07-14-hbm4-cost","date":"2026-07-14","title":"HBM4-Kosten steigen und binden zusätzliche Frontend- und Packaging-Kapazität","signal":"Preisdruck aufwärts","score":73,"summary":"Komplexere Logik-Bases, höhere Layer-Zahlen und Advanced Packaging erhöhen Kosten, Yield-Risiken und Kapazitätsbedarf."}],"counterSignals":[],"sourceArticleIds":["tail-2026-07-14-skhynix-2030","tail-2026-07-14-hyperscaler-lta","tail-2026-07-14-nvidia-skhynix-hbm4","tail-2026-07-14-hbm4-cost"],"lastUpdated":"2026-07-14T21:35:27.181Z"},{"id":"nand","market":"NAND","status":"orange","momentum":"⬆️","relevanceScore":74,"confidenceScore":87,"horizon":"H2 2026–2027","direction":"up","keyThesis":"NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.","supportingSignals":[{"id":"tail-2026-07-14-hyperscaler-lta","date":"2026-07-14","title":"Hyperscaler sichern Memory und Flash über mehrjährige LTAs","signal":"Kapazitätsbindung","score":78,"summary":"Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."},{"id":"tail-2026-07-14-nand-essd","date":"2026-07-14","title":"NAND und Enterprise SSD zeigen festere Preis- und Nachfrageindikatoren","signal":"Preisdruck aufwärts","score":59,"summary":"AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."}],"counterSignals":[],"sourceArticleIds":["tail-2026-07-14-hyperscaler-lta","tail-2026-07-14-nand-essd"],"lastUpdated":"2026-07-14T21:35:27.181Z"},{"id":"enterprise_ssd","market":"Enterprise SSD","status":"orange","momentum":"⬆️","relevanceScore":74,"confidenceScore":87,"horizon":"H2 2026–2027","direction":"up","keyThesis":"Enterprise SSD profitiert von AI-Datenpipelines, Nearline-Wachstum und High-Capacity-Qualifizierung.","supportingSignals":[{"id":"tail-2026-07-14-hyperscaler-lta","date":"2026-07-14","title":"Hyperscaler sichern Memory und Flash über mehrjährige LTAs","signal":"Kapazitätsbindung","score":78,"summary":"Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."},{"id":"tail-2026-07-14-nand-essd","date":"2026-07-14","title":"NAND und Enterprise SSD zeigen festere Preis- und Nachfrageindikatoren","signal":"Preisdruck aufwärts","score":59,"summary":"AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."}],"counterSignals":[],"sourceArticleIds":["tail-2026-07-14-hyperscaler-lta","tail-2026-07-14-nand-essd"],"lastUpdated":"2026-07-14T21:35:27.181Z"},{"id":"ai_infrastructure","market":"AI Infrastructure","status":"orange","momentum":"⬆️","relevanceScore":71,"confidenceScore":82,"horizon":"2026–2030+","direction":"up","keyThesis":"AI Infrastructure wird durch Power, Datacenter-Kapazität, HBM, DRAM, eSSD und geopolitische Lieferketten begrenzt.","supportingSignals":[{"id":"tail-2026-07-14-nvidia-skhynix-hbm4","date":"2026-07-14","title":"Nvidia und SK hynix verzahnen HBM4- und AI-Infrastrukturentwicklung","signal":"Kapazitätsbindung","score":77,"summary":"Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung."},{"id":"tail-2026-07-14-huawei-swaysure","date":"2026-07-14","title":"Huawei/SwaySure signalisiert technologische Entkopplung und chinesische Parallel-Lieferketten","signal":"Geopolitische Entkopplung","score":48,"summary":"China beschleunigt eigene Compute-, Memory-, Storage- und Netzwerkpfade als Antwort auf Exportkontrollen."}],"counterSignals":[],"sourceArticleIds":["tail-2026-07-14-nvidia-skhynix-hbm4","tail-2026-07-14-huawei-swaysure"],"lastUpdated":"2026-07-14T21:35:27.181Z"}],"executiveSummary":"TAIL steht auf 79/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 8 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.","topSignals":[{"id":"tail-2026-07-14-server-dram","date":"2026-07-14","title":"Server-DRAM-Knappheit verschärft sich Richtung 2027","summary":"AI-Server, höhere Speicherkapazität pro System und begrenzte Wafer-Allokation erhöhen das Risiko einer strukturellen Server-DRAM-Unterversorgung 2027.","analysis":"Beschaffung früher absichern; Spot-Verfügbarkeit verliert gegenüber LTAs und strategischer Allokation an Bedeutung.","source":"TAIL Knowledge Base","url":"tail://knowledge-base/tail-2026-07-14-server-dram","score":88,"status":"red"},{"id":"tail-2026-07-14-skhynix-2030","date":"2026-07-14","title":"SK hynix sieht möglichen Nachfrageüberhang über 2030 hinaus","summary":"Der Kapazitätsaufbau kann mit AI-getriebener Nachfrage und steigendem Speicherinhalt pro System möglicherweise langfristig nicht Schritt halten.","analysis":"Die klassische kurze Memory-Zyklik wird durch strukturelle Kapazitätsbindung überlagert.","source":"TAIL Knowledge Base","url":"tail://knowledge-base/tail-2026-07-14-skhynix-2030","score":86,"status":"red"},{"id":"tail-2026-07-14-hyperscaler-lta","date":"2026-07-14","title":"Hyperscaler sichern Memory und Flash über mehrjährige LTAs","summary":"Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer.","analysis":"LTAs werden zum Wettbewerbsvorteil. Distribution muss Verfügbarkeit, nicht nur Preis, verkaufen.","source":"TAIL Knowledge Base","url":"tail://knowledge-base/tail-2026-07-14-hyperscaler-lta","score":78,"status":"orange"},{"id":"tail-2026-07-14-nvidia-skhynix-hbm4","date":"2026-07-14","title":"Nvidia und SK hynix verzahnen HBM4- und AI-Infrastrukturentwicklung","summary":"Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung.","analysis":"HBM wird vom standardisierten Bauteil zum plattformspezifisch abgestimmten Engpassprodukt.","source":"TAIL Knowledge Base","url":"tail://knowledge-base/tail-2026-07-14-nvidia-skhynix-hbm4","score":77,"status":"orange"}]}
+{
+  "schemaVersion": 2,
+  "platformVersion": "2.0",
+  "sourceOfTruth": "TAIL Knowledge Base",
+  "dataAsOf": "2026-07-14",
+  "dataFreshness": "current",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-07-14T21:45:01.321Z",
+  "lastForecastRun": "2026-07-14T21:45:01.321Z",
+  "newlyProcessedArticles": 29,
+  "totalArticles": 8,
+  "articleCount": 8,
+  "processStatus": "warning",
+  "error": null,
+  "warnings": [
+    "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
+  ],
+  "inbox": {
+    "status": "warning",
+    "updatedAt": "2026-07-14T21:45:00.022Z",
+    "newItems": 29,
+    "totalItems": 29,
+    "duplicateItems": 1,
+    "relevantItems": 0,
+    "sourceErrors": [
+      {
+        "source": "trendforce-memory",
+        "message": "HTTP 404"
+      }
+    ]
+  },
+  "pipeline": {
+    "status": "warning",
+    "steps": [
+      {
+        "id": "knowledge_base",
+        "label": "TAIL Knowledge Base",
+        "status": "ok",
+        "detail": "8 Artikel · Datenstand 2026-07-14"
+      },
+      {
+        "id": "inbox",
+        "label": "TAIL Inbox",
+        "status": "warning",
+        "detail": "29 Inbox-Items · 1 Duplikate · 1 Quellenfehler"
+      },
+      {
+        "id": "forecast_engine",
+        "label": "Forecast Engine",
+        "status": "ok",
+        "detail": "5/5 Pflicht-Forecasts erzeugt"
+      },
+      {
+        "id": "dashboard_build",
+        "label": "Dashboard Build",
+        "status": "ok",
+        "detail": "Dashboard JSON wurde aus Knowledge Base und Pipeline-Metadaten erzeugt."
+      }
+    ]
+  },
+  "tailIndex": 79,
+  "indexStatus": "orange",
+  "markets": [
+    {
+      "id": "server_dram",
+      "label": "Server DRAM",
+      "score": 85,
+      "status": "red",
+      "signals": 4
+    },
+    {
+      "id": "dram",
+      "label": "DRAM",
+      "score": 85,
+      "status": "red",
+      "signals": 2
+    },
+    {
+      "id": "hbm",
+      "label": "HBM",
+      "score": 83,
+      "status": "red",
+      "signals": 4
+    },
+    {
+      "id": "enterprise_ssd",
+      "label": "Enterprise SSD",
+      "score": 75,
+      "status": "orange",
+      "signals": 2
+    },
+    {
+      "id": "nand",
+      "label": "NAND",
+      "score": 75,
+      "status": "orange",
+      "signals": 2
+    },
+    {
+      "id": "ai_infrastructure",
+      "label": "AI Infrastructure",
+      "score": 72,
+      "status": "orange",
+      "signals": 2
+    },
+    {
+      "id": "semiconductors",
+      "label": "Semiconductors",
+      "score": 48,
+      "status": "yellow",
+      "signals": 1
+    },
+    {
+      "id": "supply_chain",
+      "label": "Supply Chain",
+      "score": 48,
+      "status": "yellow",
+      "signals": 1
+    }
+  ],
+  "manufacturers": [
+    {
+      "name": "SK hynix",
+      "score": 84,
+      "mentions": 6
+    },
+    {
+      "name": "Samsung",
+      "score": 84,
+      "mentions": 5
+    },
+    {
+      "name": "Micron",
+      "score": 83,
+      "mentions": 4
+    },
+    {
+      "name": "Meta",
+      "score": 78,
+      "mentions": 1
+    },
+    {
+      "name": "Nvidia",
+      "score": 77,
+      "mentions": 1
+    },
+    {
+      "name": "Sandisk",
+      "score": 75,
+      "mentions": 2
+    },
+    {
+      "name": "TSMC",
+      "score": 73,
+      "mentions": 1
+    },
+    {
+      "name": "Kioxia",
+      "score": 59,
+      "mentions": 1
+    },
+    {
+      "name": "Huawei",
+      "score": 48,
+      "mentions": 1
+    },
+    {
+      "name": "SwaySure",
+      "score": 48,
+      "mentions": 1
+    }
+  ],
+  "forecasts": [
+    {
+      "id": "dram",
+      "market": "DRAM",
+      "status": "red",
+      "momentum": "⬆️",
+      "relevanceScore": 84,
+      "confidenceScore": 92,
+      "horizon": "2026–2027",
+      "direction": "strong_up",
+      "keyThesis": "Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.",
+      "supportingSignals": [
+        {
+          "id": "tail-2026-07-14-server-dram",
+          "date": "2026-07-14",
+          "title": "Server-DRAM-Knappheit verschärft sich Richtung 2027",
+          "signal": "Supply-Engpass",
+          "score": 88,
+          "summary": "AI-Server, höhere Speicherkapazität pro System und begrenzte Wafer-Allokation erhöhen das Risiko einer strukturellen Server-DRAM-Unterversorgung 2027."
+        },
+        {
+          "id": "tail-2026-07-14-dram-prices",
+          "date": "2026-07-14",
+          "title": "DRAM-Preissignale bleiben klar aufwärtsgerichtet",
+          "signal": "Preisdruck aufwärts",
+          "score": 70,
+          "summary": "Servermix, HBM-Priorisierung und vorsichtige Kapazitätsplanung stützen Vertrags- und Spotpreise."
+        }
+      ],
+      "counterSignals": [],
+      "sourceArticleIds": [
+        "tail-2026-07-14-server-dram",
+        "tail-2026-07-14-dram-prices"
+      ],
+      "lastUpdated": "2026-07-14T21:45:01.321Z"
+    },
+    {
+      "id": "hbm",
+      "market": "HBM",
+      "status": "red",
+      "momentum": "⬆️⬆️",
+      "relevanceScore": 83,
+      "confidenceScore": 88,
+      "horizon": "2026–2028",
+      "direction": "strong_up",
+      "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
+      "supportingSignals": [
+        {
+          "id": "tail-2026-07-14-skhynix-2030",
+          "date": "2026-07-14",
+          "title": "SK hynix sieht möglichen Nachfrageüberhang über 2030 hinaus",
+          "signal": "Supply-Engpass",
+          "score": 86,
+          "summary": "Der Kapazitätsaufbau kann mit AI-getriebener Nachfrage und steigendem Speicherinhalt pro System möglicherweise langfristig nicht Schritt halten."
+        },
+        {
+          "id": "tail-2026-07-14-hyperscaler-lta",
+          "date": "2026-07-14",
+          "title": "Hyperscaler sichern Memory und Flash über mehrjährige LTAs",
+          "signal": "Kapazitätsbindung",
+          "score": 78,
+          "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."
+        },
+        {
+          "id": "tail-2026-07-14-nvidia-skhynix-hbm4",
+          "date": "2026-07-14",
+          "title": "Nvidia und SK hynix verzahnen HBM4- und AI-Infrastrukturentwicklung",
+          "signal": "Kapazitätsbindung",
+          "score": 77,
+          "summary": "Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung."
+        },
+        {
+          "id": "tail-2026-07-14-hbm4-cost",
+          "date": "2026-07-14",
+          "title": "HBM4-Kosten steigen und binden zusätzliche Frontend- und Packaging-Kapazität",
+          "signal": "Preisdruck aufwärts",
+          "score": 73,
+          "summary": "Komplexere Logik-Bases, höhere Layer-Zahlen und Advanced Packaging erhöhen Kosten, Yield-Risiken und Kapazitätsbedarf."
+        }
+      ],
+      "counterSignals": [],
+      "sourceArticleIds": [
+        "tail-2026-07-14-skhynix-2030",
+        "tail-2026-07-14-hyperscaler-lta",
+        "tail-2026-07-14-nvidia-skhynix-hbm4",
+        "tail-2026-07-14-hbm4-cost"
+      ],
+      "lastUpdated": "2026-07-14T21:45:01.321Z"
+    },
+    {
+      "id": "nand",
+      "market": "NAND",
+      "status": "orange",
+      "momentum": "⬆️",
+      "relevanceScore": 74,
+      "confidenceScore": 87,
+      "horizon": "H2 2026–2027",
+      "direction": "up",
+      "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
+      "supportingSignals": [
+        {
+          "id": "tail-2026-07-14-hyperscaler-lta",
+          "date": "2026-07-14",
+          "title": "Hyperscaler sichern Memory und Flash über mehrjährige LTAs",
+          "signal": "Kapazitätsbindung",
+          "score": 78,
+          "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."
+        },
+        {
+          "id": "tail-2026-07-14-nand-essd",
+          "date": "2026-07-14",
+          "title": "NAND und Enterprise SSD zeigen festere Preis- und Nachfrageindikatoren",
+          "signal": "Preisdruck aufwärts",
+          "score": 59,
+          "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
+        }
+      ],
+      "counterSignals": [],
+      "sourceArticleIds": [
+        "tail-2026-07-14-hyperscaler-lta",
+        "tail-2026-07-14-nand-essd"
+      ],
+      "lastUpdated": "2026-07-14T21:45:01.321Z"
+    },
+    {
+      "id": "enterprise_ssd",
+      "market": "Enterprise SSD",
+      "status": "orange",
+      "momentum": "⬆️",
+      "relevanceScore": 74,
+      "confidenceScore": 87,
+      "horizon": "H2 2026–2027",
+      "direction": "up",
+      "keyThesis": "Enterprise SSD profitiert von AI-Datenpipelines, Nearline-Wachstum und High-Capacity-Qualifizierung.",
+      "supportingSignals": [
+        {
+          "id": "tail-2026-07-14-hyperscaler-lta",
+          "date": "2026-07-14",
+          "title": "Hyperscaler sichern Memory und Flash über mehrjährige LTAs",
+          "signal": "Kapazitätsbindung",
+          "score": 78,
+          "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."
+        },
+        {
+          "id": "tail-2026-07-14-nand-essd",
+          "date": "2026-07-14",
+          "title": "NAND und Enterprise SSD zeigen festere Preis- und Nachfrageindikatoren",
+          "signal": "Preisdruck aufwärts",
+          "score": 59,
+          "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
+        }
+      ],
+      "counterSignals": [],
+      "sourceArticleIds": [
+        "tail-2026-07-14-hyperscaler-lta",
+        "tail-2026-07-14-nand-essd"
+      ],
+      "lastUpdated": "2026-07-14T21:45:01.321Z"
+    },
+    {
+      "id": "ai_infrastructure",
+      "market": "AI Infrastructure",
+      "status": "orange",
+      "momentum": "⬆️",
+      "relevanceScore": 71,
+      "confidenceScore": 82,
+      "horizon": "2026–2030+",
+      "direction": "up",
+      "keyThesis": "AI Infrastructure wird durch Power, Datacenter-Kapazität, HBM, DRAM, eSSD und geopolitische Lieferketten begrenzt.",
+      "supportingSignals": [
+        {
+          "id": "tail-2026-07-14-nvidia-skhynix-hbm4",
+          "date": "2026-07-14",
+          "title": "Nvidia und SK hynix verzahnen HBM4- und AI-Infrastrukturentwicklung",
+          "signal": "Kapazitätsbindung",
+          "score": 77,
+          "summary": "Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung."
+        },
+        {
+          "id": "tail-2026-07-14-huawei-swaysure",
+          "date": "2026-07-14",
+          "title": "Huawei/SwaySure signalisiert technologische Entkopplung und chinesische Parallel-Lieferketten",
+          "signal": "Geopolitische Entkopplung",
+          "score": 48,
+          "summary": "China beschleunigt eigene Compute-, Memory-, Storage- und Netzwerkpfade als Antwort auf Exportkontrollen."
+        }
+      ],
+      "counterSignals": [],
+      "sourceArticleIds": [
+        "tail-2026-07-14-nvidia-skhynix-hbm4",
+        "tail-2026-07-14-huawei-swaysure"
+      ],
+      "lastUpdated": "2026-07-14T21:45:01.321Z"
+    }
+  ],
+  "executiveSummary": "TAIL steht auf 79/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 8 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "topSignals": [
+    {
+      "id": "tail-2026-07-14-server-dram",
+      "date": "2026-07-14",
+      "title": "Server-DRAM-Knappheit verschärft sich Richtung 2027",
+      "summary": "AI-Server, höhere Speicherkapazität pro System und begrenzte Wafer-Allokation erhöhen das Risiko einer strukturellen Server-DRAM-Unterversorgung 2027.",
+      "analysis": "Beschaffung früher absichern; Spot-Verfügbarkeit verliert gegenüber LTAs und strategischer Allokation an Bedeutung.",
+      "source": "TAIL Knowledge Base",
+      "url": "tail://knowledge-base/tail-2026-07-14-server-dram",
+      "score": 88,
+      "status": "red"
+    },
+    {
+      "id": "tail-2026-07-14-skhynix-2030",
+      "date": "2026-07-14",
+      "title": "SK hynix sieht möglichen Nachfrageüberhang über 2030 hinaus",
+      "summary": "Der Kapazitätsaufbau kann mit AI-getriebener Nachfrage und steigendem Speicherinhalt pro System möglicherweise langfristig nicht Schritt halten.",
+      "analysis": "Die klassische kurze Memory-Zyklik wird durch strukturelle Kapazitätsbindung überlagert.",
+      "source": "TAIL Knowledge Base",
+      "url": "tail://knowledge-base/tail-2026-07-14-skhynix-2030",
+      "score": 86,
+      "status": "red"
+    },
+    {
+      "id": "tail-2026-07-14-hyperscaler-lta",
+      "date": "2026-07-14",
+      "title": "Hyperscaler sichern Memory und Flash über mehrjährige LTAs",
+      "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer.",
+      "analysis": "LTAs werden zum Wettbewerbsvorteil. Distribution muss Verfügbarkeit, nicht nur Preis, verkaufen.",
+      "source": "TAIL Knowledge Base",
+      "url": "tail://knowledge-base/tail-2026-07-14-hyperscaler-lta",
+      "score": 78,
+      "status": "orange"
+    },
+    {
+      "id": "tail-2026-07-14-nvidia-skhynix-hbm4",
+      "date": "2026-07-14",
+      "title": "Nvidia und SK hynix verzahnen HBM4- und AI-Infrastrukturentwicklung",
+      "summary": "Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung.",
+      "analysis": "HBM wird vom standardisierten Bauteil zum plattformspezifisch abgestimmten Engpassprodukt.",
+      "source": "TAIL Knowledge Base",
+      "url": "tail://knowledge-base/tail-2026-07-14-nvidia-skhynix-hbm4",
+      "score": 77,
+      "status": "orange"
+    }
+  ]
+}
