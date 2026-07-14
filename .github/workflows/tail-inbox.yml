@@ -20,13 +20,17 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Install
+        working-directory: tail-intelligence
+        run: npm install --ignore-scripts
+
       - name: Update TAIL intelligence
         working-directory: tail-intelligence
         run: npm run update
 
       - name: Commit updated intelligence data
         run: |
-          if git diff --quiet; then
+          if git diff --quiet tail-intelligence/data; then
             echo "No TAIL changes detected."
             exit 0
           fi
