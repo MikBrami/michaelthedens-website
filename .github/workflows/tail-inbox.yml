@@ -1,0 +1,37 @@
+name: TAIL Inbox Update
+
+on:
+  schedule:
+    - cron: '17 5,11,17,23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-tail-inbox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Update TAIL intelligence
+        working-directory: tail-intelligence
+        run: npm run update
+
+      - name: Commit updated intelligence data
+        run: |
+          if git diff --quiet; then
+            echo "No TAIL changes detected."
+            exit 0
+          fi
+          git config user.name "TAIL Intelligence Bot"
+          git config user.email "tail-intelligence-bot@users.noreply.github.com"
+          git add tail-intelligence/data
+          git commit -m "Auto-update TAIL inbox and dashboard data"
+          git push
