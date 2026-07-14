@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "ingest": "node scripts/ingest-inbox.mjs",
     "build": "node scripts/build-data.mjs",
-    "check": "node scripts/validate.mjs"
+    "check": "node scripts/validate.mjs",
+    "update": "npm run ingest && npm run build && npm run check"
   }
 }
