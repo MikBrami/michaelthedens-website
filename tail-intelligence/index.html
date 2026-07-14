@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TAIL Daily Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">TAIL INTELLIGENCE PLATFORM 2.0</p>
+        <h1>TAIL Daily Intelligence</h1>
+        <p id="summary" class="summary">Daten werden geladen …</p>
+      </div>
+      <div class="index-card">
+        <span>TAIL Index</span>
+        <strong id="tail-index">–</strong>
+        <small id="index-status">Status unbekannt</small>
+      </div>
+    </header>
+
+    <section id="error-banner" class="error hidden"></section>
+
+    <section class="status-grid">
+      <article><span>Datenstand</span><strong id="data-as-of">–</strong></article>
+      <article><span>Letzte erfolgreiche Aktualisierung</span><strong id="last-update">–</strong></article>
+      <article><span>Neu verarbeitete Artikel</span><strong id="new-articles">–</strong></article>
+      <article><span>Prozessstatus</span><strong id="process-status">–</strong></article>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Marktampeln</h2><span>Knappheit, Preis- und Kapazitätsdruck</span></div>
+      <div id="markets" class="cards"></div>
+    </section>
+
+    <section class="two-col">
+      <div>
+        <div class="section-head"><h2>Hersteller-Ranking</h2><span>Signalstärke</span></div>
+        <div id="manufacturers" class="list"></div>
+      </div>
+      <div>
+        <div class="section-head"><h2>Prognosen</h2><span>TAIL Forecast Engine</span></div>
+        <div id="forecasts" class="list"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Top-Signale</h2><span>Bis zum aktuellen Datenstand</span></div>
+      <div id="signals" class="signals"></div>
+    </section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
