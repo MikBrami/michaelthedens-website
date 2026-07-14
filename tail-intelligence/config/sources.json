@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-14T00:00:00Z",
+  "sources": [
+    {
+      "id": "trendforce-memory",
+      "name": "TrendForce Memory",
+      "type": "rss",
+      "url": "https://www.trendforce.com/rss.xml",
+      "enabled": true,
+      "categories": ["memory", "storage", "semiconductors"],
+      "weight": 1.0
+    },
+    {
+      "id": "micron-news",
+      "name": "Micron Newsroom",
+      "type": "rss",
+      "url": "https://investors.micron.com/rss/news-releases.xml",
+      "enabled": true,
+      "categories": ["memory", "semiconductors"],
+      "weight": 1.0
+    },
+    {
+      "id": "nvidia-news",
+      "name": "NVIDIA Newsroom",
+      "type": "rss",
+      "url": "https://nvidianews.nvidia.com/releases.xml",
+      "enabled": true,
+      "categories": ["ai_datacenter", "semiconductors"],
+      "weight": 0.95
+    },
+    {
+      "id": "manual-tail-inbox",
+      "name": "TAIL Manual Inbox",
+      "type": "json",
+      "url": "./data/manual-inbox.json",
+      "enabled": true,
+      "categories": ["all"],
+      "weight": 1.0
+    }
+  ],
+  "keywords": {
+    "high_priority": ["HBM4", "server DRAM", "enterprise SSD", "NAND", "LTA", "hyperscaler", "SK hynix", "Micron", "Samsung", "Nvidia", "Huawei", "SwaySure", "CXMT", "YMTC"],
+    "medium_priority": ["datacenter", "AI infrastructure", "advanced packaging", "CoWoS", "DDR5", "memory pricing", "export controls", "supply chain"]
+  }
+}
