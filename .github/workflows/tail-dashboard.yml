@@ -1,0 +1,62 @@
+name: TAIL Daily Intelligence
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tail-intelligence/**'
+      - '.github/workflows/tail-dashboard.yml'
+  schedule:
+    - cron: '15 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: tail-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tail-intelligence
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recalculate dashboard
+        run: npm run build
+      - name: Validate dashboard
+        run: npm run check
+      - name: Persist recalculated state
+        run: |
+          if ! git diff --quiet data/dashboard.json; then
+            git config user.name 'tail-intelligence-bot'
+            git config user.email 'actions@users.noreply.github.com'
+            git add data/dashboard.json
+            git commit -m 'chore: refresh TAIL dashboard state'
+            git push
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: tail-intelligence
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
