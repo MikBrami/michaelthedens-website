@@ -1,0 +1,42 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        { "type": "host", "value": "tail-daily-intelligence.michaelthedens.de" }
+      ],
+      "destination": "/tail-intelligence/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "tail-daily-intelligence.michaelthedens.de" }
+      ],
+      "destination": "/tail-intelligence/$1"
+    },
+    {
+      "source": "/tail-daily-intelligence",
+      "destination": "/tail-intelligence/index.html"
+    },
+    {
+      "source": "/tail-daily-intelligence/(.*)",
+      "destination": "/tail-intelligence/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/tail-intelligence/data/dashboard.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+      ]
+    },
+    {
+      "source": "/data/dashboard.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+      ]
+    }
+  ]
+}
