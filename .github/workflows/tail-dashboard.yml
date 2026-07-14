@@ -53,10 +53,10 @@ jobs:
 
       - name: Persist generated intelligence state
         run: |
-          if ! git diff --quiet tail-intelligence/data; then
+          if ! git diff --quiet data; then
             git config user.name 'tail-intelligence-bot'
             git config user.email 'actions@users.noreply.github.com'
-            git add tail-intelligence/data
+            git add data
             git commit -m 'chore: refresh TAIL intelligence state'
             git push
           fi
@@ -74,6 +74,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Pull latest generated state
+        working-directory: .
+        run: git pull --ff-only
 
       - name: Setup Node
         uses: actions/setup-node@v4
