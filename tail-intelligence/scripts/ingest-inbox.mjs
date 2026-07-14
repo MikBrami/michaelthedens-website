@@ -12,6 +12,28 @@ const now = new Date().toISOString();
 const strip = (value = '') => value.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 const hash = (value) => crypto.createHash('sha256').update(value).digest('hex').slice(0, 20);
 const escapeRx = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const tokenize = (value = '') => new Set(strip(value).toLowerCase().replace(/[^a-z0-9äöüß\s-]/gi, ' ').split(/\s+/).filter((token) => token.length > 2));
+
+function similarity(a, b) {
+  const left = tokenize(a);
+  const right = tokenize(b);
+  if (!left.size || !right.size) return 0;
+  const overlap = [...left].filter((token) => right.has(token)).length;
+  return overlap / Math.max(left.size, right.size);
+}
+
+function canonicalUrl(value = '') {
+  try {
+    const url = new URL(value.trim());
+    for (const key of [...url.searchParams.keys()]) {
+      if (/^(utm_|fbclid|gclid|mc_)/i.test(key)) url.searchParams.delete(key);
+    }
+    url.hash = '';
+    return url.toString().replace(/\/$/, '');
+  } catch {
+    return value.trim().replace(/\/$/, '');
+  }
+}
 
 function extractTag(block, tag) {
   const match = block.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`, 'i'));
@@ -19,7 +41,7 @@ function extractTag(block, tag) {
 }
 
 function parseFeed(xml, source) {
-  const blocks = [...xml.matchAll(/<(item|entry)(?:\s[^>]*)?>([\s\S]*?)<\/\1>/gi)].map((m) => m[2]);
+  const blocks = [...xml.matchAll(/<(item|entry)(?:\s[^>]*)?>([\s\S]*?)<\/\1>/gi)].map((match) => match[2]);
   return blocks.map((block) => {
     const title = extractTag(block, 'title');
     const linkTag = block.match(/<link(?:\s[^>]*)?href=["']([^"']+)["'][^>]*>/i)?.[1];
@@ -27,12 +49,15 @@ function parseFeed(xml, source) {
     const published = extractTag(block, 'pubDate') || extractTag(block, 'published') || extractTag(block, 'updated');
     const summary = extractTag(block, 'description') || extractTag(block, 'summary') || extractTag(block, 'content');
     if (!title || !link) return null;
+    const url = canonicalUrl(link);
     return {
-      id: hash(`${source.id}|${link}`),
+      id: hash(`${source.id}|${url}`),
       source_id: source.id,
       source_name: source.name,
       title,
-      url: link,
+      url,
+      canonical_url: url,
+      content_hash: hash(`${title}|${summary}`),
       published_at: published ? new Date(published).toISOString() : now,
       summary,
       categories: source.categories || [],
@@ -65,19 +90,29 @@ async function readJson(url, fallback) {
   try { return JSON.parse(await fs.readFile(url, 'utf8')); } catch { return fallback; }
 }
 
+function findDuplicate(item, known) {
+  const canonical = canonicalUrl(item.url);
+  const exact = known.find((entry) => entry.url && canonicalUrl(entry.url) === canonical);
+  if (exact) return { type: 'url', duplicate_of: exact.id ?? exact.url };
+
+  const sameContent = known.find((entry) => entry.content_hash && entry.content_hash === item.content_hash);
+  if (sameContent) return { type: 'content_hash', duplicate_of: sameContent.id ?? sameContent.url };
+
+  const similarTitle = known.find((entry) => entry.title && similarity(entry.title, item.title) >= 0.82);
+  if (similarTitle) return { type: 'title_similarity', duplicate_of: similarTitle.id ?? similarTitle.url };
+
+  return null;
+}
+
 async function main() {
   const config = await readJson(CONFIG, { sources: [], keywords: {} });
-  const currentInbox = await readJson(INBOX, { updated_at: null, items: [] });
+  const currentInbox = await readJson(INBOX, { updated_at: null, items: [], duplicate_items: [] });
   const manual = await readJson(MANUAL, { items: [] });
   const articles = await readJson(ARTICLES, []);
-  const knownUrls = new Set([
-    ...currentInbox.items.map((i) => i.url).filter(Boolean),
-    ...articles.map((i) => i.url).filter(Boolean)
-  ]);
 
   const collected = [];
   const errors = [];
-  for (const source of config.sources.filter((s) => s.enabled && s.type === 'rss')) {
+  for (const source of config.sources.filter((source) => source.enabled && source.type === 'rss')) {
     try {
       const response = await fetch(source.url, { headers: { 'user-agent': 'TAIL-Intelligence/2.0' } });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -89,39 +124,69 @@ async function main() {
 
   for (const item of manual.items || []) {
     if (!item.title || !item.url) continue;
+    const url = canonicalUrl(item.url);
     collected.push({
-      id: item.id || hash(`manual|${item.url}`),
+      id: item.id || hash(`manual|${url}`),
       source_id: 'manual-tail-inbox',
       source_name: 'TAIL Manual Inbox',
       published_at: item.published_at || now,
       status: item.status || 'new',
       source_weight: 1,
       categories: item.categories || ['all'],
-      ...item
+      ...item,
+      url,
+      canonical_url: url,
+      content_hash: item.content_hash || hash(`${item.title}|${item.summary ?? ''}`)
     });
   }
 
-  const fresh = collected
-    .filter((item) => !knownUrls.has(item.url))
-    .map((item) => ({ ...item, ...scoreItem(item, config.keywords), ingested_at: now }))
-    .sort((a, b) => b.relevance_score - a.relevance_score || new Date(b.published_at) - new Date(a.published_at));
+  const known = [
+    ...(currentInbox.items || []),
+    ...(articles || []).map((article) => ({
+      id: article.id,
+      title: article.title,
+      url: article.url ?? `tail://knowledge-base/${article.id}`,
+      content_hash: article.content_hash ?? hash(`${article.title}|${article.summary ?? ''}`)
+    }))
+  ];
 
-  const merged = [...fresh, ...currentInbox.items]
-    .filter((item, index, arr) => arr.findIndex((x) => x.url === item.url) === index)
+  const fresh = [];
+  const duplicates = [];
+  for (const item of collected.map((entry) => ({ ...entry, ...scoreItem(entry, config.keywords), ingested_at: now }))) {
+    const duplicate = findDuplicate(item, [...known, ...fresh]);
+    if (duplicate) {
+      duplicates.push({ ...item, status: 'duplicate', ...duplicate });
+      continue;
+    }
+    fresh.push({ ...item, status: item.relevance_score >= 25 ? 'new' : 'irrelevant' });
+  }
+
+  const merged = [...fresh, ...(currentInbox.items || [])]
+    .filter((item, index, arr) => arr.findIndex((candidate) => canonicalUrl(candidate.url) === canonicalUrl(item.url)) === index)
+    .sort((a, b) => Number(b.relevance_score ?? 0) - Number(a.relevance_score ?? 0) || new Date(b.published_at) - new Date(a.published_at))
     .slice(0, 1000);
 
-  await fs.writeFile(INBOX, JSON.stringify({ updated_at: now, new_items: fresh.length, items: merged }, null, 2) + '\n');
+  const duplicateItems = [...duplicates, ...(currentInbox.duplicate_items || [])].slice(0, 200);
+
+  await fs.writeFile(INBOX, JSON.stringify({
+    updated_at: now,
+    new_items: fresh.length,
+    duplicate_items: duplicateItems,
+    items: merged
+  }, null, 2) + '\n');
+
   await fs.writeFile(STATUS, JSON.stringify({
     status: errors.length ? 'warning' : 'ok',
     last_attempt: now,
     last_successful_update: now,
     newly_processed_articles: fresh.length,
+    deduplicated_articles: duplicates.length,
     inbox_size: merged.length,
     source_errors: errors,
     message: errors.length ? 'Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar.' : 'TAIL Inbox erfolgreich aktualisiert.'
   }, null, 2) + '\n');
 
-  console.log(`TAIL Inbox: ${fresh.length} neue Artikel, ${merged.length} gesamt, ${errors.length} Quellenfehler.`);
+  console.log(`TAIL Inbox: ${fresh.length} neue Artikel, ${duplicates.length} Duplikate, ${merged.length} Inbox gesamt, ${errors.length} Quellenfehler.`);
 }
 
 main().catch(async (error) => {
@@ -130,6 +195,7 @@ main().catch(async (error) => {
     last_attempt: now,
     last_successful_update: null,
     newly_processed_articles: 0,
+    deduplicated_articles: 0,
     message: error.message
   }, null, 2) + '\n');
   console.error(error);

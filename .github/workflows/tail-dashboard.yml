@@ -1,4 +1,4 @@
-name: TAIL Daily Intelligence
+name: TAIL Intelligence Platform v2
 
 on:
   push:
@@ -12,51 +12,100 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  deployments: write
 
 concurrency:
-  group: tail-pages
+  group: tail-v2-platform
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-and-validate:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: tail-intelligence
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Recalculate dashboard
+
+      - name: Install
+        run: npm install --ignore-scripts
+
+      - name: Lint / static validation
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: TAIL Inbox ingestion
+        run: npm run ingest
+
+      - name: Forecast Engine build
         run: npm run build
-      - name: Validate dashboard
+
+      - name: Knowledge Base integrity check
         run: npm run check
-      - name: Persist recalculated state
+
+      - name: Persist generated intelligence state
         run: |
-          if ! git diff --quiet data/dashboard.json; then
+          if ! git diff --quiet data; then
             git config user.name 'tail-intelligence-bot'
             git config user.email 'actions@users.noreply.github.com'
-            git add data/dashboard.json
-            git commit -m 'chore: refresh TAIL dashboard state'
+            git add data
+            git commit -m 'chore: refresh TAIL intelligence state'
             git push
           fi
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: tail-intelligence
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  deploy-vercel:
     runs-on: ubuntu-latest
-    needs: build
+    needs: build-and-validate
+    defaults:
+      run:
+        working-directory: tail-intelligence
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Pull latest generated state
+        working-directory: .
+        run: git pull --ff-only
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install
+        run: npm install --ignore-scripts
+
+      - name: Require Vercel secrets
+        run: |
+          if [ -z "$VERCEL_TOKEN" ] || [ -z "$VERCEL_ORG_ID" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
+            echo "::error::Missing Vercel secrets. Required: VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID."
+            exit 1
+          fi
+
+      - name: Pull Vercel project settings
+        run: npx --yes vercel@latest pull --yes --environment=production --token="$VERCEL_TOKEN"
+
+      - name: Build Vercel artifact
+        run: npx --yes vercel@latest build --prod --token="$VERCEL_TOKEN"
+
+      - name: Deploy to Vercel
+        id: vercel-deploy
+        run: |
+          DEPLOYMENT_URL=$(npx --yes vercel@latest deploy --prebuilt --prod --token="$VERCEL_TOKEN")
+          echo "deployment_url=$DEPLOYMENT_URL" >> "$GITHUB_OUTPUT"
+          echo "DEPLOYMENT_URL=$DEPLOYMENT_URL" >> "$GITHUB_ENV"
+
+      - name: Live validation after deployment
+        run: npm run validate:deployment -- "$DEPLOYMENT_URL"
