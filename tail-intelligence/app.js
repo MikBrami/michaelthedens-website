@@ -5,7 +5,7 @@ const fmtDate = value => {
   if (Number.isNaN(date.getTime())) return String(value);
   return new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium', timeStyle: String(value).includes('T') ? 'short' : undefined }).format(date);
 };
-const statusLabel = s => ({ red:'Rot', orange:'Orange', yellow:'Gelb', green:'Grün', ok:'OK', warning:'Warnung', error:'Fehler', current:'Aktuell', stale:'Veraltet', invalid:'Ungültig', open:'Offen', changed:'Geändert', new:'Neu', endangered:'Gefährdet', partially_confirmed:'Teilbestätigt', historical_closed:'Historisch geschlossen', active:'Aktiv', active_weakened:'Aktiv, geschwächt', active_strengthened:'Aktiv, verstärkt', long_term:'Langfristig', new_active:'Neu, aktiv' })[s] ?? s;
+const statusLabel = s => ({ red:'Rot', orange:'Orange', yellow:'Gelb', green:'Grün', ok:'OK', warning:'Warnung', error:'Fehler', current:'Aktuell', stale:'Veraltet', invalid:'Ungültig', open:'Offen', changed:'Geändert', new:'Neu', endangered:'Gefährdet', confirmed:'Bestätigt', partially_confirmed:'Teilbestätigt', historical_closed:'Historisch geschlossen', active:'Aktiv', active_weakened:'Aktiv, geschwächt', active_strengthened:'Aktiv, verstärkt', long_term:'Langfristig', new_active:'Neu, aktiv', new_watch:'Neu, beobachten' })[s] ?? s;
 const processIcon = s => ({ ok:'🟢', warning:'🟠', error:'🔴' })[s] ?? '⚪';
 const directionLabel = d => ({ strong_up:'stark steigend', up:'steigend', watch:'beobachten', stable:'stabil', unknown:'unbekannt' })[d] ?? d;
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[char]);
@@ -66,7 +66,7 @@ function renderDaily(d) {
   $('daily-drivers').innerHTML = (d.driverScores || []).map(item => `<article><div class="row"><strong>${escapeHtml(item.name)}</strong><span>${item.score}</span></div><div class="bar"><i style="width:${item.score}%"></i></div><small class="${item.delta > 0 ? 'pressure' : item.delta < 0 ? 'relief' : ''}">${item.delta > 0 ? '+' : ''}${item.delta} seit gestern</small></article>`).join('');
 
   $('daily-signals').innerHTML = (d.acceptedSignals || []).map(s => {
-    const gate = Object.entries(s.admissionGate || {}).map(([key,val]) => `${key}: ${val ? '✓' : '✗'}`).join(' · ');
+    const gate = Object.entries(s.admissionGate || {}).map(([key,val]) => `${key}: ${val === true ? '✓' : val === false ? '✗' : val}`).join(' · ');
     const breakdown = Object.entries(s.scoreBreakdown || {}).map(([key,val]) => `${key} ${val}`).join(' · ');
     const links = (s.sources || []).map(src => `<a href="${safeUrl(src.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(src.label)} ↗</a>`).join(' ');
     const rp = s.redPencil || {};
@@ -87,17 +87,67 @@ function renderDaily(d) {
   $('run-history').innerHTML = (d.runHistory || []).map(r => `<article><span>${fmtDate(r.date)}</span><strong>${r.pulse}/100</strong><small>Confidence ${r.confidence}%</small><p>${escapeHtml(r.note)}</p></article>`).join('');
 }
 
+function mergeById(base = [], updates = []) {
+  const order = base.map(item => item.id);
+  const map = new Map(base.map(item => [item.id, { ...item }]));
+  updates.forEach(item => {
+    if (!map.has(item.id)) order.push(item.id);
+    map.set(item.id, { ...(map.get(item.id) || {}), ...item });
+  });
+  return order.map(id => map.get(id));
+}
+
+function appendUnique(base = [], additions = [], keyFn) {
+  const result = [...base];
+  const seen = new Set(base.map(keyFn));
+  additions.forEach(item => {
+    const key = keyFn(item);
+    if (!seen.has(key)) {
+      result.push(item);
+      seen.add(key);
+    }
+  });
+  return result;
+}
+
+function mergeDaily(base, update) {
+  if (!update) return base;
+  const merged = { ...base, ...update };
+  merged.predictionLog = mergeById(base.predictionLog, update.predictionLogUpdates || []);
+  merged.falsifiers = mergeById(base.falsifiers, update.falsifierUpdates || []);
+  merged.auditTrail = appendUnique(base.auditTrail, update.auditTrailAdditions, item => `${item.date}|${item.type}|${item.item}`);
+  merged.runHistory = appendUnique(base.runHistory, update.runHistoryAdditions, item => item.date);
+  delete merged.predictionLogUpdates;
+  delete merged.falsifierUpdates;
+  delete merged.auditTrailAdditions;
+  delete merged.runHistoryAdditions;
+  return merged;
+}
+
 async function fetchJson(url) {
   const response = await fetch(`${url}?ts=${Date.now()}`, { cache:'no-store' });
   if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
   return response.json();
 }
 
+async function fetchOptionalJson(url) {
+  try {
+    return await fetchJson(url);
+  } catch (error) {
+    if (String(error.message).includes('HTTP 404')) return null;
+    throw error;
+  }
+}
+
 async function loadDashboard() {
   try {
-    const [platform, daily] = await Promise.all([fetchJson('data/dashboard.json'), fetchJson('data/daily-intelligence.json')]);
+    const [platform, daily, latest] = await Promise.all([
+      fetchJson('data/dashboard.json'),
+      fetchJson('data/daily-intelligence.json'),
+      fetchOptionalJson('data/daily-intelligence-latest.json')
+    ]);
     renderPlatform(platform);
-    renderDaily(daily);
+    renderDaily(mergeDaily(daily, latest));
   } catch (error) {
     showError(`Dashboard konnte nicht vollständig geladen werden: ${error.message}`);
   }
