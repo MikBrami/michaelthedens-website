@@ -45,6 +45,9 @@ jobs:
       - name: TAIL Inbox ingestion
         run: npm run ingest
 
+      - name: Sync accepted daily signals into Knowledge Base
+        run: npm run sync
+
       - name: Forecast Engine build
         run: npm run build
 
