@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "ingest": "node scripts/ingest-inbox.mjs",
+    "sync": "node scripts/sync-daily-intelligence.mjs",
     "build": "node scripts/build-data.mjs",
     "check": "node scripts/validate.mjs",
     "lint": "node scripts/validate.mjs --static",
-    "typecheck": "node --check scripts/ingest-inbox.mjs && node --check scripts/build-data.mjs && node --check scripts/validate.mjs && node --check scripts/validate-deployment.mjs",
-    "test": "npm run build && npm run check",
-    "update": "npm run ingest && npm run build && npm run check",
+    "typecheck": "node --check scripts/ingest-inbox.mjs && node --check scripts/sync-daily-intelligence.mjs && node --check scripts/build-data.mjs && node --check scripts/validate.mjs && node --check scripts/validate-deployment.mjs",
+    "test": "npm run sync && npm run build && npm run check",
+    "update": "npm run ingest && npm run sync && npm run build && npm run check",
     "ci": "npm run lint && npm run typecheck && npm run update",
     "validate:deployment": "node scripts/validate-deployment.mjs"
   }
