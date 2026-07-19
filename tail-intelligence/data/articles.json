@@ -1,63 +1,38 @@
 [
   {
-    "id": "tail-2026-07-14-server-dram",
+    "id": "tail-2026-07-14-dram-prices",
     "date": "2026-07-14",
-    "title": "Server-DRAM-Knappheit verschärft sich Richtung 2027",
-    "category": "memory",
-    "markets": ["server_dram", "dram"],
-    "companies": ["SK hynix", "Micron", "Samsung"],
-    "severity": 96,
-    "confidence": 92,
-    "signal": "negative_supply",
-    "summary": "AI-Server, höhere Speicherkapazität pro System und begrenzte Wafer-Allokation erhöhen das Risiko einer strukturellen Server-DRAM-Unterversorgung 2027.",
-    "tail_analysis": "Beschaffung früher absichern; Spot-Verfügbarkeit verliert gegenüber LTAs und strategischer Allokation an Bedeutung."
-  },
-  {
-    "id": "tail-2026-07-14-hyperscaler-lta",
-    "date": "2026-07-14",
-    "title": "Hyperscaler sichern Memory und Flash über mehrjährige LTAs",
-    "category": "ai_datacenter",
-    "markets": ["hbm", "server_dram", "enterprise_ssd", "nand"],
-    "companies": ["Meta", "Samsung", "Sandisk"],
-    "severity": 91,
-    "confidence": 90,
-    "signal": "capacity_lock",
-    "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer.",
-    "tail_analysis": "LTAs werden zum Wettbewerbsvorteil. Distribution muss Verfügbarkeit, nicht nur Preis, verkaufen."
-  },
-  {
-    "id": "tail-2026-07-14-skhynix-2030",
-    "date": "2026-07-14",
-    "title": "SK hynix sieht möglichen Nachfrageüberhang über 2030 hinaus",
-    "category": "memory",
-    "markets": ["hbm", "server_dram"],
-    "companies": ["SK hynix"],
-    "severity": 98,
-    "confidence": 88,
-    "signal": "negative_supply",
-    "summary": "Der Kapazitätsaufbau kann mit AI-getriebener Nachfrage und steigendem Speicherinhalt pro System möglicherweise langfristig nicht Schritt halten.",
-    "tail_analysis": "Die klassische kurze Memory-Zyklik wird durch strukturelle Kapazitätsbindung überlagert."
-  },
-  {
-    "id": "tail-2026-07-14-nvidia-skhynix-hbm4",
-    "date": "2026-07-14",
-    "title": "Nvidia und SK hynix verzahnen HBM4- und AI-Infrastrukturentwicklung",
-    "category": "semiconductors",
-    "markets": ["hbm", "ai_infrastructure"],
-    "companies": ["Nvidia", "SK hynix"],
-    "severity": 94,
-    "confidence": 86,
-    "signal": "capacity_lock",
-    "summary": "Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung.",
-    "tail_analysis": "HBM wird vom standardisierten Bauteil zum plattformspezifisch abgestimmten Engpassprodukt."
+    "title": "DRAM-Preissignale bleiben klar aufwärtsgerichtet",
+    "category": "pricing",
+    "markets": [
+      "dram",
+      "server_dram"
+    ],
+    "companies": [
+      "Samsung",
+      "SK hynix",
+      "Micron"
+    ],
+    "severity": 90,
+    "confidence": 91,
+    "signal": "price_up",
+    "summary": "Servermix, HBM-Priorisierung und vorsichtige Kapazitätsplanung stützen Vertrags- und Spotpreise.",
+    "tail_analysis": "Preisrisiko bleibt asymmetrisch nach oben; kurze Preisbindungen werden gefährlicher."
   },
   {
     "id": "tail-2026-07-14-hbm4-cost",
     "date": "2026-07-14",
     "title": "HBM4-Kosten steigen und binden zusätzliche Frontend- und Packaging-Kapazität",
     "category": "memory",
-    "markets": ["hbm"],
-    "companies": ["SK hynix", "Samsung", "Micron", "TSMC"],
+    "markets": [
+      "hbm"
+    ],
+    "companies": [
+      "SK hynix",
+      "Samsung",
+      "Micron",
+      "TSMC"
+    ],
     "severity": 95,
     "confidence": 89,
     "signal": "price_up",
@@ -69,8 +44,17 @@
     "date": "2026-07-14",
     "title": "Huawei/SwaySure signalisiert technologische Entkopplung und chinesische Parallel-Lieferketten",
     "category": "geopolitics",
-    "markets": ["ai_infrastructure", "semiconductors", "supply_chain"],
-    "companies": ["Huawei", "SwaySure", "CXMT", "YMTC"],
+    "markets": [
+      "ai_infrastructure",
+      "semiconductors",
+      "supply_chain"
+    ],
+    "companies": [
+      "Huawei",
+      "SwaySure",
+      "CXMT",
+      "YMTC"
+    ],
     "severity": 84,
     "confidence": 78,
     "signal": "geopolitical_split",
@@ -78,29 +62,293 @@
     "tail_analysis": "Kurzfristig entstehen Doppelstrukturen und Ineffizienz; langfristig wächst ein eigenständiges Technologie- und Lieferkettenökosystem."
   },
   {
-    "id": "tail-2026-07-14-dram-prices",
+    "id": "tail-2026-07-14-hyperscaler-lta",
     "date": "2026-07-14",
-    "title": "DRAM-Preissignale bleiben klar aufwärtsgerichtet",
-    "category": "pricing",
-    "markets": ["dram", "server_dram"],
-    "companies": ["Samsung", "SK hynix", "Micron"],
-    "severity": 90,
-    "confidence": 91,
-    "signal": "price_up",
-    "summary": "Servermix, HBM-Priorisierung und vorsichtige Kapazitätsplanung stützen Vertrags- und Spotpreise.",
-    "tail_analysis": "Preisrisiko bleibt asymmetrisch nach oben; kurze Preisbindungen werden gefährlicher."
+    "title": "Hyperscaler sichern Memory und Flash über mehrjährige LTAs",
+    "category": "ai_datacenter",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "enterprise_ssd",
+      "nand"
+    ],
+    "companies": [
+      "Meta",
+      "Samsung",
+      "Sandisk"
+    ],
+    "severity": 91,
+    "confidence": 90,
+    "signal": "capacity_lock",
+    "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer.",
+    "tail_analysis": "LTAs werden zum Wettbewerbsvorteil. Distribution muss Verfügbarkeit, nicht nur Preis, verkaufen."
   },
   {
     "id": "tail-2026-07-14-nand-essd",
     "date": "2026-07-14",
     "title": "NAND und Enterprise SSD zeigen festere Preis- und Nachfrageindikatoren",
     "category": "storage",
-    "markets": ["nand", "enterprise_ssd"],
-    "companies": ["Samsung", "Kioxia", "Sandisk", "Micron", "SK hynix"],
+    "markets": [
+      "nand",
+      "enterprise_ssd"
+    ],
+    "companies": [
+      "Samsung",
+      "Kioxia",
+      "Sandisk",
+      "Micron",
+      "SK hynix"
+    ],
     "severity": 81,
     "confidence": 84,
     "signal": "price_up",
     "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung.",
     "tail_analysis": "Enterprise SSD stabilisiert sich vor Consumer NAND; High-Capacity-Produkte erhalten strategische Priorität."
+  },
+  {
+    "id": "tail-2026-07-14-nvidia-skhynix-hbm4",
+    "date": "2026-07-14",
+    "title": "Nvidia und SK hynix verzahnen HBM4- und AI-Infrastrukturentwicklung",
+    "category": "semiconductors",
+    "markets": [
+      "hbm",
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Nvidia",
+      "SK hynix"
+    ],
+    "severity": 94,
+    "confidence": 86,
+    "signal": "capacity_lock",
+    "summary": "Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung.",
+    "tail_analysis": "HBM wird vom standardisierten Bauteil zum plattformspezifisch abgestimmten Engpassprodukt."
+  },
+  {
+    "id": "tail-2026-07-14-server-dram",
+    "date": "2026-07-14",
+    "title": "Server-DRAM-Knappheit verschärft sich Richtung 2027",
+    "category": "memory",
+    "markets": [
+      "server_dram",
+      "dram"
+    ],
+    "companies": [
+      "SK hynix",
+      "Micron",
+      "Samsung"
+    ],
+    "severity": 96,
+    "confidence": 92,
+    "signal": "negative_supply",
+    "summary": "AI-Server, höhere Speicherkapazität pro System und begrenzte Wafer-Allokation erhöhen das Risiko einer strukturellen Server-DRAM-Unterversorgung 2027.",
+    "tail_analysis": "Beschaffung früher absichern; Spot-Verfügbarkeit verliert gegenüber LTAs und strategischer Allokation an Bedeutung."
+  },
+  {
+    "id": "tail-2026-07-14-skhynix-2030",
+    "date": "2026-07-14",
+    "title": "SK hynix sieht möglichen Nachfrageüberhang über 2030 hinaus",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "server_dram"
+    ],
+    "companies": [
+      "SK hynix"
+    ],
+    "severity": 98,
+    "confidence": 88,
+    "signal": "negative_supply",
+    "summary": "Der Kapazitätsaufbau kann mit AI-getriebener Nachfrage und steigendem Speicherinhalt pro System möglicherweise langfristig nicht Schritt halten.",
+    "tail_analysis": "Die klassische kurze Memory-Zyklik wird durch strukturelle Kapazitätsbindung überlagert."
+  },
+  {
+    "id": "S-2026-07-19-01",
+    "date": "2026-07-19",
+    "title": "Golf-Konflikt weitet sich auf Energie-, Militär- und Logistikinfrastruktur aus",
+    "category": "geopolitics",
+    "markets": [
+      "ai_infrastructure",
+      "supply_chain"
+    ],
+    "companies": [],
+    "severity": 100,
+    "confidence": 88,
+    "signal": "geopolitical_split",
+    "summary": "Achte US-Angriffsnacht; zwei US-Soldaten getötet, einer vermisst. Iran griff erneut Kuwait an; eine Ölanlage wurde erheblich beschädigt. Warnsysteme lösten auch bei Al-Kharj und Yanbu aus. CENTCOM traf iranische Küstenüberwachung und Luftabwehr.",
+    "tail_analysis": "Aus dem Hormuz-Risiko wird ein verteilter Golf-Schock für Energie, Wasser, Personal, Versicherung und Datacenter-Backup-Power.",
+    "source": "Reuters – US/Iran escalation",
+    "url": "https://www.reuters.com/world/asia-pacific/us-renews-strikes-iran-after-two-military-personnel-were-killed-by-iranian-2026-07-18/",
+    "content_hash": "375c2cc5e2814fb32aaf",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 1,
+    "estimate": "Mehrere iranische Erfolgsmeldungen sind unbestätigt; am Sonntag fehlen neue liquide Ölpreise und vollständige AIS-Daten.",
+    "red_pencil": {
+      "sourceIncentive": "Kriegsparteien überzeichnen Trefferwirkung.",
+      "alternative": "Eskorten und neutraler Mindesttransit können Flüsse stabilisieren.",
+      "alreadyPriced": "Hoher Risikoaufschlag ist eingepreist; Sonntagsbestätigung fehlt.",
+      "killCondition": "Drei Tage >80% Normalverkehr, keine neuen Infrastrukturangriffe, Brent <US$78.",
+      "forecastChange": "P-13-01 98→99; P-12-01 88→91; P-11-03 15→10."
+    },
+    "sources": [
+      {
+        "label": "Reuters – US/Iran escalation",
+        "url": "https://www.reuters.com/world/asia-pacific/us-renews-strikes-iran-after-two-military-personnel-were-killed-by-iranian-2026-07-18/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-07-19-02",
+    "date": "2026-07-19",
+    "title": "US-Datacenter-Widerstand wird erstmals national koordiniert",
+    "category": "geopolitics",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [],
+    "severity": 98,
+    "confidence": 88,
+    "signal": "geopolitical_split",
+    "summary": "142 Proteste in 42 US-Staaten. Laut Reuters/Ipsos unterstützen nur 14% ein AI-Rechenzentrum in der eigenen Gemeinde; gefordert werden Transparenz, Ressourcenschutz, Community Benefits und Entwicklerhaftung.",
+    "tail_analysis": "Social License wird zum nationalen Supply-Constraint; angekündigte GW müssen um Genehmigungs-, Wasser-, Tarif- und Wahlrisiken bereinigt werden.",
+    "source": "Reuters – 142 protests in 42 states",
+    "url": "https://www.reuters.com/business/retail-consumer/us-data-center-protests-go-national-backlash-grows-2026-07-18/",
+    "content_hash": "8de9211c28fa5b49d1ae",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 2,
+    "estimate": "Teilnehmerzahlen fehlen landesweit und waren teils niedriger als erwartet. Proteste sind noch keine Moratorien oder verweigerten Genehmigungen.",
+    "red_pencil": {
+      "sourceIncentive": "Organisatoren betonen Reichweite.",
+      "alternative": "Geringe Teilnahme begrenzt politische Wirkung.",
+      "alreadyPriced": "Lokale Opposition war bekannt; nationale Koordination ist neu.",
+      "killCondition": "Bis 30.09. keine neuen Moratorien, Auflagen oder Großlasttarife.",
+      "forecastChange": "Neu P-2026-07-19-01: 78%."
+    },
+    "sources": [
+      {
+        "label": "Reuters – 142 protests in 42 states",
+        "url": "https://www.reuters.com/business/retail-consumer/us-data-center-protests-go-national-backlash-grows-2026-07-18/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-07-19-03",
+    "date": "2026-07-19",
+    "title": "Nominaler Hyperscaler-Capex wird ein schlechterer Proxy für reale AI-Kapazität",
+    "category": "memory",
+    "markets": [
+      "dram",
+      "ai_infrastructure"
+    ],
+    "companies": [],
+    "severity": 94,
+    "confidence": 74,
+    "signal": "price_up",
+    "summary": "Die vier großen US-Hyperscaler planen zusammen mehr als US$700 Mrd. Capex; Memory, Stromausrüstung, Bau, Fachkräfte und Netzanschlüsse verteuern sich.",
+    "tail_analysis": "Mehr Capex bedeutet nicht proportional mehr MW, GPUs oder Tokens. TAIL trennt nominale Ausgaben, reale Kapazität und Preis-/Mixeffekte.",
+    "source": "Business Insider – capex inflation",
+    "url": "https://www.businessinsider.com/big-tech-spending-capex-earnings-season-memory-prices-ai-2026-7",
+    "content_hash": "49ac3817c8c65df65bc9",
+    "origin": "daily-intelligence",
+    "classification": "Falsifier",
+    "rank": 3,
+    "estimate": "Morgan Stanley sieht rund 20% höhere Systemkosten je GW. Circular Technology schätzt 20–30% Inflationsanteil am nächsten Capex-Zuwachs; frühere Analysen ordnen Memory rund 45% des Cloud-Capex-Wachstums zu.",
+    "red_pencil": {
+      "sourceIncentive": "Analysten können 'paying more to stand still' überzeichnen.",
+      "alternative": "70–80% der Mehrkosten können reale Expansion sein.",
+      "alreadyPriced": "Kosteninflation bekannt; Größenordnung und Earnings-Test neu.",
+      "killCondition": "Drei Hyperscaler zeigen schnelleres reales Kapazitäts- als Capex-Wachstum.",
+      "forecastChange": "P-17-03 75→79; P-11-04 69→67; neu P-19-02 72%."
+    },
+    "sources": [
+      {
+        "label": "Business Insider – capex inflation",
+        "url": "https://www.businessinsider.com/big-tech-spending-capex-earnings-season-memory-prices-ai-2026-7"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-07-19-04",
+    "date": "2026-07-19",
+    "title": "CXMT-IPO bindet Chinas DRAM-Wertschöpfung und Nachfragebasis enger zusammen",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "dram",
+      "semiconductors"
+    ],
+    "companies": [
+      "CXMT",
+      "ZTE"
+    ],
+    "severity": 92,
+    "confidence": 90,
+    "signal": "demand_up",
+    "summary": "CXMT preiste 57,9 Mrd. Yuan Erlös vor Greenshoe und 579,2 Mrd. Yuan Marktwert. Investoren reichen von AMEC, Piotech, Montage, Anji und TongFu bis Alibaba Cloud, Xiaomi, ZTE, TCL, NIO und Chery.",
+    "tail_analysis": "CXMT wird zur koordinierten Plattform aus Equipment, Materialien, Packaging, Cloud, Telekom, Endgeräten und Automotive; keine kurzfristige High-End-Entlastung.",
+    "source": "SSE – pricing and investors",
+    "url": "https://english.sse.com.cn/news/newsrelease/voice/c/c_20260716_10825660.shtml",
+    "content_hash": "70defb2bf24189b12d4d",
+    "origin": "daily-intelligence",
+    "classification": "Layer Update",
+    "rank": 4,
+    "estimate": "Mit Greenshoe sind 66,6 Mrd. Yuan möglich. Kapital garantiert keine Leading-Edge-Yields oder HBM-Konvergenz.",
+    "red_pencil": {
+      "sourceIncentive": "Börse und Staatsmedien betonen Koordination.",
+      "alternative": "Beteiligungen können politisch statt operativ sein.",
+      "alreadyPriced": "IPO-Größe bekannt; Full-Stack-Investorenstruktur neu.",
+      "killCondition": "Listing verschoben oder bis 2028 kein messbarer DDR5-/Server-Ramp.",
+      "forecastChange": "P-2026-07-14-01 94→96%."
+    },
+    "sources": [
+      {
+        "label": "SSE – pricing and investors",
+        "url": "https://english.sse.com.cn/news/newsrelease/voice/c/c_20260716_10825660.shtml"
+      },
+      {
+        "label": "China Daily – proceeds",
+        "url": "https://global.chinadaily.com.cn/a/202607/18/WS6a5ac686a310986e2b465f73.html"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-07-19-05",
+    "date": "2026-07-19",
+    "title": "Microsoft qualifiziert Expanded-Beam-Optik für Azure-Rechenzentren",
+    "category": "geopolitics",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Microsoft",
+      "3M"
+    ],
+    "severity": 88,
+    "confidence": 88,
+    "signal": "geopolitical_split",
+    "summary": "Microsoft ist der erste angekündigte Hyperscaler, der 3M Expanded Beam Optical in Azure einsetzt. EBO soll Installation, Verschmutzungstoleranz und Wartung verbessern; 3M skaliert die Produktion.",
+    "tail_analysis": "Installations- und Wartungsrobustheit wird bei hoher Faser-/Portdichte zum Scaling-Layer; EBO ersetzt keine Transceiver- oder Switch-Kapazität.",
+    "source": "Microsoft/3M primary announcement",
+    "url": "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/",
+    "content_hash": "3b62f91f69ab69cb3465",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 5,
+    "estimate": "Volumen sowie unabhängige Zeit-, Kosten- und Zuverlässigkeitswerte fehlen; die Nutzung kann zunächst begrenzt bleiben.",
+    "red_pencil": {
+      "sourceIncentive": "Partner-PR ohne unabhängige Messwerte.",
+      "alternative": "EBO bleibt Nische.",
+      "alreadyPriced": "Technik bekannt; Hyperscaler-Deployment neu.",
+      "killCondition": "Bis Juli 2027 kein zweiter Hyperscaler/OEM-Nachweis.",
+      "forecastChange": "Neu P-2026-07-19-03: 68%."
+    },
+    "sources": [
+      {
+        "label": "Microsoft/3M primary announcement",
+        "url": "https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/"
+      }
+    ]
   }
 ]

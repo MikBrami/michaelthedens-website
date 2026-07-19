@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "platformVersion": "2.0",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-07-14",
-  "dataFreshness": "stale",
-  "dataAgeDays": 5,
-  "lastSuccessfulUpdate": "2026-07-19T07:36:05.846Z",
-  "lastForecastRun": "2026-07-19T07:36:05.846Z",
-  "newlyProcessedArticles": 0,
-  "totalArticles": 8,
-  "articleCount": 8,
-  "processStatus": "warning",
+  "dataAsOf": "2026-07-19",
+  "dataFreshness": "current",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-07-19T10:57:35.426Z",
+  "lastForecastRun": "2026-07-19T10:57:35.426Z",
+  "newlyProcessedArticles": 10,
+  "totalArticles": 13,
+  "articleCount": 13,
+  "processStatus": "ok",
   "error": null,
-  "warnings": [
-    "Knowledge Base ist 5 Tage alt.",
-    "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
-  ],
+  "warnings": [],
   "inbox": {
-    "status": "warning",
-    "updatedAt": "2026-07-19T07:36:04.511Z",
-    "newItems": 0,
-    "totalItems": 40,
+    "status": "ok",
+    "updatedAt": "2026-07-19T10:57:33.759Z",
+    "newItems": 10,
+    "totalItems": 50,
     "duplicateItems": 200,
     "relevantItems": 0,
-    "sourceErrors": [
-      {
-        "source": "trendforce-memory",
-        "message": "HTTP 404"
-      }
-    ]
+    "sourceErrors": []
   },
   "pipeline": {
-    "status": "warning",
+    "status": "ok",
     "steps": [
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
-        "status": "warning",
-        "detail": "8 Artikel · Datenstand 2026-07-14"
+        "status": "ok",
+        "detail": "13 Artikel · Datenstand 2026-07-19"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
-        "status": "warning",
-        "detail": "40 Inbox-Items · 200 Duplikate · 1 Quellenfehler"
+        "status": "ok",
+        "detail": "50 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -70,16 +62,16 @@
       "signals": 4
     },
     {
-      "id": "dram",
-      "label": "DRAM",
-      "score": 85,
-      "status": "red",
-      "signals": 2
-    },
-    {
       "id": "hbm",
       "label": "HBM",
       "score": 83,
+      "status": "red",
+      "signals": 5
+    },
+    {
+      "id": "dram",
+      "label": "DRAM",
+      "score": 82,
       "status": "red",
       "signals": 4
     },
@@ -102,33 +94,33 @@
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 2
+      "signals": 6
     },
     {
       "id": "semiconductors",
       "label": "Semiconductors",
-      "score": 48,
+      "score": 63,
       "status": "yellow",
-      "signals": 1
+      "signals": 2
     },
     {
       "id": "supply_chain",
       "label": "Supply Chain",
-      "score": 48,
+      "score": 62,
       "status": "yellow",
-      "signals": 1
+      "signals": 2
     }
   ],
   "manufacturers": [
     {
-      "name": "SK hynix",
-      "score": 84,
-      "mentions": 6
-    },
-    {
       "name": "Samsung",
       "score": 84,
       "mentions": 5
+    },
+    {
+      "name": "SK hynix",
+      "score": 84,
+      "mentions": 6
     },
     {
       "name": "Micron",
@@ -156,18 +148,18 @@
       "mentions": 1
     },
     {
+      "name": "ZTE",
+      "score": 66,
+      "mentions": 1
+    },
+    {
+      "name": "CXMT",
+      "score": 63,
+      "mentions": 2
+    },
+    {
       "name": "Kioxia",
       "score": 59,
-      "mentions": 1
-    },
-    {
-      "name": "Huawei",
-      "score": 48,
-      "mentions": 1
-    },
-    {
-      "name": "SwaySure",
-      "score": 48,
       "mentions": 1
     }
   ],
@@ -175,12 +167,12 @@
     {
       "id": "dram",
       "market": "DRAM",
-      "status": "red",
-      "momentum": "⬆️",
-      "relevanceScore": 84,
-      "confidenceScore": 92,
+      "status": "orange",
+      "momentum": "⬆️⬆️",
+      "relevanceScore": 81,
+      "confidenceScore": 87,
       "horizon": "2026–2027",
-      "direction": "strong_up",
+      "direction": "up",
       "keyThesis": "Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.",
       "supportingSignals": [
         {
@@ -198,22 +190,40 @@
           "signal": "Preisdruck aufwärts",
           "score": 70,
           "summary": "Servermix, HBM-Priorisierung und vorsichtige Kapazitätsplanung stützen Vertrags- und Spotpreise."
+        },
+        {
+          "id": "S-2026-07-19-04",
+          "date": "2026-07-19",
+          "title": "CXMT-IPO bindet Chinas DRAM-Wertschöpfung und Nachfragebasis enger zusammen",
+          "signal": "Nachfrageimpuls",
+          "score": 66,
+          "summary": "CXMT preiste 57,9 Mrd. Yuan Erlös vor Greenshoe und 579,2 Mrd. Yuan Marktwert. Investoren reichen von AMEC, Piotech, Montage, Anji und TongFu bis Alibaba Cloud, Xiaomi, ZTE, TCL, NIO und Chery."
+        },
+        {
+          "id": "S-2026-07-19-03",
+          "date": "2026-07-19",
+          "title": "Nominaler Hyperscaler-Capex wird ein schlechterer Proxy für reale AI-Kapazität",
+          "signal": "Preisdruck aufwärts",
+          "score": 60,
+          "summary": "Die vier großen US-Hyperscaler planen zusammen mehr als US$700 Mrd. Capex; Memory, Stromausrüstung, Bau, Fachkräfte und Netzanschlüsse verteuern sich."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-server-dram",
-        "tail-2026-07-14-dram-prices"
+        "tail-2026-07-14-dram-prices",
+        "S-2026-07-19-04",
+        "S-2026-07-19-03"
       ],
-      "lastUpdated": "2026-07-19T07:36:05.846Z"
+      "lastUpdated": "2026-07-19T10:57:35.425Z"
     },
     {
       "id": "hbm",
       "market": "HBM",
       "status": "red",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 83,
-      "confidenceScore": 88,
+      "relevanceScore": 82,
+      "confidenceScore": 89,
       "horizon": "2026–2028",
       "direction": "strong_up",
       "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
@@ -256,9 +266,10 @@
         "tail-2026-07-14-skhynix-2030",
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nvidia-skhynix-hbm4",
-        "tail-2026-07-14-hbm4-cost"
+        "tail-2026-07-14-hbm4-cost",
+        "S-2026-07-19-04"
       ],
-      "lastUpdated": "2026-07-19T07:36:05.846Z"
+      "lastUpdated": "2026-07-19T10:57:35.425Z"
     },
     {
       "id": "nand",
@@ -293,7 +304,7 @@
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nand-essd"
       ],
-      "lastUpdated": "2026-07-19T07:36:05.846Z"
+      "lastUpdated": "2026-07-19T10:57:35.425Z"
     },
     {
       "id": "enterprise_ssd",
@@ -328,15 +339,15 @@
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nand-essd"
       ],
-      "lastUpdated": "2026-07-19T07:36:05.846Z"
+      "lastUpdated": "2026-07-19T10:57:35.425Z"
     },
     {
       "id": "ai_infrastructure",
       "market": "AI Infrastructure",
       "status": "orange",
-      "momentum": "⬆️",
+      "momentum": "⬆️⬆️",
       "relevanceScore": 71,
-      "confidenceScore": 82,
+      "confidenceScore": 84,
       "horizon": "2026–2030+",
       "direction": "up",
       "keyThesis": "AI Infrastructure wird durch Power, Datacenter-Kapazität, HBM, DRAM, eSSD und geopolitische Lieferketten begrenzt.",
@@ -350,23 +361,43 @@
           "summary": "Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung."
         },
         {
-          "id": "tail-2026-07-14-huawei-swaysure",
-          "date": "2026-07-14",
-          "title": "Huawei/SwaySure signalisiert technologische Entkopplung und chinesische Parallel-Lieferketten",
+          "id": "S-2026-07-19-01",
+          "date": "2026-07-19",
+          "title": "Golf-Konflikt weitet sich auf Energie-, Militär- und Logistikinfrastruktur aus",
           "signal": "Geopolitische Entkopplung",
-          "score": 48,
-          "summary": "China beschleunigt eigene Compute-, Memory-, Storage- und Netzwerkpfade als Antwort auf Exportkontrollen."
+          "score": 65,
+          "summary": "Achte US-Angriffsnacht; zwei US-Soldaten getötet, einer vermisst. Iran griff erneut Kuwait an; eine Ölanlage wurde erheblich beschädigt. Warnsysteme lösten auch bei Al-Kharj und Yanbu aus. CENTCOM traf iranische Küstenüberwachung und Luftabwehr."
+        },
+        {
+          "id": "S-2026-07-19-02",
+          "date": "2026-07-19",
+          "title": "US-Datacenter-Widerstand wird erstmals national koordiniert",
+          "signal": "Geopolitische Entkopplung",
+          "score": 64,
+          "summary": "142 Proteste in 42 US-Staaten. Laut Reuters/Ipsos unterstützen nur 14% ein AI-Rechenzentrum in der eigenen Gemeinde; gefordert werden Transparenz, Ressourcenschutz, Community Benefits und Entwicklerhaftung."
+        },
+        {
+          "id": "S-2026-07-19-03",
+          "date": "2026-07-19",
+          "title": "Nominaler Hyperscaler-Capex wird ein schlechterer Proxy für reale AI-Kapazität",
+          "signal": "Preisdruck aufwärts",
+          "score": 60,
+          "summary": "Die vier großen US-Hyperscaler planen zusammen mehr als US$700 Mrd. Capex; Memory, Stromausrüstung, Bau, Fachkräfte und Netzanschlüsse verteuern sich."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-nvidia-skhynix-hbm4",
+        "S-2026-07-19-01",
+        "S-2026-07-19-02",
+        "S-2026-07-19-03",
+        "S-2026-07-19-05",
         "tail-2026-07-14-huawei-swaysure"
       ],
-      "lastUpdated": "2026-07-19T07:36:05.846Z"
+      "lastUpdated": "2026-07-19T10:57:35.425Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 79/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 8 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 79/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 13 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
