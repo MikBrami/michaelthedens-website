@@ -141,14 +141,15 @@ async function fetchOptionalJson(url) {
 
 async function loadDashboard() {
   try {
-    const [platform, daily, latest, today] = await Promise.all([
+    const [platform, daily, latest, day20, day21] = await Promise.all([
       fetchJson('data/dashboard.json'),
       fetchJson('data/daily-intelligence.json'),
       fetchOptionalJson('data/daily-intelligence-latest.json'),
-      fetchOptionalJson('data/daily-intelligence-2026-07-20.json')
+      fetchOptionalJson('data/daily-intelligence-2026-07-20.json'),
+      fetchOptionalJson('data/daily-intelligence-2026-07-21.json')
     ]);
     renderPlatform(platform);
-    const mergedDaily = [latest, today].reduce((state, update) => mergeDaily(state, update), daily);
+    const mergedDaily = [latest, day20, day21].reduce((state, update) => mergeDaily(state, update), daily);
     renderDaily(mergedDaily);
   } catch (error) {
     showError(`Dashboard konnte nicht vollständig geladen werden: ${error.message}`);
