@@ -3,39 +3,41 @@
   "platformVersion": "2.0",
   "sourceOfTruth": "TAIL Knowledge Base",
   "dataAsOf": "2026-07-19",
-  "dataFreshness": "current",
-  "dataAgeDays": 2,
-  "lastSuccessfulUpdate": "2026-07-21T18:41:19.353Z",
-  "lastForecastRun": "2026-07-21T18:41:19.353Z",
-  "newlyProcessedArticles": 2,
+  "dataFreshness": "stale",
+  "dataAgeDays": 3,
+  "lastSuccessfulUpdate": "2026-07-22T00:08:45.914Z",
+  "lastForecastRun": "2026-07-22T00:08:45.914Z",
+  "newlyProcessedArticles": 1,
   "totalArticles": 13,
   "articleCount": 13,
-  "processStatus": "ok",
+  "processStatus": "warning",
   "error": null,
-  "warnings": [],
+  "warnings": [
+    "Knowledge Base ist 3 Tage alt."
+  ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-07-21T18:41:16.492Z",
-    "newItems": 2,
-    "totalItems": 56,
+    "updatedAt": "2026-07-22T00:08:43.358Z",
+    "newItems": 1,
+    "totalItems": 57,
     "duplicateItems": 200,
     "relevantItems": 0,
     "sourceErrors": []
   },
   "pipeline": {
-    "status": "ok",
+    "status": "warning",
     "steps": [
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
-        "status": "ok",
+        "status": "warning",
         "detail": "13 Artikel · Datenstand 2026-07-19"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "56 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
+        "detail": "57 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -215,7 +217,7 @@
         "S-2026-07-19-04",
         "S-2026-07-19-03"
       ],
-      "lastUpdated": "2026-07-21T18:41:19.351Z"
+      "lastUpdated": "2026-07-22T00:08:45.913Z"
     },
     {
       "id": "hbm",
@@ -269,7 +271,7 @@
         "tail-2026-07-14-hbm4-cost",
         "S-2026-07-19-04"
       ],
-      "lastUpdated": "2026-07-21T18:41:19.351Z"
+      "lastUpdated": "2026-07-22T00:08:45.913Z"
     },
     {
       "id": "nand",
@@ -304,7 +306,7 @@
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nand-essd"
       ],
-      "lastUpdated": "2026-07-21T18:41:19.351Z"
+      "lastUpdated": "2026-07-22T00:08:45.913Z"
     },
     {
       "id": "enterprise_ssd",
@@ -339,7 +341,7 @@
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nand-essd"
       ],
-      "lastUpdated": "2026-07-21T18:41:19.352Z"
+      "lastUpdated": "2026-07-22T00:08:45.913Z"
     },
     {
       "id": "ai_infrastructure",
@@ -394,7 +396,7 @@
         "S-2026-07-19-05",
         "tail-2026-07-14-huawei-swaysure"
       ],
-      "lastUpdated": "2026-07-21T18:41:19.353Z"
+      "lastUpdated": "2026-07-22T00:08:45.913Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 79/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 13 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
