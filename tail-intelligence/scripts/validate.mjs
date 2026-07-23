@@ -3,6 +3,7 @@ import fs from 'node:fs';
 const args = new Set(process.argv.slice(2));
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const exists = (file) => fs.existsSync(file);
+const dailyFilePattern = /^daily-intelligence-(\d{4}-\d{2}-\d{2})\.json$/;
 const requiredArticleFields = ['id', 'date', 'title', 'category', 'markets', 'severity', 'confidence', 'signal', 'summary', 'tail_analysis'];
 const requiredForecastIds = ['dram', 'hbm', 'nand', 'enterprise_ssd', 'ai_infrastructure'];
 
@@ -45,6 +46,33 @@ function validateDashboard(dashboard, articles) {
   }
 }
 
+function validateDailySync(articles) {
+  const dailyFiles = fs.readdirSync('data').filter((name) => dailyFilePattern.test(name)).sort();
+  if (!dailyFiles.length) return;
+
+  const latestFile = dailyFiles.at(-1);
+  const latestDaily = readJson(`data/${latestFile}`);
+  const latestDailyDate = new Date(latestDaily.updatedAt).toISOString().slice(0, 10);
+  const newestArticleDate = articles.map((article) => article.date).sort().at(-1);
+  const acceptedIds = (latestDaily.acceptedSignals ?? []).map((signal) => signal.id).filter(Boolean);
+  const articleIds = new Set(articles.map((article) => article.id));
+  const missingIds = acceptedIds.filter((id) => !articleIds.has(id));
+
+  if (newestArticleDate < latestDailyDate) {
+    throw new Error(`Knowledge Base stale: newest article ${newestArticleDate}, latest daily intelligence ${latestDailyDate}`);
+  }
+  if (missingIds.length) {
+    throw new Error(`Knowledge Base missing accepted daily signals: ${missingIds.join(', ')}`);
+  }
+  if (!exists('data/daily-intelligence-index.json')) {
+    throw new Error('daily-intelligence-index.json missing');
+  }
+  const index = readJson('data/daily-intelligence-index.json');
+  if (index.latest !== latestFile || !Array.isArray(index.files) || !index.files.includes(latestFile)) {
+    throw new Error(`Daily intelligence index does not point to ${latestFile}`);
+  }
+}
+
 if (!exists('data/articles.json')) throw new Error('data/articles.json missing');
 if (!exists('config/sources.json')) throw new Error('config/sources.json missing');
 
@@ -57,6 +85,8 @@ if (args.has('--static')) {
   console.log(`Static validation OK: ${articles.length} KB articles, ${config.sources.length} inbox sources`);
   process.exit(0);
 }
+
+validateDailySync(articles);
 
 if (!exists('data/dashboard.json')) throw new Error('data/dashboard.json missing. Run npm run build first.');
 const dashboard = readJson('data/dashboard.json');
