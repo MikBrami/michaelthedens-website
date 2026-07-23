@@ -21,6 +21,10 @@ for (const marker of ['TAIL INTELLIGENCE PLATFORM 2.0', 'tail-index', 'process-s
 
 const dataResponse = await assertOk(`${base}/data/dashboard.json?validation=${Date.now()}`);
 const dashboard = await dataResponse.json();
+const indexResponse = await assertOk(`${base}/data/daily-intelligence-index.json?validation=${Date.now()}`);
+const dailyIndex = await indexResponse.json();
+const latestDailyResponse = await assertOk(`${base}/data/${dailyIndex.latest}?validation=${Date.now()}`);
+const latestDaily = await latestDailyResponse.json();
 
 if (dashboard.sourceOfTruth !== 'TAIL Knowledge Base') throw new Error('Dashboard is not using the Knowledge Base source of truth marker');
 if (!dashboard.lastSuccessfulUpdate || !dashboard.dataAsOf || !dashboard.lastForecastRun) throw new Error('Dashboard dynamic timestamps missing');
@@ -28,6 +32,10 @@ if (!Number.isInteger(dashboard.articleCount) || dashboard.articleCount <= 0) th
 if (!['ok', 'warning', 'error'].includes(dashboard.processStatus)) throw new Error(`Invalid process status: ${dashboard.processStatus}`);
 if (!dashboard.pipeline?.steps?.length) throw new Error('Pipeline status not exposed');
 if (!dashboard.inbox || !['ok', 'warning', 'error'].includes(dashboard.inbox.status)) throw new Error('Inbox status not exposed');
+if (!Array.isArray(dailyIndex.files) || !dailyIndex.files.includes(dailyIndex.latest)) throw new Error('Daily intelligence index is incomplete');
+if (dashboard.dataAsOf < new Date(latestDaily.updatedAt).toISOString().slice(0, 10)) {
+  throw new Error(`Live Knowledge Base stale: ${dashboard.dataAsOf} vs daily intelligence ${latestDaily.updatedAt}`);
+}
 
 const forecastIds = new Set((dashboard.forecasts ?? []).map((forecast) => forecast.id));
 for (const id of requiredForecastIds) {

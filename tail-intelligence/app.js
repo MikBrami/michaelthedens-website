@@ -104,17 +104,17 @@ async function fetchOptionalJson(url) {
 }
 async function loadDashboard() {
   try {
-    const [platform, daily, latest, day20, day21, day22, day23] = await Promise.all([
+    const [platform, daily, index] = await Promise.all([
       fetchJson('data/dashboard.json'),
       fetchJson('data/daily-intelligence.json'),
-      fetchOptionalJson('data/daily-intelligence-latest.json'),
-      fetchOptionalJson('data/daily-intelligence-2026-07-20.json'),
-      fetchOptionalJson('data/daily-intelligence-2026-07-21.json'),
-      fetchOptionalJson('data/daily-intelligence-2026-07-22.json'),
-      fetchOptionalJson('data/daily-intelligence-2026-07-23.json')
+      fetchOptionalJson('data/daily-intelligence-index.json')
     ]);
+    const files = Array.isArray(index?.files) && index.files.length
+      ? index.files
+      : ['daily-intelligence-latest.json'];
+    const updates = await Promise.all(files.map((name) => fetchOptionalJson(`data/${name}`)));
     renderPlatform(platform);
-    renderDaily([latest, day20, day21, day22, day23].reduce((state, update) => mergeDaily(state, update), daily));
+    renderDaily(updates.reduce((state, update) => mergeDaily(state, update), daily));
   } catch (error) { showError(`Dashboard konnte nicht vollständig geladen werden: ${error.message}`); }
 }
 loadDashboard();
