@@ -2,9 +2,12 @@ import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
 
 const ROOT = new URL('../', import.meta.url);
+const DATA = new URL('data/', ROOT);
 const DAILY = new URL('data/daily-intelligence-latest.json', ROOT);
+const DAILY_INDEX = new URL('data/daily-intelligence-index.json', ROOT);
 const ARTICLES = new URL('data/articles.json', ROOT);
 const STATUS = new URL('data/update-status.json', ROOT);
+const DAILY_FILE_PATTERN = /^daily-intelligence-(\d{4}-\d{2}-\d{2})\.json$/;
 
 const now = new Date().toISOString();
 const hash = (value) => crypto.createHash('sha256').update(value).digest('hex').slice(0, 20);
@@ -17,6 +20,31 @@ async function readJson(url, fallback) {
   } catch {
     return fallback;
   }
+}
+
+async function discoverDailyIntelligence() {
+  const names = await fs.readdir(DATA);
+  const datedNames = names
+    .filter((name) => DAILY_FILE_PATTERN.test(name))
+    .sort();
+  const records = [];
+
+  for (const name of datedNames) {
+    const daily = await readJson(new URL(name, DATA), null);
+    if (!daily || !Array.isArray(daily.acceptedSignals)) {
+      throw new Error(`${name} has no acceptedSignals array`);
+    }
+    records.push({ name, daily });
+  }
+
+  const legacyLatest = await readJson(DAILY, null);
+  if (legacyLatest?.acceptedSignals && !records.some(({ daily }) => daily.updatedAt === legacyLatest.updatedAt)) {
+    records.push({ name: 'daily-intelligence-latest.json', daily: legacyLatest });
+  }
+
+  return records.sort((a, b) =>
+    String(a.daily.updatedAt || a.name).localeCompare(String(b.daily.updatedAt || b.name))
+  );
 }
 
 function textFor(signal) {
@@ -113,38 +141,54 @@ function toArticle(signal, dailyDate) {
 }
 
 async function main() {
-  const daily = await readJson(DAILY, null);
+  const dailyRecords = await discoverDailyIntelligence();
   const articles = await readJson(ARTICLES, []);
   const updateStatus = await readJson(STATUS, {});
 
-  if (!daily || !Array.isArray(daily.acceptedSignals)) {
+  if (!dailyRecords.length) {
     console.log('No daily intelligence signals found; Knowledge Base unchanged.');
     return;
   }
   if (!Array.isArray(articles)) throw new Error('articles.json must contain an array');
 
-  const dailyDate = new Date(daily.updatedAt || now).toISOString().slice(0, 10);
   const byId = new Map(articles.map((article) => [article.id, article]));
   let promoted = 0;
 
-  for (const signal of daily.acceptedSignals) {
-    if (!signal?.id || !signal?.title) continue;
-    const article = toArticle(signal, dailyDate);
-    const previous = byId.get(article.id);
-    if (JSON.stringify(previous) !== JSON.stringify(article)) promoted += 1;
-    byId.set(article.id, article);
+  for (const { daily } of dailyRecords) {
+    const dailyDate = new Date(daily.updatedAt || now).toISOString().slice(0, 10);
+    for (const signal of daily.acceptedSignals) {
+      if (!signal?.id || !signal?.title) continue;
+      const article = toArticle(signal, dailyDate);
+      const previous = byId.get(article.id);
+      if (JSON.stringify(previous) !== JSON.stringify(article)) promoted += 1;
+      byId.set(article.id, article);
+    }
   }
 
+  const latestRecord = dailyRecords.at(-1);
+  const datedFiles = dailyRecords
+    .map(({ name }) => name)
+    .filter((name) => DAILY_FILE_PATTERN.test(name));
   const merged = [...byId.values()].sort((a, b) => String(a.date).localeCompare(String(b.date)) || String(a.id).localeCompare(String(b.id)));
   await fs.writeFile(ARTICLES, JSON.stringify(merged, null, 2) + '\n');
+  await fs.writeFile(DAILY, JSON.stringify(latestRecord.daily, null, 2) + '\n');
+  await fs.writeFile(DAILY_INDEX, JSON.stringify({
+    schemaVersion: 1,
+    generatedAt: now,
+    latest: latestRecord.name,
+    files: datedFiles
+  }, null, 2) + '\n');
   await fs.writeFile(STATUS, JSON.stringify({
     ...updateStatus,
     knowledge_base_sync_at: now,
     knowledge_base_signals_promoted: promoted,
-    knowledge_base_total_articles: merged.length
+    knowledge_base_total_articles: merged.length,
+    knowledge_base_latest_daily_file: latestRecord.name,
+    knowledge_base_latest_daily_at: latestRecord.daily.updatedAt,
+    knowledge_base_daily_files_processed: dailyRecords.length
   }, null, 2) + '\n');
 
-  console.log(`Knowledge Base sync: ${promoted} accepted signals added or updated; ${merged.length} articles total.`);
+  console.log(`Knowledge Base sync: ${promoted} accepted signals added or updated from ${dailyRecords.length} daily files; ${merged.length} articles total; latest ${latestRecord.name}.`);
 }
 
 main().catch((error) => {
