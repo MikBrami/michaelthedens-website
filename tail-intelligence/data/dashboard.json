@@ -1,16 +1,38 @@
 {
-  "schemaVersion": 2,
-  "platformVersion": "2.0",
+  "schemaVersion": 3,
+  "platformVersion": "3.0",
   "sourceOfTruth": "TAIL Knowledge Base",
   "dataAsOf": "2026-07-24",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-07-24T18:46:32.104Z",
-  "lastForecastRun": "2026-07-24T18:46:32.104Z",
+  "lastSuccessfulUpdate": "2026-07-24T19:27:12.451Z",
+  "lastForecastRun": "2026-07-24T19:27:12.451Z",
   "newlyProcessedArticles": 0,
   "totalArticles": 38,
   "articleCount": 38,
   "processStatus": "ok",
+  "methodology": {
+    "version": "3.0",
+    "status": "warning",
+    "frozenForecasts": [
+      "P-2026-07-24-01"
+    ],
+    "quarantinedSignals": [
+      "S-2026-07-24-02"
+    ],
+    "scoringRubric": {
+      "sourceQuality": 20,
+      "novelty": 15,
+      "thesisRelevance": 20,
+      "forecastImpact": 20,
+      "falsifiability": 15,
+      "timeSensitivity": 10
+    },
+    "gates": {
+      "accepted": 80,
+      "watchlist": 65
+    }
+  },
   "error": null,
   "warnings": [],
   "inbox": {
@@ -57,37 +79,37 @@
     {
       "id": "server_dram",
       "label": "Server DRAM",
-      "score": 84,
+      "score": 85,
       "status": "red",
-      "signals": 5
+      "signals": 4
     },
     {
       "id": "hbm",
       "label": "HBM",
-      "score": 81,
-      "status": "orange",
-      "signals": 8
+      "score": 82,
+      "status": "red",
+      "signals": 7
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 10
+      "signals": 9
     },
     {
       "id": "ai_infrastructure",
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 27
+      "signals": 26
     },
     {
       "id": "semiconductors",
       "label": "Semiconductors",
       "score": 72,
       "status": "orange",
-      "signals": 10
+      "signals": 9
     },
     {
       "id": "enterprise_ssd",
@@ -101,7 +123,7 @@
       "label": "NAND",
       "score": 72,
       "status": "orange",
-      "signals": 4
+      "signals": 3
     },
     {
       "id": "supply_chain",
@@ -113,13 +135,13 @@
   ],
   "manufacturers": [
     {
-      "name": "SK hynix",
+      "name": "Samsung",
       "score": 83,
-      "mentions": 7
+      "mentions": 6
     },
     {
-      "name": "Samsung",
-      "score": 82,
+      "name": "SK hynix",
+      "score": 83,
       "mentions": 7
     },
     {
@@ -170,7 +192,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 79,
-      "confidenceScore": 84,
+      "confidenceScore": 85,
       "horizon": "2026–2027",
       "direction": "up",
       "keyThesis": "Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.",
@@ -217,19 +239,18 @@
         "S-2026-07-19-04",
         "S-2026-07-23-05",
         "S-2026-07-19-03",
-        "S-2026-07-24-02",
         "S-2026-07-20-03",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-07-24T18:46:32.104Z"
+      "lastUpdated": "2026-07-24T19:27:12.449Z"
     },
     {
       "id": "hbm",
       "market": "HBM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 80,
-      "confidenceScore": 87,
+      "relevanceScore": 81,
+      "confidenceScore": 89,
       "horizon": "2026–2028",
       "direction": "up",
       "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
@@ -275,18 +296,17 @@
         "tail-2026-07-14-hbm4-cost",
         "S-2026-07-24-03",
         "S-2026-07-19-04",
-        "S-2026-07-23-03",
-        "S-2026-07-24-02"
+        "S-2026-07-23-03"
       ],
-      "lastUpdated": "2026-07-24T18:46:32.104Z"
+      "lastUpdated": "2026-07-24T19:27:12.450Z"
     },
     {
       "id": "nand",
       "market": "NAND",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 71,
-      "confidenceScore": 81,
+      "relevanceScore": 72,
+      "confidenceScore": 83,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
@@ -308,14 +328,6 @@
           "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
         },
         {
-          "id": "S-2026-07-24-02",
-          "date": "2026-07-24",
-          "title": "CXMT und YMTC wechseln von subventionierten Herausforderern zu preissetzenden Memory-Plattformen",
-          "signal": "Nachfrageimpuls",
-          "score": 59,
-          "summary": "Reuters berichtet, dass CXMT einen fünfjährigen Vertrag mit ByteDance über mehr als 7 Mrd. US-Dollar und zuvor einen Tencent-Vertrag über mehr als 3 Mrd. US-Dollar abgeschlossen hat. CXMTs Q1-Umsatz stieg um 719 Prozent auf 7,5 Mrd. US-Dollar; vergleichbare 64-GB-DDR5-Servermodule wurden teils über Samsungs rund 1.240 US-Dollar angeboten. Neue Fabs könnten CXMT auf über 600.000 Wafer pro Monat bringen."
-        },
-        {
           "id": "S-2026-07-20-05",
           "date": "2026-07-20",
           "title": "NVIDIA Storage Next und PCIe Gen7 etablieren GPU-adjacent Storage",
@@ -328,10 +340,9 @@
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nand-essd",
-        "S-2026-07-24-02",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-24T18:46:32.104Z"
+      "lastUpdated": "2026-07-24T19:27:12.450Z"
     },
     {
       "id": "enterprise_ssd",
@@ -375,7 +386,7 @@
         "tail-2026-07-14-nand-essd",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-24T18:46:32.104Z"
+      "lastUpdated": "2026-07-24T19:27:12.450Z"
     },
     {
       "id": "ai_infrastructure",
@@ -383,7 +394,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 72,
-      "confidenceScore": 85,
+      "confidenceScore": 86,
       "horizon": "2026–2030+",
       "direction": "up",
       "keyThesis": "AI Infrastructure wird durch Power, Datacenter-Kapazität, HBM, DRAM, eSSD und geopolitische Lieferketten begrenzt.",
@@ -451,14 +462,13 @@
         "S-2026-07-23-05",
         "S-2026-07-19-03",
         "S-2026-07-22-02",
-        "S-2026-07-24-02",
         "S-2026-07-19-05",
         "S-2026-07-20-05",
         "S-2026-07-21-04",
         "tail-2026-07-14-huawei-swaysure",
         "S-2026-07-21-02"
       ],
-      "lastUpdated": "2026-07-24T18:46:32.104Z"
+      "lastUpdated": "2026-07-24T19:27:12.451Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 77/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 38 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
