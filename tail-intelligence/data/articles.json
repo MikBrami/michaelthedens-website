@@ -1126,5 +1126,221 @@
         "url": "https://newsroom.ibm.com/2026-07-14-Arvind-Krishnas-Letter-to-IBM-Investors"
       }
     ]
+  },
+  {
+    "id": "S-2026-07-24-01",
+    "date": "2026-07-24",
+    "title": "Hormuz fällt auf einen Öltanker, während Brent über 100 US-Dollar steigt",
+    "category": "geopolitics",
+    "markets": [
+      "ai_infrastructure",
+      "supply_chain"
+    ],
+    "companies": [
+      "ZTE"
+    ],
+    "severity": 100,
+    "confidence": 90,
+    "signal": "geopolitical_split",
+    "summary": "Am 23. Juli passierte nur ein Öltanker die Straße von Hormuz – der niedrigste Wert seit dem 7. Mai. Gleichzeitig stieg der Verkehr am Bab al-Mandeb auf 32 Tanker, darunter zwei chinesische Supertanker. Brent überschritt 100 US-Dollar; Angriffe auf saudische Tanker verschärften den Red-Sea-Schock.",
+    "tail_analysis": "Der Energie- und Logistikschock ist asymmetrisch: Hormuz wirkt nahezu geschlossen, während selektive Red-Sea-Flüsse offen bleiben. TAIL behandelt Öl, Raffinerieprodukte, Versicherung und Hardwarefracht als gekoppelte Datacenter-Kostenrisiken.",
+    "source": "Reuters – Hormuz tanker crossings at two-month low",
+    "url": "https://www.reuters.com/world/middle-east/hormuz-tanker-crossings-slip-lowest-more-than-two-months-data-shows-2026-07-24/",
+    "content_hash": "c80bc5886277e9a0294f",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 1,
+    "estimate": "AIS- und Kpler-Daten können verdeckten Verkehr untererfassen. Mehr Verkehr am Bab al-Mandeb ist keine Normalisierung, weil Angriffe, Umwege, Versicherungsaufschläge und begrenzte Hormuz-Flüsse fortbestehen.",
+    "red_pencil": {
+      "sourceIncentive": "Kriegsparteien überzeichnen Kontrolle und Wirkung; Reeder können Sicherheitsrisiken konservativ bewerten.",
+      "alternative": "Bab al-Mandeb, Sidi Kerir, Yanbu und Eskorten sichern einen teureren Mindestfluss.",
+      "alreadyPriced": "Brent über 100 US-Dollar und höhere Frachtraten enthalten bereits einen erheblichen Risikoaufschlag.",
+      "killCondition": "Hormuz-Verkehr liegt sieben Tage über 50 Prozent des Vorkrisenniveaus und Brent fällt drei Tage unter 85 US-Dollar.",
+      "forecastChange": "P-2026-07-20-01: 92→97 Prozent. P-2026-07-23-05: 78→92 Prozent und teilbestätigt."
+    },
+    "sources": [
+      {
+        "label": "Reuters – Hormuz tanker crossings at two-month low",
+        "url": "https://www.reuters.com/world/middle-east/hormuz-tanker-crossings-slip-lowest-more-than-two-months-data-shows-2026-07-24/"
+      },
+      {
+        "label": "Reuters – Red Sea attacks and Brent above $100",
+        "url": "https://www.reuters.com/world/middle-east/trump-vows-punish-iran-houthis-attacks-red-sea-2026-07-24/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-07-24-02",
+    "date": "2026-07-24",
+    "title": "CXMT und YMTC wechseln von subventionierten Herausforderern zu preissetzenden Memory-Plattformen",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "dram",
+      "nand",
+      "ai_infrastructure",
+      "semiconductors"
+    ],
+    "companies": [
+      "Samsung",
+      "CXMT",
+      "YMTC"
+    ],
+    "severity": 100,
+    "confidence": 74,
+    "signal": "demand_up",
+    "summary": "Reuters berichtet, dass CXMT einen fünfjährigen Vertrag mit ByteDance über mehr als 7 Mrd. US-Dollar und zuvor einen Tencent-Vertrag über mehr als 3 Mrd. US-Dollar abgeschlossen hat. CXMTs Q1-Umsatz stieg um 719 Prozent auf 7,5 Mrd. US-Dollar; vergleichbare 64-GB-DDR5-Servermodule wurden teils über Samsungs rund 1.240 US-Dollar angeboten. Neue Fabs könnten CXMT auf über 600.000 Wafer pro Monat bringen.",
+    "tail_analysis": "China Memory ist keine reine Billig- oder Ersatzquelle mehr. Domestic-first-Allokation, LTAs und eigene Preisbildung schaffen eine parallele DRAM/NAND-Marktstruktur – kurzfristig zusätzliche Knappheit, ab 2027/28 zugleich ein realer Supply-Falsifier.",
+    "source": "Reuters – China memory makers gain pricing power",
+    "url": "https://www.reuters.com/world/china/chinas-memory-chip-makers-ride-ai-boom-new-power-us-scrutiny-2026-07-24/",
+    "content_hash": "8850daeb8ec68f5dd9b4",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 2,
+    "estimate": "Vertragswerte, Preisvergleiche und Kapazitätsziele beruhen teilweise auf Reuters-Quellen. CXMTs HBM liegt laut Quellen weiterhin zwei Generationen zurück; DUV-Abhängigkeit und mögliche Exportverschärfungen begrenzen den High-End-Ramp.",
+    "red_pencil": {
+      "sourceIncentive": "IPO- und industriepolitische Narrative können Wachstum und technologische Reife überzeichnen.",
+      "alternative": "Hohe Preise spiegeln lokale Knappheit und staatliche Beschaffungslenkung, nicht globale Wettbewerbsfähigkeit.",
+      "alreadyPriced": "CXMTs IPO und Ausbau waren bekannt; neu sind Kundenverträge, Preisführerschaft und Kapazitätsumfang.",
+      "killCondition": "ByteDance-/Tencent-Verträge werden dementiert, Preise fallen unter koreanische Anbieter oder neue Fabs verzögern sich über 2028.",
+      "forecastChange": "P-2026-07-14-01 wird erweitert: Listing bleibt 96 Prozent; neuer P-2026-07-24-01 für Pricing- und LTA-Macht startet bei 88 Prozent."
+    },
+    "sources": [
+      {
+        "label": "Reuters – China memory makers gain pricing power",
+        "url": "https://www.reuters.com/world/china/chinas-memory-chip-makers-ride-ai-boom-new-power-us-scrutiny-2026-07-24/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-07-24-03",
+    "date": "2026-07-24",
+    "title": "NVIDIA bindet mit 1,5 Mrd. US-Dollar US-Advanced-Packaging-Kapazität bei Amkor",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "semiconductors"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "severity": 98,
+    "confidence": 90,
+    "signal": "demand_up",
+    "summary": "Amkor und NVIDIA schlossen eine mehrjährige Vereinbarung über 1,5 Mrd. US-Dollar. NVIDIA leistet eine Vorauszahlung für den Ausbau von Advanced Packaging und Test in den USA; beide Unternehmen stimmen Roadmaps für High-Density-Interconnects und heterogene Integration ab.",
+    "tail_analysis": "Advanced Packaging wird wie HBM über Vorauszahlungen und strategische Kapazitätsverträge gesichert. US-Resilienz wandert vom Front-End zu OSAT, Test und heterogener Integration – mit stärkerer NVIDIA-Plattformbindung.",
+    "source": "Amkor – strategic partnership with NVIDIA",
+    "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-strategic-partnership-nvidia-expand",
+    "content_hash": "9ece7993d7335330e667",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 3,
+    "estimate": "Die Vereinbarung nennt keine konkreten Wafer-, Package- oder Plattformvolumina und keinen Arizona-Ramp-Termin. Eine Vorauszahlung ist gebundene Option auf Kapazität, noch keine ausgelieferte Produktion.",
+    "red_pencil": {
+      "sourceIncentive": "Partner-PR betont Resilienz und Wachstum; Volumen und Auslastung fehlen.",
+      "alternative": "Der Deal diversifiziert bestehende asiatische Kapazität, ohne kurzfristig den globalen Packaging-Engpass zu lösen.",
+      "alreadyPriced": "Amkors Arizona-Ausbau und TSMC-Partnerschaft waren bekannt; neu sind NVIDIA-Vorauszahlung und Roadmap-Kopplung.",
+      "killCondition": "Bis H1 2027 kein konkreter Bau-, Equipment- oder Kundenqualifikationsmeilenstein in Arizona.",
+      "forecastChange": "Neu P-2026-07-24-02: bindender Arizona-Kapazitätsmeilenstein bis H1 2027 – 82 Prozent."
+    },
+    "sources": [
+      {
+        "label": "Amkor – strategic partnership with NVIDIA",
+        "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-strategic-partnership-nvidia-expand"
+      },
+      {
+        "label": "Reuters – NVIDIA and Amkor $1.5bn deal",
+        "url": "https://www.reuters.com/world/asia-pacific/nvidia-amkor-strike-15-billion-chip-packaging-deal-2026-07-23/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-07-24-04",
+    "date": "2026-07-24",
+    "title": "AI-Nachfrage verbreitert sich auf Server-CPUs, Foundry, Optik und IP-Netze",
+    "category": "memory",
+    "markets": [
+      "dram",
+      "ai_infrastructure",
+      "semiconductors"
+    ],
+    "companies": [
+      "Intel"
+    ],
+    "severity": 97,
+    "confidence": 92,
+    "signal": "price_up",
+    "summary": "Intel meldete 16,1 Mrd. US-Dollar Q2-Umsatz, plus 25 Prozent; Data Center & AI wuchs 59 Prozent auf 6,3 Mrd. US-Dollar. Intel hob den 2026-Capex auf 20 Mrd. US-Dollar an. Nokia meldete 105 Prozent Wachstum bei AI-&-Cloud-Kunden, Optical Networks plus 20 Prozent und IP Networks plus 16 Prozent.",
+    "tail_analysis": "Der Infrastrukturzyklus ist nicht GPU-only: Agentic Inference erhöht CPU- und Datenvorbereitungsbedarf; Clusterwachstum zieht Optik und IP nach. Memory-Inflation wandert sichtbar in Netzwerk- und Systempreise.",
+    "source": "Intel – Q2 2026 financial results",
+    "url": "https://www.publicnow.com/view/DFD786CAC6455060E4C33C013A3EE7AB4AB38AF6",
+    "content_hash": "8363757beaaf15743070",
+    "origin": "daily-intelligence",
+    "classification": "Layer Update",
+    "rank": 4,
+    "estimate": "Intel profitiert neben Stückzahlen auch von Server-CPU-Preisen und breiter Erholung; Foundry bleibt kapitalintensiv. Nokia legt den AI-&-Cloud-Umsatz absolut nicht offen und kann Memory-Mehrkosten teilweise nur über Preiserhöhungen weitergeben.",
+    "red_pencil": {
+      "sourceIncentive": "Intel und Nokia heben AI-Treiber hervor; Segmentmix und Preiswirkung sind nicht vollständig getrennt.",
+      "alternative": "Zyklische Server- und Netzwerk-Erholung kann einen Teil des Wachstums erklären.",
+      "alreadyPriced": "CPU- und Optik-Nachfrage waren erwartet; Wachstumsraten, Guidance und Memory-Pass-through sind neu.",
+      "killCondition": "Intel DCAI wächst Q3 unter 30 Prozent oder Nokia AI-&-Cloud-Wachstum fällt unter 50 Prozent.",
+      "forecastChange": "Neu P-2026-07-24-03: Intel hält DCAI-Wachstum über 35 Prozent und mindestens 20 Mrd. US-Dollar Capex – 80 Prozent."
+    },
+    "sources": [
+      {
+        "label": "Intel – Q2 2026 financial results",
+        "url": "https://www.publicnow.com/view/DFD786CAC6455060E4C33C013A3EE7AB4AB38AF6"
+      },
+      {
+        "label": "Reuters – Intel AI-driven server demand",
+        "url": "https://www.reuters.com/business/intel-forecasts-upbeat-quarterly-revenue-profit-strong-ai-driven-server-chip-2026-07-23/"
+      },
+      {
+        "label": "Nokia – Q2 and Half Year 2026 report",
+        "url": "https://www.lse.co.uk/rns/nokia-corporation-report-for-q2-and-half-year-2026-rtaffv1ph8sx0nt.html"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-07-24-05",
+    "date": "2026-07-24",
+    "title": "Harte AI-Nachfrage entkoppelt sich weiter von Aktienkursen und Finanzierungstoleranz",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Kioxia"
+    ],
+    "severity": 93,
+    "confidence": 90,
+    "signal": "demand_up",
+    "summary": "Der Nasdaq verlor am Donnerstag mehr als 2 Prozent, Alphabet fiel nach höherem Capex und negativem Free Cashflow rund 7 Prozent. Japans Nikkei sank am 24. Juli 2,69 Prozent; Kioxia verlor 4,4 Prozent, Advantest und Tokyo Electron mehr als 5 Prozent.",
+    "tail_analysis": "Der physische AI-Zyklus bleibt stark, doch Bewertungs- und Finanzierungskapital wird selektiver. TAIL trennt künftig noch schärfer zwischen Nachfrage, nominalem Capex, realer Kapazität und Kapitalmarktrendite.",
+    "source": "Reuters – Nikkei falls on AI spending worries",
+    "url": "https://www.reuters.com/world/asia-pacific/japans-nikkei-falls-more-than-2-ai-spending-worries-2026-07-24/",
+    "content_hash": "7469be682ca0ca517c39",
+    "origin": "daily-intelligence",
+    "classification": "Falsifier",
+    "rank": 5,
+    "estimate": "Der Abverkauf ist zusätzlich durch Öl über 100 US-Dollar, höhere Renditen und Deleveraging getrieben. Er ist kein Nachweis realer Capex-Kürzungen.",
+    "red_pencil": {
+      "sourceIncentive": "Tageskurse übergewichten kurzfristige Positionierung und Öl-/Zinsschocks.",
+      "alternative": "Intel, Nokia, Amkor und China-Memory zeigen gleichzeitig harte operative Nachfrage.",
+      "alreadyPriced": "Capex- und FCF-Sorgen sind bekannt; neu ist die globale Reaktion trotz starker operativer Daten.",
+      "killCondition": "Halbleiterindizes erholen sich auf neue Hochs und mindestens zwei Hyperscaler zeigen positiven Free Cashflow trotz höherem Capex.",
+      "forecastChange": "F-2026-07-23-02 wird verstärkt; neuer P-2026-07-24-04 für anhaltende Bewertungsselektion startet bei 68 Prozent."
+    },
+    "sources": [
+      {
+        "label": "Reuters – Nikkei falls on AI spending worries",
+        "url": "https://www.reuters.com/world/asia-pacific/japans-nikkei-falls-more-than-2-ai-spending-worries-2026-07-24/"
+      },
+      {
+        "label": "Reuters – Wall Street falls as AI spending worries return",
+        "url": "https://au.marketscreener.com/news/wall-st-falls-as-tech-earnings-spark-ai-spending-worries-oil-hits-100-ce7f51dede8cf622"
+      }
+    ]
   }
 ]

@@ -2,22 +2,22 @@
   "schemaVersion": 2,
   "platformVersion": "2.0",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-07-23",
+  "dataAsOf": "2026-07-24",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-07-24T00:11:47.646Z",
-  "lastForecastRun": "2026-07-24T00:11:47.646Z",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-07-24T07:09:14.615Z",
+  "lastForecastRun": "2026-07-24T07:09:14.615Z",
   "newlyProcessedArticles": 1,
-  "totalArticles": 33,
-  "articleCount": 33,
+  "totalArticles": 38,
+  "articleCount": 38,
   "processStatus": "ok",
   "error": null,
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-07-24T00:11:45.738Z",
+    "updatedAt": "2026-07-24T07:09:12.611Z",
     "newItems": 1,
-    "totalItems": 61,
+    "totalItems": 62,
     "duplicateItems": 200,
     "relevantItems": 0,
     "sourceErrors": []
@@ -29,13 +29,13 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "33 Artikel · Datenstand 2026-07-23"
+        "detail": "38 Artikel · Datenstand 2026-07-24"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "61 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
+        "detail": "62 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -57,30 +57,37 @@
     {
       "id": "server_dram",
       "label": "Server DRAM",
-      "score": 85,
+      "score": 84,
       "status": "red",
-      "signals": 4
+      "signals": 5
     },
     {
       "id": "hbm",
       "label": "HBM",
-      "score": 82,
-      "status": "red",
-      "signals": 6
+      "score": 81,
+      "status": "orange",
+      "signals": 8
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 8
+      "signals": 10
     },
     {
       "id": "ai_infrastructure",
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 23
+      "signals": 27
+    },
+    {
+      "id": "semiconductors",
+      "label": "Semiconductors",
+      "score": 72,
+      "status": "orange",
+      "signals": 10
     },
     {
       "id": "enterprise_ssd",
@@ -94,32 +101,25 @@
       "label": "NAND",
       "score": 72,
       "status": "orange",
-      "signals": 3
+      "signals": 4
     },
     {
       "id": "supply_chain",
       "label": "Supply Chain",
       "score": 66,
       "status": "orange",
-      "signals": 6
-    },
-    {
-      "id": "semiconductors",
-      "label": "Semiconductors",
-      "score": 65,
-      "status": "orange",
       "signals": 7
     }
   ],
   "manufacturers": [
     {
-      "name": "Samsung",
-      "score": 83,
-      "mentions": 6
-    },
-    {
       "name": "SK hynix",
       "score": 83,
+      "mentions": 7
+    },
+    {
+      "name": "Samsung",
+      "score": 82,
       "mentions": 7
     },
     {
@@ -130,6 +130,11 @@
     {
       "name": "Meta",
       "score": 78,
+      "mentions": 1
+    },
+    {
+      "name": "Intel",
+      "score": 77,
       "mentions": 1
     },
     {
@@ -145,7 +150,7 @@
     {
       "name": "Nvidia",
       "score": 72,
-      "mentions": 5
+      "mentions": 6
     },
     {
       "name": "Oracle",
@@ -153,14 +158,9 @@
       "mentions": 1
     },
     {
-      "name": "Google",
+      "name": "ZTE",
       "score": 67,
       "mentions": 2
-    },
-    {
-      "name": "ZTE",
-      "score": 66,
-      "mentions": 1
     }
   ],
   "forecasts": [
@@ -184,6 +184,14 @@
           "summary": "AI-Server, höhere Speicherkapazität pro System und begrenzte Wafer-Allokation erhöhen das Risiko einer strukturellen Server-DRAM-Unterversorgung 2027."
         },
         {
+          "id": "S-2026-07-24-04",
+          "date": "2026-07-24",
+          "title": "AI-Nachfrage verbreitert sich auf Server-CPUs, Foundry, Optik und IP-Netze",
+          "signal": "Preisdruck aufwärts",
+          "score": 77,
+          "summary": "Intel meldete 16,1 Mrd. US-Dollar Q2-Umsatz, plus 25 Prozent; Data Center & AI wuchs 59 Prozent auf 6,3 Mrd. US-Dollar. Intel hob den 2026-Capex auf 20 Mrd. US-Dollar an. Nokia meldete 105 Prozent Wachstum bei AI-&-Cloud-Kunden, Optical Networks plus 20 Prozent und IP Networks plus 16 Prozent."
+        },
+        {
           "id": "tail-2026-07-14-dram-prices",
           "date": "2026-07-14",
           "title": "DRAM-Preissignale bleiben klar aufwärtsgerichtet",
@@ -198,36 +206,30 @@
           "signal": "Nachfrageimpuls",
           "score": 70,
           "summary": "Alphabet meldete US$119,8 Mrd. Q2-Umsatz; Google Cloud wuchs 82 % auf US$24,8 Mrd. Die Capex-Guidance stieg auf US$195–205 Mrd., weil Nachfrage die Kapazität übersteigt."
-        },
-        {
-          "id": "S-2026-07-19-04",
-          "date": "2026-07-19",
-          "title": "CXMT-IPO bindet Chinas DRAM-Wertschöpfung und Nachfragebasis enger zusammen",
-          "signal": "Nachfrageimpuls",
-          "score": 66,
-          "summary": "CXMT preiste 57,9 Mrd. Yuan Erlös vor Greenshoe und 579,2 Mrd. Yuan Marktwert. Investoren reichen von AMEC, Piotech, Montage, Anji und TongFu bis Alibaba Cloud, Xiaomi, ZTE, TCL, NIO und Chery."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-server-dram",
+        "S-2026-07-24-04",
         "tail-2026-07-14-dram-prices",
         "S-2026-07-23-01",
         "S-2026-07-19-04",
         "S-2026-07-23-05",
         "S-2026-07-19-03",
+        "S-2026-07-24-02",
         "S-2026-07-20-03",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-07-24T00:11:47.645Z"
+      "lastUpdated": "2026-07-24T07:09:14.615Z"
     },
     {
       "id": "hbm",
       "market": "HBM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 81,
-      "confidenceScore": 89,
+      "relevanceScore": 80,
+      "confidenceScore": 87,
       "horizon": "2026–2028",
       "direction": "up",
       "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
@@ -271,18 +273,20 @@
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nvidia-skhynix-hbm4",
         "tail-2026-07-14-hbm4-cost",
+        "S-2026-07-24-03",
         "S-2026-07-19-04",
-        "S-2026-07-23-03"
+        "S-2026-07-23-03",
+        "S-2026-07-24-02"
       ],
-      "lastUpdated": "2026-07-24T00:11:47.646Z"
+      "lastUpdated": "2026-07-24T07:09:14.615Z"
     },
     {
       "id": "nand",
       "market": "NAND",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 72,
-      "confidenceScore": 83,
+      "relevanceScore": 71,
+      "confidenceScore": 81,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
@@ -304,6 +308,14 @@
           "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
         },
         {
+          "id": "S-2026-07-24-02",
+          "date": "2026-07-24",
+          "title": "CXMT und YMTC wechseln von subventionierten Herausforderern zu preissetzenden Memory-Plattformen",
+          "signal": "Nachfrageimpuls",
+          "score": 59,
+          "summary": "Reuters berichtet, dass CXMT einen fünfjährigen Vertrag mit ByteDance über mehr als 7 Mrd. US-Dollar und zuvor einen Tencent-Vertrag über mehr als 3 Mrd. US-Dollar abgeschlossen hat. CXMTs Q1-Umsatz stieg um 719 Prozent auf 7,5 Mrd. US-Dollar; vergleichbare 64-GB-DDR5-Servermodule wurden teils über Samsungs rund 1.240 US-Dollar angeboten. Neue Fabs könnten CXMT auf über 600.000 Wafer pro Monat bringen."
+        },
+        {
           "id": "S-2026-07-20-05",
           "date": "2026-07-20",
           "title": "NVIDIA Storage Next und PCIe Gen7 etablieren GPU-adjacent Storage",
@@ -316,9 +328,10 @@
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nand-essd",
+        "S-2026-07-24-02",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-24T00:11:47.646Z"
+      "lastUpdated": "2026-07-24T07:09:14.615Z"
     },
     {
       "id": "enterprise_ssd",
@@ -362,14 +375,14 @@
         "tail-2026-07-14-nand-essd",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-24T00:11:47.646Z"
+      "lastUpdated": "2026-07-24T07:09:14.615Z"
     },
     {
       "id": "ai_infrastructure",
       "market": "AI Infrastructure",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 71,
+      "relevanceScore": 72,
       "confidenceScore": 85,
       "horizon": "2026–2030+",
       "direction": "up",
@@ -382,6 +395,14 @@
           "signal": "Kapazitätsbindung",
           "score": 77,
           "summary": "Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung."
+        },
+        {
+          "id": "S-2026-07-24-04",
+          "date": "2026-07-24",
+          "title": "AI-Nachfrage verbreitert sich auf Server-CPUs, Foundry, Optik und IP-Netze",
+          "signal": "Preisdruck aufwärts",
+          "score": 77,
+          "summary": "Intel meldete 16,1 Mrd. US-Dollar Q2-Umsatz, plus 25 Prozent; Data Center & AI wuchs 59 Prozent auf 6,3 Mrd. US-Dollar. Intel hob den 2026-Capex auf 20 Mrd. US-Dollar an. Nokia meldete 105 Prozent Wachstum bei AI-&-Cloud-Kunden, Optical Networks plus 20 Prozent und IP Networks plus 16 Prozent."
         },
         {
           "id": "S-2026-07-22-05",
@@ -398,14 +419,6 @@
           "signal": "Nachfrageimpuls",
           "score": 70,
           "summary": "Gulf-Exporte lagen H1 Juli bei 12–13,06 Mio. bpd, noch 32% unter Vorkrieg; Saudi-Arabien leitete rund 75% über Yanbu. Im Q2 fehlten weltweit etwa 5 Mio. bpd Raffineriedurchsatz, Produktbestände und Crack-Spreads signalisieren Knappheit."
-        },
-        {
-          "id": "S-2026-07-23-01",
-          "date": "2026-07-23",
-          "title": "Alphabet koppelt 82 % Cloudwachstum an US$195–205 Mrd. Capex",
-          "signal": "Nachfrageimpuls",
-          "score": 70,
-          "summary": "Alphabet meldete US$119,8 Mrd. Q2-Umsatz; Google Cloud wuchs 82 % auf US$24,8 Mrd. Die Capex-Guidance stieg auf US$195–205 Mrd., weil Nachfrage die Kapazität übersteigt."
         }
       ],
       "counterSignals": [
@@ -418,6 +431,7 @@
       ],
       "sourceArticleIds": [
         "tail-2026-07-14-nvidia-skhynix-hbm4",
+        "S-2026-07-24-04",
         "S-2026-07-22-05",
         "S-2026-07-20-02",
         "S-2026-07-23-01",
@@ -427,6 +441,8 @@
         "S-2026-07-20-01",
         "S-2026-07-21-03",
         "S-2026-07-22-04",
+        "S-2026-07-24-01",
+        "S-2026-07-24-05",
         "S-2026-07-23-03",
         "S-2026-07-19-01",
         "S-2026-07-19-02",
@@ -435,16 +451,17 @@
         "S-2026-07-23-05",
         "S-2026-07-19-03",
         "S-2026-07-22-02",
+        "S-2026-07-24-02",
         "S-2026-07-19-05",
         "S-2026-07-20-05",
         "S-2026-07-21-04",
         "tail-2026-07-14-huawei-swaysure",
         "S-2026-07-21-02"
       ],
-      "lastUpdated": "2026-07-24T00:11:47.646Z"
+      "lastUpdated": "2026-07-24T07:09:14.615Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 33 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 38 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
@@ -487,6 +504,17 @@
       "analysis": "HBM wird vom standardisierten Bauteil zum plattformspezifisch abgestimmten Engpassprodukt.",
       "source": "TAIL Knowledge Base",
       "url": "tail://knowledge-base/tail-2026-07-14-nvidia-skhynix-hbm4",
+      "score": 77,
+      "status": "orange"
+    },
+    {
+      "id": "S-2026-07-24-04",
+      "date": "2026-07-24",
+      "title": "AI-Nachfrage verbreitert sich auf Server-CPUs, Foundry, Optik und IP-Netze",
+      "summary": "Intel meldete 16,1 Mrd. US-Dollar Q2-Umsatz, plus 25 Prozent; Data Center & AI wuchs 59 Prozent auf 6,3 Mrd. US-Dollar. Intel hob den 2026-Capex auf 20 Mrd. US-Dollar an. Nokia meldete 105 Prozent Wachstum bei AI-&-Cloud-Kunden, Optical Networks plus 20 Prozent und IP Networks plus 16 Prozent.",
+      "analysis": "Der Infrastrukturzyklus ist nicht GPU-only: Agentic Inference erhöht CPU- und Datenvorbereitungsbedarf; Clusterwachstum zieht Optik und IP nach. Memory-Inflation wandert sichtbar in Netzwerk- und Systempreise.",
+      "source": "Intel – Q2 2026 financial results",
+      "url": "https://www.publicnow.com/view/DFD786CAC6455060E4C33C013A3EE7AB4AB38AF6",
       "score": 77,
       "status": "orange"
     }

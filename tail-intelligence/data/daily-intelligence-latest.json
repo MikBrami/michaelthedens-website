@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-23T08:52:35+02:00",
-  "previousRun": "2026-07-22",
+  "updatedAt": "2026-07-24T09:01:03+02:00",
+  "previousRun": "2026-07-23",
   "executivePulse": {
-    "current": 83,
-    "previous": 79,
+    "current": 82,
+    "previous": 83,
     "status": "orange",
-    "interpretation": "Alphabet, OpenAI, TI und IBM bestätigen eine breitere AI-Infrastruktur-Nachfrage von Cloud und Gigawatt-Stromverträgen bis Analog-, Power- und Enterprise-Storage. Geopolitik und externer Finanzierungsbedarf deckeln den Pulse."
+    "interpretation": "China-Memory, US-Advanced-Packaging sowie Intel- und Nokia-Zahlen verbreitern den realen AI-Infrastrukturzyklus. Öl über 100 US-Dollar und erneuter Bewertungsstress verhindern trotz harter Nachfrage ein höheres Lagebild."
   },
   "confidence": {
     "current": 99,
     "previous": 99,
-    "interpretation": "OpenAI, TI und IBM liefern Primärangaben; Alphabet und der maritime Kanal sind durch belastbare Ergebnis- und Reuters-Daten bestätigt."
+    "interpretation": "Amkor, Intel und Nokia liefern Primärangaben; Reuters bestätigt Memory-Verträge, Preisbildung, Schiffsverkehr und Marktreaktionen."
   },
   "riskPressure": {
     "current": 100,
     "previous": 100
   },
-  "momentum": "Strukturell stark beschleunigend · Cloud-Monetarisierung und Power-Verträge positiv · Kapitalintensität und Geopolitik extrem",
+  "momentum": "Strukturell verbreiternd · Memory, Packaging, CPU und Networking stark · Kapitalmarkt und Geopolitik extrem negativ",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -40,39 +40,29 @@
       "delta": 0
     },
     {
-      "name": "Hyperscaler Capex / External Funding",
-      "score": 100,
-      "delta": 7
+      "name": "CPU / Agentic Inference",
+      "score": 99,
+      "delta": 9
     },
     {
-      "name": "Cloud Monetization / Capacity Scarcity",
-      "score": 100,
-      "delta": 1
+      "name": "Optical & IP Networking",
+      "score": 98,
+      "delta": 6
     },
     {
-      "name": "Power / Ratepayer / Flexible Load",
+      "name": "Advanced Packaging / US OSAT",
+      "score": 99,
+      "delta": 5
+    },
+    {
+      "name": "Memory-Knappheit & Pricing",
+      "score": 100,
+      "delta": 5
+    },
+    {
+      "name": "China Parallel Memory Ecosystem",
       "score": 100,
       "delta": 0
-    },
-    {
-      "name": "Analog & Power Semiconductors",
-      "score": 96,
-      "delta": 8
-    },
-    {
-      "name": "Enterprise Power & Storage",
-      "score": 94,
-      "delta": 4
-    },
-    {
-      "name": "Memory-Knappheit 2026–28",
-      "score": 95,
-      "delta": 0
-    },
-    {
-      "name": "Enterprise AI Storage / Near-GPU",
-      "score": 94,
-      "delta": 4
     },
     {
       "name": "Geopolitik & Logistik",
@@ -85,26 +75,26 @@
       "delta": 0
     },
     {
-      "name": "Capital- & Credit-Market Stress",
+      "name": "Capital-Market Stress",
       "score": 100,
-      "delta": 1
+      "delta": 0
     },
     {
       "name": "Social License / Permitting",
-      "score": 97,
-      "delta": 0
+      "score": 98,
+      "delta": 1
     }
   ],
   "acceptedSignals": [
     {
-      "id": "S-2026-07-23-01",
+      "id": "S-2026-07-24-01",
       "rank": 1,
       "priorityScore": 100,
       "classification": "Architecture Update",
-      "title": "Alphabet koppelt 82 % Cloudwachstum an US$195–205 Mrd. Capex",
-      "fact": "Alphabet meldete US$119,8 Mrd. Q2-Umsatz; Google Cloud wuchs 82 % auf US$24,8 Mrd. Die Capex-Guidance stieg auf US$195–205 Mrd., weil Nachfrage die Kapazität übersteigt.",
-      "estimate": "Rund US$98 Mrd. unrealisierte Beteiligungsgewinne verzerren den Nettogewinn. Höhere Bau-, Memory- und Stromkosten können einen Teil des Capex-Anstiegs absorbieren.",
-      "tailInference": "Cloud-Monetarisierung ist real, aber der Ausbau wird kapitalmarkt- und kapazitätsintensiver. Hyperscaler-Funding wird zum eigenen Infrastruktur-Layer.",
+      "title": "Hormuz fällt auf einen Öltanker, während Brent über 100 US-Dollar steigt",
+      "fact": "Am 23. Juli passierte nur ein Öltanker die Straße von Hormuz – der niedrigste Wert seit dem 7. Mai. Gleichzeitig stieg der Verkehr am Bab al-Mandeb auf 32 Tanker, darunter zwei chinesische Supertanker. Brent überschritt 100 US-Dollar; Angriffe auf saudische Tanker verschärften den Red-Sea-Schock.",
+      "estimate": "AIS- und Kpler-Daten können verdeckten Verkehr untererfassen. Mehr Verkehr am Bab al-Mandeb ist keine Normalisierung, weil Angriffe, Umwege, Versicherungsaufschläge und begrenzte Hormuz-Flüsse fortbestehen.",
+      "tailInference": "Der Energie- und Logistikschock ist asymmetrisch: Hormuz wirkt nahezu geschlossen, während selektive Red-Sea-Flüsse offen bleiben. TAIL behandelt Öl, Raffinerieprodukte, Versicherung und Hardwarefracht als gekoppelte Datacenter-Kostenrisiken.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -121,66 +111,70 @@
         "ForecastImpact": 10
       },
       "redPencil": {
-        "sourceIncentive": "Alphabet betont Nachfrage; Beteiligungsgewinne schönen Profit.",
-        "alternative": "TPU-Verkäufe sowie Preis-/Mixeffekte treiben Cloud mit.",
-        "alreadyPriced": "Hohe Ausgaben waren erwartet; neu sind Guidance und Cloud-Beschleunigung.",
-        "killCondition": "Capex unter US$195 Mrd. oder Q3-Cloudwachstum unter 40 %.",
-        "forecastChange": "Neu P-2026-07-23-01 – 84 %."
+        "sourceIncentive": "Kriegsparteien überzeichnen Kontrolle und Wirkung; Reeder können Sicherheitsrisiken konservativ bewerten.",
+        "alternative": "Bab al-Mandeb, Sidi Kerir, Yanbu und Eskorten sichern einen teureren Mindestfluss.",
+        "alreadyPriced": "Brent über 100 US-Dollar und höhere Frachtraten enthalten bereits einen erheblichen Risikoaufschlag.",
+        "killCondition": "Hormuz-Verkehr liegt sieben Tage über 50 Prozent des Vorkrisenniveaus und Brent fällt drei Tage unter 85 US-Dollar.",
+        "forecastChange": "P-2026-07-20-01: 92→97 Prozent. P-2026-07-23-05: 78→92 Prozent und teilbestätigt."
       },
       "sources": [
         {
-          "label": "Reuters – Alphabet Q2",
-          "url": "https://www.reuters.com/business/google-quarterly-cloud-revenue-growth-beats-expectations-2026-07-22/"
+          "label": "Reuters – Hormuz tanker crossings at two-month low",
+          "url": "https://www.reuters.com/world/middle-east/hormuz-tanker-crossings-slip-lowest-more-than-two-months-data-shows-2026-07-24/"
+        },
+        {
+          "label": "Reuters – Red Sea attacks and Brent above $100",
+          "url": "https://www.reuters.com/world/middle-east/trump-vows-punish-iran-houthis-attacks-red-sea-2026-07-24/"
         }
       ]
     },
     {
-      "id": "S-2026-07-23-02",
+      "id": "S-2026-07-24-02",
       "rank": 2,
-      "priorityScore": 98,
+      "priorityScore": 100,
       "classification": "Architecture Update",
-      "title": "OpenAI Camellia: 3,2 GW, 25 Jahre und flexible Gigawatt-Last",
-      "fact": "OpenAI kontrahiert für Project Camellia in Georgia 3,2 GW, phasenweise 2028–2032, trägt Infrastruktur- und Stromkosten und kann laut Versorger bis zu 1 GW Last flexibel reduzieren.",
-      "estimate": "Vertrag und Reservierung sind noch kein gebauter Campus; Genehmigung, Erzeugung, Netz und Finanzierung bleiben offen.",
-      "tailInference": "AI-Campusse werden steuerbare Industrieanlagen: langfristiger Power-Take, Ratepayer-Schutz, Sicherheiten und Demand Response werden Standard.",
+      "title": "CXMT und YMTC wechseln von subventionierten Herausforderern zu preissetzenden Memory-Plattformen",
+      "fact": "Reuters berichtet, dass CXMT einen fünfjährigen Vertrag mit ByteDance über mehr als 7 Mrd. US-Dollar und zuvor einen Tencent-Vertrag über mehr als 3 Mrd. US-Dollar abgeschlossen hat. CXMTs Q1-Umsatz stieg um 719 Prozent auf 7,5 Mrd. US-Dollar; vergleichbare 64-GB-DDR5-Servermodule wurden teils über Samsungs rund 1.240 US-Dollar angeboten. Neue Fabs könnten CXMT auf über 600.000 Wafer pro Monat bringen.",
+      "estimate": "Vertragswerte, Preisvergleiche und Kapazitätsziele beruhen teilweise auf Reuters-Quellen. CXMTs HBM liegt laut Quellen weiterhin zwei Generationen zurück; DUV-Abhängigkeit und mögliche Exportverschärfungen begrenzen den High-End-Ramp.",
+      "tailInference": "China Memory ist keine reine Billig- oder Ersatzquelle mehr. Domestic-first-Allokation, LTAs und eigene Preisbildung schaffen eine parallele DRAM/NAND-Marktstruktur – kurzfristig zusätzliche Knappheit, ab 2027/28 zugleich ein realer Supply-Falsifier.",
       "admissionGate": {
         "Freshness": true,
-        "Evidence": true,
+        "Evidence": "Reuters multi-source investigation",
         "Materiality": true,
         "Causality": true,
         "Falsifiability": true
       },
       "scoreBreakdown": {
         "Materiality": 30,
-        "Evidence": 20,
+        "Evidence": 19,
         "Novelty": 15,
         "Breadth": 15,
-        "Urgency": 9,
-        "ForecastImpact": 9
+        "Urgency": 10,
+        "ForecastImpact": 11
       },
       "redPencil": {
-        "sourceIncentive": "OpenAI und Georgia Power betonen Akzeptanz.",
-        "alternative": "Die Leistung wird über Jahre bereitgestellt und kann schrumpfen.",
-        "alreadyPriced": "Großcampusse waren bekannt; Vertragsstruktur und flexible Last sind neu.",
-        "killCondition": "Bis Ende 2027 kein bindender Meilenstein oder Scope unter 2,5 GW.",
-        "forecastChange": "Neu P-2026-07-23-02 – 72 %."
+        "sourceIncentive": "IPO- und industriepolitische Narrative können Wachstum und technologische Reife überzeichnen.",
+        "alternative": "Hohe Preise spiegeln lokale Knappheit und staatliche Beschaffungslenkung, nicht globale Wettbewerbsfähigkeit.",
+        "alreadyPriced": "CXMTs IPO und Ausbau waren bekannt; neu sind Kundenverträge, Preisführerschaft und Kapazitätsumfang.",
+        "killCondition": "ByteDance-/Tencent-Verträge werden dementiert, Preise fallen unter koreanische Anbieter oder neue Fabs verzögern sich über 2028.",
+        "forecastChange": "P-2026-07-14-01 wird erweitert: Listing bleibt 96 Prozent; neuer P-2026-07-24-01 für Pricing- und LTA-Macht startet bei 88 Prozent."
       },
       "sources": [
         {
-          "label": "OpenAI – Project Camellia",
-          "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+          "label": "Reuters – China memory makers gain pricing power",
+          "url": "https://www.reuters.com/world/china/chinas-memory-chip-makers-ride-ai-boom-new-power-us-scrutiny-2026-07-24/"
         }
       ]
     },
     {
-      "id": "S-2026-07-23-03",
+      "id": "S-2026-07-24-03",
       "rank": 3,
-      "priorityScore": 94,
-      "classification": "Layer Update",
-      "title": "Texas Instruments bestätigt AI-Nachfrage im Analog- und Power-Layer",
-      "fact": "TI meldete US$5,46 Mrd. Umsatz, +23 % YoY. Industrie, Datacenter und Automotive führten; Analog wuchs 26 %, Embedded 16 %. Q3-Guidance: US$5,65–6,15 Mrd.",
-      "estimate": "TI quantifiziert Datacenter nicht; Industrie-/Auto-Restocking kann mitwirken.",
-      "tailInference": "Der AI-Zyklus verbreitert sich von GPU/HBM zu Power Management, Signal Chain und Embedded Control.",
+      "priorityScore": 98,
+      "classification": "Architecture Update",
+      "title": "NVIDIA bindet mit 1,5 Mrd. US-Dollar US-Advanced-Packaging-Kapazität bei Amkor",
+      "fact": "Amkor und NVIDIA schlossen eine mehrjährige Vereinbarung über 1,5 Mrd. US-Dollar. NVIDIA leistet eine Vorauszahlung für den Ausbau von Advanced Packaging und Test in den USA; beide Unternehmen stimmen Roadmaps für High-Density-Interconnects und heterogene Integration ab.",
+      "estimate": "Die Vereinbarung nennt keine konkreten Wafer-, Package- oder Plattformvolumina und keinen Arizona-Ramp-Termin. Eine Vorauszahlung ist gebundene Option auf Kapazität, noch keine ausgelieferte Produktion.",
+      "tailInference": "Advanced Packaging wird wie HBM über Vorauszahlungen und strategische Kapazitätsverträge gesichert. US-Resilienz wandert vom Front-End zu OSAT, Test und heterogener Integration – mit stärkerer NVIDIA-Plattformbindung.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -189,36 +183,40 @@
         "Falsifiability": true
       },
       "scoreBreakdown": {
-        "Materiality": 27,
+        "Materiality": 29,
         "Evidence": 20,
-        "Novelty": 14,
+        "Novelty": 15,
         "Breadth": 14,
         "Urgency": 9,
-        "ForecastImpact": 10
+        "ForecastImpact": 11
       },
       "redPencil": {
-        "sourceIncentive": "Datacenter wird genannt, aber nicht beziffert.",
-        "alternative": "Breite Zykluserholung kann dominieren.",
-        "alreadyPriced": "Analog-Erholung erwartet; Stärke und Guidance sind neu.",
-        "killCondition": "Q3 unter US$5,65 Mrd. oder Datacenter nicht mehr Wachstumstreiber.",
-        "forecastChange": "Neu P-2026-07-23-03 – 82 %."
+        "sourceIncentive": "Partner-PR betont Resilienz und Wachstum; Volumen und Auslastung fehlen.",
+        "alternative": "Der Deal diversifiziert bestehende asiatische Kapazität, ohne kurzfristig den globalen Packaging-Engpass zu lösen.",
+        "alreadyPriced": "Amkors Arizona-Ausbau und TSMC-Partnerschaft waren bekannt; neu sind NVIDIA-Vorauszahlung und Roadmap-Kopplung.",
+        "killCondition": "Bis H1 2027 kein konkreter Bau-, Equipment- oder Kundenqualifikationsmeilenstein in Arizona.",
+        "forecastChange": "Neu P-2026-07-24-02: bindender Arizona-Kapazitätsmeilenstein bis H1 2027 – 82 Prozent."
       },
       "sources": [
         {
-          "label": "TI – Q2 2026",
-          "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-07-22-ti-reports-second-quarter-2026-financial-results-and-shareholder-returns.html"
+          "label": "Amkor – strategic partnership with NVIDIA",
+          "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-strategic-partnership-nvidia-expand"
+        },
+        {
+          "label": "Reuters – NVIDIA and Amkor $1.5bn deal",
+          "url": "https://www.reuters.com/world/asia-pacific/nvidia-amkor-strike-15-billion-chip-packaging-deal-2026-07-23/"
         }
       ]
     },
     {
-      "id": "S-2026-07-23-04",
+      "id": "S-2026-07-24-04",
       "rank": 4,
-      "priorityScore": 93,
-      "classification": "Falsifier",
-      "title": "China-VLCCs halten Bab al-Mandeb selektiv offen",
-      "fact": "Zwei chinesisch gecharterte VLCCs mit je rund 2 Mio. Barrel saudischem Rohöl steuerten Bab al-Mandeb an. Verkehr bleibt reduziert; im Golf warteten zuletzt rund 253 Tanker.",
-      "estimate": "Zwei priorisierte Fahrten sind keine Normalisierung; sichere Passage ist noch nicht bestätigt.",
-      "tailInference": "Eine vollständige Doppelblockade ist falsifiziert. Selektive Flüsse passieren, während Backlog, Fracht, Versicherung und Lieferzeiten extrem bleiben.",
+      "priorityScore": 97,
+      "classification": "Layer Update",
+      "title": "AI-Nachfrage verbreitert sich auf Server-CPUs, Foundry, Optik und IP-Netze",
+      "fact": "Intel meldete 16,1 Mrd. US-Dollar Q2-Umsatz, plus 25 Prozent; Data Center & AI wuchs 59 Prozent auf 6,3 Mrd. US-Dollar. Intel hob den 2026-Capex auf 20 Mrd. US-Dollar an. Nokia meldete 105 Prozent Wachstum bei AI-&-Cloud-Kunden, Optical Networks plus 20 Prozent und IP Networks plus 16 Prozent.",
+      "estimate": "Intel profitiert neben Stückzahlen auch von Server-CPU-Preisen und breiter Erholung; Foundry bleibt kapitalintensiv. Nokia legt den AI-&-Cloud-Umsatz absolut nicht offen und kann Memory-Mehrkosten teilweise nur über Preiserhöhungen weitergeben.",
+      "tailInference": "Der Infrastrukturzyklus ist nicht GPU-only: Agentic Inference erhöht CPU- und Datenvorbereitungsbedarf; Clusterwachstum zieht Optik und IP nach. Memory-Inflation wandert sichtbar in Netzwerk- und Systempreise.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -228,35 +226,43 @@
       },
       "scoreBreakdown": {
         "Materiality": 28,
-        "Evidence": 18,
-        "Novelty": 15,
-        "Breadth": 14,
+        "Evidence": 20,
+        "Novelty": 14,
+        "Breadth": 15,
         "Urgency": 9,
-        "ForecastImpact": 9
+        "ForecastImpact": 11
       },
       "redPencil": {
-        "sourceIncentive": "China/Saudi-Arabien zeigen Versorgungssicherheit; Houthis das Gegenteil.",
-        "alternative": "Koordinierte Ausnahmen statt Marktöffnung.",
-        "alreadyPriced": "Selektiver Transit war möglich; konkrete VLCCs sind neu.",
-        "killCondition": "Schiffe kehren um oder sieben Tage folgt keine weitere Großpassage.",
-        "forecastChange": "Neu F-2026-07-23-01 und P-2026-07-23-05 – 78 %."
+        "sourceIncentive": "Intel und Nokia heben AI-Treiber hervor; Segmentmix und Preiswirkung sind nicht vollständig getrennt.",
+        "alternative": "Zyklische Server- und Netzwerk-Erholung kann einen Teil des Wachstums erklären.",
+        "alreadyPriced": "CPU- und Optik-Nachfrage waren erwartet; Wachstumsraten, Guidance und Memory-Pass-through sind neu.",
+        "killCondition": "Intel DCAI wächst Q3 unter 30 Prozent oder Nokia AI-&-Cloud-Wachstum fällt unter 50 Prozent.",
+        "forecastChange": "Neu P-2026-07-24-03: Intel hält DCAI-Wachstum über 35 Prozent und mindestens 20 Mrd. US-Dollar Capex – 80 Prozent."
       },
       "sources": [
         {
-          "label": "Reuters – China-VLCCs",
-          "url": "https://www.reuters.com/business/energy/chinese-supertankers-carrying-saudi-oil-head-towards-bab-al-mandeb-2026-07-23/"
+          "label": "Intel – Q2 2026 financial results",
+          "url": "https://www.publicnow.com/view/DFD786CAC6455060E4C33C013A3EE7AB4AB38AF6"
+        },
+        {
+          "label": "Reuters – Intel AI-driven server demand",
+          "url": "https://www.reuters.com/business/intel-forecasts-upbeat-quarterly-revenue-profit-strong-ai-driven-server-chip-2026-07-23/"
+        },
+        {
+          "label": "Nokia – Q2 and Half Year 2026 report",
+          "url": "https://www.lse.co.uk/rns/nokia-corporation-report-for-q2-and-half-year-2026-rtaffv1ph8sx0nt.html"
         }
       ]
     },
     {
-      "id": "S-2026-07-23-05",
+      "id": "S-2026-07-24-05",
       "rank": 5,
-      "priorityScore": 92,
-      "classification": "Layer Update",
-      "title": "IBM Power und Storage wachsen auf Rekordtempo",
-      "fact": "Distributed Infrastructure wuchs 37 %. Power und Storage erreichten Rekordtempo und nahezu US$500 Mio. Backlog. Kunden zogen Server-, Storage- und Memory-Käufe vor erwarteten Preissteigerungen vor.",
-      "estimate": "Gesamt-Infrastructure fiel wegen IBM Z um 7 %. Der kombinierte Backlog trennt Storage nicht aus und kann Vorzieheffekte enthalten.",
-      "tailInference": "Preis- und Supply-Druck erreicht den klassischen Enterprise-Markt – ein hartes Gegensignal zur reinen Hyperscaler-Erzählung.",
+      "priorityScore": 93,
+      "classification": "Falsifier",
+      "title": "Harte AI-Nachfrage entkoppelt sich weiter von Aktienkursen und Finanzierungstoleranz",
+      "fact": "Der Nasdaq verlor am Donnerstag mehr als 2 Prozent, Alphabet fiel nach höherem Capex und negativem Free Cashflow rund 7 Prozent. Japans Nikkei sank am 24. Juli 2,69 Prozent; Kioxia verlor 4,4 Prozent, Advantest und Tokyo Electron mehr als 5 Prozent.",
+      "estimate": "Der Abverkauf ist zusätzlich durch Öl über 100 US-Dollar, höhere Renditen und Deleveraging getrieben. Er ist kein Nachweis realer Capex-Kürzungen.",
+      "tailInference": "Der physische AI-Zyklus bleibt stark, doch Bewertungs- und Finanzierungskapital wird selektiver. TAIL trennt künftig noch schärfer zwischen Nachfrage, nominalem Capex, realer Kapazität und Kapitalmarktrendite.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -265,186 +271,193 @@
         "Falsifiability": true
       },
       "scoreBreakdown": {
-        "Materiality": 27,
-        "Evidence": 20,
+        "Materiality": 25,
+        "Evidence": 18,
         "Novelty": 14,
-        "Breadth": 13,
-        "Urgency": 8,
-        "ForecastImpact": 10
+        "Breadth": 14,
+        "Urgency": 10,
+        "ForecastImpact": 12
       },
       "redPencil": {
-        "sourceIncentive": "IBM hebt positive Subsegmente in einem schwachen Quartal hervor.",
-        "alternative": "Vorzieheffekte können Q3 kannibalisieren.",
-        "alreadyPriced": "Knappheit bekannt; Enterprise-Backlog ist neu.",
-        "killCondition": "Q3 nicht zweistellig oder Backlog unter US$300 Mio.",
-        "forecastChange": "Neu P-2026-07-23-04 – 68 %."
+        "sourceIncentive": "Tageskurse übergewichten kurzfristige Positionierung und Öl-/Zinsschocks.",
+        "alternative": "Intel, Nokia, Amkor und China-Memory zeigen gleichzeitig harte operative Nachfrage.",
+        "alreadyPriced": "Capex- und FCF-Sorgen sind bekannt; neu ist die globale Reaktion trotz starker operativer Daten.",
+        "killCondition": "Halbleiterindizes erholen sich auf neue Hochs und mindestens zwei Hyperscaler zeigen positiven Free Cashflow trotz höherem Capex.",
+        "forecastChange": "F-2026-07-23-02 wird verstärkt; neuer P-2026-07-24-04 für anhaltende Bewertungsselektion startet bei 68 Prozent."
       },
       "sources": [
         {
-          "label": "IBM – Q2 2026",
-          "url": "https://newsroom.ibm.com/2026-07-22-IBM-RELEASES-SECOND-QUARTER-RESULTS"
+          "label": "Reuters – Nikkei falls on AI spending worries",
+          "url": "https://www.reuters.com/world/asia-pacific/japans-nikkei-falls-more-than-2-ai-spending-worries-2026-07-24/"
         },
         {
-          "label": "IBM – Investor Letter",
-          "url": "https://newsroom.ibm.com/2026-07-14-Arvind-Krishnas-Letter-to-IBM-Investors"
+          "label": "Reuters – Wall Street falls as AI spending worries return",
+          "url": "https://au.marketscreener.com/news/wall-st-falls-as-tech-earnings-spark-ai-spending-worries-oil-hits-100-ce7f51dede8cf622"
         }
       ]
     }
   ],
   "predictionLogUpdates": [
     {
-      "id": "P-2026-07-13-01",
-      "status": "confirmed",
-      "forecast": "Hormuz-Verkehr bleibt mindestens bis 23. Juli stark unter Normalniveau.",
-      "confidence": 99,
-      "previousConfidence": 99,
-      "nextReview": "2026-07-27",
-      "history": "78→86→92→96→97→98→99; Horizont am 23.07. als Treffer erreicht. Historie bleibt erhalten.",
-      "redPencil": "Treffer sagt nichts über Dauer nach dem Horizont.",
-      "killCondition": "Folgeprognose P-2026-07-23-05 übernimmt."
-    },
-    {
       "id": "P-2026-07-20-01",
       "status": "changed",
       "forecast": "Brent bleibt bis Ende Juli überwiegend über US$85, solange Hormuz nicht nachhaltig normalisiert.",
-      "confidence": 92,
-      "previousConfidence": 84,
+      "confidence": 97,
+      "previousConfidence": 92,
       "nextReview": "2026-07-27",
-      "history": "82→78→84→92; Brent über US$96 und Tanker-Backlog.",
-      "redPencil": "Waffenstillstand oder Reserven können Aufschlag schnell reduzieren.",
-      "killCondition": "Drei Tage Brent unter US$80 oder Verkehr über 80 %."
-    },
-    {
-      "id": "P-2026-07-23-01",
-      "status": "new",
-      "forecast": "Alphabet investiert 2026 mindestens US$195 Mrd.; Google Cloud wächst Q3 über 50 %.",
-      "confidence": 84,
-      "previousConfidence": null,
-      "nextReview": "2026-10-31",
-      "history": "Erstellt 23.07. nach Q2 und Capex-Guidance.",
-      "redPencil": "Basis-/TPU-/Mixeffekte und Bauverzögerungen.",
-      "killCondition": "Capex unter US$195 Mrd. oder Cloudwachstum unter 50 %."
-    },
-    {
-      "id": "P-2026-07-23-02",
-      "status": "new",
-      "forecast": "Camellia erreicht bis Ende 2027 einen bindenden Meilenstein bei mindestens 2,5 GW Scope.",
-      "confidence": 72,
-      "previousConfidence": null,
-      "nextReview": "2026-12-31",
-      "history": "Erstellt 23.07. nach 3,2-GW-Vertrag.",
-      "redPencil": "Vertrag ist kein FID.",
-      "killCondition": "Scope unter 2,5 GW oder kein Meilenstein bis Ende 2027."
-    },
-    {
-      "id": "P-2026-07-23-03",
-      "status": "new",
-      "forecast": "TI erreicht Q3 mindestens US$5,65 Mrd. und nennt Datacenter erneut als Wachstumstreiber.",
-      "confidence": 82,
-      "previousConfidence": null,
-      "nextReview": "2026-10-31",
-      "history": "Erstellt 23.07.",
-      "redPencil": "Datacenter-Anteil nicht offengelegt.",
-      "killCondition": "Umsatz unter Guidance-Untergrenze oder keine Datacenter-Nennung."
-    },
-    {
-      "id": "P-2026-07-23-04",
-      "status": "new",
-      "forecast": "IBM Distributed Infrastructure wächst Q3 zweistellig; Power-/Storage-Backlog bleibt ≥US$400 Mio.",
-      "confidence": 68,
-      "previousConfidence": null,
-      "nextReview": "2026-10-31",
-      "history": "Erstellt 23.07.",
-      "redPencil": "Vorzieheffekt kann Q3 schwächen.",
-      "killCondition": "Kein zweistelliges Wachstum oder Backlog unter US$400 Mio."
+      "history": "82→78→84→92→97; Brent über US$100 und nur ein sichtbarer Öltanker durch Hormuz.",
+      "redPencil": "Waffenstillstand, strategische Reserven oder schnelle Verkehrsnormalisierung können den Aufschlag abrupt senken.",
+      "killCondition": "Drei Tage Brent unter US$85 oder Hormuz-Verkehr über 50 Prozent."
     },
     {
       "id": "P-2026-07-23-05",
-      "status": "new",
-      "forecast": "Hormuz bleibt bis 27. Juli unter 50 %; mindestens ein China-charterter Saudi-VLCC passiert Bab al-Mandeb.",
-      "confidence": 78,
-      "previousConfidence": null,
+      "status": "partially_confirmed",
+      "forecast": "Hormuz bleibt bis 27. Juli unter 50 Prozent; mindestens ein China-charterter Saudi-VLCC passiert Bab al-Mandeb.",
+      "confidence": 92,
+      "previousConfidence": 78,
       "nextReview": "2026-07-27",
-      "history": "Folgeprognose nach P-2026-07-13-01.",
-      "redPencil": "AIS unvollständig; VLCCs können umkehren.",
-      "killCondition": "Drei Tage Hormuz über 80 % oder keine VLCC-Passage."
+      "history": "78→92; Hormuz nahe Stillstand, Bab al-Mandeb mit 32 Tankern und zwei chinesischen Supertankern. Exakte Charter-/Ladungsbestätigung bleibt offen.",
+      "redPencil": "AIS unvollständig; einzelne politisch koordinierte Fahrten sind keine breite Marktöffnung.",
+      "killCondition": "Drei Tage Hormuz über 50 Prozent oder die gemeldeten China-VLCCs passieren Bab al-Mandeb nicht."
+    },
+    {
+      "id": "P-2026-07-14-01",
+      "status": "changed",
+      "forecast": "CXMT listet am 27. Juli; Mittel und strategische LTAs stärken Mainstream-/Server-DRAM, ohne High-End-HBM vor 2028/29 zu schließen.",
+      "confidence": 97,
+      "previousConfidence": 96,
+      "nextReview": "2026-07-27",
+      "history": "82→91→94→96→97; neue ByteDance-/Tencent-Verträge und Pricing-Power.",
+      "redPencil": "Kapital, lokale Knappheit und Staatslenkung sind keine Leading-Edge-Yields.",
+      "killCondition": "IPO verschoben, Großverträge dementiert oder keine Capacity-/Technology-Ramp."
+    },
+    {
+      "id": "P-2026-07-24-01",
+      "status": "new",
+      "forecast": "CXMT hält im Q3 2026 bei ausgewählten DDR5-Serverprodukten Preise auf oder über koreanischem Niveau und bindet weitere chinesische Hyperscaler über mehrjährige Verträge.",
+      "confidence": 88,
+      "previousConfidence": null,
+      "nextReview": "2026-09-30",
+      "history": "Erstellt 24.07. nach Reuters-Multi-Source-Bericht.",
+      "redPencil": "Lokale Knappheit, Staatslenkung und Vertragsmix können Preisvergleiche verzerren.",
+      "killCondition": "CXMT-Preise fallen deutlich unter Samsung/SK hynix oder kein weiterer LTA-/Hyperscaler-Nachweis."
+    },
+    {
+      "id": "P-2026-07-24-02",
+      "status": "new",
+      "forecast": "NVIDIA und Amkor erreichen bis H1 2027 einen öffentlich belegten Arizona-Kapazitäts-, Equipment- oder Qualifikationsmeilenstein.",
+      "confidence": 82,
+      "previousConfidence": null,
+      "nextReview": "2026-12-31",
+      "history": "Erstellt 24.07. nach 1,5-Mrd.-US-Dollar-Vorauszahlungsvereinbarung.",
+      "redPencil": "Vorauszahlung ist noch kein produktiver Output; Bau und Tooling können rutschen.",
+      "killCondition": "Bis 30.06.2027 kein konkreter Meilenstein oder deutliche Reduktion des US-Scope."
+    },
+    {
+      "id": "P-2026-07-24-03",
+      "status": "new",
+      "forecast": "Intel hält im Q3 2026 Data-Center-&-AI-Wachstum über 35 Prozent und 2026-Capex von mindestens 20 Mrd. US-Dollar.",
+      "confidence": 80,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 24.07. nach Q2-Ergebnis und Q3-Guidance.",
+      "redPencil": "CPU-ASP, Restocking und interne Foundry-Umsätze können die Qualität des Wachstums verzerren.",
+      "killCondition": "DCAI-Wachstum unter 35 Prozent oder Capex-Guidance unter 20 Mrd. US-Dollar."
+    },
+    {
+      "id": "P-2026-07-24-04",
+      "status": "new",
+      "forecast": "AI- und Halbleiteraktien bleiben bis Ende August selektiv unter Druck, solange Capex steigt, Free Cashflow sinkt und Öl über 90 US-Dollar bleibt.",
+      "confidence": 68,
+      "previousConfidence": null,
+      "nextReview": "2026-08-31",
+      "history": "Erstellt 24.07. nach globalem Tech-/Semiconductor-Abverkauf.",
+      "redPencil": "Starke Earnings und Positionsbereinigung können schnelle Gegenbewegungen auslösen.",
+      "killCondition": "SOX und Nasdaq markieren neue Hochs, während Öl unter 90 US-Dollar fällt oder zwei Hyperscaler positiven FCF zeigen."
     }
   ],
   "falsifierUpdates": [
     {
-      "id": "F-2026-07-12-01",
-      "status": "active_weakened",
-      "claim": "Alternative Routen ermöglichen Mindesttransit.",
-      "update": "China-VLCCs bestätigen selektive Passage; Hormuz und Backlog bleiben extrem.",
-      "nextReview": "2026-07-27"
-    },
-    {
       "id": "F-2026-07-23-01",
-      "status": "new_active",
+      "status": "active_strengthened",
       "claim": "Eine vollständige gleichzeitige Sperre von Hormuz und Bab al-Mandeb ist falsifiziert.",
-      "update": "Selektive Großtransporte bleiben möglich; wirtschaftliche Störung bleibt schwer.",
+      "update": "Hormuz verzeichnete nur einen Öltanker, Bab al-Mandeb dagegen 32 Tanker einschließlich zweier chinesischer Supertanker. Selektive Flüsse bleiben möglich.",
       "nextReview": "2026-07-27"
     },
     {
       "id": "F-2026-07-23-02",
-      "status": "new_watch",
-      "claim": "Hyperscaler können AI dauerhaft nur aus normalem operativem Cashflow finanzieren.",
-      "update": "Alphabet kombiniert Cloudwachstum mit negativer FCF-Phase und höherem extern finanziertem Capex.",
+      "status": "active_strengthened",
+      "claim": "Hyperscaler und AI-Infrastruktur können nicht unbegrenzt ohne FCF- und Bewertungsdisziplin finanziert werden.",
+      "update": "Alphabet verlor trotz Cloudwachstum und Kapazitätsknappheit deutlich; Nasdaq, Nikkei und Kioxia folgten. Operative Nachfrage bleibt stark.",
+      "nextReview": "2026-08-05"
+    },
+    {
+      "id": "F-2026-07-24-01",
+      "status": "new_active",
+      "claim": "China-Memory ist lediglich eine billige, technologisch irrelevante Zweitquelle.",
+      "update": "CXMT setzt lokal Preise teils über Samsung, schließt Multimilliarden-LTAs und plant mehr als 600.000 Wafer pro Monat; High-End-HBM bleibt dennoch zurück.",
+      "nextReview": "2026-09-30"
+    },
+    {
+      "id": "F-2026-07-24-02",
+      "status": "new_active",
+      "claim": "Der AI-Infrastrukturzyklus wird fast ausschließlich von GPUs getragen.",
+      "update": "Intel DCAI +59 Prozent und Nokia AI-&-Cloud +105 Prozent bestätigen CPU-, Optik- und IP-Netzwerk-Nachfrage.",
       "nextReview": "2026-10-31"
     }
   ],
   "auditTrailAdditions": [
     {
-      "date": "2026-07-23",
+      "date": "2026-07-24",
       "type": "Primary-source promotion",
-      "item": "OpenAI, TI und IBM direkt; Reuters ergänzt Alphabet und maritime Flüsse.",
-      "action": "Fakten, Schätzungen und Inferenz getrennt."
+      "item": "Amkor, Intel und Nokia direkt; Reuters ergänzt China-Memory, maritime Flüsse und Marktreaktion.",
+      "action": "Fakten, Schätzungen und TAIL-Inferenz getrennt; anonyme Quellen ausdrücklich markiert."
     },
     {
-      "date": "2026-07-23",
-      "type": "Forecast hit preserved",
-      "item": "P-2026-07-13-01 erreicht den Horizont als Treffer.",
-      "action": "Historie erhalten; Folgeprognose eröffnet."
+      "date": "2026-07-24",
+      "type": "Knowledge Base auto-sync regression test",
+      "item": "Erster Tageslauf nach der Reparatur der automatischen Dateierkennung.",
+      "action": "Tagesdatei, Latest-Zeiger und Index werden gemeinsam aktualisiert; KB-Frische wird nach Deployment geprüft."
     },
     {
-      "date": "2026-07-23",
-      "type": "Memory/Storage hard signal",
-      "item": "IBM meldet Rekordtempo, Backlog und vorgezogene Server-/Storage-/Memory-Käufe.",
-      "action": "Enterprise-Layer aktualisiert; keine künstliche HBM-/NAND-/eSSD-Preisänderung."
+      "date": "2026-07-24",
+      "type": "Storage scope",
+      "item": "YMTC/CXMT liefern ein strategisches Memory-Signal, aber keinen separaten Enterprise-SSD-Vertragspreis.",
+      "action": "NAND-/eSSD-Forecasts nicht künstlich neu bepreist."
     }
   ],
   "runHistoryAdditions": [
     {
-      "date": "2026-07-23",
-      "pulse": 83,
+      "date": "2026-07-24",
+      "pulse": 82,
       "confidence": 99,
-      "note": "Alphabet/OpenAI skalieren Cloud, Kapital und Gigawatt-Power; TI/IBM verbreitern den Zyklus. Selektiver China-Transit falsifiziert die Vollblockade, nicht den schweren Chokepoint-Schock."
+      "note": "China-Memory und US-Packaging skalieren; Intel/Nokia verbreitern AI-Nachfrage auf CPU und Networking. Hormuz/Red Sea und Kapitalmarktstress bleiben extrem."
     }
   ],
   "nextCatalysts": [
     {
       "date": "2026-07-27",
-      "event": "Hormuz/Bab al-Mandeb, Brent, Versicherungen und China-VLCCs"
+      "event": "CXMT-Listing, Pricing und Hyperscaler-LTAs"
     },
     {
       "date": "2026-07-27",
-      "event": "CXMT-Listing und DRAM-Ramp"
+      "event": "Hormuz/Bab al-Mandeb, Brent, Versicherungen und alternative Exportkorridore"
+    },
+    {
+      "date": "2026-07-28",
+      "event": "Soitec Q1: Photonics-SOI und AI-Connectivity-Nachfrage"
     },
     {
       "date": "2026-07-31",
-      "event": "SK-hynix HBM4 und Vera-Rubin-Systemfertigung"
+      "event": "SK hynix HBM4, Memory-Preise und Vera-Rubin-Ramp"
     },
     {
       "date": "2026-08-05",
-      "event": "Hyperscaler Capex, Finanzierung und reale Kapazität"
+      "event": "Hyperscaler-Capex, Free Cashflow und reale Kapazität"
     },
     {
       "date": "2026-10-31",
-      "event": "Alphabet Cloud/Capex, TI Q3 und IBM Power/Storage"
-    },
-    {
-      "date": "2026-12-31",
-      "event": "OpenAI Camellia: Genehmigung, Netz und Scope"
+      "event": "Intel DCAI, Nokia AI/Cloud und Netzwerk-Preisdurchsetzung"
     }
   ],
   "historyPolicy": "Forecasts, Confidence-Änderungen, Falsifier, Treffer, Late Admissions und Misses bleiben sichtbar. Kein Miss wurde gelöscht oder rückwirkend als Treffer umklassifiziert."
