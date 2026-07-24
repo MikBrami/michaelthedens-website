@@ -1,7 +1,9 @@
 const $ = id => document.getElementById(id);
 const average = values => values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
 const score = (item, field) => ((item[field] / 100) - item.outcome) ** 2;
-const fmt = value => Number.isFinite(value) ? value.toFixed(3) : '–';
+const fmt = value => Number.isFinite(value)
+  ? value.toLocaleString('de-DE', { minimumFractionDigits: 3, maximumFractionDigits: 3 })
+  : '–';
 
 function eligible(predictions, field, scopeCategory = null) {
   return predictions.filter(item =>
@@ -101,30 +103,37 @@ function renderCalibration(predictions) {
     : null;
   const interpretable = globalCreation.effectiveN >= 30 && globalCreation.misses >= 5;
 
-  $('brier-creation').textContent = fmt(globalCreation.value);
-  $('brier-creation-note').textContent = `${globalCreation.count} Auflösungen · effektiv N=${globalCreation.effectiveN.toFixed(1)} · ${globalCreation.misses} Misses`;
-  $('calibration-status').textContent = interpretable ? 'Interpretierbar' : 'Noch nicht interpretierbar';
+  const qualityLabel = globalCreation.value === null
+    ? 'Noch offen'
+    : globalCreation.value <= 0.1 ? 'Guter Frühwert'
+    : globalCreation.value <= 0.2 ? 'Durchwachsen'
+    : 'Schwach';
+  $('brier-creation').textContent = qualityLabel;
+  $('brier-creation-note').textContent = Number.isFinite(globalCreation.value)
+    ? `Qualitätswert ${fmt(globalCreation.value)} · ${globalCreation.count} Ergebnisse, davon ${globalCreation.misses} Fehlprognosen`
+    : 'Noch keine abgeschlossenen Prognosen';
+  $('calibration-status').textContent = interpretable ? 'Belastbar' : 'Noch gering';
   $('calibration-note').textContent = interpretable
-    ? `${globalCreation.clusters} unabhängige Ereigniscluster`
-    : `Schwelle: effektiv N≥30 und mindestens 5 Misses`;
+    ? `${globalCreation.clusters} voneinander unabhängige Themenblöcke`
+    : 'Für eine belastbare Aussage fehlen noch Ergebnisse und Fehlprognosen';
 
   $('calibration').innerHTML = `<div class="metric-grid">
-    <article><span>Global Brier@Creation</span><strong>${fmt(globalCreation.value)}</strong><small>Nur Korrelationsbereinigung · keine Scope-Priorität</small></article>
-    <article><span>Memory/Storage Brier</span><strong>${fmt(memoryCreation.value)}</strong><small>${memoryCreation.count} Auflösungen · effektiv N=${memoryCreation.effectiveN.toFixed(1)}</small></article>
-    <article><span>Strategic Weighted Score</span><strong>${fmt(strategicCreation.value)}</strong><small>65/20/10/5-Priorität · ausdrücklich kein reiner Brier</small></article>
-    <article><span>Global Brier@30D</span><strong>${fmt(global30d.value)}</strong><small>${global30d.count} Fixed-Lead-Snapshots</small></article>
-    <article><span>Global Brier@Resolution</span><strong>${fmt(globalResolution.value)}</strong><small>Nowcasting separat ausgewiesen</small></article>
-    <article><span>Update Gain</span><strong>${fmt(updateGain)}</strong><small>Creation minus Resolution</small></article>
+    <article><span>Global Brier@Creation</span><strong>${fmt(globalCreation.value)}</strong><small>Ähnliche Prognosen nur einmal gewichtet · ohne Themenvorgaben</small></article>
+    <article><span>Brier für Memory & Storage</span><strong>${fmt(memoryCreation.value)}</strong><small>${memoryCreation.count} Ergebnisse · rechnerisch ${memoryCreation.effectiveN.toFixed(1)} unabhängige Fälle</small></article>
+    <article><span>Strategisch gewichteter Wert</span><strong>${fmt(strategicCreation.value)}</strong><small>Memory 65% · AI/Datacenter 20% · Energie 10% · andere 5% · kein reiner Brier</small></article>
+    <article><span>Global Brier@30D</span><strong>${fmt(global30d.value)}</strong><small>${global30d.count} gespeicherte Zwischenstände nach 30 Tagen</small></article>
+    <article><span>Global Brier@Resolution</span><strong>${fmt(globalResolution.value)}</strong><small>Einschätzung kurz vor dem Ergebnis · separat ausgewiesen</small></article>
+    <article><span>Verbesserung durch Updates</span><strong>${fmt(updateGain)}</strong><small>Startwert minus Wert kurz vor dem Ergebnis</small></article>
   </div>
-  <p class="method-note"><strong>Interpretationssperre:</strong> ${globalCreation.hits} Treffer, ${globalCreation.misses} Fehlprognosen, ${globalCreation.count} rohe Auflösungen, effektiv N=${globalCreation.effectiveN.toFixed(1)}. Der globale Kalibrierungswert wird erst ab effektiv N≥30 und mindestens fünf Misses als belastbar bezeichnet.</p>`;
+  <p class="method-note"><strong>Grenze für belastbare Aussagen:</strong> Bisher gibt es ${globalCreation.hits} Treffer, ${globalCreation.misses} Fehlprognosen und ${globalCreation.count} abgeschlossene Prognosen. Wegen ähnlicher Wetten entspricht das rechnerisch ${globalCreation.effectiveN.toFixed(1)} unabhängigen Fällen. Erst ab 30 und mindestens fünf Fehlprognosen nennt TAIL den Wert belastbar.</p>`;
 }
 
 function renderWatchlistGovernance(predictions) {
   const watchlist = predictions.filter(item => item.scopeGateStatus === 'watchlist_scope' || item.status === 'watchlist');
   const panel = $('scope-control');
   if (!panel) return;
-  panel.insertAdjacentHTML('beforeend', `<p class="method-note"><strong>Admission-Regel:</strong> Scope-Priorität entscheidet ausschließlich über Aufnahme und Watchlist. Sie verändert den Global Brier nicht. Watchlist-Confidence und ursprünglicher Zeitstempel bleiben beim Ersteingang eingefroren; Beförderungen benötigen einen protokollierten Grund.</p>
-  <article class="scope-row"><div class="row"><strong>Scope-Watchlist</strong><span>${watchlist.length} Einträge</span></div><small>${watchlist.length ? watchlist.map(item => item.id).join(' · ') : 'Keine Einträge'}</small></article>`);
+  panel.insertAdjacentHTML('beforeend', `<p class="method-note"><strong>Aufnahmeregel:</strong> Der thematische Fokus entscheidet nur, welche Prognosen aktiv aufgenommen werden. Er verändert die globale Prognosequalität nicht. Bei zurückgestellten Prognosen bleiben die ursprüngliche Wahrscheinlichkeit und das Eingangsdatum erhalten; eine spätere Aufnahme braucht einen dokumentierten Grund.</p>
+  <article class="scope-row"><div class="row"><strong>Zurückgestellte Prognosen</strong><span>${watchlist.length} Einträge</span></div><small>${watchlist.length ? watchlist.map(item => item.id).join(' · ') : 'Keine Einträge'}</small></article>`);
 }
 
 async function applyMethodology32() {

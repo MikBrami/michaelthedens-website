@@ -32,7 +32,7 @@ function validateDashboard(dashboard, articles) {
   if (!Array.isArray(dashboard.markets) || dashboard.markets.length < 5) throw new Error('Market indicators incomplete');
   if (!dashboard.inbox || !['ok', 'warning', 'error'].includes(dashboard.inbox.status)) throw new Error('Inbox status missing');
   if (!dashboard.pipeline || !Array.isArray(dashboard.pipeline.steps) || dashboard.pipeline.steps.length < 4) throw new Error('Pipeline status incomplete');
-  if (dashboard.platformVersion !== '3.1' || dashboard.methodology?.version !== '3.1') throw new Error('TAIL Methodology 3.1 missing');
+  if (dashboard.platformVersion !== '3.2' || dashboard.methodology?.version !== '3.1') throw new Error('TAIL Platform 3.2 or Methodology 3.1 missing');
   if (!Array.isArray(dashboard.methodology.frozenForecasts) || !dashboard.methodology.frozenForecasts.includes('P-2026-07-24-01')) throw new Error('CXMT forecast is not frozen');
   if (!Array.isArray(dashboard.methodology.quarantinedSignals) || !dashboard.methodology.quarantinedSignals.includes('S-2026-07-24-02')) throw new Error('CXMT source signal is not quarantined');
 
@@ -50,7 +50,7 @@ function validateDashboard(dashboard, articles) {
 }
 
 function validateForecastLedger(ledger, methodology) {
-  if (ledger.schemaVersion !== 1 || ledger.methodologyVersion !== '3.1') throw new Error('Forecast ledger 3.1 missing');
+  if (ledger.schemaVersion !== 2 || ledger.methodologyVersion !== '3.1') throw new Error('Forecast ledger schema 2 for Methodology 3.1 missing');
   if (!Array.isArray(ledger.forecasts) || ledger.forecasts.length === 0) throw new Error('Forecast ledger empty');
   const ids = new Set();
   for (const forecast of ledger.forecasts) {

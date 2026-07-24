@@ -11,13 +11,13 @@
   <main class="wrap">
     <header class="hero">
       <div>
-        <p class="eyebrow">THEDENS AI LIGHTHOUSE · INTELLIGENCE PLATFORM 3.1</p>
+        <p class="eyebrow">THEDENS AI LIGHTHOUSE · LAGEBILD 3.2</p>
         <h1>TAIL Daily Intelligence</h1>
         <p id="summary" class="summary">Daten werden geladen …</p>
         <p id="momentum" class="momentum"></p>
       </div>
       <div class="index-card">
-        <span>Executive Pulse</span>
+        <span>TAIL-Lagebild</span>
         <strong id="tail-index">–</strong>
         <small id="index-status">Status unbekannt</small>
       </div>
@@ -26,49 +26,53 @@
     <section id="error-banner" class="error hidden"></section>
 
     <section class="pulse-grid executive-grid">
-      <article><span>Global Brier@Creation</span><strong id="brier-creation">–</strong><small id="brier-creation-note">Korrelationsbereinigte Prognoseleistung</small></article>
-      <article><span>Kalibrierung</span><strong id="calibration-status">–</strong><small id="calibration-note"></small></article>
-      <article><span>Scope Discipline</span><strong id="scope-status">–</strong><small id="scope-status-note"></small></article>
-      <article><span>Stärkster Falsifier</span><strong id="strongest-falsifier">–</strong><small id="strongest-falsifier-note"></small></article>
-      <article><span>Größter Cluster</span><strong id="largest-cluster">–</strong><small id="largest-cluster-note"></small></article>
-      <article><span>Daten & Prozess</span><strong id="methodology-status">–</strong><small id="methodology-status-note"></small></article>
-      <article><span>Datenstand</span><strong id="daily-updated">–</strong><small>Daily Research Run</small></article>
-      <article><span>Nächster Review</span><strong id="next-review">–</strong><small id="next-review-label"></small></article>
+      <article><span>Prognosequalität</span><strong id="brier-creation">–</strong><small id="brier-creation-note">Noch keine Ergebnisse</small></article>
+      <article><span>Belastbarkeit</span><strong id="calibration-status">–</strong><small id="calibration-note"></small></article>
+      <article><span>Thematischer Fokus</span><strong id="scope-status">–</strong><small id="scope-status-note"></small></article>
+      <article><span>Stärkstes Gegenargument</span><strong id="strongest-falsifier">–</strong><small id="strongest-falsifier-note"></small></article>
+      <article><span>Größter Themenblock</span><strong id="largest-cluster">–</strong><small id="largest-cluster-note"></small></article>
+      <article><span>Datenprüfung</span><strong id="methodology-status">–</strong><small id="methodology-status-note"></small></article>
+      <article><span>Aktualisiert</span><strong id="daily-updated">–</strong><small>Letzter Auswertungslauf</small></article>
+      <article><span>Nächster Prüfpunkt</span><strong id="next-review">–</strong><small id="next-review-label"></small></article>
     </section>
 
     <section>
-      <div class="section-head"><h2>Driver Monitor</h2><span>Legacy-Intensität und Momentum · Normierung bis zur belastbaren Referenzhistorie ausgesetzt</span></div>
+      <div class="section-head"><h2>Was den Markt bewegt</h2><span>Aktuelle Signalstärke und Veränderung zum letzten Lauf</span></div>
       <div id="daily-drivers" class="driver-grid"></div>
     </section>
 
-    <section class="two-col">
-      <div>
-        <div class="section-head"><h2>Forecast Calibration</h2><span>Global · Domain · Strategic getrennt</span></div>
-        <div id="calibration" class="calibration-panel"></div>
+    <details class="methodology-details">
+      <summary>Methodik und Nachweis</summary>
+      <p class="details-intro">Hier stehen die exakten Kennzahlen und Regeln hinter der verständlichen Kurzfassung oben.</p>
+      <div class="two-col">
+        <div>
+          <div class="section-head"><h2>Berechnung der Prognosequalität</h2><span>Globale, Memory- und strategische Bewertung getrennt</span></div>
+          <div id="calibration" class="calibration-panel"></div>
+        </div>
+        <div>
+          <div class="section-head"><h2>Gewichtung und Themenkorridore</h2><span>Aufnahme und strategische Priorität · nicht Kalibrierung</span></div>
+          <div id="scope-control" class="calibration-panel"></div>
+        </div>
       </div>
-      <div>
-        <div class="section-head"><h2>Scope & Cluster Control</h2><span>Admission und strategische Priorität · nicht Kalibrierung</span></div>
-        <div id="scope-control" class="calibration-panel"></div>
-      </div>
-    </section>
+    </details>
 
     <section>
-      <div class="section-head"><h2>Akzeptierte Signale</h2><span>Fakt · Schätzung · TAIL-Inferenz · Admission Gate</span></div>
+      <div class="section-head"><h2>Neue Signale</h2><span>Was bekannt ist, was geschätzt wird und was TAIL daraus ableitet</span></div>
       <div id="daily-signals" class="daily-signals"></div>
     </section>
 
     <section>
-      <div class="section-head"><h2>Prediction Log</h2><span>Unveränderliche Creation-Werte, Updates, Cluster und Gegenmodell</span></div>
-      <div class="table-wrap"><table class="prediction-table"><thead><tr><th>ID / Status</th><th>Forecast & Historie</th><th>Creation → Current</th><th>Cluster / Scope</th><th>Adversarial Case</th></tr></thead><tbody id="prediction-log"></tbody></table></div>
+      <div class="section-head"><h2>Prognosen</h2><span>Ursprüngliche Einschätzung, heutiger Stand und stärkstes Gegenargument</span></div>
+      <div class="table-wrap"><table class="prediction-table"><thead><tr><th>ID / Status</th><th>Prognose und Verlauf</th><th>Ursprünglich → heute</th><th>Themenblock / Fokus</th><th>Stärkstes Gegenargument</th></tr></thead><tbody id="prediction-log"></tbody></table></div>
     </section>
 
     <section class="two-col">
       <div>
-        <div class="section-head"><h2>Falsifiers</h2><span>Überholt heißt nicht gelöscht</span></div>
+        <div class="section-head"><h2>Was die Thesen widerlegen könnte</h2><span>Gegenbelege bleiben sichtbar</span></div>
         <div id="falsifiers" class="list"></div>
       </div>
       <div>
-        <div class="section-head"><h2>Audit Trail</h2><span>Misses, Korrekturen und Late Admissions bleiben sichtbar</span></div>
+        <div class="section-head"><h2>Änderungsprotokoll</h2><span>Fehler, Korrekturen und verspätete Aufnahmen bleiben sichtbar</span></div>
         <div id="audit-trail" class="list"></div>
       </div>
     </section>
@@ -79,13 +83,13 @@
     </section>
 
     <section>
-      <div class="section-head"><h2>Run History</h2><span>Legacy Confidence eingestellt · kein rückwirkendes Glattbügeln</span></div>
+      <div class="section-head"><h2>Verlauf</h2><span>Frühere Einschätzungen bleiben erhalten</span></div>
       <div id="run-history" class="history-grid"></div>
     </section>
 
     <section>
-      <div class="section-head"><h2>Rejection & Quarantine Log</h2><span>Auch verworfene Verlockungen bleiben sichtbar</span></div>
-      <div class="table-wrap"><table class="prediction-table rejection-table"><thead><tr><th>ID / Datum</th><th>Signal</th><th>Entscheidung</th><th>Grund</th><th>Review</th></tr></thead><tbody id="rejection-log"></tbody></table></div>
+      <div class="section-head"><h2>Verworfene und gesperrte Daten</h2><span>Auch nicht verwendete Signale bleiben nachvollziehbar</span></div>
+      <div class="table-wrap"><table class="prediction-table rejection-table"><thead><tr><th>ID / Datum</th><th>Signal</th><th>Entscheidung</th><th>Grund</th><th>Prüfung</th></tr></thead><tbody id="rejection-log"></tbody></table></div>
     </section>
 
     <details class="platform-details">

@@ -228,7 +228,7 @@ const pipelineSteps = [
 
 const dashboard = {
   schemaVersion: 3,
-  platformVersion: '3.1',
+  platformVersion: '3.2',
   sourceOfTruth: 'TAIL Knowledge Base',
   dataAsOf: newestDate,
   dataFreshness,
