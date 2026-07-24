@@ -7,6 +7,7 @@ const inputPath = path.join(dataDir, 'articles.json');
 const inboxPath = path.join(dataDir, 'inbox.json');
 const statusPath = path.join(dataDir, 'update-status.json');
 const outputPath = path.join(dataDir, 'dashboard.json');
+const methodologyPath = path.join(root, 'config', 'methodology.json');
 
 function readJson(filePath, fallback) {
   try {
@@ -18,6 +19,7 @@ function readJson(filePath, fallback) {
 
 const articles = readJson(inputPath, []);
 if (!Array.isArray(articles) || articles.length === 0) throw new Error('articles.json contains no records');
+const methodology = readJson(methodologyPath, { signalOverrides: {}, forecastOverrides: {} });
 
 const inbox = readJson(inboxPath, { updated_at: null, new_items: 0, duplicate_items: [], items: [] });
 const updateStatus = readJson(statusPath, {
@@ -71,6 +73,7 @@ const signalLabels = {
 };
 
 const scoreSignal = (article) => {
+  if (methodology.signalOverrides?.[article.id]?.excludedFromScores) return 0;
   const base = Number(article.severity ?? 0) * (Number(article.confidence ?? 0) / 100);
   return Math.round(Math.max(0, Math.min(100, base * Math.abs(weights[article.signal] ?? 0.65))));
 };
@@ -100,11 +103,14 @@ const normalizedArticles = articles.map((article) => ({
   source: article.source ?? 'TAIL Knowledge Base',
   url: article.url ?? `tail://knowledge-base/${article.id}`,
   ...article,
-  score: scoreSignal(article)
+  score: scoreSignal(article),
+  dataStatus: methodology.signalOverrides?.[article.id]?.dataStatus ?? 'verified',
+  excludedFromScores: methodology.signalOverrides?.[article.id]?.excludedFromScores ?? false
 }));
 
 const marketBuckets = new Map();
 for (const article of normalizedArticles) {
+  if (article.excludedFromScores) continue;
   for (const market of article.markets ?? []) {
     const bucket = marketBuckets.get(market) ?? [];
     bucket.push(article.score);
@@ -120,6 +126,7 @@ const markets = [...marketBuckets.entries()].map(([id, scores]) => {
 
 const companyMap = new Map();
 for (const article of normalizedArticles) {
+  if (article.excludedFromScores) continue;
   for (const company of article.companies ?? []) {
     const values = companyMap.get(company) ?? [];
     values.push(article.score);
@@ -134,7 +141,7 @@ const manufacturers = [...companyMap.entries()].map(([name, values]) => ({
 
 function buildForecast(definition) {
   const relevant = normalizedArticles
-    .filter((article) => (article.markets ?? []).includes(definition.id))
+    .filter((article) => !article.excludedFromScores && (article.markets ?? []).includes(definition.id))
     .sort((a, b) => b.score - a.score);
 
   if (relevant.length === 0) {
@@ -218,8 +225,8 @@ const pipelineSteps = [
 ];
 
 const dashboard = {
-  schemaVersion: 2,
-  platformVersion: '2.0',
+  schemaVersion: 3,
+  platformVersion: '3.0',
   sourceOfTruth: 'TAIL Knowledge Base',
   dataAsOf: newestDate,
   dataFreshness,
@@ -230,6 +237,14 @@ const dashboard = {
   totalArticles: normalizedArticles.length,
   articleCount: normalizedArticles.length,
   processStatus,
+  methodology: {
+    version: methodology.version ?? '3.0',
+    status: Object.values(methodology.forecastOverrides ?? {}).some((item) => item.confidenceFrozen) ? 'warning' : 'ok',
+    frozenForecasts: Object.entries(methodology.forecastOverrides ?? {}).filter(([, item]) => item.confidenceFrozen).map(([id]) => id),
+    quarantinedSignals: Object.entries(methodology.signalOverrides ?? {}).filter(([, item]) => item.excludedFromScores).map(([id]) => id),
+    scoringRubric: methodology.signalRubric,
+    gates: methodology.gates
+  },
   error: errors[0] ?? null,
   warnings,
   inbox: {
