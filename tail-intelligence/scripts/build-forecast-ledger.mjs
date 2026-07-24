@@ -107,6 +107,8 @@ const preliminary = (merged.predictionLog || []).map((prediction) => {
     confidenceResolution: resolution.confidenceResolution ?? previous?.confidenceResolution ?? null,
     outcome: resolution.outcome ?? previous?.outcome ?? null,
     creationTimestamp: previous?.creationTimestamp ?? first?.sourceTimestamp ?? null,
+    admissionTimestamp: previous?.admissionTimestamp ?? first?.sourceTimestamp ?? null,
+    admissionConfidence: previous?.admissionConfidence ?? confidenceCreation,
     fixedLeadTimestamp: previous?.fixedLeadTimestamp ?? null,
     resolutionTimestamp: resolution.resolutionTimestamp ?? previous?.resolutionTimestamp ?? null,
     creationSource,
@@ -120,6 +122,10 @@ const preliminary = (merged.predictionLog || []).map((prediction) => {
     clusterBudget: cluster.budget,
     effectiveWeight: 0,
     scopeGateStatus: previous?.scopeGateStatus ?? 'grandfathered',
+    watchlistEnteredAt: previous?.watchlistEnteredAt ?? null,
+    watchlistConfidence: previous?.watchlistConfidence ?? null,
+    promotionTimestamp: previous?.promotionTimestamp ?? null,
+    promotionReason: previous?.promotionReason ?? null,
     confidenceFrozen: Boolean(override.confidenceFrozen),
     excludedFromScoring,
     validationNote: override.validationNote ?? null,
@@ -142,13 +148,43 @@ const preGateCounts = preliminary.filter((item) => item.active).reduce((counts, 
 }, {});
 const preGateTotal = Object.values(preGateCounts).reduce((sum, count) => sum + count, 0);
 const preGateMemoryShare = preGateTotal ? (preGateCounts.memory_storage || 0) / preGateTotal * 100 : 0;
+
 for (const item of preliminary) {
+  const previous = existingById.get(item.id);
+  const promotion = methodology.promotionOverrides?.[item.id];
+  const wasScopeWatchlisted = previous?.scopeGateStatus === 'watchlist_scope';
+
+  if (wasScopeWatchlisted && !promotion?.approved) {
+    item.scopeGateStatus = 'watchlist_scope';
+    item.active = false;
+    item.effectiveWeight = 0;
+    item.excludedFromScoring = true;
+    item.watchlistEnteredAt = previous.watchlistEnteredAt ?? previous.admissionTimestamp ?? previous.creationTimestamp;
+    item.watchlistConfidence = previous.watchlistConfidence ?? previous.admissionConfidence ?? previous.confidenceCreation;
+    item.validationNote = previous.validationNote || 'Scope watchlist entry. Explicit promotion decision required.';
+    continue;
+  }
+
+  if (wasScopeWatchlisted && promotion?.approved) {
+    item.scopeGateStatus = 'promoted';
+    item.active = activeStatuses.has(item.status);
+    item.excludedFromScoring = !item.active;
+    item.watchlistEnteredAt = previous.watchlistEnteredAt ?? previous.admissionTimestamp ?? previous.creationTimestamp;
+    item.watchlistConfidence = previous.watchlistConfidence ?? previous.admissionConfidence ?? previous.confidenceCreation;
+    item.promotionTimestamp = promotion.timestamp;
+    item.promotionReason = promotion.reason;
+    item.validationNote = null;
+    continue;
+  }
+
   if (!isBootstrap && !existingIds.has(item.id) && item.active && item.scopeCategory !== 'memory_storage' && preGateMemoryShare < methodology.scopeBudget.memory_storage.minimum) {
     item.scopeGateStatus = 'watchlist_scope';
     item.active = false;
     item.effectiveWeight = 0;
     item.excludedFromScoring = true;
-    item.validationNote = `Hard scope gate: active Memory & Storage share is ${preGateMemoryShare.toFixed(1)}%, below ${methodology.scopeBudget.memory_storage.minimum}%.`;
+    item.watchlistEnteredAt = item.admissionTimestamp;
+    item.watchlistConfidence = item.admissionConfidence;
+    item.validationNote = `Hard scope gate: active Memory & Storage share is ${preGateMemoryShare.toFixed(1)}%, below ${methodology.scopeBudget.memory_storage.minimum}%. Explicit promotion required.`;
   }
 }
 
@@ -173,17 +209,18 @@ const activeRawTotal = Object.values(activeRawCounts).reduce((sum, count) => sum
 const memoryRawShare = activeRawTotal ? (activeRawCounts.memory_storage || 0) / activeRawTotal * 100 : 0;
 
 const output = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   methodologyVersion: methodology.version,
   generatedAt: new Date().toISOString(),
   creationPolicy: 'Creation confidence is read only from structured fields or the documented legacy migration table. Free text is never parsed.',
   correctionPolicy: 'Objective input errors may be corrected only by preserving raw and corrected values plus reason, timestamp and audit entry. Judgment changes create a new update snapshot.',
-  weightingPolicy: 'Each active cluster receives its configured budget; forecasts inside a cluster share that budget equally. Resolved and quarantined forecasts have zero active-book weight.',
-  scopeAdmissionPolicy: 'When the raw active Memory & Storage share is below 60%, new non-memory forecasts remain on the scope watchlist and receive zero active-book weight.',
+  weightingPolicy: 'Strategic cluster budgets are used only for active-book prioritization and the separately labelled Strategic Weighted Score. Global calibration uses correlation adjustment without scope budgets.',
+  scopeAdmissionPolicy: 'When the raw active Memory & Storage share is below 60%, new non-memory forecasts remain on the scope watchlist. Their original confidence and timestamp are frozen; promotion requires an explicit, audited override.',
   scopeStatus: {
     activeForecasts: activeRawTotal,
     memoryRawShare: Number(memoryRawShare.toFixed(1)),
-    hardGateActive: memoryRawShare < methodology.scopeBudget.memory_storage.minimum
+    hardGateActive: memoryRawShare < methodology.scopeBudget.memory_storage.minimum,
+    watchlistForecasts: preliminary.filter((item) => item.scopeGateStatus === 'watchlist_scope').length
   },
   forecasts: preliminary
 };
@@ -195,7 +232,10 @@ for (const forecast of output.forecasts) {
   if (forecast.outcome !== null && ![0, 1].includes(forecast.outcome)) {
     throw new Error(`Forecast ${forecast.id} has invalid outcome ${forecast.outcome}`);
   }
+  if (forecast.scopeGateStatus === 'promoted' && (!forecast.promotionTimestamp || !forecast.promotionReason)) {
+    throw new Error(`Forecast ${forecast.id} was promoted without timestamp and reason`);
+  }
 }
 
 fs.writeFileSync(outputPath, JSON.stringify(output, null, 2) + '\n');
-console.log(`Built forecast ledger: ${output.forecasts.length} forecasts, ${output.forecasts.filter((item) => item.active).length} active, ${output.forecasts.filter((item) => item.resolved).length} resolved.`);
+console.log(`Built forecast ledger: ${output.forecasts.length} forecasts, ${output.forecasts.filter((item) => item.active).length} active, ${output.forecasts.filter((item) => item.resolved).length} resolved, ${output.scopeStatus.watchlistForecasts} scope-watchlisted.`);
