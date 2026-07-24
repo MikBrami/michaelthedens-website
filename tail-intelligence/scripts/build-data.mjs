@@ -8,6 +8,7 @@ const inboxPath = path.join(dataDir, 'inbox.json');
 const statusPath = path.join(dataDir, 'update-status.json');
 const outputPath = path.join(dataDir, 'dashboard.json');
 const methodologyPath = path.join(root, 'config', 'methodology.json');
+const forecastLedgerPath = path.join(dataDir, 'forecast-ledger.json');
 
 function readJson(filePath, fallback) {
   try {
@@ -20,6 +21,7 @@ function readJson(filePath, fallback) {
 const articles = readJson(inputPath, []);
 if (!Array.isArray(articles) || articles.length === 0) throw new Error('articles.json contains no records');
 const methodology = readJson(methodologyPath, { signalOverrides: {}, forecastOverrides: {} });
+const forecastLedger = readJson(forecastLedgerPath, { forecasts: [] });
 
 const inbox = readJson(inboxPath, { updated_at: null, new_items: 0, duplicate_items: [], items: [] });
 const updateStatus = readJson(statusPath, {
@@ -226,7 +228,7 @@ const pipelineSteps = [
 
 const dashboard = {
   schemaVersion: 3,
-  platformVersion: '3.0',
+  platformVersion: '3.1',
   sourceOfTruth: 'TAIL Knowledge Base',
   dataAsOf: newestDate,
   dataFreshness,
@@ -238,12 +240,17 @@ const dashboard = {
   articleCount: normalizedArticles.length,
   processStatus,
   methodology: {
-    version: methodology.version ?? '3.0',
+    version: methodology.version ?? '3.1',
     status: Object.values(methodology.forecastOverrides ?? {}).some((item) => item.confidenceFrozen) ? 'warning' : 'ok',
     frozenForecasts: Object.entries(methodology.forecastOverrides ?? {}).filter(([, item]) => item.confidenceFrozen).map(([id]) => id),
     quarantinedSignals: Object.entries(methodology.signalOverrides ?? {}).filter(([, item]) => item.excludedFromScores).map(([id]) => id),
     scoringRubric: methodology.signalRubric,
-    gates: methodology.gates
+    gates: methodology.gates,
+    forecastLedgerCount: forecastLedger.forecasts.length,
+    resolvedForecasts: forecastLedger.forecasts.filter((item) => item.resolved).length,
+    activeForecasts: forecastLedger.forecasts.filter((item) => item.active).length,
+    scopeGateStatus: forecastLedger.scopeStatus?.hardGateActive ? 'active' : 'open',
+    memoryRawShare: forecastLedger.scopeStatus?.memoryRawShare ?? null
   },
   error: errors[0] ?? null,
   warnings,

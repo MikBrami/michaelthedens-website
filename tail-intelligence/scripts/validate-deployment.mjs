@@ -15,7 +15,7 @@ async function assertOk(url) {
 
 const page = await assertOk(base);
 const html = await page.text();
-for (const marker of ['INTELLIGENCE PLATFORM 3.0', 'brier-creation', 'methodology-status']) {
+for (const marker of ['INTELLIGENCE PLATFORM 3.1', 'brier-creation', 'scope-status', 'methodology-status']) {
   if (!html.includes(marker)) throw new Error(`Dashboard HTML missing marker: ${marker}`);
 }
 
@@ -32,8 +32,15 @@ if (!Number.isInteger(dashboard.articleCount) || dashboard.articleCount <= 0) th
 if (!['ok', 'warning', 'error'].includes(dashboard.processStatus)) throw new Error(`Invalid process status: ${dashboard.processStatus}`);
 if (!dashboard.pipeline?.steps?.length) throw new Error('Pipeline status not exposed');
 if (!dashboard.inbox || !['ok', 'warning', 'error'].includes(dashboard.inbox.status)) throw new Error('Inbox status not exposed');
-if (dashboard.methodology?.version !== '3.0') throw new Error('TAIL Methodology 3.0 is not live');
+if (dashboard.methodology?.version !== '3.1') throw new Error('TAIL Methodology 3.1 is not live');
 if (!dashboard.methodology.frozenForecasts?.includes('P-2026-07-24-01')) throw new Error('CXMT forecast quarantine is not live');
+const ledgerResponse = await assertOk(`${base}/data/forecast-ledger.json?validation=${Date.now()}`);
+const ledger = await ledgerResponse.json();
+if (ledger.methodologyVersion !== '3.1' || ledger.forecasts?.length < 40) throw new Error('Forecast ledger 3.1 is incomplete');
+if (ledger.forecasts.find((item) => item.id === 'P-2026-07-22-01')?.confidenceCreation !== 74) throw new Error('Wistron correction is not live');
+if (ledger.forecasts.filter((item) => item.resolved).length !== 4) throw new Error('Resolved forecast pipeline is incomplete');
+const activeWeight = ledger.forecasts.filter((item) => item.active).reduce((sum, item) => sum + item.effectiveWeight, 0);
+if (Math.abs(activeWeight - 1) > 0.000001) throw new Error('Live cluster weights do not total 100%');
 if (!Array.isArray(dailyIndex.files) || !dailyIndex.files.includes(dailyIndex.latest)) throw new Error('Daily intelligence index is incomplete');
 if (dashboard.dataAsOf < new Date(latestDaily.updatedAt).toISOString().slice(0, 10)) {
   throw new Error(`Live Knowledge Base stale: ${dashboard.dataAsOf} vs daily intelligence ${latestDaily.updatedAt}`);

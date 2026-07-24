@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "version": "3.0",
+  "schemaVersion": 2,
+  "version": "3.1",
   "signalRubric": {
     "sourceQuality": 20,
     "novelty": 15,
@@ -13,51 +13,175 @@
     "accepted": 80,
     "watchlist": 65
   },
-  "driverRegimes": [
-    { "minimum": 95, "label": "Crisis" },
-    { "minimum": 85, "label": "Extreme" },
-    { "minimum": 70, "label": "Severe" },
-    { "minimum": 0, "label": "Normal / Tight" }
-  ],
   "scopeBudget": {
-    "memory_storage": { "minimum": 60, "maximum": 70, "label": "Memory & Storage" },
-    "ai_datacenter": { "minimum": 15, "maximum": 20, "label": "AI Infrastructure & Datacenter" },
-    "energy_geopolitics": { "minimum": 0, "maximum": 15, "label": "Energy & Geopolitics" },
-    "second_order_falsifier": { "minimum": 0, "maximum": 15, "label": "Second-order & Falsifier" }
+    "memory_storage": { "minimum": 60, "maximum": 70, "target": 65, "label": "Memory & Storage" },
+    "ai_datacenter": { "minimum": 15, "maximum": 20, "target": 20, "label": "AI Infrastructure & Datacenter" },
+    "energy_geopolitics": { "minimum": 0, "maximum": 15, "target": 10, "label": "Energy & Geopolitics" },
+    "second_order_falsifier": { "minimum": 0, "maximum": 15, "target": 5, "label": "Second-order & Falsifier" }
   },
-  "forecastOverrides": {
-    "P-2026-07-13-02": {
-      "confidenceCreation": 93,
-      "confidenceFixedLead": null,
-      "confidenceResolution": 99,
-      "outcome": 1,
-      "creationTimestamp": "2026-07-13T00:00:00+02:00",
-      "resolutionTimestamp": "2026-07-17T00:00:00+02:00",
-      "clusterId": "AI-FOUNDRY-TSMC-2026",
-      "parentThesis": "AI infrastructure build-out",
-      "dependencyLevel": "medium",
-      "clusterWeight": 1,
-      "scopeCategory": "ai_datacenter"
-    },
-    "P-2026-07-24-01": {
-      "status": "data_validation_pending",
-      "confidenceCreation": 88,
-      "confidenceFixedLead": null,
-      "confidenceResolution": null,
-      "outcome": null,
-      "creationTimestamp": "2026-07-24T09:01:03+02:00",
-      "fixedLeadTimestamp": null,
-      "resolutionTimestamp": null,
-      "confidenceFrozen": true,
-      "excludedFromScoring": true,
-      "validationNote": "CXMT Q1 revenue may contain an RMB/USD unit error. Forecast is frozen and excluded from scoring until the primary unit is verified.",
-      "clusterId": "CHINA-MEMORY-CXMT-2026",
-      "parentThesis": "China parallel memory ecosystem",
+  "clusters": {
+    "MEMORY-SUPPLY-2026-2028": {
+      "label": "Memory Supply 2026–2028",
+      "scopeCategory": "memory_storage",
+      "budget": 0.50,
       "dependencyLevel": "high",
-      "clusterWeight": 0,
-      "scopeCategory": "memory_storage"
+      "forecastIds": [
+        "P-2026-07-11-01", "P-2026-07-11-02", "P-2026-07-13-04",
+        "P-2026-07-14-01", "P-2026-07-14-02", "P-2026-07-20-04",
+        "P-2026-07-24-01"
+      ]
+    },
+    "STORAGE-ARCHITECTURE-2026": {
+      "label": "Enterprise Storage Architecture",
+      "scopeCategory": "memory_storage",
+      "budget": 0.15,
+      "dependencyLevel": "medium",
+      "forecastIds": ["P-2026-07-20-02", "P-2026-07-23-04"]
+    },
+    "AI-CAPEX-FOUNDRY-2026": {
+      "label": "AI Capex & Foundry",
+      "scopeCategory": "ai_datacenter",
+      "budget": 0.08,
+      "dependencyLevel": "high",
+      "forecastIds": [
+        "P-2026-07-11-04", "P-2026-07-13-02", "P-2026-07-16-01",
+        "P-2026-07-17-01", "P-2026-07-17-03", "P-2026-07-23-01",
+        "P-2026-07-23-03", "P-2026-07-24-03"
+      ]
+    },
+    "DATACENTER-POWER-GRID-2026": {
+      "label": "Datacenter Power & Grid",
+      "scopeCategory": "ai_datacenter",
+      "budget": 0.08,
+      "dependencyLevel": "medium",
+      "forecastIds": [
+        "P-2026-07-10-03", "P-2026-07-12-04", "P-2026-07-14-03",
+        "P-2026-07-17-02", "P-2026-07-20-05", "P-2026-07-21-02",
+        "P-2026-07-21-03", "P-2026-07-22-03", "P-2026-07-23-02"
+      ]
+    },
+    "ADVANCED-PACKAGING-US-2026": {
+      "label": "Advanced Packaging & US Localization",
+      "scopeCategory": "ai_datacenter",
+      "budget": 0.04,
+      "dependencyLevel": "medium",
+      "forecastIds": ["P-2026-07-13-03", "P-2026-07-22-01", "P-2026-07-24-02"]
+    },
+    "GEO-ENERGY-HORMUZ-2026": {
+      "label": "Hormuz & Red Sea Energy",
+      "scopeCategory": "energy_geopolitics",
+      "budget": 0.10,
+      "dependencyLevel": "high",
+      "forecastIds": [
+        "P-2026-07-11-03", "P-2026-07-12-01", "P-2026-07-13-01",
+        "P-2026-07-20-01", "P-2026-07-21-01", "P-2026-07-23-05"
+      ]
+    },
+    "POLICY-SOVEREIGN-AI-2026": {
+      "label": "Policy & Sovereign AI",
+      "scopeCategory": "second_order_falsifier",
+      "budget": 0.015,
+      "dependencyLevel": "low",
+      "forecastIds": [
+        "P-2026-07-10-02", "P-2026-07-12-02", "P-2026-07-16-02",
+        "P-2026-07-17-04", "P-2026-07-20-03"
+      ]
+    },
+    "AI-CAPITAL-MARKETS-2026": {
+      "label": "AI Capital Markets",
+      "scopeCategory": "second_order_falsifier",
+      "budget": 0.015,
+      "dependencyLevel": "medium",
+      "forecastIds": ["P-2026-07-16-03", "P-2026-07-24-04"]
+    },
+    "COST-TRANSMISSION-2026": {
+      "label": "AI Input-cost Transmission",
+      "scopeCategory": "second_order_falsifier",
+      "budget": 0.005,
+      "dependencyLevel": "medium",
+      "forecastIds": ["P-2026-07-12-03"]
+    },
+    "AI-PRODUCT-ADOPTION-2026": {
+      "label": "AI Product & Workflow Adoption",
+      "scopeCategory": "second_order_falsifier",
+      "budget": 0.015,
+      "dependencyLevel": "low",
+      "forecastIds": [
+        "P-2026-07-10-01", "P-2026-07-21-04",
+        "P-2026-07-21-05", "P-2026-07-22-02"
+      ]
     }
   },
+  "legacyCreationConfidence": {
+    "P-2026-07-10-01": 64,
+    "P-2026-07-10-02": 56,
+    "P-2026-07-10-03": 82,
+    "P-2026-07-11-01": 90,
+    "P-2026-07-11-02": 68,
+    "P-2026-07-11-03": 66,
+    "P-2026-07-11-04": 62,
+    "P-2026-07-12-01": 58,
+    "P-2026-07-12-02": 76,
+    "P-2026-07-12-03": 54,
+    "P-2026-07-12-04": 70,
+    "P-2026-07-13-01": 78,
+    "P-2026-07-13-02": 93,
+    "P-2026-07-13-03": 83,
+    "P-2026-07-13-04": 64,
+    "P-2026-07-14-01": 82,
+    "P-2026-07-14-02": 72,
+    "P-2026-07-14-03": 65,
+    "P-2026-07-16-01": 74,
+    "P-2026-07-16-02": 80,
+    "P-2026-07-16-03": 68,
+    "P-2026-07-17-01": 88,
+    "P-2026-07-17-02": 72,
+    "P-2026-07-17-03": 72,
+    "P-2026-07-17-04": 65
+  },
+  "resolutionOverrides": {
+    "P-2026-07-13-01": {
+      "status": "hit",
+      "outcome": 1,
+      "confidenceResolution": 99,
+      "resolutionTimestamp": "2026-07-23T23:59:59+02:00",
+      "resolutionQuality": "verified",
+      "resolutionNote": "The forecast horizon was reached with Hormuz traffic still strongly below normal."
+    },
+    "P-2026-07-13-02": {
+      "status": "hit",
+      "outcome": 1,
+      "confidenceResolution": 99,
+      "resolutionTimestamp": "2026-07-17T00:00:00+02:00",
+      "resolutionQuality": "primary_source",
+      "resolutionNote": "TSMC reported the record quarter and raised the relevant growth and capex guidance."
+    },
+    "P-2026-07-14-03": {
+      "status": "hit",
+      "outcome": 1,
+      "confidenceResolution": 99,
+      "resolutionTimestamp": "2026-07-22T23:59:59+02:00",
+      "resolutionQuality": "qualified_secondary",
+      "resolutionNote": "The documented participant count exceeded the forecast threshold; tariff implementation remains a separate downstream question."
+    },
+    "P-2026-07-21-01": {
+      "status": "hit",
+      "outcome": 1,
+      "confidenceResolution": 95,
+      "resolutionTimestamp": "2026-07-22T23:59:59+02:00",
+      "resolutionQuality": "verified",
+      "resolutionNote": "Documented tanker diversions and emergency surcharges met the forecast's disjunctive decision rule."
+    }
+  },
+  "forecastOverrides": {
+    "P-2026-07-24-01": {
+      "status": "data_validation_pending",
+      "confidenceFrozen": true,
+      "excludedFromScoring": true,
+      "validationNote": "CXMT Q1 revenue may contain an RMB/USD unit error. Forecast is frozen and excluded from scoring until the primary unit is verified."
+    }
+  },
+  "adversarialOverrides": {},
   "signalOverrides": {
     "S-2026-07-24-02": {
       "dataStatus": "validation_pending",
@@ -95,7 +219,19 @@
       "date": "2026-07-24",
       "type": "Methodology upgrade",
       "item": "TAIL Methodology 3.0",
-      "action": "Brier@Creation, fixed-lead snapshots, adversarial cases, score caps, rejection log, cluster weights and scope controls introduced."
+      "action": "Brier@Creation, fixed-lead snapshots, score caps and rejection logging introduced."
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Display correction",
+      "item": "P-2026-07-22-01 Wistron Creation Confidence",
+      "action": "The structured source value remains 74%. A free-text parser incorrectly read '700-million-dollar factory' as 700%. Parser removed; no historical forecast value changed."
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Methodology upgrade",
+      "item": "TAIL Methodology 3.1",
+      "action": "Structured forecast ledger, real cluster budgets, hard scope admission, explicit resolutions and withheld synthetic driver statistics introduced."
     }
   ]
 }

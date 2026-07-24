@@ -5,11 +5,17 @@ const fmtDate = value => {
   if (Number.isNaN(date.getTime())) return String(value);
   return new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium', timeStyle: String(value).includes('T') ? 'short' : undefined }).format(date);
 };
-const statusLabel = s => ({ red:'Rot', orange:'Orange', yellow:'Gelb', green:'Grün', ok:'OK', warning:'Warnung', error:'Fehler', current:'Aktuell', stale:'Veraltet', invalid:'Ungültig', open:'Offen', changed:'Geändert', new:'Neu', endangered:'Gefährdet', confirmed:'Bestätigt', partially_confirmed:'Teilbestätigt', historical_closed:'Historisch geschlossen', active:'Aktiv', active_weakened:'Aktiv, geschwächt', active_strengthened:'Aktiv, verstärkt', long_term:'Langfristig', new_active:'Neu, aktiv', new_watch:'Neu, beobachten', data_validation_pending:'Datenprüfung läuft', validation_pending:'Datenprüfung läuft', quarantined:'Quarantäne', accepted:'Aufgenommen', watchlist:'Watchlist', rejected:'Abgelehnt' })[s] ?? s;
+const statusLabel = s => ({ red:'Rot', orange:'Orange', yellow:'Gelb', green:'Grün', ok:'OK', warning:'Warnung', error:'Fehler', current:'Aktuell', stale:'Veraltet', invalid:'Ungültig', open:'Offen', changed:'Geändert', new:'Neu', endangered:'Gefährdet', confirmed:'Bestätigt', hit:'Treffer', miss:'Fehlprognose', partial:'Teilauflösung', unresolved:'Nicht auflösbar', partially_confirmed:'Teilbestätigt', historical_closed:'Historisch geschlossen', active:'Aktiv', active_weakened:'Aktiv, geschwächt', active_strengthened:'Aktiv, verstärkt', long_term:'Langfristig', new_active:'Neu, aktiv', new_watch:'Neu, beobachten', data_validation_pending:'Datenprüfung läuft', validation_pending:'Datenprüfung läuft', quarantined:'Quarantäne', accepted:'Aufgenommen', watchlist:'Watchlist', watchlist_scope:'Scope-Watchlist', grandfathered:'Bestandsschutz', rejected:'Abgelehnt' })[s] ?? s;
 const processIcon = s => ({ ok:'🟢', warning:'🟠', error:'🔴' })[s] ?? '⚪';
 const directionLabel = d => ({ strong_up:'stark steigend', up:'steigend', watch:'beobachten', stable:'stabil', unknown:'unbekannt' })[d] ?? d;
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[char]);
 const safeUrl = value => /^https:\/\//i.test(String(value || '')) ? String(value) : '#';
+const creationSourceLabel = value => ({
+  documented_legacy_migration: 'dokumentierte Legacy-Migration',
+  structured_creation_field: 'strukturiertes Creation-Feld',
+  first_structured_record: 'erster strukturierter Datensatz',
+  migration_review_required: 'Migration ungeklärt'
+})[value] ?? value;
 const delta = (current, previous, suffix='') => {
   if (!Number.isFinite(current) || !Number.isFinite(previous)) return '';
   const diff = current - previous;
@@ -17,53 +23,39 @@ const delta = (current, previous, suffix='') => {
 };
 const clamp = (value, minimum, maximum) => Math.min(maximum, Math.max(minimum, Number(value) || 0));
 const average = values => values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
-const brier = records => {
-  const scored = records.filter(item => Number.isFinite(item.probability) && [0, 1].includes(item.outcome));
-  return scored.length ? { value: average(scored.map(item => ((item.probability / 100) - item.outcome) ** 2)), count: scored.length } : { value: null, count: 0 };
-};
 const fmtBrier = metric => metric.value === null ? '–' : metric.value.toFixed(3);
-const scopeFor = prediction => prediction.scopeCategory || (
-  /HBM|DRAM|Memory|NAND|SSD|CXMT|Nanya/i.test(prediction.forecast || '') ? 'memory_storage' :
-  /Hormuz|Brent|Iran|Öl|tanker|Red Sea|Bab al-Mandeb/i.test(prediction.forecast || '') ? 'energy_geopolitics' :
-  /Datacenter|AI|TSMC|NVIDIA|Compute|Capex|Intel|Amkor/i.test(prediction.forecast || '') ? 'ai_datacenter' :
-  'second_order_falsifier'
-);
-const clusterFor = prediction => prediction.clusterId || (
-  /Hormuz|Brent|Iran|Öl|tanker|Red Sea|Bab al-Mandeb/i.test(prediction.forecast || '') ? 'GEO-ENERGY-HORMUZ-2026' :
-  /CXMT|China.*Memory/i.test(prediction.forecast || '') ? 'CHINA-MEMORY-CXMT-2026' :
-  /HBM|DRAM|NAND|SSD|Memory/i.test(prediction.forecast || '') ? 'MEMORY-SUPERCYCLE-2026' :
-  /TSMC|NVIDIA|Amkor|Intel|Datacenter|Compute|Capex/i.test(prediction.forecast || '') ? 'AI-INFRASTRUCTURE-2026' :
-  'SECOND-ORDER-2026'
-);
-const creationConfidenceFor = prediction => {
-  if (Number.isFinite(prediction.confidenceCreation)) return prediction.confidenceCreation;
-  const arrowStart = String(prediction.history || '').match(/(?:^|\s)(\d{1,3})(?:\s*)[→>-]/);
-  if (arrowStart) return Number(arrowStart[1]);
-  if (prediction.previousConfidence !== null && Number.isFinite(prediction.previousConfidence)) return prediction.previousConfidence;
-  return prediction.confidence;
+const weightedBrier = (predictions, probabilityField) => {
+  const eligible = predictions.filter(item => Number.isFinite(item[probabilityField]) && [0, 1].includes(item.outcome) && !item.excludedFromScoring);
+  if (!eligible.length) return { value: null, unweighted: null, count: 0, clusters: 0 };
+  const byCluster = new Map();
+  for (const item of eligible) {
+    const records = byCluster.get(item.clusterId) || [];
+    records.push(((item[probabilityField] / 100) - item.outcome) ** 2);
+    byCluster.set(item.clusterId, records);
+  }
+  let weightedSum = 0;
+  let representedBudget = 0;
+  for (const [clusterId, values] of byCluster) {
+    const representative = eligible.find(item => item.clusterId === clusterId);
+    const budget = representative?.clusterBudget || 0;
+    weightedSum += average(values) * budget;
+    representedBudget += budget;
+  }
+  return {
+    value: representedBudget ? weightedSum / representedBudget : average(eligible.map(item => ((item[probabilityField] / 100) - item.outcome) ** 2)),
+    unweighted: average(eligible.map(item => ((item[probabilityField] / 100) - item.outcome) ** 2)),
+    count: eligible.length,
+    clusters: byCluster.size
+  };
 };
 
-function applyMethodology(daily, methodology) {
+function applyMethodology(daily, methodology, ledger) {
   const result = structuredClone(daily);
-  const forecastOverrides = methodology.forecastOverrides || {};
+  const ledgerById = new Map((ledger.forecasts || []).map(item => [item.id, item]));
   result.predictionLog = (result.predictionLog || []).map(prediction => {
-    const override = forecastOverrides[prediction.id] || {};
-    const enriched = { ...prediction, ...override };
-    enriched.confidenceCreation = creationConfidenceFor(enriched);
-    enriched.confidenceCurrent = enriched.confidence;
-    enriched.clusterId = clusterFor(enriched);
-    enriched.scopeCategory = scopeFor(enriched);
-    enriched.dependencyLevel ||= 'medium';
-    enriched.clusterWeight = Number.isFinite(enriched.clusterWeight) ? enriched.clusterWeight : 1;
-    enriched.adversarialCase ||= {
-      hypothesis: enriched.redPencil,
-      probability: clamp(100 - enriched.confidenceCurrent, 0, 100),
-      evidence: enriched.redPencil,
-      trigger: enriched.killCondition,
-      nextReview: enriched.nextReview,
-      trend: Number(enriched.confidenceCurrent) > Number(enriched.previousConfidence) ? 'schwächer' : Number(enriched.confidenceCurrent) < Number(enriched.previousConfidence) ? 'stärker' : 'stabil'
-    };
-    return enriched;
+    const structured = ledgerById.get(prediction.id);
+    if (!structured) return { ...prediction, ledgerError: 'Forecast ledger entry missing' };
+    return { ...prediction, ...structured, confidenceCurrent: prediction.confidence };
   });
   const signalOverrides = methodology.signalOverrides || {};
   result.acceptedSignals = (result.acceptedSignals || []).map(signal => {
@@ -86,18 +78,32 @@ function applyMethodology(daily, methodology) {
 }
 
 function methodologyMetrics(daily, methodology) {
-  const predictions = (daily.predictionLog || []).filter(item => !item.excludedFromScoring);
-  const creation = brier(predictions.map(item => ({ probability: item.confidenceCreation, outcome: item.outcome })));
-  const fixedLead = brier(predictions.map(item => ({ probability: item.confidenceFixedLead, outcome: item.outcome })));
-  const resolution = brier(predictions.map(item => ({ probability: item.confidenceResolution, outcome: item.outcome })));
+  const predictions = (daily.predictionLog || []);
+  const active = predictions.filter(item => item.active && !item.excludedFromScoring);
+  const creation = weightedBrier(predictions, 'confidenceCreation');
+  const fixedLead = weightedBrier(predictions, 'confidenceFixedLead');
+  const resolution = weightedBrier(predictions, 'confidenceResolution');
   const updateGain = creation.value !== null && resolution.value !== null ? creation.value - resolution.value : null;
-  const clusterCounts = predictions.reduce((map, item) => map.set(item.clusterId, (map.get(item.clusterId) || 0) + (item.clusterWeight || 0)), new Map());
-  const largestCluster = [...clusterCounts.entries()].sort((a, b) => b[1] - a[1])[0] || ['–', 0];
-  const totalWeight = [...clusterCounts.values()].reduce((sum, value) => sum + value, 0);
-  const scopes = predictions.reduce((map, item) => map.set(item.scopeCategory, (map.get(item.scopeCategory) || 0) + (item.clusterWeight || 0)), new Map());
-  const scopePercentages = Object.fromEntries([...scopes].map(([key, value]) => [key, totalWeight ? Math.round(value / totalWeight * 100) : 0]));
-  const calibrationStatus = creation.count < 5 ? 'Zu wenig Auflösungen' : creation.value <= 0.1 ? 'Gut kalibriert' : creation.value <= 0.2 ? 'Beobachten' : 'Fehlkalibriert';
-  return { creation, fixedLead, resolution, updateGain, largestCluster, totalWeight, scopePercentages, calibrationStatus };
+  const clusters = new Map();
+  for (const item of active) {
+    const cluster = clusters.get(item.clusterId) || { label: item.clusterLabel, count: 0, weight: 0 };
+    cluster.count += 1;
+    cluster.weight += item.effectiveWeight || 0;
+    clusters.set(item.clusterId, cluster);
+  }
+  const largestCluster = [...clusters.entries()].sort((a, b) => b[1].weight - a[1].weight)[0] || ['–', { label: '–', count: 0, weight: 0 }];
+  const rawScopes = active.reduce((map, item) => map.set(item.scopeCategory, (map.get(item.scopeCategory) || 0) + 1), new Map());
+  const effectiveScopes = active.reduce((map, item) => map.set(item.scopeCategory, (map.get(item.scopeCategory) || 0) + (item.effectiveWeight || 0)), new Map());
+  const rawTotal = active.length;
+  const scopeMetrics = Object.fromEntries(Object.keys(methodology.scopeBudget || {}).map(key => [key, {
+    count: rawScopes.get(key) || 0,
+    rawPercent: rawTotal ? Math.round((rawScopes.get(key) || 0) / rawTotal * 100) : 0,
+    effectivePercent: Math.round((effectiveScopes.get(key) || 0) * 100)
+  }]));
+  const memoryRaw = scopeMetrics.memory_storage?.rawPercent || 0;
+  const hardScopeGate = memoryRaw < methodology.scopeBudget.memory_storage.minimum;
+  const calibrationStatus = creation.count < 20 ? 'Frühe Stichprobe' : creation.value <= 0.1 ? 'Gut kalibriert' : creation.value <= 0.2 ? 'Beobachten' : 'Fehlkalibriert';
+  return { creation, fixedLead, resolution, updateGain, largestCluster, clusters, scopeMetrics, calibrationStatus, hardScopeGate, activeCount: active.length };
 }
 
 function showError(message) {
@@ -127,24 +133,26 @@ function renderPlatform(d) {
 }
 
 function renderDaily(d, methodology) {
-  const pulse = d.executivePulse || {}, conf = d.confidence || {};
+  const pulse = d.executivePulse || {};
   const metrics = methodologyMetrics(d, methodology);
   $('summary').textContent = pulse.interpretation || 'Keine Executive Summary verfügbar.';
   $('momentum').textContent = d.momentum || '';
   $('tail-index').textContent = pulse.current ?? '–';
   $('tail-index').className = pulse.status || 'orange';
   $('index-status').textContent = `vorher ${pulse.previous ?? '–'} · ${delta(pulse.current, pulse.previous)}`;
-  $('daily-confidence').textContent = `${conf.current ?? '–'}%`;
-  $('confidence-change').textContent = `${delta(conf.current, conf.previous, ' Punkte')} · vorher ${conf.previous ?? '–'}%`;
   $('brier-creation').textContent = fmtBrier(metrics.creation);
-  $('brier-creation-note').textContent = `${metrics.creation.count} sauber aufgelöste Prognose${metrics.creation.count === 1 ? '' : 'n'}`;
+  $('brier-creation-note').textContent = `${metrics.creation.count} Auflösungen · ${metrics.creation.clusters} unabhängige Cluster`;
   $('calibration-status').textContent = metrics.calibrationStatus;
-  $('calibration-note').textContent = 'Primärmetrik: Brier@Creation';
+  $('calibration-note').textContent = `Ungewichtet ${metrics.creation.unweighted?.toFixed(3) ?? '–'}`;
   const strongestFalsifier = (d.falsifiers || []).find(item => /strengthened|new_active/.test(item.status)) || (d.falsifiers || [])[0];
   $('strongest-falsifier').textContent = strongestFalsifier?.id || '–';
   $('strongest-falsifier-note').textContent = strongestFalsifier?.claim || 'Kein aktiver Falsifier';
-  $('largest-cluster').textContent = metrics.largestCluster[0];
-  $('largest-cluster-note').textContent = `${metrics.largestCluster[1]} gewichtete Prognosen`;
+  $('largest-cluster').textContent = metrics.largestCluster[1].label;
+  $('largest-cluster-note').textContent = `${metrics.largestCluster[1].count} aktive Prognosen · ${Math.round(metrics.largestCluster[1].weight * 100)}% Gesamtgewicht`;
+  $('scope-status').textContent = metrics.hardScopeGate ? '🟠 Gate aktiv' : '🟢 Im Korridor';
+  $('scope-status-note').textContent = metrics.hardScopeGate
+    ? `Memory-Rohanteil ${metrics.scopeMetrics.memory_storage.rawPercent}% · neue Non-Memory-Forecasts auf Watchlist`
+    : `Memory-Rohanteil ${metrics.scopeMetrics.memory_storage.rawPercent}%`;
   const pending = (d.predictionLog || []).filter(item => item.status === 'data_validation_pending').length;
   $('methodology-status').textContent = pending ? '🟠 Prüfung' : '🟢 OK';
   $('methodology-status-note').textContent = pending ? `${pending} Prognose eingefroren` : 'Keine Datenquarantäne';
@@ -155,36 +163,37 @@ function renderDaily(d, methodology) {
   $('history-policy').textContent = d.historyPolicy || '';
   $('daily-drivers').innerHTML = (d.driverScores || []).map(item => {
     const severity = clamp(item.absoluteSeverity ?? item.score, 0, 100);
-    const percentile = clamp(item.historicalPercentile ?? Math.round(50 + (severity - 70) * 1.5), 0, 99);
-    const zScore = Number.isFinite(item.zScore90d) ? item.zScore90d : ((severity - 75) / 12);
-    const regime = (methodology.driverRegimes || []).find(entry => severity >= entry.minimum)?.label || 'Normal / Tight';
-    return `<article><div class="row"><strong>${escapeHtml(item.name)}</strong><span>${severity}</span></div><div class="bar"><i style="width:${severity}%"></i></div><div class="driver-meta"><b>${escapeHtml(regime)}</b><span>P${percentile} · Z90 ${zScore.toFixed(1)}</span></div><small class="${item.delta > 0 ? 'pressure' : item.delta < 0 ? 'relief' : ''}">Momentum ${item.delta > 0 ? '+' : ''}${item.delta}</small></article>`;
+    const hasQualifiedHistory = Number(item.referenceWindowDays) >= 90 && Number.isFinite(item.historicalPercentile) && Number.isFinite(item.zScore90d);
+    return `<article class="driver-withheld"><div class="row"><strong>${escapeHtml(item.name)}</strong><span>${severity}</span></div><small>Legacy-Intensität · nicht clusterübergreifend vergleichbar</small><div class="driver-meta"><b class="${item.delta > 0 ? 'pressure' : item.delta < 0 ? 'relief' : ''}">Momentum ${item.delta > 0 ? '+' : ''}${item.delta}</b><span>${item.rawMetric ? escapeHtml(item.rawMetric) : 'Rohmetrik nicht geliefert'}</span></div><div class="normalization-note">${hasQualifiedHistory ? `P${item.historicalPercentile} · Z90 ${item.zScore90d.toFixed(1)} · ${item.referenceWindowDays} Tage` : 'Perzentil und Z-Score ausgesetzt · Referenzhistorie < 90 Tage'}</div></article>`;
   }).join('');
   $('daily-signals').innerHTML = (d.acceptedSignals || []).map(s => {
     const gate = Object.entries(s.admissionGate || {}).map(([key,val]) => `${key}: ${val === true ? '✓' : val === false ? '✗' : val}`).join(' · ');
     const breakdown = Object.entries(s.scoreBreakdown || {}).map(([key,val]) => `${key} ${val}`).join(' · ');
     const links = (s.sources || []).map(src => `<a href="${safeUrl(src.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(src.label)} ↗</a>`).join(' ');
     const rp = s.redPencil || {};
-    const quarantine = s.dataStatus === 'validation_pending' ? `<div class="quarantine">⚠ Datenquarantäne: ${escapeHtml(s.validationNote)}</div>` : '';
-    return `<article class="daily-signal ${s.dataStatus === 'validation_pending' ? 'is-quarantined' : ''}">${quarantine}<div class="signal-head"><div><span class="rank">#${s.rank}</span><span class="class-tag">${escapeHtml(s.classification)}</span><span class="status-chip ${escapeHtml(s.gateStatus)}">${escapeHtml(statusLabel(s.gateStatus))}</span></div><strong>${s.priorityScore}<small>/100</small></strong></div><h3>${escapeHtml(s.title)}</h3><div class="triptych"><div><h4>Fakt</h4><p>${escapeHtml(s.fact)}</p></div><div><h4>Schätzung</h4><p>${escapeHtml(s.estimate)}</p></div><div><h4>TAIL-Inferenz</h4><p>${escapeHtml(s.tailInference)}</p></div></div><details><summary>Adversarial Case</summary><p><b>Source incentive:</b> ${escapeHtml(rp.sourceIncentive)}</p><p><b>Gegenhypothese:</b> ${escapeHtml(rp.alternative)}</p><p><b>Already priced:</b> ${escapeHtml(rp.alreadyPriced)}</p><p><b>Messbarer Trigger:</b> ${escapeHtml(rp.killCondition)}</p><p><b>Forecast change:</b> ${escapeHtml(rp.forecastChange)}</p></details><div class="metadata"><b>Gate:</b> ${escapeHtml(gate)}<br><b>Rubrik:</b> ${escapeHtml(breakdown)} = ${s.priorityScore}</div><div class="source-links">${links}</div></article>`;
+    const quarantineBadge = s.dataStatus === 'validation_pending' ? `<span class="status-chip quarantined">⚠ Datenquarantäne</span>` : '';
+    const quarantine = s.dataStatus === 'validation_pending' ? `<div class="quarantine">Dieser Datensatz gehört zu Signal #${s.rank}: ${escapeHtml(s.validationNote)}</div>` : '';
+    return `<article class="daily-signal ${s.dataStatus === 'validation_pending' ? 'is-quarantined' : ''}"><div class="signal-head"><div><span class="rank">#${s.rank}</span><span class="class-tag">${escapeHtml(s.classification)}</span><span class="status-chip ${escapeHtml(s.gateStatus)}">${escapeHtml(statusLabel(s.gateStatus))}</span>${quarantineBadge}</div><strong>${s.priorityScore}<small>/100</small></strong></div><h3>${escapeHtml(s.title)}</h3>${quarantine}<div class="triptych"><div><h4>Fakt</h4><p>${escapeHtml(s.fact)}</p></div><div><h4>Schätzung</h4><p>${escapeHtml(s.estimate)}</p></div><div><h4>TAIL-Inferenz</h4><p>${escapeHtml(s.tailInference)}</p></div></div><details><summary>Adversarial Case</summary><p><b>Source incentive:</b> ${escapeHtml(rp.sourceIncentive)}</p><p><b>Gegenhypothese:</b> ${escapeHtml(rp.alternative)}</p><p><b>Already priced:</b> ${escapeHtml(rp.alreadyPriced)}</p><p><b>Messbarer Trigger:</b> ${escapeHtml(rp.killCondition)}</p><p><b>Forecast change:</b> ${escapeHtml(rp.forecastChange)}</p></details><div class="metadata"><b>Gate:</b> ${escapeHtml(gate)}<br><b>Rubrik:</b> ${escapeHtml(breakdown)} = ${s.priorityScore}</div><div class="source-links">${links}</div></article>`;
   }).join('');
   $('prediction-log').innerHTML = (d.predictionLog || []).map(p => {
     const adversarial = p.adversarialCase || {};
     const validation = p.validationNote ? `<small class="validation-note">${escapeHtml(p.validationNote)}</small>` : '';
-    return `<tr class="${p.confidenceFrozen ? 'frozen-row' : ''}"><td><code>${escapeHtml(p.id)}</code><br><span class="status-chip ${escapeHtml(p.status)}">${escapeHtml(statusLabel(p.status))}</span>${p.confidenceFrozen ? '<small>🔒 Confidence eingefroren</small>' : ''}</td><td><strong>${escapeHtml(p.forecast)}</strong><small>${escapeHtml(p.history)}</small>${validation}</td><td><b class="confidence-value">${p.confidenceCreation ?? '–'}%</b> → <b>${p.confidenceCurrent ?? '–'}%</b><small>Fixed lead ${p.confidenceFixedLead ?? '–'} · Resolution ${p.confidenceResolution ?? '–'} · Outcome ${p.outcome ?? '–'}</small></td><td><code>${escapeHtml(p.clusterId)}</code><small>${escapeHtml(p.scopeCategory)} · Abhängigkeit ${escapeHtml(p.dependencyLevel)} · Gewicht ${p.clusterWeight}</small></td><td><b>Gegenfall ${adversarial.probability ?? '–'}%:</b> ${escapeHtml(adversarial.hypothesis)}<br><b>Trigger:</b> ${escapeHtml(adversarial.trigger)}<small>Nächste Prüfung ${fmtDate(adversarial.nextReview)} · Gegenfall ${escapeHtml(adversarial.trend)}</small></td></tr>`;
+    const probability = Number.isFinite(adversarial.probability) ? `${adversarial.probability}%` : 'nicht unabhängig bewertet';
+    const resolution = p.resolved ? `<small class="resolution-note">Outcome ${p.outcome} · ${escapeHtml(p.resolutionQuality)} · ${escapeHtml(p.resolutionNote)}</small>` : '';
+    return `<tr class="${p.confidenceFrozen ? 'frozen-row' : ''}"><td><code>${escapeHtml(p.id)}</code><br><span class="status-chip ${escapeHtml(p.status)}">${escapeHtml(statusLabel(p.status))}</span>${p.confidenceFrozen ? '<small>🔒 Confidence eingefroren</small>' : ''}</td><td><strong>${escapeHtml(p.forecast)}</strong><small>${escapeHtml(p.history)}</small>${validation}${resolution}</td><td><b class="confidence-value">${p.confidenceCreation ?? '–'}%</b> → <b>${p.confidenceCurrent ?? '–'}%</b><small>Quelle: ${escapeHtml(creationSourceLabel(p.creationSource))} · Fixed lead ${p.confidenceFixedLead ?? '–'} · Resolution ${p.confidenceResolution ?? '–'}</small></td><td><code>${escapeHtml(p.clusterId)}</code><small>${escapeHtml(p.scopeCategory)} · ${p.active ? `${(p.effectiveWeight * 100).toFixed(2)}% effektives Gewicht` : 'nicht im aktiven Gewicht'} · ${escapeHtml(statusLabel(p.scopeGateStatus))}</small></td><td><b>Gegenfall:</b> ${probability}<br>${escapeHtml(adversarial.hypothesis)}<small>Relation ${escapeHtml(adversarial.relation)} · ${escapeHtml(adversarial.assessmentStatus)} · Review ${fmtDate(adversarial.nextReview)}</small></td></tr>`;
   }).join('');
   $('falsifiers').innerHTML = (d.falsifiers || []).map(f => `<article><div class="row"><code>${escapeHtml(f.id)}</code><span class="status-chip ${escapeHtml(f.status)}">${escapeHtml(statusLabel(f.status))}</span></div><h3>${escapeHtml(f.claim)}</h3><p>${escapeHtml(f.update)}</p><small>Review: ${fmtDate(f.nextReview)}</small></article>`).join('');
   $('audit-trail').innerHTML = (d.auditTrail || []).map(a => `<article><div class="row"><strong>${fmtDate(a.date)}</strong><span>${escapeHtml(a.type)}</span></div><p>${escapeHtml(a.item)}</p><small>${escapeHtml(a.action)}</small></article>`).join('');
   $('catalysts').innerHTML = (d.nextCatalysts || []).map(c => `<article><strong>${fmtDate(c.date)}</strong><p>${escapeHtml(c.event)}</p></article>`).join('');
-  $('run-history').innerHTML = (d.runHistory || []).map(r => `<article><span>${fmtDate(r.date)}</span><strong>${r.pulse}/100</strong><small>Confidence ${r.confidence}%</small><p>${escapeHtml(r.note)}</p></article>`).join('');
+  $('run-history').innerHTML = (d.runHistory || []).map(r => `<article><span>${fmtDate(r.date)}</span><strong>${r.pulse}/100</strong><small>Legacy Confidence ${r.confidence}% · nicht mehr Executive KPI</small><p>${escapeHtml(r.note)}</p></article>`).join('');
   $('rejection-log').innerHTML = (d.rejectionLog || []).map(item => `<tr><td><code>${escapeHtml(item.id)}</code><small>${fmtDate(item.date)}</small></td><td>${escapeHtml(item.signal)}</td><td><span class="status-chip ${escapeHtml(item.decision)}">${escapeHtml(statusLabel(item.decision))}</span><small>Score ${item.score}</small></td><td>${escapeHtml(item.reason)}</td><td>${escapeHtml(item.reviewResult)}</td></tr>`).join('');
-  $('calibration').innerHTML = `<div class="metric-grid"><article><span>Brier@Creation</span><strong>${fmtBrier(metrics.creation)}</strong><small>${metrics.creation.count} Auflösungen</small></article><article><span>Brier@30D</span><strong>${fmtBrier(metrics.fixedLead)}</strong><small>${metrics.fixedLead.count} Snapshots</small></article><article><span>Brier@Resolution</span><strong>${fmtBrier(metrics.resolution)}</strong><small>Nowcasting · ${metrics.resolution.count} Auflösungen</small></article><article><span>Update Gain</span><strong>${metrics.updateGain === null ? '–' : metrics.updateGain.toFixed(3)}</strong><small>Creation minus Resolution</small></article></div><p class="method-note">Creation-Werte sind unveränderlich. Neue Evidenz aktualisiert nur Current-, Fixed-Lead- und Resolution-Snapshots.</p>`;
+  $('calibration').innerHTML = `<div class="metric-grid"><article><span>Brier@Creation</span><strong>${fmtBrier(metrics.creation)}</strong><small>Cluster-adjustiert · ungewichtet ${metrics.creation.unweighted?.toFixed(3) ?? '–'}</small></article><article><span>Brier@30D</span><strong>${fmtBrier(metrics.fixedLead)}</strong><small>${metrics.fixedLead.count} Snapshots</small></article><article><span>Brier@Resolution</span><strong>${fmtBrier(metrics.resolution)}</strong><small>Nowcasting · ${metrics.resolution.count} Auflösungen</small></article><article><span>Update Gain</span><strong>${metrics.updateGain === null ? '–' : metrics.updateGain.toFixed(3)}</strong><small>Creation minus Resolution</small></article></div><p class="method-note">Creation-Werte stammen ausschließlich aus strukturierten Feldern oder der dokumentierten Legacy-Migration. Freitext wird nie geparst. Vier Auflösungen bleiben eine frühe Stichprobe.</p>`;
   const budget = methodology.scopeBudget || {};
   $('scope-control').innerHTML = Object.entries(budget).map(([key, rule]) => {
-    const value = metrics.scopePercentages[key] || 0;
-    const ok = value >= rule.minimum && value <= rule.maximum;
-    return `<article class="scope-row"><div class="row"><strong>${escapeHtml(rule.label)}</strong><span class="${ok ? 'green' : 'orange'}">${value}%</span></div><div class="bar"><i style="width:${Math.min(value, 100)}%"></i></div><small>Ziel ${rule.minimum}–${rule.maximum}% · ${ok ? 'im Budget' : 'außerhalb Budget'}</small></article>`;
-  }).join('') + `<p class="method-note">Clusterlimit verhindert, dass korrelierte Wetten den Gesamt-Brier wie unabhängige Prognosen dominieren.</p>`;
+    const values = metrics.scopeMetrics[key] || { count: 0, rawPercent: 0, effectivePercent: 0 };
+    const rawOk = values.rawPercent >= rule.minimum && values.rawPercent <= rule.maximum;
+    return `<article class="scope-row"><div class="row"><strong>${escapeHtml(rule.label)}</strong><span class="${rawOk ? 'green' : 'orange'}">${values.rawPercent}% roh · ${values.effectivePercent}% gewichtet</span></div><div class="bar dual"><i style="width:${Math.min(values.effectivePercent, 100)}%"></i></div><small>${values.count} aktive Forecasts · Ziel ${rule.minimum}–${rule.maximum}% · effektives Ziel ${rule.target}%</small></article>`;
+  }).join('') + `<div class="scope-gate ${metrics.hardScopeGate ? 'warning' : 'ok'}">${metrics.hardScopeGate ? 'Hard Scope Gate aktiv: Neue Non-Memory-Prognosen bleiben auf der Watchlist, bis der rohe Memory-Anteil mindestens 60% erreicht.' : 'Scope Gate offen.'}</div><p class="method-note">Clusterbudgets summieren sich auf 100%. Prognosen innerhalb eines Clusters teilen dessen Gewicht; sechs korrelierte Hormuz-Wetten bleiben zusammen auf 10% begrenzt.</p>`;
 }
 
 function mergeById(base = [], updates = []) {
@@ -218,11 +227,12 @@ async function fetchOptionalJson(url) {
 }
 async function loadDashboard() {
   try {
-    const [platform, daily, index, methodology] = await Promise.all([
+    const [platform, daily, index, methodology, ledger] = await Promise.all([
       fetchJson('data/dashboard.json'),
       fetchJson('data/daily-intelligence.json'),
       fetchOptionalJson('data/daily-intelligence-index.json'),
-      fetchJson('config/methodology.json')
+      fetchJson('config/methodology.json'),
+      fetchJson('data/forecast-ledger.json')
     ]);
     const files = Array.isArray(index?.files) && index.files.length
       ? index.files
@@ -230,7 +240,7 @@ async function loadDashboard() {
     const updates = await Promise.all(files.map((name) => fetchOptionalJson(`data/${name}`)));
     renderPlatform(platform);
     const mergedDaily = updates.reduce((state, update) => mergeDaily(state, update), daily);
-    renderDaily(applyMethodology(mergedDaily, methodology), methodology);
+    renderDaily(applyMethodology(mergedDaily, methodology, ledger), methodology);
   } catch (error) { showError(`Dashboard konnte nicht vollständig geladen werden: ${error.message}`); }
 }
 loadDashboard();
