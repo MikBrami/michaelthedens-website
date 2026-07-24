@@ -22,7 +22,7 @@ function validateArticles(articles) {
 }
 
 function validateDashboard(dashboard, articles) {
-  if (dashboard.schemaVersion !== 2) throw new Error('Dashboard schemaVersion must be 2');
+  if (dashboard.schemaVersion !== 3) throw new Error('Dashboard schemaVersion must be 3');
   if (dashboard.sourceOfTruth !== 'TAIL Knowledge Base') throw new Error('Dashboard must declare TAIL Knowledge Base as source of truth');
   if (!['ok', 'warning', 'error'].includes(dashboard.processStatus)) throw new Error(`Invalid processStatus: ${dashboard.processStatus}`);
   if (!['current', 'stale', 'invalid'].includes(dashboard.dataFreshness)) throw new Error(`Invalid dataFreshness: ${dashboard.dataFreshness}`);
@@ -32,6 +32,9 @@ function validateDashboard(dashboard, articles) {
   if (!Array.isArray(dashboard.markets) || dashboard.markets.length < 5) throw new Error('Market indicators incomplete');
   if (!dashboard.inbox || !['ok', 'warning', 'error'].includes(dashboard.inbox.status)) throw new Error('Inbox status missing');
   if (!dashboard.pipeline || !Array.isArray(dashboard.pipeline.steps) || dashboard.pipeline.steps.length < 4) throw new Error('Pipeline status incomplete');
+  if (dashboard.methodology?.version !== '3.0') throw new Error('TAIL Methodology 3.0 missing');
+  if (!Array.isArray(dashboard.methodology.frozenForecasts) || !dashboard.methodology.frozenForecasts.includes('P-2026-07-24-01')) throw new Error('CXMT forecast is not frozen');
+  if (!Array.isArray(dashboard.methodology.quarantinedSignals) || !dashboard.methodology.quarantinedSignals.includes('S-2026-07-24-02')) throw new Error('CXMT source signal is not quarantined');
 
   const forecastIds = new Set((dashboard.forecasts ?? []).map((forecast) => forecast.id));
   for (const id of requiredForecastIds) {
@@ -75,6 +78,12 @@ function validateDailySync(articles) {
 
 if (!exists('data/articles.json')) throw new Error('data/articles.json missing');
 if (!exists('config/sources.json')) throw new Error('config/sources.json missing');
+if (!exists('config/methodology.json')) throw new Error('config/methodology.json missing');
+
+const methodology = readJson('config/methodology.json');
+const rubricTotal = Object.values(methodology.signalRubric ?? {}).reduce((sum, value) => sum + Number(value || 0), 0);
+if (rubricTotal !== 100) throw new Error(`Signal rubric must total 100, got ${rubricTotal}`);
+if (methodology.gates?.accepted !== 80 || methodology.gates?.watchlist !== 65) throw new Error('Signal gates must be 80/65');
 
 const articles = readJson('data/articles.json');
 validateArticles(articles);
