@@ -1,0 +1,51 @@
+name: TAIL Daily Sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tail-intelligence/data/daily-intelligence-*.json'
+      - '.github/workflows/tail-daily-sync.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tail-daily-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-build-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Sync Knowledge Base and build dashboard
+        working-directory: tail-intelligence
+        run: npm run test
+
+      - name: Commit generated TAIL data
+        run: |
+          git config user.name "TAIL Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add tail-intelligence/data/articles.json \
+                  tail-intelligence/data/daily-intelligence-latest.json \
+                  tail-intelligence/data/daily-intelligence-index.json \
+                  tail-intelligence/data/dashboard.json \
+                  tail-intelligence/data/update-status.json \
+                  tail-intelligence/data/forecast-ledger.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "Update TAIL knowledge base and dashboard"
+          git push origin HEAD:main
