@@ -58,6 +58,12 @@ function validateForecastLedger(ledger, methodology) {
     ids.add(forecast.id);
     if (!forecast.clusterId || forecast.clusterId === 'SECOND-ORDER-2026') throw new Error(`Forecast ${forecast.id} has invalid catch-all cluster`);
     if (!methodology.clusters?.[forecast.clusterId]) throw new Error(`Forecast ${forecast.id} references unknown cluster`);
+    if (forecast.clusterId === 'GOVERNANCE-REVIEW-QUEUE' && (!forecast.needsClusterReview || forecast.active || !forecast.excludedFromScoring)) {
+      throw new Error(`Forecast ${forecast.id} is not safely quarantined for cluster review`);
+    }
+    if (forecast.needsClusterReview && forecast.clusterId !== 'GOVERNANCE-REVIEW-QUEUE') {
+      throw new Error(`Forecast ${forecast.id} has inconsistent cluster-review state`);
+    }
     if (forecast.confidenceCreation !== null && (!Number.isFinite(forecast.confidenceCreation) || forecast.confidenceCreation < 0 || forecast.confidenceCreation > 100)) {
       throw new Error(`Forecast ${forecast.id} has invalid creation confidence`);
     }
