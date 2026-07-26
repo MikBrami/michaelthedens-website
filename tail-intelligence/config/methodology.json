@@ -14,21 +14,46 @@
     "watchlist": 65
   },
   "scopeBudget": {
-    "memory_storage": { "minimum": 60, "maximum": 70, "target": 65, "label": "Memory & Storage" },
-    "ai_datacenter": { "minimum": 15, "maximum": 20, "target": 20, "label": "AI Infrastructure & Datacenter" },
-    "energy_geopolitics": { "minimum": 0, "maximum": 15, "target": 10, "label": "Energy & Geopolitics" },
-    "second_order_falsifier": { "minimum": 0, "maximum": 15, "target": 5, "label": "Second-order & Falsifier" }
+    "memory_storage": {
+      "minimum": 60,
+      "maximum": 70,
+      "target": 65,
+      "label": "Memory & Storage"
+    },
+    "ai_datacenter": {
+      "minimum": 15,
+      "maximum": 20,
+      "target": 20,
+      "label": "AI Infrastructure & Datacenter"
+    },
+    "energy_geopolitics": {
+      "minimum": 0,
+      "maximum": 15,
+      "target": 10,
+      "label": "Energy & Geopolitics"
+    },
+    "second_order_falsifier": {
+      "minimum": 0,
+      "maximum": 15,
+      "target": 5,
+      "label": "Second-order & Falsifier"
+    }
   },
   "clusters": {
     "MEMORY-SUPPLY-2026-2028": {
       "label": "Memory Supply 2026–2028",
       "scopeCategory": "memory_storage",
-      "budget": 0.50,
+      "budget": 0.5,
       "dependencyLevel": "high",
       "forecastIds": [
-        "P-2026-07-11-01", "P-2026-07-11-02", "P-2026-07-13-04",
-        "P-2026-07-14-01", "P-2026-07-14-02", "P-2026-07-20-04",
-        "P-2026-07-24-01", "P-2026-07-25-01"
+        "P-2026-07-11-01",
+        "P-2026-07-11-02",
+        "P-2026-07-13-04",
+        "P-2026-07-14-01",
+        "P-2026-07-14-02",
+        "P-2026-07-20-04",
+        "P-2026-07-24-01",
+        "P-2026-07-25-01"
       ]
     },
     "STORAGE-ARCHITECTURE-2026": {
@@ -36,7 +61,10 @@
       "scopeCategory": "memory_storage",
       "budget": 0.15,
       "dependencyLevel": "medium",
-      "forecastIds": ["P-2026-07-20-02", "P-2026-07-23-04"]
+      "forecastIds": [
+        "P-2026-07-20-02",
+        "P-2026-07-23-04"
+      ]
     },
     "AI-CAPEX-FOUNDRY-2026": {
       "label": "AI Capex & Foundry",
@@ -44,9 +72,14 @@
       "budget": 0.08,
       "dependencyLevel": "high",
       "forecastIds": [
-        "P-2026-07-11-04", "P-2026-07-13-02", "P-2026-07-16-01",
-        "P-2026-07-17-01", "P-2026-07-17-03", "P-2026-07-23-01",
-        "P-2026-07-23-03", "P-2026-07-24-03"
+        "P-2026-07-11-04",
+        "P-2026-07-13-02",
+        "P-2026-07-16-01",
+        "P-2026-07-17-01",
+        "P-2026-07-17-03",
+        "P-2026-07-23-01",
+        "P-2026-07-23-03",
+        "P-2026-07-24-03"
       ]
     },
     "DATACENTER-POWER-GRID-2026": {
@@ -55,9 +88,15 @@
       "budget": 0.08,
       "dependencyLevel": "medium",
       "forecastIds": [
-        "P-2026-07-10-03", "P-2026-07-12-04", "P-2026-07-14-03",
-        "P-2026-07-17-02", "P-2026-07-20-05", "P-2026-07-21-02",
-        "P-2026-07-21-03", "P-2026-07-22-03", "P-2026-07-23-02",
+        "P-2026-07-10-03",
+        "P-2026-07-12-04",
+        "P-2026-07-14-03",
+        "P-2026-07-17-02",
+        "P-2026-07-20-05",
+        "P-2026-07-21-02",
+        "P-2026-07-21-03",
+        "P-2026-07-22-03",
+        "P-2026-07-23-02",
         "P-2026-07-25-03"
       ]
     },
@@ -66,17 +105,28 @@
       "scopeCategory": "ai_datacenter",
       "budget": 0.04,
       "dependencyLevel": "medium",
-      "forecastIds": ["P-2026-07-13-03", "P-2026-07-22-01", "P-2026-07-24-02", "P-2026-07-25-02"]
+      "forecastIds": [
+        "P-2026-07-13-03",
+        "P-2026-07-22-01",
+        "P-2026-07-24-02",
+        "P-2026-07-25-02"
+      ]
     },
     "GEO-ENERGY-HORMUZ-2026": {
       "label": "Hormuz & Red Sea Energy",
       "scopeCategory": "energy_geopolitics",
-      "budget": 0.10,
+      "budget": 0.1,
       "dependencyLevel": "high",
       "forecastIds": [
-        "P-2026-07-11-03", "P-2026-07-12-01", "P-2026-07-13-01",
-        "P-2026-07-20-01", "P-2026-07-21-01", "P-2026-07-23-05",
-        "P-2026-07-25-05"
+        "P-2026-07-11-03",
+        "P-2026-07-12-01",
+        "P-2026-07-13-01",
+        "P-2026-07-20-01",
+        "P-2026-07-21-01",
+        "P-2026-07-23-05",
+        "P-2026-07-25-05",
+        "P-2026-07-26-01",
+        "P-2026-07-26-02"
       ]
     },
     "POLICY-SOVEREIGN-AI-2026": {
@@ -85,8 +135,12 @@
       "budget": 0.015,
       "dependencyLevel": "low",
       "forecastIds": [
-        "P-2026-07-10-02", "P-2026-07-12-02", "P-2026-07-16-02",
-        "P-2026-07-17-04", "P-2026-07-20-03", "P-2026-07-25-04"
+        "P-2026-07-10-02",
+        "P-2026-07-12-02",
+        "P-2026-07-16-02",
+        "P-2026-07-17-04",
+        "P-2026-07-20-03",
+        "P-2026-07-25-04"
       ]
     },
     "AI-CAPITAL-MARKETS-2026": {
@@ -94,14 +148,20 @@
       "scopeCategory": "second_order_falsifier",
       "budget": 0.015,
       "dependencyLevel": "medium",
-      "forecastIds": ["P-2026-07-16-03", "P-2026-07-24-04"]
+      "forecastIds": [
+        "P-2026-07-16-03",
+        "P-2026-07-24-04",
+        "P-2026-07-26-03"
+      ]
     },
     "COST-TRANSMISSION-2026": {
       "label": "AI Input-cost Transmission",
       "scopeCategory": "second_order_falsifier",
       "budget": 0.005,
       "dependencyLevel": "medium",
-      "forecastIds": ["P-2026-07-12-03"]
+      "forecastIds": [
+        "P-2026-07-12-03"
+      ]
     },
     "AI-PRODUCT-ADOPTION-2026": {
       "label": "AI Product & Workflow Adoption",
@@ -109,9 +169,18 @@
       "budget": 0.015,
       "dependencyLevel": "low",
       "forecastIds": [
-        "P-2026-07-10-01", "P-2026-07-21-04",
-        "P-2026-07-21-05", "P-2026-07-22-02"
+        "P-2026-07-10-01",
+        "P-2026-07-21-04",
+        "P-2026-07-21-05",
+        "P-2026-07-22-02"
       ]
+    },
+    "GOVERNANCE-REVIEW-QUEUE": {
+      "label": "Governance Review Queue",
+      "scopeCategory": "second_order_falsifier",
+      "budget": 0,
+      "dependencyLevel": "high",
+      "forecastIds": []
     }
   },
   "legacyCreationConfidence": {
