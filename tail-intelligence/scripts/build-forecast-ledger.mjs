@@ -45,6 +45,9 @@ for (const [clusterId, cluster] of Object.entries(methodology.clusters || {})) {
     clusterByForecast.set(forecastId, { clusterId, ...cluster });
   }
 }
+const reviewClusterId = 'GOVERNANCE-REVIEW-QUEUE';
+const reviewCluster = methodology.clusters?.[reviewClusterId];
+if (!reviewCluster) throw new Error(`Missing ${reviewClusterId} cluster configuration`);
 
 const firstStructured = new Map();
 for (const { name, daily } of chronologicalRecords) {
@@ -68,8 +71,9 @@ const preliminary = (merged.predictionLog || []).map((prediction) => {
   const legacy = methodology.legacyCreationConfidence?.[prediction.id];
   const override = methodology.forecastOverrides?.[prediction.id] || {};
   const resolution = methodology.resolutionOverrides?.[prediction.id] || {};
-  const cluster = clusterByForecast.get(prediction.id);
-  if (!cluster) throw new Error(`Forecast ${prediction.id} has no explicit cluster assignment`);
+  const assignedCluster = clusterByForecast.get(prediction.id);
+  const cluster = assignedCluster || { clusterId: reviewClusterId, ...reviewCluster };
+  const needsClusterReview = !assignedCluster;
 
   let confidenceCreation = previous?.confidenceCreation;
   let creationSource = previous?.creationSource;
@@ -120,6 +124,7 @@ const preliminary = (merged.predictionLog || []).map((prediction) => {
     scopeCategory: cluster.scopeCategory,
     dependencyLevel: cluster.dependencyLevel,
     clusterBudget: cluster.budget,
+    needsClusterReview,
     effectiveWeight: 0,
     scopeGateStatus: previous?.scopeGateStatus ?? 'grandfathered',
     watchlistEnteredAt: previous?.watchlistEnteredAt ?? null,
@@ -153,6 +158,17 @@ for (const item of preliminary) {
   const previous = existingById.get(item.id);
   const promotion = methodology.promotionOverrides?.[item.id];
   const wasScopeWatchlisted = previous?.scopeGateStatus === 'watchlist_scope';
+
+  if (item.needsClusterReview) {
+    item.scopeGateStatus = 'watchlist_scope';
+    item.active = false;
+    item.effectiveWeight = 0;
+    item.excludedFromScoring = true;
+    item.watchlistEnteredAt = item.admissionTimestamp;
+    item.watchlistConfidence = item.admissionConfidence;
+    item.validationNote = 'Governance quarantine: explicit forecast cluster assignment required.';
+    continue;
+  }
 
   if (wasScopeWatchlisted && !promotion?.approved) {
     item.scopeGateStatus = 'watchlist_scope';
