@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-26T08:27:27+02:00",
-  "previousRun": "2026-07-25",
+  "updatedAt": "2026-07-28T08:52:28+02:00",
+  "previousRun": "2026-07-26",
   "executivePulse": {
-    "current": 82,
-    "previous": 84,
+    "current": 85,
+    "previous": 82,
     "status": "orange",
-    "interpretation": "Der AI-Infrastrukturzyklus bleibt strukturell stark, doch Angriffe auf Saudi-Arabiens Red-Sea-Energieachse und eine selektivere Kapitalmarktreaktion erhöhen das operative Risiko. Die US-Angriffspause begrenzt kurzfristig die Eskalation, während die maritime Blockade fortbesteht."
+    "interpretation": "Der physische AI-Infrastrukturzyklus verbreitert sich erneut: NVIDIA wird zum Finanzierungs- und Vermietungsanker, Korea skaliert Sovereign AI, Rambus bestätigt den Memory-Subsystem-Boom und Navitas den 800-V-Power-Layer. Gleichzeitig bleiben Chokepoint- und Kreditkonzentrationsrisiken extrem."
   },
   "confidence": {
     "current": 99,
     "previous": 99,
-    "interpretation": "Reuters bestätigt die Red-Sea-Angriffe, die US-Angriffspause und die Marktreaktion. Ursachen der US-Pause sowie das tatsächliche Schadensausmaß in Jizan bleiben teilweise quellen- beziehungsweise handelsbasiert."
+    "interpretation": "Rambus, Navitas und NAVER liefern Primärdaten. Die größten NVIDIA-Finanzierungs- und Lease-Signale beruhen auf Reuters-Berichten unter Berufung auf WSJ/FT und bleiben ausdrücklich qualifiziert."
   },
   "riskPressure": {
     "current": 100,
     "previous": 100
   },
-  "momentum": "Strukturell stark · geopolitisch zweigeteilt · Energie-/Logistikrisiko extrem · Kapital bevorzugt kontrahierte Infrastruktur",
+  "momentum": "Strukturell stark beschleunigend · Compute-Finanzierung und Sovereign AI positiv · Kreditkonzentration und Multi-Chokepoint-Risiko extrem",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -40,23 +40,33 @@
       "delta": 0
     },
     {
-      "name": "Memory Capacity Lock / LTAs",
+      "name": "Compute Financing / Vendor Backstop",
       "score": 100,
-      "delta": 0
+      "delta": 12
     },
     {
-      "name": "Memory-Logic Co-Design",
-      "score": 99,
-      "delta": 0
-    },
-    {
-      "name": "Advanced Packaging / Foundry Integration",
+      "name": "Merchant Compute / Anchor Tenant",
       "score": 100,
-      "delta": 0
+      "delta": 15
     },
     {
-      "name": "Power Ownership / Utility Pipeline",
+      "name": "Sovereign AI / Korea",
       "score": 99,
+      "delta": 4
+    },
+    {
+      "name": "Memory Subsystem / DDR5-HBM IP",
+      "score": 98,
+      "delta": 8
+    },
+    {
+      "name": "AI Power Conversion / 800 V",
+      "score": 97,
+      "delta": 9
+    },
+    {
+      "name": "Memory-Knappheit 2026–28",
+      "score": 100,
       "delta": 0
     },
     {
@@ -65,84 +75,78 @@
       "delta": 0
     },
     {
-      "name": "Red-Sea Energy Route Risk",
+      "name": "Red Sea / Hormuz Procurement Risk",
       "score": 100,
       "delta": 6
     },
     {
-      "name": "Defense / Munitions Supply Constraint",
-      "score": 92,
-      "delta": 12
-    },
-    {
-      "name": "Capital-Market Stress",
+      "name": "Capital- & Credit-Market Stress",
       "score": 100,
-      "delta": 2
+      "delta": 0
     },
     {
       "name": "Contracted Datacenter Cash Flow",
-      "score": 94,
-      "delta": 7
+      "score": 99,
+      "delta": 5
     },
     {
       "name": "Physical Energy Cost Stress",
-      "score": 99,
-      "delta": 1
-    },
-    {
-      "name": "Memory-Knappheit 2026–28",
-      "score": 100,
-      "delta": 0
+      "score": 94,
+      "delta": -5
     }
   ],
   "acceptedSignals": [
     {
-      "id": "S-2026-07-26-01",
+      "id": "S-2026-07-28-01",
       "rank": 1,
       "priorityScore": 100,
       "classification": "Architecture Update",
-      "title": "Houthi-Angriffe erreichen Jizan und bedrohen Yanbu als wichtigste Hormuz-Umgehung",
-      "fact": "Die Houthis erklärten, Aramco-Anlagen in Jizan und Yanbu angegriffen zu haben. Reuters verifizierte eine große Rauchsäule aus Richtung der Jizan-Raffinerie, die bis zu 400.000 Barrel pro Tag verarbeiten kann. Zwei Handelsquellen berichteten von möglichem Schaden an Treibstoff- und Öllagern; zwei auf Yanbu gerichtete Raketen wurden abgefangen.",
-      "estimate": "Aramco bestätigte bis zum Analysezeitpunkt weder Schaden noch Produktionsausfall. Videos und Händlerangaben belegen ein Ereignis, aber noch keinen belastbaren Kapazitätsverlust.",
-      "tailInference": "Die wichtigste alternative Saudi-Exportachse um Hormuz wird selbst zum Ziel. Rohöl, Raffinerieprodukte, Diesel-Backup, Versicherungen und Hardwarefracht erhalten einen gemeinsamen Red-Sea-Risikoaufschlag.",
+      "title": "NVIDIA wird vom Chipanbieter zum Kreditgaranten, Ankermieter und Compute-Vermieter",
+      "fact": "Reuters berichtete unter Berufung auf das Wall Street Journal, NVIDIA erwäge eine Garantie von bis zu 250 Mrd. US-Dollar für die Finanzierung eines 10-GW-OpenAI-Campus in Ohio und zusätzlich bis zu 350 Mrd. US-Dollar Chipfinanzierung. Ein separater FT-Bericht identifiziert NVIDIA als Mieter hinter Hut 8s 1-GW-Beacon-Point-Vertrag mit bis zu 50,2 Mrd. US-Dollar Laufzeitwert.",
+      "estimate": "Die Ohio-Gespräche sind nicht abgeschlossen. NVIDIA, Hut 8 und Reuters bestätigten die Texas-Mieteridentität nicht unabhängig; 50,2 Mrd. US-Dollar schließen Verlängerungsoptionen ein.",
+      "tailInference": "NVIDIA verschiebt sich in einen neuen Stack-Layer: Hardwarelieferant, Kreditstütze, Ankermieter und potenzieller Merchant-Compute-Orchestrator. Das kann Projekte finanzierbar machen, erhöht aber Konzentration, Zirkularität und Gegenparteirisiko.",
       "admissionGate": {
         "Freshness": true,
-        "Evidence": true,
+        "Evidence": "Qualified secondary",
         "Materiality": true,
         "Causality": true,
         "Falsifiability": true
       },
       "scoreBreakdown": {
-        "SourceQuality": 20,
+        "SourceQuality": 17,
         "Novelty": 15,
         "ThesisRelevance": 20,
         "ForecastImpact": 20,
-        "Falsifiability": 15,
+        "Falsifiability": 18,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Die Houthis haben Anreiz, Trefferwirkung zu überzeichnen; Aramco hat bislang nicht kommentiert.",
-        "alternative": "Die Rauchsäule kann aus einem begrenzten Lager- oder Abwehrereignis stammen, ohne den Raffineriebetrieb materiell zu beeinträchtigen.",
-        "alreadyPriced": "Ein Red-Sea-Risikoaufschlag war vorhanden; neu sind der sichtbare Jizan-Vorfall und der direkte Angriff auf Yanbu.",
-        "killCondition": "Aramco meldet keinen operativen Ausfall, Jizan läuft binnen 72 Stunden normal und bis 15. August folgt kein weiterer verifizierter Red-Sea-Energieangriff.",
-        "forecastChange": "P-2026-07-25-05 72→75 Prozent. Neu P-2026-07-26-01: verifizierte Red-Sea-Energieunterbrechung oder erneuter materieller Angriff bis 15. August – 68 Prozent."
+        "sourceIncentive": "Anonyme Dealquellen und Projektparteien haben Anreize, Finanzierbarkeit und Größenordnung zu signalisieren.",
+        "alternative": "Projektspezifische Risikoteilung statt dauerhaftes NVIDIA-Geschäftsmodell.",
+        "alreadyPriced": "NVIDIA-Finanzierung und DSX-Partnerschaften waren bekannt; neu sind Garantie-, Lease- und mögliche Sublease-Dimension.",
+        "killCondition": "Bis Ende Q4 2026 kein bindender Garantie-, Ankermiet- oder Merchant-Compute-Meilenstein.",
+        "forecastChange": "Neu P-2026-07-28-01 – 68 Prozent."
       },
       "sources": [
         {
-          "label": "Reuters – Iran war spreads to Red Sea and Caspian",
-          "url": "https://www.reuters.com/world/asia-pacific/iran-war-spreads-red-sea-caspian-gulf-quiet-us-forgoes-strikes-2026-07-25/"
+          "label": "Reuters – NVIDIA/OpenAI financing guarantee",
+          "url": "https://www.reuters.com/business/media-telecom/nvidia-talks-with-openai-guarantee-250-billion-financing-data-center-wsj-reports-2026-07-26/"
+        },
+        {
+          "label": "Reuters – NVIDIA behind Hut 8 lease",
+          "url": "https://www.reuters.com/technology/nvidia-behind-50-billion-lease-texas-data-center-ft-reports-2026-07-28/"
         }
       ]
     },
     {
-      "id": "S-2026-07-26-02",
+      "id": "S-2026-07-28-02",
       "rank": 2,
-      "priorityScore": 96,
-      "classification": "Falsifier",
-      "title": "US-Angriffspause falsifiziert einen linear eskalierenden Luftkrieg – die Seeblockade bleibt jedoch aktiv",
-      "fact": "Die USA griffen Iran erstmals seit zwei Wochen in einer Nacht nicht an. Das US-Militär erklärte zugleich, die maritime Blockade bleibe vollständig in Kraft. Auch Iran meldete am Wochenende keine neue Angriffswelle gegen Nachbarstaaten.",
-      "estimate": "Die Pause kann diplomatische Öffnung, operative Neuplanung oder Bestandsmanagement sein. Sie ist noch kein Waffenstillstand und hat die Schifffahrtsrestriktionen nicht beendet.",
-      "tailInference": "TAIL trennt künftig den kinetischen Eskalationspfad vom maritimen Druckpfad. Weniger Luftangriffe können Öl-Futures entlasten, ohne reale Fracht-, Versicherungs- und Transitkosten zu normalisieren.",
+      "priorityScore": 99,
+      "classification": "Architecture Update",
+      "title": "Red-Sea- und Hormuz-Risiko wird zur expliziten Beschaffungsklausel",
+      "fact": "Die Houthis erklärten, saudische Ost-West-Öltransportinfrastruktur Richtung Yanbu angegriffen zu haben. Kpler registrierte am Sonntag nur elf Commodity-Passagen durch Bab al-Mandeb. Indiens MRPL schrieb erstmals bis zu eine Million Barrel Rohöl mit der Bedingung aus, weder Rotes Meer noch Hormuz zu nutzen.",
+      "estimate": "Aramco bestätigte den behaupteten Angriff nicht. MRPLs Klausel ist eine Vorsichtsmaßnahme und noch kein Beleg für dauerhaft ausgefallene Mengen.",
+      "tailInference": "Geopolitik wird vom Preisaufschlag zur Vertragsarchitektur. Herkunft, Route und Lieferfenster werden gemeinsam beschafft; Frachtdauer, Working Capital, Diesel- und Backup-Power-Risiken steigen.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -155,295 +159,305 @@
         "Novelty": 15,
         "ThesisRelevance": 20,
         "ForecastImpact": 19,
-        "Falsifiability": 14,
-        "TimeSensitivity": 8
+        "Falsifiability": 15,
+        "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Regierung und Militär können eine operative Pause diplomatisch rahmen; Iran kann Zurückhaltung als Erfolg darstellen.",
-        "alternative": "Die Unterbrechung ist nur taktisch und wird binnen Tagen durch eine neue Angriffswelle beendet.",
-        "alreadyPriced": "Friedensgespräche waren im Markt; neu ist die erste tatsächliche Angriffspause bei fortbestehender Blockade.",
-        "killCondition": "Die USA nehmen binnen 72 Stunden großangelegte Angriffe wieder auf oder Iran startet eine neue regionale Angriffswelle.",
-        "forecastChange": "P-2026-07-20-01 97→96 Prozent; F-2026-07-26-01 neu: lineare Eskalation ist vorläufig falsifiziert, maritime Eskalation nicht."
+        "sourceIncentive": "Houthis überzeichnen Trefferwirkung; Käufer können temporär sehr konservative Klauseln setzen.",
+        "alternative": "Diplomatie und Eskorte normalisieren die Routen schneller als die Tenderlaufzeiten.",
+        "alreadyPriced": "Fracht- und Versicherungsaufschläge waren bekannt; neu ist die Doppelrouten-Ausschlussklausel.",
+        "killCondition": "MRPL hebt die Klausel auf, Bab al-Mandeb normalisiert sich und Aramco meldet keinen Schaden.",
+        "forecastChange": "P-2026-07-26-01 68→76 Prozent; neu P-2026-07-28-02 – 72 Prozent."
       },
       "sources": [
         {
-          "label": "Reuters – US forgoes strikes while blockade remains",
-          "url": "https://www.reuters.com/world/asia-pacific/iran-war-spreads-red-sea-caspian-gulf-quiet-us-forgoes-strikes-2026-07-25/"
+          "label": "Reuters – Houthis target Saudi east-west oil transport",
+          "url": "https://www.reuters.com/world/middle-east/houthis-say-they-targeted-saudi-east-west-oil-transport-2026-07-27/"
+        },
+        {
+          "label": "Reuters – Red Sea shipping slows",
+          "url": "https://www.reuters.com/world/middle-east/red-sea-shipping-slows-after-houthi-attack-saudi-arabia-data-shows-2026-07-27/"
+        },
+        {
+          "label": "Reuters – MRPL tender avoids Red Sea and Hormuz",
+          "url": "https://www.reuters.com/business/energy/indias-mrpl-seeks-crude-via-tender-avoiding-red-sea-hormuz-document-shows-2026-07-27/"
         }
       ]
     },
     {
-      "id": "S-2026-07-26-03",
+      "id": "S-2026-07-28-03",
       "rank": 3,
-      "priorityScore": 92,
+      "priorityScore": 97,
       "classification": "Architecture Update",
-      "title": "US-Munitionsbestände werden zum geopolitischen Kapazitäts- und Lieferkettenlimit",
-      "fact": "Reuters berichtete unter Berufung auf US-Medien und einen US-Beamten, dass Sorgen über Munitionsbestände, regionale Verbündete, Energieversorgung und Weltwirtschaft in die Entscheidung gegen eine weitere unmittelbare Eskalation eingeflossen seien.",
-      "estimate": "Die Bestandsargumente stammen nicht aus einer offiziellen Inventaroffenlegung. Umfang, kritische Munitionstypen und tatsächlicher Einfluss auf die Einsatzplanung sind unbekannt.",
-      "tailInference": "Defense-Supply wird zu einem aktiven Gegenlimit des Energie- und Logistikszenarios. Eskalationsfähigkeit hängt nicht nur von politischem Willen ab, sondern von industrieller Nachproduktion, Allokation und Bündnisreserven.",
+      "title": "NAVER, Brookfield und NVIDIA finanzieren 200 MW Sovereign AI mit 10 Mrd. US-Dollar",
+      "fact": "NAVER baut seine NVIDIA-DSX-AI-Fabrik in Sejong von 55 auf 200 MW aus. Brookfield stellt bis zu 9 Mrd. US-Dollar als exklusiver Kapitalpartner bereit, NVIDIA investiert 1 Mrd. US-Dollar; Vera Rubin und Blackwell sollen Produktions-Compute für Modelle, Agenten und Physical AI liefern.",
+      "estimate": "200 MW sind Ausbauziel, keine bereits installierte Last. Stromanschluss, GPU-Lieferungen, Auslastung und NAVERs Restfinanzierung bleiben offen.",
+      "tailInference": "Sovereign AI wird zur dreiteiligen Finanzierungsarchitektur aus lokaler Plattform, globalem Infrastrukturkapital und Chipanbieter. Der Stack umfasst Compute, offene Modelle, Agenten und World Models.",
       "admissionGate": {
-        "Freshness": true,
-        "Evidence": "Qualified secondary",
+        "Freshness": "Late admission / since prior cut-off",
+        "Evidence": true,
         "Materiality": true,
         "Causality": true,
         "Falsifiability": true
       },
       "scoreBreakdown": {
-        "SourceQuality": 17,
-        "Novelty": 15,
-        "ThesisRelevance": 18,
+        "SourceQuality": 20,
+        "Novelty": 13,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 20,
+        "Falsifiability": 15,
+        "TimeSensitivity": 9
+      },
+      "redPencil": {
+        "sourceIncentive": "Gemeinsame Partner-PR betont nationale Ambition und Execution Readiness.",
+        "alternative": "Phasenweiser Ausbau oder Ersatz bestehender NAVER-Kapazität.",
+        "alreadyPriced": "55-MW- und Gigawatt-Roadmap waren bekannt; neu sind 200 MW und die 9+1-Mrd.-Finanzierungsstruktur.",
+        "killCondition": "Bis Ende 2027 kein bindender 100-MW-Meilenstein oder Scope unter 100 MW.",
+        "forecastChange": "Neu P-2026-07-28-03 – 80 Prozent."
+      },
+      "sources": [
+        {
+          "label": "NAVER – Brookfield and NVIDIA expand national AI factory",
+          "url": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
+        },
+        {
+          "label": "Reuters – NVIDIA investment in NAVER",
+          "url": "https://www.reuters.com/business/media-telecom/nvidia-acquire-1-billion-new-shares-south-koreas-naver-2026-07-26/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-07-28-04",
+      "rank": 4,
+      "priorityScore": 96,
+      "classification": "Layer Update",
+      "title": "Rambus bestätigt den Memory-Subsystem-Boom jenseits des DRAM-Dies",
+      "fact": "Rambus meldete Rekordumsatz von 207,4 Mio. US-Dollar, plus 20 Prozent, und Rekord-Produktumsatz von 99,2 Mio. US-Dollar. Das Portfolio umfasst DDR5-9600-Komplettchipsets und PCIe-7-Switch-IP; im Earnings Call nannte Rambus einen Tier-1-US-Hyperscaler-Design-Win für Next-Generation-HBM.",
+      "estimate": "Der Hyperscaler wurde nicht genannt; Design Wins sind keine Volumenumsätze. Rekordumsatz kann Royalty- und Timingeffekte enthalten.",
+      "tailInference": "Memory-Wert wandert vom DRAM-Die in RCD, PMIC, SPD, Sensorik, Controller-IP, Sicherheit und PCIe-Switching. Agentic AI erhöht CPU-Server-, DDR5- und Datenbewegungsbedarf parallel zu HBM.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 20,
+        "Novelty": 14,
+        "ThesisRelevance": 20,
         "ForecastImpact": 18,
         "Falsifiability": 14,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Anonyme Quellen können interne Debatten selektiv darstellen; Bestandsknappheit kann als politische Begründung dienen.",
-        "alternative": "Diplomatie und Alliierte-Sensitivität waren wichtiger als tatsächliche Munitionsengpässe.",
-        "alreadyPriced": "Rüstungsengpässe sind seit Ukraine bekannt; neu ist ihr berichteter Einfluss auf die Iran-Operationsplanung.",
-        "killCondition": "Das Pentagon nimmt rasch eine hohe Angriffstaktung ohne sichtbare Beschaffungs- oder Allokationsänderungen wieder auf.",
-        "forecastChange": "Neuer Scope-Watch-Forecast P-2026-07-26-02: US-Eskalation bleibt bis 2. August unter der Intensität der vorherigen 13 Nächte – 62 Prozent."
+        "sourceIncentive": "Rambus verkauft Interface-Chips und IP und betont Systembottlenecks.",
+        "alternative": "Kunden integrieren Funktionen selbst oder Standards drücken den Content-Wert.",
+        "alreadyPriced": "DDR5 9600 und PCIe 7 waren angekündigt; neu sind Rekord-Produktumsatz und Tier-1-HBM-Design-Win.",
+        "killCondition": "Q3-Produktumsatz unter 90 Mio. US-Dollar oder kein HBM-Meilenstein bis Ende 2027.",
+        "forecastChange": "Neu P-2026-07-28-04 – 74 Prozent."
       },
       "sources": [
         {
-          "label": "Reuters – stockpile concerns in US escalation debate",
-          "url": "https://www.reuters.com/world/asia-pacific/iran-war-spreads-red-sea-caspian-gulf-quiet-us-forgoes-strikes-2026-07-25/"
+          "label": "Rambus – Q2 2026 results",
+          "url": "https://investor.rambus.com/press-releases/press-release-details/2026/Rambus-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+        },
+        {
+          "label": "Rambus – DDR5 9600 server RDIMM chipset",
+          "url": "https://investor.rambus.com/press-releases/press-release-details/2026/Rambus-Enables-Next-Generation-AI-and-Data-Center-Platforms-with-DDR5-9600-Server-RDIMM-Chipset/default.aspx"
         }
       ]
     },
     {
-      "id": "S-2026-07-26-04",
-      "rank": 4,
-      "priorityScore": 87,
-      "classification": "Falsifier",
-      "title": "Halbleiterwerte fallen trotz starker Nachfrage- und Guidance-Daten",
-      "fact": "Am Freitag verlor der Philadelphia Semiconductor Index 4,5 Prozent; Intel fiel trotz über den Erwartungen liegender Prognose und höherer Investitionspläne um 7,9 Prozent. Der Nasdaq verlor 0,64 Prozent und beendete die zweite Verlustwoche in Folge.",
-      "estimate": "Ein einzelner Risk-off-Tag misst keine reale Nachfrageänderung. Öl, Zinsen, Gewinnmitnahmen und Positionierung können die sektorale Bewegung verstärkt haben.",
-      "tailInference": "Starke Umsatz- und Capex-Daten garantieren keine positiven Bewertungen. Der physische AI-Infrastrukturzyklus und der Finanzierung-/Bewertungszyklus sind nun klar getrennte TAIL-Layer.",
-      "admissionGate": {
-        "Freshness": "Late admission",
-        "Evidence": true,
-        "Materiality": true,
-        "Causality": true,
-        "Falsifiability": true
-      },
-      "scoreBreakdown": {
-        "SourceQuality": 19,
-        "Novelty": 13,
-        "ThesisRelevance": 18,
-        "ForecastImpact": 18,
-        "Falsifiability": 14,
-        "TimeSensitivity": 5
-      },
-      "redPencil": {
-        "sourceIncentive": "Marktkommentare suchen nachträglich ein einheitliches Narrativ für komplexe Kursbewegungen.",
-        "alternative": "Der Rückgang ist taktisches Deleveraging nach starken Kursgewinnen und kein struktureller AI-Capex-Bruch.",
-        "alreadyPriced": "Bewertungsstress war aktiv; neu sind die Stärke des SOX-Rückgangs und Intels negative Reaktion auf gute operative Daten.",
-        "killCondition": "Halbleiterwerte holen die Verluste in der kommenden Earnings-Woche zurück und Hyperscaler erhöhen Guidance ohne weiteren Bewertungsabschlag.",
-        "forecastChange": "F-2026-07-13-02 wird erneut verstärkt. Keine physische Nachfrageprognose wird allein wegen des Kursrückgangs gesenkt."
-      },
-      "sources": [
-        {
-          "label": "Reuters – Nasdaq and chip stocks fall on AI-spending angst",
-          "url": "https://in.marketscreener.com/news/nasdaq-falls-on-angst-over-ai-spending-ahead-of-earnings-reports-ce7f51dfd18bf027"
-        }
-      ]
-    },
-    {
-      "id": "S-2026-07-26-05",
+      "id": "S-2026-07-28-05",
       "rank": 5,
-      "priorityScore": 82,
-      "classification": "Signal",
-      "title": "Digital Realty steigt 11 Prozent: Kapital bevorzugt kontrahierte Datacenter-Cashflows gegenüber Chip-Beta",
-      "fact": "Digital Realty stieg am Freitag um 11 Prozent, nachdem das Unternehmen seine Jahresprognose für Funds from Operations erhöht hatte. Gleichzeitig fielen Halbleiterwerte und der Technologiesektor deutlich.",
-      "estimate": "Die Tagesbewegung kann durch Erwartungen, Short-Covering und REIT-Zinsfaktoren verstärkt sein. Sie belegt nicht, dass alle Datacenter-Assets immun gegen Überbau- oder Finanzierungsrisiken sind.",
-      "tailInference": "Der Kapitalmarkt verwirft AI-Infrastruktur nicht pauschal. Er differenziert stärker zwischen ungewisser zukünftiger Capex-Rendite und bereits kontrahierten, cashflow-sichtbaren Datacenter-Assets.",
+      "priorityScore": 93,
+      "classification": "Layer Update",
+      "title": "Navitas zeigt, dass 800-V-Power-Architektur vom Demo- zum Produktions-Ramp wechselt",
+      "fact": "Navitas steigerte Q2-Umsatz sequenziell um 22 Prozent auf 10,5 Mio. US-Dollar. High-Power-Märkte wuchsen mehr als 50 Prozent zum Vorjahr; AI-Datacenter und Grid/Energy sollen bis Jahresende mehr als ein Drittel des Umsatzes liefern. Produktionsmuster unterstützen 800-V-AI-Architekturen und geplante Hyperscaler-/XPU-Ramps 2027.",
+      "estimate": "Navitas ist klein, schreibt operative Verluste und Kundenprogramme sind keine garantierten Bestellungen. 800-V-Adoption kann sich verzögern.",
+      "tailInference": "Der Power-Layer wird messbar: GaN und Hochvolt-SiC wandern in PSU, BBU, 800-V-Distribution, Solid-State-Transformer und Grid. AI-Infrastruktur verbreitert sich vor und innerhalb des Racks.",
       "admissionGate": {
-        "Freshness": "Late admission",
+        "Freshness": true,
         "Evidence": true,
         "Materiality": true,
         "Causality": true,
         "Falsifiability": true
       },
       "scoreBreakdown": {
-        "SourceQuality": 18,
-        "Novelty": 13,
-        "ThesisRelevance": 17,
-        "ForecastImpact": 16,
-        "Falsifiability": 12,
-        "TimeSensitivity": 6
+        "SourceQuality": 20,
+        "Novelty": 14,
+        "ThesisRelevance": 19,
+        "ForecastImpact": 17,
+        "Falsifiability": 14,
+        "TimeSensitivity": 9
       },
       "redPencil": {
-        "sourceIncentive": "Eine positive REIT-Reaktion kann firmenspezifisch sein und lässt sich nicht automatisch auf den Sektor übertragen.",
-        "alternative": "Zins- und FFO-Sondereffekte erklären die Bewegung besser als ein strukturelles Infrastruktur-Rotationssignal.",
-        "alreadyPriced": "Kontrahierte Cashflows gelten als defensiver; neu ist die extreme relative Divergenz zu Halbleitern.",
-        "killCondition": "Datacenter-REITs geben den relativen Gewinn in der kommenden Woche vollständig ab oder senken Auslastungs-/FFO-Prognosen.",
-        "forecastChange": "Neuer Scope-Watch-Forecast P-2026-07-26-03: kontrahierte Datacenter-Assets outperformen Halbleiter bis Ende August – 58 Prozent."
+        "sourceIncentive": "Navitas hat sein Geschäftsmodell auf AI-Power umgestellt und betont Pipeline und SAM.",
+        "alternative": "Samples und kleine Programme; Hyperscaler können bei etablierten Power-Anbietern bleiben.",
+        "alreadyPriced": "800-V-Architektur war bekannt; neu sind Produktionsmuster, Q3-Guidance und Umsatzmix-Pfad.",
+        "killCondition": "Q3 unter 13 Mio. US-Dollar, AI-Infrastruktur Q4 unter einem Drittel oder kein 2027-Ramp.",
+        "forecastChange": "Neu P-2026-07-28-05 – 76 Prozent."
       },
       "sources": [
         {
-          "label": "Reuters – Digital Realty rallies as chip stocks fall",
-          "url": "https://in.marketscreener.com/news/nasdaq-falls-on-angst-over-ai-spending-ahead-of-earnings-reports-ce7f51dfd18bf027"
+          "label": "Navitas – Q2 2026 results",
+          "url": "https://ir.navitassemi.com/news-releases/news-release-details/navitas-semiconductor-announces-second-quarter-2026-financial"
         }
       ]
     }
   ],
   "predictionLogUpdates": [
     {
-      "id": "P-2026-07-25-05",
-      "status": "changed",
-      "forecast": "Physische Prompt-Rohölsorten bleiben bis Monatsende überwiegend über 100 US-Dollar.",
-      "confidence": 75,
-      "previousConfidence": 72,
-      "nextReview": "2026-07-27",
-      "history": "Erstellt 25.07. mit 72 Prozent; 72→75 am 26.07. nach Angriffen auf Jizan/Yanbu. Kein Wochenendpreis als Bestätigung gewertet.",
-      "redPencil": "Keine liquide Wochenendpreisfindung; bestätigter Aramco-Ausfall fehlt und die US-Angriffspause kann Prämien senken.",
-      "killCondition": "Dated Brent und Forties fallen drei Handelstage unter 100 US-Dollar oder der Aufschlag zu Futures sinkt unter 3 US-Dollar."
-    },
-    {
-      "id": "P-2026-07-25-02",
-      "status": "changed",
-      "forecast": "Samsung und Broadcom konkretisieren bis Ende H1 2027 mindestens ein bindendes Programm für HBM, Sub-2-nm-Foundry oder Advanced Packaging.",
-      "confidence": 74,
-      "previousConfidence": 70,
-      "nextReview": "2026-12-31",
-      "history": "Erstellt 25.07. mit 70 Prozent; 70→74 am 26.07. nach unabhängiger Reuters-Bestätigung und konkreter Foundry/HBM-Einordnung.",
-      "redPencil": "MOU bleibt unverbindlich; der 200-Mrd.-Dollar-Wert aggregiert mehrere Produktgruppen und fünf Jahre.",
-      "killCondition": "Bis Ende H1 2027 kein bindender HBM-, Foundry- oder Packaging-Meilenstein."
-    },
-    {
       "id": "P-2026-07-20-01",
       "status": "changed",
       "forecast": "Brent bleibt bis Ende Juli überwiegend über 85 US-Dollar, solange Hormuz und die Red-Sea-Route nicht nachhaltig normalisieren.",
-      "confidence": 96,
-      "previousConfidence": 97,
-      "nextReview": "2026-07-27",
-      "history": "82→78→84→92→97; 97→96 am 26.07. wegen US-Angriffspause bei gleichzeitigem Red-Sea-Angriff.",
-      "redPencil": "Diplomatie kann Futures schneller entlasten als physische Logistik; Jizan-Schaden ist nicht bestätigt.",
-      "killCondition": "Drei Handelstage Brent unter 80 US-Dollar oder Verkehr über 80 Prozent des Normalniveaus."
+      "confidence": 78,
+      "previousConfidence": 96,
+      "nextReview": "2026-07-31",
+      "history": "82→78→84→92→97→96; 96→78 am 28.07. nach Rückgang auf 87,86 US-Dollar und Fortschritten bei Gesprächen. Historie erhalten.",
+      "redPencil": "Brent bleibt über 85 US-Dollar und die physischen Routen bleiben gestört; der Preis reagiert stark auf Diplomatie.",
+      "killCondition": "Drei Handelstage unter 85 US-Dollar oder Hormuz-Normalisierung über 80 Prozent."
     },
     {
       "id": "P-2026-07-26-01",
+      "status": "changed",
+      "forecast": "Bis 15. August tritt mindestens ein weiterer verifizierter materieller Angriff oder operativer Ausfall an Saudi-Arabiens Red-Sea-Energieinfrastruktur auf.",
+      "confidence": 76,
+      "previousConfidence": 68,
+      "nextReview": "2026-08-15",
+      "history": "68→76 am 28.07. nach Houthi-Behauptung gegen Ost-West-Transport und gefallenem Bab-al-Mandeb-Verkehr.",
+      "redPencil": "Aramco hat keinen Schaden bestätigt.",
+      "killCondition": "Keine weitere verifizierte Unterbrechung bis 15. August und normaler Verkehr."
+    },
+    {
+      "id": "P-2026-07-28-01",
       "status": "new",
-      "forecast": "Bis 15. August wird mindestens ein materieller operativer Ausfall oder ein weiterer verifizierter Angriff auf Saudi-Arabiens Red-Sea-Öl-/Exportinfrastruktur gemeldet.",
+      "forecast": "NVIDIA erreicht bis Ende Q4 2026 mindestens einen bindenden Garantie-, Ankermiet- oder Merchant-Compute-Meilenstein in einem Projekt über 100 MW.",
       "confidence": 68,
       "previousConfidence": null,
-      "nextReview": "2026-08-02",
-      "history": "Erstellt 26.07. nach Jizan-Rauchentwicklung und abgefangenen Yanbu-Raketen.",
-      "redPencil": "Houthi-Claims können Wirkung überzeichnen; Saudi-Abwehr kann weitere Angriffe ohne Betriebsunterbrechung abfangen.",
-      "killCondition": "Bis 15. August kein verifizierter weiterer Angriff und kein gemeldeter operativer Ausfall."
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 28.07. auf Basis der Ohio- und Hut-8-Berichte.",
+      "redPencil": "Anonyme Quellen; Zirkularität und Kreditrisiko können Deals stoppen.",
+      "killCondition": "Keine bindende Vereinbarung bis 31.12.2026 oder ausdrückliche Absage."
     },
     {
-      "id": "P-2026-07-26-02",
+      "id": "P-2026-07-28-02",
       "status": "new",
-      "forecast": "Die US-Angriffstaktung gegen Iran bleibt bis 2. August unter der Intensität der vorangegangenen 13 Nächte.",
-      "confidence": 62,
-      "previousConfidence": null,
-      "nextReview": "2026-08-02",
-      "history": "Erstellt 26.07. als Scope-Watch-Forecast; Aufnahme nach Hard-Scope-Gate nur bei expliziter Promotion.",
-      "redPencil": "Eine einzelne neue Eskalation kann die Pause sofort beenden; Bestandsargumente sind nicht offiziell quantifiziert.",
-      "killCondition": "Drei aufeinanderfolgende Nächte mit Angriffsumfang auf oder über dem vorherigen Niveau."
-    },
-    {
-      "id": "P-2026-07-26-03",
-      "status": "new",
-      "forecast": "Kontrahierte Datacenter-REITs outperformen den Philadelphia Semiconductor Index bis Ende August.",
-      "confidence": 58,
+      "forecast": "Mindestens ein weiterer asiatischer Raffinerie- oder LNG-Tender enthält bis Ende August eine Red-Sea-/Hormuz-Ausschluss- oder Sicherheitsklausel.",
+      "confidence": 72,
       "previousConfidence": null,
       "nextReview": "2026-08-31",
-      "history": "Erstellt 26.07. als Scope-Watch-Forecast nach Digital-Realty/SOX-Divergenz.",
-      "redPencil": "Ein Tagesmove und Zinseffekte sind keine robuste sektorale Base Rate.",
-      "killCondition": "SOX outperformt Datacenter-REITs bis 31. August oder REIT-FFO-/Auslastungsguidance wird gesenkt."
+      "history": "Erstellt 28.07. nach MRPL-Tender.",
+      "redPencil": "MRPL kann ein einmaliger Vorsichtsfall sein.",
+      "killCondition": "Bis Ende August kein zweiter dokumentierter Tender."
+    },
+    {
+      "id": "P-2026-07-28-03",
+      "status": "new",
+      "forecast": "NAVER erreicht bis Ende 2027 einen bindenden Bau-, Power- oder Hardware-Meilenstein für mindestens 100 MW der geplanten 200-MW-AI-Fabrik.",
+      "confidence": 80,
+      "previousConfidence": null,
+      "nextReview": "2026-12-31",
+      "history": "Erstellt 28.07.; offizielles 10-Mrd.-US-Dollar-Finanzierungsmodell.",
+      "redPencil": "200 MW sind Zielgröße; Strom und GPU-Lieferung bleiben offen.",
+      "killCondition": "Scope unter 100 MW oder kein Meilenstein bis Ende 2027."
+    },
+    {
+      "id": "P-2026-07-28-04",
+      "status": "new",
+      "forecast": "Rambus hält Q3-Produktumsatz über 95 Mio. US-Dollar und meldet bis Ende 2027 einen weiteren HBM-, MRDIMM- oder SOCAMM-Hyperscaler-Meilenstein.",
+      "confidence": 74,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 28.07. nach Rekord-Produktumsatz und Tier-1-HBM-Design-Win.",
+      "redPencil": "Design Wins sind keine Volumenumsätze.",
+      "killCondition": "Q3-Produktumsatz unter 90 Mio. US-Dollar oder kein weiterer Meilenstein."
+    },
+    {
+      "id": "P-2026-07-28-05",
+      "status": "new",
+      "forecast": "Navitas erreicht Q3 mindestens 13 Mio. US-Dollar Umsatz und AI-Infrastruktur über ein Drittel des Q4-Umsatzes.",
+      "confidence": 76,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 28.07. nach Q2-Ergebnis und Q3-Guidance.",
+      "redPencil": "Samples und Design-Pipeline sind keine Bestellungen.",
+      "killCondition": "Q3 unter 13 Mio. US-Dollar oder AI-Infrastruktur Q4 unter einem Drittel."
     }
   ],
   "falsifierUpdates": [
     {
-      "id": "F-2026-07-12-01",
-      "status": "active_weakened",
-      "claim": "Alternative Routen und Eskorte ermöglichen einen Mindestfluss trotz Hormuz-Störung.",
-      "update": "Direkte Angriffe auf Jizan und Yanbu schwächen die Red-Sea-Umgehung; ein bestätigter großer Produktionsausfall fehlt weiterhin.",
-      "nextReview": "2026-07-27"
+      "id": "F-2026-07-28-01",
+      "status": "new_active",
+      "claim": "Der Energiepreisschock ist nicht einseitig: Diplomatie kann Futures trotz physischer Engpässe schnell entlasten.",
+      "update": "Brent fiel auf 87,86 US-Dollar, obwohl Hormuz-Exporte etwa halbiert und Red-Sea-Risiken aktiv sind.",
+      "nextReview": "2026-07-31"
     },
     {
       "id": "F-2026-07-13-02",
       "status": "active_strengthened",
-      "claim": "Bewertung, FCF und Kapitalkosten begrenzen unbegrenzte AI-Capex-Toleranz.",
-      "update": "SOX -4,5 Prozent und Intel -7,9 Prozent trotz starker operativer Daten; physische Nachfrage bleibt jedoch robust.",
-      "nextReview": "2026-07-31"
+      "claim": "Kredit-, FCF- und Bewertungsdruck begrenzen unbegrenzte AI-Capex-Toleranz.",
+      "update": "NVIDIA-Garantien und Ankermietberichte zeigen zusätzlichen Bedarf an Bilanz- und Gegenparteistützen.",
+      "nextReview": "2026-10-31"
     },
     {
-      "id": "F-2026-07-26-01",
-      "status": "new_active",
-      "claim": "Eine linear weiter eskalierende US-Luftkampagne ist durch die erste Angriffspause seit zwei Wochen vorläufig falsifiziert.",
-      "update": "Die maritime Blockade bleibt aktiv; Falsifier gilt nur für die kinetische Taktung.",
-      "nextReview": "2026-08-02"
-    },
-    {
-      "id": "F-2026-07-26-02",
-      "status": "new_watch",
-      "claim": "Eine pauschale De-Rating-These für sämtliche AI-Infrastruktur wird durch Digital Realty +11 Prozent falsifiziert.",
-      "update": "Kontrahierte Cashflows werden belohnt; Übertragbarkeit auf den gesamten Datacenter-Sektor ist offen.",
-      "nextReview": "2026-08-31"
+      "id": "F-2026-07-21-01",
+      "status": "active_weakened",
+      "claim": "Langfristige Verträge widerlegen einen generellen AI-Infrastruktur-Finanzierungsstopp.",
+      "update": "NAVER/Brookfield bestätigt Kapitalverfügbarkeit; die NVIDIA-Berichte zeigen zugleich höhere Kreditabhängigkeit.",
+      "nextReview": "2026-10-31"
     }
   ],
   "auditTrailAdditions": [
     {
-      "date": "2026-07-26",
-      "type": "Late admission / process miss",
-      "item": "Der Freitagsschluss mit SOX -4,5 Prozent, Intel -7,9 Prozent und Digital Realty +11 Prozent lag vor dem 25.-Juli-Lauf, wurde dort aber nicht als eigener Kapitalfluss-Befund aufgenommen.",
-      "action": "Heute mit reduzierter Neuheit nachgetragen; keine rückwirkende Datierung und keine physische Nachfrageprognose allein wegen Kursen geändert."
+      "date": "2026-07-28",
+      "type": "Late admission / cut-off correction",
+      "item": "NAVER/Brookfield/NVIDIA-Mitteilung vom 25. Juli wurde nach dem 26.-Juli-Cut-off aufgenommen.",
+      "action": "Mit reduzierter Neuheit und Originaldatum erfasst; kein rückwirkender Treffer."
     },
     {
-      "date": "2026-07-26",
-      "type": "Evidence upgrade without double counting",
-      "item": "Reuters bestätigte die Samsung-Broadcom-MOU nach dem vorigen Lauf und konkretisierte Sub-2-nm-Kommunikationschips und nächste HBM-Generationen.",
-      "action": "Bestehenden Forecast P-2026-07-25-02 angehoben; kein zweites Knowledge-Base-Signal für dasselbe Ereignis erzeugt."
+      "date": "2026-07-28",
+      "type": "Qualified secondary evidence",
+      "item": "NVIDIA/OpenAI-Garantie und Hut-8-Mieteridentität sind nicht primär bestätigt.",
+      "action": "Evidence Gate qualifiziert und Forecast-Confidence auf 68 Prozent begrenzt."
     },
     {
-      "date": "2026-07-26",
-      "type": "Watchlist not promoted",
-      "item": "Iran beschuldigt Ukraine eines Angriffs auf ein Handelsschiff im Kaspischen Meer; Verantwortung und direkter TAIL-Wirkungskanal bleiben unbestätigt.",
-      "action": "Als geopolitischer Watchpoint dokumentiert, Admission Score unter 80."
-    },
-    {
-      "date": "2026-07-26",
-      "type": "No new hard Memory/Storage trigger",
-      "item": "Seit dem 25.-Juli-Lauf entstand kein neuer unabhängiger Preis-, Shipment- oder Supply-Trigger für HBM, Server-DRAM, NAND oder Enterprise SSD.",
-      "action": "Memory-/Storage-Forecasts unverändert erhalten; Samsung-Broadcom nur als Evidence Update verarbeitet."
+      "date": "2026-07-28",
+      "type": "Memory/Power hard signals",
+      "item": "Rambus- und Navitas-Q2-Daten liefern neue primäre Subsystem- und Power-Layer-Evidenz.",
+      "action": "Neue Forecasts angelegt; HBM-/NAND-Preisprognosen nicht künstlich verändert."
     }
   ],
   "runHistoryAdditions": [
     {
-      "date": "2026-07-26",
-      "pulse": 82,
+      "date": "2026-07-28",
+      "pulse": 85,
       "confidence": 99,
-      "note": "Red-Sea-Energieinfrastruktur wird direkt angegriffen; US-Luftangriffe pausieren bei aktiver Blockade. Kapital trennt Chip-Beta von kontrahierten Datacenter-Cashflows."
+      "note": "NVIDIA-Finanzierungsarchitektur, NAVER Sovereign AI, Rambus Memory-Subsysteme und Navitas 800-V-Power verbreitern den Zyklus; Kredit- und Chokepoint-Risiken bleiben extrem."
     }
   ],
   "nextCatalysts": [
     {
-      "date": "2026-07-27",
-      "event": "Öl- und Frachtmarktöffnung: Brent, Dated Brent, Jizan-Schaden, Hormuz/Bab al-Mandeb"
-    },
-    {
-      "date": "2026-07-27",
-      "event": "CXMT-Listing und DRAM-Kapitalplattform"
-    },
-    {
       "date": "2026-07-31",
-      "event": "Hyperscaler-Earnings, Semiconductor-Bewertung und SK-hynix HBM4"
-    },
-    {
-      "date": "2026-08-02",
-      "event": "US-Angriffstaktung, Munitions-/Diplomatiepfad und Red-Sea-Angriffe"
+      "event": "Brent, Hormuz-/Red-Sea-Verkehr und diplomatische Route"
     },
     {
       "date": "2026-08-15",
-      "event": "Saudi Red-Sea-Energieinfrastruktur und Yemen-Eskalation"
+      "event": "Saudi Red-Sea-Energieinfrastruktur und weitere Tenderklauseln"
     },
     {
       "date": "2026-08-31",
-      "event": "Datacenter-REITs versus Semiconductor-Beta"
+      "event": "NAVER-Execution, asiatische Route-Avoidance und Power-Semiconductor-Ramps"
+    },
+    {
+      "date": "2026-10-31",
+      "event": "NVIDIA-Finanzierungsmeilensteine, Rambus Q3 und Navitas Q3"
+    },
+    {
+      "date": "2026-12-31",
+      "event": "NAVER 100-MW-Meilenstein und Merchant-Compute-Strukturen"
     }
   ],
-  "historyPolicy": "Forecasts, Confidence-Änderungen, Falsifier, Treffer, Late Admissions, Quarantänen und Misses bleiben sichtbar. Neue Non-Memory-Forecasts unterliegen dem aktiven Hard-Scope-Gate und werden ohne ausdrückliche Promotion nicht in den aktiven Score aufgenommen."
+  "historyPolicy": "Forecasts, Confidence-Änderungen, Falsifier, Treffer, Late Admissions und Misses bleiben sichtbar. Kein Miss wurde gelöscht oder rückwirkend als Treffer umklassifiziert."
 }

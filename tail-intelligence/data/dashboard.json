@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-07-26",
+  "dataAsOf": "2026-07-28",
   "dataFreshness": "current",
-  "dataAgeDays": 2,
-  "lastSuccessfulUpdate": "2026-07-28T00:11:27.855Z",
-  "lastForecastRun": "2026-07-28T00:11:27.855Z",
-  "newlyProcessedArticles": 0,
-  "totalArticles": 48,
-  "articleCount": 48,
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-07-28T07:03:28.708Z",
+  "lastForecastRun": "2026-07-28T07:03:28.708Z",
+  "newlyProcessedArticles": 1,
+  "totalArticles": 53,
+  "articleCount": 53,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,7 +32,7 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 55,
+    "forecastLedgerCount": 60,
     "resolvedForecasts": 4,
     "activeForecasts": 43,
     "scopeGateStatus": "active",
@@ -42,9 +42,9 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-07-28T00:11:25.771Z",
-    "newItems": 0,
-    "totalItems": 69,
+    "updatedAt": "2026-07-28T07:03:26.241Z",
+    "newItems": 1,
+    "totalItems": 70,
     "duplicateItems": 200,
     "relevantItems": 0,
     "sourceErrors": []
@@ -56,13 +56,13 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "48 Artikel · Datenstand 2026-07-26"
+        "detail": "53 Artikel · Datenstand 2026-07-28"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "69 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
+        "detail": "70 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -86,35 +86,28 @@
       "label": "Server DRAM",
       "score": 85,
       "status": "red",
-      "signals": 4
+      "signals": 5
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 81,
       "status": "orange",
-      "signals": 11
+      "signals": 12
     },
     {
       "id": "hbm",
       "label": "HBM",
       "score": 81,
       "status": "orange",
-      "signals": 9
+      "signals": 10
     },
     {
       "id": "ai_infrastructure",
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 35
-    },
-    {
-      "id": "semiconductors",
-      "label": "Semiconductors",
-      "score": 72,
-      "status": "orange",
-      "signals": 12
+      "signals": 40
     },
     {
       "id": "enterprise_ssd",
@@ -131,11 +124,18 @@
       "signals": 3
     },
     {
+      "id": "semiconductors",
+      "label": "Semiconductors",
+      "score": 71,
+      "status": "orange",
+      "signals": 13
+    },
+    {
       "id": "supply_chain",
       "label": "Supply Chain",
-      "score": 66,
+      "score": 67,
       "status": "orange",
-      "signals": 8
+      "signals": 9
     }
   ],
   "manufacturers": [
@@ -170,14 +170,14 @@
       "mentions": 2
     },
     {
-      "name": "Nvidia",
-      "score": 73,
-      "mentions": 7
-    },
-    {
       "name": "TSMC",
       "score": 72,
       "mentions": 2
+    },
+    {
+      "name": "Nvidia",
+      "score": 72,
+      "mentions": 9
     },
     {
       "name": "Oracle",
@@ -196,7 +196,7 @@
       "market": "DRAM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 79,
+      "relevanceScore": 80,
       "confidenceScore": 86,
       "horizon": "2026–2027",
       "direction": "up",
@@ -242,6 +242,7 @@
         "tail-2026-07-14-dram-prices",
         "S-2026-07-23-01",
         "S-2026-07-25-01",
+        "S-2026-07-28-04",
         "S-2026-07-25-02",
         "S-2026-07-19-04",
         "S-2026-07-23-05",
@@ -249,7 +250,7 @@
         "S-2026-07-20-03",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-07-28T00:11:27.854Z"
+      "lastUpdated": "2026-07-28T07:03:28.708Z"
     },
     {
       "id": "hbm",
@@ -303,11 +304,12 @@
         "tail-2026-07-14-hbm4-cost",
         "S-2026-07-24-03",
         "S-2026-07-25-01",
+        "S-2026-07-28-04",
         "S-2026-07-25-02",
         "S-2026-07-19-04",
         "S-2026-07-23-03"
       ],
-      "lastUpdated": "2026-07-28T00:11:27.855Z"
+      "lastUpdated": "2026-07-28T07:03:28.708Z"
     },
     {
       "id": "nand",
@@ -351,7 +353,7 @@
         "tail-2026-07-14-nand-essd",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-28T00:11:27.855Z"
+      "lastUpdated": "2026-07-28T07:03:28.708Z"
     },
     {
       "id": "enterprise_ssd",
@@ -395,7 +397,7 @@
         "tail-2026-07-14-nand-essd",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-28T00:11:27.855Z"
+      "lastUpdated": "2026-07-28T07:03:28.708Z"
     },
     {
       "id": "ai_infrastructure",
@@ -449,6 +451,12 @@
           "score": 44
         },
         {
+          "id": "S-2026-07-28-03",
+          "title": "NAVER, Brookfield und NVIDIA finanzieren 200 MW Sovereign AI mit 10 Mrd. US-Dollar",
+          "signal": "Kapazitätsentlastung",
+          "score": 44
+        },
+        {
           "id": "S-2026-07-25-04",
           "title": "HCLTech und Sarvam verankern Full-Stack Sovereign AI in einem indischen Datacenter",
           "signal": "Kapazitätsentlastung",
@@ -464,6 +472,7 @@
         "S-2026-07-25-01",
         "S-2026-07-22-03",
         "S-2026-07-23-02",
+        "S-2026-07-28-04",
         "S-2026-07-22-01",
         "S-2026-07-26-02",
         "S-2026-07-20-01",
@@ -471,9 +480,11 @@
         "S-2026-07-22-04",
         "S-2026-07-24-01",
         "S-2026-07-24-05",
+        "S-2026-07-28-02",
         "S-2026-07-23-03",
         "S-2026-07-19-01",
         "S-2026-07-26-01",
+        "S-2026-07-28-05",
         "S-2026-07-19-02",
         "S-2026-07-21-05",
         "S-2026-07-23-04",
@@ -484,18 +495,20 @@
         "S-2026-07-22-02",
         "S-2026-07-19-05",
         "S-2026-07-26-04",
+        "S-2026-07-28-01",
         "S-2026-07-26-05",
         "S-2026-07-26-03",
         "S-2026-07-20-05",
         "S-2026-07-21-04",
         "tail-2026-07-14-huawei-swaysure",
         "S-2026-07-21-02",
+        "S-2026-07-28-03",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-07-28T00:11:27.855Z"
+      "lastUpdated": "2026-07-28T07:03:28.708Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 48 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 53 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
