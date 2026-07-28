@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-28T08:52:28+02:00",
+  "previousRun": "2026-07-26",
+  "executivePulse": {
+    "current": 85,
+    "previous": 82,
+    "status": "orange",
+    "interpretation": "Der physische AI-Infrastrukturzyklus verbreitert sich erneut: NVIDIA wird zum Finanzierungs- und Vermietungsanker, Korea skaliert Sovereign AI, Rambus bestätigt den Memory-Subsystem-Boom und Navitas den 800-V-Power-Layer. Gleichzeitig bleiben Chokepoint- und Kreditkonzentrationsrisiken extrem."
+  },
+  "confidence": {
+    "current": 99,
+    "previous": 99,
+    "interpretation": "Rambus, Navitas und NAVER liefern Primärdaten. Die größten NVIDIA-Finanzierungs- und Lease-Signale beruhen auf Reuters-Berichten unter Berufung auf WSJ/FT und bleiben ausdrücklich qualifiziert."
+  },
+  "riskPressure": {"current": 100, "previous": 100},
+  "momentum": "Strukturell stark beschleunigend · Compute-Finanzierung und Sovereign AI positiv · Kreditkonzentration und Multi-Chokepoint-Risiko extrem",
+  "admissionGate": ["Freshness", "Evidence", "Materiality", "Causality", "Falsifiability"],
+  "priorityScoreWeights": {"SourceQuality": 20, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 20, "Falsifiability": 15, "TimeSensitivity": 10},
+  "driverScores": [
+    {"name": "AI-Compute-Nachfrage", "score": 100, "delta": 0},
+    {"name": "Compute Financing / Vendor Backstop", "score": 100, "delta": 12},
+    {"name": "Merchant Compute / Anchor Tenant", "score": 100, "delta": 15},
+    {"name": "Sovereign AI / Korea", "score": 99, "delta": 4},
+    {"name": "Memory Subsystem / DDR5-HBM IP", "score": 98, "delta": 8},
+    {"name": "AI Power Conversion / 800 V", "score": 97, "delta": 9},
+    {"name": "Memory-Knappheit 2026–28", "score": 100, "delta": 0},
+    {"name": "Geopolitik & Logistik", "score": 100, "delta": 0},
+    {"name": "Red Sea / Hormuz Procurement Risk", "score": 100, "delta": 6},
+    {"name": "Capital- & Credit-Market Stress", "score": 100, "delta": 0},
+    {"name": "Contracted Datacenter Cash Flow", "score": 99, "delta": 5},
+    {"name": "Physical Energy Cost Stress", "score": 94, "delta": -5}
+  ],
+  "acceptedSignals": [
+    {
+      "id": "S-2026-07-28-01",
+      "rank": 1,
+      "priorityScore": 100,
+      "classification": "Architecture Update",
+      "title": "NVIDIA wird vom Chipanbieter zum Kreditgaranten, Ankermieter und Compute-Vermieter",
+      "fact": "Reuters berichtete unter Berufung auf das Wall Street Journal, NVIDIA erwäge eine Garantie von bis zu 250 Mrd. US-Dollar für die Finanzierung eines 10-GW-OpenAI-Campus in Ohio und zusätzlich bis zu 350 Mrd. US-Dollar Chipfinanzierung. Ein separater FT-Bericht identifiziert NVIDIA als Mieter hinter Hut 8s 1-GW-Beacon-Point-Vertrag mit bis zu 50,2 Mrd. US-Dollar Laufzeitwert.",
+      "estimate": "Die Ohio-Gespräche sind nicht abgeschlossen. NVIDIA, Hut 8 und Reuters bestätigten die Texas-Mieteridentität nicht unabhängig; 50,2 Mrd. US-Dollar schließen Verlängerungsoptionen ein.",
+      "tailInference": "NVIDIA verschiebt sich in einen neuen Stack-Layer: Hardwarelieferant, Kreditstütze, Ankermieter und potenzieller Merchant-Compute-Orchestrator. Das kann Projekte finanzierbar machen, erhöht aber Konzentration, Zirkularität und Gegenparteirisiko.",
+      "admissionGate": {"Freshness": true, "Evidence": "Qualified secondary", "Materiality": true, "Causality": true, "Falsifiability": true},
+      "scoreBreakdown": {"SourceQuality": 17, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 20, "Falsifiability": 18, "TimeSensitivity": 10},
+      "redPencil": {
+        "sourceIncentive": "Anonyme Dealquellen und Projektparteien haben Anreize, Finanzierbarkeit und Größenordnung zu signalisieren.",
+        "alternative": "Projektspezifische Risikoteilung statt dauerhaftes NVIDIA-Geschäftsmodell.",
+        "alreadyPriced": "NVIDIA-Finanzierung und DSX-Partnerschaften waren bekannt; neu sind Garantie-, Lease- und mögliche Sublease-Dimension.",
+        "killCondition": "Bis Ende Q4 2026 kein bindender Garantie-, Ankermiet- oder Merchant-Compute-Meilenstein.",
+        "forecastChange": "Neu P-2026-07-28-01 – 68 Prozent."
+      },
+      "sources": [
+        {"label": "Reuters – NVIDIA/OpenAI financing guarantee", "url": "https://www.reuters.com/business/media-telecom/nvidia-talks-with-openai-guarantee-250-billion-financing-data-center-wsj-reports-2026-07-26/"},
+        {"label": "Reuters – NVIDIA behind Hut 8 lease", "url": "https://www.reuters.com/technology/nvidia-behind-50-billion-lease-texas-data-center-ft-reports-2026-07-28/"}
+      ]
+    },
+    {
+      "id": "S-2026-07-28-02",
+      "rank": 2,
+      "priorityScore": 99,
+      "classification": "Architecture Update",
+      "title": "Red-Sea- und Hormuz-Risiko wird zur expliziten Beschaffungsklausel",
+      "fact": "Die Houthis erklärten, saudische Ost-West-Öltransportinfrastruktur Richtung Yanbu angegriffen zu haben. Kpler registrierte am Sonntag nur elf Commodity-Passagen durch Bab al-Mandeb. Indiens MRPL schrieb erstmals bis zu eine Million Barrel Rohöl mit der Bedingung aus, weder Rotes Meer noch Hormuz zu nutzen.",
+      "estimate": "Aramco bestätigte den behaupteten Angriff nicht. MRPLs Klausel ist eine Vorsichtsmaßnahme und noch kein Beleg für dauerhaft ausgefallene Mengen.",
+      "tailInference": "Geopolitik wird vom Preisaufschlag zur Vertragsarchitektur. Herkunft, Route und Lieferfenster werden gemeinsam beschafft; Frachtdauer, Working Capital, Diesel- und Backup-Power-Risiken steigen.",
+      "admissionGate": {"Freshness": true, "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true},
+      "scoreBreakdown": {"SourceQuality": 20, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 19, "Falsifiability": 15, "TimeSensitivity": 10},
+      "redPencil": {
+        "sourceIncentive": "Houthis überzeichnen Trefferwirkung; Käufer können temporär sehr konservative Klauseln setzen.",
+        "alternative": "Diplomatie und Eskorte normalisieren die Routen schneller als die Tenderlaufzeiten.",
+        "alreadyPriced": "Fracht- und Versicherungsaufschläge waren bekannt; neu ist die Doppelrouten-Ausschlussklausel.",
+        "killCondition": "MRPL hebt die Klausel auf, Bab al-Mandeb normalisiert sich und Aramco meldet keinen Schaden.",
+        "forecastChange": "P-2026-07-26-01 68→76 Prozent; neu P-2026-07-28-02 – 72 Prozent."
+      },
+      "sources": [
+        {"label": "Reuters – Houthis target Saudi east-west oil transport", "url": "https://www.reuters.com/world/middle-east/houthis-say-they-targeted-saudi-east-west-oil-transport-2026-07-27/"},
+        {"label": "Reuters – Red Sea shipping slows", "url": "https://www.reuters.com/world/middle-east/red-sea-shipping-slows-after-houthi-attack-saudi-arabia-data-shows-2026-07-27/"},
+        {"label": "Reuters – MRPL tender avoids Red Sea and Hormuz", "url": "https://www.reuters.com/business/energy/indias-mrpl-seeks-crude-via-tender-avoiding-red-sea-hormuz-document-shows-2026-07-27/"}
+      ]
+    },
+    {
+      "id": "S-2026-07-28-03",
+      "rank": 3,
+      "priorityScore": 97,
+      "classification": "Architecture Update",
+      "title": "NAVER, Brookfield und NVIDIA finanzieren 200 MW Sovereign AI mit 10 Mrd. US-Dollar",
+      "fact": "NAVER baut seine NVIDIA-DSX-AI-Fabrik in Sejong von 55 auf 200 MW aus. Brookfield stellt bis zu 9 Mrd. US-Dollar als exklusiver Kapitalpartner bereit, NVIDIA investiert 1 Mrd. US-Dollar; Vera Rubin und Blackwell sollen Produktions-Compute für Modelle, Agenten und Physical AI liefern.",
+      "estimate": "200 MW sind Ausbauziel, keine bereits installierte Last. Stromanschluss, GPU-Lieferungen, Auslastung und NAVERs Restfinanzierung bleiben offen.",
+      "tailInference": "Sovereign AI wird zur dreiteiligen Finanzierungsarchitektur aus lokaler Plattform, globalem Infrastrukturkapital und Chipanbieter. Der Stack umfasst Compute, offene Modelle, Agenten und World Models.",
+      "admissionGate": {"Freshness": "Late admission / since prior cut-off", "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true},
+      "scoreBreakdown": {"SourceQuality": 20, "Novelty": 13, "ThesisRelevance": 20, "ForecastImpact": 20, "Falsifiability": 15, "TimeSensitivity": 9},
+      "redPencil": {
+        "sourceIncentive": "Gemeinsame Partner-PR betont nationale Ambition und Execution Readiness.",
+        "alternative": "Phasenweiser Ausbau oder Ersatz bestehender NAVER-Kapazität.",
+        "alreadyPriced": "55-MW- und Gigawatt-Roadmap waren bekannt; neu sind 200 MW und die 9+1-Mrd.-Finanzierungsstruktur.",
+        "killCondition": "Bis Ende 2027 kein bindender 100-MW-Meilenstein oder Scope unter 100 MW.",
+        "forecastChange": "Neu P-2026-07-28-03 – 80 Prozent."
+      },
+      "sources": [
+        {"label": "NAVER – Brookfield and NVIDIA expand national AI factory", "url": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"},
+        {"label": "Reuters – NVIDIA investment in NAVER", "url": "https://www.reuters.com/business/media-telecom/nvidia-acquire-1-billion-new-shares-south-koreas-naver-2026-07-26/"}
+      ]
+    },
+    {
+      "id": "S-2026-07-28-04",
+      "rank": 4,
+      "priorityScore": 96,
+      "classification": "Layer Update",
+      "title": "Rambus bestätigt den Memory-Subsystem-Boom jenseits des DRAM-Dies",
+      "fact": "Rambus meldete Rekordumsatz von 207,4 Mio. US-Dollar, plus 20 Prozent, und Rekord-Produktumsatz von 99,2 Mio. US-Dollar. Das Portfolio umfasst DDR5-9600-Komplettchipsets und PCIe-7-Switch-IP; im Earnings Call nannte Rambus einen Tier-1-US-Hyperscaler-Design-Win für Next-Generation-HBM.",
+      "estimate": "Der Hyperscaler wurde nicht genannt; Design Wins sind keine Volumenumsätze. Rekordumsatz kann Royalty- und Timingeffekte enthalten.",
+      "tailInference": "Memory-Wert wandert vom DRAM-Die in RCD, PMIC, SPD, Sensorik, Controller-IP, Sicherheit und PCIe-Switching. Agentic AI erhöht CPU-Server-, DDR5- und Datenbewegungsbedarf parallel zu HBM.",
+      "admissionGate": {"Freshness": true, "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true},
+      "scoreBreakdown": {"SourceQuality": 20, "Novelty": 14, "ThesisRelevance": 20, "ForecastImpact": 18, "Falsifiability": 14, "TimeSensitivity": 10},
+      "redPencil": {
+        "sourceIncentive": "Rambus verkauft Interface-Chips und IP und betont Systembottlenecks.",
+        "alternative": "Kunden integrieren Funktionen selbst oder Standards drücken den Content-Wert.",
+        "alreadyPriced": "DDR5 9600 und PCIe 7 waren angekündigt; neu sind Rekord-Produktumsatz und Tier-1-HBM-Design-Win.",
+        "killCondition": "Q3-Produktumsatz unter 90 Mio. US-Dollar oder kein HBM-Meilenstein bis Ende 2027.",
+        "forecastChange": "Neu P-2026-07-28-04 – 74 Prozent."
+      },
+      "sources": [
+        {"label": "Rambus – Q2 2026 results", "url": "https://investor.rambus.com/press-releases/press-release-details/2026/Rambus-Reports-Second-Quarter-2026-Financial-Results/default.aspx"},
+        {"label": "Rambus – DDR5 9600 server RDIMM chipset", "url": "https://investor.rambus.com/press-releases/press-release-details/2026/Rambus-Enables-Next-Generation-AI-and-Data-Center-Platforms-with-DDR5-9600-Server-RDIMM-Chipset/default.aspx"}
+      ]
+    },
+    {
+      "id": "S-2026-07-28-05",
+      "rank": 5,
+      "priorityScore": 93,
+      "classification": "Layer Update",
+      "title": "Navitas zeigt, dass 800-V-Power-Architektur vom Demo- zum Produktions-Ramp wechselt",
+      "fact": "Navitas steigerte Q2-Umsatz sequenziell um 22 Prozent auf 10,5 Mio. US-Dollar. High-Power-Märkte wuchsen mehr als 50 Prozent zum Vorjahr; AI-Datacenter und Grid/Energy sollen bis Jahresende mehr als ein Drittel des Umsatzes liefern. Produktionsmuster unterstützen 800-V-AI-Architekturen und geplante Hyperscaler-/XPU-Ramps 2027.",
+      "estimate": "Navitas ist klein, schreibt operative Verluste und Kundenprogramme sind keine garantierten Bestellungen. 800-V-Adoption kann sich verzögern.",
+      "tailInference": "Der Power-Layer wird messbar: GaN und Hochvolt-SiC wandern in PSU, BBU, 800-V-Distribution, Solid-State-Transformer und Grid. AI-Infrastruktur verbreitert sich vor und innerhalb des Racks.",
+      "admissionGate": {"Freshness": true, "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true},
+      "scoreBreakdown": {"SourceQuality": 20, "Novelty": 14, "ThesisRelevance": 19, "ForecastImpact": 17, "Falsifiability": 14, "TimeSensitivity": 9},
+      "redPencil": {
+        "sourceIncentive": "Navitas hat sein Geschäftsmodell auf AI-Power umgestellt und betont Pipeline und SAM.",
+        "alternative": "Samples und kleine Programme; Hyperscaler können bei etablierten Power-Anbietern bleiben.",
+        "alreadyPriced": "800-V-Architektur war bekannt; neu sind Produktionsmuster, Q3-Guidance und Umsatzmix-Pfad.",
+        "killCondition": "Q3 unter 13 Mio. US-Dollar, AI-Infrastruktur Q4 unter einem Drittel oder kein 2027-Ramp.",
+        "forecastChange": "Neu P-2026-07-28-05 – 76 Prozent."
+      },
+      "sources": [
+        {"label": "Navitas – Q2 2026 results", "url": "https://ir.navitassemi.com/news-releases/news-release-details/navitas-semiconductor-announces-second-quarter-2026-financial"}
+      ]
+    }
+  ],
+  "predictionLogUpdates": [
+    {"id": "P-2026-07-20-01", "status": "changed", "forecast": "Brent bleibt bis Ende Juli überwiegend über 85 US-Dollar, solange Hormuz und die Red-Sea-Route nicht nachhaltig normalisieren.", "confidence": 78, "previousConfidence": 96, "nextReview": "2026-07-31", "history": "82→78→84→92→97→96; 96→78 am 28.07. nach Rückgang auf 87,86 US-Dollar und Fortschritten bei Gesprächen. Historie erhalten.", "redPencil": "Brent bleibt über 85 US-Dollar und die physischen Routen bleiben gestört; der Preis reagiert stark auf Diplomatie.", "killCondition": "Drei Handelstage unter 85 US-Dollar oder Hormuz-Normalisierung über 80 Prozent."},
+    {"id": "P-2026-07-26-01", "status": "changed", "forecast": "Bis 15. August tritt mindestens ein weiterer verifizierter materieller Angriff oder operativer Ausfall an Saudi-Arabiens Red-Sea-Energieinfrastruktur auf.", "confidence": 76, "previousConfidence": 68, "nextReview": "2026-08-15", "history": "68→76 am 28.07. nach Houthi-Behauptung gegen Ost-West-Transport und gefallenem Bab-al-Mandeb-Verkehr.", "redPencil": "Aramco hat keinen Schaden bestätigt.", "killCondition": "Keine weitere verifizierte Unterbrechung bis 15. August und normaler Verkehr."},
+    {"id": "P-2026-07-28-01", "status": "new", "forecast": "NVIDIA erreicht bis Ende Q4 2026 mindestens einen bindenden Garantie-, Ankermiet- oder Merchant-Compute-Meilenstein in einem Projekt über 100 MW.", "confidence": 68, "previousConfidence": null, "nextReview": "2026-10-31", "history": "Erstellt 28.07. auf Basis der Ohio- und Hut-8-Berichte.", "redPencil": "Anonyme Quellen; Zirkularität und Kreditrisiko können Deals stoppen.", "killCondition": "Keine bindende Vereinbarung bis 31.12.2026 oder ausdrückliche Absage."},
+    {"id": "P-2026-07-28-02", "status": "new", "forecast": "Mindestens ein weiterer asiatischer Raffinerie- oder LNG-Tender enthält bis Ende August eine Red-Sea-/Hormuz-Ausschluss- oder Sicherheitsklausel.", "confidence": 72, "previousConfidence": null, "nextReview": "2026-08-31", "history": "Erstellt 28.07. nach MRPL-Tender.", "redPencil": "MRPL kann ein einmaliger Vorsichtsfall sein.", "killCondition": "Bis Ende August kein zweiter dokumentierter Tender."},
+    {"id": "P-2026-07-28-03", "status": "new", "forecast": "NAVER erreicht bis Ende 2027 einen bindenden Bau-, Power- oder Hardware-Meilenstein für mindestens 100 MW der geplanten 200-MW-AI-Fabrik.", "confidence": 80, "previousConfidence": null, "nextReview": "2026-12-31", "history": "Erstellt 28.07.; offizielles 10-Mrd.-US-Dollar-Finanzierungsmodell.", "redPencil": "200 MW sind Zielgröße; Strom und GPU-Lieferung bleiben offen.", "killCondition": "Scope unter 100 MW oder kein Meilenstein bis Ende 2027."},
+    {"id": "P-2026-07-28-04", "status": "new", "forecast": "Rambus hält Q3-Produktumsatz über 95 Mio. US-Dollar und meldet bis Ende 2027 einen weiteren HBM-, MRDIMM- oder SOCAMM-Hyperscaler-Meilenstein.", "confidence": 74, "previousConfidence": null, "nextReview": "2026-10-31", "history": "Erstellt 28.07. nach Rekord-Produktumsatz und Tier-1-HBM-Design-Win.", "redPencil": "Design Wins sind keine Volumenumsätze.", "killCondition": "Q3-Produktumsatz unter 90 Mio. US-Dollar oder kein weiterer Meilenstein."},
+    {"id": "P-2026-07-28-05", "status": "new", "forecast": "Navitas erreicht Q3 mindestens 13 Mio. US-Dollar Umsatz und AI-Infrastruktur über ein Drittel des Q4-Umsatzes.", "confidence": 76, "previousConfidence": null, "nextReview": "2026-10-31", "history": "Erstellt 28.07. nach Q2-Ergebnis und Q3-Guidance.", "redPencil": "Samples und Design-Pipeline sind keine Bestellungen.", "killCondition": "Q3 unter 13 Mio. US-Dollar oder AI-Infrastruktur Q4 unter einem Drittel."}
+  ],
+  "falsifierUpdates": [
+    {"id": "F-2026-07-28-01", "status": "new_active", "claim": "Der Energiepreisschock ist nicht einseitig: Diplomatie kann Futures trotz physischer Engpässe schnell entlasten.", "update": "Brent fiel auf 87,86 US-Dollar, obwohl Hormuz-Exporte etwa halbiert und Red-Sea-Risiken aktiv sind.", "nextReview": "2026-07-31"},
+    {"id": "F-2026-07-13-02", "status": "active_strengthened", "claim": "Kredit-, FCF- und Bewertungsdruck begrenzen unbegrenzte AI-Capex-Toleranz.", "update": "NVIDIA-Garantien und Ankermietberichte zeigen zusätzlichen Bedarf an Bilanz- und Gegenparteistützen.", "nextReview": "2026-10-31"},
+    {"id": "F-2026-07-21-01", "status": "active_weakened", "claim": "Langfristige Verträge widerlegen einen generellen AI-Infrastruktur-Finanzierungsstopp.", "update": "NAVER/Brookfield bestätigt Kapitalverfügbarkeit; die NVIDIA-Berichte zeigen zugleich höhere Kreditabhängigkeit.", "nextReview": "2026-10-31"}
+  ],
+  "auditTrailAdditions": [
+    {"date": "2026-07-28", "type": "Late admission / cut-off correction", "item": "NAVER/Brookfield/NVIDIA-Mitteilung vom 25. Juli wurde nach dem 26.-Juli-Cut-off aufgenommen.", "action": "Mit reduzierter Neuheit und Originaldatum erfasst; kein rückwirkender Treffer."},
+    {"date": "2026-07-28", "type": "Qualified secondary evidence", "item": "NVIDIA/OpenAI-Garantie und Hut-8-Mieteridentität sind nicht primär bestätigt.", "action": "Evidence Gate qualifiziert und Forecast-Confidence auf 68 Prozent begrenzt."},
+    {"date": "2026-07-28", "type": "Memory/Power hard signals", "item": "Rambus- und Navitas-Q2-Daten liefern neue primäre Subsystem- und Power-Layer-Evidenz.", "action": "Neue Forecasts angelegt; HBM-/NAND-Preisprognosen nicht künstlich verändert."}
+  ],
+  "runHistoryAdditions": [
+    {"date": "2026-07-28", "pulse": 85, "confidence": 99, "note": "NVIDIA-Finanzierungsarchitektur, NAVER Sovereign AI, Rambus Memory-Subsysteme und Navitas 800-V-Power verbreitern den Zyklus; Kredit- und Chokepoint-Risiken bleiben extrem."}
+  ],
+  "nextCatalysts": [
+    {"date": "2026-07-31", "event": "Brent, Hormuz-/Red-Sea-Verkehr und diplomatische Route"},
+    {"date": "2026-08-15", "event": "Saudi Red-Sea-Energieinfrastruktur und weitere Tenderklauseln"},
+    {"date": "2026-08-31", "event": "NAVER-Execution, asiatische Route-Avoidance und Power-Semiconductor-Ramps"},
+    {"date": "2026-10-31", "event": "NVIDIA-Finanzierungsmeilensteine, Rambus Q3 und Navitas Q3"},
+    {"date": "2026-12-31", "event": "NAVER 100-MW-Meilenstein und Merchant-Compute-Strukturen"}
+  ],
+  "historyPolicy": "Forecasts, Confidence-Änderungen, Falsifier, Treffer, Late Admissions und Misses bleiben sichtbar. Kein Miss wurde gelöscht oder rückwirkend als Treffer umklassifiziert."
+}
