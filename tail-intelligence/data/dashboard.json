@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-07-28",
+  "dataAsOf": "2026-07-29",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-07-29T00:10:05.864Z",
-  "lastForecastRun": "2026-07-29T00:10:05.864Z",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-07-29T06:16:54.276Z",
+  "lastForecastRun": "2026-07-29T06:16:54.276Z",
   "newlyProcessedArticles": 0,
-  "totalArticles": 53,
-  "articleCount": 53,
+  "totalArticles": 58,
+  "articleCount": 58,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,7 +32,7 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 60,
+    "forecastLedgerCount": 65,
     "resolvedForecasts": 4,
     "activeForecasts": 43,
     "scopeGateStatus": "active",
@@ -42,7 +42,7 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-07-29T00:10:03.298Z",
+    "updatedAt": "2026-07-29T06:16:52.015Z",
     "newItems": 0,
     "totalItems": 71,
     "duplicateItems": 200,
@@ -56,7 +56,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "53 Artikel · Datenstand 2026-07-28"
+        "detail": "58 Artikel · Datenstand 2026-07-29"
       },
       {
         "id": "inbox",
@@ -89,53 +89,53 @@
       "signals": 5
     },
     {
-      "id": "dram",
-      "label": "DRAM",
-      "score": 81,
-      "status": "orange",
-      "signals": 12
-    },
-    {
       "id": "hbm",
       "label": "HBM",
       "score": 81,
       "status": "orange",
-      "signals": 10
+      "signals": 11
+    },
+    {
+      "id": "dram",
+      "label": "DRAM",
+      "score": 80,
+      "status": "orange",
+      "signals": 13
     },
     {
       "id": "ai_infrastructure",
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 40
+      "signals": 45
     },
     {
       "id": "enterprise_ssd",
       "label": "Enterprise SSD",
       "score": 72,
       "status": "orange",
-      "signals": 3
+      "signals": 4
     },
     {
       "id": "nand",
       "label": "NAND",
       "score": 72,
       "status": "orange",
-      "signals": 3
+      "signals": 4
     },
     {
       "id": "semiconductors",
       "label": "Semiconductors",
       "score": 71,
       "status": "orange",
-      "signals": 13
+      "signals": 14
     },
     {
       "id": "supply_chain",
       "label": "Supply Chain",
-      "score": 67,
+      "score": 66,
       "status": "orange",
-      "signals": 9
+      "signals": 12
     }
   ],
   "manufacturers": [
@@ -147,7 +147,7 @@
     {
       "name": "SK hynix",
       "score": 83,
-      "mentions": 8
+      "mentions": 9
     },
     {
       "name": "Micron",
@@ -156,8 +156,8 @@
     },
     {
       "name": "Meta",
-      "score": 78,
-      "mentions": 1
+      "score": 77,
+      "mentions": 2
     },
     {
       "name": "Sandisk",
@@ -177,7 +177,7 @@
     {
       "name": "Nvidia",
       "score": 72,
-      "mentions": 9
+      "mentions": 10
     },
     {
       "name": "Oracle",
@@ -187,7 +187,7 @@
     {
       "name": "ZTE",
       "score": 69,
-      "mentions": 4
+      "mentions": 5
     }
   ],
   "forecasts": [
@@ -196,8 +196,8 @@
       "market": "DRAM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 80,
-      "confidenceScore": 86,
+      "relevanceScore": 79,
+      "confidenceScore": 85,
       "horizon": "2026–2027",
       "direction": "up",
       "keyThesis": "Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.",
@@ -248,17 +248,18 @@
         "S-2026-07-23-05",
         "S-2026-07-19-03",
         "S-2026-07-20-03",
+        "S-2026-07-29-05",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-07-29T00:10:05.864Z"
+      "lastUpdated": "2026-07-29T06:16:54.275Z"
     },
     {
       "id": "hbm",
       "market": "HBM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 81,
-      "confidenceScore": 89,
+      "relevanceScore": 80,
+      "confidenceScore": 88,
       "horizon": "2026–2028",
       "direction": "up",
       "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
@@ -307,17 +308,18 @@
         "S-2026-07-28-04",
         "S-2026-07-25-02",
         "S-2026-07-19-04",
-        "S-2026-07-23-03"
+        "S-2026-07-23-03",
+        "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-07-29T00:10:05.864Z"
+      "lastUpdated": "2026-07-29T06:16:54.275Z"
     },
     {
       "id": "nand",
       "market": "NAND",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 72,
-      "confidenceScore": 83,
+      "relevanceScore": 71,
+      "confidenceScore": 82,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
@@ -339,6 +341,14 @@
           "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
         },
         {
+          "id": "S-2026-07-29-05",
+          "date": "2026-07-29",
+          "title": "Record-Memory und Storage-Fundamentaldaten widerlegen den sofortigen Nachfragebruch – aber nicht das Pricing- und Bewertungsrisiko",
+          "signal": "Geopolitische Entkopplung",
+          "score": 54,
+          "summary": "SK hynix meldete 60,5 Bio. Won operativen Gewinn und 79,3 Bio. Won Umsatz, verfehlte jedoch hohe Markterwartungen; HBM4-Verzögerungen begrenzten Preissteigerungen. Das Unternehmen verhandelt beziehungsweise schloss rund zehn typischerweise fünfjährige LTAs mit finanziellen Sicherungen und erhöht 2026 den Capex auf den hohen 40-Bio.-Won-Bereich. Seagate meldete 3,629 Mrd. US-Dollar Quartalsumsatz, 52,3 Prozent GAAP-Bruttomarge, 1,1 Mrd. US-Dollar Free Cashflow und führt für das nächste Quartal 4,1 Mrd. US-Dollar Umsatz an, getragen von robuster Cloud-Datacenter-Nachfrage."
+        },
+        {
           "id": "S-2026-07-20-05",
           "date": "2026-07-20",
           "title": "NVIDIA Storage Next und PCIe Gen7 etablieren GPU-adjacent Storage",
@@ -351,17 +361,18 @@
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nand-essd",
+        "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-29T00:10:05.864Z"
+      "lastUpdated": "2026-07-29T06:16:54.276Z"
     },
     {
       "id": "enterprise_ssd",
       "market": "Enterprise SSD",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 72,
-      "confidenceScore": 83,
+      "relevanceScore": 71,
+      "confidenceScore": 82,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "Enterprise SSD profitiert von AI-Datenpipelines, Nearline-Wachstum und High-Capacity-Qualifizierung.",
@@ -383,6 +394,14 @@
           "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
         },
         {
+          "id": "S-2026-07-29-05",
+          "date": "2026-07-29",
+          "title": "Record-Memory und Storage-Fundamentaldaten widerlegen den sofortigen Nachfragebruch – aber nicht das Pricing- und Bewertungsrisiko",
+          "signal": "Geopolitische Entkopplung",
+          "score": 54,
+          "summary": "SK hynix meldete 60,5 Bio. Won operativen Gewinn und 79,3 Bio. Won Umsatz, verfehlte jedoch hohe Markterwartungen; HBM4-Verzögerungen begrenzten Preissteigerungen. Das Unternehmen verhandelt beziehungsweise schloss rund zehn typischerweise fünfjährige LTAs mit finanziellen Sicherungen und erhöht 2026 den Capex auf den hohen 40-Bio.-Won-Bereich. Seagate meldete 3,629 Mrd. US-Dollar Quartalsumsatz, 52,3 Prozent GAAP-Bruttomarge, 1,1 Mrd. US-Dollar Free Cashflow und führt für das nächste Quartal 4,1 Mrd. US-Dollar Umsatz an, getragen von robuster Cloud-Datacenter-Nachfrage."
+        },
+        {
           "id": "S-2026-07-20-05",
           "date": "2026-07-20",
           "title": "NVIDIA Storage Next und PCIe Gen7 etablieren GPU-adjacent Storage",
@@ -395,9 +414,10 @@
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nand-essd",
+        "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-29T00:10:05.864Z"
+      "lastUpdated": "2026-07-29T06:16:54.276Z"
     },
     {
       "id": "ai_infrastructure",
@@ -435,12 +455,12 @@
           "summary": "Oracle könnte für den geplanten Wisconsin-AI-Campus mehr als 7 Mrd. US-Dollar Sicherheiten stellen müssen; die jährlichen Finanzierungskosten werden auf über 100 Mio. US-Dollar geschätzt. Wisconsin verlangt bei sehr großen Stromkunden unterhalb definierter Credit-Schwellen finanzielle Garantien für speziell errichtete Erzeugungs- und Netzinfrastruktur."
         },
         {
-          "id": "S-2026-07-20-02",
-          "date": "2026-07-20",
-          "title": "Raffinerien und alternative Korridore werden zum zweiten Energieengpass",
+          "id": "S-2026-07-29-02",
+          "date": "2026-07-29",
+          "title": "Meta und BlackRock machen Private Credit zum wiederholbaren Gigawatt-Layer",
           "signal": "Nachfrageimpuls",
-          "score": 70,
-          "summary": "Gulf-Exporte lagen H1 Juli bei 12–13,06 Mio. bpd, noch 32% unter Vorkrieg; Saudi-Arabien leitete rund 75% über Yanbu. Im Q2 fehlten weltweit etwa 5 Mio. bpd Raffineriedurchsatz, Produktbestände und Crack-Spreads signalisieren Knappheit."
+          "score": 71,
+          "summary": "Meta und BlackRock strukturieren den 1-GW-Campus in El Paso als 14-Mrd.-US-Dollar-Joint-Venture: BlackRock-Fonds halten 80 Prozent, Meta 20 Prozent. BlackRock bringt rund 4,9 Mrd. US-Dollar Cash ein und nutzt 12,5 Mrd. US-Dollar Fremdfinanzierung; Meta steuert Land und Baufortschritt im Wert von 2,3 Mrd. US-Dollar bei, erhält rund 1 Mrd. US-Dollar Ausschüttung und least den gesamten Campus mit Optionen bis zu 20 Jahren. Residual-Value-Garantien haben anfänglich einen Schwellenwert von rund 13 Mrd. US-Dollar."
         }
       ],
       "counterSignals": [
@@ -467,6 +487,7 @@
         "tail-2026-07-14-nvidia-skhynix-hbm4",
         "S-2026-07-24-04",
         "S-2026-07-22-05",
+        "S-2026-07-29-02",
         "S-2026-07-20-02",
         "S-2026-07-23-01",
         "S-2026-07-25-01",
@@ -481,6 +502,7 @@
         "S-2026-07-24-01",
         "S-2026-07-24-05",
         "S-2026-07-28-02",
+        "S-2026-07-29-01",
         "S-2026-07-23-03",
         "S-2026-07-19-01",
         "S-2026-07-26-01",
@@ -496,6 +518,9 @@
         "S-2026-07-19-05",
         "S-2026-07-26-04",
         "S-2026-07-28-01",
+        "S-2026-07-29-03",
+        "S-2026-07-29-04",
+        "S-2026-07-29-05",
         "S-2026-07-26-05",
         "S-2026-07-26-03",
         "S-2026-07-20-05",
@@ -505,10 +530,10 @@
         "S-2026-07-28-03",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-07-29T00:10:05.864Z"
+      "lastUpdated": "2026-07-29T06:16:54.276Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 53 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 58 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
