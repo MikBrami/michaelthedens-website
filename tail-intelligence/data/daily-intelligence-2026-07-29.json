@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-29T08:03:37+02:00",
+  "previousRun": "2026-07-28",
+  "executivePulse": {
+    "current": 84,
+    "previous": 85,
+    "status": "orange",
+    "interpretation": "Der AI-Infrastrukturzyklus verbreitert seine Finanzierungs- und Lieferarchitektur weiter: AMD sichert langfristig Rechenzentrumsleistung, Meta wiederholt das Asset-Manager-/Private-Credit-Modell und Seagate bestätigt harte Storage-Nachfrage. Gleichzeitig machen PJM-Stromdefizit, mögliche Lastabschaltung, erneute Golf-Eskalation und schwächere Memory-Preisconvexität den Ausbau weniger linear."
+  },
+  "confidence": {
+    "current": 99,
+    "previous": 99,
+    "interpretation": "Meta, Core Scientific und Seagate liefern Primärdaten. PJM, SK hynix und die Golf-/Schifffahrtssignale sind durch Reuters und operative Marktdaten belastbar, bleiben bei Umsetzung, Kriegsschäden und künftigen Preiswirkungen qualifiziert."
+  },
+  "riskPressure": {
+    "current": 100,
+    "previous": 100
+  },
+  "momentum": "Strukturell beschleunigend · Finanzierung und Storage positiv · Grid, Geopolitik und Erwartungsrisiko extrem",
+  "admissionGate": [
+    "Freshness",
+    "Evidence",
+    "Materiality",
+    "Causality",
+    "Falsifiability"
+  ],
+  "priorityScoreWeights": {
+    "SourceQuality": 20,
+    "Novelty": 15,
+    "ThesisRelevance": 20,
+    "ForecastImpact": 20,
+    "Falsifiability": 15,
+    "TimeSensitivity": 10
+  },
+  "driverScores": [
+    {
+      "name": "AI-Compute-Nachfrage",
+      "score": 100,
+      "delta": 0
+    },
+    {
+      "name": "AMD AI Infrastructure / Alternative Accelerators",
+      "score": 99,
+      "delta": 9
+    },
+    {
+      "name": "Compute Financing / External Capital",
+      "score": 100,
+      "delta": 0
+    },
+    {
+      "name": "Off-Balance-Sheet AI Infrastructure",
+      "score": 100,
+      "delta": 12
+    },
+    {
+      "name": "Merchant Compute / Anchor Tenant",
+      "score": 100,
+      "delta": 0
+    },
+    {
+      "name": "Grid Reliability / Capacity Shortfall",
+      "score": 100,
+      "delta": 8
+    },
+    {
+      "name": "Large-Load Curtailment Risk",
+      "score": 99,
+      "delta": 15
+    },
+    {
+      "name": "Memory Contracting / LTAs",
+      "score": 100,
+      "delta": 4
+    },
+    {
+      "name": "Memory Pricing Convexity",
+      "score": 91,
+      "delta": -7
+    },
+    {
+      "name": "Mass-Capacity Storage",
+      "score": 98,
+      "delta": 8
+    },
+    {
+      "name": "Geopolitik & Logistik",
+      "score": 100,
+      "delta": 0
+    },
+    {
+      "name": "Red Sea / Hormuz Procurement Risk",
+      "score": 100,
+      "delta": 0
+    },
+    {
+      "name": "Capital- & Credit-Market Stress",
+      "score": 100,
+      "delta": 0
+    }
+  ],
+  "acceptedSignals": [
+    {
+      "id": "S-2026-07-29-01",
+      "rank": 1,
+      "priorityScore": 100,
+      "classification": "Architecture Update",
+      "title": "AMD sichert bis zu 2,5 GW und baut eine eigene Merchant-Compute-Architektur",
+      "fact": "Core Scientific meldete 15-jährige Vereinbarungen mit AMD über zunächst rund 530 MW an fünf Standorten und mehr als 14 Mrd. US-Dollar potenziellen Basis-Vertragswert. AMD erhält ab 2027 Zugang zu AI-fähiger Kapazität, kann den Umfang auf 2,5 GW erweitern, bekommt marktpreisbasierte Warrants und arbeitet mit Core Scientific an Infrastruktur-, Chip- und Software-Deployment.",
+      "estimate": "Die 2,5 GW sind eine Ausbauoption, nicht vollständig kontrahierte oder gebaute Leistung. Der Vertragswert verteilt sich über 15 Jahre; Stromanschlüsse, Umbau, Kundennachfrage und Hardwarelieferungen bestimmen die reale Kapazität.",
+      "tailInference": "AMD verschiebt sich vom Chipanbieter zum Infrastruktur-Orchestrator. Kapazitätsreservierung, Warrants, Colocation und physisches Co-Design schaffen eine direkte Alternative zum NVIDIA-zentrierten Merchant-Compute-Modell und beschleunigen die Umwandlung ehemaliger Crypto-Standorte in AI-Fabriken.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 20,
+        "Novelty": 15,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 20,
+        "Falsifiability": 15,
+        "TimeSensitivity": 10
+      },
+      "redPencil": {
+        "sourceIncentive": "AMD und Core Scientific betonen maximale Ausbaugröße und potenziellen Vertragswert.",
+        "alternative": "Ein projektspezifischer Kapazitätsdeal statt eines wiederholbaren AMD-Compute-Geschäftsmodells; Ausbauoptionen können ungenutzt bleiben.",
+        "alreadyPriced": "AMD-Großdeployments mit Microsoft und Anthropic waren bekannt; neu sind 15-jährige Colocation, Warrants und bis zu 2,5 GW kontrollierbare Leistung.",
+        "killCondition": "Bis Ende 2027 werden weniger als 400 MW verbindlich bereitgestellt oder die Erweiterungsoption wird materiell reduziert beziehungsweise aufgehoben.",
+        "forecastChange": "Neu P-2026-07-29-01 – 84 Prozent."
+      },
+      "sources": [
+        {
+          "label": "Core Scientific – Q2 2026 results and AMD agreements",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/139/core-scientific-announces-second-quarter-2026-results"
+        },
+        {
+          "label": "Reuters – AMD signs AI data center deal with Core Scientific",
+          "url": "https://www.reuters.com/business/core-scientific-signs-ai-infrastructure-deal-with-amd-2026-07-28/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-07-29-02",
+      "rank": 2,
+      "priorityScore": 99,
+      "classification": "Architecture Update",
+      "title": "Meta und BlackRock machen Private Credit zum wiederholbaren Gigawatt-Layer",
+      "fact": "Meta und BlackRock strukturieren den 1-GW-Campus in El Paso als 14-Mrd.-US-Dollar-Joint-Venture: BlackRock-Fonds halten 80 Prozent, Meta 20 Prozent. BlackRock bringt rund 4,9 Mrd. US-Dollar Cash ein und nutzt 12,5 Mrd. US-Dollar Fremdfinanzierung; Meta steuert Land und Baufortschritt im Wert von 2,3 Mrd. US-Dollar bei, erhält rund 1 Mrd. US-Dollar Ausschüttung und least den gesamten Campus mit Optionen bis zu 20 Jahren. Residual-Value-Garantien haben anfänglich einen Schwellenwert von rund 13 Mrd. US-Dollar.",
+      "estimate": "Der Campus soll 2028 anlaufen, ist aber noch im Bau. Die Struktur reduziert direktes Eigentum und kurzfristigen Cashbedarf, lässt über Leasing und Residualwertgarantien jedoch erhebliche ökonomische und bilanzielle Risiken bei Meta.",
+      "tailInference": "AI-Capex wird industrialisiert: Asset Manager, Infrastruktur-Fonds und Private Credit finanzieren Gebäude, Strom, Kühlung und Connectivity, während Hyperscaler Compute leasen. Das ist Off-Balance-Sheet-Finanzierung, aber nicht Off-Risk-Finanzierung.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 20,
+        "Novelty": 15,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 20,
+        "Falsifiability": 14,
+        "TimeSensitivity": 10
+      },
+      "redPencil": {
+        "sourceIncentive": "Meta und BlackRock wollen Geschwindigkeit, Kapitalzugang und Risikoteilung hervorheben.",
+        "alternative": "Bilanzmanagement und Asset-Transfer statt zusätzlicher Endnachfrage; Garantien können Risiko lediglich verschieben.",
+        "alreadyPriced": "Metas Blue-Owl-Hyperion-Struktur war bekannt; neu ist die Wiederholung mit BlackRock, 12,5 Mrd. US-Dollar Debt und 13 Mrd. US-Dollar Residualwertschutz.",
+        "killCondition": "Das Joint Venture schließt nicht, der Scope fällt unter 750 MW oder der operative Start verschiebt sich nach 2029.",
+        "forecastChange": "Neu P-2026-07-29-02 – 88 Prozent; F-2026-07-13-02 und F-2026-07-21-01 werden aktualisiert."
+      },
+      "sources": [
+        {
+          "label": "Meta – El Paso venture with BlackRock",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx"
+        },
+        {
+          "label": "Reuters – Meta and BlackRock $14bn El Paso venture",
+          "url": "https://www.reuters.com/technology/meta-blackrock-partner-14-billion-el-paso-data-center-2026-07-28/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-07-29-03",
+      "rank": 3,
+      "priorityScore": 98,
+      "classification": "Architecture Update",
+      "title": "PJM macht AI-Rechenzentren zu registrierbaren und potenziell abschaltbaren Großlasten",
+      "fact": "PJM will bei FERC zwei Vorschläge einreichen. Ein einmaliger Reliability-Backstop soll vom 30. September bis 21. Oktober zusätzliche Erzeugung für einen 6,8-GW-Fehlbetrag beschaffen, nachdem die Kapazitätsauktion trotz Preisdeckel von 325 US-Dollar je MW-Tag zu wenig Leistung lieferte. Ein zweiter Vorschlag schafft ein Register für Datacenter und andere Großverbraucher; nicht selbstversorgte Rechenzentren könnten in extremen Netzlagen mit staatlicher Kooperation vorübergehend abgeschaltet werden. PJM erwartet bis 2038 rund 70 GW zusätzliche sehr große Last.",
+      "estimate": "Die Vorschläge sind noch nicht von FERC genehmigt. PJM kann Lasten derzeit nicht allein abschalten und benötigt die Zusammenarbeit der Bundesstaaten; Backstop-Beschaffung garantiert keine rechtzeitig gebaute Erzeugung.",
+      "tailInference": "Strom wird vom Standortkriterium zum konditionierten Service. Eigene Erzeugung, Demand Response, BBU und vertraglich definierte Abschaltbarkeit werden Teil der AI-Systemarchitektur; angekündigte MW ohne Firm-Power-Abgrenzung sind künftig weniger wert.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": "Qualified primary/secondary",
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 18,
+        "Novelty": 15,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 20,
+        "Falsifiability": 15,
+        "TimeSensitivity": 10
+      },
+      "redPencil": {
+        "sourceIncentive": "PJM hat Anreiz, Versorgungsdefizite und Großlasten als regulatorisches Problem sichtbar zu machen.",
+        "alternative": "Neue Erzeugung, schnellere Anschlüsse und bilaterale Power-Verträge schließen die Lücke ohne reale Datacenter-Abschaltungen.",
+        "alreadyPriced": "PJM-Knappheit und Ratepayer-Regeln waren bekannt; neu sind der konkrete 6,8-GW-Backstop, das Lastregister und die explizite Curtailment-Option.",
+        "killCondition": "FERC lehnt die Vorschläge ab, die nächste Auktion schließt den Fehlbetrag und bis Mitte 2027 entsteht weder Register noch Curtailment-Regel.",
+        "forecastChange": "Neu P-2026-07-29-03 – 86 Prozent."
+      },
+      "sources": [
+        {
+          "label": "PJM – Reliability Backstop Procurement materials",
+          "url": "https://www.pjm.com/committees-and-groups/cifp-rbp"
+        },
+        {
+          "label": "Reuters – PJM plans backstop and data-center registry",
+          "url": "https://www.reuters.com/business/energy/largest-us-power-grid-moves-ahead-with-plan-meet-swelling-demand-2026-07-28/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-07-29-04",
+      "rank": 4,
+      "priorityScore": 97,
+      "classification": "Architecture Update",
+      "title": "Militärische Eskalation und Schifffahrtsnormalisierung laufen auseinander",
+      "fact": "Die USA und Saudi-Arabien griffen Iran-nahe Gruppen im Irak an, nachdem Drohnen saudische Ölanlagen in der Ostprovinz attackiert hatten; Öl stieg daraufhin um mehr als 3 US-Dollar je Barrel. Iran behauptete, drei Tanker in Hormuz gestoppt zu haben. Gleichzeitig passierten am Dienstag 37 Commodity-Schiffe Bab al-Mandeb, der höchste Wert seit dem 19. Juli, jedoch ohne VLCC oder LNG-Tanker; durch Hormuz liefen nur fünf Commodity-Schiffe.",
+      "estimate": "Irans Tankerangaben sind nicht unabhängig bestätigt. Der höhere Bab-al-Mandeb-Verkehr kann kurzfristig und politisch selektiv sein; fehlende VLCC-/LNG-Passagen zeigen, dass strategische Volumina noch nicht normalisiert sind.",
+      "tailInference": "Headline-Verkehr und ökonomische Normalisierung müssen getrennt werden. Kleinere Schiffe können zurückkehren, während Energie-Großströme, LNG, Versicherung und Datacenter-Dieselrisiko weiter gestört bleiben. Die erneute militärische Eskalation schwächt den Diplomatie-Falsifier, ohne eine vollständige Doppelblockade zu bestätigen.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": "Qualified secondary and shipping data",
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 18,
+        "Novelty": 14,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 20,
+        "Falsifiability": 15,
+        "TimeSensitivity": 10
+      },
+      "redPencil": {
+        "sourceIncentive": "Kriegsparteien überzeichnen Treffer, Kontrolle und Abschreckung; Trackingdaten können Schiffe mit ausgeschaltetem AIS übersehen.",
+        "alternative": "Omans gemeinsames Managementmodell und direkte China-Houthi-Absprachen können selektive Routen schneller stabilisieren.",
+        "alreadyPriced": "Ein hoher geopolitischer Aufschlag besteht; neu sind die US-saudischen Irak-Schläge, der Ölpreissprung und die Divergenz zwischen Gesamtverkehr und fehlenden Großtankern.",
+        "killCondition": "Sieben Tage über 80 Prozent Normalverkehr in Hormuz und Bab al-Mandeb einschließlich VLCC/LNG sowie keine neuen Angriffe.",
+        "forecastChange": "P-2026-07-20-01 78→86 Prozent; F-2026-07-28-01 wird geschwächt."
+      },
+      "sources": [
+        {
+          "label": "Reuters – US and Saudi strikes in Iraq",
+          "url": "https://www.reuters.com/world/asia-pacific/us-saudis-attack-iran-backed-groups-iraq-threatening-intensify-conflict-2026-07-29/"
+        },
+        {
+          "label": "Reuters – Bab el-Mandeb traffic highest in a week",
+          "url": "https://www.reuters.com/world/middle-east/ships-transiting-via-bab-el-mandeb-strait-highest-week-data-shows-2026-07-29/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-07-29-05",
+      "rank": 5,
+      "priorityScore": 96,
+      "classification": "Falsifier",
+      "title": "Record-Memory und Storage-Fundamentaldaten widerlegen den sofortigen Nachfragebruch – aber nicht das Pricing- und Bewertungsrisiko",
+      "fact": "SK hynix meldete 60,5 Bio. Won operativen Gewinn und 79,3 Bio. Won Umsatz, verfehlte jedoch hohe Markterwartungen; HBM4-Verzögerungen begrenzten Preissteigerungen. Das Unternehmen verhandelt beziehungsweise schloss rund zehn typischerweise fünfjährige LTAs mit finanziellen Sicherungen und erhöht 2026 den Capex auf den hohen 40-Bio.-Won-Bereich. Seagate meldete 3,629 Mrd. US-Dollar Quartalsumsatz, 52,3 Prozent GAAP-Bruttomarge, 1,1 Mrd. US-Dollar Free Cashflow und führt für das nächste Quartal 4,1 Mrd. US-Dollar Umsatz an, getragen von robuster Cloud-Datacenter-Nachfrage.",
+      "estimate": "SK hynix' Nettogewinn wurde stark durch Investmentgewinne aus dem Kioxia-Verkauf beeinflusst. LTAs können kurzfristige Preisconvexität begrenzen; Seagates Ergebnisse profitieren zusätzlich von Angebotsdisziplin und HDD-Mix und sind kein direkter NAND-/eSSD-Preisindikator.",
+      "tailInference": "Der physische AI-Datenzyklus ist nicht gebrochen: HBM/DRAM und Mass-Capacity-HDD bleiben stark. Aber der Wert verschiebt sich von Spotpreis-Explosivität und Aktienmultiple zu kontrahierten Volumina, Lieferfähigkeit und Cashflow. Der Kapitalmarkt kann fallen, obwohl reale Nachfrage steigt.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": "Primary plus qualified secondary",
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 18,
+        "Novelty": 14,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 19,
+        "Falsifiability": 15,
+        "TimeSensitivity": 10
+      },
+      "redPencil": {
+        "sourceIncentive": "Managements betonen robuste Nachfrage; Analystenkonsens und Kursreaktion übergewichten möglicherweise den Marginalmiss.",
+        "alternative": "Bestellvorziehungen, Angebotsdisziplin und überhöhte Preise können H2-Nachfrage dämpfen; Seagate-HDD-Stärke muss sich nicht auf NAND/eSSD übertragen.",
+        "alreadyPriced": "AI-Memory- und Storage-Stärke war bekannt; neu sind LTAs mit Sicherungen, HBM4-Timing, deutlich höherer SK-Capex und Seagates FQ1-Sprung auf rund 4,1 Mrd. US-Dollar.",
+        "killCondition": "SK hynix meldet in Q3 stagnierende oder fallende AI-Memory-Auslieferungen beziehungsweise Seagate unterschreitet 4,0 Mrd. US-Dollar Umsatz.",
+        "forecastChange": "Neu P-2026-07-29-04 – 72 Prozent und P-2026-07-29-05 – 86 Prozent; neu F-2026-07-29-01."
+      },
+      "sources": [
+        {
+          "label": "Reuters – SK hynix Q2 results, LTAs and HBM4 delays",
+          "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-q2-profit-jumps-557-ai-chip-demand-misses-forecasts-2026-07-28/"
+        },
+        {
+          "label": "Seagate – Fiscal Q4 and FY2026 results",
+          "url": "https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx"
+        }
+      ]
+    }
+  ],
+  "predictionLogUpdates": [
+    {
+      "id": "P-2026-07-20-01",
+      "status": "changed",
+      "forecast": "Brent bleibt bis Ende Juli überwiegend über 85 US-Dollar, solange Hormuz und die Red-Sea-Route nicht nachhaltig normalisieren.",
+      "confidence": 86,
+      "previousConfidence": 78,
+      "nextReview": "2026-07-31",
+      "history": "82→78→84→92→97→96→78; 78→86 am 29.07. nach US-saudischen Irak-Schlägen, Angriffen auf saudische Ölanlagen und einem Ölpreissprung von mehr als 3 US-Dollar. Historie erhalten.",
+      "redPencil": "Nur zwei Tage bis zum Horizont; Omans Vorschlag und höherer Bab-al-Mandeb-Verkehr bleiben echte Gegensignale.",
+      "killCondition": "Brent fällt bis Monatsende an zwei Handelstagen unter 85 US-Dollar oder VLCC-/LNG-Verkehr normalisiert sich."
+    },
+    {
+      "id": "P-2026-07-29-01",
+      "status": "new",
+      "forecast": "Core Scientific stellt AMD bis Ende 2027 mindestens 400 MW der vereinbarten AI-Kapazität bereit; die Partnerschaft bleibt auf einen Ausbaupfad von mindestens 1 GW.",
+      "confidence": 84,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 29.07. nach 15-jährigen Vereinbarungen über rund 530 MW und einer Option bis 2,5 GW.",
+      "redPencil": "2,5 GW sind optional; Power, Umbau, Finanzierung und Kundenbelegung können die Bereitstellung verzögern.",
+      "killCondition": "Scope unter 400 MW, wesentliche Vertragsauflösung oder Delivery nach 2027."
+    },
+    {
+      "id": "P-2026-07-29-02",
+      "status": "new",
+      "forecast": "Das Meta-BlackRock-Joint-Venture schließt 2026 und bringt bis Ende 2028 mindestens 750 MW des El-Paso-Campus in Betrieb oder in einen verifizierten Commissioning-Status.",
+      "confidence": 88,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 29.07. auf Basis der offiziellen 14-Mrd.-US-Dollar-, 1-GW- und 80/20-Struktur.",
+      "redPencil": "Debt und Residualwertgarantie sichern Finanzierung, aber nicht Bauzeit, Stromanschluss oder Auslastung.",
+      "killCondition": "JV schließt nicht, Scope unter 750 MW oder Start nach 2029."
+    },
+    {
+      "id": "P-2026-07-29-03",
+      "status": "new",
+      "forecast": "PJM erreicht bis Ende 2026 eine FERC-Akzeptanz oder gleichwertige verbindliche Umsetzung für Reliability Backstop und ein Register sehr großer Lasten.",
+      "confidence": 86,
+      "previousConfidence": null,
+      "nextReview": "2026-12-31",
+      "history": "Erstellt 29.07. nach dem 6,8-GW-Auktionsfehlbetrag und dem angekündigten Backstop-/Registerpaket.",
+      "redPencil": "Bundesstaaten, FERC und Stakeholder können Curtailment und Kostenverteilung verwässern.",
+      "killCondition": "FERC lehnt beide Kernelemente ab oder PJM zieht sie ohne Ersatz zurück."
+    },
+    {
+      "id": "P-2026-07-29-04",
+      "status": "new",
+      "forecast": "SK hynix schließt bis Jahresende mindestens zwölf mehrjährige AI-Memory-LTAs ab und hält den 2026-Capex im hohen 40-Bio.-Won-Bereich.",
+      "confidence": 72,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 29.07. nach rund zehn abgeschlossenen oder final verhandelten LTAs und angehobener Investitionsplanung.",
+      "redPencil": "LTAs können umetikettierte Rahmenverträge sein; ein Nachfrageschock würde Investitionen rasch verschieben.",
+      "killCondition": "Weniger als zwölf LTAs, Capex unter 42 Bio. Won oder bestätigte HBM-/DRAM-Nachfragereduktion."
+    },
+    {
+      "id": "P-2026-07-29-05",
+      "status": "new",
+      "forecast": "Seagate erreicht im ersten Quartal des Geschäftsjahres 2027 mindestens 4,0 Mrd. US-Dollar Umsatz und 7,10 US-Dollar Non-GAAP-EPS.",
+      "confidence": 86,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 29.07. nach FQ4-Umsatz von 3,629 Mrd. US-Dollar und FQ1-Guidance von 4,1 Mrd. US-Dollar ±100 Mio.",
+      "redPencil": "Cloud-Bestellungen können vorgezogen sein; geopolitische Logistik und Kundeninventare bleiben Risiken.",
+      "killCondition": "Umsatz unter 4,0 Mrd. US-Dollar oder Non-GAAP-EPS unter 7,10 US-Dollar."
+    }
+  ],
+  "falsifierUpdates": [
+    {
+      "id": "F-2026-07-28-01",
+      "status": "active_weakened",
+      "claim": "Diplomatie kann Energie-Futures trotz physischer Engpässe schnell entlasten.",
+      "update": "US-saudische Irak-Schläge, Drohnen gegen saudische Ölanlagen und der Ölpreissprung von mehr als 3 US-Dollar schwächen den Falsifier; Omans Managementvorschlag bleibt aktiv.",
+      "nextReview": "2026-07-31"
+    },
+    {
+      "id": "F-2026-07-13-02",
+      "status": "active_strengthened",
+      "claim": "Kredit-, FCF- und Bewertungsdruck begrenzen unbegrenzte AI-Capex-Toleranz.",
+      "update": "Metas 12,5-Mrd.-US-Dollar-Debt-JV und 13-Mrd.-US-Dollar-Residualwertgarantie sowie AMDs Warrants zeigen, dass Bilanz- und Gegenparteistützen zum Standardlayer werden.",
+      "nextReview": "2026-10-31"
+    },
+    {
+      "id": "F-2026-07-21-01",
+      "status": "active_strengthened",
+      "claim": "Langfristige Verträge und externes Kapital widerlegen einen generellen AI-Infrastruktur-Finanzierungsstopp.",
+      "update": "AMD/Core Scientific und Meta/BlackRock schaffen zusammen mehr als 1,5 GW anfänglich gebundene beziehungsweise geplante Leistung mit langfristiger Finanzierung.",
+      "nextReview": "2026-10-31"
+    },
+    {
+      "id": "F-2026-07-29-01",
+      "status": "new_active",
+      "claim": "Der globale Memory-Aktienabverkauf beweist noch keinen unmittelbaren physischen Nachfragebruch.",
+      "update": "SK hynix meldet Rekordgewinn, rund zehn LTAs und höheren Capex; Seagate meldet Rekord-FCF, starke Cloud-Nachfrage und eine deutlich höhere Quartalsguidance. Pricing- und Bewertungsrisiko bleiben dennoch real.",
+      "nextReview": "2026-10-31"
+    }
+  ],
+  "auditTrailAdditions": [
+    {
+      "date": "2026-07-29",
+      "type": "Primary-source promotion",
+      "item": "Core Scientific, Meta und Seagate liefern direkte Vertrags- beziehungsweise Ergebnisdaten.",
+      "action": "Maximalwerte, Optionen, Vertragslaufzeiten, Debt und Garantien getrennt von realer kurzfristiger Kapazität erfasst."
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Qualified evidence",
+      "item": "PJM-Umsetzung, SK-hynix-LTA-Details und Golf-/Schifffahrtslage beruhen auf Reuters sowie operativen Trackingdaten.",
+      "action": "Evidence Gate qualifiziert; Kriegsschäden und regulatorische Umsetzung nicht als abgeschlossen behandelt."
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Storage scope discipline",
+      "item": "Seagate liefert einen harten Mass-Capacity-Storage-Trigger, aber keinen eigenständigen NAND-/Enterprise-SSD-Preisnachweis.",
+      "action": "HDD-/Cloud-Storage-Layer aktualisiert; NAND- und eSSD-Preisprognosen nicht künstlich bewegt."
+    }
+  ],
+  "runHistoryAdditions": [
+    {
+      "date": "2026-07-29",
+      "pulse": 84,
+      "confidence": 99,
+      "note": "AMD/Core Scientific und Meta/BlackRock verbreitern Finanzierung und Merchant Compute; PJM macht Firm Power und Curtailment zum Architekturthema. SK hynix und Seagate zeigen starke physische Nachfrage bei höherem Pricing- und Erwartungsrisiko."
+    }
+  ],
+  "nextCatalysts": [
+    {
+      "date": "2026-07-31",
+      "event": "Brent, Hormuz-/Bab-al-Mandeb-Großtanker und Oman-Verhandlungen"
+    },
+    {
+      "date": "2026-08-15",
+      "event": "Saudi-Energieinfrastruktur, US-/Saudi-Irak-Eskalation und Red-Sea-Versicherung"
+    },
+    {
+      "date": "2026-08-31",
+      "event": "AMD/Core-Scientific-Delivery-Plan, Meta-BlackRock-Closing und weitere AI-Finanzierungsstrukturen"
+    },
+    {
+      "date": "2026-10-31",
+      "event": "SK hynix Q3, Seagate FQ1, AMD/Core Meilensteine und Meta El Paso"
+    },
+    {
+      "date": "2026-12-31",
+      "event": "PJM Reliability Backstop, Lastregister und FERC-Umsetzung"
+    }
+  ],
+  "historyPolicy": "Forecasts, Confidence-Änderungen, Falsifier, Treffer, Late Admissions und Misses bleiben sichtbar. Kein Miss wurde gelöscht oder rückwirkend als Treffer umklassifiziert."
+}
