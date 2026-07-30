@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-30T22:36:27+02:00",
+  "updatedAt": "2026-07-30T22:46:11+02:00",
   "previousRun": "2026-07-29",
   "executivePulse": {
     "current": 84,
@@ -77,18 +77,18 @@
       "rank": 2,
       "priorityScore": 100,
       "classification": "Architecture Update",
-      "title": "Samsung bindet 60–70 Prozent der Langfristkapazität und sieht Memory-Knappheit bis 2028",
-      "fact": "Samsung erwartet, dass sich die Chipknappheit 2027 verschärft und 2028 fortsetzt. Das Unternehmen hat mindestens fünfjährige Lieferverträge mit den fünf größten globalen Datacenter-Kunden abgeschlossen und verhandelt mit fünf weiteren Großkunden. Die Verträge sollen langfristig 60 bis 70 Prozent der Kapazität abdecken und enthalten Vorauszahlungen sowie Preisuntergrenzen. Samsung erwartet, dass der HBM4-Umsatz im dritten Quartal mehr als dreifach steigt.",
-      "estimate": "Kapazitätsanteil und HBM4-Ramp sind Managementprognosen; konkrete Kunden, Volumina, Produktmix und Ausbeuten fehlen. Vorauszahlungen und Floors reduzieren Investitionsrisiken, können aber bei schwächerer Endnachfrage zu Abnahme- oder Neuverhandlungsrisiken führen.",
-      "tailInference": "Der Memory-Markt wechselt von Zyklussteuerung zu projektfinanzierter Kapazitätsbindung. HBM-, DRAM- und Datacenter-Kunden finanzieren Kapazität vor und akzeptieren Floors; freie Kapazität und kurzfristige Preisverhandlungen verlieren weiter an Bedeutung.",
+      "title": "Samsung zielt mit rollierenden Fünfjahresverträgen auf 60–70 Prozent DRAM-/NAND-Abdeckung",
+      "fact": "Samsung erwartet, dass sich die Memory-Knappheit 2027 gegenüber 2026 verschärft und bis 2028 fortsetzt. Das Unternehmen hat fünfjährige Memory-Lieferverträge mit fünf führenden globalen Datacenter-Kunden abgeschlossen und befindet sich mit fünf weiteren Kunden in finalen Gesprächen. Erst nach Abschluss der noch offenen Verträge sollen die gebundenen DRAM- und NAND-Volumina 60 bis 70 Prozent der Werkskapazität abdecken. Die Vereinbarungen können durch jährliche Verhandlung jeweils um ein Jahr verlängert werden. Sie enthalten erhebliche Vorauszahlungen, von denen Samsung rund ein Viertel der erwarteten Summe erhalten hat, sowie Preisuntergrenzen für Mainstream-Produkte. Der HBM4-Umsatz soll im dritten Quartal sequenziell um mehr als das Dreifache steigen und in der zweiten Jahreshälfte deutlich über 60 Prozent des HBM-Umsatzes ausmachen; HBM-Liefervereinbarungen für 2027 bestehen bereits.",
+      "estimate": "Die 60- bis 70-Prozent-Abdeckung ist ein Zielwert nach erfolgreichem Abschluss der fünf ausstehenden Verträge, kein bereits erreichter Anteil. Kapazitätsabdeckung, HBM4-Ramp und Marktanteilsziel sind Managementaussagen; Kundenidentitäten, Volumina, Vorauszahlungssumme, konkrete Floors, Produktmix, Yield und Qualifikationsstatus fehlen. Die Floors gelten für Mainstream-Produkte und nicht für das gesamte Portfolio. Samsung meldete für das zweite Quartal 2026 171,5 Bio. Won Umsatz und 89,5 Bio. Won operativen Gewinn; die außergewöhnlichen Größenordnungen sind durch die offizielle Vorab-Guidance von rund 171 Bio. beziehungsweise 89,4 Bio. Won bestätigt.",
+      "tailInference": "Der Memory-Markt wechselt von kurzfristiger Zyklussteuerung zu projektfinanzierter Kapazitätsbindung. Rollierende Laufzeiten, Vorauszahlungen und Preisfloors verlagern einen Teil des Erweiterungs- und Preisrisikos von Samsung auf die Hyperscaler und schaffen Investitionssicherheit für Cleanrooms und Equipment. Hyperscaler gewinnen Versorgungssicherheit; nicht gebundene OEMs, Systemhäuser und Distributoren konkurrieren um einen kleineren freien DRAM-/NAND-Pool. SK hynix mit Vereinbarungen bei rund zehn Kunden und Microns mehrjährige Strategic Customer Agreements zeigen, dass dies kein Samsung-Sonderfall, sondern ein branchenweiter Wechsel des Memory-Geschäftsmodells ist.",
       "admissionGate": { "Freshness": true, "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true },
       "scoreBreakdown": { "SourceQuality": 20, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 20, "Falsifiability": 15, "TimeSensitivity": 10 },
       "redPencil": {
         "sourceIncentive": "Samsung will nach Marktanteilsverlusten bei HBM technische Aufholfähigkeit und sichere Nachfrage hervorheben.",
-        "alternative": "Verträge können breite DRAM-/NAND-Mengen enthalten und weniger HBM-spezifisch sein; chinesische Kapazität und hohe Preise können Nachfrage verschieben.",
-        "alreadyPriced": "Memory-Knappheit und LTAs waren bekannt; neu sind 60–70 Prozent gebundene Langfristkapazität, Vorauszahlungen, Floors und die HBM4-Q3-Verdreifachung.",
-        "killCondition": "HBM4-Umsatz wächst im dritten Quartal weniger als doppelt, LTA-Abdeckung fällt unter 50 Prozent oder Samsung revidiert die Knappheitsthese vor Ende 2027.",
-        "forecastChange": "Neu P-2026-07-30-02 – 84 Prozent; F-2026-07-20-02 wird geschwächt."
+        "alternative": "Die fünf offenen Verträge können sich verzögern oder mit geringeren Mengen schließen; 60 bis 70 Prozent Werksabdeckung sind nicht gleich 60 bis 70 Prozent der gesamten Samsung-Memory-Produktion. Hohe Preise können Nachfrage verschieben, chinesische Kapazität kann Mainstream-Segmente entlasten und Abnehmer können bei einem Abschwung Neuverhandlungen anstreben.",
+        "alreadyPriced": "Memory-Knappheit und LTAs waren bekannt. Neu sind der noch nicht erreichte Charakter der 60- bis 70-Prozent-Zielabdeckung, die rollierende Fünfjahresstruktur, rund 25 Prozent eingegangene Vorauszahlungen, Mainstream-Preisfloors sowie die branchenweite Vergleichbarkeit mit SK hynix und Micron.",
+        "killCondition": "Samsung schließt die fünf ausstehenden Verträge nicht bis Ende 2026, meldet eine Zielabdeckung unter 50 Prozent, HBM4-Umsatz wächst im dritten Quartal weniger als doppelt oder das Unternehmen revidiert die Knappheitsthese vor Ende 2027.",
+        "forecastChange": "P-2026-07-30-02 wird auditierbar auf den HBM4-Ramp begrenzt; neu P-2026-07-30-06 für die Vertragsabdeckung. Ursprüngliche kombinierte Formulierung im Verlauf erhalten; F-2026-07-20-02 bleibt geschwächt."
       },
       "sources": [
         { "label": "Samsung – 2Q26 Earnings Release", "url": "https://www.samsung.com/global/ir/financial-information/earnings-release/" },
@@ -189,14 +189,25 @@
     },
     {
       "id": "P-2026-07-30-02",
-      "status": "new",
-      "forecast": "Samsung steigert den HBM4-Umsatz im dritten Quartal mindestens auf das 2,5-Fache und hält mindestens 60 Prozent seiner Langfristkapazität über mehrjährige Verträge gebunden.",
+      "status": "changed",
+      "forecast": "Samsung steigert den HBM4-Umsatz im dritten Quartal 2026 sequenziell mindestens auf das 2,5-Fache gegenüber dem zweiten Quartal 2026.",
       "confidence": 84,
+      "previousConfidence": 84,
+      "nextReview": "2026-10-31",
+      "history": "Original vom 30.07.: „Samsung steigert den HBM4-Umsatz im dritten Quartal mindestens auf das 2,5-Fache und hält mindestens 60 Prozent seiner Langfristkapazität über mehrjährige Verträge gebunden.“ Am 30.07. methodisch getrennt, weil HBM4-Ramp und Vertragsabdeckung unabhängig auflösbare Ergebnisse sind; Creation Confidence 84 Prozent unverändert.",
+      "redPencil": "Managementziel; Yield, Kundenqualifikation und Produktmix können den HBM4-Ramp verschieben. Auflösung über Samsungs Q3-2026-Earnings.",
+      "killCondition": "Der von Samsung ausgewiesene HBM4-Umsatz im dritten Quartal 2026 liegt unter dem 2,5-Fachen des zweiten Quartals 2026."
+    },
+    {
+      "id": "P-2026-07-30-06",
+      "status": "new",
+      "forecast": "Samsung schließt bis zum 31. Dezember 2026 die fünf noch ausstehenden mehrjährigen Memory-Lieferverträge ab und bestätigt danach, dass die davon erfassten DRAM- und NAND-Volumina mindestens 60 Prozent der Werkskapazität abdecken.",
+      "confidence": 76,
       "previousConfidence": null,
       "nextReview": "2026-10-31",
-      "history": "Erstellt 30.07. nach Samsung-Guidance von mehr als dreifachem HBM4-Umsatz und 60–70 Prozent LTA-Abdeckung.",
-      "redPencil": "Managementziel; Yield, Kundenqualifikation und Produktmix können den Ramp verschieben.",
-      "killCondition": "HBM4 unter 2,5-fach oder LTA-Abdeckung unter 60 Prozent."
+      "history": "Erstellt 30.07. als unabhängige Abspaltung aus der ursprünglich kombinierten Prognose P-2026-07-30-02. Ausgangslage: fünf Verträge abgeschlossen, fünf in finalen Gesprächen; 60 bis 70 Prozent sind Zielabdeckung nach Abschluss.",
+      "redPencil": "Die Zielabdeckung ist noch nicht erreicht; Vertragsabschluss, Volumenabdeckung und Frist sind extern über Samsung-Earnings beziehungsweise Investor-Relations-Angaben auflösbar.",
+      "killCondition": "Mindestens einer der fünf ausstehenden Verträge ist am 31.12.2026 nicht abgeschlossen oder Samsung bestätigt anschließend weniger als 60 Prozent DRAM-/NAND-Werksabdeckung."
     },
     {
       "id": "P-2026-07-30-03",
@@ -244,7 +255,7 @@
       "id": "F-2026-07-20-02",
       "status": "active_weakened",
       "claim": "Parallele Kapazitätserweiterungen können ab 2028 einen breiten Memory-Überschuss auslösen.",
-      "update": "Samsung bindet 60–70 Prozent der Langfristkapazität über mindestens fünfjährige Verträge mit Vorauszahlungen und Floors und erwartet Knappheit bis 2028. Oversupply bleibt möglich, wird aber stärker zeitlich und vertraglich gepuffert.",
+      "update": "Samsung zielt nach Abschluss von fünf noch offenen Fünfjahresverträgen auf eine Abdeckung von 60 bis 70 Prozent der DRAM-/NAND-Werkskapazität; rund ein Viertel der erwarteten Vorauszahlungen ist eingegangen und Mainstream-Produkte besitzen Preisfloors. Oversupply bleibt möglich, wird aber stärker zeitlich, finanziell und vertraglich gepuffert.",
       "nextReview": "2026-10-31"
     },
     {
@@ -280,6 +291,12 @@
       "type": "Memory scope discipline",
       "item": "Samsung liefert einen harten HBM-/DRAM-LTA-Trigger, aber keinen neuen unabhängigen NAND- oder Enterprise-SSD-Preis-/Shipment-Trigger.",
       "action": "HBM/LTA-Layer aktualisiert; NAND-/eSSD-Preisprognosen unverändert erhalten."
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Forecast decomposition",
+      "item": "P-2026-07-30-02 kombinierte HBM4-Umsatzwachstum und LTA-Abdeckung in einer Entscheidung.",
+      "action": "Originalformulierung im Verlauf erhalten; P-2026-07-30-02 auf den HBM4-Ramp begrenzt und P-2026-07-30-06 als separat auflösbare Prognose zur Vertrags- und Kapazitätsabdeckung angelegt."
     },
     {
       "date": "2026-07-30",
