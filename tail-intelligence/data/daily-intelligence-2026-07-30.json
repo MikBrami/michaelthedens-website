@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-30T08:29:11+02:00",
+  "updatedAt": "2026-07-30T22:36:27+02:00",
   "previousRun": "2026-07-29",
   "executivePulse": {
     "current": 84,
@@ -55,20 +55,20 @@
       "priorityScore": 100,
       "classification": "Architecture Update",
       "title": "Microsoft koppelt Cloud-Monetarisierung an einen 329-Mrd.-US-Dollar-Datacenter-Lease-Tail",
-      "fact": "Microsoft meldete 90,0 Mrd. US-Dollar Quartalsumsatz, Azure-Wachstum von 43 Prozent und mehr als 30 Millionen bezahlte M365-Copilot-Plätze. Für das erste Quartal des Geschäftsjahres 2027 erwartet das Unternehmen 45 Prozent Azure-Wachstum. Der Cloud-Auftragsbestand stieg auf 678 Mrd. US-Dollar; der gesamte sequenzielle Zuwachs von rund 50 Mrd. US-Dollar kam von Kunden außerhalb der führenden US-AI-Modellhersteller. Noch nicht begonnene Datacenter-Leases belaufen sich auf 329,1 Mrd. US-Dollar.",
-      "estimate": "Der gemeldete 2026-Capex von 175 Mrd. US-Dollar fällt nach einer Verlängerung der Datacenter-Lease-Nutzungsdauer von 15 auf 25 Jahre niedriger aus; die physischen Verpflichtungen wurden dadurch nicht reduziert. Backlog und Lease-Verträge sind mehrjährig und teilweise an Bedingungen geknüpft. Die genannten Effizienzgewinne von bis zu 40 Prozent stammen vom Management.",
-      "tailInference": "Microsoft zeigt das bislang stärkste Monetarisierungssignal des AI-Build-outs: Nachfrage verbreitert sich über Frontier-Labs hinaus, Copilot wird bezahlt und eigenes Modell-Silicon-Co-Design senkt Stückkosten. Gleichzeitig wird der 329-Mrd.-US-Dollar-Lease-Tail zu einem eingebetteten Infrastruktur- und Gegenparteirisiko.",
+      "fact": "Microsoft meldete 90,0 Mrd. US-Dollar Quartalsumsatz, Azure-Wachstum von 43 Prozent und mehr als 30 Millionen bezahlte M365-Copilot-Plätze. Für das erste Quartal des Geschäftsjahres 2027 erwartet das Unternehmen 45 Prozent Azure-Wachstum. Der Cloud-Auftragsbestand stieg auf 678 Mrd. US-Dollar; der gesamte sequenzielle Zuwachs von rund 50 Mrd. US-Dollar kam von Kunden außerhalb der führenden US-AI-Modellhersteller. Noch nicht begonnene Datacenter-Leases belaufen sich auf 329,1 Mrd. US-Dollar. Microsoft nahm im Quartal 31 neue Datacenter auf fünf Kontinenten in Betrieb, insgesamt 88 im Geschäftsjahr, brachte ein weiteres Gigawatt Kapazität online und halbierte die Dock-to-live-Zeit neuer GPUs in den größten Regionen nahezu. Der Durchsatz der Copilot-Workloads stieg seit Jahresbeginn auf das Vierfache; zusätzliche und durch Effizienz freigewordene Kapazität wurde nach Unternehmensangaben im selben Quartal schnell monetarisiert.",
+      "estimate": "Der gemeldete 2026-Capex von 175 Mrd. US-Dollar fällt nach einer Verlängerung der Datacenter-Lease-Nutzungsdauer von 15 auf 25 Jahre niedriger aus; die physischen Verpflichtungen wurden dadurch nicht reduziert. Backlog und Lease-Verträge sind mehrjährig und teilweise an Bedingungen geknüpft. Maia 200 liefert laut Microsoft 30 Prozent mehr Performance je Dollar als die neueste Hardware der bestehenden Flotte und 40 Prozent mehr Performance je Watt mit MAI-Modellen; dies ist kein unabhängiger Benchmark. MAI-Code-1-Flash erreicht nur bei häufigen Excel-Aufgaben vergleichbare Qualität zu GPT-5.6, nicht pauschal GPT-5.6-Niveau. Der Mythos-Vergleich gilt für MAI-Cyber-1-Flash zusammen mit Microsofts Multi-Agent-Security-Harness und ist daher ein System-, kein reiner Modellvergleich.",
+      "tailInference": "Microsoft zeigt das bislang stärkste Monetarisierungssignal des AI-Build-outs: Nachfrage verbreitert sich über Frontier-Labs hinaus, Copilot wird bezahlt und eigenes Modell-Silicon-Co-Design senkt Stückkosten. Gleichzeitig wird der 329-Mrd.-US-Dollar-Lease-Tail zu einem eingebetteten Infrastruktur- und Gegenparteirisiko. Der operative Zusatzbefund ist ein Layer Update: Effizienz senkt den physischen Infrastrukturbedarf derzeit nicht, weil frei gewordene CPU- und GPU-Kapazität sofort durch zusätzliche Workloads absorbiert wird. Die Kombination aus einem Gigawatt Quartalsausbau, geplanter Kapazitätsverdopplung und schneller Monetarisierung stärkt die Nachfragebasis für HBM, Server-DRAM und Enterprise SSD; Custom Silicon verändert den Lieferantenmix, nicht den absoluten Speicherbedarf.",
       "admissionGate": { "Freshness": true, "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true },
       "scoreBreakdown": { "SourceQuality": 20, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 20, "Falsifiability": 15, "TimeSensitivity": 10 },
       "redPencil": {
         "sourceIncentive": "Microsoft betont Monetarisierung und Effizienz; die Lease-Accounting-Änderung lässt gemeldeten Capex optisch sinken.",
-        "alternative": "Backlog kann lange Laufzeiten, Preissteigerungen und konditionale Verträge enthalten; Azure-Wachstum kann durch Kapazitätsfreigabe statt nachhaltige Endnachfrage beschleunigt sein.",
-        "alreadyPriced": "Hoher Microsoft-Capex und Azure-Stärke waren bekannt; neu sind 678 Mrd. US-Dollar Backlog, 329,1 Mrd. US-Dollar unbegonnene Leases und der vollständig außerhalb der Top-Modell-Labs entstandene Quartalszuwachs.",
+        "alternative": "Backlog kann lange Laufzeiten, Preissteigerungen und konditionale Verträge enthalten; Azure-Wachstum kann durch Kapazitätsfreigabe statt nachhaltige Endnachfrage beschleunigt sein. Bei später schwächerer Nachfrage kann Microsoft CPU- und GPU-Bestellungen wegen ihrer kürzeren Vorlaufzeiten drosseln und Datacenter-Ausbaustufen zeitlich strecken.",
+        "alreadyPriced": "Hoher Microsoft-Capex und Azure-Stärke waren bekannt; neu sind 678 Mrd. US-Dollar Backlog, 329,1 Mrd. US-Dollar unbegonnene Leases, der vollständig außerhalb der Top-Modell-Labs entstandene Quartalszuwachs sowie die operative Bestätigung, dass ein zusätzliches Gigawatt, nahezu halbierte GPU-Bereitstellungszeiten und höhere Flotteneffizienz unmittelbar monetarisiert wurden.",
         "killCondition": "Azure wächst im nächsten Quartal unter 40 Prozent, Cloud-Backlog fällt unter 650 Mrd. US-Dollar oder Microsoft reduziert reale Kapazitätszusagen trotz unveränderter Nachfrage.",
         "forecastChange": "Neu P-2026-07-30-01 – 86 Prozent."
       },
       "sources": [
-        { "label": "Microsoft – FY2026 Q4 Investor Relations", "url": "https://www.microsoft.com/en-us/investor/" },
+        { "label": "Microsoft – FY2026 Q4 Earnings Call", "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4" },
         { "label": "Reuters – Microsoft cloud, capex, leases and backlog", "url": "https://www.reuters.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-2026-07-29/" }
       ]
     },
