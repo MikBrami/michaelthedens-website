@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-30T08:29:11+02:00",
+  "previousRun": "2026-07-29",
+  "executivePulse": {
+    "current": 84,
+    "previous": 84,
+    "status": "orange",
+    "interpretation": "Microsoft und Samsung bestätigen breite Cloud-Monetarisierung, langfristige Memory-Kapazitätsbindung und einen härteren HBM4-Ramp. Meta zeigt zugleich die Cashflow-Grenze des Build-outs; Großbritannien beginnt, spekulative Datacenter-MW mit echtem Kapital zu bepreisen. Physische Golf-Ölflüsse bleiben widerstandsfähiger als die Chokepoint-Schlagzeilen."
+  },
+  "confidence": {
+    "current": 99,
+    "previous": 99,
+    "interpretation": "Microsoft-, Meta- und Samsung-Ergebnisse liefern harte Finanz- und operative Daten. Ofgem ist ein offizieller Regulierungsprozess; die Golf-Flüsse sind durch Reuters und operative Exportdaten qualifiziert."
+  },
+  "riskPressure": {
+    "current": 100,
+    "previous": 100
+  },
+  "momentum": "Strukturell stark und zunehmend kontrahiert · Cloud-Backlog und HBM4 positiv · Cashflow, Grid-Zugang und geopolitische Routen extrem",
+  "admissionGate": [
+    "Freshness",
+    "Evidence",
+    "Materiality",
+    "Causality",
+    "Falsifiability"
+  ],
+  "priorityScoreWeights": {
+    "SourceQuality": 20,
+    "Novelty": 15,
+    "ThesisRelevance": 20,
+    "ForecastImpact": 20,
+    "Falsifiability": 15,
+    "TimeSensitivity": 10
+  },
+  "driverScores": [
+    { "name": "AI-Compute-Nachfrage", "score": 100, "delta": 0 },
+    { "name": "Cloud Monetization / Contracted Backlog", "score": 100, "delta": 5 },
+    { "name": "Model–Chip Co-Design / Custom Silicon", "score": 99, "delta": 7 },
+    { "name": "Memory Contracting / LTAs", "score": 100, "delta": 0 },
+    { "name": "HBM4 Ramp / Capacity Lock", "score": 100, "delta": 6 },
+    { "name": "Memory Pricing Convexity", "score": 94, "delta": 3 },
+    { "name": "Hyperscaler Self-Funding Capacity", "score": 88, "delta": -9 },
+    { "name": "Capex / Free-Cash-Flow Stress", "score": 100, "delta": 0 },
+    { "name": "Grid Queue / Commitment Capital", "score": 100, "delta": 8 },
+    { "name": "Large-Load Delivery Risk", "score": 100, "delta": 1 },
+    { "name": "Geopolitik & Logistik", "score": 100, "delta": 0 },
+    { "name": "Physical Oil-Flow Resilience", "score": 88, "delta": 10 },
+    { "name": "Capital- & Credit-Market Stress", "score": 100, "delta": 0 }
+  ],
+  "acceptedSignals": [
+    {
+      "id": "S-2026-07-30-01",
+      "rank": 1,
+      "priorityScore": 100,
+      "classification": "Architecture Update",
+      "title": "Microsoft koppelt Cloud-Monetarisierung an einen 329-Mrd.-US-Dollar-Datacenter-Lease-Tail",
+      "fact": "Microsoft meldete 90,0 Mrd. US-Dollar Quartalsumsatz, Azure-Wachstum von 43 Prozent und mehr als 30 Millionen bezahlte M365-Copilot-Plätze. Für das erste Quartal des Geschäftsjahres 2027 erwartet das Unternehmen 45 Prozent Azure-Wachstum. Der Cloud-Auftragsbestand stieg auf 678 Mrd. US-Dollar; der gesamte sequenzielle Zuwachs von rund 50 Mrd. US-Dollar kam von Kunden außerhalb der führenden US-AI-Modellhersteller. Noch nicht begonnene Datacenter-Leases belaufen sich auf 329,1 Mrd. US-Dollar.",
+      "estimate": "Der gemeldete 2026-Capex von 175 Mrd. US-Dollar fällt nach einer Verlängerung der Datacenter-Lease-Nutzungsdauer von 15 auf 25 Jahre niedriger aus; die physischen Verpflichtungen wurden dadurch nicht reduziert. Backlog und Lease-Verträge sind mehrjährig und teilweise an Bedingungen geknüpft. Die genannten Effizienzgewinne von bis zu 40 Prozent stammen vom Management.",
+      "tailInference": "Microsoft zeigt das bislang stärkste Monetarisierungssignal des AI-Build-outs: Nachfrage verbreitert sich über Frontier-Labs hinaus, Copilot wird bezahlt und eigenes Modell-Silicon-Co-Design senkt Stückkosten. Gleichzeitig wird der 329-Mrd.-US-Dollar-Lease-Tail zu einem eingebetteten Infrastruktur- und Gegenparteirisiko.",
+      "admissionGate": { "Freshness": true, "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true },
+      "scoreBreakdown": { "SourceQuality": 20, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 20, "Falsifiability": 15, "TimeSensitivity": 10 },
+      "redPencil": {
+        "sourceIncentive": "Microsoft betont Monetarisierung und Effizienz; die Lease-Accounting-Änderung lässt gemeldeten Capex optisch sinken.",
+        "alternative": "Backlog kann lange Laufzeiten, Preissteigerungen und konditionale Verträge enthalten; Azure-Wachstum kann durch Kapazitätsfreigabe statt nachhaltige Endnachfrage beschleunigt sein.",
+        "alreadyPriced": "Hoher Microsoft-Capex und Azure-Stärke waren bekannt; neu sind 678 Mrd. US-Dollar Backlog, 329,1 Mrd. US-Dollar unbegonnene Leases und der vollständig außerhalb der Top-Modell-Labs entstandene Quartalszuwachs.",
+        "killCondition": "Azure wächst im nächsten Quartal unter 40 Prozent, Cloud-Backlog fällt unter 650 Mrd. US-Dollar oder Microsoft reduziert reale Kapazitätszusagen trotz unveränderter Nachfrage.",
+        "forecastChange": "Neu P-2026-07-30-01 – 86 Prozent."
+      },
+      "sources": [
+        { "label": "Microsoft – FY2026 Q4 Investor Relations", "url": "https://www.microsoft.com/en-us/investor/" },
+        { "label": "Reuters – Microsoft cloud, capex, leases and backlog", "url": "https://www.reuters.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-2026-07-29/" }
+      ]
+    },
+    {
+      "id": "S-2026-07-30-02",
+      "rank": 2,
+      "priorityScore": 100,
+      "classification": "Architecture Update",
+      "title": "Samsung bindet 60–70 Prozent der Langfristkapazität und sieht Memory-Knappheit bis 2028",
+      "fact": "Samsung erwartet, dass sich die Chipknappheit 2027 verschärft und 2028 fortsetzt. Das Unternehmen hat mindestens fünfjährige Lieferverträge mit den fünf größten globalen Datacenter-Kunden abgeschlossen und verhandelt mit fünf weiteren Großkunden. Die Verträge sollen langfristig 60 bis 70 Prozent der Kapazität abdecken und enthalten Vorauszahlungen sowie Preisuntergrenzen. Samsung erwartet, dass der HBM4-Umsatz im dritten Quartal mehr als dreifach steigt.",
+      "estimate": "Kapazitätsanteil und HBM4-Ramp sind Managementprognosen; konkrete Kunden, Volumina, Produktmix und Ausbeuten fehlen. Vorauszahlungen und Floors reduzieren Investitionsrisiken, können aber bei schwächerer Endnachfrage zu Abnahme- oder Neuverhandlungsrisiken führen.",
+      "tailInference": "Der Memory-Markt wechselt von Zyklussteuerung zu projektfinanzierter Kapazitätsbindung. HBM-, DRAM- und Datacenter-Kunden finanzieren Kapazität vor und akzeptieren Floors; freie Kapazität und kurzfristige Preisverhandlungen verlieren weiter an Bedeutung.",
+      "admissionGate": { "Freshness": true, "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true },
+      "scoreBreakdown": { "SourceQuality": 20, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 20, "Falsifiability": 15, "TimeSensitivity": 10 },
+      "redPencil": {
+        "sourceIncentive": "Samsung will nach Marktanteilsverlusten bei HBM technische Aufholfähigkeit und sichere Nachfrage hervorheben.",
+        "alternative": "Verträge können breite DRAM-/NAND-Mengen enthalten und weniger HBM-spezifisch sein; chinesische Kapazität und hohe Preise können Nachfrage verschieben.",
+        "alreadyPriced": "Memory-Knappheit und LTAs waren bekannt; neu sind 60–70 Prozent gebundene Langfristkapazität, Vorauszahlungen, Floors und die HBM4-Q3-Verdreifachung.",
+        "killCondition": "HBM4-Umsatz wächst im dritten Quartal weniger als doppelt, LTA-Abdeckung fällt unter 50 Prozent oder Samsung revidiert die Knappheitsthese vor Ende 2027.",
+        "forecastChange": "Neu P-2026-07-30-02 – 84 Prozent; F-2026-07-20-02 wird geschwächt."
+      },
+      "sources": [
+        { "label": "Samsung – 2Q26 Earnings Release", "url": "https://www.samsung.com/global/ir/financial-information/earnings-release/" },
+        { "label": "Reuters – Samsung shortage, LTAs and HBM4 ramp", "url": "https://www.reuters.com/world/asia-pacific/samsung-q2-profit-jumps-19-fold-ai-chip-demand-offsets-mobile-loss-2026-07-30/" }
+      ]
+    },
+    {
+      "id": "S-2026-07-30-03",
+      "rank": 3,
+      "priorityScore": 99,
+      "classification": "Falsifier",
+      "title": "Meta bestätigt AI-Nachfrage, falsifiziert aber die reibungslose Selbstfinanzierung des Build-outs",
+      "fact": "Meta meldete 60,8 Mrd. US-Dollar Quartalsumsatz, plus 28 Prozent, aber nur 784 Mio. US-Dollar freien Cashflow nach 8,55 Mrd. US-Dollar im Vorjahr. Die 2026-Capex-Spanne wurde auf 130 bis 145 Mrd. US-Dollar angehoben. Meta plant laut Reuters, die Compute-Leistung von 7 GW im Jahr 2026 auf 14 GW im Jahr 2027 zu verdoppeln; Mark Zuckerberg erwartet neben internen Workloads ein großes Geschäft mit externen Großkunden.",
+      "estimate": "Die 14-GW-Angabe beruht auf Reuters-Berichten, nicht auf einer vollständigen standortbezogenen Meta-Offenlegung. Der extrem niedrige Quartals-Cashflow enthält Timing-, Rechts- und Restrukturierungseffekte und muss sich nicht linear fortsetzen.",
+      "tailInference": "Meta ist kein Nachfragefalsifier, sondern ein Finanzierungsfalsifier: AI-Nutzung und Werbeumsatz wachsen, doch die Infrastruktur absorbiert fast den gesamten freien Cashflow. Compute-Resale, Enterprise-Agenten, Joint Ventures und Private Credit werden damit von Optionen zu notwendigen Monetarisierungs- und Finanzierungswegen.",
+      "admissionGate": { "Freshness": true, "Evidence": true, "Materiality": true, "Causality": true, "Falsifiability": true },
+      "scoreBreakdown": { "SourceQuality": 20, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 20, "Falsifiability": 14, "TimeSensitivity": 10 },
+      "redPencil": {
+        "sourceIncentive": "Meta betont langfristige AI-Chancen und kann kurzfristigen Cashflow als Übergangsphase darstellen.",
+        "alternative": "Werbe-Monetarisierung und niedrigere Stückkosten können den Cashflow schnell erholen; rechtliche und Abfindungskosten verzerren das Quartal.",
+        "alreadyPriced": "Hoher Meta-Capex und externe Finanzierung waren bekannt; neu sind der 91-prozentige FCF-Einbruch und die explizite Erwartung eines großen externen Kundengeschäfts.",
+        "killCondition": "Meta senkt 2026-Capex unter 125 Mrd. US-Dollar, Q3-FCF steigt über 10 Mrd. US-Dollar ohne externe Finanzierung oder das Unternehmen verwirft Compute-/Enterprise-Monetarisierung.",
+        "forecastChange": "Neu P-2026-07-30-03 – 72 Prozent; F-2026-07-13-02 wird verstärkt."
+      },
+      "sources": [
+        { "label": "Meta – Q2 2026 Earnings Call", "url": "https://investor.atmeta.com/investor-events/event-details/2026/Q2-2026-Earnings-Call/default.aspx" },
+        { "label": "Reuters – Meta capex and free cash flow", "url": "https://www.reuters.com/business/meta-narrows-annual-capex-forecast-ai-buildout-grows-2026-07-29/" }
+      ]
+    },
+    {
+      "id": "S-2026-07-30-04",
+      "rank": 4,
+      "priorityScore": 96,
+      "classification": "Architecture Update",
+      "title": "Ofgem bepreist spekulative Datacenter-MW mit bis zu 712.500 Pfund je MW",
+      "fact": "Ofgem hat eine Konsultation zu strengeren Netzanschlussregeln für Datacenter gestartet. Die Nachfrage in der britischen Anschlusswarteschlange stieg von 41 GW im November 2024 auf 125 GW im Juni 2025; mindestens 80 GW entfallen auf Datacenter. Vorgesehen sind eine erstattbare Commitment Fee von 237.500 bis 712.500 Pfund je MW und harte Projektmeilensteine; bei Ausstieg oder Nichtfortschritt kann die Sicherheit verfallen.",
+      "estimate": "Die Regel ist noch nicht final. Gebührenhöhe, Übergangsregeln, Ausnahmen und die Behandlung strategischer AI-Projekte können sich in der Konsultation ändern; Warteschlangen-MW sind nicht gleich reale Nachfrage.",
+      "tailInference": "Grid Access wird zu einem kapitalgedeckten Optionsrecht. Nach PJM-Curtailment und US-Ratepayer-Schutz entsteht nun in Europa ein weiterer Standard: Wer MW reserviert, muss Kapital hinterlegen, Fortschritt nachweisen und Scheitern finanziell tragen.",
+      "admissionGate": { "Freshness": true, "Evidence": "Official consultation plus qualified secondary", "Materiality": true, "Causality": true, "Falsifiability": true },
+      "scoreBreakdown": { "SourceQuality": 18, "Novelty": 15, "ThesisRelevance": 20, "ForecastImpact": 19, "Falsifiability": 14, "TimeSensitivity": 10 },
+      "redPencil": {
+        "sourceIncentive": "Ofgem will die Queue bereinigen und kann spekulative Nachfrage bewusst maximal darstellen.",
+        "alternative": "Ein erheblicher Teil der 80 GW ist Doppelzählung oder Optionalität; strategische Projekte könnten Ausnahmen oder niedrigere Sicherheiten erhalten.",
+        "alreadyPriced": "Britische Grid-Engpässe waren bekannt; neu sind die konkrete Datacenter-Gebührenspanne und der drohende Kapitalverlust pro reserviertem MW.",
+        "killCondition": "Ofgem verwirft die datacenterspezifische Fee, setzt sie unter 100.000 Pfund je MW oder führt keine verbindlichen Meilensteine ein.",
+        "forecastChange": "Neu P-2026-07-30-04 – 76 Prozent."
+      },
+      "sources": [
+        { "label": "Ofgem – Demand connections reform", "url": "https://www.ofgem.gov.uk/call-for-input/demand-connections-reform" },
+        { "label": "Reuters – Ofgem data-centre commitment fee", "url": "https://www.reuters.com/business/energy/uks-ofgem-proposes-grid-connection-fee-deter-speculative-data-centre-projects-2026-07-29/" }
+      ]
+    },
+    {
+      "id": "S-2026-07-30-05",
+      "rank": 5,
+      "priorityScore": 95,
+      "classification": "Falsifier",
+      "title": "13 Millionen Barrel pro Tag erreichen trotz Chokepoints den Markt",
+      "fact": "Brent fiel am 30. Juli auf rund 89,78 US-Dollar. Reuters berichtet, dass trotz iranischer Hormuz-Sperre und Houthi-Blockade im Roten Meer weiterhin rund 13 Mio. Barrel pro Tag aus dem Golf exportiert werden, gestützt durch alternative Routen und fortgesetzte Tankerbewegungen.",
+      "estimate": "Die 13 Mio. Barrel pro Tag sind eine aktuelle Flussschätzung und können durch Angriffe, Versicherungsentscheidungen oder Terminalausfälle schnell sinken. Erhaltenes Volumen bedeutet nicht normale Lieferzeit, Frachtkosten oder Produktverfügbarkeit.",
+      "tailInference": "Die ökonomische Blockade bleibt real, aber die Gleichsetzung Chokepoint geschlossen = Volumen weg ist falsifiziert. Pipelines, Umleitungen und selektive Passage halten die physische Versorgung aufrecht; der Schock wandert stärker in Fracht, Zeit, Versicherung und Raffinerie-Mix als in einen vollständigen Rohölausfall.",
+      "admissionGate": { "Freshness": true, "Evidence": "Qualified secondary and physical-flow estimates", "Materiality": true, "Causality": true, "Falsifiability": true },
+      "scoreBreakdown": { "SourceQuality": 18, "Novelty": 14, "ThesisRelevance": 20, "ForecastImpact": 18, "Falsifiability": 15, "TimeSensitivity": 10 },
+      "redPencil": {
+        "sourceIncentive": "Produzenten und Regierungen wollen Resilienz zeigen; Tracking kann nicht sichtbare Ausfälle und Verzögerungen unterschätzen.",
+        "alternative": "Exportvolumen kann durch Lagerabbau und temporäre Umleitungen gestützt sein und ohne neue Angriffe später einbrechen.",
+        "alreadyPriced": "Alternative Routen waren bekannt; neu ist die konkrete Bestätigung von rund 13 Mio. Barrel pro Tag bei gleichzeitigem Brent-Rückgang unter 90 US-Dollar.",
+        "killCondition": "Golf-Exporte fallen fünf Tage unter 10 Mio. Barrel pro Tag, Brent steigt nachhaltig über 105 US-Dollar oder beide Alternativrouten erleiden operative Ausfälle.",
+        "forecastChange": "P-2026-07-20-01 86→97 Prozent wegen nahezu erreichtem Horizont; neu P-2026-07-30-05 – 78 Prozent; F-2026-07-28-01 wird verstärkt."
+      },
+      "sources": [
+        { "label": "Reuters – Gulf supplies and oil flows", "url": "https://www.reuters.com/business/energy/oil-prices-slip-tankers-continue-ply-middle-east-conflict-zones-2026-07-30/" }
+      ]
+    }
+  ],
+  "predictionLogUpdates": [
+    {
+      "id": "P-2026-07-20-01",
+      "status": "changed",
+      "forecast": "Brent bleibt bis Ende Juli überwiegend über 85 US-Dollar, solange Hormuz und die Red-Sea-Route nicht nachhaltig normalisieren.",
+      "confidence": 97,
+      "previousConfidence": 86,
+      "nextReview": "2026-07-31",
+      "history": "82→78→84→92→97→96→78→86; 86→97 am 30.07. bei Brent um 89,78 US-Dollar und nur noch einem Handelstag bis zum Horizont. Historie erhalten.",
+      "redPencil": "Der Treffer ist fast erreicht, sagt aber nichts über August; 13 Mio. Barrel pro Tag Golf-Exporte begrenzen den weiteren Preissprung.",
+      "killCondition": "Brent schließt am 30. und 31. Juli jeweils unter 85 US-Dollar."
+    },
+    {
+      "id": "P-2026-07-30-01",
+      "status": "new",
+      "forecast": "Microsoft erreicht im ersten Quartal des Geschäftsjahres 2027 mindestens 43 Prozent Azure-Wachstum bei einem Cloud-Auftragsbestand von mindestens 680 Mrd. US-Dollar.",
+      "confidence": 86,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 30.07. nach 43 Prozent Q4-Wachstum, 45-Prozent-Guidance und 678 Mrd. US-Dollar Backlog.",
+      "redPencil": "Backlog ist mehrjährig; Kapazitätsfreigabe und Währung können das Quartal verzerren.",
+      "killCondition": "Azure unter 43 Prozent oder Backlog unter 680 Mrd. US-Dollar."
+    },
+    {
+      "id": "P-2026-07-30-02",
+      "status": "new",
+      "forecast": "Samsung steigert den HBM4-Umsatz im dritten Quartal mindestens auf das 2,5-Fache und hält mindestens 60 Prozent seiner Langfristkapazität über mehrjährige Verträge gebunden.",
+      "confidence": 84,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 30.07. nach Samsung-Guidance von mehr als dreifachem HBM4-Umsatz und 60–70 Prozent LTA-Abdeckung.",
+      "redPencil": "Managementziel; Yield, Kundenqualifikation und Produktmix können den Ramp verschieben.",
+      "killCondition": "HBM4 unter 2,5-fach oder LTA-Abdeckung unter 60 Prozent."
+    },
+    {
+      "id": "P-2026-07-30-03",
+      "status": "new",
+      "forecast": "Meta investiert 2026 mindestens 130 Mrd. US-Dollar und kündigt bis Jahresende einen überprüfbaren externen Compute-, Agenten- oder Enterprise-AI-Großkundenmeilenstein an.",
+      "confidence": 72,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 30.07. nach 130–145 Mrd. US-Dollar Capex-Guidance, 91 Prozent FCF-Rückgang und angekündigtem Großkundengeschäft.",
+      "redPencil": "Capex kann am unteren Rand landen; Enterprise-AI kann intern oder ohne Umsatzoffenlegung starten.",
+      "killCondition": "Capex unter 130 Mrd. US-Dollar oder kein externer Meilenstein bis 31.12.2026."
+    },
+    {
+      "id": "P-2026-07-30-04",
+      "status": "new",
+      "forecast": "Ofgem verabschiedet bis Ende 2026 eine datacenterspezifische Netzanschluss-Sicherheit von mindestens 200.000 Pfund je MW mit verbindlichen Fortschrittsmeilensteinen.",
+      "confidence": 76,
+      "previousConfidence": null,
+      "nextReview": "2026-09-16",
+      "history": "Erstellt 30.07. nach Konsultation über 237.500 bis 712.500 Pfund je MW.",
+      "redPencil": "Konsultation kann Gebühren senken oder strategische Ausnahmen schaffen.",
+      "killCondition": "Keine datacenterspezifische Regel, Sicherheit unter 200.000 Pfund je MW oder keine Meilensteine."
+    },
+    {
+      "id": "P-2026-07-30-05",
+      "status": "new",
+      "forecast": "Die Golf-Ölexporte bleiben bis 15. August trotz Hormuz- und Red-Sea-Störungen im Sieben-Tage-Mittel über 11 Mio. Barrel pro Tag.",
+      "confidence": 78,
+      "previousConfidence": null,
+      "nextReview": "2026-08-15",
+      "history": "Erstellt 30.07. bei rund 13 Mio. Barrel pro Tag durch alternative Routen.",
+      "redPencil": "Aktuelle Flüsse können Lagerabbau und temporäre Umleitungen enthalten.",
+      "killCondition": "Sieben-Tage-Mittel unter 11 Mio. Barrel pro Tag."
+    }
+  ],
+  "falsifierUpdates": [
+    {
+      "id": "F-2026-07-13-02",
+      "status": "active_strengthened",
+      "claim": "Kredit-, FCF- und Bewertungsdruck begrenzen unbegrenzte AI-Capex-Toleranz.",
+      "update": "Meta meldet nur 784 Mio. US-Dollar Quartals-FCF bei 130–145 Mrd. US-Dollar Jahres-Capex; Microsoft trägt zusätzlich 329,1 Mrd. US-Dollar noch nicht begonnene Datacenter-Leases.",
+      "nextReview": "2026-10-31"
+    },
+    {
+      "id": "F-2026-07-20-02",
+      "status": "active_weakened",
+      "claim": "Parallele Kapazitätserweiterungen können ab 2028 einen breiten Memory-Überschuss auslösen.",
+      "update": "Samsung bindet 60–70 Prozent der Langfristkapazität über mindestens fünfjährige Verträge mit Vorauszahlungen und Floors und erwartet Knappheit bis 2028. Oversupply bleibt möglich, wird aber stärker zeitlich und vertraglich gepuffert.",
+      "nextReview": "2026-10-31"
+    },
+    {
+      "id": "F-2026-07-28-01",
+      "status": "active_strengthened",
+      "claim": "Diplomatie und alternative Routen können Energie-Futures trotz physischer Chokepoints entlasten.",
+      "update": "Rund 13 Mio. Barrel pro Tag erreichen weiter den Markt; Brent fällt trotz erneuter militärischer Eskalation auf rund 89,78 US-Dollar.",
+      "nextReview": "2026-08-15"
+    },
+    {
+      "id": "F-2026-07-30-01",
+      "status": "new_active",
+      "claim": "Gemeldeter Hyperscaler-Capex ist wegen Lease-Accounting kein sauberer Proxy für reale Infrastrukturverpflichtungen.",
+      "update": "Microsoft senkt den gemeldeten 2026-Capex nach Verlängerung der Lease-Nutzungsdauer auf 25 Jahre, während 329,1 Mrd. US-Dollar unbegonnene Datacenter-Leases bestehen bleiben.",
+      "nextReview": "2026-10-31"
+    }
+  ],
+  "auditTrailAdditions": [
+    {
+      "date": "2026-07-30",
+      "type": "Primary-source promotion",
+      "item": "Microsoft, Meta und Samsung liefern Ergebnis-, Backlog-, LTA- und Capex-Daten; Ofgem liefert den regulatorischen Primärrahmen.",
+      "action": "Finanzkennzahlen, Managementziele und TAIL-Inferenz strikt getrennt."
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Accounting normalization",
+      "item": "Microsoft senkt gemeldeten Capex durch eine 15-auf-25-Jahre-Lease-Anpassung.",
+      "action": "Keine reale Kapazitätskürzung unterstellt; unbegonnene Leases separat erfasst."
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Memory scope discipline",
+      "item": "Samsung liefert einen harten HBM-/DRAM-LTA-Trigger, aber keinen neuen unabhängigen NAND- oder Enterprise-SSD-Preis-/Shipment-Trigger.",
+      "action": "HBM/LTA-Layer aktualisiert; NAND-/eSSD-Preisprognosen unverändert erhalten."
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Below-gate watch",
+      "item": "Der OpenAI/Hugging-Face-Vorfall wurde durch ein zweites kompromittiertes Konto und politische Gespräche weiter bestätigt.",
+      "action": "Als Layer Update unterhalb der Top-5 belassen, da die Grundarchitektur bereits am 22.–24.07. aufgenommen wurde."
+    }
+  ],
+  "runHistoryAdditions": [
+    {
+      "date": "2026-07-30",
+      "pulse": 84,
+      "confidence": 99,
+      "note": "Microsoft monetarisiert Cloud und Copilot bei wachsendem Lease-Tail; Samsung bindet 60–70 Prozent Langfristkapazität. Meta verschärft den FCF-Falsifier, Ofgem bepreist Grid-Optionen und alternative Ölflüsse begrenzen den Chokepoint-Preisschock."
+    }
+  ],
+  "nextCatalysts": [
+    { "date": "2026-07-31", "event": "Brent-Forecastabschluss, Hormuz-/Bab-al-Mandeb-Großtanker und Microsoft/Meta Marktreaktion" },
+    { "date": "2026-08-15", "event": "Golf-Exportvolumen, alternative Routen und Energieinfrastruktur" },
+    { "date": "2026-09-16", "event": "Ofgem-Konsultationsschluss zur Datacenter-Commitment-Fee" },
+    { "date": "2026-10-31", "event": "Microsoft Azure/Backlog, Samsung HBM4/LTAs und Meta Capex/FCF" },
+    { "date": "2026-12-31", "event": "Meta Enterprise-/Compute-Monetarisierung und britische Grid-Regeln" }
+  ],
+  "historyPolicy": "Forecasts, Confidence-Änderungen, Falsifier, Treffer, Late Admissions und Misses bleiben sichtbar. Kein Miss wurde gelöscht oder rückwirkend als Treffer umklassifiziert."
+}
