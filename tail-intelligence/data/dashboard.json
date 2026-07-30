@@ -5,8 +5,8 @@
   "dataAsOf": "2026-07-30",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-07-30T18:47:23.283Z",
-  "lastForecastRun": "2026-07-30T18:47:23.283Z",
+  "lastSuccessfulUpdate": "2026-07-30T20:38:15.857Z",
+  "lastForecastRun": "2026-07-30T20:38:15.857Z",
   "newlyProcessedArticles": 1,
   "totalArticles": 63,
   "articleCount": 63,
@@ -84,23 +84,23 @@
     {
       "id": "server_dram",
       "label": "Server DRAM",
-      "score": 85,
+      "score": 84,
       "status": "red",
-      "signals": 5
-    },
-    {
-      "id": "hbm",
-      "label": "HBM",
-      "score": 81,
-      "status": "orange",
-      "signals": 12
+      "signals": 6
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 14
+      "signals": 15
+    },
+    {
+      "id": "hbm",
+      "label": "HBM",
+      "score": 80,
+      "status": "orange",
+      "signals": 13
     },
     {
       "id": "ai_infrastructure",
@@ -114,7 +114,7 @@
       "label": "Enterprise SSD",
       "score": 72,
       "status": "orange",
-      "signals": 4
+      "signals": 5
     },
     {
       "id": "nand",
@@ -244,6 +244,7 @@
         "S-2026-07-25-01",
         "S-2026-07-28-04",
         "S-2026-07-25-02",
+        "S-2026-07-30-01",
         "S-2026-07-30-02",
         "S-2026-07-19-04",
         "S-2026-07-23-05",
@@ -252,7 +253,7 @@
         "S-2026-07-29-05",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-07-30T18:47:23.282Z"
+      "lastUpdated": "2026-07-30T20:38:15.857Z"
     },
     {
       "id": "hbm",
@@ -308,12 +309,13 @@
         "S-2026-07-25-01",
         "S-2026-07-28-04",
         "S-2026-07-25-02",
+        "S-2026-07-30-01",
         "S-2026-07-30-02",
         "S-2026-07-19-04",
         "S-2026-07-23-03",
         "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-07-30T18:47:23.283Z"
+      "lastUpdated": "2026-07-30T20:38:15.857Z"
     },
     {
       "id": "nand",
@@ -366,7 +368,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-30T18:47:23.283Z"
+      "lastUpdated": "2026-07-30T20:38:15.857Z"
     },
     {
       "id": "enterprise_ssd",
@@ -374,7 +376,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 71,
-      "confidenceScore": 82,
+      "confidenceScore": 83,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "Enterprise SSD profitiert von AI-Datenpipelines, Nearline-Wachstum und High-Capacity-Qualifizierung.",
@@ -386,6 +388,14 @@
           "signal": "Kapazitätsbindung",
           "score": 78,
           "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."
+        },
+        {
+          "id": "S-2026-07-30-01",
+          "date": "2026-07-30",
+          "title": "Microsoft koppelt Cloud-Monetarisierung an einen 329-Mrd.-US-Dollar-Datacenter-Lease-Tail",
+          "signal": "Geopolitische Entkopplung",
+          "score": 67,
+          "summary": "Microsoft meldete 90,0 Mrd. US-Dollar Quartalsumsatz, Azure-Wachstum von 43 Prozent und mehr als 30 Millionen bezahlte M365-Copilot-Plätze. Für das erste Quartal des Geschäftsjahres 2027 erwartet das Unternehmen 45 Prozent Azure-Wachstum. Der Cloud-Auftragsbestand stieg auf 678 Mrd. US-Dollar; der gesamte sequenzielle Zuwachs von rund 50 Mrd. US-Dollar kam von Kunden außerhalb der führenden US-AI-Modellhersteller. Noch nicht begonnene Datacenter-Leases belaufen sich auf 329,1 Mrd. US-Dollar. Microsoft nahm im Quartal 31 neue Datacenter auf fünf Kontinenten in Betrieb, insgesamt 88 im Geschäftsjahr, brachte ein weiteres Gigawatt Kapazität online und halbierte die Dock-to-live-Zeit neuer GPUs in den größten Regionen nahezu. Der Durchsatz der Copilot-Workloads stieg seit Jahresbeginn auf das Vierfache; zusätzliche und durch Effizienz freigewordene Kapazität wurde nach Unternehmensangaben im selben Quartal schnell monetarisiert."
         },
         {
           "id": "tail-2026-07-14-nand-essd",
@@ -402,24 +412,17 @@
           "signal": "Geopolitische Entkopplung",
           "score": 54,
           "summary": "SK hynix meldete 60,5 Bio. Won operativen Gewinn und 79,3 Bio. Won Umsatz, verfehlte jedoch hohe Markterwartungen; HBM4-Verzögerungen begrenzten Preissteigerungen. Das Unternehmen verhandelt beziehungsweise schloss rund zehn typischerweise fünfjährige LTAs mit finanziellen Sicherungen und erhöht 2026 den Capex auf den hohen 40-Bio.-Won-Bereich. Seagate meldete 3,629 Mrd. US-Dollar Quartalsumsatz, 52,3 Prozent GAAP-Bruttomarge, 1,1 Mrd. US-Dollar Free Cashflow und führt für das nächste Quartal 4,1 Mrd. US-Dollar Umsatz an, getragen von robuster Cloud-Datacenter-Nachfrage."
-        },
-        {
-          "id": "S-2026-07-20-05",
-          "date": "2026-07-20",
-          "title": "NVIDIA Storage Next und PCIe Gen7 etablieren GPU-adjacent Storage",
-          "signal": "Geopolitische Entkopplung",
-          "score": 49,
-          "summary": "Silicon Motion erwartet Enterprise-PCIe-Gen6-Tape-out Ende 2026, entwickelt Gen7 mit internen Samples H2 2027 und trennt Compute-, High-Density-AI- und GPU-adjacent-Storage mit deterministischer Latenz/QoS."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
+        "S-2026-07-30-01",
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-30T18:47:23.283Z"
+      "lastUpdated": "2026-07-30T20:38:15.857Z"
     },
     {
       "id": "ai_infrastructure",
@@ -536,10 +539,10 @@
         "S-2026-07-28-03",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-07-30T18:47:23.283Z"
+      "lastUpdated": "2026-07-30T20:38:15.857Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 63 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 63 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
