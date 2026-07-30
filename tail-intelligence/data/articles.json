@@ -2192,34 +2192,37 @@
   {
     "id": "S-2026-07-30-02",
     "date": "2026-07-30",
-    "title": "Samsung bindet 60–70 Prozent der Langfristkapazität und sieht Memory-Knappheit bis 2028",
+    "title": "Samsung zielt mit rollierenden Fünfjahresverträgen auf 60–70 Prozent DRAM-/NAND-Abdeckung",
     "category": "geopolitics",
     "markets": [
       "hbm",
       "dram",
+      "nand",
       "ai_infrastructure"
     ],
     "companies": [
-      "Samsung"
+      "Micron",
+      "Samsung",
+      "SK hynix"
     ],
     "severity": 100,
     "confidence": 90,
     "signal": "geopolitical_split",
-    "summary": "Samsung erwartet, dass sich die Chipknappheit 2027 verschärft und 2028 fortsetzt. Das Unternehmen hat mindestens fünfjährige Lieferverträge mit den fünf größten globalen Datacenter-Kunden abgeschlossen und verhandelt mit fünf weiteren Großkunden. Die Verträge sollen langfristig 60 bis 70 Prozent der Kapazität abdecken und enthalten Vorauszahlungen sowie Preisuntergrenzen. Samsung erwartet, dass der HBM4-Umsatz im dritten Quartal mehr als dreifach steigt.",
-    "tail_analysis": "Der Memory-Markt wechselt von Zyklussteuerung zu projektfinanzierter Kapazitätsbindung. HBM-, DRAM- und Datacenter-Kunden finanzieren Kapazität vor und akzeptieren Floors; freie Kapazität und kurzfristige Preisverhandlungen verlieren weiter an Bedeutung.",
+    "summary": "Samsung erwartet, dass sich die Memory-Knappheit 2027 gegenüber 2026 verschärft und bis 2028 fortsetzt. Das Unternehmen hat fünfjährige Memory-Lieferverträge mit fünf führenden globalen Datacenter-Kunden abgeschlossen und befindet sich mit fünf weiteren Kunden in finalen Gesprächen. Erst nach Abschluss der noch offenen Verträge sollen die gebundenen DRAM- und NAND-Volumina 60 bis 70 Prozent der Werkskapazität abdecken. Die Vereinbarungen können durch jährliche Verhandlung jeweils um ein Jahr verlängert werden. Sie enthalten erhebliche Vorauszahlungen, von denen Samsung rund ein Viertel der erwarteten Summe erhalten hat, sowie Preisuntergrenzen für Mainstream-Produkte. Der HBM4-Umsatz soll im dritten Quartal sequenziell um mehr als das Dreifache steigen und in der zweiten Jahreshälfte deutlich über 60 Prozent des HBM-Umsatzes ausmachen; HBM-Liefervereinbarungen für 2027 bestehen bereits.",
+    "tail_analysis": "Der Memory-Markt wechselt von kurzfristiger Zyklussteuerung zu projektfinanzierter Kapazitätsbindung. Rollierende Laufzeiten, Vorauszahlungen und Preisfloors verlagern einen Teil des Erweiterungs- und Preisrisikos von Samsung auf die Hyperscaler und schaffen Investitionssicherheit für Cleanrooms und Equipment. Hyperscaler gewinnen Versorgungssicherheit; nicht gebundene OEMs, Systemhäuser und Distributoren konkurrieren um einen kleineren freien DRAM-/NAND-Pool. SK hynix mit Vereinbarungen bei rund zehn Kunden und Microns mehrjährige Strategic Customer Agreements zeigen, dass dies kein Samsung-Sonderfall, sondern ein branchenweiter Wechsel des Memory-Geschäftsmodells ist.",
     "source": "Samsung – 2Q26 Earnings Release",
     "url": "https://www.samsung.com/global/ir/financial-information/earnings-release/",
-    "content_hash": "a19f038cc1cce1dc6e52",
+    "content_hash": "5ea3aa8cb72192ee5a11",
     "origin": "daily-intelligence",
     "classification": "Architecture Update",
     "rank": 2,
-    "estimate": "Kapazitätsanteil und HBM4-Ramp sind Managementprognosen; konkrete Kunden, Volumina, Produktmix und Ausbeuten fehlen. Vorauszahlungen und Floors reduzieren Investitionsrisiken, können aber bei schwächerer Endnachfrage zu Abnahme- oder Neuverhandlungsrisiken führen.",
+    "estimate": "Die 60- bis 70-Prozent-Abdeckung ist ein Zielwert nach erfolgreichem Abschluss der fünf ausstehenden Verträge, kein bereits erreichter Anteil. Kapazitätsabdeckung, HBM4-Ramp und Marktanteilsziel sind Managementaussagen; Kundenidentitäten, Volumina, Vorauszahlungssumme, konkrete Floors, Produktmix, Yield und Qualifikationsstatus fehlen. Die Floors gelten für Mainstream-Produkte und nicht für das gesamte Portfolio. Samsung meldete für das zweite Quartal 2026 171,5 Bio. Won Umsatz und 89,5 Bio. Won operativen Gewinn; die außergewöhnlichen Größenordnungen sind durch die offizielle Vorab-Guidance von rund 171 Bio. beziehungsweise 89,4 Bio. Won bestätigt.",
     "red_pencil": {
       "sourceIncentive": "Samsung will nach Marktanteilsverlusten bei HBM technische Aufholfähigkeit und sichere Nachfrage hervorheben.",
-      "alternative": "Verträge können breite DRAM-/NAND-Mengen enthalten und weniger HBM-spezifisch sein; chinesische Kapazität und hohe Preise können Nachfrage verschieben.",
-      "alreadyPriced": "Memory-Knappheit und LTAs waren bekannt; neu sind 60–70 Prozent gebundene Langfristkapazität, Vorauszahlungen, Floors und die HBM4-Q3-Verdreifachung.",
-      "killCondition": "HBM4-Umsatz wächst im dritten Quartal weniger als doppelt, LTA-Abdeckung fällt unter 50 Prozent oder Samsung revidiert die Knappheitsthese vor Ende 2027.",
-      "forecastChange": "Neu P-2026-07-30-02 – 84 Prozent; F-2026-07-20-02 wird geschwächt."
+      "alternative": "Die fünf offenen Verträge können sich verzögern oder mit geringeren Mengen schließen; 60 bis 70 Prozent Werksabdeckung sind nicht gleich 60 bis 70 Prozent der gesamten Samsung-Memory-Produktion. Hohe Preise können Nachfrage verschieben, chinesische Kapazität kann Mainstream-Segmente entlasten und Abnehmer können bei einem Abschwung Neuverhandlungen anstreben.",
+      "alreadyPriced": "Memory-Knappheit und LTAs waren bekannt. Neu sind der noch nicht erreichte Charakter der 60- bis 70-Prozent-Zielabdeckung, die rollierende Fünfjahresstruktur, rund 25 Prozent eingegangene Vorauszahlungen, Mainstream-Preisfloors sowie die branchenweite Vergleichbarkeit mit SK hynix und Micron.",
+      "killCondition": "Samsung schließt die fünf ausstehenden Verträge nicht bis Ende 2026, meldet eine Zielabdeckung unter 50 Prozent, HBM4-Umsatz wächst im dritten Quartal weniger als doppelt oder das Unternehmen revidiert die Knappheitsthese vor Ende 2027.",
+      "forecastChange": "P-2026-07-30-02 wird auditierbar auf den HBM4-Ramp begrenzt; neu P-2026-07-30-06 für die Vertragsabdeckung. Ursprüngliche kombinierte Formulierung im Verlauf erhalten; F-2026-07-20-02 bleibt geschwächt."
     },
     "sources": [
       {
