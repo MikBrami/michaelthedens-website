@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-07-30",
+  "dataAsOf": "2026-07-31",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-07-31T00:15:48.765Z",
-  "lastForecastRun": "2026-07-31T00:15:48.765Z",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-07-31T06:43:12.705Z",
+  "lastForecastRun": "2026-07-31T06:43:12.705Z",
   "newlyProcessedArticles": 0,
-  "totalArticles": 63,
-  "articleCount": 63,
+  "totalArticles": 68,
+  "articleCount": 68,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,17 +32,17 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 71,
+    "forecastLedgerCount": 74,
     "resolvedForecasts": 4,
-    "activeForecasts": 45,
+    "activeForecasts": 44,
     "scopeGateStatus": "active",
-    "memoryRawShare": 24.4
+    "memoryRawShare": 25
   },
   "error": null,
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-07-31T00:15:46.715Z",
+    "updatedAt": "2026-07-31T06:43:10.700Z",
     "newItems": 0,
     "totalItems": 74,
     "duplicateItems": 200,
@@ -56,7 +56,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "63 Artikel · Datenstand 2026-07-30"
+        "detail": "68 Artikel · Datenstand 2026-07-31"
       },
       {
         "id": "inbox",
@@ -86,56 +86,56 @@
       "label": "Server DRAM",
       "score": 84,
       "status": "red",
-      "signals": 6
+      "signals": 7
+    },
+    {
+      "id": "hbm",
+      "label": "HBM",
+      "score": 81,
+      "status": "orange",
+      "signals": 14
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 15
+      "signals": 17
     },
     {
-      "id": "hbm",
-      "label": "HBM",
-      "score": 80,
+      "id": "enterprise_ssd",
+      "label": "Enterprise SSD",
+      "score": 73,
       "status": "orange",
-      "signals": 13
+      "signals": 6
     },
     {
       "id": "ai_infrastructure",
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 49
-    },
-    {
-      "id": "enterprise_ssd",
-      "label": "Enterprise SSD",
-      "score": 72,
-      "status": "orange",
-      "signals": 5
+      "signals": 51
     },
     {
       "id": "nand",
       "label": "NAND",
       "score": 72,
       "status": "orange",
-      "signals": 5
+      "signals": 6
     },
     {
       "id": "semiconductors",
       "label": "Semiconductors",
       "score": 71,
       "status": "orange",
-      "signals": 14
+      "signals": 15
     },
     {
       "id": "supply_chain",
       "label": "Supply Chain",
-      "score": 65,
+      "score": 68,
       "status": "orange",
-      "signals": 13
+      "signals": 16
     }
   ],
   "manufacturers": [
@@ -180,14 +180,14 @@
       "mentions": 10
     },
     {
-      "name": "Oracle",
-      "score": 71,
-      "mentions": 1
+      "name": "Anthropic",
+      "score": 72,
+      "mentions": 2
     },
     {
-      "name": "ZTE",
-      "score": 68,
-      "mentions": 6
+      "name": "Amazon",
+      "score": 72,
+      "mentions": 2
     }
   ],
   "forecasts": [
@@ -219,26 +219,27 @@
           "summary": "Intel meldete 16,1 Mrd. US-Dollar Q2-Umsatz, plus 25 Prozent; Data Center & AI wuchs 59 Prozent auf 6,3 Mrd. US-Dollar. Intel hob den 2026-Capex auf 20 Mrd. US-Dollar an. Nokia meldete 105 Prozent Wachstum bei AI-&-Cloud-Kunden, Optical Networks plus 20 Prozent und IP Networks plus 16 Prozent."
         },
         {
+          "id": "S-2026-07-31-01",
+          "date": "2026-07-31",
+          "title": "AWS koppelt 37 Prozent Wachstum an reservierte Multi-Gigawatt-Kapazität und eigene Chips",
+          "signal": "Nachfrageimpuls",
+          "score": 72,
+          "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
+        },
+        {
           "id": "tail-2026-07-14-dram-prices",
           "date": "2026-07-14",
           "title": "DRAM-Preissignale bleiben klar aufwärtsgerichtet",
           "signal": "Preisdruck aufwärts",
           "score": 70,
           "summary": "Servermix, HBM-Priorisierung und vorsichtige Kapazitätsplanung stützen Vertrags- und Spotpreise."
-        },
-        {
-          "id": "S-2026-07-23-01",
-          "date": "2026-07-23",
-          "title": "Alphabet koppelt 82 % Cloudwachstum an US$195–205 Mrd. Capex",
-          "signal": "Nachfrageimpuls",
-          "score": 70,
-          "summary": "Alphabet meldete US$119,8 Mrd. Q2-Umsatz; Google Cloud wuchs 82 % auf US$24,8 Mrd. Die Capex-Guidance stieg auf US$195–205 Mrd., weil Nachfrage die Kapazität übersteigt."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-server-dram",
         "S-2026-07-24-04",
+        "S-2026-07-31-01",
         "tail-2026-07-14-dram-prices",
         "S-2026-07-23-01",
         "S-2026-07-25-01",
@@ -247,13 +248,14 @@
         "S-2026-07-30-01",
         "S-2026-07-30-02",
         "S-2026-07-19-04",
+        "S-2026-07-31-03",
         "S-2026-07-23-05",
         "S-2026-07-19-03",
         "S-2026-07-20-03",
         "S-2026-07-29-05",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-07-31T00:15:48.764Z"
+      "lastUpdated": "2026-07-31T06:43:12.704Z"
     },
     {
       "id": "hbm",
@@ -305,6 +307,7 @@
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nvidia-skhynix-hbm4",
         "tail-2026-07-14-hbm4-cost",
+        "S-2026-07-31-01",
         "S-2026-07-24-03",
         "S-2026-07-25-01",
         "S-2026-07-28-04",
@@ -315,15 +318,15 @@
         "S-2026-07-23-03",
         "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-07-31T00:15:48.764Z"
+      "lastUpdated": "2026-07-31T06:43:12.704Z"
     },
     {
       "id": "nand",
       "market": "NAND",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 71,
-      "confidenceScore": 83,
+      "relevanceScore": 72,
+      "confidenceScore": 84,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
@@ -345,39 +348,40 @@
           "summary": "Samsung erwartet, dass sich die Memory-Knappheit 2027 gegenüber 2026 verschärft und bis 2028 fortsetzt. Das Unternehmen hat fünfjährige Memory-Lieferverträge mit fünf führenden globalen Datacenter-Kunden abgeschlossen und befindet sich mit fünf weiteren Kunden in finalen Gesprächen. Erst nach Abschluss der noch offenen Verträge sollen die gebundenen DRAM- und NAND-Volumina 60 bis 70 Prozent der Werkskapazität abdecken. Die Vereinbarungen können durch jährliche Verhandlung jeweils um ein Jahr verlängert werden. Sie enthalten erhebliche Vorauszahlungen, von denen Samsung rund ein Viertel der erwarteten Summe erhalten hat, sowie Preisuntergrenzen für Mainstream-Produkte. Der HBM4-Umsatz soll im dritten Quartal sequenziell um mehr als das Dreifache steigen und in der zweiten Jahreshälfte deutlich über 60 Prozent des HBM-Umsatzes ausmachen; HBM-Liefervereinbarungen für 2027 bestehen bereits."
         },
         {
+          "id": "S-2026-07-31-03",
+          "date": "2026-07-31",
+          "title": "Apple bestätigt Memory- und Leading-Edge-Engpässe als Client-BOM- und Verfügbarkeitsproblem",
+          "signal": "Geopolitische Entkopplung",
+          "score": 65,
+          "summary": "Apple meldete 109,4 Mrd. US-Dollar Umsatz (+16 %) und 50,1 % Bruttomarge; etwa zwei Margenpunkte kamen aus Zollerstattungen. Für das Septemberquartal erwartet Apple nur 9–11 % Wachstum. Tim Cook nannte erhebliche Supply-Constraints, Advanced-Chip-Fertigung als Hauptengpass und die Prüfung alternativer Memory-Lieferanten; Mac- und iPad-Preise wurden bereits erhöht."
+        },
+        {
           "id": "tail-2026-07-14-nand-essd",
           "date": "2026-07-14",
           "title": "NAND und Enterprise SSD zeigen festere Preis- und Nachfrageindikatoren",
           "signal": "Preisdruck aufwärts",
           "score": 59,
           "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
-        },
-        {
-          "id": "S-2026-07-29-05",
-          "date": "2026-07-29",
-          "title": "Record-Memory und Storage-Fundamentaldaten widerlegen den sofortigen Nachfragebruch – aber nicht das Pricing- und Bewertungsrisiko",
-          "signal": "Geopolitische Entkopplung",
-          "score": 54,
-          "summary": "SK hynix meldete 60,5 Bio. Won operativen Gewinn und 79,3 Bio. Won Umsatz, verfehlte jedoch hohe Markterwartungen; HBM4-Verzögerungen begrenzten Preissteigerungen. Das Unternehmen verhandelt beziehungsweise schloss rund zehn typischerweise fünfjährige LTAs mit finanziellen Sicherungen und erhöht 2026 den Capex auf den hohen 40-Bio.-Won-Bereich. Seagate meldete 3,629 Mrd. US-Dollar Quartalsumsatz, 52,3 Prozent GAAP-Bruttomarge, 1,1 Mrd. US-Dollar Free Cashflow und führt für das nächste Quartal 4,1 Mrd. US-Dollar Umsatz an, getragen von robuster Cloud-Datacenter-Nachfrage."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "S-2026-07-30-02",
+        "S-2026-07-31-03",
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-31T00:15:48.764Z"
+      "lastUpdated": "2026-07-31T06:43:12.704Z"
     },
     {
       "id": "enterprise_ssd",
       "market": "Enterprise SSD",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 71,
-      "confidenceScore": 83,
+      "relevanceScore": 72,
+      "confidenceScore": 84,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "Enterprise SSD profitiert von AI-Datenpipelines, Nearline-Wachstum und High-Capacity-Qualifizierung.",
@@ -389,6 +393,14 @@
           "signal": "Kapazitätsbindung",
           "score": 78,
           "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."
+        },
+        {
+          "id": "S-2026-07-31-01",
+          "date": "2026-07-31",
+          "title": "AWS koppelt 37 Prozent Wachstum an reservierte Multi-Gigawatt-Kapazität und eigene Chips",
+          "signal": "Nachfrageimpuls",
+          "score": 72,
+          "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
         },
         {
           "id": "S-2026-07-30-01",
@@ -405,25 +417,18 @@
           "signal": "Preisdruck aufwärts",
           "score": 59,
           "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
-        },
-        {
-          "id": "S-2026-07-29-05",
-          "date": "2026-07-29",
-          "title": "Record-Memory und Storage-Fundamentaldaten widerlegen den sofortigen Nachfragebruch – aber nicht das Pricing- und Bewertungsrisiko",
-          "signal": "Geopolitische Entkopplung",
-          "score": 54,
-          "summary": "SK hynix meldete 60,5 Bio. Won operativen Gewinn und 79,3 Bio. Won Umsatz, verfehlte jedoch hohe Markterwartungen; HBM4-Verzögerungen begrenzten Preissteigerungen. Das Unternehmen verhandelt beziehungsweise schloss rund zehn typischerweise fünfjährige LTAs mit finanziellen Sicherungen und erhöht 2026 den Capex auf den hohen 40-Bio.-Won-Bereich. Seagate meldete 3,629 Mrd. US-Dollar Quartalsumsatz, 52,3 Prozent GAAP-Bruttomarge, 1,1 Mrd. US-Dollar Free Cashflow und führt für das nächste Quartal 4,1 Mrd. US-Dollar Umsatz an, getragen von robuster Cloud-Datacenter-Nachfrage."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
+        "S-2026-07-31-01",
         "S-2026-07-30-01",
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-07-31T00:15:48.764Z"
+      "lastUpdated": "2026-07-31T06:43:12.705Z"
     },
     {
       "id": "ai_infrastructure",
@@ -453,20 +458,20 @@
           "summary": "Intel meldete 16,1 Mrd. US-Dollar Q2-Umsatz, plus 25 Prozent; Data Center & AI wuchs 59 Prozent auf 6,3 Mrd. US-Dollar. Intel hob den 2026-Capex auf 20 Mrd. US-Dollar an. Nokia meldete 105 Prozent Wachstum bei AI-&-Cloud-Kunden, Optical Networks plus 20 Prozent und IP Networks plus 16 Prozent."
         },
         {
+          "id": "S-2026-07-31-01",
+          "date": "2026-07-31",
+          "title": "AWS koppelt 37 Prozent Wachstum an reservierte Multi-Gigawatt-Kapazität und eigene Chips",
+          "signal": "Nachfrageimpuls",
+          "score": 72,
+          "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
+        },
+        {
           "id": "S-2026-07-22-05",
           "date": "2026-07-22",
           "title": "Oracle-Collateral macht Credit Rating zum Datacenter-Supply-Constraint",
           "signal": "Supply-Engpass",
           "score": 71,
           "summary": "Oracle könnte für den geplanten Wisconsin-AI-Campus mehr als 7 Mrd. US-Dollar Sicherheiten stellen müssen; die jährlichen Finanzierungskosten werden auf über 100 Mio. US-Dollar geschätzt. Wisconsin verlangt bei sehr großen Stromkunden unterhalb definierter Credit-Schwellen finanzielle Garantien für speziell errichtete Erzeugungs- und Netzinfrastruktur."
-        },
-        {
-          "id": "S-2026-07-29-02",
-          "date": "2026-07-29",
-          "title": "Meta und BlackRock machen Private Credit zum wiederholbaren Gigawatt-Layer",
-          "signal": "Nachfrageimpuls",
-          "score": 71,
-          "summary": "Meta und BlackRock strukturieren den 1-GW-Campus in El Paso als 14-Mrd.-US-Dollar-Joint-Venture: BlackRock-Fonds halten 80 Prozent, Meta 20 Prozent. BlackRock bringt rund 4,9 Mrd. US-Dollar Cash ein und nutzt 12,5 Mrd. US-Dollar Fremdfinanzierung; Meta steuert Land und Baufortschritt im Wert von 2,3 Mrd. US-Dollar bei, erhält rund 1 Mrd. US-Dollar Ausschüttung und least den gesamten Campus mit Optionen bis zu 20 Jahren. Residual-Value-Garantien haben anfänglich einen Schwellenwert von rund 13 Mrd. US-Dollar."
         }
       ],
       "counterSignals": [
@@ -492,8 +497,10 @@
       "sourceArticleIds": [
         "tail-2026-07-14-nvidia-skhynix-hbm4",
         "S-2026-07-24-04",
+        "S-2026-07-31-01",
         "S-2026-07-22-05",
         "S-2026-07-29-02",
+        "S-2026-07-31-02",
         "S-2026-07-20-02",
         "S-2026-07-23-01",
         "S-2026-07-25-01",
@@ -540,10 +547,10 @@
         "S-2026-07-28-03",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-07-31T00:15:48.765Z"
+      "lastUpdated": "2026-07-31T06:43:12.705Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 63 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 68 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
