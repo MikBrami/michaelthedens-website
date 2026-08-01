@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-31T08:26:40+02:00",
-  "previousRun": "2026-07-30",
+  "updatedAt": "2026-08-01T08:30:04+02:00",
+  "previousRun": "2026-07-31",
   "executivePulse": {
-    "current": 85,
-    "previous": 84,
+    "current": 83,
+    "previous": 85,
     "status": "orange",
-    "interpretation": "AWS bestätigt starke AI-Monetarisierung und reservierte Kapazität; negativer Free Cash Flow verschärft zugleich den Finanzierungsfalsifier. Apple zeigt, dass Memory- und Leading-Edge-Engpässe bereits Preise und Verfügbarkeit im Client-Markt treffen. ADNOC internalisiert Tankerkapazität, während alternative Ölflüsse einen vollständigen Volumenausfall weiter falsifizieren."
+    "interpretation": "MediaTek verbreitert den Custom-ASIC-Pfad und bestätigt neue Datacenter-Nachfrage. Gleichzeitig zeigen erzwungenes AI-Deleveraging, sichtbare Client-Nachfragezerstörung, anhaltende Raffinerieknappheit und Apples Bewertungsreset, dass Finanzierung, Endnachfrage und Energie den physischen Ausbau zunehmend begrenzen."
   },
   "confidence": {
     "current": 99,
     "previous": 99,
-    "interpretation": "Amazon und Apple liefern Primärdaten; Reuters qualifiziert Kapazitätsbindung, Supply-Constraints und maritime Flüsse. Die noch nicht offiziell bestätigten ADNOC-Käufe bleiben ausdrücklich Schätzung."
+    "interpretation": "MediaTek und die Ölkonzerne liefern Primär- beziehungsweise Ergebnisdaten; Reuters qualifiziert Kapitalflüsse, Marktreaktionen und Energieausfälle. Managementziele, nicht bestätigte Transaktionsgrößen und Marktkausalität bleiben ausdrücklich Schätzung."
   },
   "riskPressure": {
     "current": 100,
     "previous": 100
   },
-  "momentum": "Strukturell beschleunigend · AWS-Monetarisierung und Custom Silicon stark · Selbstfinanzierung, Client-Supply und maritime Logistik extrem",
+  "momentum": "Strukturell verbreiternd · Custom-ASIC-Finanzierung stark · Client-Nachfragezerstörung, AI-Leverage und raffinierte Produktknappheit extrem",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -40,14 +40,14 @@
       "delta": 0
     },
     {
+      "name": "Custom ASIC Competition / MediaTek",
+      "score": 100,
+      "delta": 12
+    },
+    {
       "name": "Cloud Monetization / Contracted Backlog",
       "score": 100,
       "delta": 0
-    },
-    {
-      "name": "AWS Custom Silicon / Trainium",
-      "score": 100,
-      "delta": 8
     },
     {
       "name": "Memory Contracting / LTAs",
@@ -57,22 +57,32 @@
     {
       "name": "Memory / Storage Cost Pass-through",
       "score": 100,
-      "delta": 6
+      "delta": 0
+    },
+    {
+      "name": "Client Demand Destruction / Memory Spillover",
+      "score": 100,
+      "delta": 12
     },
     {
       "name": "Hyperscaler Self-Funding Capacity",
       "score": 85,
-      "delta": -3
+      "delta": 0
     },
     {
-      "name": "Capex / Free-Cash-Flow Stress",
+      "name": "AI Equity Leverage / Crowded Trade",
+      "score": 100,
+      "delta": 18
+    },
+    {
+      "name": "Capital- & Credit-Market Stress",
       "score": 100,
       "delta": 0
     },
     {
-      "name": "Dedicated Logistics / Fleet Control",
-      "score": 96,
-      "delta": 12
+      "name": "Refined Products / Diesel Tightness",
+      "score": 100,
+      "delta": 10
     },
     {
       "name": "Geopolitik & Logistik",
@@ -81,30 +91,20 @@
     },
     {
       "name": "Physical Oil-Flow Resilience",
-      "score": 91,
-      "delta": 3
-    },
-    {
-      "name": "AIS Visibility / Shadow Shipping",
-      "score": 96,
-      "delta": 15
-    },
-    {
-      "name": "Capital- & Credit-Market Stress",
-      "score": 100,
-      "delta": 0
+      "score": 90,
+      "delta": -1
     }
   ],
   "acceptedSignals": [
     {
-      "id": "S-2026-07-31-01",
+      "id": "S-2026-08-01-01",
       "rank": 1,
       "priorityScore": 100,
       "classification": "Architecture Update",
-      "title": "AWS koppelt 37 Prozent Wachstum an reservierte Multi-Gigawatt-Kapazität und eigene Chips",
-      "fact": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert.",
-      "estimate": "Run Rates sind keine GAAP-Segmente; reservierte Kapazität ist noch keine ausgelieferte Leistung. Ein Teil des Wachstums kann aus zuvor fehlender Kapazität freigesetzt worden sein.",
-      "tailInference": "Custom Silicon ersetzt den Infrastrukturzyklus nicht, sondern verbreitert ihn. Trainium bindet HBM, Server-DRAM, eSSD, Netzwerk und Strom in einem zweiten großen Plattformpfad.",
+      "title": "MediaTek finanziert den Sprung vom Smartphone-SoC zum Datacenter-ASIC mit 5 Mrd. US-Dollar",
+      "fact": "MediaTek genehmigte einen diskretionären Finanzierungsrahmen von 5 Mrd. US-Dollar für langfristiges Wachstum einschließlich Datacenter-AI-Chips. Der erste kundenspezifische AI-Chip soll im vierten Quartal 2026 in Produktion gehen; ein zweites Design ist für 2028 vorgesehen. Für 2026 erwartet das Unternehmen mehr als 2 Mrd. US-Dollar Datacenter-AI-Chip-Umsatz.",
+      "estimate": "Der Finanzierungsrahmen ist noch kein ausgezahltes Kapital. Der für 2027 auf 80 Mrd. US-Dollar erhöhte Markt und der Zielanteil von 15–20 Prozent sind Managementannahmen; Kunde, Stückzahlen, Marge und Packaging-Pfad bleiben ungenannt.",
+      "tailInference": "Custom Silicon verbreitert sich über Broadcom, Marvell und die Hyperscaler hinaus. MediaTek bindet damit zusätzliche Leading-Edge-Wafer, HBM, Advanced Packaging, Netzwerk und Strom in einen zweiten asiatischen ASIC-Pfad.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -121,74 +121,70 @@
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Amazon will hohe AI-Investitionen und eigene Chips rechtfertigen.",
-        "alternative": "Kapazitätsfreigaben, Mix und Vertragsstarts können Q2 überzeichnet haben.",
-        "alreadyPriced": "Neu sind 37 % Wachstum, 496 Mrd. US-Dollar Backlog, zwei >25-Mrd.-Run-Rates und weitgehend reservierte 2027-Kapazität.",
-        "killCondition": "Q3-AWS-Wachstum <30 %, Backlog <450 Mrd. US-Dollar oder wieder freie 2027-Kapazität.",
-        "forecastChange": "Neu P-2026-07-31-01 – 84 Prozent."
+        "sourceIncentive": "MediaTek will Diversifizierung und eine höhere AI-Bewertung rechtfertigen.",
+        "alternative": "Das Programm kann auf einen einzelnen Kunden begrenzt bleiben; Produktion, Yield oder Marge können hinter dem Marktversprechen zurückbleiben.",
+        "alreadyPriced": "Die starke Kursentwicklung preist AI-Hoffnung ein; neu sind der 5-Mrd.-Rahmen, der Produktionszeitpunkt und das konkrete Umsatzminimum.",
+        "killCondition": "Keine Volumenproduktion bis 31. Dezember 2026 oder Datacenter-AI-Umsatz 2026 von höchstens 2 Mrd. US-Dollar.",
+        "forecastChange": "Neu P-2026-08-01-01 – 82 Prozent."
       },
       "sources": [
         {
-          "label": "Amazon – Q2 2026 Results",
-          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+          "label": "MediaTek – Investor Relations / Q2 2026",
+          "url": "https://www.mediatek.com/investor-relations"
         },
         {
-          "label": "Reuters – AWS growth, capacity and capex",
-          "url": "https://www.reuters.com/business/retail-consumer/amazon-beats-estimates-quarterly-cloud-revenue-growth-2026-07-30/"
+          "label": "Reuters – MediaTek AI financing and custom chips",
+          "url": "https://www.reuters.com/business/media-telecom/mediatek-plans-5-billion-financing-ai-data-center-chips-2026-07-31/"
         }
       ]
     },
     {
-      "id": "S-2026-07-31-02",
+      "id": "S-2026-08-01-02",
       "rank": 2,
-      "priorityScore": 99,
+      "priorityScore": 98,
       "classification": "Falsifier",
-      "title": "Amazon monetarisiert AI, verliert aber den freien Cashflow-Puffer",
-      "fact": "Amazon steigerte den Quartalsumsatz auf 200,606 Mrd. US-Dollar und den Betriebsgewinn auf 27,461 Mrd. US-Dollar. Der TTM-Free-Cashflow drehte von +18,2 auf −7,6 Mrd. US-Dollar; der 2026-Investitionsplan stieg auf 220 Mrd. US-Dollar. 53,415 Mrd. US-Dollar sonstige Erträge stammten überwiegend aus der Anthropic-Neubewertung.",
-      "estimate": "Datacenter-Vorlauf, Working Capital und Zahlungszeitpunkte verzerren den Cashflow; die Anthropic-Neubewertung ist nicht operativ. Capex kann nach 2027 verschoben werden.",
-      "tailInference": "Die Nachfragefalsifizierung scheitert, aber reibungslose Selbstfinanzierung wird schwächer. Fremdkapital, Leases, Vorabbindungen und Partnerkapital werden dauerhafte AI-Infrastruktur-Layer.",
+      "title": "Citadel übernimmt Teile eines 16-Mrd.-US-Dollar-AI-Buchs nach 67-Prozent-Verlust",
+      "fact": "Der AI-fokussierte Fonds Situational Awareness verlor im Juli 67 Prozent seines Portfoliowerts und musste den Großteil seines rund 16 Mrd. US-Dollar schweren börsennotierten Aktienbuchs abbauen. Citadel übernahm einen Teil der Positionen; der Fonds entfernte nach eigenen Angaben sämtliche Hebelung.",
+      "estimate": "Größe, Preis und Bedingungen der übernommenen Positionen sind nicht veröffentlicht. Private Beteiligungen und die Gesamtliquidität des Fonds sind nicht vollständig sichtbar; das Ereignis kann durch ungewöhnlich hohe Konzentration und Hebelung verstärkt worden sein.",
+      "tailInference": "AI-Aktien sind nicht nur ein Bewertungs-, sondern ein Liquiditäts- und Gegenparteirisiko. Erzwungenes Deleveraging kann Halbleiter-, Memory- und Datacenter-Finanzierung belasten, ohne dass sich die physische Nachfrage sofort ändert.",
       "admissionGate": {
         "Freshness": true,
-        "Evidence": true,
+        "Evidence": "Qualified secondary and investor letter",
         "Materiality": true,
         "Causality": true,
         "Falsifiability": true
       },
       "scoreBreakdown": {
-        "SourceQuality": 20,
+        "SourceQuality": 18,
         "Novelty": 15,
         "ThesisRelevance": 20,
         "ForecastImpact": 20,
-        "Falsifiability": 14,
+        "Falsifiability": 15,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Amazon stellt Cash-Abfluss als reine Vorfinanzierung dar.",
-        "alternative": "AWS-Margen und Inbetriebnahmen können Free Cash Flow 2027 schnell drehen.",
-        "alreadyPriced": "Neu sind negativer TTM-FCF, 220 Mrd. US-Dollar Capex und die starke nicht operative Gewinnkomponente.",
-        "killCondition": "Capex-Plan <200 Mrd. US-Dollar oder TTM-FCF >20 Mrd. US-Dollar ohne zusätzliche Nettofinanzierung.",
-        "forecastChange": "Neu P-2026-07-31-02 – 88 Prozent; F-2026-07-13-02 verstärkt."
+        "sourceIncentive": "Fondsbrief und Marktquellen können die Dramatik betonen; beide Gegenparteien kommentieren die Transaktionsdetails nicht.",
+        "alternative": "Das Ereignis kann idiosynkratisch sein und sagt wenig über operative AI-Nachfrage oder ungehebelte Langfristinvestoren aus.",
+        "alreadyPriced": "Der Chip-Sell-off war sichtbar; neu sind der 67-Prozent-Verlust, die 16-Mrd.-Dimension und die erzwungene Übergabe an Citadel.",
+        "killCondition": "Schnelle Rekapitalisierung ohne weitere Zwangsverkäufe und kein vergleichbares AI-Portfolio-Ereignis bis Jahresende.",
+        "forecastChange": "F-2026-07-13-02 verstärkt; kein zusätzlicher kurzfristiger Marktpreis-Forecast."
       },
       "sources": [
         {
-          "label": "Amazon – Q2 2026 Results",
-          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
-        },
-        {
-          "label": "Reuters – Amazon raises capex",
-          "url": "https://www.reuters.com/business/retail-consumer/amazon-beats-estimates-quarterly-cloud-revenue-growth-2026-07-30/"
+          "label": "Reuters – Situational Awareness portfolio loss and Citadel transaction",
+          "url": "https://www.reuters.com/business/finance/situational-awareness-portfolio-sinks-67-july-ai-stock-rout-letter-shows-2026-07-31/"
         }
       ]
     },
     {
-      "id": "S-2026-07-31-03",
+      "id": "S-2026-08-01-03",
       "rank": 3,
       "priorityScore": 97,
       "classification": "Layer Update",
-      "title": "Apple bestätigt Memory- und Leading-Edge-Engpässe als Client-BOM- und Verfügbarkeitsproblem",
-      "fact": "Apple meldete 109,4 Mrd. US-Dollar Umsatz (+16 %) und 50,1 % Bruttomarge; etwa zwei Margenpunkte kamen aus Zollerstattungen. Für das Septemberquartal erwartet Apple nur 9–11 % Wachstum. Tim Cook nannte erhebliche Supply-Constraints, Advanced-Chip-Fertigung als Hauptengpass und die Prüfung alternativer Memory-Lieferanten; Mac- und iPad-Preise wurden bereits erhöht.",
-      "estimate": "Die Engpässe mischen Memory, Leading-Edge-Logic und Produktmix. Zollerstattungen verdecken den Margendruck; Vorzieheffekte können das starke Quartal überzeichnen.",
-      "tailInference": "Der AI-Memory-Zyklus erreicht den Client-Markt über Preis, Lieferzeit und Lieferantenwechsel. Das stützt DRAM-/NAND-Preisuntergrenzen, erhöht aber das Risiko späterer Stückzahlschwäche.",
+      "title": "MediaTek quantifiziert den Memory-Spillover: Mobile-Chips minus 20 Prozent, Smartphones minus 11 Prozent",
+      "fact": "MediaTeks Mobile-Chip-Umsatz sank im zweiten Quartal um 20 Prozent gegenüber dem Vorjahr. Weltweite Smartphone-Auslieferungen fielen laut den im Earnings-Kontext zitierten Marktdaten um 11 Prozent auf den schwächsten Q2-Stand seit 2013. MediaTek erwartet für 2026 rund 15 Prozent weniger Smartphone-Stückzahlen und setzt Preiserhöhungen zur Weitergabe höherer Supply-Chain-Kosten um.",
+      "estimate": "Die Marktzahl ist vorläufig; schwache Ersatzzyklen, Makroökonomie und Produktmix wirken neben Memory- und Leading-Edge-Kosten. Die volle Nachfrageelastizität nach Region und Preisklasse ist nicht offengelegt.",
+      "tailInference": "AI-getriebene Komponentenknappheit stützt kurzfristig Preisuntergrenzen, zerstört aber sichtbar Client-Volumen. Das stärkt den späteren Oversupply-Falsifier: hohe Preise können Nachfrage schneller vernichten als neue Kapazität anläuft.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -205,73 +201,77 @@
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Apple rahmt die schwächere Guidance als Supply- statt Nachfrageproblem.",
-        "alternative": "TSMC-Nodes und produktspezifischer Mix können wichtiger sein als Memory.",
-        "alreadyPriced": "Neu sind alternative Memory-Supplier, begrenzte Flexibilität und die sichtbare Guidance-Belastung.",
-        "killCondition": "Im Septemberquartal keine wesentlichen Constraints, fallende Preise oder fallende Memory-Kosten bei normaler Verfügbarkeit.",
-        "forecastChange": "F-2026-07-20-02 weiter geschwächt; kein neuer redundanter Forecast."
+        "sourceIncentive": "MediaTek kann die Mobile-Schwäche stärker externen Komponenten- und Marktbedingungen zuschreiben.",
+        "alternative": "Ein schwacher Smartphone-Zyklus und regionale Nachfrageschwäche können wichtiger sein als Memory-Kosten.",
+        "alreadyPriced": "Client-Schwäche war bekannt; neu sind die Größenordnung, der 2026-Ausblick und bestätigte Pricing-Aktionen.",
+        "killCondition": "Q3-Mobile-Chip-Umsatz stabilisiert sich auf besser als minus 5 Prozent und Smartphone-Auslieferungen erholen sich trotz unverändert hoher Memory-Kosten.",
+        "forecastChange": "Neu P-2026-08-01-02 – 80 Prozent; F-2026-07-20-02 wird wieder verstärkt."
       },
       "sources": [
         {
-          "label": "Apple – FY2026 Q3 Results",
-          "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/"
+          "label": "MediaTek – Investor Relations / Q2 2026",
+          "url": "https://www.mediatek.com/investor-relations"
         },
         {
-          "label": "Reuters – Apple constraints and memory alternatives",
-          "url": "https://www.reuters.com/business/retail-consumer/apple-revenue-profits-beat-expectations-iphone-mac-sales-2026-07-30/"
+          "label": "Reuters – MediaTek mobile decline and smartphone outlook",
+          "url": "https://www.reuters.com/business/media-telecom/mediatek-plans-5-billion-financing-ai-data-center-chips-2026-07-31/"
         }
       ]
     },
     {
-      "id": "S-2026-07-31-04",
+      "id": "S-2026-08-01-04",
       "rank": 4,
       "priorityScore": 96,
       "classification": "Architecture Update",
-      "title": "ADNOC internalisiert Tankerkapazität als geopolitischen Supply-Chain-Layer",
-      "fact": "Reuters berichtet, ADNOC L&S habe fünf VLCCs für rund 590 Mio. US-Dollar gekauft. Zusätzlich sollen drei VLGCs für je rund 115 Mio. US-Dollar erworben und 25–30 weitere Rohöl-, LNG- und LPG-Schiffe bestellt worden sein. Etwa 15 von 25 zusätzlich gecharterten Rohöltankern dienen als Shuttle zwischen Hormuz und Lagern in Fujairah/Oman.",
-      "estimate": "ADNOC und Frontline bestätigten die Käufe nicht. Preise, Closing und Nutzung können abweichen; Neubauten entlasten den aktuellen Markt erst später.",
-      "tailInference": "Produzenten reagieren auf Chokepoint-Risiko mit vertikaler Logistikintegration. Eigene Tanker, Shuttle-Verkehr und externe Lager werden Teil der Lieferfähigkeit und verknappen freie Schiffe für andere Käufer.",
+      "title": "Rekord-Raffinerieläufe normalisieren Diesel nicht; Qatar-LNG bleibt ein realer Hormuz-Ausfall",
+      "fact": "Exxon meldete Rekord-Dieselproduktion und Chevron einen Rekorddurchsatz von mehr als 1 Mio. Barrel pro Tag in den USA. Beide Unternehmen erwarten dennoch hohe Preise und knappe raffinierte Produkte in der zweiten Jahreshälfte. Exxon bezifferte den mit Qatar verbundenen Produktionsausfall auf rund 450.000 Barrel Öläquivalent pro Tag; bei einer vollständigen Q3-Hormuz-Sperre läge der Rückgang im Nahen Osten bei etwa 750.000 Barrel pro Tag gegenüber dem Vorjahr.",
+      "estimate": "Unternehmensspezifische Ausfälle und Margen sind kein vollständiges Bild der globalen Produktbestände. Hohe Auslastung, Wartungszeitpunkte, Nachfragezerstörung und alternative Rohölströme können die Knappheit schneller abbauen.",
+      "tailInference": "Diesel, Kerosin und raffinierte Produkte bilden einen eigenständigen zweiten Energie-Chokepoint. Datacenter-Backup-Power, Bau, Hardwarefracht und Logistik bleiben teuer, selbst wenn Brent durch alternative Rohölrouten fällt.",
       "admissionGate": {
         "Freshness": true,
-        "Evidence": "Qualified secondary; transaction not confirmed",
+        "Evidence": true,
         "Materiality": true,
         "Causality": true,
         "Falsifiability": true
       },
       "scoreBreakdown": {
-        "SourceQuality": 17,
-        "Novelty": 15,
+        "SourceQuality": 20,
+        "Novelty": 14,
         "ThesisRelevance": 20,
-        "ForecastImpact": 19,
-        "Falsifiability": 15,
+        "ForecastImpact": 18,
+        "Falsifiability": 14,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Marktquellen können Transaktionen vor Bestätigung zuspitzen.",
-        "alternative": "Ein Teil kann normale Flottenerneuerung sein; Shuttle-Charter enden bei Deeskalation.",
-        "alreadyPriced": "Neu sind fünf VLCCs, drei VLGCs, 25–30 Orders und der konkrete Shuttle-Einsatz.",
-        "killCondition": "Dementi, weniger als zehn Orders oder weitgehende Auflösung der Shuttle-Flotte bis Ende August.",
-        "forecastChange": "Neu P-2026-07-31-03 – 62 Prozent; niedrige Confidence bis Primärbestätigung."
+        "sourceIncentive": "Ölkonzerne haben ein Interesse, hohe Produktpreise als physisch begründet und länger anhaltend darzustellen.",
+        "alternative": "Nachfragezerstörung, zurückkehrende Raffineriekapazität und alternative Lieferungen können Crack-Spreads rasch normalisieren.",
+        "alreadyPriced": "Hohe Kraftstoffpreise waren bekannt; neu sind Rekordauslastung trotz fortbestehender Knappheit sowie die quantifizierten Qatar- und Hormuz-Ausfälle.",
+        "killCondition": "US- und europäische Destillatbestände steigen über das Fünfjahresmittel und Crack-Spreads normalisieren sich vor dem vierten Quartal.",
+        "forecastChange": "Neu P-2026-08-01-03 – 76 Prozent."
       },
       "sources": [
         {
-          "label": "Reuters – ADNOC fleet strategy",
-          "url": "https://www.reuters.com/business/energy/adnoc-buys-tankers-red-sea-hormuz-crisis-reshape-oil-trade-2026-07-31/"
+          "label": "Reuters – Exxon and Chevron refined-product warning",
+          "url": "https://www.reuters.com/business/energy/exxon-chevron-warn-continued-high-fuel-prices-iran-war-2026-07-31/"
+        },
+        {
+          "label": "Reuters – Exxon Qatar and Hormuz production exposure",
+          "url": "https://www.reuters.com/business/energy/exxonmobil-quarterly-profit-hits-four-year-high-misses-analyst-estimates-2026-07-31/"
         }
       ]
     },
     {
-      "id": "S-2026-07-31-05",
+      "id": "S-2026-08-01-05",
       "rank": 5,
       "priorityScore": 95,
       "classification": "Falsifier",
-      "title": "Mehr Ölverkehr senkt Brent, obwohl sichtbares Hormuz weiterhin fast geschlossen ist",
-      "fact": "Brent fiel am 31. Juli auf rund 88 US-Dollar, blieb im Monatsvergleich aber etwa 20 % höher. 25 Commodity-Schiffe passierten Bab al-Mandeb, darunter zwei VLCCs, ein Suezmax und fünf Aframax. Durch Hormuz wurden nur zwei sichtbare Ballastbewegungen in die Meerenge registriert.",
-      "estimate": "AIS/Kpler unterschätzen Schiffe mit ausgeschalteten Transpondern und sagen wenig über Ladungsvolumen, Wartezeit und Versicherung. Preisentspannung kann auch aus Diplomatie und Lagerbewegungen stammen.",
-      "tailInference": "Der Juli-Brent-Forecast ist erreicht; die lineare Gleichung 'sichtbar geschlossen = Volumen weg' bleibt aber falsifiziert. Fracht, Versicherung, Zeit und geladene Barrel sind wichtiger als reine Schiffszahlen.",
+      "title": "Apple verliert rund 460 Mrd. US-Dollar: Supply-Engpass und fehlender AI-Umsatz werden gleichzeitig bestraft",
+      "fact": "Apple-Aktien fielen nach dem Ausblick zeitweise rund 9 bis 10 Prozent; der mögliche Marktwertverlust lag bei etwa 460 Mrd. US-Dollar. Das Unternehmen erwartet im Septemberquartal 9 bis 11 Prozent Umsatzwachstum und verwies auf Supply-Constraints sowie steigende Memory-Kosten.",
+      "estimate": "Der Marktwertverlust ist eine intradaybasierte Schätzung und kann sich schnell umkehren. Zinsen, Positionierung, schwächeres Services-Wachstum und Gewinnmitnahmen wirken zusätzlich zur AI- und Supply-Chain-Erzählung.",
+      "tailInference": "Der Kapitalmarkt belohnt Knappheit und AI-Narrative nicht automatisch. Unternehmen mit realen Lieferengpässen, aber noch nicht sichtbarer AI-Monetarisierung können trotz starker Umsätze gleichzeitig bei Marge und Bewertung verlieren.",
       "admissionGate": {
         "Freshness": true,
-        "Evidence": "Qualified secondary and physical-flow estimates",
+        "Evidence": "Company guidance plus market reaction",
         "Materiality": true,
         "Causality": true,
         "Falsifiability": true
@@ -285,165 +285,156 @@
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "AIS misst sichtbare Bewegungen; Analysten können Kausalität überzeichnen.",
-        "alternative": "Dunkler Verkehr kann Hormuz aktiver machen; neue Angriffe können Brent sofort drehen.",
-        "alreadyPriced": "Neu ist die Kombination aus 25 Bab-al-Mandeb-Passagen, zwei Hormuz-Bewegungen und Brent bei 88 US-Dollar.",
-        "killCondition": "Brent fünf Tage >105 US-Dollar, Golf-Exporte <11 Mio. bpd oder keine Großtanker durch Bab al-Mandeb.",
-        "forecastChange": "P-2026-07-20-01 97→99 und Treffer; P-2026-07-30-05 78→84; F-2026-07-28-01 verstärkt."
+        "sourceIncentive": "Analysten und Medien können einen einzelnen Handelstag als strukturelles Urteil überinterpretieren.",
+        "alternative": "Technische Verkäufe, hohe Ausgangsbewertung und schwächeres Services-Wachstum können den Großteil der Bewegung erklären.",
+        "alreadyPriced": "Der schwächere Ausblick war neu; die Größenordnung des Bewertungsresets und die gleichzeitige Supply-/AI-Bestrafung wurden erst nach dem letzten Cutoff sichtbar.",
+        "killCondition": "Apple holt innerhalb von zehn Handelstagen mehr als 90 Prozent des Verlustes auf und erreicht mindestens 12 Prozent Septemberquartalswachstum.",
+        "forecastChange": "F-2026-07-13-02 erneut verstärkt; kein kurzfristiger Kursforecast erzeugt."
       },
       "sources": [
         {
-          "label": "Reuters – Bab el-Mandeb and Hormuz traffic",
-          "url": "https://www.reuters.com/world/middle-east/bab-el-mandeb-sees-25-commodity-vessels-transit-hormuz-traffic-stays-thin-2026-07-31/"
-        },
-        {
-          "label": "Reuters – Oil prices and flows",
-          "url": "https://www.reuters.com/business/energy/oil-falls-more-than-1-greater-flows-despite-us-iran-war-2026-07-31/"
+          "label": "Reuters – Apple supply constraints and market reaction",
+          "url": "https://www.reuters.com/business/retail-consumer/apple-slides-supply-snags-cloud-outlook-putting-iphone-demand-focus-2026-07-31/"
         }
       ]
     }
   ],
   "predictionLogUpdates": [
     {
-      "id": "P-2026-07-20-01",
-      "status": "confirmed",
-      "forecast": "Brent bleibt bis Ende Juli überwiegend über 85 US-Dollar, solange Hormuz und die Red-Sea-Route nicht nachhaltig normalisieren.",
-      "confidence": 99,
-      "previousConfidence": 97,
-      "nextReview": "2026-08-03",
-      "history": "82→78→84→92→97→96→78→86→97→99; Horizont am 31.07. als Treffer erreicht. Historie erhalten.",
-      "redPencil": "Treffer gilt nur für Juli; 88 US-Dollar und alternative Flüsse widersprechen einer unveränderten August-These.",
-      "killCondition": "Abgeschlossen; Folgebeobachtung über P-2026-07-30-05."
-    },
-    {
-      "id": "P-2026-07-30-05",
-      "status": "changed",
-      "forecast": "Die Golf-Ölexporte bleiben bis 15. August trotz Hormuz- und Red-Sea-Störungen im Sieben-Tage-Mittel über 11 Mio. Barrel pro Tag.",
-      "confidence": 84,
-      "previousConfidence": 78,
-      "nextReview": "2026-08-15",
-      "history": "78→84; Großtanker durch Bab al-Mandeb und fallender Brent stützen Resilienz, sichtbares Hormuz bleibt extrem schwach.",
-      "redPencil": "AIS bildet dunkle Fahrten und Ladungsvolumen nicht vollständig ab.",
-      "killCondition": "Sieben-Tage-Mittel unter 11 Mio. Barrel pro Tag."
-    },
-    {
-      "id": "P-2026-07-31-01",
+      "id": "P-2026-08-01-01",
       "status": "new",
-      "forecast": "AWS wächst im dritten Quartal 2026 mindestens 33 Prozent und hält den Cloud-Auftragsbestand bei mindestens 475 Mrd. US-Dollar.",
-      "confidence": 84,
+      "forecast": "MediaTeks erster kundenspezifischer Datacenter-AI-Chip geht bis 31. Dezember 2026 in Volumenproduktion; der 2026-Datacenter-AI-Chip-Umsatz übersteigt 2 Mrd. US-Dollar.",
+      "confidence": 82,
       "previousConfidence": null,
       "nextReview": "2026-10-31",
-      "history": "Erstellt 31.07. nach 37 % Q2-Wachstum und 496 Mrd. US-Dollar Backlog.",
-      "redPencil": "Kapazitätsfreigaben und Vertragsstarts können Q2 überzeichnet haben.",
-      "killCondition": "AWS-Wachstum <33 % oder Backlog <475 Mrd. US-Dollar."
+      "history": "Erstellt 01.08. nach Q2-Earnings, 5-Mrd.-Finanzierungsrahmen und angekündigtem Q4-Produktionsstart.",
+      "redPencil": "Kunde, Stückzahlen, Marge und Packaging-Pfad fehlen; ein Tape-out oder Pilot ist noch keine Volumenproduktion.",
+      "killCondition": "Kein bestätigter Produktionsstart bis 31.12.2026 oder Jahresumsatz von höchstens 2 Mrd. US-Dollar."
     },
     {
-      "id": "P-2026-07-31-02",
+      "id": "P-2026-08-01-02",
       "status": "new",
-      "forecast": "Amazon investiert 2026 mindestens 210 Mrd. US-Dollar in Sachanlagen und AI-nahe Infrastruktur.",
-      "confidence": 88,
-      "previousConfidence": null,
-      "nextReview": "2027-02-28",
-      "history": "Erstellt 31.07. nach Anhebung des Plans auf 220 Mrd. US-Dollar.",
-      "redPencil": "Timing und Bauverzögerungen können Ausgaben in 2027 verschieben.",
-      "killCondition": "Jahreswert unter 210 Mrd. US-Dollar."
-    },
-    {
-      "id": "P-2026-07-31-03",
-      "status": "new",
-      "forecast": "ADNOC bestätigt bis Ende 2026 die fünf berichteten VLCCs oder einen gleichwertigen Zugang von mindestens fünf großen Rohöl-/Gascarriern.",
-      "confidence": 62,
+      "forecast": "Die weltweiten Smartphone-Auslieferungen fallen 2026 um mindestens 12 Prozent; MediaTeks Mobile-Chip-Umsatz bleibt im dritten Quartal mindestens 10 Prozent unter Vorjahr.",
+      "confidence": 80,
       "previousConfidence": null,
       "nextReview": "2026-10-31",
-      "history": "Erstellt 31.07. auf Reuters-Basis; Primärbestätigung fehlt.",
-      "redPencil": "Transaktionen können scheitern oder anders strukturiert sein.",
-      "killCondition": "Dementi oder kein entsprechender Flottenzugang bis 31.12.2026."
+      "history": "Erstellt 01.08. nach minus 11 Prozent Q2-Auslieferungen, minus 20 Prozent MediaTek-Mobile-Umsatz und 15-Prozent-Jahresausblick.",
+      "redPencil": "Makro, Produktzyklen und regionale Schwäche können wichtiger sein als Memory; ein schneller China- oder Premium-Rebound ist möglich.",
+      "killCondition": "Jahresmarkt fällt weniger als 12 Prozent oder MediaTek-Mobile-Umsatz liegt im Q3 besser als minus 10 Prozent."
+    },
+    {
+      "id": "P-2026-08-01-03",
+      "status": "new",
+      "forecast": "Mindestens Exxon oder Chevron nennt in den Q3-Ergebnissen weiterhin knappe Destillat-/Produktmärkte und über dem ersten Quartal liegende Downstream-Margen.",
+      "confidence": 76,
+      "previousConfidence": null,
+      "nextReview": "2026-10-31",
+      "history": "Erstellt 01.08. nach Rekorddurchsatz, hohen Produktpreisen und fortbestehenden Qatar-/Hormuz-Ausfällen.",
+      "redPencil": "Nachfragezerstörung, Wartung und zusätzliche Exporte können Produktmärkte vor Q3-Ende normalisieren.",
+      "killCondition": "Beide Unternehmen melden normalisierte Produktmärkte und Downstream-Margen auf oder unter Q1-Niveau."
     }
   ],
   "falsifierUpdates": [
     {
       "id": "F-2026-07-13-02",
       "status": "active_strengthened",
-      "claim": "Kredit-, FCF- und Bewertungsdruck begrenzen unbegrenzte AI-Capex-Toleranz.",
-      "update": "Amazon meldet −7,6 Mrd. US-Dollar TTM-FCF bei 220 Mrd. US-Dollar Capex-Plan; der Gewinn enthält 53,4 Mrd. US-Dollar nicht operativen Anthropic-Effekt.",
-      "nextReview": "2027-02-28"
+      "claim": "Kredit-, FCF-, Liquiditäts- und Bewertungsdruck begrenzen unbegrenzte AI-Capex-Toleranz.",
+      "update": "Situational Awareness verliert 67 Prozent und muss den Großteil eines 16-Mrd.-US-Dollar-Aktienbuchs abbauen; Apple verliert nach Supply-/AI-Sorgen zeitweise rund 460 Mrd. US-Dollar Marktwert.",
+      "nextReview": "2026-08-14"
     },
     {
       "id": "F-2026-07-20-02",
-      "status": "active_weakened",
-      "claim": "Parallele Kapazitätserweiterungen können ab 2028 breiten Memory-Überschuss auslösen.",
-      "update": "Apple sucht alternative Memory-Lieferanten, erhöht Preise und erwartet stärkere Constraints; Client-Nachfrage absorbiert Knappheit derzeit über Preis und Lieferzeit.",
+      "status": "active_strengthened",
+      "claim": "Parallele Kapazitätserweiterungen können ab 2028 breiten Memory-Überschuss auslösen, wenn hohe Preise Client-Nachfrage zerstören.",
+      "update": "MediaTek meldet minus 20 Prozent Mobile-Chip-Umsatz, minus 11 Prozent Smartphone-Stückzahlen und Pricing-Aktionen; kurzfristige Knappheit erzeugt messbare Nachfrageelastizität.",
       "nextReview": "2026-10-31"
     },
     {
-      "id": "F-2026-07-28-01",
-      "status": "active_strengthened",
-      "claim": "Diplomatie und alternative Routen können Energie-Futures trotz Chokepoints entlasten.",
-      "update": "Brent fällt auf 88 US-Dollar; 25 Commodity-Schiffe einschließlich zweier VLCCs passieren Bab al-Mandeb, sichtbares Hormuz bleibt bei zwei Ballastbewegungen.",
-      "nextReview": "2026-08-15"
+      "id": "F-2026-08-01-01",
+      "status": "new_active",
+      "claim": "Memory- und Leading-Edge-Kosten können vollständig an Client-Kunden weitergegeben werden, ohne Stückzahlen materiell zu belasten.",
+      "update": "MediaTek erwartet rund 15 Prozent weniger Smartphone-Einheiten 2026 und meldet bereits deutlichen Mobile-Umsatzrückgang.",
+      "nextReview": "2026-10-31"
     },
     {
-      "id": "F-2026-07-31-01",
+      "id": "F-2026-08-01-02",
       "status": "new_active",
-      "claim": "Sichtbare AIS-Schiffszahlen sind kein sauberer Proxy für reale Energievolumina.",
-      "update": "Nur zwei sichtbare Hormuz-Bewegungen stehen fallenden Ölpreisen und höheren Alternativflüssen gegenüber; dunkle Fahrten fehlen.",
-      "nextReview": "2026-08-15"
+      "claim": "AI-Aktienportfolios können einen scharfen Halbleiter-Sell-off ohne Zwangsabbau oder externe Liquidität überstehen.",
+      "update": "Ein 67-Prozent-Monatsverlust führte zum Abbau des Großteils eines 16-Mrd.-US-Dollar-Public-Equity-Buchs und zur Übernahme von Positionen durch Citadel.",
+      "nextReview": "2026-08-14"
+    },
+    {
+      "id": "F-2026-08-01-03",
+      "status": "new_watch",
+      "claim": "Rekord-Raffinerieauslastung normalisiert Diesel- und Produktpreise kurzfristig.",
+      "update": "Exxon und Chevron erreichen Rekordwerte, erwarten aber weiter knappe Produkte und hohe Preise; Wartung und Qatar-Ausfälle bleiben Gegenkräfte.",
+      "nextReview": "2026-10-31"
     }
   ],
   "auditTrailAdditions": [
     {
-      "date": "2026-07-31",
-      "type": "Primary-source promotion",
-      "item": "Amazon und Apple liefern Ergebnisse; Reuters qualifiziert Kapazität, Constraints und maritime Transaktionen.",
-      "action": "Fakt, Managementziel, Schätzung und TAIL-Inferenz getrennt."
-    },
-    {
-      "date": "2026-07-31",
-      "type": "Forecast resolution",
-      "item": "P-2026-07-20-01 erreicht den 31.-Juli-Horizont als Treffer.",
-      "action": "Vollständiger Confidence-Verlauf erhalten; keine rückwirkende Glättung."
-    },
-    {
-      "date": "2026-07-31",
+      "date": "2026-08-01",
       "type": "Cutoff discipline",
-      "item": "Anthropic-Finanzierung und Silicon-Motion-Q2 lagen vor dem letzten Cutoff.",
-      "action": "Nicht erneut als frische Top-5-Signale promoviert."
+      "item": "Nur Entwicklungen nach dem Lauf vom 31.07. um 08:26 Uhr CEST wurden als neue Top-5-Signale zugelassen.",
+      "action": "Frühere EU-Gigafactory-, AWS-, Apple-Earnings- und Memory-Meldungen nicht erneut promoted; nur neue Q2-Details und Marktreaktionen genutzt."
     },
     {
-      "date": "2026-07-31",
+      "date": "2026-08-01",
+      "type": "Primary-source promotion",
+      "item": "MediaTek Investor Relations sowie Exxon-/Chevron-Ergebnisangaben bilden die Primärebene; Reuters qualifiziert Markt-, Kapital- und Energiekanäle.",
+      "action": "Fakt, Managementziel, Marktschätzung und TAIL-Inferenz getrennt."
+    },
+    {
+      "date": "2026-08-01",
+      "type": "Red-pencil review",
+      "item": "Alle drei neuen Forecasts und sämtliche geänderten Falsifier wurden auf Incentive, Alternative, Pricing, Kill-Kriterium und Review-Datum geprüft.",
+      "action": "Keine Confidence ohne expliziten Gegenfall und Kill-Kriterium verändert."
+    },
+    {
+      "date": "2026-08-01",
       "type": "Storage scope discipline",
-      "item": "Kein neuer unabhängiger eSSD-/NAND-Shipment- oder Preis-Trigger nach dem Cutoff.",
-      "action": "Bestehende Forecasts unverändert; Apple nur als breiter Memory-/Client-BOM-Layer."
+      "item": "Kein neuer unabhängiger NAND- oder Enterprise-SSD-Preis-, Shipment- oder Supply-Trigger nach dem Cutoff.",
+      "action": "Bestehende NAND-/eSSD-Forecasts unverändert; Client-Memory nur als Layer Update aufgenommen."
+    },
+    {
+      "date": "2026-08-01",
+      "type": "History preservation",
+      "item": "Forecast-Historie, Quarantänefälle, Treffer und Misses bleiben vollständig bestehen.",
+      "action": "Keine rückwirkende Glättung oder Löschung."
     }
   ],
   "runHistoryAdditions": [
     {
-      "date": "2026-07-31",
-      "pulse": 85,
+      "date": "2026-08-01",
+      "pulse": 83,
       "confidence": 99,
-      "note": "AWS bestätigt Monetarisierung, Custom Silicon und reservierte Kapazität; Amazon-FCF verschärft Finanzierung. Apple zeigt Client-Supply-Stress, ADNOC internalisiert Tanker, alternative Ölflüsse entlasten Brent."
+      "note": "MediaTek verbreitert Custom ASICs; Client-Nachfragezerstörung, erzwungenes AI-Deleveraging und raffinierte Produktknappheit senken den Pulse trotz robuster physischer AI-Nachfrage."
     }
   ],
   "nextCatalysts": [
     {
       "date": "2026-08-03",
-      "event": "Amazon/Apple SEC-Filings, Marktreaktion und Komponentenangaben"
+      "event": "Marktöffnung: Apple-Rebound, AI-Fund-Deleveraging und Halbleiter-Finanzierungsstress"
+    },
+    {
+      "date": "2026-08-10",
+      "event": "MediaTek Juli-Umsatz und erste Bestätigung des Pricing-/Mobile-Trends"
     },
     {
       "date": "2026-08-15",
-      "event": "Golf-Exportvolumen, Bab-al-Mandeb-Großtanker und ADNOC-Shuttle-Verkehre"
+      "event": "Golf-Exportvolumen, Qatar-LNG, Destillatbestände und Crack-Spreads"
     },
     {
       "date": "2026-10-31",
-      "event": "AWS Q3/Backlog, Apple Constraints und ADNOC-Flottenbestätigung"
+      "event": "MediaTek Q3, Smartphone-Stückzahlen sowie Exxon-/Chevron-Q3-Downstream"
     },
     {
       "date": "2026-12-31",
-      "event": "Amazon 2026-Capex und ADNOC-Flottenausbau"
+      "event": "MediaTek Q4-Produktionsstart des ersten Custom-AI-Chips"
     },
     {
       "date": "2027-02-28",
-      "event": "Amazon Jahresabschluss, FCF und tatsächlicher AI-Infrastruktur-Capex"
+      "event": "MediaTek Jahresumsatz Datacenter-AI-Chips und tatsächliche Kapitalnutzung"
     }
   ],
   "historyPolicy": "Forecasts, Confidence-Änderungen, Falsifier, Treffer, Late Admissions und Misses bleiben sichtbar. Kein Miss wurde gelöscht oder rückwirkend als Treffer umklassifiziert."

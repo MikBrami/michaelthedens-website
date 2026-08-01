@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-07-31",
+  "dataAsOf": "2026-08-01",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-08-01T00:12:08.180Z",
-  "lastForecastRun": "2026-08-01T00:12:08.180Z",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-08-01T06:42:29.584Z",
+  "lastForecastRun": "2026-08-01T06:42:29.584Z",
   "newlyProcessedArticles": 0,
-  "totalArticles": 68,
-  "articleCount": 68,
+  "totalArticles": 73,
+  "articleCount": 73,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,7 +32,7 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 74,
+    "forecastLedgerCount": 77,
     "resolvedForecasts": 4,
     "activeForecasts": 44,
     "scopeGateStatus": "active",
@@ -42,7 +42,7 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-01T00:12:05.512Z",
+    "updatedAt": "2026-08-01T06:42:27.604Z",
     "newItems": 0,
     "totalItems": 76,
     "duplicateItems": 200,
@@ -56,7 +56,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "68 Artikel · Datenstand 2026-07-31"
+        "detail": "73 Artikel · Datenstand 2026-08-01"
       },
       {
         "id": "inbox",
@@ -89,18 +89,18 @@
       "signals": 7
     },
     {
-      "id": "hbm",
-      "label": "HBM",
-      "score": 81,
-      "status": "orange",
-      "signals": 14
-    },
-    {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 17
+      "signals": 20
+    },
+    {
+      "id": "hbm",
+      "label": "HBM",
+      "score": 80,
+      "status": "orange",
+      "signals": 15
     },
     {
       "id": "enterprise_ssd",
@@ -114,7 +114,14 @@
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 51
+      "signals": 54
+    },
+    {
+      "id": "semiconductors",
+      "label": "Semiconductors",
+      "score": 72,
+      "status": "orange",
+      "signals": 17
     },
     {
       "id": "nand",
@@ -124,18 +131,11 @@
       "signals": 6
     },
     {
-      "id": "semiconductors",
-      "label": "Semiconductors",
-      "score": 71,
-      "status": "orange",
-      "signals": 15
-    },
-    {
       "id": "supply_chain",
       "label": "Supply Chain",
       "score": 68,
       "status": "orange",
-      "signals": 16
+      "signals": 17
     }
   ],
   "manufacturers": [
@@ -197,7 +197,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 79,
-      "confidenceScore": 86,
+      "confidenceScore": 85,
       "horizon": "2026–2027",
       "direction": "up",
       "keyThesis": "Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.",
@@ -249,13 +249,16 @@
         "S-2026-07-30-02",
         "S-2026-07-19-04",
         "S-2026-07-31-03",
+        "S-2026-08-01-03",
         "S-2026-07-23-05",
         "S-2026-07-19-03",
         "S-2026-07-20-03",
         "S-2026-07-29-05",
+        "S-2026-08-01-02",
+        "S-2026-08-01-05",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-08-01T00:12:08.180Z"
+      "lastUpdated": "2026-08-01T06:42:29.584Z"
     },
     {
       "id": "hbm",
@@ -314,11 +317,12 @@
         "S-2026-07-25-02",
         "S-2026-07-30-01",
         "S-2026-07-30-02",
+        "S-2026-08-01-01",
         "S-2026-07-19-04",
         "S-2026-07-23-03",
         "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-08-01T00:12:08.180Z"
+      "lastUpdated": "2026-08-01T06:42:29.584Z"
     },
     {
       "id": "nand",
@@ -373,7 +377,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-01T00:12:08.180Z"
+      "lastUpdated": "2026-08-01T06:42:29.584Z"
     },
     {
       "id": "enterprise_ssd",
@@ -428,7 +432,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-01T00:12:08.180Z"
+      "lastUpdated": "2026-08-01T06:42:29.584Z"
     },
     {
       "id": "ai_infrastructure",
@@ -518,12 +522,14 @@
         "S-2026-07-29-01",
         "S-2026-07-30-01",
         "S-2026-07-30-02",
+        "S-2026-08-01-01",
         "S-2026-07-23-03",
         "S-2026-07-30-03",
         "S-2026-07-19-01",
         "S-2026-07-26-01",
         "S-2026-07-28-05",
         "S-2026-07-19-02",
+        "S-2026-08-01-04",
         "S-2026-07-21-05",
         "S-2026-07-23-04",
         "S-2026-07-23-05",
@@ -538,6 +544,7 @@
         "S-2026-07-29-04",
         "S-2026-07-29-05",
         "S-2026-07-30-04",
+        "S-2026-08-01-02",
         "S-2026-07-26-05",
         "S-2026-07-26-03",
         "S-2026-07-20-05",
@@ -547,10 +554,10 @@
         "S-2026-07-28-03",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-08-01T00:12:08.180Z"
+      "lastUpdated": "2026-08-01T06:42:29.584Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 68 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 73 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
