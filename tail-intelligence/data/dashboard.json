@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-08-01",
+  "dataAsOf": "2026-08-02",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-08-02T00:13:23.551Z",
-  "lastForecastRun": "2026-08-02T00:13:23.551Z",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-08-02T06:23:29.502Z",
+  "lastForecastRun": "2026-08-02T06:23:29.502Z",
   "newlyProcessedArticles": 0,
-  "totalArticles": 73,
-  "articleCount": 73,
+  "totalArticles": 78,
+  "articleCount": 78,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,7 +32,7 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 77,
+    "forecastLedgerCount": 82,
     "resolvedForecasts": 4,
     "activeForecasts": 44,
     "scopeGateStatus": "active",
@@ -42,7 +42,7 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-02T00:13:20.951Z",
+    "updatedAt": "2026-08-02T06:23:26.806Z",
     "newItems": 0,
     "totalItems": 76,
     "duplicateItems": 200,
@@ -56,7 +56,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "73 Artikel · Datenstand 2026-08-01"
+        "detail": "78 Artikel · Datenstand 2026-08-02"
       },
       {
         "id": "inbox",
@@ -84,37 +84,37 @@
     {
       "id": "server_dram",
       "label": "Server DRAM",
-      "score": 84,
+      "score": 83,
       "status": "red",
-      "signals": 7
+      "signals": 8
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 20
+      "signals": 22
     },
     {
       "id": "hbm",
       "label": "HBM",
       "score": 80,
       "status": "orange",
-      "signals": 15
+      "signals": 16
     },
     {
       "id": "enterprise_ssd",
       "label": "Enterprise SSD",
       "score": 73,
       "status": "orange",
-      "signals": 6
+      "signals": 8
     },
     {
       "id": "ai_infrastructure",
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 54
+      "signals": 57
     },
     {
       "id": "semiconductors",
@@ -135,7 +135,7 @@
       "label": "Supply Chain",
       "score": 68,
       "status": "orange",
-      "signals": 17
+      "signals": 18
     }
   ],
   "manufacturers": [
@@ -197,7 +197,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 79,
-      "confidenceScore": 85,
+      "confidenceScore": 86,
       "horizon": "2026–2027",
       "direction": "up",
       "keyThesis": "Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.",
@@ -227,12 +227,12 @@
           "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
         },
         {
-          "id": "tail-2026-07-14-dram-prices",
-          "date": "2026-07-14",
-          "title": "DRAM-Preissignale bleiben klar aufwärtsgerichtet",
-          "signal": "Preisdruck aufwärts",
-          "score": 70,
-          "summary": "Servermix, HBM-Priorisierung und vorsichtige Kapazitätsplanung stützen Vertrags- und Spotpreise."
+          "id": "S-2026-08-02-02",
+          "date": "2026-08-02",
+          "title": "EU eröffnet sieben AI-Gigafactories mit mehr als 30 Mrd. Euro öffentlichem und privatem Kapital",
+          "signal": "Nachfrageimpuls",
+          "score": 71,
+          "summary": "Die EU bietet bis zu 10 Mrd. Euro öffentliche Finanzierung für sieben AI-Gigafactories und will damit weitere 20 Mrd. Euro privates Kapital mobilisieren. Jede Anlage soll mindestens 100.000 moderne AI-Prozessoren bündeln; Unternehmen können nun Gebote für die Standorte abgeben."
         }
       ],
       "counterSignals": [],
@@ -240,9 +240,11 @@
         "tail-2026-07-14-server-dram",
         "S-2026-07-24-04",
         "S-2026-07-31-01",
+        "S-2026-08-02-02",
         "tail-2026-07-14-dram-prices",
         "S-2026-07-23-01",
         "S-2026-07-25-01",
+        "S-2026-08-02-01",
         "S-2026-07-28-04",
         "S-2026-07-25-02",
         "S-2026-07-30-01",
@@ -258,7 +260,7 @@
         "S-2026-08-01-05",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-08-02T00:13:23.551Z"
+      "lastUpdated": "2026-08-02T06:23:29.502Z"
     },
     {
       "id": "hbm",
@@ -312,6 +314,7 @@
         "tail-2026-07-14-hbm4-cost",
         "S-2026-07-31-01",
         "S-2026-07-24-03",
+        "S-2026-08-02-02",
         "S-2026-07-25-01",
         "S-2026-07-28-04",
         "S-2026-07-25-02",
@@ -322,7 +325,7 @@
         "S-2026-07-23-03",
         "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-08-02T00:13:23.551Z"
+      "lastUpdated": "2026-08-02T06:23:29.502Z"
     },
     {
       "id": "nand",
@@ -377,15 +380,15 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-02T00:13:23.551Z"
+      "lastUpdated": "2026-08-02T06:23:29.502Z"
     },
     {
       "id": "enterprise_ssd",
       "market": "Enterprise SSD",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 72,
-      "confidenceScore": 84,
+      "relevanceScore": 73,
+      "confidenceScore": 86,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "Enterprise SSD profitiert von AI-Datenpipelines, Nearline-Wachstum und High-Capacity-Qualifizierung.",
@@ -407,32 +410,34 @@
           "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
         },
         {
-          "id": "S-2026-07-30-01",
-          "date": "2026-07-30",
-          "title": "Microsoft koppelt Cloud-Monetarisierung an einen 329-Mrd.-US-Dollar-Datacenter-Lease-Tail",
-          "signal": "Geopolitische Entkopplung",
-          "score": 67,
-          "summary": "Microsoft meldete 90,0 Mrd. US-Dollar Quartalsumsatz, Azure-Wachstum von 43 Prozent und mehr als 30 Millionen bezahlte M365-Copilot-Plätze. Für das erste Quartal des Geschäftsjahres 2027 erwartet das Unternehmen 45 Prozent Azure-Wachstum. Der Cloud-Auftragsbestand stieg auf 678 Mrd. US-Dollar; der gesamte sequenzielle Zuwachs von rund 50 Mrd. US-Dollar kam von Kunden außerhalb der führenden US-AI-Modellhersteller. Noch nicht begonnene Datacenter-Leases belaufen sich auf 329,1 Mrd. US-Dollar. Microsoft nahm im Quartal 31 neue Datacenter auf fünf Kontinenten in Betrieb, insgesamt 88 im Geschäftsjahr, brachte ein weiteres Gigawatt Kapazität online und halbierte die Dock-to-live-Zeit neuer GPUs in den größten Regionen nahezu. Der Durchsatz der Copilot-Workloads stieg seit Jahresbeginn auf das Vierfache; zusätzliche und durch Effizienz freigewordene Kapazität wurde nach Unternehmensangaben im selben Quartal schnell monetarisiert."
+          "id": "S-2026-08-02-02",
+          "date": "2026-08-02",
+          "title": "EU eröffnet sieben AI-Gigafactories mit mehr als 30 Mrd. Euro öffentlichem und privatem Kapital",
+          "signal": "Nachfrageimpuls",
+          "score": 71,
+          "summary": "Die EU bietet bis zu 10 Mrd. Euro öffentliche Finanzierung für sieben AI-Gigafactories und will damit weitere 20 Mrd. Euro privates Kapital mobilisieren. Jede Anlage soll mindestens 100.000 moderne AI-Prozessoren bündeln; Unternehmen können nun Gebote für die Standorte abgeben."
         },
         {
-          "id": "tail-2026-07-14-nand-essd",
-          "date": "2026-07-14",
-          "title": "NAND und Enterprise SSD zeigen festere Preis- und Nachfrageindikatoren",
-          "signal": "Preisdruck aufwärts",
-          "score": 59,
-          "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
+          "id": "S-2026-08-02-01",
+          "date": "2026-08-02",
+          "title": "Südkoreas Juli-Exporte bestätigen den physischen AI-Memory- und Storage-Zyklus",
+          "signal": "Nachfrageimpuls",
+          "score": 70,
+          "summary": "Südkoreas Exporte stiegen im Juli um 62,8 Prozent auf 98,89 Mrd. US-Dollar und übertrafen die Konsensprognose. Halbleiterexporte legten um 179 Prozent zu; Computerexporte stiegen durch AI-Investitionen großer US-Technologieunternehmen um 404 Prozent. Die Ausfuhren nach China wuchsen um 96 Prozent und in die USA um 69 Prozent."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "S-2026-07-31-01",
+        "S-2026-08-02-02",
+        "S-2026-08-02-01",
         "S-2026-07-30-01",
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-02T00:13:23.551Z"
+      "lastUpdated": "2026-08-02T06:23:29.502Z"
     },
     {
       "id": "ai_infrastructure",
@@ -508,6 +513,7 @@
         "S-2026-07-20-02",
         "S-2026-07-23-01",
         "S-2026-07-25-01",
+        "S-2026-08-02-01",
         "S-2026-07-22-03",
         "S-2026-07-23-02",
         "S-2026-07-28-04",
@@ -535,6 +541,7 @@
         "S-2026-07-23-05",
         "S-2026-07-25-03",
         "S-2026-07-25-05",
+        "S-2026-08-02-05",
         "S-2026-07-19-03",
         "S-2026-07-22-02",
         "S-2026-07-19-05",
@@ -542,6 +549,7 @@
         "S-2026-07-28-01",
         "S-2026-07-29-03",
         "S-2026-07-29-04",
+        "S-2026-08-02-03",
         "S-2026-07-29-05",
         "S-2026-07-30-04",
         "S-2026-08-01-02",
@@ -554,10 +562,10 @@
         "S-2026-07-28-03",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-08-02T00:13:23.551Z"
+      "lastUpdated": "2026-08-02T06:23:29.502Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 73 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 78 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
