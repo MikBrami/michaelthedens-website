@@ -1,9 +1,19 @@
 name: TAIL Inbox Update
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'tail-intelligence/data/daily-intelligence-[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json'
+      - '.github/workflows/tail-inbox.yml'
   schedule:
     - cron: '17 5,11,17,23 * * *'
   workflow_dispatch:
+
+concurrency:
+  group: tail-intelligence-update
+  cancel-in-progress: false
 
 permissions:
   contents: write
