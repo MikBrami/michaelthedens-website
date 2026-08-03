@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-02T08:18:19+02:00",
-  "previousRun": "2026-08-01",
+  "updatedAt": "2026-08-03T08:52:15+02:00",
+  "previousRun": "2026-08-02",
   "executivePulse": {
-    "current": 84,
-    "previous": 83,
+    "current": 83,
+    "previous": 84,
     "status": "orange",
-    "interpretation": "Südkoreas Exportdaten bestätigen den physischen AI-, Memory- und Storage-Zyklus in nationaler Größenordnung. EU-Gigafactories und der integrierte Paducah-Campus verbreitern Sovereign Compute, Energie und Infrastrukturfinanzierung. Die US-Iran-Angriffspause entlastet den kurzfristigen Energie-Tail, während Chinas Zwei-Geschwindigkeiten-Industrie und hohe Ausführungsrisiken den Pulse deckeln."
+    "interpretation": "Die unmittelbare Energie- und Eskalationsprämie fällt deutlich, während die physische AI-, Memory- und Datacenter-Nachfrage intakt bleibt. Rekordkäufe in Korea stützen die Fundamentalthese, doch Hebelprodukte, Japans Halbleitercluster und die Rotation in weniger AI-konzentrierte Märkte zeigen weiterhin hohe Finanzierungs-, Konzentrations- und Lieferkettenrisiken."
   },
   "confidence": {
-    "current": 99,
+    "current": 98,
     "previous": 99,
-    "interpretation": "Südkoreas Handelsdaten, EU-Programmparameter und chinesische offizielle PMI-Daten liefern harte Messpunkte. Paducah und die Iran-Diplomatie sind mehrfach bestätigt; Investitionssummen, Zeitpläne und politische Umsetzung bleiben ausdrücklich Schätzung."
+    "interpretation": "Iran-/Öl-, OPEC+- und Korea-Daten sind aktuell und quantitativ belastbar. Der Japan-Eintrag ist ein transparenter Late Admission mit Unternehmenszeitplänen; die Indien-Einordnung ist ausdrücklich Reuters-Kommentar und erhält deshalb einen niedrigeren Quellen- und Confidence-Beitrag."
   },
   "riskPressure": {
-    "current": 100,
+    "current": 96,
     "previous": 100
   },
-  "momentum": "Physische AI-Nachfrage stark · Sovereign und Federal Compute expandieren · Diplomatie entlastet den Energie-Tail, Makro- und Ausführungsrisiken bleiben extrem",
+  "momentum": "Physischer AI- und Memory-Zyklus intakt · Energie-Tail fällt abrupt · Kapital rotiert von Hebelung zu Fundamentaldaten · Japan-Supply-Chain bleibt unter Wiederanlaufrisiko",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -42,22 +42,7 @@
     {
       "name": "Memory / SSD Export Demand",
       "score": 100,
-      "delta": 12
-    },
-    {
-      "name": "Sovereign AI / EU Gigafactories",
-      "score": 100,
-      "delta": 10
-    },
-    {
-      "name": "Federal Land / Integrated Power Campuses",
-      "score": 99,
-      "delta": 10
-    },
-    {
-      "name": "Gas + Battery Hybrid Power",
-      "score": 99,
-      "delta": 8
+      "delta": 0
     },
     {
       "name": "Memory Contracting / LTAs",
@@ -65,46 +50,61 @@
       "delta": 0
     },
     {
-      "name": "Hyperscaler Self-Funding Capacity",
-      "score": 85,
-      "delta": 0
-    },
-    {
-      "name": "China Domestic Demand / Two-Speed Economy",
-      "score": 93,
-      "delta": 12
-    },
-    {
       "name": "Geopolitik & Logistik",
-      "score": 96,
-      "delta": -4
+      "score": 89,
+      "delta": -7
+    },
+    {
+      "name": "Energy Price Tail",
+      "score": 82,
+      "delta": -14
     },
     {
       "name": "Physical Oil-Flow Resilience",
+      "score": 95,
+      "delta": 3
+    },
+    {
+      "name": "OPEC+ Spare / Exportable Supply",
+      "score": 88,
+      "delta": 8
+    },
+    {
+      "name": "AI Equity Leverage / Crowded Trade",
       "score": 92,
-      "delta": 2
+      "delta": -8
+    },
+    {
+      "name": "Memory Equity / Fundamental Divergence",
+      "score": 100,
+      "delta": 9
+    },
+    {
+      "name": "Japan Semiconductor Supply Chain",
+      "score": 96,
+      "delta": 16
+    },
+    {
+      "name": "Capital Rotation / Anti-Concentration",
+      "score": 88,
+      "delta": 10
     },
     {
       "name": "Capital- & Execution Risk",
-      "score": 100,
-      "delta": 0
-    },
-    {
-      "name": "Refined Products / Diesel Tightness",
-      "score": 98,
-      "delta": -2
+      "score": 97,
+      "delta": -3
     }
   ],
   "acceptedSignals": [
     {
-      "id": "S-2026-08-02-01",
+      "id": "S-2026-08-03-01",
       "rank": 1,
       "priorityScore": 100,
-      "classification": "Architecture Update",
-      "title": "Südkoreas Juli-Exporte bestätigen den physischen AI-Memory- und Storage-Zyklus",
-      "fact": "Südkoreas Exporte stiegen im Juli um 62,8 Prozent auf 98,89 Mrd. US-Dollar und übertrafen die Konsensprognose. Halbleiterexporte legten um 179 Prozent zu; Computerexporte stiegen durch AI-Investitionen großer US-Technologieunternehmen um 404 Prozent. Die Ausfuhren nach China wuchsen um 96 Prozent und in die USA um 69 Prozent.",
-      "estimate": "Jahresraten werden durch Basiseffekte, Preissteigerungen und Produktmix verstärkt. Die Computerstatistik trennt Enterprise SSD, Server, Komponenten und fertige Systeme nicht vollständig; hohe Exportwerte garantieren keine proportionalen Stückzahlen oder Margen.",
-      "tailInference": "Der AI-Zyklus ist nicht nur Capex-Guidance, sondern erreicht reale grenzüberschreitende Volumen und Preise bei Memory, Computern und Storage. Gleichzeitig zeigt die starke China-Nachfrage, dass US- und chinesische AI-Ökosysteme wirtschaftlich stärker gekoppelt bleiben, als die politische Entkopplung vermuten lässt.",
+      "classification": "Falsifier",
+      "title": "Trump stoppt neuen Iran-Angriff; Brent fällt in Stunden um mehr als fünf Prozent",
+      "fact": "US-Präsident Donald Trump hielt einen neuen Angriff auf Iran zurück, um ein schnelles Nuklear- und Hormuz-Abkommen zu ermöglichen. Brent fiel am 3. August bis 04:08 GMT um 5,11 Prozent auf 83,44 US-Dollar, WTI um 5,79 Prozent auf 79,77 US-Dollar. Gleichzeitig blieb der Hormuz-Verkehr reduziert; seit Samstag wurden drei weitere Tankerangriffe gemeldet.",
+      "estimate": "Der Preissturz misst eine veränderte Erwartung, keinen abgeschlossenen Frieden. Es gibt noch keinen veröffentlichten Vertragstext, keine verifizierte vollständige Wiederöffnung und keine Garantie, dass Iran, die USA oder regionale Akteure die Verhandlungen nicht erneut abbrechen.",
+      "tailInference": "Der lineare Eskalations- und Ölpreis-Pfad ist klar falsifiziert. Datacenter-Strom, Diesel, Fracht und Finanzierung erhalten kurzfristig Entlastung; die maritime Risikoprämie bleibt jedoch aktiv, bis reale Tanker-, LNG- und Versicherungsdaten normalisieren.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -121,112 +121,28 @@
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Das Handelsministerium hat ein Interesse, Exportstärke und AI-Wettbewerbsfähigkeit hervorzuheben.",
-        "alternative": "Preis- und Basiseffekte können den Großteil der Wachstumsrate erklären; die zugrunde liegenden Bit- und Stückvolumina können wesentlich langsamer steigen.",
-        "alreadyPriced": "Starke Samsung- und SK-hynix-Zahlen waren bekannt; neu ist die nationale Breite über Chips, Computer, China- und US-Nachfrage.",
-        "killCondition": "Südkoreas August-Halbleiterexporte fallen unter 30 Mrd. US-Dollar oder Computerexporte wachsen weniger als 100 Prozent bei zugleich deutlich fallenden Memory-Preisen.",
-        "forecastChange": "Neu P-2026-08-02-01 – 78 Prozent. Direkte NAND- und eSSD-Preisprognosen bleiben ohne produktspezifischen Trigger unverändert."
+        "sourceIncentive": "Die US-Regierung hat ein Interesse, Verhandlungsfortschritt und Kontrolle über den Eskalationspfad zu betonen.",
+        "alternative": "Der Aufschub kann taktisch sein; neue Tankerangriffe oder ein Scheitern der Nuklearbedingungen können den Preissturz binnen Stunden umkehren.",
+        "alreadyPriced": "Die Angriffspause vom 2. August war bekannt; neu sind das ausdrückliche Stoppen eines weiteren Angriffs und die unmittelbare Preisreaktion unter 84 US-Dollar.",
+        "killCondition": "Neue großflächige US-Angriffe, ein bestätigter Angriff auf kritische Golf-Energieinfrastruktur oder Brent wieder über 95 US-Dollar vor dem 10. August.",
+        "forecastChange": "P-2026-08-02-04 steigt von 58 auf 68 Prozent. Der Gegenfall bleibt 32 Prozent; keine rückwirkende Änderung der Creation Confidence."
       },
       "sources": [
         {
-          "label": "Reuters – South Korea July exports and AI demand",
-          "url": "https://www.reuters.com/world/asia-pacific/south-korea-july-exports-beat-forecasts-robust-demand-ai-investments-2026-08-01/"
+          "label": "Reuters – Oil tumbles as Trump cancels attack on Iran",
+          "url": "https://www.reuters.com/business/energy/oil-tumbles-trump-cancels-attack-iran-reach-nuclear-deal-2026-08-03/"
         }
       ]
     },
     {
-      "id": "S-2026-08-02-02",
+      "id": "S-2026-08-03-02",
       "rank": 2,
-      "priorityScore": 98,
-      "classification": "Architecture Update",
-      "title": "EU eröffnet sieben AI-Gigafactories mit mehr als 30 Mrd. Euro öffentlichem und privatem Kapital",
-      "fact": "Die EU bietet bis zu 10 Mrd. Euro öffentliche Finanzierung für sieben AI-Gigafactories und will damit weitere 20 Mrd. Euro privates Kapital mobilisieren. Jede Anlage soll mindestens 100.000 moderne AI-Prozessoren bündeln; Unternehmen können nun Gebote für die Standorte abgeben.",
-      "estimate": "Die Finanzierung ist noch nicht vollständig gebunden. Standortwahl, Energieverträge, Chiplieferanten, nationale Kofinanzierung und tatsächliche Baukosten bleiben offen; sieben Auswahlentscheidungen bedeuten nicht sieben pünktlich betriebsbereite Anlagen.",
-      "tailInference": "Europa wechselt von verteilten AI-Factories zu souveräner Hyperscale-Infrastruktur. Das schafft eine neue mehrjährige Nachfragebasis für Beschleuniger, HBM, Server-DRAM, Enterprise SSD, Optik, Netzwerk und Strom, bleibt aber stark von nicht-europäischen Chips und Lieferketten abhängig.",
-      "admissionGate": {
-        "Freshness": "Late admission / formal call",
-        "Evidence": true,
-        "Materiality": true,
-        "Causality": true,
-        "Falsifiability": true
-      },
-      "scoreBreakdown": {
-        "SourceQuality": 20,
-        "Novelty": 15,
-        "ThesisRelevance": 20,
-        "ForecastImpact": 19,
-        "Falsifiability": 14,
-        "TimeSensitivity": 10
-      },
-      "redPencil": {
-        "sourceIncentive": "EU-Institutionen haben ein Interesse, technologische Souveränität und die Hebelwirkung öffentlicher Mittel maximal darzustellen.",
-        "alternative": "Die Initiative kann sich in nationale Einzelprojekte fragmentieren, unter hohen Energiepreisen leiden und überwiegend US-Technologie finanzieren.",
-        "alreadyPriced": "InvestAI und AI-Factories waren bekannt; neu sind sieben formale Projekte, die öffentliche Größenordnung und der offene Vergabeprozess.",
-        "killCondition": "Bis Ende Q2 2027 werden weniger als fünf förderfähige Konsortien ausgewählt oder keine Anlage erreicht bis Ende 2027 Finanzierung beziehungsweise Baustart.",
-        "forecastChange": "Neu P-2026-08-02-02 – 70 Prozent; wegen des Scope Gates zunächst Governance-Watchlist bis zur Clusterentscheidung."
-      },
-      "sources": [
-        {
-          "label": "European Commission – AI Gigafactories",
-          "url": "https://commission.europa.eu/topics/competitiveness/competitiveness-coordination-tool-projects/ai-gigafactories_en"
-        },
-        {
-          "label": "AP – EU funding for seven AI gigafactories",
-          "url": "https://apnews.com/article/eu-ai-gigafactories-china-us-data-center-88b83cd517a4d47c115605e636d0b3e4"
-        }
-      ]
-    },
-    {
-      "id": "S-2026-08-02-03",
-      "rank": 3,
       "priorityScore": 97,
-      "classification": "Architecture Update",
-      "title": "Paducah verbindet 1,2 GW Compute mit 2 GW Gas, 2,6 GW Batterie und Bundesland",
-      "fact": "Brookfield und NextEra planen auf einem ehemaligen Urananreicherungsstandort in Kentucky einen AI-Campus mit mehr als 1,2 GW Datacenter-Kapazität und bis zu 1,8 GW Gesamtleistung. Vorgesehen sind bis zu 2 GW Gaskraft und 2,6 GW Batteriespeicher; der Gesamtinvestitionsrahmen wird mit 100 Mrd. US-Dollar angegeben. Der Betrieb soll ab 2028 beginnen und der Vollausbau bis 2032 erfolgen.",
-      "estimate": "Der Gesamtwert umfasst voraussichtlich Compute-Hardware und langfristige Ausbauphasen. Kunden, endgültige Verträge, Genehmigungen und Finanzierungsstruktur sind nicht vollständig veröffentlicht; das Vorhaben steht unter dem Vorbehalt definitiver Vereinbarungen.",
-      "tailInference": "Federal Land, vorhandene Industrieinfrastruktur, eigene Gaserzeugung, Batteriespeicher und Private Capital verschmelzen zu einer wiederholbaren AI-Campus-Architektur. Der Strompfad wird nicht nachträglich ergänzt, sondern von Beginn an zusammen mit Compute und Finanzierung entwickelt.",
-      "admissionGate": {
-        "Freshness": "Late admission / process miss",
-        "Evidence": "Qualified secondary; definitive agreements pending",
-        "Materiality": true,
-        "Causality": true,
-        "Falsifiability": true
-      },
-      "scoreBreakdown": {
-        "SourceQuality": 19,
-        "Novelty": 15,
-        "ThesisRelevance": 20,
-        "ForecastImpact": 19,
-        "Falsifiability": 14,
-        "TimeSensitivity": 10
-      },
-      "redPencil": {
-        "sourceIncentive": "Entwickler und Politik haben ein Interesse, den maximalen Investitionsrahmen, Arbeitsplätze und nationale AI-Führerschaft zu betonen.",
-        "alternative": "Ohne benannten Ankermieter kann das Projekt phasenweise deutlich kleiner werden; Gas-, Netz-, Umwelt- und Cleanup-Fragen können den Zeitplan verschieben.",
-        "alreadyPriced": "Federal-Land-Projekte waren bekannt; neu ist die konkrete Kombination aus 1,2 GW Compute, 2 GW Gas und 2,6 GW Batterie in Paducah.",
-        "killCondition": "Bis Ende Q2 2027 fehlen definitive Lease-, Power- oder Ankermieterverträge, oder der Scope sinkt unter 600 MW Compute.",
-        "forecastChange": "Neu P-2026-08-02-03 – 64 Prozent; wegen des Scope Gates zunächst Governance-Watchlist bis zur Clusterentscheidung."
-      },
-      "sources": [
-        {
-          "label": "Reuters – Brookfield and NextEra Paducah campus",
-          "url": "https://www.reuters.com/business/energy/brookfield-nextera-develop-100-billion-data-center-campus-kentucky-source-says-2026-07-29/"
-        },
-        {
-          "label": "AP – Kentucky uranium site becomes AI and power complex",
-          "url": "https://apnews.com/article/a4cf07af1b6776971dc5d609c996ca13"
-        }
-      ]
-    },
-    {
-      "id": "S-2026-08-02-04",
-      "rank": 4,
-      "priorityScore": 96,
       "classification": "Falsifier",
-      "title": "US verschieben neue Iran-Angriffe zugunsten eines Hormuz- und Nuklearabkommens",
-      "fact": "US-Präsident Trump erklärte am 2. August, einen geplanten neuen Angriff auf Iran auszusetzen, sofern rasch ein Abkommen über Irans Nuklearprogramm und die vollständige Wiederöffnung der Straße von Hormuz erreicht wird. Iran warnte zugleich vor Vergeltung; Kuwait meldete abgefangene iranische Drohnen und zwei maritime Zwischenfälle vor Oman hielten das Risiko hoch.",
-      "estimate": "Es gibt noch keinen veröffentlichten Vertragstext, Zeitplan oder verifizierte operative Wiederöffnung. Die Angriffspause kann kurzfristig sein und bei einem Scheitern der Verhandlungen abrupt enden.",
-      "tailInference": "Das falsifiziert einen automatisch linear eskalierenden Luftkrieg und senkt kurzfristig den Energiepreis-Tail. Es falsifiziert nicht den maritimen Schock: Hormuz, Versicherung, LNG, Tanker und Red-Sea-Routen bleiben bis zu einer messbaren Verkehrsnormalisierung getrennte Risiken.",
+      "title": "Koreas Rekordkauf zeigt: Der Memory-Sell-off war vor allem ein Leverage-Ereignis",
+      "fact": "Ausländische Investoren kauften am Freitag südkoreanische Aktien im Rekordwert von 7,2 Billionen Won beziehungsweise rund 5 Mrd. US-Dollar. Das Vermögen gehebelter ETFs auf Samsung und SK hynix fiel seit Ende Juni von 50 auf 17 Mrd. US-Dollar; J.P. Morgan schätzt, dass Hedgefonds rund 90 Prozent des Deleveraging abgeschlossen haben.",
+      "estimate": "Ein Rekordtag beweist noch keinen dauerhaften Kapitalzufluss. Die Schätzung zum abgeschlossenen Deleveraging basiert auf Marktmodellen; der KOSPI fiel am Montag erneut fast fünf Prozent und bleibt extrem volatil.",
+      "tailInference": "Der Kapitalmarkt-Falsifier bleibt bestehen, wird aber präziser: Der Preissturz war stärker durch Hebelung und Marktstruktur als durch eine gebrochene Memory- oder AI-Nachfrage verursacht. Physischer Zyklus und Aktienzyklus müssen weiterhin getrennt bewertet werden.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -236,41 +152,75 @@
       },
       "scoreBreakdown": {
         "SourceQuality": 20,
-        "Novelty": 14,
-        "ThesisRelevance": 19,
-        "ForecastImpact": 18,
+        "Novelty": 15,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 17,
         "Falsifiability": 15,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Alle Parteien haben Anreize, Verhandlungsfortschritt beziehungsweise Abschreckung zu überzeichnen.",
-        "alternative": "Die Pause kann nur operative Vorbereitung oder taktische Verzögerung sein; neue Drohnen- oder Schiffsangriffe können sie innerhalb von Stunden beenden.",
-        "alreadyPriced": "Diplomatie war ein aktiver Gegentreiber; neu ist die ausdrücklich abgesagte Angriffswelle mit vollständiger Hormuz-Öffnung als Bedingung.",
-        "killCondition": "Neue großflächige US-Angriffe innerhalb von sieben Tagen oder kein dokumentierter Rahmen zur Hormuz-Wiederöffnung bis 15. August.",
-        "forecastChange": "Neu P-2026-08-02-04 – 58 Prozent. F-2026-08-02-01 wird als aktiver Falsifier eröffnet; bestehende Energieknappheitsprognosen werden nicht geschlossen."
+        "sourceIncentive": "Investoren, die nach dem Einbruch kaufen, haben ein Interesse, den Rückgang als technisch und nicht fundamental darzustellen.",
+        "alternative": "Die Hebelung kann nur der Verstärker gewesen sein; schwächere Margenerwartungen, China-Konkurrenz oder Capex-Renditen können weiterhin fundamental belasten.",
+        "alreadyPriced": "Der Sell-off und Fondsverlust waren bekannt; neu sind der Rekordkauf, der ETF-AUM-Abbau und die 90-Prozent-Deleveraging-Schätzung.",
+        "killCondition": "Gehebelte Korea-ETF-Vermögen steigen vor Monatsende wieder über 35 Mrd. US-Dollar oder Samsung/SK hynix senken operative AI-/Memory-Guidance.",
+        "forecastChange": "Neuer Watchlist-Forecast P-2026-08-03-02 mit 64 Prozent; Scope-Gewicht bleibt begrenzt."
       },
       "sources": [
         {
-          "label": "Reuters – US holds off Iran attack for rapid deal",
-          "url": "https://www.reuters.com/world/asia-pacific/iran-threatens-strike-other-nations-energy-fields-if-us-launches-fresh-attacks-2026-08-01/"
-        },
-        {
-          "label": "AP – parameters reached and planned strikes halted",
-          "url": "https://apnews.com/article/e61e88c14d8aca48c1c56368650baea5"
+          "label": "Reuters – Big investors think it might be time to buy in South Korea",
+          "url": "https://www.reuters.com/world/asia-pacific/big-investors-think-it-might-be-time-buy-south-korea-2026-08-03/"
         }
       ]
     },
     {
-      "id": "S-2026-08-02-05",
-      "rank": 5,
-      "priorityScore": 92,
-      "classification": "Falsifier",
-      "title": "Chinas PMI fällt auf 49,2 – High-Tech expandiert, die breite Industrie nicht",
-      "fact": "Chinas offizieller Manufacturing PMI fiel im Juli unerwartet von 50,3 auf 49,2; der Non-Manufacturing PMI sank auf 49. Neue Aufträge und Exportaufträge schrumpften. Gleichzeitig blieben High-Tech- und Equipment-Manufacturing in Expansion, während Consumer- und energieintensive Industrien zurückgingen.",
-      "estimate": "PMI-Daten sind Diffusionsindizes und keine Produktionsvolumina. Saison, Wetter, hohe Vergleichsbasis und der Nahost-Energieschock können den Juli überzeichnen; angekündigte Fiskalmaßnahmen sind noch nicht quantifiziert.",
-      "tailInference": "Der AI- und Halbleiterboom erzeugt eine Zwei-Geschwindigkeiten-Wirtschaft, keine automatische breite Industriekonjunktur. Das ist ein Falsifier gegen die Gleichsetzung von AI-Exportstärke, chinesischem Capex und gesamtwirtschaftlich robuster Endnachfrage.",
+      "id": "S-2026-08-03-03",
+      "rank": 3,
+      "priorityScore": 94,
+      "classification": "Architecture Update",
+      "title": "Kumamoto-Erdbeben testet Japans Halbleiter-BCP mitten in der globalen Memory-Knappheit",
+      "fact": "Das Erdbeben der Stärke 7,1 stoppte mehrere Halbleiter- und Automobilwerke in Südjapan. TSMC begann mit einem teilweisen Wiederanlauf, benötigt aber weitere Inspektionen und Kalibrierungen. Renesas plant einen phasenweisen Neustart ab 5. August; Sony will ab 4. August wieder hochfahren und bis Monatsmitte das Vorkrisenniveau erreichen.",
+      "estimate": "Die Hersteller haben noch keine vollständigen Wafer-, WIP-, Yield- oder Lieferauswirkungen veröffentlicht. Teilweiser Wiederanlauf bedeutet nicht sofortige normale Auslieferung; Nachbeben, Wasser-, Gas- und Zulieferprobleme können Zeitpläne verschieben.",
+      "tailInference": "Geografische Konzentration bleibt ein systemisches Halbleiterrisiko, aber die BCP-Architektur ist robuster als 2016. Für TAIL ist der entscheidende Messpunkt nicht der Anlagenstillstand, sondern die Zeit bis zu normalem Wafer-Output und Kundenlieferung.",
       "admissionGate": {
-        "Freshness": "Late admission / macro update",
+        "Freshness": "Late admission / process miss",
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 20,
+        "Novelty": 12,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 18,
+        "Falsifiability": 14,
+        "TimeSensitivity": 10
+      },
+      "redPencil": {
+        "sourceIncentive": "Unternehmen haben ein Interesse, Resilienz hervorzuheben und konkrete WIP- oder Yield-Verluste zunächst nicht zu quantifizieren.",
+        "alternative": "Die raschen Neustartpläne können eine echte BCP-Verbesserung zeigen; der globale Effekt könnte gering und kurz sein.",
+        "alreadyPriced": "Das Erdbeben war vor dem letzten Lauf bekannt, wurde aber nicht aufgenommen. Neu im TAIL-Prozess sind die konkreten Neustarttermine und die transparente Late-Admission-Kennzeichnung.",
+        "killCondition": "Sony erreicht bis 15. August nicht das Vorkrisenniveau oder Renesas verschiebt den phasenweisen Neustart deutlich über den 5. August hinaus.",
+        "forecastChange": "Neu P-2026-08-03-03 – 76 Prozent. Kein direkter NAND-, DRAM- oder eSSD-Preisforecast ohne produktspezifische Ausfalldaten."
+      },
+      "sources": [
+        {
+          "label": "Reuters – Japan quake halts auto and chip plants",
+          "url": "https://www.reuters.com/world/asia-pacific/death-toll-japan-earthquake-rises-34-2026-07-31/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-03-04",
+      "rank": 4,
+      "priorityScore": 93,
+      "classification": "Layer Update",
+      "title": "OPEC+ beendet den Rückbau der 1,65-Mio.-bpd-Kürzung – reale Exportierbarkeit bleibt der Engpass",
+      "fact": "Die sieben Kernländer von OPEC+ beschlossen für September eine Quotenanhebung um rund 188.000 Barrel pro Tag. Damit ist der schrittweise Rückbau der freiwilligen Kürzung von 1,65 Mio. Barrel pro Tag abgeschlossen. Eine weitere Kürzungsschicht von rund 2 Mio. Barrel pro Tag bleibt bis Jahresende bestehen; die nächste Sitzung ist am 6. September.",
+      "estimate": "Die Quote ist nicht gleich exportierbares Öl. Wegen Golf-, Russland- und Kasachstan-Störungen blieben mehrere frühere Erhöhungen weitgehend auf dem Papier; OPEC+ veröffentlichte noch keine Q4-Strategie.",
+      "tailInference": "Bei einem Hormuz-Abkommen würde nicht nur geopolitische Prämie verschwinden: normalisierte Exporte träfen auf höhere Quoten und könnten einen realen Angebotsüberschuss erzeugen. Ohne sichere Routen bleibt der Beschluss dagegen bilanziell statt physisch.",
+      "admissionGate": {
+        "Freshness": true,
         "Evidence": true,
         "Materiality": true,
         "Causality": true,
@@ -279,166 +229,206 @@
       "scoreBreakdown": {
         "SourceQuality": 20,
         "Novelty": 13,
-        "ThesisRelevance": 18,
-        "ForecastImpact": 17,
-        "Falsifiability": 14,
+        "ThesisRelevance": 17,
+        "ForecastImpact": 18,
+        "Falsifiability": 15,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Behörden können Schwäche als saisonal darstellen; externe Analysten können den Abschwung überzeichnen.",
-        "alternative": "High-Tech, Equipment und Exporte können die Wirtschaft stabilisieren, bevor die breite Nachfrage nachzieht.",
-        "alreadyPriced": "Immobilien- und Konsumschwäche waren bekannt; neu ist die gleichzeitige Kontraktion von Manufacturing und Non-Manufacturing bei weiter expandierendem High-Tech-Sektor.",
-        "killCondition": "Der August-PMI steigt über 51, neue Aufträge über 52 und Consumer Manufacturing kehrt trotz unveränderter Kosten in Expansion zurück.",
-        "forecastChange": "Neu P-2026-08-02-05 – 70 Prozent; F-2026-08-02-02 wird als Zwei-Geschwindigkeiten-Falsifier eröffnet."
+        "sourceIncentive": "OPEC+ betont Marktstabilität und Flexibilität; Quoten können die tatsächlich verfügbare Förder- und Exportkapazität überzeichnen.",
+        "alternative": "Unterproduktion, Kompensationspflichten und Kriegsschäden verhindern einen Überschuss selbst bei höherer Quote.",
+        "alreadyPriced": "Eine September-Erhöhung wurde erwartet; neu sind Abschluss der 1,65-Mio.-bpd-Rückführung und fehlende Q4-Festlegung.",
+        "killCondition": "OPEC+ erhöht am 6. September die Q4-Quoten weiter oder tatsächliche Kernförderung bleibt im September mehr als 1 Mio. bpd unter Ziel.",
+        "forecastChange": "Neu P-2026-08-03-01 – 68 Prozent für eine Q4-Pause; Gegenfall 32 Prozent."
       },
       "sources": [
         {
-          "label": "Reuters – China July official PMI",
-          "url": "https://www.reuters.com/world/asia-pacific/chinas-factory-activity-unexpectedly-shrinks-july-2026-07-31/"
-        },
+          "label": "Reuters – OPEC+ agrees September oil hike",
+          "url": "https://www.reuters.com/business/energy/opec-has-agreement-principle-september-quota-increase-pause-thereafter-source-2026-08-02/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-03-05",
+      "rank": 5,
+      "priorityScore": 83,
+      "classification": "Falsifier",
+      "title": "Indien wird zum Anti-Konzentrations-Trade – nicht zum Anti-AI-Trade",
+      "fact": "Seit Mitte Juni stieg Indiens Leitindex um rund fünf Prozent, während die AI-lastigen Märkte Südkorea und Taiwan zurückfielen. Ausländische Investoren kauften in den ersten Juliwochen wieder 1,7 Mrd. US-Dollar indische Aktien. Zugleich sind über fünf Jahre große AI-Infrastrukturprogramme globaler Tech- und Kapitalanbieter in Indien angekündigt.",
+      "estimate": "Die Einordnung als Kapitalrotation ist Reuters-Kommentar, kein abgeschlossener Flow-Datensatz. Indien bleibt ölimportabhängig; Inflation, Monsun, Währung und Zinsen können den relativen Vorteil schnell umkehren.",
+      "tailInference": "Kapital flieht nicht zwingend aus AI, sondern aus AI-Konzentration und Hebelung. Indien bietet eine zweite Architektur: weniger börsennotiertes Chip-Beta, aber steigende reale Datacenter-, Strom-, Cooling- und Serverinvestitionen.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": "Qualified commentary with cited flow data",
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 15,
+        "Novelty": 14,
+        "ThesisRelevance": 17,
+        "ForecastImpact": 15,
+        "Falsifiability": 14,
+        "TimeSensitivity": 8
+      },
+      "redPencil": {
+        "sourceIncentive": "Der Autor vertritt eine Marktthese und kann kurzfristige relative Performance überinterpretieren.",
+        "alternative": "Die Bewegung kann primär aus Ölpreisen, Währungspolitik und heimischen Makrodaten stammen, nicht aus AI-Konzentrationssorgen.",
+        "alreadyPriced": "Indiens Datacenter-Pläne waren bekannt; neu ist die messbare relative Rotation seit Mitte Juni.",
+        "killCondition": "Indien underperformt Korea und Taiwan bis Monatsende deutlich oder ausländische Flows drehen im August erneut stark negativ.",
+        "forecastChange": "Neu P-2026-08-03-04 – 58 Prozent; Watchlist wegen Kommentarquelle und Non-Memory-Scope."
+      },
+      "sources": [
         {
-          "label": "AP – China factory activity contracts",
-          "url": "https://apnews.com/article/a9a5016ca01d4f65e0491ff5327c0a11"
+          "label": "Reuters Open Interest – Is India Asia's ultimate anti-AI trade?",
+          "url": "https://www.reuters.com/commentary/reuters-open-interest/is-india-asias-ultimate-anti-ai-trade-raychaudhuri-2026-08-02/"
         }
       ]
     }
   ],
   "predictionLogUpdates": [
     {
-      "id": "P-2026-08-02-01",
-      "status": "new",
-      "forecast": "Südkoreas August-Halbleiterexporte übersteigen 35 Mrd. US-Dollar und Computerexporte wachsen weiter um mindestens 200 Prozent gegenüber dem Vorjahr.",
-      "confidence": 78,
-      "previousConfidence": null,
-      "nextReview": "2026-09-01",
-      "history": "Erstellt 02.08. nach Juli-Exporten: Halbleiter +179 Prozent, Computer +404 Prozent.",
-      "redPencil": "Preis- und Basiseffekte können die Exportwerte stärker treiben als reale Bit- und Stückmengen.",
-      "killCondition": "Halbleiterexporte unter 35 Mrd. US-Dollar oder Computerwachstum unter 200 Prozent."
+      "id": "P-2026-08-02-04",
+      "status": "updated",
+      "forecast": "Die USA führen bis 9. August keine neue großflächige Angriffswelle gegen Iran durch; bis 15. August wird ein dokumentierter Rahmen für die Wiederöffnung von Hormuz veröffentlicht.",
+      "confidence": 68,
+      "previousConfidence": 58,
+      "nextReview": "2026-08-09",
+      "history": "Creation Confidence 58 Prozent vom 02.08. unverändert gespeichert. Am 03.08. auf 68 Prozent aktualisiert, nachdem Trump einen neuen Angriff ausdrücklich zurückhielt und Brent unter 84 US-Dollar fiel.",
+      "redPencil": "Die beiden Teilbedingungen bleiben gekoppelt: Keine neue Angriffswelle ist wahrscheinlicher geworden, ein belastbarer Hormuz-Rahmen ist weiterhin nicht veröffentlicht. Drei weitere Tankerangriffe halten den Gegenfall bei 32 Prozent.",
+      "killCondition": "Neue großflächige US-Angriffe vor 9. August oder kein dokumentierter Hormuz-Rahmen bis 15. August."
     },
     {
-      "id": "P-2026-08-02-02",
+      "id": "P-2026-08-03-01",
       "status": "new",
-      "forecast": "Die EU wählt bis Ende Q2 2027 mindestens fünf AI-Gigafactory-Konsortien aus; mindestens eine Anlage erreicht bis Ende 2027 einen bindenden Finanzierungs- oder Baustart-Meilenstein.",
-      "confidence": 70,
+      "forecast": "OPEC+ pausiert auf der Sitzung am 6. September weitere Quotenanhebungen für das vierte Quartal 2026.",
+      "confidence": 68,
       "previousConfidence": null,
-      "nextReview": "2026-11-12",
-      "history": "Erstellt 02.08. als Late Admission nach dem formalen EU-Aufruf für sieben Standorte.",
-      "redPencil": "Öffentliche Zusagen können fragmentieren; Energiepreise und Nicht-EU-Chipabhängigkeit können Projekte verkleinern.",
-      "killCondition": "Weniger als fünf Auswahlentscheidungen bis Q2 2027 oder kein bindender Meilenstein bis Ende 2027."
+      "nextReview": "2026-09-06",
+      "history": "Erstellt 03.08. nach Abschluss der 1,65-Mio.-bpd-Rückführung und ohne Q4-Aussage im August-Statement.",
+      "redPencil": "Ein dauerhaftes Hormuz-Abkommen oder Mitgliederdruck für höhere Baselines könnte weitere Anhebungen auslösen.",
+      "killCondition": "OPEC+ beschließt am 6. September eine weitere Q4-Erhöhung."
     },
     {
-      "id": "P-2026-08-02-03",
-      "status": "new",
-      "forecast": "Paducah erreicht bis Ende Q2 2027 definitive Lease-, Power- oder Ankermieterverträge und hält einen Scope von mindestens 600 MW Compute.",
+      "id": "P-2026-08-03-02",
+      "status": "new_watchlist",
+      "forecast": "Das Vermögen gehebelter Korea-ETFs bleibt bis 31. August unter 25 Mrd. US-Dollar; ausländische Anleger sind im August netto Käufer südkoreanischer Aktien.",
       "confidence": 64,
       "previousConfidence": null,
-      "nextReview": "2026-12-31",
-      "history": "Erstellt 02.08. als Late Admission nach Brookfield-/NextEra-Ankündigung.",
-      "redPencil": "100 Mrd. US-Dollar sind ein Maximalrahmen; Kunde, Genehmigung und Projektfinanzierung fehlen.",
-      "killCondition": "Kein definitiver Vertrag bis Q2 2027 oder Scope unter 600 MW."
+      "nextReview": "2026-08-31",
+      "history": "Erstellt 03.08. nach Rekordkauf von 7,2 Billionen Won und ETF-AUM-Rückgang von 50 auf 17 Mrd. US-Dollar.",
+      "redPencil": "Ein einzelner Rekordtag kann Short-Covering sein; erneute Volatilität kann Hebelprodukte und Abflüsse zurückbringen.",
+      "killCondition": "ETF-AUM über 25 Mrd. US-Dollar oder ausländische August-Flows netto negativ."
     },
     {
-      "id": "P-2026-08-02-04",
+      "id": "P-2026-08-03-03",
       "status": "new",
-      "forecast": "Die USA führen bis 9. August keine neue großflächige Angriffswelle gegen Iran durch; bis 15. August wird ein dokumentierter Rahmen für die Wiederöffnung von Hormuz veröffentlicht.",
+      "forecast": "Sony erreicht im Kumamoto-Halbleiterwerk bis 15. August wieder das Vorkrisenniveau und Renesas beginnt den angekündigten phasenweisen Neustart spätestens am 5. August.",
+      "confidence": 76,
+      "previousConfidence": null,
+      "nextReview": "2026-08-15",
+      "history": "Erstellt 03.08. als Late Admission mit den von den Unternehmen genannten Wiederanlaufzielen.",
+      "redPencil": "Nachbeben, Kalibrierung, Wasser- und Zulieferprobleme können nominalen Neustart und normalen Output auseinanderziehen.",
+      "killCondition": "Einer der beiden veröffentlichten Wiederanlauf-Meilensteine wird verfehlt."
+    },
+    {
+      "id": "P-2026-08-03-04",
+      "status": "new_watchlist",
+      "forecast": "Indiens Leitindex outperformt bis 31. August einen gleichgewichteten Korb aus Südkoreas KOSPI und Taiwans TAIEX.",
       "confidence": 58,
       "previousConfidence": null,
-      "nextReview": "2026-08-09",
-      "history": "Erstellt 02.08. nach ausdrücklicher US-Angriffspause unter Verhandlungsbedingung.",
-      "redPencil": "Die Pause kann taktisch sein; Drohnen- und maritime Zwischenfälle laufen weiter.",
-      "killCondition": "Neue großflächige US-Angriffe vor 9. August oder kein dokumentierter Rahmen bis 15. August."
-    },
-    {
-      "id": "P-2026-08-02-05",
-      "status": "new",
-      "forecast": "Chinas offizieller Manufacturing PMI bleibt im August unter 50, während High-Tech- und Equipment-Manufacturing in Expansion bleiben.",
-      "confidence": 70,
-      "previousConfidence": null,
       "nextReview": "2026-08-31",
-      "history": "Erstellt 02.08. nach Juli-PMI 49,2 und bestätigter Zwei-Geschwindigkeiten-Struktur.",
-      "redPencil": "Fiskalimpuls, Saison und Wiederaufbau nach Wetterstörungen können den August rasch über 50 heben.",
-      "killCondition": "Manufacturing PMI mindestens 50,5 oder High-Tech-/Equipment-Gauges fallen ebenfalls in Kontraktion."
+      "history": "Erstellt 03.08. nach der seit Mitte Juni sichtbaren Rotation aus AI-Konzentration.",
+      "redPencil": "Öl-, Währungs- und Makrofaktoren können die relative Performance stärker bestimmen als AI-Positionierung.",
+      "killCondition": "Indien underperformt den Korea-/Taiwan-Korb bis 31. August."
     }
   ],
   "falsifierUpdates": [
     {
-      "id": "F-2026-08-02-01",
+      "id": "F-2026-08-03-01",
       "status": "new_active",
-      "claim": "Diplomatie kann Luftkrieg und maritimen Energie-Schock zeitweise entkoppeln.",
-      "update": "Die USA verschieben eine neue Angriffswelle, während Hormuz, Drohnen und maritime Zwischenfälle weiter belastet bleiben.",
+      "claim": "Ein sinkender Luftkriegs-Tail kann Ölpreise schnell entlasten, obwohl maritime Angriffe und reduzierte Hormuz-Verkehre fortbestehen.",
+      "update": "Brent fällt nach dem zurückgehaltenen US-Angriff um mehr als fünf Prozent, während drei neue Tankerangriffe und verlangsamter Hormuz-Verkehr gemeldet werden.",
       "nextReview": "2026-08-09"
     },
     {
-      "id": "F-2026-08-02-02",
-      "status": "new_active",
-      "claim": "AI- und High-Tech-Exportstärke garantiert keine breite chinesische Industriekonjunktur.",
-      "update": "Manufacturing und Non-Manufacturing kontrahieren, obwohl High-Tech und Equipment expandieren.",
+      "id": "F-2026-08-01-01",
+      "status": "active_refined",
+      "claim": "AI-Aktien-Deleveraging ist nicht gleich operative AI- oder Memory-Nachfrageschwäche.",
+      "update": "Rekordkäufe ausländischer Investoren und deutlich abgebautes ETF-/Hedgefonds-Leverage stützen die technische statt operative Erklärung.",
       "nextReview": "2026-08-31"
     },
     {
-      "id": "F-2026-07-20-02",
-      "status": "active_strengthened",
-      "claim": "Hohe Preise und Kapazitätsausbau können spätere Nachfragezerstörung und Oversupply auslösen.",
-      "update": "Koreanische Exportstärke bestätigt die aktuelle Knappheit; Chinas breite Nachfrageschwäche und Client-Druck halten den späteren Falsifier aktiv.",
-      "nextReview": "2026-09-01"
+      "id": "F-2026-08-03-02",
+      "status": "new_active",
+      "claim": "Kapital kann aus AI-Konzentration rotieren und dennoch reale AI-Infrastruktur in anderen Märkten finanzieren.",
+      "update": "Indien outperformt kurzfristig trotz geringer börsennotierter Chipexponierung und gleichzeitig wachsender Datacenter-Investitionen.",
+      "nextReview": "2026-08-31"
     }
   ],
   "auditTrailAdditions": [
     {
-      "date": "2026-08-02",
-      "type": "Primary and official data promotion",
-      "item": "Südkoreanische Handelsdaten, EU-Programmparameter und chinesischer offizieller PMI wurden mit Reuters/AP beziehungsweise EU-Quellen gegengeprüft.",
-      "action": "Fakt, Schätzung und TAIL-Inferenz getrennt; Kill-Kriterien gesetzt."
+      "date": "2026-08-03",
+      "type": "Forecast update without history overwrite",
+      "item": "P-2026-08-02-04 von 58 auf 68 Prozent aktualisiert.",
+      "action": "Creation Confidence 58 Prozent bleibt unveränderlich; neue Confidence, Gegenfall 32 Prozent, Trigger und Reviewdatum separat gespeichert."
     },
     {
-      "date": "2026-08-02",
+      "date": "2026-08-03",
       "type": "Late admission / process miss",
-      "item": "EU-AI-Gigafactory-Aufruf und Paducah-Campus wurden vor dem heutigen Lauf veröffentlicht, aber nicht in den vorherigen Top-5 aufgenommen.",
-      "action": "Mit Originaldatum im Quellen- und History-Kontext nachgetragen; keine rückwirkende Erfindung eines früheren Forecasts."
+      "item": "Kumamoto-Erdbeben und Halbleiter-Wiederanlaufziele wurden vor dem heutigen Cutoff veröffentlicht, aber in den Läufen 31.07.–02.08. nicht aufgenommen.",
+      "action": "Mit Originaldatum, Prozess-Miss und ohne rückwirkend erfundenen Forecast nachgetragen."
     },
     {
-      "date": "2026-08-02",
+      "date": "2026-08-03",
+      "type": "Correlation and scope control",
+      "item": "Iran-Diplomatie und OPEC+-Quote liegen im selben Energiecluster; Korea- und Indien-Prognosen sind Non-Memory-Marktrisiken.",
+      "action": "Keine doppelte unabhängige Gewichtung; Marktprognosen auf Watchlist, Energiecluster im aktiven Buch begrenzt."
+    },
+    {
+      "date": "2026-08-03",
       "type": "No direct NAND/eSSD price trigger",
-      "item": "Koreanische Computerexporte bestätigen Storage-Nachfrage aggregiert, trennen aber Enterprise SSD, NAND-Preise und Stückzahlen nicht sauber.",
-      "action": "Direkte NAND- und Enterprise-SSD-Preisprognosen unverändert erhalten."
+      "item": "Seit dem vorherigen Lauf erschien kein neuer unabhängiger NAND- oder Enterprise-SSD-Preis-, Shipment- oder Supply-Datensatz.",
+      "action": "Direkte NAND- und Enterprise-SSD-Forecasts unverändert erhalten; FMS ab 4. August nur als Catalyst, nicht als Signal."
     }
   ],
   "runHistoryAdditions": [
     {
-      "date": "2026-08-02",
-      "pulse": 84,
-      "confidence": 99,
-      "note": "Koreanische Exporte bestätigen den physischen AI-/Memory-Zyklus; EU und Paducah verbreitern Sovereign/Federal Compute. Iran-Diplomatie entlastet den Eskalationspfad, China bleibt zweigeteilt."
+      "date": "2026-08-03",
+      "pulse": 83,
+      "confidence": 98,
+      "note": "Iran-Diplomatie und OPEC+ senken den Energie-Tail; Korea trennt Leverage von Memory-Fundamentals. Kumamoto und Indien erhöhen Supply-Chain- beziehungsweise Konzentrationssichtbarkeit."
     }
   ],
   "nextCatalysts": [
     {
-      "date": "2026-08-02",
-      "event": "OPEC+-Entscheidung zu September-Förderquoten"
+      "date": "2026-08-04",
+      "event": "FMS Future of Memory and Storage: NAND-, SSD-, CXL- und AI-Storage-Ankündigungen"
+    },
+    {
+      "date": "2026-08-05",
+      "event": "Renesas geplanter phasenweiser Kumamoto-Wiederanlauf"
     },
     {
       "date": "2026-08-09",
-      "event": "US-Iran-Angriffspause und Verhandlungsfortschritt"
+      "event": "US-Iran-Angriffspause und P-2026-08-02-04 Zwischenprüfung"
     },
     {
       "date": "2026-08-15",
-      "event": "Messbare Hormuz-Wiederöffnung und Energieflüsse"
+      "event": "Hormuz-Rahmen sowie Sony-/Kumamoto-Normalisierung"
     },
     {
       "date": "2026-08-31",
-      "event": "China August-PMI und High-Tech-versus-Breite-Divergenz"
+      "event": "Korea-Leverage, Indien-Rotation und China August-PMI"
     },
     {
       "date": "2026-09-01",
-      "event": "Südkorea August-Exporte: Halbleiter, Computer und Memory-Preiswirkung"
+      "event": "Südkorea August-Exporte: Halbleiter, Computer und Memory"
     },
     {
-      "date": "2026-11-12",
-      "event": "EU-AI-Gigafactory-Angebotsfrist"
-    },
-    {
-      "date": "2026-12-31",
-      "event": "Paducah: definitive Verträge, Ankermieter und Energiepfad"
+      "date": "2026-09-06",
+      "event": "OPEC+-Entscheidung für das vierte Quartal"
     }
   ],
   "historyPolicy": "Forecasts, Creation Confidence, spätere Confidence-Änderungen, Falsifier, Treffer, Misses, Quarantänefälle und Late Admissions bleiben sichtbar. Kein Miss wird gelöscht oder rückwirkend als Treffer umklassifiziert."
