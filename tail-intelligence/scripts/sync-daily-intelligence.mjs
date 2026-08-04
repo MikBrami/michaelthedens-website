@@ -13,6 +13,7 @@ const now = new Date().toISOString();
 const hash = (value) => crypto.createHash('sha256').update(value).digest('hex').slice(0, 20);
 const normalize = (value = '') => String(value).replace(/\s+/g, ' ').trim();
 const unique = (values) => [...new Set(values.filter(Boolean))];
+const escapeRegExp = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 async function readJson(url, fallback) {
   try {
@@ -77,6 +78,11 @@ function inferMarkets(signal) {
   return unique(markets.length ? markets : ['ai_infrastructure']);
 }
 
+function containsCompany(text, company) {
+  const pattern = escapeRegExp(company.toLowerCase()).replace(/\\ /g, '\\s+');
+  return new RegExp(`(^|[^a-z0-9])${pattern}([^a-z0-9]|$)`, 'i').test(text);
+}
+
 function inferCompanies(signal) {
   const text = textFor(signal);
   const companies = [
@@ -84,7 +90,7 @@ function inferCompanies(signal) {
     'Microsoft', 'Meta', 'Anthropic', 'Google', 'Amazon', 'AWS', 'Oracle', 'AMD',
     'Intel', 'Kioxia', 'Sandisk', 'ZTE', '3M', 'Noetra'
   ];
-  return companies.filter((company) => text.includes(company.toLowerCase()));
+  return companies.filter((company) => containsCompany(text, company));
 }
 
 function inferSignal(signal) {
