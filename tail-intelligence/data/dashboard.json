@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-08-03",
+  "dataAsOf": "2026-08-04",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-08-04T00:16:03.590Z",
-  "lastForecastRun": "2026-08-04T00:16:03.590Z",
-  "newlyProcessedArticles": 0,
-  "totalArticles": 83,
-  "articleCount": 83,
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-08-04T07:07:49.743Z",
+  "lastForecastRun": "2026-08-04T07:07:49.743Z",
+  "newlyProcessedArticles": 1,
+  "totalArticles": 88,
+  "articleCount": 88,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,7 +32,7 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 86,
+    "forecastLedgerCount": 90,
     "resolvedForecasts": 4,
     "activeForecasts": 44,
     "scopeGateStatus": "active",
@@ -42,9 +42,9 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-04T00:16:00.736Z",
-    "newItems": 0,
-    "totalItems": 77,
+    "updatedAt": "2026-08-04T07:07:46.678Z",
+    "newItems": 1,
+    "totalItems": 78,
     "duplicateItems": 200,
     "relevantItems": 2,
     "sourceErrors": []
@@ -56,13 +56,13 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "83 Artikel · Datenstand 2026-08-03"
+        "detail": "88 Artikel · Datenstand 2026-08-04"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "77 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
+        "detail": "78 Inbox-Items · 200 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -86,21 +86,21 @@
       "label": "Server DRAM",
       "score": 83,
       "status": "red",
-      "signals": 8
+      "signals": 9
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 24
+      "signals": 25
     },
     {
       "id": "hbm",
       "label": "HBM",
       "score": 80,
       "status": "orange",
-      "signals": 16
+      "signals": 19
     },
     {
       "id": "enterprise_ssd",
@@ -114,7 +114,14 @@
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 60
+      "signals": 62
+    },
+    {
+      "id": "semiconductors",
+      "label": "Semiconductors",
+      "score": 72,
+      "status": "orange",
+      "signals": 21
     },
     {
       "id": "nand",
@@ -124,18 +131,11 @@
       "signals": 6
     },
     {
-      "id": "semiconductors",
-      "label": "Semiconductors",
-      "score": 71,
-      "status": "orange",
-      "signals": 19
-    },
-    {
       "id": "supply_chain",
       "label": "Supply Chain",
       "score": 68,
       "status": "orange",
-      "signals": 20
+      "signals": 22
     }
   ],
   "manufacturers": [
@@ -167,7 +167,7 @@
     {
       "name": "Intel",
       "score": 74,
-      "mentions": 2
+      "mentions": 3
     },
     {
       "name": "TSMC",
@@ -182,7 +182,7 @@
     {
       "name": "Anthropic",
       "score": 72,
-      "mentions": 2
+      "mentions": 3
     },
     {
       "name": "Amazon",
@@ -246,6 +246,7 @@
         "S-2026-07-25-01",
         "S-2026-08-02-01",
         "S-2026-07-28-04",
+        "S-2026-08-04-01",
         "S-2026-07-25-02",
         "S-2026-07-30-01",
         "S-2026-07-30-02",
@@ -262,7 +263,7 @@
         "S-2026-08-01-05",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-08-04T00:16:03.590Z"
+      "lastUpdated": "2026-08-04T07:07:49.743Z"
     },
     {
       "id": "hbm",
@@ -270,7 +271,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 80,
-      "confidenceScore": 88,
+      "confidenceScore": 89,
       "horizon": "2026–2028",
       "direction": "up",
       "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
@@ -315,11 +316,14 @@
         "tail-2026-07-14-nvidia-skhynix-hbm4",
         "tail-2026-07-14-hbm4-cost",
         "S-2026-07-31-01",
+        "S-2026-08-04-02",
         "S-2026-07-24-03",
         "S-2026-08-02-02",
         "S-2026-07-25-01",
         "S-2026-07-28-04",
+        "S-2026-08-04-01",
         "S-2026-07-25-02",
+        "S-2026-08-04-04",
         "S-2026-07-30-01",
         "S-2026-07-30-02",
         "S-2026-08-01-01",
@@ -327,7 +331,7 @@
         "S-2026-07-23-03",
         "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-08-04T00:16:03.590Z"
+      "lastUpdated": "2026-08-04T07:07:49.743Z"
     },
     {
       "id": "nand",
@@ -382,7 +386,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-04T00:16:03.590Z"
+      "lastUpdated": "2026-08-04T07:07:49.743Z"
     },
     {
       "id": "enterprise_ssd",
@@ -439,7 +443,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-04T00:16:03.590Z"
+      "lastUpdated": "2026-08-04T07:07:49.743Z"
     },
     {
       "id": "ai_infrastructure",
@@ -477,12 +481,12 @@
           "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
         },
         {
-          "id": "S-2026-07-22-05",
-          "date": "2026-07-22",
-          "title": "Oracle-Collateral macht Credit Rating zum Datacenter-Supply-Constraint",
-          "signal": "Supply-Engpass",
-          "score": 71,
-          "summary": "Oracle könnte für den geplanten Wisconsin-AI-Campus mehr als 7 Mrd. US-Dollar Sicherheiten stellen müssen; die jährlichen Finanzierungskosten werden auf über 100 Mio. US-Dollar geschätzt. Wisconsin verlangt bei sehr großen Stromkunden unterhalb definierter Credit-Schwellen finanzielle Garantien für speziell errichtete Erzeugungs- und Netzinfrastruktur."
+          "id": "S-2026-08-04-02",
+          "date": "2026-08-04",
+          "title": "Google macht TPUs zu einem kreditgestützten Infrastrukturprodukt für Anthropic",
+          "signal": "Nachfrageimpuls",
+          "score": 72,
+          "summary": "Die Financial Times beschreibt ein Finanzierungsnetz von rund 200 Mrd. US-Dollar aus TPUs, Leases, Garantien, SPVs und Private Credit. Google soll mindestens 44 Mrd. US-Dollar Lease-Verpflichtungen abgesichert und mehr als 2,4 GW ermöglicht haben. Primärquellen bestätigen mehrere Gigawatt Anthropic-TPU-Kapazität, eine 35-Mrd.-US-Dollar Apollo/Broadcom/Blackstone-Plattform und 500 MW Google/Blackstone TPU-Cloud."
         }
       ],
       "counterSignals": [
@@ -509,6 +513,7 @@
         "tail-2026-07-14-nvidia-skhynix-hbm4",
         "S-2026-07-24-04",
         "S-2026-07-31-01",
+        "S-2026-08-04-02",
         "S-2026-07-22-05",
         "S-2026-07-29-02",
         "S-2026-07-31-02",
@@ -521,6 +526,7 @@
         "S-2026-07-28-04",
         "S-2026-07-22-01",
         "S-2026-07-26-02",
+        "S-2026-08-04-04",
         "S-2026-07-20-01",
         "S-2026-07-21-03",
         "S-2026-07-22-04",
@@ -567,10 +573,10 @@
         "S-2026-07-28-03",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-08-04T00:16:03.590Z"
+      "lastUpdated": "2026-08-04T07:07:49.743Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 83 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 88 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
