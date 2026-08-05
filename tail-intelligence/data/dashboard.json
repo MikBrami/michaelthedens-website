@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-08-04",
+  "dataAsOf": "2026-08-05",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-08-05T00:15:25.732Z",
-  "lastForecastRun": "2026-08-05T00:15:25.732Z",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-08-05T06:17:30.682Z",
+  "lastForecastRun": "2026-08-05T06:17:30.682Z",
   "newlyProcessedArticles": 0,
-  "totalArticles": 88,
-  "articleCount": 88,
+  "totalArticles": 93,
+  "articleCount": 93,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,7 +32,7 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 90,
+    "forecastLedgerCount": 92,
     "resolvedForecasts": 4,
     "activeForecasts": 44,
     "scopeGateStatus": "active",
@@ -42,7 +42,7 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-05T00:15:23.684Z",
+    "updatedAt": "2026-08-05T06:17:28.657Z",
     "newItems": 0,
     "totalItems": 82,
     "duplicateItems": 200,
@@ -56,7 +56,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "88 Artikel · Datenstand 2026-08-04"
+        "detail": "93 Artikel · Datenstand 2026-08-05"
       },
       {
         "id": "inbox",
@@ -93,14 +93,14 @@
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 25
+      "signals": 26
     },
     {
       "id": "hbm",
       "label": "HBM",
       "score": 80,
       "status": "orange",
-      "signals": 19
+      "signals": 20
     },
     {
       "id": "enterprise_ssd",
@@ -110,39 +110,39 @@
       "signals": 8
     },
     {
+      "id": "nand",
+      "label": "NAND",
+      "score": 73,
+      "status": "orange",
+      "signals": 7
+    },
+    {
       "id": "ai_infrastructure",
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 62
+      "signals": 65
     },
     {
       "id": "semiconductors",
       "label": "Semiconductors",
       "score": 72,
       "status": "orange",
-      "signals": 21
-    },
-    {
-      "id": "nand",
-      "label": "NAND",
-      "score": 72,
-      "status": "orange",
-      "signals": 6
+      "signals": 22
     },
     {
       "id": "supply_chain",
       "label": "Supply Chain",
       "score": 68,
       "status": "orange",
-      "signals": 22
+      "signals": 23
     }
   ],
   "manufacturers": [
     {
       "name": "Samsung",
       "score": 82,
-      "mentions": 9
+      "mentions": 10
     },
     {
       "name": "SK hynix",
@@ -157,7 +157,7 @@
     {
       "name": "Meta",
       "score": 76,
-      "mentions": 3
+      "mentions": 4
     },
     {
       "name": "Sandisk",
@@ -187,7 +187,7 @@
     {
       "name": "Amazon",
       "score": 72,
-      "mentions": 2
+      "mentions": 3
     }
   ],
   "forecasts": [
@@ -227,12 +227,12 @@
           "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
         },
         {
-          "id": "S-2026-08-02-02",
-          "date": "2026-08-02",
-          "title": "EU eröffnet sieben AI-Gigafactories mit mehr als 30 Mrd. Euro öffentlichem und privatem Kapital",
+          "id": "S-2026-08-05-01",
+          "date": "2026-08-05",
+          "title": "Samsung verschiebt NAND und gestapelte Memory-Architekturen näher an den AI-Accelerator",
           "signal": "Nachfrageimpuls",
-          "score": 71,
-          "summary": "Die EU bietet bis zu 10 Mrd. Euro öffentliche Finanzierung für sieben AI-Gigafactories und will damit weitere 20 Mrd. Euro privates Kapital mobilisieren. Jede Anlage soll mindestens 100.000 moderne AI-Prozessoren bündeln; Unternehmen können nun Gebote für die Standorte abgeben."
+          "score": 72,
+          "summary": "Samsung stellte auf der FMS 2026 V10 Bonding V-NAND mit mehr als 400 Layern und Wafer-Bonding vor. Nach Unternehmensangaben steigt die Speicherdichte gegenüber V9 um 58 Prozent. Zusätzlich zeigte Samsung Konzeptarchitekturen für zHBM und zNAND-O, die Memory beziehungsweise NAND vertikal näher über dem AI-Accelerator integrieren sollen."
         }
       ],
       "counterSignals": [],
@@ -240,6 +240,7 @@
         "tail-2026-07-14-server-dram",
         "S-2026-07-24-04",
         "S-2026-07-31-01",
+        "S-2026-08-05-01",
         "S-2026-08-02-02",
         "tail-2026-07-14-dram-prices",
         "S-2026-07-23-01",
@@ -263,7 +264,7 @@
         "S-2026-08-01-05",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-08-05T00:15:25.732Z"
+      "lastUpdated": "2026-08-05T06:17:30.682Z"
     },
     {
       "id": "hbm",
@@ -317,6 +318,7 @@
         "tail-2026-07-14-hbm4-cost",
         "S-2026-07-31-01",
         "S-2026-08-04-02",
+        "S-2026-08-05-01",
         "S-2026-07-24-03",
         "S-2026-08-02-02",
         "S-2026-07-25-01",
@@ -331,7 +333,7 @@
         "S-2026-07-23-03",
         "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-08-05T00:15:25.732Z"
+      "lastUpdated": "2026-08-05T06:17:30.682Z"
     },
     {
       "id": "nand",
@@ -339,7 +341,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 72,
-      "confidenceScore": 84,
+      "confidenceScore": 85,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
@@ -351,6 +353,14 @@
           "signal": "Kapazitätsbindung",
           "score": 78,
           "summary": "Mehrjährige Abnahmevereinbarungen binden Kapazitäten und teilen den Markt zunehmend in strategisch versorgte und ungeschützte Käufer."
+        },
+        {
+          "id": "S-2026-08-05-01",
+          "date": "2026-08-05",
+          "title": "Samsung verschiebt NAND und gestapelte Memory-Architekturen näher an den AI-Accelerator",
+          "signal": "Nachfrageimpuls",
+          "score": 72,
+          "summary": "Samsung stellte auf der FMS 2026 V10 Bonding V-NAND mit mehr als 400 Layern und Wafer-Bonding vor. Nach Unternehmensangaben steigt die Speicherdichte gegenüber V9 um 58 Prozent. Zusätzlich zeigte Samsung Konzeptarchitekturen für zHBM und zNAND-O, die Memory beziehungsweise NAND vertikal näher über dem AI-Accelerator integrieren sollen."
         },
         {
           "id": "S-2026-07-30-02",
@@ -367,26 +377,19 @@
           "signal": "Geopolitische Entkopplung",
           "score": 65,
           "summary": "Apple meldete 109,4 Mrd. US-Dollar Umsatz (+16 %) und 50,1 % Bruttomarge; etwa zwei Margenpunkte kamen aus Zollerstattungen. Für das Septemberquartal erwartet Apple nur 9–11 % Wachstum. Tim Cook nannte erhebliche Supply-Constraints, Advanced-Chip-Fertigung als Hauptengpass und die Prüfung alternativer Memory-Lieferanten; Mac- und iPad-Preise wurden bereits erhöht."
-        },
-        {
-          "id": "tail-2026-07-14-nand-essd",
-          "date": "2026-07-14",
-          "title": "NAND und Enterprise SSD zeigen festere Preis- und Nachfrageindikatoren",
-          "signal": "Preisdruck aufwärts",
-          "score": 59,
-          "summary": "AI-Datenpipelines, Nearline- und Enterprise-Storage-Nachfrage treffen auf disziplinierte NAND-Auslastung."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
+        "S-2026-08-05-01",
         "S-2026-07-30-02",
         "S-2026-07-31-03",
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-05T00:15:25.732Z"
+      "lastUpdated": "2026-08-05T06:17:30.682Z"
     },
     {
       "id": "enterprise_ssd",
@@ -443,7 +446,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-05T00:15:25.732Z"
+      "lastUpdated": "2026-08-05T06:17:30.682Z"
     },
     {
       "id": "ai_infrastructure",
@@ -521,6 +524,7 @@
         "S-2026-07-23-01",
         "S-2026-07-25-01",
         "S-2026-08-02-01",
+        "S-2026-08-05-02",
         "S-2026-07-22-03",
         "S-2026-07-23-02",
         "S-2026-07-28-04",
@@ -539,12 +543,14 @@
         "S-2026-08-01-01",
         "S-2026-07-23-03",
         "S-2026-07-30-03",
+        "S-2026-08-05-04",
         "S-2026-07-19-01",
         "S-2026-07-26-01",
         "S-2026-07-28-05",
         "S-2026-08-03-01",
         "S-2026-07-19-02",
         "S-2026-08-01-04",
+        "S-2026-08-05-03",
         "S-2026-08-03-02",
         "S-2026-07-21-05",
         "S-2026-07-23-04",
@@ -573,10 +579,10 @@
         "S-2026-07-28-03",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-08-05T00:15:25.732Z"
+      "lastUpdated": "2026-08-05T06:17:30.682Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 88 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 93 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
