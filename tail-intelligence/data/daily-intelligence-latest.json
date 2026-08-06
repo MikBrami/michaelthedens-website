@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-05T08:10:50+02:00",
-  "previousRun": "2026-08-04",
+  "updatedAt": "2026-08-06T08:32:21+02:00",
+  "previousRun": "2026-08-05",
   "executivePulse": {
-    "current": 87,
-    "previous": 85,
+    "current": 89,
+    "previous": 87,
     "status": "orange",
-    "interpretation": "FMS verschiebt NAND und künftige Memory-Architekturen sichtbar näher an den Accelerator. Gleichzeitig wächst der nicht bilanzierte Lease- und Kredit-Tail des AI-Build-outs; Optik wird zum geopolitischen Chokepoint, während ein konkreter Hormuz-Übergangsplan den unmittelbaren Energie-Tail etwas senkt."
+    "interpretation": "Sandisk macht aus knapper NAND-Kapazität einen mehrjährigen Vertragsmarkt, während HBF erstmals eine konkrete offene Spezifikation erhält. Gleichzeitig beschleunigen US-Restriktionen die Prüfung chinesischer Fab-Tools; bei Hormuz steigt die Deal-Wahrscheinlichkeit, aber auch der Vergeltungs-Tail."
   },
   "confidence": {
     "current": 97,
-    "previous": 98,
-    "interpretation": "Samsung und die Big-Tech-Lease-Daten sind durch Unternehmensangaben beziehungsweise SEC-Filings gestützt. Der FCC-Plan und Teile der Hormuz-Verhandlungen beruhen auf Reuters-Quellen und bleiben deshalb unter Voll-Confidence."
+    "previous": 97,
+    "interpretation": "Sandisk-Zahlen, HBF-Standardisierung und Iran-Oman-Koordinaten sind durch Unternehmensangaben beziehungsweise offizielle Stellen gestützt. Die AMEC-Evaluierung beruht auf Reuters-Quellen und wird von Samsung und SK hynix bestritten."
   },
   "riskPressure": {
     "current": 100,
-    "previous": 98
+    "previous": 100
   },
-  "momentum": "NAND- und Memory-Centric-Architekturen beschleunigen · Off-Balance-Sheet-Leases und Credit Risk steigen · Optische Lieferketten fragmentieren · Der kurzfristige Ölpreis-Tail fällt, die maritime Kontrolle bleibt umkämpft",
+  "momentum": "NAND-Kapazität wird langfristig gebunden · HBF wird vom Konzept zur spezifizierten Memory-Schicht · Private Capital bleibt für skalierbare AI-Infrastruktur verfügbar · Exportkontrollen fördern chinesische Equipment-Substitution · Hormuz-Diplomatie schreitet voran, der regionale Energie-Tail bleibt hoch",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -45,39 +45,44 @@
       "delta": 0
     },
     {
+      "name": "NAND Contracting / Capacity Lock",
+      "score": 100,
+      "delta": 18
+    },
+    {
       "name": "NAND / Memory-Centric Architecture",
       "score": 100,
-      "delta": 16
+      "delta": 0
     },
     {
       "name": "AI Infrastructure Financing / Lease Exposure",
       "score": 100,
-      "delta": 10
+      "delta": 0
     },
     {
-      "name": "Credit- und Leverage-Risk",
+      "name": "Private Capital Availability",
       "score": 100,
       "delta": 12
     },
     {
-      "name": "Optical Supply-Chain Fragmentation",
-      "score": 98,
-      "delta": 18
+      "name": "China WFE Substitution",
+      "score": 96,
+      "delta": 20
     },
     {
       "name": "Geopolitik & Logistik",
-      "score": 95,
-      "delta": -2
+      "score": 94,
+      "delta": -1
     },
     {
       "name": "Energy Price Tail",
-      "score": 77,
-      "delta": -9
+      "score": 80,
+      "delta": 3
     },
     {
       "name": "Physical Oil-Flow Resilience",
-      "score": 84,
-      "delta": 0
+      "score": 82,
+      "delta": -2
     },
     {
       "name": "Capital- & Execution Risk",
@@ -87,14 +92,14 @@
   ],
   "acceptedSignals": [
     {
-      "id": "S-2026-08-05-01",
+      "id": "S-2026-08-06-01",
       "rank": 1,
       "priorityScore": 100,
       "classification": "Architecture Update",
-      "title": "Samsung verschiebt NAND und gestapelte Memory-Architekturen näher an den AI-Accelerator",
-      "fact": "Samsung stellte auf der FMS 2026 V10 Bonding V-NAND mit mehr als 400 Layern und Wafer-Bonding vor. Nach Unternehmensangaben steigt die Speicherdichte gegenüber V9 um 58 Prozent. Zusätzlich zeigte Samsung Konzeptarchitekturen für zHBM und zNAND-O, die Memory beziehungsweise NAND vertikal näher über dem AI-Accelerator integrieren sollen.",
-      "estimate": "V10 ist ein angekündigter Technologieknoten; zHBM und zNAND-O sind Konzeptarchitekturen. Yield, Kosten, thermische Integration, Kundenqualifikation und Produktionszeitpunkt sind nicht vollständig belegt.",
-      "tailInference": "Die Memory-Hierarchie entwickelt sich nicht nur über schnellere HBM-Generationen. Wafer-Bonding, NAND-basierte Inference-Tiers und vertikale Integration können Kapazität, Bandbreite und Energieeffizienz neu verteilen und erhöhen den strategischen Wert von NAND im AI-Stack.",
+      "title": "Sandisk verwandelt NAND-Knappheit in einen mehrjährigen Kapazitätsmarkt",
+      "fact": "Sandisk meldete 8,97 Mrd. US-Dollar Quartalsumsatz; Datacenter stieg auf rund 2,98 Mrd. US-Dollar. Acht langfristige Vereinbarungen mit sechs Kunden haben mindestens 93,9 Mrd. US-Dollar Wert. Die mediane Laufzeit beträgt vier Jahre; rund 50 Prozent des FY2027- und etwa zwei Drittel des FY2028-Outputs sind gebunden.",
+      "estimate": "Der Mindestvertragswert ist kein sofortiger Umsatz. Preisformeln, Abnahmeklauseln, Vorauszahlungen und Kundenkonzentration sind nicht vollständig offengelegt.",
+      "tailInference": "NAND folgt HBM und Server-DRAM in ein Modell langfristiger Kapazitätsreservierung. Das reduziert den freien Merchant-Bit-Pool, stützt Enterprise-SSD-Preisuntergrenzen und verschiebt Risiko zu Vertragsausführung und Kundenkonzentration.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -111,32 +116,32 @@
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Samsung präsentiert auf einer Branchenmesse und maximiert technologische Differenzierung.",
-        "alternative": "Die Konzepte können an Kosten, Packaging, Yield oder Ökosystemintegration scheitern und HBM/klassische SSDs zunächst nur ergänzen.",
-        "alreadyPriced": "Wafer-Bonding und Memory-Centric AI waren als Richtung bekannt; neu sind V10, >400 Layer, die 58-Prozent-Dichteangabe und zHBM/zNAND-O.",
-        "killCondition": "Kein verifizierbarer Qualifikations- oder Produktionsmeilenstein für V10 BV-NAND bis 30.06.2027.",
-        "forecastChange": "Neu P-2026-08-05-01 mit 70 Prozent; aktiver Memory-/Storage-Forecast."
+        "sourceIncentive": "Sandisk will den NAND-Zyklus als strukturell weniger volatil darstellen.",
+        "alternative": "Preis- und Mixeffekte können Umsatzwachstum überzeichnen; LTAs verhindern keine Nachverhandlung oder Nachfragezerstörung.",
+        "alreadyPriced": "Der AI-NAND-Boom war bekannt; neu sind Umfang, Laufzeit und Output-Abdeckung.",
+        "killCondition": "FY2028-Abdeckung unter 55 Prozent oder zwei Quartale Datacenter-Umsatz unter 2,5 Mrd. US-Dollar.",
+        "forecastChange": "Neu P-2026-08-06-01 mit 82 Prozent; aktiver Memory-/Storage-Forecast."
       },
       "sources": [
         {
-          "label": "Reuters – Samsung launches next-generation AI memory technology",
-          "url": "https://www.reuters.com/world/asia-pacific/samsung-electronics-launches-next-generation-ai-memory-technology-2026-08-04/"
+          "label": "Reuters – Sandisk forecasts upbeat quarterly revenue on AI-driven demand",
+          "url": "https://www.reuters.com/business/sandisk-forecasts-upbeat-quarterly-revenue-ai-driven-demand-2026-08-05/"
         },
         {
-          "label": "FMS 2026 agenda – Samsung keynote",
-          "url": "https://www.terrapinn.com/conference/future-memory-storage/agenda.stm"
+          "label": "Sandisk Investor Relations – Q4 FY2026 earnings event",
+          "url": "https://investor.sandisk.com/news-events/events"
         }
       ]
     },
     {
-      "id": "S-2026-08-05-02",
+      "id": "S-2026-08-06-02",
       "rank": 2,
-      "priorityScore": 100,
+      "priorityScore": 99,
       "classification": "Architecture Update",
-      "title": "Big Tech trägt bereits rund 1,09 Billionen US-Dollar künftige Lease-Verpflichtungen für den AI-Build-out",
-      "fact": "Reuters aggregiert aus Unternehmensfilings rund 1,09 Billionen US-Dollar noch nicht begonnene zukünftige Lease-Zahlungen bei Microsoft, Meta, Oracle, Amazon und Alphabet. Dem stehen nur etwa 285 Mrd. US-Dollar bereits bilanzierte Lease-Verbindlichkeiten gegenüber. Die zusätzlichen Verpflichtungen erscheinen erst bei Betriebsbeginn der jeweiligen Anlagen als Bilanzposition.",
-      "estimate": "Die Summe ist brutto, undiscounted und nicht vollständig homogen; Amazon umfasst auch Nicht-Datacenter-Leases. Sie ist weder identisch mit Capex noch mit heutiger Verschuldung.",
-      "tailInference": "AI-Infrastruktur wird in großem Umfang vorfinanziert und bilanziell zeitversetzt sichtbar. Der relevante Engpass verschiebt sich von der Ankündigung neuer MW zu Auslastung, Kontrahentenqualität, Lease-Start und Refinanzierung.",
+      "title": "HBF erhält seine erste OCP-Spezifikation und wird zu einer definierbaren Memory-Schicht",
+      "fact": "Sandisk und SK hynix legten die erste technische HBF-Spezifikation im Open Compute Project vor. Die NAND-basierte Schicht zwischen HBM und SSD ist für AI-Inference vorgesehen; veröffentlichte Klassen reichen bis 512 GB pro Package und 3,0 TB/s.",
+      "estimate": "Eine Spezifikation ist noch kein lieferbares Ökosystem. Accelerator-Unterstützung, Packaging-Yield, Software-Tiering, Latenz und reale TCO-Vorteile sind nicht validiert.",
+      "tailInference": "Der AI-Memory-Stack wird dreistufig: HBM für Hot Data, HBF für große bandbreitenhungrige Inference-Daten und SSD für Capacity. NAND rückt damit direkt in Accelerator-Architekturen.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -148,33 +153,79 @@
         "SourceQuality": 20,
         "Novelty": 15,
         "ThesisRelevance": 20,
+        "ForecastImpact": 19,
+        "Falsifiability": 15,
+        "TimeSensitivity": 10
+      },
+      "redPencil": {
+        "sourceIncentive": "Die Partner wollen eine neue Produktkategorie etablieren und frühe Standardisierung als Marktreife darstellen.",
+        "alternative": "HBF kann Nische bleiben, falls HBM, CXL-Speicher oder SSD-Offload wirtschaftlich ausreichen.",
+        "alreadyPriced": "HBF und der OCP-Workstream waren bekannt; neu ist die konkrete Spezifikation.",
+        "killCondition": "Keine HBF-Samples bis 31.12.2026 oder kein zusätzlicher Accelerator-/Systempartner bis 30.06.2027.",
+        "forecastChange": "Neu P-2026-08-06-02 mit 64 Prozent; aktive Late Admission nach Veröffentlichung am 03.08."
+      },
+      "sources": [
+        {
+          "label": "Sandisk – HBF OCP specification announcement",
+          "url": "https://investor.sandisk.com/news-releases"
+        },
+        {
+          "label": "SK hynix – HBF standardization under OCP",
+          "url": "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/"
+        },
+        {
+          "label": "Tom's Hardware – first HBF specification details",
+          "url": "https://www.tomshardware.com/pc-components/ssds/sandisk-and-sk-hynix-introduce-first-high-bandwidth-flash-specification"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-06-03",
+      "rank": 3,
+      "priorityScore": 96,
+      "classification": "Falsifier",
+      "title": "Samsung und SK hynix prüfen chinesische Fab-Tools – Exportkontrollen erzeugen Substitution",
+      "fact": "Reuters berichtet über Evaluierungen von AMEC-Ätzanlagen als Absicherung chinesischer Memory-Fabs gegen weitere US-Restriktionen. Samsung und SK hynix bestreiten Tests für den Einsatz in ihren China-Fabriken; eine Beschaffungsentscheidung ist nicht bekannt.",
+      "estimate": "Die Tests können auf Benchmark-Niveau bleiben. Service, IP-Risiko, Prozessintegration und HVM-Yield sind nicht gleichwertig in allen Schritten.",
+      "tailInference": "Exportkontrollen sind nicht nur Kapazitätsbremse, sondern Nachfrageprogramm für chinesisches WFE. Eine Tier-1-Qualifikation würde AMEC, Naura und ACM validieren und Sanktionen langfristig abschwächen.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 16,
+        "Novelty": 15,
+        "ThesisRelevance": 20,
         "ForecastImpact": 20,
         "Falsifiability": 15,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Reuters aggregiert Fußnoten; Unternehmen betonen Nachfrage und behandeln die Verpflichtungen nicht als heutige Schulden.",
-        "alternative": "Starke Cloud-Umsätze, Vorauszahlungen und BYOH-Strukturen können den Cash- und Kredit-Tail abfedern.",
-        "alreadyPriced": "Einzelne Lease-Zahlen waren bekannt; neu ist die systemweite 1,09-Billionen-Aggregation.",
-        "killCondition": "Keine zusätzliche Forecast-Erstellung wegen hoher Korrelation mit bestehenden Capital-/Execution-Risk-Forecasts; nächster Test sind Lease-Beginn, Free Cashflow und Rating-Aktionen.",
-        "forecastChange": "Kein neuer Forecast; bestehender Falsifier zu kredit- und leasefinanziertem AI-Capex wird verstärkt."
+        "sourceIncentive": "Anonyme Quellen können frühe Tests überinterpretieren; die Unternehmen haben Gründe für Dementis.",
+        "alternative": "US-Tools bleiben technisch und im Service überlegen; Tests können nur Verhandlungsdruck sein.",
+        "alreadyPriced": "Chinas WFE-Substitution ist bekannt; neu wäre Tier-1-Validierung durch ausländische Memory-Hersteller.",
+        "killCondition": "Kein öffentlich verifizierter Qualifikations-, Kauf- oder Deployment-Meilenstein bis Ende 2027.",
+        "forecastChange": "Neu P-2026-08-06-03 mit 56 Prozent; Watchlist wegen Quellenkonflikt."
       },
       "sources": [
         {
-          "label": "Reuters – AI data-centre race builds $1 trillion lease burden for Big Tech",
-          "url": "https://www.reuters.com/business/retail-consumer/ai-data-centre-race-builds-1-trillion-lease-burden-big-tech-2026-08-04/"
+          "label": "Reuters – Samsung, SK hynix test Chinese chip tools",
+          "url": "https://www.reuters.com/world/china/samsung-sk-hynix-test-chinese-chip-tools-hedge-against-us-risks-2026-08-05/"
         }
       ]
     },
     {
-      "id": "S-2026-08-05-03",
-      "rank": 3,
-      "priorityScore": 98,
-      "classification": "Architecture Update",
-      "title": "USA prüfen Importverbot für chinesische Datacenter-Optik – Transceiver werden zum geopolitischen Chokepoint",
-      "fact": "Reuters zufolge bereitet die US-Regierung über die FCC ein Importverbot für neue chinesische Datacenter-Komponenten vor, insbesondere optische Transceiver. Zhongji Innolight wird als zentral betroffener Anbieter mit rund 27 Prozent Weltmarktanteil genannt; eine formale FCC-Regel ist noch nicht veröffentlicht.",
-      "estimate": "Der Entwurf kann verändert, enger gefasst oder verzögert werden. Marktanteile und konkrete Kundenexponierung können sich je nach Segment und Generation unterscheiden.",
-      "tailInference": "Die AI-Supply-Chain-Fragmentierung erreicht die optische Verbindungsschicht. Ein Verbot könnte kurzfristig Kosten, Qualifikationsaufwand und Lieferzeiten erhöhen und mittelfristig Coherent, Lumentum, Applied Optoelectronics sowie alternative asiatische Lieferanten stärken.",
+      "id": "S-2026-08-06-04",
+      "rank": 4,
+      "priorityScore": 97,
+      "classification": "Falsifier",
+      "title": "Iran und Oman einigen sich auf Hormuz-Koordinaten – der Rahmen wird konkreter, nicht sicherer",
+      "fact": "Irans Außenministerium bestätigte eine Verständigung mit Oman über die Koordinaten einer Schifffahrtsroute; eine gemeinsame Erklärung wird vorbereitet. Iran betont zugleich, dass dies die Sicherheit nicht garantiert, und droht bei neuen US-Angriffen mit Schlägen gegen regionale Energieinfrastruktur.",
+      "estimate": "Koordinaten und Entwurf sind kein belastbares Abkommen. Gebühren, Kontrolle, Versicherung und Durchsetzung bleiben offen.",
+      "tailInference": "Ein dokumentierter Rahmen wird wahrscheinlicher. Wirtschaftliche Normalisierung hängt aber an realem Verkehr, Versicherungsprämien und fehlenden Angriffen; Diplomatie senkt den Preis-Tail, die Vergeltungsdrohung verbreitert den physischen Ausfall-Tail.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -185,80 +236,38 @@
       "scoreBreakdown": {
         "SourceQuality": 18,
         "Novelty": 15,
-        "ThesisRelevance": 20,
-        "ForecastImpact": 20,
-        "Falsifiability": 15,
-        "TimeSensitivity": 10
-      },
-      "redPencil": {
-        "sourceIncentive": "Sicherheitsbehörden haben Anreiz, Risiken breit zu definieren; US-Anbieter profitieren wirtschaftlich.",
-        "alternative": "Die FCC kann auf einzelne Firmen, Geschwindigkeitsklassen oder Regierungsnetze begrenzen.",
-        "alreadyPriced": "Allgemeine China-Restriktionen sind bekannt; neu ist der Fokus auf Datacenter-Transceiver.",
-        "killCondition": "Keine formale Notice, Proposed Rule oder Covered-List-Erweiterung bis 31.12.2026.",
-        "forecastChange": "Neu P-2026-08-05-02 mit 62 Prozent; Watchlist wegen fehlender formaler Regel."
-      },
-      "sources": [
-        {
-          "label": "Reuters – Trump administration drafting ban on Chinese data center devices",
-          "url": "https://www.reuters.com/world/trump-administration-drafting-ban-chinese-data-center-devices-sources-say-2026-08-04/"
-        }
-      ]
-    },
-    {
-      "id": "S-2026-08-05-04",
-      "rank": 4,
-      "priorityScore": 97,
-      "classification": "Falsifier",
-      "title": "Oracle wird zum Stresstest für die Kreditfähigkeit des AI-Infrastrukturmodells",
-      "fact": "Oracle weist 260 Mrd. US-Dollar zusätzliche, noch nicht begonnene Lease-Verpflichtungen aus, überwiegend für Datacenter mit Laufzeiten von 15 bis 19 Jahren. Reuters berichtet über steigende Downgrade-Sorgen; S&P hatte Oracles AI-Build-out bereits als aggressiv bewertet und die hohe Abhängigkeit von großen Kundenverträgen hervorgehoben.",
-      "estimate": "Lease-Verpflichtungen sind keine sofort fällige Schuld. Vorauszahlungen, Bring-your-own-hardware und starke OCI-Margen können die tatsächliche Belastung reduzieren.",
-      "tailInference": "Der AI-Build-out wird an der Kreditqualität einzelner Orchestratoren testbar. Oracle verbindet hohe Kundenkonzentration, negative Free-Cashflow-Phasen, Leases und lange Vertragslaufzeiten – ein echter Falsifier gegen die Annahme, dass AI-Nachfrage automatisch Finanzierungssicherheit erzeugt.",
-      "admissionGate": {
-        "Freshness": true,
-        "Evidence": true,
-        "Materiality": true,
-        "Causality": true,
-        "Falsifiability": true
-      },
-      "scoreBreakdown": {
-        "SourceQuality": 20,
-        "Novelty": 13,
         "ThesisRelevance": 19,
         "ForecastImpact": 20,
         "Falsifiability": 15,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Ratingagenturen gewichten Downside; Oracle betont prepaids und profitable Vertragsprüfung.",
-        "alternative": "Auslieferungen, Kundenvorauszahlungen und BYOH können Leverage schneller stabilisieren als der Markt erwartet.",
-        "alreadyPriced": "Oracles aggressive Capex-Strategie war bekannt; neu sind die systematische Lease-Aggregation und erneute Ratingsensitivität.",
-        "killCondition": "Kein neuer isolierter Forecast wegen Korrelation zum Big-Tech-Lease-Signal; nächster Test sind Ratingaktionen, Bondspreads und FY2027 Free Cashflow.",
-        "forecastChange": "Kein neuer Forecast; bestehender Capital-/Execution-Falsifier wird auf Oracle als Hochrisiko-Fall zugespitzt."
+        "sourceIncentive": "Iran, Oman und USA haben Anreiz, Fortschritt politisch zu überverkaufen.",
+        "alternative": "Der Entwurf kann an Kontrolle, Gebühren oder einem einzelnen Angriff scheitern.",
+        "alreadyPriced": "Gespräche waren bekannt; neu sind Koordinaten und eine vorbereitete gemeinsame Erklärung.",
+        "killCondition": "Großangriff vor 09.08. oder kein dokumentierter Rahmen bis 15.08.",
+        "forecastChange": "P-2026-08-02-04 steigt 61→66 Prozent; 58, 68, 52 und 61 bleiben erhalten."
       },
       "sources": [
         {
-          "label": "Oracle 2026 Form 10-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+          "label": "Reuters – Iran and Oman agree Hormuz route coordinates",
+          "url": "https://www.reuters.com/world/middle-east/iran-oman-reach-understanding-coordinates-route-through-hormuz-iran-ministry-2026-08-05/"
         },
         {
-          "label": "Reuters – Oracle goes for high-stakes ratings gamble",
-          "url": "https://www.reuters.com/business/oracle-corp-goes-high-stakes-ratings-gamble-ai-strategy-2026-08-04/"
-        },
-        {
-          "label": "S&P Global Ratings – AI infrastructure buildout and credit risk",
-          "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3505556"
+          "label": "Reuters – Iran threatens regional energy infrastructure",
+          "url": "https://www.reuters.com/world/middle-east/iran-threatens-regional-energy-infrastructure-if-us-strikes-resume-2026-08-05/"
         }
       ]
     },
     {
-      "id": "S-2026-08-05-05",
+      "id": "S-2026-08-06-05",
       "rank": 5,
-      "priorityScore": 96,
-      "classification": "Falsifier",
-      "title": "Iran legt konkrete Hormuz-Kontrollbedingungen vor – Diplomatie wird messbar, aber nicht frei",
-      "fact": "Reuters zufolge verlangt Iran in einem mit Oman verhandelten Übergangsplan Kontrolle über einlaufende Schiffe und Aufsicht über auslaufenden Verkehr; Oman soll Auslaufgenehmigungen abwickeln. Damit liegt erstmals ein konkreter operativer Vorschlag vor, obwohl Kontrolle, Gebühren und Sicherheitsgarantien umstritten bleiben.",
-      "estimate": "Es handelt sich um Verhandlungspositionen einer iranischen Quelle, nicht um ein unterzeichnetes Abkommen. Militärische Akteure und Angriffe auf Handelsschiffe können die politische Einigung unterlaufen.",
-      "tailInference": "Der Forecast eines dokumentierten Hormuz-Rahmens wird wahrscheinlicher, aber ein Deal würde nicht sofort normale Tanker-, LNG- oder Versicherungsbedingungen herstellen. Kontrolle und Gebühren könnten einen dauerhaften geopolitischen Transit-Layer schaffen.",
+      "priorityScore": 94,
+      "classification": "Layer Update",
+      "title": "Brookfield sammelt Rekordkapital ein und macht AI-Infrastruktur zum konzernweiten Investment-Layer",
+      "fact": "Brookfield Asset Management sammelte im zweiten Quartal rekordhohe 77 Mrd. US-Dollar ein. Rund 5 Mrd. US-Dollar entfallen auf den ersten AI-Infrastruktur-Fonds; AI-Infrastruktur wird über Energie, Datacenter, Immobilien, Infrastruktur und Kredit umgesetzt.",
+      "estimate": "Fundraising ist nicht investierter Capex. Der AI-Fonds liegt noch unter Ziel; Projekte können an Strom, Mietern oder Baukosten scheitern.",
+      "tailInference": "Der AI-Build-out leidet nicht unter allgemeinem Kapitalmangel, sondern selektiver Allokation. Integrierte Manager können Strom, Grundstück, Datacenter und Kredit bündeln; kleinere Entwickler ohne Ankermieter oder Firm Power werden verdrängt.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -268,23 +277,27 @@
       },
       "scoreBreakdown": {
         "SourceQuality": 18,
-        "Novelty": 15,
-        "ThesisRelevance": 18,
-        "ForecastImpact": 20,
+        "Novelty": 13,
+        "ThesisRelevance": 19,
+        "ForecastImpact": 19,
         "Falsifiability": 15,
         "TimeSensitivity": 10
       },
       "redPencil": {
-        "sourceIncentive": "Iran will Kontrolle legitimieren; Oman und die USA wollen Passage ohne iranisches Vetorecht.",
-        "alternative": "Der Plan kann an Gebühren, Souveränität oder IRGC-Widerstand scheitern.",
-        "alreadyPriced": "Gespräche waren bekannt; neu sind konkrete Inbound-/Outbound-Regeln.",
-        "killCondition": "Neue großflächige US-Angriffswelle vor 09.08. oder kein dokumentierter Rahmen bis 15.08.",
-        "forecastChange": "P-2026-08-02-04 steigt 52→61 Prozent; Creation 58 sowie Updates 68 und 52 bleiben erhalten."
+        "sourceIncentive": "Brookfield vermarktet Fonds und AI als Wachstumsstory.",
+        "alternative": "Ein großer Teil der 77 Mrd. US-Dollar ist nicht AI-bezogen; zu viel Kapital kann Renditen drücken.",
+        "alreadyPriced": "Private Capital war bekannt; neu sind Rekord-Fundraising und konzernweite Integration.",
+        "killCondition": "AI-Fonds bis 30.06.2027 unter 7,5 Mrd. US-Dollar oder kein weiterer bindender Datacenter-/Power-Meilenstein.",
+        "forecastChange": "Kein neuer Forecast wegen Korrelation zu bestehenden Financing-/Execution-Risk-Prognosen."
       },
       "sources": [
         {
-          "label": "Reuters – Iran demands inbound control of Hormuz and outbound oversight",
-          "url": "https://www.reuters.com/world/middle-east/iran-demands-hormuz-inbound-control-outbound-oversight-source-says-2026-08-04/"
+          "label": "Brookfield Asset Management Q2 2026 results call",
+          "url": "https://bam.brookfield.com/events-and-presentations"
+        },
+        {
+          "label": "WSJ – Brookfield Asset Management looks to AI to fuel growth",
+          "url": "https://www.wsj.com/pro/private-equity/brookfield-asset-management-looks-to-ai-to-fuel-growth-a7b89e69"
         }
       ]
     }
@@ -294,142 +307,145 @@
       "id": "P-2026-08-02-04",
       "status": "updated",
       "forecast": "Keine neue großflächige US-Angriffswelle bis 09.08.; dokumentierter Hormuz-Rahmen bis 15.08.",
-      "confidence": 61,
-      "previousConfidence": 52,
+      "confidence": 66,
+      "previousConfidence": 61,
       "nextReview": "2026-08-09",
-      "history": "Creation 58 Prozent am 02.08.; Update 68 am 03.08.; Update 52 am 04.08.; Update 61 am 05.08. nach konkretem Inbound-/Outbound-Vorschlag.",
-      "redPencil": "Ein operativer Vorschlag erhöht die Deal-Chance, ist aber kein unterzeichnetes Abkommen; beide Teilbedingungen müssen erfüllt sein.",
-      "killCondition": "Großangriff vor 09.08. oder kein dokumentierter Rahmen bis 15.08."
+      "history": "Creation 58 am 02.08.; Updates 68, 52, 61 und 66 am 03.–06.08.",
+      "redPencil": "Koordinaten erhöhen die Rahmen-Chance, aber Erklärung, Durchsetzung und Strike-Bedingung bleiben offen.",
+      "killCondition": "Großangriff vor 09.08. oder kein Rahmen bis 15.08."
     },
     {
-      "id": "P-2026-08-05-01",
+      "id": "P-2026-08-06-01",
       "status": "new",
-      "forecast": "Samsung erreicht bis 30.06.2027 einen öffentlich verifizierbaren Kundenqualifikations- oder Volumenproduktionsmeilenstein für V10 Bonding V-NAND.",
-      "confidence": 70,
+      "forecast": "Sandisk hält mindestens 55 Prozent des FY2028-Outputs unter NBM-Verträgen; Datacenter fällt nicht in zwei Folgequartalen unter 2,5 Mrd. US-Dollar.",
+      "confidence": 82,
+      "previousConfidence": null,
+      "nextReview": "2026-08-13",
+      "history": "Erstellt 06.08. nach Q4-Ergebnissen und 93,9 Mrd. US-Dollar Mindestvertragswert.",
+      "redPencil": "Starke Abdeckung, aber offene Preisformeln und Kundenkonzentration.",
+      "killCondition": "FY2028-Abdeckung unter 55 Prozent oder zwei Quartale unter 2,5 Mrd. US-Dollar."
+    },
+    {
+      "id": "P-2026-08-06-02",
+      "status": "new",
+      "forecast": "HBF-Samples bis 31.12.2026 und mindestens ein zusätzlicher Accelerator-/Systempartner bis 30.06.2027.",
+      "confidence": 64,
       "previousConfidence": null,
       "nextReview": "2026-12-31",
-      "history": "Erstellt 05.08. nach FMS-2026-Ankündigung.",
-      "redPencil": "V10 ist näher am Produkt als zHBM/zNAND-O; trotzdem fehlen Yield, Kunde und Produktionsdatum.",
-      "killCondition": "Kein verifizierbarer Meilenstein bis 30.06.2027."
+      "history": "Erstellt 06.08. als Late Admission nach erster OCP-Spezifikation vom 03.08.",
+      "redPencil": "Spezifikation beweist weder Yield noch Ökosystemakzeptanz.",
+      "killCondition": "Keine Samples oder kein zusätzlicher Partner bis zur Frist."
     },
     {
-      "id": "P-2026-08-05-02",
+      "id": "P-2026-08-06-03",
       "status": "new_watchlist",
-      "forecast": "Die FCC veröffentlicht bis 31.12.2026 eine formale Notice, Proposed Rule oder Covered-List-Erweiterung zu chinesischen Datacenter-Transceivern oder vergleichbaren optischen Komponenten.",
-      "confidence": 62,
+      "forecast": "Bis Ende 2027 wird ein chinesisches Non-Lithography-WFE-Tool in einer Samsung- oder SK-hynix-China-Fab verifiziert qualifiziert, gekauft oder eingesetzt.",
+      "confidence": 56,
       "previousConfidence": null,
-      "nextReview": "2026-10-31",
-      "history": "Erstellt 05.08. nach Reuters-Bericht über einen Entwurf.",
-      "redPencil": "Anonyme Quellen und möglicher politischer Rückzug begrenzen die Confidence.",
-      "killCondition": "Keine formale Veröffentlichung bis Jahresende."
+      "nextReview": "2026-12-31",
+      "history": "Erstellt 06.08. nach Reuters-Bericht; Unternehmen dementieren China-Fab-Tests.",
+      "redPencil": "Anonyme Quellen und Dementis; Benchmark ist kein HVM-Deployment.",
+      "killCondition": "Kein Meilenstein bis Ende 2027."
     }
   ],
   "falsifierUpdates": [
     {
-      "id": "F-2026-08-04-01",
-      "status": "active_strengthened",
-      "claim": "AI-Capex wird zunehmend durch Garantien, SPVs, Private Credit und Leases statt nur Endkundencashflows finanziert.",
-      "update": "Die fünf größten US-Plattformen tragen rund 1,09 Billionen US-Dollar künftige Lease-Zahlungen; Oracle ist der konzentrierteste Kreditfall.",
-      "nextReview": "2026-09-30"
-    },
-    {
-      "id": "F-2026-08-05-01",
+      "id": "F-2026-08-06-01",
       "status": "new_active",
-      "claim": "Starke AI-Nachfrage garantiert nicht automatisch tragfähige Kreditqualität oder risikofreie Refinanzierung.",
-      "update": "Oracle verbindet 260 Mrd. US-Dollar uncommenced leases mit erhöhtem Rating- und Kundenkonzentrationsrisiko.",
-      "nextReview": "2026-09-30"
+      "claim": "NAND bleibt überwiegend ein kurzfristiger Spotmarkt.",
+      "update": "Sandisk bindet 50 Prozent des FY2027- und etwa zwei Drittel des FY2028-Outputs in mehrjährigen Verträgen.",
+      "nextReview": "2026-08-13"
     },
     {
       "id": "F-2026-08-05-02",
+      "status": "active_refined",
+      "claim": "Decoupling betrifft GPUs, Verbindungen und Produktionsmittel.",
+      "update": "AMEC-Evaluierungen zeigen mögliche lokale WFE-Substitution durch Restriktionen.",
+      "nextReview": "2026-12-31"
+    },
+    {
+      "id": "F-2026-08-06-02",
       "status": "new_active",
-      "claim": "AI-Supply-Chain-Decoupling betrifft nicht nur GPUs und Fertigung, sondern auch optische Datacenter-Verbindungen.",
-      "update": "Die FCC prüft laut Reuters ein Importverbot für chinesische Transceiver.",
-      "nextReview": "2026-10-31"
+      "claim": "AI-Infrastruktur leidet unter allgemeinem privatem Kapitalmangel.",
+      "update": "Brookfield sammelte rekordhohe 77 Mrd. US-Dollar; Engpass ist Projektqualität, Strom und Ankermieter.",
+      "nextReview": "2026-09-30"
     },
     {
       "id": "F-2026-08-03-01",
       "status": "active_refined",
-      "claim": "Sinkender Luftkriegs-Tail kann Öl entlasten, obwohl maritime Risiken bleiben.",
-      "update": "Ein konkreter Hormuz-Übergangsplan wird verhandelt; Kontrolle und Gebühren bleiben offen.",
+      "claim": "Diplomatie kann Öl entlasten, obwohl maritime Risiken bleiben.",
+      "update": "Routenkoordinaten wurden vereinbart; Vergeltungsdrohungen gegen Energieinfrastruktur bleiben.",
       "nextReview": "2026-08-09"
     }
   ],
   "auditTrailAdditions": [
     {
-      "date": "2026-08-05",
+      "date": "2026-08-06",
       "type": "History preservation",
-      "item": "P-2026-08-02-04 52→61 Prozent.",
-      "action": "Creation 58 sowie Zwischenstände 68 und 52 bleiben erhalten; keine rückwirkende Glättung."
+      "item": "P-2026-08-02-04 61→66.",
+      "action": "Creation 58 und Zwischenstände 68, 52 und 61 bleiben sichtbar."
     },
     {
-      "date": "2026-08-05",
-      "type": "Correlation and scope control",
-      "item": "Big-Tech-Leases und Oracle-Rating sind ein gemeinsamer Capital-Risk-Cluster.",
-      "action": "Keine zwei neuen korrelierten Forecasts; beide Signale stärken bestehende Falsifier."
+      "date": "2026-08-06",
+      "type": "Late admission",
+      "item": "OCP-HBF-Spezifikation vom 03.08.",
+      "action": "Verspätet, aber materiell aufgenommen; Aufnahmeverzug transparent."
     },
     {
-      "date": "2026-08-05",
-      "type": "Evidence qualification",
-      "item": "Samsung/Oracle mit Unternehmens- beziehungsweise SEC-Evidenz; FCC und Hormuz Reuters-Quellen.",
-      "action": "FCC/Hormuz unter Voll-Source-Quality und reduzierte Gesamt-Confidence 98→97."
+      "date": "2026-08-06",
+      "type": "Source conflict",
+      "item": "Reuters berichtet AMEC-Tests; Samsung und SK hynix dementieren.",
+      "action": "Source Quality 16/20; Forecast nur Watchlist mit 56 Prozent."
     },
     {
-      "date": "2026-08-05",
-      "type": "Admission exclusions",
-      "item": "NVIDIA-NSF-Hubs, Analystenratings zu SK hynix und FMS-Agenda-Talks geprüft.",
-      "action": "Nicht aufgenommen: zu geringe kurzfristige Forecast-Wirkung beziehungsweise keine neue operative Evidenz."
+      "date": "2026-08-06",
+      "type": "Correlation control",
+      "item": "Western Digital Q4 bestätigt starken HDD-/Datacenter-Storage-Zyklus.",
+      "action": "Kein eigener Forecast wegen aktiver Seagate-/Storage-Signale."
     },
     {
-      "date": "2026-08-05",
-      "type": "Direct NAND trigger",
-      "item": "Samsung V10 BV-NAND und zNAND-O/zHBM auf FMS.",
-      "action": "Erster eigenständiger FMS-NAND-/Memory-Architecture-Trigger aufgenommen; Produkt- und Konzeptstatus getrennt."
+      "date": "2026-08-06",
+      "type": "Cutoff control",
+      "item": "SoftBank Q1 FY2026 am 06.08.",
+      "action": "Unterlagen waren am Cutoff noch nicht verfügbar; keine Vorab-Schätzung."
     }
   ],
   "runHistoryAdditions": [
     {
-      "date": "2026-08-05",
-      "pulse": 87,
+      "date": "2026-08-06",
+      "pulse": 89,
       "confidence": 97,
-      "note": "Samsung erweitert den AI-Memory-/NAND-Stack; Lease-, Rating- und Optikrisiken steigen. Hormuz-Verhandlungen werden konkreter und senken den unmittelbaren Energiepreis-Tail."
+      "note": "Sandisk bindet NAND langfristig; HBF erhält Spezifikation. China-WFE-Substitution und Hormuz-Risiken bleiben hoch, Brookfield signalisiert reichlich selektives AI-Kapital."
     }
   ],
   "nextCatalysts": [
     {
-      "date": "2026-08-05",
-      "event": "Sandisk-FMS-Keynote: NAND als skalierbare AI-Inference-Basis"
-    },
-    {
-      "date": "2026-08-05",
-      "event": "Renesas Kumamoto Wiederanlauf-Ziel"
-    },
-    {
       "date": "2026-08-06",
-      "event": "SoftBank Q1: OpenAI-Verpflichtungen, LTV und Refinanzierung"
-    },
-    {
-      "date": "2026-08-06",
-      "event": "FMS-Abschluss: HBF, CXL, Storage-Next und KV-Cache-Offload"
+      "event": "SoftBank Q1 FY2026: OpenAI, LTV, Arm-Besicherung und Refinanzierung"
     },
     {
       "date": "2026-08-09",
       "event": "US-Iran Zwischenprüfung"
     },
     {
+      "date": "2026-08-13",
+      "event": "Sandisk Investor Day: NBM, HBF und BiCS10"
+    },
+    {
       "date": "2026-08-15",
-      "event": "Hormuz-Rahmen und Sony-Kumamoto-Normalisierung"
+      "event": "Hormuz-Rahmen, Schiffsverkehr und Versicherung"
     },
     {
       "date": "2026-09-30",
-      "event": "Big-Tech Lease-/Rating-Review"
+      "event": "Brookfield AI Fund und Big-Tech Lease-/Rating-Review"
     },
     {
       "date": "2026-10-31",
-      "event": "FCC-Transceiver-Regel Zwischenprüfung"
+      "event": "FCC-Transceiver-Regel"
     },
     {
       "date": "2026-12-31",
-      "event": "Samsung V10 BV-NAND Zwischenprüfung"
+      "event": "HBF-Sample-, AMEC- und Samsung-V10-Review"
     }
   ],
   "historyPolicy": "Forecasts, Creation Confidence, spätere Updates, Falsifier, Treffer, Misses, Quarantänefälle und Late Admissions bleiben sichtbar. Kein Miss wird gelöscht oder rückwirkend umklassifiziert."

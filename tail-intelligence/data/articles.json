@@ -3520,5 +3520,219 @@
         "url": "https://www.reuters.com/world/middle-east/iran-demands-hormuz-inbound-control-outbound-oversight-source-says-2026-08-04/"
       }
     ]
+  },
+  {
+    "id": "S-2026-08-06-01",
+    "date": "2026-08-06",
+    "title": "Sandisk verwandelt NAND-Knappheit in einen mehrjährigen Kapazitätsmarkt",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "dram",
+      "nand",
+      "enterprise_ssd",
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Sandisk"
+    ],
+    "severity": 100,
+    "confidence": 90,
+    "signal": "demand_up",
+    "summary": "Sandisk meldete 8,97 Mrd. US-Dollar Quartalsumsatz; Datacenter stieg auf rund 2,98 Mrd. US-Dollar. Acht langfristige Vereinbarungen mit sechs Kunden haben mindestens 93,9 Mrd. US-Dollar Wert. Die mediane Laufzeit beträgt vier Jahre; rund 50 Prozent des FY2027- und etwa zwei Drittel des FY2028-Outputs sind gebunden.",
+    "tail_analysis": "NAND folgt HBM und Server-DRAM in ein Modell langfristiger Kapazitätsreservierung. Das reduziert den freien Merchant-Bit-Pool, stützt Enterprise-SSD-Preisuntergrenzen und verschiebt Risiko zu Vertragsausführung und Kundenkonzentration.",
+    "source": "Reuters – Sandisk forecasts upbeat quarterly revenue on AI-driven demand",
+    "url": "https://www.reuters.com/business/sandisk-forecasts-upbeat-quarterly-revenue-ai-driven-demand-2026-08-05/",
+    "content_hash": "1c213a56d85890dc6ff8",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 1,
+    "estimate": "Der Mindestvertragswert ist kein sofortiger Umsatz. Preisformeln, Abnahmeklauseln, Vorauszahlungen und Kundenkonzentration sind nicht vollständig offengelegt.",
+    "red_pencil": {
+      "sourceIncentive": "Sandisk will den NAND-Zyklus als strukturell weniger volatil darstellen.",
+      "alternative": "Preis- und Mixeffekte können Umsatzwachstum überzeichnen; LTAs verhindern keine Nachverhandlung oder Nachfragezerstörung.",
+      "alreadyPriced": "Der AI-NAND-Boom war bekannt; neu sind Umfang, Laufzeit und Output-Abdeckung.",
+      "killCondition": "FY2028-Abdeckung unter 55 Prozent oder zwei Quartale Datacenter-Umsatz unter 2,5 Mrd. US-Dollar.",
+      "forecastChange": "Neu P-2026-08-06-01 mit 82 Prozent; aktiver Memory-/Storage-Forecast."
+    },
+    "sources": [
+      {
+        "label": "Reuters – Sandisk forecasts upbeat quarterly revenue on AI-driven demand",
+        "url": "https://www.reuters.com/business/sandisk-forecasts-upbeat-quarterly-revenue-ai-driven-demand-2026-08-05/"
+      },
+      {
+        "label": "Sandisk Investor Relations – Q4 FY2026 earnings event",
+        "url": "https://investor.sandisk.com/news-events/events"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-06-02",
+    "date": "2026-08-06",
+    "title": "HBF erhält seine erste OCP-Spezifikation und wird zu einer definierbaren Memory-Schicht",
+    "category": "geopolitics",
+    "markets": [
+      "hbm",
+      "dram",
+      "nand",
+      "ai_infrastructure",
+      "semiconductors",
+      "supply_chain"
+    ],
+    "companies": [
+      "SK hynix",
+      "Sandisk"
+    ],
+    "severity": 99,
+    "confidence": 92,
+    "signal": "geopolitical_split",
+    "summary": "Sandisk und SK hynix legten die erste technische HBF-Spezifikation im Open Compute Project vor. Die NAND-basierte Schicht zwischen HBM und SSD ist für AI-Inference vorgesehen; veröffentlichte Klassen reichen bis 512 GB pro Package und 3,0 TB/s.",
+    "tail_analysis": "Der AI-Memory-Stack wird dreistufig: HBM für Hot Data, HBF für große bandbreitenhungrige Inference-Daten und SSD für Capacity. NAND rückt damit direkt in Accelerator-Architekturen.",
+    "source": "Sandisk – HBF OCP specification announcement",
+    "url": "https://investor.sandisk.com/news-releases",
+    "content_hash": "53b81f658fe7203153a7",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 2,
+    "estimate": "Eine Spezifikation ist noch kein lieferbares Ökosystem. Accelerator-Unterstützung, Packaging-Yield, Software-Tiering, Latenz und reale TCO-Vorteile sind nicht validiert.",
+    "red_pencil": {
+      "sourceIncentive": "Die Partner wollen eine neue Produktkategorie etablieren und frühe Standardisierung als Marktreife darstellen.",
+      "alternative": "HBF kann Nische bleiben, falls HBM, CXL-Speicher oder SSD-Offload wirtschaftlich ausreichen.",
+      "alreadyPriced": "HBF und der OCP-Workstream waren bekannt; neu ist die konkrete Spezifikation.",
+      "killCondition": "Keine HBF-Samples bis 31.12.2026 oder kein zusätzlicher Accelerator-/Systempartner bis 30.06.2027.",
+      "forecastChange": "Neu P-2026-08-06-02 mit 64 Prozent; aktive Late Admission nach Veröffentlichung am 03.08."
+    },
+    "sources": [
+      {
+        "label": "Sandisk – HBF OCP specification announcement",
+        "url": "https://investor.sandisk.com/news-releases"
+      },
+      {
+        "label": "SK hynix – HBF standardization under OCP",
+        "url": "https://news.skhynix.com/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/"
+      },
+      {
+        "label": "Tom's Hardware – first HBF specification details",
+        "url": "https://www.tomshardware.com/pc-components/ssds/sandisk-and-sk-hynix-introduce-first-high-bandwidth-flash-specification"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-06-03",
+    "date": "2026-08-06",
+    "title": "Samsung und SK hynix prüfen chinesische Fab-Tools – Exportkontrollen erzeugen Substitution",
+    "category": "memory",
+    "markets": [
+      "dram",
+      "semiconductors"
+    ],
+    "companies": [
+      "Samsung",
+      "SK hynix"
+    ],
+    "severity": 96,
+    "confidence": 88,
+    "signal": "demand_up",
+    "summary": "Reuters berichtet über Evaluierungen von AMEC-Ätzanlagen als Absicherung chinesischer Memory-Fabs gegen weitere US-Restriktionen. Samsung und SK hynix bestreiten Tests für den Einsatz in ihren China-Fabriken; eine Beschaffungsentscheidung ist nicht bekannt.",
+    "tail_analysis": "Exportkontrollen sind nicht nur Kapazitätsbremse, sondern Nachfrageprogramm für chinesisches WFE. Eine Tier-1-Qualifikation würde AMEC, Naura und ACM validieren und Sanktionen langfristig abschwächen.",
+    "source": "Reuters – Samsung, SK hynix test Chinese chip tools",
+    "url": "https://www.reuters.com/world/china/samsung-sk-hynix-test-chinese-chip-tools-hedge-against-us-risks-2026-08-05/",
+    "content_hash": "f4c5dfcb84f7007694db",
+    "origin": "daily-intelligence",
+    "classification": "Falsifier",
+    "rank": 3,
+    "estimate": "Die Tests können auf Benchmark-Niveau bleiben. Service, IP-Risiko, Prozessintegration und HVM-Yield sind nicht gleichwertig in allen Schritten.",
+    "red_pencil": {
+      "sourceIncentive": "Anonyme Quellen können frühe Tests überinterpretieren; die Unternehmen haben Gründe für Dementis.",
+      "alternative": "US-Tools bleiben technisch und im Service überlegen; Tests können nur Verhandlungsdruck sein.",
+      "alreadyPriced": "Chinas WFE-Substitution ist bekannt; neu wäre Tier-1-Validierung durch ausländische Memory-Hersteller.",
+      "killCondition": "Kein öffentlich verifizierter Qualifikations-, Kauf- oder Deployment-Meilenstein bis Ende 2027.",
+      "forecastChange": "Neu P-2026-08-06-03 mit 56 Prozent; Watchlist wegen Quellenkonflikt."
+    },
+    "sources": [
+      {
+        "label": "Reuters – Samsung, SK hynix test Chinese chip tools",
+        "url": "https://www.reuters.com/world/china/samsung-sk-hynix-test-chinese-chip-tools-hedge-against-us-risks-2026-08-05/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-06-04",
+    "date": "2026-08-06",
+    "title": "Iran und Oman einigen sich auf Hormuz-Koordinaten – der Rahmen wird konkreter, nicht sicherer",
+    "category": "geopolitics",
+    "markets": [
+      "supply_chain"
+    ],
+    "companies": [],
+    "severity": 97,
+    "confidence": 90,
+    "signal": "geopolitical_split",
+    "summary": "Irans Außenministerium bestätigte eine Verständigung mit Oman über die Koordinaten einer Schifffahrtsroute; eine gemeinsame Erklärung wird vorbereitet. Iran betont zugleich, dass dies die Sicherheit nicht garantiert, und droht bei neuen US-Angriffen mit Schlägen gegen regionale Energieinfrastruktur.",
+    "tail_analysis": "Ein dokumentierter Rahmen wird wahrscheinlicher. Wirtschaftliche Normalisierung hängt aber an realem Verkehr, Versicherungsprämien und fehlenden Angriffen; Diplomatie senkt den Preis-Tail, die Vergeltungsdrohung verbreitert den physischen Ausfall-Tail.",
+    "source": "Reuters – Iran and Oman agree Hormuz route coordinates",
+    "url": "https://www.reuters.com/world/middle-east/iran-oman-reach-understanding-coordinates-route-through-hormuz-iran-ministry-2026-08-05/",
+    "content_hash": "56cac33028d792e1c45e",
+    "origin": "daily-intelligence",
+    "classification": "Falsifier",
+    "rank": 4,
+    "estimate": "Koordinaten und Entwurf sind kein belastbares Abkommen. Gebühren, Kontrolle, Versicherung und Durchsetzung bleiben offen.",
+    "red_pencil": {
+      "sourceIncentive": "Iran, Oman und USA haben Anreiz, Fortschritt politisch zu überverkaufen.",
+      "alternative": "Der Entwurf kann an Kontrolle, Gebühren oder einem einzelnen Angriff scheitern.",
+      "alreadyPriced": "Gespräche waren bekannt; neu sind Koordinaten und eine vorbereitete gemeinsame Erklärung.",
+      "killCondition": "Großangriff vor 09.08. oder kein dokumentierter Rahmen bis 15.08.",
+      "forecastChange": "P-2026-08-02-04 steigt 61→66 Prozent; 58, 68, 52 und 61 bleiben erhalten."
+    },
+    "sources": [
+      {
+        "label": "Reuters – Iran and Oman agree Hormuz route coordinates",
+        "url": "https://www.reuters.com/world/middle-east/iran-oman-reach-understanding-coordinates-route-through-hormuz-iran-ministry-2026-08-05/"
+      },
+      {
+        "label": "Reuters – Iran threatens regional energy infrastructure",
+        "url": "https://www.reuters.com/world/middle-east/iran-threatens-regional-energy-infrastructure-if-us-strikes-resume-2026-08-05/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-06-05",
+    "date": "2026-08-06",
+    "title": "Brookfield sammelt Rekordkapital ein und macht AI-Infrastruktur zum konzernweiten Investment-Layer",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [],
+    "severity": 94,
+    "confidence": 90,
+    "signal": "capacity_relief",
+    "summary": "Brookfield Asset Management sammelte im zweiten Quartal rekordhohe 77 Mrd. US-Dollar ein. Rund 5 Mrd. US-Dollar entfallen auf den ersten AI-Infrastruktur-Fonds; AI-Infrastruktur wird über Energie, Datacenter, Immobilien, Infrastruktur und Kredit umgesetzt.",
+    "tail_analysis": "Der AI-Build-out leidet nicht unter allgemeinem Kapitalmangel, sondern selektiver Allokation. Integrierte Manager können Strom, Grundstück, Datacenter und Kredit bündeln; kleinere Entwickler ohne Ankermieter oder Firm Power werden verdrängt.",
+    "source": "Brookfield Asset Management Q2 2026 results call",
+    "url": "https://bam.brookfield.com/events-and-presentations",
+    "content_hash": "bb77673571c79ada99fc",
+    "origin": "daily-intelligence",
+    "classification": "Layer Update",
+    "rank": 5,
+    "estimate": "Fundraising ist nicht investierter Capex. Der AI-Fonds liegt noch unter Ziel; Projekte können an Strom, Mietern oder Baukosten scheitern.",
+    "red_pencil": {
+      "sourceIncentive": "Brookfield vermarktet Fonds und AI als Wachstumsstory.",
+      "alternative": "Ein großer Teil der 77 Mrd. US-Dollar ist nicht AI-bezogen; zu viel Kapital kann Renditen drücken.",
+      "alreadyPriced": "Private Capital war bekannt; neu sind Rekord-Fundraising und konzernweite Integration.",
+      "killCondition": "AI-Fonds bis 30.06.2027 unter 7,5 Mrd. US-Dollar oder kein weiterer bindender Datacenter-/Power-Meilenstein.",
+      "forecastChange": "Kein neuer Forecast wegen Korrelation zu bestehenden Financing-/Execution-Risk-Prognosen."
+    },
+    "sources": [
+      {
+        "label": "Brookfield Asset Management Q2 2026 results call",
+        "url": "https://bam.brookfield.com/events-and-presentations"
+      },
+      {
+        "label": "WSJ – Brookfield Asset Management looks to AI to fuel growth",
+        "url": "https://www.wsj.com/pro/private-equity/brookfield-asset-management-looks-to-ai-to-fuel-growth-a7b89e69"
+      }
+    ]
   }
 ]

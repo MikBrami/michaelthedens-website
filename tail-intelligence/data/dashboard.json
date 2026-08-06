@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-08-05",
+  "dataAsOf": "2026-08-06",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-08-06T00:11:04.711Z",
-  "lastForecastRun": "2026-08-06T00:11:04.711Z",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-08-06T06:41:21.365Z",
+  "lastForecastRun": "2026-08-06T06:41:21.365Z",
   "newlyProcessedArticles": 0,
-  "totalArticles": 93,
-  "articleCount": 93,
+  "totalArticles": 98,
+  "articleCount": 98,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,7 +32,7 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 92,
+    "forecastLedgerCount": 95,
     "resolvedForecasts": 4,
     "activeForecasts": 44,
     "scopeGateStatus": "active",
@@ -42,7 +42,7 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-06T00:11:02.886Z",
+    "updatedAt": "2026-08-06T06:41:19.419Z",
     "newItems": 0,
     "totalItems": 83,
     "duplicateItems": 200,
@@ -56,7 +56,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "93 Artikel · Datenstand 2026-08-05"
+        "detail": "98 Artikel · Datenstand 2026-08-06"
       },
       {
         "id": "inbox",
@@ -86,68 +86,68 @@
       "label": "Server DRAM",
       "score": 83,
       "status": "red",
-      "signals": 9
+      "signals": 10
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 26
+      "signals": 29
     },
     {
       "id": "hbm",
       "label": "HBM",
       "score": 80,
       "status": "orange",
-      "signals": 20
+      "signals": 22
     },
     {
       "id": "enterprise_ssd",
       "label": "Enterprise SSD",
-      "score": 73,
+      "score": 74,
       "status": "orange",
-      "signals": 8
+      "signals": 9
     },
     {
       "id": "nand",
       "label": "NAND",
       "score": 73,
       "status": "orange",
-      "signals": 7
+      "signals": 9
     },
     {
       "id": "ai_infrastructure",
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 65
+      "signals": 68
     },
     {
       "id": "semiconductors",
       "label": "Semiconductors",
       "score": 72,
       "status": "orange",
-      "signals": 22
+      "signals": 24
     },
     {
       "id": "supply_chain",
       "label": "Supply Chain",
       "score": 68,
       "status": "orange",
-      "signals": 23
+      "signals": 25
     }
   ],
   "manufacturers": [
     {
       "name": "Samsung",
       "score": 82,
-      "mentions": 10
+      "mentions": 11
     },
     {
       "name": "SK hynix",
       "score": 82,
-      "mentions": 11
+      "mentions": 13
     },
     {
       "name": "Micron",
@@ -162,7 +162,7 @@
     {
       "name": "Sandisk",
       "score": 75,
-      "mentions": 2
+      "mentions": 4
     },
     {
       "name": "Intel",
@@ -241,6 +241,7 @@
         "S-2026-07-24-04",
         "S-2026-07-31-01",
         "S-2026-08-05-01",
+        "S-2026-08-06-01",
         "S-2026-08-02-02",
         "tail-2026-07-14-dram-prices",
         "S-2026-07-23-01",
@@ -249,8 +250,10 @@
         "S-2026-07-28-04",
         "S-2026-08-04-01",
         "S-2026-07-25-02",
+        "S-2026-08-06-03",
         "S-2026-07-30-01",
         "S-2026-07-30-02",
+        "S-2026-08-06-02",
         "S-2026-07-19-04",
         "S-2026-08-03-03",
         "S-2026-07-31-03",
@@ -264,7 +267,7 @@
         "S-2026-08-01-05",
         "S-2026-07-21-04"
       ],
-      "lastUpdated": "2026-08-06T00:11:04.710Z"
+      "lastUpdated": "2026-08-06T06:41:21.364Z"
     },
     {
       "id": "hbm",
@@ -319,6 +322,7 @@
         "S-2026-07-31-01",
         "S-2026-08-04-02",
         "S-2026-08-05-01",
+        "S-2026-08-06-01",
         "S-2026-07-24-03",
         "S-2026-08-02-02",
         "S-2026-07-25-01",
@@ -329,19 +333,20 @@
         "S-2026-07-30-01",
         "S-2026-07-30-02",
         "S-2026-08-01-01",
+        "S-2026-08-06-02",
         "S-2026-07-19-04",
         "S-2026-07-23-03",
         "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-08-06T00:11:04.711Z"
+      "lastUpdated": "2026-08-06T06:41:21.364Z"
     },
     {
       "id": "nand",
       "market": "NAND",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 72,
-      "confidenceScore": 85,
+      "relevanceScore": 73,
+      "confidenceScore": 86,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
@@ -363,33 +368,35 @@
           "summary": "Samsung stellte auf der FMS 2026 V10 Bonding V-NAND mit mehr als 400 Layern und Wafer-Bonding vor. Nach Unternehmensangaben steigt die Speicherdichte gegenüber V9 um 58 Prozent. Zusätzlich zeigte Samsung Konzeptarchitekturen für zHBM und zNAND-O, die Memory beziehungsweise NAND vertikal näher über dem AI-Accelerator integrieren sollen."
         },
         {
+          "id": "S-2026-08-06-01",
+          "date": "2026-08-06",
+          "title": "Sandisk verwandelt NAND-Knappheit in einen mehrjährigen Kapazitätsmarkt",
+          "signal": "Nachfrageimpuls",
+          "score": 72,
+          "summary": "Sandisk meldete 8,97 Mrd. US-Dollar Quartalsumsatz; Datacenter stieg auf rund 2,98 Mrd. US-Dollar. Acht langfristige Vereinbarungen mit sechs Kunden haben mindestens 93,9 Mrd. US-Dollar Wert. Die mediane Laufzeit beträgt vier Jahre; rund 50 Prozent des FY2027- und etwa zwei Drittel des FY2028-Outputs sind gebunden."
+        },
+        {
           "id": "S-2026-07-30-02",
           "date": "2026-07-30",
           "title": "Samsung zielt mit rollierenden Fünfjahresverträgen auf 60–70 Prozent DRAM-/NAND-Abdeckung",
           "signal": "Geopolitische Entkopplung",
           "score": 67,
           "summary": "Samsung erwartet, dass sich die Memory-Knappheit 2027 gegenüber 2026 verschärft und bis 2028 fortsetzt. Das Unternehmen hat fünfjährige Memory-Lieferverträge mit fünf führenden globalen Datacenter-Kunden abgeschlossen und befindet sich mit fünf weiteren Kunden in finalen Gesprächen. Erst nach Abschluss der noch offenen Verträge sollen die gebundenen DRAM- und NAND-Volumina 60 bis 70 Prozent der Werkskapazität abdecken. Die Vereinbarungen können durch jährliche Verhandlung jeweils um ein Jahr verlängert werden. Sie enthalten erhebliche Vorauszahlungen, von denen Samsung rund ein Viertel der erwarteten Summe erhalten hat, sowie Preisuntergrenzen für Mainstream-Produkte. Der HBM4-Umsatz soll im dritten Quartal sequenziell um mehr als das Dreifache steigen und in der zweiten Jahreshälfte deutlich über 60 Prozent des HBM-Umsatzes ausmachen; HBM-Liefervereinbarungen für 2027 bestehen bereits."
-        },
-        {
-          "id": "S-2026-07-31-03",
-          "date": "2026-07-31",
-          "title": "Apple bestätigt Memory- und Leading-Edge-Engpässe als Client-BOM- und Verfügbarkeitsproblem",
-          "signal": "Geopolitische Entkopplung",
-          "score": 65,
-          "summary": "Apple meldete 109,4 Mrd. US-Dollar Umsatz (+16 %) und 50,1 % Bruttomarge; etwa zwei Margenpunkte kamen aus Zollerstattungen. Für das Septemberquartal erwartet Apple nur 9–11 % Wachstum. Tim Cook nannte erhebliche Supply-Constraints, Advanced-Chip-Fertigung als Hauptengpass und die Prüfung alternativer Memory-Lieferanten; Mac- und iPad-Preise wurden bereits erhöht."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "S-2026-08-05-01",
+        "S-2026-08-06-01",
         "S-2026-07-30-02",
+        "S-2026-08-06-02",
         "S-2026-07-31-03",
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-06T00:11:04.711Z"
+      "lastUpdated": "2026-08-06T06:41:21.364Z"
     },
     {
       "id": "enterprise_ssd",
@@ -419,26 +426,27 @@
           "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
         },
         {
+          "id": "S-2026-08-06-01",
+          "date": "2026-08-06",
+          "title": "Sandisk verwandelt NAND-Knappheit in einen mehrjährigen Kapazitätsmarkt",
+          "signal": "Nachfrageimpuls",
+          "score": 72,
+          "summary": "Sandisk meldete 8,97 Mrd. US-Dollar Quartalsumsatz; Datacenter stieg auf rund 2,98 Mrd. US-Dollar. Acht langfristige Vereinbarungen mit sechs Kunden haben mindestens 93,9 Mrd. US-Dollar Wert. Die mediane Laufzeit beträgt vier Jahre; rund 50 Prozent des FY2027- und etwa zwei Drittel des FY2028-Outputs sind gebunden."
+        },
+        {
           "id": "S-2026-08-02-02",
           "date": "2026-08-02",
           "title": "EU eröffnet sieben AI-Gigafactories mit mehr als 30 Mrd. Euro öffentlichem und privatem Kapital",
           "signal": "Nachfrageimpuls",
           "score": 71,
           "summary": "Die EU bietet bis zu 10 Mrd. Euro öffentliche Finanzierung für sieben AI-Gigafactories und will damit weitere 20 Mrd. Euro privates Kapital mobilisieren. Jede Anlage soll mindestens 100.000 moderne AI-Prozessoren bündeln; Unternehmen können nun Gebote für die Standorte abgeben."
-        },
-        {
-          "id": "S-2026-08-02-01",
-          "date": "2026-08-02",
-          "title": "Südkoreas Juli-Exporte bestätigen den physischen AI-Memory- und Storage-Zyklus",
-          "signal": "Nachfrageimpuls",
-          "score": 70,
-          "summary": "Südkoreas Exporte stiegen im Juli um 62,8 Prozent auf 98,89 Mrd. US-Dollar und übertrafen die Konsensprognose. Halbleiterexporte legten um 179 Prozent zu; Computerexporte stiegen durch AI-Investitionen großer US-Technologieunternehmen um 404 Prozent. Die Ausfuhren nach China wuchsen um 96 Prozent und in die USA um 69 Prozent."
         }
       ],
       "counterSignals": [],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "S-2026-07-31-01",
+        "S-2026-08-06-01",
         "S-2026-08-02-02",
         "S-2026-08-02-01",
         "S-2026-07-30-01",
@@ -446,7 +454,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-06T00:11:04.711Z"
+      "lastUpdated": "2026-08-06T06:41:21.364Z"
     },
     {
       "id": "ai_infrastructure",
@@ -506,6 +514,12 @@
           "score": 44
         },
         {
+          "id": "S-2026-08-06-05",
+          "title": "Brookfield sammelt Rekordkapital ein und macht AI-Infrastruktur zum konzernweiten Investment-Layer",
+          "signal": "Kapazitätsentlastung",
+          "score": 42
+        },
+        {
           "id": "S-2026-07-25-04",
           "title": "HCLTech und Sarvam verankern Full-Stack Sovereign AI in einem indischen Datacenter",
           "signal": "Kapazitätsentlastung",
@@ -517,6 +531,7 @@
         "S-2026-07-24-04",
         "S-2026-07-31-01",
         "S-2026-08-04-02",
+        "S-2026-08-06-01",
         "S-2026-07-22-05",
         "S-2026-07-29-02",
         "S-2026-07-31-02",
@@ -541,6 +556,7 @@
         "S-2026-07-30-01",
         "S-2026-07-30-02",
         "S-2026-08-01-01",
+        "S-2026-08-06-02",
         "S-2026-07-23-03",
         "S-2026-07-30-03",
         "S-2026-08-05-04",
@@ -577,12 +593,13 @@
         "tail-2026-07-14-huawei-swaysure",
         "S-2026-07-21-02",
         "S-2026-07-28-03",
+        "S-2026-08-06-05",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-08-06T00:11:04.711Z"
+      "lastUpdated": "2026-08-06T06:41:21.364Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 93 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 98 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
