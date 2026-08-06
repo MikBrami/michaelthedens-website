@@ -1,5 +1,7 @@
 name: TAIL Intelligence Platform v2
 
+# One workflow owns all generated TAIL data to prevent concurrent writes to main.
+
 on:
   push:
     branches: [main]
