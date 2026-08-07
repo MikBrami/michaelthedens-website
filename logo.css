@@ -1,0 +1,51 @@
+.site-header {
+  height: 104px;
+}
+
+.logo-lockup {
+  width: max-content;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: #f7f9fc;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.brand-logo {
+  display: block;
+  width: 190px;
+  height: auto;
+}
+
+.footer-logo {
+  padding: 6px 9px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.footer-logo .brand-logo {
+  width: 170px;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    height: 86px;
+  }
+
+  .header-logo {
+    padding: 5px 7px;
+    border-radius: 9px;
+  }
+
+  .header-logo .brand-logo {
+    width: 142px;
+  }
+
+  .site-header .nav-cta {
+    max-width: 140px;
+  }
+
+  .footer-logo .brand-logo {
+    width: 155px;
+  }
+}
