@@ -1,123 +1,128 @@
-  <!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Michael Thedens – Infrastructure Architect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TAIL liefert unabhängige Decision Intelligence für DRAM, HBM, Enterprise SSD und AI-Infrastruktur.">
+  <meta name="theme-color" content="#07101f">
+  <title>TAIL – Memory & AI Infrastructure Intelligence</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Zum Inhalt</a>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
-<header class="hero">
-  <h1>Michael Thedens</h1>
-  <p>Enterprise Infrastructure · AI Systems · Server Architecture</p>
-</header>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="TAIL Startseite">
+      <span class="brand-mark">T</span>
+      <span><strong>TAIL</strong><small>Thedens AI Lighthouse</small></span>
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <a href="#lagebild">Lagebild</a>
+      <a href="#signale">Signale</a>
+      <a href="#methodik">Methodik</a>
+      <a class="nav-cta" href="#newsletter">Briefing abonnieren</a>
+    </nav>
+  </header>
 
-<section class="configurator">
-  <div class="card">
-    <h2 id="modelBadge"></h2>
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Decision Intelligence für Memory & AI Infrastructure</p>
+        <h1>Was sich im Markt verändert, <em>bevor</em> es im Preis sichtbar wird.</h1>
+        <p class="hero-text">TAIL verdichtet Signale aus DRAM, HBM, Enterprise SSD, Datacenter und AI-Infrastruktur zu einem belastbaren Lagebild – mit klaren Auswirkungen auf Beschaffung, Verfügbarkeit und Timing.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#newsletter">TAIL Weekly erhalten</a>
+          <a class="button secondary" href="#lagebild">Aktuelles Lagebild</a>
+        </div>
+        <div class="freshness" role="status" aria-live="polite">
+          <span class="status-dot"></span>
+          <span id="freshness-text">Aktuelle TAIL-Daten werden geladen …</span>
+        </div>
+      </div>
 
-    <div class="grid">
-      <label>Modell
-        <select id="model"></select>
-      </label>
+      <aside class="index-panel" aria-label="Aktueller TAIL Index">
+        <div class="panel-top">
+          <span>TAIL Market Pressure</span>
+          <span id="index-label" class="state-chip">LIVE</span>
+        </div>
+        <div class="index-value"><strong id="tail-index">–</strong><small>/100</small></div>
+        <p id="index-summary">Das aktuelle Lagebild wird aus der TAIL Knowledge Base aufgebaut.</p>
+        <div id="mini-markets" class="mini-markets"></div>
+      </aside>
+    </section>
 
-      <label>Workload
-        <select id="workload">
-          <option value="general">General</option>
-          <option value="database">Database</option>
-          <option value="storage">Storage</option>
-          <option value="ai">AI</option>
-          <option value="edge">Edge</option>
-        </select>
-      </label>
+    <section class="trust-strip" aria-label="TAIL Themenfelder">
+      <span>SERVER DRAM</span><i></i><span>HBM</span><i></i><span>ENTERPRISE SSD</span><i></i><span>NAND</span><i></i><span>AI INFRASTRUCTURE</span>
+    </section>
 
-      <label>CPU Vendor
-        <select id="cpuVendor">
-          <option value="AMD">AMD</option>
-          <option value="Intel">Intel</option>
-        </select>
-      </label>
+    <section id="lagebild" class="section block-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Aktuelles Lagebild</p><h2>Wo der Druck im Markt sitzt</h2></div>
+        <p>Die Ampeln zeigen nicht bloß Nachrichtenmenge, sondern die kombinierte Wirkung auf Knappheit, Preis und strategische Verfügbarkeit.</p>
+      </div>
+      <div id="market-grid" class="market-grid" aria-live="polite">
+        <article class="loading-card">Marktdaten werden geladen …</article>
+      </div>
+    </section>
 
-      <label>CPU Modell
-        <select id="cpuModel"></select>
-      </label>
+    <section id="signale" class="section signals-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Selected Intelligence</p><h2>Was TAIL heute sieht</h2></div>
+        <p>Eine öffentliche Auswahl aus dem Intelligence Engine. Das interne Cockpit enthält die vollständige Evidenz, Prognosehistorie und Falsifikatoren.</p>
+      </div>
+      <div id="signal-grid" class="signal-grid" aria-live="polite">
+        <article class="loading-card">Signale werden geladen …</article>
+      </div>
+    </section>
 
-      <label>CPU Anzahl
-        <input type="number" id="cpuCount" min="1" max="2">
-      </label>
+    <section id="methodik" class="section methodology">
+      <div class="method-copy">
+        <p class="eyebrow">Keine Kristallkugel</p>
+        <h2>Ein Lagebild, das sich widersprechen lassen muss.</h2>
+        <p>TAIL sammelt keine Schlagzeilen. Ein Signal wird nach Quellenqualität, Neuigkeit, Relevanz, Prognosewirkung, Falsifizierbarkeit und Zeitkritikalität bewertet. Prognosen bleiben datiert und Gegenbelege sichtbar.</p>
+      </div>
+      <ol class="method-steps">
+        <li><span>01</span><div><strong>Evidence</strong><p>Quellen prüfen, Duplikate entfernen, Unsicherheit markieren.</p></div></li>
+        <li><span>02</span><div><strong>Signal</strong><p>Marktwirkung bewerten und Veränderungen zum letzten Lauf erkennen.</p></div></li>
+        <li><span>03</span><div><strong>Forecast</strong><p>Datiert, messbar und mit klarer Kill Condition formulieren.</p></div></li>
+      </ol>
+    </section>
 
-      <label>Kerne pro CPU
-        <input type="number" id="coresPerCpu">
-      </label>
+    <section id="newsletter" class="section newsletter">
+      <div>
+        <p class="eyebrow">TAIL Weekly Intelligence Brief</p>
+        <h2>Freitags. Die drei Veränderungen, die für die nächste Entscheidung zählen.</h2>
+        <p>Memory, Storage und AI-Infrastruktur – kompakt, meinungsstark und mit dem wichtigsten Gegenargument. Kein Newsfriedhof.</p>
+      </div>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label for="email">Geschäftliche E-Mail-Adresse</label>
+        <div class="form-row">
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="name@unternehmen.de" required>
+          <button type="submit">Briefing abonnieren</button>
+        </div>
+        <label class="consent"><input id="consent" name="consent" type="checkbox" required><span>Ich möchte den TAIL Weekly Intelligence Brief erhalten. Die Anmeldung wird per Double-Opt-in bestätigt und kann jederzeit widerrufen werden.</span></label>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
 
-      <label>TDP
-        <input type="number" id="cpuTdp">
-      </label>
+    <section class="section about">
+      <div class="about-mark">MT</div>
+      <div>
+        <p class="eyebrow">Michael Thedens</p>
+        <h2>Marktwissen aus der Praxis – nicht aus dem Elfenbeinturm.</h2>
+        <p>Business Development für Enterprise Memory, Storage und AI-Infrastruktur. TAIL verbindet Marktintelligenz mit der Frage, was Hersteller, Systemintegratoren, Datacenter und Einkäufer als Nächstes tun sollten.</p>
+      </div>
+    </section>
+  </main>
 
-      <label>RAM DIMMs
-        <input type="number" id="ramDimms">
-      </label>
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark">T</span><span><strong>TAIL</strong><small>Thedens AI Lighthouse</small></span></div>
+    <p>Decision Intelligence for Memory, Storage & AI Infrastructure.</p>
+    <p>© 2026 Michael Thedens · michaelthedens.de</p>
+  </footer>
 
-      <label>RAM pro DIMM (GB)
-        <input type="number" id="ramPerDimm">
-      </label>
-
-      <label>Drives
-        <input type="number" id="driveCount">
-      </label>
-
-      <label>Drive Typ
-        <select id="driveType">
-          <option value="SAS">SAS</option>
-          <option value="SATA">SATA</option>
-          <option value="NVMe">NVMe</option>
-        </select>
-      </label>
-
-      <label>RAID
-        <select id="raid">
-          <option value="none">None</option>
-          <option value="1">1</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="10">10</option>
-        </select>
-      </label>
-
-      <label>GPUs
-        <input type="number" id="gpuCount">
-      </label>
-
-      <label>PSU Watt
-        <input type="number" id="psuWatt">
-      </label>
-
-      <label>PSU Anzahl
-        <input type="number" id="psuCount">
-      </label>
-
-      <label>NIC Speed (GbE)
-        <input type="number" id="nicSpeed">
-      </label>
-    </div>
-
-    <button id="applyDefaultBtn" class="primary">Empfohlene Konfiguration</button>
-
-    <h3>Zusammenfassung</h3>
-    <ul id="summary"></ul>
-
-    <h3>Validierung</h3>
-    <ul id="checks"></ul>
-
-  </div>
-</section>
-
-<footer>
-  © 2026 Michael Thedens · michaelthedens.de
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
-          
