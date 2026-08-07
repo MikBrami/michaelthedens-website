@@ -28,7 +28,10 @@ const marketExplanation = {
 
 function renderDashboard(data) {
   document.getElementById("tail-index").textContent = data.tailIndex ?? "–";
-  document.getElementById("index-label").textContent = String(data.indexStatus || "live").toUpperCase();
+  const indexLabel = document.getElementById("index-label");
+  const indexStatus = String(data.indexStatus || "live").toLowerCase();
+  indexLabel.textContent = indexStatus.toUpperCase();
+  indexLabel.className = `state-chip ${["red", "orange", "yellow", "green"].includes(indexStatus) ? indexStatus : "green"}`;
   document.getElementById("index-summary").textContent = data.executiveSummary || "TAIL bewertet die aktuelle Marktlage.";
 
   const isCurrent = data.dataFreshness === "current" && data.processStatus === "ok";
