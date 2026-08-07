@@ -3931,5 +3931,49 @@
         "url": "https://www.bis.gov/about-bis/bis-leadership-and-offices/SIES/section-232-investigations"
       }
     ]
+  },
+  {
+    "id": "S-2026-08-07-SKHYNIX-Y2-M17",
+    "date": "2026-08-07",
+    "title": "SK hynix koppelt Y2-DRAM/HBM- und M17-NAND-Ausbau an strukturelle AI-Nachfrage",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "dram",
+      "nand",
+      "enterprise_ssd",
+      "semiconductors",
+      "supply_chain"
+    ],
+    "companies": [
+      "Samsung",
+      "SK hynix"
+    ],
+    "severity": 100,
+    "confidence": 88,
+    "signal": "capacity_relief",
+    "summary": "SK hynix genehmigt rund KRW54,3 Billionen neue Fab-Investitionen in Südkorea: KRW35,2 Billionen für Yongin Y2 als DRAM-Basis für HBM und Next-Generation DRAM sowie KRW19,1 Billionen für Cheongju M17 als NAND-Fab. Y2 soll im Juli 2027 Baubeginn haben, mit erstem Cleanroom im Juni 2029 und Investitionen bis Oktober 2031. M17 soll im Februar 2027 starten, mit erstem Cleanroom im Dezember 2028 und Investitionen bis April 2031. Y1 bleibt für einen ersten Cleanroom im Februar 2027 vorgesehen. SK hynix will alle vier Yongin-Fabs bis 2033 fertigstellen und damit den ursprünglichen Zielhorizont 2045 um zwölf Jahre vorziehen.",
+    "tail_analysis": "Die Investition bestätigt TAILs These, dass Memory zunehmend von einer zyklischen Komponente zu strategischer AI-Infrastruktur wird. Kurzfristig liefert Y2/M17 keine relevante Entlastung für die 2026-27-Knappheit. Bei DRAM bindet der Ausbau ausdrücklich HBM und Next-Generation DRAM, sodass zusätzliche Fab-Kapazität nicht proportional in Commodity- oder Server-DDR5-Bit-Supply übersetzt werden kann. Auf der NAND-Seite verbindet SK hynix Enterprise-SSD-Nachfrage explizit mit AI-Service-Rollouts, KV-Cache für Inference sowie Agentic AI und Physical AI. Besonders wichtig ist die neue Kapitalmechanik: Fab-Shell und Versorgungsinfrastruktur werden vorgezogen, während teure Tools erst bei sichtbarer Nachfrage installiert werden. Kapazität wird damit zunehmend zur Option auf Supply statt automatisch zu Supply. In Verbindung mit mehrjährigen LTAs, Vorauszahlungen und Preisfloors bei Samsung/SK hynix stützt dies die TAIL-Arbeitsthese eines 'Memory Cycle 2.0': customer-triggered infrastructure statt spekulativer Commodity-Kapazität.",
+    "source": "Digitimes – SK hynix approves Yongin Y2 and Cheongju M17 capacity investment (article supplied to TAIL, 2026-08-07)",
+    "url": "tail://manual/digitimes-skhynix-y2-m17-2026-08-07",
+    "content_hash": "fe06b3958e0b416a5fbb",
+    "origin": "daily-intelligence",
+    "classification": "Structural Capacity / Memory Cycle 2.0",
+    "rank": 1,
+    "estimate": "Die Investitionsfreigabe bedeutet keine lineare oder sofortige Bit-Supply. SK hynix will Fab-Shells und Infrastruktur nach Masterplan errichten, Cleanroom-Fit-out und Tool-Installation jedoch in Phasen anhand konkreter Kundennachfrage steuern. Ein erster Cleanroom 2028/2029 ist daher nicht gleichbedeutend mit sofortiger qualifizierter Volumenproduktion; Tool-Installation, Prozessqualifikation, Yield-Ramp und Produktfreigaben verzögern die tatsächliche Supply-Wirkung zusätzlich.",
+    "red_pencil": {
+      "sourceIncentive": "SK hynix has an incentive to frame very large capex as disciplined structural investment rather than pro-cyclical expansion and to emphasize AI demand durability.",
+      "alternative": "The accelerated Y1-Y4 build-out may still create a conventional oversupply cycle if multiple suppliers ramp simultaneously and AI demand or HBM intensity undershoots expectations.",
+      "alreadyPriced": "General Yongin/Cheongju expansion was known; the board-approved Y2/M17 budgets, accelerated schedule and explicit demand-phased tool-installation mechanism materially strengthen the signal.",
+      "killCondition": "By 2029-2031, broad DRAM/NAND utilization falls materially while Y2/M17 and competing supplier ramps continue, contract coverage weakens and pricing drops despite phased tool deployment.",
+      "forecastChange": "Keep 2026-27 tightness thesis strongly supported; preserve 2028 as transition/watch year and raise 2029-31 oversupply-risk monitoring because Yongin acceleration, Samsung, Micron, CXMT/China capacity and process migrations may converge."
+    },
+    "sources": [
+      {
+        "label": "Digitimes – SK hynix approves Yongin Y2 and Cheongju M17 capacity investment (article supplied to TAIL, 2026-08-07)",
+        "url": "tail://manual/digitimes-skhynix-y2-m17-2026-08-07"
+      }
+    ]
   }
 ]

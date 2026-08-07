@@ -5,11 +5,11 @@
   "dataAsOf": "2026-08-07",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-08-07T08:55:24.502Z",
-  "lastForecastRun": "2026-08-07T08:55:24.502Z",
+  "lastSuccessfulUpdate": "2026-08-07T08:56:31.927Z",
+  "lastForecastRun": "2026-08-07T08:56:31.927Z",
   "newlyProcessedArticles": 0,
-  "totalArticles": 103,
-  "articleCount": 103,
+  "totalArticles": 104,
+  "articleCount": 104,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -42,7 +42,7 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-07T08:55:22.246Z",
+    "updatedAt": "2026-08-07T08:56:29.835Z",
     "newItems": 0,
     "totalItems": 85,
     "duplicateItems": 200,
@@ -56,7 +56,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "103 Artikel · Datenstand 2026-08-07"
+        "detail": "104 Artikel · Datenstand 2026-08-07"
       },
       {
         "id": "inbox",
@@ -84,37 +84,37 @@
     {
       "id": "server_dram",
       "label": "Server DRAM",
-      "score": 83,
+      "score": 82,
       "status": "red",
-      "signals": 10
+      "signals": 11
     },
     {
       "id": "dram",
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 30
+      "signals": 31
     },
     {
       "id": "hbm",
       "label": "HBM",
       "score": 80,
       "status": "orange",
-      "signals": 22
+      "signals": 23
     },
     {
       "id": "enterprise_ssd",
       "label": "Enterprise SSD",
-      "score": 74,
+      "score": 73,
       "status": "orange",
-      "signals": 9
+      "signals": 10
     },
     {
       "id": "nand",
       "label": "NAND",
       "score": 73,
       "status": "orange",
-      "signals": 9
+      "signals": 10
     },
     {
       "id": "ai_infrastructure",
@@ -128,26 +128,26 @@
       "label": "Semiconductors",
       "score": 72,
       "status": "orange",
-      "signals": 26
+      "signals": 27
     },
     {
       "id": "supply_chain",
       "label": "Supply Chain",
       "score": 68,
       "status": "orange",
-      "signals": 26
+      "signals": 27
     }
   ],
   "manufacturers": [
     {
       "name": "Samsung",
       "score": 82,
-      "mentions": 11
+      "mentions": 12
     },
     {
       "name": "SK hynix",
       "score": 82,
-      "mentions": 13
+      "mentions": 14
     },
     {
       "name": "Micron",
@@ -241,6 +241,12 @@
           "title": "Terafab wird zum vertikal integrierten Logic-Memory-Packaging-Projekt",
           "signal": "Kapazitätsentlastung",
           "score": 45
+        },
+        {
+          "id": "S-2026-08-07-SKHYNIX-Y2-M17",
+          "title": "SK hynix koppelt Y2-DRAM/HBM- und M17-NAND-Ausbau an strukturelle AI-Nachfrage",
+          "signal": "Kapazitätsentlastung",
+          "score": 44
         }
       ],
       "sourceArticleIds": [
@@ -273,16 +279,17 @@
         "S-2026-08-01-02",
         "S-2026-08-01-05",
         "S-2026-07-21-04",
-        "S-2026-08-07-01"
+        "S-2026-08-07-01",
+        "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-07T08:55:24.501Z"
+      "lastUpdated": "2026-08-07T08:56:31.926Z"
     },
     {
       "id": "hbm",
       "market": "HBM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 80,
+      "relevanceScore": 79,
       "confidenceScore": 89,
       "horizon": "2026–2028",
       "direction": "up",
@@ -321,7 +328,14 @@
           "summary": "Komplexere Logik-Bases, höhere Layer-Zahlen und Advanced Packaging erhöhen Kosten, Yield-Risiken und Kapazitätsbedarf."
         }
       ],
-      "counterSignals": [],
+      "counterSignals": [
+        {
+          "id": "S-2026-08-07-SKHYNIX-Y2-M17",
+          "title": "SK hynix koppelt Y2-DRAM/HBM- und M17-NAND-Ausbau an strukturelle AI-Nachfrage",
+          "signal": "Kapazitätsentlastung",
+          "score": 44
+        }
+      ],
       "sourceArticleIds": [
         "tail-2026-07-14-skhynix-2030",
         "tail-2026-07-14-hyperscaler-lta",
@@ -344,17 +358,18 @@
         "S-2026-08-06-02",
         "S-2026-07-19-04",
         "S-2026-07-23-03",
-        "S-2026-07-29-05"
+        "S-2026-07-29-05",
+        "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-07T08:55:24.501Z"
+      "lastUpdated": "2026-08-07T08:56:31.926Z"
     },
     {
       "id": "nand",
       "market": "NAND",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 73,
-      "confidenceScore": 86,
+      "relevanceScore": 72,
+      "confidenceScore": 87,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
@@ -392,7 +407,14 @@
           "summary": "Samsung erwartet, dass sich die Memory-Knappheit 2027 gegenüber 2026 verschärft und bis 2028 fortsetzt. Das Unternehmen hat fünfjährige Memory-Lieferverträge mit fünf führenden globalen Datacenter-Kunden abgeschlossen und befindet sich mit fünf weiteren Kunden in finalen Gesprächen. Erst nach Abschluss der noch offenen Verträge sollen die gebundenen DRAM- und NAND-Volumina 60 bis 70 Prozent der Werkskapazität abdecken. Die Vereinbarungen können durch jährliche Verhandlung jeweils um ein Jahr verlängert werden. Sie enthalten erhebliche Vorauszahlungen, von denen Samsung rund ein Viertel der erwarteten Summe erhalten hat, sowie Preisuntergrenzen für Mainstream-Produkte. Der HBM4-Umsatz soll im dritten Quartal sequenziell um mehr als das Dreifache steigen und in der zweiten Jahreshälfte deutlich über 60 Prozent des HBM-Umsatzes ausmachen; HBM-Liefervereinbarungen für 2027 bestehen bereits."
         }
       ],
-      "counterSignals": [],
+      "counterSignals": [
+        {
+          "id": "S-2026-08-07-SKHYNIX-Y2-M17",
+          "title": "SK hynix koppelt Y2-DRAM/HBM- und M17-NAND-Ausbau an strukturelle AI-Nachfrage",
+          "signal": "Kapazitätsentlastung",
+          "score": 44
+        }
+      ],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "S-2026-08-05-01",
@@ -402,16 +424,17 @@
         "S-2026-07-31-03",
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
-        "S-2026-07-20-05"
+        "S-2026-07-20-05",
+        "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-07T08:55:24.501Z"
+      "lastUpdated": "2026-08-07T08:56:31.926Z"
     },
     {
       "id": "enterprise_ssd",
       "market": "Enterprise SSD",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 73,
+      "relevanceScore": 72,
       "confidenceScore": 86,
       "horizon": "H2 2026–2027",
       "direction": "up",
@@ -450,7 +473,14 @@
           "summary": "Die EU bietet bis zu 10 Mrd. Euro öffentliche Finanzierung für sieben AI-Gigafactories und will damit weitere 20 Mrd. Euro privates Kapital mobilisieren. Jede Anlage soll mindestens 100.000 moderne AI-Prozessoren bündeln; Unternehmen können nun Gebote für die Standorte abgeben."
         }
       ],
-      "counterSignals": [],
+      "counterSignals": [
+        {
+          "id": "S-2026-08-07-SKHYNIX-Y2-M17",
+          "title": "SK hynix koppelt Y2-DRAM/HBM- und M17-NAND-Ausbau an strukturelle AI-Nachfrage",
+          "signal": "Kapazitätsentlastung",
+          "score": 44
+        }
+      ],
       "sourceArticleIds": [
         "tail-2026-07-14-hyperscaler-lta",
         "S-2026-07-31-01",
@@ -460,9 +490,10 @@
         "S-2026-07-30-01",
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
-        "S-2026-07-20-05"
+        "S-2026-07-20-05",
+        "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-07T08:55:24.501Z"
+      "lastUpdated": "2026-08-07T08:56:31.926Z"
     },
     {
       "id": "ai_infrastructure",
@@ -615,10 +646,10 @@
         "S-2026-08-06-05",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-08-07T08:55:24.502Z"
+      "lastUpdated": "2026-08-07T08:56:31.926Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 103 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 104 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",
