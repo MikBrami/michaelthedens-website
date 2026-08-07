@@ -7,7 +7,7 @@ const DAILY = new URL('data/daily-intelligence-latest.json', ROOT);
 const DAILY_INDEX = new URL('data/daily-intelligence-index.json', ROOT);
 const ARTICLES = new URL('data/articles.json', ROOT);
 const STATUS = new URL('data/update-status.json', ROOT);
-const DAILY_FILE_PATTERN = /^daily-intelligence-(\d{4}-\d{2}-\d{2})\.json$/;
+const DAILY_FILE_PATTERN = /^daily-intelligence-(\d{4}-\d{2}-\d{2})(?:-[a-z0-9-]+)?\.json$/i;
 
 const now = new Date().toISOString();
 const hash = (value) => crypto.createHash('sha256').update(value).digest('hex').slice(0, 20);
