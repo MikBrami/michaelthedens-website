@@ -1,6 +1,4 @@
-const PLATFORM_URL = "/tail-intelligence/data/dashboard.json";
-const DAILY_URL = "/tail-intelligence/data/daily-intelligence-latest.json";
-const ARTICLES_URL = "/tail-intelligence/data/articles.json";
+const PUBLIC_DATA_URL = "/public-tail/data.json";
 
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
@@ -27,27 +25,11 @@ const marketExplanation = {
   ai_infrastructure: "Power, Datacenter-Kapazität und Memory bestimmen das Ausbautempo."
 };
 
-function selectPublicSignals(daily, articles, fallbackSignals = []) {
-  if (!Array.isArray(daily?.acceptedSignals) || !daily.acceptedSignals.length) return fallbackSignals.slice(0, 3);
-  const articlesById = new Map((Array.isArray(articles) ? articles : []).map((article) => [article.id, article]));
-  const dailyDate = String(daily.updatedAt || "").slice(0, 10);
-  return daily.acceptedSignals.slice(0, 3).map((signal) => {
-    const article = articlesById.get(signal.id) || {};
-    return {
-      date: article.date || dailyDate,
-      title: signal.title,
-      summary: article.summary || signal.fact,
-      analysis: article.tail_analysis || signal.tailInference,
-      score: signal.priorityScore
-    };
-  });
-}
-
-function renderCatalysts(daily) {
+function renderCatalysts(catalystInput) {
   const grid = document.getElementById("catalyst-grid");
   const startOfToday = new Date();
   startOfToday.setHours(0, 0, 0, 0);
-  const catalysts = (Array.isArray(daily?.nextCatalysts) ? daily.nextCatalysts : [])
+  const catalysts = (Array.isArray(catalystInput) ? catalystInput : [])
     .map((catalyst) => ({ ...catalyst, timestamp: new Date(`${catalyst.date}T00:00:00`).getTime() }))
     .filter((catalyst) => Number.isFinite(catalyst.timestamp) && catalyst.timestamp >= startOfToday.getTime())
     .sort((a, b) => a.timestamp - b.timestamp)
@@ -65,8 +47,9 @@ function renderCatalysts(daily) {
   }).join("") || '<article class="loading-card">Derzeit sind keine zukünftigen Katalysatoren eingetragen.</article>';
 }
 
-function renderDashboard(platform, daily, publicSignals) {
-  const pulse = daily.executivePulse || {};
+function renderDashboard(snapshot) {
+  const platform = snapshot.platform || {};
+  const pulse = snapshot.executivePulse || {};
   document.getElementById("tail-index").textContent = pulse.current ?? "–";
   const indexLabel = document.getElementById("index-label");
   const indexStatus = String(pulse.status || "live").toLowerCase();
@@ -77,7 +60,7 @@ function renderDashboard(platform, daily, publicSignals) {
   const isCurrent = platform.dataFreshness === "current" && platform.processStatus === "ok";
   const dot = document.querySelector(".status-dot");
   if (!isCurrent) dot.classList.add("stale");
-  document.getElementById("freshness-text").textContent = `${isCurrent ? "Aktuell" : "Prüfung läuft"} · Datenstand ${formatDate(daily.updatedAt || platform.dataAsOf)} · ${platform.articleCount ?? platform.totalArticles ?? "–"} Quellen im Lagebild`;
+  document.getElementById("freshness-text").textContent = `${isCurrent ? "Aktuell" : "Prüfung läuft"} · Datenstand ${formatDate(platform.dataAsOf)} · ${platform.articleCount ?? "–"} Quellen im Lagebild`;
 
   const markets = Array.isArray(platform.markets) ? platform.markets.slice(0, 6) : [];
   document.getElementById("mini-markets").innerHTML = markets.slice(0, 3).map((market) => `
@@ -93,7 +76,7 @@ function renderDashboard(platform, daily, publicSignals) {
       <p>${escapeHtml(marketExplanation[market.id] || `${market.signals || 0} relevante Signale im aktuellen Lagebild.`)}</p>
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Marktdaten verfügbar.</article>';
 
-  const signals = Array.isArray(publicSignals) ? publicSignals : [];
+  const signals = Array.isArray(snapshot.signals) ? snapshot.signals : [];
   document.getElementById("signal-grid").innerHTML = signals.map((signal, index) => `
     <article class="signal-card">
       <div class="signal-meta"><span>Signal ${String(index + 1).padStart(2, "0")} · ${escapeHtml(formatDate(signal.date))}</span><span class="signal-score">${Number(signal.score) || "–"}/100</span></div>
@@ -102,7 +85,7 @@ function renderDashboard(platform, daily, publicSignals) {
       <p class="signal-impact"><span>Warum es zählt</span>${escapeHtml(signal.analysis || "Die Marktwirkung wird im nächsten TAIL-Lauf weiter geprüft.")}</p>
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Signale verfügbar.</article>';
 
-  renderCatalysts(daily);
+  renderCatalysts(snapshot.catalysts);
 }
 
 function renderDataError() {
@@ -115,16 +98,9 @@ function renderDataError() {
 
 async function loadDashboard() {
   try {
-    const cacheBuster = Date.now();
-    const [platformResponse, dailyResponse, articlesResponse] = await Promise.all([
-      fetch(`${PLATFORM_URL}?v=${cacheBuster}`, { cache: "no-store" }),
-      fetch(`${DAILY_URL}?v=${cacheBuster}`, { cache: "no-store" }),
-      fetch(`${ARTICLES_URL}?v=${cacheBuster}`, { cache: "no-store" }).catch(() => null)
-    ]);
-    if (!platformResponse.ok || !dailyResponse.ok) throw new Error(`HTTP ${platformResponse.status}/${dailyResponse.status}`);
-    const [platform, daily] = await Promise.all([platformResponse.json(), dailyResponse.json()]);
-    const articles = articlesResponse?.ok ? await articlesResponse.json() : [];
-    renderDashboard(platform, daily, selectPublicSignals(daily, articles, platform.topSignals));
+    const response = await fetch(`${PUBLIC_DATA_URL}?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    renderDashboard(await response.json());
   } catch (error) {
     console.error("TAIL public dashboard failed:", error);
     renderDataError();

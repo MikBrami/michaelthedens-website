@@ -9,6 +9,8 @@ const statusPath = path.join(dataDir, 'update-status.json');
 const outputPath = path.join(dataDir, 'dashboard.json');
 const methodologyPath = path.join(root, 'config', 'methodology.json');
 const forecastLedgerPath = path.join(dataDir, 'forecast-ledger.json');
+const latestDailyPath = path.join(dataDir, 'daily-intelligence-latest.json');
+const publicOutputPath = path.resolve(root, '..', 'public-tail', 'data.json');
 
 function readJson(filePath, fallback) {
   try {
@@ -22,6 +24,7 @@ const articles = readJson(inputPath, []);
 if (!Array.isArray(articles) || articles.length === 0) throw new Error('articles.json contains no records');
 const methodology = readJson(methodologyPath, { signalOverrides: {}, forecastOverrides: {} });
 const forecastLedger = readJson(forecastLedgerPath, { forecasts: [] });
+const latestDaily = readJson(latestDailyPath, {});
 
 const inbox = readJson(inboxPath, { updated_at: null, new_items: 0, duplicate_items: [], items: [] });
 const updateStatus = readJson(statusPath, {
@@ -287,4 +290,40 @@ const dashboard = {
 };
 
 fs.writeFileSync(outputPath, JSON.stringify(dashboard, null, 2) + '\n');
+const articlesById = new Map(normalizedArticles.map((article) => [article.id, article]));
+const dailyDate = String(latestDaily.updatedAt || dashboard.dataAsOf || '').slice(0, 10);
+const selectedSignals = Array.isArray(latestDaily.acceptedSignals) && latestDaily.acceptedSignals.length
+  ? latestDaily.acceptedSignals.slice(0, 3).map((signal) => {
+      const article = articlesById.get(signal.id) || {};
+      return {
+        date: article.date || dailyDate,
+        title: signal.title,
+        summary: article.summary || signal.fact,
+        analysis: article.tail_analysis || signal.tailInference,
+        score: signal.priorityScore
+      };
+    })
+  : dashboard.topSignals.slice(0, 3).map(({ date, title, summary, analysis, score }) => ({ date, title, summary, analysis, score }));
+
+const publicSnapshot = {
+  schemaVersion: 1,
+  generatedAt: new Date().toISOString(),
+  platform: {
+    dataAsOf: dashboard.dataAsOf,
+    dataFreshness: dashboard.dataFreshness,
+    processStatus: dashboard.processStatus,
+    articleCount: dashboard.articleCount,
+    markets: dashboard.markets.slice(0, 6)
+  },
+  executivePulse: latestDaily.executivePulse || {
+    current: dashboard.tailIndex,
+    status: dashboard.indexStatus,
+    interpretation: dashboard.executiveSummary
+  },
+  signals: selectedSignals,
+  catalysts: (Array.isArray(latestDaily.nextCatalysts) ? latestDaily.nextCatalysts : []).slice(0, 8)
+};
+
+fs.mkdirSync(path.dirname(publicOutputPath), { recursive: true });
+fs.writeFileSync(publicOutputPath, JSON.stringify(publicSnapshot, null, 2) + '\n');
 console.log(`Built dashboard: ${normalizedArticles.length} KB articles, ${forecasts.length} forecasts, TAIL index ${overall}, status ${processStatus}`);
