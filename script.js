@@ -42,7 +42,7 @@ function renderCatalysts(catalystInput) {
       <article class="catalyst-card${index === 0 ? " next" : ""}">
         <div class="catalyst-date"><time datetime="${escapeHtml(catalyst.date)}">${escapeHtml(formatDate(catalyst.date))}</time><span>${timing}</span></div>
         <h3>${escapeHtml(catalyst.event)}</h3>
-        <p>${index === 0 ? "Nächster TAIL-Prüfpunkt" : "Beobachtungstermin im aktuellen Lagebild"}</p>
+        <p>${index === 0 ? "Nächster MT·AI-Prüfpunkt" : "Beobachtungstermin im aktuellen Lagebild"}</p>
       </article>`;
   }).join("") || '<article class="loading-card">Derzeit sind keine zukünftigen Katalysatoren eingetragen.</article>';
 }
@@ -55,7 +55,7 @@ function renderDashboard(snapshot) {
   const indexStatus = String(pulse.status || "live").toLowerCase();
   indexLabel.textContent = indexStatus.toUpperCase();
   indexLabel.className = `state-chip ${["red", "orange", "yellow", "green"].includes(indexStatus) ? indexStatus : "green"}`;
-  document.getElementById("index-summary").textContent = pulse.interpretation || "TAIL bewertet die aktuelle Marktlage.";
+  document.getElementById("index-summary").textContent = pulse.interpretation || "MT·AI bewertet die aktuelle Marktlage.";
 
   const isCurrent = platform.dataFreshness === "current" && platform.processStatus === "ok";
   const dot = document.querySelector(".status-dot");
@@ -82,14 +82,14 @@ function renderDashboard(snapshot) {
       <div class="signal-meta"><span>Signal ${String(index + 1).padStart(2, "0")} · ${escapeHtml(formatDate(signal.date))}</span><span class="signal-score">${Number(signal.score) || "–"}/100</span></div>
       <h3>${escapeHtml(signal.title)}</h3>
       <p>${escapeHtml(signal.summary)}</p>
-      <p class="signal-impact"><span>Warum es zählt</span>${escapeHtml(signal.analysis || "Die Marktwirkung wird im nächsten TAIL-Lauf weiter geprüft.")}</p>
+      <p class="signal-impact"><span>Warum es zählt</span>${escapeHtml(signal.analysis || "Die Marktwirkung wird im nächsten MT·AI-Lauf weiter geprüft.")}</p>
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Signale verfügbar.</article>';
 
   renderCatalysts(snapshot.catalysts);
 }
 
 function renderDataError() {
-  document.getElementById("freshness-text").textContent = "TAIL-Daten können gerade nicht geladen werden – die letzte Einschätzung wird nicht als aktuell ausgegeben.";
+  document.getElementById("freshness-text").textContent = "MT·AI-Daten können gerade nicht geladen werden – die letzte Einschätzung wird nicht als aktuell ausgegeben.";
   document.querySelector(".status-dot").classList.add("stale");
   document.getElementById("market-grid").innerHTML = '<article class="loading-card">Das aktuelle Lagebild ist vorübergehend nicht verfügbar.</article>';
   document.getElementById("signal-grid").innerHTML = '<article class="loading-card">Die aktuellen Signale sind vorübergehend nicht verfügbar.</article>';
@@ -102,7 +102,7 @@ async function loadDashboard() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     renderDashboard(await response.json());
   } catch (error) {
-    console.error("TAIL public dashboard failed:", error);
+    console.error("MT·AI public dashboard failed:", error);
     renderDataError();
   }
 }
