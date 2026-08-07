@@ -43,6 +43,28 @@ function selectPublicSignals(daily, articles, fallbackSignals = []) {
   });
 }
 
+function renderCatalysts(daily) {
+  const grid = document.getElementById("catalyst-grid");
+  const startOfToday = new Date();
+  startOfToday.setHours(0, 0, 0, 0);
+  const catalysts = (Array.isArray(daily?.nextCatalysts) ? daily.nextCatalysts : [])
+    .map((catalyst) => ({ ...catalyst, timestamp: new Date(`${catalyst.date}T00:00:00`).getTime() }))
+    .filter((catalyst) => Number.isFinite(catalyst.timestamp) && catalyst.timestamp >= startOfToday.getTime())
+    .sort((a, b) => a.timestamp - b.timestamp)
+    .slice(0, 4);
+
+  grid.innerHTML = catalysts.map((catalyst, index) => {
+    const daysUntil = Math.max(0, Math.ceil((catalyst.timestamp - startOfToday.getTime()) / 86_400_000));
+    const timing = daysUntil === 0 ? "Heute" : daysUntil === 1 ? "Morgen" : `In ${daysUntil} Tagen`;
+    return `
+      <article class="catalyst-card${index === 0 ? " next" : ""}">
+        <div class="catalyst-date"><time datetime="${escapeHtml(catalyst.date)}">${escapeHtml(formatDate(catalyst.date))}</time><span>${timing}</span></div>
+        <h3>${escapeHtml(catalyst.event)}</h3>
+        <p>${index === 0 ? "Nächster TAIL-Prüfpunkt" : "Beobachtungstermin im aktuellen Lagebild"}</p>
+      </article>`;
+  }).join("") || '<article class="loading-card">Derzeit sind keine zukünftigen Katalysatoren eingetragen.</article>';
+}
+
 function renderDashboard(platform, daily, publicSignals) {
   const pulse = daily.executivePulse || {};
   document.getElementById("tail-index").textContent = pulse.current ?? "–";
@@ -79,6 +101,8 @@ function renderDashboard(platform, daily, publicSignals) {
       <p>${escapeHtml(signal.summary)}</p>
       <p class="signal-impact"><span>Warum es zählt</span>${escapeHtml(signal.analysis || "Die Marktwirkung wird im nächsten TAIL-Lauf weiter geprüft.")}</p>
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Signale verfügbar.</article>';
+
+  renderCatalysts(daily);
 }
 
 function renderDataError() {
@@ -86,6 +110,7 @@ function renderDataError() {
   document.querySelector(".status-dot").classList.add("stale");
   document.getElementById("market-grid").innerHTML = '<article class="loading-card">Das aktuelle Lagebild ist vorübergehend nicht verfügbar.</article>';
   document.getElementById("signal-grid").innerHTML = '<article class="loading-card">Die aktuellen Signale sind vorübergehend nicht verfügbar.</article>';
+  document.getElementById("catalyst-grid").innerHTML = '<article class="loading-card">Die nächsten Katalysatoren sind vorübergehend nicht verfügbar.</article>';
 }
 
 async function loadDashboard() {
