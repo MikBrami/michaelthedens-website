@@ -27,6 +27,28 @@
   ],
   "headers": [
     {
+      "source": "/public-tail/data.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+      ]
+    },
+    {
+      "source": "/tail-daily-intelligence(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "private, no-store, max-age=0" },
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    },
+    {
+      "source": "/tail-intelligence(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "private, no-store, max-age=0" },
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    },
+    {
       "source": "/tail-intelligence/data/dashboard.json",
       "headers": [
         { "key": "Cache-Control", "value": "no-store, max-age=0" }
