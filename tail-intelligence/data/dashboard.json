@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-08-06",
+  "dataAsOf": "2026-08-07",
   "dataFreshness": "current",
-  "dataAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-08-07T06:18:50.596Z",
-  "lastForecastRun": "2026-08-07T06:18:50.596Z",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-08-07T06:44:50.539Z",
+  "lastForecastRun": "2026-08-07T06:44:50.539Z",
   "newlyProcessedArticles": 0,
-  "totalArticles": 98,
-  "articleCount": 98,
+  "totalArticles": 103,
+  "articleCount": 103,
   "processStatus": "ok",
   "methodology": {
     "version": "3.1",
@@ -32,7 +32,7 @@
       "accepted": 80,
       "watchlist": 65
     },
-    "forecastLedgerCount": 95,
+    "forecastLedgerCount": 96,
     "resolvedForecasts": 4,
     "activeForecasts": 44,
     "scopeGateStatus": "active",
@@ -42,7 +42,7 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-07T06:18:48.590Z",
+    "updatedAt": "2026-08-07T06:44:48.135Z",
     "newItems": 0,
     "totalItems": 85,
     "duplicateItems": 200,
@@ -56,7 +56,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "98 Artikel · Datenstand 2026-08-06"
+        "detail": "103 Artikel · Datenstand 2026-08-07"
       },
       {
         "id": "inbox",
@@ -93,7 +93,7 @@
       "label": "DRAM",
       "score": 80,
       "status": "orange",
-      "signals": 29
+      "signals": 30
     },
     {
       "id": "hbm",
@@ -121,21 +121,21 @@
       "label": "AI Infrastructure",
       "score": 72,
       "status": "orange",
-      "signals": 68
+      "signals": 73
     },
     {
       "id": "semiconductors",
       "label": "Semiconductors",
       "score": 72,
       "status": "orange",
-      "signals": 24
+      "signals": 26
     },
     {
       "id": "supply_chain",
       "label": "Supply Chain",
       "score": 68,
       "status": "orange",
-      "signals": 25
+      "signals": 26
     }
   ],
   "manufacturers": [
@@ -167,7 +167,7 @@
     {
       "name": "Intel",
       "score": 74,
-      "mentions": 2
+      "mentions": 3
     },
     {
       "name": "TSMC",
@@ -197,7 +197,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 79,
-      "confidenceScore": 86,
+      "confidenceScore": 87,
       "horizon": "2026–2027",
       "direction": "up",
       "keyThesis": "Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.",
@@ -235,7 +235,14 @@
           "summary": "Samsung stellte auf der FMS 2026 V10 Bonding V-NAND mit mehr als 400 Layern und Wafer-Bonding vor. Nach Unternehmensangaben steigt die Speicherdichte gegenüber V9 um 58 Prozent. Zusätzlich zeigte Samsung Konzeptarchitekturen für zHBM und zNAND-O, die Memory beziehungsweise NAND vertikal näher über dem AI-Accelerator integrieren sollen."
         }
       ],
-      "counterSignals": [],
+      "counterSignals": [
+        {
+          "id": "S-2026-08-07-01",
+          "title": "Terafab wird zum vertikal integrierten Logic-Memory-Packaging-Projekt",
+          "signal": "Kapazitätsentlastung",
+          "score": 45
+        }
+      ],
       "sourceArticleIds": [
         "tail-2026-07-14-server-dram",
         "S-2026-07-24-04",
@@ -265,9 +272,10 @@
         "S-2026-07-29-05",
         "S-2026-08-01-02",
         "S-2026-08-01-05",
-        "S-2026-07-21-04"
+        "S-2026-07-21-04",
+        "S-2026-08-07-01"
       ],
-      "lastUpdated": "2026-08-07T06:18:50.596Z"
+      "lastUpdated": "2026-08-07T06:44:50.538Z"
     },
     {
       "id": "hbm",
@@ -338,7 +346,7 @@
         "S-2026-07-23-03",
         "S-2026-07-29-05"
       ],
-      "lastUpdated": "2026-08-07T06:18:50.596Z"
+      "lastUpdated": "2026-08-07T06:44:50.539Z"
     },
     {
       "id": "nand",
@@ -396,7 +404,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-07T06:18:50.596Z"
+      "lastUpdated": "2026-08-07T06:44:50.539Z"
     },
     {
       "id": "enterprise_ssd",
@@ -454,7 +462,7 @@
         "S-2026-07-29-05",
         "S-2026-07-20-05"
       ],
-      "lastUpdated": "2026-08-07T06:18:50.596Z"
+      "lastUpdated": "2026-08-07T06:44:50.539Z"
     },
     {
       "id": "ai_infrastructure",
@@ -462,7 +470,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 71,
-      "confidenceScore": 86,
+      "confidenceScore": 87,
       "horizon": "2026–2030+",
       "direction": "up",
       "keyThesis": "AI Infrastructure wird durch Power, Datacenter-Kapazität, HBM, DRAM, eSSD und geopolitische Lieferketten begrenzt.",
@@ -502,6 +510,12 @@
       ],
       "counterSignals": [
         {
+          "id": "S-2026-08-07-01",
+          "title": "Terafab wird zum vertikal integrierten Logic-Memory-Packaging-Projekt",
+          "signal": "Kapazitätsentlastung",
+          "score": 45
+        },
+        {
           "id": "S-2026-07-21-02",
           "title": "Hut 8 kommerzialisiert den gesamten 1-GW-Beacon-Point-Campus mit zweitem 15-Jahres-Lease",
           "signal": "Kapazitätsentlastung",
@@ -535,6 +549,7 @@
         "S-2026-07-22-05",
         "S-2026-07-29-02",
         "S-2026-07-31-02",
+        "S-2026-08-07-02",
         "S-2026-07-20-02",
         "S-2026-07-23-01",
         "S-2026-07-25-01",
@@ -543,6 +558,8 @@
         "S-2026-07-22-03",
         "S-2026-07-23-02",
         "S-2026-07-28-04",
+        "S-2026-08-07-03",
+        "S-2026-08-07-05",
         "S-2026-07-22-01",
         "S-2026-07-26-02",
         "S-2026-08-04-04",
@@ -564,6 +581,7 @@
         "S-2026-07-26-01",
         "S-2026-07-28-05",
         "S-2026-08-03-01",
+        "S-2026-08-07-04",
         "S-2026-07-19-02",
         "S-2026-08-01-04",
         "S-2026-08-05-03",
@@ -591,15 +609,16 @@
         "S-2026-07-20-05",
         "S-2026-07-21-04",
         "tail-2026-07-14-huawei-swaysure",
+        "S-2026-08-07-01",
         "S-2026-07-21-02",
         "S-2026-07-28-03",
         "S-2026-08-06-05",
         "S-2026-07-25-04"
       ],
-      "lastUpdated": "2026-08-07T06:18:50.596Z"
+      "lastUpdated": "2026-08-07T06:44:50.539Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 98 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 103 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "tail-2026-07-14-server-dram",

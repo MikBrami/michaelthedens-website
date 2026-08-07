@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "methodologyVersion": "3.1",
-  "generatedAt": "2026-08-07T06:18:50.549Z",
+  "generatedAt": "2026-08-07T06:44:50.497Z",
   "creationPolicy": "Creation confidence is read only from structured fields or the documented legacy migration table. Free text is never parsed.",
   "correctionPolicy": "Objective input errors may be corrected only by preserving raw and corrected values plus reason, timestamp and audit entry. Judgment changes create a new update snapshot.",
   "weightingPolicy": "Strategic cluster budgets are used only for active-book prioritization and the separately labelled Strategic Weighted Score. Global calibration uses correlation adjustment without scope budgets.",
@@ -10,7 +10,7 @@
     "activeForecasts": 44,
     "memoryRawShare": 25,
     "hardGateActive": true,
-    "watchlistForecasts": 45
+    "watchlistForecasts": 46
   },
   "forecasts": [
     {
@@ -3620,7 +3620,7 @@
       "active": false,
       "resolved": false,
       "confidenceCreation": 58,
-      "confidenceCurrent": 66,
+      "confidenceCurrent": 60,
       "confidenceFixedLead": null,
       "confidenceResolution": null,
       "outcome": null,
@@ -3649,11 +3649,11 @@
       "excludedFromScoring": true,
       "validationNote": "Governance quarantine: explicit forecast cluster assignment required.",
       "adversarialCase": {
-        "hypothesis": "Koordinaten erhöhen die Rahmen-Chance, aber Erklärung, Durchsetzung und Strike-Bedingung bleiben offen.",
+        "hypothesis": "Kein neuer US-Großangriff stützt Teil 1; fallender Verkehr, Versicherungs-/Sanktionsprobleme schwächen den Rahmen-Teil.",
         "probability": null,
         "relation": "unassessed",
         "evidence": null,
-        "trigger": "Großangriff vor 09.08. oder kein Rahmen bis 15.08.",
+        "trigger": "Großangriff vor 09.08. oder kein dokumentierter Rahmen bis 15.08.",
         "nextReview": "2026-08-09",
         "assessmentStatus": "probability_pending"
       }
@@ -4284,6 +4284,51 @@
         "relation": "unassessed",
         "evidence": null,
         "trigger": "Kein Meilenstein bis Ende 2027.",
+        "nextReview": "2026-12-31",
+        "assessmentStatus": "probability_pending"
+      }
+    },
+    {
+      "id": "P-2026-08-07-01",
+      "forecast": "Bis 30.06.2027 hat Terafab mindestens einen öffentlich verifizierten HVM-relevanten Tool-/Technologievertrag und sichtbaren Baufortschritt über Research-Fab-Niveau.",
+      "status": "new_watchlist",
+      "active": false,
+      "resolved": false,
+      "confidenceCreation": 62,
+      "confidenceCurrent": 62,
+      "confidenceFixedLead": null,
+      "confidenceResolution": null,
+      "outcome": null,
+      "creationTimestamp": "2026-08-07T08:26:17+02:00",
+      "admissionTimestamp": "2026-08-07T08:26:17+02:00",
+      "admissionConfidence": 62,
+      "fixedLeadTimestamp": null,
+      "resolutionTimestamp": null,
+      "creationSource": "first_structured_record",
+      "sourceRecord": "daily-intelligence-2026-08-07.json",
+      "resolutionQuality": null,
+      "resolutionNote": null,
+      "clusterId": "GOVERNANCE-REVIEW-QUEUE",
+      "clusterLabel": "Governance Review Queue",
+      "scopeCategory": "second_order_falsifier",
+      "dependencyLevel": "high",
+      "clusterBudget": 0,
+      "needsClusterReview": true,
+      "effectiveWeight": 0,
+      "scopeGateStatus": "watchlist_scope",
+      "watchlistEnteredAt": "2026-08-07T08:26:17+02:00",
+      "watchlistConfidence": 62,
+      "promotionTimestamp": null,
+      "promotionReason": null,
+      "confidenceFrozen": false,
+      "excludedFromScoring": true,
+      "validationNote": "Governance quarantine: explicit forecast cluster assignment required.",
+      "adversarialCase": {
+        "hypothesis": "Skalenziel ist gewaltig, technische Partner, Node, Toolset, Power und HVM-Ramp bleiben offen.",
+        "probability": null,
+        "relation": "unassessed",
+        "evidence": null,
+        "trigger": "Kein HVM-Vertrag oder kein sichtbarer Baufortschritt bis 30.06.2027.",
         "nextReview": "2026-12-31",
         "assessmentStatus": "probability_pending"
       }
