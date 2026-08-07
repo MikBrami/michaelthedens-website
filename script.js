@@ -1,4 +1,8 @@
 const DATA_URL = "/tail-intelligence/data/dashboard.json";
+const ARTICLES_URL = "/tail-intelligence/data/articles.json";
+const PUBLIC_MARKETS = new Set([
+  "server_dram", "dram", "hbm", "enterprise_ssd", "nand", "ai_infrastructure", "semiconductors"
+]);
 
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
@@ -26,7 +30,42 @@ const marketExplanation = {
   supply_chain: "LTAs und geopolitische Fragmentierung verändern die Verfügbarkeit."
 };
 
-function renderDashboard(data) {
+function selectPublicSignals(articles, fallbackSignals = []) {
+  if (!Array.isArray(articles) || !articles.length) return fallbackSignals.slice(0, 3);
+
+  const datedArticles = articles
+    .filter((article) => article.date && Array.isArray(article.markets))
+    .map((article) => ({ ...article, timestamp: new Date(`${article.date}T12:00:00Z`).getTime() }))
+    .filter((article) => Number.isFinite(article.timestamp));
+  if (!datedArticles.length) return fallbackSignals.slice(0, 3);
+
+  const newestTimestamp = Math.max(...datedArticles.map((article) => article.timestamp));
+  const dayMs = 86_400_000;
+  return datedArticles
+    .filter((article) => article.markets.some((market) => PUBLIC_MARKETS.has(market)))
+    .map((article) => {
+      const ageDays = Math.max(0, Math.round((newestTimestamp - article.timestamp) / dayMs));
+      const marketBreadth = article.markets.filter((market) => PUBLIC_MARKETS.has(market)).length;
+      const topicalBoost = ["memory", "storage", "semiconductors"].includes(article.category) ? 5 : 0;
+      const publicPriority =
+        (Number(article.severity) || 0) * 0.45 +
+        (Number(article.confidence) || 0) * 0.25 +
+        Math.max(0, 20 - ageDays * 2) +
+        Math.min(10, marketBreadth * 2) +
+        topicalBoost;
+      return {
+        ...article,
+        analysis: article.tail_analysis,
+        score: Math.round(((Number(article.severity) || 0) + (Number(article.confidence) || 0)) / 2),
+        publicPriority
+      };
+    })
+    .filter((article) => (newestTimestamp - article.timestamp) / dayMs <= 7)
+    .sort((a, b) => b.publicPriority - a.publicPriority || b.timestamp - a.timestamp)
+    .slice(0, 3);
+}
+
+function renderDashboard(data, publicSignals) {
   document.getElementById("tail-index").textContent = data.tailIndex ?? "–";
   const indexLabel = document.getElementById("index-label");
   const indexStatus = String(data.indexStatus || "live").toLowerCase();
@@ -53,7 +92,7 @@ function renderDashboard(data) {
       <p>${escapeHtml(marketExplanation[market.id] || `${market.signals || 0} relevante Signale im aktuellen Lagebild.`)}</p>
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Marktdaten verfügbar.</article>';
 
-  const signals = Array.isArray(data.topSignals) ? data.topSignals.slice(0, 3) : [];
+  const signals = Array.isArray(publicSignals) ? publicSignals : [];
   document.getElementById("signal-grid").innerHTML = signals.map((signal, index) => `
     <article class="signal-card">
       <div class="signal-meta"><span>Signal ${String(index + 1).padStart(2, "0")} · ${escapeHtml(formatDate(signal.date))}</span><span class="signal-score">${Number(signal.score) || "–"}/100</span></div>
@@ -72,9 +111,15 @@ function renderDataError() {
 
 async function loadDashboard() {
   try {
-    const response = await fetch(`${DATA_URL}?v=${Date.now()}`, { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    renderDashboard(await response.json());
+    const cacheBuster = Date.now();
+    const [dashboardResponse, articlesResponse] = await Promise.all([
+      fetch(`${DATA_URL}?v=${cacheBuster}`, { cache: "no-store" }),
+      fetch(`${ARTICLES_URL}?v=${cacheBuster}`, { cache: "no-store" }).catch(() => null)
+    ]);
+    if (!dashboardResponse.ok) throw new Error(`HTTP ${dashboardResponse.status}`);
+    const data = await dashboardResponse.json();
+    const articles = articlesResponse?.ok ? await articlesResponse.json() : [];
+    renderDashboard(data, selectPublicSignals(articles, data.topSignals));
   } catch (error) {
     console.error("TAIL public dashboard failed:", error);
     renderDataError();
