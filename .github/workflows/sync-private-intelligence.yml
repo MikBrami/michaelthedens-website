@@ -1,0 +1,25 @@
+name: Sync private intelligence preview
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-private-intelligence-preview
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Update protected preview branch
+        run: git push origin HEAD:refs/heads/agent/private-intelligence
