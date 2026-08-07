@@ -18,30 +18,14 @@ const formatDate = (value) => {
   }).format(date);
 };
 
-const driverExplanation = {
-  "AI-Compute-Nachfrage": "Training, Inference und eigene Accelerator-Programme halten die Systemnachfrage auf Höchstniveau.",
-  "Memory / SSD Export Demand": "Memory- und SSD-Nachfrage verbreitert sich über AI-Server, Storage und internationale Lieferketten.",
-  "NAND Contracting / Capacity Lock": "Mehrjährige Verträge binden NAND-Kapazität und begrenzen frei verfügbare Mengen.",
-  "NAND / Memory-Centric Architecture": "Neue Systemarchitekturen rücken NAND und Memory näher an den AI-Accelerator.",
-  "Vertical Semiconductor Integration": "AI-Anbieter sichern sich zunehmend eigene Logik-, Memory- und Packaging-Kapazität.",
-  "AI Infrastructure Financing / Lease Exposure": "Anleihen, Leasing und langfristige Abnahmen verlängern den AI-Ausbau – und erhöhen die Kapitalbindung."
+const marketExplanation = {
+  server_dram: "AI-Server und steigende Speicherkapazität treffen auf begrenzte Wafer-Allokation.",
+  dram: "HBM-Verdrängung und Servernachfrage halten die Angebotslage angespannt.",
+  hbm: "Plattformspezifische Qualifizierung bindet Frontend- und Packaging-Kapazität.",
+  enterprise_ssd: "AI-Datenpipelines und High-Capacity-Systeme stützen die Nachfrage.",
+  nand: "Festere Preise, aber mittelfristig mehr Entlastungspotenzial als bei DRAM.",
+  ai_infrastructure: "Power, Datacenter-Kapazität und Memory bestimmen das Ausbautempo."
 };
-
-const scoreStatus = (score) => score >= 90 ? "red" : score >= 75 ? "orange" : score >= 60 ? "yellow" : "green";
-
-function buildPublicMarkets(daily, fallbackMarkets = []) {
-  if (!Array.isArray(daily?.driverScores) || !daily.driverScores.length) return fallbackMarkets.slice(0, 6);
-  return daily.driverScores.slice(0, 6).map((driver) => {
-    const score = Number(driver.absoluteSeverity ?? driver.score) || 0;
-    return {
-      id: driver.name,
-      label: driver.name,
-      score,
-      status: scoreStatus(score),
-      explanation: driverExplanation[driver.name] || `Aktuelle Signalstärke ${score}/100${Number.isFinite(driver.delta) ? ` · Veränderung ${driver.delta > 0 ? "+" : ""}${driver.delta}` : ""}.`
-    };
-  });
-}
 
 function selectPublicSignals(daily, articles, fallbackSignals = []) {
   if (!Array.isArray(daily?.acceptedSignals) || !daily.acceptedSignals.length) return fallbackSignals.slice(0, 3);
@@ -73,7 +57,7 @@ function renderDashboard(platform, daily, publicSignals) {
   if (!isCurrent) dot.classList.add("stale");
   document.getElementById("freshness-text").textContent = `${isCurrent ? "Aktuell" : "Prüfung läuft"} · Datenstand ${formatDate(daily.updatedAt || platform.dataAsOf)} · ${platform.articleCount ?? platform.totalArticles ?? "–"} Quellen im Lagebild`;
 
-  const markets = buildPublicMarkets(daily, platform.markets);
+  const markets = Array.isArray(platform.markets) ? platform.markets.slice(0, 6) : [];
   document.getElementById("mini-markets").innerHTML = markets.slice(0, 3).map((market) => `
     <div class="mini-market">
       <span>${escapeHtml(market.label)}</span><strong>${Number(market.score) || 0}</strong>
@@ -84,7 +68,7 @@ function renderDashboard(platform, daily, publicSignals) {
     <article class="market-card ${escapeHtml(market.status || "orange")}">
       <div class="market-head"><h3>${escapeHtml(market.label)}</h3><span class="market-score">${Number(market.score) || 0}</span></div>
       <div class="market-track"><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
-      <p>${escapeHtml(market.explanation || `${market.signals || 0} relevante Signale im aktuellen Lagebild.`)}</p>
+      <p>${escapeHtml(marketExplanation[market.id] || `${market.signals || 0} relevante Signale im aktuellen Lagebild.`)}</p>
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Marktdaten verfügbar.</article>';
 
   const signals = Array.isArray(publicSignals) ? publicSignals : [];
