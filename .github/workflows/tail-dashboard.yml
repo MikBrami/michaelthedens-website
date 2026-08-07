@@ -48,8 +48,23 @@ jobs:
           git config user.email 'tail-intelligence-bot@users.noreply.github.com'
           git add tail-intelligence/data public-tail/data.json
 
+          sync_private_branch() {
+            for sync_attempt in 1 2 3; do
+              if git push origin HEAD:refs/heads/agent/private-intelligence; then
+                return 0
+              fi
+              echo "::warning::Private preview sync ${sync_attempt} failed; refreshing its remote state."
+              git fetch origin agent/private-intelligence
+              sleep $((sync_attempt * 3))
+            done
+
+            echo '::error::Main is current, but the protected preview branch could not be synchronized.'
+            return 1
+          }
+
           if git diff --cached --quiet; then
             echo 'No generated TAIL changes to commit.'
+            sync_private_branch
             exit 0
           fi
 
@@ -57,6 +72,7 @@ jobs:
 
           for attempt in 1 2 3; do
             if git push origin HEAD:main; then
+              sync_private_branch
               exit 0
             fi
             echo "::warning::Push attempt ${attempt} failed; rebasing onto the latest main."
