@@ -85,5 +85,5 @@ export default async function middleware(request) {
 
 export const config = {
   matcher: '/:path*',
-  runtime: 'edge'
+  runtime: 'nodejs'
 };
