@@ -1,0 +1,53 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+body {
+  position: relative;
+}
+
+.site-header > *,
+.hero > *,
+.section-heading > *,
+.methodology > *,
+.about > *,
+.market-card,
+.signal-card,
+.catalyst-card {
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  overflow-wrap: anywhere;
+}
+
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    gap: 10px;
+  }
+
+  .site-header .nav-cta {
+    max-width: 150px;
+    text-align: center;
+    line-height: 1.15;
+  }
+
+  .catalyst-date {
+    flex-wrap: wrap;
+  }
+}
