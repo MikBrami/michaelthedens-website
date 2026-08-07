@@ -1,8 +1,6 @@
-const DATA_URL = "/tail-intelligence/data/dashboard.json";
+const PLATFORM_URL = "/tail-intelligence/data/dashboard.json";
+const DAILY_URL = "/tail-intelligence/data/daily-intelligence-latest.json";
 const ARTICLES_URL = "/tail-intelligence/data/articles.json";
-const PUBLIC_MARKETS = new Set([
-  "server_dram", "dram", "hbm", "enterprise_ssd", "nand", "ai_infrastructure", "semiconductors"
-]);
 
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
@@ -13,72 +11,69 @@ const escapeHtml = (value = "") => String(value)
 
 const formatDate = (value) => {
   if (!value) return "unbekannt";
-  const date = new Date(`${value}T12:00:00`);
+  const normalized = String(value).includes("T") ? value : `${value}T12:00:00`;
+  const date = new Date(normalized);
   return Number.isNaN(date.getTime()) ? value : new Intl.DateTimeFormat("de-DE", {
     day: "2-digit", month: "2-digit", year: "numeric"
   }).format(date);
 };
 
-const marketExplanation = {
-  server_dram: "AI-Server und steigende Speicherkapazität treffen auf begrenzte Wafer-Allokation.",
-  dram: "HBM-Verdrängung und Servernachfrage halten die Angebotslage angespannt.",
-  hbm: "Plattformspezifische Qualifizierung bindet Frontend- und Packaging-Kapazität.",
-  enterprise_ssd: "AI-Datenpipelines und High-Capacity-Systeme stützen die Nachfrage.",
-  nand: "Festere Preise, aber mittelfristig mehr Entlastungspotenzial als bei DRAM.",
-  ai_infrastructure: "Power, Datacenter-Kapazität und Memory bestimmen das Ausbautempo.",
-  semiconductors: "Advanced Nodes und Packaging bleiben strategische Engpassfelder.",
-  supply_chain: "LTAs und geopolitische Fragmentierung verändern die Verfügbarkeit."
+const driverExplanation = {
+  "AI-Compute-Nachfrage": "Training, Inference und eigene Accelerator-Programme halten die Systemnachfrage auf Höchstniveau.",
+  "Memory / SSD Export Demand": "Memory- und SSD-Nachfrage verbreitert sich über AI-Server, Storage und internationale Lieferketten.",
+  "NAND Contracting / Capacity Lock": "Mehrjährige Verträge binden NAND-Kapazität und begrenzen frei verfügbare Mengen.",
+  "NAND / Memory-Centric Architecture": "Neue Systemarchitekturen rücken NAND und Memory näher an den AI-Accelerator.",
+  "Vertical Semiconductor Integration": "AI-Anbieter sichern sich zunehmend eigene Logik-, Memory- und Packaging-Kapazität.",
+  "AI Infrastructure Financing / Lease Exposure": "Anleihen, Leasing und langfristige Abnahmen verlängern den AI-Ausbau – und erhöhen die Kapitalbindung."
 };
 
-function selectPublicSignals(articles, fallbackSignals = []) {
-  if (!Array.isArray(articles) || !articles.length) return fallbackSignals.slice(0, 3);
+const scoreStatus = (score) => score >= 90 ? "red" : score >= 75 ? "orange" : score >= 60 ? "yellow" : "green";
 
-  const datedArticles = articles
-    .filter((article) => article.date && Array.isArray(article.markets))
-    .map((article) => ({ ...article, timestamp: new Date(`${article.date}T12:00:00Z`).getTime() }))
-    .filter((article) => Number.isFinite(article.timestamp));
-  if (!datedArticles.length) return fallbackSignals.slice(0, 3);
-
-  const newestTimestamp = Math.max(...datedArticles.map((article) => article.timestamp));
-  const dayMs = 86_400_000;
-  return datedArticles
-    .filter((article) => article.markets.some((market) => PUBLIC_MARKETS.has(market)))
-    .map((article) => {
-      const ageDays = Math.max(0, Math.round((newestTimestamp - article.timestamp) / dayMs));
-      const marketBreadth = article.markets.filter((market) => PUBLIC_MARKETS.has(market)).length;
-      const topicalBoost = ["memory", "storage", "semiconductors"].includes(article.category) ? 5 : 0;
-      const publicPriority =
-        (Number(article.severity) || 0) * 0.45 +
-        (Number(article.confidence) || 0) * 0.25 +
-        Math.max(0, 20 - ageDays * 2) +
-        Math.min(10, marketBreadth * 2) +
-        topicalBoost;
-      return {
-        ...article,
-        analysis: article.tail_analysis,
-        score: Math.round(((Number(article.severity) || 0) + (Number(article.confidence) || 0)) / 2),
-        publicPriority
-      };
-    })
-    .filter((article) => (newestTimestamp - article.timestamp) / dayMs <= 7)
-    .sort((a, b) => b.publicPriority - a.publicPriority || b.timestamp - a.timestamp)
-    .slice(0, 3);
+function buildPublicMarkets(daily, fallbackMarkets = []) {
+  if (!Array.isArray(daily?.driverScores) || !daily.driverScores.length) return fallbackMarkets.slice(0, 6);
+  return daily.driverScores.slice(0, 6).map((driver) => {
+    const score = Number(driver.absoluteSeverity ?? driver.score) || 0;
+    return {
+      id: driver.name,
+      label: driver.name,
+      score,
+      status: scoreStatus(score),
+      explanation: driverExplanation[driver.name] || `Aktuelle Signalstärke ${score}/100${Number.isFinite(driver.delta) ? ` · Veränderung ${driver.delta > 0 ? "+" : ""}${driver.delta}` : ""}.`
+    };
+  });
 }
 
-function renderDashboard(data, publicSignals) {
-  document.getElementById("tail-index").textContent = data.tailIndex ?? "–";
+function selectPublicSignals(daily, articles, fallbackSignals = []) {
+  if (!Array.isArray(daily?.acceptedSignals) || !daily.acceptedSignals.length) return fallbackSignals.slice(0, 3);
+  const articlesById = new Map((Array.isArray(articles) ? articles : []).map((article) => [article.id, article]));
+  const dailyDate = String(daily.updatedAt || "").slice(0, 10);
+  return daily.acceptedSignals.slice(0, 3).map((signal) => {
+    const article = articlesById.get(signal.id) || {};
+    return {
+      date: article.date || dailyDate,
+      title: signal.title,
+      summary: article.summary || signal.fact,
+      analysis: article.tail_analysis || signal.tailInference,
+      score: signal.priorityScore
+    };
+  });
+}
+
+function renderDashboard(platform, daily, publicSignals) {
+  const pulse = daily.executivePulse || {};
+  document.getElementById("tail-index").textContent = pulse.current ?? "–";
   const indexLabel = document.getElementById("index-label");
-  const indexStatus = String(data.indexStatus || "live").toLowerCase();
+  const indexStatus = String(pulse.status || "live").toLowerCase();
   indexLabel.textContent = indexStatus.toUpperCase();
   indexLabel.className = `state-chip ${["red", "orange", "yellow", "green"].includes(indexStatus) ? indexStatus : "green"}`;
-  document.getElementById("index-summary").textContent = data.executiveSummary || "TAIL bewertet die aktuelle Marktlage.";
+  document.getElementById("index-summary").textContent = pulse.interpretation || "TAIL bewertet die aktuelle Marktlage.";
 
-  const isCurrent = data.dataFreshness === "current" && data.processStatus === "ok";
+  const isCurrent = platform.dataFreshness === "current" && platform.processStatus === "ok";
   const dot = document.querySelector(".status-dot");
   if (!isCurrent) dot.classList.add("stale");
-  document.getElementById("freshness-text").textContent = `${isCurrent ? "Aktuell" : "Prüfung läuft"} · Datenstand ${formatDate(data.dataAsOf)} · ${data.articleCount ?? data.totalArticles ?? "–"} Quellen im Lagebild`;
+  document.getElementById("freshness-text").textContent = `${isCurrent ? "Aktuell" : "Prüfung läuft"} · Datenstand ${formatDate(daily.updatedAt || platform.dataAsOf)} · ${platform.articleCount ?? platform.totalArticles ?? "–"} Quellen im Lagebild`;
 
-  const markets = Array.isArray(data.markets) ? data.markets.slice(0, 6) : [];
+  const markets = buildPublicMarkets(daily, platform.markets);
   document.getElementById("mini-markets").innerHTML = markets.slice(0, 3).map((market) => `
     <div class="mini-market">
       <span>${escapeHtml(market.label)}</span><strong>${Number(market.score) || 0}</strong>
@@ -89,7 +84,7 @@ function renderDashboard(data, publicSignals) {
     <article class="market-card ${escapeHtml(market.status || "orange")}">
       <div class="market-head"><h3>${escapeHtml(market.label)}</h3><span class="market-score">${Number(market.score) || 0}</span></div>
       <div class="market-track"><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
-      <p>${escapeHtml(marketExplanation[market.id] || `${market.signals || 0} relevante Signale im aktuellen Lagebild.`)}</p>
+      <p>${escapeHtml(market.explanation || `${market.signals || 0} relevante Signale im aktuellen Lagebild.`)}</p>
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Marktdaten verfügbar.</article>';
 
   const signals = Array.isArray(publicSignals) ? publicSignals : [];
@@ -112,14 +107,15 @@ function renderDataError() {
 async function loadDashboard() {
   try {
     const cacheBuster = Date.now();
-    const [dashboardResponse, articlesResponse] = await Promise.all([
-      fetch(`${DATA_URL}?v=${cacheBuster}`, { cache: "no-store" }),
+    const [platformResponse, dailyResponse, articlesResponse] = await Promise.all([
+      fetch(`${PLATFORM_URL}?v=${cacheBuster}`, { cache: "no-store" }),
+      fetch(`${DAILY_URL}?v=${cacheBuster}`, { cache: "no-store" }),
       fetch(`${ARTICLES_URL}?v=${cacheBuster}`, { cache: "no-store" }).catch(() => null)
     ]);
-    if (!dashboardResponse.ok) throw new Error(`HTTP ${dashboardResponse.status}`);
-    const data = await dashboardResponse.json();
+    if (!platformResponse.ok || !dailyResponse.ok) throw new Error(`HTTP ${platformResponse.status}/${dailyResponse.status}`);
+    const [platform, daily] = await Promise.all([platformResponse.json(), dailyResponse.json()]);
     const articles = articlesResponse?.ok ? await articlesResponse.json() : [];
-    renderDashboard(data, selectPublicSignals(articles, data.topSignals));
+    renderDashboard(platform, daily, selectPublicSignals(daily, articles, platform.topSignals));
   } catch (error) {
     console.error("TAIL public dashboard failed:", error);
     renderDataError();
