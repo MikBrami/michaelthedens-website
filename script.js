@@ -131,42 +131,4 @@ async function loadDashboard() {
   }
 }
 
-const newsletterForm = document.getElementById("newsletter-form");
-newsletterForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const status = document.getElementById("form-status");
-  const button = newsletterForm.querySelector("button");
-  const email = document.getElementById("email").value.trim();
-  const consent = document.getElementById("consent").checked;
-  status.className = "form-status";
-
-  if (!newsletterForm.checkValidity() || !consent) {
-    status.textContent = "Bitte E-Mail-Adresse und Einwilligung prüfen.";
-    status.classList.add("error");
-    newsletterForm.reportValidity();
-    return;
-  }
-
-  button.disabled = true;
-  button.textContent = "Wird angemeldet …";
-  try {
-    const response = await fetch("/api/newsletter-subscribe", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, consent: true, source: "michaelthedens.de" })
-    });
-    const result = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(result.message || "Anmeldung derzeit nicht möglich.");
-    status.textContent = "Fast geschafft: Bitte jetzt den Bestätigungslink in deinem Postfach anklicken.";
-    status.classList.add("success");
-    newsletterForm.reset();
-  } catch (error) {
-    status.textContent = error.message || "Die Anmeldung ist gerade nicht möglich. Bitte später erneut versuchen.";
-    status.classList.add("error");
-  } finally {
-    button.disabled = false;
-    button.textContent = "Briefing abonnieren";
-  }
-});
-
 loadDashboard();
