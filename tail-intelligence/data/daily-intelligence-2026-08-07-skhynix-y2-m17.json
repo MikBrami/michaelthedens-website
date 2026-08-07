@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-07T08:26:17+02:00",
+  "addendum": true,
+  "topic": "SK hynix Yongin Y2 / Cheongju M17 capacity strategy",
+  "sourceContext": "Digitimes article supplied for TAIL analysis on 2026-08-07",
+  "executiveNote": "SK hynix commits roughly KRW54.3tn to Y2 DRAM/HBM and M17 NAND, reinforcing TAIL's structural AI-memory thesis while raising a later-cycle oversupply watch for 2028-2031. The key regime signal is not simply fab construction but the separation of fab-shell readiness from demand-triggered cleanroom fit-out and tool installation.",
+  "acceptedSignals": [
+    {
+      "id": "S-2026-08-07-SKHYNIX-Y2-M17",
+      "rank": 1,
+      "priorityScore": 100,
+      "classification": "Structural Capacity / Memory Cycle 2.0",
+      "title": "SK hynix koppelt Y2-DRAM/HBM- und M17-NAND-Ausbau an strukturelle AI-Nachfrage",
+      "fact": "SK hynix genehmigt rund KRW54,3 Billionen neue Fab-Investitionen in Südkorea: KRW35,2 Billionen für Yongin Y2 als DRAM-Basis für HBM und Next-Generation DRAM sowie KRW19,1 Billionen für Cheongju M17 als NAND-Fab. Y2 soll im Juli 2027 Baubeginn haben, mit erstem Cleanroom im Juni 2029 und Investitionen bis Oktober 2031. M17 soll im Februar 2027 starten, mit erstem Cleanroom im Dezember 2028 und Investitionen bis April 2031. Y1 bleibt für einen ersten Cleanroom im Februar 2027 vorgesehen. SK hynix will alle vier Yongin-Fabs bis 2033 fertigstellen und damit den ursprünglichen Zielhorizont 2045 um zwölf Jahre vorziehen.",
+      "estimate": "Die Investitionsfreigabe bedeutet keine lineare oder sofortige Bit-Supply. SK hynix will Fab-Shells und Infrastruktur nach Masterplan errichten, Cleanroom-Fit-out und Tool-Installation jedoch in Phasen anhand konkreter Kundennachfrage steuern. Ein erster Cleanroom 2028/2029 ist daher nicht gleichbedeutend mit sofortiger qualifizierter Volumenproduktion; Tool-Installation, Prozessqualifikation, Yield-Ramp und Produktfreigaben verzögern die tatsächliche Supply-Wirkung zusätzlich.",
+      "tailInference": "Die Investition bestätigt TAILs These, dass Memory zunehmend von einer zyklischen Komponente zu strategischer AI-Infrastruktur wird. Kurzfristig liefert Y2/M17 keine relevante Entlastung für die 2026-27-Knappheit. Bei DRAM bindet der Ausbau ausdrücklich HBM und Next-Generation DRAM, sodass zusätzliche Fab-Kapazität nicht proportional in Commodity- oder Server-DDR5-Bit-Supply übersetzt werden kann. Auf der NAND-Seite verbindet SK hynix Enterprise-SSD-Nachfrage explizit mit AI-Service-Rollouts, KV-Cache für Inference sowie Agentic AI und Physical AI. Besonders wichtig ist die neue Kapitalmechanik: Fab-Shell und Versorgungsinfrastruktur werden vorgezogen, während teure Tools erst bei sichtbarer Nachfrage installiert werden. Kapazität wird damit zunehmend zur Option auf Supply statt automatisch zu Supply. In Verbindung mit mehrjährigen LTAs, Vorauszahlungen und Preisfloors bei Samsung/SK hynix stützt dies die TAIL-Arbeitsthese eines 'Memory Cycle 2.0': customer-triggered infrastructure statt spekulativer Commodity-Kapazität.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 18,
+        "Novelty": 15,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 20,
+        "Falsifiability": 15,
+        "TimeSensitivity": 10
+      },
+      "confidenceAssessment": {
+        "score": 90,
+        "label": "9/10",
+        "reason": "Board-approved capex, named sites, construction schedules and explicit phased tool-installation logic provide unusually concrete evidence; long-run demand and ramp assumptions remain forecast-dependent."
+      },
+      "marketMechanics": {
+        "nearTerm2026_2027": "No meaningful supply relief from Y2/M17. Existing tightness in HBM, server DRAM and selected enterprise SSD segments remains structurally supported.",
+        "dramHbm": "Y2 is explicitly HBM/next-generation DRAM capacity. HBM consumes disproportionate wafer/process/packaging resources, so more DRAM fab space does not imply a one-for-one increase in conventional DDR5 supply.",
+        "nandEssd": "M17 signals long-duration confidence in AI-driven NAND demand despite a softer 2H27 NAND balance risk. SK hynix explicitly points to enterprise SSD, inference KV-cache, Agentic AI and Physical AI as demand vectors.",
+        "capitalDiscipline": "Fab shells and utilities are secured early; cleanroom fit-out and tool installation are phased against customer demand. This reduces the probability that every announced fab automatically creates oversupply.",
+        "cycleChange": "The classic sequence of price spike -> capex -> unconstrained capacity -> oversupply may be replaced or moderated by price spike -> contracted demand -> infrastructure option -> demand-triggered tools -> phased capacity activation."
+      },
+      "demandReference": {
+        "Omdia_DRAM_CAGR_2025_2030": "19%",
+        "Omdia_NAND_CAGR_2025_2030": "19%",
+        "fiveYearMultiplierApprox": "~2.4x",
+        "interpretation": "A sustained 19% CAGR across both DRAM and NAND is consistent with a structural infrastructure build, but remains an external forecast rather than guaranteed demand."
+      },
+      "timeline": {
+        "Y1_first_cleanroom": "2027-02",
+        "M17_groundbreaking": "2027-02",
+        "Y2_groundbreaking": "2027-07",
+        "M17_first_cleanroom": "2028-12",
+        "Y2_first_cleanroom": "2029-06",
+        "M17_investment_through": "2031-04",
+        "Y2_investment_through": "2031-10",
+        "Yongin_four_fabs_target": "2033",
+        "original_Yongin_target": "2045"
+      },
+      "thesisImpact": {
+        "status": "Strong Confirmation",
+        "strengthened": [
+          "AI is turning memory into core infrastructure rather than a normal component cycle.",
+          "Near-term 2026-27 DRAM tightness is not resolved by newly announced fabs whose meaningful output arrives years later.",
+          "HBM capacity growth can coexist with constrained conventional server DRAM because resource consumption is not proportional to bit output.",
+          "Enterprise SSD and NAND become more directly tied to AI inference through KV-cache and service rollout architectures.",
+          "Customer commitments increasingly influence when expensive productive capacity is activated."
+        ],
+        "newStructuralThesis": "Memory capacity is increasingly becoming customer-triggered infrastructure rather than speculative commodity supply."
+      },
+      "redPencil": {
+        "sourceIncentive": "SK hynix has an incentive to frame very large capex as disciplined structural investment rather than pro-cyclical expansion and to emphasize AI demand durability.",
+        "alternative": "The accelerated Y1-Y4 build-out may still create a conventional oversupply cycle if multiple suppliers ramp simultaneously and AI demand or HBM intensity undershoots expectations.",
+        "alreadyPriced": "General Yongin/Cheongju expansion was known; the board-approved Y2/M17 budgets, accelerated schedule and explicit demand-phased tool-installation mechanism materially strengthen the signal.",
+        "killCondition": "By 2029-2031, broad DRAM/NAND utilization falls materially while Y2/M17 and competing supplier ramps continue, contract coverage weakens and pricing drops despite phased tool deployment.",
+        "forecastChange": "Keep 2026-27 tightness thesis strongly supported; preserve 2028 as transition/watch year and raise 2029-31 oversupply-risk monitoring because Yongin acceleration, Samsung, Micron, CXMT/China capacity and process migrations may converge."
+      },
+      "riskWindow": {
+        "2026_2027": "Very high tightness risk",
+        "2028": "Transition / first material oversupply watch",
+        "2029_2031": "Capex-ramp and simultaneous-supply risk rises materially, partly mitigated by demand-triggered tool installation"
+      },
+      "connections": [
+        "Samsung multi-year LTAs with advance payments and minimum price floors",
+        "SK hynix long-term customer agreements",
+        "HBM-driven wafer and packaging resource intensity",
+        "TrendForce expectation of continued DRAM tightness through 2027",
+        "TAIL NAND view: 2026 tight, potential easing from 2H27",
+        "Memory Cycle 2.0 / capacity activation against visible demand"
+      ],
+      "watchpoints": [
+        "Actual Y1 cleanroom opening and tool ramp in 2027",
+        "M17 tool orders and NAND process mix ahead of 2028 cleanroom opening",
+        "Y2 tool-order timing, HBM versus conventional DRAM allocation and customer commitments",
+        "SK hynix capex-to-revenue and capex-to-operating-profit progression",
+        "HBM4/HBM4E qualification and packaging bottlenecks",
+        "Server DDR5/MRDIMM pricing versus HBM allocation",
+        "Enterprise SSD demand linked to inference and KV-cache deployments",
+        "Whether 2029-31 supplier ramps converge into material oversupply"
+      ],
+      "salesImplication": "For enterprise memory/storage sales, the announcement strengthens the case that current and near-term availability cannot be inferred from headline fab capex. Customers should secure qualified DRAM and enterprise SSD supply against platform roadmaps and lead times rather than assume announced capacity will quickly normalize procurement conditions.",
+      "sources": [
+        {
+          "label": "Digitimes – SK hynix approves Yongin Y2 and Cheongju M17 capacity investment (article supplied to TAIL, 2026-08-07)",
+          "url": "tail://manual/digitimes-skhynix-y2-m17-2026-08-07"
+        }
+      ]
+    }
+  ],
+  "tailConclusion": "Strong confirmation of the structural AI-memory thesis, with a deliberate counter-signal retained for 2028-2031. The most important new TAIL statement is: Memory capacity is increasingly becoming customer-triggered infrastructure rather than speculative commodity supply."
+}
