@@ -7,6 +7,7 @@ const sourcePath = path.resolve(root, '..', 'public-tail', 'data.json');
 const outputPath = path.resolve(root, '..', 'public-tail', 'data-en.json');
 const tempPath = `${outputPath}.tmp`;
 const model = process.env.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini';
+const EDITORIAL_VERSION = 2;
 
 const readJson = (filePath, fallback = null) => {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch { return fallback; }
@@ -27,12 +28,17 @@ const sourceHash = (snapshot) => crypto
 
 const numbersIn = (text = '') => String(text).match(/\d+(?:[.,]\d+)?/g) || [];
 const normaliseNumber = (value) => String(value).replace(',', '.').replace(/^0+(?=\d)/, '');
+const germanResidue = /[äöüß]|\b(?:und|oder|prüfen|testet|ob|wieder|haben|transaktion|strategie|bericht|zugang|öffentlichen|normalisierung|risiko|signal|deal-wahrscheinlichkeit|kapitalzugang)\b/i;
 
 function assertNoInventedNumbers(sourceText, translatedText, label) {
   const allowed = new Set(numbersIn(sourceText).map(normaliseNumber));
   const produced = numbersIn(translatedText).map(normaliseNumber);
   const invented = produced.filter((value) => !allowed.has(value));
   if (invented.length) throw new Error(`${label} introduced unsupported number(s): ${invented.join(', ')}`);
+}
+
+function assertEnglish(text, label) {
+  if (germanResidue.test(String(text))) throw new Error(`${label} still contains German wording`);
 }
 
 function validateEditorial(source, editorial) {
@@ -46,6 +52,7 @@ function validateEditorial(source, editorial) {
   }
 
   assertNoInventedNumbers(source.executivePulse?.interpretation, editorial.executivePulse.interpretation, 'Executive Pulse');
+  assertEnglish(editorial.executivePulse.interpretation, 'Executive Pulse');
   source.signals.forEach((signal, index) => {
     const translated = editorial.signals[index];
     if (![translated?.title, translated?.summary, translated?.analysis].every((value) => typeof value === 'string' && value.trim())) {
@@ -54,11 +61,13 @@ function validateEditorial(source, editorial) {
     assertNoInventedNumbers(signal.title, translated.title, `Signal ${index + 1} title`);
     assertNoInventedNumbers(signal.summary, translated.summary, `Signal ${index + 1} summary`);
     assertNoInventedNumbers(signal.analysis, translated.analysis, `Signal ${index + 1} analysis`);
+    assertEnglish(`${translated.title} ${translated.summary} ${translated.analysis}`, `Signal ${index + 1}`);
   });
   source.catalysts.forEach((catalyst, index) => {
     const translated = editorial.catalysts[index];
     if (typeof translated?.event !== 'string' || !translated.event.trim()) throw new Error(`English catalyst ${index + 1} is incomplete`);
     assertNoInventedNumbers(catalyst.event, translated.event, `Catalyst ${index + 1}`);
+    assertEnglish(translated.event, `Catalyst ${index + 1}`);
   });
 }
 
@@ -67,6 +76,7 @@ function buildSnapshot(source, editorial) {
     schemaVersion: source.schemaVersion,
     generatedAt: new Date().toISOString(),
     editorial: {
+      version: EDITORIAL_VERSION,
       language: 'en-GB',
       sourceLanguage: 'de-DE',
       sourceHash: sourceHash(source),
@@ -153,7 +163,9 @@ async function translateWithOpenAI(source) {
       model,
       instructions: [
         'You are the English editorial desk for MT·AI Lighthouse, an AI infrastructure and semiconductor intelligence publication.',
-        'Rewrite the supplied German text into concise, publication-quality British English.',
+        'Rewrite every supplied text field into concise, publication-quality British English.',
+        'Every catalyst event must be completely English even when the German source mixes German and English industry terminology.',
+        'Do not leave German words, German grammar or untranslated German phrases in the output.',
         'Preserve the exact meaning, factual claims, company names, product names, dates, figures, units and uncertainty.',
         'Do not add facts, explanations, numbers, sources, forecasts or interpretations that are not present in the input.',
         'Do not translate brand names. Prefer data centre, programme, prioritisation and other British spellings where natural.',
@@ -193,8 +205,8 @@ async function main() {
 
   const hash = sourceHash(source);
   const previous = readJson(outputPath);
-  if (previous?.editorial?.sourceHash === hash) {
-    console.log(`English public snapshot already matches source ${hash}; no API call needed.`);
+  if (previous?.editorial?.sourceHash === hash && previous?.editorial?.version === EDITORIAL_VERSION) {
+    console.log(`English public snapshot already matches source ${hash} at editorial version ${EDITORIAL_VERSION}; no API call needed.`);
     return;
   }
 
@@ -211,7 +223,7 @@ async function main() {
     fs.writeFileSync(tempPath, JSON.stringify(translated, null, 2) + '\n');
     JSON.parse(fs.readFileSync(tempPath, 'utf8'));
     fs.renameSync(tempPath, outputPath);
-    console.log(`Built English public snapshot from ${hash} with ${model}: ${translated.signals.length} signals, ${translated.catalysts.length} catalysts.`);
+    console.log(`Built English public snapshot v${EDITORIAL_VERSION} from ${hash} with ${model}: ${translated.signals.length} signals, ${translated.catalysts.length} catalysts.`);
   } catch (error) {
     try { if (fs.existsSync(tempPath)) fs.unlinkSync(tempPath); } catch {}
     console.warn(`::warning::English editorial build failed; preserving last valid snapshot. ${error.message}`);
