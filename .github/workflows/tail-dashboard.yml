@@ -1,7 +1,7 @@
 name: TAIL Intelligence Platform v2
 
 # One workflow owns all generated TAIL data to prevent concurrent writes to main.
-# Fresh runs use the current repository secrets for the English editorial stage.
+# English editorial builds use the repository OpenAI secret and fail safely without blocking DE.
 
 on:
   push:
