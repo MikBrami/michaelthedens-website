@@ -7,7 +7,7 @@ const sourcePath = path.resolve(root, '..', 'public-tail', 'data.json');
 const outputPath = path.resolve(root, '..', 'public-tail', 'data-en.json');
 const tempPath = `${outputPath}.tmp`;
 const model = process.env.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini';
-const EDITORIAL_VERSION = 2;
+const EDITORIAL_VERSION = 3;
 
 const readJson = (filePath, fallback = null) => {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch { return fallback; }
@@ -28,7 +28,7 @@ const sourceHash = (snapshot) => crypto
 
 const numbersIn = (text = '') => String(text).match(/\d+(?:[.,]\d+)?/g) || [];
 const normaliseNumber = (value) => String(value).replace(',', '.').replace(/^0+(?=\d)/, '');
-const germanResidue = /[äöüß]|\b(?:und|oder|prüfen|testet|ob|wieder|haben|transaktion|strategie|bericht|zugang|öffentlichen|normalisierung|risiko|signal|deal-wahrscheinlichkeit|kapitalzugang)\b/i;
+const germanResidue = /[äöüß]|\b(?:und|oder|prüfen|testet|ob|wieder|haben|transaktion|strategie|bericht|zugang|öffentlichen|normalisierung|risiko|deal-wahrscheinlichkeit|kapitalzugang)\b/i;
 
 function assertNoInventedNumbers(sourceText, translatedText, label) {
   const allowed = new Set(numbersIn(sourceText).map(normaliseNumber));
@@ -120,39 +120,41 @@ function validateSnapshot(source, translated) {
   });
 }
 
-async function translateWithOpenAI(source) {
-  const schema = {
-    type: 'object',
-    additionalProperties: false,
-    required: ['executivePulse', 'signals', 'catalysts'],
-    properties: {
-      executivePulse: {
-        type: 'object', additionalProperties: false, required: ['interpretation'],
-        properties: { interpretation: { type: 'string' } }
-      },
-      signals: {
-        type: 'array',
-        items: {
-          type: 'object', additionalProperties: false, required: ['title', 'summary', 'analysis'],
-          properties: { title: { type: 'string' }, summary: { type: 'string' }, analysis: { type: 'string' } }
-        }
-      },
-      catalysts: {
-        type: 'array',
-        items: {
-          type: 'object', additionalProperties: false, required: ['event'],
-          properties: { event: { type: 'string' } }
-        }
+const schema = {
+  type: 'object',
+  additionalProperties: false,
+  required: ['executivePulse', 'signals', 'catalysts'],
+  properties: {
+    executivePulse: {
+      type: 'object', additionalProperties: false, required: ['interpretation'],
+      properties: { interpretation: { type: 'string' } }
+    },
+    signals: {
+      type: 'array',
+      items: {
+        type: 'object', additionalProperties: false, required: ['title', 'summary', 'analysis'],
+        properties: { title: { type: 'string' }, summary: { type: 'string' }, analysis: { type: 'string' } }
+      }
+    },
+    catalysts: {
+      type: 'array',
+      items: {
+        type: 'object', additionalProperties: false, required: ['event'],
+        properties: { event: { type: 'string' } }
       }
     }
-  };
+  }
+};
 
-  const editorialInput = {
+function editorialInputFor(source) {
+  return {
     executivePulse: { interpretation: source.executivePulse?.interpretation || '' },
     signals: source.signals.map(({ title, summary, analysis }) => ({ title, summary, analysis })),
     catalysts: source.catalysts.map(({ event }) => ({ event }))
   };
+}
 
+async function requestEditorial(input, repair = false) {
   const response = await fetch('https://api.openai.com/v1/responses', {
     method: 'POST',
     headers: {
@@ -163,8 +165,8 @@ async function translateWithOpenAI(source) {
       model,
       instructions: [
         'You are the English editorial desk for MT·AI Lighthouse, an AI infrastructure and semiconductor intelligence publication.',
-        'Rewrite every supplied text field into concise, publication-quality British English.',
-        'Every catalyst event must be completely English even when the German source mixes German and English industry terminology.',
+        repair ? 'This is a repair pass. The previous output contained untranslated German. Rewrite ALL fields again and remove every German word or phrase.' : 'Rewrite every supplied text field into concise, publication-quality British English.',
+        'Every catalyst event must be completely English even when the source mixes German and English industry terminology.',
         'Do not leave German words, German grammar or untranslated German phrases in the output.',
         'Preserve the exact meaning, factual claims, company names, product names, dates, figures, units and uncertainty.',
         'Do not add facts, explanations, numbers, sources, forecasts or interpretations that are not present in the input.',
@@ -172,7 +174,7 @@ async function translateWithOpenAI(source) {
         'Keep headlines sharp and analytical. Keep analysis in the style of a professional intelligence brief, not marketing copy.',
         'Return exactly the same number of signals and catalysts, in exactly the same order.'
       ].join(' '),
-      input: JSON.stringify(editorialInput),
+      input: JSON.stringify(input),
       text: {
         format: {
           type: 'json_schema',
@@ -197,6 +199,21 @@ async function translateWithOpenAI(source) {
   return JSON.parse(outputText);
 }
 
+async function translateWithOpenAI(source) {
+  const input = editorialInputFor(source);
+  let editorial = await requestEditorial(input, false);
+  try {
+    validateEditorial(source, editorial);
+    return editorial;
+  } catch (error) {
+    if (!String(error.message).includes('still contains German wording')) throw error;
+    console.warn(`::warning::English editorial first pass needs repair: ${error.message}`);
+    editorial = await requestEditorial(input, true);
+    validateEditorial(source, editorial);
+    return editorial;
+  }
+}
+
 async function main() {
   const source = readJson(sourcePath);
   if (!source?.platform || !Array.isArray(source.signals) || !Array.isArray(source.catalysts)) {
@@ -217,7 +234,6 @@ async function main() {
 
   try {
     const editorial = await translateWithOpenAI(source);
-    validateEditorial(source, editorial);
     const translated = buildSnapshot(source, editorial);
     validateSnapshot(source, translated);
     fs.writeFileSync(tempPath, JSON.stringify(translated, null, 2) + '\n');
