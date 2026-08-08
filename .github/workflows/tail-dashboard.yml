@@ -26,6 +26,9 @@ jobs:
     defaults:
       run:
         working-directory: tail-intelligence
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_TRANSLATION_MODEL: ${{ vars.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -46,7 +49,7 @@ jobs:
         run: |
           git config user.name 'TAIL Intelligence Bot'
           git config user.email 'tail-intelligence-bot@users.noreply.github.com'
-          git add tail-intelligence/data public-tail/data.json
+          git add tail-intelligence/data public-tail/data.json public-tail/data-en.json
 
           sync_private_branch() {
             for sync_attempt in 1 2 3; do
