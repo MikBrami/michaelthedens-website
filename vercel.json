@@ -3,16 +3,30 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/mtai-dashboard",
+      "destination": "/tail-intelligence/index.html"
+    },
+    {
+      "source": "/mtai-dashboard/(.*)",
+      "destination": "/tail-intelligence/$1"
+    },
+    {
       "source": "/",
       "has": [
-        { "type": "host", "value": "tail-daily-intelligence.michaelthedens.de" }
+        {
+          "type": "host",
+          "value": "tail-daily-intelligence.michaelthedens.de"
+        }
       ],
       "destination": "/tail-intelligence/index.html"
     },
     {
       "source": "/(.*)",
       "has": [
-        { "type": "host", "value": "tail-daily-intelligence.michaelthedens.de" }
+        {
+          "type": "host",
+          "value": "tail-daily-intelligence.michaelthedens.de"
+        }
       ],
       "destination": "/tail-intelligence/$1"
     },
@@ -27,49 +41,99 @@
   ],
   "headers": [
     {
+      "source": "/mtai-dashboard(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store, max-age=0"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    },
+    {
       "source": "/public-tail/data.json",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
       ]
     },
     {
       "source": "/tail-daily-intelligence(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "private, no-store, max-age=0" },
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "X-Frame-Options", "value": "DENY" }
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store, max-age=0"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
       ]
     },
     {
       "source": "/tail-intelligence(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "private, no-store, max-age=0" },
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "X-Frame-Options", "value": "DENY" }
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store, max-age=0"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
       ]
     },
     {
       "source": "/tail-intelligence/data/dashboard.json",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
       ]
     },
     {
       "source": "/tail-intelligence/data/daily-intelligence.json",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
       ]
     },
     {
       "source": "/data/dashboard.json",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
       ]
     },
     {
       "source": "/data/daily-intelligence.json",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
       ]
     }
   ]
