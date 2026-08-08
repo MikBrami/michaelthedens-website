@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T05:56:11.227Z",
+  "generatedAt": "2026-08-08T06:31:52.491Z",
   "platform": {
-    "dataAsOf": "2026-08-07",
+    "dataAsOf": "2026-08-08",
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 104,
+    "articleCount": 109,
     "markets": [
       {
         "id": "server_dram",
@@ -26,7 +26,7 @@
         "label": "HBM",
         "score": 80,
         "status": "orange",
-        "signals": 23
+        "signals": 24
       },
       {
         "id": "enterprise_ssd",
@@ -47,63 +47,38 @@
         "label": "AI Infrastructure",
         "score": 72,
         "status": "orange",
-        "signals": 73
+        "signals": 77
       }
     ]
   },
   "executivePulse": {
     "current": 90,
-    "previous": 89,
+    "previous": 90,
     "status": "orange",
-    "interpretation": "Terafab konkretisiert vertikale Chipintegration; Alphabet und SoftBank vertiefen kreditfinanzierte AI-Infrastruktur. Hormuz normalisiert sich operativ nicht; US-Polysilicon-Politik koppelt Chip- und Energie-Supply-Chain."
+    "interpretation": "AI-Infrastruktur bleibt strukturell expansiv, aber die Engpässe verlagern sich weiter von Chips allein auf Stromzugang, Finanzierung und Governance. Nvidia geht direkt in Power-Infrastruktur, Texas macht Interconnection zu einem regulatorischen und Sunk-Capital-Risiko, Astra zeigt erstmals sichtbare Frontier-Model-Release-Friction durch kritische Cyberfähigkeiten. Hormuz-Diplomatie verbessert die politische Option, ohne die physische Normalisierung bereits zu belegen."
   },
   "signals": [
     {
-      "date": "2026-08-07",
-      "title": "Terafab wird zum vertikal integrierten Logic-Memory-Packaging-Projekt",
-      "summary": "SpaceX und Tesla wollen zunächst 16,8 Mrd. US-Dollar in Terafab in Grimes County, Texas, investieren. Geplant sind Logik- und Memory-Chips sowie Packaging und Test unter einem Dach; die Anlage soll 100 Mio. Quadratfuß umfassen.",
-      "analysis": "SpaceX/Tesla/xAI versuchen, einen geschlossenen AI-Supply-Stack von Compute über Memory bis Packaging aufzubauen. Das verschiebt strategischen Wert von Chipbeschaffung zu Kapazitätsbesitz und vertikaler Integration.",
+      "date": "2026-08-08",
+      "title": "Texas macht Datacenter-Interconnection zum Sunk-Capital- und Regulierungsrisiko",
+      "summary": "Nach dem von Gouverneur Greg Abbott angeordneten Audit geplanter Datacenter-Projekte wurde ERCOTs Batch-Zero-Prozess pausiert. Reuters berichtet, dass qualifizierte Projekte typischerweise 50.000 US-Dollar Sicherheit je MW hinterlegen mussten; einzelne Entwickler haben damit mehr als 100 Mio. US-Dollar gebunden. Eine noch nicht beschlossene PUCT-Regel könnte den nicht erstattbaren Anteil solcher Einlagen von 20 auf 80 Prozent erhöhen. ERCOT hatte Batch Zero erst im Juni für große Lasten ab 75 MW eingeführt und damals mehr als 438 GW Large-Load-Anfragen verfolgt, davon rund 89 Prozent Datacenter.",
+      "analysis": "Power availability ist nicht mehr nur physischer Engpass, sondern ein Kapital- und Genehmigungsinstrument. In Texas wird ein Interconnection-Slot zunehmend zu einer Option mit echtem Verlustpotenzial. Das schwächt die These, powered land in ERCOT sei automatisch der schnellste und risikoärmste Weg für neue AI-Kapazität.",
       "score": 100
     },
     {
-      "date": "2026-08-07",
-      "title": "SoftBank macht OpenAI-Beteiligung zur Kreditbesicherung",
-      "summary": "SoftBank meldete für Q1 FY2026 347,3 Mrd. Yen Nettogewinn. Die kumulierte OpenAI-Investition soll bis Oktober 64,6 Mrd. US-Dollar erreichen; für August wurde ein 10-Mrd.-US-Dollar-Kredit vereinbart, der mit der OpenAI-Beteiligung besichert ist.",
-      "analysis": "AI-Equity wird vom Beteiligungswert zum Finanzierungscollateral. Das verlängert die Investitionsfähigkeit, koppelt aber Private-Market-Bewertungen, Banken, Arm-Besicherung und Datacenter-Capex enger zusammen.",
+      "date": "2026-08-08",
+      "title": "Nvidia steigt direkt in Power-Infrastruktur und Grid-Optionalität ein",
+      "summary": "The Information berichtete, von Reuters aufgegriffen, Nvidia werde bis zu 3 Mrd. US-Dollar in den Power-Infrastrukturentwickler Lancium investieren: zunächst 2 Mrd. US-Dollar für rund 20 Prozent, plus bis zu 1 Mrd. US-Dollar bei Erreichen von Meilensteinen wie Grid-Anschlüssen. Lancium betreibt den 1.000-Acre-Standort in Abilene, das erste operative Stargate-Campusprojekt; Lancium selbst nennt für Abilene einen ERCOT-genehmigten 1,2-GW-Interconnect.",
+      "analysis": "Der Accelerator-Anbieter bewegt sich vom Silizium-Layer in powered land, Grid-Anschlüsse und Energieinfrastruktur. Das ist eine neue Form vertikaler Integration: Wer GPUs verkauft, finanziert zugleich die knappe Infrastruktur, die deren Deployment ermöglicht. Grid-Hookups werden damit zu strategischen Assets ähnlich wie HBM- und Packaging-Kapazität.",
       "score": 99
     },
     {
-      "date": "2026-08-07",
-      "title": "Alphabet zapft erneut den Bondmarkt für den AI-Build-out an",
-      "summary": "Alphabet suchte am 6. August laut Reuters 20–25 Mrd. US-Dollar über eine bis zu zehn Tranchen umfassende Dollar-Anleihe mit Laufzeiten von zwei bis 40 Jahren. Big Tech hatte bis 7. Juli bereits rund 194 Mrd. US-Dollar Anleihen emittiert, 79 Prozent mehr als im Vorjahr.",
-      "analysis": "Der AI-Capex bleibt finanzierbar, wird aber zunehmend durch Fremdkapital verlängert. Das schwächt die These, Hyperscaler-Ausbau sei praktisch vollständig selbstfinanziert, und erhöht Duration-, Spread- und Refinanzierungsrisiken.",
+      "date": "2026-08-08",
+      "title": "Astra macht Frontier-Model-Safety zu realer Release- und Deployment-Reibung",
+      "summary": "OpenAI erklärte am 7. August, es könne bei seinem kommenden Modell Astra 'kritische' Cyberfähigkeiten nicht ausschließen. Das Unternehmen pausierte interne Aktivitäten, die neue Sicherheitsanforderungen noch nicht erfüllen, verlagert Arbeiten in isolierte Umgebungen mit eingeschränktem Netzwerkzugang und will mit Behörden sowie ausgewählten Safety-Organisationen testen. OpenAIs öffentliches Framework definiert 'Critical' unter anderem über autonome Zero-Day-Exploits beziehungsweise komplexe Angriffe auf gehärtete Ziele.",
+      "analysis": "Frontier-AI hat erstmals sichtbar einen Capability-Governance-Chokepoint, der reale Entwicklungstätigkeit stoppt. Das ist ein Falsifier gegen lineare 'mehr Compute -> schnellerer Release -> sofort mehr Nachfrage'-Modelle. Kurzfristig kann mehr Safety-Eval sogar zusätzlichen Compute verbrauchen, während Produktmonetarisierung später kommt.",
       "score": 98
     }
   ],
-  "catalysts": [
-    {
-      "date": "2026-08-09",
-      "event": "US-Iran/Hormuz Zwischenprüfung"
-    },
-    {
-      "date": "2026-08-13",
-      "event": "Sandisk Investor Day: NBM, HBF und BiCS10"
-    },
-    {
-      "date": "2026-08-15",
-      "event": "Hormuz-Rahmen, Schiffsverkehr und Versicherung"
-    },
-    {
-      "date": "2026-09-30",
-      "event": "AI-Finanzierung: Bond-Spreads, SoftBank-LTV, Leases und Rating-Risiken"
-    },
-    {
-      "date": "2026-12-04",
-      "event": "US-Polysilicon-Zoll/Mindestpreise treten in Kraft"
-    },
-    {
-      "date": "2026-12-31",
-      "event": "Terafab/HBF/China-WFE Jahresend-Review"
-    }
-  ]
+  "catalysts": []
 }

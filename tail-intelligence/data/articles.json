@@ -3975,5 +3975,212 @@
         "url": "tail://manual/digitimes-skhynix-y2-m17-2026-08-07"
       }
     ]
+  },
+  {
+    "id": "S-2026-08-08-01",
+    "date": "2026-08-08",
+    "title": "Texas macht Datacenter-Interconnection zum Sunk-Capital- und Regulierungsrisiko",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [],
+    "severity": 100,
+    "confidence": 92,
+    "signal": "demand_up",
+    "summary": "Nach dem von Gouverneur Greg Abbott angeordneten Audit geplanter Datacenter-Projekte wurde ERCOTs Batch-Zero-Prozess pausiert. Reuters berichtet, dass qualifizierte Projekte typischerweise 50.000 US-Dollar Sicherheit je MW hinterlegen mussten; einzelne Entwickler haben damit mehr als 100 Mio. US-Dollar gebunden. Eine noch nicht beschlossene PUCT-Regel könnte den nicht erstattbaren Anteil solcher Einlagen von 20 auf 80 Prozent erhöhen. ERCOT hatte Batch Zero erst im Juni für große Lasten ab 75 MW eingeführt und damals mehr als 438 GW Large-Load-Anfragen verfolgt, davon rund 89 Prozent Datacenter.",
+    "tail_analysis": "Power availability ist nicht mehr nur physischer Engpass, sondern ein Kapital- und Genehmigungsinstrument. In Texas wird ein Interconnection-Slot zunehmend zu einer Option mit echtem Verlustpotenzial. Das schwächt die These, powered land in ERCOT sei automatisch der schnellste und risikoärmste Weg für neue AI-Kapazität.",
+    "source": "Reuters – Texas data center pause leaves grid deposits in uncertainty",
+    "url": "https://www.reuters.com/legal/litigation/hundreds-millions-grid-deposits-linger-uncertainty-following-texas-data-center-2026-08-07/",
+    "content_hash": "c5c5026874ac725c8f73",
+    "origin": "daily-intelligence",
+    "classification": "Falsifier",
+    "rank": 1,
+    "estimate": "Die Höhe tatsächlich gefährdeter Einlagen und der Anteil real baureifer Projekte sind unbekannt. Das Audit kann viele Papierprojekte entfernen und dadurch für reife Projekte sogar mehr Planungssicherheit schaffen. Die 80-Prozent-Regel ist Entwurf, nicht final.",
+    "red_pencil": {
+      "sourceIncentive": "Projektentwickler und ihre Anwälte haben Anreiz, Verlust- und Verzögerungsrisiken zu betonen; Texas-Politiker haben umgekehrt Anreiz, Grid- und Wählerinteressen hervorzuheben.",
+      "alternative": "Das Audit beseitigt vor allem spekulative Queue-Anträge, Batch Zero startet nach kurzer Prüfung neu und verbessert danach die Realisierungsquote tatsächlich finanzierter Projekte.",
+      "alreadyPriced": "Batch Zero und der generelle Grid-Engpass waren bekannt. Neu sind die operative Pause, die Unsicherheit über bereits gebundene Deposits und das konkrete Risiko einer deutlich höheren Nicht-Erstattbarkeit.",
+      "killCondition": "Batch Zero wird bis Ende September ohne wesentliche MW-Abgänge oder Projektverschiebungen wieder aufgenommen und die PUCT verschärft die Deposit-Regel nicht materiell.",
+      "forecastChange": "Kein neuer aktiver Forecast wegen Scope Gate und hoher Korrelation mit dem bestehenden Datacenter-Power/Execution-Cluster. Falsifier wird dem Cluster hinzugefügt; nächster Review 2026-09-05."
+    },
+    "sources": [
+      {
+        "label": "Reuters – Texas data center pause leaves grid deposits in uncertainty",
+        "url": "https://www.reuters.com/legal/litigation/hundreds-millions-grid-deposits-linger-uncertainty-following-texas-data-center-2026-08-07/"
+      },
+      {
+        "label": "ERCOT – PUCT approves Batch Zero for large electricity users",
+        "url": "https://www.ercot.com/news/release/06182026-puct-approves-ercots"
+      },
+      {
+        "label": "ERCOT – Batch Zero implementation notice",
+        "url": "https://www.ercot.com/services/comm/mkt_notices/M-B062326-01"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-08-02",
+    "date": "2026-08-08",
+    "title": "Nvidia steigt direkt in Power-Infrastruktur und Grid-Optionalität ein",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "ai_infrastructure",
+      "semiconductors"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "severity": 99,
+    "confidence": 92,
+    "signal": "demand_up",
+    "summary": "The Information berichtete, von Reuters aufgegriffen, Nvidia werde bis zu 3 Mrd. US-Dollar in den Power-Infrastrukturentwickler Lancium investieren: zunächst 2 Mrd. US-Dollar für rund 20 Prozent, plus bis zu 1 Mrd. US-Dollar bei Erreichen von Meilensteinen wie Grid-Anschlüssen. Lancium betreibt den 1.000-Acre-Standort in Abilene, das erste operative Stargate-Campusprojekt; Lancium selbst nennt für Abilene einen ERCOT-genehmigten 1,2-GW-Interconnect.",
+    "tail_analysis": "Der Accelerator-Anbieter bewegt sich vom Silizium-Layer in powered land, Grid-Anschlüsse und Energieinfrastruktur. Das ist eine neue Form vertikaler Integration: Wer GPUs verkauft, finanziert zugleich die knappe Infrastruktur, die deren Deployment ermöglicht. Grid-Hookups werden damit zu strategischen Assets ähnlich wie HBM- und Packaging-Kapazität.",
+    "source": "Reuters – Nvidia to invest up to $3B in Lancium, The Information reports",
+    "url": "https://www.reuters.com/business/nvidia-invest-up-3-billion-lancium-information-reports-2026-08-08/",
+    "content_hash": "29b848f88eca17adc18d",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 2,
+    "estimate": "Nvidia und Lancium haben die Transaktion noch nicht bestätigt. Der zusätzliche 1-Mrd.-US-Dollar-Teil ist konditional; Unternehmensbewertung, Governance, Lieferverknüpfung und tatsächlicher Cash-Abfluss sind offen.",
+    "red_pencil": {
+      "sourceIncentive": "Anonyme Dealquellen können Volumen und Konditionen vor Abschluss überzeichnen; Nvidia hat strategischen Nutzen von der Botschaft, Infrastrukturrisiken aktiv zu lösen.",
+      "alternative": "Es handelt sich primär um Vendor-/Strategic Financing eines bestehenden Kundenökosystems und nicht um einen dauerhaften Wechsel von Nvidia zum Infrastruktur-Eigentümer.",
+      "alreadyPriced": "Nvidia war Stargate-Technologiepartner und Mitglied großer Infrastrukturkonsortien. Neu ist der berichtete direkte Equity-Einstieg in einen Power-/Interconnection-Entwickler mit Milliardenvolumen.",
+      "killCondition": "Bis Jahresende gibt es keine bestätigte Transaktion oder der tatsächlich zugesagte Betrag liegt deutlich unter 1 Mrd. US-Dollar beziehungsweise ohne strategische Grid-/Power-Rechte.",
+      "forecastChange": "Kein neuer Forecast wegen Scope Gate und Transaktionsunsicherheit. Architecture-These wird aktiv beobachtet; nächster Review 2026-09-30."
+    },
+    "sources": [
+      {
+        "label": "Reuters – Nvidia to invest up to $3B in Lancium, The Information reports",
+        "url": "https://www.reuters.com/business/nvidia-invest-up-3-billion-lancium-information-reports-2026-08-08/"
+      },
+      {
+        "label": "Lancium – Abilene Stargate 1 / 1.2 GW interconnect",
+        "url": "https://lancium.com/locations/"
+      },
+      {
+        "label": "Lancium – 1.0 GW Childress campus with Crusoe",
+        "url": "https://lancium.com/2026/07/15/crusoe-and-lancium-announce-1-0-gigawatt-ai-data-center-campus-in-childress-texas/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-08-03",
+    "date": "2026-08-08",
+    "title": "Astra macht Frontier-Model-Safety zu realer Release- und Deployment-Reibung",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [],
+    "severity": 98,
+    "confidence": 92,
+    "signal": "demand_up",
+    "summary": "OpenAI erklärte am 7. August, es könne bei seinem kommenden Modell Astra 'kritische' Cyberfähigkeiten nicht ausschließen. Das Unternehmen pausierte interne Aktivitäten, die neue Sicherheitsanforderungen noch nicht erfüllen, verlagert Arbeiten in isolierte Umgebungen mit eingeschränktem Netzwerkzugang und will mit Behörden sowie ausgewählten Safety-Organisationen testen. OpenAIs öffentliches Framework definiert 'Critical' unter anderem über autonome Zero-Day-Exploits beziehungsweise komplexe Angriffe auf gehärtete Ziele.",
+    "tail_analysis": "Frontier-AI hat erstmals sichtbar einen Capability-Governance-Chokepoint, der reale Entwicklungstätigkeit stoppt. Das ist ein Falsifier gegen lineare 'mehr Compute -> schnellerer Release -> sofort mehr Nachfrage'-Modelle. Kurzfristig kann mehr Safety-Eval sogar zusätzlichen Compute verbrauchen, während Produktmonetarisierung später kommt.",
+    "source": "Reuters – OpenAI flags possible critical cybersecurity risk in Astra",
+    "url": "https://www.reuters.com/legal/litigation/openai-flags-possible-critical-cybersecurity-risk-upcoming-model-tightens-2026-08-07/",
+    "content_hash": "d63f96c079fb2ca37c13",
+    "origin": "daily-intelligence",
+    "classification": "Falsifier",
+    "rank": 3,
+    "estimate": "Die Einstufung ist vorläufig und kein Beweis, dass Astra die Critical-Schwelle tatsächlich erreicht. Pausierte interne Aktivitäten bedeuten nicht zwangsläufig eine lange öffentliche Release-Verzögerung.",
+    "red_pencil": {
+      "sourceIncentive": "OpenAI hat einen Anreiz, Safety-Governance sichtbar zu machen; zugleich kann eine 'zu leistungsfähige' Erzählung Marketingeffekte erzeugen.",
+      "alternative": "Die zusätzlichen Kontrollen sind ein kurzer interner Prozessschritt, ohne nennenswerten Einfluss auf Release-Timing, Adoption oder Infrastrukturverbrauch.",
+      "alreadyPriced": "Hohe Cyberfähigkeiten und Agentenrisiken waren bekannt. Neu ist, dass OpenAI bei einem konkreten kommenden Modell die Critical-Schwelle nicht ausschließt und interne Tätigkeiten deswegen stoppt.",
+      "killCondition": "Astra wird kurzfristig ohne materielle zusätzliche Beschränkungen veröffentlicht und nachfolgende Frontier-Releases durchlaufen dieselbe Safety-Stufe ohne erkennbare Zeit- oder Deploymentkosten.",
+      "forecastChange": "Kein neuer Forecast; bestehender AI-Product-Adoption/Execution-Falsifier wird verstärkt. Nächster Review 2026-08-31."
+    },
+    "sources": [
+      {
+        "label": "Reuters – OpenAI flags possible critical cybersecurity risk in Astra",
+        "url": "https://www.reuters.com/legal/litigation/openai-flags-possible-critical-cybersecurity-risk-upcoming-model-tightens-2026-08-07/"
+      },
+      {
+        "label": "OpenAI – Frontier Governance Framework",
+        "url": "https://openai.com/index/openai-frontier-governance-framework/"
+      },
+      {
+        "label": "OpenAI – GPT-5.6 System Card / Critical cyber definition",
+        "url": "https://deploymentsafety.openai.com/gpt-5-6"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-08-04",
+    "date": "2026-08-08",
+    "title": "US-Seite erwartet Hormuz-Deal bald – politische Wahrscheinlichkeit steigt, physische Hürde bleibt",
+    "category": "geopolitics",
+    "markets": [
+      "supply_chain"
+    ],
+    "companies": [],
+    "severity": 97,
+    "confidence": 90,
+    "signal": "geopolitical_split",
+    "summary": "Ein US-Regierungsvertreter sagte Reuters am 7. August, Iran und Oman machten Fortschritte und ein Hormuz-Deal werde bald erwartet. Sobald ein Abkommen zur ungehinderten kommerziellen Schifffahrt angekündigt und umgesetzt sei, wolle Washington die Blockade iranischer Häfen aufheben; US-Schritte blieben an Irans Umsetzung gebunden.",
+    "tail_analysis": "Der politische Tail-Risk sinkt, aber TAIL trennt jetzt strikt Deal-Wahrscheinlichkeit von Supply-Chain-Normalisierung. Ein Papierabkommen ist erst dann ein Energie-/Logistik-Entlastungssignal, wenn Verkehr, Versicherungsprämien und Fixings folgen.",
+    "source": "Reuters – US official expects Iran-Oman Hormuz deal soon",
+    "url": "https://www.reuters.com/world/middle-east/us-official-we-expect-deal-soon-between-iran-oman-strait-hormuz-2026-08-07/",
+    "content_hash": "2e55c172eefe6fa25d5f",
+    "origin": "daily-intelligence",
+    "classification": "Falsifier",
+    "rank": 4,
+    "estimate": "Es gibt weiterhin keinen unterzeichneten Text. Die Aussage stammt von der US-Seite; frühere optimistische Ankündigungen führten nicht dauerhaft zu normalem Verkehr. Versicherbarkeit, Frachtraten und tatsächliche Tanker-/LNG-Passagen bleiben unbewiesen.",
+    "red_pencil": {
+      "sourceIncentive": "Washington hat Anreiz, diplomatischen Fortschritt und einen Exit-Pfad aus der Blockade zu signalisieren.",
+      "alternative": "Die Formulierung 'soon' wiederholt frühere Fehlstarts; Iran, Oman oder operative Sicherheitsbedingungen verhindern die Umsetzung trotz politischer Einigung.",
+      "alreadyPriced": "Laufende Iran-Oman-Verhandlungen waren bekannt. Neu ist die explizite US-Zusage, die Hafenblockade nach einem umgesetzten Shipping-Deal aufzuheben.",
+      "killCondition": "Bis 15.08. kein dokumentierter Rahmen oder nach Ankündigung kein klarer Anstieg bei Tanker-/LNG-Verkehr und keine Verbesserung der Versicherbarkeit.",
+      "forecastChange": "P-2026-08-02-04 steigt 60→68 Prozent. Creation Confidence 58 und Historie 58→68→52→61→66→60→68 bleiben erhalten. Nächster Review 2026-08-09."
+    },
+    "sources": [
+      {
+        "label": "Reuters – US official expects Iran-Oman Hormuz deal soon",
+        "url": "https://www.reuters.com/world/middle-east/us-official-we-expect-deal-soon-between-iran-oman-strait-hormuz-2026-08-07/"
+      },
+      {
+        "label": "Reuters – Vessel traffic through Hormuz dwindles as talks continue",
+        "url": "https://www.reuters.com/business/energy/vessel-traffic-through-hormuz-dwindles-this-week-markets-watch-iran-oman-talks-2026-08-07/"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-08-05",
+    "date": "2026-08-08",
+    "title": "Switch-IPO-Bericht testet, ob Datacenter-Assets wieder tiefen öffentlichen Equity-Zugang haben",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [],
+    "severity": 88,
+    "confidence": 88,
+    "signal": "demand_up",
+    "summary": "Bloomberg berichtete laut Reuters, Switch habe vertraulich einen US-Börsengang eingereicht. Reuters hatte zuvor berichtet, das Unternehmen könne bis zu 10 Mrd. US-Dollar aufnehmen und einschließlich Schulden mit rund 80 Mrd. US-Dollar bewertet werden; ein IPO sei bereits im vierten Quartal möglich. Switch betreibt große Datacenter-Campusse für Power, Cooling und Connectivity.",
+    "tail_analysis": "Nach Private Credit, Leases und Bondfinanzierung könnte der AI-Infrastrukturzyklus wieder einen sehr großen Public-Equity-Exit erhalten. Ein erfolgreicher Switch-IPO würde Kapitalrecycling für Datacenter-Eigentümer beschleunigen und die Finanzierungsbasis verbreitern; ein Scheitern wäre dagegen ein nützlicher Bewertungs-Falsifier.",
+    "source": "Reuters – Switch confidentially files for US IPO, Bloomberg reports",
+    "url": "https://www.reuters.com/legal/transactional/data-center-firm-switch-confidentially-files-us-ipo-bloomberg-news-reports-2026-08-07/",
+    "content_hash": "dc7a808712cdc1dced91",
+    "origin": "daily-intelligence",
+    "classification": "Signal",
+    "rank": 5,
+    "estimate": "Reuters konnte die vertrauliche Einreichung nicht unabhängig bestätigen; Switch äußerte sich nicht. Raise, Bewertung, Timing und Free Float können sich erheblich ändern oder der Börsengang kann ganz ausfallen.",
+    "red_pencil": {
+      "sourceIncentive": "IPO-nahe Quellen und Eigentümer haben Anreiz, Größe und Bewertung hoch anzusetzen; vertrauliche Filings sind per Definition schwer extern zu verifizieren.",
+      "alternative": "Der Deal wird verkleinert, verschoben oder storniert und zeigt gerade, dass Private-Market-Bewertungen nicht in öffentliche Märkte übertragbar sind.",
+      "alreadyPriced": "Ein möglicher Switch-IPO war zuvor als Option berichtet; neu ist die gemeldete vertrauliche Einreichung.",
+      "killCondition": "Kein öffentliches Filing bis Ende 2026 oder indikative Bewertung/Raise fallen deutlich unter die berichteten Größenordnungen.",
+      "forecastChange": "Kein Forecast wegen niedrigerer Source Quality und Scope Gate; Signal bleibt unter enger Beobachtung. Nächster Review 2026-10-01."
+    },
+    "sources": [
+      {
+        "label": "Reuters – Switch confidentially files for US IPO, Bloomberg reports",
+        "url": "https://www.reuters.com/legal/transactional/data-center-firm-switch-confidentially-files-us-ipo-bloomberg-news-reports-2026-08-07/"
+      }
+    ]
   }
 ]
