@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-08T07:18:26.822Z",
+  "platform": {
+    "dataAsOf": "2026-08-08",
+    "dataFreshness": "current",
+    "processStatus": "ok",
+    "articleCount": 109,
+    "markets": [
+      {"id":"server_dram","label":"Server DRAM","score":82,"status":"red","signals":11},
+      {"id":"dram","label":"DRAM","score":80,"status":"orange","signals":31},
+      {"id":"hbm","label":"HBM","score":80,"status":"orange","signals":24},
+      {"id":"enterprise_ssd","label":"Enterprise SSD","score":73,"status":"orange","signals":10},
+      {"id":"nand","label":"NAND","score":73,"status":"orange","signals":10},
+      {"id":"ai_infrastructure","label":"AI Infrastructure","score":72,"status":"orange","signals":77}
+    ]
+  },
+  "executivePulse": {
+    "current": 90,
+    "previous": 90,
+    "status": "orange",
+    "interpretation": "AI infrastructure remains structurally expansionary, but bottlenecks are shifting beyond chips alone towards power access, financing and governance. Nvidia is moving directly into power infrastructure, Texas is turning interconnection into a regulatory and sunk-capital risk, and Astra is showing visible frontier-model release friction from critical cyber capabilities. Hormuz diplomacy improves the political option set without yet proving physical normalisation."
+  },
+  "signals": [
+    {
+      "date": "2026-08-08",
+      "title": "Texas turns data-centre interconnection into a sunk-capital and regulatory risk",
+      "summary": "Following Governor Greg Abbott’s audit of planned data-centre projects, ERCOT paused its Batch Zero process. Reuters reported that qualifying projects typically had to post security of US$50,000 per MW, leaving some developers with more than US$100 million tied up. A proposed PUCT rule could raise the non-refundable share of such deposits from 20% to 80%. ERCOT introduced Batch Zero in June for large loads of 75 MW and above and was tracking more than 438 GW of large-load requests, around 89% of them data centres.",
+      "analysis": "Power availability is no longer just a physical constraint; it is becoming a capital-allocation and permitting instrument. In Texas, an interconnection slot increasingly resembles an option with real downside risk. That weakens the assumption that powered land in ERCOT is automatically the fastest and lowest-risk route to new AI capacity.",
+      "score": 100
+    },
+    {
+      "date": "2026-08-08",
+      "title": "Nvidia moves directly into power infrastructure and grid optionality",
+      "summary": "The Information, subsequently cited by Reuters, reported that Nvidia could invest up to US$3 billion in power-infrastructure developer Lancium: initially US$2 billion for roughly 20%, plus up to US$1 billion tied to milestones such as grid connections. Lancium operates the 1,000-acre Abilene site, the first operational Stargate campus project, and says the site has an ERCOT-approved 1.2 GW interconnect.",
+      "analysis": "The accelerator supplier is moving beyond silicon into powered land, grid connections and energy infrastructure. This is a new form of vertical integration: the company selling GPUs is also financing the scarce infrastructure required to deploy them. Grid hookups are becoming strategic assets in much the same way as HBM and advanced-packaging capacity.",
+      "score": 99
+    },
+    {
+      "date": "2026-08-08",
+      "title": "Astra turns frontier-model safety into real release and deployment friction",
+      "summary": "OpenAI said on 7 August that it could not rule out 'critical' cyber capabilities in its forthcoming Astra model. The company paused internal activities that do not yet meet new safety requirements, moved work into isolated environments with restricted network access, and plans testing with authorities and selected safety organisations. OpenAI’s public framework defines 'Critical' cyber capability to include autonomous zero-day exploitation or complex attacks against hardened targets.",
+      "analysis": "Frontier AI now has a visible capability-governance choke point that can stop real development activity. This acts as a falsifier against linear models of 'more compute → faster release → immediate demand'. In the short term, additional safety evaluation may consume more compute even while product monetisation arrives later.",
+      "score": 98
+    }
+  ],
+  "catalysts": [
+    {"date":"2026-08-09","event":"Hormuz: assess deal progress and physical normalisation"},
+    {"date":"2026-08-31","event":"Astra: safety, release and deployment review"},
+    {"date":"2026-09-05","event":"Texas/ERCOT: review Batch Zero and deposit risk"},
+    {"date":"2026-09-30","event":"Nvidia/Lancium: transaction and grid-strategy review"},
+    {"date":"2026-10-01","event":"Switch IPO: filing, valuation and capital-access review"}
+  ]
+}
