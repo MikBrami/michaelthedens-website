@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T05:57:35.407Z",
+  "generatedAt": "2026-08-09T06:37:04.617Z",
   "platform": {
-    "dataAsOf": "2026-08-08",
+    "dataAsOf": "2026-08-09",
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 109,
+    "articleCount": 114,
     "markets": [
       {
         "id": "server_dram",
@@ -47,7 +47,7 @@
         "label": "AI Infrastructure",
         "score": 72,
         "status": "orange",
-        "signals": 77
+        "signals": 80
       }
     ]
   },
@@ -55,35 +55,39 @@
     "current": 90,
     "previous": 90,
     "status": "orange",
-    "interpretation": "AI-Infrastruktur bleibt strukturell expansiv, aber die Engpässe verlagern sich weiter von Chips allein auf Stromzugang, Finanzierung und Governance. Nvidia geht direkt in Power-Infrastruktur, Texas macht Interconnection zu einem regulatorischen und Sunk-Capital-Risiko, Astra zeigt erstmals sichtbare Frontier-Model-Release-Friction durch kritische Cyberfähigkeiten. Hormuz-Diplomatie verbessert die politische Option, ohne die physische Normalisierung bereits zu belegen."
+    "interpretation": "AI-Infrastruktur bleibt strukturell expansiv, aber der Power-Layer teilt sich sichtbar in zwei Klassen: Hyperscaler mit eigener Erzeugung können Grid-Queues umgehen, während queue-abhängige Projekte in Texas weiter unter Interconnection- und Deposit-Risiko stehen. Im Golf steigen die Chancen auf einen dokumentierten Hormuz-Rahmen, gleichzeitig belegen neue Schiffsangriffe und iranische Zusatzbedingungen, dass Papierabkommen und physische Normalisierung auseinanderlaufen können. SoftBanks OpenAI-besicherte Finanzierung erhöht den reflexiven Kapital- und Bewertungshebel des AI-Zyklus."
   },
   "signals": [
     {
-      "date": "2026-08-08",
-      "title": "Texas macht Datacenter-Interconnection zum Sunk-Capital- und Regulierungsrisiko",
-      "summary": "Nach dem von Gouverneur Greg Abbott angeordneten Audit geplanter Datacenter-Projekte wurde ERCOTs Batch-Zero-Prozess pausiert. Reuters berichtet, dass qualifizierte Projekte typischerweise 50.000 US-Dollar Sicherheit je MW hinterlegen mussten; einzelne Entwickler haben damit mehr als 100 Mio. US-Dollar gebunden. Eine noch nicht beschlossene PUCT-Regel könnte den nicht erstattbaren Anteil solcher Einlagen von 20 auf 80 Prozent erhöhen. ERCOT hatte Batch Zero erst im Juni für große Lasten ab 75 MW eingeführt und damals mehr als 438 GW Large-Load-Anfragen verfolgt, davon rund 89 Prozent Datacenter.",
-      "analysis": "Power availability ist nicht mehr nur physischer Engpass, sondern ein Kapital- und Genehmigungsinstrument. In Texas wird ein Interconnection-Slot zunehmend zu einer Option mit echtem Verlustpotenzial. Das schwächt die These, powered land in ERCOT sei automatisch der schnellste und risikoärmste Weg für neue AI-Kapazität.",
+      "date": "2026-08-09",
+      "title": "Hormuz-Routenabkommen ist laut Iran sehr nah – reicht aber ausdrücklich nicht zur Wiederöffnung",
+      "summary": "Irans Außenminister Abbas Araqchi sagte am 8. August, Iran und Oman seien einem Abkommen über eine neue Schifffahrtsroute durch die Straße von Hormuz sehr nahe. Teheran erklärte zugleich ausdrücklich, dass dieses Routenabkommen allein die Wasserstraße nicht wieder öffnet. Irans Sicherheitsführung knüpft eine volle Wiederöffnung zusätzlich an US-Zugeständnisse wie das Ende von Drohungen und Angriffen, Sanktionsabbau, Freigabe iranischer Vermögenswerte und Entschädigung. Oman bezeichnete die Gespräche als positiv und konstruktiv.",
+      "analysis": "TAIL trennt ab jetzt noch schärfer zwischen 'Framework' und 'Flow'. Ein Papier- oder Routenabkommen wäre ein politischer Fortschritt und stützt den bestehenden Forecast auf einen dokumentierten Rahmen, falsifiziert aber die Gleichsetzung von Deal und physischer Supply-Chain-Normalisierung.",
       "score": 100
     },
     {
-      "date": "2026-08-08",
-      "title": "Nvidia steigt direkt in Power-Infrastruktur und Grid-Optionalität ein",
-      "summary": "The Information berichtete, von Reuters aufgegriffen, Nvidia werde bis zu 3 Mrd. US-Dollar in den Power-Infrastrukturentwickler Lancium investieren: zunächst 2 Mrd. US-Dollar für rund 20 Prozent, plus bis zu 1 Mrd. US-Dollar bei Erreichen von Meilensteinen wie Grid-Anschlüssen. Lancium betreibt den 1.000-Acre-Standort in Abilene, das erste operative Stargate-Campusprojekt; Lancium selbst nennt für Abilene einen ERCOT-genehmigten 1,2-GW-Interconnect.",
-      "analysis": "Der Accelerator-Anbieter bewegt sich vom Silizium-Layer in powered land, Grid-Anschlüsse und Energieinfrastruktur. Das ist eine neue Form vertikaler Integration: Wer GPUs verkauft, finanziert zugleich die knappe Infrastruktur, die deren Deployment ermöglicht. Grid-Hookups werden damit zu strategischen Assets ähnlich wie HBM- und Packaging-Kapazität.",
+      "date": "2026-08-09",
+      "title": "Amazon bestätigt den Private-Grid-Pfad: GW Ranch umgeht ERCOT zunächst vollständig",
+      "summary": "Amazon hat den GW-Ranch-Standort im Pecos County in West Texas erworben und entwickelt dort einen AI-Datacenter-Campus. Pacifico Energy beschreibt GW Ranch als vom Stromnetz unabhängige Private-Grid-Plattform mit genehmigten bis zu 7,65 GW Gaserzeugung, 1,8 GW Batteriespeicher und bis zu 750 MWac Solar; über 5 GW sollen langfristig lieferbar sein. Pacifico nennt Q1 2027 für First Power, 1 GW in 2028 und mehr als 5 GW bis 2031.",
+      "analysis": "Texas spaltet sich in zwei Power-Klassen. Batch-Zero- und Interconnection-Risiken bleiben für queue-abhängige Projekte real; Hyperscaler mit Kapital, Gas, Turbinen und Private-Grid-Struktur können den Engpass hingegen teilweise umgehen. 'Grid access' bleibt knapp, aber für die größten Käufer wird 'own the power stack' zur Architektur-Alternative.",
       "score": 99
     },
     {
-      "date": "2026-08-08",
-      "title": "Astra macht Frontier-Model-Safety zu realer Release- und Deployment-Reibung",
-      "summary": "OpenAI erklärte am 7. August, es könne bei seinem kommenden Modell Astra 'kritische' Cyberfähigkeiten nicht ausschließen. Das Unternehmen pausierte interne Aktivitäten, die neue Sicherheitsanforderungen noch nicht erfüllen, verlagert Arbeiten in isolierte Umgebungen mit eingeschränktem Netzwerkzugang und will mit Behörden sowie ausgewählten Safety-Organisationen testen. OpenAIs öffentliches Framework definiert 'Critical' unter anderem über autonome Zero-Day-Exploits beziehungsweise komplexe Angriffe auf gehärtete Ziele.",
-      "analysis": "Frontier-AI hat erstmals sichtbar einen Capability-Governance-Chokepoint, der reale Entwicklungstätigkeit stoppt. Das ist ein Falsifier gegen lineare 'mehr Compute -> schnellerer Release -> sofort mehr Nachfrage'-Modelle. Kurzfristig kann mehr Safety-Eval sogar zusätzlichen Compute verbrauchen, während Produktmonetarisierung später kommt.",
-      "score": 98
+      "date": "2026-08-09",
+      "title": "Neuer ADNOC-naher Schiffsangriff zeigt: Hormuz-Diplomatie senkt den physischen Risiko-Layer noch nicht",
+      "summary": "Die Vereinigten Arabischen Emirate erklärten am 8. August, ein mit ADNOC verbundenes Schiff sei in der Straße von Hormuz mit einer iranischen Rakete angegriffen worden; bei diesem Vorfall wurden keine Verletzten gemeldet. ADNOC hatte bereits am Vortag erklärt, seit Beginn des Konflikts seien 15 seiner beziehungsweise verbundener Schiffe durch Raketen oder Drohnen angegriffen worden, mit einem Todesopfer und 20 Verletzten.",
+      "analysis": "Der physische Logistik-Layer bleibt von der Diplomatie entkoppelt. Solange neue Angriffe stattfinden, können Fracht, War-Risk-Versicherung, LNG-/Öl-Timing und Working Capital hoch bleiben, selbst wenn ein politischer Routenrahmen unterschrieben wird.",
+      "score": 97
     }
   ],
   "catalysts": [
     {
-      "date": "2026-08-09",
-      "event": "Falsifier-Review: Hormuz Deal Probability Up, Physical Normalization Unproven"
+      "date": "2026-08-10",
+      "event": "Falsifier-Review: Hormuz Framework ≠ Physical Reopening"
+    },
+    {
+      "date": "2026-08-12",
+      "event": "ADNOCShipping"
     },
     {
       "date": "2026-08-31",
@@ -91,15 +95,23 @@
     },
     {
       "date": "2026-09-05",
-      "event": "Falsifier-Review: Texas Batch Zero / Deposit Risk"
+      "event": "Texas/ERCOT: Batch Zero und Deposit-Risiko prüfen"
+    },
+    {
+      "date": "2026-09-15",
+      "event": "Regional Defense"
     },
     {
       "date": "2026-09-30",
-      "event": "Nvidia/Lancium: Transaktion und Grid-Strategie prüfen"
+      "event": "Amazon Private Grid"
     },
     {
       "date": "2026-10-01",
-      "event": "Signal-Review: Switch-IPO-Bericht testet, ob Datacenter-Assets wieder tiefen öffentlichen Equity-Zugang haben"
+      "event": "Switch IPO: Filing, Bewertung und Kapitalzugang prüfen"
+    },
+    {
+      "date": "2026-11-05",
+      "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
     }
   ]
 }
