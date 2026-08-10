@@ -40,6 +40,11 @@ function extractTag(block, tag) {
   return strip((match?.[1] || '').replace(/<!\[CDATA\[|\]\]>/g, ''));
 }
 
+function safeIso(value, fallback = now) {
+  const parsed = Date.parse(value || '');
+  return Number.isFinite(parsed) ? new Date(parsed).toISOString() : fallback;
+}
+
 function parseFeed(xml, source) {
   const blocks = [...xml.matchAll(/<(item|entry)(?:\s[^>]*)?>([\s\S]*?)<\/\1>/gi)].map((match) => match[2]);
   return blocks.map((block) => {
@@ -48,20 +53,23 @@ function parseFeed(xml, source) {
     const link = linkTag || extractTag(block, 'link') || extractTag(block, 'guid');
     const published = extractTag(block, 'pubDate') || extractTag(block, 'published') || extractTag(block, 'updated');
     const summary = extractTag(block, 'description') || extractTag(block, 'summary') || extractTag(block, 'content');
+    const publisher = extractTag(block, 'source');
     if (!title || !link) return null;
     const url = canonicalUrl(link);
     return {
       id: hash(`${source.id}|${url}`),
       source_id: source.id,
-      source_name: source.name,
+      source_name: publisher || source.name,
+      discovery_source: source.name,
       title,
       url,
       canonical_url: url,
       content_hash: hash(`${title}|${summary}`),
-      published_at: published ? new Date(published).toISOString() : now,
+      published_at: safeIso(published),
       summary,
       categories: source.categories || [],
       source_weight: source.weight ?? 1,
+      base_score: source.base_score ?? 0,
       status: 'new'
     };
   }).filter(Boolean);
@@ -69,7 +77,7 @@ function parseFeed(xml, source) {
 
 function scoreItem(item, keywords) {
   const text = `${item.title} ${item.summary}`.toLowerCase();
-  let score = 0;
+  let score = Number(item.base_score || 0);
   const hits = [];
   for (const term of keywords.high_priority || []) {
     if (new RegExp(`\\b${escapeRx(term.toLowerCase())}\\b`, 'i').test(text)) {
@@ -90,6 +98,13 @@ async function readJson(url, fallback) {
   try { return JSON.parse(await fs.readFile(url, 'utf8')); } catch { return fallback; }
 }
 
+function hoursApart(a, b) {
+  const left = Date.parse(a || '');
+  const right = Date.parse(b || '');
+  if (!Number.isFinite(left) || !Number.isFinite(right)) return Number.POSITIVE_INFINITY;
+  return Math.abs(left - right) / 3_600_000;
+}
+
 function findDuplicate(item, known) {
   const canonical = canonicalUrl(item.url);
   const exact = known.find((entry) => entry.url && canonicalUrl(entry.url) === canonical);
@@ -98,7 +113,17 @@ function findDuplicate(item, known) {
   const sameContent = known.find((entry) => entry.content_hash && entry.content_hash === item.content_hash);
   if (sameContent) return { type: 'content_hash', duplicate_of: sameContent.id ?? sameContent.url };
 
-  const similarTitle = known.find((entry) => entry.title && similarity(entry.title, item.title) >= 0.82);
+  // Similar headlines are only treated as duplicates when they come from the same
+  // publisher/discovery stream and were published very close together. This preserves
+  // genuine follow-up reporting on an evolving story.
+  const similarTitle = known.find((entry) => {
+    const samePublisher = Boolean(item.source_name && entry.source_name && item.source_name === entry.source_name);
+    const sameDiscovery = Boolean(item.source_id && entry.source_id && item.source_id === entry.source_id);
+    return (samePublisher || sameDiscovery)
+      && hoursApart(item.published_at, entry.published_at) <= 18
+      && entry.title
+      && similarity(entry.title, item.title) >= 0.93;
+  });
   if (similarTitle) return { type: 'title_similarity', duplicate_of: similarTitle.id ?? similarTitle.url };
 
   return null;
@@ -112,9 +137,15 @@ async function main() {
 
   const collected = [];
   const errors = [];
-  for (const source of config.sources.filter((source) => source.enabled && source.type === 'rss')) {
+  const enabledRssSources = config.sources.filter((source) => source.enabled && source.type === 'rss');
+  for (const source of enabledRssSources) {
     try {
-      const response = await fetch(source.url, { headers: { 'user-agent': 'TAIL-Intelligence/2.0' } });
+      const response = await fetch(source.url, {
+        headers: {
+          'user-agent': 'MT-AI-TAIL-Intelligence/2.0',
+          'accept': 'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.5'
+        }
+      });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       collected.push(...parseFeed(await response.text(), source));
     } catch (error) {
@@ -128,10 +159,12 @@ async function main() {
     collected.push({
       id: item.id || hash(`manual|${url}`),
       source_id: 'manual-tail-inbox',
-      source_name: 'TAIL Manual Inbox',
-      published_at: item.published_at || now,
+      source_name: item.source_name || 'TAIL Manual Inbox',
+      discovery_source: 'TAIL Manual Inbox',
+      published_at: safeIso(item.published_at),
       status: item.status || 'new',
       source_weight: 1,
+      base_score: 0,
       categories: item.categories || ['all'],
       ...item,
       url,
@@ -146,7 +179,10 @@ async function main() {
       id: article.id,
       title: article.title,
       url: article.url ?? `tail://knowledge-base/${article.id}`,
-      content_hash: article.content_hash ?? hash(`${article.title}|${article.summary ?? ''}`)
+      content_hash: article.content_hash ?? hash(`${article.title}|${article.summary ?? ''}`),
+      published_at: safeIso(article.date, null),
+      source_name: article.source || null,
+      source_id: article.origin || null
     }))
   ];
 
@@ -166,11 +202,13 @@ async function main() {
     .sort((a, b) => Number(b.relevance_score ?? 0) - Number(a.relevance_score ?? 0) || new Date(b.published_at) - new Date(a.published_at))
     .slice(0, 1000);
 
-  const duplicateItems = [...duplicates, ...(currentInbox.duplicate_items || [])].slice(0, 200);
+  const duplicateItems = [...duplicates, ...(currentInbox.duplicate_items || [])].slice(0, 300);
 
   await fs.writeFile(INBOX, JSON.stringify({
     updated_at: now,
     new_items: fresh.length,
+    sources_checked: enabledRssSources.length,
+    collected_items: collected.length,
     duplicate_items: duplicateItems,
     items: merged
   }, null, 2) + '\n');
@@ -180,13 +218,15 @@ async function main() {
     last_attempt: now,
     last_successful_update: now,
     newly_processed_articles: fresh.length,
+    collected_articles: collected.length,
+    sources_checked: enabledRssSources.length,
     deduplicated_articles: duplicates.length,
     inbox_size: merged.length,
     source_errors: errors,
     message: errors.length ? 'Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar.' : 'TAIL Inbox erfolgreich aktualisiert.'
   }, null, 2) + '\n');
 
-  console.log(`TAIL Inbox: ${fresh.length} neue Artikel, ${duplicates.length} Duplikate, ${merged.length} Inbox gesamt, ${errors.length} Quellenfehler.`);
+  console.log(`TAIL Inbox: ${fresh.length} neue Artikel aus ${collected.length} Treffern / ${enabledRssSources.length} Quellen, ${duplicates.length} Duplikate, ${merged.length} Inbox gesamt, ${errors.length} Quellenfehler.`);
 }
 
 main().catch(async (error) => {
