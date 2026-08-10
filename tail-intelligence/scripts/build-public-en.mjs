@@ -7,7 +7,7 @@ const sourcePath = path.resolve(root, '..', 'public-tail', 'data.json');
 const outputPath = path.resolve(root, '..', 'public-tail', 'data-en.json');
 const tempPath = `${outputPath}.tmp`;
 const model = process.env.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini';
-const EDITORIAL_VERSION = 3;
+const EDITORIAL_VERSION = 4;
 
 const readJson = (filePath, fallback = null) => {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch { return fallback; }
@@ -17,6 +17,7 @@ const stableSource = (snapshot) => ({
   platform: snapshot.platform,
   executivePulse: snapshot.executivePulse,
   signals: snapshot.signals,
+  originalSignals: snapshot.originalSignals,
   catalysts: snapshot.catalysts
 });
 
@@ -41,6 +42,11 @@ function assertEnglish(text, label) {
   if (germanResidue.test(String(text))) throw new Error(`${label} still contains German wording`);
 }
 
+function originalFor(source, index) {
+  const original = Array.isArray(source.originalSignals) ? source.originalSignals[index] : null;
+  return original?.layer === 'news' ? original : null;
+}
+
 function validateEditorial(source, editorial) {
   if (!editorial || typeof editorial !== 'object') throw new Error('English editorial response is not an object');
   if (!editorial.executivePulse?.interpretation) throw new Error('English executive interpretation missing');
@@ -58,8 +64,11 @@ function validateEditorial(source, editorial) {
     if (![translated?.title, translated?.summary, translated?.analysis].every((value) => typeof value === 'string' && value.trim())) {
       throw new Error(`English signal ${index + 1} is incomplete`);
     }
-    assertNoInventedNumbers(signal.title, translated.title, `Signal ${index + 1} title`);
-    assertNoInventedNumbers(signal.summary, translated.summary, `Signal ${index + 1} summary`);
+    const original = originalFor(source, index);
+    const titleSource = original?.title || signal.title;
+    const summarySource = original?.summary || signal.summary;
+    assertNoInventedNumbers(titleSource, translated.title, `Signal ${index + 1} title`);
+    assertNoInventedNumbers(summarySource, translated.summary, `Signal ${index + 1} summary`);
     assertNoInventedNumbers(signal.analysis, translated.analysis, `Signal ${index + 1} analysis`);
     assertEnglish(`${translated.title} ${translated.summary} ${translated.analysis}`, `Signal ${index + 1}`);
   });
@@ -78,10 +87,10 @@ function buildSnapshot(source, editorial) {
     editorial: {
       version: EDITORIAL_VERSION,
       language: 'en-GB',
-      sourceLanguage: 'de-DE',
+      sourceLanguage: 'mixed-original+de-DE',
       sourceHash: sourceHash(source),
       model,
-      mode: 'editorial_translation'
+      mode: 'original_news_plus_editorial_translation'
     },
     platform: {
       ...source.platform,
@@ -91,12 +100,15 @@ function buildSnapshot(source, editorial) {
       ...source.executivePulse,
       interpretation: editorial.executivePulse.interpretation.trim()
     },
-    signals: source.signals.map((signal, index) => ({
-      ...signal,
-      title: editorial.signals[index].title.trim(),
-      summary: editorial.signals[index].summary.trim(),
-      analysis: editorial.signals[index].analysis.trim()
-    })),
+    signals: source.signals.map((signal, index) => {
+      const original = originalFor(source, index);
+      return {
+        ...signal,
+        title: original?.title?.trim() || editorial.signals[index].title.trim(),
+        summary: original?.summary?.trim() || editorial.signals[index].summary.trim(),
+        analysis: editorial.signals[index].analysis.trim()
+      };
+    }),
     catalysts: source.catalysts.map((catalyst, index) => ({
       ...catalyst,
       event: editorial.catalysts[index].event.trim()
@@ -149,7 +161,14 @@ const schema = {
 function editorialInputFor(source) {
   return {
     executivePulse: { interpretation: source.executivePulse?.interpretation || '' },
-    signals: source.signals.map(({ title, summary, analysis }) => ({ title, summary, analysis })),
+    signals: source.signals.map((signal, index) => {
+      const original = originalFor(source, index);
+      return {
+        title: original?.title || signal.title,
+        summary: original?.summary || signal.summary,
+        analysis: signal.analysis
+      };
+    }),
     catalysts: source.catalysts.map(({ event }) => ({ event }))
   };
 }
@@ -166,7 +185,8 @@ async function requestEditorial(input, repair = false) {
       instructions: [
         'You are the English editorial desk for MT·AI Lighthouse, an AI infrastructure and semiconductor intelligence publication.',
         repair ? 'This is a repair pass. The previous output contained untranslated German. Rewrite ALL fields again and remove every German word or phrase.' : 'Rewrite every supplied text field into concise, publication-quality British English.',
-        'Every catalyst event must be completely English even when the source mixes German and English industry terminology.',
+        'For news headlines and summaries already written in good English, preserve their original wording as closely as possible; do not unnecessarily paraphrase them.',
+        'Every analysis and catalyst event must be completely English even when the source mixes German and English industry terminology.',
         'Do not leave German words, German grammar or untranslated German phrases in the output.',
         'Preserve the exact meaning, factual claims, company names, product names, dates, figures, units and uncertainty.',
         'Do not add facts, explanations, numbers, sources, forecasts or interpretations that are not present in the input.',
