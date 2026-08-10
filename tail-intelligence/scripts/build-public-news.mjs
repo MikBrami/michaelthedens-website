@@ -20,7 +20,9 @@ const accepted = (daily.acceptedSignals || [])
   .filter((signal) => Number(signal.priorityScore || 0) > 0)
   .filter((signal) => signal.classification !== 'No Material Change');
 
-const cutoff = Date.now() - 72 * 60 * 60 * 1000;
+// Public homepage news must be genuinely current. Never backfill a quiet day with
+// old Knowledge-Base / pool signals just to keep three cards populated.
+const cutoff = Date.now() - 36 * 60 * 60 * 1000;
 const news = (inbox.items || [])
   .filter((item) => Number(item.relevance_score || 0) >= 50)
   .filter((item) => {
@@ -28,9 +30,9 @@ const news = (inbox.items || [])
     return Number.isFinite(time) && time >= cutoff;
   })
   .sort((a, b) => {
-    const scoreDelta = Number(b.relevance_score || 0) - Number(a.relevance_score || 0);
-    if (scoreDelta) return scoreDelta;
-    return Date.parse(b.published_at || b.ingested_at || 0) - Date.parse(a.published_at || a.ingested_at || 0);
+    const publishedDelta = Date.parse(b.published_at || b.ingested_at || 0) - Date.parse(a.published_at || a.ingested_at || 0);
+    if (publishedDelta) return publishedDelta;
+    return Number(b.relevance_score || 0) - Number(a.relevance_score || 0);
   })
   .slice(0, 3)
   .map((item) => ({
@@ -44,9 +46,22 @@ const news = (inbox.items || [])
     layer: 'news'
   }));
 
-// Curated accepted signals remain the preferred public analytical cards. On quiet
-// days, current news fills the cards instead of a synthetic heartbeat.
-if (!accepted.length && news.length) {
+// Curated accepted signals remain the analytical cards when they exist today.
+// Otherwise the homepage shows only genuinely current news. If there is no current
+// news, signals is intentionally empty — stale pool content must never be presented
+// as today's intelligence.
+if (accepted.length) {
+  snapshot.signals = accepted.slice(0, 3).map((signal) => ({
+    date: String(daily.updatedAt || '').slice(0, 10),
+    title: signal.title,
+    summary: signal.fact || signal.estimate || signal.title,
+    analysis: signal.tailInference || signal.redPencil?.forecastChange || 'TAIL Daily Intelligence signal.',
+    score: Number(signal.priorityScore || 0),
+    source: (signal.sources || [])[0]?.label || 'TAIL Daily Intelligence',
+    url: (signal.sources || [])[0]?.url || null,
+    layer: 'accepted-signal'
+  }));
+} else {
   snapshot.signals = news;
 }
 
@@ -61,9 +76,10 @@ snapshot.news = news;
 snapshot.newsLayer = {
   generatedAt: new Date().toISOString(),
   count: news.length,
+  freshnessWindowHours: 36,
   source: 'TAIL Inbox',
-  admissionPolicy: 'News remain visible without automatically changing TAIL theses.'
+  admissionPolicy: 'Only current news is shown. Old pool signals are never backfilled as today\'s news.'
 };
 
 fs.writeFileSync(publicPath, JSON.stringify(snapshot, null, 2) + '\n');
-console.log(`Public News Layer: ${news.length} current news cards; ${accepted.length} accepted material signals.`);
+console.log(`Public News Layer: ${news.length} current news cards; ${accepted.length} accepted material signals; stale fallback disabled.`);
