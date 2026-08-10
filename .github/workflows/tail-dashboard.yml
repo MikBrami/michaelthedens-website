@@ -1,13 +1,15 @@
 name: TAIL Intelligence Platform v2
 
-# One workflow owns all generated TAIL data to prevent concurrent writes to main.
-# English editorial builds use the repository OpenAI secret and fail safely without blocking DE.
+# Single-writer workflow for generated TAIL state.
+# Generated data commits must not trigger another TAIL build.
 
 on:
   push:
     branches: [main]
     paths:
-      - 'tail-intelligence/**'
+      - 'tail-intelligence/scripts/**'
+      - 'tail-intelligence/config/**'
+      - 'tail-intelligence/package.json'
       - '.github/workflows/tail-dashboard.yml'
   schedule:
     - cron: '17 5,11,17,23 * * *'
@@ -33,6 +35,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v5
@@ -52,40 +56,23 @@ jobs:
           git config user.email 'tail-intelligence-bot@users.noreply.github.com'
           git add tail-intelligence/data public-tail/data.json public-tail/data-en.json
 
-          sync_private_branch() {
-            for sync_attempt in 1 2 3; do
-              if git push origin HEAD:refs/heads/agent/private-intelligence; then
-                return 0
-              fi
-              echo "::warning::Private preview sync ${sync_attempt} failed; refreshing its remote state."
-              git fetch origin agent/private-intelligence
-              sleep $((sync_attempt * 3))
-            done
-
-            echo '::error::Main is current, but the protected preview branch could not be synchronized.'
-            return 1
-          }
-
           if git diff --cached --quiet; then
             echo 'No generated TAIL changes to commit.'
-            sync_private_branch
             exit 0
           fi
 
           git commit -m 'chore: refresh TAIL intelligence state'
 
-          for attempt in 1 2 3; do
-            if git push origin HEAD:main; then
-              sync_private_branch
-              exit 0
-            fi
-            echo "::warning::Push attempt ${attempt} failed; rebasing onto the latest main."
-            git pull --rebase origin main
-            sleep $((attempt * 3))
-          done
+          # Generated-state writes use a single-writer workflow. Refresh main before
+          # publishing and rerun from the new head instead of attempting to rebase
+          # generated JSON through concurrent changes.
+          git fetch origin main
+          if [ "$(git rev-parse origin/main)" != "$(git rev-parse HEAD^)" ]; then
+            echo '::warning::Main changed during generation; aborting this publish safely. The next queued/scheduled run will regenerate from the new head.'
+            exit 1
+          fi
 
-          echo '::error::Unable to persist generated TAIL data after three attempts.'
-          exit 1
+          git push origin HEAD:main
+          git push --force-with-lease origin HEAD:refs/heads/agent/private-intelligence
 
-      # Vercel already deploys every main-branch push through its Git integration.
-      # Keeping deployment out of Actions avoids duplicate deploys and secret failures.
+      # Vercel deploys every main-branch push through its Git integration.
