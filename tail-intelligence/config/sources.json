@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updated_at": "2026-07-19T00:00:00Z",
+  "version": 2,
+  "updated_at": "2026-08-10T09:08:00Z",
   "sources": [
     {
       "id": "trendforce-memory",
@@ -9,7 +9,8 @@
       "url": "https://www.trendforce.com/feed/Semiconductors.html",
       "enabled": true,
       "categories": ["memory", "storage", "semiconductors"],
-      "weight": 1.0
+      "weight": 1.1,
+      "base_score": 15
     },
     {
       "id": "micron-news",
@@ -18,7 +19,8 @@
       "url": "https://investors.micron.com/rss/news-releases.xml",
       "enabled": true,
       "categories": ["memory", "semiconductors"],
-      "weight": 1.0
+      "weight": 1.15,
+      "base_score": 20
     },
     {
       "id": "nvidia-news",
@@ -27,7 +29,68 @@
       "url": "https://nvidianews.nvidia.com/releases.xml",
       "enabled": true,
       "categories": ["ai_datacenter", "semiconductors"],
-      "weight": 0.95
+      "weight": 1.05,
+      "base_score": 15
+    },
+    {
+      "id": "news-memory-storage",
+      "name": "TAIL News Search · Memory & Storage",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28HBM%20OR%20HBM4%20OR%20DRAM%20OR%20NAND%20OR%20%22enterprise%20SSD%22%20OR%20RDIMM%20OR%20SOCAMM%29%20%28Micron%20OR%20Samsung%20OR%20%22SK%20hynix%22%20OR%20Kioxia%20OR%20Sandisk%20OR%20CXMT%20OR%20YMTC%29%20when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "enabled": true,
+      "categories": ["memory", "storage"],
+      "weight": 1.1,
+      "base_score": 35
+    },
+    {
+      "id": "news-equipment-foundry",
+      "name": "TAIL News Search · Equipment & Foundry",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28semiconductor%20OR%20wafer%20OR%20fab%20OR%20foundry%20OR%20lithography%29%20%28ASML%20OR%20%22Applied%20Materials%22%20OR%20%22Lam%20Research%22%20OR%20KLA%20OR%20Tokyo%20Electron%20OR%20TSMC%20OR%20Samsung%20OR%20Intel%29%20when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "enabled": true,
+      "categories": ["equipment", "foundry", "semiconductors"],
+      "weight": 1.05,
+      "base_score": 32
+    },
+    {
+      "id": "news-packaging-capacity",
+      "name": "TAIL News Search · Packaging & Capacity",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28CoWoS%20OR%20%22advanced%20packaging%22%20OR%20capacity%20OR%20cleanroom%20OR%20%22wafer%20starts%22%20OR%20yield%29%20semiconductor%20when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "enabled": true,
+      "categories": ["advanced_packaging", "capacity", "semiconductors"],
+      "weight": 1.05,
+      "base_score": 30
+    },
+    {
+      "id": "news-ai-compute",
+      "name": "TAIL News Search · Compute & AI Labs",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28Nvidia%20OR%20AMD%20OR%20OpenAI%20OR%20Anthropic%20OR%20Google%20OR%20Meta%20OR%20Microsoft%20OR%20Amazon%29%20%28AI%20OR%20GPU%20OR%20accelerator%20OR%20inference%20OR%20training%29%20when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "enabled": true,
+      "categories": ["compute", "ai_labs", "ai_datacenter"],
+      "weight": 1.0,
+      "base_score": 28
+    },
+    {
+      "id": "news-datacenter-power",
+      "name": "TAIL News Search · Datacenter, Power & Hyperscaler",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28%22data%20center%22%20OR%20datacenter%20OR%20hyperscaler%29%20%28power%20OR%20electricity%20OR%20cooling%20OR%20capex%20OR%20gigawatt%20OR%20GPU%29%20when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "enabled": true,
+      "categories": ["ai_datacenter", "power", "hyperscaler"],
+      "weight": 1.0,
+      "base_score": 28
+    },
+    {
+      "id": "news-geopolitics-supply",
+      "name": "TAIL News Search · Geopolitics & Supply Chain",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28semiconductor%20OR%20chip%20OR%20AI%29%20%28China%20OR%20Taiwan%20OR%20tariff%20OR%20sanctions%20OR%20%22export%20controls%22%20OR%20Hormuz%20OR%20shipping%29%20when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "enabled": true,
+      "categories": ["geopolitics", "supply_chain", "semiconductors"],
+      "weight": 1.0,
+      "base_score": 28
     },
     {
       "id": "manual-tail-inbox",
@@ -36,11 +99,20 @@
       "url": "./data/manual-inbox.json",
       "enabled": true,
       "categories": ["all"],
-      "weight": 1.0
+      "weight": 1.0,
+      "base_score": 0
     }
   ],
   "keywords": {
-    "high_priority": ["HBM4", "server DRAM", "enterprise SSD", "NAND", "LTA", "hyperscaler", "SK hynix", "Micron", "Samsung", "Nvidia", "Huawei", "SwaySure", "CXMT", "YMTC"],
-    "medium_priority": ["datacenter", "AI infrastructure", "advanced packaging", "CoWoS", "DDR5", "memory pricing", "export controls", "supply chain"]
+    "high_priority": [
+      "HBM", "HBM4", "server DRAM", "enterprise SSD", "eSSD", "NAND", "RDIMM", "MRDIMM", "SOCAMM", "CXL", "LTA",
+      "hyperscaler", "AI datacenter", "data center", "SK hynix", "Micron", "Samsung", "Kioxia", "Sandisk", "Nvidia", "AMD",
+      "TSMC", "ASML", "Applied Materials", "Lam Research", "KLA", "Tokyo Electron", "CoWoS", "Huawei", "CXMT", "YMTC",
+      "OpenAI", "Anthropic", "Microsoft", "Meta", "Amazon", "Google"
+    ],
+    "medium_priority": [
+      "datacenter", "AI infrastructure", "advanced packaging", "wafer", "fab", "foundry", "cleanroom", "yield", "DDR5",
+      "memory pricing", "export controls", "supply chain", "capacity", "capex", "power", "cooling", "gigawatt", "shipping", "Hormuz"
+    ]
   }
 }
