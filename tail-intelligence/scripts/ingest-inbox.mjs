@@ -9,10 +9,34 @@ const MANUAL = new URL('data/manual-inbox.json', ROOT);
 const STATUS = new URL('data/update-status.json', ROOT);
 
 const now = new Date().toISOString();
-const strip = (value = '') => value.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 const hash = (value) => crypto.createHash('sha256').update(value).digest('hex').slice(0, 20);
 const escapeRx = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-const tokenize = (value = '') => new Set(strip(value).toLowerCase().replace(/[^a-z0-9äöüß\s-]/gi, ' ').split(/\s+/).filter((token) => token.length > 2));
+
+function decodeEntities(value = '') {
+  const named = {
+    '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&apos;': "'",
+    '&nbsp;': ' ', '&ndash;': '–', '&mdash;': '—', '&hellip;': '…'
+  };
+  let text = String(value);
+  for (const [entity, replacement] of Object.entries(named)) text = text.split(entity).join(replacement);
+  text = text.replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)));
+  text = text.replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)));
+  return text;
+}
+
+function cleanText(value = '') {
+  let text = String(value).replace(/<!\[CDATA\[|\]\]>/g, '');
+  // Google News descriptions frequently contain escaped HTML. Decode first, then strip.
+  for (let i = 0; i < 2; i += 1) text = decodeEntities(text);
+  return text
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+const tokenize = (value = '') => new Set(cleanText(value).toLowerCase().replace(/[^a-z0-9äöüß\s-]/gi, ' ').split(/\s+/).filter((token) => token.length > 2));
 
 function similarity(a, b) {
   const left = tokenize(a);
@@ -24,20 +48,23 @@ function similarity(a, b) {
 
 function canonicalUrl(value = '') {
   try {
-    const url = new URL(value.trim());
+    const url = new URL(String(value).trim());
     for (const key of [...url.searchParams.keys()]) {
       if (/^(utm_|fbclid|gclid|mc_)/i.test(key)) url.searchParams.delete(key);
     }
     url.hash = '';
     return url.toString().replace(/\/$/, '');
   } catch {
-    return value.trim().replace(/\/$/, '');
+    return String(value).trim().replace(/\/$/, '');
   }
 }
 
+function extractRawTag(block, tag) {
+  return block.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`, 'i'))?.[1] || '';
+}
+
 function extractTag(block, tag) {
-  const match = block.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`, 'i'));
-  return strip((match?.[1] || '').replace(/<!\[CDATA\[|\]\]>/g, ''));
+  return cleanText(extractRawTag(block, tag));
 }
 
 function safeIso(value, fallback = now) {
@@ -45,17 +72,33 @@ function safeIso(value, fallback = now) {
   return Number.isFinite(parsed) ? new Date(parsed).toISOString() : fallback;
 }
 
+function normalizeTitle(title, publisher) {
+  let clean = cleanText(title);
+  if (publisher) {
+    const suffix = new RegExp(`\\s[-–—]\\s${escapeRx(cleanText(publisher))}$`, 'i');
+    clean = clean.replace(suffix, '').trim();
+  }
+  return clean;
+}
+
 function parseFeed(xml, source) {
   const blocks = [...xml.matchAll(/<(item|entry)(?:\s[^>]*)?>([\s\S]*?)<\/\1>/gi)].map((match) => match[2]);
   return blocks.map((block) => {
-    const title = extractTag(block, 'title');
+    const publisher = extractTag(block, 'source');
+    const title = normalizeTitle(extractTag(block, 'title'), publisher);
     const linkTag = block.match(/<link(?:\s[^>]*)?href=["']([^"']+)["'][^>]*>/i)?.[1];
     const link = linkTag || extractTag(block, 'link') || extractTag(block, 'guid');
     const published = extractTag(block, 'pubDate') || extractTag(block, 'published') || extractTag(block, 'updated');
-    const summary = extractTag(block, 'description') || extractTag(block, 'summary') || extractTag(block, 'content');
-    const publisher = extractTag(block, 'source');
+    let summary = cleanText(extractRawTag(block, 'description') || extractRawTag(block, 'summary') || extractRawTag(block, 'content'));
     if (!title || !link) return null;
     const url = canonicalUrl(link);
+
+    // Aggregator feeds often return little more than a linked headline in description.
+    // Do not leak navigation markup into the product UI.
+    if (!summary || summary.length < 35 || similarity(summary, title) > 0.82 || /^https?:\/\//i.test(summary)) {
+      summary = `Aktuelle Meldung von ${publisher || source.name}: ${title}`;
+    }
+
     return {
       id: hash(`${source.id}|${url}`),
       source_id: source.id,
@@ -113,9 +156,6 @@ function findDuplicate(item, known) {
   const sameContent = known.find((entry) => entry.content_hash && entry.content_hash === item.content_hash);
   if (sameContent) return { type: 'content_hash', duplicate_of: sameContent.id ?? sameContent.url };
 
-  // Similar headlines are only treated as duplicates when they come from the same
-  // publisher/discovery stream and were published very close together. This preserves
-  // genuine follow-up reporting on an evolving story.
   const similarTitle = known.find((entry) => {
     const samePublisher = Boolean(item.source_name && entry.source_name && item.source_name === entry.source_name);
     const sameDiscovery = Boolean(item.source_id && entry.source_id && item.source_id === entry.source_id);
@@ -167,9 +207,11 @@ async function main() {
       base_score: 0,
       categories: item.categories || ['all'],
       ...item,
+      title: cleanText(item.title),
+      summary: cleanText(item.summary || ''),
       url,
       canonical_url: url,
-      content_hash: item.content_hash || hash(`${item.title}|${item.summary ?? ''}`)
+      content_hash: item.content_hash || hash(`${cleanText(item.title)}|${cleanText(item.summary ?? '')}`)
     });
   }
 
@@ -197,7 +239,15 @@ async function main() {
     fresh.push({ ...item, status: item.relevance_score >= 25 ? 'new' : 'irrelevant' });
   }
 
-  const merged = [...fresh, ...(currentInbox.items || [])]
+  // Existing inbox rows are sanitized on every run as well, so a parser fix immediately
+  // repairs previously collected escaped markup instead of waiting for those rows to age out.
+  const sanitizedExisting = (currentInbox.items || []).map((item) => ({
+    ...item,
+    title: cleanText(item.title || ''),
+    summary: cleanText(item.summary || '')
+  }));
+
+  const merged = [...fresh, ...sanitizedExisting]
     .filter((item, index, arr) => arr.findIndex((candidate) => canonicalUrl(candidate.url) === canonicalUrl(item.url)) === index)
     .sort((a, b) => Number(b.relevance_score ?? 0) - Number(a.relevance_score ?? 0) || new Date(b.published_at) - new Date(a.published_at))
     .slice(0, 1000);
