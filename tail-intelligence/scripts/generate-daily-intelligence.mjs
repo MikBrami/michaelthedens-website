@@ -23,13 +23,18 @@ function dateFromName(name = '') {
 async function main() {
   const targetName = `daily-intelligence-${berlinDate}.json`;
   const target = new URL(targetName, DATA);
-  try {
-    await fs.access(target);
-    console.log(`Daily Analyst: ${targetName} already exists; keeping curated daily snapshot.`);
-    return;
-  } catch {}
+  const existing = await readJson(target, null);
 
-  const names = (await fs.readdir(DATA)).filter((name) => DAILY_FILE_PATTERN.test(name)).sort();
+  // Human-curated snapshots always win. Auto-generated snapshots may be refreshed
+  // during the same day so that a previously emitted heartbeat cannot mask news.
+  if (existing && !existing.automatedDaily) {
+    console.log(`Daily Analyst: ${targetName} is curated; keeping it unchanged.`);
+    return;
+  }
+
+  const names = (await fs.readdir(DATA))
+    .filter((name) => DAILY_FILE_PATTERN.test(name) && name !== targetName)
+    .sort();
   const previousName = names.at(-1);
   if (!previousName) throw new Error('Daily Analyst cannot start without a previous daily-intelligence snapshot.');
 
@@ -37,59 +42,25 @@ async function main() {
   if (!previous) throw new Error(`Unable to read ${previousName}`);
 
   const inbox = await readJson(INBOX, { updated_at: null, new_items: 0, items: [] });
-  const recentCutoff = Date.now() - 36 * 60 * 60 * 1000;
+  const recentCutoff = Date.now() - 48 * 60 * 60 * 1000;
   const candidates = (inbox.items || [])
-    .filter((item) => Number(item.relevance_score || 0) >= 80)
+    .filter((item) => Number(item.relevance_score || 0) >= 65)
     .filter((item) => {
       const published = Date.parse(item.published_at || item.ingested_at || '');
       return Number.isFinite(published) && published >= recentCutoff;
     })
-    .slice(0, 5);
+    .sort((a, b) => Number(b.relevance_score || 0) - Number(a.relevance_score || 0) || Date.parse(b.published_at || 0) - Date.parse(a.published_at || 0))
+    .slice(0, 8);
 
   // The automated generator is deliberately conservative. It creates a fresh daily
   // analytical state every day, but does not promote raw RSS items to accepted TAIL
-  // signals without the full evidence/admission-gate review. Those candidates remain
-  // visible in the Inbox for analyst review.
+  // signals without the full evidence/admission-gate review.
   const currentPulse = Number(previous.executivePulse?.current ?? 0);
   const currentConfidence = Number(previous.confidence?.current ?? 0);
   const currentRisk = Number(previous.riskPressure?.current ?? 0);
   const candidateText = candidates.length
-    ? `${candidates.length} hochrelevante Inbox-Kandidaten warten auf vollständige Evidence-/Materiality-Prüfung; sie werden nicht automatisch als akzeptierte Signale hochgestuft.`
+    ? `${candidates.length} aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft.`
     : 'Seit dem vorherigen Daily Snapshot wurde kein neues Signal gefunden, das die TAIL-Aufnahmeschwelle bereits belastbar überschreitet.';
-
-  const heartbeatSignal = {
-    id: 'S-TAIL-DAILY-HEARTBEAT',
-    rank: 999,
-    priorityScore: 0,
-    classification: 'No Material Change',
-    title: `TAIL Daily Check ${berlinDate}: keine bestätigte Richtungsänderung`,
-    fact: candidateText,
-    estimate: 'Kein Markt-, Preis-, Supply- oder Thesis-Score wird allein aufgrund dieses Freshness-Signals verändert.',
-    tailInference: 'Der tägliche Analysezyklus ist aktuell. Ein unveränderter Befund ist ein gültiges Ergebnis und wird als nullwirksamer Heartbeat dokumentiert.',
-    admissionGate: {
-      Freshness: true,
-      Evidence: true,
-      Materiality: false,
-      Causality: false,
-      Falsifiability: true
-    },
-    scoreBreakdown: {
-      SourceQuality: 0,
-      Novelty: 0,
-      ThesisRelevance: 0,
-      ForecastImpact: 0,
-      Falsifiability: 0,
-      TimeSensitivity: 0
-    },
-    redPencil: {
-      sourceIncentive: 'Kein externer Quelleneffekt; dies ist ein interner Freshness-Heartbeat.',
-      alternative: 'Ein später eintreffendes oder nachträglich qualifiziertes Signal kann den heutigen Befund noch verändern.',
-      alreadyPriced: 'Nicht anwendbar.',
-      killCondition: 'Ein neues Signal überschreitet nach vollständiger Prüfung die TAIL-Aufnahmeschwelle.',
-      forecastChange: 'Keine Änderung.'
-    },
-    sources: []
-  };
 
   const daily = {
     ...previous,
@@ -99,7 +70,7 @@ async function main() {
       ...(previous.executivePulse || {}),
       current: currentPulse,
       previous: currentPulse,
-      interpretation: `Automatischer Daily-Freshness-Lauf für ${berlinDate}: ${candidateText} Bestehende Thesen und Scores bleiben deshalb unverändert, bis neue Evidenz die Admission Gates erfüllt.`
+      interpretation: `Daily Check ${berlinDate}: ${candidateText} Bestehende Thesen und Scores bleiben unverändert, bis neue Evidenz die Admission Gates erfüllt.`
     },
     confidence: {
       ...(previous.confidence || {}),
@@ -113,9 +84,16 @@ async function main() {
       previous: currentRisk
     },
     momentum: candidates.length
-      ? `Keine bestätigte Richtungsänderung · ${candidates.length} neue High-Relevance-Kandidaten in Review`
+      ? `Keine bestätigte Richtungsänderung · ${candidates.length} aktuelle Meldungen im News-Layer`
       : 'Keine bestätigte Richtungsänderung seit dem vorherigen Lauf',
-    acceptedSignals: [heartbeatSignal],
+    acceptedSignals: [],
+    dailyStatus: {
+      date: berlinDate,
+      type: 'no-material-change',
+      title: 'Keine bestätigte materielle Richtungsänderung',
+      impactScore: 0,
+      note: candidateText
+    },
     automatedDaily: {
       generatedAt: nowIso,
       mode: 'freshness-safe-conservative',
@@ -126,10 +104,11 @@ async function main() {
         title: item.title,
         url: item.url,
         source: item.source_name,
+        summary: item.summary || '',
         relevanceScore: item.relevance_score,
         publishedAt: item.published_at
       })),
-      note: 'The heartbeat has zero priority and exists only to make a completed daily analysis visible. Raw inbox candidates are not accepted as material TAIL signals without Evidence, Materiality, Causality and Falsifiability review.'
+      note: 'News candidates remain visible as news. They are not accepted as material TAIL signals without Evidence, Materiality, Causality and Falsifiability review.'
     }
   };
 
@@ -144,7 +123,7 @@ async function main() {
     daily_analyst_candidates: candidates.length
   }, null, 2) + '\n');
 
-  console.log(`Daily Analyst: generated ${targetName}; ${candidates.length} high-relevance candidates held for admission review.`);
+  console.log(`Daily Analyst: generated ${targetName}; ${candidates.length} relevant news candidates kept separate from accepted signals.`);
 }
 
 main().catch((error) => {
