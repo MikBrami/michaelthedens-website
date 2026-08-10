@@ -94,6 +94,21 @@ function readerImpact(item) {
   return 'Die Meldung ist relevant, weil sie einen messbaren Einfluss auf Halbleiterangebot, Datacenter-Nachfrage oder die Kosten und Verfügbarkeit von Memory- und Storage-Komponenten haben kann.';
 }
 
+function publicExecutiveInterpretation() {
+  const index = Number(snapshot.executivePulse?.current ?? snapshot.platform?.tailIndex ?? 0);
+  const markets = Array.isArray(snapshot.platform?.markets) ? snapshot.platform.markets : [];
+  const topMarkets = markets.slice(0, 3).map((market) => market.label).filter(Boolean);
+  const marketText = topMarkets.length ? `${topMarkets.join(', ')} zählen aktuell zu den angespanntesten Bereichen.` : 'Memory und AI-Infrastruktur bleiben die zentralen Beobachtungsfelder.';
+
+  let lead;
+  if (index >= 85) lead = 'Memory und AI-Infrastruktur bleiben unter hohem Druck.';
+  else if (index >= 70) lead = 'Die Lage bei Memory und AI-Infrastruktur bleibt angespannt.';
+  else if (index >= 55) lead = 'Die Lage bleibt gemischt und erfordert selektive Beobachtung.';
+  else lead = 'Der Markt zeigt derzeit vergleichsweise moderate Spannungen.';
+
+  return `${lead} ${marketText} Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend.`;
+}
+
 // Public homepage news must be genuinely current and inside the TAIL infrastructure scope.
 const cutoff = Date.now() - 36 * 60 * 60 * 1000;
 const candidates = (inbox.items || [])
@@ -154,6 +169,11 @@ snapshot.dailyStatus = daily.dailyStatus || {
   type: accepted.length ? 'material-change' : 'no-material-change',
   title: accepted.length ? 'Neue bestätigte TAIL-Signale' : 'Keine bestätigte materielle Richtungsänderung',
   impactScore: accepted.length ? Math.max(...accepted.map((signal) => Number(signal.priorityScore || 0))) : 0
+};
+
+snapshot.executivePulse = {
+  ...(snapshot.executivePulse || {}),
+  interpretation: publicExecutiveInterpretation()
 };
 
 snapshot.news = news;
