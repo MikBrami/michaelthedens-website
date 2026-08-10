@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "ingest": "node scripts/ingest-inbox.mjs",
+    "generate:daily": "node scripts/generate-daily-intelligence.mjs",
     "sync": "node scripts/sync-daily-intelligence.mjs",
     "ledger": "node scripts/build-forecast-ledger.mjs",
     "catalysts": "node scripts/ensure-public-catalysts.mjs",
@@ -12,9 +13,9 @@
     "build": "npm run ledger && node scripts/build-data.mjs && npm run catalysts && npm run build:en",
     "check": "node scripts/validate.mjs",
     "lint": "node scripts/validate.mjs --static",
-    "typecheck": "node --check scripts/ingest-inbox.mjs && node --check scripts/sync-daily-intelligence.mjs && node --check scripts/build-forecast-ledger.mjs && node --check scripts/build-data.mjs && node --check scripts/ensure-public-catalysts.mjs && node --check scripts/build-public-en.mjs && node --check scripts/validate.mjs && node --check scripts/validate-deployment.mjs",
-    "test": "npm run sync && npm run build && npm run check",
-    "update": "npm run ingest && npm run sync && npm run build && npm run check",
+    "typecheck": "node --check scripts/ingest-inbox.mjs && node --check scripts/generate-daily-intelligence.mjs && node --check scripts/sync-daily-intelligence.mjs && node --check scripts/build-forecast-ledger.mjs && node --check scripts/build-data.mjs && node --check scripts/ensure-public-catalysts.mjs && node --check scripts/build-public-en.mjs && node --check scripts/validate.mjs && node --check scripts/validate-deployment.mjs",
+    "test": "npm run generate:daily && npm run sync && npm run build && npm run check",
+    "update": "npm run ingest && npm run generate:daily && npm run sync && npm run build && npm run check",
     "ci": "npm run lint && npm run typecheck && npm run update",
     "validate:deployment": "node scripts/validate-deployment.mjs"
   }
