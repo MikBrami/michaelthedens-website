@@ -54,11 +54,51 @@ function cleanSummary(item) {
   return summary;
 }
 
-// Public homepage news must be genuinely current. Never backfill a quiet day with
-// old Knowledge-Base / pool signals just to keep three cards populated.
+function textFor(item) {
+  return `${item.title || ''} ${item.summary || ''} ${(item.categories || []).join(' ')}`.toLowerCase();
+}
+
+function isPublicScope(item) {
+  const text = textFor(item);
+  const positive = /\bhbm\d*\b|dram|nand|enterprise[- ]?ssd|\bessd\b|rdimm|mrdimm|socamm|cxl|memory|storage|semiconductor|wafer|foundry|\bfab\b|cowos|advanced packaging|lithograph|asml|applied materials|lam research|kla|tokyo electron|tsmc|micron|sk hynix|samsung|kioxia|sandisk|cxmt|ymtc|gpu|accelerator|ai infrastructure|data ?cent(er|re)|hyperscaler|server|capex|gigawatt|power|cooling|grid|export control|supply chain|hormuz|shipping/.test(text);
+  const genericConsumerAi = /your chats|chat history|privacy settings|how to stop|prompt privacy|consumer chatbot|learn(?:ing)? from your chats/.test(text);
+  return positive && !genericConsumerAi;
+}
+
+function readerImpact(item) {
+  const text = textFor(item);
+  if (/hbm4|\bhbm\b/.test(text) && /yield|ausbeute/.test(text)) {
+    return 'Höhere HBM-Ausbeuten können den Ramp neuer AI-Beschleuniger beschleunigen und mittelfristig mehr HBM-Kapazität freisetzen. Entscheidend ist, ob der Yield auch in Serienvolumen und ausgelieferten Modulen sichtbar wird.';
+  }
+  if (/hbm4|\bhbm\b/.test(text)) {
+    return 'HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.';
+  }
+  if (/enterprise[- ]?ssd|\bessd\b|nand|storage|qlc|nvme/.test(text)) {
+    return 'Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.';
+  }
+  if (/server[- ]?dram|rdimm|mrdimm|socamm|ddr5|dram|memory/.test(text)) {
+    return 'Die Entwicklung betrifft die Versorgung und Kosten von Server-Memory. Für Betreiber und Systemintegratoren ist relevant, ob daraus höhere Preise, längere Lieferzeiten oder frühere Allokationsentscheidungen entstehen.';
+  }
+  if (/asml|applied materials|lam research|kla|tokyo electron|equipment|lithograph|wafer|foundry|\bfab\b|yield/.test(text)) {
+    return 'Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.';
+  }
+  if (/cowos|advanced packaging|packaging/.test(text)) {
+    return 'Advanced Packaging bestimmt zunehmend, wie schnell AI-Chips und HBM als vollständige Module in den Markt kommen. Zusätzliche Packaging-Kapazität kann deshalb wichtiger sein als reine Wafer-Kapazität.';
+  }
+  if (/data ?cent(er|re)|hyperscaler|capex|gigawatt|power|cooling|grid|gpu|accelerator|server/.test(text)) {
+    return 'Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.';
+  }
+  if (/export control|sanction|china|taiwan|hormuz|shipping|supply chain/.test(text)) {
+    return 'Das ist ein Lieferketten- und Geopolitiksignal. Es kann Verfügbarkeit, Transportkosten, Beschaffungswege oder die regionale Allokation von Halbleiter- und Memory-Produkten verändern.';
+  }
+  return 'Die Meldung ist relevant, weil sie einen messbaren Einfluss auf Halbleiterangebot, Datacenter-Nachfrage oder die Kosten und Verfügbarkeit von Memory- und Storage-Komponenten haben kann.';
+}
+
+// Public homepage news must be genuinely current and inside the TAIL infrastructure scope.
 const cutoff = Date.now() - 36 * 60 * 60 * 1000;
 const candidates = (inbox.items || [])
   .filter((item) => Number(item.relevance_score || 0) >= 45)
+  .filter(isPublicScope)
   .filter((item) => {
     const time = Date.parse(item.published_at || item.ingested_at || '');
     return Number.isFinite(time) && time >= cutoff;
@@ -85,7 +125,7 @@ const news = selected.map((item) => ({
   date: String(item.published_at || item.ingested_at || daily.updatedAt || '').slice(0, 10),
   title: item.title,
   summary: cleanSummary(item),
-  analysis: 'Aktuelle, relevante Meldung im News Layer. Erst nach Evidence-, Materiality-, Causality- und Falsifiability-Prüfung darf sie TAIL-Thesen oder Forecasts verändern.',
+  analysis: readerImpact(item),
   score: Number(item.public_score || 0),
   relevanceScore: Number(item.relevance_score || 0),
   sourceQuality: publisherQuality(item.source_name),
@@ -122,10 +162,10 @@ snapshot.newsLayer = {
   count: news.length,
   candidateCount: candidates.length,
   freshnessWindowHours: 36,
-  ranking: 'freshness + relevance + source quality',
+  ranking: 'TAIL scope + freshness + relevance + source quality',
   source: 'TAIL Inbox',
-  admissionPolicy: 'Only current news is shown. Old pool signals are never backfilled as today\'s news.'
+  admissionPolicy: 'Current public news is separated from internal TAIL admission and forecast logic.'
 };
 
 fs.writeFileSync(publicPath, JSON.stringify(snapshot, null, 2) + '\n');
-console.log(`Public News Layer: ${news.length} current news cards from ${candidates.length} candidates; ${accepted.length} accepted material signals; source-quality ranking active.`);
+console.log(`Public News Layer: ${news.length} current in-scope news cards from ${candidates.length} candidates; ${accepted.length} accepted material signals.`);
