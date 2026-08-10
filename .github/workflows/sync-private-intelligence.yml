@@ -1,15 +1,13 @@
 name: Sync private intelligence preview
 
+# Legacy safety workflow. Automatic preview synchronization is owned by
+# TAIL Intelligence Platform v2 to prevent concurrent writers and branch races.
+
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
-
-concurrency:
-  group: sync-private-intelligence-preview
-  cancel-in-progress: false
 
 jobs:
   sync:
@@ -21,5 +19,5 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Update protected preview branch
-        run: git push origin HEAD:refs/heads/agent/private-intelligence
+      - name: Update protected preview branch manually
+        run: git push --force-with-lease origin HEAD:refs/heads/agent/private-intelligence
