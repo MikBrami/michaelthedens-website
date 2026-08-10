@@ -57,6 +57,40 @@ async function main() {
     ? `${candidates.length} hochrelevante Inbox-Kandidaten warten auf vollständige Evidence-/Materiality-Prüfung; sie werden nicht automatisch als akzeptierte Signale hochgestuft.`
     : 'Seit dem vorherigen Daily Snapshot wurde kein neues Signal gefunden, das die TAIL-Aufnahmeschwelle bereits belastbar überschreitet.';
 
+  const heartbeatSignal = {
+    id: 'S-TAIL-DAILY-HEARTBEAT',
+    rank: 999,
+    priorityScore: 0,
+    classification: 'No Material Change',
+    title: `TAIL Daily Check ${berlinDate}: keine bestätigte Richtungsänderung`,
+    fact: candidateText,
+    estimate: 'Kein Markt-, Preis-, Supply- oder Thesis-Score wird allein aufgrund dieses Freshness-Signals verändert.',
+    tailInference: 'Der tägliche Analysezyklus ist aktuell. Ein unveränderter Befund ist ein gültiges Ergebnis und wird als nullwirksamer Heartbeat dokumentiert.',
+    admissionGate: {
+      Freshness: true,
+      Evidence: true,
+      Materiality: false,
+      Causality: false,
+      Falsifiability: true
+    },
+    scoreBreakdown: {
+      SourceQuality: 0,
+      Novelty: 0,
+      ThesisRelevance: 0,
+      ForecastImpact: 0,
+      Falsifiability: 0,
+      TimeSensitivity: 0
+    },
+    redPencil: {
+      sourceIncentive: 'Kein externer Quelleneffekt; dies ist ein interner Freshness-Heartbeat.',
+      alternative: 'Ein später eintreffendes oder nachträglich qualifiziertes Signal kann den heutigen Befund noch verändern.',
+      alreadyPriced: 'Nicht anwendbar.',
+      killCondition: 'Ein neues Signal überschreitet nach vollständiger Prüfung die TAIL-Aufnahmeschwelle.',
+      forecastChange: 'Keine Änderung.'
+    },
+    sources: []
+  };
+
   const daily = {
     ...previous,
     updatedAt: nowIso,
@@ -81,7 +115,7 @@ async function main() {
     momentum: candidates.length
       ? `Keine bestätigte Richtungsänderung · ${candidates.length} neue High-Relevance-Kandidaten in Review`
       : 'Keine bestätigte Richtungsänderung seit dem vorherigen Lauf',
-    acceptedSignals: [],
+    acceptedSignals: [heartbeatSignal],
     automatedDaily: {
       generatedAt: nowIso,
       mode: 'freshness-safe-conservative',
@@ -95,7 +129,7 @@ async function main() {
         relevanceScore: item.relevance_score,
         publishedAt: item.published_at
       })),
-      note: 'Raw inbox candidates are not accepted as TAIL signals without Evidence, Materiality, Causality and Falsifiability review.'
+      note: 'The heartbeat has zero priority and exists only to make a completed daily analysis visible. Raw inbox candidates are not accepted as material TAIL signals without Evidence, Materiality, Causality and Falsifiability review.'
     }
   };
 
