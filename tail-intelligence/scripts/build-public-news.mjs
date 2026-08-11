@@ -58,6 +58,31 @@ function textFor(item) {
   return `${item.title || ''} ${item.summary || ''} ${(item.categories || []).join(' ')}`.toLowerCase();
 }
 
+const storyStopWords = new Set([
+  'the', 'a', 'an', 'and', 'or', 'as', 'in', 'on', 'of', 'for', 'to', 'from', 'with', 'by',
+  'its', 'is', 'are', 'be', 'become', 'becomes', 'new', 'news', 'reportedly', 'dramatically',
+  'structure', 'shifts'
+]);
+
+function storyTokens(item) {
+  return new Set(String(item.title || '')
+    .normalize('NFKD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .split(/\s+/)
+    .filter((token) => token.length > 2 && !storyStopWords.has(token)));
+}
+
+function isSameStory(left, right) {
+  const leftTokens = storyTokens(left);
+  const rightTokens = storyTokens(right);
+  if (!leftTokens.size || !rightTokens.size) return false;
+  const overlap = [...leftTokens].filter((token) => rightTokens.has(token)).length;
+  const containment = overlap / Math.min(leftTokens.size, rightTokens.size);
+  return overlap >= 4 && containment >= 0.72;
+}
+
 function isPublicScope(item) {
   const text = textFor(item);
   const positive = /\bhbm\d*\b|dram|nand|enterprise[- ]?ssd|\bessd\b|rdimm|mrdimm|socamm|cxl|memory|storage|semiconductor|wafer|foundry|\bfab\b|cowos|advanced packaging|lithograph|asml|applied materials|lam research|kla|tokyo electron|tsmc|micron|sk hynix|samsung|kioxia|sandisk|cxmt|ymtc|gpu|accelerator|ai infrastructure|data ?cent(er|re)|hyperscaler|server|capex|gigawatt|power|cooling|grid|export control|supply chain|hormuz|shipping/.test(text);
@@ -130,6 +155,7 @@ const selected = [];
 const seenPublishers = new Set();
 for (const item of candidates) {
   const publisher = String(item.source_name || '').toLowerCase();
+  if (selected.some((selectedItem) => isSameStory(selectedItem, item))) continue;
   if (seenPublishers.has(publisher) && selected.length < 2) continue;
   selected.push(item);
   seenPublishers.add(publisher);
