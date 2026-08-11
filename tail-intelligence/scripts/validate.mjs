@@ -89,15 +89,13 @@ function validateDailySync(articles) {
 
   const latestFile = dailyFiles.at(-1);
   const latestDaily = readJson(`data/${latestFile}`);
-  const latestDailyDate = new Date(latestDaily.updatedAt).toISOString().slice(0, 10);
-  const newestArticleDate = articles.map((article) => article.date).sort().at(-1);
   const acceptedIds = (latestDaily.acceptedSignals ?? []).map((signal) => signal.id).filter(Boolean);
   const articleIds = new Set(articles.map((article) => article.id));
   const missingIds = acceptedIds.filter((id) => !articleIds.has(id));
 
-  if (newestArticleDate < latestDailyDate) {
-    throw new Error(`Knowledge Base stale: newest article ${newestArticleDate}, latest daily intelligence ${latestDailyDate}`);
-  }
+  // A fresh daily intelligence file can legitimately contain no newly accepted
+  // signals. In that case, the newest Knowledge Base article may predate the
+  // daily file while current news remains in the separate News Layer.
   if (missingIds.length) {
     throw new Error(`Knowledge Base missing accepted daily signals: ${missingIds.join(', ')}`);
   }
