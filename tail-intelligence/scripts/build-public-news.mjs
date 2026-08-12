@@ -124,6 +124,11 @@ function publicExecutiveInterpretation() {
   const markets = Array.isArray(snapshot.platform?.markets) ? snapshot.platform.markets : [];
   const topMarkets = markets.slice(0, 3).map((market) => market.label).filter(Boolean);
   const marketText = topMarkets.length ? `${topMarkets.join(', ')} zählen aktuell zu den angespanntesten Bereichen.` : 'Memory und AI-Infrastruktur bleiben die zentralen Beobachtungsfelder.';
+  const checkDate = String(daily.dailyStatus?.date || daily.updatedAt || '').slice(0, 10);
+  const reviewed = Number(daily.automatedDaily?.highRelevanceCandidates?.length || 0);
+  const reviewText = daily.dailyStatus?.type === 'no-material-change'
+    ? `Der Daily Check vom ${checkDate || 'heutigen Lauf'} hat ${reviewed ? `${reviewed} aktuelle relevante Meldungen` : 'die aktuelle Nachrichtenlage'} geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung.`
+    : `Der Daily Check vom ${checkDate || 'heutigen Lauf'} hat eine materielle Veränderung der Lage bestätigt.`;
 
   let lead;
   if (index >= 85) lead = 'Memory und AI-Infrastruktur bleiben unter hohem Druck.';
@@ -131,7 +136,7 @@ function publicExecutiveInterpretation() {
   else if (index >= 55) lead = 'Die Lage bleibt gemischt und erfordert selektive Beobachtung.';
   else lead = 'Der Markt zeigt derzeit vergleichsweise moderate Spannungen.';
 
-  return `${lead} ${marketText} Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend.`;
+  return `${lead} ${marketText} ${reviewText} Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend.`;
 }
 
 // Public homepage news must be genuinely current and inside the TAIL infrastructure scope.
@@ -196,6 +201,16 @@ snapshot.dailyStatus = daily.dailyStatus || {
   title: accepted.length ? 'Neue bestätigte TAIL-Signale' : 'Keine bestätigte materielle Richtungsänderung',
   impactScore: accepted.length ? Math.max(...accepted.map((signal) => Number(signal.priorityScore || 0))) : 0
 };
+
+const analysisDate = String(snapshot.dailyStatus?.date || daily.updatedAt || '').slice(0, 10);
+if (analysisDate) {
+  snapshot.platform = {
+    ...(snapshot.platform || {}),
+    sourceDataAsOf: snapshot.platform?.sourceDataAsOf || snapshot.platform?.dataAsOf || null,
+    dataAsOf: analysisDate,
+    analysisAsOf: analysisDate
+  };
+}
 
 snapshot.executivePulse = {
   ...(snapshot.executivePulse || {}),
