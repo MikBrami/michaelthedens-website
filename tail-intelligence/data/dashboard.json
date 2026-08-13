@@ -5,9 +5,9 @@
   "dataAsOf": "2026-08-10",
   "dataFreshness": "stale",
   "dataAgeDays": 3,
-  "lastSuccessfulUpdate": "2026-08-13T11:59:09.002Z",
-  "lastForecastRun": "2026-08-13T11:59:09.002Z",
-  "newlyProcessedArticles": 287,
+  "lastSuccessfulUpdate": "2026-08-13T18:07:09.867Z",
+  "lastForecastRun": "2026-08-13T18:07:09.867Z",
+  "newlyProcessedArticles": 313,
   "totalArticles": 115,
   "articleCount": 115,
   "processStatus": "warning",
@@ -40,16 +40,22 @@
   },
   "error": null,
   "warnings": [
-    "Knowledge Base ist 3 Tage alt."
+    "Knowledge Base ist 3 Tage alt.",
+    "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
   ],
   "inbox": {
-    "status": "ok",
-    "updatedAt": "2026-08-13T11:58:59.859Z",
-    "newItems": 287,
+    "status": "warning",
+    "updatedAt": "2026-08-13T18:07:00.533Z",
+    "newItems": 313,
     "totalItems": 1000,
     "duplicateItems": 300,
-    "relevantItems": 592,
-    "sourceErrors": []
+    "relevantItems": 632,
+    "sourceErrors": [
+      {
+        "source": "micron-news",
+        "message": "HTTP 403"
+      }
+    ]
   },
   "pipeline": {
     "status": "warning",
@@ -63,8 +69,8 @@
       {
         "id": "inbox",
         "label": "TAIL Inbox",
-        "status": "ok",
-        "detail": "1000 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "status": "warning",
+        "detail": "1000 Inbox-Items · 300 Duplikate · 1 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -284,7 +290,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-13T11:59:09.002Z"
+      "lastUpdated": "2026-08-13T18:07:09.866Z"
     },
     {
       "id": "hbm",
@@ -364,7 +370,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-13T11:59:09.002Z"
+      "lastUpdated": "2026-08-13T18:07:09.866Z"
     },
     {
       "id": "nand",
@@ -430,7 +436,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-13T11:59:09.002Z"
+      "lastUpdated": "2026-08-13T18:07:09.867Z"
     },
     {
       "id": "enterprise_ssd",
@@ -496,7 +502,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-13T11:59:09.002Z"
+      "lastUpdated": "2026-08-13T18:07:09.867Z"
     },
     {
       "id": "ai_infrastructure",
@@ -663,7 +669,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-08-13T11:59:09.002Z"
+      "lastUpdated": "2026-08-13T18:07:09.867Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 115 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
