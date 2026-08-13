@@ -3,14 +3,14 @@
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
   "dataAsOf": "2026-08-10",
-  "dataFreshness": "current",
-  "dataAgeDays": 2,
-  "lastSuccessfulUpdate": "2026-08-12T23:57:21.152Z",
-  "lastForecastRun": "2026-08-12T23:57:21.152Z",
-  "newlyProcessedArticles": 259,
+  "dataFreshness": "stale",
+  "dataAgeDays": 3,
+  "lastSuccessfulUpdate": "2026-08-13T06:44:34.252Z",
+  "lastForecastRun": "2026-08-13T06:44:34.252Z",
+  "newlyProcessedArticles": 265,
   "totalArticles": 115,
   "articleCount": 115,
-  "processStatus": "ok",
+  "processStatus": "warning",
   "methodology": {
     "version": "3.1",
     "status": "warning",
@@ -39,23 +39,25 @@
     "memoryRawShare": 25
   },
   "error": null,
-  "warnings": [],
+  "warnings": [
+    "Knowledge Base ist 3 Tage alt."
+  ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-12T23:57:12.844Z",
-    "newItems": 259,
+    "updatedAt": "2026-08-13T06:44:26.251Z",
+    "newItems": 265,
     "totalItems": 1000,
     "duplicateItems": 300,
-    "relevantItems": 527,
+    "relevantItems": 555,
     "sourceErrors": []
   },
   "pipeline": {
-    "status": "ok",
+    "status": "warning",
     "steps": [
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
-        "status": "ok",
+        "status": "warning",
         "detail": "115 Artikel · Datenstand 2026-08-10"
       },
       {
@@ -282,7 +284,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-12T23:57:21.152Z"
+      "lastUpdated": "2026-08-13T06:44:34.252Z"
     },
     {
       "id": "hbm",
@@ -362,7 +364,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-12T23:57:21.152Z"
+      "lastUpdated": "2026-08-13T06:44:34.252Z"
     },
     {
       "id": "nand",
@@ -428,7 +430,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-12T23:57:21.152Z"
+      "lastUpdated": "2026-08-13T06:44:34.252Z"
     },
     {
       "id": "enterprise_ssd",
@@ -494,7 +496,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-12T23:57:21.152Z"
+      "lastUpdated": "2026-08-13T06:44:34.252Z"
     },
     {
       "id": "ai_infrastructure",
@@ -661,7 +663,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-08-12T23:57:21.152Z"
+      "lastUpdated": "2026-08-13T06:44:34.252Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 115 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
