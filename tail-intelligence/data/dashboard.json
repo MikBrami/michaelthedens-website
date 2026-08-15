@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-08-10",
-  "dataFreshness": "stale",
-  "dataAgeDays": 5,
-  "lastSuccessfulUpdate": "2026-08-15T05:40:05.670Z",
-  "lastForecastRun": "2026-08-15T05:40:05.670Z",
+  "dataAsOf": "2026-08-15",
+  "dataFreshness": "current",
+  "dataAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-08-15T09:53:57.757Z",
+  "lastForecastRun": "2026-08-15T09:53:57.757Z",
   "newlyProcessedArticles": 237,
-  "totalArticles": 115,
-  "articleCount": 115,
+  "totalArticles": 116,
+  "articleCount": 116,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -40,7 +40,6 @@
   },
   "error": null,
   "warnings": [
-    "Knowledge Base ist 5 Tage alt.",
     "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
   ],
   "inbox": {
@@ -63,8 +62,8 @@
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
-        "status": "warning",
-        "detail": "115 Artikel · Datenstand 2026-08-10"
+        "status": "ok",
+        "detail": "116 Artikel · Datenstand 2026-08-15"
       },
       {
         "id": "inbox",
@@ -86,29 +85,43 @@
       }
     ]
   },
-  "tailIndex": 77,
+  "tailIndex": 80,
   "indexStatus": "orange",
   "markets": [
     {
       "id": "server_dram",
       "label": "Server DRAM",
-      "score": 82,
+      "score": 84,
       "status": "red",
-      "signals": 11
-    },
-    {
-      "id": "dram",
-      "label": "DRAM",
-      "score": 80,
-      "status": "orange",
-      "signals": 31
+      "signals": 12
     },
     {
       "id": "hbm",
       "label": "HBM",
+      "score": 83,
+      "status": "red",
+      "signals": 25
+    },
+    {
+      "id": "dram",
+      "label": "DRAM",
+      "score": 81,
+      "status": "orange",
+      "signals": 32
+    },
+    {
+      "id": "semiconductors",
+      "label": "Semiconductors",
+      "score": 81,
+      "status": "orange",
+      "signals": 29
+    },
+    {
+      "id": "ai_infrastructure",
+      "label": "AI Infrastructure",
       "score": 80,
       "status": "orange",
-      "signals": 24
+      "signals": 82
     },
     {
       "id": "enterprise_ssd",
@@ -125,20 +138,6 @@
       "signals": 10
     },
     {
-      "id": "ai_infrastructure",
-      "label": "AI Infrastructure",
-      "score": 72,
-      "status": "orange",
-      "signals": 81
-    },
-    {
-      "id": "semiconductors",
-      "label": "Semiconductors",
-      "score": 72,
-      "status": "orange",
-      "signals": 28
-    },
-    {
       "id": "supply_chain",
       "label": "Supply Chain",
       "score": 68,
@@ -148,14 +147,19 @@
   ],
   "manufacturers": [
     {
-      "name": "Samsung",
-      "score": 82,
-      "mentions": 12
+      "name": "Intel",
+      "score": 85,
+      "mentions": 4
     },
     {
       "name": "SK hynix",
+      "score": 84,
+      "mentions": 15
+    },
+    {
+      "name": "Samsung",
       "score": 82,
-      "mentions": 14
+      "mentions": 12
     },
     {
       "name": "Micron",
@@ -171,11 +175,6 @@
       "name": "Sandisk",
       "score": 75,
       "mentions": 4
-    },
-    {
-      "name": "Intel",
-      "score": 74,
-      "mentions": 3
     },
     {
       "name": "TSMC",
@@ -204,12 +203,20 @@
       "market": "DRAM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 79,
+      "relevanceScore": 80,
       "confidenceScore": 87,
       "horizon": "2026–2027",
       "direction": "up",
       "keyThesis": "Servermix, HBM-Priorisierung und knappe Wafer-Allokation halten DRAM strukturell angespannt.",
       "supportingSignals": [
+        {
+          "id": "S-2026-08-15-01",
+          "date": "2026-08-15",
+          "title": "HBM löst den Memory Wall nicht: Gelsinger und SK hynix suchen die Architektur danach",
+          "signal": "Supply-Engpass",
+          "score": 90,
+          "summary": "Der frühere Intel-CEO Pat Gelsinger bezeichnete HBM beim RAISE Summit als technisch unbefriedigende, aber derzeit beste verfügbare Memory-Lösung für AI. Er verwies auf Wärmeentwicklung in gestapeltem DRAM, begrenzte Interface-Bandbreite sowie Nachteile bei Bit-, Leistungs- und Bandbreiteneffizienz. SK-hynix-Vizepräsident Kim Ho-sik stimmte teilweise zu: HBM sei nicht die endgültige Antwort auf den Memory Wall. SK hynix untersuche deshalb weitere Ansätze gegen den Speicherengpass; zugleich bleibe HBM aktuell die praktikabelste Lösung."
+        },
         {
           "id": "tail-2026-07-14-server-dram",
           "date": "2026-07-14",
@@ -233,14 +240,6 @@
           "signal": "Nachfrageimpuls",
           "score": 72,
           "summary": "AWS erzielte 42,232 Mrd. US-Dollar Umsatz (+37 %) und 16,621 Mrd. US-Dollar Betriebsgewinn. Amazons AI- und Chipgeschäft liegen jeweils über 25 Mrd. US-Dollar annualisierter Run Rate; OpenAI und Anthropic besitzen mehrjährige Multi-GW-Trainium-Zusagen. Der überwiegende Teil der AWS-Compute-Kapazität 2027 ist laut Management bereits reserviert."
-        },
-        {
-          "id": "S-2026-08-05-01",
-          "date": "2026-08-05",
-          "title": "Samsung verschiebt NAND und gestapelte Memory-Architekturen näher an den AI-Accelerator",
-          "signal": "Nachfrageimpuls",
-          "score": 72,
-          "summary": "Samsung stellte auf der FMS 2026 V10 Bonding V-NAND mit mehr als 400 Layern und Wafer-Bonding vor. Nach Unternehmensangaben steigt die Speicherdichte gegenüber V9 um 58 Prozent. Zusätzlich zeigte Samsung Konzeptarchitekturen für zHBM und zNAND-O, die Memory beziehungsweise NAND vertikal näher über dem AI-Accelerator integrieren sollen."
         }
       ],
       "counterSignals": [
@@ -258,6 +257,7 @@
         }
       ],
       "sourceArticleIds": [
+        "S-2026-08-15-01",
         "tail-2026-07-14-server-dram",
         "S-2026-07-24-04",
         "S-2026-07-31-01",
@@ -290,19 +290,27 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-15T05:40:05.669Z"
+      "lastUpdated": "2026-08-15T09:53:57.756Z"
     },
     {
       "id": "hbm",
       "market": "HBM",
-      "status": "orange",
+      "status": "red",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 79,
+      "relevanceScore": 82,
       "confidenceScore": 89,
       "horizon": "2026–2028",
-      "direction": "up",
+      "direction": "strong_up",
       "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
       "supportingSignals": [
+        {
+          "id": "S-2026-08-15-01",
+          "date": "2026-08-15",
+          "title": "HBM löst den Memory Wall nicht: Gelsinger und SK hynix suchen die Architektur danach",
+          "signal": "Supply-Engpass",
+          "score": 90,
+          "summary": "Der frühere Intel-CEO Pat Gelsinger bezeichnete HBM beim RAISE Summit als technisch unbefriedigende, aber derzeit beste verfügbare Memory-Lösung für AI. Er verwies auf Wärmeentwicklung in gestapeltem DRAM, begrenzte Interface-Bandbreite sowie Nachteile bei Bit-, Leistungs- und Bandbreiteneffizienz. SK-hynix-Vizepräsident Kim Ho-sik stimmte teilweise zu: HBM sei nicht die endgültige Antwort auf den Memory Wall. SK hynix untersuche deshalb weitere Ansätze gegen den Speicherengpass; zugleich bleibe HBM aktuell die praktikabelste Lösung."
+        },
         {
           "id": "tail-2026-07-14-skhynix-2030",
           "date": "2026-07-14",
@@ -326,14 +334,6 @@
           "signal": "Kapazitätsbindung",
           "score": 77,
           "summary": "Engere Ko-Entwicklung optimiert HBM4 für kommende AI-Plattformen, erhöht aber Abhängigkeiten und priorisierte Kapazitätsbindung."
-        },
-        {
-          "id": "tail-2026-07-14-hbm4-cost",
-          "date": "2026-07-14",
-          "title": "HBM4-Kosten steigen und binden zusätzliche Frontend- und Packaging-Kapazität",
-          "signal": "Preisdruck aufwärts",
-          "score": 73,
-          "summary": "Komplexere Logik-Bases, höhere Layer-Zahlen und Advanced Packaging erhöhen Kosten, Yield-Risiken und Kapazitätsbedarf."
         }
       ],
       "counterSignals": [
@@ -345,6 +345,7 @@
         }
       ],
       "sourceArticleIds": [
+        "S-2026-08-15-01",
         "tail-2026-07-14-skhynix-2030",
         "tail-2026-07-14-hyperscaler-lta",
         "tail-2026-07-14-nvidia-skhynix-hbm4",
@@ -370,7 +371,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-15T05:40:05.670Z"
+      "lastUpdated": "2026-08-15T09:53:57.757Z"
     },
     {
       "id": "nand",
@@ -436,7 +437,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-15T05:40:05.670Z"
+      "lastUpdated": "2026-08-15T09:53:57.757Z"
     },
     {
       "id": "enterprise_ssd",
@@ -502,19 +503,27 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-15T05:40:05.670Z"
+      "lastUpdated": "2026-08-15T09:53:57.757Z"
     },
     {
       "id": "ai_infrastructure",
       "market": "AI Infrastructure",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 71,
+      "relevanceScore": 79,
       "confidenceScore": 87,
       "horizon": "2026–2030+",
       "direction": "up",
       "keyThesis": "AI Infrastructure wird durch Power, Datacenter-Kapazität, HBM, DRAM, eSSD und geopolitische Lieferketten begrenzt.",
       "supportingSignals": [
+        {
+          "id": "S-2026-08-15-01",
+          "date": "2026-08-15",
+          "title": "HBM löst den Memory Wall nicht: Gelsinger und SK hynix suchen die Architektur danach",
+          "signal": "Supply-Engpass",
+          "score": 90,
+          "summary": "Der frühere Intel-CEO Pat Gelsinger bezeichnete HBM beim RAISE Summit als technisch unbefriedigende, aber derzeit beste verfügbare Memory-Lösung für AI. Er verwies auf Wärmeentwicklung in gestapeltem DRAM, begrenzte Interface-Bandbreite sowie Nachteile bei Bit-, Leistungs- und Bandbreiteneffizienz. SK-hynix-Vizepräsident Kim Ho-sik stimmte teilweise zu: HBM sei nicht die endgültige Antwort auf den Memory Wall. SK hynix untersuche deshalb weitere Ansätze gegen den Speicherengpass; zugleich bleibe HBM aktuell die praktikabelste Lösung."
+        },
         {
           "id": "tail-2026-07-14-nvidia-skhynix-hbm4",
           "date": "2026-07-14",
@@ -538,14 +547,6 @@
           "signal": "Nachfrageimpuls",
           "score": 74,
           "summary": "Nach dem von Gouverneur Greg Abbott angeordneten Audit geplanter Datacenter-Projekte wurde ERCOTs Batch-Zero-Prozess pausiert. Reuters berichtet, dass qualifizierte Projekte typischerweise 50.000 US-Dollar Sicherheit je MW hinterlegen mussten; einzelne Entwickler haben damit mehr als 100 Mio. US-Dollar gebunden. Eine noch nicht beschlossene PUCT-Regel könnte den nicht erstattbaren Anteil solcher Einlagen von 20 auf 80 Prozent erhöhen. ERCOT hatte Batch Zero erst im Juni für große Lasten ab 75 MW eingeführt und damals mehr als 438 GW Large-Load-Anfragen verfolgt, davon rund 89 Prozent Datacenter."
-        },
-        {
-          "id": "S-2026-08-08-02",
-          "date": "2026-08-08",
-          "title": "Nvidia steigt direkt in Power-Infrastruktur und Grid-Optionalität ein",
-          "signal": "Nachfrageimpuls",
-          "score": 73,
-          "summary": "The Information berichtete, von Reuters aufgegriffen, Nvidia werde bis zu 3 Mrd. US-Dollar in den Power-Infrastrukturentwickler Lancium investieren: zunächst 2 Mrd. US-Dollar für rund 20 Prozent, plus bis zu 1 Mrd. US-Dollar bei Erreichen von Meilensteinen wie Grid-Anschlüssen. Lancium betreibt den 1.000-Acre-Standort in Abilene, das erste operative Stargate-Campusprojekt; Lancium selbst nennt für Abilene einen ERCOT-genehmigten 1,2-GW-Interconnect."
         }
       ],
       "counterSignals": [
@@ -587,6 +588,7 @@
         }
       ],
       "sourceArticleIds": [
+        "S-2026-08-15-01",
         "tail-2026-07-14-nvidia-skhynix-hbm4",
         "S-2026-07-24-04",
         "S-2026-08-08-01",
@@ -669,11 +671,22 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-08-15T05:40:05.670Z"
+      "lastUpdated": "2026-08-15T09:53:57.757Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 77/100. Server DRAM, DRAM, HBM sind die kritischsten Felder. Die Plattform liest 115 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 80/100. Server DRAM, HBM, DRAM sind die kritischsten Felder. Die Plattform liest 116 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
+    {
+      "id": "S-2026-08-15-01",
+      "date": "2026-08-15",
+      "title": "HBM löst den Memory Wall nicht: Gelsinger und SK hynix suchen die Architektur danach",
+      "summary": "Der frühere Intel-CEO Pat Gelsinger bezeichnete HBM beim RAISE Summit als technisch unbefriedigende, aber derzeit beste verfügbare Memory-Lösung für AI. Er verwies auf Wärmeentwicklung in gestapeltem DRAM, begrenzte Interface-Bandbreite sowie Nachteile bei Bit-, Leistungs- und Bandbreiteneffizienz. SK-hynix-Vizepräsident Kim Ho-sik stimmte teilweise zu: HBM sei nicht die endgültige Antwort auf den Memory Wall. SK hynix untersuche deshalb weitere Ansätze gegen den Speicherengpass; zugleich bleibe HBM aktuell die praktikabelste Lösung.",
+      "analysis": "Das Signal schwächt die HBM-Knappheitsthese nicht, sondern trennt zwei Zeithorizonte: Kurzfristig bleibt HBM ROT →, weil AI-Plattformen weiterhin auf HBM, Advanced Packaging und knappe DRAM-Wafer angewiesen sind. Langfristig verschiebt sich der Wettbewerb von einzelnen Memory-Produkten zum Co-Design von Compute, Memory, Packaging und Interconnect. Für Server-DRAM und Beschaffung entsteht keine neue Supply-Entspannung.",
+      "source": "Maeil Business Newspaper – HBM is lousy, former Intel CEO taunts",
+      "url": "https://www.mk.co.kr/en/business/12124175",
+      "score": 90,
+      "status": "red"
+    },
     {
       "id": "tail-2026-07-14-server-dram",
       "date": "2026-07-14",

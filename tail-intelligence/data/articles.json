@@ -4405,5 +4405,51 @@
       "forecastChange": "Keine Änderung."
     },
     "sources": []
+  },
+  {
+    "id": "S-2026-08-15-01",
+    "date": "2026-08-15",
+    "title": "HBM löst den Memory Wall nicht: Gelsinger und SK hynix suchen die Architektur danach",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "dram",
+      "ai_infrastructure",
+      "semiconductors"
+    ],
+    "companies": [
+      "SK hynix",
+      "Intel"
+    ],
+    "severity": 100,
+    "confidence": 90,
+    "signal": "negative_supply",
+    "summary": "Der frühere Intel-CEO Pat Gelsinger bezeichnete HBM beim RAISE Summit als technisch unbefriedigende, aber derzeit beste verfügbare Memory-Lösung für AI. Er verwies auf Wärmeentwicklung in gestapeltem DRAM, begrenzte Interface-Bandbreite sowie Nachteile bei Bit-, Leistungs- und Bandbreiteneffizienz. SK-hynix-Vizepräsident Kim Ho-sik stimmte teilweise zu: HBM sei nicht die endgültige Antwort auf den Memory Wall. SK hynix untersuche deshalb weitere Ansätze gegen den Speicherengpass; zugleich bleibe HBM aktuell die praktikabelste Lösung.",
+    "tail_analysis": "Das Signal schwächt die HBM-Knappheitsthese nicht, sondern trennt zwei Zeithorizonte: Kurzfristig bleibt HBM ROT →, weil AI-Plattformen weiterhin auf HBM, Advanced Packaging und knappe DRAM-Wafer angewiesen sind. Langfristig verschiebt sich der Wettbewerb von einzelnen Memory-Produkten zum Co-Design von Compute, Memory, Packaging und Interconnect. Für Server-DRAM und Beschaffung entsteht keine neue Supply-Entspannung.",
+    "source": "Maeil Business Newspaper – HBM is lousy, former Intel CEO taunts",
+    "url": "https://www.mk.co.kr/en/business/12124175",
+    "content_hash": "127a49b5829b3fd4b17e",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 1,
+    "estimate": "Die Aussagen belegen keinen kurzfristigen Nachfragerückgang und keinen unmittelbar marktreifen HBM-Ersatz. Offen bleiben Architektur, Standardisierung, Yield, Kosten, Qualifikation und kommerzieller Zeitplan möglicher Nachfolger. Verbesserungen bei HBM4 und HBM4E können die Nutzungsdauer der bestehenden Architektur zusätzlich verlängern.",
+    "red_pencil": {
+      "sourceIncentive": "Gelsinger argumentiert aus einer Systemarchitektur-Perspektive und pointiert die Nachteile der heute dominierenden Lösung. SK hynix hat als HBM-Marktführer zugleich Anreiz, HBM nicht abzuwerten und dennoch technologische Anschlussfähigkeit zu demonstrieren.",
+      "alternative": "HBM4, HBM4E, bessere Yields, effizientere Kühlung und engeres Compute-Memory-Co-Design könnten die Grenzen weit genug verschieben, dass HBM noch über Jahre die dominante Architektur bleibt und ein klarer Nachfolger ausbleibt.",
+      "alreadyPriced": "Heat, Packaging-Komplexität und der Memory Wall sind bekannt. Neu und relevant ist die öffentliche Konvergenz: Selbst ein führender HBM-Anbieter bezeichnet HBM nicht als endgültige Lösung und bestätigt die Suche nach Alternativen.",
+      "killCondition": "Bis Ende 2028 erreicht kein alternativer Memory-Ansatz eine öffentlich bestätigte Produktionsqualifikation bei einem führenden AI-Plattformanbieter, während HBM4E oder Nachfolger die zentralen Wärme-, Kosten- und Bandbreitengrenzen ohne grundlegenden Architekturwechsel ausreichend verschieben.",
+      "forecastChange": "Kein kurzfristiger Supply-Forecast wird abgesenkt. HBM bleibt ROT →; das Signal eröffnet einen langfristigen Architecture-Watch bis Ende 2028."
+    },
+    "sources": [
+      {
+        "label": "Maeil Business Newspaper – HBM is lousy, former Intel CEO taunts",
+        "url": "https://www.mk.co.kr/en/business/12124175"
+      },
+      {
+        "label": "DigiTimes – Gelsinger calls HBM lousy, SK Hynix says it is not memory's final answer",
+        "url": "https://www.digitimes.com/news/a20260814PD227/hbm-sk-hynix-pat-gelsinger-component-semiconductors.html"
+      }
+    ]
   }
 ]

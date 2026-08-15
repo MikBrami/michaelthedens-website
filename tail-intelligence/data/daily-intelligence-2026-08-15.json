@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-15T05:40:04.841Z",
+  "updatedAt": "2026-08-15T09:50:13.000Z",
   "previousRun": "2026-08-14",
   "executivePulse": {
     "current": 90,
     "previous": 90,
     "status": "orange",
-    "interpretation": "Daily Check 2026-08-15: 8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft. Bestehende Thesen und Scores bleiben unverändert, bis neue Evidenz die Admission Gates erfüllt."
+    "interpretation": "HBM bleibt kurzfristig die beste verfügbare Antwort auf den AI-Memory-Wall, ist aber selbst kein dauerhafter Endpunkt. Pat Gelsinger und SK hynix benennen übereinstimmend thermische, I/O-, Kosten- und Effizienzgrenzen. Das stärkt den langfristigen Druck auf neue Memory-Architekturen, ändert kurzfristig jedoch nichts an der knappen HBM-, Packaging- und DRAM-Kapazität."
   },
   "confidence": {
     "current": 96,
     "previous": 96,
-    "interpretation": "Freshness ist bestätigt; analytische Confidence bleibt unverändert. 8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "interpretation": "Die technische Kritik ist durch die Aussagen von Pat Gelsinger und SK hynix klar belegt. Unsicher bleiben Zeitplan, Architektur und kommerzielle Reife möglicher HBM-Nachfolger; daraus wird keine kurzfristige Supply-Entlastung abgeleitet."
   },
   "riskPressure": {
     "current": 100,
     "previous": 100
   },
-  "momentum": "Keine bestätigte Richtungsänderung · 8 aktuelle Meldungen im News-Layer",
+  "momentum": "HBM ROT → · Kapazität bleibt stark gebunden · Architekturwechsel langfristig wahrscheinlicher",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -118,9 +118,58 @@
       "name": "Capital- & Execution Risk",
       "score": 100,
       "delta": 0
+    },
+    {
+      "name": "HBM Architecture / Memory Wall",
+      "score": 100,
+      "delta": 10
     }
   ],
-  "acceptedSignals": [],
+  "acceptedSignals": [
+    {
+      "id": "S-2026-08-15-01",
+      "rank": 1,
+      "priorityScore": 100,
+      "classification": "Architecture Update",
+      "signalOverride": "negative_supply",
+      "title": "HBM löst den Memory Wall nicht: Gelsinger und SK hynix suchen die Architektur danach",
+      "fact": "Der frühere Intel-CEO Pat Gelsinger bezeichnete HBM beim RAISE Summit als technisch unbefriedigende, aber derzeit beste verfügbare Memory-Lösung für AI. Er verwies auf Wärmeentwicklung in gestapeltem DRAM, begrenzte Interface-Bandbreite sowie Nachteile bei Bit-, Leistungs- und Bandbreiteneffizienz. SK-hynix-Vizepräsident Kim Ho-sik stimmte teilweise zu: HBM sei nicht die endgültige Antwort auf den Memory Wall. SK hynix untersuche deshalb weitere Ansätze gegen den Speicherengpass; zugleich bleibe HBM aktuell die praktikabelste Lösung.",
+      "estimate": "Die Aussagen belegen keinen kurzfristigen Nachfragerückgang und keinen unmittelbar marktreifen HBM-Ersatz. Offen bleiben Architektur, Standardisierung, Yield, Kosten, Qualifikation und kommerzieller Zeitplan möglicher Nachfolger. Verbesserungen bei HBM4 und HBM4E können die Nutzungsdauer der bestehenden Architektur zusätzlich verlängern.",
+      "tailInference": "Das Signal schwächt die HBM-Knappheitsthese nicht, sondern trennt zwei Zeithorizonte: Kurzfristig bleibt HBM ROT →, weil AI-Plattformen weiterhin auf HBM, Advanced Packaging und knappe DRAM-Wafer angewiesen sind. Langfristig verschiebt sich der Wettbewerb von einzelnen Memory-Produkten zum Co-Design von Compute, Memory, Packaging und Interconnect. Für Server-DRAM und Beschaffung entsteht keine neue Supply-Entspannung.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 20,
+        "Novelty": 15,
+        "ThesisRelevance": 20,
+        "ForecastImpact": 20,
+        "Falsifiability": 15,
+        "TimeSensitivity": 10
+      },
+      "redPencil": {
+        "sourceIncentive": "Gelsinger argumentiert aus einer Systemarchitektur-Perspektive und pointiert die Nachteile der heute dominierenden Lösung. SK hynix hat als HBM-Marktführer zugleich Anreiz, HBM nicht abzuwerten und dennoch technologische Anschlussfähigkeit zu demonstrieren.",
+        "alternative": "HBM4, HBM4E, bessere Yields, effizientere Kühlung und engeres Compute-Memory-Co-Design könnten die Grenzen weit genug verschieben, dass HBM noch über Jahre die dominante Architektur bleibt und ein klarer Nachfolger ausbleibt.",
+        "alreadyPriced": "Heat, Packaging-Komplexität und der Memory Wall sind bekannt. Neu und relevant ist die öffentliche Konvergenz: Selbst ein führender HBM-Anbieter bezeichnet HBM nicht als endgültige Lösung und bestätigt die Suche nach Alternativen.",
+        "killCondition": "Bis Ende 2028 erreicht kein alternativer Memory-Ansatz eine öffentlich bestätigte Produktionsqualifikation bei einem führenden AI-Plattformanbieter, während HBM4E oder Nachfolger die zentralen Wärme-, Kosten- und Bandbreitengrenzen ohne grundlegenden Architekturwechsel ausreichend verschieben.",
+        "forecastChange": "Kein kurzfristiger Supply-Forecast wird abgesenkt. HBM bleibt ROT →; das Signal eröffnet einen langfristigen Architecture-Watch bis Ende 2028."
+      },
+      "sources": [
+        {
+          "label": "Maeil Business Newspaper – HBM is lousy, former Intel CEO taunts",
+          "url": "https://www.mk.co.kr/en/business/12124175"
+        },
+        {
+          "label": "DigiTimes – Gelsinger calls HBM lousy, SK Hynix says it is not memory's final answer",
+          "url": "https://www.digitimes.com/news/a20260814PD227/hbm-sk-hynix-pat-gelsinger-component-semiconductors.html"
+        }
+      ]
+    }
+  ],
   "predictionLogUpdates": [
     {
       "id": "P-2026-08-02-04",
@@ -170,7 +219,8 @@
     "NvidiaLancium": "2026-09-30",
     "SwitchIPO": "2026-10-01",
     "SoftBankFinancing": "2026-11-05",
-    "MemoryCapacity": "2026-08-31"
+    "MemoryCapacity": "2026-08-31",
+    "HBM-Nachfolgearchitektur: Produktionsqualifikation prüfen": "2028-12-31"
   },
   "dataHygiene": {
     "preserveForecastHistory": true,
@@ -179,90 +229,9 @@
   },
   "dailyStatus": {
     "date": "2026-08-15",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
-    "impactScore": 0,
-    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
-  },
-  "automatedDaily": {
-    "generatedAt": "2026-08-15T05:40:04.841Z",
-    "mode": "freshness-safe-conservative",
-    "inboxUpdatedAt": "2026-08-15T05:39:56.679Z",
-    "inboxNewItems": 237,
-    "highRelevanceCandidates": [
-      {
-        "id": "d0f096d55ec1b793a9a3",
-        "title": "ETF AIRR tracks AI data center buildout, driven by hyperscaler capex from Microsoft, Meta, Alphabet, Amazon.",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeTVkS3V0dklIaFRsakF4WDdSMWtaU25jTE1pTWI1R01CaTVfR2F3T0QwWUtYSWRnakp5V1NhNHhSeFU3NEtEMW9aV19uOWdLVlBiRmtXMUJLU1drZVJUa2VGU1RhdWgxdThNODIzMG1IRHB4UDdVVDQ2WWVzQ24tOXFFUnVCSTA1NWxxMmtsVzlsRnF3U2VxWDJn?oc=5",
-        "source": "Pluang",
-        "summary": "Aktuelle Meldung von Pluang: ETF AIRR tracks AI data center buildout, driven by hyperscaler capex from Microsoft, Meta, Alphabet, Amazon.",
-        "relevanceScore": 100,
-        "publishedAt": "2026-08-14T14:28:15.000Z"
-      },
-      {
-        "id": "38b72fc179668e0c6e44",
-        "title": "Samsung May Push HBM Base Dies to Cutting-Edge 2nm, Extending Its Own 4nm HBM4 Roadmap",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNXBvZ3lYREkwQzQzQ3lVREozZVNBXzE3d0prakRkX19uRkYxSWtFcVF1YzVTSVlfMzhPQmYtU0NmNVprQVluZXh6N3BjODk2MmlpOWJYN0Y3YU1PSFc2TlE4MTlfYldBejlNSVJwZlhfdV9uOWpfNXRrLVYxMkkyWjZUZXVvMUlVdU9nMnFaU0l3bWpmZG1kNEg0Y0hKRWpBYnZqcnh4NmRYS0HSAbABQVVfeXFMT3NvUF9OaHlFTXJBdnVyRVQxRDNON2tRazgzaTkxeTVaTE1kbUhkQkFsUzFwcEIzZjdZMVdnN2ptdXVvREFoWjdCR3k2STM2UmU0Tnd4SjczZnFDR01mWHFpLUhHVWZqN2p2SmZObFRzQkttQVhOcW5xdnJBak5fM0tITzhZRVg0WU9IN0d1aFc3SjVQemRwcWdETzBGQy1nNnlTUHVibDlsM0RSODg1SkE?oc=5",
-        "source": "Wccftech",
-        "summary": "Aktuelle Meldung von Wccftech: Samsung May Push HBM Base Dies to Cutting-Edge 2nm, Extending Its Own 4nm HBM4 Roadmap",
-        "relevanceScore": 100,
-        "publishedAt": "2026-08-14T13:53:52.000Z"
-      },
-      {
-        "id": "192d3b87a202265fe940",
-        "title": "[News] Samsung May Repurpose R&D Line for Foundry, Targeting 2nm HBM Base Dies for Future NVIDIA Demand",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxORmxkTzNadjYwdFFMdFByUkRtMlBidUlHZjJtN2YzZ0tMcUh5YUwwNUdnd2hqQVRpcXFSbWh4OUxoTm9ldkRqZVM2MnNUUldGcElZMEVIcWVNYXB4T1Q2clhCaFJpdDRuamkyNkRES1ljWkY0ak91OTgzdm1VR0JEVktHMmlRWFN0SElEVXY5ejlyYy1yRndGWWRveGVGS2pTMkFtMzNKdlZ6YVVSQi0xd21vaVYxYVItUU15ZGxMUGxhTmF5MEpGNWc2TTFDajlyN0IxSzFIX2dlelU?oc=5",
-        "source": "TrendForce",
-        "summary": "Aktuelle Meldung von TrendForce: [News] Samsung May Repurpose R&D Line for Foundry, Targeting 2nm HBM Base Dies for Future NVIDIA Demand",
-        "relevanceScore": 100,
-        "publishedAt": "2026-08-14T09:52:24.000Z"
-      },
-      {
-        "id": "a8a86a4d2e47bb7fa488",
-        "title": "Micron Shares Gain 6% as YMTC Moves Into NAND Market’s Top Three",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOd3FKbzI5S2hpbUxZSnN3MUREZUFQQWxVSDNfZjRlaDR1Um9rcXVDRHNTeHBlejlxMFBGbjVSWlg2MXFBSlk1b0ExWFJpckpob3lKR1ZNVldKVDFzYmdhbFVlZHk0S0ZZUFk3N3BTTUlNWnZ4NUVmZlcyanUyZTBkSHY1ZmpoWEdRNmNmcw?oc=5",
-        "source": "TechStock²",
-        "summary": "Aktuelle Meldung von TechStock²: Micron Shares Gain 6% as YMTC Moves Into NAND Market’s Top Three",
-        "relevanceScore": 100,
-        "publishedAt": "2026-08-13T17:33:06.000Z"
-      },
-      {
-        "id": "887c7cf675c0522d5fda",
-        "title": "Lam Research, Applied Materials, and Camtek Rise After SanDisk Issues Bullish Financial Targets",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPdXRQai1ibXBUbnJsVXRLckZhNkhNN24tMXppVnp4UkpRTVJsNGc0b2lPY0NxMU9rZzBJTFVmMU5YSlQ4Z2lnaHI2MEUwc1QycGhRZFNJMzIxeXZibjdXRXNxRU1aT0Z0UjlBRnJscHRyMHFXaUZ2dndUSWFoTFpVd2VUT0ZVdzRaeC1BTHlBZmlEaHpjbjhGNkVvREN1RnVXSkZGWlM3em5RSnhaSTdIRG5nd1Qwel9SZmIyTTRLMGNycmFCNlNXZzg1czJJdjJ2OERr?oc=5",
-        "source": "24/7 Wall St.",
-        "summary": "Aktuelle Meldung von 24/7 Wall St.: Lam Research, Applied Materials, and Camtek Rise After SanDisk Issues Bullish Financial Targets",
-        "relevanceScore": 100,
-        "publishedAt": "2026-08-13T16:29:13.000Z"
-      },
-      {
-        "id": "5f5613833273ee56d04f",
-        "title": "Can Micron's AI Memory Focus Help It Outpace SK Hynix and Sandisk?",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVFN2YnNZamxqZlNYSEZZckFzNU0zNFdHXzFFV0k3NG4wam1VUXlJclRySzBYOTZ4Ykk2WTZfRjFOYTVHNGE2clVGNHgzYzdhS0htcDNOVlN2bUVIWEI3OFcxZE5LZ0xrbmhiTXNBNG16VUZfbWNvTG5tcjNxVWJKcG1jSUVlWG94bHdBRENoTk9zWjFsbnpqc1lXNUwtY1RzNWhSTTBMek9XVDh1QnYwa3RVal9YS2JvRjVnVlZDOHhWejY4WXhZclZWVVdTdWZOaXpNTndlWHpRdzFIdF9nTQ?oc=5",
-        "source": "The Globe and Mail",
-        "summary": "Can Micron's AI Memory Focus Help It Outpace SK Hynix and Sandisk? The Globe and Mail",
-        "relevanceScore": 100,
-        "publishedAt": "2026-08-13T15:46:44.000Z"
-      },
-      {
-        "id": "d46666fdc65b8bc9d6ff",
-        "title": "Micron (MU) Under Pressure as China’s YMTC Becomes No. 3 NAND Player",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeURyZGlBYl9kWG9pT25rczVnQWptY3lpQ0JfNjlmMDJ2Q21XSTllVFhCbVVocUFWcEYzUUNwcUVFOEFNZzZUeGt3ZXNVUkx0b1ZhSHdJbHZjeXYyaGJpRVBhQ2wwcExBNWZqZUE1YUp5bm5yakc4NjI5TW9kVVNxOExYS3lJcjA0LXRqMEhqazBqY3plTDg2d3NB?oc=5",
-        "source": "TipRanks",
-        "summary": "Aktuelle Meldung von TipRanks: Micron (MU) Under Pressure as China’s YMTC Becomes No. 3 NAND Player",
-        "relevanceScore": 100,
-        "publishedAt": "2026-08-13T14:50:01.000Z"
-      },
-      {
-        "id": "f4056ba86ce69193db5f",
-        "title": "China’s YMTC Tops Micron in NAND Shipments — but Micron Wins Where It Matters: Revenue",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQclJUYnFyVXpqWXhTRnRZc0Y4TlpLTTZXQkg5MmJhOFpaaHZtZGdJZF9CSFdrdXI1NEJOOUQ0NEpVNnJlUk9DTVBGQTQtLW5OdlJvMFdWNWFlRkdWd1dOenFISkNmMmdkRnZSaU9PUUo1eWlnZGxQU2pLanFSU0J0YkRKR2hvZm1KMHFBMGhCZFBDSmNlSDV3MUhEeEJCWXVuUEFZeEtxSVdMRU8tOXhSOUJZNWQzcUxuUWh3N1A4SFlvbjNieEdPLUpkTy1ScVRDSEY4WEw4eENzUQ?oc=5",
-        "source": "TradingView",
-        "summary": "Aktuelle Meldung von TradingView: China’s YMTC Tops Micron in NAND Shipments — but Micron Wins Where It Matters: Revenue",
-        "relevanceScore": 100,
-        "publishedAt": "2026-08-13T10:06:01.000Z"
-      }
-    ],
-    "note": "News candidates remain visible as news. They are not accepted as material TAIL signals without Evidence, Materiality, Causality and Falsifiability review."
+    "type": "material-change",
+    "title": "HBM bleibt Engpass – Nachfolgearchitektur wird strategischer",
+    "impactScore": 100,
+    "note": "Gelsinger und SK hynix benennen gemeinsam die strukturellen Grenzen von HBM. Das verändert den langfristigen Architecture-Watch, aber nicht die kurzfristige Supply- und Beschaffungslage."
   }
 }

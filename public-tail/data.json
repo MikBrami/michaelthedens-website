@@ -1,32 +1,46 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T05:40:05.671Z",
+  "generatedAt": "2026-08-15T09:53:57.758Z",
   "platform": {
     "dataAsOf": "2026-08-15",
-    "dataFreshness": "stale",
+    "dataFreshness": "current",
     "processStatus": "warning",
-    "articleCount": 115,
+    "articleCount": 116,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM",
-        "score": 82,
+        "score": 84,
         "status": "red",
-        "signals": 11
-      },
-      {
-        "id": "dram",
-        "label": "DRAM",
-        "score": 80,
-        "status": "orange",
-        "signals": 31
+        "signals": 12
       },
       {
         "id": "hbm",
         "label": "HBM",
+        "score": 83,
+        "status": "red",
+        "signals": 25
+      },
+      {
+        "id": "dram",
+        "label": "DRAM",
+        "score": 81,
+        "status": "orange",
+        "signals": 32
+      },
+      {
+        "id": "semiconductors",
+        "label": "Semiconductors",
+        "score": 81,
+        "status": "orange",
+        "signals": 29
+      },
+      {
+        "id": "ai_infrastructure",
+        "label": "AI Infrastructure",
         "score": 80,
         "status": "orange",
-        "signals": 24
+        "signals": 82
       },
       {
         "id": "enterprise_ssd",
@@ -34,67 +48,27 @@
         "score": 73,
         "status": "orange",
         "signals": 10
-      },
-      {
-        "id": "nand",
-        "label": "NAND",
-        "score": 73,
-        "status": "orange",
-        "signals": 10
-      },
-      {
-        "id": "ai_infrastructure",
-        "label": "AI Infrastructure",
-        "score": 72,
-        "status": "orange",
-        "signals": 81
       }
     ],
-    "sourceDataAsOf": "2026-08-10",
+    "sourceDataAsOf": "2026-08-15",
     "analysisAsOf": "2026-08-15"
   },
   "executivePulse": {
     "current": 90,
     "previous": 90,
     "status": "orange",
-    "interpretation": "Memory und AI-Infrastruktur bleiben unter hohem Druck. Server DRAM, DRAM, HBM zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-15 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Memory und AI-Infrastruktur bleiben unter hohem Druck. Server DRAM, HBM, DRAM zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-15 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
-      "date": "2026-08-14",
-      "title": "Samsung prüft Umrüstung einer R&D‑Linie zur Foundry für 2nm‑HBM‑Basisdies wegen möglicher NVIDIA‑Nachfrage",
-      "summary": "Aktuelle Meldung von TrendForce: Samsung prüft, eine R&D‑Linie in eine Foundry umzuwandeln, um 2nm‑HBM‑Basisdies für eine mögliche künftige Nachfrage von NVIDIA herzustellen.",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 95,
-      "relevanceScore": 100,
-      "sourceQuality": 15,
-      "source": "TrendForce",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxORmxkTzNadjYwdFFMdFByUkRtMlBidUlHZjJtN2YzZ0tMcUh5YUwwNUdnd2hqQVRpcXFSbWh4OUxoTm9ldkRqZVM2MnNUUldGcElZMEVIcWVNYXB4T1Q2clhCaFJpdDRuamkyNkRES1ljWkY0ak91OTgzdm1VR0JEVktHMmlRWFN0SElEVXY5ejlyYy1yRndGWWRveGVGS2pTMkFtMzNKdlZ6YVVSQi0xd21vaVYxYVItUU15ZGxMUGxhTmF5MEpGNWc2TTFDajlyN0IxSzFIX2dlelU?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-14",
-      "title": "ETF AIRR bildet Ausbau von AI‑Rechenzentren ab, getragen vom Capex der Hyperscaler Microsoft, Meta, Alphabet, Amazon",
-      "summary": "Aktuelle Meldung von Pluang: Der ETF AIRR verfolgt den Ausbau von AI‑Data‑Centern, angetrieben vom Capex der Hyperscaler Microsoft, Meta, Alphabet und Amazon.",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pluang",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeTVkS3V0dklIaFRsakF4WDdSMWtaU25jTE1pTWI1R01CaTVfR2F3T0QwWUtYSWRnakp5V1NhNHhSeFU3NEtEMW9aV19uOWdLVlBiRmtXMUJLU1drZVJUa2VGU1RhdWgxdThNODIzMG1IRHB4UDdVVDQ2WWVzQ24tOXFFUnVCSTA1NWxxMmtsVzlsRnF3U2VxWDJn?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-14",
-      "title": "Samsung könnte HBM‑Basisdies auf 2nm bringen und seine 4nm HBM4‑Roadmap erweitern",
-      "summary": "Aktuelle Meldung von Wccftech: Samsung könnte HBM‑Basisdies auf hochmoderne 2nm vorantreiben und damit seine bestehende 4nm HBM4‑Roadmap ausweiten.",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Wccftech",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNXBvZ3lYREkwQzQzQ3lVREozZVNBXzE3d0prakRkX19uRkYxSWtFcVF1YzVTSVlfMzhPQmYtU0NmNVprQVluZXh6N3BjODk2MmlpOWJYN0Y3YU1PSFc2TlE4MTlfYldBejlNSVJwZlhfdV9uOWpfNXRrLVYxMkkyWjZUZXVvMUlVdU9nMnFaU0l3bWpmZG1kNEg0Y0hKRWpBYnZqcnh4NmRYS0HSAbABQVVfeXFMT3NvUF9OaHlFTXJBdnVyRVQxRDNON2tRazgzaTkxeTVaTE1kbUhkQkFsUzFwcEIzZjdZMVdnN2ptdXVvREFoWjdCR3k2STM2UmU0Tnd4SjczZnFDR01mWHFpLUhHVWZqN2p2SmZObFRzQkttQVhOcW5xdnJBak5fM0tITzhZRVg0WU9IN0d1aFc3SjVQemRwcWdETzBGQy1nNnlTUHVibDlsM0RSODg1SkE?oc=5",
-      "layer": "news"
+      "date": "2026-08-15",
+      "title": "HBM löst den Memory Wall nicht: Gelsinger und SK hynix suchen die Architektur danach",
+      "summary": "Der frühere Intel-CEO Pat Gelsinger bezeichnete HBM beim RAISE Summit als technisch unbefriedigende, aber derzeit beste verfügbare Memory-Lösung für AI. Er verwies auf Wärmeentwicklung in gestapeltem DRAM, begrenzte Interface-Bandbreite sowie Nachteile bei Bit-, Leistungs- und Bandbreiteneffizienz. SK-hynix-Vizepräsident Kim Ho-sik stimmte teilweise zu: HBM sei nicht die endgültige Antwort auf den Memory Wall. SK hynix untersuche deshalb weitere Ansätze gegen den Speicherengpass; zugleich bleibe HBM aktuell die praktikabelste Lösung.",
+      "analysis": "Das Signal schwächt die HBM-Knappheitsthese nicht, sondern trennt zwei Zeithorizonte: Kurzfristig bleibt HBM ROT →, weil AI-Plattformen weiterhin auf HBM, Advanced Packaging und knappe DRAM-Wafer angewiesen sind. Langfristig verschiebt sich der Wettbewerb von einzelnen Memory-Produkten zum Co-Design von Compute, Memory, Packaging und Interconnect. Für Server-DRAM und Beschaffung entsteht keine neue Supply-Entspannung.",
+      "score": 100,
+      "source": "Maeil Business Newspaper – HBM is lousy, former Intel CEO taunts",
+      "url": "https://www.mk.co.kr/en/business/12124175",
+      "layer": "accepted-signal"
     }
   ],
   "catalysts": [
@@ -121,14 +95,18 @@
     {
       "date": "2026-11-05",
       "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
+    },
+    {
+      "date": "2028-12-31",
+      "event": "HBM-Nachfolgearchitektur: Produktionsqualifikation prüfen"
     }
   ],
   "dailyStatus": {
     "date": "2026-08-15",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
-    "impactScore": 0,
-    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "type": "material-change",
+    "title": "HBM bleibt Engpass – Nachfolgearchitektur wird strategischer",
+    "impactScore": 100,
+    "note": "Gelsinger und SK hynix benennen gemeinsam die strukturellen Grenzen von HBM. Das verändert den langfristigen Architecture-Watch, aber nicht die kurzfristige Supply- und Beschaffungslage."
   },
   "news": [
     {
@@ -136,7 +114,7 @@
       "title": "[News] Samsung May Repurpose R&D Line for Foundry, Targeting 2nm HBM Base Dies for Future NVIDIA Demand",
       "summary": "Aktuelle Meldung von TrendForce: [News] Samsung May Repurpose R&D Line for Foundry, Targeting 2nm HBM Base Dies for Future NVIDIA Demand",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 95,
+      "score": 91,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "TrendForce",
@@ -169,58 +147,12 @@
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-15T05:40:05.825Z",
+    "generatedAt": "2026-08-15T09:53:57.823Z",
     "count": 3,
-    "candidateCount": 349,
+    "candidateCount": 321,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
     "admissionPolicy": "Current public news is separated from internal TAIL admission and forecast logic."
-  },
-  "originalSignals": [
-    {
-      "date": "2026-08-14",
-      "title": "[News] Samsung May Repurpose R&D Line for Foundry, Targeting 2nm HBM Base Dies for Future NVIDIA Demand",
-      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung May Repurpose R&D Line for Foundry, Targeting 2nm HBM Base Dies for Future NVIDIA Demand",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 95,
-      "relevanceScore": 100,
-      "sourceQuality": 15,
-      "source": "TrendForce",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxORmxkTzNadjYwdFFMdFByUkRtMlBidUlHZjJtN2YzZ0tMcUh5YUwwNUdnd2hqQVRpcXFSbWh4OUxoTm9ldkRqZVM2MnNUUldGcElZMEVIcWVNYXB4T1Q2clhCaFJpdDRuamkyNkRES1ljWkY0ak91OTgzdm1VR0JEVktHMmlRWFN0SElEVXY5ejlyYy1yRndGWWRveGVGS2pTMkFtMzNKdlZ6YVVSQi0xd21vaVYxYVItUU15ZGxMUGxhTmF5MEpGNWc2TTFDajlyN0IxSzFIX2dlelU?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-14",
-      "title": "ETF AIRR tracks AI data center buildout, driven by hyperscaler capex from Microsoft, Meta, Alphabet, Amazon.",
-      "summary": "Aktuelle Meldung von Pluang: ETF AIRR tracks AI data center buildout, driven by hyperscaler capex from Microsoft, Meta, Alphabet, Amazon.",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pluang",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeTVkS3V0dklIaFRsakF4WDdSMWtaU25jTE1pTWI1R01CaTVfR2F3T0QwWUtYSWRnakp5V1NhNHhSeFU3NEtEMW9aV19uOWdLVlBiRmtXMUJLU1drZVJUa2VGU1RhdWgxdThNODIzMG1IRHB4UDdVVDQ2WWVzQ24tOXFFUnVCSTA1NWxxMmtsVzlsRnF3U2VxWDJn?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-14",
-      "title": "Samsung May Push HBM Base Dies to Cutting-Edge 2nm, Extending Its Own 4nm HBM4 Roadmap",
-      "summary": "Aktuelle Meldung von Wccftech: Samsung May Push HBM Base Dies to Cutting-Edge 2nm, Extending Its Own 4nm HBM4 Roadmap",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Wccftech",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNXBvZ3lYREkwQzQzQ3lVREozZVNBXzE3d0prakRkX19uRkYxSWtFcVF1YzVTSVlfMzhPQmYtU0NmNVprQVluZXh6N3BjODk2MmlpOWJYN0Y3YU1PSFc2TlE4MTlfYldBejlNSVJwZlhfdV9uOWpfNXRrLVYxMkkyWjZUZXVvMUlVdU9nMnFaU0l3bWpmZG1kNEg0Y0hKRWpBYnZqcnh4NmRYS0HSAbABQVVfeXFMT3NvUF9OaHlFTXJBdnVyRVQxRDNON2tRazgzaTkxeTVaTE1kbUhkQkFsUzFwcEIzZjdZMVdnN2ptdXVvREFoWjdCR3k2STM2UmU0Tnd4SjczZnFDR01mWHFpLUhHVWZqN2p2SmZObFRzQkttQVhOcW5xdnJBak5fM0tITzhZRVg0WU9IN0d1aFc3SjVQemRwcWdETzBGQy1nNnlTUHVibDlsM0RSODg1SkE?oc=5",
-      "layer": "news"
-    }
-  ],
-  "editorial": {
-    "germanNews": {
-      "language": "de-DE",
-      "model": "gpt-5-mini",
-      "mode": "editorial_translation",
-      "generatedAt": "2026-08-15T05:40:22.140Z"
-    }
   }
 }

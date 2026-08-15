@@ -94,6 +94,7 @@ function inferCompanies(signal) {
 }
 
 function inferSignal(signal) {
+  if (signal.signalOverride) return signal.signalOverride;
   const text = textFor(signal);
   if (/export control|sanction|geopolit|china parallel|technology split|hormuz|war|conflict|attack/.test(text)) return 'geopolitical_split';
   if (/long[- ]term agreement|strategic agreement|\blta\b|supply agreement|capacity lock|allocation/.test(text)) return 'capacity_lock';
