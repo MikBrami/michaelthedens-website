@@ -1,40 +1,54 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T05:40:37.961Z",
+  "generatedAt": "2026-08-15T09:55:55.008Z",
   "editorial": {
     "version": 4,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "a6092c6d91569d69bcbad66e",
+    "sourceHash": "e2508c2268cf25e9e81b89ce",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
     "dataAsOf": "2026-08-15",
-    "dataFreshness": "stale",
+    "dataFreshness": "current",
     "processStatus": "warning",
-    "articleCount": 115,
+    "articleCount": 116,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM",
-        "score": 82,
+        "score": 84,
         "status": "red",
-        "signals": 11
-      },
-      {
-        "id": "dram",
-        "label": "DRAM",
-        "score": 80,
-        "status": "orange",
-        "signals": 31
+        "signals": 12
       },
       {
         "id": "hbm",
         "label": "HBM",
+        "score": 83,
+        "status": "red",
+        "signals": 25
+      },
+      {
+        "id": "dram",
+        "label": "DRAM",
+        "score": 81,
+        "status": "orange",
+        "signals": 32
+      },
+      {
+        "id": "semiconductors",
+        "label": "Semiconductors",
+        "score": 81,
+        "status": "orange",
+        "signals": 29
+      },
+      {
+        "id": "ai_infrastructure",
+        "label": "AI Infrastructure",
         "score": 80,
         "status": "orange",
-        "signals": 24
+        "signals": 82
       },
       {
         "id": "enterprise_ssd",
@@ -42,73 +56,33 @@
         "score": 73,
         "status": "orange",
         "signals": 10
-      },
-      {
-        "id": "nand",
-        "label": "NAND",
-        "score": 73,
-        "status": "orange",
-        "signals": 10
-      },
-      {
-        "id": "ai_infrastructure",
-        "label": "AI Infrastructure",
-        "score": 72,
-        "status": "orange",
-        "signals": 81
       }
     ],
-    "sourceDataAsOf": "2026-08-10",
+    "sourceDataAsOf": "2026-08-15",
     "analysisAsOf": "2026-08-15"
   },
   "executivePulse": {
     "current": 90,
     "previous": 90,
     "status": "orange",
-    "interpretation": "Memory and AI infrastructure remain under severe pressure. Server DRAM, DRAM and HBM are currently among the most constrained areas. The Daily Check of 2026-08-15 reviewed eight relevant current reports; there is currently no confirmed material change in direction. New capacity and improved yields can relieve pressure but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
+    "interpretation": "Memory and AI infrastructure remain under high pressure. Server DRAM and HBM are currently among the most strained areas. The daily check on 2026-08-15 confirmed a material change in the situation. New capacity and improved yields can provide relief, but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
-      "date": "2026-08-14",
-      "title": "[News] Samsung May Repurpose R&D Line for Foundry, Targeting 2nm HBM Base Dies for Future NVIDIA Demand",
-      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung May Repurpose R&D Line for Foundry, Targeting 2nm HBM Base Dies for Future NVIDIA Demand",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand directly affect available GPU systems and pricing in the AI infrastructure market.",
-      "score": 95,
-      "relevanceScore": 100,
-      "sourceQuality": 15,
-      "source": "TrendForce",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxORmxkTzNadjYwdFFMdFByUkRtMlBidUlHZjJtN2YzZ0tMcUh5YUwwNUdnd2hqQVRpcXFSbWh4OUxoTm9ldkRqZVM2MnNUUldGcElZMEVIcWVNYXB4T1Q2clhCaFJpdDRuamkyNkRES1ljWkY0ak91OTgzdm1VR0JEVktHMmlRWFN0SElEVXY5ejlyYy1yRndGWWRveGVGS2pTMkFtMzNKdlZ6YVVSQi0xd21vaVYxYVItUU15ZGxMUGxhTmF5MEpGNWc2TTFDajlyN0IxSzFIX2dlelU?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-14",
-      "title": "ETF AIRR tracks AI data center buildout, driven by hyperscaler capex from Microsoft, Meta, Alphabet, Amazon.",
-      "summary": "Aktuelle Meldung von Pluang: ETF AIRR tracks AI data center buildout, driven by hyperscaler capex from Microsoft, Meta, Alphabet, Amazon.",
-      "analysis": "The report alters the expansion trajectory of AI and data centre infrastructure. Greater productive compute capacity pulls server memory, enterprise storage, networking and power provisioning along with it.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pluang",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeTVkS3V0dklIaFRsakF4WDdSMWtaU25jTE1pTWI1R01CaTVfR2F3T0QwWUtYSWRnakp5V1NhNHhSeFU3NEtEMW9aV19uOWdLVlBiRmtXMUJLU1drZVJUa2VGU1RhdWgxdThNODIzMG1IRHB4UDdVVDQ2WWVzQ24tOXFFUnVCSTA1NWxxMmtsVzlsRnF3U2VxWDJn?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-14",
-      "title": "Samsung May Push HBM Base Dies to Cutting-Edge 2nm, Extending Its Own 4nm HBM4 Roadmap",
-      "summary": "Aktuelle Meldung von Wccftech: Samsung May Push HBM Base Dies to Cutting-Edge 2nm, Extending Its Own 4nm HBM4 Roadmap",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand directly affect available GPU systems and pricing in the AI infrastructure market.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Wccftech",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNXBvZ3lYREkwQzQzQ3lVREozZVNBXzE3d0prakRkX19uRkYxSWtFcVF1YzVTSVlfMzhPQmYtU0NmNVprQVluZXh6N3BjODk2MmlpOWJYN0Y3YU1PSFc2TlE4MTlfYldBejlNSVJwZlhfdV9uOWpfNXRrLVYxMkkyWjZUZXVvMUlVdU9nMnFaU0l3bWpmZG1kNEg0Y0hKRWpBYnZqcnh4NmRYS0HSAbABQVVfeXFMT3NvUF9OaHlFTXJBdnVyRVQxRDNON2tRazgzaTkxeTVaTE1kbUhkQkFsUzFwcEIzZjdZMVdnN2ptdXVvREFoWjdCR3k2STM2UmU0Tnd4SjczZnFDR01mWHFpLUhHVWZqN2p2SmZObFRzQkttQVhOcW5xdnJBak5fM0tITzhZRVg0WU9IN0d1aFc3SjVQemRwcWdETzBGQy1nNnlTUHVibDlsM0RSODg1SkE?oc=5",
-      "layer": "news"
+      "date": "2026-08-15",
+      "title": "HBM does not solve the memory wall: Gelsinger and SK hynix seek the post-HBM architecture",
+      "summary": "Former Intel CEO Pat Gelsinger called HBM at the RAISE Summit technically unsatisfactory but the best currently available memory solution for AI. He pointed to heat generation in stacked DRAM, limited interface bandwidth and disadvantages in bit-, power- and bandwidth-efficiency. SK hynix vice-president Kim Ho-sik partially agreed: HBM is not the final answer to the memory wall. SK hynix is therefore investigating other approaches to the memory bottleneck; at the same time HBM remains the most practical solution today.",
+      "analysis": "This signal does not weaken the HBM-shortage thesis but separates two time horizons: Short term HBM remains RED → because AI platforms continue to rely on HBM, advanced packaging and scarce DRAM wafers. Long term the competition shifts from individual memory products to the co-design of compute, memory, packaging and interconnect. No new supply relief emerges for server DRAM or procurement in the near term.",
+      "score": 100,
+      "source": "Maeil Business Newspaper – HBM is lousy, former Intel CEO taunts",
+      "url": "https://www.mk.co.kr/en/business/12124175",
+      "layer": "accepted-signal"
     }
   ],
   "catalysts": [
     {
       "date": "2026-08-31",
-      "event": "Astra: Safety, release and deployment review"
+      "event": "Astra: safety, release and deployment review"
     },
     {
       "date": "2026-09-05",
@@ -128,7 +102,11 @@
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
+      "event": "Falsifier review: AI asset-backed financing reflexivity"
+    },
+    {
+      "date": "2028-12-31",
+      "event": "HBM successor architecture: review production qualification"
     }
   ]
 }
