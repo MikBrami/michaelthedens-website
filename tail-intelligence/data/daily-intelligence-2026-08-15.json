@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-15T10:08:29.000Z",
+  "updatedAt": "2026-08-15T10:18:52.000Z",
   "previousRun": "2026-08-14",
   "executivePulse": {
-    "current": 90,
+    "current": 89,
     "previous": 90,
     "status": "orange",
-    "interpretation": "HBM bleibt kurzfristig die beste verfügbare Antwort auf den AI-Memory-Wall, ist aber selbst kein dauerhafter Endpunkt. Gleichzeitig verdichtet Nvidias Feynman-Roadmap für 2028 den nächsten Systemwechsel: A16, SoIC-3D-Stacking, CoWoS-L beziehungsweise CoPoS, kundenspezifisches HBM und CPO werden gemeinsam geplant. Das stärkt den langfristigen Architekturwechsel, verschärft aber zunächst die Abhängigkeit von TSMCs Leading-Edge- und Advanced-Packaging-Kapazität."
+    "interpretation": "Memory-Knappheit erreicht den Client-Markt als struktureller BOM-, Margen- und Nachfragefaktor. TrendForce schätzt für das iPhone 18 Pro 256 GB rund 38 Prozent höhere Stücklistenkosten; der Memory-Anteil soll von 10 Prozent beim Vorgänger auf 34 Prozent im dritten Quartal 2026 und 42 Prozent im ersten Halbjahr 2027 steigen. Selbst Apple muss damit zwischen Preis, Marge und Stückzahl abwägen; Android-Anbieter sind noch stärker exponiert."
   },
   "confidence": {
-    "current": 96,
+    "current": 97,
     "previous": 96,
-    "interpretation": "Die technische Kritik ist durch die Aussagen von Pat Gelsinger und SK hynix klar belegt. Unsicher bleiben Zeitplan, Architektur und kommerzielle Reife möglicher HBM-Nachfolger; daraus wird keine kurzfristige Supply-Entlastung abgeleitet."
+    "interpretation": "TrendForce ist die Primärquelle der BOM-Schätzung; die Richtung wird durch Apples zuvor gemeldete Supply-Constraints, Preisanpassungen und die sichtbare Smartphone-Schwäche gestützt. Unsicher bleiben absolute BOM-Werte, Apples Lieferverträge, tatsächliche Launchpreise und die Höhe der Margenabsorption."
   },
   "riskPressure": {
     "current": 100,
     "previous": 100
   },
-  "momentum": "HBM ROT → · Feynman koppelt A16, SoIC, CPO und Custom HBM · Packaging-Druck reicht bis 2028",
+  "momentum": "MEMORY ROT ↑ · Client-BOM-Schock erreicht Apple · Margenabsorption und Nachfragezerstörung werden zum Gegengewicht",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -128,12 +128,56 @@
       "name": "Feynman / A16 / CPO Integration",
       "score": 100,
       "delta": 20
+    },
+    {
+      "name": "Client BOM / Memory Cost Transmission",
+      "score": 100,
+      "delta": 20
     }
   ],
   "acceptedSignals": [
     {
-      "id": "S-2026-08-15-02",
+      "id": "S-2026-08-15-03",
       "rank": 1,
+      "priorityScore": 93,
+      "classification": "Layer Update",
+      "signalOverride": "price_up",
+      "title": "Memory wird beim iPhone 18 Pro zum größten BOM-Block und erzwingt Preis- oder Margenopfer",
+      "fact": "TrendForce veröffentlichte am 10. August 2026 eine BOM-Schätzung für das iPhone 18 Pro 256 GB. Danach liegen die Stücklistenkosten rund 38 Prozent über dem 2025er-Vorgänger. Der Memory-Anteil am BOM steigt laut Modell von rund 10 Prozent beim iPhone 17 Pro auf 34 Prozent im dritten Quartal 2026 und voraussichtlich 42 Prozent im ersten Halbjahr 2027; AP und Panel fallen im selben Vergleich auf jeweils 9 Prozent.",
+      "estimate": "Die Werte stammen aus TrendForces Kostenmodell und sind keine von Apple bestätigten BOM-, Einkaufspreis- oder Margendaten. Die Annahmen zu Apples Margenverzicht, höheren Preisen älterer Modelle und stärkerem Android-Preisdruck sind Analystenszenarien. Absolute BOM-Werte, Memory-Mix, Lieferverträge und regionale Preise werden nicht offengelegt.",
+      "tailInference": "Der AI-getriebene Memory-Zyklus ist im Client-Markt nicht mehr nur ein Preisaufschlag, sondern verändert die gesamte Produktökonomie. Kurzfristig stützt das DRAM- und NAND-Preisuntergrenzen; mittelfristig wächst jedoch die Nachfrageelastizität: Hersteller müssen Preise erhöhen, Ausstattung reduzieren, Margen opfern oder unrentable Modelle einstellen. Das verstärkt den Falsifier gegen unbegrenzt steigende Memory-Preise, weil Client-Nachfrage schneller zerstört werden kann als neue Kapazität anläuft.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "scoreBreakdown": {
+        "SourceQuality": 18,
+        "Magnitude": 20,
+        "StructuralReach": 19,
+        "LeadTime": 13,
+        "Actionability": 15,
+        "IndependentCorroboration": 8
+      },
+      "redPencil": {
+        "sourceIncentive": "TrendForce vermarktet kostenpflichtige Memory- und Smartphone-Research; Modellannahmen, Lieferantenpreise und absolute BOM-Werte sind nicht vollständig transparent.",
+        "alternative": "Apple kann über langfristige Lieferverträge, Supplier-Mix, NAND-/DRAM-Bündelung, geringere Kosten anderer Komponenten oder regionale Preisdifferenzierung mehr Druck abfangen als das Modell unterstellt.",
+        "alreadyPriced": "Steigende Client-Memory-Kosten und schwächere Smartphone-Stückzahlen waren bekannt. Neu sind die quantifizierte Verschiebung von 10 auf 34 beziehungsweise 42 Prozent BOM-Anteil und der 38-prozentige Gesamtkostensprung bei einem Premium-Leitprodukt.",
+        "killCondition": "Eine unabhängige Serien-BOM-Analyse weist für das iPhone 18 Pro 256 GB weniger als 20 Prozent Kostenanstieg gegenüber dem Vorgänger oder einen Memory-Anteil unter 25 Prozent aus.",
+        "forecastChange": "Neu P-2026-08-15-02: US-Launchpreis des iPhone 18 Pro 256 GB mindestens 10 Prozent über dem Vorgänger – 70 Prozent. Neuer aktiver Falsifier gegen folgenlose Client-Kostenweitergabe."
+      },
+      "sources": [
+        {
+          "label": "TrendForce – iPhone 18 Pro BOM Cost Expected to Surge Nearly 40%",
+          "url": "https://www.trendforce.com/presscenter/news/20260810-13172.html"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-15-02",
+      "rank": 2,
       "priorityScore": 89,
       "classification": "Architecture Update",
       "signalOverride": "negative_supply",
@@ -172,7 +216,7 @@
     },
     {
       "id": "S-2026-08-15-01",
-      "rank": 2,
+      "rank": 3,
       "priorityScore": 100,
       "classification": "Architecture Update",
       "signalOverride": "negative_supply",
@@ -216,6 +260,19 @@
   ],
   "predictionLogUpdates": [
     {
+      "id": "P-2026-08-15-02",
+      "status": "new",
+      "forecast": "Apple setzt den US-Launchpreis des iPhone 18 Pro 256 GB bis 30. September 2026 mindestens 10 Prozent über den entsprechenden Launchpreis des iPhone 17 Pro 256 GB.",
+      "confidence": 70,
+      "previousConfidence": null,
+      "nextReview": "2026-09-30",
+      "history": "Erstellt am 15.08.2026 nach TrendForces Schätzung von 38 Prozent höherem BOM und 34 Prozent Memory-Anteil im dritten Quartal 2026.",
+      "baseline": "Offizieller US-Launchpreis des iPhone 17 Pro 256 GB auf Apples archivierter Produktseite.",
+      "resolutionSource": "Offizielle Apple-US-Produkt- und Launchseiten für iPhone 17 Pro und iPhone 18 Pro.",
+      "redPencil": "Apple kann einen größeren Teil des Kostensprungs über Marge, Supplier-Verträge und andere Komponenten auffangen; ein unveränderter oder nur leicht erhöhter Preis ist deshalb ein realer Gegenfall.",
+      "killCondition": "Der offizielle US-Launchpreis liegt weniger als 10 Prozent über dem Vergleichsmodell oder das iPhone 18 Pro 256 GB wird bis 30.09.2026 nicht mit einem offiziellen US-Preis vorgestellt."
+    },
+    {
       "id": "P-2026-07-13-03",
       "status": "changed",
       "forecast": "Advanced Packaging bleibt trotz Chiayi-Ausbau bis mindestens H2 2027 ein zentraler AI-Lieferkettenengpass.",
@@ -252,6 +309,14 @@
     }
   ],
   "falsifiers": [
+    {
+      "id": "F-2026-08-15-CLIENT-MARGIN",
+      "title": "Premium Vendor Margin Absorption Limit",
+      "targets": "Annahme, dass Premiumhersteller Memory-Inflation vollständig absorbieren können, ohne Preise, Ausstattung, Marge oder Stückzahlen materiell zu verändern",
+      "status": "active",
+      "strength": "high",
+      "nextReview": "2026-09-30"
+    },
     {
       "id": "F-2026-08-09-HORMUZ-PAPER-VS-PHYSICAL",
       "title": "Hormuz Framework ≠ Physical Reopening",
@@ -290,18 +355,20 @@
     "MemoryCapacity": "2026-08-31",
     "HBM-Nachfolgearchitektur: Produktionsqualifikation prüfen": "2028-12-31",
     "Feynman / A16 Roadmap Review": "2027-03-31",
-    "Feynman / A16 Volume Production": "2028-12-31"
+    "Feynman / A16 Volume Production": "2028-12-31",
+    "iPhone 18 Pro US Launch Price": "2026-09-30",
+    "Client Memory Demand Destruction": "2027-03-31"
   },
   "dataHygiene": {
     "preserveForecastHistory": true,
     "eraseMisses": false,
-    "lateAdmissionNote": "SoftBank Q1/OpenAI-collateral financing is admitted late because the 2026-08-06 result was not present in the prior Knowledge Base. No new independent Memory/Storage price, shipment or supply trigger emerged after the 2026-08-08 cutoff, so direct Memory/Storage forecasts are not moved artificially."
+    "lateAdmissionNote": "SoftBank Q1/OpenAI-collateral financing remains transparently marked as a late admission. TrendForce's 10 August primary BOM estimate is admitted on 15 August as a new quantified Client-Memory layer update; observations, model estimates and TAIL inference remain separated."
   },
   "dailyStatus": {
     "date": "2026-08-15",
     "type": "material-change",
-    "title": "Feynman koppelt A16, Custom HBM, 3D-Packaging und CPO",
+    "title": "Memory wird beim iPhone zum größten Kostenblock",
     "impactScore": 100,
-    "note": "Der Feynman-Pfad verdichtet den Systemwechsel für 2028, schafft aber keine kurzfristige Entlastung: HBM, Leading-Edge-Logic, Advanced Packaging und Optik werden enger miteinander gekoppelt."
+    "note": "TrendForce schätzt den Memory-Anteil beim iPhone 18 Pro auf 34 Prozent im dritten Quartal 2026 und 42 Prozent im ersten Halbjahr 2027. Das stützt Memory-Preise, erhöht aber gleichzeitig Margen- und Nachfragezerstörungsrisiken."
   }
 }
