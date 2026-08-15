@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "methodologyVersion": "3.1",
-  "generatedAt": "2026-08-15T09:55:37.744Z",
+  "generatedAt": "2026-08-15T10:11:01.655Z",
   "creationPolicy": "Creation confidence is read only from structured fields or the documented legacy migration table. Free text is never parsed.",
   "correctionPolicy": "Objective input errors may be corrected only by preserving raw and corrected values plus reason, timestamp and audit entry. Judgment changes create a new update snapshot.",
   "weightingPolicy": "Strategic cluster budgets are used only for active-book prioritization and the separately labelled Strategic Weighted Score. Global calibration uses correlation adjustment without scope budgets.",
@@ -10,7 +10,7 @@
     "activeForecasts": 44,
     "memoryRawShare": 25,
     "hardGateActive": true,
-    "watchlistForecasts": 46
+    "watchlistForecasts": 47
   },
   "forecasts": [
     {
@@ -605,7 +605,7 @@
       "active": true,
       "resolved": false,
       "confidenceCreation": 83,
-      "confidenceCurrent": 88,
+      "confidenceCurrent": 91,
       "confidenceFixedLead": null,
       "confidenceResolution": null,
       "outcome": null,
@@ -634,11 +634,11 @@
       "excludedFromScoring": false,
       "validationNote": null,
       "adversarialCase": {
-        "hypothesis": "Mehr Budget kann Engpässe schneller lösen; TSMC sieht keine Bottlenecks für eigene Expansionspläne.",
+        "hypothesis": "Die Angaben stammen aus der Supply Chain und enthalten keine bestätigten Kapazitätsvolumina. Zusätzliche TSMC-/OSAT-Kapazität oder höhere Yields können den Engpass schneller lösen.",
         "probability": null,
         "relation": "unassessed",
         "evidence": null,
-        "trigger": "TSMC meldet normalisierte CoWoS-Lead-Times oder freie Kapazität.",
+        "trigger": "TSMC meldet normalisierte CoWoS-/SoIC-Lead-Times oder freie qualifizierte Advanced-Packaging-Kapazität vor H2 2027.",
         "nextReview": "2026-10-15",
         "assessmentStatus": "probability_pending"
       }
@@ -4330,6 +4330,51 @@
         "evidence": null,
         "trigger": "Kein HVM-Vertrag oder kein sichtbarer Baufortschritt bis 30.06.2027.",
         "nextReview": "2026-12-31",
+        "assessmentStatus": "probability_pending"
+      }
+    },
+    {
+      "id": "P-2026-08-15-01",
+      "forecast": "Nvidia oder TSMC bestätigt bis 31. Dezember 2028 den Beginn der Feynman-Volumenproduktion auf TSMCs A16-Prozess.",
+      "status": "new",
+      "active": false,
+      "resolved": false,
+      "confidenceCreation": 72,
+      "confidenceCurrent": 72,
+      "confidenceFixedLead": null,
+      "confidenceResolution": null,
+      "outcome": null,
+      "creationTimestamp": "2026-08-15T10:08:29.000Z",
+      "admissionTimestamp": "2026-08-15T10:08:29.000Z",
+      "admissionConfidence": 72,
+      "fixedLeadTimestamp": null,
+      "resolutionTimestamp": null,
+      "creationSource": "first_structured_record",
+      "sourceRecord": "daily-intelligence-2026-08-15.json",
+      "resolutionQuality": null,
+      "resolutionNote": null,
+      "clusterId": "AI-CAPEX-FOUNDRY-2026",
+      "clusterLabel": "AI Capex & Foundry",
+      "scopeCategory": "ai_datacenter",
+      "dependencyLevel": "high",
+      "clusterBudget": 0.08,
+      "needsClusterReview": false,
+      "effectiveWeight": 0,
+      "scopeGateStatus": "watchlist_scope",
+      "watchlistEnteredAt": "2026-08-15T10:08:29.000Z",
+      "watchlistConfidence": 72,
+      "promotionTimestamp": null,
+      "promotionReason": null,
+      "confidenceFrozen": false,
+      "excludedFromScoring": true,
+      "validationNote": "Hard scope gate: active Memory & Storage share is 13.4%, below 60%. Explicit promotion required.",
+      "adversarialCase": {
+        "hypothesis": "Ein Roadmap-Ziel ist keine Serienproduktion. A16-Yield, SoIC/CoWoS-L/CoPoS-Qualifikation, Custom-HBM-Verfügbarkeit und CPO-Zuverlässigkeit können den Ramp verschieben.",
+        "probability": null,
+        "relation": "unassessed",
+        "evidence": null,
+        "trigger": "Bis 31.12.2028 kein öffentlich bestätigter Feynman-Volumenanlauf auf A16 oder eine offizielle Verschiebung auf 2029 oder später beziehungsweise auf einen anderen Prozesspfad.",
+        "nextReview": "2027-03-31",
         "assessmentStatus": "probability_pending"
       }
     }

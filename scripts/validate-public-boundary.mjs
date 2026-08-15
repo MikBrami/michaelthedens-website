@@ -22,7 +22,10 @@ const allowedTopLevelKeys = new Set([
   'platform',
   'executivePulse',
   'signals',
-  'catalysts'
+  'catalysts',
+  'dailyStatus',
+  'news',
+  'newsLayer'
 ]);
 
 for (const key of Object.keys(publicData)) {

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T09:55:37.800Z",
+  "generatedAt": "2026-08-15T10:11:01.733Z",
   "platform": {
     "dataAsOf": "2026-08-15",
     "dataFreshness": "current",
     "processStatus": "warning",
-    "articleCount": 116,
+    "articleCount": 117,
     "markets": [
       {
         "id": "server_dram",
@@ -19,28 +19,28 @@
         "label": "HBM",
         "score": 83,
         "status": "red",
-        "signals": 25
+        "signals": 26
       },
       {
         "id": "dram",
         "label": "DRAM",
         "score": 81,
         "status": "orange",
-        "signals": 32
+        "signals": 33
       },
       {
         "id": "semiconductors",
         "label": "Semiconductors",
         "score": 81,
         "status": "orange",
-        "signals": 29
+        "signals": 30
       },
       {
         "id": "ai_infrastructure",
         "label": "AI Infrastructure",
         "score": 80,
         "status": "orange",
-        "signals": 82
+        "signals": 83
       },
       {
         "id": "enterprise_ssd",
@@ -60,6 +60,16 @@
     "interpretation": "Memory und AI-Infrastruktur bleiben unter hohem Druck. Server DRAM, HBM, DRAM zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-15 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
+    {
+      "date": "2026-08-15",
+      "title": "Feynman macht A16, 3D-Packaging, Custom HBM und CPO zu einem gemeinsamen 2028-Chokepoint",
+      "summary": "DigiTimes berichtet unter Berufung auf Supply-Chain-Quellen, dass Nvidia die Entwicklung und Lieferkettenabstimmung für Feynman in der zweiten Jahreshälfte 2028 beschleunigt. Vorgesehen seien TSMCs A16-Prozess, SoIC-3D-Stacking, CoWoS-L beziehungsweise CoPoS, kundenspezifisches HBM und CPO. TSMC beschleunige dafür Arbeiten an Chiayi AP7 und Nanke AP8. Die gesamte Rack-Interconnect-Bandbreite soll laut den zitierten Supply-Chain-Daten von rund 130 TB/s bei Blackwell NVL72 über 260 TB/s bei Rubin und 520 TB/s bei Rubin Ultra auf mehr als 1.000 TB/s bei Feynman steigen.",
+      "analysis": "Der Engpass wandert nicht von HBM zu CPO, sondern wird zu einem gekoppelten Systemengpass aus Leading-Edge-Logic, 3D-Integration, Advanced Packaging, kundenspezifischem HBM und Optik. Das stützt die HBM- und Packaging-Knappheit bis 2028 und bestätigt zugleich den langfristigen Wechsel vom Komponentenmarkt zum Compute-Memory-Interconnect-Co-Design. Für Memory-Anbieter steigt der Wert kundenspezifischer Base-Die-, HBM- und Packaging-Integration gegenüber austauschbarer Bit-Kapazität.",
+      "score": 89,
+      "source": "DigiTimes – Nvidia Feynman pushes TSMC A16 and CPO ramp",
+      "url": "https://www.digitimes.com/news/a20260814PD215/nvidia-tsmc-cpo-rubin-development.html",
+      "layer": "accepted-signal"
+    },
     {
       "date": "2026-08-15",
       "title": "HBM löst den Memory Wall nicht: Gelsinger und SK hynix suchen die Architektur danach",
@@ -93,20 +103,24 @@
       "event": "Switch IPO: Filing, Bewertung und Kapitalzugang prüfen"
     },
     {
+      "date": "2026-10-15",
+      "event": "Forecast-Review: Advanced Packaging bleibt trotz Chiayi-Ausbau bis mindestens H2 2027 ein zentraler AI-Lieferkettenengpass."
+    },
+    {
       "date": "2026-11-05",
       "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
     },
     {
-      "date": "2028-12-31",
-      "event": "HBM-Nachfolgearchitektur: Produktionsqualifikation prüfen"
+      "date": "2027-03-31",
+      "event": "Feynman / A16 Roadmap Review"
     }
   ],
   "dailyStatus": {
     "date": "2026-08-15",
     "type": "material-change",
-    "title": "HBM bleibt Engpass – Nachfolgearchitektur wird strategischer",
+    "title": "Feynman koppelt A16, Custom HBM, 3D-Packaging und CPO",
     "impactScore": 100,
-    "note": "Gelsinger und SK hynix benennen gemeinsam die strukturellen Grenzen von HBM. Das verändert den langfristigen Architecture-Watch, aber nicht die kurzfristige Supply- und Beschaffungslage."
+    "note": "Der Feynman-Pfad verdichtet den Systemwechsel für 2028, schafft aber keine kurzfristige Entlastung: HBM, Leading-Edge-Logic, Advanced Packaging und Optik werden enger miteinander gekoppelt."
   },
   "news": [
     {
@@ -147,7 +161,7 @@
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-15T09:55:37.954Z",
+    "generatedAt": "2026-08-15T10:11:01.797Z",
     "count": 3,
     "candidateCount": 316,
     "freshnessWindowHours": 36,

@@ -4432,7 +4432,7 @@
     "content_hash": "127a49b5829b3fd4b17e",
     "origin": "daily-intelligence",
     "classification": "Architecture Update",
-    "rank": 1,
+    "rank": 2,
     "estimate": "Die Aussagen belegen keinen kurzfristigen Nachfragerückgang und keinen unmittelbar marktreifen HBM-Ersatz. Offen bleiben Architektur, Standardisierung, Yield, Kosten, Qualifikation und kommerzieller Zeitplan möglicher Nachfolger. Verbesserungen bei HBM4 und HBM4E können die Nutzungsdauer der bestehenden Architektur zusätzlich verlängern.",
     "red_pencil": {
       "sourceIncentive": "Gelsinger argumentiert aus einer Systemarchitektur-Perspektive und pointiert die Nachteile der heute dominierenden Lösung. SK hynix hat als HBM-Marktführer zugleich Anreiz, HBM nicht abzuwerten und dennoch technologische Anschlussfähigkeit zu demonstrieren.",
@@ -4449,6 +4449,47 @@
       {
         "label": "DigiTimes – Gelsinger calls HBM lousy, SK Hynix says it is not memory's final answer",
         "url": "https://www.digitimes.com/news/a20260814PD227/hbm-sk-hynix-pat-gelsinger-component-semiconductors.html"
+      }
+    ]
+  },
+  {
+    "id": "S-2026-08-15-02",
+    "date": "2026-08-15",
+    "title": "Feynman macht A16, 3D-Packaging, Custom HBM und CPO zu einem gemeinsamen 2028-Chokepoint",
+    "category": "geopolitics",
+    "markets": [
+      "hbm",
+      "dram",
+      "ai_infrastructure",
+      "semiconductors"
+    ],
+    "companies": [
+      "Nvidia",
+      "TSMC"
+    ],
+    "severity": 89,
+    "confidence": 74,
+    "signal": "negative_supply",
+    "summary": "DigiTimes berichtet unter Berufung auf Supply-Chain-Quellen, dass Nvidia die Entwicklung und Lieferkettenabstimmung für Feynman in der zweiten Jahreshälfte 2028 beschleunigt. Vorgesehen seien TSMCs A16-Prozess, SoIC-3D-Stacking, CoWoS-L beziehungsweise CoPoS, kundenspezifisches HBM und CPO. TSMC beschleunige dafür Arbeiten an Chiayi AP7 und Nanke AP8. Die gesamte Rack-Interconnect-Bandbreite soll laut den zitierten Supply-Chain-Daten von rund 130 TB/s bei Blackwell NVL72 über 260 TB/s bei Rubin und 520 TB/s bei Rubin Ultra auf mehr als 1.000 TB/s bei Feynman steigen.",
+    "tail_analysis": "Der Engpass wandert nicht von HBM zu CPO, sondern wird zu einem gekoppelten Systemengpass aus Leading-Edge-Logic, 3D-Integration, Advanced Packaging, kundenspezifischem HBM und Optik. Das stützt die HBM- und Packaging-Knappheit bis 2028 und bestätigt zugleich den langfristigen Wechsel vom Komponentenmarkt zum Compute-Memory-Interconnect-Co-Design. Für Memory-Anbieter steigt der Wert kundenspezifischer Base-Die-, HBM- und Packaging-Integration gegenüber austauschbarer Bit-Kapazität.",
+    "source": "DigiTimes – Nvidia Feynman pushes TSMC A16 and CPO ramp",
+    "url": "https://www.digitimes.com/news/a20260814PD215/nvidia-tsmc-cpo-rubin-development.html",
+    "content_hash": "013b8d796d269cecab65",
+    "origin": "daily-intelligence",
+    "classification": "Architecture Update",
+    "rank": 1,
+    "estimate": "A16, der Produktionszeitpunkt 2028, die konkrete Packaging-Kombination und mehr als 1.000 TB/s sind Supply-Chain-Erwartungen, keine bestätigten Produkt- oder Kapazitätsangaben von Nvidia oder TSMC. Baufortschritt ist noch keine qualifizierte Serienkapazität; Design, Yield, thermische Grenzen und CPO-Zuverlässigkeit können den Ramp verschieben.",
+    "red_pencil": {
+      "sourceIncentive": "Supply-Chain-Quellen und Anlagenlieferanten haben Anreize, frühe Roadmaps, Ausrüstungsbedarf und Kapazitätsdruck groß darzustellen; DigiTimes berichtet keine von Nvidia oder TSMC bestätigten Volumina.",
+      "alternative": "Feynman kann später, mit anderer Packaging-Aufteilung oder zunächst ohne breit integriertes CPO erscheinen. Zusätzliche TSMC- und OSAT-Kapazität sowie bessere Yields könnten den Engpass vor 2028 entspannen.",
+      "alreadyPriced": "Feynman 2028 und A16 waren grundsätzlich bekannt. Neu ist die konkrete, systemweite Verknüpfung von A16, SoIC, CoWoS-L/CoPoS, Custom HBM, CPO und beschleunigten AP7-/AP8-Zeitplänen.",
+      "killCondition": "Nvidia oder TSMC verschiebt Feynman offiziell über 2029 hinaus, bestätigt einen anderen Foundry-/Prozesspfad oder weist bis Ende 2028 keinen Feynman-Volumenanlauf auf A16 nach.",
+      "forecastChange": "P-2026-07-13-03 steigt 88→91 Prozent. Neu P-2026-08-15-01: Feynman-Volumenproduktion auf TSMC A16 bis Ende 2028 – 72 Prozent."
+    },
+    "sources": [
+      {
+        "label": "DigiTimes – Nvidia Feynman pushes TSMC A16 and CPO ramp",
+        "url": "https://www.digitimes.com/news/a20260814PD215/nvidia-tsmc-cpo-rubin-development.html"
       }
     ]
   }
