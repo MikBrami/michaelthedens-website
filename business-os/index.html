@@ -4,38 +4,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07101f">
-  <title>MT·AI Business OS – Sales Funnel</title>
+  <title>MT·AI Business OS – Kommandozentrale</title>
   <link rel="stylesheet" href="/business-os/business-os.css">
 </head>
 <body>
   <header class="topbar">
     <div>
       <p class="eyebrow">MT·AI BUSINESS OS</p>
-      <h1>Sales Funnel</h1>
-      <p class="sub">Vertriebsaktivitäten, Opportunities und Next Actions – aus einer zentralen Datenbasis.</p>
+      <h1>Kommandozentrale</h1>
+      <p class="sub">Die wichtigste Frage zuerst: Was muss ich als Nächstes tun?</p>
     </div>
     <a class="back" href="/">← MT·AI Lighthouse</a>
   </header>
+
   <main>
+    <section class="hero-actions-panel">
+      <div class="panel-head action-head">
+        <div><p class="eyebrow">NEXT BEST ACTION</p><h2>Was ist jetzt zu tun?</h2></div>
+        <p id="action-date">Priorisiert nach Dringlichkeit und Business-Wirkung.</p>
+      </div>
+      <div id="next-actions" class="next-actions"></div>
+    </section>
+
     <section class="status-grid" aria-label="Funnel Status">
       <article><span>Aktive Opportunities</span><strong id="active-count">–</strong></article>
       <article><span>Projekte</span><strong id="project-count">–</strong></article>
       <article><span>Kontakte</span><strong id="contact-count">–</strong></article>
-      <article><span>Letzte Aktualisierung</span><strong id="updated-at">–</strong></article>
+      <article><span>Datenstand</span><strong id="updated-at">–</strong></article>
     </section>
+
     <section class="panel">
-      <div class="panel-head"><div><p class="eyebrow">Pipeline</p><h2>Sales Funnel</h2></div><p>Lead → Kontakt → Qualifiziert → Projekt → Angebot → Verhandlung → Won / Lost</p></div>
+      <div class="panel-head"><div><p class="eyebrow">PIPELINE</p><h2>Sales Funnel</h2></div><p>Lead → Kontakt → Qualifiziert → Projekt → Angebot → Verhandlung → Won / Lost</p></div>
       <div id="funnel" class="funnel"></div>
     </section>
+
     <section class="panel">
-      <div class="panel-head"><div><p class="eyebrow">Execution</p><h2>Aktive Opportunities</h2></div><p>Nur das, was gerade Bewegung oder einen klaren nächsten Schritt hat.</p></div>
+      <div class="panel-head"><div><p class="eyebrow">EXECUTION</p><h2>Aktive Opportunities</h2></div><p>Details nur dort, wo gerade Bewegung oder ein klarer nächster Schritt existiert.</p></div>
       <div id="opportunity-list" class="opportunity-list"></div>
     </section>
+
     <section class="panel">
-      <div class="panel-head"><div><p class="eyebrow">Activity</p><h2>Letzte Vertriebsaktivitäten</h2></div><p>Chronologischer Verlauf aus dem Activity Log.</p></div>
+      <div class="panel-head"><div><p class="eyebrow">ACTIVITY</p><h2>Letzte Vertriebsaktivitäten</h2></div><p>Gespräch, Kontakt, Projekt oder festgelegte Next Action – chronologisch.</p></div>
       <div id="activity-list" class="activity-list"></div>
     </section>
   </main>
+
   <script src="/business-os/business-os.js" defer></script>
 </body>
 </html>
