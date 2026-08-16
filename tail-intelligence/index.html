@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="methodology.css">
   <style>
-    .business-os-link{display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(100%,390px);margin:2px 0 20px;padding:14px 16px;border:1px solid rgba(83,223,208,.45);border-radius:12px;color:#eefcff;background:linear-gradient(135deg,rgba(29,112,135,.48),rgba(14,65,86,.72));text-decoration:none;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+    .business-os-links{display:flex;flex-wrap:wrap;gap:12px;margin:2px 0 20px}\n    .business-os-links .business-os-link{margin:0}\n    .business-os-link{display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(100%,390px);margin:2px 0 20px;padding:14px 16px;border:1px solid rgba(83,223,208,.45);border-radius:12px;color:#eefcff;background:linear-gradient(135deg,rgba(29,112,135,.48),rgba(14,65,86,.72));text-decoration:none;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
     .business-os-link:hover{transform:translateY(-1px);border-color:#53dfd0;box-shadow:0 8px 24px rgba(20,179,185,.16)}
     .business-os-link b,.business-os-link small{display:block}.business-os-link b{font-size:.88rem}.business-os-link small{margin-top:3px;color:#9fd7dc;font-size:.69rem;line-height:1.25}.business-os-link>span{color:#53dfd0;font-size:1.35rem}
   </style>
@@ -21,7 +21,10 @@
         <img class="dashboard-brand-logo" src="../assets/mt-ai-lighthouse-logo.png" width="874" height="179" alt="MT·AI Lighthouse – AI Infrastructure &amp; Semiconductor Intelligence">
         <p class="eyebrow">PRIVATE INTELLIGENCE · LAGEBILD 3.2</p>
         <h1>MT·AI Intelligence Dashboard</h1>
-        <a class="business-os-link" href="https://mtai-business-l36bfhtq5-mikbramis-projects.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="MT AI Business OS in einem neuen Tab öffnen"><span><b>ZUM MT·AI BUSINESS OS</b><small>Leads · Unternehmen · Vertriebsaktionen</small></span><span aria-hidden="true">→</span></a>
+        <div class="business-os-links">
+          <a class="business-os-link" href="https://mtai-business-os.mth.chatgpt.site" target="_blank" rel="noopener noreferrer" aria-label="MT AI Business OS für Daten und Leads öffnen"><span><b>BUSINESS OS · DATEN &amp; LEADS</b><small>Erfassen · bearbeiten · Unternehmen · Verkaufschancen</small></span><span aria-hidden="true">→</span></a>
+          <a class="business-os-link" href="https://mtai-business-l36bfhtq5-mikbramis-projects.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="MT AI Morning View mit den aktuellen Prioritäten öffnen"><span><b>MORNING VIEW · PRIORITÄTEN</b><small>Next Best Actions · Funnel · aktuelle Account-Lage</small></span><span aria-hidden="true">→</span></a>
+        </div>
         <p id="summary" class="summary">Daten werden geladen …</p>
         <p id="momentum" class="momentum"></p>
       </div>
