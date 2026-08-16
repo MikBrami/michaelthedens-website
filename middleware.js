@@ -1,6 +1,6 @@
 import { next } from '@vercel/functions';
 
-const PRIVATE_ORIGIN = 'https://michaelthedens-website-git-agent-priv-e7b9d6-mikbramis-projects.vercel.app';
+const PRIVATE_ORIGIN = 'https://michaelthedens-website-git-mtai-private-mikbramis-projects.vercel.app';
 const PRIVATE_PATHS = [
   '/tail-daily-intelligence',
   '/tail-intelligence',
