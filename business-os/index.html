@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07101f">
   <title>MT·AI Business OS – Sales Funnel</title>
-  <link rel="stylesheet" href="business-os.css">
+  <link rel="stylesheet" href="/business-os/business-os.css">
 </head>
 <body>
   <header class="topbar">
@@ -16,7 +16,6 @@
     </div>
     <a class="back" href="/">← MT·AI Lighthouse</a>
   </header>
-
   <main>
     <section class="status-grid" aria-label="Funnel Status">
       <article><span>Aktive Opportunities</span><strong id="active-count">–</strong></article>
@@ -24,32 +23,19 @@
       <article><span>Kontakte</span><strong id="contact-count">–</strong></article>
       <article><span>Letzte Aktualisierung</span><strong id="updated-at">–</strong></article>
     </section>
-
     <section class="panel">
-      <div class="panel-head">
-        <div><p class="eyebrow">Pipeline</p><h2>Sales Funnel</h2></div>
-        <p>Lead → Kontakt → Qualifiziert → Projekt → Angebot → Verhandlung → Won / Lost</p>
-      </div>
+      <div class="panel-head"><div><p class="eyebrow">Pipeline</p><h2>Sales Funnel</h2></div><p>Lead → Kontakt → Qualifiziert → Projekt → Angebot → Verhandlung → Won / Lost</p></div>
       <div id="funnel" class="funnel"></div>
     </section>
-
     <section class="panel">
-      <div class="panel-head">
-        <div><p class="eyebrow">Execution</p><h2>Aktive Opportunities</h2></div>
-        <p>Nur das, was gerade Bewegung oder einen klaren nächsten Schritt hat.</p>
-      </div>
+      <div class="panel-head"><div><p class="eyebrow">Execution</p><h2>Aktive Opportunities</h2></div><p>Nur das, was gerade Bewegung oder einen klaren nächsten Schritt hat.</p></div>
       <div id="opportunity-list" class="opportunity-list"></div>
     </section>
-
     <section class="panel">
-      <div class="panel-head">
-        <div><p class="eyebrow">Activity</p><h2>Letzte Vertriebsaktivitäten</h2></div>
-        <p>Chronologischer Verlauf aus dem Activity Log.</p>
-      </div>
+      <div class="panel-head"><div><p class="eyebrow">Activity</p><h2>Letzte Vertriebsaktivitäten</h2></div><p>Chronologischer Verlauf aus dem Activity Log.</p></div>
       <div id="activity-list" class="activity-list"></div>
     </section>
   </main>
-
-  <script src="business-os.js" defer></script>
+  <script src="/business-os/business-os.js" defer></script>
 </body>
 </html>
