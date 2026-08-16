@@ -11,6 +11,17 @@ const readJson = (file, fallback) => {
   try { return JSON.parse(fs.readFileSync(file, 'utf8')); } catch { return fallback; }
 };
 
+const berlinDate = (value) => {
+  const parsed = Date.parse(value || '');
+  if (!Number.isFinite(parsed)) return String(value || '').slice(0, 10);
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Berlin',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(new Date(parsed));
+};
+
 const inbox = readJson(inboxPath, { items: [] });
 const daily = readJson(latestDailyPath, {});
 const snapshot = readJson(publicPath, null);
@@ -168,7 +179,7 @@ for (const item of candidates) {
 }
 
 const news = selected.map((item) => ({
-  date: String(item.published_at || item.ingested_at || daily.updatedAt || '').slice(0, 10),
+  date: berlinDate(item.published_at || item.ingested_at || daily.updatedAt),
   title: item.title,
   summary: cleanSummary(item),
   analysis: readerImpact(item),
@@ -182,7 +193,7 @@ const news = selected.map((item) => ({
 
 if (accepted.length) {
   snapshot.signals = accepted.slice(0, 3).map((signal) => ({
-    date: String(daily.updatedAt || '').slice(0, 10),
+    date: berlinDate(daily.updatedAt),
     title: signal.title,
     summary: signal.fact || signal.estimate || signal.title,
     analysis: signal.tailInference || signal.redPencil?.forecastChange || 'TAIL Daily Intelligence signal.',
