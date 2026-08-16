@@ -1,0 +1,19 @@
+const stageOrder=["Lead","Kontakt","Qualifiziert","Projekt","Angebot","Verhandlung","Won","Lost"];
+
+function esc(v=''){return String(v).replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':'&quot;'}[c]))}
+function fmtDate(v){if(!v)return '–';const d=new Date(v.length===10?`${v}T00:00:00`:v);return Number.isNaN(d.getTime())?v:new Intl.DateTimeFormat('de-DE',{dateStyle:'medium'}).format(d)}
+
+async function loadJson(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json()}
+
+function renderFunnel(opps){const root=document.querySelector('#funnel');root.innerHTML=stageOrder.map(stage=>{const rows=opps.filter(o=>o.stage===stage);return `<article class="stage ${rows.length?'active':''}"><div class="stage-name">${esc(stage)}</div><div class="stage-count">${rows.length}</div><div class="stage-accounts">${rows.map(o=>esc(o.account)).join('<br>')||'–'}</div></article>`}).join('')}
+
+function quantityText(o){if(o.current_charge?.servers){const c=o.current_charge;const p=o['2026_potential'];return `Charge 1: ${c.servers} Server / ${c.memory_modules} × ${c.module_capacity_gb} GB${p?` · 2026: bis ${p.servers} Server / ${p.memory_modules} DIMMs`:''}`}
+return '–'}
+
+function renderOpps(opps){const root=document.querySelector('#opportunity-list');const active=opps.filter(o=>!['Won','Lost'].includes(o.stage));root.innerHTML=active.length?active.map(o=>`<article class="opp"><div class="opp-top"><div><h3>${esc(o.account)}</h3><div>${esc(o.project||'')}</div></div><span class="pill">${esc(o.stage)}</span></div><div class="meta"><div><span>Menge / Potenzial</span><strong>${esc(quantityText(o))}</strong></div><div><span>Letzter Fortschritt</span><strong>${esc(o.last_progress||'–')}</strong></div><div><span>Next Action</span><strong>${esc(o.next_action||'–')}</strong></div><div><span>Blocker / Risiko</span><strong>${esc((o.blockers||[]).join(', ')||'–')}</strong></div><div><span>Cross-Selling</span><strong>${esc((o.cross_sell||[]).join(', ')||'–')}</strong></div><div><span>Quelle</span><strong>${esc(o.source||'–')}</strong></div></div></article>`).join(''):`<div class="empty">Keine aktiven Opportunities.</div>`}
+
+function renderActivities(items){const root=document.querySelector('#activity-list');const sorted=[...items].sort((a,b)=>String(b.date).localeCompare(String(a.date)));root.innerHTML=sorted.length?sorted.map(a=>`<article class="activity"><time>${esc(fmtDate(a.date))}</time><div class="account">${esc(a.account)} · ${esc(a.type)}</div><p>${esc(a.summary)}${a.impact?` <strong>(${esc(a.impact)})</strong>`:''}</p></article>`).join(''):`<div class="empty">Noch keine Aktivitäten erfasst.</div>`}
+
+async function init(){try{const [funnelData,activityData]=await Promise.all([loadJson('./data/sales-funnel.json'),loadJson('./data/activity-log.json')]);const opps=funnelData.opportunities||[];document.querySelector('#active-count').textContent=opps.filter(o=>!['Won','Lost'].includes(o.stage)).length;document.querySelector('#project-count').textContent=opps.filter(o=>o.stage==='Projekt').length;document.querySelector('#contact-count').textContent=opps.filter(o=>o.stage==='Kontakt').length;document.querySelector('#updated-at').textContent=fmtDate(funnelData.updated_at);renderFunnel(opps);renderOpps(opps);renderActivities(activityData.activities||[])}catch(err){console.error(err);document.querySelector('#opportunity-list').innerHTML='<div class="empty">Sales-Daten konnten nicht geladen werden.</div>';document.querySelector('#activity-list').innerHTML='<div class="empty">Activity Log konnte nicht geladen werden.</div>'}}
+
+document.addEventListener('DOMContentLoaded',init);
