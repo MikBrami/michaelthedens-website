@@ -29,6 +29,9 @@ function validateDashboard(dashboard, articles) {
   if (!dashboard.lastSuccessfulUpdate || !dashboard.dataAsOf || !dashboard.lastForecastRun) throw new Error('Dashboard timestamps missing');
   if (dashboard.totalArticles !== articles.length || dashboard.articleCount !== articles.length) throw new Error('Article count mismatch');
   if (dashboard.tailIndex < 0 || dashboard.tailIndex > 100) throw new Error('TAIL index out of range');
+  if (dashboard.executivePulse?.current !== dashboard.tailIndex) throw new Error('Executive Pulse must equal the reproducible TAIL index');
+  if (dashboard.executivePulse?.methodologyVersion !== methodology.indexModel.version) throw new Error('Executive Pulse index methodology version mismatch');
+  if (!Array.isArray(dashboard.markets) || dashboard.markets.some((market) => !Array.isArray(market.drivers))) throw new Error('Market driver breakdown missing');
   if (!Array.isArray(dashboard.markets) || dashboard.markets.length < 5) throw new Error('Market indicators incomplete');
   if (!dashboard.inbox || !['ok', 'warning', 'error'].includes(dashboard.inbox.status)) throw new Error('Inbox status missing');
   if (!dashboard.pipeline || !Array.isArray(dashboard.pipeline.steps) || dashboard.pipeline.steps.length < 4) throw new Error('Pipeline status incomplete');
@@ -111,12 +114,23 @@ function validateDailySync(articles) {
 if (!exists('data/articles.json')) throw new Error('data/articles.json missing');
 if (!exists('config/sources.json')) throw new Error('config/sources.json missing');
 if (!exists('config/methodology.json')) throw new Error('config/methodology.json missing');
+if (!exists('data/operational-indicators.json')) throw new Error('data/operational-indicators.json missing');
 
 const methodology = readJson('config/methodology.json');
 if (methodology.schemaVersion !== 2 || methodology.version !== '3.1') throw new Error('Methodology config must be 3.1 schema 2');
 const rubricTotal = Object.values(methodology.signalRubric ?? {}).reduce((sum, value) => sum + Number(value || 0), 0);
 if (rubricTotal !== 100) throw new Error(`Signal rubric must total 100, got ${rubricTotal}`);
 if (methodology.gates?.accepted !== 80 || methodology.gates?.watchlist !== 65) throw new Error('Signal gates must be 80/65');
+const driverWeightTotal = Object.values(methodology.indexModel?.driverWeights ?? {}).reduce((sum, value) => sum + Number(value), 0);
+if (Math.abs(driverWeightTotal - 1) > 0.000001) throw new Error(`Index driver weights must total 1, got ${driverWeightTotal}`);
+const marketWeightTotal = Object.values(methodology.indexModel?.executiveMarketWeights ?? {}).reduce((sum, value) => sum + Number(value), 0);
+if (Math.abs(marketWeightTotal - 1) > 0.000001) throw new Error(`Executive market weights must total 1, got ${marketWeightTotal}`);
+const operationalIndicators = readJson('data/operational-indicators.json');
+if (operationalIndicators.schemaVersion !== 1 || !Array.isArray(operationalIndicators.indicators)) throw new Error('Operational indicator schema invalid');
+for (const indicator of operationalIndicators.indicators) {
+  if (!indicator.id || !indicator.date || !indicator.market || !indicator.driver || !indicator.state || !indicator.nextReview) throw new Error(`Operational indicator incomplete: ${indicator.id || 'unknown'}`);
+  if (!Number.isFinite(methodology.indexModel.operationalStateScale?.[indicator.state])) throw new Error(`Unknown operational state: ${indicator.state}`);
+}
 const clusterBudget = Object.values(methodology.clusters ?? {}).reduce((sum, cluster) => sum + Number(cluster.budget || 0), 0);
 if (Math.abs(clusterBudget - 1) > 0.000001) throw new Error(`Cluster budgets must total 1, got ${clusterBudget}`);
 

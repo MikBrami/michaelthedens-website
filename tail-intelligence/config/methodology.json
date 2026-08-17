@@ -13,6 +13,82 @@
     "accepted": 80,
     "watchlist": 65
   },
+  "indexModel": {
+    "version": "1.2",
+    "description": "Reproducible market-stress index. Signal admission, market severity and analytical confidence remain separate layers.",
+    "driverWeights": {
+      "demand": 0.25,
+      "pricing": 0.2,
+      "availability": 0.4,
+      "aiDemand": 0.15
+    },
+    "driverLabels": {
+      "demand": "Nachfrage",
+      "pricing": "Preisdynamik",
+      "availability": "Verfügbarkeit / Allocation",
+      "aiDemand": "AI-Nachfrage"
+    },
+    "executiveMarketWeights": {
+      "server_dram": 0.25,
+      "hbm": 0.2,
+      "enterprise_ssd": 0.2,
+      "nand": 0.1,
+      "ai_infrastructure": 0.15,
+      "supply_chain": 0.1
+    },
+    "watchlistMarkets": ["dram"],
+    "signalDriverImpact": {
+      "demand_up": { "demand": 1, "aiDemand": 1 },
+      "price_up": { "pricing": 1 },
+      "price_down": { "pricing": -1 },
+      "negative_supply": { "availability": 1 },
+      "capacity_lock": { "availability": 0.95, "aiDemand": 0.6 },
+      "capacity_relief": {},
+      "geopolitical_split": { "availability": 0.5 }
+    },
+    "operationalStateScale": {
+      "normal": 25,
+      "watch": 50,
+      "tight": 70,
+      "recurring_price_increases": 80,
+      "restricted": 85,
+      "severely_restricted": 95
+    },
+    "marketEvidencePolicies": {
+      "dram": {
+        "label": "Standard DRAM / UDIMM",
+        "excludeArticlesAlsoTagged": ["server_dram"],
+        "articleKeywords": ["udimm", "sodimm", "desktop dram", "pc dram", "notebook dram"]
+      },
+      "server_dram": {
+        "label": "Server DRAM / RDIMM"
+      }
+    },
+    "aiDemandContextMarkets": ["ai_infrastructure"],
+    "rankWeights": [1, 0.7, 0.5, 0.35, 0.25],
+    "recencyHalfLifeDays": 180,
+    "reliefOffsetPercent": 60,
+    "riskAvailabilitySharePercent": 40,
+    "minimumSegmentCoveragePercent": 70,
+    "criticalMarkets": ["server_dram", "hbm", "enterprise_ssd"],
+    "statusThresholds": {
+      "yellow": 45,
+      "orange": 65,
+      "red": 82
+    },
+    "rules": [
+      "Each evidence item starts with severity × confidence × directional impact × a 180-day half-life recency factor.",
+      "Per driver, at most the five strongest pressure and relief observations are rank-weighted to limit duplicate-news inflation.",
+      "Current availability and allocation are a dedicated 40% driver and can use short-lived operational channel observations.",
+      "A current operational availability observation sets a floor for that driver and cannot be diluted by older general news.",
+      "Announced future fab capacity does not reduce today's availability pressure until shipment, lead-time or fill-rate evidence exists.",
+      "Standard DRAM / UDIMM is a non-weighted watchlist segment; server evidence cannot automatically raise it or enter it by proxy.",
+      "Mobile LPDRAM, embedded NAND and Apple BOM evidence cannot be classified as UDIMM / SODIMM evidence without a direct form-factor reference.",
+      "A segment below 70% driver coverage is reported as insufficient data and excluded from the Executive Pulse instead of publishing a falsely precise score.",
+      "Segment scores use fixed driver weights; the Executive Pulse uses fixed segment weights.",
+      "Confidence and forecast calibration are displayed separately from market stress."
+    ]
+  },
   "scopeBudget": {
     "memory_storage": {
       "minimum": 60,

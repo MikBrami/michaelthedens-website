@@ -63,7 +63,9 @@ function renderDashboard(snapshot) {
   document.getElementById("freshness-text").textContent = `${isCurrent ? "Aktuell" : "Prüfung läuft"} · Datenstand ${formatDate(platform.dataAsOf)} · ${platform.articleCount ?? "–"} Quellen im Lagebild`;
 
   const markets = Array.isArray(platform.markets) ? platform.markets.slice(0, 6) : [];
-  document.getElementById("mini-markets").innerHTML = markets.slice(0, 3).map((market) => `
+  const indexMarketIds = ["server_dram", "hbm", "enterprise_ssd"];
+  const indexMarkets = indexMarketIds.map((id) => markets.find((market) => market.id === id)).filter(Boolean);
+  document.getElementById("mini-markets").innerHTML = indexMarkets.map((market) => `
     <div class="mini-market">
       <span>${escapeHtml(market.label)}</span><strong>${Number(market.score) || 0}</strong>
       <div><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>

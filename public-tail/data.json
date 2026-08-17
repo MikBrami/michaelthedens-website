@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T05:50:11.658Z",
+  "generatedAt": "2026-08-17T11:03:28.716Z",
   "platform": {
     "dataAsOf": "2026-08-17",
     "dataFreshness": "current",
@@ -8,64 +8,68 @@
     "articleCount": 118,
     "markets": [
       {
-        "id": "server_dram",
-        "label": "Server DRAM",
-        "score": 84,
+        "id": "enterprise_ssd",
+        "label": "Enterprise SSD",
+        "score": 83,
         "status": "red",
         "signals": 12
       },
       {
+        "id": "server_dram",
+        "label": "Server DRAM / RDIMM",
+        "score": 82,
+        "status": "red",
+        "signals": 13
+      },
+      {
         "id": "hbm",
         "label": "HBM",
-        "score": 83,
-        "status": "red",
+        "score": 80,
+        "status": "orange",
         "signals": 26
-      },
-      {
-        "id": "dram",
-        "label": "DRAM",
-        "score": 81,
-        "status": "orange",
-        "signals": 34
-      },
-      {
-        "id": "semiconductors",
-        "label": "Semiconductors",
-        "score": 81,
-        "status": "orange",
-        "signals": 30
       },
       {
         "id": "ai_infrastructure",
         "label": "AI Infrastructure",
-        "score": 80,
+        "score": 78,
         "status": "orange",
         "signals": 83
       },
       {
-        "id": "enterprise_ssd",
-        "label": "Enterprise SSD",
-        "score": 73,
+        "id": "semiconductors",
+        "label": "Semiconductors",
+        "score": 75,
         "status": "orange",
-        "signals": 10
+        "signals": 30
+      },
+      {
+        "id": "nand",
+        "label": "NAND",
+        "score": 69,
+        "status": "orange",
+        "signals": 11
       }
     ],
-    "sourceDataAsOf": "2026-08-15",
+    "sourceDataAsOf": "2026-08-17",
     "analysisAsOf": "2026-08-17"
   },
   "executivePulse": {
-    "current": 89,
-    "previous": 89,
+    "current": 78,
+    "previous": 78,
     "status": "orange",
-    "interpretation": "Memory und AI-Infrastruktur bleiben unter hohem Druck. Server DRAM, HBM, DRAM zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-17 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "confidence": 87,
+    "riskPressure": 84,
+    "coverage": 100,
+    "methodologyVersion": "1.2",
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Enterprise SSD, Server DRAM / RDIMM, HBM zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-17 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-08-17",
-      "title": "Samsung prüft Giheung‑F&E‑Linie für 2‑nm‑HBM‑Foundry‑Kapazität",
-      "summary": "Digitimes berichtet, Samsung erwäge, die Giheung-F&E‑Linie zur Bereitstellung von 2‑nm‑HBM‑Foundry‑Kapazität zu nutzen.",
+      "title": "Samsung weighs Giheung R&D line for 2nm HBM foundry capacity",
+      "summary": "Aktuelle Meldung von digitimes: Samsung weighs Giheung R&D line for 2nm HBM foundry capacity",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 97,
+      "score": 94,
       "relevanceScore": 100,
       "sourceQuality": 10,
       "source": "digitimes",
@@ -74,10 +78,10 @@
     },
     {
       "date": "2026-08-17",
-      "title": "Samsung und SK Hynix vor Neubewertung nach SanDisks überraschender 80%-Prognose",
-      "summary": "Invezz berichtet, dass Samsung und SK Hynix nach SanDisks überraschender 80%-Prognose mit einer Neubewertung konfrontiert seien.",
+      "title": "Samsung, SK Hynix face fresh repricing after SanDisk’s stunning 80% forecast",
+      "summary": "Samsung, SK Hynix face fresh repricing after SanDisk’s stunning 80% forecast invezz.com",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "invezz.com",
@@ -86,10 +90,10 @@
     },
     {
       "date": "2026-08-17",
-      "title": "YMTC überholt Kioxia bei NAND‑Chiplieferungen",
-      "summary": "The Malaysian Reserve berichtet, dass YMTC Kioxia bei den NAND‑Chiplieferungen überholt hat.",
+      "title": "YMTC passes Kioxia in NAND chip shipments",
+      "summary": "YMTC passes Kioxia in NAND chip shipments The Malaysian Reserve",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "The Malaysian Reserve",
@@ -144,7 +148,7 @@
       "title": "Samsung weighs Giheung R&D line for 2nm HBM foundry capacity",
       "summary": "Aktuelle Meldung von digitimes: Samsung weighs Giheung R&D line for 2nm HBM foundry capacity",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 97,
+      "score": 94,
       "relevanceScore": 100,
       "sourceQuality": 10,
       "source": "digitimes",
@@ -156,7 +160,7 @@
       "title": "Samsung, SK Hynix face fresh repricing after SanDisk’s stunning 80% forecast",
       "summary": "Samsung, SK Hynix face fresh repricing after SanDisk’s stunning 80% forecast invezz.com",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "invezz.com",
@@ -168,7 +172,7 @@
       "title": "YMTC passes Kioxia in NAND chip shipments",
       "summary": "YMTC passes Kioxia in NAND chip shipments The Malaysian Reserve",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "The Malaysian Reserve",
@@ -177,9 +181,9 @@
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-17T05:50:11.823Z",
+    "generatedAt": "2026-08-17T11:03:28.791Z",
     "count": 3,
-    "candidateCount": 92,
+    "candidateCount": 73,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -191,7 +195,7 @@
       "title": "Samsung weighs Giheung R&D line for 2nm HBM foundry capacity",
       "summary": "Aktuelle Meldung von digitimes: Samsung weighs Giheung R&D line for 2nm HBM foundry capacity",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 97,
+      "score": 94,
       "relevanceScore": 100,
       "sourceQuality": 10,
       "source": "digitimes",
@@ -203,7 +207,7 @@
       "title": "Samsung, SK Hynix face fresh repricing after SanDisk’s stunning 80% forecast",
       "summary": "Samsung, SK Hynix face fresh repricing after SanDisk’s stunning 80% forecast invezz.com",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "invezz.com",
@@ -215,20 +219,12 @@
       "title": "YMTC passes Kioxia in NAND chip shipments",
       "summary": "YMTC passes Kioxia in NAND chip shipments The Malaysian Reserve",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "The Malaysian Reserve",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPODhrdlMwYlExU0M4X0lRZ2ZmVWVlckJVcy10OEM0eUppb0NPVDM1UUx4VldXQ3lRbkJRTWZVNWduMUgxVWdONk13LTNNWHpHLVVyOVdpNi1tdE9BTFhjWlJkV0FhU0g4bUh3d0xyNXBNZk9tS1dLbURaOF9VMFNBaTN5YVprS1hpa0c2Mm9B?oc=5",
       "layer": "news"
     }
-  ],
-  "editorial": {
-    "germanNews": {
-      "language": "de-DE",
-      "model": "gpt-5-mini",
-      "mode": "editorial_translation",
-      "generatedAt": "2026-08-17T05:50:29.392Z"
-    }
-  }
+  ]
 }

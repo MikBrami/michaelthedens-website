@@ -16,56 +16,60 @@
     "articleCount": 118,
     "markets": [
       {
-        "id": "server_dram",
-        "label": "Server DRAM",
-        "score": 84,
+        "id": "enterprise_ssd",
+        "label": "Enterprise SSD",
+        "score": 83,
         "status": "red",
         "signals": 12
       },
       {
+        "id": "server_dram",
+        "label": "Server DRAM / RDIMM",
+        "score": 82,
+        "status": "red",
+        "signals": 13
+      },
+      {
         "id": "hbm",
         "label": "HBM",
-        "score": 83,
-        "status": "red",
+        "score": 80,
+        "status": "orange",
         "signals": 26
-      },
-      {
-        "id": "dram",
-        "label": "DRAM",
-        "score": 81,
-        "status": "orange",
-        "signals": 34
-      },
-      {
-        "id": "semiconductors",
-        "label": "Semiconductors",
-        "score": 81,
-        "status": "orange",
-        "signals": 30
       },
       {
         "id": "ai_infrastructure",
         "label": "AI Infrastructure",
-        "score": 80,
+        "score": 78,
         "status": "orange",
         "signals": 83
       },
       {
-        "id": "enterprise_ssd",
-        "label": "Enterprise SSD",
-        "score": 73,
+        "id": "semiconductors",
+        "label": "Semiconductors",
+        "score": 75,
         "status": "orange",
-        "signals": 10
+        "signals": 30
+      },
+      {
+        "id": "nand",
+        "label": "NAND",
+        "score": 69,
+        "status": "orange",
+        "signals": 11
       }
     ],
     "sourceDataAsOf": "2026-08-15",
     "analysisAsOf": "2026-08-17"
   },
   "executivePulse": {
-    "current": 89,
-    "previous": 89,
+    "current": 78,
+    "previous": 78,
     "status": "orange",
-    "interpretation": "Memory and AI infrastructure remain under high pressure. Server DRAM, HBM, DRAM are currently among the tightest areas. The Daily Check from 2026-08-17 reviewed 8 current relevant items; there is currently no confirmed material change in direction. New capacity and improved yields can relieve pressure but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain critical."
+    "confidence": 87,
+    "riskPressure": 84,
+    "coverage": 100,
+    "methodologyVersion": "1.2",
+    "interpretation": "Memory and AI infrastructure remain under high pressure. Enterprise SSD, Server DRAM / RDIMM and HBM are currently among the tightest areas. The Daily Check from 17 August 2026 reviewed eight relevant current reports and found no confirmed material change in direction. New capacity and better yields may provide relief, but will reach the market only after a delay. Supply assurance, alternative BOMs and early procurement therefore remain critical for buyers."
   },
   "signals": [
     {

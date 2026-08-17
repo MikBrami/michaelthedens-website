@@ -22,6 +22,7 @@ const allowedTopLevelKeys = new Set([
   'platform',
   'executivePulse',
   'signals',
+  'originalSignals',
   'catalysts',
   'dailyStatus',
   'news',

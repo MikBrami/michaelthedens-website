@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-17T12:00:00+02:00",
+  "indicators": [
+    {
+      "id": "OP-2026-08-17-SERVER-RDIMM-AVAILABILITY",
+      "date": "2026-08-17",
+      "market": "server_dram",
+      "driver": "availability",
+      "state": "severely_restricted",
+      "confidence": 90,
+      "halfLifeDays": 14,
+      "sourceType": "operational_channel_observation",
+      "note": "Server-RDIMMs are scarcely available and confirmed shipment quantities are increasingly restricted.",
+      "nextReview": "2026-08-24"
+    },
+    {
+      "id": "OP-2026-08-17-STANDARD-DRAM-AVAILABILITY",
+      "date": "2026-08-17",
+      "market": "dram",
+      "driver": "availability",
+      "state": "normal",
+      "confidence": 85,
+      "halfLifeDays": 14,
+      "sourceType": "operational_channel_observation",
+      "note": "UDIMM availability is broadly adequate; 32 GB UDIMMs are materially cheaper than comparable 32 GB ECC registered modules.",
+      "nextReview": "2026-08-24"
+    },
+    {
+      "id": "OP-2026-08-17-ENTERPRISE-SSD-AVAILABILITY",
+      "date": "2026-08-17",
+      "market": "enterprise_ssd",
+      "driver": "availability",
+      "state": "severely_restricted",
+      "confidence": 90,
+      "halfLifeDays": 14,
+      "sourceType": "operational_channel_observation",
+      "note": "Enterprise SSD availability is as constrained as server memory; when no inventory is available, quoted lead times are typically 6–10 weeks.",
+      "nextReview": "2026-08-24"
+    },
+    {
+      "id": "OP-2026-08-17-ENTERPRISE-SSD-PRICING",
+      "date": "2026-08-17",
+      "market": "enterprise_ssd",
+      "driver": "pricing",
+      "state": "recurring_price_increases",
+      "confidence": 90,
+      "halfLifeDays": 42,
+      "sourceType": "operational_channel_observation",
+      "note": "Enterprise SSD supplier pricing is currently being increased on a recurring 4–6 week cadence; no uniform percentage magnitude is asserted.",
+      "nextReview": "2026-09-14"
+    }
+  ]
+}

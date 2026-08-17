@@ -5,7 +5,7 @@ const fmtDate = value => {
   if (Number.isNaN(date.getTime())) return String(value);
   return new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium', timeStyle: String(value).includes('T') ? 'short' : undefined }).format(date);
 };
-const statusLabel = s => ({ red:'Rot', orange:'Orange', yellow:'Gelb', green:'Grün', ok:'OK', warning:'Warnung', error:'Fehler', current:'Aktuell', stale:'Veraltet', invalid:'Ungültig', open:'Offen', changed:'Geändert', new:'Neu', endangered:'Gefährdet', confirmed:'Bestätigt', hit:'Treffer', miss:'Fehlprognose', partial:'Teilauflösung', unresolved:'Nicht auflösbar', partially_confirmed:'Teilbestätigt', historical_closed:'Historisch geschlossen', active:'Aktiv', active_weakened:'Aktiv, geschwächt', active_strengthened:'Aktiv, verstärkt', long_term:'Langfristig', new_active:'Neu, aktiv', new_watch:'Neu, beobachten', data_validation_pending:'Datenprüfung läuft', validation_pending:'Datenprüfung läuft', quarantined:'Quarantäne', accepted:'Aufgenommen', watchlist:'Watchlist', watchlist_scope:'Scope-Watchlist', grandfathered:'Bestandsschutz', rejected:'Abgelehnt' })[s] ?? s;
+const statusLabel = s => ({ red:'Rot', orange:'Orange', yellow:'Gelb', green:'Grün', unknown:'Datenlücke', ok:'OK', warning:'Warnung', error:'Fehler', current:'Aktuell', stale:'Veraltet', invalid:'Ungültig', open:'Offen', changed:'Geändert', new:'Neu', endangered:'Gefährdet', confirmed:'Bestätigt', hit:'Treffer', miss:'Fehlprognose', partial:'Teilauflösung', unresolved:'Nicht auflösbar', partially_confirmed:'Teilbestätigt', historical_closed:'Historisch geschlossen', active:'Aktiv', active_weakened:'Aktiv, geschwächt', active_strengthened:'Aktiv, verstärkt', long_term:'Langfristig', new_active:'Neu, aktiv', new_watch:'Neu, beobachten', data_validation_pending:'Datenprüfung läuft', validation_pending:'Datenprüfung läuft', quarantined:'Quarantäne', accepted:'Aufgenommen', watchlist:'Watchlist', watchlist_scope:'Scope-Watchlist', grandfathered:'Bestandsschutz', rejected:'Abgelehnt' })[s] ?? s;
 const processIcon = s => ({ ok:'🟢', warning:'🟠', error:'🔴' })[s] ?? '⚪';
 const directionLabel = d => ({ strong_up:'stark steigend', up:'steigend', watch:'beobachten', stable:'stabil', unknown:'unbekannt' })[d] ?? d;
 const classificationLabel = value => ({
@@ -153,7 +153,12 @@ function renderPlatform(d) {
     showError(warningText || 'TAIL meldet einen Warn- oder Fehlerstatus.');
   }
   $('pipeline').innerHTML = (d.pipeline?.steps || []).map(step => `<article><div class="row"><strong>${processIcon(step.status)} ${escapeHtml(step.label)}</strong><span>${statusLabel(step.status)}</span></div><small>${escapeHtml(step.detail)}</small></article>`).join('');
-  $('markets').innerHTML = (d.markets || []).map(m => `<article><div class="metric"><div><div class="tag ${m.status}">${statusLabel(m.status)}</div><h3>${escapeHtml(m.label)}</h3></div><span class="lamp ${m.status}"></span></div><div class="score ${m.status}">${m.score}</div><small>${m.signals} Signale</small></article>`).join('');
+  $('markets').innerHTML = (d.markets || []).map(m => {
+    const drivers = (m.drivers || []).map(driver => `${escapeHtml(driver.label)} ${driver.score ?? '–'}`).join(' · ');
+    const displayScore = Number.isFinite(m.score) ? m.score : '–';
+    const coverageNote = m.sufficientlyCovered === false ? ` · Indikativer Teilwert ${m.indicativeScore}, nicht im Executive Pulse` : '';
+    return `<article><div class="metric"><div><div class="tag ${m.status}">${statusLabel(m.status)}</div><h3>${escapeHtml(m.label)}</h3></div><span class="lamp ${m.status}"></span></div><div class="score ${m.status}">${displayScore}</div><small>${m.signals} Signale · Confidence ${m.confidence ?? '–'} · Abdeckung ${m.coverage ?? '–'}%${coverageNote}</small>${drivers ? `<small>${drivers}</small>` : ''}</article>`;
+  }).join('');
   $('manufacturers').innerHTML = (d.manufacturers || []).map((m,i) => `<article><div class="row"><strong>${i+1}. ${escapeHtml(m.name)}</strong><span>${m.score}</span></div><div class="bar"><i style="width:${m.score}%"></i></div><small>${m.mentions} Nennungen</small></article>`).join('');
   $('forecasts').innerHTML = (d.forecasts || []).map(f => `<article><div class="row"><strong>${escapeHtml(f.market)}</strong><span>${escapeHtml(f.horizon)}</span></div><p>${escapeHtml(f.keyThesis || f.thesis)}</p><small>Score ${f.relevanceScore ?? '–'} · Konfidenz ${f.confidenceScore ?? f.confidence ?? '–'}% · Momentum ${f.momentum ?? '–'} · ${directionLabel(f.direction)}</small></article>`).join('');
   $('signals').innerHTML = (d.topSignals || []).map(s => `<article class="${s.status}"><div class="row"><span class="tag">${fmtDate(s.date)}</span><strong>${s.score}/100</strong></div><h3>${escapeHtml(s.title)}</h3><p>${escapeHtml(s.summary)}</p><p><strong>TAIL:</strong> ${escapeHtml(s.analysis)}</p></article>`).join('');
@@ -275,6 +280,19 @@ async function loadDashboard() {
     const updates = await Promise.all(files.map((name) => fetchOptionalJson(`data/${name}`)));
     renderPlatform(platform);
     const mergedDaily = updates.reduce((state, update) => mergeDaily(state, update), daily);
+    if (platform.executivePulse) {
+      mergedDaily.executivePulse = platform.executivePulse;
+      mergedDaily.confidence = {
+        ...(mergedDaily.confidence || {}),
+        current: platform.executivePulse.confidence,
+        interpretation: 'Datenvertrauen des reproduzierbaren Indexmodells; getrennt vom Marktdruck.'
+      };
+      mergedDaily.riskPressure = {
+        ...(mergedDaily.riskPressure || {}),
+        current: platform.executivePulse.riskPressure
+      };
+      mergedDaily.driverScores = platform.executivePulse.drivers || mergedDaily.driverScores;
+    }
     renderDaily(applyMethodology(mergedDaily, methodology, ledger), methodology);
   } catch (error) { showError(`Dashboard konnte nicht vollständig geladen werden: ${error.message}`); }
 }

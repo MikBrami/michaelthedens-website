@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { calculateIndexModel, statusForIndex } from './index-model.mjs';
 
 const root = path.resolve(process.cwd());
 const dataDir = path.join(root, 'data');
@@ -10,6 +11,7 @@ const outputPath = path.join(dataDir, 'dashboard.json');
 const methodologyPath = path.join(root, 'config', 'methodology.json');
 const forecastLedgerPath = path.join(dataDir, 'forecast-ledger.json');
 const latestDailyPath = path.join(dataDir, 'daily-intelligence-latest.json');
+const operationalIndicatorsPath = path.join(dataDir, 'operational-indicators.json');
 const publicOutputPath = path.resolve(root, '..', 'public-tail', 'data.json');
 
 function readJson(filePath, fallback) {
@@ -25,6 +27,8 @@ if (!Array.isArray(articles) || articles.length === 0) throw new Error('articles
 const methodology = readJson(methodologyPath, { signalOverrides: {}, forecastOverrides: {} });
 const forecastLedger = readJson(forecastLedgerPath, { forecasts: [] });
 const latestDaily = readJson(latestDailyPath, {});
+const operationalIndicatorData = readJson(operationalIndicatorsPath, { indicators: [] });
+const previousDashboard = readJson(outputPath, {});
 
 const inbox = readJson(inboxPath, { updated_at: null, new_items: 0, duplicate_items: [], items: [] });
 const updateStatus = readJson(statusPath, {
@@ -82,7 +86,7 @@ const scoreSignal = (article) => {
   const base = Number(article.severity ?? 0) * (Number(article.confidence ?? 0) / 100);
   return Math.round(Math.max(0, Math.min(100, base * Math.abs(weights[article.signal] ?? 0.65))));
 };
-const trafficLight = (score) => score >= 82 ? 'red' : score >= 65 ? 'orange' : score >= 45 ? 'yellow' : 'green';
+const trafficLight = (score) => statusForIndex(score, methodology.indexModel?.statusThresholds);
 const directionFor = (score) => score >= 82 ? 'strong_up' : score >= 65 ? 'up' : score >= 45 ? 'watch' : 'stable';
 const momentumFor = (items) => {
   const pressure = items.filter((a) => ['negative_supply', 'capacity_lock', 'price_up', 'demand_up', 'geopolitical_split'].includes(a.signal)).length;
@@ -101,6 +105,8 @@ function daysSinceDate(dateValue) {
 }
 
 const newestDate = articles.map((a) => a.date).filter(Boolean).sort().at(-1);
+const operationalAsOf = operationalIndicatorData.indicators.map((item) => item.date).filter(Boolean).sort().at(-1);
+const indexAsOf = [newestDate, operationalAsOf].filter(Boolean).sort().at(-1);
 const dataAgeDays = daysSinceDate(newestDate);
 const dataFreshness = !newestDate ? 'invalid' : dataAgeDays > 2 ? 'stale' : 'current';
 
@@ -113,21 +119,14 @@ const normalizedArticles = articles.map((article) => ({
   excludedFromScores: methodology.signalOverrides?.[article.id]?.excludedFromScores ?? false
 }));
 
-const marketBuckets = new Map();
-for (const article of normalizedArticles) {
-  if (article.excludedFromScores) continue;
-  for (const market of article.markets ?? []) {
-    const bucket = marketBuckets.get(market) ?? [];
-    bucket.push(article.score);
-    marketBuckets.set(market, bucket);
-  }
-}
-const markets = [...marketBuckets.entries()].map(([id, scores]) => {
-  const peak = Math.max(...scores);
-  const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
-  const score = Math.round(peak * 0.65 + avg * 0.35);
-  return { id, label: marketLabels[id] ?? id, score, status: trafficLight(score), signals: scores.length };
-}).sort((a, b) => b.score - a.score);
+const indexModel = calculateIndexModel(
+  normalizedArticles.filter((article) => !article.excludedFromScores),
+  methodology,
+  { asOf: indexAsOf, operationalIndicators: operationalIndicatorData.indicators }
+);
+const markets = indexModel.markets
+  .map((market) => ({ ...market, label: methodology.indexModel.marketEvidencePolicies?.[market.id]?.label ?? marketLabels[market.id] ?? market.id }))
+  .sort((a, b) => b.score - a.score);
 
 const companyMap = new Map();
 for (const article of normalizedArticles) {
@@ -202,7 +201,7 @@ function buildForecast(definition) {
 const forecasts = requiredForecasts.map(buildForecast);
 const missingForecasts = forecasts.filter((forecast) => forecast.sourceArticleIds.length === 0).map((forecast) => forecast.id);
 
-const overall = Math.round(markets.slice(0, 6).reduce((sum, market) => sum + market.score, 0) / Math.min(6, markets.length));
+const overall = indexModel.executiveScore;
 const severe = normalizedArticles.filter((article) => article.score >= 75).sort((a, b) => b.score - a.score);
 
 const inboxItems = Array.isArray(inbox.items) ? inbox.items : [];
@@ -233,7 +232,8 @@ const dashboard = {
   schemaVersion: 3,
   platformVersion: '3.2',
   sourceOfTruth: 'TAIL Knowledge Base',
-  dataAsOf: newestDate,
+  dataAsOf: indexAsOf,
+  sourceDataAsOf: newestDate,
   dataFreshness,
   dataAgeDays,
   lastSuccessfulUpdate: new Date().toISOString(),
@@ -249,6 +249,19 @@ const dashboard = {
     quarantinedSignals: Object.entries(methodology.signalOverrides ?? {}).filter(([, item]) => item.excludedFromScores).map(([id]) => id),
     scoringRubric: methodology.signalRubric,
     gates: methodology.gates,
+    indexModel: {
+      version: indexModel.version,
+      formula: indexModel.formula,
+      driverWeights: methodology.indexModel.driverWeights,
+      executiveMarketWeights: methodology.indexModel.executiveMarketWeights,
+      coverage: indexModel.coverage,
+      confidencePolicy: indexModel.confidencePolicy
+    },
+    operationalIndicators: {
+      updatedAt: operationalIndicatorData.updatedAt || null,
+      count: operationalIndicatorData.indicators.length,
+      nextReview: operationalIndicatorData.indicators.map((item) => item.nextReview).filter(Boolean).sort().at(0) || null
+    },
     forecastLedgerCount: forecastLedger.forecasts.length,
     resolvedForecasts: forecastLedger.forecasts.filter((item) => item.resolved).length,
     activeForecasts: forecastLedger.forecasts.filter((item) => item.active).length,
@@ -272,6 +285,18 @@ const dashboard = {
   },
   tailIndex: overall,
   indexStatus: trafficLight(overall),
+  executivePulse: {
+    current: overall,
+    previous: Number.isFinite(previousDashboard.tailIndex) ? previousDashboard.tailIndex : overall,
+    status: indexModel.status,
+    confidence: indexModel.executiveConfidence,
+    riskPressure: indexModel.riskPressure,
+    riskFormula: indexModel.riskFormula,
+    coverage: indexModel.coverage,
+    methodologyVersion: indexModel.version,
+    drivers: indexModel.drivers,
+    interpretation: `Der MT·AI Executive Pulse liegt bei ${overall}/100. Er ist die feste gewichtete Summe aus ${Object.keys(methodology.indexModel.executiveMarketWeights).length} Segmentindizes; Datenvertrauen (${indexModel.executiveConfidence}/100) und Risikodruck (${indexModel.riskPressure}/100) werden separat ausgewiesen.`
+  },
   markets,
   manufacturers,
   forecasts,
@@ -313,13 +338,9 @@ const publicSnapshot = {
     dataFreshness: dashboard.dataFreshness,
     processStatus: dashboard.processStatus,
     articleCount: dashboard.articleCount,
-    markets: dashboard.markets.slice(0, 6)
+    markets: dashboard.markets.slice(0, 6).map(({ id, label, score, status, signals }) => ({ id, label, score, status, signals }))
   },
-  executivePulse: latestDaily.executivePulse || {
-    current: dashboard.tailIndex,
-    status: dashboard.indexStatus,
-    interpretation: dashboard.executiveSummary
-  },
+  executivePulse: (({ current, previous, status, confidence, riskPressure, coverage, methodologyVersion, interpretation }) => ({ current, previous, status, confidence, riskPressure, coverage, methodologyVersion, interpretation }))(dashboard.executivePulse),
   signals: selectedSignals,
   catalysts: (Array.isArray(latestDaily.nextCatalysts) ? latestDaily.nextCatalysts : []).slice(0, 8)
 };
