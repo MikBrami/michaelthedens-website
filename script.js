@@ -71,7 +71,7 @@ function renderDashboard(snapshot) {
       <div><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
     </div>`).join("");
 
-  document.getElementById("market-grid").innerHTML = markets.map((market) => `
+  document.getElementById("market-grid").innerHTML = indexMarkets.map((market) => `
     <article class="market-card ${escapeHtml(market.status || "orange")}">
       <div class="market-head"><h3>${escapeHtml(market.label)}</h3><span class="market-score">${Number(market.score) || 0}</span></div>
       <div class="market-track"><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>

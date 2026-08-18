@@ -91,7 +91,7 @@ function isSameStory(left, right) {
   if (!leftTokens.size || !rightTokens.size) return false;
   const overlap = [...leftTokens].filter((token) => rightTokens.has(token)).length;
   const containment = overlap / Math.min(leftTokens.size, rightTokens.size);
-  return overlap >= 4 && containment >= 0.72;
+  return overlap >= 5 && containment >= 0.6;
 }
 
 function isPublicScope(item) {
@@ -219,7 +219,9 @@ if (analysisDate) {
     ...(snapshot.platform || {}),
     sourceDataAsOf: snapshot.platform?.sourceDataAsOf || snapshot.platform?.dataAsOf || null,
     dataAsOf: analysisDate,
-    analysisAsOf: analysisDate
+    analysisAsOf: analysisDate,
+    dataFreshness: analysisDate === berlinDate(new Date().toISOString()) ? 'current' : snapshot.platform?.dataFreshness,
+    processStatus: analysisDate === berlinDate(new Date().toISOString()) ? 'ok' : snapshot.platform?.processStatus
   };
 }
 
