@@ -338,7 +338,10 @@ const publicSnapshot = {
     dataFreshness: dashboard.dataFreshness,
     processStatus: dashboard.processStatus,
     articleCount: dashboard.articleCount,
-    markets: ['server_dram', 'hbm', 'enterprise_ssd']\n      .map((id) => dashboard.markets.find((market) => market.id === id))\n      .filter(Boolean)\n      .map(({ id, label, score, status, signals }) => ({ id, label, score, status, signals }))
+    markets: ['server_dram', 'hbm', 'enterprise_ssd']
+      .map((id) => dashboard.markets.find((market) => market.id === id))
+      .filter(Boolean)
+      .map(({ id, label, score, status, signals }) => ({ id, label, score, status, signals }))
   },
   executivePulse: (({ current, previous, status, confidence, riskPressure, coverage, methodologyVersion, interpretation }) => ({ current, previous, status, confidence, riskPressure, coverage, methodologyVersion, interpretation }))(dashboard.executivePulse),
   signals: selectedSignals,
