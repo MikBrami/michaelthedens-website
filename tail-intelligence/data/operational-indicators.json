@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-19T20:15:00+02:00",
+  "updatedAt": "2026-08-19T22:40:00+02:00",
   "indicators": [
     {
       "id": "OP-2026-08-17-SERVER-RDIMM-AVAILABILITY",
@@ -61,6 +61,30 @@
       "sourceType": "economic_takeoff_indicator",
       "note": "Stripe's investor communication identifies 1 January 2026 as the start of a material AI-driven economic phase change, alongside strong H1 growth and rapidly scaling AI-native activity. Stripe's OpenRouter acquisition adds another observation point into model and agent usage. MT·AI treats this as leading evidence for AI-demand acceleration, not as proof of AGI or a technological singularity.",
       "nextReview": "2026-09-16"
+    },
+    {
+      "id": "OP-2026-08-19-CHINA-H200-AI-DEMAND",
+      "date": "2026-08-19",
+      "market": "ai_infrastructure",
+      "driver": "aiDemand",
+      "state": "restricted",
+      "confidence": 92,
+      "halfLifeDays": 60,
+      "sourceType": "external_market_observation",
+      "note": "Financial Times reporting, corroborated by Reuters, says ByteDance and Tencent have each received about 10,000 Nvidia H200 processors in mainland China. US approvals may permit purchases up to 100,000 H200s per company, while Chinese NDRC reviews and Beijing's preference for deployment outside mainland China keep the channel constrained. MT·AI treats the deliveries as material evidence that previously theoretical China high-end AI compute demand is converting into physical deployments.",
+      "nextReview": "2026-09-18"
+    },
+    {
+      "id": "OP-2026-08-19-CHINA-H200-GEOPOLITICAL-SPLIT",
+      "date": "2026-08-19",
+      "market": "supply_chain",
+      "driver": "availability",
+      "state": "restricted",
+      "confidence": 90,
+      "halfLifeDays": 60,
+      "sourceType": "external_market_observation",
+      "note": "The H200 channel into China is opening but remains governed by dual US licensing/testing constraints and Chinese NDRC approvals. Beijing is simultaneously promoting domestic accelerators and steering some Nvidia deployments toward Hong Kong. MT·AI interprets this as evidence of a segmented China AI compute stack: Nvidia remains important for demanding training while domestic accelerators increasingly absorb inference workloads.",
+      "nextReview": "2026-09-18"
     }
   ]
 }
