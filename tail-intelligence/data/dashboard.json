@@ -4,14 +4,16 @@
   "sourceOfTruth": "TAIL Knowledge Base",
   "dataAsOf": "2026-08-17",
   "sourceDataAsOf": "2026-08-15",
-  "dataFreshness": "stale",
-  "dataAgeDays": 4,
-  "lastSuccessfulUpdate": "2026-08-19T05:45:51.879Z",
-  "lastForecastRun": "2026-08-19T05:45:51.879Z",
-  "newlyProcessedArticles": 360,
+  "knowledgeBaseSyncedAt": "2026-08-19T11:22:38.808Z",
+  "dataFreshness": "current",
+  "dataAgeDays": 0,
+  "evidenceAgeDays": 4,
+  "lastSuccessfulUpdate": "2026-08-19T11:22:39.627Z",
+  "lastForecastRun": "2026-08-19T11:22:39.627Z",
+  "newlyProcessedArticles": 370,
   "totalArticles": 118,
   "articleCount": 118,
-  "processStatus": "warning",
+  "processStatus": "ok",
   "methodology": {
     "version": "3.1",
     "status": "warning",
@@ -65,26 +67,24 @@
     "memoryRawShare": 24.4
   },
   "error": null,
-  "warnings": [
-    "Knowledge Base ist 4 Tage alt."
-  ],
+  "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-19T05:45:44.269Z",
-    "newItems": 360,
+    "updatedAt": "2026-08-19T11:22:29.696Z",
+    "newItems": 370,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
     "sourceErrors": []
   },
   "pipeline": {
-    "status": "warning",
+    "status": "ok",
     "steps": [
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
-        "status": "warning",
-        "detail": "118 Artikel · Datenstand 2026-08-15"
+        "status": "ok",
+        "detail": "118 Artikel · Sync 2026-08-19 · jüngstes bestätigtes Signal 2026-08-15"
       },
       {
         "id": "inbox",
@@ -782,7 +782,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-19T05:45:51.879Z"
+      "lastUpdated": "2026-08-19T11:22:39.627Z"
     },
     {
       "id": "hbm",
@@ -864,7 +864,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-19T05:45:51.879Z"
+      "lastUpdated": "2026-08-19T11:22:39.627Z"
     },
     {
       "id": "nand",
@@ -931,7 +931,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-19T05:45:51.879Z"
+      "lastUpdated": "2026-08-19T11:22:39.627Z"
     },
     {
       "id": "enterprise_ssd",
@@ -997,7 +997,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-19T05:45:51.879Z"
+      "lastUpdated": "2026-08-19T11:22:39.627Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1166,7 +1166,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-08-19T05:45:51.879Z"
+      "lastUpdated": "2026-08-19T11:22:39.627Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 78/100. Enterprise SSD, Server DRAM / RDIMM, HBM sind die kritischsten Felder. Die Plattform liest 118 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
