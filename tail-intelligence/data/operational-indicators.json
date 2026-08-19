@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-19T22:40:00+02:00",
+  "updatedAt": "2026-08-19T22:55:00+02:00",
   "indicators": [
     {
       "id": "OP-2026-08-17-SERVER-RDIMM-AVAILABILITY",
@@ -85,6 +85,30 @@
       "sourceType": "external_market_observation",
       "note": "The H200 channel into China is opening but remains governed by dual US licensing/testing constraints and Chinese NDRC approvals. Beijing is simultaneously promoting domestic accelerators and steering some Nvidia deployments toward Hong Kong. MT·AI interprets this as evidence of a segmented China AI compute stack: Nvidia remains important for demanding training while domestic accelerators increasingly absorb inference workloads.",
       "nextReview": "2026-09-18"
+    },
+    {
+      "id": "OP-2026-08-19-TRENDFORCE-ENTERPRISE-SSD-DEMAND",
+      "date": "2026-08-19",
+      "market": "enterprise_ssd",
+      "driver": "demand",
+      "state": "severely_restricted",
+      "confidence": 95,
+      "halfLifeDays": 90,
+      "sourceType": "external_market_observation",
+      "note": "TrendForce/DRAMeXchange reports that steady AI-server demand, particularly for enterprise SSDs, drove a NAND supply shortage in 2Q26 and enabled significant contract ASP increases. Combined NAND revenue of the top five public brands rose 77% QoQ to US$68.87 billion. Micron NAND revenue reached US$11.85 billion, up 99.2% QoQ, moving Micron to third place. MT·AI treats this as strong confirmation that AI/eSSD demand is materially tightening the NAND market despite weak smartphone and PC demand.",
+      "nextReview": "2026-09-30"
+    },
+    {
+      "id": "OP-2026-08-19-TRENDFORCE-NAND-PRICING",
+      "date": "2026-08-19",
+      "market": "nand",
+      "driver": "pricing",
+      "state": "recurring_price_increases",
+      "confidence": 95,
+      "halfLifeDays": 90,
+      "sourceType": "external_market_observation",
+      "note": "TrendForce says NAND suppliers achieved significant ASP increases in 2Q26 and expects ASPs to continue supporting industry revenue growth in 3Q26. Suppliers are prioritizing DRAM and HBM capex, limiting incremental NAND capacity. The signal captures the structural chain AI/eSSD demand -> NAND shortage -> higher ASPs while DRAM/HBM investment priorities constrain supply relief.",
+      "nextReview": "2026-09-30"
     }
   ]
 }
