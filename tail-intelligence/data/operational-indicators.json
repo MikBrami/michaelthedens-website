@@ -1,6 +1,20 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-19T22:55:00+02:00",
+  "updatedAt": "2026-08-19T23:10:00+02:00",
+  "regime": {
+    "name": "Allocation Economy",
+    "status": "active",
+    "definition": "A market regime in which structurally insufficient supply is distributed increasingly through allocation, prioritization, forecast quality, strategic relevance and confirmed production capacity rather than normal order intake alone.",
+    "distinctionFromPandemic": "Unlike the pandemic supply-chain shock, the physical production and logistics network is broadly functioning. The present constraint is driven primarily by demand exceeding prioritized semiconductor and finished-goods capacity, with secondary effects spreading into lead-time visibility, logistics and cargo insurance.",
+    "observedTransmission": [
+      "Demand exceeds available or prioritized capacity",
+      "Allocation replaces normal selling for constrained products",
+      "Lead-time visibility deteriorates before a firm delivery date can be quoted",
+      "High component prices raise shipment values",
+      "Cargo insurance and carrier value limits force physically unnecessary shipment splitting",
+      "Additional handling and transport complexity becomes a secondary availability constraint"
+    ]
+  },
   "indicators": [
     {
       "id": "OP-2026-08-17-SERVER-RDIMM-AVAILABILITY",
@@ -109,6 +123,42 @@
       "sourceType": "external_market_observation",
       "note": "TrendForce says NAND suppliers achieved significant ASP increases in 2Q26 and expects ASPs to continue supporting industry revenue growth in 3Q26. Suppliers are prioritizing DRAM and HBM capex, limiting incremental NAND capacity. The signal captures the structural chain AI/eSSD demand -> NAND shortage -> higher ASPs while DRAM/HBM investment priorities constrain supply relief.",
       "nextReview": "2026-09-30"
+    },
+    {
+      "id": "OP-2026-08-19-ESSD-LEADTIME-VISIBILITY",
+      "date": "2026-08-19",
+      "market": "enterprise_ssd",
+      "driver": "availability",
+      "state": "severely_restricted",
+      "confidence": 92,
+      "halfLifeDays": 21,
+      "sourceType": "operational_channel_observation",
+      "note": "A current large-volume request for approximately 1,300 enterprise SSDs has remained without NAND allocation approval for two weeks. NAND release may not occur until September, and finished SSD production can begin only after allocation. No reliable finished-drive delivery date can currently be quoted. MT·AI distinguishes lead-time visibility from lead-time length: an unconfirmed production start is a stronger allocation signal than a long but firm delivery date.",
+      "nextReview": "2026-08-31"
+    },
+    {
+      "id": "OP-2026-08-19-ESSD-FINISHED-GOODS-BOTTLENECK",
+      "date": "2026-08-19",
+      "market": "enterprise_ssd",
+      "driver": "availability",
+      "state": "severely_restricted",
+      "confidence": 92,
+      "halfLifeDays": 30,
+      "sourceType": "operational_channel_observation",
+      "note": "A separate 60 TB enterprise SSD project shows that NAND availability and allocation do not equal finished-drive availability: NAND was available and allocated, yet finished SSD delivery exceeds two months. MT·AI therefore tracks upstream NAND allocation separately from downstream finished-enterprise-SSD manufacturing and delivery constraints.",
+      "nextReview": "2026-09-15"
+    },
+    {
+      "id": "OP-2026-08-19-MEMORY-LOGISTICS-VALUE-CONSTRAINT",
+      "date": "2026-08-19",
+      "market": "supply_chain",
+      "driver": "availability",
+      "state": "restricted",
+      "confidence": 90,
+      "halfLifeDays": 30,
+      "sourceType": "operational_channel_observation",
+      "note": "Rapidly rising server-memory unit values are creating a secondary logistics constraint even though the physical transport network is functioning. Freight forwarders increasingly request shipment splitting and cargo-insurance maximums can limit a single insured shipment to roughly 800–900 64 GB server-memory modules. Physically compact orders therefore require multiple shipments solely because of cargo value, increasing handling, transport complexity, cost and delivery risk. MT·AI labels this effect Logistics Value Constraint.",
+      "nextReview": "2026-09-15"
     }
   ]
 }
