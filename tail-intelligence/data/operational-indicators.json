@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-17T12:00:00+02:00",
+  "updatedAt": "2026-08-19T20:15:00+02:00",
   "indicators": [
     {
       "id": "OP-2026-08-17-SERVER-RDIMM-AVAILABILITY",
@@ -49,6 +49,18 @@
       "sourceType": "operational_channel_observation",
       "note": "Enterprise SSD supplier pricing is currently being increased on a recurring 4–6 week cadence; no uniform percentage magnitude is asserted.",
       "nextReview": "2026-09-14"
+    },
+    {
+      "id": "OP-2026-08-19-AI-ECONOMIC-TAKEOFF",
+      "date": "2026-08-19",
+      "market": "ai_infrastructure",
+      "driver": "aiDemand",
+      "state": "tight",
+      "confidence": 88,
+      "halfLifeDays": 45,
+      "sourceType": "economic_takeoff_indicator",
+      "note": "Stripe's investor communication identifies 1 January 2026 as the start of a material AI-driven economic phase change, alongside strong H1 growth and rapidly scaling AI-native activity. Stripe's OpenRouter acquisition adds another observation point into model and agent usage. MT·AI treats this as leading evidence for AI-demand acceleration, not as proof of AGI or a technological singularity.",
+      "nextReview": "2026-09-16"
     }
   ]
 }
