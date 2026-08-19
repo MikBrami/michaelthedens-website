@@ -107,8 +107,13 @@ function daysSinceDate(dateValue) {
 const newestDate = articles.map((a) => a.date).filter(Boolean).sort().at(-1);
 const operationalAsOf = operationalIndicatorData.indicators.map((item) => item.date).filter(Boolean).sort().at(-1);
 const indexAsOf = [newestDate, operationalAsOf].filter(Boolean).sort().at(-1);
-const dataAgeDays = daysSinceDate(newestDate);
-const dataFreshness = !newestDate ? 'invalid' : dataAgeDays > 2 ? 'stale' : 'current';
+const knowledgeBaseSyncedAt = updateStatus.knowledge_base_latest_daily_at
+  ?? updateStatus.knowledge_base_sync_at
+  ?? updateStatus.last_successful_update
+  ?? null;
+const dataAgeDays = daysSinceDate(knowledgeBaseSyncedAt);
+const evidenceAgeDays = daysSinceDate(newestDate);
+const dataFreshness = !knowledgeBaseSyncedAt ? 'invalid' : dataAgeDays > 2 ? 'stale' : 'current';
 
 const normalizedArticles = articles.map((article) => ({
   source: article.source ?? 'TAIL Knowledge Base',
@@ -210,19 +215,20 @@ const inboxErrors = Array.isArray(updateStatus.source_errors) ? updateStatus.sou
 const inboxStatus = updateStatus.status === 'error' ? 'error' : updateStatus.status === 'warning' || !inbox.updated_at ? 'warning' : 'ok';
 
 const warnings = [
-  dataFreshness === 'stale' ? `Knowledge Base ist ${dataAgeDays} Tage alt.` : null,
+  dataFreshness === 'stale' ? `Knowledge Base wurde seit ${dataAgeDays} Tagen nicht synchronisiert.` : null,
   inboxStatus === 'warning' ? updateStatus.message : null,
   missingForecasts.length ? `Forecast Engine ohne Quellen für: ${missingForecasts.join(', ')}` : null
 ].filter(Boolean);
 const errors = [
-  dataFreshness === 'invalid' ? 'Knowledge Base hat keinen gültigen Datenstand.' : null,
+  dataFreshness === 'invalid' ? 'Knowledge Base hat keinen gültigen Sync-Zeitpunkt.' : null,
   updateStatus.status === 'error' ? updateStatus.message : null,
   missingForecasts.length ? 'Forecast Engine nicht vollständig.' : null
 ].filter(Boolean);
 
 const processStatus = errors.length ? 'error' : warnings.length ? 'warning' : 'ok';
+const syncedDate = knowledgeBaseSyncedAt ? String(knowledgeBaseSyncedAt).slice(0, 10) : 'unbekannt';
 const pipelineSteps = [
-  { id: 'knowledge_base', label: 'TAIL Knowledge Base', status: dataFreshness === 'current' ? 'ok' : dataFreshness === 'stale' ? 'warning' : 'error', detail: `${normalizedArticles.length} Artikel · Datenstand ${newestDate ?? 'unbekannt'}` },
+  { id: 'knowledge_base', label: 'TAIL Knowledge Base', status: dataFreshness === 'current' ? 'ok' : dataFreshness === 'stale' ? 'warning' : 'error', detail: `${normalizedArticles.length} Artikel · Sync ${syncedDate} · jüngstes bestätigtes Signal ${newestDate ?? 'unbekannt'}` },
   { id: 'inbox', label: 'TAIL Inbox', status: inboxStatus, detail: `${inboxItems.length} Inbox-Items · ${duplicateItems.length} Duplikate · ${inboxErrors.length} Quellenfehler` },
   { id: 'forecast_engine', label: 'Forecast Engine', status: missingForecasts.length ? 'error' : 'ok', detail: `${forecasts.length}/${requiredForecasts.length} Pflicht-Forecasts erzeugt` },
   { id: 'dashboard_build', label: 'Dashboard Build', status: 'ok', detail: 'Dashboard JSON wurde aus Knowledge Base und Pipeline-Metadaten erzeugt.' }
@@ -234,8 +240,10 @@ const dashboard = {
   sourceOfTruth: 'TAIL Knowledge Base',
   dataAsOf: indexAsOf,
   sourceDataAsOf: newestDate,
+  knowledgeBaseSyncedAt,
   dataFreshness,
   dataAgeDays,
+  evidenceAgeDays,
   lastSuccessfulUpdate: new Date().toISOString(),
   lastForecastRun: new Date().toISOString(),
   newlyProcessedArticles: updateStatus.newly_processed_articles ?? inbox.new_items ?? 0,
