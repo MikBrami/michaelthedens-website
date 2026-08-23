@@ -4,6 +4,7 @@ const ROOT = new URL('../', import.meta.url);
 const DATA = new URL('data/', ROOT);
 const INBOX = new URL('data/inbox.json', ROOT);
 const STATUS = new URL('data/update-status.json', ROOT);
+const DASHBOARD = new URL('data/dashboard.json', ROOT);
 const DAILY_FILE_PATTERN = /^daily-intelligence-(\d{4}-\d{2}-\d{2})\.json$/;
 
 const now = new Date();
@@ -42,6 +43,7 @@ async function main() {
   if (!previous) throw new Error(`Unable to read ${previousName}`);
 
   const inbox = await readJson(INBOX, { updated_at: null, new_items: 0, items: [] });
+  const dashboard = await readJson(DASHBOARD, {});
   const recentCutoff = Date.now() - 48 * 60 * 60 * 1000;
   const candidates = (inbox.items || [])
     .filter((item) => Number(item.relevance_score || 0) >= 65)
@@ -55,9 +57,18 @@ async function main() {
   // The automated generator is deliberately conservative. It creates a fresh daily
   // analytical state every day, but does not promote raw RSS items to accepted TAIL
   // signals without the full evidence/admission-gate review.
-  const currentPulse = Number(previous.executivePulse?.current ?? 0);
-  const currentConfidence = Number(previous.confidence?.current ?? 0);
-  const currentRisk = Number(previous.riskPressure?.current ?? 0);
+  // Executive Pulse, Confidence and Risk Pressure are canonical derived metrics from
+  // the productive dashboard/index model. Never carry stale values forward from the
+  // previous daily snapshot when the dashboard already has a newer calculation.
+  const dashboardPulse = Number(dashboard.executivePulse?.current ?? dashboard.tailIndex);
+  const dashboardConfidence = Number(dashboard.executivePulse?.confidence);
+  const dashboardRisk = Number(dashboard.executivePulse?.riskPressure);
+  const previousPulse = Number(previous.executivePulse?.current ?? 0);
+  const previousConfidence = Number(previous.confidence?.current ?? 0);
+  const previousRisk = Number(previous.riskPressure?.current ?? 0);
+  const currentPulse = Number.isFinite(dashboardPulse) ? dashboardPulse : previousPulse;
+  const currentConfidence = Number.isFinite(dashboardConfidence) ? dashboardConfidence : previousConfidence;
+  const currentRisk = Number.isFinite(dashboardRisk) ? dashboardRisk : previousRisk;
   const candidateText = candidates.length
     ? `${candidates.length} aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft.`
     : 'Seit dem vorherigen Daily Snapshot wurde kein neues Signal gefunden, das die TAIL-Aufnahmeschwelle bereits belastbar überschreitet.';
@@ -70,13 +81,13 @@ async function main() {
       ...(previous.executivePulse || {}),
       current: currentPulse,
       previous: currentPulse,
-      interpretation: `Daily Check ${berlinDate}: ${candidateText} Bestehende Thesen und Scores bleiben unverändert, bis neue Evidenz die Admission Gates erfüllt.`
+      interpretation: `Daily Check ${berlinDate}: Executive Pulse ${currentPulse}/100 aus dem produktiven MT·AI-Index. ${candidateText} Bestehende Thesen und Scores bleiben unverändert, bis neue Evidenz die Admission Gates erfüllt.`
     },
     confidence: {
       ...(previous.confidence || {}),
       current: currentConfidence,
       previous: currentConfidence,
-      interpretation: `Freshness ist bestätigt; analytische Confidence bleibt unverändert. ${candidateText}`
+      interpretation: `Datenvertrauen ${currentConfidence}/100 aus dem produktiven MT·AI-Index; Freshness ist bestätigt. ${candidateText}`
     },
     riskPressure: {
       ...(previous.riskPressure || {}),
@@ -108,6 +119,7 @@ async function main() {
         relevanceScore: item.relevance_score,
         publishedAt: item.published_at
       })),
+      canonicalMetricsSource: 'dashboard.json executivePulse',
       note: 'News candidates remain visible as news. They are not accepted as material TAIL signals without Evidence, Materiality, Causality and Falsifiability review.'
     }
   };
@@ -123,7 +135,7 @@ async function main() {
     daily_analyst_candidates: candidates.length
   }, null, 2) + '\n');
 
-  console.log(`Daily Analyst: generated ${targetName}; ${candidates.length} relevant news candidates kept separate from accepted signals.`);
+  console.log(`Daily Analyst: generated ${targetName}; Executive Pulse ${currentPulse}/100 from productive dashboard; ${candidates.length} relevant news candidates kept separate from accepted signals.`);
 }
 
 main().catch((error) => {
