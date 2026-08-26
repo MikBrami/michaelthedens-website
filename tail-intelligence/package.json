@@ -18,8 +18,8 @@
     "check": "node scripts/validate.mjs && npm run guard:freshness",
     "lint": "node scripts/validate.mjs --static",
     "typecheck": "node --check scripts/ingest-inbox.mjs && node --check scripts/generate-daily-intelligence.mjs && node --check scripts/assert-daily-freshness.mjs && node --check scripts/sync-daily-intelligence.mjs && node --check scripts/apply-manual-signals.mjs && node --check scripts/build-forecast-ledger.mjs && node --check scripts/index-model.mjs && node --check scripts/build-data.mjs && node --check scripts/build-public-news.mjs && node --check scripts/build-public-de.mjs && node --check scripts/ensure-public-catalysts.mjs && node --check scripts/build-public-en.mjs && node --check scripts/validate.mjs && node --check scripts/validate-deployment.mjs",
-    "test": "npm run generate:daily && npm run sync && npm run patch:manual && npm run build && npm run check",
-    "update": "npm run ingest && npm run generate:daily && npm run sync && npm run patch:manual && npm run build && npm run check",
+    "test": "npm run generate:daily && npm run patch:manual && npm run sync && npm run build && npm run check",
+    "update": "npm run ingest && npm run generate:daily && npm run patch:manual && npm run sync && npm run build && npm run check",
     "ci": "npm run lint && npm run typecheck && npm run update",
     "validate:deployment": "node scripts/validate-deployment.mjs"
   }
