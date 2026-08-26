@@ -42,6 +42,7 @@ export function statusForIndex(score, thresholds = {}) {
 }
 
 function driverObservation(article, driverId, model, asOf) {
+  if (article.indexImpact === false) return null;
   const impact = Number(model.signalDriverImpact?.[article.signal]?.[driverId] ?? 0);
   if (!impact) return null;
 
