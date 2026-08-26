@@ -56,7 +56,7 @@ latest.dailyStatus = {
   title: publicSignals.length ? 'Neue bestätigte AI-Agenten- und Effizienzsignale' : latest.dailyStatus?.title,
   impactScore: publicSignals.length ? Math.max(Number(latest.dailyStatus?.impactScore || 0), 8) : latest.dailyStatus?.impactScore,
   note: publicSignals.length
-    ? 'Astra sowie GLM-5.3-Flash/Qwen3.8-Flash-Next stärken die These skalierbarer digitaler Arbeit. Micron-Channel-Intelligence und Fable-Release-Hinweis bleiben privat und ohne mechanischen Indexeffekt bis zur Bestätigung bzw. Quantifizierung.'
+    ? 'Astra sowie GLM-5.3-Flash/Qwen3.8-Flash-Next stärken die These skalierbarer digitaler Arbeit. Die Capability-Signale werden beobachtet, verändern den Stressindex aber nicht ohne separate Markt- und Preissignale.'
     : latest.dailyStatus?.note
 };
 
