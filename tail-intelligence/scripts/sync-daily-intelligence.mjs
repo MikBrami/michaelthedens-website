@@ -133,6 +133,7 @@ function toArticle(signal, dailyDate) {
     severity: Math.max(0, Math.min(100, Number(signal.priorityScore ?? 70))),
     confidence: confidenceFor(signal),
     signal: inferSignal(signal),
+    indexImpact: signal.indexImpact !== false,
     summary: normalize(signal.fact || signal.estimate || signal.title),
     tail_analysis: normalize(signal.tailInference || signal.redPencil?.forecastChange || 'TAIL Daily Intelligence signal.'),
     source: primarySource?.label || 'TAIL Daily Intelligence',
