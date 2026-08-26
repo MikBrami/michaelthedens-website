@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T20:55:00+02:00",
+  "updatedAt": "2026-08-26T21:35:00+02:00",
   "publicSignals": [
     {
       "id": "S-2026-08-26-ASTRA",
@@ -94,19 +94,42 @@
       "tailInference": "Nur bei bestätigtem Release und belastbaren Long-Horizon-, Tool-Use- oder Persistenzdaten als Capability-Signal aufnehmen. Kein Indexeffekt auf Basis eines Gerüchts.",
       "action": "Am 27. August offizielle Release-Seite und unabhängige Benchmarks prüfen.",
       "nextReview": "2026-08-27"
+    },
+    {
+      "id": "PI-2026-08-26-BEL-DOUG",
+      "classification": "Model Pipeline Leak / High-Priority Watch",
+      "title": "Bel/Doug-Leak deutet auf OpenAIs bereits über Astra hinausreichende Trainingspipeline",
+      "fact": "Ein konkreter Leak-Thread behauptet, OpenAI habe den Pretrain eines internen Modells mit Codenamen Bel bereits abgeschlossen. Bel soll auf Doug folgen; Doug werde als Basis für Astra beziehungsweise GPT-6 nach weiterem Reinforcement Learning beschrieben. Für Bel werden mehr als 10 Billionen Gesamtparameter und eine Rolle als Post-GPT-6-Basis behauptet. Dieselbe Quellkette führt OpenAIs Compute-Vorteil durch Stargate sowie einen kurzfristigen Compute-Nachteil Anthropic gegenüber Astra an. Diese Angaben sind nicht offiziell bestätigt und mehrere Weiterverbreitungen gehen auf dieselbe ursprüngliche Leak-Quelle zurück.",
+      "status": "high-priority-watch",
+      "confidence": 58,
+      "public": false,
+      "source": {
+        "label": "Adit_Yah auf X – Weitergabe des Bel/Doug-Leaks",
+        "url": "https://x.com/Adidotdev/status/2092403721540186235"
+      },
+      "tailInference": "Falls Doug und Bel als aufeinanderfolgende Trainingsgenerationen bestätigt werden, wäre das ein starkes Indiz dafür, dass zusätzliche Rechenkapazität nicht nur Inference skaliert, sondern die Modell- und Forschungszyklen selbst beschleunigt. Das würde einen zweiten positiven Feedback-Loop neben Agentic/Jevons-Effekten schaffen: mehr Trainingscompute ermöglicht schnellere Modellgenerationen, die wiederum mehr produktive Agentenarbeit und damit mehr Infrastrukturbedarf erzeugen. Ein Bel-Pretrain in der behaupteten Größenklasse wäre zudem materiell für HBM, Server-DRAM, Checkpoint-Storage, Netzwerk und Cluster-Auslastung.",
+      "upgradeCondition": "Eine zweite wirklich unabhängige Insiderquelle, ein OpenAI-Hinweis, belastbare technische Artefakte oder übereinstimmende Compute-/Training-Indizien bestätigen Doug, Bel oder die behauptete Modellpipeline.",
+      "killCondition": "Die ursprüngliche Leak-Quelle zieht die Angaben zurück, OpenAI widerspricht zentralen Punkten oder belastbare spätere Informationen zeigen eine andere Modell-/Codenamen-Pipeline.",
+      "action": "Doug/Bel gezielt auf unabhängige Bestätigung beobachten; bei Upgrade-Condition als Model-Pipeline-Signal neu bewerten. Bis dahin weder öffentlich ausspielen noch Executive Pulse oder Segmentindizes verändern.",
+      "nextReview": "2026-09-05"
     }
   ],
   "strategicSynthesis": {
     "title": "Von Chatbots zu skalierbarer digitaler Arbeit",
-    "thesis": "Astra zeigt die Ausweitung autonomer Arbeitsdauer; GLM-5.3-Flash und Qwen3.8-Flash-Next drücken die Kosten agentischer Fähigkeiten. Zusammengenommen steigt die Wahrscheinlichkeit eines Jevons-Effekts: billigere digitale Arbeit erzeugt mehr Agentenstunden und damit mehr Gesamtbedarf an Compute, Memory, Storage, Netzwerk und Strom.",
-    "memoryImplication": "Die angekündigte Micron-Preisrunde trifft auf einen Markt, dessen potenzielle nächste Nachfragestufe – persistente und massenhaft parallele Agenten – noch kaum breit ausgerollt ist. Das erhöht das Upside-Risiko für Server-DRAM/HBM und Enterprise-SSD, rechtfertigt vor der konkreten Preisliste aber noch keinen zusätzlichen mechanischen Indexsprung.",
-    "indexDecision": "Executive Pulse und Segmentwerte bleiben bis zur quantifizierten Micron-Preisrunde unverändert; AI-Compute-Nachfrage ist bereits am Modellmaximum."
+    "thesis": "Astra zeigt die Ausweitung autonomer Arbeitsdauer; GLM-5.3-Flash und Qwen3.8-Flash-Next drücken die Kosten agentischer Fähigkeiten. Zusammengenommen steigt die Wahrscheinlichkeit eines Jevons-Effekts: billigere digitale Arbeit erzeugt mehr Agentenstunden und damit mehr Gesamtbedarf an Compute, Memory, Storage, Netzwerk und Strom. Der private Bel/Doug-Watch ergänzt die Hypothese eines zweiten Feedback-Loops, bei dem zusätzliche Trainingskapazität die Modellgenerationen selbst beschleunigt; dieser Teil bleibt bis zur unabhängigen Bestätigung ausdrücklich unbestätigt.",
+    "memoryImplication": "Die angekündigte Micron-Preisrunde trifft auf einen Markt, dessen potenzielle nächste Nachfragestufe – persistente und massenhaft parallele Agenten – noch kaum breit ausgerollt ist. Sollte sich zusätzlich eine beschleunigte Multi-Generation-Trainingspipeline bei OpenAI bestätigen, würde das das Upside-Risiko für HBM, Server-DRAM und Enterprise-SSD weiter erhöhen. Vor konkreter Preisquantifizierung und unabhängiger Bel/Doug-Bestätigung folgt daraus jedoch kein zusätzlicher mechanischer Indexsprung.",
+    "indexDecision": "Executive Pulse und Segmentwerte bleiben bis zu separaten bestätigten Markt-, Preis- oder Verfügbarkeitssignalen unverändert; Astra/Flash sowie Bel/Doug sind index-neutral."
   },
   "nextCatalysts": [
     {
       "date": "2026-08-27",
       "title": "Agentic Release Watch",
       "why": "Prüfen, ob ein bestätigtes Frontier-Modell neue Long-Horizon-, Tool-Use- oder Persistenzfähigkeiten veröffentlicht."
+    },
+    {
+      "date": "2026-09-05",
+      "title": "Bel/Doug Independent Confirmation Review",
+      "why": "Prüfen, ob eine zweite unabhängige Quelle, OpenAI-Hinweise oder technische Indizien die behauptete Post-Astra-/Post-GPT-6-Trainingspipeline stützen."
     },
     {
       "date": "2026-09-15",
