@@ -126,7 +126,12 @@ function calculateDriver(articles, indicators, driverId, model, asOf) {
 export function calculateIndexModel(articles, methodology, options = {}) {
   const model = methodology.indexModel;
   if (!model) throw new Error('methodology.indexModel is missing');
-  const asOf = options.asOf || articles.map((article) => article.date).filter(Boolean).sort().at(-1);
+  const indexDates = articles
+    .filter((article) => article.indexImpact !== false)
+    .map((article) => article.date)
+    .filter(Boolean)
+    .sort();
+  const asOf = options.asOf || indexDates.at(-1) || articles.map((article) => article.date).filter(Boolean).sort().at(-1);
   const operationalIndicators = Array.isArray(options.operationalIndicators) ? options.operationalIndicators : [];
   const marketIds = new Set([
     ...Object.keys(model.executiveMarketWeights || {}),
