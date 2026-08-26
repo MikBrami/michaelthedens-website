@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-26T19:22:12.957Z",
+  "generatedAt": "2026-08-26T19:24:35.178Z",
   "platform": {
     "dataAsOf": "2026-08-26",
     "dataFreshness": "current",
@@ -10,22 +10,22 @@
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 77,
+        "score": 80,
         "status": "orange",
         "signals": 15
       },
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 78,
+        "score": 80,
         "status": "orange",
         "signals": 27
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 75,
-        "status": "orange",
+        "score": 83,
+        "status": "red",
         "signals": 16
       }
     ],
@@ -33,11 +33,11 @@
     "analysisAsOf": "2026-08-26"
   },
   "executivePulse": {
-    "current": 75,
+    "current": 79,
     "previous": 75,
     "status": "orange",
-    "confidence": 87,
-    "riskPressure": 78,
+    "confidence": 88,
+    "riskPressure": 85,
     "coverage": 100,
     "methodologyVersion": "1.2",
     "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-26 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
@@ -144,9 +144,9 @@
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-26T19:22:13.129Z",
+    "generatedAt": "2026-08-26T19:24:35.344Z",
     "count": 3,
-    "candidateCount": 99,
+    "candidateCount": 101,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
