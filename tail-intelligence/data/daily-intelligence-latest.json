@@ -135,7 +135,74 @@
       "delta": 20
     }
   ],
-  "acceptedSignals": [],
+  "acceptedSignals": [
+    {
+      "id": "S-2026-08-26-ASTRA",
+      "rank": 1,
+      "priorityScore": 96,
+      "classification": "Agentic Capability Update",
+      "signalOverride": "demand_up",
+      "title": "Astra verschiebt Frontier-AI von Antworten zu autonomer Forschungsarbeit",
+      "fact": "OpenAI beschreibt Astra als kommendes Modell mit erheblichen Fortschritten beim agentischen Programmieren und in der Cybersicherheit. OpenAI hat dafür strengere Sicherheitskontrollen eingeführt und Aktivitäten ausgesetzt, die diese Anforderungen noch nicht erfüllen. TIME berichtet zusätzlich aus Gesprächen mit OpenAI-Führungskräften über Astra als automatisierten Research-Intern, der experimentelle Ideen implementieren, Experimente ausführen und Ergebnisse zurückgeben kann.",
+      "estimate": "OpenAIs Aussage zu kritischen Cyberfähigkeiten ist offiziell bestätigt; weitergehende Aussagen zu AGI-Zeitplänen, Research-Intern-Leistung und persistenten Agenten stammen aus Interviews und sind keine unabhängigen Capability-Evaluierungen.",
+      "tailInference": "Der relevante Infrastrukturwechsel ist nicht das AGI-Label, sondern die Verlängerung produktiver Modellarbeit von einzelnen Antworten zu lang laufenden Agenten. Persistente Research-, Coding- und Tool-Use-Workloads erhöhen die potenzielle Inferenzzeit pro Nutzer massiv und stärken damit die strukturelle Nachfrage nach Compute, Server-DRAM, HBM, Enterprise-SSD, Netzwerk und Strom.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Agenten können durch bessere Modelle, Sparse Attention, Caching und effizientere Chips pro Aufgabe deutlich weniger Ressourcen benötigen. Produktive Nutzung und Zahlungsbereitschaft müssen erst zeigen, ob Effizienzgewinne durch höhere Nutzung überkompensiert werden.",
+        "killCondition": "Persistente Agenten erreichen bis Ende 2027 keine verlässlich nutzbaren Long-Horizon-Workflows oder die reale Compute-Nachfrage pro wirtschaftlich erledigter Aufgabe fällt trotz breiter Agentenadoption deutlich.",
+        "forecastChange": "AI-Compute-Nachfrage bleibt am oberen Ende des Modells; kein zusätzlicher Pulse-Anstieg, weil der Treiber bereits bei 100 liegt."
+      },
+      "sources": [
+        {
+          "label": "OpenAI – Responding to the next frontier of critical cyber capabilities",
+          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/"
+        },
+        {
+          "label": "OpenAI – Pacing model development in an era of cyber-critical capabilities",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-26-FLASH-EFFICIENCY",
+      "rank": 2,
+      "priorityScore": 94,
+      "classification": "Efficiency / Agentic Economics Update",
+      "signalOverride": "demand_up",
+      "title": "GLM-5.3-Flash und Qwen3.8-Flash-Next drücken agentische Frontier-Leistung in deutlich kleinere aktive Modelle",
+      "fact": "Z.ai veröffentlichte GLM-5.3-Flash mit 320 Milliarden Gesamtparametern und 18 Milliarden aktiven Parametern pro Token; der Hersteller meldet deutliche Sprünge in Coding- und Agentic-Benchmarks bei deutlich niedrigeren Kosten. Qwen veröffentlichte Qwen3.8-Flash-Next als frühe Vorschau auf Qwen4 mit 125 Milliarden Hauptparametern plus 51 Milliarden N-Gram-Embeddings und nur 6 Milliarden aktivierten Parametern pro Token; das Training soll gegenüber Qwen3.7-Plus etwa ein Neuntel kosten, bei besseren Coding- und Office-Ergebnissen.",
+      "estimate": "Ein großer Teil der veröffentlichten Benchmarkwerte stammt von den jeweiligen Herstellern. Unabhängige Replikation, Produktionslatenz, Tool-Reliability und reale Kosten über lange Agentenläufe müssen nachgezogen werden.",
+      "tailInference": "Die strukturell wichtigere Entwicklung ist fallende Kosten pro Einheit digitaler Arbeit. Wenn Agentenleistung pro Dollar schneller steigt als der Ressourcenbedarf pro Aufgabe fällt, entsteht ein Jevons-Effekt: mehr Automatisierung, längere Laufzeiten und wesentlich mehr parallele Agenten. Für MT·AI ist deshalb Effizienz kein Entlastungssignal, sondern potenziell ein Nachfragebeschleuniger für AI-Infrastruktur.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Wenn Unternehmen mit effizienteren Modellen lediglich bestehende Workloads ersetzen und die Zahl produktiver Agenten nicht stark wächst, kann der Netto-Compute-Bedarf pro Aufgabe sinken.",
+        "killCondition": "Unabhängige Evaluierungen zeigen deutlich schwächere Long-Horizon- und Tool-Use-Leistung oder die Nutzung agentischer Workloads wächst 2027 langsamer als die Effizienzgewinne pro Aufgabe.",
+        "forecastChange": "Neuer strukturierter Watch auf Agentic Elasticity: Effizienzgewinn versus Wachstum der Agentenstunden."
+      },
+      "sources": [
+        {
+          "label": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
+          "url": "https://z.ai/blog/glm-5.3-flash"
+        },
+        {
+          "label": "Qwen Team – Qwen3.8-Flash-Next",
+          "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next"
+        }
+      ]
+    }
+  ],
   "predictionLogUpdates": [
     {
       "id": "P-2026-08-15-02",
@@ -240,14 +307,16 @@
   "dataHygiene": {
     "preserveForecastHistory": true,
     "eraseMisses": false,
-    "lateAdmissionNote": "SoftBank Q1/OpenAI-collateral financing remains transparently marked as a late admission. TrendForce's 10 August primary BOM estimate is admitted on 15 August as a new quantified Client-Memory layer update; observations, model estimates and TAIL inference remain separated."
+    "lateAdmissionNote": "SoftBank Q1/OpenAI-collateral financing remains transparently marked as a late admission. TrendForce's 10 August primary BOM estimate is admitted on 15 August as a new quantified Client-Memory layer update; observations, model estimates and TAIL inference remain separated.",
+    "manualOverlayAppliedAt": "2026-08-26T20:55:00+02:00",
+    "manualOverlayPolicy": "Public signals require evidence and admission-gate review. Private channel intelligence remains excluded from public Lighthouse output and from mechanical index changes until quantified."
   },
   "dailyStatus": {
     "date": "2026-08-26",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
-    "impactScore": 0,
-    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "type": "material-capability-update",
+    "title": "Neue bestätigte AI-Agenten- und Effizienzsignale",
+    "impactScore": 8,
+    "note": "Astra sowie GLM-5.3-Flash/Qwen3.8-Flash-Next stärken die These skalierbarer digitaler Arbeit. Micron-Channel-Intelligence und Fable-Release-Hinweis bleiben privat und ohne mechanischen Indexeffekt bis zur Bestätigung bzw. Quantifizierung."
   },
   "automatedDaily": {
     "generatedAt": "2026-08-26T11:44:19.556Z",
@@ -330,5 +399,54 @@
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
     "note": "News candidates remain visible as news. They are not accepted as material TAIL signals without Evidence, Materiality, Causality and Falsifiability review."
-  }
+  },
+  "privateIntelligence": [
+    {
+      "id": "PI-2026-08-26-MICRON-PRICE",
+      "classification": "Channel Intelligence / Unconfirmed Quantification",
+      "title": "Micron kündigt deutliche Preiserhöhung zum kommenden Wochenende an",
+      "fact": "Direkte Vorabinformation aus dem Vertriebskanal: Micron hat auf eine deutliche Preisrunde zum Wochenende hingewiesen. Produktgruppen und konkrete Prozentsätze sind noch nicht bekannt.",
+      "status": "watch-confirmation",
+      "confidence": 78,
+      "public": false,
+      "tailInference": "Das Signal stützt die These anhaltender Pricing Power bei Server-DRAM und Enterprise-SSD, ist aber ohne konkrete Prozentwerte noch nicht geeignet, die Segmentindizes mechanisch anzuheben.",
+      "action": "Nach Bekanntgabe Produktgruppen und Prozentwerte erfassen; danach Server-DRAM/HBM- und Enterprise-SSD-Index neu rechnen und Auswirkungen auf Server-/AI-Systempreise modellieren.",
+      "nextReview": "2026-08-31"
+    },
+    {
+      "id": "PI-2026-08-26-FABLE-51",
+      "classification": "Release Watch / Unconfirmed",
+      "title": "Fable 5.1 als möglicher Agentic-/Long-Horizon-Katalysator",
+      "fact": "Für den 27. August kursiert ein Release-Hinweis zu Fable 5.1; eine offizielle Herstellerbestätigung liegt zum Zeitpunkt dieses Eintrags nicht vor.",
+      "status": "watch-only",
+      "confidence": 35,
+      "public": false,
+      "tailInference": "Nur bei bestätigtem Release und belastbaren Long-Horizon-, Tool-Use- oder Persistenzdaten als Capability-Signal aufnehmen. Kein Indexeffekt auf Basis eines Gerüchts.",
+      "action": "Am 27. August offizielle Release-Seite und unabhängige Benchmarks prüfen.",
+      "nextReview": "2026-08-27"
+    }
+  ],
+  "strategicSynthesis": {
+    "title": "Von Chatbots zu skalierbarer digitaler Arbeit",
+    "thesis": "Astra zeigt die Ausweitung autonomer Arbeitsdauer; GLM-5.3-Flash und Qwen3.8-Flash-Next drücken die Kosten agentischer Fähigkeiten. Zusammengenommen steigt die Wahrscheinlichkeit eines Jevons-Effekts: billigere digitale Arbeit erzeugt mehr Agentenstunden und damit mehr Gesamtbedarf an Compute, Memory, Storage, Netzwerk und Strom.",
+    "memoryImplication": "Die angekündigte Micron-Preisrunde trifft auf einen Markt, dessen potenzielle nächste Nachfragestufe – persistente und massenhaft parallele Agenten – noch kaum breit ausgerollt ist. Das erhöht das Upside-Risiko für Server-DRAM/HBM und Enterprise-SSD, rechtfertigt vor der konkreten Preisliste aber noch keinen zusätzlichen mechanischen Indexsprung.",
+    "indexDecision": "Executive Pulse und Segmentwerte bleiben bis zur quantifizierten Micron-Preisrunde unverändert; AI-Compute-Nachfrage ist bereits am Modellmaximum."
+  },
+  "nextCatalysts": [
+    {
+      "date": "2026-08-27",
+      "title": "Agentic Release Watch",
+      "why": "Prüfen, ob ein bestätigtes Frontier-Modell neue Long-Horizon-, Tool-Use- oder Persistenzfähigkeiten veröffentlicht."
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Micron Preisrunde quantifizieren",
+      "why": "Produktgruppen und prozentuale Erhöhungen bestimmen den möglichen nächsten Schritt für Server-DRAM/HBM und Enterprise-SSD."
+    },
+    {
+      "date": "2026-09-15",
+      "title": "Agentic Elasticity Review",
+      "why": "Prüfen, ob fallende Kosten pro Agentenstunde bereits zu höherer Nutzung und längeren produktiven Laufzeiten führen."
+    }
+  ]
 }

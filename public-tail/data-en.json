@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-26T11:44:58.134Z",
+  "generatedAt": "2026-08-26T19:15:16.362Z",
   "editorial": {
     "version": 4,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "a54124b85542cb9d2100a874",
+    "sourceHash": "cb284484e1b3b8243d3dbb60",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
@@ -13,93 +13,81 @@
     "dataAsOf": "2026-08-26",
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 118,
+    "articleCount": 120,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 80,
+        "score": 78,
         "status": "orange",
-        "signals": 14
+        "signals": 15
       },
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 80,
+        "score": 78,
         "status": "orange",
-        "signals": 26
+        "signals": 27
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 83,
-        "status": "red",
-        "signals": 15
+        "score": 76,
+        "status": "orange",
+        "signals": 16
       }
     ],
-    "sourceDataAsOf": "2026-08-19",
+    "sourceDataAsOf": "2026-08-26",
     "analysisAsOf": "2026-08-26"
   },
   "executivePulse": {
-    "current": 79,
+    "current": 76,
     "previous": 79,
     "status": "orange",
-    "confidence": 88,
-    "riskPressure": 85,
+    "confidence": 87,
+    "riskPressure": 78,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "Conditions in memory and AI infrastructure remain strained. Server DRAM/RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check of 2026-08-26 reviewed eight relevant reports; there is no confirmed material change in direction. New capacity and improved yields may relieve pressure but will reach the market with delay. For buyers, securing supply, alternative BOMs and early procurement remain critical."
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and Enterprise SSD are currently among the tightest areas. The Daily Check on 2026-08-26 confirmed a material change in the situation. New capacity and improved yields can relieve pressure but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
       "date": "2026-08-26",
-      "title": "China’s YMTC aims to overtake Samsung and SK Hynix in flash memory race",
-      "summary": "Aktuelle Meldung von Financial Times: China’s YMTC aims to overtake Samsung and SK Hynix in flash memory race",
-      "analysis": "The report is relevant for data-centre storage: it may affect prices, available capacity or procurement strategy for enterprise SSDs.",
-      "score": 100,
-      "relevanceScore": 100,
-      "sourceQuality": 17,
-      "source": "Financial Times",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMVJ3UzA4Y1ZtV3hHd1RvX2ZiVTNFQXdsbXpiS1haSUtPcTdObTVLclcwSGU0ekV5bGYxVlBlNWVmckhIWW9haVpPMmsyY2NaWjF1Z3NaamZNUGtLTDh4VG5YczVLYnByV0x6QmJwTUZXdmtoc183VEd0enFpZjQ2eThaMGk?oc=5",
-      "layer": "news"
+      "title": "Astra shifts frontier AI from answers to autonomous research work",
+      "summary": "OpenAI describes Astra as an upcoming model with substantial advances in agentic programming and cybersecurity. OpenAI has introduced stricter safety controls and suspended activities that do not yet meet those requirements. TIME additionally reports, from conversations with OpenAI executives, that Astra can act as an automated research intern, implementing experimental ideas, running experiments and returning results.",
+      "analysis": "The relevant infrastructure shift is not the AGI label but the extension of productive model work from single responses to long-running agents. Persistent research, coding and tool-use workloads materially increase potential inference time per user and thereby strengthen structural demand for compute, server DRAM, HBM, enterprise SSD, networking and power.",
+      "score": 96,
+      "source": "OpenAI – Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+      "layer": "accepted-signal"
     },
     {
       "date": "2026-08-26",
-      "title": "[News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4",
-      "summary": "Aktuelle Meldung von TrendForce: [News] OpenAI Debuts Jalapeño AI Inference Chip, with Samsung Reportedly Supplying HBM4",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand directly affect available GPU systems and pricing in the AI infrastructure market.",
-      "score": 99,
-      "relevanceScore": 100,
-      "sourceQuality": 15,
-      "source": "TrendForce",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOdG9KSmRHQXNscjVYR3lEd1lIMHVHTnRlWjE1U1pkVFBWaHh1VG5ucXZkOWoxYkhwbnRsaTNuOXVXajl5WHZ0ZVVoU05MT1l5TzcwOXNVM3FGdktKakZ6UVZCRmN5Z0lwZUYxQi05QUthemhNUHZ5cUpnWHN5X2VnQmJiRENOQUI5ZGo3aHVwc2EzcTlDa2c0a21uTFdfOTN5dzVsNTlUbzVZWWVUblNUdTNNVHZNOEtnZjVvNmpaZ3ltMnpydmNJ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "EXCLUSIVE: China's Moonshot in talks with Microsoft, Amazon, Google over K3 revenue sharing, sources say",
-      "summary": "Aktuelle Meldung von Reuters: EXCLUSIVE: China's Moonshot in talks with Microsoft, Amazon, Google over K3 revenue sharing, sources say",
-      "analysis": "The report alters the build-out path for AI and data-centre infrastructure. Greater productive compute capacity pulls in server memory, enterprise storage, networking and power.",
-      "score": 98,
-      "relevanceScore": 88,
-      "sourceQuality": 20,
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaWlQbDBkTjZOWlNxMFJUeDkxc0taQllySUkzRzJ4aHJrSzlVQTY5LVhqU2dfd2lUSGZSVjI2dVFPQnZ5X0FuRThHT0JDRkxJTTlLUVFETjM5Y0lGbzFwUkhGWFNVOUJQX1NWZ09SZDViVWNZTmI1TFY4ODUwZXl2UGh5VnRETVhhbDQ4NHh5bmU2YXZXdGZEbnlSUmVZVEZ2dUd3ampaeW94bkhBaEhhRkNKQ1E1QlJSZUFDUTZ5eGFERHlPZHo3TnFaQTJZVUdt?oc=5",
-      "layer": "news"
+      "title": "GLM-5.3-Flash and Qwen3.8-Flash-Next push agentic frontier performance into significantly smaller active models",
+      "summary": "Z.ai released GLM-5.3-Flash with 320 billion total parameters and 18 billion active parameters per token; the developer reports marked gains in coding and agentic benchmarks at much lower cost. Qwen released Qwen3.8-Flash-Next as an early preview of Qwen4 with 125 billion main parameters plus 51 billion N-gram embeddings and only 6 billion activated parameters per token; training is said to cost roughly one ninth of Qwen3.7-Plus while delivering better coding and office results.",
+      "analysis": "The structurally more important development is falling cost per unit of digital work. If agent performance per dollar rises faster than resource need per task falls, a Jevons effect can emerge: more automation, longer runtimes and substantially more parallel agents. For MT·AI, efficiency is therefore not a relief signal but potentially a demand accelerator for AI infrastructure.",
+      "score": 94,
+      "source": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "layer": "accepted-signal"
     }
   ],
   "catalysts": [
     {
+      "date": "2026-08-27",
+      "event": "Agentic Release Watch"
+    },
+    {
       "date": "2026-08-31",
-      "event": "Astra: safety, release and deployment review"
+      "event": "Astra: Safety-, Release- and Deployment-Review"
     },
     {
       "date": "2026-09-05",
-      "event": "Texas/ERCOT: assess Batch Zero and deposit risk"
+      "event": "Texas/ERCOT: Batch Zero and Deposit-Risk review"
     },
     {
       "date": "2026-09-15",
-      "event": "Regional Defense"
+      "event": "Agentic Elasticity Review"
     },
     {
       "date": "2026-09-30",
@@ -107,19 +95,15 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: review filing, valuation and access to capital"
+      "event": "Switch IPO: filing, valuation and access to capital review"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging remains a central AI supply-chain bottleneck at least through H2 2027 despite the Chiayi expansion."
+      "event": "Forecast-Review: Advanced packaging remains a central AI supply-chain bottleneck at least until H2 2027 despite Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier review: AI asset-backed financing reflexivity"
-    },
-    {
-      "date": "2027-03-31",
-      "event": "Client Memory Demand Destruction"
+      "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
     }
   ]
 }
