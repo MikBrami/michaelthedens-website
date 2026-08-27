@@ -121,25 +121,38 @@ function categoryFor(markets, signal) {
 }
 
 function toArticle(signal, dailyDate) {
-  const markets = inferMarkets(signal);
+  const markets = Array.isArray(signal.markets) && signal.markets.length
+    ? unique(signal.markets)
+    : inferMarkets(signal);
+  const companies = Array.isArray(signal.companies) && signal.companies.length
+    ? unique(signal.companies)
+    : inferCompanies(signal);
   const primarySource = (signal.sources || [])[0];
+  const severity = Number.isFinite(Number(signal.severity))
+    ? Number(signal.severity)
+    : Number(signal.priorityScore ?? 70);
+  const confidence = Number.isFinite(Number(signal.confidence))
+    ? Number(signal.confidence)
+    : confidenceFor(signal);
+
   return {
     id: signal.id,
-    date: dailyDate,
+    date: signal.date || dailyDate,
     title: normalize(signal.title),
-    category: categoryFor(markets, signal),
+    category: signal.category || categoryFor(markets, signal),
     markets,
-    companies: inferCompanies(signal),
-    severity: Math.max(0, Math.min(100, Number(signal.priorityScore ?? 70))),
-    confidence: confidenceFor(signal),
-    signal: inferSignal(signal),
+    companies,
+    severity: Math.max(0, Math.min(100, severity)),
+    confidence: Math.max(0, Math.min(100, confidence)),
+    signal: signal.signal || inferSignal(signal),
     indexImpact: signal.indexImpact !== false,
-    summary: normalize(signal.fact || signal.estimate || signal.title),
-    tail_analysis: normalize(signal.tailInference || signal.redPencil?.forecastChange || 'TAIL Daily Intelligence signal.'),
-    source: primarySource?.label || 'TAIL Daily Intelligence',
-    url: primarySource?.url || `tail://daily-intelligence/${signal.id}`,
+    freshShockEligible: signal.freshShockEligible === true,
+    summary: normalize(signal.summary || signal.fact || signal.estimate || signal.title),
+    tail_analysis: normalize(signal.tail_analysis || signal.tailInference || signal.redPencil?.forecastChange || 'TAIL Daily Intelligence signal.'),
+    source: signal.source || primarySource?.label || 'TAIL Daily Intelligence',
+    url: signal.url || primarySource?.url || `tail://daily-intelligence/${signal.id}`,
     content_hash: hash(`${signal.id}|${signal.title}|${signal.fact}|${signal.tailInference}`),
-    origin: 'daily-intelligence',
+    origin: signal.origin || 'daily-intelligence',
     classification: signal.classification || null,
     rank: signal.rank ?? null,
     estimate: signal.estimate || null,
