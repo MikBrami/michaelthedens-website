@@ -141,7 +141,7 @@
       "date": "2026-08-27",
       "rank": 1,
       "priorityScore": 99,
-      "classification": "AI Infrastructure Demand / Memory Pressure",
+      "classification": "AI Infrastructure Demand / Memory Pressure / Demand Breadth",
       "signal": "demand_up",
       "signalOverride": "demand_up",
       "indexImpact": true,
@@ -157,11 +157,23 @@
       "companies": [
         "NVIDIA"
       ],
-      "title": "Nvidia verdoppelt Umsatz – AI-Infrastruktur-Ramp beschleunigt den Memory- und Storage-Druck",
-      "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Die Q3-Umsatzprognose liegt bei rund 108 Mrd. US-Dollar. Der beschleunigte Plattform-Ramp bestätigt eine außergewöhnlich hohe AI-Infrastrukturnachfrage und erhöht den strukturellen Druck auf HBM, Server-DRAM und Enterprise-SSD.",
-      "fact": "Nvidias Q2-FY27-Zahlen zeigen eine mehr als verdoppelte Gesamtnachfrage und einen noch stärkeren Anstieg im Data-Center-Geschäft; zugleich setzt sich der Vera-Rubin-Ramp fort.",
-      "estimate": "Der direkte Effekt ist bei HBM und Server-DRAM am stärksten. Enterprise SSD erhält einen kleineren Sekundäreffekt über größere AI-Cluster, Checkpointing, Inference Context und Datenpipelines.",
-      "tailInference": "Das Signal ist nicht nur rückwärtsgerichtetes Umsatzwachstum. Die Kombination aus außergewöhnlichem Data-Center-Wachstum, hoher Forward-Guidance und weiterem Plattform-Ramp ist ein frischer Beschleunigungsimpuls. In einem bereits angespannten Memory-/Storage-Markt darf ein solches Primärsignal nicht vollständig durch historische Mittelung neutralisiert werden.",
+      "title": "Nvidia verdoppelt Umsatz – zweite AI-Nachfragewelle verbreitert den Memory- und Storage-Druck",
+      "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Eine Aufteilung der von Nvidia ausgewiesenen Data-Center-Umsätze zeigt zusätzlich: Hyperscale wächst seit sechs Quartalen grob um 100 % YoY, während AI Clouds, Industrial & Enterprise (ACIE) von nahezu stagnierendem Wachstum auf 138 % YoY beschleunigt haben. Die Nachfragebasis verbreitert sich damit von einer dominanten Hyperscaler-Welle auf mindestens zwei starke Käufergruppen.",
+      "fact": "Hyperscale blieb über sechs Quartale auf außergewöhnlich hohem, aber grob stabilem Wachstumspfad. Die jüngste Beschleunigung des gesamten Data-Center-Geschäfts stammt vor allem aus AI Clouds, Industrial & Enterprise: ACIE stieg von 6 % YoY in Q3 FY26 auf 29 %, 91 % und zuletzt 138 %. Damit kommt die zusätzliche Wachstumsdynamik nicht aus noch schneller wachsenden Hyperscalern, sondern aus einer zweiten Käuferklasse.",
+      "estimate": "Die Verbreiterung der Nachfragebasis stärkt die strukturelle Infrastrukturthese und reduziert das Konzentrationsrisiko auf wenige Hyperscaler. Für HBM bleibt der direkte Effekt am stärksten; für Server-DRAM und Enterprise SSD ist ACIE besonders relevant, weil AI-Cloud-, Enterprise- und industrielle Deployments neben Accelerator-Memory auch Host-Memory, lokale NVMe-Kapazität, Checkpointing und Datenhaltung benötigen. Dieses Update ist jedoch kein zweites unabhängiges Marktereignis, sondern eine tiefere Zerlegung derselben Nvidia-Q2-Daten und löst daher keinen zusätzlichen Fresh Shock aus.",
+      "tailInference": "Nvidias Q2 FY27 bestätigt nicht nur außergewöhnlich hohe AI-Infrastrukturnachfrage, sondern eine qualitative Veränderung der Nachfragebreite: Hyperscaler bleiben auf extrem hohem Niveau, während ACIE zur zweiten Wachstumsmaschine wird. Das erhöht die Robustheit der Nachfrage-These und spricht gegen die Annahme, der aktuelle Infrastrukturzyklus hänge ausschließlich an weiter steigenden Capex-Raten der größten Cloud-Anbieter. Für MT·AI wird Demand Breadth künftig als eigener Interpretationspunkt dieses Nvidia-Signals geführt, ohne den Indexeffekt doppelt zu zählen.",
+      "monitoringRule": {
+        "name": "Nvidia Q3 FY27 Base-Effect Rule",
+        "rule": "YoY-Wachstumsraten von Hyperscale und ACIE werden in Q3 FY27 nicht isoliert als Beschleunigungs- oder Abschwächungssignal gewertet. Wegen stark invertierender Vergleichsbasen sind absolute und sequenzielle Dollarveränderungen sowie der Segmentmix vorrangig zu bewerten.",
+        "reason": "Die Vergleichsbasis Q3 FY26 lag bei etwa 35,1 Mrd. US-Dollar Hyperscale und 16,1 Mrd. US-Dollar ACIE. Selbst bei unverändertem aktuellem Umsatzniveau würden die YoY-Raten stark auseinanderlaufen. Ein optischer Rückgang der Hyperscale-Wachstumsrate kann daher ohne sequenziellen Dollar-Rückgang kein belastbares Demand-Relief-Signal sein.",
+        "watchMetrics": [
+          "Hyperscale sequential revenue change in US dollars",
+          "ACIE sequential revenue change in US dollars",
+          "Data Center segment mix",
+          "Nvidia total revenue versus guidance",
+          "Memory and supply-constraint commentary"
+        ]
+      },
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -170,17 +182,20 @@
         "Falsifiability": true
       },
       "redPencil": {
-        "alternative": "Ein Teil des Umsatzanstiegs kann durch höheren Systemwert und Mix statt proportional höherer Memory- oder SSD-Stückzahlen entstehen; Effizienzgewinne und Supply-Ausbau können den zusätzlichen Komponentendruck teilweise absorbieren.",
-        "killCondition": "Nvidias nachfolgende Guidance oder Lieferkettendaten zeigen eine deutliche Abschwächung des AI-System-Ramps oder normalisierte HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter wachsender Data-Center-Umsätze.",
-        "forecastChange": "Fresh-Shock-Overlay aktiviert: kurzfristiger Aufwärtsimpuls für AI Infrastructure, HBM, Server DRAM und – schwächer – Enterprise SSD."
+        "alternative": "Ein Teil des Umsatzanstiegs kann durch höheren Systemwert und Mix statt proportional höherer Memory- oder SSD-Stückzahlen entstehen. Zudem kann die ACIE-Beschleunigung teilweise aus Projekt-Timing und einer niedrigen Vergleichsbasis stammen. Effizienzgewinne und Supply-Ausbau können den zusätzlichen Komponentendruck teilweise absorbieren.",
+        "killCondition": "Nvidias nachfolgende absolute und sequenzielle Segmentumsätze zeigen eine deutliche Abschwächung sowohl bei Hyperscale als auch bei ACIE oder normalisierte HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter hoher Data-Center-Umsätze.",
+        "forecastChange": "Fresh-Shock-Overlay bleibt einmalig aktiviert. Neue Erkenntnis: Demand Breadth steigt, da ACIE neben Hyperscale zur zweiten Wachstumsmaschine wird. Für Q3 FY27 werden Base-Effect-bedingte YoY-Veränderungen nicht ohne Prüfung der absoluten und sequenziellen Dollarentwicklung als Trendwechsel gewertet."
       },
       "sources": [
         {
           "label": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
           "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+        },
+        {
+          "label": "DigiTimes – Nvidia data-center growth decomposition supplied for MT·AI review"
         }
       ],
-      "source": "NVIDIA Investor Relations",
+      "source": "NVIDIA Investor Relations / DigiTimes analysis",
       "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
     },
     {
@@ -357,7 +372,7 @@
     "preserveForecastHistory": true,
     "eraseMisses": false,
     "lateAdmissionNote": "SoftBank Q1/OpenAI-collateral financing remains transparently marked as a late admission. TrendForce's 10 August primary BOM estimate is admitted on 15 August as a new quantified Client-Memory layer update; observations, model estimates and TAIL inference remain separated.",
-    "manualOverlayAppliedAt": "2026-08-27T09:20:00+02:00",
+    "manualOverlayAppliedAt": "2026-08-27T10:47:00+02:00",
     "manualOverlayPolicy": "Public signals require evidence and admission-gate review. Approved manual index signals are written to the Knowledge Base and scored mechanically; private channel intelligence remains excluded until quantified."
   },
   "dailyStatus": {

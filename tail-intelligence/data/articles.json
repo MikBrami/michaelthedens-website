@@ -4822,8 +4822,8 @@
   {
     "id": "S-2026-08-27-NVIDIA-Q2-FY27",
     "date": "2026-08-27",
-    "title": "Nvidia verdoppelt Umsatz – AI-Infrastruktur-Ramp beschleunigt den Memory- und Storage-Druck",
-    "category": "geopolitics",
+    "title": "Nvidia verdoppelt Umsatz – zweite AI-Nachfragewelle verbreitert den Memory- und Storage-Druck",
+    "category": "memory",
     "markets": [
       "ai_infrastructure",
       "hbm",
@@ -4838,24 +4838,27 @@
     "signal": "demand_up",
     "indexImpact": true,
     "freshShockEligible": true,
-    "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Die Q3-Umsatzprognose liegt bei rund 108 Mrd. US-Dollar. Der beschleunigte Plattform-Ramp bestätigt eine außergewöhnlich hohe AI-Infrastrukturnachfrage und erhöht den strukturellen Druck auf HBM, Server-DRAM und Enterprise-SSD.",
-    "tail_analysis": "Das Signal ist nicht nur rückwärtsgerichtetes Umsatzwachstum. Die Kombination aus außergewöhnlichem Data-Center-Wachstum, hoher Forward-Guidance und weiterem Plattform-Ramp ist ein frischer Beschleunigungsimpuls. In einem bereits angespannten Memory-/Storage-Markt darf ein solches Primärsignal nicht vollständig durch historische Mittelung neutralisiert werden.",
-    "source": "NVIDIA Investor Relations",
+    "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Eine Aufteilung der von Nvidia ausgewiesenen Data-Center-Umsätze zeigt zusätzlich: Hyperscale wächst seit sechs Quartalen grob um 100 % YoY, während AI Clouds, Industrial & Enterprise (ACIE) von nahezu stagnierendem Wachstum auf 138 % YoY beschleunigt haben. Die Nachfragebasis verbreitert sich damit von einer dominanten Hyperscaler-Welle auf mindestens zwei starke Käufergruppen.",
+    "tail_analysis": "Nvidias Q2 FY27 bestätigt nicht nur außergewöhnlich hohe AI-Infrastrukturnachfrage, sondern eine qualitative Veränderung der Nachfragebreite: Hyperscaler bleiben auf extrem hohem Niveau, während ACIE zur zweiten Wachstumsmaschine wird. Das erhöht die Robustheit der Nachfrage-These und spricht gegen die Annahme, der aktuelle Infrastrukturzyklus hänge ausschließlich an weiter steigenden Capex-Raten der größten Cloud-Anbieter. Für MT·AI wird Demand Breadth künftig als eigener Interpretationspunkt dieses Nvidia-Signals geführt, ohne den Indexeffekt doppelt zu zählen.",
+    "source": "NVIDIA Investor Relations / DigiTimes analysis",
     "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
-    "content_hash": "f25c3b1210555960ddba",
+    "content_hash": "3b3196b3eb8dcb5fcc8b",
     "origin": "daily-intelligence",
-    "classification": "AI Infrastructure Demand / Memory Pressure",
+    "classification": "AI Infrastructure Demand / Memory Pressure / Demand Breadth",
     "rank": 1,
-    "estimate": "Der direkte Effekt ist bei HBM und Server-DRAM am stärksten. Enterprise SSD erhält einen kleineren Sekundäreffekt über größere AI-Cluster, Checkpointing, Inference Context und Datenpipelines.",
+    "estimate": "Die Verbreiterung der Nachfragebasis stärkt die strukturelle Infrastrukturthese und reduziert das Konzentrationsrisiko auf wenige Hyperscaler. Für HBM bleibt der direkte Effekt am stärksten; für Server-DRAM und Enterprise SSD ist ACIE besonders relevant, weil AI-Cloud-, Enterprise- und industrielle Deployments neben Accelerator-Memory auch Host-Memory, lokale NVMe-Kapazität, Checkpointing und Datenhaltung benötigen. Dieses Update ist jedoch kein zweites unabhängiges Marktereignis, sondern eine tiefere Zerlegung derselben Nvidia-Q2-Daten und löst daher keinen zusätzlichen Fresh Shock aus.",
     "red_pencil": {
-      "alternative": "Ein Teil des Umsatzanstiegs kann durch höheren Systemwert und Mix statt proportional höherer Memory- oder SSD-Stückzahlen entstehen; Effizienzgewinne und Supply-Ausbau können den zusätzlichen Komponentendruck teilweise absorbieren.",
-      "killCondition": "Nvidias nachfolgende Guidance oder Lieferkettendaten zeigen eine deutliche Abschwächung des AI-System-Ramps oder normalisierte HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter wachsender Data-Center-Umsätze.",
-      "forecastChange": "Fresh-Shock-Overlay aktiviert: kurzfristiger Aufwärtsimpuls für AI Infrastructure, HBM, Server DRAM und – schwächer – Enterprise SSD."
+      "alternative": "Ein Teil des Umsatzanstiegs kann durch höheren Systemwert und Mix statt proportional höherer Memory- oder SSD-Stückzahlen entstehen. Zudem kann die ACIE-Beschleunigung teilweise aus Projekt-Timing und einer niedrigen Vergleichsbasis stammen. Effizienzgewinne und Supply-Ausbau können den zusätzlichen Komponentendruck teilweise absorbieren.",
+      "killCondition": "Nvidias nachfolgende absolute und sequenzielle Segmentumsätze zeigen eine deutliche Abschwächung sowohl bei Hyperscale als auch bei ACIE oder normalisierte HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter hoher Data-Center-Umsätze.",
+      "forecastChange": "Fresh-Shock-Overlay bleibt einmalig aktiviert. Neue Erkenntnis: Demand Breadth steigt, da ACIE neben Hyperscale zur zweiten Wachstumsmaschine wird. Für Q3 FY27 werden Base-Effect-bedingte YoY-Veränderungen nicht ohne Prüfung der absoluten und sequenziellen Dollarentwicklung als Trendwechsel gewertet."
     },
     "sources": [
       {
         "label": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
         "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+      },
+      {
+        "label": "DigiTimes – Nvidia data-center growth decomposition supplied for MT·AI review"
       }
     ]
   }
