@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T10:47:00+02:00",
+  "updatedAt": "2026-08-27T10:50:00+02:00",
   "signals": [
     {
       "id": "S-2026-08-27-NVIDIA-Q2-FY27",
@@ -15,21 +15,35 @@
       "confidence": 99,
       "markets": ["ai_infrastructure", "hbm", "server_dram", "enterprise_ssd"],
       "companies": ["NVIDIA"],
-      "title": "Nvidia verdoppelt Umsatz – zweite AI-Nachfragewelle verbreitert den Memory- und Storage-Druck",
-      "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Eine Aufteilung der von Nvidia ausgewiesenen Data-Center-Umsätze zeigt zusätzlich: Hyperscale wächst seit sechs Quartalen grob um 100 % YoY, während AI Clouds, Industrial & Enterprise (ACIE) von nahezu stagnierendem Wachstum auf 138 % YoY beschleunigt haben. Die Nachfragebasis verbreitert sich damit von einer dominanten Hyperscaler-Welle auf mindestens zwei starke Käufergruppen.",
-      "fact": "Hyperscale blieb über sechs Quartale auf außergewöhnlich hohem, aber grob stabilem Wachstumspfad. Die jüngste Beschleunigung des gesamten Data-Center-Geschäfts stammt vor allem aus AI Clouds, Industrial & Enterprise: ACIE stieg von 6 % YoY in Q3 FY26 auf 29 %, 91 % und zuletzt 138 %. Damit kommt die zusätzliche Wachstumsdynamik nicht aus noch schneller wachsenden Hyperscalern, sondern aus einer zweiten Käuferklasse.",
-      "estimate": "Die Verbreiterung der Nachfragebasis stärkt die strukturelle Infrastrukturthese und reduziert das Konzentrationsrisiko auf wenige Hyperscaler. Für HBM bleibt der direkte Effekt am stärksten; für Server-DRAM und Enterprise SSD ist ACIE besonders relevant, weil AI-Cloud-, Enterprise- und industrielle Deployments neben Accelerator-Memory auch Host-Memory, lokale NVMe-Kapazität, Checkpointing und Datenhaltung benötigen. Dieses Update ist jedoch kein zweites unabhängiges Marktereignis, sondern eine tiefere Zerlegung derselben Nvidia-Q2-Daten und löst daher keinen zusätzlichen Fresh Shock aus.",
-      "tailInference": "Nvidias Q2 FY27 bestätigt nicht nur außergewöhnlich hohe AI-Infrastrukturnachfrage, sondern eine qualitative Veränderung der Nachfragebreite: Hyperscaler bleiben auf extrem hohem Niveau, während ACIE zur zweiten Wachstumsmaschine wird. Das erhöht die Robustheit der Nachfrage-These und spricht gegen die Annahme, der aktuelle Infrastrukturzyklus hänge ausschließlich an weiter steigenden Capex-Raten der größten Cloud-Anbieter. Für MT·AI wird Demand Breadth künftig als eigener Interpretationspunkt dieses Nvidia-Signals geführt, ohne den Indexeffekt doppelt zu zählen.",
+      "title": "Nvidia verdoppelt Umsatz – AI-Nachfrage verbreitert sich über zwei Deployment-Kanäle",
+      "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Auf der von Nvidia rückwirkend recasteten Segmentbasis lagen Hyperscale bei 48,7 Mrd. US-Dollar und AI Clouds, Industrial & Enterprise (ACIE) bei 40,3 Mrd. US-Dollar. ACIE hat sich damit nach einem Blackwell-bedingten Tief wieder stark angenähert. Das bestätigt eine breitere Deployment-Welle, beweist aber noch keine gleich starke Diversifikation der Endkundennachfrage, weil auch Hyperscaler, die über AI Clouds einkaufen, in ACIE gebucht werden können.",
+      "fact": "Die beiden Data-Center-Engines rotieren. In Q1 FY27 kamen 94 % des sequenziellen Data-Center-Zuwachses aus ACIE, in Q2 FY27 noch 59 %; zwei Quartale zuvor war der Beitrag umgekehrt und Hyperscale dominierte, während ACIE rückläufig war. Nvidia hat zudem in Q2 FY27 einen Kunden von ACIE zu Hyperscale umklassifiziert und historische Perioden rückwirkend angepasst. Für belastbare Vergleiche darf daher ausschließlich die recastete Serie verwendet werden. Gleichzeitig stiegen die Days Sales Outstanding laut der vorliegenden Analyse von 45 auf 60 Tage und die Konzentration bei Top-Kunden nahm zu.",
+      "estimate": "Die Verbreiterung der Buchungs- und Deployment-Kanäle stärkt die strukturelle Infrastrukturthese, reduziert aber das Endkunden-Konzentrationsrisiko weniger stark als die Segmentlabels allein vermuten lassen. ACIE enthält AI Natives, Enterprises, Sovereigns und auch Hyperscaler, die Kapazität über AI Clouds beziehen. Für HBM bleibt der direkte Effekt am stärksten; Server-DRAM und Enterprise SSD profitieren zusätzlich von der breiteren Ausrollung außerhalb der ersten Hyperscaler-Welle. DSO-Anstieg und höhere Top-Customer-Konzentration werden separat als Demand-Quality- und Credit-Concentration-Watch geführt und fließen nicht mechanisch in den Stressindex ein.",
+      "tailInference": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus.",
       "monitoringRule": {
-        "name": "Nvidia Q3 FY27 Base-Effect Rule",
-        "rule": "YoY-Wachstumsraten von Hyperscale und ACIE werden in Q3 FY27 nicht isoliert als Beschleunigungs- oder Abschwächungssignal gewertet. Wegen stark invertierender Vergleichsbasen sind absolute und sequenzielle Dollarveränderungen sowie der Segmentmix vorrangig zu bewerten.",
-        "reason": "Die Vergleichsbasis Q3 FY26 lag bei etwa 35,1 Mrd. US-Dollar Hyperscale und 16,1 Mrd. US-Dollar ACIE. Selbst bei unverändertem aktuellem Umsatzniveau würden die YoY-Raten stark auseinanderlaufen. Ein optischer Rückgang der Hyperscale-Wachstumsrate kann daher ohne sequenziellen Dollar-Rückgang kein belastbares Demand-Relief-Signal sein.",
+        "name": "Nvidia Q3 FY27 Segment & Recast Rule",
+        "rule": "YoY-Wachstumsraten von Hyperscale und ACIE werden nicht isoliert als Beschleunigungs- oder Abschwächungssignal gewertet. Vorrang haben absolute und sequenzielle Dollarveränderungen, der kombinierte Data-Center-Zuwachs und der Segmentmix. Historische Vergleiche dürfen ausschließlich auf der jeweils aktuellen recasteten Nvidia-Serie beruhen.",
+        "reason": "Stark unterschiedliche Vergleichsbasen können die YoY-Raten optisch verzerren. Zusätzlich hat Nvidia einen Kunden von ACIE zu Hyperscale umklassifiziert und Vorperioden recastet; das Mischen alter und neuer Serien kann die ACIE-Beiträge materiell falsch darstellen.",
         "watchMetrics": [
           "Hyperscale sequential revenue change in US dollars",
           "ACIE sequential revenue change in US dollars",
-          "Data Center segment mix",
+          "Combined Data Center sequential revenue change",
+          "ACIE share of incremental Data Center revenue",
           "Nvidia total revenue versus guidance",
-          "Memory and supply-constraint commentary"
+          "Memory and supply-constraint commentary",
+          "Days sales outstanding",
+          "Top-customer concentration"
+        ],
+        "q3Test": "Bei rund 108 Mrd. US-Dollar Umsatz-Guidance und etwa 12 Mrd. US-Dollar erwartbarem sequenziellem Zuwachs gilt ACIE als strukturell breiter werdender Deployment-Kanal, wenn ACIE erneut den größeren Anteil des Zuwachses liefert. Übernimmt Hyperscale wieder den größeren Anteil, wird die jüngste ACIE-Stärke stärker als Produktzyklus- bzw. Deployment-Queue-Effekt gewertet."
+      },
+      "demandQualityWatch": {
+        "status": "watch",
+        "indexImpact": false,
+        "thesis": "Segmentbreite und Kredit-/Kundenkonzentration sind getrennt zu bewerten. Ein breiterer Buchungsmix kann mit höherer wirtschaftlicher Konzentration zusammenfallen.",
+        "indicators": [
+          "DSO-Anstieg von 45 auf 60 Tage",
+          "höhere Konzentration bei Top-Kunden",
+          "Hyperscaler-Nachfrage kann über AI Clouds als ACIE verbucht werden"
         ]
       },
       "admissionGate": {
@@ -40,9 +54,9 @@
         "Falsifiability": true
       },
       "redPencil": {
-        "alternative": "Ein Teil des Umsatzanstiegs kann durch höheren Systemwert und Mix statt proportional höherer Memory- oder SSD-Stückzahlen entstehen. Zudem kann die ACIE-Beschleunigung teilweise aus Projekt-Timing und einer niedrigen Vergleichsbasis stammen. Effizienzgewinne und Supply-Ausbau können den zusätzlichen Komponentendruck teilweise absorbieren.",
-        "killCondition": "Nvidias nachfolgende absolute und sequenzielle Segmentumsätze zeigen eine deutliche Abschwächung sowohl bei Hyperscale als auch bei ACIE oder normalisierte HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter hoher Data-Center-Umsätze.",
-        "forecastChange": "Fresh-Shock-Overlay bleibt einmalig aktiviert. Neue Erkenntnis: Demand Breadth steigt, da ACIE neben Hyperscale zur zweiten Wachstumsmaschine wird. Für Q3 FY27 werden Base-Effect-bedingte YoY-Veränderungen nicht ohne Prüfung der absoluten und sequenziellen Dollarentwicklung als Trendwechsel gewertet."
+        "alternative": "Die starke ACIE-Dynamik kann teilweise aus Produktzyklus, Deployment-Timing, Hyperscaler-Nachfrage über Neoclouds und niedrigen Vergleichsbasen stammen. Ein breiterer Segmentmix muss daher nicht proportional mehr unabhängige Endkunden bedeuten.",
+        "killCondition": "Nvidias nachfolgende absolute und sequenzielle Segmentumsätze zeigen eine deutliche Abschwächung sowohl bei Hyperscale als auch bei ACIE oder die recastete Serie zeigt, dass der jüngste ACIE-Anteil überwiegend durch temporäre Umbuchungs- und Deployment-Effekte erklärt wird. Für die Infrastrukturthese zusätzlich kritisch wäre eine Normalisierung der HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter hoher Data-Center-Umsätze.",
+        "forecastChange": "Fresh-Shock-Overlay bleibt einmalig aktiviert. Demand Breadth wird präzisiert zu 'breitere Deployment-Kanäle, Endkundendiversifikation noch nicht bewiesen'. Q3 FY27 wird anhand der sequenziellen Dollarbeiträge von Hyperscale und ACIE sowie ausschließlich auf recasteter Datenbasis bewertet. Demand Quality und Credit Concentration bleiben ein separater Watch ohne mechanischen Indexeffekt."
       },
       "sources": [
         {
@@ -50,7 +64,7 @@
           "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
         },
         {
-          "label": "DigiTimes – Nvidia data-center growth decomposition supplied for MT·AI review"
+          "label": "DigiTimes – Nvidia Data Center structure analysis supplied for MT·AI review"
         }
       ],
       "source": "NVIDIA Investor Relations / DigiTimes analysis",
