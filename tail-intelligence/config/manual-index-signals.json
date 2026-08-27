@@ -1,0 +1,45 @@
+{
+  "updatedAt": "2026-08-27T09:20:00+02:00",
+  "signals": [
+    {
+      "id": "S-2026-08-27-NVIDIA-Q2-FY27",
+      "date": "2026-08-27",
+      "rank": 1,
+      "priorityScore": 99,
+      "classification": "AI Infrastructure Demand / Memory Pressure",
+      "signal": "demand_up",
+      "signalOverride": "demand_up",
+      "indexImpact": true,
+      "freshShockEligible": true,
+      "severity": 98,
+      "confidence": 99,
+      "markets": ["ai_infrastructure", "hbm", "server_dram", "enterprise_ssd"],
+      "companies": ["NVIDIA"],
+      "title": "Nvidia verdoppelt Umsatz – AI-Infrastruktur-Ramp beschleunigt den Memory- und Storage-Druck",
+      "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Die Q3-Umsatzprognose liegt bei rund 108 Mrd. US-Dollar. Der beschleunigte Plattform-Ramp bestätigt eine außergewöhnlich hohe AI-Infrastrukturnachfrage und erhöht den strukturellen Druck auf HBM, Server-DRAM und Enterprise-SSD.",
+      "fact": "Nvidias Q2-FY27-Zahlen zeigen eine mehr als verdoppelte Gesamtnachfrage und einen noch stärkeren Anstieg im Data-Center-Geschäft; zugleich setzt sich der Vera-Rubin-Ramp fort.",
+      "estimate": "Der direkte Effekt ist bei HBM und Server-DRAM am stärksten. Enterprise SSD erhält einen kleineren Sekundäreffekt über größere AI-Cluster, Checkpointing, Inference Context und Datenpipelines.",
+      "tailInference": "Das Signal ist nicht nur rückwärtsgerichtetes Umsatzwachstum. Die Kombination aus außergewöhnlichem Data-Center-Wachstum, hoher Forward-Guidance und weiterem Plattform-Ramp ist ein frischer Beschleunigungsimpuls. In einem bereits angespannten Memory-/Storage-Markt darf ein solches Primärsignal nicht vollständig durch historische Mittelung neutralisiert werden.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Ein Teil des Umsatzanstiegs kann durch höheren Systemwert und Mix statt proportional höherer Memory- oder SSD-Stückzahlen entstehen; Effizienzgewinne und Supply-Ausbau können den zusätzlichen Komponentendruck teilweise absorbieren.",
+        "killCondition": "Nvidias nachfolgende Guidance oder Lieferkettendaten zeigen eine deutliche Abschwächung des AI-System-Ramps oder normalisierte HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter wachsender Data-Center-Umsätze.",
+        "forecastChange": "Fresh-Shock-Overlay aktiviert: kurzfristiger Aufwärtsimpuls für AI Infrastructure, HBM, Server DRAM und – schwächer – Enterprise SSD."
+      },
+      "sources": [
+        {
+          "label": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
+          "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+        }
+      ],
+      "source": "NVIDIA Investor Relations",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+    }
+  ]
+}
