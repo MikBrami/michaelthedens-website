@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27T12:22:00+02:00",
+  "updatedAt": "2026-08-27T12:30:00+02:00",
   "projects": [
     {
       "id": "PW-2026-DUMMERSTORF",
@@ -16,33 +16,33 @@
       "commercialRelevance": "High",
       "indexImpact": false,
       "thesis": "A 240 MW AI-oriented data-center project by Schwarz materially expands Germany's sovereign AI and cloud infrastructure pipeline. It is strategically relevant for future accelerator, server, HBM, server-DRAM, enterprise-SSD, networking and power demand, but should not change the current stress index before procurement, BOM or hardware deployment becomes concrete.",
-      "watchMetrics": [
-        "Construction milestones and commissioning phases",
-        "IT load / MW ramp by phase",
-        "GPU or accelerator platform selection",
-        "Server OEM / system integrator selection",
-        "HBM and server-DRAM architecture",
-        "Enterprise SSD capacity and supplier selection",
-        "Network and optical architecture",
-        "Procurement and tender milestones",
-        "Schwarz Digits / STACKIT operating model",
-        "Potential links to Lübbenau and broader sovereign-AI strategy"
-      ],
-      "commercialTriggers": [
-        "Named accelerator or server platform",
-        "Published hardware BOM",
-        "RFP / tender / procurement launch",
-        "Memory or storage supplier qualification",
-        "First IT deployment date",
-        "Named system integrator or server OEM"
-      ],
+      "watchMetrics": ["Construction milestones and commissioning phases","IT load / MW ramp by phase","GPU or accelerator platform selection","Server OEM / system integrator selection","HBM and server-DRAM architecture","Enterprise SSD capacity and supplier selection","Network and optical architecture","Procurement and tender milestones","Schwarz Digits / STACKIT operating model","Potential links to Lübbenau and broader sovereign-AI strategy"],
+      "commercialTriggers": ["Named accelerator or server platform","Published hardware BOM","RFP / tender / procurement launch","Memory or storage supplier qualification","First IT deployment date","Named system integrator or server OEM"],
       "nextAction": "Track hardware, BOM, procurement and supplier announcements; upgrade to active commercial opportunity when a concrete platform, tender or supplier qualification emerges.",
-      "sources": [
-        {
-          "label": "DataCenter-Insider – Schwarz plant Milliarden-Rechenzentrum in Dummerstorf",
-          "url": "https://www.datacenter-insider.de/schwarz-plant-milliarden-rechenzentrum-in-dummerstorf-a-040e6cb1826be9460864c8081cea0f87/"
-        }
-      ]
+      "sources": [{"label":"DataCenter-Insider – Schwarz plant Milliarden-Rechenzentrum in Dummerstorf","url":"https://www.datacenter-insider.de/schwarz-plant-milliarden-rechenzentrum-in-dummerstorf-a-040e6cb1826be9460864c8081cea0f87/"}]
+    },
+    {
+      "id": "PW-2026-KS-UNDERGROUND",
+      "name": "K+S / Accenture Underground Datacenter",
+      "status": "emerging-project-watch",
+      "operator": "K+S / Accenture",
+      "location": "Germany – K+S underground mining sites; exact deployment sites to be confirmed",
+      "classification": "Sovereign / Secure Datacenter / Underground Infrastructure",
+      "plannedCapacityMW": 100,
+      "initialLocalPowerMW": 20,
+      "availableAreaSqmPerSite": 100000,
+      "depthMeters": "500–1000",
+      "purpose": "Secure sovereign cloud, critical infrastructure and potential AI workloads",
+      "commercialRelevance": "Medium-High / Emerging",
+      "indexImpact": false,
+      "thesis": "K+S and Accenture are evaluating underground mining infrastructure as a new German data-center model. Existing large underground areas, physical protection and local energy infrastructure could create a differentiated sovereign and high-security compute tier. The concept is commercially relevant for server, DRAM, enterprise-SSD, networking and potentially accelerator demand if announced capacity converts into concrete IT deployments.",
+      "strategicInterpretation": "The project is also a signal of increasing pressure on conventional German data-center development: power availability, land, permitting, security and community acceptance are becoming sufficiently constraining that industrial brownfield and underground infrastructure are being considered as serious alternatives.",
+      "technicalRisks": ["Heat rejection and liquid-cooling architecture underground","Fire protection and emergency access","Server and spare-parts logistics at 500–1000 m depth","Fiber connectivity and redundancy","Maintenance economics","Power expansion from local 20 MW toward stated aggregate potential","Suitability for high-density GPU/AI racks"],
+      "watchMetrics": ["Named underground sites","Confirmed IT-load MW by site","Power-grid and generation expansion","Cooling architecture","Fiber carriers and network topology","Anchor tenants / sovereign-cloud customers","AI or GPU workload confirmation","Server OEM and system integrator selection","Enterprise SSD and server-memory architecture","Procurement / RFP milestones","Construction and commissioning schedule"],
+      "commercialTriggers": ["Named customer or anchor tenant","Specific site selected for datacenter deployment","Confirmed IT load above pilot scale","GPU/AI platform announced","Server OEM or integrator named","RFP / tender launched","Memory or enterprise-SSD supplier qualification","Commissioning date announced"],
+      "upgradeRule": "Upgrade from emerging-project-watch to high-priority-watch when a specific site plus committed IT capacity, named customer, procurement process or hardware platform is confirmed.",
+      "nextAction": "Track K+S and Accenture announcements for concrete sites, MW commitments, cooling design, anchor customers and hardware procurement. Treat high-security sovereign workloads as the most plausible initial commercial niche; do not assume hyperscale AI suitability until density and cooling are demonstrated.",
+      "sources": [{"label":"DataCenter-Insider – Deutschlands neue Datacenter fahren unter Tage ein","url":"https://www.datacenter-insider.de/deutschlands-neue-datacenter-fahren-unter-tage-ein-a-b97118ce235fdc9b8bef531fc1009478/"}]
     }
   ]
 }
