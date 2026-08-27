@@ -1,9 +1,51 @@
 {
-  "updatedAt": "2026-08-26T21:35:00+02:00",
+  "updatedAt": "2026-08-27T10:55:00+02:00",
   "publicSignals": [
     {
-      "id": "S-2026-08-26-ASTRA",
+      "id": "S-2026-08-27-NVIDIA-HUGGINGFACE",
       "rank": 1,
+      "priorityScore": 92,
+      "classification": "AI Ecosystem / Open-Model Distribution Moat",
+      "signalOverride": "demand_up",
+      "indexImpact": false,
+      "title": "Nvidia will Hugging Face übernehmen – Open-Model-Ökosystem wird zum Hardware-Hedge",
+      "fact": "Laut einem von DigiTimes wiedergegebenen Bericht von The Information hat Nvidia einer Übernahme von Hugging Face für 12,9 Mrd. US-Dollar zugestimmt. Hugging Face ist eine zentrale Plattform für offene Modelle, Datensätze, Hardware-Optimierung und cloudbasierte AI-Deployments. Der Bericht ordnet die Transaktion als strategische Reaktion auf die zunehmende vertikale Integration großer Closed-Model-Anbieter und Hyperscaler ein, die eigene AI-Beschleuniger entwickeln.",
+      "estimate": "Der strategische Wert liegt weniger im aktuellen Hugging-Face-Umsatz als in der Kontrolle einer Distributions- und Deployment-Schicht oberhalb der Hardware. Ein fragmentiertes Open-Model-Ökosystem aus AI-Natives, Enterprises und kleineren Entwicklern hat deutlich geringere Anreize und Möglichkeiten, eigene Accelerators zu bauen als OpenAI, Google oder andere vertikal integrierte Großkunden. Hugging Face könnte zugleich als zusätzlicher Vertriebskanal für Nvidia-optimierte Cloud-Compute-Kapazität dienen.",
+      "tailInference": "MT·AI wertet die Transaktion als strukturellen Nachfrage-Persistenzfaktor: Open Models → Hugging Face → Nvidia-optimiertes Deployment → Nvidia Compute → höhere Cloud- und Infrastruktur-Auslastung. Der Effekt ist für AI Infrastructure direkt und für HBM, Server-DRAM und Enterprise SSD mittelbar positiv. Da die Übernahme heute keine neue physische Knappheit oder Preisbewegung erzeugt, bleibt sie index-neutral und löst keinen Fresh Shock aus.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Die hohe Bewertung kann strategische Erwartungen vorwegnehmen, die sich nicht materialisieren. Entwickler könnten Hardware-Abstraktion, konkurrierende Clouds oder alternative Accelerators bevorzugen; regulatorische Auflagen könnten die Integration begrenzen.",
+        "killCondition": "Die Transaktion kommt nicht zustande oder Hugging Face bleibt hardwareseitig so neutral, dass keine messbare zusätzliche Nvidia-Compute-Nutzung, Deployment-Bindung oder Cloud-Auslastung entsteht.",
+        "forecastChange": "Strukturelle Persistenz der Nvidia-Compute-Nachfrage steigt leicht; kein zusätzlicher kurzfristiger Indexsprung. Open-Model-Distribution wird als neuer strategischer Nachfragekanal beobachtet."
+      },
+      "riskWatch": {
+        "name": "Nvidia-financed demand / circularity exposure",
+        "indexImpact": false,
+        "interpretation": "Nvidias wachsende Beteiligungen, Cloud-Verpflichtungen und Credit-Support-Strukturen können reale Nachfrage verstärken, verändern aber zugleich deren Finanzierungs- und Konzentrationsqualität. Dieser Watch wird getrennt vom Marktstressindex geführt.",
+        "watchMetrics": [
+          "Share of Nvidia revenue linked to financially supported AI labs",
+          "Equity investments and new commitments",
+          "Credit support and cloud lease guarantees",
+          "Days sales outstanding",
+          "Top-customer concentration",
+          "Third-party utilization of financially supported GPU capacity"
+        ]
+      },
+      "sources": [
+        {
+          "label": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-26-ASTRA",
+      "rank": 2,
       "priorityScore": 96,
       "classification": "Agentic Capability Update",
       "signalOverride": "demand_up",
@@ -12,129 +54,40 @@
       "fact": "OpenAI beschreibt Astra als kommendes Modell mit erheblichen Fortschritten beim agentischen Programmieren und in der Cybersicherheit. OpenAI hat dafür strengere Sicherheitskontrollen eingeführt und Aktivitäten ausgesetzt, die diese Anforderungen noch nicht erfüllen. TIME berichtet zusätzlich aus Gesprächen mit OpenAI-Führungskräften über Astra als automatisierten Research-Intern, der experimentelle Ideen implementieren, Experimente ausführen und Ergebnisse zurückgeben kann.",
       "estimate": "OpenAIs Aussage zu kritischen Cyberfähigkeiten ist offiziell bestätigt; weitergehende Aussagen zu AGI-Zeitplänen, Research-Intern-Leistung und persistenten Agenten stammen aus Interviews und sind keine unabhängigen Capability-Evaluierungen.",
       "tailInference": "Der relevante Infrastrukturwechsel ist nicht das AGI-Label, sondern die Verlängerung produktiver Modellarbeit von einzelnen Antworten zu lang laufenden Agenten. Persistente Research-, Coding- und Tool-Use-Workloads erhöhen die potenzielle Inferenzzeit pro Nutzer massiv und stärken damit die strukturelle Nachfrage nach Compute, Server-DRAM, HBM, Enterprise-SSD, Netzwerk und Strom.",
-      "admissionGate": {
-        "Freshness": true,
-        "Evidence": true,
-        "Materiality": true,
-        "Causality": true,
-        "Falsifiability": true
-      },
-      "redPencil": {
-        "alternative": "Agenten können durch bessere Modelle, Sparse Attention, Caching und effizientere Chips pro Aufgabe deutlich weniger Ressourcen benötigen. Produktive Nutzung und Zahlungsbereitschaft müssen erst zeigen, ob Effizienzgewinne durch höhere Nutzung überkompensiert werden.",
-        "killCondition": "Persistente Agenten erreichen bis Ende 2027 keine verlässlich nutzbaren Long-Horizon-Workflows oder die reale Compute-Nachfrage pro wirtschaftlich erledigter Aufgabe fällt trotz breiter Agentenadoption deutlich.",
-        "forecastChange": "AI-Compute-Nachfrage bleibt am oberen Ende des Modells; kein zusätzlicher Pulse-Anstieg, weil der Treiber bereits bei 100 liegt."
-      },
-      "sources": [
-        {
-          "label": "OpenAI – Responding to the next frontier of critical cyber capabilities",
-          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/"
-        },
-        {
-          "label": "OpenAI – Pacing model development in an era of cyber-critical capabilities",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
-        }
-      ]
+      "admissionGate": {"Freshness":true,"Evidence":true,"Materiality":true,"Causality":true,"Falsifiability":true},
+      "redPencil": {"alternative":"Agenten können durch bessere Modelle, Sparse Attention, Caching und effizientere Chips pro Aufgabe deutlich weniger Ressourcen benötigen.","killCondition":"Persistente Agenten erreichen bis Ende 2027 keine verlässlich nutzbaren Long-Horizon-Workflows oder die reale Compute-Nachfrage pro wirtschaftlich erledigter Aufgabe fällt trotz breiter Agentenadoption deutlich.","forecastChange":"AI-Compute-Nachfrage bleibt am oberen Ende des Modells; kein zusätzlicher Pulse-Anstieg."},
+      "sources": [{"label":"OpenAI – Responding to the next frontier of critical cyber capabilities","url":"https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/"}]
     },
     {
       "id": "S-2026-08-26-FLASH-EFFICIENCY",
-      "rank": 2,
+      "rank": 3,
       "priorityScore": 94,
       "classification": "Efficiency / Agentic Economics Update",
       "signalOverride": "demand_up",
       "indexImpact": false,
       "title": "GLM-5.3-Flash und Qwen3.8-Flash-Next drücken agentische Frontier-Leistung in deutlich kleinere aktive Modelle",
-      "fact": "Z.ai veröffentlichte GLM-5.3-Flash mit 320 Milliarden Gesamtparametern und 18 Milliarden aktiven Parametern pro Token; der Hersteller meldet deutliche Sprünge in Coding- und Agentic-Benchmarks bei deutlich niedrigeren Kosten. Qwen veröffentlichte Qwen3.8-Flash-Next als frühe Vorschau auf Qwen4 mit 125 Milliarden Hauptparametern plus 51 Milliarden N-Gram-Embeddings und nur 6 Milliarden aktivierten Parametern pro Token; das Training soll gegenüber Qwen3.7-Plus etwa ein Neuntel kosten, bei besseren Coding- und Office-Ergebnissen.",
-      "estimate": "Ein großer Teil der veröffentlichten Benchmarkwerte stammt von den jeweiligen Herstellern. Unabhängige Replikation, Produktionslatenz, Tool-Reliability und reale Kosten über lange Agentenläufe müssen nachgezogen werden.",
-      "tailInference": "Die strukturell wichtigere Entwicklung ist fallende Kosten pro Einheit digitaler Arbeit. Wenn Agentenleistung pro Dollar schneller steigt als der Ressourcenbedarf pro Aufgabe fällt, entsteht ein Jevons-Effekt: mehr Automatisierung, längere Laufzeiten und wesentlich mehr parallele Agenten. Für MT·AI ist deshalb Effizienz kein Entlastungssignal, sondern potenziell ein Nachfragebeschleuniger für AI-Infrastruktur.",
-      "admissionGate": {
-        "Freshness": true,
-        "Evidence": true,
-        "Materiality": true,
-        "Causality": true,
-        "Falsifiability": true
-      },
-      "redPencil": {
-        "alternative": "Wenn Unternehmen mit effizienteren Modellen lediglich bestehende Workloads ersetzen und die Zahl produktiver Agenten nicht stark wächst, kann der Netto-Compute-Bedarf pro Aufgabe sinken.",
-        "killCondition": "Unabhängige Evaluierungen zeigen deutlich schwächere Long-Horizon- und Tool-Use-Leistung oder die Nutzung agentischer Workloads wächst 2027 langsamer als die Effizienzgewinne pro Aufgabe.",
-        "forecastChange": "Neuer strukturierter Watch auf Agentic Elasticity: Effizienzgewinn versus Wachstum der Agentenstunden."
-      },
-      "sources": [
-        {
-          "label": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
-          "url": "https://z.ai/blog/glm-5.3-flash"
-        },
-        {
-          "label": "Qwen Team – Qwen3.8-Flash-Next",
-          "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next"
-        }
-      ]
+      "fact": "Z.ai veröffentlichte GLM-5.3-Flash mit 320 Milliarden Gesamtparametern und 18 Milliarden aktiven Parametern pro Token; Qwen veröffentlichte Qwen3.8-Flash-Next mit deutlich weniger aktivierten Parametern pro Token. Beide Veröffentlichungen stärken die These sinkender Kosten pro Einheit digitaler Arbeit.",
+      "estimate": "Herstellerbenchmarks müssen durch unabhängige Produktionsdaten zu Latenz, Tool-Reliability und realen Long-Horizon-Kosten bestätigt werden.",
+      "tailInference": "Wenn Agentenleistung pro Dollar schneller steigt als der Ressourcenbedarf pro Aufgabe fällt, kann ein Jevons-Effekt mehr Automatisierung, längere Laufzeiten und mehr parallele Agenten erzeugen.",
+      "admissionGate": {"Freshness":true,"Evidence":true,"Materiality":true,"Causality":true,"Falsifiability":true},
+      "redPencil": {"alternative":"Wenn effizientere Modelle lediglich bestehende Workloads ersetzen, kann der Netto-Compute-Bedarf pro Aufgabe sinken.","killCondition":"Nutzung agentischer Workloads wächst 2027 langsamer als die Effizienzgewinne pro Aufgabe.","forecastChange":"Strukturierter Watch auf Agentic Elasticity."},
+      "sources": [{"label":"Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost","url":"https://z.ai/blog/glm-5.3-flash"},{"label":"Qwen Team – Qwen3.8-Flash-Next","url":"https://github.com/QwenLM/Qwen3.8-Flash-Next"}]
     }
   ],
   "privateIntelligence": [
-    {
-      "id": "PI-2026-08-26-MICRON-PRICE",
-      "classification": "Channel Intelligence / Unconfirmed Quantification",
-      "title": "Micron kündigt deutliche Preiserhöhung zum kommenden Wochenende an",
-      "fact": "Direkte Vorabinformation aus dem Vertriebskanal: Micron hat auf eine deutliche Preisrunde zum Wochenende hingewiesen. Produktgruppen und konkrete Prozentsätze sind noch nicht bekannt.",
-      "status": "watch-confirmation",
-      "confidence": 78,
-      "public": false,
-      "tailInference": "Das Signal stützt die These anhaltender Pricing Power bei Server-DRAM und Enterprise-SSD, ist aber ohne konkrete Prozentwerte noch nicht geeignet, die Segmentindizes mechanisch anzuheben.",
-      "action": "Nach Bekanntgabe Produktgruppen und Prozentwerte erfassen; danach Server-DRAM/HBM- und Enterprise-SSD-Index neu rechnen und Auswirkungen auf Server-/AI-Systempreise modellieren.",
-      "nextReview": "2026-08-31"
-    },
-    {
-      "id": "PI-2026-08-26-FABLE-51",
-      "classification": "Release Watch / Unconfirmed",
-      "title": "Fable 5.1 als möglicher Agentic-/Long-Horizon-Katalysator",
-      "fact": "Für den 27. August kursiert ein Release-Hinweis zu Fable 5.1; eine offizielle Herstellerbestätigung liegt zum Zeitpunkt dieses Eintrags nicht vor.",
-      "status": "watch-only",
-      "confidence": 35,
-      "public": false,
-      "tailInference": "Nur bei bestätigtem Release und belastbaren Long-Horizon-, Tool-Use- oder Persistenzdaten als Capability-Signal aufnehmen. Kein Indexeffekt auf Basis eines Gerüchts.",
-      "action": "Am 27. August offizielle Release-Seite und unabhängige Benchmarks prüfen.",
-      "nextReview": "2026-08-27"
-    },
-    {
-      "id": "PI-2026-08-26-BEL-DOUG",
-      "classification": "Model Pipeline Leak / High-Priority Watch",
-      "title": "Bel/Doug-Leak deutet auf OpenAIs bereits über Astra hinausreichende Trainingspipeline",
-      "fact": "Ein konkreter Leak-Thread behauptet, OpenAI habe den Pretrain eines internen Modells mit Codenamen Bel bereits abgeschlossen. Bel soll auf Doug folgen; Doug werde als Basis für Astra beziehungsweise GPT-6 nach weiterem Reinforcement Learning beschrieben. Für Bel werden mehr als 10 Billionen Gesamtparameter und eine Rolle als Post-GPT-6-Basis behauptet. Dieselbe Quellkette führt OpenAIs Compute-Vorteil durch Stargate sowie einen kurzfristigen Compute-Nachteil Anthropic gegenüber Astra an. Diese Angaben sind nicht offiziell bestätigt und mehrere Weiterverbreitungen gehen auf dieselbe ursprüngliche Leak-Quelle zurück.",
-      "status": "high-priority-watch",
-      "confidence": 58,
-      "public": false,
-      "source": {
-        "label": "Adit_Yah auf X – Weitergabe des Bel/Doug-Leaks",
-        "url": "https://x.com/Adidotdev/status/2092403721540186235"
-      },
-      "tailInference": "Falls Doug und Bel als aufeinanderfolgende Trainingsgenerationen bestätigt werden, wäre das ein starkes Indiz dafür, dass zusätzliche Rechenkapazität nicht nur Inference skaliert, sondern die Modell- und Forschungszyklen selbst beschleunigt. Das würde einen zweiten positiven Feedback-Loop neben Agentic/Jevons-Effekten schaffen: mehr Trainingscompute ermöglicht schnellere Modellgenerationen, die wiederum mehr produktive Agentenarbeit und damit mehr Infrastrukturbedarf erzeugen. Ein Bel-Pretrain in der behaupteten Größenklasse wäre zudem materiell für HBM, Server-DRAM, Checkpoint-Storage, Netzwerk und Cluster-Auslastung.",
-      "upgradeCondition": "Eine zweite wirklich unabhängige Insiderquelle, ein OpenAI-Hinweis, belastbare technische Artefakte oder übereinstimmende Compute-/Training-Indizien bestätigen Doug, Bel oder die behauptete Modellpipeline.",
-      "killCondition": "Die ursprüngliche Leak-Quelle zieht die Angaben zurück, OpenAI widerspricht zentralen Punkten oder belastbare spätere Informationen zeigen eine andere Modell-/Codenamen-Pipeline.",
-      "action": "Doug/Bel gezielt auf unabhängige Bestätigung beobachten; bei Upgrade-Condition als Model-Pipeline-Signal neu bewerten. Bis dahin weder öffentlich ausspielen noch Executive Pulse oder Segmentindizes verändern.",
-      "nextReview": "2026-09-05"
-    }
+    {"id":"PI-2026-08-26-MICRON-PRICE","classification":"Channel Intelligence / Unconfirmed Quantification","title":"Micron kündigt deutliche Preiserhöhung zum kommenden Wochenende an","fact":"Direkte Vorabinformation aus dem Vertriebskanal: Micron hat auf eine deutliche Preisrunde zum Wochenende hingewiesen. Produktgruppen und konkrete Prozentsätze sind noch nicht bekannt.","status":"watch-confirmation","confidence":78,"public":false,"tailInference":"Das Signal stützt die These anhaltender Pricing Power bei Server-DRAM und Enterprise-SSD, ist aber ohne konkrete Prozentwerte noch nicht geeignet, die Segmentindizes mechanisch anzuheben.","action":"Nach Bekanntgabe Produktgruppen und Prozentwerte erfassen; danach Index neu rechnen.","nextReview":"2026-08-31"},
+    {"id":"PI-2026-08-26-FABLE-51","classification":"Release Watch / Unconfirmed","title":"Fable 5.1 als möglicher Agentic-/Long-Horizon-Katalysator","fact":"Für den 27. August kursiert ein Release-Hinweis zu Fable 5.1; eine offizielle Herstellerbestätigung liegt zum Zeitpunkt dieses Eintrags nicht vor.","status":"watch-only","confidence":35,"public":false,"tailInference":"Nur bei bestätigtem Release und belastbaren Long-Horizon-, Tool-Use- oder Persistenzdaten als Capability-Signal aufnehmen.","action":"Offizielle Release-Seite und unabhängige Benchmarks prüfen.","nextReview":"2026-08-27"},
+    {"id":"PI-2026-08-26-BEL-DOUG","classification":"Model Pipeline Leak / High-Priority Watch","title":"Bel/Doug-Leak deutet auf OpenAIs bereits über Astra hinausreichende Trainingspipeline","fact":"Ein konkreter Leak-Thread behauptet eine bereits weiterreichende OpenAI-Trainingspipeline; die Angaben sind nicht offiziell bestätigt.","status":"high-priority-watch","confidence":58,"public":false,"tailInference":"Bei unabhängiger Bestätigung wäre dies ein starkes Indiz für einen zusätzlichen Trainingscompute-Feedback-Loop.","upgradeCondition":"Zweite unabhängige Quelle oder belastbare technische Indizien.","killCondition":"Quelle zieht Angaben zurück oder belastbare Informationen widersprechen.","action":"Gezielt auf unabhängige Bestätigung beobachten.","nextReview":"2026-09-05"}
   ],
   "strategicSynthesis": {
-    "title": "Von Chatbots zu skalierbarer digitaler Arbeit",
-    "thesis": "Astra zeigt die Ausweitung autonomer Arbeitsdauer; GLM-5.3-Flash und Qwen3.8-Flash-Next drücken die Kosten agentischer Fähigkeiten. Zusammengenommen steigt die Wahrscheinlichkeit eines Jevons-Effekts: billigere digitale Arbeit erzeugt mehr Agentenstunden und damit mehr Gesamtbedarf an Compute, Memory, Storage, Netzwerk und Strom. Der private Bel/Doug-Watch ergänzt die Hypothese eines zweiten Feedback-Loops, bei dem zusätzliche Trainingskapazität die Modellgenerationen selbst beschleunigt; dieser Teil bleibt bis zur unabhängigen Bestätigung ausdrücklich unbestätigt.",
-    "memoryImplication": "Die angekündigte Micron-Preisrunde trifft auf einen Markt, dessen potenzielle nächste Nachfragestufe – persistente und massenhaft parallele Agenten – noch kaum breit ausgerollt ist. Sollte sich zusätzlich eine beschleunigte Multi-Generation-Trainingspipeline bei OpenAI bestätigen, würde das das Upside-Risiko für HBM, Server-DRAM und Enterprise-SSD weiter erhöhen. Vor konkreter Preisquantifizierung und unabhängiger Bel/Doug-Bestätigung folgt daraus jedoch kein zusätzlicher mechanischer Indexsprung.",
-    "indexDecision": "Executive Pulse und Segmentwerte bleiben bis zu separaten bestätigten Markt-, Preis- oder Verfügbarkeitssignalen unverändert; Astra/Flash sowie Bel/Doug sind index-neutral."
+    "title": "Von Chatbots zu skalierbarer digitaler Arbeit – und Nvidia baut die Distributionsschicht",
+    "thesis": "Astra verlängert autonome Arbeitsdauer, effizientere Flash-Modelle senken Kosten pro Einheit digitaler Arbeit, und die gemeldete Hugging-Face-Übernahme würde Nvidia eine zentrale Distributions- und Deployment-Schicht des Open-Model-Ökosystems geben. Zusammen erhöht das die Wahrscheinlichkeit persistenter, breit verteilter AI-Compute-Nachfrage.",
+    "memoryImplication": "Hugging Face ist kein kurzfristiger Knappheitsschock, kann aber mittel- und langfristig mehr offene AI-Workloads im Nvidia-Ökosystem halten. Das stärkt die Nachfragepersistenz für HBM, Server-DRAM und Enterprise SSD, während Nvidia-finanzierte Nachfrage separat auf Qualität und Konzentration überwacht wird.",
+    "indexDecision": "Hugging Face bleibt index-neutral; kein zusätzlicher Fresh Shock. Der strategische Nachfragekanal und der Circularity-/Credit-Risk-Watch werden separat geführt."
   },
   "nextCatalysts": [
-    {
-      "date": "2026-08-27",
-      "title": "Agentic Release Watch",
-      "why": "Prüfen, ob ein bestätigtes Frontier-Modell neue Long-Horizon-, Tool-Use- oder Persistenzfähigkeiten veröffentlicht."
-    },
-    {
-      "date": "2026-09-05",
-      "title": "Bel/Doug Independent Confirmation Review",
-      "why": "Prüfen, ob eine zweite unabhängige Quelle, OpenAI-Hinweise oder technische Indizien die behauptete Post-Astra-/Post-GPT-6-Trainingspipeline stützen."
-    },
-    {
-      "date": "2026-09-15",
-      "title": "Agentic Elasticity Review",
-      "why": "Prüfen, ob fallende Kosten pro Agentenstunde bereits zu höherer Nutzung und längeren produktiven Laufzeiten führen."
-    }
+    {"date":"2026-08-31","title":"Nvidia / Hugging Face Deal Confirmation & Terms","why":"Bestätigung, regulatorische Bedingungen und Integrationsplan prüfen; insbesondere Hardware-Neutralität, Cloud-Compute-Angebote und Deployment-Integration."},
+    {"date":"2026-09-05","title":"Bel/Doug Independent Confirmation Review","why":"Unabhängige Bestätigung der behaupteten Modellpipeline prüfen."},
+    {"date":"2026-09-15","title":"Agentic Elasticity Review","why":"Prüfen, ob fallende Kosten pro Agentenstunde bereits zu höherer Nutzung führen."}
   ]
 }
