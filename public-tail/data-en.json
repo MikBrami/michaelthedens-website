@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-26T19:25:01.571Z",
+  "generatedAt": "2026-08-27T04:31:41.214Z",
   "editorial": {
     "version": 4,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "06f6e86c6479989fc942d8d8",
+    "sourceHash": "4ef95c22c3abbe021567dbc3",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
-    "dataAsOf": "2026-08-26",
+    "dataAsOf": "2026-08-27",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 120,
@@ -38,38 +38,54 @@
       }
     ],
     "sourceDataAsOf": "2026-08-26",
-    "analysisAsOf": "2026-08-26"
+    "analysisAsOf": "2026-08-27"
   },
   "executivePulse": {
     "current": 79,
-    "previous": 75,
+    "previous": 79,
     "status": "orange",
     "confidence": 88,
     "riskPressure": 85,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM/RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check of 2026-08-26 confirmed a material change in the situation. New capacity and improved yields can relieve pressure but will reach the market only with a delay. For buyers, securing supply, alternative BOMs and early procurement remain decisive."
+    "interpretation": "Memory and AI infrastructure remain strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check on 2026-08-27 reviewed eight relevant items and found no confirmed material directional change. New capacity and improved yields could relieve pressure but will reach the market with a lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
-      "date": "2026-08-26",
-      "title": "Astra shifts frontier AI from answers to autonomous research work",
-      "summary": "OpenAI describes Astra as a forthcoming model with substantial advancements in agentic programming and cybersecurity. OpenAI has introduced stricter safety controls for it and suspended activities that do not yet meet those requirements. TIME additionally reports, from conversations with OpenAI leaders, that Astra functions as an automated research intern that can implement experimental ideas, run experiments and return results.",
-      "analysis": "The relevant infrastructure shift is not the AGI label but the extension of productive model work from individual answers to long‑running agents. Persistent research, coding and tool‑use workloads massively increase potential inference time per user and thereby strengthen structural demand for compute, server DRAM, HBM, enterprise SSD, networking and power.",
-      "score": 96,
-      "source": "OpenAI – Responding to the next frontier of critical cyber capabilities",
-      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
-      "layer": "accepted-signal"
+      "date": "2026-08-27",
+      "title": "Samsung, SK Hynix climb sharply: why Nvidia earnings strengthened memory bull case",
+      "summary": "Aktuelle Meldung von Invezz: Samsung, SK Hynix climb sharply: why Nvidia earnings strengthened memory bull case",
+      "analysis": "The report is relevant for datacentre storage: it can influence prices, available capacity and procurement strategy for enterprise SSDs.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Invezz",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpMRjhtOFVHMkxlbWx5TWVGSlh0X3FrMHVHekhTdFhtN0ktVkRhSDhub3JwYU5pbS1hS2trVEk4b2tQVTJPYWdYSkhlZndEQ2J0SUVfSHh5RzNudXp0aFZjWlVJZVB1TklWUDQwX0k3amRRRHRFajgxUFdTVnRYbC1adGVyYUNld2pUa29vSkI3TW1RT00xTC1PMmxEcllEZWtNMVRDYktFNEtaby1nb3U4RE52ZVU?oc=5",
+      "layer": "news"
     },
     {
-      "date": "2026-08-26",
-      "title": "GLM-5.3-Flash and Qwen3.8-Flash-Next push agentic frontier performance into much smaller active models",
-      "summary": "Z.ai released GLM-5.3-Flash with 320 billion total parameters and 18 billion active parameters per token; the maker reports marked leaps in coding and agentic benchmarks at substantially lower cost. Qwen released Qwen3.8-Flash-Next as an early preview of Qwen4 with 125 billion main parameters plus 51 billion n‑gram embeddings and only 6 billion activated parameters per token; training is said to cost about one ninth of Qwen3.7-Plus while producing better coding and office results.",
-      "analysis": "The structurally more important development is falling cost per unit of digital work. If agent performance per dollar rises faster than resource requirement per task declines, a Jevons effect will follow: more automation, longer runtimes and materially more parallel agents. For MT·AI, therefore, efficiency is not a relief signal but potentially an accelerator of demand for AI infrastructure.",
-      "score": 94,
-      "source": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
-      "url": "https://z.ai/blog/glm-5.3-flash",
-      "layer": "accepted-signal"
+      "date": "2026-08-27",
+      "title": "Samsung Electronics Files 'zHBF' Trademark — Moving Beyond HBM to Lead NAND-Based AI Memory",
+      "summary": "Samsung Electronics Files 'zHBF' Trademark — Moving Beyond HBM to Lead NAND-Based AI Memory finance.biggo.com",
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand will directly affect available GPU systems and pricing in the AI infrastructure market.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1heFc3ZkM4TGs3R0JnTWtXYlhKMDJ3cF9LakFwbXVzNHFlZWhETmp3Smo4LTJOWlFpZFpoN3NVNS1ZTVhvVDhKYW5BUnlpeURCblJHekhFbFh2em92REszT2REUHpSaW9PLWRYX3JrTXIwcmh4dFE?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "Kioxia, SanDisk plan Japan NAND fab for AI demand: sources",
+      "summary": "Kioxia, SanDisk plan Japan NAND fab for AI demand: sources Tech in Asia",
+      "analysis": "The report is relevant for datacentre storage: it can influence prices, available capacity and procurement strategy for enterprise SSDs.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Tech in Asia",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc3BXTjc4XzlCVnp2Qmd0X21DVWtyQXV1dzVJQmRXcGdTMVZjU0RtR3J1NERPSUZqREh5b3VoYkNDdnFDLWhOQ25ydzJrWVpXWFBYd0xLYTBpRzU3X3JncmZnVWhoMy1MUGZPanJPa0NUcjRxc2FqdE5BVDhqNEJST095Q3VLNzNUSmpWcg?oc=5",
+      "layer": "news"
     }
   ],
   "catalysts": [
@@ -79,11 +95,11 @@
     },
     {
       "date": "2026-08-31",
-      "event": "Astra: safety, release and deployment review"
+      "event": "Astra: Safety, Release and Deployment Review"
     },
     {
       "date": "2026-09-05",
-      "event": "Texas/ERCOT: review Batch Zero and deposit risk"
+      "event": "Bel/Doug Independent Confirmation Review"
     },
     {
       "date": "2026-09-15",
@@ -95,15 +111,15 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: review filing, valuation and capital access"
+      "event": "Switch IPO: review filing, valuation and access to capital"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging remains a central AI supply‑chain bottleneck at least until H2 2027 despite the Chiayi expansion."
+      "event": "Forecast Review: Advanced packaging will remain a central AI supply‑chain bottleneck at least until H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier review: AI asset‑backed financing reflexivity"
+      "event": "Falsifier-Review: AI Asset‑Backed Financing Reflexivity"
     }
   ]
 }
