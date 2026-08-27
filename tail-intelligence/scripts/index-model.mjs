@@ -177,15 +177,27 @@ export function calculateIndexModel(articles, methodology, options = {}) {
   const model = methodology.indexModel;
   if (!model) throw new Error('methodology.indexModel is missing');
   const operationalIndicators = Array.isArray(options.operationalIndicators) ? options.operationalIndicators : [];
-  const indexDates = [
+
+  const baselineDates = [
+    ...articles
+      .filter((article) => article.indexImpact !== false && article.freshShockEligible !== true)
+      .map((article) => article.date),
+    ...operationalIndicators.map((indicator) => indicator.date)
+  ].filter(Boolean).sort();
+  const allImpactDates = [
     ...articles
       .filter((article) => article.indexImpact !== false)
       .map((article) => article.date),
     ...operationalIndicators.map((indicator) => indicator.date)
   ].filter(Boolean).sort();
-  const asOf = indexDates.at(-1)
+
+  const baselineAsOf = baselineDates.at(-1)
     || options.asOf
-    || articles.map((article) => article.date).filter(Boolean).sort().at(-1);
+    || allImpactDates.at(-1);
+  const shockAsOf = allImpactDates.at(-1)
+    || options.asOf
+    || baselineAsOf;
+
   const marketIds = new Set([
     ...Object.keys(model.executiveMarketWeights || {}),
     ...articles.flatMap((article) => article.markets || [])
@@ -207,14 +219,15 @@ export function calculateIndexModel(articles, methodology, options = {}) {
       }
       return true;
     });
+    const baselineArticles = marketArticles.filter((article) => article.freshShockEligible !== true);
     const marketIndicators = operationalIndicators.filter((indicator) => indicator.market === id);
-    const drivers = driverWeightEntries.map(([driverId]) => calculateDriver(marketArticles, marketIndicators, driverId, model, asOf));
+    const drivers = driverWeightEntries.map(([driverId]) => calculateDriver(baselineArticles, marketIndicators, driverId, model, baselineAsOf));
     const available = drivers.filter((driver) => driver.score !== null);
     const availableWeight = available.reduce((sum, driver) => sum + Number(model.driverWeights[driver.id]), 0);
     const baseScore = availableWeight
       ? Math.round(available.reduce((sum, driver) => sum + driver.score * Number(model.driverWeights[driver.id]), 0) / availableWeight)
       : 0;
-    const freshShock = calculateFreshShock(marketArticles, id, model, asOf);
+    const freshShock = calculateFreshShock(marketArticles, id, model, shockAsOf);
     const rawScore = Math.round(clamp(baseScore + freshShock.raw));
     const evidenceConfidence = availableWeight
       ? available.reduce((sum, driver) => sum + driver.confidence * Number(model.driverWeights[driver.id]), 0) / availableWeight
@@ -292,9 +305,10 @@ export function calculateIndexModel(articles, methodology, options = {}) {
   });
 
   return {
-    version: '1.3',
-    baseModelVersion: model.version,
-    asOf,
+    version: model.version,
+    formulaRevision: '1.3',
+    baselineAsOf,
+    asOf: shockAsOf,
     executiveScore,
     executiveBaseScore,
     executiveFreshShock,
