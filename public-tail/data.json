@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T07:26:18.888Z",
+  "generatedAt": "2026-08-27T07:29:44.017Z",
   "platform": {
     "dataAsOf": "2026-08-27",
     "dataFreshness": "current",
@@ -10,22 +10,22 @@
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 77,
-        "status": "orange",
+        "score": 84,
+        "status": "red",
         "signals": 16
       },
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 78,
-        "status": "orange",
+        "score": 85,
+        "status": "red",
         "signals": 28
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 75,
-        "status": "orange",
+        "score": 85,
+        "status": "red",
         "signals": 17
       }
     ],
@@ -33,11 +33,11 @@
     "analysisAsOf": "2026-08-27"
   },
   "executivePulse": {
-    "current": 75,
-    "previous": 79,
-    "status": "orange",
-    "confidence": 87,
-    "riskPressure": 77,
+    "current": 82,
+    "previous": 75,
+    "status": "red",
+    "confidence": 88,
+    "riskPressure": 86,
     "coverage": 100,
     "methodologyVersion": "1.2",
     "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-27 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
@@ -154,9 +154,9 @@
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-27T07:26:19.048Z",
+    "generatedAt": "2026-08-27T07:29:44.187Z",
     "count": 3,
-    "candidateCount": 108,
+    "candidateCount": 107,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
