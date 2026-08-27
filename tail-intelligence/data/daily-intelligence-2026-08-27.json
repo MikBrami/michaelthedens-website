@@ -135,7 +135,123 @@
       "delta": 20
     }
   ],
-  "acceptedSignals": [],
+  "acceptedSignals": [
+    {
+      "id": "S-2026-08-27-NVIDIA-Q2-FY27",
+      "date": "2026-08-27",
+      "rank": 1,
+      "priorityScore": 99,
+      "classification": "AI Infrastructure Demand / Memory Pressure",
+      "signal": "demand_up",
+      "signalOverride": "demand_up",
+      "indexImpact": true,
+      "freshShockEligible": true,
+      "severity": 98,
+      "confidence": 99,
+      "markets": [
+        "ai_infrastructure",
+        "hbm",
+        "server_dram",
+        "enterprise_ssd"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "title": "Nvidia verdoppelt Umsatz – AI-Infrastruktur-Ramp beschleunigt den Memory- und Storage-Druck",
+      "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Die Q3-Umsatzprognose liegt bei rund 108 Mrd. US-Dollar. Der beschleunigte Plattform-Ramp bestätigt eine außergewöhnlich hohe AI-Infrastrukturnachfrage und erhöht den strukturellen Druck auf HBM, Server-DRAM und Enterprise-SSD.",
+      "fact": "Nvidias Q2-FY27-Zahlen zeigen eine mehr als verdoppelte Gesamtnachfrage und einen noch stärkeren Anstieg im Data-Center-Geschäft; zugleich setzt sich der Vera-Rubin-Ramp fort.",
+      "estimate": "Der direkte Effekt ist bei HBM und Server-DRAM am stärksten. Enterprise SSD erhält einen kleineren Sekundäreffekt über größere AI-Cluster, Checkpointing, Inference Context und Datenpipelines.",
+      "tailInference": "Das Signal ist nicht nur rückwärtsgerichtetes Umsatzwachstum. Die Kombination aus außergewöhnlichem Data-Center-Wachstum, hoher Forward-Guidance und weiterem Plattform-Ramp ist ein frischer Beschleunigungsimpuls. In einem bereits angespannten Memory-/Storage-Markt darf ein solches Primärsignal nicht vollständig durch historische Mittelung neutralisiert werden.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Ein Teil des Umsatzanstiegs kann durch höheren Systemwert und Mix statt proportional höherer Memory- oder SSD-Stückzahlen entstehen; Effizienzgewinne und Supply-Ausbau können den zusätzlichen Komponentendruck teilweise absorbieren.",
+        "killCondition": "Nvidias nachfolgende Guidance oder Lieferkettendaten zeigen eine deutliche Abschwächung des AI-System-Ramps oder normalisierte HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter wachsender Data-Center-Umsätze.",
+        "forecastChange": "Fresh-Shock-Overlay aktiviert: kurzfristiger Aufwärtsimpuls für AI Infrastructure, HBM, Server DRAM und – schwächer – Enterprise SSD."
+      },
+      "sources": [
+        {
+          "label": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
+          "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+        }
+      ],
+      "source": "NVIDIA Investor Relations",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S-2026-08-26-ASTRA",
+      "rank": 1,
+      "priorityScore": 96,
+      "classification": "Agentic Capability Update",
+      "signalOverride": "demand_up",
+      "indexImpact": false,
+      "title": "Astra verschiebt Frontier-AI von Antworten zu autonomer Forschungsarbeit",
+      "fact": "OpenAI beschreibt Astra als kommendes Modell mit erheblichen Fortschritten beim agentischen Programmieren und in der Cybersicherheit. OpenAI hat dafür strengere Sicherheitskontrollen eingeführt und Aktivitäten ausgesetzt, die diese Anforderungen noch nicht erfüllen. TIME berichtet zusätzlich aus Gesprächen mit OpenAI-Führungskräften über Astra als automatisierten Research-Intern, der experimentelle Ideen implementieren, Experimente ausführen und Ergebnisse zurückgeben kann.",
+      "estimate": "OpenAIs Aussage zu kritischen Cyberfähigkeiten ist offiziell bestätigt; weitergehende Aussagen zu AGI-Zeitplänen, Research-Intern-Leistung und persistenten Agenten stammen aus Interviews und sind keine unabhängigen Capability-Evaluierungen.",
+      "tailInference": "Der relevante Infrastrukturwechsel ist nicht das AGI-Label, sondern die Verlängerung produktiver Modellarbeit von einzelnen Antworten zu lang laufenden Agenten. Persistente Research-, Coding- und Tool-Use-Workloads erhöhen die potenzielle Inferenzzeit pro Nutzer massiv und stärken damit die strukturelle Nachfrage nach Compute, Server-DRAM, HBM, Enterprise-SSD, Netzwerk und Strom.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Agenten können durch bessere Modelle, Sparse Attention, Caching und effizientere Chips pro Aufgabe deutlich weniger Ressourcen benötigen. Produktive Nutzung und Zahlungsbereitschaft müssen erst zeigen, ob Effizienzgewinne durch höhere Nutzung überkompensiert werden.",
+        "killCondition": "Persistente Agenten erreichen bis Ende 2027 keine verlässlich nutzbaren Long-Horizon-Workflows oder die reale Compute-Nachfrage pro wirtschaftlich erledigter Aufgabe fällt trotz breiter Agentenadoption deutlich.",
+        "forecastChange": "AI-Compute-Nachfrage bleibt am oberen Ende des Modells; kein zusätzlicher Pulse-Anstieg, weil der Treiber bereits bei 100 liegt."
+      },
+      "sources": [
+        {
+          "label": "OpenAI – Responding to the next frontier of critical cyber capabilities",
+          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/"
+        },
+        {
+          "label": "OpenAI – Pacing model development in an era of cyber-critical capabilities",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-26-FLASH-EFFICIENCY",
+      "rank": 2,
+      "priorityScore": 94,
+      "classification": "Efficiency / Agentic Economics Update",
+      "signalOverride": "demand_up",
+      "indexImpact": false,
+      "title": "GLM-5.3-Flash und Qwen3.8-Flash-Next drücken agentische Frontier-Leistung in deutlich kleinere aktive Modelle",
+      "fact": "Z.ai veröffentlichte GLM-5.3-Flash mit 320 Milliarden Gesamtparametern und 18 Milliarden aktiven Parametern pro Token; der Hersteller meldet deutliche Sprünge in Coding- und Agentic-Benchmarks bei deutlich niedrigeren Kosten. Qwen veröffentlichte Qwen3.8-Flash-Next als frühe Vorschau auf Qwen4 mit 125 Milliarden Hauptparametern plus 51 Milliarden N-Gram-Embeddings und nur 6 Milliarden aktivierten Parametern pro Token; das Training soll gegenüber Qwen3.7-Plus etwa ein Neuntel kosten, bei besseren Coding- und Office-Ergebnissen.",
+      "estimate": "Ein großer Teil der veröffentlichten Benchmarkwerte stammt von den jeweiligen Herstellern. Unabhängige Replikation, Produktionslatenz, Tool-Reliability und reale Kosten über lange Agentenläufe müssen nachgezogen werden.",
+      "tailInference": "Die strukturell wichtigere Entwicklung ist fallende Kosten pro Einheit digitaler Arbeit. Wenn Agentenleistung pro Dollar schneller steigt als der Ressourcenbedarf pro Aufgabe fällt, entsteht ein Jevons-Effekt: mehr Automatisierung, längere Laufzeiten und wesentlich mehr parallele Agenten. Für MT·AI ist deshalb Effizienz kein Entlastungssignal, sondern potenziell ein Nachfragebeschleuniger für AI-Infrastruktur.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Wenn Unternehmen mit effizienteren Modellen lediglich bestehende Workloads ersetzen und die Zahl produktiver Agenten nicht stark wächst, kann der Netto-Compute-Bedarf pro Aufgabe sinken.",
+        "killCondition": "Unabhängige Evaluierungen zeigen deutlich schwächere Long-Horizon- und Tool-Use-Leistung oder die Nutzung agentischer Workloads wächst 2027 langsamer als die Effizienzgewinne pro Aufgabe.",
+        "forecastChange": "Neuer strukturierter Watch auf Agentic Elasticity: Effizienzgewinn versus Wachstum der Agentenstunden."
+      },
+      "sources": [
+        {
+          "label": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
+          "url": "https://z.ai/blog/glm-5.3-flash"
+        },
+        {
+          "label": "Qwen Team – Qwen3.8-Flash-Next",
+          "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next"
+        }
+      ]
+    }
+  ],
   "predictionLogUpdates": [
     {
       "id": "P-2026-08-15-02",
@@ -241,15 +357,15 @@
     "preserveForecastHistory": true,
     "eraseMisses": false,
     "lateAdmissionNote": "SoftBank Q1/OpenAI-collateral financing remains transparently marked as a late admission. TrendForce's 10 August primary BOM estimate is admitted on 15 August as a new quantified Client-Memory layer update; observations, model estimates and TAIL inference remain separated.",
-    "manualOverlayAppliedAt": "2026-08-26T21:35:00+02:00",
-    "manualOverlayPolicy": "Public signals require evidence and admission-gate review. Private channel intelligence remains excluded from public Lighthouse output and from mechanical index changes until quantified."
+    "manualOverlayAppliedAt": "2026-08-27T09:20:00+02:00",
+    "manualOverlayPolicy": "Public signals require evidence and admission-gate review. Approved manual index signals are written to the Knowledge Base and scored mechanically; private channel intelligence remains excluded until quantified."
   },
   "dailyStatus": {
     "date": "2026-08-27",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
-    "impactScore": 0,
-    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "type": "material-market-update",
+    "title": "Nvidia bestätigt beschleunigten AI-Infrastruktur-Ramp",
+    "impactScore": 10,
+    "note": "Nvidias Q2-FY27-Zahlen sind als bestätigtes materielles Nachfrage- und Beschleunigungssignal aufgenommen. Das Signal wirkt mechanisch auf den Index und aktiviert bei außergewöhnlicher Frische und Evidenz das begrenzte Fresh-Shock-Overlay."
   },
   "automatedDaily": {
     "generatedAt": "2026-08-27T04:31:00.912Z",

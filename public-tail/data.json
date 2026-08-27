@@ -1,83 +1,77 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T04:31:01.589Z",
+  "generatedAt": "2026-08-27T07:26:18.888Z",
   "platform": {
     "dataAsOf": "2026-08-27",
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 120,
+    "articleCount": 121,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 80,
+        "score": 77,
         "status": "orange",
-        "signals": 15
+        "signals": 16
       },
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 80,
+        "score": 78,
         "status": "orange",
-        "signals": 27
+        "signals": 28
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 83,
-        "status": "red",
-        "signals": 16
+        "score": 75,
+        "status": "orange",
+        "signals": 17
       }
     ],
-    "sourceDataAsOf": "2026-08-26",
+    "sourceDataAsOf": "2026-08-27",
     "analysisAsOf": "2026-08-27"
   },
   "executivePulse": {
-    "current": 79,
+    "current": 75,
     "previous": 79,
     "status": "orange",
-    "confidence": 88,
-    "riskPressure": 85,
+    "confidence": 87,
+    "riskPressure": 77,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-27 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-27 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-08-27",
-      "title": "Samsung und SK Hynix klettern stark: Warum Nvidias Zahlen den Memory‑Bullcase stärkten",
-      "summary": "Invezz meldet, dass Samsung und SK Hynix stark zulegten; Nvidias Quartalszahlen hätten den Memory‑Bullcase gestützt.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Invezz",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpMRjhtOFVHMkxlbWx5TWVGSlh0X3FrMHVHekhTdFhtN0ktVkRhSDhub3JwYU5pbS1hS2trVEk4b2tQVTJPYWdYSkhlZndEQ2J0SUVfSHh5RzNudXp0aFZjWlVJZVB1TklWUDQwX0k3amRRRHRFajgxUFdTVnRYbC1adGVyYUNld2pUa29vSkI3TW1RT00xTC1PMmxEcllEZWtNMVRDYktFNEtaby1nb3U4RE52ZVU?oc=5",
-      "layer": "news"
+      "title": "Nvidia verdoppelt Umsatz – AI-Infrastruktur-Ramp beschleunigt den Memory- und Storage-Druck",
+      "summary": "Nvidias Q2-FY27-Zahlen zeigen eine mehr als verdoppelte Gesamtnachfrage und einen noch stärkeren Anstieg im Data-Center-Geschäft; zugleich setzt sich der Vera-Rubin-Ramp fort.",
+      "analysis": "Das Signal ist nicht nur rückwärtsgerichtetes Umsatzwachstum. Die Kombination aus außergewöhnlichem Data-Center-Wachstum, hoher Forward-Guidance und weiterem Plattform-Ramp ist ein frischer Beschleunigungsimpuls. In einem bereits angespannten Memory-/Storage-Markt darf ein solches Primärsignal nicht vollständig durch historische Mittelung neutralisiert werden.",
+      "score": 99,
+      "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
+      "layer": "accepted-signal"
     },
     {
       "date": "2026-08-27",
-      "title": "Samsung Electronics meldet 'zHBF'-Marke — will über HBM hinaus NAND‑basiertes AI‑Memory anführen",
-      "summary": "Samsung hat die Marke 'zHBF' angemeldet; laut Bericht positioniert sich das Unternehmen, über HBM hinaus bei NAND‑basiertem AI‑Memory eine führende Rolle anzustreben.",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1heFc3ZkM4TGs3R0JnTWtXYlhKMDJ3cF9LakFwbXVzNHFlZWhETmp3Smo4LTJOWlFpZFpoN3NVNS1ZTVhvVDhKYW5BUnlpeURCblJHekhFbFh2em92REszT2REUHpSaW9PLWRYX3JrTXIwcmh4dFE?oc=5",
-      "layer": "news"
+      "title": "Astra verschiebt Frontier-AI von Antworten zu autonomer Forschungsarbeit",
+      "summary": "OpenAI beschreibt Astra als kommendes Modell mit erheblichen Fortschritten beim agentischen Programmieren und in der Cybersicherheit. OpenAI hat dafür strengere Sicherheitskontrollen eingeführt und Aktivitäten ausgesetzt, die diese Anforderungen noch nicht erfüllen. TIME berichtet zusätzlich aus Gesprächen mit OpenAI-Führungskräften über Astra als automatisierten Research-Intern, der experimentelle Ideen implementieren, Experimente ausführen und Ergebnisse zurückgeben kann.",
+      "analysis": "Der relevante Infrastrukturwechsel ist nicht das AGI-Label, sondern die Verlängerung produktiver Modellarbeit von einzelnen Antworten zu lang laufenden Agenten. Persistente Research-, Coding- und Tool-Use-Workloads erhöhen die potenzielle Inferenzzeit pro Nutzer massiv und stärken damit die strukturelle Nachfrage nach Compute, Server-DRAM, HBM, Enterprise-SSD, Netzwerk und Strom.",
+      "score": 96,
+      "source": "OpenAI – Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+      "layer": "accepted-signal"
     },
     {
       "date": "2026-08-27",
-      "title": "Kioxia und SanDisk planen NAND‑Fab in Japan wegen AI‑Nachfrage: Quellen",
-      "summary": "Quellen zufolge planen Kioxia und SanDisk eine NAND‑Fabrik in Japan, um auf die Nachfrage nach AI‑getriebenem Speicher zu reagieren.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Tech in Asia",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc3BXTjc4XzlCVnp2Qmd0X21DVWtyQXV1dzVJQmRXcGdTMVZjU0RtR3J1NERPSUZqREh5b3VoYkNDdnFDLWhOQ25ydzJrWVpXWFBYd0xLYTBpRzU3X3JncmZnVWhoMy1MUGZPanJPa0NUcjRxc2FqdE5BVDhqNEJST095Q3VLNzNUSmpWcg?oc=5",
-      "layer": "news"
+      "title": "GLM-5.3-Flash und Qwen3.8-Flash-Next drücken agentische Frontier-Leistung in deutlich kleinere aktive Modelle",
+      "summary": "Z.ai veröffentlichte GLM-5.3-Flash mit 320 Milliarden Gesamtparametern und 18 Milliarden aktiven Parametern pro Token; der Hersteller meldet deutliche Sprünge in Coding- und Agentic-Benchmarks bei deutlich niedrigeren Kosten. Qwen veröffentlichte Qwen3.8-Flash-Next als frühe Vorschau auf Qwen4 mit 125 Milliarden Hauptparametern plus 51 Milliarden N-Gram-Embeddings und nur 6 Milliarden aktivierten Parametern pro Token; das Training soll gegenüber Qwen3.7-Plus etwa ein Neuntel kosten, bei besseren Coding- und Office-Ergebnissen.",
+      "analysis": "Die strukturell wichtigere Entwicklung ist fallende Kosten pro Einheit digitaler Arbeit. Wenn Agentenleistung pro Dollar schneller steigt als der Ressourcenbedarf pro Aufgabe fällt, entsteht ein Jevons-Effekt: mehr Automatisierung, längere Laufzeiten und wesentlich mehr parallele Agenten. Für MT·AI ist deshalb Effizienz kein Entlastungssignal, sondern potenziell ein Nachfragebeschleuniger für AI-Infrastruktur.",
+      "score": 94,
+      "source": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "layer": "accepted-signal"
     }
   ],
   "catalysts": [
@@ -116,14 +110,38 @@
   ],
   "dailyStatus": {
     "date": "2026-08-27",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
-    "impactScore": 0,
-    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "type": "material-market-update",
+    "title": "Nvidia bestätigt beschleunigten AI-Infrastruktur-Ramp",
+    "impactScore": 10,
+    "note": "Nvidias Q2-FY27-Zahlen sind als bestätigtes materielles Nachfrage- und Beschleunigungssignal aufgenommen. Das Signal wirkt mechanisch auf den Index und aktiviert bei außergewöhnlicher Frische und Evidenz das begrenzte Fresh-Shock-Overlay."
   },
   "news": [
     {
       "date": "2026-08-27",
+      "title": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+      "summary": "Aktuelle Meldung von TrendForce: [News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 96,
+      "relevanceScore": 91,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbXhrN2dBeEJSbGZaaW9YR0RqdGc2UTBCZUg2ZjZuNFRZOGRjOUE3bzNvdjQ4Sm9KWjlrZ1BzTXRrenh1VWl3Vjh2Z3pKM2JVXzJQRzZYcGpBSlZqQnJKY09yb1RxR3JxV0FZYkZWMDBwTW9SclNTQjVYSEU1VmwyZV9wUm1zeW0zSzlhOGwtUXRaTko2MkVxRlJydl9UQkMxeXNmbGtJcW8td1g5QTlzcnRUT2JFMUFob2FsckdaLUhKcFE3QVlpZHFacw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "Why YMTC’s NAND rise matters for Samsung, SK hynix",
+      "summary": "Why YMTC’s NAND rise matters for Samsung, SK hynix The Korea Herald",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "The Korea Herald",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBOT2gzTnNLZ3pRSkFwX0RGYUlkWWpPV1JpYnVXSWlRYTFrM2FIVlVYWnJmMjJnVVExMkIwZmJqUFdheU8ycTFNT0FnMHpHQ3lDay1pWE94RQ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-08-27",
       "title": "Samsung, SK Hynix climb sharply: why Nvidia earnings strengthened memory bull case",
       "summary": "Aktuelle Meldung von Invezz: Samsung, SK Hynix climb sharply: why Nvidia earnings strengthened memory bull case",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
@@ -132,86 +150,16 @@
       "sourceQuality": 6,
       "source": "Invezz",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpMRjhtOFVHMkxlbWx5TWVGSlh0X3FrMHVHekhTdFhtN0ktVkRhSDhub3JwYU5pbS1hS2trVEk4b2tQVTJPYWdYSkhlZndEQ2J0SUVfSHh5RzNudXp0aFZjWlVJZVB1TklWUDQwX0k3amRRRHRFajgxUFdTVnRYbC1adGVyYUNld2pUa29vSkI3TW1RT00xTC1PMmxEcllEZWtNMVRDYktFNEtaby1nb3U4RE52ZVU?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Samsung Electronics Files 'zHBF' Trademark — Moving Beyond HBM to Lead NAND-Based AI Memory",
-      "summary": "Samsung Electronics Files 'zHBF' Trademark — Moving Beyond HBM to Lead NAND-Based AI Memory finance.biggo.com",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1heFc3ZkM4TGs3R0JnTWtXYlhKMDJ3cF9LakFwbXVzNHFlZWhETmp3Smo4LTJOWlFpZFpoN3NVNS1ZTVhvVDhKYW5BUnlpeURCblJHekhFbFh2em92REszT2REUHpSaW9PLWRYX3JrTXIwcmh4dFE?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Kioxia, SanDisk plan Japan NAND fab for AI demand: sources",
-      "summary": "Kioxia, SanDisk plan Japan NAND fab for AI demand: sources Tech in Asia",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Tech in Asia",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc3BXTjc4XzlCVnp2Qmd0X21DVWtyQXV1dzVJQmRXcGdTMVZjU0RtR3J1NERPSUZqREh5b3VoYkNDdnFDLWhOQ25ydzJrWVpXWFBYd0xLYTBpRzU3X3JncmZnVWhoMy1MUGZPanJPa0NUcjRxc2FqdE5BVDhqNEJST095Q3VLNzNUSmpWcg?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-27T04:31:01.754Z",
+    "generatedAt": "2026-08-27T07:26:19.048Z",
     "count": 3,
-    "candidateCount": 99,
+    "candidateCount": 108,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
     "admissionPolicy": "Current public news is separated from internal TAIL admission and forecast logic."
-  },
-  "originalSignals": [
-    {
-      "date": "2026-08-27",
-      "title": "Samsung, SK Hynix climb sharply: why Nvidia earnings strengthened memory bull case",
-      "summary": "Aktuelle Meldung von Invezz: Samsung, SK Hynix climb sharply: why Nvidia earnings strengthened memory bull case",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Invezz",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpMRjhtOFVHMkxlbWx5TWVGSlh0X3FrMHVHekhTdFhtN0ktVkRhSDhub3JwYU5pbS1hS2trVEk4b2tQVTJPYWdYSkhlZndEQ2J0SUVfSHh5RzNudXp0aFZjWlVJZVB1TklWUDQwX0k3amRRRHRFajgxUFdTVnRYbC1adGVyYUNld2pUa29vSkI3TW1RT00xTC1PMmxEcllEZWtNMVRDYktFNEtaby1nb3U4RE52ZVU?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Samsung Electronics Files 'zHBF' Trademark — Moving Beyond HBM to Lead NAND-Based AI Memory",
-      "summary": "Samsung Electronics Files 'zHBF' Trademark — Moving Beyond HBM to Lead NAND-Based AI Memory finance.biggo.com",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1heFc3ZkM4TGs3R0JnTWtXYlhKMDJ3cF9LakFwbXVzNHFlZWhETmp3Smo4LTJOWlFpZFpoN3NVNS1ZTVhvVDhKYW5BUnlpeURCblJHekhFbFh2em92REszT2REUHpSaW9PLWRYX3JrTXIwcmh4dFE?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Kioxia, SanDisk plan Japan NAND fab for AI demand: sources",
-      "summary": "Kioxia, SanDisk plan Japan NAND fab for AI demand: sources Tech in Asia",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Tech in Asia",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc3BXTjc4XzlCVnp2Qmd0X21DVWtyQXV1dzVJQmRXcGdTMVZjU0RtR3J1NERPSUZqREh5b3VoYkNDdnFDLWhOQ25ydzJrWVpXWFBYd0xLYTBpRzU3X3JncmZnVWhoMy1MUGZPanJPa0NUcjRxc2FqdE5BVDhqNEJST095Q3VLNzNUSmpWcg?oc=5",
-      "layer": "news"
-    }
-  ],
-  "editorial": {
-    "germanNews": {
-      "language": "de-DE",
-      "model": "gpt-5-mini",
-      "mode": "editorial_translation",
-      "generatedAt": "2026-08-27T04:31:28.169Z"
-    }
   }
 }
