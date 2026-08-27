@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T08:58:05.193Z",
+  "generatedAt": "2026-08-27T09:14:50.721Z",
   "platform": {
     "dataAsOf": "2026-08-27",
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 121,
+    "articleCount": 122,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
         "score": 84,
         "status": "red",
-        "signals": 16
+        "signals": 17
       },
       {
         "id": "hbm",
         "label": "HBM",
         "score": 85,
         "status": "red",
-        "signals": 28
+        "signals": 29
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
         "score": 85,
         "status": "red",
-        "signals": 17
+        "signals": 18
       }
     ],
     "sourceDataAsOf": "2026-08-27",
@@ -55,22 +55,22 @@
     },
     {
       "date": "2026-08-27",
+      "title": "Nvidia will Hugging Face übernehmen – Open-Model-Ökosystem wird zum Hardware-Hedge",
+      "summary": "Laut einem von DigiTimes wiedergegebenen Bericht von The Information hat Nvidia einer Übernahme von Hugging Face für 12,9 Mrd. US-Dollar zugestimmt. Hugging Face ist eine zentrale Plattform für offene Modelle, Datensätze, Hardware-Optimierung und cloudbasierte AI-Deployments. Der Bericht ordnet die Transaktion als strategische Reaktion auf die zunehmende vertikale Integration großer Closed-Model-Anbieter und Hyperscaler ein, die eigene AI-Beschleuniger entwickeln.",
+      "analysis": "MT·AI wertet die Transaktion als strukturellen Nachfrage-Persistenzfaktor: Open Models → Hugging Face → Nvidia-optimiertes Deployment → Nvidia Compute → höhere Cloud- und Infrastruktur-Auslastung. Der Effekt ist für AI Infrastructure direkt und für HBM, Server-DRAM und Enterprise SSD mittelbar positiv. Da die Übernahme heute keine neue physische Knappheit oder Preisbewegung erzeugt, bleibt sie index-neutral und löst keinen Fresh Shock aus.",
+      "score": 92,
+      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
+      "url": null,
+      "layer": "accepted-signal"
+    },
+    {
+      "date": "2026-08-27",
       "title": "Astra verschiebt Frontier-AI von Antworten zu autonomer Forschungsarbeit",
       "summary": "OpenAI beschreibt Astra als kommendes Modell mit erheblichen Fortschritten beim agentischen Programmieren und in der Cybersicherheit. OpenAI hat dafür strengere Sicherheitskontrollen eingeführt und Aktivitäten ausgesetzt, die diese Anforderungen noch nicht erfüllen. TIME berichtet zusätzlich aus Gesprächen mit OpenAI-Führungskräften über Astra als automatisierten Research-Intern, der experimentelle Ideen implementieren, Experimente ausführen und Ergebnisse zurückgeben kann.",
       "analysis": "Der relevante Infrastrukturwechsel ist nicht das AGI-Label, sondern die Verlängerung produktiver Modellarbeit von einzelnen Antworten zu lang laufenden Agenten. Persistente Research-, Coding- und Tool-Use-Workloads erhöhen die potenzielle Inferenzzeit pro Nutzer massiv und stärken damit die strukturelle Nachfrage nach Compute, Server-DRAM, HBM, Enterprise-SSD, Netzwerk und Strom.",
       "score": 96,
       "source": "OpenAI – Responding to the next frontier of critical cyber capabilities",
       "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
-      "layer": "accepted-signal"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "GLM-5.3-Flash und Qwen3.8-Flash-Next drücken agentische Frontier-Leistung in deutlich kleinere aktive Modelle",
-      "summary": "Z.ai veröffentlichte GLM-5.3-Flash mit 320 Milliarden Gesamtparametern und 18 Milliarden aktiven Parametern pro Token; der Hersteller meldet deutliche Sprünge in Coding- und Agentic-Benchmarks bei deutlich niedrigeren Kosten. Qwen veröffentlichte Qwen3.8-Flash-Next als frühe Vorschau auf Qwen4 mit 125 Milliarden Hauptparametern plus 51 Milliarden N-Gram-Embeddings und nur 6 Milliarden aktivierten Parametern pro Token; das Training soll gegenüber Qwen3.7-Plus etwa ein Neuntel kosten, bei besseren Coding- und Office-Ergebnissen.",
-      "analysis": "Die strukturell wichtigere Entwicklung ist fallende Kosten pro Einheit digitaler Arbeit. Wenn Agentenleistung pro Dollar schneller steigt als der Ressourcenbedarf pro Aufgabe fällt, entsteht ein Jevons-Effekt: mehr Automatisierung, längere Laufzeiten und wesentlich mehr parallele Agenten. Für MT·AI ist deshalb Effizienz kein Entlastungssignal, sondern potenziell ein Nachfragebeschleuniger für AI-Infrastruktur.",
-      "score": 94,
-      "source": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
-      "url": "https://z.ai/blog/glm-5.3-flash",
       "layer": "accepted-signal"
     }
   ],
@@ -130,6 +130,18 @@
     },
     {
       "date": "2026-08-27",
+      "title": "Samsung and SK hynix stand to gain as Nvidia locks in memory supply",
+      "summary": "Samsung and SK hynix stand to gain as Nvidia locks in memory supply Korea JoongAng Daily",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Korea JoongAng Daily",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNzUyRTdCd2NOOVJHNHZiTkJyNW5KeTBIYmxKUHBzQ1BYV3JJZjh0bzA2WXhNTXo4ekQwSk9jTk1WbGJ3cW50VUFjVWQtMXMzTWw3UWQ2Qkp6eXppRkFvdVBtQUJlenAyVWN6MDJYdnRDWFRrS09WTGxpOHZiQklOUFNVeDZxMC0xMFFfS2xhU2ZYNHNENHozd3VWM3JTX2lrMHhPMzh4bXdFaWh0Nnh4ODBfUWdZUmNzZDdjbEZSb1pjUQ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-08-27",
       "title": "Qualcomm Says Samsung, SK hynix Back HBC Development Alongside HBM",
       "summary": "Qualcomm Says Samsung, SK hynix Back HBC Development Alongside HBM thelec.net",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
@@ -139,24 +151,12 @@
       "source": "thelec.net",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Vb1lsSllPMHM5YTlhMGlPb3htY1lSN1VlUjlyeUFCRVZyeGliU1FicVdHa01fcExRMUNzOHQzODVYWnp3eUp4WThVRnBJbC04THdrUlJSNXdaQjZyMDE4UmVJZTVjcms?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Why YMTC’s NAND rise matters for Samsung, SK hynix",
-      "summary": "Why YMTC’s NAND rise matters for Samsung, SK hynix The Korea Herald",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "The Korea Herald",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBOT2gzTnNLZ3pRSkFwX0RGYUlkWWpPV1JpYnVXSWlRYTFrM2FIVlVYWnJmMjJnVVExMkIwZmJqUFdheU8ycTFNT0FnMHpHQ3lDay1pWE94RQ?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-27T08:58:05.360Z",
+    "generatedAt": "2026-08-27T09:14:50.884Z",
     "count": 3,
-    "candidateCount": 113,
+    "candidateCount": 115,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",

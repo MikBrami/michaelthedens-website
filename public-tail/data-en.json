@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T08:58:38.676Z",
+  "generatedAt": "2026-08-27T09:15:19.016Z",
   "editorial": {
     "version": 4,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "91427bab847d056682d784d7",
+    "sourceHash": "90a4f5070d199bdfaa01f1b1",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
@@ -13,28 +13,28 @@
     "dataAsOf": "2026-08-27",
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 121,
+    "articleCount": 122,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
         "score": 84,
         "status": "red",
-        "signals": 16
+        "signals": 17
       },
       {
         "id": "hbm",
         "label": "HBM",
         "score": 85,
         "status": "red",
-        "signals": 28
+        "signals": 29
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
         "score": 85,
         "status": "red",
-        "signals": 17
+        "signals": 18
       }
     ],
     "sourceDataAsOf": "2026-08-27",
@@ -48,14 +48,14 @@
     "riskPressure": 86,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "Memory and AI infrastructure remain strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check on 2026-08-27 confirmed a material change in the situation. New capacity and improved yields can relieve pressure, but will reach the market only with delay. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. the Daily Check dated 2026-08-27 confirmed a material change in conditions. New capacity and improved yields can relieve pressure, but will reach the market with a time lag. For buyers, securing supply, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
       "date": "2026-08-27",
-      "title": "Nvidia doubles revenue – AI demand broadens across two deployment channels",
-      "summary": "The two data-centre engines are rotating. In Q1 FY27, 94% of the sequential data-centre increase came from ACIE; in Q2 FY27 that share fell to 59%. Two quarters earlier the contribution was reversed, with hyperscale dominant while ACIE declined. Nvidia also reclassified one customer from ACIE to hyperscale in Q2 FY27 and retrospectively adjusted historical periods. For reliable comparisons, only the recast series may be used. At the same time, days sales outstanding rose from 45 to 60 days and top-customer concentration increased.",
-      "analysis": "Nvidia’s Q2 FY27 confirms a broad second deployment wave, but not yet a fully independent second end-customer demand wave. The rotation between hyperscale and ACIE, alongside rising total volume, is the key dynamic. MT·AI will therefore place greater emphasis on combined absolute data-centre growth and sequential dollar contributions from both segments rather than isolated segment growth rates. Demand breadth is treated as structurally positive, with a caveat on end-customer concentration. The existing fresh shock remains a one-off; this finer decomposition does not produce an additional index jump.",
+      "title": "Nvidia doubles revenue — AI demand broadens across two deployment channels",
+      "summary": "The two data-centre engines are rotating. In Q1 FY27, 94% of the sequential data‑centre increase came from ACIE; in Q2 FY27 this fell to 59%. Two quarters earlier the contribution was reversed, with hyperscale dominant while ACIE declined. Nvidia also reclassified one customer from ACIE to hyperscale in Q2 FY27 and restated prior periods. Only the recast series is valid for robust comparisons. Meanwhile, days sales outstanding rose from 45 to 60 days and top‑customer concentration increased.",
+      "analysis": "Nvidia’s Q2 FY27 confirms a broad second deployment wave but not yet a fully independent second end‑customer demand wave. The crucial dynamic is rotation between hyperscale and ACIE alongside rising absolute volume. MT·AI will therefore place greater weight on combined absolute data‑centre growth and the sequential dollar contributions of both segments rather than on isolated segment growth rates. Demand breadth is structurally positive, but buyer concentration is a material caveat. The existing Fresh Shock remains a one‑off; this finer decomposition does not produce an additional index jump.",
       "score": 99,
       "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
       "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
@@ -63,22 +63,22 @@
     },
     {
       "date": "2026-08-27",
-      "title": "Astra shifts frontier AI from responses to autonomous research work",
-      "summary": "OpenAI describes Astra as an upcoming model with substantial advances in agentic programming and cybersecurity. OpenAI has introduced stricter safety controls and suspended activities that do not meet those requirements. TIME reports, based on conversations with OpenAI leadership, that Astra functions as an automated research intern that can implement experimental ideas, run experiments and return results.",
-      "analysis": "The relevant infrastructure shift is not the AGI label but the extension of productive model work from individual responses to long-running agents. Persistent research, coding and tool-use workloads materially increase potential inference time per user and thereby strengthen structural demand for compute, server DRAM, HBM, enterprise SSD, networking and power.",
-      "score": 96,
-      "source": "OpenAI – Responding to the next frontier of critical cyber capabilities",
-      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+      "title": "Nvidia reportedly to acquire Hugging Face — open‑model ecosystem becomes a hardware hedge",
+      "summary": "DigiTimes, citing The Information, reports Nvidia has agreed to acquire Hugging Face for USD 12.9 billion. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud‑based AI deployments. The report frames the transaction as a strategic response to increasing vertical integration by large closed‑model providers and hyperscalers that are developing their own AI accelerators.",
+      "analysis": "MT·AI judges the deal a structural demand‑persistence factor: Open models → Hugging Face → Nvidia‑optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is direct for AI infrastructure and second‑order positive for HBM, server‑DRAM and enterprise SSD. Because the acquisition does not create immediate physical scarcity or price movement, it is index‑neutral today and does not trigger a Fresh Shock.",
+      "score": 92,
+      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
+      "url": null,
       "layer": "accepted-signal"
     },
     {
       "date": "2026-08-27",
-      "title": "GLM-5.3-Flash and Qwen3.8-Flash-Next push agentic frontier performance into significantly smaller active models",
-      "summary": "Z.ai released GLM-5.3-Flash with 320 billion total parameters and 18 billion active parameters per token; the vendor reports marked improvements in coding and agentic benchmarks at substantially lower cost. Qwen released Qwen3.8-Flash-Next as an early preview of Qwen4 with 125 billion main parameters plus 51 billion n‑gram embeddings and only 6 billion activated parameters per token; training is said to cost about one ninth of Qwen3.7-Plus, with better coding and office results.",
-      "analysis": "The structurally more important development is falling cost per unit of digital work. If agent performance per dollar rises faster than resource needs per task fall, a Jevons effect follows: more automation, longer runtimes and materially more parallel agents. For MT·AI, therefore, efficiency is not a relief signal but potentially a demand accelerator for AI infrastructure.",
-      "score": 94,
-      "source": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
-      "url": "https://z.ai/blog/glm-5.3-flash",
+      "title": "Astra shifts frontier AI from responses to autonomous research work",
+      "summary": "OpenAI describes Astra as an upcoming model with significant advances in agentic programming and cybersecurity. OpenAI has implemented stricter safety controls and suspended activities that do not meet those requirements. TIME also reports, based on conversations with OpenAI leaders, that Astra functions as an automated research intern that can implement experimental ideas, run experiments and return results.",
+      "analysis": "The relevant infrastructure shift is not the AGI label but the extension of productive model work from single responses to long‑running agents. Persistent research, coding and tool‑use workloads greatly increase inference time per user and therefore strengthen structural demand for compute, server‑DRAM, HBM, enterprise SSD, networking and power.",
+      "score": 96,
+      "source": "OpenAI – Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
       "layer": "accepted-signal"
     }
   ],
@@ -89,7 +89,7 @@
     },
     {
       "date": "2026-08-31",
-      "event": "Astra: Safety, Release and Deployment Review"
+      "event": "Astra: safety, release and deployment review"
     },
     {
       "date": "2026-09-05",
@@ -105,15 +105,15 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: Filing, valuation and capital access review"
+      "event": "Switch IPO: filing, valuation and access to capital review"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast Review: Advanced packaging remains a central AI supply-chain bottleneck at least through H2 2027 despite Chiayi expansion."
+      "event": "Forecast‑Review: advanced packaging remains a central AI supply‑chain bottleneck until at least H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier Review: AI asset-backed financing reflexivity"
+      "event": "Falsifier‑Review: AI asset‑backed financing reflexivity"
     }
   ]
 }
