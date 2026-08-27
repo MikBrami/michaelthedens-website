@@ -94,8 +94,8 @@ function operationalObservation(indicator, driverId, model, asOf) {
 function calculateDriver(articles, indicators, driverId, model, asOf) {
   const observations = [
     ...articles
-    .map((article) => driverObservation(article, driverId, model, asOf))
-    .filter(Boolean),
+      .map((article) => driverObservation(article, driverId, model, asOf))
+      .filter(Boolean),
     ...indicators
       .map((indicator) => operationalObservation(indicator, driverId, model, asOf))
       .filter(Boolean)
@@ -109,9 +109,12 @@ function calculateDriver(articles, indicators, driverId, model, asOf) {
     model.rankWeights
   );
   const reliefOffset = clamp(model.reliefOffsetPercent ?? 60, 0, 100) / 100;
-  const operationalFloor = Math.max(0, ...observations
-    .filter((item) => item.sourceType === 'operational_channel_observation' && item.direction > 0)
-    .map((item) => item.magnitude));
+  const operationalFloor = Math.max(
+    0,
+    ...observations
+      .filter((item) => item.sourceType === 'operational_channel_observation' && item.direction > 0)
+      .map((item) => item.magnitude)
+  );
   const score = Math.round(clamp(Math.max(positive.value - relief.value * reliefOffset, operationalFloor)));
   const evidenceCount = positive.count + relief.count;
   const confidence = evidenceCount
@@ -160,8 +163,6 @@ function calculateFreshShock(marketArticles, marketId, model, asOf) {
     .filter(Boolean)
     .sort((a, b) => b.boost - a.boost);
 
-  // Only the strongest deduplicated shock can set the overlay. This deliberately
-  // prevents a cluster of derivative headlines from stacking into a runaway index.
   const strongest = candidates[0];
   return {
     score: strongest ? Math.round(strongest.boost) : 0,
@@ -248,12 +249,17 @@ export function calculateIndexModel(articles, methodology, options = {}) {
   }
   const availableExecutive = executiveEntries.filter(([id]) => Number.isFinite(marketById.get(id)?.score));
   const availableExecutiveWeight = availableExecutive.reduce((sum, [, weight]) => sum + Number(weight), 0);
+  const executiveBaseScore = availableExecutiveWeight
+    ? Math.round(availableExecutive.reduce((sum, [id, weight]) => sum + Number(marketById.get(id).baseScore ?? marketById.get(id).score) * Number(weight), 0) / availableExecutiveWeight)
+    : 0;
   const executiveScore = availableExecutiveWeight
     ? Math.round(availableExecutive.reduce((sum, [id, weight]) => sum + marketById.get(id).score * Number(weight), 0) / availableExecutiveWeight)
     : 0;
   const executiveConfidence = availableExecutiveWeight
     ? Math.round(availableExecutive.reduce((sum, [id, weight]) => sum + marketById.get(id).confidence * Number(weight), 0) / availableExecutiveWeight)
     : 0;
+  const executiveFreshShock = Math.max(0, executiveScore - executiveBaseScore);
+
   const criticalMarkets = (model.criticalMarkets || []).map((id) => marketById.get(id)).filter(Boolean);
   const criticalPeak = Math.max(0, ...criticalMarkets.map((market) => market.score).filter(Number.isFinite));
   const criticalAvailabilityPeak = Math.max(0, ...criticalMarkets
@@ -261,6 +267,7 @@ export function calculateIndexModel(articles, methodology, options = {}) {
     .filter(Number.isFinite));
   const availabilityShare = clamp(model.riskAvailabilitySharePercent ?? 40, 0, 100) / 100;
   const riskPressure = Math.round(criticalPeak * (1 - availabilityShare) + criticalAvailabilityPeak * availabilityShare);
+
   const executiveDrivers = driverWeightEntries.map(([driverId, driverWeight]) => {
     const observations = availableExecutive
       .map(([marketId, marketWeight]) => ({
@@ -284,17 +291,22 @@ export function calculateIndexModel(articles, methodology, options = {}) {
     };
   });
 
-  const executiveFreshShock = availableExecutiveWeight
-    ? availableExecutive.reduce((sum, [id, weight]) => sum + Number(marketById.get(id).freshShock || 0) * Number(weight), 0) / availableExecutiveWeight
-    : 0;
-
   return {
     version: '1.3',
     baseModelVersion: model.version,
     asOf,
     executiveScore,
+    executiveBaseScore,
+    executiveFreshShock,
     executiveConfidence,
-    executiveFreshShock: Math.round(executiveFreshShock),
     riskPressure,
     riskFormula: `${Math.round((1 - availabilityShare) * 100)}% critical segment peak + ${Math.round(availabilityShare * 100)}% critical availability peak`,
-    status: statusFor
+    status: statusForIndex(executiveScore, model.statusThresholds),
+    coverage: Math.round(availableExecutiveWeight / totalExecutiveWeight * 100),
+    drivers: executiveDrivers,
+    markets,
+    formula: 'Σ((segment base score + capped fresh shock) × segment weight)',
+    confidencePolicy: 'Confidence is reported separately and never increases the market-stress score.',
+    freshShockPolicy: `At most one qualifying shock per segment; capped at ${Number(model.freshShockCap ?? 5)} points before market multiplier.`
+  };
+}
