@@ -8,9 +8,9 @@
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-08-28T08:58:21.755Z",
-  "lastForecastRun": "2026-08-28T08:58:21.755Z",
-  "newlyProcessedArticles": 383,
+  "lastSuccessfulUpdate": "2026-08-28T09:32:03.207Z",
+  "lastForecastRun": "2026-08-28T09:32:03.207Z",
+  "newlyProcessedArticles": 384,
   "totalArticles": 125,
   "articleCount": 125,
   "processStatus": "ok",
@@ -45,12 +45,9 @@
         "aiDemand": 0.15
       },
       "executiveMarketWeights": {
-        "server_dram": 0.25,
-        "hbm": 0.2,
-        "enterprise_ssd": 0.2,
-        "nand": 0.1,
-        "ai_infrastructure": 0.15,
-        "supply_chain": 0.1
+        "server_dram": 0.4,
+        "hbm": 0.3,
+        "enterprise_ssd": 0.3
       },
       "coverage": 100,
       "confidencePolicy": "Confidence is reported separately and never increases the market-stress score."
@@ -70,8 +67,8 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-28T08:58:12.162Z",
-    "newItems": 383,
+    "updatedAt": "2026-08-28T09:31:53.746Z",
+    "newItems": 384,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
@@ -106,13 +103,13 @@
       }
     ]
   },
-  "tailIndex": 80,
-  "indexStatus": "orange",
+  "tailIndex": 84,
+  "indexStatus": "red",
   "executivePulse": {
-    "current": 80,
+    "current": 84,
     "previous": 82,
-    "status": "orange",
-    "confidence": 88,
+    "status": "red",
+    "confidence": 90,
     "riskPressure": 87,
     "riskFormula": "60% critical segment peak + 40% critical availability peak",
     "coverage": 100,
@@ -131,18 +128,18 @@
       {
         "id": "pricing",
         "name": "Preisdynamik",
-        "score": 75,
-        "absoluteSeverity": 75,
+        "score": 77,
+        "absoluteSeverity": 77,
         "delta": 0,
         "weight": 0.2,
-        "coverage": 90,
+        "coverage": 100,
         "rawMetric": "Gewicht im Segmentindex: 20%"
       },
       {
         "id": "availability",
         "name": "Verfügbarkeit / Allocation",
-        "score": 75,
-        "absoluteSeverity": 75,
+        "score": 82,
+        "absoluteSeverity": 82,
         "delta": 0,
         "weight": 0.4,
         "coverage": 100,
@@ -151,15 +148,15 @@
       {
         "id": "aiDemand",
         "name": "AI-Nachfrage",
-        "score": 81,
-        "absoluteSeverity": 81,
+        "score": 82,
+        "absoluteSeverity": 82,
         "delta": 0,
         "weight": 0.15,
         "coverage": 100,
         "rawMetric": "Gewicht im Segmentindex: 15%"
       }
     ],
-    "interpretation": "Der MT·AI Executive Pulse liegt bei 80/100. Er ist die feste gewichtete Summe aus 6 Segmentindizes; Datenvertrauen (88/100) und Risikodruck (87/100) werden separat ausgewiesen."
+    "interpretation": "Der MT·AI Executive Pulse liegt bei 84/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (90/100) und Risikodruck (87/100) werden separat ausgewiesen."
   },
   "markets": [
     {
@@ -809,7 +806,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-28T08:58:21.755Z"
+      "lastUpdated": "2026-08-28T09:32:03.206Z"
     },
     {
       "id": "hbm",
@@ -895,7 +892,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-28T08:58:21.755Z"
+      "lastUpdated": "2026-08-28T09:32:03.207Z"
     },
     {
       "id": "nand",
@@ -963,7 +960,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-28T08:58:21.755Z"
+      "lastUpdated": "2026-08-28T09:32:03.207Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1034,7 +1031,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-28T08:58:21.755Z"
+      "lastUpdated": "2026-08-28T09:32:03.207Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1208,10 +1205,10 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-08-28T08:58:21.755Z"
+      "lastUpdated": "2026-08-28T09:32:03.207Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 80/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 84/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
