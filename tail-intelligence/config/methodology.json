@@ -29,22 +29,35 @@
       "aiDemand": "AI-Nachfrage"
     },
     "executiveMarketWeights": {
-      "server_dram": 0.25,
-      "hbm": 0.2,
-      "enterprise_ssd": 0.2,
-      "nand": 0.1,
-      "ai_infrastructure": 0.15,
-      "supply_chain": 0.1
+      "server_dram": 0.4,
+      "hbm": 0.3,
+      "enterprise_ssd": 0.3
     },
-    "watchlistMarkets": ["dram"],
+    "watchlistMarkets": [
+      "dram"
+    ],
     "signalDriverImpact": {
-      "demand_up": { "demand": 1, "aiDemand": 1 },
-      "price_up": { "pricing": 1 },
-      "price_down": { "pricing": -1 },
-      "negative_supply": { "availability": 1 },
-      "capacity_lock": { "availability": 0.95, "aiDemand": 0.6 },
+      "demand_up": {
+        "demand": 1,
+        "aiDemand": 1
+      },
+      "price_up": {
+        "pricing": 1
+      },
+      "price_down": {
+        "pricing": -1
+      },
+      "negative_supply": {
+        "availability": 1
+      },
+      "capacity_lock": {
+        "availability": 0.95,
+        "aiDemand": 0.6
+      },
       "capacity_relief": {},
-      "geopolitical_split": { "availability": 0.5 }
+      "geopolitical_split": {
+        "availability": 0.5
+      }
     },
     "operationalStateScale": {
       "normal": 25,
@@ -57,20 +70,40 @@
     "marketEvidencePolicies": {
       "dram": {
         "label": "Standard DRAM / UDIMM",
-        "excludeArticlesAlsoTagged": ["server_dram"],
-        "articleKeywords": ["udimm", "sodimm", "desktop dram", "pc dram", "notebook dram"]
+        "excludeArticlesAlsoTagged": [
+          "server_dram"
+        ],
+        "articleKeywords": [
+          "udimm",
+          "sodimm",
+          "desktop dram",
+          "pc dram",
+          "notebook dram"
+        ]
       },
       "server_dram": {
         "label": "Server DRAM / RDIMM"
       }
     },
-    "aiDemandContextMarkets": ["ai_infrastructure"],
-    "rankWeights": [1, 0.7, 0.5, 0.35, 0.25],
+    "aiDemandContextMarkets": [
+      "ai_infrastructure"
+    ],
+    "rankWeights": [
+      1,
+      0.7,
+      0.5,
+      0.35,
+      0.25
+    ],
     "recencyHalfLifeDays": 180,
     "reliefOffsetPercent": 60,
     "riskAvailabilitySharePercent": 40,
     "minimumSegmentCoveragePercent": 70,
-    "criticalMarkets": ["server_dram", "hbm", "enterprise_ssd"],
+    "criticalMarkets": [
+      "server_dram",
+      "hbm",
+      "enterprise_ssd"
+    ],
     "statusThresholds": {
       "yellow": 45,
       "orange": 65,
@@ -85,7 +118,7 @@
       "Standard DRAM / UDIMM is a non-weighted watchlist segment; server evidence cannot automatically raise it or enter it by proxy.",
       "Mobile LPDRAM, embedded NAND and Apple BOM evidence cannot be classified as UDIMM / SODIMM evidence without a direct form-factor reference.",
       "A segment below 70% driver coverage is reported as insufficient data and excluded from the Executive Pulse instead of publishing a falsely precise score.",
-      "Segment scores use fixed driver weights; the Executive Pulse uses fixed segment weights.",
+      "Segment scores use fixed driver weights; the Executive Pulse uses Server DRAM / RDIMM (40%), HBM (30%) and Enterprise SSD (30%).",
       "Confidence and forecast calibration are displayed separately from market stress."
     ]
   },
