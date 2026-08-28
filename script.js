@@ -21,6 +21,7 @@ const marketExplanation = {
   dram: "HBM-Verdrängung und Servernachfrage halten die Angebotslage angespannt.",
   hbm: "Plattformspezifische Qualifizierung bindet Frontend- und Packaging-Kapazität.",
   enterprise_ssd: "AI-Datenpipelines und High-Capacity-Systeme stützen die Nachfrage.",
+  risk_pressure: "Verdichtet Spitzenrisiken bei Verfügbarkeit, Preis und kritischen Lieferketten.",
   nand: "Festere Preise, aber mittelfristig mehr Entlastungspotenzial als bei DRAM.",
   ai_infrastructure: "Power, Datacenter-Kapazität und Memory bestimmen das Ausbautempo."
 };
@@ -65,13 +66,22 @@ function renderDashboard(snapshot) {
   const markets = Array.isArray(platform.markets) ? platform.markets.slice(0, 6) : [];
   const indexMarketIds = ["server_dram", "hbm", "enterprise_ssd"];
   const indexMarkets = indexMarketIds.map((id) => markets.find((market) => market.id === id)).filter(Boolean);
+  const riskPressure = Number(pulse.riskPressure);
+  const pressureCards = Number.isFinite(riskPressure)
+    ? [...indexMarkets, {
+        id: "risk_pressure",
+        label: "Risk Pressure",
+        score: riskPressure,
+        status: riskPressure >= 82 ? "red" : riskPressure >= 70 ? "orange" : riskPressure >= 55 ? "yellow" : "green"
+      }]
+    : indexMarkets;
   document.getElementById("mini-markets").innerHTML = indexMarkets.map((market) => `
     <div class="mini-market">
       <span>${escapeHtml(market.label)}</span><strong>${Number(market.score) || 0}</strong>
       <div><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
     </div>`).join("");
 
-  document.getElementById("market-grid").innerHTML = indexMarkets.map((market) => `
+  document.getElementById("market-grid").innerHTML = pressureCards.map((market) => `
     <article class="market-card ${escapeHtml(market.status || "orange")}">
       <div class="market-head"><h3>${escapeHtml(market.label)}</h3><span class="market-score">${Number(market.score) || 0}</span></div>
       <div class="market-track"><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
