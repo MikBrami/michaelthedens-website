@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T01:30:21.715Z",
+  "generatedAt": "2026-08-28T08:41:53.117Z",
   "editorial": {
     "version": 4,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "abedbc8079443ed27832270b",
+    "sourceHash": "d5e9eea86ff2b92b5d346000",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
@@ -13,85 +13,79 @@
     "dataAsOf": "2026-08-28",
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 123,
+    "articleCount": 125,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 84,
+        "score": 88,
         "status": "red",
-        "signals": 18
+        "signals": 19
       },
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 85,
-        "status": "red",
+        "score": 81,
+        "status": "orange",
         "signals": 30
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 85,
+        "score": 83,
         "status": "red",
-        "signals": 19
+        "signals": 20
       }
     ],
-    "sourceDataAsOf": "2026-08-27",
+    "sourceDataAsOf": "2026-08-28",
     "analysisAsOf": "2026-08-28"
   },
   "executivePulse": {
-    "current": 82,
+    "current": 80,
     "previous": 82,
-    "status": "red",
+    "status": "orange",
     "confidence": 88,
-    "riskPressure": 86,
+    "riskPressure": 87,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check of 2026-08-28 examined eight relevant reports; there is no confirmed material change in direction at present. New capacity and improved yields can relieve pressure, but they will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain critical."
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check on 2026-08-28 confirmed a material change in the situation. New capacity and improved yields can relieve pressure, but they will reach the market with a time lag. For buyers, securing supply, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
-      "date": "2026-08-27",
-      "title": "China's YMTC aims to become the world's largest NAND maker by the end of 2027, report says — company plans to overtake Samsung and SK hynix",
-      "summary": "Aktuelle Meldung von Tom's Hardware: China's YMTC aims to become the world's largest NAND maker by the end of 2027, report says — company plans to overtake Samsung and SK hynix",
-      "analysis": "The report is relevant for datacentre storage: it can affect prices, available capacity or procurement strategy for enterprise SSDs.",
-      "score": 94,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTy1ud2I5emEtbXpNRU5QTGxyQ05mejd5Rm9WZ3k3MlV1UFQzNXNydE1MQmxleERFSWxoWEdQOG5nWjNtTnI0TUVIUTVaaEhMTXdWaDg3TnpjVTdiR1lLcGJ4YTFGRVB1aWlRYkhZa1pKYm9aME4tTnMxakdfLVg0Wk9jQml5d2dpelJDV3ROTGwtSjlRS0JUNkdYb0dTUjhTbWg2Wm9WRnpyMUo1SHFhUlF0NE41RVo3Ym55RzJjeHM?oc=5",
-      "layer": "news"
+      "date": "2026-08-28",
+      "title": "Micron raises server RDIMM prices mostly by 20%",
+      "summary": "Direct current channel evidence from Micron's new price list: 64-GB RDIMM +20%; common server RDIMMs also +20%; 128-GB RDIMM +15%.",
+      "analysis": "The previously unquantified Micron price watch is confirmed. Price dynamics for server DRAM/RDIMMs are rising materially, with the full 20% step on the high-volume 64‑GB module particularly relevant. MT·AI records this as index‑level pricing evidence without automatically equating it to an identical deterioration in physical availability.",
+      "score": 99,
+      "source": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz",
+      "url": null,
+      "layer": "accepted-signal"
     },
     {
-      "date": "2026-08-27",
-      "title": "Google takes am at Anthropic, Microsoft with budget-friendly AI pricing",
-      "summary": "Aktuelle Meldung von CNBC: Google takes am at Anthropic, Microsoft with budget-friendly AI pricing",
-      "analysis": "The report alters the expansion path for AI and datacentre infrastructure. Greater productive compute capacity pulls server memory, enterprise storage, networking and power infrastructure demand.",
+      "date": "2026-08-28",
+      "title": "Nvidia to acquire Hugging Face — open-model ecosystem becomes a hardware hedge",
+      "summary": "DigiTimes, citing The Information, reports Nvidia has agreed to acquire Hugging Face for USD 12.9bn. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud AI deployments. The report frames the deal as a strategic response to growing vertical integration by large closed‑model providers and hyperscalers developing proprietary accelerators.",
+      "analysis": "MT·AI views the transaction as a structural demand persistence factor: Open models → Hugging Face → Nvidia‑optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is directly positive for AI infrastructure and indirectly positive for HBM, server DRAM and enterprise SSD. As announced, the takeover does not create new physical scarcity or immediate price movements; it remains index‑neutral and does not constitute a Fresh Shock.",
       "score": 92,
-      "relevanceScore": 88,
-      "sourceQuality": 17,
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbElFaVVxdnIySUVYRHVqNk15bGIxSkRjTFBiOFFyWGFzOFh2TlUxWlVhMmk5QUFtSGVoYUNxdTI0eHQtZE1QMG1IWE9ZOG5fREtkMG1Bb185RndKWGRFd2pOS1ZEcmN2RnhhUXFjQ18zaHdXRFRYS3BocG9YajlNXzVrMWRDTXdnb3BGZTE3bWd1a0RYSzVQUGJ1ZTY5T3FPZUtVbWNQMVV3Nkc3YVdTTGJmUQ?oc=5",
-      "layer": "news"
+      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
+      "url": null,
+      "layer": "accepted-signal"
     },
     {
-      "date": "2026-08-27",
-      "title": "SK hynix Holds Groundbreaking Ceremony for HBM Production Base in Indiana, “Beginning a New Future for US-Korea AI”",
-      "summary": "Aktuelle Meldung von SK hynix: SK hynix Holds Groundbreaking Ceremony for HBM Production Base in Indiana, “Beginning a New Future for US-Korea AI”",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand will directly affect available GPU systems and pricing in the AI infrastructure market.",
-      "score": 90,
-      "relevanceScore": 83,
-      "sourceQuality": 15,
-      "source": "SK hynix",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0Umc5azhPbTVYTjFVckJGSkFrTlhOc2dqdXRrb0ljTG04MmFLTTJLc3Z1UDlnaml2N1BhelhJdWNIQ2R6TVRJUVF5aV9DU2pVVVd0a3RRQzFFbWVodjNOV1lXazF4WFlPYmRoMGZ6LXg?oc=5",
-      "layer": "news"
+      "date": "2026-08-28",
+      "title": "Micron raises enterprise SSD prices — TLC stronger than QLC, 60 TB unchanged",
+      "summary": "Direct current channel evidence from Micron's new price list: enterprise SSDs on average about +10%; TLC increases stronger than QLC; the 60‑TB class shows no price increase.",
+      "analysis": "Enterprise SSDs continue an upward trend, but price effects must be separated by NAND type and capacity class. MT·AI increases pricing evidence for enterprise SSDs and NAND, albeit more moderately than for server RDIMM. The 60‑TB exception remains a falsifier against an undifferentiated high‑capacity thesis.",
+      "score": 96,
+      "source": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz",
+      "url": null,
+      "layer": "accepted-signal"
     }
   ],
   "catalysts": [
     {
       "date": "2026-08-31",
-      "event": "Astra: Safety, release and deployment review"
+      "event": "Astra: safety, release and deployment review"
     },
     {
       "date": "2026-09-05",
@@ -107,15 +101,15 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: review filing, valuation and access to capital"
+      "event": "Switch IPO: filing, valuation and access to capital review"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging remains a central AI supply-chain bottleneck at least through H2 2027 despite Chiayi capacity expansion."
+      "event": "Forecast review: advanced packaging remains a central AI supply‑chain bottleneck until at least H2 2027 despite Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier review: AI asset-backed financing reflexivity"
+      "event": "Falsifier review: AI asset‑backed financing reflexivity"
     },
     {
       "date": "2027-03-31",

@@ -1,83 +1,77 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T01:29:38.620Z",
+  "generatedAt": "2026-08-28T08:41:28.304Z",
   "platform": {
     "dataAsOf": "2026-08-28",
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 123,
+    "articleCount": 125,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 84,
+        "score": 88,
         "status": "red",
-        "signals": 18
+        "signals": 19
       },
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 85,
-        "status": "red",
+        "score": 81,
+        "status": "orange",
         "signals": 30
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 85,
+        "score": 83,
         "status": "red",
-        "signals": 19
+        "signals": 20
       }
     ],
-    "sourceDataAsOf": "2026-08-27",
+    "sourceDataAsOf": "2026-08-28",
     "analysisAsOf": "2026-08-28"
   },
   "executivePulse": {
-    "current": 82,
+    "current": 80,
     "previous": 82,
-    "status": "red",
+    "status": "orange",
     "confidence": 88,
-    "riskPressure": 86,
+    "riskPressure": 87,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-28 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-28 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
-      "date": "2026-08-27",
-      "title": "Bericht: YMTC will bis Ende 2027 weltgrößter NAND-Hersteller werden und Samsung sowie SK hynix überholen",
-      "summary": "Bericht zufolge strebt YMTC an, bis Ende 2027 der weltweit größte NAND-Hersteller zu sein; das Unternehmen plant, Samsung und SK hynix zu überholen.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 94,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTy1ud2I5emEtbXpNRU5QTGxyQ05mejd5Rm9WZ3k3MlV1UFQzNXNydE1MQmxleERFSWxoWEdQOG5nWjNtTnI0TUVIUTVaaEhMTXdWaDg3TnpjVTdiR1lLcGJ4YTFGRVB1aWlRYkhZa1pKYm9aME4tTnMxakdfLVg0Wk9jQml5d2dpelJDV3ROTGwtSjlRS0JUNkdYb0dTUjhTbWg2Wm9WRnpyMUo1SHFhUlF0NE41RVo3Ym55RzJjeHM?oc=5",
-      "layer": "news"
+      "date": "2026-08-28",
+      "title": "Micron erhöht Server-RDIMM-Preise überwiegend um 20 Prozent",
+      "summary": "Direkte aktuelle Vertriebskanal-Evidenz aus der neuen Micron-Preisliste: 64-GB-RDIMM +20 Prozent; gängige Server-RDIMMs ebenfalls +20 Prozent; 128-GB-RDIMM +15 Prozent.",
+      "analysis": "Der bislang unquantifizierte Micron-Preis-Watch ist bestätigt. Die Preisdynamik bei Server-DRAM/RDIMM steigt materiell; besonders relevant ist der volle 20-Prozent-Schritt beim volumenstarken 64-GB-Modul. MT·AI nimmt das Signal als indexwirksame Pricing-Evidenz auf, ohne daraus automatisch eine identische Verschlechterung der physischen Verfügbarkeit abzuleiten.",
+      "score": 99,
+      "source": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz",
+      "url": null,
+      "layer": "accepted-signal"
     },
     {
-      "date": "2026-08-27",
-      "title": "Google zielt auf Anthropic, Microsoft mit budgetfreundlicher KI-Preisgestaltung",
-      "summary": "Laut CNBC richtet Google seine Angriffe auf Anthropic, während Microsoft mit budgetfreundlichen Preisen für KI-Dienste antwortet.",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "date": "2026-08-28",
+      "title": "Nvidia will Hugging Face übernehmen – Open-Model-Ökosystem wird zum Hardware-Hedge",
+      "summary": "Laut einem von DigiTimes wiedergegebenen Bericht von The Information hat Nvidia einer Übernahme von Hugging Face für 12,9 Mrd. US-Dollar zugestimmt. Hugging Face ist eine zentrale Plattform für offene Modelle, Datensätze, Hardware-Optimierung und cloudbasierte AI-Deployments. Der Bericht ordnet die Transaktion als strategische Reaktion auf die zunehmende vertikale Integration großer Closed-Model-Anbieter und Hyperscaler ein, die eigene AI-Beschleuniger entwickeln.",
+      "analysis": "MT·AI wertet die Transaktion als strukturellen Nachfrage-Persistenzfaktor: Open Models → Hugging Face → Nvidia-optimiertes Deployment → Nvidia Compute → höhere Cloud- und Infrastruktur-Auslastung. Der Effekt ist für AI Infrastructure direkt und für HBM, Server-DRAM und Enterprise SSD mittelbar positiv. Da die Übernahme heute keine neue physische Knappheit oder Preisbewegung erzeugt, bleibt sie index-neutral und löst keinen Fresh Shock aus.",
       "score": 92,
-      "relevanceScore": 88,
-      "sourceQuality": 17,
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbElFaVVxdnIySUVYRHVqNk15bGIxSkRjTFBiOFFyWGFzOFh2TlUxWlVhMmk5QUFtSGVoYUNxdTI0eHQtZE1QMG1IWE9ZOG5fREtkMG1Bb185RndKWGRFd2pOS1ZEcmN2RnhhUXFjQ18zaHdXRFRYS3BocG9YajlNXzVrMWRDTXdnb3BGZTE3bWd1a0RYSzVQUGJ1ZTY5T3FPZUtVbWNQMVV3Nkc3YVdTTGJmUQ?oc=5",
-      "layer": "news"
+      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
+      "url": null,
+      "layer": "accepted-signal"
     },
     {
-      "date": "2026-08-27",
-      "title": "SK hynix legt Grundstein für HBM-Produktionsstandort in Indiana – „Beginn einer neuen Zukunft für US‑koreanische AI“",
-      "summary": "SK hynix hat in Indiana die Grundsteinlegung für einen HBM-Produktionsstandort gefeiert und bezeichnet dies als den „Beginn einer neuen Zukunft für US‑koreanische AI“.",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 83,
-      "sourceQuality": 15,
-      "source": "SK hynix",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0Umc5azhPbTVYTjFVckJGSkFrTlhOc2dqdXRrb0ljTG04MmFLTTJLc3Z1UDlnaml2N1BhelhJdWNIQ2R6TVRJUVF5aV9DU2pVVVd0a3RRQzFFbWVodjNOV1lXazF4WFlPYmRoMGZ6LXg?oc=5",
-      "layer": "news"
+      "date": "2026-08-28",
+      "title": "Micron erhöht Enterprise-SSD-Preise – TLC stärker als QLC, 60 TB unverändert",
+      "summary": "Direkte aktuelle Vertriebskanal-Evidenz aus der neuen Micron-Preisliste: Enterprise SSD im Mittel etwa +10 Prozent; TLC stärker als QLC; 60-TB-Klasse ohne Preiserhöhung.",
+      "analysis": "Enterprise SSD bleibt klar im Aufwärtstrend, aber die Preiswirkung muss nach NAND-Typ und Kapazitätsklasse getrennt werden. MT·AI erhöht die Pricing-Evidenz für Enterprise SSD und NAND moderater als bei Server-RDIMM. Die 60-TB-Ausnahme bleibt als Falsifier gegen eine undifferenzierte High-Capacity-These sichtbar.",
+      "score": 96,
+      "source": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz",
+      "url": null,
+      "layer": "accepted-signal"
     }
   ],
   "catalysts": [
@@ -116,102 +110,56 @@
   ],
   "dailyStatus": {
     "date": "2026-08-28",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
-    "impactScore": 0,
-    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "type": "material-market-update",
+    "title": "Micron-Preisliste bestätigt neue Preisrunde bei Server-RDIMM und Enterprise SSD",
+    "impactScore": 10,
+    "note": "Die neue Micron-Preisliste quantifiziert den Preisdruck: Server-RDIMMs steigen überwiegend um 20 Prozent, 128-GB-Module um 15 Prozent. Enterprise-SSDs steigen im Mittel um rund 10 Prozent; TLC ist stärker betroffen als QLC, während die 60-TB-Klasse unverändert bleibt. Die bestätigten Werte ersetzen den bisherigen unquantifizierten Channel-Watch und wirken mechanisch auf die Segmentindizes."
   },
   "news": [
     {
-      "date": "2026-08-27",
-      "title": "China's YMTC aims to become the world's largest NAND maker by the end of 2027, report says — company plans to overtake Samsung and SK hynix",
-      "summary": "Aktuelle Meldung von Tom's Hardware: China's YMTC aims to become the world's largest NAND maker by the end of 2027, report says — company plans to overtake Samsung and SK hynix",
+      "date": "2026-08-28",
+      "title": "SK Hynix weighs closer ties with Kioxia in NAND",
+      "summary": "Aktuelle Meldung von digitimes: SK Hynix weighs closer ties with Kioxia in NAND",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 94,
       "relevanceScore": 100,
       "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTy1ud2I5emEtbXpNRU5QTGxyQ05mejd5Rm9WZ3k3MlV1UFQzNXNydE1MQmxleERFSWxoWEdQOG5nWjNtTnI0TUVIUTVaaEhMTXdWaDg3TnpjVTdiR1lLcGJ4YTFGRVB1aWlRYkhZa1pKYm9aME4tTnMxakdfLVg0Wk9jQml5d2dpelJDV3ROTGwtSjlRS0JUNkdYb0dTUjhTbWg2Wm9WRnpyMUo1SHFhUlF0NE41RVo3Ym55RzJjeHM?oc=5",
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbGRPX2hxN3YxRUlGZG5QZmM1bEMzZE8yRnE0VkxTRlFSX0l1MzZsVF9SZ3g4R1p4VVoyUXlNV0MxVGE4S1dMbE9TbVJtck0yNmZ2NU5ZZGtCWXV6ZkNCNnFIeFJ6MkduUHBMZUtvTHFqYjRZbVpULW5Sa2lMaWl6d2IyWFdIam41ZGJSZmJxUXk5OE9Gd3JCZWJVN2U?oc=5",
       "layer": "news"
     },
     {
-      "date": "2026-08-27",
-      "title": "Google takes am at Anthropic, Microsoft with budget-friendly AI pricing",
-      "summary": "Aktuelle Meldung von CNBC: Google takes am at Anthropic, Microsoft with budget-friendly AI pricing",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 92,
-      "relevanceScore": 88,
-      "sourceQuality": 17,
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbElFaVVxdnIySUVYRHVqNk15bGIxSkRjTFBiOFFyWGFzOFh2TlUxWlVhMmk5QUFtSGVoYUNxdTI0eHQtZE1QMG1IWE9ZOG5fREtkMG1Bb185RndKWGRFd2pOS1ZEcmN2RnhhUXFjQ18zaHdXRFRYS3BocG9YajlNXzVrMWRDTXdnb3BGZTE3bWd1a0RYSzVQUGJ1ZTY5T3FPZUtVbWNQMVV3Nkc3YVdTTGJmUQ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "SK hynix Holds Groundbreaking Ceremony for HBM Production Base in Indiana, “Beginning a New Future for US-Korea AI”",
-      "summary": "Aktuelle Meldung von SK hynix: SK hynix Holds Groundbreaking Ceremony for HBM Production Base in Indiana, “Beginning a New Future for US-Korea AI”",
+      "date": "2026-08-28",
+      "title": "(LEAD) SK hynix holds groundbreaking ceremony for HBM production base in U.S.",
+      "summary": "(LEAD) SK hynix holds groundbreaking ceremony for HBM production base in U.S. Yonhap News Agency",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
+      "score": 92,
       "relevanceScore": 83,
-      "sourceQuality": 15,
-      "source": "SK hynix",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0Umc5azhPbTVYTjFVckJGSkFrTlhOc2dqdXRrb0ljTG04MmFLTTJLc3Z1UDlnaml2N1BhelhJdWNIQ2R6TVRJUVF5aV9DU2pVVVd0a3RRQzFFbWVodjNOV1lXazF4WFlPYmRoMGZ6LXg?oc=5",
+      "sourceQuality": 20,
+      "source": "Yonhap News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE13SzNaRW1QMUNMakVTeWFXY3B6aHVYakUyMDBoeVNCRDJLOFlZcmRtNHpDUm5IeVJ1TWtYTGNNMjh4TklmcHhmR3VtZzVGMGxTdTF0ZV9PVDExQQ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "Kioxia, SanDisk to invest 5 trillion yen in Japan NAND push as global chip war heats up",
+      "summary": "Aktuelle Meldung von 헤럴드경제: Kioxia, SanDisk to invest 5 trillion yen in Japan NAND push as global chip war heats up",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5JQUZvVDNKemNsdmg4QTYwRC1MaEVuNEI1ZVFkV1VoLTVMRVRGM2lxdkw0cFdSb3hFeG9xZmNvak9MTTdIWWw5U1NKN2k5cWZ1UFFZOFhOQQ?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-28T01:29:38.789Z",
+    "generatedAt": "2026-08-28T08:41:28.435Z",
     "count": 3,
-    "candidateCount": 118,
+    "candidateCount": 125,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
     "admissionPolicy": "Current public news is separated from internal TAIL admission and forecast logic."
-  },
-  "originalSignals": [
-    {
-      "date": "2026-08-27",
-      "title": "China's YMTC aims to become the world's largest NAND maker by the end of 2027, report says — company plans to overtake Samsung and SK hynix",
-      "summary": "Aktuelle Meldung von Tom's Hardware: China's YMTC aims to become the world's largest NAND maker by the end of 2027, report says — company plans to overtake Samsung and SK hynix",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 94,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTy1ud2I5emEtbXpNRU5QTGxyQ05mejd5Rm9WZ3k3MlV1UFQzNXNydE1MQmxleERFSWxoWEdQOG5nWjNtTnI0TUVIUTVaaEhMTXdWaDg3TnpjVTdiR1lLcGJ4YTFGRVB1aWlRYkhZa1pKYm9aME4tTnMxakdfLVg0Wk9jQml5d2dpelJDV3ROTGwtSjlRS0JUNkdYb0dTUjhTbWg2Wm9WRnpyMUo1SHFhUlF0NE41RVo3Ym55RzJjeHM?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Google takes am at Anthropic, Microsoft with budget-friendly AI pricing",
-      "summary": "Aktuelle Meldung von CNBC: Google takes am at Anthropic, Microsoft with budget-friendly AI pricing",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 92,
-      "relevanceScore": 88,
-      "sourceQuality": 17,
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbElFaVVxdnIySUVYRHVqNk15bGIxSkRjTFBiOFFyWGFzOFh2TlUxWlVhMmk5QUFtSGVoYUNxdTI0eHQtZE1QMG1IWE9ZOG5fREtkMG1Bb185RndKWGRFd2pOS1ZEcmN2RnhhUXFjQ18zaHdXRFRYS3BocG9YajlNXzVrMWRDTXdnb3BGZTE3bWd1a0RYSzVQUGJ1ZTY5T3FPZUtVbWNQMVV3Nkc3YVdTTGJmUQ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "SK hynix Holds Groundbreaking Ceremony for HBM Production Base in Indiana, “Beginning a New Future for US-Korea AI”",
-      "summary": "Aktuelle Meldung von SK hynix: SK hynix Holds Groundbreaking Ceremony for HBM Production Base in Indiana, “Beginning a New Future for US-Korea AI”",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 83,
-      "sourceQuality": 15,
-      "source": "SK hynix",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0Umc5azhPbTVYTjFVckJGSkFrTlhOc2dqdXRrb0ljTG04MmFLTTJLc3Z1UDlnaml2N1BhelhJdWNIQ2R6TVRJUVF5aV9DU2pVVVd0a3RRQzFFbWVodjNOV1lXazF4WFlPYmRoMGZ6LXg?oc=5",
-      "layer": "news"
-    }
-  ],
-  "editorial": {
-    "germanNews": {
-      "language": "de-DE",
-      "model": "gpt-5-mini",
-      "mode": "editorial_translation",
-      "generatedAt": "2026-08-28T01:29:59.643Z"
-    }
   }
 }
