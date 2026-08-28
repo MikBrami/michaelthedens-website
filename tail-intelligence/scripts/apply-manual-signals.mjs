@@ -72,6 +72,9 @@ latest.dataHygiene = {
 };
 latest.dailyStatus = {
   ...(latest.dailyStatus || {}),
+  public: indexSignals.length
+    ? indexSignalConfig.publicDailyStatus !== false
+    : (latest.dailyStatus?.public ?? true),
   type: publicSignals.length ? 'material-market-update' : latest.dailyStatus?.type,
   title: indexSignals.length
     ? (indexSignalConfig.dailyStatusTitle || primaryIndexSignal?.title || latest.dailyStatus?.title)

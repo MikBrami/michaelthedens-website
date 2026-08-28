@@ -15,21 +15,36 @@
       "freshShockEligible": false,
       "severity": 98,
       "confidence": 98,
-      "markets": ["server_dram"],
-      "companies": ["Micron"],
+      "markets": [
+        "server_dram"
+      ],
+      "companies": [
+        "Micron"
+      ],
       "title": "Micron erhöht Server-RDIMM-Preise überwiegend um 20 Prozent",
       "summary": "Die neue Micron-Preisliste bestätigt eine breite Preisrunde bei Server-Speicher. 64-GB-RDIMMs, derzeit das volumenstärkste Produkt, steigen um 20 Prozent. Auch die übrigen gängigen Server-RDIMM-Kapazitäten verteuern sich um 20 Prozent; 128-GB-RDIMMs steigen mit 15 Prozent etwas weniger stark.",
       "fact": "Direkte aktuelle Vertriebskanal-Evidenz aus der neuen Micron-Preisliste: 64-GB-RDIMM +20 Prozent; gängige Server-RDIMMs ebenfalls +20 Prozent; 128-GB-RDIMM +15 Prozent.",
       "estimate": "Die nahezu durchgängige Erhöhung um 20 Prozent zeigt, dass Micron die Preisrunde nicht auf einzelne knappe SKUs begrenzt. Dass 128 GB mit 15 Prozent etwas schwächer steigt, spricht für kapazitätsspezifische Mix- und Nachfrageunterschiede, ändert aber nichts am breiten Preisimpuls.",
       "tailInference": "Der bislang unquantifizierte Micron-Preis-Watch ist bestätigt. Die Preisdynamik bei Server-DRAM/RDIMM steigt materiell; besonders relevant ist der volle 20-Prozent-Schritt beim volumenstarken 64-GB-Modul. MT·AI nimmt das Signal als indexwirksame Pricing-Evidenz auf, ohne daraus automatisch eine identische Verschlechterung der physischen Verfügbarkeit abzuleiten.",
-      "admissionGate": {"Freshness":true,"Evidence":true,"Materiality":true,"Causality":true,"Falsifiability":true},
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
       "redPencil": {
         "alternative": "Die Erhöhung kann teilweise eine verzögerte Anpassung an bereits bekannte Marktpreise oder eine listenpreisbezogene Bereinigung darstellen; realisierte Projektpreise können je nach Volumen, Laufzeit und Allocation abweichen.",
         "killCondition": "Breite Rücknahmen oder Projektabschlüsse deutlich unterhalb der neuen Preisbasis innerhalb der nächsten vier bis sechs Wochen würden die Signalstärke reduzieren.",
         "forecastChange": "Server-RDIMM-Pricing-Druck wird erhöht. 64 GB bleibt wegen Volumenrelevanz der wichtigste Transmissionspunkt; 128 GB wird separat mit dem niedrigeren 15-Prozent-Schritt geführt."
       },
-      "sources": [{"label":"Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz"}],
-      "source": "Micron distributor pricing / channel intelligence"
+      "sources": [
+        {
+          "label": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz"
+        }
+      ],
+      "source": "Micron distributor pricing / channel intelligence",
+      "public": false
     },
     {
       "id": "S-2026-08-28-MICRON-ESSD-PRICE",
@@ -43,21 +58,37 @@
       "freshShockEligible": false,
       "severity": 88,
       "confidence": 96,
-      "markets": ["enterprise_ssd", "nand"],
-      "companies": ["Micron"],
+      "markets": [
+        "enterprise_ssd",
+        "nand"
+      ],
+      "companies": [
+        "Micron"
+      ],
       "title": "Micron erhöht Enterprise-SSD-Preise – TLC stärker als QLC, 60 TB unverändert",
       "summary": "Microns neue Enterprise-SSD-Preise steigen im Mittel um rund 10 Prozent. Die Bewegung ist jedoch nicht gleichmäßig: TLC-Produkte verteuern sich stärker als QLC, während die hochkapazitive 60-TB-Klasse unverändert bleibt.",
       "fact": "Direkte aktuelle Vertriebskanal-Evidenz aus der neuen Micron-Preisliste: Enterprise SSD im Mittel etwa +10 Prozent; TLC stärker als QLC; 60-TB-Klasse ohne Preiserhöhung.",
       "estimate": "Die Produktmix-Divergenz zeigt einen selektiven statt pauschalen NAND-/SSD-Preisschub. TLC trägt den stärkeren kurzfristigen Preisdruck. Die unveränderte 60-TB-Klasse ist ein konkretes Gegensignal gegen die Annahme, dass hohe Kapazitäten automatisch am stärksten steigen.",
       "tailInference": "Enterprise SSD bleibt klar im Aufwärtstrend, aber die Preiswirkung muss nach NAND-Typ und Kapazitätsklasse getrennt werden. MT·AI erhöht die Pricing-Evidenz für Enterprise SSD und NAND moderater als bei Server-RDIMM. Die 60-TB-Ausnahme bleibt als Falsifier gegen eine undifferenzierte High-Capacity-These sichtbar.",
-      "admissionGate": {"Freshness":true,"Evidence":true,"Materiality":true,"Causality":true,"Falsifiability":true},
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
       "redPencil": {
         "alternative": "Der durchschnittliche Anstieg kann durch SKU-Mix verzerrt sein; projektbezogene Preise und QLC-Angebote können deutlich unter dem TLC-Trend liegen.",
         "killCondition": "Weitere Preislisten zeigen stabile oder fallende TLC-Preise beziehungsweise einen breiten Preisrückgang bei Enterprise SSD innerhalb der nächsten vier bis sechs Wochen.",
         "forecastChange": "Enterprise-SSD-Pricing-Druck steigt, jedoch mit expliziter Segmentierung: TLC stärker, QLC schwächer, 60 TB aktuell unverändert."
       },
-      "sources": [{"label":"Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz"}],
-      "source": "Micron distributor pricing / channel intelligence"
+      "sources": [
+        {
+          "label": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz"
+        }
+      ],
+      "source": "Micron distributor pricing / channel intelligence",
+      "public": false
     },
     {
       "id": "S-2026-08-27-NVIDIA-Q2-FY27",
@@ -71,8 +102,15 @@
       "freshShockEligible": true,
       "severity": 98,
       "confidence": 99,
-      "markets": ["ai_infrastructure", "hbm", "server_dram", "enterprise_ssd"],
-      "companies": ["NVIDIA"],
+      "markets": [
+        "ai_infrastructure",
+        "hbm",
+        "server_dram",
+        "enterprise_ssd"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
       "title": "Nvidia verdoppelt Umsatz – AI-Nachfrage verbreitert sich über zwei Deployment-Kanäle",
       "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Auf der von Nvidia rückwirkend recasteten Segmentbasis lagen Hyperscale bei 48,7 Mrd. US-Dollar und AI Clouds, Industrial & Enterprise (ACIE) bei 40,3 Mrd. US-Dollar. ACIE hat sich damit nach einem Blackwell-bedingten Tief wieder stark angenähert. Das bestätigt eine breitere Deployment-Welle, beweist aber noch keine gleich starke Diversifikation der Endkundennachfrage, weil auch Hyperscaler, die über AI Clouds einkaufen, in ACIE gebucht werden können.",
       "fact": "Die beiden Data-Center-Engines rotieren. In Q1 FY27 kamen 94 % des sequenziellen Data-Center-Zuwachses aus ACIE, in Q2 FY27 noch 59 %; zwei Quartale zuvor war der Beitrag umgekehrt und Hyperscale dominierte, während ACIE rückläufig war. Nvidia hat zudem in Q2 FY27 einen Kunden von ACIE zu Hyperscale umklassifiziert und historische Perioden rückwirkend angepasst. Für belastbare Vergleiche darf daher ausschließlich die recastete Serie verwendet werden. Gleichzeitig stiegen die Days Sales Outstanding laut der vorliegenden Analyse von 45 auf 60 Tage und die Konzentration bei Top-Kunden nahm zu.",
@@ -128,5 +166,6 @@
       "source": "NVIDIA Investor Relations / DigiTimes analysis",
       "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
     }
-  ]
+  ],
+  "publicDailyStatus": false
 }

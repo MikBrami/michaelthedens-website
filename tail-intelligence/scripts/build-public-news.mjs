@@ -28,6 +28,7 @@ const snapshot = readJson(publicPath, null);
 if (!snapshot) throw new Error('public-tail/data.json missing; run build-data first.');
 
 const accepted = (daily.acceptedSignals || [])
+  .filter((signal) => signal.public !== false)
   .filter((signal) => Number(signal.priorityScore || 0) > 0)
   .filter((signal) => signal.classification !== 'No Material Change');
 
@@ -206,12 +207,18 @@ if (accepted.length) {
   snapshot.signals = news;
 }
 
-snapshot.dailyStatus = daily.dailyStatus || {
-  date: String(daily.updatedAt || '').slice(0, 10),
-  type: accepted.length ? 'material-change' : 'no-material-change',
-  title: accepted.length ? 'Neue bestätigte TAIL-Signale' : 'Keine bestätigte materielle Richtungsänderung',
-  impactScore: accepted.length ? Math.max(...accepted.map((signal) => Number(signal.priorityScore || 0))) : 0
+const fallbackDailyStatus = {
+  date: String(daily.dailyStatus?.date || daily.updatedAt || '').slice(0, 10),
+  type: accepted.length ? 'material-market-update' : 'no-material-change',
+  title: accepted.length ? 'Neue bestätigte MT·AI-Signale' : 'Keine bestätigte materielle Richtungsänderung',
+  impactScore: accepted.length ? Math.max(...accepted.map((signal) => Number(signal.priorityScore || 0))) : 0,
+  note: accepted.length
+    ? 'Die öffentlich bestätigten Signale sind in das aktuelle Lagebild eingeflossen.'
+    : 'Seit dem letzten Daily Check wurde keine öffentlich bestätigte materielle Richtungsänderung festgestellt.'
 };
+snapshot.dailyStatus = daily.dailyStatus?.public === false
+  ? fallbackDailyStatus
+  : (daily.dailyStatus || fallbackDailyStatus);
 
 const analysisDate = String(snapshot.dailyStatus?.date || daily.updatedAt || '').slice(0, 10);
 if (analysisDate) {

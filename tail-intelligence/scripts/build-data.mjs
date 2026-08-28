@@ -329,8 +329,11 @@ const dashboard = {
 fs.writeFileSync(outputPath, JSON.stringify(dashboard, null, 2) + '\n');
 const articlesById = new Map(normalizedArticles.map((article) => [article.id, article]));
 const dailyDate = String(latestDaily.updatedAt || dashboard.dataAsOf || '').slice(0, 10);
-const selectedSignals = Array.isArray(latestDaily.acceptedSignals) && latestDaily.acceptedSignals.length
-  ? latestDaily.acceptedSignals.slice(0, 3).map((signal) => {
+const acceptedSignals = Array.isArray(latestDaily.acceptedSignals) ? latestDaily.acceptedSignals : [];
+const publicAcceptedSignals = acceptedSignals.filter((signal) => signal.public !== false);
+const privateAcceptedSignalIds = new Set(acceptedSignals.filter((signal) => signal.public === false).map((signal) => signal.id));
+const selectedSignals = publicAcceptedSignals.length
+  ? publicAcceptedSignals.slice(0, 3).map((signal) => {
       const article = articlesById.get(signal.id) || {};
       return {
         date: article.date || dailyDate,
@@ -340,7 +343,10 @@ const selectedSignals = Array.isArray(latestDaily.acceptedSignals) && latestDail
         score: signal.priorityScore
       };
     })
-  : dashboard.topSignals.slice(0, 3).map(({ date, title, summary, analysis, score }) => ({ date, title, summary, analysis, score }));
+  : dashboard.topSignals
+      .filter((signal) => !privateAcceptedSignalIds.has(signal.id))
+      .slice(0, 3)
+      .map(({ date, title, summary, analysis, score }) => ({ date, title, summary, analysis, score }));
 
 const publicSnapshot = {
   schemaVersion: 1,
