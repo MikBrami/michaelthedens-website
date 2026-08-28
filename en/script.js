@@ -21,6 +21,7 @@ const marketExplanation = {
   dram: "HBM displacement and server demand continue to keep supply conditions tight.",
   hbm: "Platform-specific qualification ties up both front-end and advanced packaging capacity.",
   enterprise_ssd: "AI data pipelines and high-capacity systems continue to support enterprise SSD demand.",
+  risk_pressure: "Combines peak risks across availability, pricing and critical supply chains.",
   nand: "Pricing remains firm, although medium-term supply relief is more plausible than in DRAM.",
   ai_infrastructure: "Power, data-centre capacity and memory are increasingly setting the pace of expansion."
 };
@@ -65,13 +66,22 @@ function renderDashboard(snapshot) {
   const markets = Array.isArray(platform.markets) ? platform.markets.slice(0, 6) : [];
   const indexMarketIds = ["server_dram", "hbm", "enterprise_ssd"];
   const indexMarkets = indexMarketIds.map((id) => markets.find((market) => market.id === id)).filter(Boolean);
+  const riskPressure = Number(pulse.riskPressure);
+  const pressureCards = Number.isFinite(riskPressure)
+    ? [...indexMarkets, {
+        id: "risk_pressure",
+        label: "Risk Pressure",
+        score: riskPressure,
+        status: riskPressure >= 82 ? "red" : riskPressure >= 70 ? "orange" : riskPressure >= 55 ? "yellow" : "green"
+      }]
+    : indexMarkets;
   document.getElementById("mini-markets").innerHTML = indexMarkets.map((market) => `
     <div class="mini-market">
       <span>${escapeHtml(market.label)}</span><strong>${Number(market.score) || 0}</strong>
       <div><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
     </div>`).join("");
 
-  document.getElementById("market-grid").innerHTML = indexMarkets.map((market) => `
+  document.getElementById("market-grid").innerHTML = pressureCards.map((market) => `
     <article class="market-card ${escapeHtml(market.status || "orange")}">
       <div class="market-head"><h3>${escapeHtml(market.label)}</h3><span class="market-score">${Number(market.score) || 0}</span></div>
       <div class="market-track"><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
