@@ -37,6 +37,8 @@ if (!latest) throw new Error('daily-intelligence-latest.json missing or invalid'
 
 const indexSignalConfig = readJson(indexSignalsPath, { signals: [] });
 const indexSignals = Array.isArray(indexSignalConfig.signals) ? indexSignalConfig.signals : [];
+const primaryIndexSignal = [...indexSignals]
+  .sort((a, b) => Number(a.rank ?? 99) - Number(b.rank ?? 99) || Number(b.priorityScore ?? 0) - Number(a.priorityScore ?? 0))[0];
 const publicSignals = mergeById(
   Array.isArray(config.publicSignals) ? config.publicSignals : [],
   indexSignals
@@ -71,10 +73,12 @@ latest.dataHygiene = {
 latest.dailyStatus = {
   ...(latest.dailyStatus || {}),
   type: publicSignals.length ? 'material-market-update' : latest.dailyStatus?.type,
-  title: indexSignals.length ? 'Nvidia bestätigt beschleunigten AI-Infrastruktur-Ramp' : (publicSignals.length ? 'Neue bestätigte AI-Agenten- und Effizienzsignale' : latest.dailyStatus?.title),
+  title: indexSignals.length
+    ? (indexSignalConfig.dailyStatusTitle || primaryIndexSignal?.title || latest.dailyStatus?.title)
+    : (publicSignals.length ? 'Neue bestätigte AI-Agenten- und Effizienzsignale' : latest.dailyStatus?.title),
   impactScore: publicSignals.length ? Math.max(Number(latest.dailyStatus?.impactScore || 0), indexSignals.length ? 10 : 8) : latest.dailyStatus?.impactScore,
   note: indexSignals.length
-    ? 'Nvidias Q2-FY27-Zahlen sind als bestätigtes materielles Nachfrage- und Beschleunigungssignal aufgenommen. Das Signal wirkt mechanisch auf den Index und aktiviert bei außergewöhnlicher Frische und Evidenz das begrenzte Fresh-Shock-Overlay.'
+    ? (indexSignalConfig.dailyStatusNote || `${primaryIndexSignal?.title || 'Das bestätigte Marktsignal'} ist aufgenommen und wirkt mechanisch auf den Index.`)
     : (publicSignals.length
       ? 'Astra sowie GLM-5.3-Flash/Qwen3.8-Flash-Next stärken die These skalierbarer digitaler Arbeit. Die Capability-Signale werden beobachtet, verändern den Stressindex aber nicht ohne separate Markt- und Preissignale.'
       : latest.dailyStatus?.note)
