@@ -29,6 +29,10 @@ const forecastLedger = readJson(forecastLedgerPath, { forecasts: [] });
 const latestDaily = readJson(latestDailyPath, {});
 const operationalIndicatorData = readJson(operationalIndicatorsPath, { indicators: [] });
 const previousDashboard = readJson(outputPath, {});
+const previousPublishedIndex = previousDashboard.dataAsOf === articles.map((item) => item.date).filter(Boolean).sort().at(-1)
+  && Number.isFinite(latestDaily.executivePulse?.previous)
+  ? latestDaily.executivePulse.previous
+  : (Number.isFinite(previousDashboard.tailIndex) ? previousDashboard.tailIndex : null);
 
 const inbox = readJson(inboxPath, { updated_at: null, new_items: 0, duplicate_items: [], items: [] });
 const updateStatus = readJson(statusPath, {
@@ -295,7 +299,7 @@ const dashboard = {
   indexStatus: trafficLight(overall),
   executivePulse: {
     current: overall,
-    previous: Number.isFinite(previousDashboard.tailIndex) ? previousDashboard.tailIndex : overall,
+    previous: Number.isFinite(previousPublishedIndex) ? previousPublishedIndex : overall,
     status: indexModel.status,
     confidence: indexModel.executiveConfidence,
     riskPressure: indexModel.riskPressure,
