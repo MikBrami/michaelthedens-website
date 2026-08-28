@@ -191,11 +191,19 @@ export function calculateIndexModel(articles, methodology, options = {}) {
     ...operationalIndicators.map((indicator) => indicator.date)
   ].filter(Boolean).sort();
 
-  const baselineAsOf = baselineDates.at(-1)
-    || options.asOf
+  // Always age evidence against the actual build date as well as the newest
+  // observation. Previously the clock advanced only when a new baseline signal
+  // arrived, so operational evidence could appear frozen and then decay in one
+  // abrupt step during an unrelated update.
+  const baselineAsOf = [...baselineDates, options.asOf]
+    .filter(Boolean)
+    .sort()
+    .at(-1)
     || allImpactDates.at(-1);
-  const shockAsOf = allImpactDates.at(-1)
-    || options.asOf
+  const shockAsOf = [...allImpactDates, options.asOf]
+    .filter(Boolean)
+    .sort()
+    .at(-1)
     || baselineAsOf;
 
   const marketIds = new Set([
