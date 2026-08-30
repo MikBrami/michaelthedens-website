@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-30T01:14:53.341Z",
+  "generatedAt": "2026-08-30T10:28:30.880Z",
   "platform": {
     "dataAsOf": "2026-08-30",
     "dataFreshness": "current",
@@ -10,74 +10,68 @@
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 84,
+        "score": 83,
         "status": "red",
         "signals": 19
       },
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 81,
+        "score": 80,
         "status": "orange",
         "signals": 30
       },
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 80,
+        "score": 78,
         "status": "orange",
         "signals": 20
       }
     ],
-    "sourceDataAsOf": "2026-08-29",
+    "sourceDataAsOf": "2026-08-30",
     "analysisAsOf": "2026-08-30"
   },
   "executivePulse": {
-    "current": 82,
+    "current": 81,
     "previous": 82,
-    "status": "red",
+    "status": "orange",
     "confidence": 90,
-    "riskPressure": 83,
+    "riskPressure": 81,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-30 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-30 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-08-30",
-      "title": "Nvidia treibt AI-Boom an – beflügelt Micron & SK Hynix",
-      "summary": "Intellectia AI meldet, Nvidia treibe den AI-Boom voran und beflügele Micron & SK Hynix.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 100,
-      "relevanceScore": 100,
-      "sourceQuality": 15,
-      "source": "Intellectia AI",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Xb041RTB2YWt6elY3dXlacVdYdXFtRTJnLTdZazJyLV9ydURfTXhhZVVLbmVjMGZjeGZCUjc5ZV82NkhJSXpvVFZuT1JjbzdpX2JQT013bF85SFRUYW9FLUY0b005cTZFS0pNY3UwU2NNN3hBN0hncEp4MUg3TFk?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-29",
-      "title": "YMTC will Samsung bis 2027 als weltweiten NAND-Marktführer ablösen",
-      "summary": "Tech4Gamers berichtet, YMTC wolle Samsung bis 2027 als weltweiten NAND-Marktführer verdrängen.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Tech4Gamers",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2YVUwOGluSVZUZ05EV0lGMDBQRy1fcEZtMmhzakVlUjloTEJCZVRiWTR2Y185UHZTWjBiWHR5XzhWV3llcGpvNDZBeERENEFCQUtoUEZJTkF5dkc3dVRRTEM0RnNRMUxpWmF0RQ?oc=5",
-      "layer": "news"
+      "title": "Nvidia will Hugging Face übernehmen – Open-Model-Ökosystem wird zum Hardware-Hedge",
+      "summary": "Laut einem von DigiTimes wiedergegebenen Bericht von The Information hat Nvidia einer Übernahme von Hugging Face für 12,9 Mrd. US-Dollar zugestimmt. Hugging Face ist eine zentrale Plattform für offene Modelle, Datensätze, Hardware-Optimierung und cloudbasierte AI-Deployments. Der Bericht ordnet die Transaktion als strategische Reaktion auf die zunehmende vertikale Integration großer Closed-Model-Anbieter und Hyperscaler ein, die eigene AI-Beschleuniger entwickeln.",
+      "analysis": "MT·AI wertet die Transaktion als strukturellen Nachfrage-Persistenzfaktor: Open Models → Hugging Face → Nvidia-optimiertes Deployment → Nvidia Compute → höhere Cloud- und Infrastruktur-Auslastung. Der Effekt ist für AI Infrastructure direkt und für HBM, Server-DRAM und Enterprise SSD mittelbar positiv. Da die Übernahme heute keine neue physische Knappheit oder Preisbewegung erzeugt, bleibt sie index-neutral und löst keinen Fresh Shock aus.",
+      "score": 92,
+      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
+      "url": null,
+      "layer": "accepted-signal"
     },
     {
       "date": "2026-08-30",
-      "title": "YMTC fordert NAND-Führungsanspruch heraus, während Samsung und SK hynix in Südkorea DRAM priorisieren",
-      "summary": "Chosunbiz berichtet, YMTC stelle Samsungs NAND-Führungsposition in Frage, während Samsung und SK hynix in Südkorea DRAM priorisieren.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 89,
-      "relevanceScore": 100,
-      "sourceQuality": 2,
-      "source": "Chosunbiz",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAwUTVnRlpBRjFXQS1jWjdKYUFfcHpEcjRlUTc5LWtsamNvUHpIWFRwSVh6YWRza1A2T09xMURrVXhQU1Zta3hnZ2Y5bDZ2WXBtZVpleE1mVldwR01kb19iWXBUdDF3QzdSeUNRT25IemVkVmhPX0pTdjVn0gGOAUFVX3lxTFBwbjU5QnVFT1hxSnVkc2h1UHBmMGxLcTE5SV9fRTRqYWxZUmJyWkdLeDUyVHBYTmJpOURlMWMwNThHeExlYjNHcVpXT2ZXNmFwTk5kNDhfcG0xYkdTMmJEQVBmdXFCMG1wekdIX2Q0YTVfZnJTTkZjYlo1UUNSc2piVkZNVENTSGdFMkZIeXc?oc=5",
-      "layer": "news"
+      "title": "Samsung bringt LPDDR5X-PIM näher an die Produktreife – neuer Pfad gegen die AI Memory Wall",
+      "summary": "Samsung zeigte auf der Hot Chips 2026 LPDDR5X-PIM mit funktionierendem Silizium und internen Llama-3.1-8B-Messungen auf einem Edge-AI-SoC. Die Laufzeit sank von 12,3 auf 5,4 Sekunden, der Durchsatz stieg von 27,0 auf 81,3 Token/s und Samsung nennt bis zu 614 GB/s interne PIM-Bandbreite gegenüber 76,8 GB/s auf der konventionellen LPDDR5X-Seite. Die Resultate sind interne Messungen; die erzeugten Outputs unterschieden sich und die Accuracy-Optimierung läuft noch.",
+      "analysis": "MT·AI wertet PIM als möglichen mittelfristigen Memory-Wall-Mitigationspfad, nicht als heutiges HBM-Substitut. Für Inference-Workloads unterhalb maximaler HBM-Bandbreite kann lokale Verarbeitung die effektive Performance und Energieeffizienz erhöhen. Kurzfristig entsteht daraus keine Entlastung für HBM, Server-DRAM oder Enterprise SSD, weil Kunden, Volumen und Mass-Production-Zeitplan fehlen. Gleichzeitig kann effizientere Inference über einen Jevons-Effekt den Gesamtbedarf an AI-Workloads und damit die absolute Speichernachfrage erhöhen, auch wenn sich der Memory-Mix verschiebt.",
+      "score": 91,
+      "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
+      "url": null,
+      "layer": "accepted-signal"
+    },
+    {
+      "date": "2026-08-30",
+      "title": "Nvidia verdoppelt Umsatz – AI-Nachfrage verbreitert sich über zwei Deployment-Kanäle",
+      "summary": "Die beiden Data-Center-Engines rotieren. In Q1 FY27 kamen 94 % des sequenziellen Data-Center-Zuwachses aus ACIE, in Q2 FY27 noch 59 %; zwei Quartale zuvor war der Beitrag umgekehrt und Hyperscale dominierte, während ACIE rückläufig war. Nvidia hat zudem in Q2 FY27 einen Kunden von ACIE zu Hyperscale umklassifiziert und historische Perioden rückwirkend angepasst. Für belastbare Vergleiche darf daher ausschließlich die recastete Serie verwendet werden. Gleichzeitig stiegen die Days Sales Outstanding laut der vorliegenden Analyse von 45 auf 60 Tage und die Konzentration bei Top-Kunden nahm zu.",
+      "analysis": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus.",
+      "score": 99,
+      "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
+      "layer": "accepted-signal"
     }
   ],
   "catalysts": [
@@ -116,10 +110,10 @@
   ],
   "dailyStatus": {
     "date": "2026-08-30",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
-    "impactScore": 0,
-    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "type": "material-market-update",
+    "title": "Neue bestätigte MT·AI-Signale",
+    "impactScore": 99,
+    "note": "Die öffentlich bestätigten Signale sind in das aktuelle Lagebild eingeflossen."
   },
   "news": [
     {
@@ -127,7 +121,7 @@
       "title": "Nvidia Drives AI Boom, Boosting Micron & SK Hynix",
       "summary": "Aktuelle Meldung von Intellectia AI: Nvidia Drives AI Boom, Boosting Micron & SK Hynix",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 100,
+      "score": 99,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "Intellectia AI",
@@ -135,83 +129,37 @@
       "layer": "news"
     },
     {
-      "date": "2026-08-29",
-      "title": "YMTC Wants To Dethrone And Replace Samsung As The World’s No. 1 NAND Maker By 2027",
-      "summary": "Aktuelle Meldung von Tech4Gamers: YMTC Wants To Dethrone And Replace Samsung As The World’s No. 1 NAND Maker By 2027",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "date": "2026-08-30",
+      "title": "Nvidia's Earnings Reveal a New Buyer Class Outgrowing Microsoft, Google and Amazon",
+      "summary": "Nvidia's Earnings Reveal a New Buyer Class Outgrowing Microsoft, Google and Amazon The Globe and Mail",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Tech4Gamers",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2YVUwOGluSVZUZ05EV0lGMDBQRy1fcEZtMmhzakVlUjloTEJCZVRiWTR2Y185UHZTWjBiWHR5XzhWV3llcGpvNDZBeERENEFCQUtoUEZJTkF5dkc3dVRRTEM0RnNRMUxpWmF0RQ?oc=5",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQMzFEUzRWZjA0ZmJRN0VfS1MydF96UTVlNldnUnd3aTFMOENCVndzTm5XZktMc0FWcndRaDZndVUtSkd6bzZXNDN0djJPYXJKNXoyVy1FRC1OZ3FLZzZ1a1I4VzdlTUttT20zV1FSWjdPR1ZmS1o5ZmtpdHRBRUlwTExxQlZkZ0pHWFRIcE1uN0w0NmwyZ0U2aGZEUU53ZmJvMXdWNGtWU2FFbGdIUkVpd0Vhamp3eW45Ry0teTV6Z3lxUFc2T3FIYUNMMk9Gc3FuTE1ydDRCY1hQbXdBdmhUVzFmWVh2aXJ5b0htbnpWVnQ2M1hsVjFmWjNYc0xhdw?oc=5",
       "layer": "news"
     },
     {
       "date": "2026-08-30",
-      "title": "YMTC challenges NAND lead as Samsung, SK hynix prioritize DRAM in South Korea - CHOSUNBIZ",
-      "summary": "Aktuelle Meldung von Chosunbiz: YMTC challenges NAND lead as Samsung, SK hynix prioritize DRAM in South Korea - CHOSUNBIZ",
+      "title": "Chinese CXMT's Earnings Surprise Challenges Samsung, SK Hynix",
+      "summary": "Aktuelle Meldung von 조선일보: Chinese CXMT's Earnings Surprise Challenges Samsung, SK Hynix",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 89,
+      "score": 93,
       "relevanceScore": 100,
-      "sourceQuality": 2,
-      "source": "Chosunbiz",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAwUTVnRlpBRjFXQS1jWjdKYUFfcHpEcjRlUTc5LWtsamNvUHpIWFRwSVh6YWRza1A2T09xMURrVXhQU1Zta3hnZ2Y5bDZ2WXBtZVpleE1mVldwR01kb19iWXBUdDF3QzdSeUNRT25IemVkVmhPX0pTdjVn0gGOAUFVX3lxTFBwbjU5QnVFT1hxSnVkc2h1UHBmMGxLcTE5SV9fRTRqYWxZUmJyWkdLeDUyVHBYTmJpOURlMWMwNThHeExlYjNHcVpXT2ZXNmFwTk5kNDhfcG0xYkdTMmJEQVBmdXFCMG1wekdIX2Q0YTVfZnJTTkZjYlo1UUNSc2piVkZNVENTSGdFMkZIeXc?oc=5",
+      "sourceQuality": 6,
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZmp6X1kzLVdXUlBFVmpFR1pWV2pCRzNzdDZGRXNjR0tjZTNXREZSOWZ0QzJTdUJSQTNYVU4xejdMMmlpWTJuZlE5VkRrb2ZfbGxFdHZ4SW5UZGY0VlhqZTRTLTV3ZVd4RUkzam5QYWlHaEhVajcwTU1sWkxVMjZPSXBwek5SeUFRa004VWln?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-30T01:14:53.509Z",
+    "generatedAt": "2026-08-30T10:28:31.047Z",
     "count": 3,
-    "candidateCount": 46,
+    "candidateCount": 41,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
     "admissionPolicy": "Current public news is separated from internal TAIL admission and forecast logic."
-  },
-  "originalSignals": [
-    {
-      "date": "2026-08-30",
-      "title": "Nvidia Drives AI Boom, Boosting Micron & SK Hynix",
-      "summary": "Aktuelle Meldung von Intellectia AI: Nvidia Drives AI Boom, Boosting Micron & SK Hynix",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 100,
-      "relevanceScore": 100,
-      "sourceQuality": 15,
-      "source": "Intellectia AI",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Xb041RTB2YWt6elY3dXlacVdYdXFtRTJnLTdZazJyLV9ydURfTXhhZVVLbmVjMGZjeGZCUjc5ZV82NkhJSXpvVFZuT1JjbzdpX2JQT013bF85SFRUYW9FLUY0b005cTZFS0pNY3UwU2NNN3hBN0hncEp4MUg3TFk?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-29",
-      "title": "YMTC Wants To Dethrone And Replace Samsung As The World’s No. 1 NAND Maker By 2027",
-      "summary": "Aktuelle Meldung von Tech4Gamers: YMTC Wants To Dethrone And Replace Samsung As The World’s No. 1 NAND Maker By 2027",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Tech4Gamers",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2YVUwOGluSVZUZ05EV0lGMDBQRy1fcEZtMmhzakVlUjloTEJCZVRiWTR2Y185UHZTWjBiWHR5XzhWV3llcGpvNDZBeERENEFCQUtoUEZJTkF5dkc3dVRRTEM0RnNRMUxpWmF0RQ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-30",
-      "title": "YMTC challenges NAND lead as Samsung, SK hynix prioritize DRAM in South Korea - CHOSUNBIZ",
-      "summary": "Aktuelle Meldung von Chosunbiz: YMTC challenges NAND lead as Samsung, SK hynix prioritize DRAM in South Korea - CHOSUNBIZ",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 89,
-      "relevanceScore": 100,
-      "sourceQuality": 2,
-      "source": "Chosunbiz",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAwUTVnRlpBRjFXQS1jWjdKYUFfcHpEcjRlUTc5LWtsamNvUHpIWFRwSVh6YWRza1A2T09xMURrVXhQU1Zta3hnZ2Y5bDZ2WXBtZVpleE1mVldwR01kb19iWXBUdDF3QzdSeUNRT25IemVkVmhPX0pTdjVn0gGOAUFVX3lxTFBwbjU5QnVFT1hxSnVkc2h1UHBmMGxLcTE5SV9fRTRqYWxZUmJyWkdLeDUyVHBYTmJpOURlMWMwNThHeExlYjNHcVpXT2ZXNmFwTk5kNDhfcG0xYkdTMmJEQVBmdXFCMG1wekdIX2Q0YTVfZnJTTkZjYlo1UUNSc2piVkZNVENTSGdFMkZIeXc?oc=5",
-      "layer": "news"
-    }
-  ],
-  "editorial": {
-    "germanNews": {
-      "language": "de-DE",
-      "model": "gpt-5-mini",
-      "mode": "editorial_translation",
-      "generatedAt": "2026-08-30T01:15:22.514Z"
-    }
   }
 }

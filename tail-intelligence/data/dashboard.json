@@ -2,15 +2,15 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-08-29",
-  "sourceDataAsOf": "2026-08-29",
+  "dataAsOf": "2026-08-30",
+  "sourceDataAsOf": "2026-08-30",
   "knowledgeBaseSyncedAt": "2026-08-30T01:14:52.608Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-08-30T01:14:53.340Z",
-  "lastForecastRun": "2026-08-30T01:14:53.340Z",
-  "newlyProcessedArticles": 408,
+  "evidenceAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-08-30T10:28:30.879Z",
+  "lastForecastRun": "2026-08-30T10:28:30.879Z",
+  "newlyProcessedArticles": 395,
   "totalArticles": 125,
   "articleCount": 125,
   "processStatus": "ok",
@@ -67,8 +67,8 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-08-30T01:14:43.327Z",
-    "newItems": 408,
+    "updatedAt": "2026-08-30T10:28:21.624Z",
+    "newItems": 395,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
@@ -81,7 +81,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "125 Artikel · Sync 2026-08-30 · jüngstes bestätigtes Signal 2026-08-29"
+        "detail": "125 Artikel · Sync 2026-08-30 · jüngstes bestätigtes Signal 2026-08-30"
       },
       {
         "id": "inbox",
@@ -103,14 +103,14 @@
       }
     ]
   },
-  "tailIndex": 82,
-  "indexStatus": "red",
+  "tailIndex": 81,
+  "indexStatus": "orange",
   "executivePulse": {
-    "current": 82,
+    "current": 81,
     "previous": 82,
-    "status": "red",
+    "status": "orange",
     "confidence": 90,
-    "riskPressure": 83,
+    "riskPressure": 81,
     "riskFormula": "60% critical segment peak + 40% critical availability peak",
     "coverage": 100,
     "methodologyVersion": "1.2",
@@ -118,8 +118,8 @@
       {
         "id": "demand",
         "name": "Nachfrage",
-        "score": 82,
-        "absoluteSeverity": 82,
+        "score": 81,
+        "absoluteSeverity": 81,
         "delta": 0,
         "weight": 0.25,
         "coverage": 100,
@@ -138,8 +138,8 @@
       {
         "id": "availability",
         "name": "Verfügbarkeit / Allocation",
-        "score": 79,
-        "absoluteSeverity": 79,
+        "score": 76,
+        "absoluteSeverity": 76,
         "delta": 0,
         "weight": 0.4,
         "coverage": 100,
@@ -156,16 +156,16 @@
         "rawMetric": "Gewicht im Segmentindex: 15%"
       }
     ],
-    "interpretation": "Der MT·AI Executive Pulse liegt bei 82/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (90/100) und Risikodruck (83/100) werden separat ausgewiesen."
+    "interpretation": "Der MT·AI Executive Pulse liegt bei 81/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (90/100) und Risikodruck (81/100) werden separat ausgewiesen."
   },
   "markets": [
     {
       "id": "server_dram",
-      "score": 84,
-      "baseScore": 81,
+      "score": 83,
+      "baseScore": 80,
       "freshShock": 3,
       "freshShockSignalId": "S-2026-08-27-NVIDIA-Q2-FY27",
-      "indicativeScore": 84,
+      "indicativeScore": 83,
       "sufficientlyCovered": true,
       "status": "red",
       "signals": 19,
@@ -188,10 +188,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 85,
+          "score": 84,
           "confidence": 95,
           "evidenceCount": 2,
-          "pressure": 85,
+          "pressure": 84,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -199,12 +199,12 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 81,
+          "score": 78,
           "confidence": 90,
           "evidenceCount": 5,
-          "pressure": 79,
+          "pressure": 78,
           "relief": 0,
-          "operationalFloor": 81,
+          "operationalFloor": 77,
           "formula": "pressure - relief × reliefOffset"
         },
         {
@@ -223,11 +223,11 @@
     },
     {
       "id": "hbm",
-      "score": 81,
-      "baseScore": 77,
+      "score": 80,
+      "baseScore": 76,
       "freshShock": 4,
       "freshShockSignalId": "S-2026-08-27-NVIDIA-Q2-FY27",
-      "indicativeScore": 81,
+      "indicativeScore": 80,
       "sufficientlyCovered": true,
       "status": "orange",
       "signals": 30,
@@ -239,10 +239,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 83,
+          "score": 82,
           "confidence": 91,
           "evidenceCount": 5,
-          "pressure": 83,
+          "pressure": 82,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -261,10 +261,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 74,
+          "score": 73,
           "confidence": 88,
           "evidenceCount": 5,
-          "pressure": 74,
+          "pressure": 73,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -285,11 +285,11 @@
     },
     {
       "id": "enterprise_ssd",
-      "score": 80,
-      "baseScore": 79,
+      "score": 78,
+      "baseScore": 77,
       "freshShock": 1,
       "freshShockSignalId": "S-2026-08-27-NVIDIA-Q2-FY27",
-      "indicativeScore": 80,
+      "indicativeScore": 78,
       "sufficientlyCovered": true,
       "status": "orange",
       "signals": 20,
@@ -301,10 +301,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 82,
+          "score": 81,
           "confidence": 92,
           "evidenceCount": 5,
-          "pressure": 82,
+          "pressure": 81,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -312,23 +312,23 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 70,
+          "score": 69,
           "confidence": 91,
           "evidenceCount": 3,
-          "pressure": 70,
+          "pressure": 69,
           "relief": 0,
-          "operationalFloor": 59,
+          "operationalFloor": 58,
           "formula": "pressure - relief × reliefOffset"
         },
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 81,
+          "score": 77,
           "confidence": 91,
           "evidenceCount": 5,
-          "pressure": 69,
+          "pressure": 67,
           "relief": 0,
-          "operationalFloor": 81,
+          "operationalFloor": 77,
           "formula": "pressure - relief × reliefOffset"
         },
         {
@@ -347,11 +347,11 @@
     },
     {
       "id": "ai_infrastructure",
-      "score": 78,
-      "baseScore": 75,
+      "score": 77,
+      "baseScore": 74,
       "freshShock": 3,
       "freshShockSignalId": "S-2026-08-27-NVIDIA-Q2-FY27",
-      "indicativeScore": 78,
+      "indicativeScore": 77,
       "sufficientlyCovered": true,
       "status": "orange",
       "signals": 90,
@@ -363,10 +363,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 84,
+          "score": 83,
           "confidence": 92,
           "evidenceCount": 5,
-          "pressure": 84,
+          "pressure": 83,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -396,10 +396,10 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 84,
+          "score": 83,
           "confidence": 92,
           "evidenceCount": 5,
-          "pressure": 84,
+          "pressure": 83,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -436,10 +436,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 69,
+          "score": 68,
           "confidence": 85,
           "evidenceCount": 2,
-          "pressure": 69,
+          "pressure": 68,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -509,12 +509,12 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 62,
+          "score": 61,
           "confidence": 91,
           "evidenceCount": 5,
-          "pressure": 60,
+          "pressure": 59,
           "relief": 0,
-          "operationalFloor": 62,
+          "operationalFloor": 61,
           "formula": "pressure - relief × reliefOffset"
         },
         {
@@ -533,11 +533,11 @@
     },
     {
       "id": "nand",
-      "score": 68,
-      "baseScore": 68,
+      "score": 67,
+      "baseScore": 67,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 68,
+      "indicativeScore": 67,
       "sufficientlyCovered": true,
       "status": "orange",
       "signals": 13,
@@ -571,10 +571,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 49,
+          "score": 48,
           "confidence": 89,
           "evidenceCount": 5,
-          "pressure": 49,
+          "pressure": 48,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -596,10 +596,10 @@
     {
       "id": "dram",
       "score": null,
-      "baseScore": 12,
+      "baseScore": 11,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 12,
+      "indicativeScore": 11,
       "sufficientlyCovered": false,
       "status": "unknown",
       "signals": 1,
@@ -633,12 +633,12 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 12,
+          "score": 11,
           "confidence": 85,
           "evidenceCount": 1,
-          "pressure": 12,
+          "pressure": 11,
           "relief": 0,
-          "operationalFloor": 12,
+          "operationalFloor": 11,
           "formula": "pressure - relief × reliefOffset"
         },
         {
@@ -806,7 +806,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-30T01:14:53.340Z"
+      "lastUpdated": "2026-08-30T10:28:30.879Z"
     },
     {
       "id": "hbm",
@@ -892,7 +892,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-30T01:14:53.340Z"
+      "lastUpdated": "2026-08-30T10:28:30.879Z"
     },
     {
       "id": "nand",
@@ -960,7 +960,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-30T01:14:53.340Z"
+      "lastUpdated": "2026-08-30T10:28:30.879Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1031,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-08-30T01:14:53.340Z"
+      "lastUpdated": "2026-08-30T10:28:30.879Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,10 +1205,10 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-08-30T01:14:53.340Z"
+      "lastUpdated": "2026-08-30T10:28:30.879Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 82/100. Server DRAM / RDIMM, HBM, Enterprise SSD sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 81/100. Server DRAM / RDIMM, HBM, Enterprise SSD sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
