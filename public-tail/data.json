@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-30T19:49:53.111Z",
+  "generatedAt": "2026-08-31T01:22:37.099Z",
   "platform": {
-    "dataAsOf": "2026-08-30",
+    "dataAsOf": "2026-08-31",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -30,48 +30,54 @@
       }
     ],
     "sourceDataAsOf": "2026-08-30",
-    "analysisAsOf": "2026-08-30"
+    "analysisAsOf": "2026-08-31"
   },
   "executivePulse": {
     "current": 81,
-    "previous": 82,
+    "previous": 81,
     "status": "orange",
     "confidence": 90,
     "riskPressure": 81,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-30 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-31 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-08-30",
-      "title": "Nvidia will Hugging Face übernehmen – Open-Model-Ökosystem wird zum Hardware-Hedge",
-      "summary": "Laut einem von DigiTimes wiedergegebenen Bericht von The Information hat Nvidia einer Übernahme von Hugging Face für 12,9 Mrd. US-Dollar zugestimmt. Hugging Face ist eine zentrale Plattform für offene Modelle, Datensätze, Hardware-Optimierung und cloudbasierte AI-Deployments. Der Bericht ordnet die Transaktion als strategische Reaktion auf die zunehmende vertikale Integration großer Closed-Model-Anbieter und Hyperscaler ein, die eigene AI-Beschleuniger entwickeln.",
-      "analysis": "MT·AI wertet die Transaktion als strukturellen Nachfrage-Persistenzfaktor: Open Models → Hugging Face → Nvidia-optimiertes Deployment → Nvidia Compute → höhere Cloud- und Infrastruktur-Auslastung. Der Effekt ist für AI Infrastructure direkt und für HBM, Server-DRAM und Enterprise SSD mittelbar positiv. Da die Übernahme heute keine neue physische Knappheit oder Preisbewegung erzeugt, bleibt sie index-neutral und löst keinen Fresh Shock aus.",
-      "score": 92,
-      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "title": "Das 'Base Die' als Schlüssel zur HBM-Performance: SK hynix und NVIDIA im Wettlauf um die Führung",
+      "summary": "Das 'Base Die' gilt als entscheidender Faktor für HBM-Performance; SK hynix und NVIDIA konkurrieren um die Führungsposition.",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qUnlYckdqMzRUanRfMUhrbkNrSEROSm9DWktEeGotYVFLQWlGMWdtOHFoQ1BNQ0hON1VfeXBKdUlNMEtDVlRFS3dmd0F1TzdmbVdz?oc=5",
+      "layer": "news"
     },
     {
       "date": "2026-08-30",
-      "title": "Samsung bringt LPDDR5X-PIM näher an die Produktreife – neuer Pfad gegen die AI Memory Wall",
-      "summary": "Samsung zeigte auf der Hot Chips 2026 LPDDR5X-PIM mit funktionierendem Silizium und internen Llama-3.1-8B-Messungen auf einem Edge-AI-SoC. Die Laufzeit sank von 12,3 auf 5,4 Sekunden, der Durchsatz stieg von 27,0 auf 81,3 Token/s und Samsung nennt bis zu 614 GB/s interne PIM-Bandbreite gegenüber 76,8 GB/s auf der konventionellen LPDDR5X-Seite. Die Resultate sind interne Messungen; die erzeugten Outputs unterschieden sich und die Accuracy-Optimierung läuft noch.",
-      "analysis": "MT·AI wertet PIM als möglichen mittelfristigen Memory-Wall-Mitigationspfad, nicht als heutiges HBM-Substitut. Für Inference-Workloads unterhalb maximaler HBM-Bandbreite kann lokale Verarbeitung die effektive Performance und Energieeffizienz erhöhen. Kurzfristig entsteht daraus keine Entlastung für HBM, Server-DRAM oder Enterprise SSD, weil Kunden, Volumen und Mass-Production-Zeitplan fehlen. Gleichzeitig kann effizientere Inference über einen Jevons-Effekt den Gesamtbedarf an AI-Workloads und damit die absolute Speichernachfrage erhöhen, auch wenn sich der Memory-Mix verschiebt.",
+      "title": "Nvidia treibt den KI‑Boom an und stärkt Micron & SK Hynix",
+      "summary": "Nvidia kurbelt die KI‑Nachfrage an; davon profitieren Micron & SK Hynix.",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 91,
-      "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "Intellectia AI",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Xb041RTB2YWt6elY3dXlacVdYdXFtRTJnLTdZazJyLV9ydURfTXhhZVVLbmVjMGZjeGZCUjc5ZV82NkhJSXpvVFZuT1JjbzdpX2JQT013bF85SFRUYW9FLUY0b005cTZFS0pNY3UwU2NNN3hBN0hncEp4MUg3TFk?oc=5",
+      "layer": "news"
     },
     {
       "date": "2026-08-30",
-      "title": "Nvidia verdoppelt Umsatz – AI-Nachfrage verbreitert sich über zwei Deployment-Kanäle",
-      "summary": "Die beiden Data-Center-Engines rotieren. In Q1 FY27 kamen 94 % des sequenziellen Data-Center-Zuwachses aus ACIE, in Q2 FY27 noch 59 %; zwei Quartale zuvor war der Beitrag umgekehrt und Hyperscale dominierte, während ACIE rückläufig war. Nvidia hat zudem in Q2 FY27 einen Kunden von ACIE zu Hyperscale umklassifiziert und historische Perioden rückwirkend angepasst. Für belastbare Vergleiche darf daher ausschließlich die recastete Serie verwendet werden. Gleichzeitig stiegen die Days Sales Outstanding laut der vorliegenden Analyse von 45 auf 60 Tage und die Konzentration bei Top-Kunden nahm zu.",
-      "analysis": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus.",
-      "score": 99,
-      "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
-      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
-      "layer": "accepted-signal"
+      "title": "Abflüsse bei DRAM‑ETFs steigen stark, obwohl Micron, SK Hynix und SanDisk starkes Wachstum verzeichnen",
+      "summary": "Trotz starkem Wachstum bei Micron, SK Hynix und SanDisk kommt es zu deutlichen Abflüssen aus DRAM‑ETFs.",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNDlBeEhxemJESnY5cEI5UEVEMWpsd19PMkZKZVlHVDlwOGUxQmNmUVlYS184Z0RHY0d0bmVZTmg0TUFWOHA0c3pQUVN3ZXNfX1hPVUllcmNRdjZ0ZlJfTC1VZUFILTNTZzc2VTRaMjZMR1lVaGlVVzZ4RERoeVhHX211UFFXb01lWEdQajRYR2VCblhXa1pMVXVvdFlzeVVfMjUxWU44RDRodHIwZngwRDlpTnpPLVBCaERNMzBtaUJNSEJIaE9rdTN3aw?oc=5",
+      "layer": "news"
     }
   ],
   "catalysts": [
@@ -109,19 +115,31 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-08-30",
-    "type": "material-market-update",
-    "title": "Neue bestätigte MT·AI-Signale",
-    "impactScore": 99,
-    "note": "Die öffentlich bestätigten Signale sind in das aktuelle Lagebild eingeflossen."
+    "date": "2026-08-31",
+    "type": "no-material-change",
+    "title": "Keine bestätigte materielle Richtungsänderung",
+    "impactScore": 0,
+    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
   },
   "news": [
+    {
+      "date": "2026-08-30",
+      "title": "The Key to HBM Performance Is the 'Base Die'... SK hynix and NVIDIA Compete for the Lead",
+      "summary": "Aktuelle Meldung von 매일경제: The Key to HBM Performance Is the 'Base Die'... SK hynix and NVIDIA Compete for the Lead",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qUnlYckdqMzRUanRfMUhrbkNrSEROSm9DWktEeGotYVFLQWlGMWdtOHFoQ1BNQ0hON1VfeXBKdUlNMEtDVlRFS3dmd0F1TzdmbVdz?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-08-30",
       "title": "Nvidia Drives AI Boom, Boosting Micron & SK Hynix",
       "summary": "Aktuelle Meldung von Intellectia AI: Nvidia Drives AI Boom, Boosting Micron & SK Hynix",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 95,
+      "score": 91,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "Intellectia AI",
@@ -133,33 +151,67 @@
       "title": "DRAM ETF Outflows Surge Even as Micron, SK Hynix, SanDisk Post Strong Growth",
       "summary": "Aktuelle Meldung von Benzinga: DRAM ETF Outflows Surge Even as Micron, SK Hynix, SanDisk Post Strong Growth",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Benzinga",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNDlBeEhxemJESnY5cEI5UEVEMWpsd19PMkZKZVlHVDlwOGUxQmNmUVlYS184Z0RHY0d0bmVZTmg0TUFWOHA0c3pQUVN3ZXNfX1hPVUllcmNRdjZ0ZlJfTC1VZUFILTNTZzc2VTRaMjZMR1lVaGlVVzZ4RERoeVhHX211UFFXb01lWEdQajRYR2VCblhXa1pMVXVvdFlzeVVfMjUxWU44RDRodHIwZngwRDlpTnpPLVBCaERNMzBtaUJNSEJIaE9rdTN3aw?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-08-30",
-      "title": "Samsung, SK Hynix and Micron Have Already Sold Out Their 2027 Memory Chips",
-      "summary": "Aktuelle Meldung von Startup Fortune: Samsung, SK Hynix and Micron Have Already Sold Out Their 2027 Memory Chips",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Startup Fortune",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUkRBcDdpZmluREdDZ3ZwMmk5M2xPQm5LMTJKRHFmTkhIODdYMVo3T3JvLU1wN3pfaEJ1dkZ1T1JIY3ZZVVVIMTlZNHA2a3VERHk5REJ1NDFWdEx0QVU2ZHF0bVJONExlR29pQlo0ODhMblU5a1Q1VE9ZM1JrVnoyNHh5WmpkVUE0dGJmZ0FRVFFRLXdQa2d3V09WelI2U1BjYkdB?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-30T19:49:53.281Z",
+    "generatedAt": "2026-08-31T01:22:37.217Z",
     "count": 3,
-    "candidateCount": 47,
+    "candidateCount": 42,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
     "admissionPolicy": "Current public news is separated from internal TAIL admission and forecast logic."
+  },
+  "originalSignals": [
+    {
+      "date": "2026-08-30",
+      "title": "The Key to HBM Performance Is the 'Base Die'... SK hynix and NVIDIA Compete for the Lead",
+      "summary": "Aktuelle Meldung von 매일경제: The Key to HBM Performance Is the 'Base Die'... SK hynix and NVIDIA Compete for the Lead",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qUnlYckdqMzRUanRfMUhrbkNrSEROSm9DWktEeGotYVFLQWlGMWdtOHFoQ1BNQ0hON1VfeXBKdUlNMEtDVlRFS3dmd0F1TzdmbVdz?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-08-30",
+      "title": "Nvidia Drives AI Boom, Boosting Micron & SK Hynix",
+      "summary": "Aktuelle Meldung von Intellectia AI: Nvidia Drives AI Boom, Boosting Micron & SK Hynix",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 91,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "Intellectia AI",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Xb041RTB2YWt6elY3dXlacVdYdXFtRTJnLTdZazJyLV9ydURfTXhhZVVLbmVjMGZjeGZCUjc5ZV82NkhJSXpvVFZuT1JjbzdpX2JQT013bF85SFRUYW9FLUY0b005cTZFS0pNY3UwU2NNN3hBN0hncEp4MUg3TFk?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-08-30",
+      "title": "DRAM ETF Outflows Surge Even as Micron, SK Hynix, SanDisk Post Strong Growth",
+      "summary": "Aktuelle Meldung von Benzinga: DRAM ETF Outflows Surge Even as Micron, SK Hynix, SanDisk Post Strong Growth",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNDlBeEhxemJESnY5cEI5UEVEMWpsd19PMkZKZVlHVDlwOGUxQmNmUVlYS184Z0RHY0d0bmVZTmg0TUFWOHA0c3pQUVN3ZXNfX1hPVUllcmNRdjZ0ZlJfTC1VZUFILTNTZzc2VTRaMjZMR1lVaGlVVzZ4RERoeVhHX211UFFXb01lWEdQajRYR2VCblhXa1pMVXVvdFlzeVVfMjUxWU44RDRodHIwZngwRDlpTnpPLVBCaERNMzBtaUJNSEJIaE9rdTN3aw?oc=5",
+      "layer": "news"
+    }
+  ],
+  "editorial": {
+    "germanNews": {
+      "language": "de-DE",
+      "model": "gpt-5-mini",
+      "mode": "editorial_translation",
+      "generatedAt": "2026-08-31T01:22:59.756Z"
+    }
   }
 }
