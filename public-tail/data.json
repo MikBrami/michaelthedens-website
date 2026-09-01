@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T21:53:59.641Z",
+  "generatedAt": "2026-09-01T01:49:25.924Z",
   "platform": {
-    "dataAsOf": "2026-08-31",
+    "dataAsOf": "2026-09-01",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -30,55 +30,57 @@
       }
     ],
     "sourceDataAsOf": "2026-08-31",
-    "analysisAsOf": "2026-08-31"
+    "analysisAsOf": "2026-09-01"
   },
   "executivePulse": {
     "current": 80,
-    "previous": 81,
+    "previous": 80,
     "status": "orange",
     "confidence": 90,
     "riskPressure": 80,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-08-31 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-01 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
-      "date": "2026-08-31",
-      "title": "Nvidia will Hugging Face übernehmen – Open-Model-Ökosystem wird zum Hardware-Hedge",
-      "summary": "Laut einem von DigiTimes wiedergegebenen Bericht von The Information hat Nvidia einer Übernahme von Hugging Face für 12,9 Mrd. US-Dollar zugestimmt. Hugging Face ist eine zentrale Plattform für offene Modelle, Datensätze, Hardware-Optimierung und cloudbasierte AI-Deployments. Der Bericht ordnet die Transaktion als strategische Reaktion auf die zunehmende vertikale Integration großer Closed-Model-Anbieter und Hyperscaler ein, die eigene AI-Beschleuniger entwickeln.",
-      "analysis": "MT·AI wertet die Transaktion als strukturellen Nachfrage-Persistenzfaktor: Open Models → Hugging Face → Nvidia-optimiertes Deployment → Nvidia Compute → höhere Cloud- und Infrastruktur-Auslastung. Der Effekt ist für AI Infrastructure direkt und für HBM, Server-DRAM und Enterprise SSD mittelbar positiv. Da die Übernahme heute keine neue physische Knappheit oder Preisbewegung erzeugt, bleibt sie index-neutral und löst keinen Fresh Shock aus.",
-      "score": 92,
-      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "date": "2026-09-01",
+      "title": "Wettbewerb um HBM verschiebt sich: Samsung gewinnt, SK hynix rutscht ab",
+      "summary": "Laut Seoul Economic Daily verlagert sich der HBM-Wettbewerb – Samsung gewinnt an Boden, SK hynix verliert an Zugkraft.",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Seoul Economic Daily",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNDI1b0hmaEEtNDhfOGFfdkt1eGdDb1NKLTJpOUw4VE9CdkVTOTlmbWRtSDFlalpRdlNySWJhd1M2VkxvUWdXZFFGMlFUOUtQZ3lqZHEycFlSQ3dJOEFIamM0RG1wN0hYWTFVeDA5cmtZdFRTRG90Y2k5YU9walJiTDlaMUtTVnYzcmYwZVBlM3lOckxVWmNKTjAyLV9hZw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Kioxia und Sandisk planen $31B-Investition in Japan zur Erweiterung der NAND-Kapazität",
+      "summary": "EE Times Asia meldet, Kioxia und Sandisk planen eine $31B-Investition in Japan, um die NAND-Kapazität auszubauen.",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "EE Times Asia",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTG9wclRnMmxfYk5hcXZRVmpLM3phcHV3TGRNeDlvQ01UUHllTVVCUTBSODRDRU1GOHRRWXA3SjZMdTk1UHlSMFhLLWN4RjBDbDRlWTN6Y0Iza3VRWWY2allQYVpTd0FTUGp2anFTTnJYbGlPdGRETUJlbmItVng0TnhTY0dyZm8tbEM4a2tfMG9NblJtcUJEYg?oc=5",
+      "layer": "news"
     },
     {
       "date": "2026-08-31",
-      "title": "Samsung bringt LPDDR5X-PIM näher an die Produktreife – neuer Pfad gegen die AI Memory Wall",
-      "summary": "Samsung zeigte auf der Hot Chips 2026 LPDDR5X-PIM mit funktionierendem Silizium und internen Llama-3.1-8B-Messungen auf einem Edge-AI-SoC. Die Laufzeit sank von 12,3 auf 5,4 Sekunden, der Durchsatz stieg von 27,0 auf 81,3 Token/s und Samsung nennt bis zu 614 GB/s interne PIM-Bandbreite gegenüber 76,8 GB/s auf der konventionellen LPDDR5X-Seite. Die Resultate sind interne Messungen; die erzeugten Outputs unterschieden sich und die Accuracy-Optimierung läuft noch.",
-      "analysis": "MT·AI wertet PIM als möglichen mittelfristigen Memory-Wall-Mitigationspfad, nicht als heutiges HBM-Substitut. Für Inference-Workloads unterhalb maximaler HBM-Bandbreite kann lokale Verarbeitung die effektive Performance und Energieeffizienz erhöhen. Kurzfristig entsteht daraus keine Entlastung für HBM, Server-DRAM oder Enterprise SSD, weil Kunden, Volumen und Mass-Production-Zeitplan fehlen. Gleichzeitig kann effizientere Inference über einen Jevons-Effekt den Gesamtbedarf an AI-Workloads und damit die absolute Speichernachfrage erhöhen, auch wenn sich der Memory-Mix verschiebt.",
-      "score": 91,
-      "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "Nvidia verdoppelt Umsatz – AI-Nachfrage verbreitert sich über zwei Deployment-Kanäle",
-      "summary": "Die beiden Data-Center-Engines rotieren. In Q1 FY27 kamen 94 % des sequenziellen Data-Center-Zuwachses aus ACIE, in Q2 FY27 noch 59 %; zwei Quartale zuvor war der Beitrag umgekehrt und Hyperscale dominierte, während ACIE rückläufig war. Nvidia hat zudem in Q2 FY27 einen Kunden von ACIE zu Hyperscale umklassifiziert und historische Perioden rückwirkend angepasst. Für belastbare Vergleiche darf daher ausschließlich die recastete Serie verwendet werden. Gleichzeitig stiegen die Days Sales Outstanding laut der vorliegenden Analyse von 45 auf 60 Tage und die Konzentration bei Top-Kunden nahm zu.",
-      "analysis": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus.",
-      "score": 99,
-      "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
-      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
-      "layer": "accepted-signal"
+      "title": "Xiaomi führt LPDDR6 ein – CXMT überholt Samsung und SK Hynix",
+      "summary": "Tech-ish.com berichtet, Xiaomi bringt LPDDR6 auf den Markt; CXMT liegt dabei vor Samsung und SK Hynix.",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "tech-ish.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSmliWlhYeWRHSHh0VGZTblk2aHVwNnhkTTdScldoeTkybUFXV1BsODYzLTR4MzA3Z3hla1VaWlppUFVyS3J4QUctc3M1eUxKMGt0b2lMVUxkd2NPd3FPYlZOMkk1dHRQLXRVMS02VkZ1YU1CcndLcm1DT2laZndiaDA0eno4Xy04WHBSN0NqZjNSMzVmc0l2dUZn?oc=5",
+      "layer": "news"
     }
   ],
   "catalysts": [
-    {
-      "date": "2026-08-31",
-      "event": "Astra: Safety-, Release- und Deployment-Review"
-    },
     {
       "date": "2026-09-05",
       "event": "Bel/Doug Independent Confirmation Review"
@@ -106,16 +108,44 @@
     {
       "date": "2027-03-31",
       "event": "Client Memory Demand Destruction"
+    },
+    {
+      "date": "2028-12-31",
+      "event": "Feynman / A16 Volume Production"
     }
   ],
   "dailyStatus": {
-    "date": "2026-08-31",
-    "type": "material-market-update",
-    "title": "Neue bestätigte MT·AI-Signale",
-    "impactScore": 99,
-    "note": "Die öffentlich bestätigten Signale sind in das aktuelle Lagebild eingeflossen."
+    "date": "2026-09-01",
+    "type": "no-material-change",
+    "title": "Keine bestätigte materielle Richtungsänderung",
+    "impactScore": 0,
+    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
   },
   "news": [
+    {
+      "date": "2026-09-01",
+      "title": "HBM Rivalry Shifts as Samsung Gains and SK hynix Slides",
+      "summary": "HBM Rivalry Shifts as Samsung Gains and SK hynix Slides Seoul Economic Daily",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Seoul Economic Daily",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNDI1b0hmaEEtNDhfOGFfdkt1eGdDb1NKLTJpOUw4VE9CdkVTOTlmbWRtSDFlalpRdlNySWJhd1M2VkxvUWdXZFFGMlFUOUtQZ3lqZHEycFlSQ3dJOEFIamM0RG1wN0hYWTFVeDA5cmtZdFRTRG90Y2k5YU9walJiTDlaMUtTVnYzcmYwZVBlM3lOckxVWmNKTjAyLV9hZw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Kioxia and Sandisk Plan $31B Japan Investment to Expand NAND Capacity",
+      "summary": "Aktuelle Meldung von EE Times Asia: Kioxia and Sandisk Plan $31B Japan Investment to Expand NAND Capacity",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "EE Times Asia",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTG9wclRnMmxfYk5hcXZRVmpLM3phcHV3TGRNeDlvQ01UUHllTVVCUTBSODRDRU1GOHRRWXA3SjZMdTk1UHlSMFhLLWN4RjBDbDRlWTN6Y0Iza3VRWWY2allQYVpTd0FTUGp2anFTTnJYbGlPdGRETUJlbmItVng0TnhTY0dyZm8tbEM4a2tfMG9NblJtcUJEYg?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-08-31",
       "title": "Xiaomi debuts LPDDR6 with CXMT outpacing Samsung and SK Hynix",
@@ -127,39 +157,61 @@
       "source": "tech-ish.com",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSmliWlhYeWRHSHh0VGZTblk2aHVwNnhkTTdScldoeTkybUFXV1BsODYzLTR4MzA3Z3hla1VaWlppUFVyS3J4QUctc3M1eUxKMGt0b2lMVUxkd2NPd3FPYlZOMkk1dHRQLXRVMS02VkZ1YU1CcndLcm1DT2laZndiaDA0eno4Xy04WHBSN0NqZjNSMzVmc0l2dUZn?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "Shifts in the HBM supply chain: SK Hynix reportedly considers Intel for foundry services, raising concerns for Taiwan Semiconductor?",
-      "summary": "Aktuelle Meldung von 富途牛牛: Shifts in the HBM supply chain: SK Hynix reportedly considers Intel for foundry services, raising concerns for Taiwan Semiconductor?",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "富途牛牛",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeDdGOW1TSmNEOS1aME54ZzFKdEdPUGRwbnRZcVg4dDlqM3U1aDVRalFoNkwyS25kSmRzY3dtejJlVTRmOWlXeDdyZ2RqazlINGZvYjNseEU1NGFMODhRV3FOZ2lZaEF3Z0ZHLWtmWDdrM19sRWxlUDlnd0lsUE00Yi10bjlKOXpuTkdfbElGUFZadW1fRV94WFN3UzA3WWVOZ2Fj?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-08-31",
-      "title": "Google takes aim at Anthropic, Microsoft with budget-friendly AI pricing",
-      "summary": "Aktuelle Meldung von CNBC: Google takes aim at Anthropic, Microsoft with budget-friendly AI pricing",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 88,
-      "relevanceScore": 88,
-      "sourceQuality": 17,
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQa1NMQThidUVBbFMzbkpJWDQwZU5Rb0xvODcwUG1MME5JLTcxZ3owVDBSM2FRSWRCZ3ptZ2RneDZfYU5SejBIdmJxQmg4aFFBcU5ndkpQVVpBYkxKalVBVFNrWl9mUm9vZEdueDlkbmE2TDNDLTJCOEx5R0o4T3A2dGxKY2pUZXg2YjZCV3lHckxmSHBGcnNMQk14Q1NaVi1DOXdacmEtS0ZXLVVlVm85OHdpVks?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-08-31T21:53:59.769Z",
+    "generatedAt": "2026-09-01T01:49:26.095Z",
     "count": 3,
-    "candidateCount": 81,
+    "candidateCount": 89,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
     "admissionPolicy": "Current public news is separated from internal TAIL admission and forecast logic."
+  },
+  "originalSignals": [
+    {
+      "date": "2026-09-01",
+      "title": "HBM Rivalry Shifts as Samsung Gains and SK hynix Slides",
+      "summary": "HBM Rivalry Shifts as Samsung Gains and SK hynix Slides Seoul Economic Daily",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Seoul Economic Daily",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNDI1b0hmaEEtNDhfOGFfdkt1eGdDb1NKLTJpOUw4VE9CdkVTOTlmbWRtSDFlalpRdlNySWJhd1M2VkxvUWdXZFFGMlFUOUtQZ3lqZHEycFlSQ3dJOEFIamM0RG1wN0hYWTFVeDA5cmtZdFRTRG90Y2k5YU9walJiTDlaMUtTVnYzcmYwZVBlM3lOckxVWmNKTjAyLV9hZw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Kioxia and Sandisk Plan $31B Japan Investment to Expand NAND Capacity",
+      "summary": "Aktuelle Meldung von EE Times Asia: Kioxia and Sandisk Plan $31B Japan Investment to Expand NAND Capacity",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "EE Times Asia",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTG9wclRnMmxfYk5hcXZRVmpLM3phcHV3TGRNeDlvQ01UUHllTVVCUTBSODRDRU1GOHRRWXA3SjZMdTk1UHlSMFhLLWN4RjBDbDRlWTN6Y0Iza3VRWWY2allQYVpTd0FTUGp2anFTTnJYbGlPdGRETUJlbmItVng0TnhTY0dyZm8tbEM4a2tfMG9NblJtcUJEYg?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "Xiaomi debuts LPDDR6 with CXMT outpacing Samsung and SK Hynix",
+      "summary": "Xiaomi debuts LPDDR6 with CXMT outpacing Samsung and SK Hynix tech-ish.com",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "tech-ish.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSmliWlhYeWRHSHh0VGZTblk2aHVwNnhkTTdScldoeTkybUFXV1BsODYzLTR4MzA3Z3hla1VaWlppUFVyS3J4QUctc3M1eUxKMGt0b2lMVUxkd2NPd3FPYlZOMkk1dHRQLXRVMS02VkZ1YU1CcndLcm1DT2laZndiaDA0eno4Xy04WHBSN0NqZjNSMzVmc0l2dUZn?oc=5",
+      "layer": "news"
+    }
+  ],
+  "editorial": {
+    "germanNews": {
+      "language": "de-DE",
+      "model": "gpt-5-mini",
+      "mode": "editorial_translation",
+      "generatedAt": "2026-09-01T01:49:50.780Z"
+    }
   }
 }
