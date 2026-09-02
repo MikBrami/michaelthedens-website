@@ -135,7 +135,319 @@
       "delta": 20
     }
   ],
-  "acceptedSignals": [],
+  "acceptedSignals": [
+    {
+      "id": "S-2026-08-28-MICRON-RDIMM-PRICE",
+      "date": "2026-08-28",
+      "rank": 1,
+      "priorityScore": 99,
+      "classification": "Server DRAM Pricing / Supplier Price List / Channel Confirmation",
+      "signal": "price_up",
+      "signalOverride": "price_up",
+      "indexImpact": true,
+      "freshShockEligible": false,
+      "severity": 98,
+      "confidence": 98,
+      "markets": [
+        "server_dram"
+      ],
+      "companies": [
+        "Micron"
+      ],
+      "title": "Micron erhöht Server-RDIMM-Preise überwiegend um 20 Prozent",
+      "summary": "Die neue Micron-Preisliste bestätigt eine breite Preisrunde bei Server-Speicher. 64-GB-RDIMMs, derzeit das volumenstärkste Produkt, steigen um 20 Prozent. Auch die übrigen gängigen Server-RDIMM-Kapazitäten verteuern sich um 20 Prozent; 128-GB-RDIMMs steigen mit 15 Prozent etwas weniger stark.",
+      "fact": "Direkte aktuelle Vertriebskanal-Evidenz aus der neuen Micron-Preisliste: 64-GB-RDIMM +20 Prozent; gängige Server-RDIMMs ebenfalls +20 Prozent; 128-GB-RDIMM +15 Prozent.",
+      "estimate": "Die nahezu durchgängige Erhöhung um 20 Prozent zeigt, dass Micron die Preisrunde nicht auf einzelne knappe SKUs begrenzt. Dass 128 GB mit 15 Prozent etwas schwächer steigt, spricht für kapazitätsspezifische Mix- und Nachfrageunterschiede, ändert aber nichts am breiten Preisimpuls.",
+      "tailInference": "Der bislang unquantifizierte Micron-Preis-Watch ist bestätigt. Die Preisdynamik bei Server-DRAM/RDIMM steigt materiell; besonders relevant ist der volle 20-Prozent-Schritt beim volumenstarken 64-GB-Modul. MT·AI nimmt das Signal als indexwirksame Pricing-Evidenz auf, ohne daraus automatisch eine identische Verschlechterung der physischen Verfügbarkeit abzuleiten.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Die Erhöhung kann teilweise eine verzögerte Anpassung an bereits bekannte Marktpreise oder eine listenpreisbezogene Bereinigung darstellen; realisierte Projektpreise können je nach Volumen, Laufzeit und Allocation abweichen.",
+        "killCondition": "Breite Rücknahmen oder Projektabschlüsse deutlich unterhalb der neuen Preisbasis innerhalb der nächsten vier bis sechs Wochen würden die Signalstärke reduzieren.",
+        "forecastChange": "Server-RDIMM-Pricing-Druck wird erhöht. 64 GB bleibt wegen Volumenrelevanz der wichtigste Transmissionspunkt; 128 GB wird separat mit dem niedrigeren 15-Prozent-Schritt geführt."
+      },
+      "sources": [
+        {
+          "label": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz"
+        }
+      ],
+      "source": "Micron distributor pricing / channel intelligence",
+      "public": false
+    },
+    {
+      "id": "S-2026-08-27-NVIDIA-HUGGINGFACE",
+      "rank": 1,
+      "priorityScore": 92,
+      "classification": "AI Ecosystem / Open-Model Distribution Moat",
+      "signalOverride": "demand_up",
+      "indexImpact": false,
+      "title": "Nvidia will Hugging Face übernehmen – Open-Model-Ökosystem wird zum Hardware-Hedge",
+      "fact": "Laut einem von DigiTimes wiedergegebenen Bericht von The Information hat Nvidia einer Übernahme von Hugging Face für 12,9 Mrd. US-Dollar zugestimmt. Hugging Face ist eine zentrale Plattform für offene Modelle, Datensätze, Hardware-Optimierung und cloudbasierte AI-Deployments. Der Bericht ordnet die Transaktion als strategische Reaktion auf die zunehmende vertikale Integration großer Closed-Model-Anbieter und Hyperscaler ein, die eigene AI-Beschleuniger entwickeln.",
+      "estimate": "Der strategische Wert liegt weniger im aktuellen Hugging-Face-Umsatz als in der Kontrolle einer Distributions- und Deployment-Schicht oberhalb der Hardware. Ein fragmentiertes Open-Model-Ökosystem aus AI-Natives, Enterprises und kleineren Entwicklern hat deutlich geringere Anreize und Möglichkeiten, eigene Accelerators zu bauen als OpenAI, Google oder andere vertikal integrierte Großkunden. Hugging Face könnte zugleich als zusätzlicher Vertriebskanal für Nvidia-optimierte Cloud-Compute-Kapazität dienen.",
+      "tailInference": "MT·AI wertet die Transaktion als strukturellen Nachfrage-Persistenzfaktor: Open Models → Hugging Face → Nvidia-optimiertes Deployment → Nvidia Compute → höhere Cloud- und Infrastruktur-Auslastung. Der Effekt ist für AI Infrastructure direkt und für HBM, Server-DRAM und Enterprise SSD mittelbar positiv. Da die Übernahme heute keine neue physische Knappheit oder Preisbewegung erzeugt, bleibt sie index-neutral und löst keinen Fresh Shock aus.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Die hohe Bewertung kann strategische Erwartungen vorwegnehmen, die sich nicht materialisieren. Entwickler könnten Hardware-Abstraktion, konkurrierende Clouds oder alternative Accelerators bevorzugen; regulatorische Auflagen könnten die Integration begrenzen.",
+        "killCondition": "Die Transaktion kommt nicht zustande oder Hugging Face bleibt hardwareseitig so neutral, dass keine messbare zusätzliche Nvidia-Compute-Nutzung, Deployment-Bindung oder Cloud-Auslastung entsteht.",
+        "forecastChange": "Strukturelle Persistenz der Nvidia-Compute-Nachfrage steigt leicht; kein zusätzlicher kurzfristiger Indexsprung. Open-Model-Distribution wird als neuer strategischer Nachfragekanal beobachtet."
+      },
+      "riskWatch": {
+        "name": "Nvidia-financed demand / circularity exposure",
+        "indexImpact": false,
+        "interpretation": "Nvidias wachsende Beteiligungen, Cloud-Verpflichtungen und Credit-Support-Strukturen können reale Nachfrage verstärken, verändern aber zugleich deren Finanzierungs- und Konzentrationsqualität. Dieser Watch wird getrennt vom Marktstressindex geführt.",
+        "watchMetrics": [
+          "Share of Nvidia revenue linked to financially supported AI labs",
+          "Equity investments and new commitments",
+          "Credit support and cloud lease guarantees",
+          "Days sales outstanding",
+          "Top-customer concentration",
+          "Third-party utilization of financially supported GPU capacity"
+        ]
+      },
+      "sources": [
+        {
+          "label": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-28-MICRON-ESSD-PRICE",
+      "date": "2026-08-28",
+      "rank": 2,
+      "priorityScore": 96,
+      "classification": "Enterprise SSD Pricing / Product-Mix Divergence / Channel Confirmation",
+      "signal": "price_up",
+      "signalOverride": "price_up",
+      "indexImpact": true,
+      "freshShockEligible": false,
+      "severity": 88,
+      "confidence": 96,
+      "markets": [
+        "enterprise_ssd",
+        "nand"
+      ],
+      "companies": [
+        "Micron"
+      ],
+      "title": "Micron erhöht Enterprise-SSD-Preise – TLC stärker als QLC, 60 TB unverändert",
+      "summary": "Microns neue Enterprise-SSD-Preise steigen im Mittel um rund 10 Prozent. Die Bewegung ist jedoch nicht gleichmäßig: TLC-Produkte verteuern sich stärker als QLC, während die hochkapazitive 60-TB-Klasse unverändert bleibt.",
+      "fact": "Direkte aktuelle Vertriebskanal-Evidenz aus der neuen Micron-Preisliste: Enterprise SSD im Mittel etwa +10 Prozent; TLC stärker als QLC; 60-TB-Klasse ohne Preiserhöhung.",
+      "estimate": "Die Produktmix-Divergenz zeigt einen selektiven statt pauschalen NAND-/SSD-Preisschub. TLC trägt den stärkeren kurzfristigen Preisdruck. Die unveränderte 60-TB-Klasse ist ein konkretes Gegensignal gegen die Annahme, dass hohe Kapazitäten automatisch am stärksten steigen.",
+      "tailInference": "Enterprise SSD bleibt klar im Aufwärtstrend, aber die Preiswirkung muss nach NAND-Typ und Kapazitätsklasse getrennt werden. MT·AI erhöht die Pricing-Evidenz für Enterprise SSD und NAND moderater als bei Server-RDIMM. Die 60-TB-Ausnahme bleibt als Falsifier gegen eine undifferenzierte High-Capacity-These sichtbar.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Der durchschnittliche Anstieg kann durch SKU-Mix verzerrt sein; projektbezogene Preise und QLC-Angebote können deutlich unter dem TLC-Trend liegen.",
+        "killCondition": "Weitere Preislisten zeigen stabile oder fallende TLC-Preise beziehungsweise einen breiten Preisrückgang bei Enterprise SSD innerhalb der nächsten vier bis sechs Wochen.",
+        "forecastChange": "Enterprise-SSD-Pricing-Druck steigt, jedoch mit expliziter Segmentierung: TLC stärker, QLC schwächer, 60 TB aktuell unverändert."
+      },
+      "sources": [
+        {
+          "label": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz"
+        }
+      ],
+      "source": "Micron distributor pricing / channel intelligence",
+      "public": false
+    },
+    {
+      "id": "S-2026-08-27-SAMSUNG-LPDDR5X-PIM",
+      "rank": 2,
+      "priorityScore": 91,
+      "classification": "Memory Architecture / PIM / Inference Efficiency",
+      "signalOverride": "demand_up",
+      "indexImpact": false,
+      "title": "Samsung bringt LPDDR5X-PIM näher an die Produktreife – neuer Pfad gegen die AI Memory Wall",
+      "fact": "Samsung zeigte auf der Hot Chips 2026 LPDDR5X-PIM mit funktionierendem Silizium und internen Llama-3.1-8B-Messungen auf einem Edge-AI-SoC. Die Laufzeit sank von 12,3 auf 5,4 Sekunden, der Durchsatz stieg von 27,0 auf 81,3 Token/s und Samsung nennt bis zu 614 GB/s interne PIM-Bandbreite gegenüber 76,8 GB/s auf der konventionellen LPDDR5X-Seite. Die Resultate sind interne Messungen; die erzeugten Outputs unterschieden sich und die Accuracy-Optimierung läuft noch.",
+      "estimate": "PIM verlagert ausgewählte Multiply-Accumulate-Operationen näher an die DRAM-Bänke und reduziert damit Datentransfers zwischen Speicher und Prozessor. Die kommerziell wichtige Eigenschaft ist die angestrebte Kompatibilität mit Standard-DRAM-Controllern und einem JEDEC-konformen LPDDR5X-Package. Samsung positioniert LPDDR6-PIM als nächste Stufe, während ein möglicher Einsatz mit dem GAIA-AI-PC-Accelerator bislang nur berichtet, nicht offiziell bestätigt ist.",
+      "tailInference": "MT·AI wertet PIM als möglichen mittelfristigen Memory-Wall-Mitigationspfad, nicht als heutiges HBM-Substitut. Für Inference-Workloads unterhalb maximaler HBM-Bandbreite kann lokale Verarbeitung die effektive Performance und Energieeffizienz erhöhen. Kurzfristig entsteht daraus keine Entlastung für HBM, Server-DRAM oder Enterprise SSD, weil Kunden, Volumen und Mass-Production-Zeitplan fehlen. Gleichzeitig kann effizientere Inference über einen Jevons-Effekt den Gesamtbedarf an AI-Workloads und damit die absolute Speichernachfrage erhöhen, auch wenn sich der Memory-Mix verschiebt.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Die Performancevorteile könnten bei gleicher Output-Qualität deutlich kleiner ausfallen; Software-Komplexität, Standardisierung und begrenzte externe Bandbreite können die Adoption auf Nischenworkloads beschränken.",
+        "killCondition": "Unabhängige Benchmarks zeigen keinen robusten Vorteil bei vergleichbarer Accuracy, JEDEC-Standardisierung stockt oder bis Ende 2028 entsteht keine relevante Volumenadoption in Client-, Edge- oder Server-Inference-Plattformen.",
+        "forecastChange": "Neuer struktureller Forecast: PIM kann ab 2027/28 für ausgewählte Inference-Workloads ein zusätzliches Tier in der AI-Memory-Hierarchie werden. Bis belastbare Volumenadoption sichtbar ist, kein Relief-Signal für den aktuellen Memory-Stressindex."
+      },
+      "monitoringRule": {
+        "name": "PIM Productization Watch",
+        "indexImpact": false,
+        "watchMetrics": [
+          "Independent performance at matched accuracy",
+          "JEDEC LPDDR6-PIM standard progress",
+          "Samsung LPDDR5X-PIM mass-production schedule",
+          "Named customers and shipment volumes",
+          "GAIA/Lenovo/HP validation outcomes",
+          "Server-inference adoption",
+          "Net memory demand after efficiency/Jevons effects"
+        ]
+      },
+      "sources": [
+        {
+          "label": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-27-NVIDIA-Q2-FY27",
+      "date": "2026-08-27",
+      "rank": 3,
+      "priorityScore": 99,
+      "classification": "AI Infrastructure Demand / Memory Pressure / Demand Breadth",
+      "signal": "demand_up",
+      "signalOverride": "demand_up",
+      "indexImpact": true,
+      "freshShockEligible": true,
+      "severity": 98,
+      "confidence": 99,
+      "markets": [
+        "ai_infrastructure",
+        "hbm",
+        "server_dram",
+        "enterprise_ssd"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "title": "Nvidia verdoppelt Umsatz – AI-Nachfrage verbreitert sich über zwei Deployment-Kanäle",
+      "summary": "Nvidia meldet für Q2 FY27 96,2 Mrd. US-Dollar Umsatz (+106 % YoY) und 89,0 Mrd. US-Dollar Data-Center-Umsatz (+117 % YoY). Auf der von Nvidia rückwirkend recasteten Segmentbasis lagen Hyperscale bei 48,7 Mrd. US-Dollar und AI Clouds, Industrial & Enterprise (ACIE) bei 40,3 Mrd. US-Dollar. ACIE hat sich damit nach einem Blackwell-bedingten Tief wieder stark angenähert. Das bestätigt eine breitere Deployment-Welle, beweist aber noch keine gleich starke Diversifikation der Endkundennachfrage, weil auch Hyperscaler, die über AI Clouds einkaufen, in ACIE gebucht werden können.",
+      "fact": "Die beiden Data-Center-Engines rotieren. In Q1 FY27 kamen 94 % des sequenziellen Data-Center-Zuwachses aus ACIE, in Q2 FY27 noch 59 %; zwei Quartale zuvor war der Beitrag umgekehrt und Hyperscale dominierte, während ACIE rückläufig war. Nvidia hat zudem in Q2 FY27 einen Kunden von ACIE zu Hyperscale umklassifiziert und historische Perioden rückwirkend angepasst. Für belastbare Vergleiche darf daher ausschließlich die recastete Serie verwendet werden. Gleichzeitig stiegen die Days Sales Outstanding laut der vorliegenden Analyse von 45 auf 60 Tage und die Konzentration bei Top-Kunden nahm zu.",
+      "estimate": "Die Verbreiterung der Buchungs- und Deployment-Kanäle stärkt die strukturelle Infrastrukturthese, reduziert aber das Endkunden-Konzentrationsrisiko weniger stark als die Segmentlabels allein vermuten lassen. ACIE enthält AI Natives, Enterprises, Sovereigns und auch Hyperscaler, die Kapazität über AI Clouds beziehen. Für HBM bleibt der direkte Effekt am stärksten; Server-DRAM und Enterprise SSD profitieren zusätzlich von der breiteren Ausrollung außerhalb der ersten Hyperscaler-Welle. DSO-Anstieg und höhere Top-Customer-Konzentration werden separat als Demand-Quality- und Credit-Concentration-Watch geführt und fließen nicht mechanisch in den Stressindex ein.",
+      "tailInference": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus.",
+      "monitoringRule": {
+        "name": "Nvidia Q3 FY27 Segment & Recast Rule",
+        "rule": "YoY-Wachstumsraten von Hyperscale und ACIE werden nicht isoliert als Beschleunigungs- oder Abschwächungssignal gewertet. Vorrang haben absolute und sequenzielle Dollarveränderungen, der kombinierte Data-Center-Zuwachs und der Segmentmix. Historische Vergleiche dürfen ausschließlich auf der jeweils aktuellen recasteten Nvidia-Serie beruhen.",
+        "reason": "Stark unterschiedliche Vergleichsbasen können die YoY-Raten optisch verzerren. Zusätzlich hat Nvidia einen Kunden von ACIE zu Hyperscale umklassifiziert und Vorperioden recastet; das Mischen alter und neuer Serien kann die ACIE-Beiträge materiell falsch darstellen.",
+        "watchMetrics": [
+          "Hyperscale sequential revenue change in US dollars",
+          "ACIE sequential revenue change in US dollars",
+          "Combined Data Center sequential revenue change",
+          "ACIE share of incremental Data Center revenue",
+          "Nvidia total revenue versus guidance",
+          "Memory and supply-constraint commentary",
+          "Days sales outstanding",
+          "Top-customer concentration"
+        ],
+        "q3Test": "Bei rund 108 Mrd. US-Dollar Umsatz-Guidance und etwa 12 Mrd. US-Dollar erwartbarem sequenziellem Zuwachs gilt ACIE als strukturell breiter werdender Deployment-Kanal, wenn ACIE erneut den größeren Anteil des Zuwachses liefert. Übernimmt Hyperscale wieder den größeren Anteil, wird die jüngste ACIE-Stärke stärker als Produktzyklus- bzw. Deployment-Queue-Effekt gewertet."
+      },
+      "demandQualityWatch": {
+        "status": "watch",
+        "indexImpact": false,
+        "thesis": "Segmentbreite und Kredit-/Kundenkonzentration sind getrennt zu bewerten. Ein breiterer Buchungsmix kann mit höherer wirtschaftlicher Konzentration zusammenfallen.",
+        "indicators": [
+          "DSO-Anstieg von 45 auf 60 Tage",
+          "höhere Konzentration bei Top-Kunden",
+          "Hyperscaler-Nachfrage kann über AI Clouds als ACIE verbucht werden"
+        ]
+      },
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Die starke ACIE-Dynamik kann teilweise aus Produktzyklus, Deployment-Timing, Hyperscaler-Nachfrage über Neoclouds und niedrigen Vergleichsbasen stammen. Ein breiterer Segmentmix muss daher nicht proportional mehr unabhängige Endkunden bedeuten.",
+        "killCondition": "Nvidias nachfolgende absolute und sequenzielle Segmentumsätze zeigen eine deutliche Abschwächung sowohl bei Hyperscale als auch bei ACIE oder die recastete Serie zeigt, dass der jüngste ACIE-Anteil überwiegend durch temporäre Umbuchungs- und Deployment-Effekte erklärt wird. Für die Infrastrukturthese zusätzlich kritisch wäre eine Normalisierung der HBM-/Server-DRAM-/Enterprise-SSD-Verfügbarkeit trotz weiter hoher Data-Center-Umsätze.",
+        "forecastChange": "Fresh-Shock-Overlay bleibt einmalig aktiviert. Demand Breadth wird präzisiert zu 'breitere Deployment-Kanäle, Endkundendiversifikation noch nicht bewiesen'. Q3 FY27 wird anhand der sequenziellen Dollarbeiträge von Hyperscale und ACIE sowie ausschließlich auf recasteter Datenbasis bewertet. Demand Quality und Credit Concentration bleiben ein separater Watch ohne mechanischen Indexeffekt."
+      },
+      "sources": [
+        {
+          "label": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
+          "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+        },
+        {
+          "label": "DigiTimes – Nvidia Data Center structure analysis supplied for MT·AI review"
+        }
+      ],
+      "source": "NVIDIA Investor Relations / DigiTimes analysis",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S-2026-08-26-ASTRA",
+      "rank": 3,
+      "priorityScore": 96,
+      "classification": "Agentic Capability Update",
+      "signalOverride": "demand_up",
+      "indexImpact": false,
+      "title": "Astra verschiebt Frontier-AI von Antworten zu autonomer Forschungsarbeit",
+      "fact": "OpenAI beschreibt Astra als kommendes Modell mit erheblichen Fortschritten beim agentischen Programmieren und in der Cybersicherheit. OpenAI hat dafür strengere Sicherheitskontrollen eingeführt und Aktivitäten ausgesetzt, die diese Anforderungen noch nicht erfüllen. TIME berichtet zusätzlich aus Gesprächen mit OpenAI-Führungskräften über Astra als automatisierten Research-Intern, der experimentelle Ideen implementieren, Experimente ausführen und Ergebnisse zurückgeben kann.",
+      "estimate": "OpenAIs Aussage zu kritischen Cyberfähigkeiten ist offiziell bestätigt; weitergehende Aussagen zu AGI-Zeitplänen, Research-Intern-Leistung und persistenten Agenten stammen aus Interviews und sind keine unabhängigen Capability-Evaluierungen.",
+      "tailInference": "Der relevante Infrastrukturwechsel ist nicht das AGI-Label, sondern die Verlängerung produktiver Modellarbeit von einzelnen Antworten zu lang laufenden Agenten. Persistente Research-, Coding- und Tool-Use-Workloads erhöhen die potenzielle Inferenzzeit pro Nutzer massiv und stärken damit die strukturelle Nachfrage nach Compute, Server-DRAM, HBM, Enterprise-SSD, Netzwerk und Strom.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Agenten können durch bessere Modelle, Sparse Attention, Caching und effizientere Chips pro Aufgabe deutlich weniger Ressourcen benötigen.",
+        "killCondition": "Persistente Agenten erreichen bis Ende 2027 keine verlässlich nutzbaren Long-Horizon-Workflows oder die reale Compute-Nachfrage pro wirtschaftlich erledigter Aufgabe fällt trotz breiter Agentenadoption deutlich.",
+        "forecastChange": "AI-Compute-Nachfrage bleibt am oberen Ende des Modells; kein zusätzlicher Pulse-Anstieg."
+      },
+      "sources": [
+        {
+          "label": "OpenAI – Responding to the next frontier of critical cyber capabilities",
+          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "S-2026-08-26-FLASH-EFFICIENCY",
+      "rank": 4,
+      "priorityScore": 94,
+      "classification": "Efficiency / Agentic Economics Update",
+      "signalOverride": "demand_up",
+      "indexImpact": false,
+      "title": "GLM-5.3-Flash und Qwen3.8-Flash-Next drücken agentische Frontier-Leistung in deutlich kleinere aktive Modelle",
+      "fact": "Z.ai veröffentlichte GLM-5.3-Flash mit 320 Milliarden Gesamtparametern und 18 Milliarden aktiven Parametern pro Token; Qwen veröffentlichte Qwen3.8-Flash-Next mit deutlich weniger aktivierten Parametern pro Token. Beide Veröffentlichungen stärken die These sinkender Kosten pro Einheit digitaler Arbeit.",
+      "estimate": "Herstellerbenchmarks müssen durch unabhängige Produktionsdaten zu Latenz, Tool-Reliability und realen Long-Horizon-Kosten bestätigt werden.",
+      "tailInference": "Wenn Agentenleistung pro Dollar schneller steigt als der Ressourcenbedarf pro Aufgabe fällt, kann ein Jevons-Effekt mehr Automatisierung, längere Laufzeiten und mehr parallele Agenten erzeugen.",
+      "admissionGate": {
+        "Freshness": true,
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "redPencil": {
+        "alternative": "Wenn effizientere Modelle lediglich bestehende Workloads ersetzen, kann der Netto-Compute-Bedarf pro Aufgabe sinken.",
+        "killCondition": "Nutzung agentischer Workloads wächst 2027 langsamer als die Effizienzgewinne pro Aufgabe.",
+        "forecastChange": "Strukturierter Watch auf Agentic Elasticity."
+      },
+      "sources": [
+        {
+          "label": "Z.ai – GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
+          "url": "https://z.ai/blog/glm-5.3-flash"
+        },
+        {
+          "label": "Qwen Team – Qwen3.8-Flash-Next",
+          "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next"
+        }
+      ]
+    }
+  ],
   "predictionLogUpdates": [
     {
       "id": "P-2026-08-15-02",
@@ -246,10 +558,11 @@
   },
   "dailyStatus": {
     "date": "2026-09-02",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
-    "impactScore": 0,
-    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "type": "material-market-update",
+    "title": "Micron-Preisliste bestätigt neue Preisrunde bei Server-RDIMM und Enterprise SSD",
+    "impactScore": 10,
+    "note": "Die neue Micron-Preisliste quantifiziert den Preisdruck: Server-RDIMMs steigen überwiegend um 20 Prozent, 128-GB-Module um 15 Prozent. Enterprise-SSDs steigen im Mittel um rund 10 Prozent; TLC ist stärker betroffen als QLC, während die 60-TB-Klasse unverändert bleibt. Die bestätigten Werte ersetzen den bisherigen unquantifizierten Channel-Watch und wirken mechanisch auf die Segmentindizes.",
+    "public": false
   },
   "automatedDaily": {
     "generatedAt": "2026-09-02T01:01:07.027Z",
