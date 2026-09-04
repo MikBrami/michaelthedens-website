@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T19:50:28.670Z",
+  "generatedAt": "2026-09-04T00:58:32.748Z",
   "platform": {
-    "dataAsOf": "2026-09-03",
+    "dataAsOf": "2026-09-04",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -30,48 +30,54 @@
       }
     ],
     "sourceDataAsOf": "2026-09-03",
-    "analysisAsOf": "2026-09-03"
+    "analysisAsOf": "2026-09-04"
   },
   "executivePulse": {
     "current": 77,
-    "previous": 78,
+    "previous": 77,
     "status": "orange",
     "confidence": 90,
     "riskPressure": 78,
     "coverage": 100,
     "methodologyVersion": "1.2",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-03 hat eine materielle Veränderung der Lage bestätigt. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-04 hat 8 aktuelle relevante Meldungen geprüft; daraus ergibt sich derzeit keine bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-03",
-      "title": "Nvidia will Hugging Face übernehmen – Open-Model-Ökosystem wird zum Hardware-Hedge",
-      "summary": "Laut einem von DigiTimes wiedergegebenen Bericht von The Information hat Nvidia einer Übernahme von Hugging Face für 12,9 Mrd. US-Dollar zugestimmt. Hugging Face ist eine zentrale Plattform für offene Modelle, Datensätze, Hardware-Optimierung und cloudbasierte AI-Deployments. Der Bericht ordnet die Transaktion als strategische Reaktion auf die zunehmende vertikale Integration großer Closed-Model-Anbieter und Hyperscaler ein, die eigene AI-Beschleuniger entwickeln.",
-      "analysis": "MT·AI wertet die Transaktion als strukturellen Nachfrage-Persistenzfaktor: Open Models → Hugging Face → Nvidia-optimiertes Deployment → Nvidia Compute → höhere Cloud- und Infrastruktur-Auslastung. Der Effekt ist für AI Infrastructure direkt und für HBM, Server-DRAM und Enterprise SSD mittelbar positiv. Da die Übernahme heute keine neue physische Knappheit oder Preisbewegung erzeugt, bleibt sie index-neutral und löst keinen Fresh Shock aus.",
-      "score": 92,
-      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "title": "Samsung schließt Lücke zu SK hynix im HBM-Markt",
+      "summary": "Samsung holt im HBM-Markt gegenüber SK hynix auf.",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Borneo Bulletin",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPV1c3Z2tyM1R1ZzBfVVhDOXBZY3dBU0xpTUd4M3hLMzFITzI2eFNKUVZTMmRxNlY2bm92SnhVN2VvdHJ4ZU1lclFQUmdmLWJra043ZFJBazFKazdNbEpfS0lSVTB6ek1QMklIYVhzMW54WVRxTnJVMDZQOTRWZFlEdjBaYw?oc=5",
+      "layer": "news"
     },
     {
       "date": "2026-09-03",
-      "title": "Samsung bringt LPDDR5X-PIM näher an die Produktreife – neuer Pfad gegen die AI Memory Wall",
-      "summary": "Samsung zeigte auf der Hot Chips 2026 LPDDR5X-PIM mit funktionierendem Silizium und internen Llama-3.1-8B-Messungen auf einem Edge-AI-SoC. Die Laufzeit sank von 12,3 auf 5,4 Sekunden, der Durchsatz stieg von 27,0 auf 81,3 Token/s und Samsung nennt bis zu 614 GB/s interne PIM-Bandbreite gegenüber 76,8 GB/s auf der konventionellen LPDDR5X-Seite. Die Resultate sind interne Messungen; die erzeugten Outputs unterschieden sich und die Accuracy-Optimierung läuft noch.",
-      "analysis": "MT·AI wertet PIM als möglichen mittelfristigen Memory-Wall-Mitigationspfad, nicht als heutiges HBM-Substitut. Für Inference-Workloads unterhalb maximaler HBM-Bandbreite kann lokale Verarbeitung die effektive Performance und Energieeffizienz erhöhen. Kurzfristig entsteht daraus keine Entlastung für HBM, Server-DRAM oder Enterprise SSD, weil Kunden, Volumen und Mass-Production-Zeitplan fehlen. Gleichzeitig kann effizientere Inference über einen Jevons-Effekt den Gesamtbedarf an AI-Workloads und damit die absolute Speichernachfrage erhöhen, auch wenn sich der Memory-Mix verschiebt.",
-      "score": 91,
-      "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "title": "Samsung, SK Hynix und Micron: US-Kartellvorwürfe zu DRAM sollen neu verpackt sein",
+      "summary": "Laut MLex behaupten Samsung, SK Hynix und Micron, US-Kartellvorwürfe gegen DRAM seien lediglich neu verpackt.",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "MLex",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12ZkNjR1pfZVF6T25LdmlXdlBEckl0bGUzSjlsay1ibFFJOEVQRkU0aHFtRTZ0MEZSMEIxVVNlVm5pOGVoYkFCVWlWU2RwdVZ0Q01UaFNqMGQwQdIBWkFVX3lxTE12ZkNjR1pfZVF6T25LdmlXdlBEckl0bGUzSjlsay1ibFFJOEVQRkU0aHFtRTZ0MEZSMEIxVVNlVm5pOGVoYkFCVWlWU2RwdVZ0Q01UaFNqMGQwQQ?oc=5",
+      "layer": "news"
     },
     {
       "date": "2026-09-03",
-      "title": "Nvidia verdoppelt Umsatz – AI-Nachfrage verbreitert sich über zwei Deployment-Kanäle",
-      "summary": "Die beiden Data-Center-Engines rotieren. In Q1 FY27 kamen 94 % des sequenziellen Data-Center-Zuwachses aus ACIE, in Q2 FY27 noch 59 %; zwei Quartale zuvor war der Beitrag umgekehrt und Hyperscale dominierte, während ACIE rückläufig war. Nvidia hat zudem in Q2 FY27 einen Kunden von ACIE zu Hyperscale umklassifiziert und historische Perioden rückwirkend angepasst. Für belastbare Vergleiche darf daher ausschließlich die recastete Serie verwendet werden. Gleichzeitig stiegen die Days Sales Outstanding laut der vorliegenden Analyse von 45 auf 60 Tage und die Konzentration bei Top-Kunden nahm zu.",
-      "analysis": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus.",
-      "score": 99,
-      "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
-      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
-      "layer": "accepted-signal"
+      "title": "Warum schwächeln Micron- und SK Hynix-Aktien? Wieder die CXMT-Bedrohung",
+      "summary": "Laut Invezz belasten erneut Sorgen über CXMT die Kurse von Micron und SK Hynix.",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Invezz",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOThRSE9qRVJnd19aS0NHVDBkNE92c0JveU5PY1VfdVZkUkFCeU9wOWVLYktEOFVQZndrTGV2cDE5QkowdFhSamIyWlVoUUlZUnpnMUVwUFN2SURiaUlEU1NjOUhpZ1EybWpiLTFqbWFrUXlfc1ZWX0hTQW96eXJicW05NXBrOTNCSi1tajdhUFpvU0Y4Wlk5ZDBTSWlwM3pXS3hrSVYwNkJRbkR4eUJMa2phWQ?oc=5",
+      "layer": "news"
     }
   ],
   "catalysts": [
@@ -109,57 +115,103 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-03",
-    "type": "material-market-update",
-    "title": "Neue bestätigte MT·AI-Signale",
-    "impactScore": 99,
-    "note": "Die öffentlich bestätigten Signale sind in das aktuelle Lagebild eingeflossen."
+    "date": "2026-09-04",
+    "type": "no-material-change",
+    "title": "Keine bestätigte materielle Richtungsänderung",
+    "impactScore": 0,
+    "note": "8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
   },
   "news": [
     {
       "date": "2026-09-03",
-      "title": "Why are Micron and SK Hynix stocks struggling today? It's the CXMT threat again",
-      "summary": "Aktuelle Meldung von Invezz: Why are Micron and SK Hynix stocks struggling today? It's the CXMT threat again",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "title": "Samsung closes gap with SK hynix in HBM market",
+      "summary": "Samsung closes gap with SK hynix in HBM market Borneo Bulletin",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Invezz",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOThRSE9qRVJnd19aS0NHVDBkNE92c0JveU5PY1VfdVZkUkFCeU9wOWVLYktEOFVQZndrTGV2cDE5QkowdFhSamIyWlVoUUlZUnpnMUVwUFN2SURiaUlEU1NjOUhpZ1EybWpiLTFqbWFrUXlfc1ZWX0hTQW96eXJicW05NXBrOTNCSi1tajdhUFpvU0Y4Wlk5ZDBTSWlwM3pXS3hrSVYwNkJRbkR4eUJMa2phWQ?oc=5",
+      "source": "Borneo Bulletin",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPV1c3Z2tyM1R1ZzBfVVhDOXBZY3dBU0xpTUd4M3hLMzFITzI2eFNKUVZTMmRxNlY2bm92SnhVN2VvdHJ4ZU1lclFQUmdmLWJra043ZFJBazFKazdNbEpfS0lSVTB6ek1QMklIYVhzMW54WVRxTnJVMDZQOTRWZFlEdjBaYw?oc=5",
       "layer": "news"
     },
     {
       "date": "2026-09-03",
-      "title": "Samsung, SK Hynix, Micron move to dismiss US DRAM price-fixing claims",
-      "summary": "Aktuelle Meldung von MLex: Samsung, SK Hynix, Micron move to dismiss US DRAM price-fixing claims",
+      "title": "Samsung, SK Hynix, Micron say US antitrust claims over DRAM repackaged",
+      "summary": "Aktuelle Meldung von MLex: Samsung, SK Hynix, Micron say US antitrust claims over DRAM repackaged",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "MLex",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYzFyY21WTExXYVF0MUF5OUFRNGxlTW5wSE55S19SLTNjVUJiLS1tZFd3ZHJQRm1LZUkyREQ1QUNpRU9Kb3JQaXZQdHF0RmFYQ2RPVjN5enNHSkpPQjVyRWtoeVlSMmJsdG5hcVQ5bVhFbzUxWmJuVmxRdEJLZ25henBSaHpBb0VzNW5vZjZhczNramF4dFF0VE5xLXF6eWRuRzRLLW5IUmPSAVpBVV95cUxNcmUxZHo5dWtOVDBHRmRYbTllWEZacWc0UzVzRHhNXzhuN0Vrc2QtZEpJLU1tSVY0TWNFcE91SFFTbUJmcTR4Q0hYZlRBWWcxbEE5X1c4N2xILUE?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12ZkNjR1pfZVF6T25LdmlXdlBEckl0bGUzSjlsay1ibFFJOEVQRkU0aHFtRTZ0MEZSMEIxVVNlVm5pOGVoYkFCVWlWU2RwdVZ0Q01UaFNqMGQwQdIBWkFVX3lxTE12ZkNjR1pfZVF6T25LdmlXdlBEckl0bGUzSjlsay1ibFFJOEVQRkU0aHFtRTZ0MEZSMEIxVVNlVm5pOGVoYkFCVWlWU2RwdVZ0Q01UaFNqMGQwQQ?oc=5",
       "layer": "news"
     },
     {
       "date": "2026-09-03",
-      "title": "SK hynix Holds HBM Lead While Samsung Gains",
-      "summary": "Aktuelle Meldung von Businesskorea: SK hynix Holds HBM Lead While Samsung Gains",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "title": "Why are Micron and SK Hynix stocks struggling today? It's the CXMT threat again",
+      "summary": "Aktuelle Meldung von Invezz: Why are Micron and SK Hynix stocks struggling today? It's the CXMT threat again",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Businesskorea",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56cjJpcHFmZ1htSlB3d3BGMF9mOEt5SkdzOEtoblBfNE5yUktLSk02ZG9FMVJVUzh5NmFzUGcydW5kMmFubVdrQlRNRXpMWU9pR3d3NVVGSjN6UkFfVnMwbDNKMVBMOHVYSjBTOTF5RGNUT0ph?oc=5",
+      "source": "Invezz",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOThRSE9qRVJnd19aS0NHVDBkNE92c0JveU5PY1VfdVZkUkFCeU9wOWVLYktEOFVQZndrTGV2cDE5QkowdFhSamIyWlVoUUlZUnpnMUVwUFN2SURiaUlEU1NjOUhpZ1EybWpiLTFqbWFrUXlfc1ZWX0hTQW96eXJicW05NXBrOTNCSi1tajdhUFpvU0Y4Wlk5ZDBTSWlwM3pXS3hrSVYwNkJRbkR4eUJMa2phWQ?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-03T19:50:28.838Z",
+    "generatedAt": "2026-09-04T00:58:32.860Z",
     "count": 3,
-    "candidateCount": 51,
+    "candidateCount": 58,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
     "admissionPolicy": "Current public news is separated from internal TAIL admission and forecast logic."
+  },
+  "originalSignals": [
+    {
+      "date": "2026-09-03",
+      "title": "Samsung closes gap with SK hynix in HBM market",
+      "summary": "Samsung closes gap with SK hynix in HBM market Borneo Bulletin",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Borneo Bulletin",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPV1c3Z2tyM1R1ZzBfVVhDOXBZY3dBU0xpTUd4M3hLMzFITzI2eFNKUVZTMmRxNlY2bm92SnhVN2VvdHJ4ZU1lclFQUmdmLWJra043ZFJBazFKazdNbEpfS0lSVTB6ek1QMklIYVhzMW54WVRxTnJVMDZQOTRWZFlEdjBaYw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Samsung, SK Hynix, Micron say US antitrust claims over DRAM repackaged",
+      "summary": "Aktuelle Meldung von MLex: Samsung, SK Hynix, Micron say US antitrust claims over DRAM repackaged",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "MLex",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12ZkNjR1pfZVF6T25LdmlXdlBEckl0bGUzSjlsay1ibFFJOEVQRkU0aHFtRTZ0MEZSMEIxVVNlVm5pOGVoYkFCVWlWU2RwdVZ0Q01UaFNqMGQwQdIBWkFVX3lxTE12ZkNjR1pfZVF6T25LdmlXdlBEckl0bGUzSjlsay1ibFFJOEVQRkU0aHFtRTZ0MEZSMEIxVVNlVm5pOGVoYkFCVWlWU2RwdVZ0Q01UaFNqMGQwQQ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Why are Micron and SK Hynix stocks struggling today? It's the CXMT threat again",
+      "summary": "Aktuelle Meldung von Invezz: Why are Micron and SK Hynix stocks struggling today? It's the CXMT threat again",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Invezz",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOThRSE9qRVJnd19aS0NHVDBkNE92c0JveU5PY1VfdVZkUkFCeU9wOWVLYktEOFVQZndrTGV2cDE5QkowdFhSamIyWlVoUUlZUnpnMUVwUFN2SURiaUlEU1NjOUhpZ1EybWpiLTFqbWFrUXlfc1ZWX0hTQW96eXJicW05NXBrOTNCSi1tajdhUFpvU0Y4Wlk5ZDBTSWlwM3pXS3hrSVYwNkJRbkR4eUJMa2phWQ?oc=5",
+      "layer": "news"
+    }
+  ],
+  "editorial": {
+    "germanNews": {
+      "language": "de-DE",
+      "model": "gpt-5-mini",
+      "mode": "editorial_translation",
+      "generatedAt": "2026-09-04T00:58:50.091Z"
+    }
   }
 }
