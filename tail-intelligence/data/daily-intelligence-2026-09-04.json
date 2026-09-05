@@ -177,7 +177,9 @@
         }
       ],
       "source": "Micron distributor pricing / channel intelligence",
-      "public": false
+      "public": false,
+      "category": "memory",
+      "tail_analysis": "Der bislang unquantifizierte Micron-Preis-Watch ist bestätigt. Die Preisdynamik bei Server-DRAM/RDIMM steigt materiell; besonders relevant ist der volle 20-Prozent-Schritt beim volumenstarken 64-GB-Modul. MT·AI nimmt das Signal als indexwirksame Pricing-Evidenz auf, ohne daraus automatisch eine identische Verschlechterung der physischen Verfügbarkeit abzuleiten."
     },
     {
       "id": "S-2026-08-27-NVIDIA-HUGGINGFACE",
@@ -263,7 +265,33 @@
         }
       ],
       "source": "Micron distributor pricing / channel intelligence",
-      "public": false
+      "public": false,
+      "category": "storage",
+      "driverScope": [
+        "pricing"
+      ],
+      "productScope": {
+        "aggregation": "mixed-enterprise-ssd-pricing",
+        "segments": [
+          {
+            "id": "performance_tlc",
+            "pricingDirection": "up",
+            "relativeStrength": "stronger"
+          },
+          {
+            "id": "capacity_qlc",
+            "pricingDirection": "up",
+            "relativeStrength": "weaker"
+          },
+          {
+            "id": "high_capacity_60tb",
+            "pricingDirection": "flat",
+            "relativeStrength": "product-specific-falsifier"
+          }
+        ],
+        "guardrail": "The unchanged 60 TB class limits the broad high-capacity pricing thesis; it is not evidence of segment-wide Enterprise SSD availability relief."
+      },
+      "tail_analysis": "Enterprise SSD bleibt klar im Aufwärtstrend, aber die Preiswirkung muss nach NAND-Typ und Kapazitätsklasse getrennt werden. MT·AI erhöht die Pricing-Evidenz für Enterprise SSD und NAND moderater als bei Server-RDIMM. Die 60-TB-Ausnahme bleibt als Falsifier gegen eine undifferenzierte High-Capacity-These sichtbar."
     },
     {
       "id": "S-2026-08-27-SAMSUNG-LPDDR5X-PIM",
@@ -381,7 +409,9 @@
         }
       ],
       "source": "NVIDIA Investor Relations / DigiTimes analysis",
-      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx"
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
+      "category": "geopolitics",
+      "tail_analysis": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus."
     },
     {
       "id": "S-2026-08-26-ASTRA",

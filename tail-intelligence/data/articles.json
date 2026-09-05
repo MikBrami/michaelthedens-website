@@ -4797,6 +4797,30 @@
     "signal": "price_up",
     "indexImpact": true,
     "freshShockEligible": false,
+    "driverScope": [
+      "pricing"
+    ],
+    "productScope": {
+      "aggregation": "mixed-enterprise-ssd-pricing",
+      "segments": [
+        {
+          "id": "performance_tlc",
+          "pricingDirection": "up",
+          "relativeStrength": "stronger"
+        },
+        {
+          "id": "capacity_qlc",
+          "pricingDirection": "up",
+          "relativeStrength": "weaker"
+        },
+        {
+          "id": "high_capacity_60tb",
+          "pricingDirection": "flat",
+          "relativeStrength": "product-specific-falsifier"
+        }
+      ],
+      "guardrail": "The unchanged 60 TB class limits the broad high-capacity pricing thesis; it is not evidence of segment-wide Enterprise SSD availability relief."
+    },
     "summary": "Microns neue Enterprise-SSD-Preise steigen im Mittel um rund 10 Prozent. Die Bewegung ist jedoch nicht gleichmäßig: TLC-Produkte verteuern sich stärker als QLC, während die hochkapazitive 60-TB-Klasse unverändert bleibt.",
     "tail_analysis": "Enterprise SSD bleibt klar im Aufwärtstrend, aber die Preiswirkung muss nach NAND-Typ und Kapazitätsklasse getrennt werden. MT·AI erhöht die Pricing-Evidenz für Enterprise SSD und NAND moderater als bei Server-RDIMM. Die 60-TB-Ausnahme bleibt als Falsifier gegen eine undifferenzierte High-Capacity-These sichtbar.",
     "source": "Micron distributor pricing / channel intelligence",

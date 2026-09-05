@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T09:38:45.572Z",
+  "generatedAt": "2026-09-05T00:39:47.706Z",
   "editorial": {
     "version": 4,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "1b2a87d3cb02f5419f84094a",
+    "sourceHash": "476f5d5bd122e337b788cbb3",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
-    "dataAsOf": "2026-09-04",
+    "dataAsOf": "2026-09-05",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -18,8 +18,8 @@
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 78,
-        "status": "orange",
+        "score": 83,
+        "status": "red",
         "signals": 19
       },
       {
@@ -32,54 +32,60 @@
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 69,
-        "status": "orange",
+        "score": 82,
+        "status": "red",
         "signals": 20
       }
     ],
     "sourceDataAsOf": "2026-09-04",
-    "analysisAsOf": "2026-09-04"
+    "analysisAsOf": "2026-09-05"
   },
   "executivePulse": {
-    "current": 74,
-    "previous": 77,
+    "current": 80,
+    "previous": 74,
     "status": "orange",
-    "confidence": 90,
-    "riskPressure": 76,
+    "confidence": 84,
+    "riskPressure": 85,
     "coverage": 100,
-    "methodologyVersion": "1.2",
-    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the most constrained areas. The Daily Check on 2026-09-04 confirmed a material change in conditions. New capacity and improved yields can relieve pressure but will reach the market only with delay. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
+    "methodologyVersion": "1.3",
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM/RDIMM, HBM and enterprise SSDs currently rank among the most constrained areas. The Daily Check on 2026-09-05 reviewed eight relevant current reports; there is currently no confirmed material change in direction. New capacity and improved yields can relieve pressure but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
-      "date": "2026-09-04",
-      "title": "Nvidia to acquire Hugging Face – open-model ecosystem becomes a hardware hedge",
-      "summary": "According to a report in The Information cited by DigiTimes, Nvidia has agreed to acquire Hugging Face for US$12.9bn. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud-based AI deployments. The report frames the deal as a strategic response to growing vertical integration among large closed-model providers and hyperscalers that are developing their own AI accelerators.",
-      "analysis": "MT·AI interprets the transaction as a structural demand persistence factor: open models → Hugging Face → Nvidia‑optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is directly positive for AI infrastructure and indirectly positive for HBM, server DRAM and enterprise SSD. Because the acquisition does not create immediate physical shortages or price moves, it is index‑neutral and does not trigger a Fresh Shock.",
-      "score": 92,
-      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "date": "2026-09-05",
+      "title": "Kioxia Unveils NAND-Based CXL Module to Replace Some DRAM Demand",
+      "summary": "Kioxia Unveils NAND-Based CXL Module to Replace Some DRAM Demand Seoul Economic Daily",
+      "analysis": "This report is relevant for data-centre storage: it could affect prices, available capacity or procurement strategy for enterprise SSDs.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Seoul Economic Daily",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZGp0SktBQmxhNEs0N3NTREpJSmFnSWdVRlB5VVFHS19yLUhTcDlvd1gxVG9SM0htaEE0alZ3N0JFY1g4a3NnYk0xa1J2QUw1N0JjV0lJY2hFS3RPWlE2RjFVUDhUTThEcmw1emd4WFhYakdOY0NZa01sdDk4Qnp3VzZudTd5ZHNTemFRNU5ScDIteFJ0YW0wcmpSSXlNMkRqM2VKQTdMZEc?oc=5",
+      "layer": "news"
     },
     {
       "date": "2026-09-04",
-      "title": "Samsung brings LPDDR5X‑PIM closer to product readiness – new path against the AI memory wall",
-      "summary": "At Hot Chips 2026 Samsung demonstrated LPDDR5X‑PIM with functioning silicon and internal Llama‑3.1‑8B measurements on an edge‑AI SoC. Runtime fell from 12.3 to 5.4 seconds, throughput rose from 27.0 to 81.3 tokens/s, and Samsung cites up to 614 GB/s internal PIM bandwidth versus 76.8 GB/s for conventional LPDDR5X. The results are internal measurements; the generated outputs differed and accuracy optimisation is ongoing.",
-      "analysis": "MT·AI regards PIM as a potential medium‑term mitigation for the memory wall, not a current substitute for HBM. For inference workloads below maximum HBM bandwidth, local processing can improve effective performance and energy efficiency. In the short term this creates no relief for HBM, server DRAM or enterprise SSD because customers, volume and mass‑production timelines are lacking. At the same time, more efficient inference could via a Jevons effect increase overall AI workload demand and absolute memory demand, even if the memory mix shifts.",
-      "score": 91,
-      "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "title": "Micron Plans to Double Monthly HBM Capacity to 100,000 Wafers to Catch Up With Samsung and SK Hynix",
+      "summary": "Aktuelle Meldung von TradingKey: Micron Plans to Double Monthly HBM Capacity to 100,000 Wafers to Catch Up With Samsung and SK Hynix",
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand will directly affect available GPU systems and pricing in the AI infrastructure market.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVTBMVS1nbGpGUGJPQm5td0RPMkRGQkdNTzBVN3VreW14Q1ZkdUo5M2hQNG9uSFlYYVZIZkdKcUQ2RHZiMWhnU052WkRxaVBPNERqT1I5azFsMl9mX1AzVUlnMmFkN3lyRDhQeVJJOWxWcC1SMDlOcnotX095RWN1YVVOUEhaX29zZS1YZUN2YW9HSUVkOWt1Sjl1cFpRQ2RFX2VEOXlJVnlBS3FLN0VoaXNxZVk4c0Mtb2lLNy1TWU05Y0lmWXpPdldvcUJoZjFKOW8yWjh6MFNESy1SVXoxUjh3?oc=5",
+      "layer": "news"
     },
     {
       "date": "2026-09-04",
-      "title": "Nvidia doubles revenue – AI demand broadens across two deployment channels",
-      "summary": "The two data‑centre engines are rotating. In Q1 FY27 94% of the sequential data‑centre increase came from ACIE, in Q2 FY27 it was 59%; two quarters earlier the contribution was reversed with hyperscale dominant while ACIE declined. Nvidia also reclassified a customer from ACIE to Hyperscale in Q2 FY27 and retroactively adjusted historical periods. For reliable comparisons, only the recast series should be used. Meanwhile days‑sales‑outstanding rose from 45 to 60 days and concentration among top customers increased.",
-      "analysis": "Nvidia’s Q2 FY27 confirms a broad second deployment wave, but not yet a fully independent second end‑customer demand wave. The key factor is rotation between hyperscale and ACIE alongside continued rising absolute volume. MT·AI will therefore place greater emphasis on combined absolute data‑centre growth and the sequential dollar contributions of both segments rather than isolated segment growth rates. Demand breadth is treated as structurally positive, with a caveat on end‑customer concentration. The existing Fresh Shock remains a one‑off; this deeper decomposition does not produce an additional index jump.",
-      "score": 99,
-      "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
-      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
-      "layer": "accepted-signal"
+      "title": "SanDisk Rises 8%, Micron Gains 5%: Is the NAND Pricing Cycle Still Accelerating?",
+      "summary": "SanDisk Rises 8%, Micron Gains 5%: Is the NAND Pricing Cycle Still Accelerating? finance.yahoo.com",
+      "analysis": "This report is relevant for data-centre storage: it could affect prices, available capacity or procurement strategy for enterprise SSDs.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWlpsQWdYcjl0UTRyZGduZ2FtSVZsdi1IQTdaRzktN3lFWFdPRUhPaThjblVBazlFcjV2M0FXQndYY2c4cWlUODctSzlpZmcxVzJIVjc3ei1hdXF3bkhWcXhIV1NoamNXdUt6ZDdFRFlFdDVKNVU5X01MMnU1UGh2dUdhNEVyaVJSVHdMa3JwWjVpSmZsdkVKSA?oc=5",
+      "layer": "news"
     }
   ],
   "catalysts": [
@@ -97,15 +103,15 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: filing, valuation and access to capital review"
+      "event": "Switch IPO: Review filing, valuation and access to capital"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast Review: Advanced packaging remains a central AI supply‑chain bottleneck through at least H2 2027 despite the Chiayi expansion."
+      "event": "Forecast-Review: Advanced packaging remains a central AI supply-chain bottleneck until at least H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier Review: AI asset‑backed financing reflexivity"
+      "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
     },
     {
       "date": "2027-03-31",
