@@ -26,7 +26,8 @@ const allowedTopLevelKeys = new Set([
   'catalysts',
   'dailyStatus',
   'news',
-  'newsLayer'
+  'newsLayer',
+  'marketOutlook'
 ]);
 
 for (const key of Object.keys(publicData)) {
@@ -34,7 +35,7 @@ for (const key of Object.keys(publicData)) {
 }
 
 for (const forbiddenKey of ['predictions', 'falsifiers', 'auditTrail', 'runHistory', 'articles', 'forecasts', 'pipeline']) {
-  if (JSON.stringify(publicData).includes(`"${forbiddenKey}"`)) {
+  if (JSON.stringify(publicData).includes(`\"${forbiddenKey}\"`)) {
     throw new Error(`Private intelligence leaked into public snapshot: ${forbiddenKey}`);
   }
 }
@@ -51,4 +52,4 @@ if (middleware.includes('CLERK_') || middleware.includes('@clerk/')) {
   throw new Error('Clerk dependency still present in the Vercel-only access boundary.');
 }
 
-console.log(`Public boundary OK: ${publicData.signals.length} selected signals, ${publicData.catalysts.length} catalysts.`);
+console.log(`Public boundary OK: ${publicData.signals.length} selected signals, ${publicData.catalysts.length} catalysts, ${publicData.marketOutlook?.outlooks?.length ?? 0} market outlooks.`);
