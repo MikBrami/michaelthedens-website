@@ -44,6 +44,7 @@ const outlooks = config.outlooks.map((outlook) => {
     currentStatus: market.status,
     confidence: market.confidence,
     coverage: market.coverage,
+    asOf: outlook.evidenceAsOf,
     indexAsOf: dashboard.dataAsOf
   };
 });
@@ -61,7 +62,7 @@ publicSnapshot.marketOutlook = {
   updatedAt: config.updatedAt,
   outlooks: outlooks
     .filter((outlook) => outlook.public !== false)
-    .map(({ marketId, horizon, evidenceAsOf, headline, view, scenarios, timeline, changeRules, watchSignals, methodologyNote, currentScore, currentStatus, confidence, coverage, indexAsOf }) => ({
+    .map(({ marketId, horizon, evidenceAsOf, headline, view, scenarios, timeline, changeRules, watchSignals, methodologyNote, currentScore, currentStatus, confidence, coverage, asOf, indexAsOf }) => ({
       marketId,
       horizon,
       evidenceAsOf,
@@ -76,6 +77,7 @@ publicSnapshot.marketOutlook = {
       currentStatus,
       confidence,
       coverage,
+      asOf,
       indexAsOf
     }))
 };
