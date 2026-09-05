@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-05",
+  "outlooks": [
+    {
+      "marketId": "server_dram",
+      "horizon": "2026-2029",
+      "evidenceAsOf": "2026-09-04",
+      "headline": "Tight through 2027, transition from 2028",
+      "view": "Near-term procurement risk remains high. A linear price increase through 2029 is not a robust base case.",
+      "scenarios": [
+        { "id": "base", "label": "Base case", "probability": 50, "regime": "Shortage in 2027, smaller gap in 2028, broad balance by 2029" },
+        { "id": "structural_shortage", "label": "Structural shortage", "probability": 30, "regime": "Demand exceeds realisable output; high pricing and rationing persist" },
+        { "id": "normalisation", "label": "Normalisation", "probability": 20, "regime": "Demand adjustment and new capacity drive materially lower pricing from 2028" }
+      ],
+      "timeline": [
+        { "year": "2026", "label": "Tight market regime", "detail": "High pricing, constrained qualified supply and active procurement adjustment." },
+        { "year": "2027", "label": "Still tight", "detail": "Uncommitted or specially qualified server products remain particularly exposed." },
+        { "year": "2028", "label": "Transition", "detail": "Larger supply contributions raise the probability of falling prices." },
+        { "year": "2029", "label": "Balance becomes more plausible", "detail": "Broader normalisation becomes more likely; structural shortage remains a minority scenario." }
+      ],
+      "changeRules": [
+        { "direction": "normalisation", "label": "Contract pricing", "condition": "Two consecutive quarters down by at least 10%" },
+        { "direction": "normalisation", "label": "Lead times", "condition": "Confirmed lead times below eight weeks alongside rising qualified supply" },
+        { "direction": "shortage", "label": "Capacity ramps", "condition": "Two major DRAM ramps delay qualified supply by at least two quarters" },
+        { "direction": "shortage", "label": "Host-bit demand", "condition": "Comparable requested host bits grow by more than 25% YoY for two quarters without broad configuration cuts" }
+      ],
+      "watchSignals": [
+        "Actual GB per server",
+        "LTA coverage and free allocation",
+        "Qualified Chinese bit output",
+        "Buyer inventories and cancellations",
+        "CSP CapEx and hardware commissioning"
+      ],
+      "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated event frequencies."
+    },
+    {
+      "marketId": "enterprise_ssd",
+      "horizon": "2026-2029",
+      "evidenceAsOf": "2026-09-05",
+      "headline": "2026 remains tight; normalisation risk rises from 2027",
+      "view": "Current market pressure remains high, but a permanently rising Enterprise SSD price path is not the base case. Qualified output, QLC scaling, buyer resistance and Chinese substitution can materially ease conditions from 2027/2028.",
+      "researchReferenceScore": 83,
+      "researchReferenceNote": "83 is the market-pressure reference confirmed by the Astra audit, not a price target or a 2029 shortage probability. The operational live index continues to be calculated solely by the MT·AI index model.",
+      "scenarios": [
+        { "id": "base", "label": "Base case", "probability": 50, "regime": "2027 stabilisation; increasing easing pressure in 2028 and 2029. Price index Q3 2026=100: 85-115 / 65-95 / 55-85." },
+        { "id": "structural_shortage", "label": "Structural shortage", "probability": 20, "regime": "Qualified output trails real AI/data-centre deployment. Price index: 115-150 / 125-175 / 120-180." },
+        { "id": "normalisation", "label": "Normalisation / oversupply", "probability": 30, "regime": "QLC ramps, allocation shifts, the inventory cycle and Chinese substitution ease the market. Price index: 65-90 / 40-65 / 35-60." }
+      ],
+      "timeline": [
+        { "year": "2026", "label": "High-priced and product-specific tightness", "detail": "Critical qualified volumes remain constrained; pricing and availability differ materially by TLC/QLC, capacity class and platform qualification." },
+        { "year": "2027", "label": "Stabilisation in the base case", "detail": "Price band 85-115 relative to Q3 2026=100. At least one negative price quarter is plausible without implying broad availability of qualified high-capacity SKUs." },
+        { "year": "2028", "label": "Easing risk rises", "detail": "Base-case price band 65-95. Technology, QLC and potential new wafer output matter only once they become genuinely qualified Enterprise SSD volumes." },
+        { "year": "2029", "label": "Competition and supply discipline", "detail": "Base-case price band 55-85. Long-term uncertainty is high; structural shortage remains a separate stress case." }
+      ],
+      "changeRules": [
+        { "direction": "normalisation", "label": "Price + fulfilment + output", "condition": "Two completed negative quarters for a comparable Enterprise SSD contract basket, plus better on-time fulfilment and rising qualified output" },
+        { "direction": "shortage", "label": "Price + fill rate + deployment", "condition": "Positive price quarters, weaker fill rates and stronger real deployment while qualified ramps miss plan" },
+        { "direction": "normalisation", "label": "Same-SKU channel", "condition": "Repeated executable lower offers for the same SKU, volume and terms alongside improved availability" },
+        { "direction": "shortage", "label": "Allocation cuts", "condition": "Binding allocation cuts across multiple qualified Enterprise SSD product families" }
+      ],
+      "watchSignals": [
+        "Comparable Enterprise SSD contract prices",
+        "Executable channel pricing",
+        "Lead-time deviation",
+        "On-time volume fulfilment / fill rate",
+        "High-capacity qualification",
+        "Qualified Enterprise bit output",
+        "GPUs actually commissioned",
+        "Physical TB per GPU",
+        "QLC/TLC bit mix",
+        "Customer inventory, cancellations and RFQ conversion"
+      ],
+      "commercialDecision": {
+        "buyer": "For 2027, a heuristic starting point is to secure roughly 60% of conservatively confirmed demand by volume and keep 40% flexible; for 2028, secure about 30% of minimum demand and keep 70% flexible. Secure supply while resetting pricing periodically where possible.",
+        "seller": "Avoid uncommitted speculative inventory in high-priced Enterprise SSDs. Hold 30.72/61.44 TB only against dated recurring call-offs or matched orders; source 122.88/245 TB against named customer demand. Offer long fixed prices only with matched supplier protection."
+      },
+      "capacityFramework": [
+        "<=7.68 TB · Performance / Mainstream",
+        "15.36-30.72 TB · Dense Enterprise",
+        "61.44 TB · High Capacity",
+        "122.88 TB · Ultra High Capacity",
+        "245 TB+ · Frontier Capacity",
+        "TLC · Performance / Endurance",
+        "QLC · Capacity"
+      ],
+      "methodologyNote": "Market-pressure index and price forecast remain separate. Scenario weights of 50/20/30 are HEURISTIC rather than statistically calibrated event frequencies. Missing data is not a relief signal; correlated evidence is not double-counted."
+    }
+  ]
+}
