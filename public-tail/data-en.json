@@ -115,5 +115,96 @@
       "date": "2028-12-31",
       "event": "Feynman / A16 Volume Production"
     }
-  ]
+  ],
+  "marketOutlook": {
+    "schemaVersion": 1,
+    "updatedAt": "2026-09-05",
+    "outlooks": [
+      {
+        "marketId": "server_dram",
+        "horizon": "2026-2029",
+        "evidenceAsOf": "2026-09-04",
+        "headline": "Tight through 2027, transition from 2028",
+        "view": "Near-term procurement risk remains high. A linear price increase through 2029, however, is not a robust base-case assumption.",
+        "scenarios": [
+          {
+            "id": "base",
+            "label": "Base Case",
+            "probability": 50,
+            "regime": "Tightness in 2027, a smaller gap in 2028, and broad balance by 2029"
+          },
+          {
+            "id": "structural_shortage",
+            "label": "Structural Tightness",
+            "probability": 30,
+            "regime": "Demand exceeds achievable output; high prices and allocation remain in place"
+          },
+          {
+            "id": "normalisation",
+            "label": "Normalisation",
+            "probability": 20,
+            "regime": "Demand adjustment and new capacity drive materially lower prices from 2028"
+          }
+        ],
+        "timeline": [
+          {
+            "year": "2026",
+            "label": "Tight market regime",
+            "detail": "High prices, constrained qualified supply and active procurement adjustment."
+          },
+          {
+            "year": "2027",
+            "label": "Still tight",
+            "detail": "Uncommitted or specially qualified server products remain particularly exposed."
+          },
+          {
+            "year": "2028",
+            "label": "Transition",
+            "detail": "Larger supply contributions increase the probability of declining prices."
+          },
+          {
+            "year": "2029",
+            "label": "Balance becomes more plausible",
+            "detail": "Broader normalisation becomes more likely; structural tightness remains a minority scenario."
+          }
+        ],
+        "changeRules": [
+          {
+            "direction": "normalisation",
+            "label": "Contract prices",
+            "condition": "At least 10% lower for two consecutive quarters"
+          },
+          {
+            "direction": "normalisation",
+            "label": "Lead times",
+            "condition": "Confirmed lead times below eight weeks while qualified supply is increasing"
+          },
+          {
+            "direction": "shortage",
+            "label": "Capacity ramps",
+            "condition": "Two major DRAM ramps delay qualified shipments by at least two quarters"
+          },
+          {
+            "direction": "shortage",
+            "label": "Host-bit demand",
+            "condition": "Comparable requested host bits grow by more than 25% YoY for two quarters without broad configuration cuts"
+          }
+        ],
+        "watchSignals": [
+          "Actual GB per server",
+          "LTA coverage and free allocation",
+          "Qualified Chinese bit output",
+          "Buyer inventories and cancellations",
+          "CSP CapEx and hardware commissioning"
+        ],
+        "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated occurrence frequencies.",
+        "currentScore": 82,
+        "currentStatus": "red",
+        "confidence": 85,
+        "coverage": 100,
+        "asOf": "2026-09-04",
+        "indexAsOf": "2026-09-05"
+      }
+    ]
+  }
 }
