@@ -2,15 +2,15 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-09-04",
-  "sourceDataAsOf": "2026-09-04",
+  "dataAsOf": "2026-09-05",
+  "sourceDataAsOf": "2026-09-05",
   "knowledgeBaseSyncedAt": "2026-09-05T00:39:13.058Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-09-05T00:39:13.794Z",
-  "lastForecastRun": "2026-09-05T00:39:13.794Z",
-  "newlyProcessedArticles": 407,
+  "evidenceAgeDays": 0,
+  "lastSuccessfulUpdate": "2026-09-05T00:56:58.040Z",
+  "lastForecastRun": "2026-09-05T00:56:58.040Z",
+  "newlyProcessedArticles": 403,
   "totalArticles": 125,
   "articleCount": 125,
   "processStatus": "ok",
@@ -67,8 +67,8 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-05T00:39:02.610Z",
-    "newItems": 407,
+    "updatedAt": "2026-09-05T00:56:48.075Z",
+    "newItems": 403,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
@@ -81,7 +81,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "125 Artikel · Sync 2026-09-05 · jüngstes bestätigtes Signal 2026-09-04"
+        "detail": "125 Artikel · Sync 2026-09-05 · jüngstes bestätigtes Signal 2026-09-05"
       },
       {
         "id": "inbox",
@@ -107,10 +107,10 @@
   "indexStatus": "orange",
   "executivePulse": {
     "current": 80,
-    "previous": 74,
+    "previous": 80,
     "status": "orange",
     "confidence": 84,
-    "riskPressure": 85,
+    "riskPressure": 84,
     "riskFormula": "60% critical segment peak + 40% critical availability peak",
     "coverage": 100,
     "methodologyVersion": "1.3",
@@ -118,8 +118,8 @@
       {
         "id": "demand",
         "name": "Nachfrage",
-        "score": 81,
-        "absoluteSeverity": 81,
+        "score": 80,
+        "absoluteSeverity": 80,
         "delta": 0,
         "weight": 0.25,
         "coverage": 100,
@@ -128,8 +128,8 @@
       {
         "id": "pricing",
         "name": "Preisdynamik",
-        "score": 76,
-        "absoluteSeverity": 76,
+        "score": 75,
+        "absoluteSeverity": 75,
         "delta": 0,
         "weight": 0.2,
         "coverage": 100,
@@ -156,16 +156,16 @@
         "rawMetric": "Gewicht im Segmentindex: 15%"
       }
     ],
-    "interpretation": "Der MT·AI Executive Pulse liegt bei 80/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (84/100) und Risikodruck (85/100) werden separat ausgewiesen."
+    "interpretation": "Der MT·AI Executive Pulse liegt bei 80/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (84/100) und Risikodruck (84/100) werden separat ausgewiesen."
   },
   "markets": [
     {
       "id": "server_dram",
-      "score": 83,
-      "baseScore": 83,
+      "score": 82,
+      "baseScore": 82,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 83,
+      "indicativeScore": 82,
       "sufficientlyCovered": true,
       "status": "red",
       "signals": 19,
@@ -177,10 +177,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 79,
+          "score": 78,
           "confidence": 90,
           "evidenceCount": 5,
-          "pressure": 79,
+          "pressure": 78,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -188,10 +188,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 83,
+          "score": 82,
           "confidence": 95,
           "evidenceCount": 2,
-          "pressure": 83,
+          "pressure": 82,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -200,7 +200,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 86,
-          "confidence": 76,
+          "confidence": 75,
           "evidenceCount": 5,
           "pressure": 81,
           "relief": 0,
@@ -210,10 +210,10 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 79,
+          "score": 78,
           "confidence": 90,
           "evidenceCount": 3,
-          "pressure": 79,
+          "pressure": 78,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -233,14 +233,14 @@
       "signals": 20,
       "articleSignals": 15,
       "operationalSignals": 5,
-      "confidence": 79,
+      "confidence": 78,
       "coverage": 100,
       "drivers": [
         {
           "id": "demand",
           "label": "Nachfrage",
           "score": 83,
-          "confidence": 88,
+          "confidence": 87,
           "evidenceCount": 5,
           "pressure": 83,
           "relief": 0,
@@ -262,7 +262,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 87,
-          "confidence": 66,
+          "confidence": 64,
           "evidenceCount": 5,
           "pressure": 80,
           "relief": 0,
@@ -301,10 +301,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 81,
+          "score": 80,
           "confidence": 91,
           "evidenceCount": 5,
-          "pressure": 81,
+          "pressure": 80,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -386,7 +386,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 78,
-          "confidence": 72,
+          "confidence": 71,
           "evidenceCount": 5,
           "pressure": 69,
           "relief": 0,
@@ -471,11 +471,11 @@
     },
     {
       "id": "semiconductors",
-      "score": 70,
-      "baseScore": 70,
+      "score": 69,
+      "baseScore": 69,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 70,
+      "indicativeScore": 69,
       "sufficientlyCovered": true,
       "status": "orange",
       "signals": 30,
@@ -509,10 +509,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 61,
+          "score": 60,
           "confidence": 86,
           "evidenceCount": 5,
-          "pressure": 61,
+          "pressure": 60,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -560,10 +560,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 76,
+          "score": 75,
           "confidence": 89,
           "evidenceCount": 4,
-          "pressure": 76,
+          "pressure": 75,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -571,10 +571,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 48,
+          "score": 47,
           "confidence": 89,
           "evidenceCount": 5,
-          "pressure": 48,
+          "pressure": 47,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -605,7 +605,7 @@
       "signals": 1,
       "articleSignals": 0,
       "operationalSignals": 1,
-      "confidence": 14,
+      "confidence": 13,
       "coverage": 40,
       "drivers": [
         {
@@ -634,7 +634,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 21,
-          "confidence": 35,
+          "confidence": 33,
           "evidenceCount": 1,
           "pressure": 21,
           "relief": 0,
@@ -806,7 +806,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T00:39:13.793Z"
+      "lastUpdated": "2026-09-05T00:56:58.039Z"
     },
     {
       "id": "hbm",
@@ -892,7 +892,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T00:39:13.793Z"
+      "lastUpdated": "2026-09-05T00:56:58.040Z"
     },
     {
       "id": "nand",
@@ -960,7 +960,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T00:39:13.793Z"
+      "lastUpdated": "2026-09-05T00:56:58.040Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1031,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T00:39:13.793Z"
+      "lastUpdated": "2026-09-05T00:56:58.040Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,7 +1205,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-09-05T00:39:13.793Z"
+      "lastUpdated": "2026-09-05T00:56:58.040Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 80/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
