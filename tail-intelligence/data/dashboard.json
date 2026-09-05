@@ -8,9 +8,9 @@
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-09-05T14:54:18.744Z",
-  "lastForecastRun": "2026-09-05T14:54:18.744Z",
-  "newlyProcessedArticles": 424,
+  "lastSuccessfulUpdate": "2026-09-05T18:50:55.987Z",
+  "lastForecastRun": "2026-09-05T18:50:55.987Z",
+  "newlyProcessedArticles": 415,
   "totalArticles": 125,
   "articleCount": 125,
   "processStatus": "ok",
@@ -67,8 +67,8 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-05T14:54:08.600Z",
-    "newItems": 424,
+    "updatedAt": "2026-09-05T18:50:46.155Z",
+    "newItems": 415,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
@@ -806,7 +806,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T14:54:18.743Z"
+      "lastUpdated": "2026-09-05T18:50:55.986Z"
     },
     {
       "id": "hbm",
@@ -892,7 +892,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T14:54:18.744Z"
+      "lastUpdated": "2026-09-05T18:50:55.986Z"
     },
     {
       "id": "nand",
@@ -960,7 +960,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T14:54:18.744Z"
+      "lastUpdated": "2026-09-05T18:50:55.986Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1031,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T14:54:18.744Z"
+      "lastUpdated": "2026-09-05T18:50:55.986Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,7 +1205,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-09-05T14:54:18.744Z"
+      "lastUpdated": "2026-09-05T18:50:55.987Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 80/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
@@ -1302,7 +1302,7 @@
   "marketOutlook": {
     "schemaVersion": 1,
     "updatedAt": "2026-09-05",
-    "source": "TAIL × Astra | Server-DRAM 2026-2029 | Evidenz 04.09.2026",
+    "source": "MT·AI × Astra | Server DRAM 2026-2029 (04.09.2026) + Enterprise SSD / Datacenter Storage 2026-2029 (05.09.2026)",
     "outlooks": [
       {
         "marketId": "server_dram",
@@ -1388,6 +1388,112 @@
         "confidence": 85,
         "coverage": 100,
         "asOf": "2026-09-04",
+        "indexAsOf": "2026-09-05"
+      },
+      {
+        "marketId": "enterprise_ssd",
+        "horizon": "2026-2029",
+        "evidenceAsOf": "2026-09-05",
+        "headline": "2026 angespannt, ab 2027 steigt das Normalisierungsrisiko",
+        "view": "Der aktuelle Marktdruck bleibt hoch, aber ein dauerhaft steigender Enterprise-SSD-Preispfad ist nicht das Basisszenario. Qualifizierter Output, QLC-Skalierung, Käuferwiderstand und China-Substitution können die Lage ab 2027/2028 spürbar entspannen.",
+        "researchReferenceScore": 83,
+        "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
+        "scenarios": [
+          {
+            "id": "base",
+            "label": "Basis",
+            "probability": 50,
+            "regime": "2027 Stabilisierung; 2028 und 2029 zunehmender Entspannungsdruck. Preisindex Q3 2026=100: 85-115 / 65-95 / 55-85."
+          },
+          {
+            "id": "structural_shortage",
+            "label": "Strukturelle Knappheit",
+            "probability": 20,
+            "regime": "Qualifizierter Output bleibt hinter realem AI-/Datacenter-Deployment. Preisindex: 115-150 / 125-175 / 120-180."
+          },
+          {
+            "id": "normalisation",
+            "label": "Normalisierung / Überangebot",
+            "probability": 30,
+            "regime": "QLC-Ramps, Allokationsverschiebung, Inventarzyklus und China-Substitution entlasten. Preisindex: 65-90 / 40-65 / 35-60."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "2026",
+            "label": "Hochpreisig und produktspezifisch eng",
+            "detail": "Kritische qualifizierte Mengen bleiben knapp; Preis- und Verfügbarkeitsrisiko unterscheiden sich deutlich nach TLC/QLC, Kapazität und Plattformfreigabe."
+          },
+          {
+            "year": "2027",
+            "label": "Stabilisierung im Basisfall",
+            "detail": "Preisband 85-115 relativ zu Q3 2026=100. Mindestens ein negatives Preisquartal ist plausibel, ohne dass qualifizierte High-Capacity-SKUs automatisch breit verfügbar werden."
+          },
+          {
+            "year": "2028",
+            "label": "Entspannungsrisiko steigt",
+            "detail": "Preisband 65-95 im Basisfall. Technologie, QLC und potenzieller neuer Waferoutput wirken, sofern daraus tatsächlich qualifizierte Enterprise-Mengen werden."
+          },
+          {
+            "year": "2029",
+            "label": "Wettbewerb und Angebotsdisziplin",
+            "detail": "Preisband 55-85 im Basisfall. Langfristige Unsicherheit ist hoch; strukturelle Knappheit bleibt ein eigenständiges Stressszenario."
+          }
+        ],
+        "changeRules": [
+          {
+            "direction": "normalisation",
+            "label": "Preis + Erfüllung + Output",
+            "condition": "Zwei abgeschlossene negative Quartale eines vergleichbaren Enterprise-SSD-Kontraktkorbs plus bessere termingerechte Erfüllung und steigender qualifizierter Output"
+          },
+          {
+            "direction": "shortage",
+            "label": "Preis + Fill Rate + Deployment",
+            "condition": "Positive Preisquartale, schlechtere Fill Rate und stärkeres reales Deployment bei verfehltem qualifiziertem Ramp"
+          },
+          {
+            "direction": "normalisation",
+            "label": "Same-SKU-Channel",
+            "condition": "Wiederholte ausführbare niedrigere Angebote für identische SKU, Menge und Terms bei verbesserter Verfügbarkeit"
+          },
+          {
+            "direction": "shortage",
+            "label": "Allokationskürzung",
+            "condition": "Verbindliche Allokationskürzungen in mehreren qualifizierten Enterprise-SSD-Produktfamilien"
+          }
+        ],
+        "watchSignals": [
+          "Vergleichbare Enterprise-SSD-Kontraktpreise",
+          "Ausführbare Channelpreise",
+          "Lieferzeitabweichung",
+          "Termingerechte Mengenerfüllung / Fill Rate",
+          "High-Capacity-Qualifikation",
+          "Qualifizierter Enterprise-Bitoutput",
+          "Tatsächlich in Betrieb genommene GPUs",
+          "Physische TB je GPU",
+          "QLC-/TLC-Bitmix",
+          "Kundenbestand, Stornos und RFQ-Conversion"
+        ],
+        "commercialDecision": {
+          "buyer": "Für 2027 als heuristischen Startpunkt etwa 60 % des konservativ bestätigten Bedarfs mengenmäßig absichern und 40 % flexibel halten; 2028 eher 30 % Mindestbedarf absichern und 70 % flexibel halten. Versorgung absichern, Preise möglichst periodisch neu bestimmen.",
+          "seller": "Keine unverkaufte spekulative Lagerposition in hochpreisigen Enterprise-SSDs. 30,72/61,44 TB nur bei datierten wiederkehrenden Abrufen oder deckungsgleichen Aufträgen; 122,88/245 TB kundengebunden. Langfristige Festpreise nur mit deckungsgleicher Lieferantenabsicherung."
+        },
+        "capacityFramework": [
+          "<=7,68 TB · Performance / Mainstream",
+          "15,36-30,72 TB · Dense Enterprise",
+          "61,44 TB · High Capacity",
+          "122,88 TB · Ultra High Capacity",
+          "245 TB+ · Frontier Capacity",
+          "TLC · Performance / Endurance",
+          "QLC · Capacity"
+        ],
+        "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
+        "public": true,
+        "currentScore": 82,
+        "currentStatus": "red",
+        "confidence": 78,
+        "coverage": 100,
+        "asOf": "2026-09-05",
         "indexAsOf": "2026-09-05"
       }
     ]
