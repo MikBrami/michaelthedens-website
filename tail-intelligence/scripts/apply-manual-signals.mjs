@@ -21,7 +21,7 @@ function mergeById(existing = [], incoming = []) {
     if (item?.id) map.set(item.id, item);
   }
   for (const item of incoming) {
-    if (item?.id) map.set(item.id, item);
+    if (item?.id) map.set(item.id, { ...(map.get(item.id) || {}), ...item });
   }
   return [...map.values()];
 }

@@ -147,6 +147,10 @@ function toArticle(signal, dailyDate) {
     signal: signal.signal || inferSignal(signal),
     indexImpact: signal.indexImpact !== false,
     freshShockEligible: signal.freshShockEligible === true,
+    ...(Array.isArray(signal.driverScope) && signal.driverScope.length
+      ? { driverScope: unique(signal.driverScope) }
+      : {}),
+    ...(signal.productScope ? { productScope: signal.productScope } : {}),
     summary: normalize(signal.summary || signal.fact || signal.estimate || signal.title),
     tail_analysis: normalize(signal.tail_analysis || signal.tailInference || signal.redPencil?.forecastChange || 'TAIL Daily Intelligence signal.'),
     source: signal.source || primarySource?.label || 'TAIL Daily Intelligence',
