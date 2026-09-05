@@ -51,6 +51,7 @@ export function statusForIndex(score, thresholds = {}) {
 
 function driverObservation(article, driverId, model, asOf) {
   if (article.indexImpact === false) return null;
+  if (Array.isArray(article.driverScope) && !article.driverScope.includes(driverId)) return null;
   const impact = Number(model.signalDriverImpact?.[article.signal]?.[driverId] ?? 0);
   if (!impact) return null;
 
@@ -84,8 +85,13 @@ function operationalObservation(indicator, driverId, model, asOf) {
   return {
     id: indicator.id,
     direction: 1,
-    magnitude: clamp(severity) * (confidence / 100) * recency,
-    confidence,
+    // Operational observations describe a last verified market state. Silence
+    // lowers confidence in that state, but does not constitute supply relief.
+    // The pressure magnitude therefore remains stable until a later observation
+    // supersedes or contradicts it.
+    magnitude: clamp(severity) * (confidence / 100),
+    confidence: confidence * recency,
+    sourceConfidence: confidence,
     recency,
     sourceType: indicator.sourceType || 'operational'
   };
@@ -314,7 +320,7 @@ export function calculateIndexModel(articles, methodology, options = {}) {
 
   return {
     version: model.version,
-    formulaRevision: '1.3',
+    formulaRevision: '1.4',
     baselineAsOf,
     asOf: shockAsOf,
     executiveScore,
@@ -328,7 +334,7 @@ export function calculateIndexModel(articles, methodology, options = {}) {
     drivers: executiveDrivers,
     markets,
     formula: 'Σ((segment base score + capped fresh shock) × segment weight)',
-    confidencePolicy: 'Confidence is reported separately and never increases the market-stress score.',
+    confidencePolicy: 'Evidence freshness lowers confidence. A last verified operational market state does not decay into relief without superseding or contradictory evidence.',
     freshShockPolicy: `At most one qualifying shock per segment; capped at ${Number(model.freshShockCap ?? 5)} points before market multiplier.`
   };
 }

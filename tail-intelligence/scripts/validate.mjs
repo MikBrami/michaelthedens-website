@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { calculateIndexModel } from './index-model.mjs';
 
 const args = new Set(process.argv.slice(2));
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -10,6 +11,7 @@ const requiredForecastIds = ['dram', 'hbm', 'nand', 'enterprise_ssd', 'ai_infras
 function validateArticles(articles) {
   if (!Array.isArray(articles) || articles.length === 0) throw new Error('No articles available in Knowledge Base');
   const ids = new Set();
+  const allowedDriverScopes = new Set(['demand', 'pricing', 'availability', 'aiDemand']);
   for (const [index, article] of articles.entries()) {
     for (const field of requiredArticleFields) {
       if (article[field] === undefined) throw new Error(`Article ${index} missing ${field}`);
@@ -18,6 +20,12 @@ function validateArticles(articles) {
     ids.add(article.id);
     if (!Array.isArray(article.markets) || article.markets.length === 0) throw new Error(`Article ${article.id} has no markets`);
     if (article.severity < 0 || article.severity > 100 || article.confidence < 0 || article.confidence > 100) throw new Error(`Article ${article.id} has invalid score`);
+    if (article.driverScope && (!Array.isArray(article.driverScope) || article.driverScope.some((driver) => !allowedDriverScopes.has(driver)))) {
+      throw new Error(`Article ${article.id} has invalid driverScope`);
+    }
+    if (article.productScope && !Array.isArray(article.productScope.segments)) {
+      throw new Error(`Article ${article.id} has invalid productScope`);
+    }
   }
 }
 
@@ -111,6 +119,34 @@ function validateDailySync(articles) {
   }
 }
 
+function validateOperationalStateFreshness(methodology) {
+  const indicator = {
+    id: 'TEST-STATEFUL-AVAILABILITY',
+    date: '2026-01-01',
+    market: 'enterprise_ssd',
+    driver: 'availability',
+    state: 'severely_restricted',
+    confidence: 90,
+    halfLifeDays: 10,
+    sourceType: 'operational_channel_observation'
+  };
+  const calculate = (asOf) => calculateIndexModel([], methodology, {
+    asOf,
+    operationalIndicators: [indicator]
+  }).markets
+    .find((market) => market.id === 'enterprise_ssd')
+    ?.drivers.find((driver) => driver.id === 'availability');
+  const fresh = calculate('2026-01-01');
+  const stale = calculate('2026-01-11');
+
+  if (!fresh || !stale || stale.score !== fresh.score) {
+    throw new Error('Operational market state must not decay into relief without new evidence');
+  }
+  if (!(stale.confidence < fresh.confidence)) {
+    throw new Error('Stale operational evidence must reduce confidence');
+  }
+}
+
 if (!exists('data/articles.json')) throw new Error('data/articles.json missing');
 if (!exists('config/sources.json')) throw new Error('config/sources.json missing');
 if (!exists('config/methodology.json')) throw new Error('config/methodology.json missing');
@@ -121,6 +157,7 @@ if (methodology.schemaVersion !== 2 || methodology.version !== '3.1') throw new 
 const rubricTotal = Object.values(methodology.signalRubric ?? {}).reduce((sum, value) => sum + Number(value || 0), 0);
 if (rubricTotal !== 100) throw new Error(`Signal rubric must total 100, got ${rubricTotal}`);
 if (methodology.gates?.accepted !== 80 || methodology.gates?.watchlist !== 65) throw new Error('Signal gates must be 80/65');
+validateOperationalStateFreshness(methodology);
 const driverWeightTotal = Object.values(methodology.indexModel?.driverWeights ?? {}).reduce((sum, value) => sum + Number(value), 0);
 if (Math.abs(driverWeightTotal - 1) > 0.000001) throw new Error(`Index driver weights must total 1, got ${driverWeightTotal}`);
 const marketWeightTotal = Object.values(methodology.indexModel?.executiveMarketWeights ?? {}).reduce((sum, value) => sum + Number(value), 0);

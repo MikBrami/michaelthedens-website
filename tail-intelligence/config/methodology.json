@@ -14,7 +14,7 @@
     "watchlist": 65
   },
   "indexModel": {
-    "version": "1.2",
+    "version": "1.3",
     "description": "Reproducible market-stress index. Signal admission, market severity and analytical confidence remain separate layers.",
     "driverWeights": {
       "demand": 0.25,
@@ -110,10 +110,12 @@
       "red": 82
     },
     "rules": [
-      "Each evidence item starts with severity × confidence × directional impact × a 180-day half-life recency factor.",
+      "Event-based article evidence starts with severity × confidence × directional impact × a 180-day half-life recency factor.",
+      "A last verified operational state keeps its pressure magnitude until a later observation supersedes or contradicts it; its evidence confidence decays with the configured half-life.",
       "Per driver, at most the five strongest pressure and relief observations are rank-weighted to limit duplicate-news inflation.",
-      "Current availability and allocation are a dedicated 40% driver and can use short-lived operational channel observations.",
-      "A current operational availability observation sets a floor for that driver and cannot be diluted by older general news.",
+      "Current availability and allocation are a dedicated 40% driver and can use stateful operational channel observations.",
+      "A last verified operational availability observation sets a floor for that driver and cannot be diluted by older general news or by the mere passage of time.",
+      "An article-level driverScope can restrict product-specific evidence to named drivers and prevents product-mix exceptions from leaking into unrelated market dimensions.",
       "Announced future fab capacity does not reduce today's availability pressure until shipment, lead-time or fill-rate evidence exists.",
       "Standard DRAM / UDIMM is a non-weighted watchlist segment; server evidence cannot automatically raise it or enter it by proxy.",
       "Mobile LPDRAM, embedded NAND and Apple BOM evidence cannot be classified as UDIMM / SODIMM evidence without a direct form-factor reference.",

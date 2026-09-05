@@ -8,6 +8,7 @@
       "date": "2026-08-28",
       "rank": 1,
       "priorityScore": 99,
+      "category": "memory",
       "classification": "Server DRAM Pricing / Supplier Price List / Channel Confirmation",
       "signal": "price_up",
       "signalOverride": "price_up",
@@ -26,6 +27,7 @@
       "fact": "Direkte aktuelle Vertriebskanal-Evidenz aus der neuen Micron-Preisliste: 64-GB-RDIMM +20 Prozent; gängige Server-RDIMMs ebenfalls +20 Prozent; 128-GB-RDIMM +15 Prozent.",
       "estimate": "Die nahezu durchgängige Erhöhung um 20 Prozent zeigt, dass Micron die Preisrunde nicht auf einzelne knappe SKUs begrenzt. Dass 128 GB mit 15 Prozent etwas schwächer steigt, spricht für kapazitätsspezifische Mix- und Nachfrageunterschiede, ändert aber nichts am breiten Preisimpuls.",
       "tailInference": "Der bislang unquantifizierte Micron-Preis-Watch ist bestätigt. Die Preisdynamik bei Server-DRAM/RDIMM steigt materiell; besonders relevant ist der volle 20-Prozent-Schritt beim volumenstarken 64-GB-Modul. MT·AI nimmt das Signal als indexwirksame Pricing-Evidenz auf, ohne daraus automatisch eine identische Verschlechterung der physischen Verfügbarkeit abzuleiten.",
+      "tail_analysis": "Der bislang unquantifizierte Micron-Preis-Watch ist bestätigt. Die Preisdynamik bei Server-DRAM/RDIMM steigt materiell; besonders relevant ist der volle 20-Prozent-Schritt beim volumenstarken 64-GB-Modul. MT·AI nimmt das Signal als indexwirksame Pricing-Evidenz auf, ohne daraus automatisch eine identische Verschlechterung der physischen Verfügbarkeit abzuleiten.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -51,11 +53,15 @@
       "date": "2026-08-28",
       "rank": 2,
       "priorityScore": 96,
+      "category": "storage",
       "classification": "Enterprise SSD Pricing / Product-Mix Divergence / Channel Confirmation",
       "signal": "price_up",
       "signalOverride": "price_up",
       "indexImpact": true,
       "freshShockEligible": false,
+      "driverScope": [
+        "pricing"
+      ],
       "severity": 88,
       "confidence": 96,
       "markets": [
@@ -65,11 +71,33 @@
       "companies": [
         "Micron"
       ],
+      "productScope": {
+        "aggregation": "mixed-enterprise-ssd-pricing",
+        "segments": [
+          {
+            "id": "performance_tlc",
+            "pricingDirection": "up",
+            "relativeStrength": "stronger"
+          },
+          {
+            "id": "capacity_qlc",
+            "pricingDirection": "up",
+            "relativeStrength": "weaker"
+          },
+          {
+            "id": "high_capacity_60tb",
+            "pricingDirection": "flat",
+            "relativeStrength": "product-specific-falsifier"
+          }
+        ],
+        "guardrail": "The unchanged 60 TB class limits the broad high-capacity pricing thesis; it is not evidence of segment-wide Enterprise SSD availability relief."
+      },
       "title": "Micron erhöht Enterprise-SSD-Preise – TLC stärker als QLC, 60 TB unverändert",
       "summary": "Microns neue Enterprise-SSD-Preise steigen im Mittel um rund 10 Prozent. Die Bewegung ist jedoch nicht gleichmäßig: TLC-Produkte verteuern sich stärker als QLC, während die hochkapazitive 60-TB-Klasse unverändert bleibt.",
       "fact": "Direkte aktuelle Vertriebskanal-Evidenz aus der neuen Micron-Preisliste: Enterprise SSD im Mittel etwa +10 Prozent; TLC stärker als QLC; 60-TB-Klasse ohne Preiserhöhung.",
       "estimate": "Die Produktmix-Divergenz zeigt einen selektiven statt pauschalen NAND-/SSD-Preisschub. TLC trägt den stärkeren kurzfristigen Preisdruck. Die unveränderte 60-TB-Klasse ist ein konkretes Gegensignal gegen die Annahme, dass hohe Kapazitäten automatisch am stärksten steigen.",
       "tailInference": "Enterprise SSD bleibt klar im Aufwärtstrend, aber die Preiswirkung muss nach NAND-Typ und Kapazitätsklasse getrennt werden. MT·AI erhöht die Pricing-Evidenz für Enterprise SSD und NAND moderater als bei Server-RDIMM. Die 60-TB-Ausnahme bleibt als Falsifier gegen eine undifferenzierte High-Capacity-These sichtbar.",
+      "tail_analysis": "Enterprise SSD bleibt klar im Aufwärtstrend, aber die Preiswirkung muss nach NAND-Typ und Kapazitätsklasse getrennt werden. MT·AI erhöht die Pricing-Evidenz für Enterprise SSD und NAND moderater als bei Server-RDIMM. Die 60-TB-Ausnahme bleibt als Falsifier gegen eine undifferenzierte High-Capacity-These sichtbar.",
       "admissionGate": {
         "Freshness": true,
         "Evidence": true,
@@ -95,6 +123,7 @@
       "date": "2026-08-27",
       "rank": 3,
       "priorityScore": 99,
+      "category": "geopolitics",
       "classification": "AI Infrastructure Demand / Memory Pressure / Demand Breadth",
       "signal": "demand_up",
       "signalOverride": "demand_up",
@@ -116,6 +145,7 @@
       "fact": "Die beiden Data-Center-Engines rotieren. In Q1 FY27 kamen 94 % des sequenziellen Data-Center-Zuwachses aus ACIE, in Q2 FY27 noch 59 %; zwei Quartale zuvor war der Beitrag umgekehrt und Hyperscale dominierte, während ACIE rückläufig war. Nvidia hat zudem in Q2 FY27 einen Kunden von ACIE zu Hyperscale umklassifiziert und historische Perioden rückwirkend angepasst. Für belastbare Vergleiche darf daher ausschließlich die recastete Serie verwendet werden. Gleichzeitig stiegen die Days Sales Outstanding laut der vorliegenden Analyse von 45 auf 60 Tage und die Konzentration bei Top-Kunden nahm zu.",
       "estimate": "Die Verbreiterung der Buchungs- und Deployment-Kanäle stärkt die strukturelle Infrastrukturthese, reduziert aber das Endkunden-Konzentrationsrisiko weniger stark als die Segmentlabels allein vermuten lassen. ACIE enthält AI Natives, Enterprises, Sovereigns und auch Hyperscaler, die Kapazität über AI Clouds beziehen. Für HBM bleibt der direkte Effekt am stärksten; Server-DRAM und Enterprise SSD profitieren zusätzlich von der breiteren Ausrollung außerhalb der ersten Hyperscaler-Welle. DSO-Anstieg und höhere Top-Customer-Konzentration werden separat als Demand-Quality- und Credit-Concentration-Watch geführt und fließen nicht mechanisch in den Stressindex ein.",
       "tailInference": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus.",
+      "tail_analysis": "Nvidias Q2 FY27 bestätigt eine breite zweite Deployment-Welle, aber noch keine vollständig unabhängige zweite Endkunden-Nachfragewelle. Entscheidend ist die Rotation zwischen Hyperscale und ACIE bei gleichzeitig weiter steigendem Gesamtvolumen. MT·AI bewertet daher künftig den kombinierten absoluten Data-Center-Zuwachs sowie die sequenziellen Dollarbeiträge beider Segmente höher als isolierte Segment-Wachstumsraten. Demand Breadth wird als strukturell positiv geführt, jedoch mit Caveat zur Endkundenkonzentration. Der bestehende Fresh Shock bleibt einmalig; diese tiefere Zerlegung löst keinen zusätzlichen Indexsprung aus.",
       "monitoringRule": {
         "name": "Nvidia Q3 FY27 Segment & Recast Rule",
         "rule": "YoY-Wachstumsraten von Hyperscale und ACIE werden nicht isoliert als Beschleunigungs- oder Abschwächungssignal gewertet. Vorrang haben absolute und sequenzielle Dollarveränderungen, der kombinierte Data-Center-Zuwachs und der Segmentmix. Historische Vergleiche dürfen ausschließlich auf der jeweils aktuellen recasteten Nvidia-Serie beruhen.",
