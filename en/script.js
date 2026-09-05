@@ -26,6 +26,14 @@ const marketExplanation = {
   ai_infrastructure: "Power, data-centre capacity and memory are increasingly setting the pace of expansion."
 };
 
+const marketLabel = {
+  server_dram: "Server DRAM / RDIMM",
+  hbm: "HBM",
+  enterprise_ssd: "Enterprise SSD",
+  nand: "NAND",
+  ai_infrastructure: "AI Infrastructure"
+};
+
 function renderCatalysts(catalystInput) {
   const grid = document.getElementById("catalyst-grid");
   const startOfToday = new Date();
@@ -46,6 +54,79 @@ function renderCatalysts(catalystInput) {
         <p>${index === 0 ? "Next MT·AI checkpoint" : "Watchpoint in the current market view"}</p>
       </article>`;
   }).join("") || '<article class="loading-card">No upcoming catalysts are currently listed.</article>';
+}
+
+function renderMarketOutlook(outlookInput) {
+  const grid = document.getElementById("outlook-grid");
+  if (!grid) return;
+  const outlooks = Array.isArray(outlookInput?.outlooks) ? outlookInput.outlooks : [];
+
+  grid.innerHTML = outlooks.map((outlook) => {
+    const scenarios = Array.isArray(outlook.scenarios) ? outlook.scenarios : [];
+    const timeline = Array.isArray(outlook.timeline) ? outlook.timeline : [];
+    const changeRules = Array.isArray(outlook.changeRules) ? outlook.changeRules : [];
+    const watchSignals = Array.isArray(outlook.watchSignals) ? outlook.watchSignals : [];
+    const status = ["red", "orange", "yellow", "green"].includes(outlook.currentStatus) ? outlook.currentStatus : "orange";
+    const researchAsOf = outlook.evidenceAsOf || outlook.asOf;
+
+    return `
+      <article class="outlook-card">
+        <div class="outlook-header">
+          <div>
+            <div class="outlook-title-row">
+              <span class="outlook-horizon">${escapeHtml(marketLabel[outlook.marketId] || outlook.marketId)} · ${escapeHtml(outlook.horizon || "")}</span>
+              <h3>${escapeHtml(outlook.headline || "Market Outlook")}</h3>
+            </div>
+            <p class="outlook-view">${escapeHtml(outlook.view || "")}</p>
+            <div class="outlook-meta">
+              <span>Research as of ${escapeHtml(formatDate(researchAsOf))}</span>
+              ${outlook.indexAsOf ? `<span>Index as of ${escapeHtml(formatDate(outlook.indexAsOf))}</span>` : ""}
+              <span>Confidence ${Number.isFinite(Number(outlook.confidence)) ? Number(outlook.confidence) : "–"}/100</span>
+              <span>Coverage ${Number.isFinite(Number(outlook.coverage)) ? Number(outlook.coverage) : "–"}%</span>
+            </div>
+          </div>
+          <div class="outlook-score ${status}" aria-label="Current segment index">
+            <strong>${Number.isFinite(Number(outlook.currentScore)) ? Number(outlook.currentScore) : "–"}</strong><span>today /100</span>
+          </div>
+        </div>
+
+        <div class="scenario-grid" aria-label="Scenario weights">
+          ${scenarios.map((scenario) => `
+            <div class="scenario-card ${escapeHtml(scenario.id || "")}">
+              <div class="scenario-prob">${Number(scenario.probability) || 0}%</div>
+              <strong>${escapeHtml(scenario.label)}</strong>
+              <p>${escapeHtml(scenario.regime)}</p>
+            </div>`).join("")}
+        </div>
+
+        <div class="outlook-subgrid">
+          <div class="outlook-panel">
+            <h4>Expected path</h4>
+            <div class="timeline">
+              ${timeline.map((item) => `
+                <div class="timeline-item">
+                  <time>${escapeHtml(item.year)}</time>
+                  <strong>${escapeHtml(item.label)}</strong>
+                  <p>${escapeHtml(item.detail)}</p>
+                </div>`).join("")}
+            </div>
+          </div>
+          <div class="outlook-panel">
+            <h4>What would change our view</h4>
+            <div class="change-rules">
+              ${changeRules.map((rule) => `
+                <div class="change-rule ${escapeHtml(rule.direction || "")}">
+                  <strong>${escapeHtml(rule.label)}</strong>
+                  <span>${escapeHtml(rule.condition)}</span>
+                </div>`).join("")}
+            </div>
+          </div>
+        </div>
+
+        ${watchSignals.length ? `<div class="watch-row" aria-label="Early-warning signals">${watchSignals.map((signal) => `<span class="watch-chip">${escapeHtml(signal)}</span>`).join("")}</div>` : ""}
+        <p class="outlook-note">${escapeHtml(outlook.methodologyNote || "")}</p>
+      </article>`;
+  }).join("") || '<article class="loading-card outlook-empty">No public deep-research outlook has been released yet.</article>';
 }
 
 function renderDashboard(snapshot) {
@@ -88,6 +169,8 @@ function renderDashboard(snapshot) {
       <p>${escapeHtml(marketExplanation[market.id] || `${market.signals || 0} relevant signals in the current market view.`)}</p>
     </article>`).join("") || '<article class="loading-card">No public market data is currently available.</article>';
 
+  renderMarketOutlook(snapshot.marketOutlook);
+
   const signals = Array.isArray(snapshot.signals) ? snapshot.signals : [];
   document.getElementById("signal-grid").innerHTML = signals.map((signal, index) => `
     <article class="signal-card">
@@ -104,6 +187,8 @@ function renderDataError() {
   document.getElementById("freshness-text").textContent = "Current MT·AI data cannot be loaded right now; the previous view is not presented as current.";
   document.querySelector(".status-dot").classList.add("stale");
   document.getElementById("market-grid").innerHTML = '<article class="loading-card">The current market view is temporarily unavailable.</article>';
+  const outlookGrid = document.getElementById("outlook-grid");
+  if (outlookGrid) outlookGrid.innerHTML = '<article class="loading-card">The Market Outlook is temporarily unavailable.</article>';
   document.getElementById("signal-grid").innerHTML = '<article class="loading-card">Current signals are temporarily unavailable.</article>';
   document.getElementById("catalyst-grid").innerHTML = '<article class="loading-card">Upcoming catalysts are temporarily unavailable.</article>';
 }
