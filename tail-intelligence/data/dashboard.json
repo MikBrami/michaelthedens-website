@@ -8,9 +8,9 @@
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-09-05T13:51:31.168Z",
-  "lastForecastRun": "2026-09-05T13:51:31.168Z",
-  "newlyProcessedArticles": 423,
+  "lastSuccessfulUpdate": "2026-09-05T14:54:18.744Z",
+  "lastForecastRun": "2026-09-05T14:54:18.744Z",
+  "newlyProcessedArticles": 424,
   "totalArticles": 125,
   "articleCount": 125,
   "processStatus": "ok",
@@ -67,8 +67,8 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-05T13:51:21.300Z",
-    "newItems": 423,
+    "updatedAt": "2026-09-05T14:54:08.600Z",
+    "newItems": 424,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
@@ -806,7 +806,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T13:51:31.168Z"
+      "lastUpdated": "2026-09-05T14:54:18.743Z"
     },
     {
       "id": "hbm",
@@ -892,7 +892,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T13:51:31.168Z"
+      "lastUpdated": "2026-09-05T14:54:18.744Z"
     },
     {
       "id": "nand",
@@ -960,7 +960,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T13:51:31.168Z"
+      "lastUpdated": "2026-09-05T14:54:18.744Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1031,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T13:51:31.168Z"
+      "lastUpdated": "2026-09-05T14:54:18.744Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,7 +1205,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-09-05T13:51:31.168Z"
+      "lastUpdated": "2026-09-05T14:54:18.744Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 80/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
@@ -1298,5 +1298,98 @@
       "score": 77,
       "status": "orange"
     }
-  ]
+  ],
+  "marketOutlook": {
+    "schemaVersion": 1,
+    "updatedAt": "2026-09-05",
+    "source": "TAIL × Astra | Server-DRAM 2026-2029 | Evidenz 04.09.2026",
+    "outlooks": [
+      {
+        "marketId": "server_dram",
+        "horizon": "2026-2029",
+        "evidenceAsOf": "2026-09-04",
+        "headline": "Eng bis 2027, Übergang ab 2028",
+        "view": "Kurzfristiges Beschaffungsrisiko bleibt hoch. Ein linearer Preisanstieg bis 2029 ist jedoch kein belastbares Basisszenario.",
+        "scenarios": [
+          {
+            "id": "base",
+            "label": "Basis",
+            "probability": 50,
+            "regime": "Knappheit 2027, kleinere Lücke 2028, weitgehender Ausgleich 2029"
+          },
+          {
+            "id": "structural_shortage",
+            "label": "Strukturelle Knappheit",
+            "probability": 30,
+            "regime": "Nachfrage übersteigt realisierbaren Output; hohe Preise und Rationierung bleiben bestehen"
+          },
+          {
+            "id": "normalisation",
+            "label": "Normalisierung",
+            "probability": 20,
+            "regime": "Nachfrageanpassung und neue Kapazität führen ab 2028 zu deutlich sinkenden Preisen"
+          }
+        ],
+        "timeline": [
+          {
+            "year": "2026",
+            "label": "Enges Marktregime",
+            "detail": "Hohe Preise, knappe qualifizierte Versorgung und aktive Beschaffungsanpassung."
+          },
+          {
+            "year": "2027",
+            "label": "Weiter knapp",
+            "detail": "Besonders ungebundene oder speziell qualifizierte Serverprodukte bleiben exponiert."
+          },
+          {
+            "year": "2028",
+            "label": "Übergang",
+            "detail": "Größere Angebotsbeiträge erhöhen die Wahrscheinlichkeit sinkender Preise."
+          },
+          {
+            "year": "2029",
+            "label": "Ausgleich plausibler",
+            "detail": "Breitere Normalisierung wird wahrscheinlicher; strukturelle Knappheit bleibt ein Minderheitsszenario."
+          }
+        ],
+        "changeRules": [
+          {
+            "direction": "normalisation",
+            "label": "Kontraktpreise",
+            "condition": "Zwei Quartale in Folge mindestens 10 % rückläufig"
+          },
+          {
+            "direction": "normalisation",
+            "label": "Lieferzeiten",
+            "condition": "Bestätigte Lead Times unter acht Wochen bei steigendem qualifiziertem Angebot"
+          },
+          {
+            "direction": "shortage",
+            "label": "Kapazitätsrampen",
+            "condition": "Zwei wichtige DRAM-Ramps verzögern qualifizierte Lieferungen um mindestens zwei Quartale"
+          },
+          {
+            "direction": "shortage",
+            "label": "Host-Bit-Nachfrage",
+            "condition": "Vergleichbare gewünschte Host-Bits wachsen über zwei Quartale um mehr als 25 % YoY ohne breite Bestückungskürzung"
+          }
+        ],
+        "watchSignals": [
+          "Tatsächliche GB pro Server",
+          "LTA-Abdeckung und freie Zuteilung",
+          "Chinesischer qualifizierter Bitoutput",
+          "Käuferlager und Stornos",
+          "CSP-CapEx und Hardware-Inbetriebnahme"
+        ],
+        "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
+        "public": true,
+        "currentScore": 82,
+        "currentStatus": "red",
+        "confidence": 85,
+        "coverage": 100,
+        "asOf": "2026-09-04",
+        "indexAsOf": "2026-09-05"
+      }
+    ]
+  }
 }
