@@ -26,6 +26,14 @@ const marketExplanation = {
   ai_infrastructure: "Power, Datacenter-Kapazität und Memory bestimmen das Ausbautempo."
 };
 
+const marketLabel = {
+  server_dram: "Server DRAM / RDIMM",
+  hbm: "HBM",
+  enterprise_ssd: "Enterprise SSD",
+  nand: "NAND",
+  ai_infrastructure: "AI Infrastructure"
+};
+
 function renderCatalysts(catalystInput) {
   const grid = document.getElementById("catalyst-grid");
   const startOfToday = new Date();
@@ -46,6 +54,79 @@ function renderCatalysts(catalystInput) {
         <p>${index === 0 ? "Nächster MT·AI-Prüfpunkt" : "Beobachtungstermin im aktuellen Lagebild"}</p>
       </article>`;
   }).join("") || '<article class="loading-card">Derzeit sind keine zukünftigen Katalysatoren eingetragen.</article>';
+}
+
+function renderMarketOutlook(outlookInput) {
+  const grid = document.getElementById("outlook-grid");
+  if (!grid) return;
+  const outlooks = Array.isArray(outlookInput?.outlooks) ? outlookInput.outlooks : [];
+
+  grid.innerHTML = outlooks.map((outlook) => {
+    const scenarios = Array.isArray(outlook.scenarios) ? outlook.scenarios : [];
+    const timeline = Array.isArray(outlook.timeline) ? outlook.timeline : [];
+    const changeRules = Array.isArray(outlook.changeRules) ? outlook.changeRules : [];
+    const watchSignals = Array.isArray(outlook.watchSignals) ? outlook.watchSignals : [];
+    const status = ["red", "orange", "yellow", "green"].includes(outlook.currentStatus) ? outlook.currentStatus : "orange";
+    const researchAsOf = outlook.evidenceAsOf || outlook.asOf;
+
+    return `
+      <article class="outlook-card">
+        <div class="outlook-header">
+          <div>
+            <div class="outlook-title-row">
+              <span class="outlook-horizon">${escapeHtml(marketLabel[outlook.marketId] || outlook.marketId)} · ${escapeHtml(outlook.horizon || "")}</span>
+              <h3>${escapeHtml(outlook.headline || "Market Outlook")}</h3>
+            </div>
+            <p class="outlook-view">${escapeHtml(outlook.view || "")}</p>
+            <div class="outlook-meta">
+              <span>Research-Stand ${escapeHtml(formatDate(researchAsOf))}</span>
+              ${outlook.indexAsOf ? `<span>Index-Stand ${escapeHtml(formatDate(outlook.indexAsOf))}</span>` : ""}
+              <span>Confidence ${Number.isFinite(Number(outlook.confidence)) ? Number(outlook.confidence) : "–"}/100</span>
+              <span>Abdeckung ${Number.isFinite(Number(outlook.coverage)) ? Number(outlook.coverage) : "–"}%</span>
+            </div>
+          </div>
+          <div class="outlook-score ${status}" aria-label="Aktueller Segmentindex">
+            <strong>${Number.isFinite(Number(outlook.currentScore)) ? Number(outlook.currentScore) : "–"}</strong><span>heute /100</span>
+          </div>
+        </div>
+
+        <div class="scenario-grid" aria-label="Szenariogewichte">
+          ${scenarios.map((scenario) => `
+            <div class="scenario-card ${escapeHtml(scenario.id || "")}">
+              <div class="scenario-prob">${Number(scenario.probability) || 0}%</div>
+              <strong>${escapeHtml(scenario.label)}</strong>
+              <p>${escapeHtml(scenario.regime)}</p>
+            </div>`).join("")}
+        </div>
+
+        <div class="outlook-subgrid">
+          <div class="outlook-panel">
+            <h4>Erwarteter Pfad</h4>
+            <div class="timeline">
+              ${timeline.map((item) => `
+                <div class="timeline-item">
+                  <time>${escapeHtml(item.year)}</time>
+                  <strong>${escapeHtml(item.label)}</strong>
+                  <p>${escapeHtml(item.detail)}</p>
+                </div>`).join("")}
+            </div>
+          </div>
+          <div class="outlook-panel">
+            <h4>Was unsere Sicht ändern würde</h4>
+            <div class="change-rules">
+              ${changeRules.map((rule) => `
+                <div class="change-rule ${escapeHtml(rule.direction || "")}">
+                  <strong>${escapeHtml(rule.label)}</strong>
+                  <span>${escapeHtml(rule.condition)}</span>
+                </div>`).join("")}
+            </div>
+          </div>
+        </div>
+
+        ${watchSignals.length ? `<div class="watch-row" aria-label="Frühwarnsignale">${watchSignals.map((signal) => `<span class="watch-chip">${escapeHtml(signal)}</span>`).join("")}</div>` : ""}
+        <p class="outlook-note">${escapeHtml(outlook.methodologyNote || "")}</p>
+      </article>`;
+  }).join("") || '<article class="loading-card outlook-empty">Noch kein öffentlicher Deep-Research-Outlook freigegeben.</article>';
 }
 
 function renderDashboard(snapshot) {
@@ -88,6 +169,8 @@ function renderDashboard(snapshot) {
       <p>${escapeHtml(marketExplanation[market.id] || `${market.signals || 0} relevante Signale im aktuellen Lagebild.`)}</p>
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Marktdaten verfügbar.</article>';
 
+  renderMarketOutlook(snapshot.marketOutlook);
+
   const signals = Array.isArray(snapshot.signals) ? snapshot.signals : [];
   document.getElementById("signal-grid").innerHTML = signals.map((signal, index) => `
     <article class="signal-card">
@@ -104,6 +187,8 @@ function renderDataError() {
   document.getElementById("freshness-text").textContent = "MT·AI-Daten können gerade nicht geladen werden – die letzte Einschätzung wird nicht als aktuell ausgegeben.";
   document.querySelector(".status-dot").classList.add("stale");
   document.getElementById("market-grid").innerHTML = '<article class="loading-card">Das aktuelle Lagebild ist vorübergehend nicht verfügbar.</article>';
+  const outlookGrid = document.getElementById("outlook-grid");
+  if (outlookGrid) outlookGrid.innerHTML = '<article class="loading-card">Der Market Outlook ist vorübergehend nicht verfügbar.</article>';
   document.getElementById("signal-grid").innerHTML = '<article class="loading-card">Die aktuellen Signale sind vorübergehend nicht verfügbar.</article>';
   document.getElementById("catalyst-grid").innerHTML = '<article class="loading-card">Die nächsten Katalysatoren sind vorübergehend nicht verfügbar.</article>';
 }
