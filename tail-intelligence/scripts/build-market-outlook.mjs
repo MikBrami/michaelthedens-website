@@ -29,6 +29,7 @@ const marketById = new Map(dashboard.markets.map((market) => [market.id, market]
 const outlooks = config.outlooks.map((outlook) => {
   const market = marketById.get(outlook.marketId);
   if (!market) throw new Error(`Market outlook references unknown market: ${outlook.marketId}`);
+  if (!outlook.evidenceAsOf) throw new Error(`Market outlook ${outlook.marketId} is missing evidenceAsOf`);
   if (!Array.isArray(outlook.scenarios) || outlook.scenarios.length < 2) {
     throw new Error(`Market outlook ${outlook.marketId} needs at least two scenarios`);
   }
@@ -43,7 +44,7 @@ const outlooks = config.outlooks.map((outlook) => {
     currentStatus: market.status,
     confidence: market.confidence,
     coverage: market.coverage,
-    asOf: dashboard.dataAsOf
+    indexAsOf: dashboard.dataAsOf
   };
 });
 
@@ -60,9 +61,10 @@ publicSnapshot.marketOutlook = {
   updatedAt: config.updatedAt,
   outlooks: outlooks
     .filter((outlook) => outlook.public !== false)
-    .map(({ marketId, horizon, headline, view, scenarios, timeline, changeRules, watchSignals, methodologyNote, currentScore, currentStatus, confidence, coverage, asOf }) => ({
+    .map(({ marketId, horizon, evidenceAsOf, headline, view, scenarios, timeline, changeRules, watchSignals, methodologyNote, currentScore, currentStatus, confidence, coverage, indexAsOf }) => ({
       marketId,
       horizon,
+      evidenceAsOf,
       headline,
       view,
       scenarios,
@@ -74,7 +76,7 @@ publicSnapshot.marketOutlook = {
       currentStatus,
       confidence,
       coverage,
-      asOf
+      indexAsOf
     }))
 };
 
