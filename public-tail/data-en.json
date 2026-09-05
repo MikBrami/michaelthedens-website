@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T13:51:53.222Z",
+  "generatedAt": "2026-09-05T18:52:39.499Z",
   "editorial": {
-    "version": 4,
+    "version": 5,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "ac0c3e24b946ff6e334f13d1",
+    "sourceHash": "5919d0ea9c8c1513c1a77cc8",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
@@ -48,14 +48,14 @@
     "riskPressure": 84,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the most constrained areas. The Daily Check on 2026-09-05 confirmed a material change in the situation. New capacity and improved yields can provide relief but will reach the market with a time lag. For buyers, ensuring supply, alternative BOMs and early procurement remain decisive."
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the most constrained areas. The Daily Check on 2026-09-05 confirmed a material change in the situation. New capacity and improved yields can alleviate pressure, but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain critical."
   },
   "signals": [
     {
       "date": "2026-09-05",
       "title": "Nvidia to acquire Hugging Face — open-model ecosystem becomes a hardware hedge",
-      "summary": "According to a report in The Information, as relayed by DigiTimes, Nvidia has agreed to acquire Hugging Face for $12.9bn. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud-based AI deployments. The report frames the transaction as a strategic response to growing vertical integration by large closed-model providers and hyperscalers that are developing their own AI accelerators.",
-      "analysis": "MT·AI views the transaction as a structural demand persistence factor: Open models → Hugging Face → Nvidia-optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is direct for AI infrastructure and indirectly positive for HBM, server DRAM and enterprise SSDs. Because the acquisition does not create immediate physical scarcity or price moves, it is index-neutral and does not trigger a Fresh Shock.",
+      "summary": "According to a report by The Information cited in DigiTimes, Nvidia has agreed to acquire Hugging Face for $12.9 billion. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud-based AI deployments. The report frames the transaction as a strategic response to growing vertical integration by large closed-model providers and hyperscalers who are developing their own AI accelerators.",
+      "analysis": "MT·AI assesses the transaction as a structural driver of persistent demand: Open models → Hugging Face → Nvidia-optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is directly positive for AI infrastructure and indirectly positive for HBM, server DRAM and enterprise SSD. Because the acquisition does not create new physical shortages or immediate price movements, it remains index-neutral and does not produce a fresh shock.",
       "score": 92,
       "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
       "url": null,
@@ -63,9 +63,9 @@
     },
     {
       "date": "2026-09-05",
-      "title": "Samsung brings LPDDR5X PIM closer to product readiness — new path against the AI memory wall",
-      "summary": "At Hot Chips 2026 Samsung demonstrated LPDDR5X PIM with functioning silicon and internal Llama-3.1-8B measurements on an edge-AI SoC. Runtime fell from 12.3 to 5.4 seconds, throughput rose from 27.0 to 81.3 tokens/s, and Samsung cites up to 614 GB/s internal PIM bandwidth versus 76.8 GB/s on the conventional LPDDR5X side. These results are internal measurements; the generated outputs differed and accuracy optimisation is ongoing.",
-      "analysis": "MT·AI assesses PIM as a possible medium-term mitigation of the memory wall, not as a current substitute for HBM. For inference workloads below maximal HBM bandwidth, local processing can increase effective performance and energy efficiency. In the short term it provides no relief for HBM, server DRAM or enterprise SSD because customers, volumes and a mass-production timetable are lacking. More efficient inference could also induce a Jevons effect, raising total AI workload demand and absolute memory demand even if the memory mix shifts.",
+      "title": "Samsung brings LPDDR5X-PIM closer to product maturity — a new path against the AI memory wall",
+      "summary": "At Hot Chips 2026 Samsung showed LPDDR5X-PIM with functioning silicon and internal Llama-3.1-8B measurements on an edge-AI SoC. Runtime fell from 12.3 to 5.4 seconds, throughput rose from 27.0 to 81.3 tokens/s, and Samsung cites up to 614 GB/s internal PIM bandwidth versus 76.8 GB/s on the conventional LPDDR5X side. Results are internal measurements; generated outputs differed and accuracy optimisation is still ongoing.",
+      "analysis": "MT·AI views PIM as a potential medium-term mitigation path for the memory wall, not as a current substitute for HBM. For inference workloads below maximum HBM bandwidth, local processing can raise effective performance and energy efficiency. In the short term this produces no relief for HBM, server DRAM or enterprise SSD because customers, volumes and a mass-production timetable are not yet present. Concurrently, more efficient inference could—via a Jevons effect—increase overall AI workload demand and thus absolute memory demand, even if the memory mix shifts.",
       "score": 91,
       "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
       "url": null,
@@ -74,8 +74,8 @@
     {
       "date": "2026-09-05",
       "title": "Nvidia doubles revenue — AI demand broadens across two deployment channels",
-      "summary": "The two data-centre engines are rotating. In Q1 FY27 94% of the sequential data-centre increase came from ACIE, while in Q2 FY27 that share was 59%; two quarters earlier the contribution was reversed, with hyperscale dominating as ACIE declined. Nvidia also reclassified a Q2 FY27 customer from ACIE to Hyperscale and adjusted historical periods retrospectively. For reliable comparisons only the recast series should be used. At the same time Days Sales Outstanding rose from 45 to 60 days and concentration among top customers increased.",
-      "analysis": "Nvidia's Q2 FY27 confirms a broad second deployment wave but not yet a fully independent second end-customer demand wave. The rotation between hyperscale and ACIE occurs alongside rising total volume. MT·AI will therefore place greater weight on combined absolute data-centre growth and the sequential dollar contributions of both segments than on isolated segment growth rates. Demand breadth is treated as structurally positive, with a caveat on end-customer concentration. The existing Fresh Shock remains one-off; this finer decomposition does not produce an additional index jump.",
+      "summary": "The two data-centre engines are rotating. In Q1 FY27, 94% of sequential data-centre growth came from ACIE; in Q2 FY27 that contribution was 59%. Two quarters earlier the contribution was the reverse, with hyperscale dominant and ACIE declining. Nvidia also reclassified a Q2 FY27 customer from ACIE to hyperscale and adjusted historical periods retroactively. For meaningful comparisons the recast series must be used. Meanwhile Days Sales Outstanding rose in the presented analysis from 45 to 60 days and concentration among top customers increased.",
+      "analysis": "Nvidia’s Q2 FY27 confirms a broad second deployment wave but not yet a fully independent second end-customer demand wave. The crucial factor is rotation between hyperscale and ACIE alongside rising aggregate volume. MT·AI will therefore weight combined absolute data-centre growth and the sequential dollar contributions of both segments higher than isolated segment-growth rates. Demand breadth is treated as structurally positive, with a caveat regarding end-customer concentration. The existing fresh shock remains one-off; this deeper decomposition does not trigger an additional index jump.",
       "score": 99,
       "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
       "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
@@ -101,7 +101,7 @@
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging remains a central AI supply-chain bottleneck at least through H2 2027 despite Chiayi expansion."
+      "event": "Forecast review: Advanced packaging remains a central AI supply-chain bottleneck until at least H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
@@ -125,32 +125,32 @@
         "horizon": "2026-2029",
         "evidenceAsOf": "2026-09-04",
         "headline": "Tight through 2027, transition from 2028",
-        "view": "Near-term procurement risk remains high. A linear price increase through 2029, however, is not a robust base-case assumption.",
+        "view": "Near-term procurement risk remains high. A linear price increase through 2029 is not a robust base case.",
         "scenarios": [
           {
             "id": "base",
-            "label": "Base Case",
+            "label": "Base case",
             "probability": 50,
-            "regime": "Tightness in 2027, a smaller gap in 2028, and broad balance by 2029"
+            "regime": "Shortage in 2027, smaller gap in 2028, broad balance by 2029"
           },
           {
             "id": "structural_shortage",
-            "label": "Structural Tightness",
+            "label": "Structural shortage",
             "probability": 30,
-            "regime": "Demand exceeds achievable output; high prices and allocation remain in place"
+            "regime": "Demand exceeds realisable output; high pricing and rationing persist"
           },
           {
             "id": "normalisation",
             "label": "Normalisation",
             "probability": 20,
-            "regime": "Demand adjustment and new capacity drive materially lower prices from 2028"
+            "regime": "Demand adjustment and new capacity drive materially lower pricing from 2028"
           }
         ],
         "timeline": [
           {
             "year": "2026",
             "label": "Tight market regime",
-            "detail": "High prices, constrained qualified supply and active procurement adjustment."
+            "detail": "High pricing, constrained qualified supply and active procurement adjustment."
           },
           {
             "year": "2027",
@@ -160,29 +160,29 @@
           {
             "year": "2028",
             "label": "Transition",
-            "detail": "Larger supply contributions increase the probability of declining prices."
+            "detail": "Larger supply contributions raise the probability of falling prices."
           },
           {
             "year": "2029",
             "label": "Balance becomes more plausible",
-            "detail": "Broader normalisation becomes more likely; structural tightness remains a minority scenario."
+            "detail": "Broader normalisation becomes more likely; structural shortage remains a minority scenario."
           }
         ],
         "changeRules": [
           {
             "direction": "normalisation",
-            "label": "Contract prices",
-            "condition": "At least 10% lower for two consecutive quarters"
+            "label": "Contract pricing",
+            "condition": "Two consecutive quarters down by at least 10%"
           },
           {
             "direction": "normalisation",
             "label": "Lead times",
-            "condition": "Confirmed lead times below eight weeks while qualified supply is increasing"
+            "condition": "Confirmed lead times below eight weeks alongside rising qualified supply"
           },
           {
             "direction": "shortage",
             "label": "Capacity ramps",
-            "condition": "Two major DRAM ramps delay qualified shipments by at least two quarters"
+            "condition": "Two major DRAM ramps delay qualified supply by at least two quarters"
           },
           {
             "direction": "shortage",
@@ -197,12 +197,117 @@
           "Buyer inventories and cancellations",
           "CSP CapEx and hardware commissioning"
         ],
-        "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated occurrence frequencies.",
+        "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated event frequencies.",
         "currentScore": 82,
         "currentStatus": "red",
         "confidence": 85,
         "coverage": 100,
         "asOf": "2026-09-04",
+        "indexAsOf": "2026-09-05"
+      },
+      {
+        "marketId": "enterprise_ssd",
+        "horizon": "2026-2029",
+        "evidenceAsOf": "2026-09-05",
+        "headline": "2026 remains tight; normalisation risk rises from 2027",
+        "view": "Current market pressure remains high, but a permanently rising Enterprise SSD price path is not the base case. Qualified output, QLC scaling, buyer resistance and Chinese substitution can materially ease conditions from 2027/2028.",
+        "researchReferenceScore": 83,
+        "researchReferenceNote": "83 is the market-pressure reference confirmed by the Astra audit, not a price target or a 2029 shortage probability. The operational live index continues to be calculated solely by the MT·AI index model.",
+        "scenarios": [
+          {
+            "id": "base",
+            "label": "Base case",
+            "probability": 50,
+            "regime": "2027 stabilisation; increasing easing pressure in 2028 and 2029. Price index Q3 2026=100: 85-115 / 65-95 / 55-85."
+          },
+          {
+            "id": "structural_shortage",
+            "label": "Structural shortage",
+            "probability": 20,
+            "regime": "Qualified output trails real AI/data-centre deployment. Price index: 115-150 / 125-175 / 120-180."
+          },
+          {
+            "id": "normalisation",
+            "label": "Normalisation / oversupply",
+            "probability": 30,
+            "regime": "QLC ramps, allocation shifts, the inventory cycle and Chinese substitution ease the market. Price index: 65-90 / 40-65 / 35-60."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "2026",
+            "label": "High-priced and product-specific tightness",
+            "detail": "Critical qualified volumes remain constrained; pricing and availability differ materially by TLC/QLC, capacity class and platform qualification."
+          },
+          {
+            "year": "2027",
+            "label": "Stabilisation in the base case",
+            "detail": "Price band 85-115 relative to Q3 2026=100. At least one negative price quarter is plausible without implying broad availability of qualified high-capacity SKUs."
+          },
+          {
+            "year": "2028",
+            "label": "Easing risk rises",
+            "detail": "Base-case price band 65-95. Technology, QLC and potential new wafer output matter only once they become genuinely qualified Enterprise SSD volumes."
+          },
+          {
+            "year": "2029",
+            "label": "Competition and supply discipline",
+            "detail": "Base-case price band 55-85. Long-term uncertainty is high; structural shortage remains a separate stress case."
+          }
+        ],
+        "changeRules": [
+          {
+            "direction": "normalisation",
+            "label": "Price + fulfilment + output",
+            "condition": "Two completed negative quarters for a comparable Enterprise SSD contract basket, plus better on-time fulfilment and rising qualified output"
+          },
+          {
+            "direction": "shortage",
+            "label": "Price + fill rate + deployment",
+            "condition": "Positive price quarters, weaker fill rates and stronger real deployment while qualified ramps miss plan"
+          },
+          {
+            "direction": "normalisation",
+            "label": "Same-SKU channel",
+            "condition": "Repeated executable lower offers for the same SKU, volume and terms alongside improved availability"
+          },
+          {
+            "direction": "shortage",
+            "label": "Allocation cuts",
+            "condition": "Binding allocation cuts across multiple qualified Enterprise SSD product families"
+          }
+        ],
+        "watchSignals": [
+          "Comparable Enterprise SSD contract prices",
+          "Executable channel pricing",
+          "Lead-time deviation",
+          "On-time volume fulfilment / fill rate",
+          "High-capacity qualification",
+          "Qualified Enterprise bit output",
+          "GPUs actually commissioned",
+          "Physical TB per GPU",
+          "QLC/TLC bit mix",
+          "Customer inventory, cancellations and RFQ conversion"
+        ],
+        "commercialDecision": {
+          "buyer": "For 2027, a heuristic starting point is to secure roughly 60% of conservatively confirmed demand by volume and keep 40% flexible; for 2028, secure about 30% of minimum demand and keep 70% flexible. Secure supply while resetting pricing periodically where possible.",
+          "seller": "Avoid uncommitted speculative inventory in high-priced Enterprise SSDs. Hold 30.72/61.44 TB only against dated recurring call-offs or matched orders; source 122.88/245 TB against named customer demand. Offer long fixed prices only with matched supplier protection."
+        },
+        "capacityFramework": [
+          "<=7.68 TB · Performance / Mainstream",
+          "15.36-30.72 TB · Dense Enterprise",
+          "61.44 TB · High Capacity",
+          "122.88 TB · Ultra High Capacity",
+          "245 TB+ · Frontier Capacity",
+          "TLC · Performance / Endurance",
+          "QLC · Capacity"
+        ],
+        "methodologyNote": "Market-pressure index and price forecast remain separate. Scenario weights of 50/20/30 are HEURISTIC rather than statistically calibrated event frequencies. Missing data is not a relief signal; correlated evidence is not double-counted.",
+        "currentScore": 82,
+        "currentStatus": "red",
+        "confidence": 78,
+        "coverage": 100,
+        "asOf": "2026-09-05",
         "indexAsOf": "2026-09-05"
       }
     ]
