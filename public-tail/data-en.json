@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T18:52:39.499Z",
+  "generatedAt": "2026-09-05T18:53:45.204Z",
   "editorial": {
     "version": 5,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "5919d0ea9c8c1513c1a77cc8",
+    "sourceHash": "380b7e73ca257a64ae5de645",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
@@ -48,14 +48,14 @@
     "riskPressure": 84,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the most constrained areas. The Daily Check on 2026-09-05 confirmed a material change in the situation. New capacity and improved yields can alleviate pressure, but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain critical."
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check on 5 September 2026 confirmed a material change in conditions. New capacity and improved yields can relieve pressure but will reach the market only with delay. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
       "date": "2026-09-05",
       "title": "Nvidia to acquire Hugging Face — open-model ecosystem becomes a hardware hedge",
-      "summary": "According to a report by The Information cited in DigiTimes, Nvidia has agreed to acquire Hugging Face for $12.9 billion. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud-based AI deployments. The report frames the transaction as a strategic response to growing vertical integration by large closed-model providers and hyperscalers who are developing their own AI accelerators.",
-      "analysis": "MT·AI assesses the transaction as a structural driver of persistent demand: Open models → Hugging Face → Nvidia-optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is directly positive for AI infrastructure and indirectly positive for HBM, server DRAM and enterprise SSD. Because the acquisition does not create new physical shortages or immediate price movements, it remains index-neutral and does not produce a fresh shock.",
+      "summary": "According to a report in The Information cited by DigiTimes, Nvidia has agreed to acquire Hugging Face for US$12.9 billion. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud-based AI deployments. The report frames the transaction as a strategic response to increased vertical integration by large closed-model providers and hyperscalers developing their own AI accelerators.",
+      "analysis": "MT·AI assesses the transaction as a structural demand-persistence factor: open models → Hugging Face → Nvidia-optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is direct for AI infrastructure and indirectly positive for HBM, server DRAM and enterprise SSDs. Because the acquisition does not create immediate physical scarcity or price movement, it is index-neutral and does not produce a fresh shock.",
       "score": 92,
       "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
       "url": null,
@@ -63,9 +63,9 @@
     },
     {
       "date": "2026-09-05",
-      "title": "Samsung brings LPDDR5X-PIM closer to product maturity — a new path against the AI memory wall",
-      "summary": "At Hot Chips 2026 Samsung showed LPDDR5X-PIM with functioning silicon and internal Llama-3.1-8B measurements on an edge-AI SoC. Runtime fell from 12.3 to 5.4 seconds, throughput rose from 27.0 to 81.3 tokens/s, and Samsung cites up to 614 GB/s internal PIM bandwidth versus 76.8 GB/s on the conventional LPDDR5X side. Results are internal measurements; generated outputs differed and accuracy optimisation is still ongoing.",
-      "analysis": "MT·AI views PIM as a potential medium-term mitigation path for the memory wall, not as a current substitute for HBM. For inference workloads below maximum HBM bandwidth, local processing can raise effective performance and energy efficiency. In the short term this produces no relief for HBM, server DRAM or enterprise SSD because customers, volumes and a mass-production timetable are not yet present. Concurrently, more efficient inference could—via a Jevons effect—increase overall AI workload demand and thus absolute memory demand, even if the memory mix shifts.",
+      "title": "Samsung brings LPDDR5X-PIM closer to product readiness — new path against the AI memory wall",
+      "summary": "At Hot Chips 2026 Samsung demonstrated LPDDR5X PIM with functioning silicon and internal Llama-3.1-8B measurements on an edge-AI SoC. Latency fell from 12.3 to 5.4 seconds, throughput rose from 27.0 to 81.3 tokens/s, and Samsung cites up to 614 GB/s internal PIM bandwidth versus 76.8 GB/s on the conventional LPDDR5X side. These are internal measurements; the generated outputs differed and accuracy tuning is ongoing.",
+      "analysis": "MT·AI views PIM as a potential medium-term mitigation of the memory wall, not a current HBM substitute. For inference workloads beneath maximum HBM bandwidth, local processing can raise effective performance and energy efficiency. In the short term this creates no relief for HBM, server DRAM or enterprise SSDs because customers, volumes and mass-production timelines are lacking. At the same time, more efficient inference could produce a Jevons effect that increases total AI workload demand and absolute memory demand, even if the memory mix shifts.",
       "score": 91,
       "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
       "url": null,
@@ -74,8 +74,8 @@
     {
       "date": "2026-09-05",
       "title": "Nvidia doubles revenue — AI demand broadens across two deployment channels",
-      "summary": "The two data-centre engines are rotating. In Q1 FY27, 94% of sequential data-centre growth came from ACIE; in Q2 FY27 that contribution was 59%. Two quarters earlier the contribution was the reverse, with hyperscale dominant and ACIE declining. Nvidia also reclassified a Q2 FY27 customer from ACIE to hyperscale and adjusted historical periods retroactively. For meaningful comparisons the recast series must be used. Meanwhile Days Sales Outstanding rose in the presented analysis from 45 to 60 days and concentration among top customers increased.",
-      "analysis": "Nvidia’s Q2 FY27 confirms a broad second deployment wave but not yet a fully independent second end-customer demand wave. The crucial factor is rotation between hyperscale and ACIE alongside rising aggregate volume. MT·AI will therefore weight combined absolute data-centre growth and the sequential dollar contributions of both segments higher than isolated segment-growth rates. Demand breadth is treated as structurally positive, with a caveat regarding end-customer concentration. The existing fresh shock remains one-off; this deeper decomposition does not trigger an additional index jump.",
+      "summary": "The two data-centre engines are rotating. In Q1 FY27, 94% of the sequential data-centre increase came from ACIE; in Q2 FY27 this fell to 59%. Two quarters earlier the contribution was reversed, with hyperscale dominant while ACIE declined. Nvidia also reclassified one ACIE customer to hyperscale in Q2 FY27 and retrospectively adjusted prior periods. For reliable comparisons only the recast series should be used. Days Sales Outstanding rose from 45 to 60 days and concentration among top customers increased.",
+      "analysis": "Nvidia’s Q2 FY27 confirms a broad second deployment wave but not yet a fully independent second end-customer demand wave. The rotation between hyperscale and ACIE is decisive alongside continued rising absolute volume. MT·AI will therefore place greater weight on combined absolute data-centre growth and the sequential dollar contributions of both segments rather than isolated segment growth rates. Demand breadth is structurally positive but carries a caveat on end-customer concentration. The existing fresh shock remains one-off; this more detailed disaggregation does not trigger an additional index jump.",
       "score": 99,
       "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
       "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
@@ -97,15 +97,15 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: review filing, valuation and access to capital"
+      "event": "Switch IPO: Filing, valuation and access to capital"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging remains a central AI supply-chain bottleneck until at least H2 2027 despite the Chiayi expansion."
+      "event": "Forecast-Review: Advanced Packaging remains a central AI supply-chain bottleneck despite Chiayi expansion until at least H2 2027."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier review: AI asset-backed financing reflexivity"
+      "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
     },
     {
       "date": "2027-03-31",

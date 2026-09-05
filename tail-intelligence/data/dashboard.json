@@ -8,9 +8,9 @@
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-09-05T18:52:00.960Z",
-  "lastForecastRun": "2026-09-05T18:52:00.960Z",
-  "newlyProcessedArticles": 413,
+  "lastSuccessfulUpdate": "2026-09-05T18:53:06.051Z",
+  "lastForecastRun": "2026-09-05T18:53:06.051Z",
+  "newlyProcessedArticles": 412,
   "totalArticles": 125,
   "articleCount": 125,
   "processStatus": "ok",
@@ -67,8 +67,8 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-05T18:51:52.294Z",
-    "newItems": 413,
+    "updatedAt": "2026-09-05T18:52:55.817Z",
+    "newItems": 412,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
@@ -806,7 +806,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T18:52:00.959Z"
+      "lastUpdated": "2026-09-05T18:53:06.050Z"
     },
     {
       "id": "hbm",
@@ -892,7 +892,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T18:52:00.960Z"
+      "lastUpdated": "2026-09-05T18:53:06.050Z"
     },
     {
       "id": "nand",
@@ -960,7 +960,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T18:52:00.960Z"
+      "lastUpdated": "2026-09-05T18:53:06.050Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1031,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-05T18:52:00.960Z"
+      "lastUpdated": "2026-09-05T18:53:06.050Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,7 +1205,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-09-05T18:52:00.960Z"
+      "lastUpdated": "2026-09-05T18:53:06.050Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 80/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
@@ -1393,6 +1393,8 @@
       {
         "marketId": "enterprise_ssd",
         "horizon": "2026-2029",
+        "snapshotId": "ESSD-2026-09-05-ASTRA-01",
+        "snapshotImmutable": true,
         "evidenceAsOf": "2026-09-05",
         "headline": "2026 angespannt, ab 2027 steigt das Normalisierungsrisiko",
         "view": "Der aktuelle Marktdruck bleibt hoch, aber ein dauerhaft steigender Enterprise-SSD-Preispfad ist nicht das Basisszenario. Qualifizierter Output, QLC-Skalierung, Käuferwiderstand und China-Substitution können die Lage ab 2027/2028 spürbar entspannen.",
@@ -1416,6 +1418,80 @@
             "label": "Normalisierung / Überangebot",
             "probability": 30,
             "regime": "QLC-Ramps, Allokationsverschiebung, Inventarzyklus und China-Substitution entlasten. Preisindex: 65-90 / 40-65 / 35-60."
+          }
+        ],
+        "scenarioModel": [
+          {
+            "scenario": "base",
+            "year": 2027,
+            "supplyIndex": 126,
+            "demandIndex": 125.6,
+            "gapPercent": 0.3,
+            "priceBand": "85-115"
+          },
+          {
+            "scenario": "base",
+            "year": 2028,
+            "supplyIndex": 162.5,
+            "demandIndex": 150,
+            "gapPercent": 8.3,
+            "priceBand": "65-95"
+          },
+          {
+            "scenario": "base",
+            "year": 2029,
+            "supplyIndex": 203.2,
+            "demandIndex": 175.2,
+            "gapPercent": 16,
+            "priceBand": "55-85"
+          },
+          {
+            "scenario": "structural_shortage",
+            "year": 2027,
+            "supplyIndex": 120,
+            "demandIndex": 136,
+            "gapPercent": -11.8,
+            "priceBand": "115-150"
+          },
+          {
+            "scenario": "structural_shortage",
+            "year": 2028,
+            "supplyIndex": 146.4,
+            "demandIndex": 175.9,
+            "gapPercent": -16.8,
+            "priceBand": "125-175"
+          },
+          {
+            "scenario": "structural_shortage",
+            "year": 2029,
+            "supplyIndex": 181.5,
+            "demandIndex": 224,
+            "gapPercent": -19,
+            "priceBand": "120-180"
+          },
+          {
+            "scenario": "normalisation",
+            "year": 2027,
+            "supplyIndex": 130,
+            "demandIndex": 117.3,
+            "gapPercent": 10.8,
+            "priceBand": "65-90"
+          },
+          {
+            "scenario": "normalisation",
+            "year": 2028,
+            "supplyIndex": 153.4,
+            "demandIndex": 121.3,
+            "gapPercent": 26.5,
+            "priceBand": "40-65"
+          },
+          {
+            "scenario": "normalisation",
+            "year": 2029,
+            "supplyIndex": 159.5,
+            "demandIndex": 134,
+            "gapPercent": 19.1,
+            "priceBand": "35-60"
           }
         ],
         "timeline": [
@@ -1444,12 +1520,22 @@
           {
             "direction": "normalisation",
             "label": "Preis + Erfüllung + Output",
-            "condition": "Zwei abgeschlossene negative Quartale eines vergleichbaren Enterprise-SSD-Kontraktkorbs plus bessere termingerechte Erfüllung und steigender qualifizierter Output"
+            "condition": "Zwei abgeschlossene negative Quartale eines vergleichbaren Enterprise-SSD-Kontraktkorbs plus bessere termingerechte Erfüllung und steigender qualifizierter Output",
+            "proposedWeights": {
+              "base": 40,
+              "structural_shortage": 10,
+              "normalisation": 50
+            }
           },
           {
             "direction": "shortage",
             "label": "Preis + Fill Rate + Deployment",
-            "condition": "Positive Preisquartale, schlechtere Fill Rate und stärkeres reales Deployment bei verfehltem qualifiziertem Ramp"
+            "condition": "Positive Preisquartale, schlechtere Fill Rate und stärkeres reales Deployment bei verfehltem qualifiziertem Ramp",
+            "proposedWeights": {
+              "base": 40,
+              "structural_shortage": 40,
+              "normalisation": 20
+            }
           },
           {
             "direction": "normalisation",
@@ -1473,6 +1559,253 @@
           "Physische TB je GPU",
           "QLC-/TLC-Bitmix",
           "Kundenbestand, Stornos und RFQ-Conversion"
+        ],
+        "earlyWarningIndicators": [
+          {
+            "priority": 1,
+            "id": "contract_prices",
+            "frequency": "quarterly",
+            "evidenceRole": "price"
+          },
+          {
+            "priority": 2,
+            "id": "executable_channel_prices",
+            "frequency": "weekly",
+            "evidenceRole": "price"
+          },
+          {
+            "priority": 3,
+            "id": "lead_time_deviation",
+            "frequency": "weekly",
+            "evidenceRole": "availability"
+          },
+          {
+            "priority": 4,
+            "id": "on_time_fill_rate",
+            "frequency": "monthly",
+            "evidenceRole": "availability"
+          },
+          {
+            "priority": 5,
+            "id": "high_capacity_qualification",
+            "frequency": "monthly",
+            "evidenceRole": "qualification"
+          },
+          {
+            "priority": 6,
+            "id": "qualified_enterprise_bit_output",
+            "frequency": "quarterly",
+            "evidenceRole": "supply"
+          },
+          {
+            "priority": 7,
+            "id": "commissioned_gpus",
+            "frequency": "quarterly",
+            "evidenceRole": "demand"
+          },
+          {
+            "priority": 8,
+            "id": "physical_tb_per_gpu",
+            "frequency": "quarterly",
+            "evidenceRole": "demand_intensity"
+          },
+          {
+            "priority": 9,
+            "id": "nand_contract_prices",
+            "frequency": "quarterly",
+            "evidenceRole": "upstream_price"
+          },
+          {
+            "priority": 10,
+            "id": "manufacturer_inventory",
+            "frequency": "quarterly",
+            "evidenceRole": "inventory"
+          },
+          {
+            "priority": 11,
+            "id": "customer_inventory",
+            "frequency": "monthly",
+            "evidenceRole": "inventory"
+          },
+          {
+            "priority": 12,
+            "id": "nand_inventory_days",
+            "frequency": "quarterly",
+            "evidenceRole": "inventory"
+          },
+          {
+            "priority": 13,
+            "id": "hyperscaler_capex",
+            "frequency": "quarterly",
+            "evidenceRole": "demand_context"
+          },
+          {
+            "priority": 14,
+            "id": "ai_server_shipments",
+            "frequency": "quarterly",
+            "evidenceRole": "demand"
+          },
+          {
+            "priority": 15,
+            "id": "tlc_qlc_bit_mix",
+            "frequency": "quarterly",
+            "evidenceRole": "mix"
+          },
+          {
+            "priority": 16,
+            "id": "wafer_utilisation",
+            "frequency": "quarterly",
+            "evidenceRole": "supply"
+          },
+          {
+            "priority": 17,
+            "id": "nand_capacity_ramps",
+            "frequency": "monthly",
+            "evidenceRole": "supply"
+          },
+          {
+            "priority": 18,
+            "id": "qualified_chinese_output",
+            "frequency": "quarterly",
+            "evidenceRole": "supply"
+          },
+          {
+            "priority": 19,
+            "id": "order_cancellations",
+            "frequency": "monthly",
+            "evidenceRole": "demand_quality"
+          },
+          {
+            "priority": 20,
+            "id": "rfq_conversion",
+            "frequency": "monthly",
+            "evidenceRole": "channel_demand"
+          },
+          {
+            "priority": 21,
+            "id": "hdd_prices",
+            "frequency": "quarterly",
+            "evidenceRole": "substitution"
+          },
+          {
+            "priority": 22,
+            "id": "ssd_hdd_tco_ratio",
+            "frequency": "quarterly",
+            "evidenceRole": "substitution"
+          },
+          {
+            "priority": 23,
+            "id": "large_datacenter_projects",
+            "frequency": "monthly",
+            "evidenceRole": "deployment_pipeline"
+          }
+        ],
+        "indexArchitecture": {
+          "principle": "market_pressure_separate_from_price_forecast",
+          "headlineReference": 83,
+          "drivers": [
+            {
+              "id": "demand",
+              "weight": 0.25
+            },
+            {
+              "id": "pricing",
+              "weight": 0.2
+            },
+            {
+              "id": "availability",
+              "weight": 0.4
+            },
+            {
+              "id": "aiDemand",
+              "weight": 0.15
+            }
+          ],
+          "subdrivers": [
+            "qualified_supply",
+            "inventory",
+            "qlc_ramp",
+            "high_capacity_qualification",
+            "channel_tightness"
+          ],
+          "subdriversAdditive": false,
+          "doubleCountGuards": [
+            "AI demand must not be counted simultaneously via CapEx, MW and storage orders",
+            "NAND price and finished SSD price must remain distinct observations",
+            "GPU partner, operator and end customer must not be counted as three independent deployment signals"
+          ]
+        },
+        "channelLedgerSchema": [
+          "event_date",
+          "company",
+          "manufacturer",
+          "part_number",
+          "capacity_tb",
+          "nand_type",
+          "quantity",
+          "price",
+          "currency",
+          "delivery_week",
+          "lead_time",
+          "allocation",
+          "status",
+          "project_id",
+          "revision_id"
+        ],
+        "forecastEvaluation": {
+          "metrics": [
+            "band_hit",
+            "direction",
+            "midpoint_error",
+            "absolute_percentage_error",
+            "brier_score_for_binary_theses"
+          ],
+          "rules": [
+            "Evaluate only after the forecast horizon closes",
+            "Compare the same unit and scope",
+            "Missing data produces unresolved, not a forecast win",
+            "Never overwrite old snapshots or probabilities retroactively"
+          ]
+        },
+        "thesisScorecard": [
+          {
+            "id": "SSD-T1",
+            "evidence": "INFERENCE",
+            "probability": 0.6,
+            "review": "2027-12-31",
+            "claim": "At least one completed negative quarter in the comparable Enterprise SSD contract-price series during calendar 2027"
+          },
+          {
+            "id": "SSD-T2",
+            "evidence": "NOT PROVEN",
+            "probability": null,
+            "review": "2026-12-31"
+          },
+          {
+            "id": "SSD-T3",
+            "evidence": "MODEL ESTIMATE",
+            "probability": 0.65,
+            "review": "2028-12-31",
+            "claim": "First confirmed wafer output from the announced Micron Singapore NAND fab by end-2028"
+          },
+          {
+            "id": "SSD-T4",
+            "evidence": "MODEL ESTIMATE",
+            "probability": null,
+            "review": "2027-12-31"
+          },
+          {
+            "id": "SSD-T5",
+            "evidence": "INFERENCE",
+            "probability": null,
+            "review": "2027-12-31"
+          },
+          {
+            "id": "SSD-T6",
+            "evidence": "MODEL ESTIMATE",
+            "probability": null,
+            "review": "2026-12-31"
+          }
         ],
         "commercialDecision": {
           "buyer": "Für 2027 als heuristischen Startpunkt etwa 60 % des konservativ bestätigten Bedarfs mengenmäßig absichern und 40 % flexibel halten; 2028 eher 30 % Mindestbedarf absichern und 70 % flexibel halten. Versorgung absichern, Preise möglichst periodisch neu bestimmen.",
