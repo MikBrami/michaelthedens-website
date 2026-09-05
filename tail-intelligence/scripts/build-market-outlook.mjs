@@ -62,7 +62,11 @@ publicSnapshot.marketOutlook = {
   updatedAt: config.updatedAt,
   outlooks: outlooks
     .filter((outlook) => outlook.public !== false)
-    .map(({ marketId, horizon, evidenceAsOf, headline, view, scenarios, timeline, changeRules, watchSignals, methodologyNote, currentScore, currentStatus, confidence, coverage, asOf, indexAsOf }) => ({
+    .map(({
+      marketId, horizon, evidenceAsOf, headline, view, scenarios, timeline, changeRules, watchSignals,
+      methodologyNote, currentScore, currentStatus, confidence, coverage, asOf, indexAsOf,
+      researchReferenceScore, researchReferenceNote, commercialDecision, capacityFramework
+    }) => ({
       marketId,
       horizon,
       evidenceAsOf,
@@ -78,7 +82,11 @@ publicSnapshot.marketOutlook = {
       confidence,
       coverage,
       asOf,
-      indexAsOf
+      indexAsOf,
+      researchReferenceScore,
+      researchReferenceNote,
+      commercialDecision,
+      capacityFramework
     }))
 };
 
