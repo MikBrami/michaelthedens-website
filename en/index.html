@@ -97,7 +97,10 @@
     <section id="signals" class="section signals-section">
       <div class="section-heading">
         <div><p class="eyebrow">Selected Intelligence</p><h2>What MT·AI sees today</h2></div>
-        <p>A public selection from the MT·AI Intelligence Engine. The internal cockpit contains the full evidence base, forecast history and falsifiers.</p>
+        <div>
+          <p>A public selection from the MT·AI Intelligence Engine. The internal cockpit contains the full evidence base, forecast history and falsifiers.</p>
+          <p id="signal-freshness" class="eyebrow" role="status" aria-live="polite">Loading freshness …</p>
+        </div>
       </div>
       <div id="signal-grid" class="signal-grid" aria-live="polite">
         <article class="loading-card">Loading signals …</article>
@@ -145,6 +148,21 @@
     <p>© 2026 Michael Thedens</p>
   </footer>
 
+  <script>
+    fetch('/public-tail/data-en.json?v=' + Date.now(), { cache: 'no-store' })
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((snapshot) => {
+        const platform = snapshot.platform || {};
+        const el = document.getElementById('signal-freshness');
+        if (!el) return;
+        const date = platform.dataAsOf ? new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).format(new Date(platform.dataAsOf + 'T12:00:00')) : '–';
+        el.textContent = `Updated ${date} · ${platform.articleCount ?? '–'} sources in the current market view`;
+      })
+      .catch(() => {
+        const el = document.getElementById('signal-freshness');
+        if (el) el.textContent = 'Freshness status currently unavailable';
+      });
+  </script>
   <script src="/en/script.js" defer></script>
 </body>
 </html>
