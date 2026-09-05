@@ -67,6 +67,7 @@ function renderMarketOutlook(outlookInput) {
     const changeRules = Array.isArray(outlook.changeRules) ? outlook.changeRules : [];
     const watchSignals = Array.isArray(outlook.watchSignals) ? outlook.watchSignals : [];
     const status = ["red", "orange", "yellow", "green"].includes(outlook.currentStatus) ? outlook.currentStatus : "orange";
+    const researchAsOf = outlook.evidenceAsOf || outlook.asOf;
 
     return `
       <article class="outlook-card">
@@ -78,7 +79,8 @@ function renderMarketOutlook(outlookInput) {
             </div>
             <p class="outlook-view">${escapeHtml(outlook.view || "")}</p>
             <div class="outlook-meta">
-              <span>Datenstand ${escapeHtml(formatDate(outlook.asOf))}</span>
+              <span>Research-Stand ${escapeHtml(formatDate(researchAsOf))}</span>
+              ${outlook.indexAsOf ? `<span>Index-Stand ${escapeHtml(formatDate(outlook.indexAsOf))}</span>` : ""}
               <span>Confidence ${Number.isFinite(Number(outlook.confidence)) ? Number(outlook.confidence) : "–"}/100</span>
               <span>Abdeckung ${Number.isFinite(Number(outlook.coverage)) ? Number(outlook.coverage) : "–"}%</span>
             </div>
