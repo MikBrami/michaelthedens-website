@@ -5,9 +5,10 @@ import crypto from 'node:crypto';
 const root = path.resolve(process.cwd());
 const sourcePath = path.resolve(root, '..', 'public-tail', 'data.json');
 const outputPath = path.resolve(root, '..', 'public-tail', 'data-en.json');
+const outlookConfigPath = path.join(root, 'config', 'market-outlook-en.json');
 const tempPath = `${outputPath}.tmp`;
 const model = process.env.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini';
-const EDITORIAL_VERSION = 4;
+const EDITORIAL_VERSION = 5;
 
 const readJson = (filePath, fallback = null) => {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch { return fallback; }
@@ -18,7 +19,8 @@ const stableSource = (snapshot) => ({
   executivePulse: snapshot.executivePulse,
   signals: snapshot.signals,
   originalSignals: snapshot.originalSignals,
-  catalysts: snapshot.catalysts
+  catalysts: snapshot.catalysts,
+  marketOutlook: snapshot.marketOutlook
 });
 
 const sourceHash = (snapshot) => crypto
@@ -80,6 +82,40 @@ function validateEditorial(source, editorial) {
   });
 }
 
+function buildEnglishMarketOutlook(source) {
+  const config = readJson(outlookConfigPath);
+  const sourceOutlooks = source.marketOutlook?.outlooks || [];
+  if (!source.marketOutlook || !Array.isArray(sourceOutlooks)) return undefined;
+  if (!config || config.schemaVersion !== 1 || !Array.isArray(config.outlooks)) {
+    throw new Error('market-outlook-en.json missing or invalid');
+  }
+
+  const sourceById = new Map(sourceOutlooks.map((outlook) => [outlook.marketId, outlook]));
+  const translated = config.outlooks.map((outlook) => {
+    const live = sourceById.get(outlook.marketId);
+    if (!live) throw new Error(`English outlook references missing German market outlook: ${outlook.marketId}`);
+    const probabilityTotal = (outlook.scenarios || []).reduce((sum, scenario) => sum + Number(scenario.probability || 0), 0);
+    if (Math.abs(probabilityTotal - 100) > 0.0001) {
+      throw new Error(`English market outlook ${outlook.marketId} probabilities total ${probabilityTotal}, expected 100`);
+    }
+    return {
+      ...outlook,
+      currentScore: live.currentScore,
+      currentStatus: live.currentStatus,
+      confidence: live.confidence,
+      coverage: live.coverage,
+      asOf: live.asOf || outlook.evidenceAsOf,
+      indexAsOf: live.indexAsOf
+    };
+  });
+
+  return {
+    schemaVersion: config.schemaVersion,
+    updatedAt: config.updatedAt,
+    outlooks: translated
+  };
+}
+
 function buildSnapshot(source, editorial) {
   return {
     schemaVersion: source.schemaVersion,
@@ -112,7 +148,8 @@ function buildSnapshot(source, editorial) {
     catalysts: source.catalysts.map((catalyst, index) => ({
       ...catalyst,
       event: editorial.catalysts[index].event.trim()
-    }))
+    })),
+    marketOutlook: buildEnglishMarketOutlook(source)
   };
 }
 
@@ -130,6 +167,22 @@ function validateSnapshot(source, translated) {
   translated.catalysts.forEach((catalyst, index) => {
     if (catalyst.date !== source.catalysts[index].date) throw new Error(`English catalyst ${index + 1} changed its date`);
   });
+
+  if (source.marketOutlook?.outlooks?.length) {
+    if (translated.marketOutlook?.outlooks?.length !== source.marketOutlook.outlooks.length) {
+      throw new Error('English market outlook count differs from German master');
+    }
+    const sourceById = new Map(source.marketOutlook.outlooks.map((item) => [item.marketId, item]));
+    for (const item of translated.marketOutlook.outlooks) {
+      const original = sourceById.get(item.marketId);
+      if (!original) throw new Error(`Unexpected English market outlook: ${item.marketId}`);
+      if (item.currentScore !== original.currentScore || item.currentStatus !== original.currentStatus || item.indexAsOf !== original.indexAsOf) {
+        throw new Error(`English market outlook metrics differ for ${item.marketId}`);
+      }
+      const probabilityTotal = (item.scenarios || []).reduce((sum, scenario) => sum + Number(scenario.probability || 0), 0);
+      if (Math.abs(probabilityTotal - 100) > 0.0001) throw new Error(`English market outlook probabilities invalid for ${item.marketId}`);
+    }
+  }
 }
 
 const schema = {
@@ -259,7 +312,7 @@ async function main() {
     fs.writeFileSync(tempPath, JSON.stringify(translated, null, 2) + '\n');
     JSON.parse(fs.readFileSync(tempPath, 'utf8'));
     fs.renameSync(tempPath, outputPath);
-    console.log(`Built English public snapshot v${EDITORIAL_VERSION} from ${hash} with ${model}: ${translated.signals.length} signals, ${translated.catalysts.length} catalysts.`);
+    console.log(`Built English public snapshot v${EDITORIAL_VERSION} from ${hash} with ${model}: ${translated.signals.length} signals, ${translated.catalysts.length} catalysts, ${translated.marketOutlook?.outlooks?.length || 0} outlooks.`);
   } catch (error) {
     try { if (fs.existsSync(tempPath)) fs.unlinkSync(tempPath); } catch {}
     console.warn(`::warning::English editorial build failed; preserving last valid snapshot. ${error.message}`);
