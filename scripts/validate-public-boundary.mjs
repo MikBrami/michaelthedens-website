@@ -35,8 +35,17 @@ for (const key of Object.keys(publicData)) {
 }
 
 for (const forbiddenKey of ['predictions', 'falsifiers', 'auditTrail', 'runHistory', 'articles', 'forecasts', 'pipeline']) {
-  if (JSON.stringify(publicData).includes(`\"${forbiddenKey}\"`)) {
+  if (JSON.stringify(publicData).includes(`"${forbiddenKey}"`)) {
     throw new Error(`Private intelligence leaked into public snapshot: ${forbiddenKey}`);
+  }
+}
+
+if (publicData.marketOutlook) {
+  const outlooks = publicData.marketOutlook.outlooks;
+  if (!Array.isArray(outlooks)) throw new Error('Public marketOutlook.outlooks must be an array');
+  for (const outlook of outlooks) {
+    const total = (outlook.scenarios || []).reduce((sum, scenario) => sum + Number(scenario.probability || 0), 0);
+    if (Math.abs(total - 100) > 0.0001) throw new Error(`Public market outlook probabilities total ${total}, expected 100`);
   }
 }
 
