@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06T09:48:45.651Z",
+  "generatedAt": "2026-09-06T09:54:40.596Z",
   "editorial": {
     "version": 5,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "beb0ac007ffffa5579d40ff7",
+    "sourceHash": "5f6f4e100e0a85e752095915",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
@@ -17,69 +17,240 @@
     "markets": [
       {
         "id": "server_dram",
-        "label": "Server DRAM / RDIMM",
-        "score": 88,
+        "score": 82,
+        "baseScore": 82,
+        "freshShock": 0,
+        "freshShockSignalId": null,
+        "indicativeScore": 82,
+        "sufficientlyCovered": true,
         "status": "red",
-        "signals": 19
+        "signals": 19,
+        "articleSignals": 17,
+        "operationalSignals": 2,
+        "confidence": 84,
+        "coverage": 100,
+        "drivers": [
+          {
+            "id": "demand",
+            "label": "Nachfrage",
+            "score": 78,
+            "confidence": 90,
+            "evidenceCount": 5,
+            "pressure": 78,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "pricing",
+            "label": "Preisdynamik",
+            "score": 82,
+            "confidence": 95,
+            "evidenceCount": 2,
+            "pressure": 82,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "availability",
+            "label": "Verfügbarkeit / Allocation",
+            "score": 86,
+            "confidence": 73,
+            "evidenceCount": 5,
+            "pressure": 80,
+            "relief": 0,
+            "operationalFloor": 86,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "aiDemand",
+            "label": "AI-Nachfrage",
+            "score": 78,
+            "confidence": 90,
+            "evidenceCount": 3,
+            "pressure": 78,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          }
+        ],
+        "label": "Server DRAM / RDIMM"
       },
       {
         "id": "hbm",
-        "label": "HBM",
-        "score": 81,
+        "score": 75,
+        "baseScore": 75,
+        "freshShock": 0,
+        "freshShockSignalId": null,
+        "indicativeScore": 75,
+        "sufficientlyCovered": true,
         "status": "orange",
-        "signals": 30
+        "signals": 30,
+        "articleSignals": 30,
+        "operationalSignals": 0,
+        "confidence": 89,
+        "coverage": 100,
+        "drivers": [
+          {
+            "id": "demand",
+            "label": "Nachfrage",
+            "score": 80,
+            "confidence": 91,
+            "evidenceCount": 5,
+            "pressure": 80,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "pricing",
+            "label": "Preisdynamik",
+            "score": 69,
+            "confidence": 89,
+            "evidenceCount": 1,
+            "pressure": 69,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "availability",
+            "label": "Verfügbarkeit / Allocation",
+            "score": 72,
+            "confidence": 88,
+            "evidenceCount": 5,
+            "pressure": 72,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "aiDemand",
+            "label": "AI-Nachfrage",
+            "score": 80,
+            "confidence": 91,
+            "evidenceCount": 5,
+            "pressure": 80,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          }
+        ],
+        "label": "HBM"
       },
       {
         "id": "enterprise_ssd",
-        "label": "Enterprise SSD",
-        "score": 85,
+        "score": 82,
+        "baseScore": 82,
+        "freshShock": 0,
+        "freshShockSignalId": null,
+        "indicativeScore": 82,
+        "sufficientlyCovered": true,
         "status": "red",
-        "signals": 20
+        "signals": 20,
+        "articleSignals": 15,
+        "operationalSignals": 5,
+        "confidence": 77,
+        "coverage": 100,
+        "drivers": [
+          {
+            "id": "demand",
+            "label": "Nachfrage",
+            "score": 83,
+            "confidence": 87,
+            "evidenceCount": 5,
+            "pressure": 83,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "pricing",
+            "label": "Preisdynamik",
+            "score": 73,
+            "confidence": 83,
+            "evidenceCount": 3,
+            "pressure": 73,
+            "relief": 0,
+            "operationalFloor": 72,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "availability",
+            "label": "Verfügbarkeit / Allocation",
+            "score": 87,
+            "confidence": 63,
+            "evidenceCount": 5,
+            "pressure": 80,
+            "relief": 0,
+            "operationalFloor": 87,
+            "formula": "pressure - relief × reliefOffset"
+          },
+          {
+            "id": "aiDemand",
+            "label": "AI-Nachfrage",
+            "score": 79,
+            "confidence": 90,
+            "evidenceCount": 3,
+            "pressure": 79,
+            "relief": 0,
+            "operationalFloor": 0,
+            "formula": "pressure - relief × reliefOffset"
+          }
+        ],
+        "label": "Enterprise SSD"
       }
     ],
-    "sourceDataAsOf": "2026-08-28",
-    "analysisAsOf": "2026-09-06"
+    "analysisAsOf": "2026-09-06",
+    "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
-    "current": 85,
+    "current": 80,
     "previous": 80,
-    "status": "red",
-    "confidence": 88,
-    "riskPressure": 88,
+    "status": "orange",
+    "confidence": 83,
+    "riskPressure": 84,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Memory and AI infrastructure remain under high pressure. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check on 2026-09-06 confirmed a material change in the situation. New capacity and improved yields can relieve pressure, but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
+    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are among the most constrained components. The Daily Check on 2026-09-06 reviewed the news flow and found no newly confirmed material directional change. New capacity and improved yields can relieve pressure, but will reach the market only with a time lag. For buyers, supply security, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
       "date": "2026-09-06",
-      "title": "Nvidia to acquire Hugging Face – open-model ecosystem becomes a hardware hedge",
-      "summary": "According to a report in The Information cited by DigiTimes, Nvidia has agreed to acquire Hugging Face for US$12.9 billion. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud-based AI deployments. The report frames the transaction as a strategic response to increasing vertical integration by large closed‑model providers and hyperscalers that are developing their own AI accelerators.",
-      "analysis": "MT·AI views the transaction as a structural demand‑persistence factor: open models → Hugging Face → Nvidia‑optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is direct for AI infrastructure and indirectly positive for HBM, server DRAM and enterprise SSD. Because the acquisition does not create a new physical shortage or immediate price movement, it is index‑neutral and does not trigger a fresh shock.",
-      "score": 92,
-      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "title": "Micron plans to double HBM capacity to around 100,000 wafers per month – HBM4 share expected to rise sharply",
+      "summary": "Aktuelle Meldung von igor´sLAB: Micron plans to double HBM capacity to around 100,000 wafers per month – HBM4 share expected to rise sharply",
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand will directly affect available GPU systems and pricing in the AI infrastructure market.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "igor´sLAB",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcnB5dFEzMGc0ejR6Y1ZfemxRVFhXcHRFdzNUZkNBX2NEbkp0SjdfeU8tY0RReG1xel81SWdRQ0puMnlLdmEzTTJiVEw3ZlVtcVFVWW4yQ1A5M3dVV0pCT01jS29LRzRmS2x6Zm1tLTUycHlUZ0VjV2JBV0ZQOXFrZnltNWpaV1lGcWRmbG45c3JCN2ZQdnMxV0d3?oc=5",
+      "layer": "news"
     },
     {
-      "date": "2026-09-06",
-      "title": "Samsung brings LPDDR5X‑PIM closer to product maturity – a new path against the AI memory wall",
-      "summary": "At Hot Chips 2026 Samsung demonstrated LPDDR5X PIM on functioning silicon and reported internal Llama‑3.1‑8B measurements on an edge‑AI SoC. Runtime fell from 12.3 to 5.4 seconds, throughput rose from 27.0 to 81.3 tokens/s, and Samsung cites up to 614 GB/s internal PIM bandwidth versus 76.8 GB/s for conventional LPDDR5X. The results are internal measurements; the produced outputs differed and accuracy optimisation is ongoing.",
-      "analysis": "MT·AI assesses PIM as a plausible mid‑term mitigation path for the memory wall, not as a current substitute for HBM. For inference workloads below peak HBM bandwidth, local processing can raise effective performance and energy efficiency. In the short term PIM does not relieve pressure on HBM, server DRAM or enterprise SSD because customer adoption, volume and mass‑production timelines are lacking. More efficient inference may, via a Jevons effect, increase total AI workload demand and thus absolute memory demand even if the memory mix shifts.",
-      "score": 91,
-      "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
-      "url": null,
-      "layer": "accepted-signal"
+      "date": "2026-09-05",
+      "title": "'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
+      "summary": "Aktuelle Meldung von 헤럴드경제: 'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
+      "analysis": "The report is relevant for data-centre storage: it can affect prices, available capacities and procurement strategy for enterprise SSDs.",
+      "score": 86,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10M1BRcnJYdENXOFBLV3NoTmVlc1BpcDhHZGtvRGdvLXlib2hFTlYxX1BLXzExOUhjWjlJUzBKRHBzYTVnYngta01zWk8tYTBTTVAtWFA2RQ?oc=5",
+      "layer": "news"
     },
     {
-      "date": "2026-09-06",
-      "title": "Nvidia doubles revenue – AI demand broadens across two deployment channels",
-      "summary": "The two datacentre engines are rotating. In Q1 FY27, 94% of sequential datacentre growth came from ACIE; in Q2 FY27 that share was 59%. Two quarters earlier the contribution was reversed, with hyperscale dominant while ACIE declined. Nvidia also reclassified a customer from ACIE to Hyperscale and retroactively adjusted historical periods. For robust comparisons only the recast series should be used. Days sales outstanding rose from 45 to 60 days and concentration among top customers increased.",
-      "analysis": "Nvidia's Q2 FY27 supports a broad second deployment wave but not yet a fully independent second end‑customer demand wave. The key dynamic is rotation between hyperscale and ACIE alongside rising absolute volume. MT·AI will therefore place greater weight on combined absolute datacentre growth and the sequential dollar contributions of both segments rather than isolated segment growth rates. Demand breadth is treated as structurally positive, with a caveat on end‑customer concentration. The existing Fresh Shock remains a one‑off; this deeper decomposition does not trigger an additional index jump.",
-      "score": 99,
-      "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
-      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
-      "layer": "accepted-signal"
+      "date": "2026-09-05",
+      "title": "Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
+      "summary": "Aktuelle Meldung von Blockonomi: Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
+      "analysis": "The report is relevant for data-centre storage: it can affect prices, available capacities and procurement strategy for enterprise SSDs.",
+      "score": 86,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Blockonomi",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM005Z0tNNGxrdlFhUHNoV1UzZWxEekp5QWp0c19OekVZZjNkbThudUxQN1JER1pieEJPNnVwWUYybXEyZDl6M24wMHlpWndnQVpjUW9CUVR2UE84Y3VjRmtkcm1LVVlTZHZheV9UVDJkMnRTSFg0QmxfNHNjaVRxQ0k3aVNWaVFwZmQ4WUxxeUdEUmo4Z0NnYy1hNzk4NDYzWXVoTUhSUmliZGdQQmM5aEdhMA?oc=5",
+      "layer": "news"
     }
   ],
   "catalysts": [
@@ -97,11 +268,11 @@
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging remains a central AI supply‑chain bottleneck until at least H2 2027 despite the Chiayi expansion."
+      "event": "Forecast-Review: Advanced packaging remains a central AI supply-chain bottleneck at least through H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier review: AI asset‑backed financing reflexivity"
+      "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
     },
     {
       "date": "2027-03-31",
@@ -194,12 +365,12 @@
           "CSP CapEx and hardware commissioning"
         ],
         "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated event frequencies.",
-        "currentScore": 88,
+        "currentScore": 82,
         "currentStatus": "red",
-        "confidence": 90,
+        "confidence": 84,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-08-28"
+        "indexAsOf": "2026-09-06"
       },
       {
         "marketId": "enterprise_ssd",
@@ -299,12 +470,12 @@
           "QLC · Capacity"
         ],
         "methodologyNote": "Market-pressure index and price forecast remain separate. Scenario weights of 50/20/30 are HEURISTIC rather than statistically calibrated event frequencies. Missing data is not a relief signal; correlated evidence is not double-counted.",
-        "currentScore": 85,
+        "currentScore": 82,
         "currentStatus": "red",
-        "confidence": 84,
+        "confidence": 77,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-08-28"
+        "indexAsOf": "2026-09-06"
       }
     ]
   }
