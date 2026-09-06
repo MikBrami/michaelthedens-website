@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06T00:56:56.390Z",
+  "generatedAt": "2026-09-06T09:26:27.775Z",
   "editorial": {
     "version": 5,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "9c2d58883b1da9e79467fbf8",
+    "sourceHash": "50dbf658cdad4b43fc329a87",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
@@ -37,55 +37,49 @@
         "signals": 20
       }
     ],
-    "sourceDataAsOf": "2026-09-05",
+    "sourceDataAsOf": "2026-09-06",
     "analysisAsOf": "2026-09-06"
   },
   "executivePulse": {
     "current": 80,
     "previous": 80,
     "status": "orange",
-    "confidence": 84,
+    "confidence": 83,
     "riskPressure": 84,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check of 2026-09-06 reviewed eight current relevant reports; there is presently no confirmed material change in direction. New capacity and better yields can ease pressure, but will only reach the market with a time lag. For buyers, securing supply, alternative BOMs and early procurement remain critical."
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest segments. The Daily Check on 2026-09-06 confirmed a material change in conditions. New capacity and improved yields can provide relief but will reach the market with delay. For buyers, supply assurance, alternative BOMs and early procurement remain critical."
   },
   "signals": [
     {
-      "date": "2026-09-05",
-      "title": "'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
-      "summary": "Aktuelle Meldung von 헤럴드경제: 'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
-      "analysis": "The report is relevant to datacentre storage: it can affect prices, available capacities, or procurement strategy for enterprise SSDs.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "헤럴드경제",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10M1BRcnJYdENXOFBLV3NoTmVlc1BpcDhHZGtvRGdvLXlib2hFTlYxX1BLXzExOUhjWjlJUzBKRHBzYTVnYngta01zWk8tYTBTTVAtWFA2RQ?oc=5",
-      "layer": "news"
+      "date": "2026-09-06",
+      "title": "Nvidia to acquire Hugging Face — open-model ecosystem becomes a hardware hedge",
+      "summary": "According to a DigiTimes retelling of The Information, Nvidia has agreed to acquire Hugging Face for USD 12.9bn. Hugging Face is a central platform for open models, datasets, hardware optimisation and cloud-based AI deployments. The report frames the deal as a strategic response to increasing vertical integration by large closed-model providers and hyperscalers that are developing their own AI accelerators.",
+      "analysis": "MT·AI regards the transaction as a structural persistence factor for demand: Open models → Hugging Face → Nvidia‑optimised deployment → Nvidia compute → higher cloud and infrastructure utilisation. The effect is direct for AI infrastructure and indirectly positive for HBM, server DRAM and enterprise SSD. Because the acquisition does not create new physical scarcity or immediate price movement, it is index‑neutral and does not constitute a fresh shock.",
+      "score": 92,
+      "source": "DigiTimes / The Information – Nvidia-Hugging-Face acquisition report supplied for MT·AI review",
+      "url": null,
+      "layer": "accepted-signal"
     },
     {
-      "date": "2026-09-05",
-      "title": "Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
-      "summary": "Aktuelle Meldung von Blockonomi: Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
-      "analysis": "The report is relevant to datacentre storage: it can affect prices, available capacities, or procurement strategy for enterprise SSDs.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Blockonomi",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM005Z0tNNGxrdlFhUHNoV1UzZWxEekp5QWp0c19OekVZZjNkbThudUxQN1JER1pieEJPNnVwWUYybXEyZDl6M24wMHlpWndnQVpjUW9CUVR2UE84Y3VjRmtkcm1LVVlTZHZheV9UVDJkMnRTSFg0QmxfNHNjaVRxQ0k3aVNWaVFwZmQ4WUxxeUdEUmo4Z0NnYy1hNzk4NDYzWXVoTUhSUmliZGdQQmM5aEdhMA?oc=5",
-      "layer": "news"
+      "date": "2026-09-06",
+      "title": "Samsung brings LPDDR5X‑PIM closer to product readiness — a new path versus the AI Memory Wall",
+      "summary": "At Hot Chips 2026 Samsung demonstrated LPDDR5X‑PIM with functioning silicon and internal Llama‑3.1‑8B measurements on an edge‑AI SoC. Runtime fell from 12.3 to 5.4 seconds, throughput rose from 27.0 to 81.3 tokens/s, and Samsung cites up to 614 GB/s internal PIM bandwidth versus 76.8 GB/s for conventional LPDDR5X. The results are internal measurements; the produced outputs differed and accuracy optimisation is ongoing.",
+      "analysis": "MT·AI assesses PIM as a possible mid‑term mitigation of the memory wall, not as a current substitute for HBM. For inference workloads below peak HBM bandwidth, local processing can raise effective performance and energy efficiency. In the short term this provides no relief for HBM, server DRAM or enterprise SSD because customers, volume and mass‑production timelines are lacking. More efficient inference could, via a Jevons effect, increase total AI workload demand and thus absolute memory demand even if the memory mix shifts.",
+      "score": 91,
+      "source": "Samsung Hot Chips 2026 / Tom's Hardware / ZDNet Korea analysis supplied for MT·AI review",
+      "url": null,
+      "layer": "accepted-signal"
     },
     {
-      "date": "2026-09-05",
-      "title": "Kioxia Unveils NAND-Based CXL Module to Replace Some DRAM Demand",
-      "summary": "Kioxia Unveils NAND-Based CXL Module to Replace Some DRAM Demand Seoul Economic Daily",
-      "analysis": "The report is relevant to datacentre storage: it can affect prices, available capacities, or procurement strategy for enterprise SSDs.",
-      "score": 82,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Seoul Economic Daily",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZGp0SktBQmxhNEs0N3NTREpJSmFnSWdVRlB5VVFHS19yLUhTcDlvd1gxVG9SM0htaEE0alZ3N0JFY1g4a3NnYk0xa1J2QUw1N0JjV0lJY2hFS3RPWlE2RjFVUDhUTThEcmw1emd4WFhYakdOY0NZa01sdDk4Qnp3VzZudTd5ZHNTemFRNU5ScDIteFJ0YW0wcmpSSXlNMkRqM2VKQTdMZEc?oc=5",
-      "layer": "news"
+      "date": "2026-09-06",
+      "title": "Nvidia doubles revenue — AI demand broadens across two deployment channels",
+      "summary": "The two data‑centre engines are rotating. In Q1 FY27, 94% of the sequential data‑centre increase came from ACIE; in Q2 FY27 that share fell to 59%. Two quarters earlier the contribution was reversed, with hyperscale dominant while ACIE declined. Nvidia also reclassified a customer from ACIE to hyperscale in Q2 FY27 and restated prior periods. For reliable comparisons, only the recast series should be used. Days sales outstanding rose from 45 to 60 days and concentration among top customers increased.",
+      "analysis": "Nvidia’s Q2 FY27 confirms a broad second deployment wave, but not yet a fully independent second end‑customer demand wave. The key dynamic is rotation between hyperscale and ACIE alongside rising total volume. MT·AI will therefore give greater weight to combined absolute data‑centre growth and the sequential dollar contributions of both segments than to isolated segment growth rates. Demand breadth is structurally positive, but elevated end‑customer concentration is a material caveat. The existing Fresh Shock remains singular; this deeper decomposition does not trigger an additional index jump.",
+      "score": 99,
+      "source": "NVIDIA Investor Relations – Q2 FY27 Financial Results",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
+      "layer": "accepted-signal"
     }
   ],
   "catalysts": [
@@ -99,23 +93,23 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: review filing, valuation and access to capital"
+      "event": "Switch IPO: assess filing, valuation and access to capital"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging will remain a central AI supply‑chain bottleneck at least until H2 2027 despite the Chiayi expansion."
+      "event": "Forecast‑Review: Advanced packaging remains a central AI supply‑chain bottleneck until at least H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier review: AI asset-backed financing reflexivity"
+      "event": "Falsifier‑Review: AI asset‑backed financing reflexivity"
     },
     {
       "date": "2027-03-31",
-      "event": "Client Memory Demand Destruction"
+      "event": "Client memory demand destruction"
     },
     {
       "date": "2028-12-31",
-      "event": "Feynman / A16 Volume Production"
+      "event": "Feynman / A16 volume production"
     }
   ],
   "marketOutlook": {
@@ -202,10 +196,10 @@
         "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated event frequencies.",
         "currentScore": 82,
         "currentStatus": "red",
-        "confidence": 85,
+        "confidence": 84,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-05"
+        "indexAsOf": "2026-09-06"
       },
       {
         "marketId": "enterprise_ssd",
@@ -307,10 +301,10 @@
         "methodologyNote": "Market-pressure index and price forecast remain separate. Scenario weights of 50/20/30 are HEURISTIC rather than statistically calibrated event frequencies. Missing data is not a relief signal; correlated evidence is not double-counted.",
         "currentScore": 82,
         "currentStatus": "red",
-        "confidence": 78,
+        "confidence": 77,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-05"
+        "indexAsOf": "2026-09-06"
       }
     ]
   }
