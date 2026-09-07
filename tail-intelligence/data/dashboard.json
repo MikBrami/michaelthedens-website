@@ -2,14 +2,14 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-09-06",
+  "dataAsOf": "2026-09-07",
   "sourceDataAsOf": "2026-08-28",
-  "knowledgeBaseSyncedAt": "2026-09-06T00:56:24.425Z",
+  "knowledgeBaseSyncedAt": "2026-09-07T01:00:47.602Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 9,
-  "lastSuccessfulUpdate": "2026-09-06T19:09:59.195Z",
-  "lastForecastRun": "2026-09-06T19:09:59.195Z",
+  "evidenceAgeDays": 10,
+  "lastSuccessfulUpdate": "2026-09-07T01:00:48.505Z",
+  "lastForecastRun": "2026-09-07T01:00:48.505Z",
   "newlyProcessedArticles": 417,
   "totalArticles": 125,
   "articleCount": 125,
@@ -67,7 +67,7 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-06T19:09:50.736Z",
+    "updatedAt": "2026-09-07T01:00:37.955Z",
     "newItems": 417,
     "totalItems": 1000,
     "duplicateItems": 300,
@@ -81,7 +81,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "125 Artikel · Sync 2026-09-06 · jüngstes bestätigtes Signal 2026-08-28"
+        "detail": "125 Artikel · Sync 2026-09-07 · jüngstes bestätigtes Signal 2026-08-28"
       },
       {
         "id": "inbox",
@@ -103,10 +103,10 @@
       }
     ]
   },
-  "tailIndex": 80,
+  "tailIndex": 79,
   "indexStatus": "orange",
   "executivePulse": {
-    "current": 80,
+    "current": 79,
     "previous": 80,
     "status": "orange",
     "confidence": 83,
@@ -148,8 +148,8 @@
       {
         "id": "aiDemand",
         "name": "AI-Nachfrage",
-        "score": 79,
-        "absoluteSeverity": 79,
+        "score": 78,
+        "absoluteSeverity": 78,
         "delta": 0,
         "weight": 0.15,
         "coverage": 100,
@@ -200,7 +200,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 86,
-          "confidence": 73,
+          "confidence": 72,
           "evidenceCount": 5,
           "pressure": 80,
           "relief": 0,
@@ -223,26 +223,26 @@
     },
     {
       "id": "enterprise_ssd",
-      "score": 82,
-      "baseScore": 82,
+      "score": 81,
+      "baseScore": 81,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 82,
+      "indicativeScore": 81,
       "sufficientlyCovered": true,
-      "status": "red",
+      "status": "orange",
       "signals": 20,
       "articleSignals": 15,
       "operationalSignals": 5,
-      "confidence": 77,
+      "confidence": 76,
       "coverage": 100,
       "drivers": [
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 83,
+          "score": 82,
           "confidence": 87,
           "evidenceCount": 5,
-          "pressure": 83,
+          "pressure": 82,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -250,10 +250,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 73,
+          "score": 72,
           "confidence": 83,
           "evidenceCount": 3,
-          "pressure": 73,
+          "pressure": 72,
           "relief": 0,
           "operationalFloor": 72,
           "formula": "pressure - relief × reliefOffset"
@@ -262,7 +262,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 87,
-          "confidence": 63,
+          "confidence": 61,
           "evidenceCount": 5,
           "pressure": 80,
           "relief": 0,
@@ -272,10 +272,10 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 79,
+          "score": 78,
           "confidence": 90,
           "evidenceCount": 3,
-          "pressure": 79,
+          "pressure": 78,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -284,12 +284,74 @@
       "label": "Enterprise SSD"
     },
     {
-      "id": "hbm",
+      "id": "supply_chain",
       "score": 75,
       "baseScore": 75,
       "freshShock": 0,
       "freshShockSignalId": null,
       "indicativeScore": 75,
+      "sufficientlyCovered": true,
+      "status": "orange",
+      "signals": 33,
+      "articleSignals": 30,
+      "operationalSignals": 3,
+      "confidence": 61,
+      "coverage": 80,
+      "drivers": [
+        {
+          "id": "demand",
+          "label": "Nachfrage",
+          "score": 71,
+          "confidence": 84,
+          "evidenceCount": 2,
+          "pressure": 71,
+          "relief": 0,
+          "operationalFloor": 0,
+          "formula": "pressure - relief × reliefOffset"
+        },
+        {
+          "id": "pricing",
+          "label": "Preisdynamik",
+          "score": null,
+          "confidence": 0,
+          "evidenceCount": 0,
+          "pressure": 0,
+          "relief": 0,
+          "operationalFloor": 0,
+          "formula": "pressure - relief × reliefOffset"
+        },
+        {
+          "id": "availability",
+          "label": "Verfügbarkeit / Allocation",
+          "score": 78,
+          "confidence": 69,
+          "evidenceCount": 5,
+          "pressure": 69,
+          "relief": 0,
+          "operationalFloor": 78,
+          "formula": "pressure - relief × reliefOffset"
+        },
+        {
+          "id": "aiDemand",
+          "label": "AI-Nachfrage",
+          "score": 71,
+          "confidence": 84,
+          "evidenceCount": 2,
+          "pressure": 71,
+          "relief": 0,
+          "operationalFloor": 0,
+          "formula": "pressure - relief × reliefOffset"
+        }
+      ],
+      "label": "Supply Chain"
+    },
+    {
+      "id": "hbm",
+      "score": 74,
+      "baseScore": 74,
+      "freshShock": 0,
+      "freshShockSignalId": null,
+      "indicativeScore": 74,
       "sufficientlyCovered": true,
       "status": "orange",
       "signals": 30,
@@ -312,10 +374,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 69,
+          "score": 68,
           "confidence": 89,
           "evidenceCount": 1,
-          "pressure": 69,
+          "pressure": 68,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -323,10 +385,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 72,
+          "score": 71,
           "confidence": 88,
           "evidenceCount": 5,
-          "pressure": 72,
+          "pressure": 71,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -334,78 +396,16 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 80,
+          "score": 79,
           "confidence": 91,
           "evidenceCount": 5,
-          "pressure": 80,
+          "pressure": 79,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
         }
       ],
       "label": "HBM"
-    },
-    {
-      "id": "supply_chain",
-      "score": 75,
-      "baseScore": 75,
-      "freshShock": 0,
-      "freshShockSignalId": null,
-      "indicativeScore": 75,
-      "sufficientlyCovered": true,
-      "status": "orange",
-      "signals": 33,
-      "articleSignals": 30,
-      "operationalSignals": 3,
-      "confidence": 62,
-      "coverage": 80,
-      "drivers": [
-        {
-          "id": "demand",
-          "label": "Nachfrage",
-          "score": 72,
-          "confidence": 84,
-          "evidenceCount": 2,
-          "pressure": 72,
-          "relief": 0,
-          "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
-        },
-        {
-          "id": "pricing",
-          "label": "Preisdynamik",
-          "score": null,
-          "confidence": 0,
-          "evidenceCount": 0,
-          "pressure": 0,
-          "relief": 0,
-          "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
-        },
-        {
-          "id": "availability",
-          "label": "Verfügbarkeit / Allocation",
-          "score": 78,
-          "confidence": 70,
-          "evidenceCount": 5,
-          "pressure": 69,
-          "relief": 0,
-          "operationalFloor": 78,
-          "formula": "pressure - relief × reliefOffset"
-        },
-        {
-          "id": "aiDemand",
-          "label": "AI-Nachfrage",
-          "score": 72,
-          "confidence": 84,
-          "evidenceCount": 2,
-          "pressure": 72,
-          "relief": 0,
-          "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
-        }
-      ],
-      "label": "Supply Chain"
     },
     {
       "id": "ai_infrastructure",
@@ -487,10 +487,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 80,
+          "score": 79,
           "confidence": 91,
           "evidenceCount": 5,
-          "pressure": 80,
+          "pressure": 79,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -549,10 +549,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 80,
+          "score": 79,
           "confidence": 90,
           "evidenceCount": 2,
-          "pressure": 80,
+          "pressure": 79,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -605,7 +605,7 @@
       "signals": 1,
       "articleSignals": 0,
       "operationalSignals": 1,
-      "confidence": 13,
+      "confidence": 12,
       "coverage": 40,
       "drivers": [
         {
@@ -634,7 +634,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 21,
-          "confidence": 32,
+          "confidence": 30,
           "evidenceCount": 1,
           "pressure": 21,
           "relief": 0,
@@ -806,7 +806,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-06T19:09:59.195Z"
+      "lastUpdated": "2026-09-07T01:00:48.505Z"
     },
     {
       "id": "hbm",
@@ -892,7 +892,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-06T19:09:59.195Z"
+      "lastUpdated": "2026-09-07T01:00:48.505Z"
     },
     {
       "id": "nand",
@@ -960,7 +960,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-06T19:09:59.195Z"
+      "lastUpdated": "2026-09-07T01:00:48.505Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1031,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-06T19:09:59.195Z"
+      "lastUpdated": "2026-09-07T01:00:48.505Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,7 +1205,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-09-06T19:09:59.195Z"
+      "lastUpdated": "2026-09-07T01:00:48.505Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 85/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
@@ -1388,7 +1388,7 @@
         "confidence": 84,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-06"
+        "indexAsOf": "2026-09-07"
       },
       {
         "marketId": "enterprise_ssd",
@@ -1822,12 +1822,12 @@
         ],
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
         "public": true,
-        "currentScore": 82,
-        "currentStatus": "red",
-        "confidence": 77,
+        "currentScore": 81,
+        "currentStatus": "orange",
+        "confidence": 76,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-06"
+        "indexAsOf": "2026-09-07"
       }
     ]
   }

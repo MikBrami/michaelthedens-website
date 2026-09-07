@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06T19:10:45.705Z",
+  "generatedAt": "2026-09-07T01:01:28.591Z",
   "editorial": {
     "version": 5,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "8294607e4bacbb2d5db5ea9d",
+    "sourceHash": "06c37300c344bdddce13a33b",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
-    "dataAsOf": "2026-09-06",
+    "dataAsOf": "2026-09-07",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -56,7 +56,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 73,
+            "confidence": 72,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -79,11 +79,11 @@
       },
       {
         "id": "hbm",
-        "score": 75,
-        "baseScore": 75,
+        "score": 74,
+        "baseScore": 74,
         "freshShock": 0,
         "freshShockSignalId": null,
-        "indicativeScore": 75,
+        "indicativeScore": 74,
         "sufficientlyCovered": true,
         "status": "orange",
         "signals": 30,
@@ -106,10 +106,10 @@
           {
             "id": "pricing",
             "label": "Preisdynamik",
-            "score": 69,
+            "score": 68,
             "confidence": 89,
             "evidenceCount": 1,
-            "pressure": 69,
+            "pressure": 68,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -117,10 +117,10 @@
           {
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
-            "score": 72,
+            "score": 71,
             "confidence": 88,
             "evidenceCount": 5,
-            "pressure": 72,
+            "pressure": 71,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -128,10 +128,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 80,
+            "score": 79,
             "confidence": 91,
             "evidenceCount": 5,
-            "pressure": 80,
+            "pressure": 79,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -141,26 +141,26 @@
       },
       {
         "id": "enterprise_ssd",
-        "score": 82,
-        "baseScore": 82,
+        "score": 81,
+        "baseScore": 81,
         "freshShock": 0,
         "freshShockSignalId": null,
-        "indicativeScore": 82,
+        "indicativeScore": 81,
         "sufficientlyCovered": true,
-        "status": "red",
+        "status": "orange",
         "signals": 20,
         "articleSignals": 15,
         "operationalSignals": 5,
-        "confidence": 77,
+        "confidence": 76,
         "coverage": 100,
         "drivers": [
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 83,
+            "score": 82,
             "confidence": 87,
             "evidenceCount": 5,
-            "pressure": 83,
+            "pressure": 82,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -168,10 +168,10 @@
           {
             "id": "pricing",
             "label": "Preisdynamik",
-            "score": 73,
+            "score": 72,
             "confidence": 83,
             "evidenceCount": 3,
-            "pressure": 73,
+            "pressure": 72,
             "relief": 0,
             "operationalFloor": 72,
             "formula": "pressure - relief × reliefOffset"
@@ -180,7 +180,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 63,
+            "confidence": 61,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -190,10 +190,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 79,
+            "score": 78,
             "confidence": 90,
             "evidenceCount": 3,
-            "pressure": 79,
+            "pressure": 78,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -202,25 +202,37 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-06",
+    "analysisAsOf": "2026-09-07",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
-    "current": 80,
+    "current": 79,
     "previous": 80,
     "status": "orange",
     "confidence": 83,
     "riskPressure": 84,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check of 2026-09-06 reviewed the current news flow; it found no newly confirmed material directional change. New capacity and improved yields can relieve pressure but will reach the market only with delay. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
+    "interpretation": "The situation in memory and AI infrastructure remains tight. Server DRAM/RDIMM, HBM and enterprise SSDs are currently among the most constrained areas. The Daily Check of 2026-09-07 reviewed the current news flow; it does not identify any newly confirmed material change in direction. New capacity and improved yields can ease pressure, but will reach the market only with a time delay. For buyers, securing supply, alternative BOMs and early procurement remain critical."
   },
   "signals": [
     {
       "date": "2026-09-06",
+      "title": "Anthropic, OpenAI, Meta and Google All Shipped New AI Models in One Week",
+      "summary": "Aktuelle Meldung von Startup Fortune: Anthropic, OpenAI, Meta and Google All Shipped New AI Models in One Week",
+      "analysis": "The report alters the expansion trajectory of AI and datacentre infrastructure. More productive compute capacity will increase demand for server memory, enterprise storage, networking and power delivery.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Startup Fortune",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS2ZxWVRGaTFpd3Flclo5MlZGVVlZcEw2dzJ4eFZIc3BPR3l4WlhOU1A1N3luMnQxSU9taER4Q2Uxcmp6MElYNW1qaE5XUEpwOEQzQ2xzNWtiQ3ZiSFItQ0REMjBXcFBidnlDZFhEYkpBNDNKTzVXMEFEVHlHaEQ2M0ZKRUp5bHdyQVZYQ1lrb1YwMm13SjNMVmZ4WjZhWFU?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-06",
       "title": "Micron plans to double HBM capacity to around 100,000 wafers per month – HBM4 share expected to rise sharply",
       "summary": "Aktuelle Meldung von igor´sLAB: Micron plans to double HBM capacity to around 100,000 wafers per month – HBM4 share expected to rise sharply",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand will directly affect available GPU systems and pricing in the AI infrastructure market.",
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand directly affect available GPU systems and pricing in the AI infrastructure market.",
       "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
@@ -232,24 +244,12 @@
       "date": "2026-09-05",
       "title": "'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
       "summary": "Aktuelle Meldung von 헤럴드경제: 'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
-      "analysis": "The report is relevant to datacentre storage: it can change prices, available capacities or procurement strategy for enterprise SSDs.",
-      "score": 86,
+      "analysis": "The report is relevant for datacentre storage: it can change prices, available capacities or procurement strategies for enterprise SSDs.",
+      "score": 82,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "헤럴드경제",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10M1BRcnJYdENXOFBLV3NoTmVlc1BpcDhHZGtvRGdvLXlib2hFTlYxX1BLXzExOUhjWjlJUzBKRHBzYTVnYngta01zWk8tYTBTTVAtWFA2RQ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-05",
-      "title": "Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
-      "summary": "Aktuelle Meldung von Blockonomi: Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
-      "analysis": "The report is relevant to datacentre storage: it can change prices, available capacities or procurement strategy for enterprise SSDs.",
-      "score": 82,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Blockonomi",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM005Z0tNNGxrdlFhUHNoV1UzZWxEekp5QWp0c19OekVZZjNkbThudUxQN1JER1pieEJPNnVwWUYybXEyZDl6M24wMHlpWndnQVpjUW9CUVR2UE84Y3VjRmtkcm1LVVlTZHZheV9UVDJkMnRTSFg0QmxfNHNjaVRxQ0k3aVNWaVFwZmQ4WUxxeUdEUmo4Z0NnYy1hNzk4NDYzWXVoTUhSUmliZGdQQmM5aEdhMA?oc=5",
       "layer": "news"
     }
   ],
@@ -264,11 +264,11 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: review filing, valuation and access to capital"
+      "event": "Switch IPO: review filing, valuation and capital access"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging will remain a central AI supply-chain bottleneck until at least H2 2027 despite the Chiayi expansion."
+      "event": "Forecast review: Advanced packaging remains a central AI supply-chain bottleneck until at least H2 2027 despite Chiayi expansion."
     },
     {
       "date": "2026-11-05",
@@ -370,7 +370,7 @@
         "confidence": 84,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-06"
+        "indexAsOf": "2026-09-07"
       },
       {
         "marketId": "enterprise_ssd",
@@ -470,12 +470,12 @@
           "QLC · Capacity"
         ],
         "methodologyNote": "Market-pressure index and price forecast remain separate. Scenario weights of 50/20/30 are HEURISTIC rather than statistically calibrated event frequencies. Missing data is not a relief signal; correlated evidence is not double-counted.",
-        "currentScore": 82,
-        "currentStatus": "red",
-        "confidence": 77,
+        "currentScore": 81,
+        "currentStatus": "orange",
+        "confidence": 76,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-06"
+        "indexAsOf": "2026-09-07"
       }
     ]
   }

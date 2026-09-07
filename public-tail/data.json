@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06T19:09:59.196Z",
+  "generatedAt": "2026-09-07T01:00:48.506Z",
   "platform": {
-    "dataAsOf": "2026-09-06",
+    "dataAsOf": "2026-09-07",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -48,7 +48,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 73,
+            "confidence": 72,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -71,11 +71,11 @@
       },
       {
         "id": "hbm",
-        "score": 75,
-        "baseScore": 75,
+        "score": 74,
+        "baseScore": 74,
         "freshShock": 0,
         "freshShockSignalId": null,
-        "indicativeScore": 75,
+        "indicativeScore": 74,
         "sufficientlyCovered": true,
         "status": "orange",
         "signals": 30,
@@ -98,10 +98,10 @@
           {
             "id": "pricing",
             "label": "Preisdynamik",
-            "score": 69,
+            "score": 68,
             "confidence": 89,
             "evidenceCount": 1,
-            "pressure": 69,
+            "pressure": 68,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -109,10 +109,10 @@
           {
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
-            "score": 72,
+            "score": 71,
             "confidence": 88,
             "evidenceCount": 5,
-            "pressure": 72,
+            "pressure": 71,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -120,10 +120,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 80,
+            "score": 79,
             "confidence": 91,
             "evidenceCount": 5,
-            "pressure": 80,
+            "pressure": 79,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -133,26 +133,26 @@
       },
       {
         "id": "enterprise_ssd",
-        "score": 82,
-        "baseScore": 82,
+        "score": 81,
+        "baseScore": 81,
         "freshShock": 0,
         "freshShockSignalId": null,
-        "indicativeScore": 82,
+        "indicativeScore": 81,
         "sufficientlyCovered": true,
-        "status": "red",
+        "status": "orange",
         "signals": 20,
         "articleSignals": 15,
         "operationalSignals": 5,
-        "confidence": 77,
+        "confidence": 76,
         "coverage": 100,
         "drivers": [
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 83,
+            "score": 82,
             "confidence": 87,
             "evidenceCount": 5,
-            "pressure": 83,
+            "pressure": 82,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -160,10 +160,10 @@
           {
             "id": "pricing",
             "label": "Preisdynamik",
-            "score": 73,
+            "score": 72,
             "confidence": 83,
             "evidenceCount": 3,
-            "pressure": 73,
+            "pressure": 72,
             "relief": 0,
             "operationalFloor": 72,
             "formula": "pressure - relief × reliefOffset"
@@ -172,7 +172,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 63,
+            "confidence": 61,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -182,10 +182,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 79,
+            "score": 78,
             "confidence": 90,
             "evidenceCount": 3,
-            "pressure": 79,
+            "pressure": 78,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -194,24 +194,36 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-06",
+    "analysisAsOf": "2026-09-07",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
-    "current": 80,
+    "current": 79,
     "previous": 80,
     "status": "orange",
     "confidence": 83,
     "riskPressure": 84,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-06 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-07 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-06",
-      "title": "Micron will HBM-Kapazität auf rund 100.000 Wafer pro Monat verdoppeln – Anteil von HBM4 soll deutlich steigen",
-      "summary": "Aktuelle Meldung von igor'sLAB: Micron plant, die HBM-Kapazität auf rund 100.000 Wafer pro Monat zu verdoppeln; der Anteil von HBM4 soll deutlich steigen.",
+      "title": "Anthropic, OpenAI, Meta und Google lieferten innerhalb einer Woche neue AI‑Modelle aus",
+      "summary": "Anthropic, OpenAI, Meta und Google haben innerhalb einer Woche neue AI‑Modelle ausgeliefert.",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Startup Fortune",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS2ZxWVRGaTFpd3Flclo5MlZGVVlZcEw2dzJ4eFZIc3BPR3l4WlhOU1A1N3luMnQxSU9taER4Q2Uxcmp6MElYNW1qaE5XUEpwOEQzQ2xzNWtiQ3ZiSFItQ0REMjBXcFBidnlDZFhEYkpBNDNKTzVXMEFEVHlHaEQ2M0ZKRUp5bHdyQVZYQ1lrb1YwMm13SjNMVmZ4WjZhWFU?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-06",
+      "title": "Micron will HBM‑Kapazität auf rund 100.000 Wafer pro Monat verdoppeln – HBM4‑Anteil soll deutlich steigen",
+      "summary": "Micron plant, die HBM‑Produktion auf etwa 100.000 Wafer pro Monat zu verdoppeln; der Anteil von HBM4 dürfte deutlich zunehmen.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 86,
       "relevanceScore": 100,
@@ -222,26 +234,14 @@
     },
     {
       "date": "2026-09-05",
-      "title": "'Werden K-Chips den Weg von LCD gehen?' — CXMT nutzt Apples Ambitionen, um Samsung und SK hynix herauszufordern",
-      "summary": "Aktuelle Meldung von 헤럴드경제: CXMT setzt auf Apples Ambitionen, um Samsung und SK hynix herauszufordern; die Frage lautet, ob K-Chips dasselbe Schicksal wie LCD nehmen werden.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "헤럴드경제",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10M1BRcnJYdENXOFBLV3NoTmVlc1BpcDhHZGtvRGdvLXlib2hFTlYxX1BLXzExOUhjWjlJUzBKRHBzYTVnYngta01zWk8tYTBTTVAtWFA2RQ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-05",
-      "title": "Speicherhersteller Micron (MU), SanDisk und SK hynix legen zu wegen Angebotsknappheit und AI-Nachfrage",
-      "summary": "Aktuelle Meldung von Blockonomi: Micron (MU), SanDisk und SK hynix verzeichnen Kursgewinne angesichts von Angebotsknappheit und steigender AI-Nachfrage.",
+      "title": "'Werden K‑Chips dem Schicksal der LCDs folgen?' — CXMT nutzt Apples Ambitionen, um Samsung und SK hynix herauszufordern",
+      "summary": "CXMT setzt auf Apples Ambitionen, um Samsung und SK hynix herauszufordern und wirft die Frage auf, ob K‑Chips dem Schicksal der LCDs folgen könnten.",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 82,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Blockonomi",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM005Z0tNNGxrdlFhUHNoV1UzZWxEekp5QWp0c19OekVZZjNkbThudUxQN1JER1pieEJPNnVwWUYybXEyZDl6M24wMHlpWndnQVpjUW9CUVR2UE84Y3VjRmtkcm1LVVlTZHZheV9UVDJkMnRTSFg0QmxfNHNjaVRxQ0k3aVNWaVFwZmQ4WUxxeUdEUmo4Z0NnYy1hNzk4NDYzWXVoTUhSUmliZGdQQmM5aEdhMA?oc=5",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10M1BRcnJYdENXOFBLV3NoTmVlc1BpcDhHZGtvRGdvLXlib2hFTlYxX1BLXzExOUhjWjlJUzBKRHBzYTVnYngta01zWk8tYTBTTVAtWFA2RQ?oc=5",
       "layer": "news"
     }
   ],
@@ -276,13 +276,25 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "type": "no-material-change",
     "title": "Keine bestätigte materielle Richtungsänderung",
     "impactScore": 0,
     "note": "Der aktuelle News-Layer wurde geprüft; ältere Accepted Signals bleiben im Modell erhalten, werden aber nicht als heutige Meldungen erneut ausgegeben."
   },
   "news": [
+    {
+      "date": "2026-09-06",
+      "title": "Anthropic, OpenAI, Meta and Google All Shipped New AI Models in One Week",
+      "summary": "Aktuelle Meldung von Startup Fortune: Anthropic, OpenAI, Meta and Google All Shipped New AI Models in One Week",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Startup Fortune",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS2ZxWVRGaTFpd3Flclo5MlZGVVlZcEw2dzJ4eFZIc3BPR3l4WlhOU1A1N3luMnQxSU9taER4Q2Uxcmp6MElYNW1qaE5XUEpwOEQzQ2xzNWtiQ3ZiSFItQ0REMjBXcFBidnlDZFhEYkpBNDNKTzVXMEFEVHlHaEQ2M0ZKRUp5bHdyQVZYQ1lrb1YwMm13SjNMVmZ4WjZhWFU?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-06",
       "title": "Micron plans to double HBM capacity to around 100,000 wafers per month – HBM4 share expected to rise sharply",
@@ -300,30 +312,18 @@
       "title": "'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
       "summary": "Aktuelle Meldung von 헤럴드경제: 'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
+      "score": 82,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "헤럴드경제",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10M1BRcnJYdENXOFBLV3NoTmVlc1BpcDhHZGtvRGdvLXlib2hFTlYxX1BLXzExOUhjWjlJUzBKRHBzYTVnYngta01zWk8tYTBTTVAtWFA2RQ?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-05",
-      "title": "Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
-      "summary": "Aktuelle Meldung von Blockonomi: Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 82,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Blockonomi",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM005Z0tNNGxrdlFhUHNoV1UzZWxEekp5QWp0c19OekVZZjNkbThudUxQN1JER1pieEJPNnVwWUYybXEyZDl6M24wMHlpWndnQVpjUW9CUVR2UE84Y3VjRmtkcm1LVVlTZHZheV9UVDJkMnRTSFg0QmxfNHNjaVRxQ0k3aVNWaVFwZmQ4WUxxeUdEUmo4Z0NnYy1hNzk4NDYzWXVoTUhSUmliZGdQQmM5aEdhMA?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-06T19:09:59.429Z",
+    "generatedAt": "2026-09-07T01:00:48.712Z",
     "count": 3,
-    "candidateCount": 10,
+    "candidateCount": 12,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -416,7 +416,7 @@
         "confidence": 84,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-06"
+        "indexAsOf": "2026-09-07"
       },
       {
         "marketId": "enterprise_ssd",
@@ -511,12 +511,12 @@
           "Kundenbestand, Stornos und RFQ-Conversion"
         ],
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
-        "currentScore": 82,
-        "currentStatus": "red",
-        "confidence": 77,
+        "currentScore": 81,
+        "currentStatus": "orange",
+        "confidence": 76,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-06",
+        "indexAsOf": "2026-09-07",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -538,6 +538,18 @@
   "originalSignals": [
     {
       "date": "2026-09-06",
+      "title": "Anthropic, OpenAI, Meta and Google All Shipped New AI Models in One Week",
+      "summary": "Aktuelle Meldung von Startup Fortune: Anthropic, OpenAI, Meta and Google All Shipped New AI Models in One Week",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Startup Fortune",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS2ZxWVRGaTFpd3Flclo5MlZGVVlZcEw2dzJ4eFZIc3BPR3l4WlhOU1A1N3luMnQxSU9taER4Q2Uxcmp6MElYNW1qaE5XUEpwOEQzQ2xzNWtiQ3ZiSFItQ0REMjBXcFBidnlDZFhEYkpBNDNKTzVXMEFEVHlHaEQ2M0ZKRUp5bHdyQVZYQ1lrb1YwMm13SjNMVmZ4WjZhWFU?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-06",
       "title": "Micron plans to double HBM capacity to around 100,000 wafers per month – HBM4 share expected to rise sharply",
       "summary": "Aktuelle Meldung von igor´sLAB: Micron plans to double HBM capacity to around 100,000 wafers per month – HBM4 share expected to rise sharply",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
@@ -553,23 +565,11 @@
       "title": "'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
       "summary": "Aktuelle Meldung von 헤럴드경제: 'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
+      "score": 82,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "헤럴드경제",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10M1BRcnJYdENXOFBLV3NoTmVlc1BpcDhHZGtvRGdvLXlib2hFTlYxX1BLXzExOUhjWjlJUzBKRHBzYTVnYngta01zWk8tYTBTTVAtWFA2RQ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-05",
-      "title": "Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
-      "summary": "Aktuelle Meldung von Blockonomi: Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 82,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Blockonomi",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM005Z0tNNGxrdlFhUHNoV1UzZWxEekp5QWp0c19OekVZZjNkbThudUxQN1JER1pieEJPNnVwWUYybXEyZDl6M24wMHlpWndnQVpjUW9CUVR2UE84Y3VjRmtkcm1LVVlTZHZheV9UVDJkMnRTSFg0QmxfNHNjaVRxQ0k3aVNWaVFwZmQ4WUxxeUdEUmo4Z0NnYy1hNzk4NDYzWXVoTUhSUmliZGdQQmM5aEdhMA?oc=5",
       "layer": "news"
     }
   ],
@@ -578,7 +578,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-06T19:10:24.188Z"
+      "generatedAt": "2026-09-07T01:01:04.262Z"
     }
   }
 }
