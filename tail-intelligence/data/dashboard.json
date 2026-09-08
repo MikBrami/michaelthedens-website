@@ -8,12 +8,12 @@
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 11,
-  "lastSuccessfulUpdate": "2026-09-08T01:12:15.050Z",
-  "lastForecastRun": "2026-09-08T01:12:15.050Z",
-  "newlyProcessedArticles": 438,
+  "lastSuccessfulUpdate": "2026-09-08T09:41:08.949Z",
+  "lastForecastRun": "2026-09-08T09:41:08.949Z",
+  "newlyProcessedArticles": 29,
   "totalArticles": 125,
   "articleCount": 125,
-  "processStatus": "ok",
+  "processStatus": "warning",
   "methodology": {
     "version": "3.1",
     "status": "warning",
@@ -64,18 +64,49 @@
     "memoryRawShare": 24.4
   },
   "error": null,
-  "warnings": [],
+  "warnings": [
+    "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
+  ],
   "inbox": {
-    "status": "ok",
-    "updatedAt": "2026-09-08T01:12:07.002Z",
-    "newItems": 438,
+    "status": "warning",
+    "updatedAt": "2026-09-08T09:40:12.388Z",
+    "newItems": 29,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
-    "sourceErrors": []
+    "sourceErrors": [
+      {
+        "source": "micron-news",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-memory-storage",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-equipment-foundry",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-packaging-capacity",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-ai-compute",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-datacenter-power",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-geopolitics-supply",
+        "message": "HTTP 503"
+      }
+    ]
   },
   "pipeline": {
-    "status": "ok",
+    "status": "warning",
     "steps": [
       {
         "id": "knowledge_base",
@@ -86,8 +117,8 @@
       {
         "id": "inbox",
         "label": "TAIL Inbox",
-        "status": "ok",
-        "detail": "1000 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "status": "warning",
+        "detail": "1000 Inbox-Items · 300 Duplikate · 7 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -806,7 +837,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-08T01:12:15.049Z"
+      "lastUpdated": "2026-09-08T09:41:08.949Z"
     },
     {
       "id": "hbm",
@@ -892,7 +923,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-08T01:12:15.049Z"
+      "lastUpdated": "2026-09-08T09:41:08.949Z"
     },
     {
       "id": "nand",
@@ -960,7 +991,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-08T01:12:15.049Z"
+      "lastUpdated": "2026-09-08T09:41:08.949Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1062,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-08T01:12:15.049Z"
+      "lastUpdated": "2026-09-08T09:41:08.949Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,7 +1236,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-09-08T01:12:15.050Z"
+      "lastUpdated": "2026-09-08T09:41:08.949Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 85/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
