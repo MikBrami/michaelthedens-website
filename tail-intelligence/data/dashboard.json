@@ -2,15 +2,15 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-09-07",
+  "dataAsOf": "2026-09-08",
   "sourceDataAsOf": "2026-08-28",
-  "knowledgeBaseSyncedAt": "2026-09-07T01:00:47.602Z",
+  "knowledgeBaseSyncedAt": "2026-09-08T01:12:14.367Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 10,
-  "lastSuccessfulUpdate": "2026-09-07T20:33:58.381Z",
-  "lastForecastRun": "2026-09-07T20:33:58.381Z",
-  "newlyProcessedArticles": 439,
+  "evidenceAgeDays": 11,
+  "lastSuccessfulUpdate": "2026-09-08T01:12:15.050Z",
+  "lastForecastRun": "2026-09-08T01:12:15.050Z",
+  "newlyProcessedArticles": 438,
   "totalArticles": 125,
   "articleCount": 125,
   "processStatus": "ok",
@@ -67,8 +67,8 @@
   "warnings": [],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-07T20:33:47.814Z",
-    "newItems": 439,
+    "updatedAt": "2026-09-08T01:12:07.002Z",
+    "newItems": 438,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
@@ -81,7 +81,7 @@
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "125 Artikel · Sync 2026-09-07 · jüngstes bestätigtes Signal 2026-08-28"
+        "detail": "125 Artikel · Sync 2026-09-08 · jüngstes bestätigtes Signal 2026-08-28"
       },
       {
         "id": "inbox",
@@ -110,7 +110,7 @@
     "previous": 79,
     "status": "orange",
     "confidence": 83,
-    "riskPressure": 84,
+    "riskPressure": 83,
     "riskFormula": "60% critical segment peak + 40% critical availability peak",
     "coverage": 100,
     "methodologyVersion": "1.3",
@@ -118,8 +118,8 @@
       {
         "id": "demand",
         "name": "Nachfrage",
-        "score": 80,
-        "absoluteSeverity": 80,
+        "score": 79,
+        "absoluteSeverity": 79,
         "delta": 0,
         "weight": 0.25,
         "coverage": 100,
@@ -128,8 +128,8 @@
       {
         "id": "pricing",
         "name": "Preisdynamik",
-        "score": 75,
-        "absoluteSeverity": 75,
+        "score": 74,
+        "absoluteSeverity": 74,
         "delta": 0,
         "weight": 0.2,
         "coverage": 100,
@@ -161,26 +161,26 @@
   "markets": [
     {
       "id": "server_dram",
-      "score": 82,
-      "baseScore": 82,
+      "score": 81,
+      "baseScore": 81,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 82,
+      "indicativeScore": 81,
       "sufficientlyCovered": true,
-      "status": "red",
+      "status": "orange",
       "signals": 19,
       "articleSignals": 17,
       "operationalSignals": 2,
-      "confidence": 84,
+      "confidence": 83,
       "coverage": 100,
       "drivers": [
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 78,
+          "score": 77,
           "confidence": 90,
           "evidenceCount": 5,
-          "pressure": 78,
+          "pressure": 77,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -188,10 +188,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 82,
+          "score": 81,
           "confidence": 95,
           "evidenceCount": 2,
-          "pressure": 82,
+          "pressure": 81,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -200,7 +200,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 86,
-          "confidence": 72,
+          "confidence": 71,
           "evidenceCount": 5,
           "pressure": 80,
           "relief": 0,
@@ -210,10 +210,10 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 78,
+          "score": 77,
           "confidence": 90,
           "evidenceCount": 3,
-          "pressure": 78,
+          "pressure": 77,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -262,7 +262,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 87,
-          "confidence": 61,
+          "confidence": 60,
           "evidenceCount": 5,
           "pressure": 80,
           "relief": 0,
@@ -324,7 +324,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 78,
-          "confidence": 69,
+          "confidence": 68,
           "evidenceCount": 5,
           "pressure": 69,
           "relief": 0,
@@ -436,10 +436,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 65,
+          "score": 64,
           "confidence": 82,
           "evidenceCount": 3,
-          "pressure": 65,
+          "pressure": 64,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -447,10 +447,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 67,
+          "score": 66,
           "confidence": 85,
           "evidenceCount": 5,
-          "pressure": 67,
+          "pressure": 66,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -533,11 +533,11 @@
     },
     {
       "id": "nand",
-      "score": 66,
-      "baseScore": 66,
+      "score": 65,
+      "baseScore": 65,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 66,
+      "indicativeScore": 65,
       "sufficientlyCovered": true,
       "status": "orange",
       "signals": 13,
@@ -582,10 +582,10 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 80,
+          "score": 79,
           "confidence": 90,
           "evidenceCount": 1,
-          "pressure": 80,
+          "pressure": 79,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "pressure - relief × reliefOffset"
@@ -634,7 +634,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 21,
-          "confidence": 30,
+          "confidence": 29,
           "evidenceCount": 1,
           "pressure": 21,
           "relief": 0,
@@ -806,7 +806,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-07T20:33:58.381Z"
+      "lastUpdated": "2026-09-08T01:12:15.049Z"
     },
     {
       "id": "hbm",
@@ -892,7 +892,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-07T20:33:58.381Z"
+      "lastUpdated": "2026-09-08T01:12:15.049Z"
     },
     {
       "id": "nand",
@@ -960,7 +960,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-07T20:33:58.381Z"
+      "lastUpdated": "2026-09-08T01:12:15.049Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1031,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-07T20:33:58.381Z"
+      "lastUpdated": "2026-09-08T01:12:15.049Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,7 +1205,7 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-09-07T20:33:58.381Z"
+      "lastUpdated": "2026-09-08T01:12:15.050Z"
     }
   ],
   "executiveSummary": "TAIL steht auf 85/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
@@ -1383,12 +1383,12 @@
         ],
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
         "public": true,
-        "currentScore": 82,
-        "currentStatus": "red",
-        "confidence": 84,
+        "currentScore": 81,
+        "currentStatus": "orange",
+        "confidence": 83,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-07"
+        "indexAsOf": "2026-09-08"
       },
       {
         "marketId": "enterprise_ssd",
@@ -1827,7 +1827,7 @@
         "confidence": 76,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-07"
+        "indexAsOf": "2026-09-08"
       }
     ]
   }

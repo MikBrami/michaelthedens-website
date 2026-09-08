@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-07T20:34:36.375Z",
+  "generatedAt": "2026-09-08T01:12:54.154Z",
   "editorial": {
     "version": 5,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "19f826b84c3c2fe372219b44",
+    "sourceHash": "beda025f1c769e5855f9a040",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
-    "dataAsOf": "2026-09-07",
+    "dataAsOf": "2026-09-08",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
     "markets": [
       {
         "id": "server_dram",
-        "score": 82,
-        "baseScore": 82,
+        "score": 81,
+        "baseScore": 81,
         "freshShock": 0,
         "freshShockSignalId": null,
-        "indicativeScore": 82,
+        "indicativeScore": 81,
         "sufficientlyCovered": true,
-        "status": "red",
+        "status": "orange",
         "signals": 19,
         "articleSignals": 17,
         "operationalSignals": 2,
-        "confidence": 84,
+        "confidence": 83,
         "coverage": 100,
         "drivers": [
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 78,
+            "score": 77,
             "confidence": 90,
             "evidenceCount": 5,
-            "pressure": 78,
+            "pressure": 77,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -44,10 +44,10 @@
           {
             "id": "pricing",
             "label": "Preisdynamik",
-            "score": 82,
+            "score": 81,
             "confidence": 95,
             "evidenceCount": 2,
-            "pressure": 82,
+            "pressure": 81,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -56,7 +56,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 72,
+            "confidence": 71,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -66,10 +66,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 78,
+            "score": 77,
             "confidence": 90,
             "evidenceCount": 3,
-            "pressure": 78,
+            "pressure": 77,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -180,7 +180,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 61,
+            "confidence": 60,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -202,7 +202,7 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-07",
+    "analysisAsOf": "2026-09-08",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
@@ -210,17 +210,17 @@
     "previous": 79,
     "status": "orange",
     "confidence": 83,
-    "riskPressure": 84,
+    "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest segments. The Daily Check on 2026-09-07 reviewed the current news flow; it finds no newly confirmed material change in direction. New capacities and improved yields could provide relief, but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain critical."
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM, and enterprise SSDs are currently among the most constrained areas. The Daily Check of 2026-09-08 reviewed the current news flow and found no newly confirmed material directional change. New capacity and improved yields could relieve pressure, but will reach the market only with a delay. For buyers, securing supply, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
       "date": "2026-09-07",
       "title": "[News] Apple Said to Have Signed NAND LTA with Kioxia Seen as Likely Partner; Foldable iPhone Memory Suppliers in Focus",
       "summary": "Aktuelle Meldung von TrendForce: [News] Apple Said to Have Signed NAND LTA with Kioxia Seen as Likely Partner; Foldable iPhone Memory Suppliers in Focus",
-      "analysis": "This report is relevant for datacentre storage: it could affect prices, available capacities and procurement strategies for enterprise SSDs.",
+      "analysis": "The report is relevant for datacentre storage: it can affect prices, available capacity or procurement strategy for enterprise SSDs.",
       "score": 95,
       "relevanceScore": 100,
       "sourceQuality": 15,
@@ -230,26 +230,26 @@
     },
     {
       "date": "2026-09-07",
-      "title": "HBM4 squeezes DRAM supply as Samsung, SK Hynix inventories fall below 10 days",
-      "summary": "Aktuelle Meldung von digitimes: HBM4 squeezes DRAM supply as Samsung, SK Hynix inventories fall below 10 days",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand feed directly into available GPU systems and pricing across the AI infrastructure market.",
-      "score": 94,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaVNPd3RyWkcwa01DellWM1pMZFRzZ2dGOWQ1XzlzRVhDWTk0QS1fOUhmOXVSZ3oyQXMyejktN3Jjc0VGc2c3OEkwaEk5M0s1Ti1hRnpqTktUTjU2Y0NEUXl4eFFFakxRY1dPTS1iaE9RazhfYzBibE8zd21uWElpN2hMTW1VMTh3MGtzaw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-07",
       "title": "Apple Reportedly Signs NAND LTA Agreement, Kioxia May Be Candidate",
       "summary": "Apple Reportedly Signs NAND LTA Agreement, Kioxia May Be Candidate tradingkey.com",
-      "analysis": "This report is relevant for datacentre storage: it could affect prices, available capacities and procurement strategies for enterprise SSDs.",
+      "analysis": "The report is relevant for datacentre storage: it can affect prices, available capacity or procurement strategy for enterprise SSDs.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "tradingkey.com",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNm9RX0o3VnFYOVJKOEhYU0NsX0hFTURtRXI3OUpjVTFwMm03RHUwY19nSzFSY1NJUWY2VXRFa3VweHM3NC1SUFhPOUVHdmlSNlVFYXZQV1NMb1JJVTliMk02SkE5c3ltbGktbW5PbHdldkNDOEtZQUotQU9sdEt5bGUxbThlcWtkTThnYjFucUphRVZrOVRGZjUyY25YMVNTemN4eHo3RDVBSnpnT0pGcGF4RVNBUHhGM05TSm81dldacTlRQ1N5X3hCV3g1U1NWUTYtbXpUYzZqMUp6bkRiSXktR2EzN29OcUtvMnZrOUNvZVk?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Samsung's DRAM Share Nears 40%... Micron Closes Gap with SK Hynix to 1.6 Percentage Points",
+      "summary": "Samsung's DRAM Share Nears 40%... Micron Closes Gap with SK Hynix to 1.6 Percentage Points finance.biggo.com",
+      "analysis": "The report is relevant for datacentre storage: it can affect prices, available capacity or procurement strategy for enterprise SSDs.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HVXBLS0l3dEt0ekd5N2RwZ1ViMTgzZ2hRd29fZUJScTRmZ0c5VGxyQUxHMkZyb3BpNVliLVdEcWpiQXo5V1JHRUlibkYxNEZzX3FyUC1UQTBTYm1XRS1lS1hwU3BaVGsyQlVHRU5VV3pRM3d6SkE?oc=5",
       "layer": "news"
     }
   ],
@@ -268,11 +268,11 @@
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast-Review: Advanced packaging remains a central AI supply-chain bottleneck at least until H2 2027 despite Chiayi expansion."
+      "event": "Forecast-Review: Advanced packaging remains a central AI supply-chain constraint until at least H2 2027 despite Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier Review: AI asset-backed financing reflexivity"
+      "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
     },
     {
       "date": "2027-03-31",
@@ -365,12 +365,12 @@
           "CSP CapEx and hardware commissioning"
         ],
         "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated event frequencies.",
-        "currentScore": 82,
-        "currentStatus": "red",
-        "confidence": 84,
+        "currentScore": 81,
+        "currentStatus": "orange",
+        "confidence": 83,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-07"
+        "indexAsOf": "2026-09-08"
       },
       {
         "marketId": "enterprise_ssd",
@@ -475,7 +475,7 @@
         "confidence": 76,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-07"
+        "indexAsOf": "2026-09-08"
       }
     ]
   }

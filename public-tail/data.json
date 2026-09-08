@@ -1,34 +1,34 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-07T20:33:58.381Z",
+  "generatedAt": "2026-09-08T01:12:15.050Z",
   "platform": {
-    "dataAsOf": "2026-09-07",
+    "dataAsOf": "2026-09-08",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
     "markets": [
       {
         "id": "server_dram",
-        "score": 82,
-        "baseScore": 82,
+        "score": 81,
+        "baseScore": 81,
         "freshShock": 0,
         "freshShockSignalId": null,
-        "indicativeScore": 82,
+        "indicativeScore": 81,
         "sufficientlyCovered": true,
-        "status": "red",
+        "status": "orange",
         "signals": 19,
         "articleSignals": 17,
         "operationalSignals": 2,
-        "confidence": 84,
+        "confidence": 83,
         "coverage": 100,
         "drivers": [
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 78,
+            "score": 77,
             "confidence": 90,
             "evidenceCount": 5,
-            "pressure": 78,
+            "pressure": 77,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -36,10 +36,10 @@
           {
             "id": "pricing",
             "label": "Preisdynamik",
-            "score": 82,
+            "score": 81,
             "confidence": 95,
             "evidenceCount": 2,
-            "pressure": 82,
+            "pressure": 81,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -48,7 +48,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 72,
+            "confidence": 71,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -58,10 +58,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 78,
+            "score": 77,
             "confidence": 90,
             "evidenceCount": 3,
-            "pressure": 78,
+            "pressure": 77,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -172,7 +172,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 61,
+            "confidence": 60,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -194,7 +194,7 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-07",
+    "analysisAsOf": "2026-09-08",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
@@ -202,16 +202,16 @@
     "previous": 79,
     "status": "orange",
     "confidence": 83,
-    "riskPressure": 84,
+    "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-07 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-08 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-07",
-      "title": "Apple soll NAND‑LTA mit Kioxia unterzeichnet haben; Speicherlieferanten für faltbares iPhone im Fokus",
-      "summary": "TrendForce berichtet, Apple habe offenbar eine NAND‑LTA unterzeichnet und Kioxia gilt als möglicher Partner. Zugleich rücken Speicherlieferanten für ein geplantes faltbares iPhone in den Fokus.",
+      "title": "Apple soll NAND-LTA mit Kioxia unterzeichnet haben; Speicherlieferanten für faltbares iPhone im Fokus",
+      "summary": "TrendForce berichtet, Apple habe offenbar eine langfristige NAND-Liefervereinbarung (LTA) unterzeichnet. Kioxia gilt als möglicher Partner; zugleich rücken Zulieferer für das Memory des faltbaren iPhone in den Blick.",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 95,
       "relevanceScore": 100,
@@ -222,26 +222,26 @@
     },
     {
       "date": "2026-09-07",
-      "title": "HBM4 verknappt DRAM‑Angebot – Bestände von Samsung und SK Hynix unter 10 Tagen",
-      "summary": "digitimes berichtet, dass die Nachfrage nach HBM4 das DRAM‑Angebot einschnürt und die Lagerbestände von Samsung und SK Hynix auf unter 10 Tage gefallen sein sollen.",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 94,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaVNPd3RyWkcwa01DellWM1pMZFRzZ2dGOWQ1XzlzRVhDWTk0QS1fOUhmOXVSZ3oyQXMyejktN3Jjc0VGc2c3OEkwaEk5M0s1Ti1hRnpqTktUTjU2Y0NEUXl4eFFFakxRY1dPTS1iaE9RazhfYzBibE8zd21uWElpN2hMTW1VMTh3MGtzaw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-07",
-      "title": "Apple soll NAND‑LTA unterzeichnet haben – Kioxia als möglicher Kandidat",
-      "summary": "TradingKey meldet, Apple habe angeblich eine NAND‑LTA abgeschlossen; Kioxia werde als möglicher Kandidat genannt.",
+      "title": "Apple soll NAND-LTA abgeschlossen haben — Kioxia als möglicher Partner",
+      "summary": "Laut tradingkey.com habe Apple eine langfristige NAND-Liefervereinbarung (LTA) abgeschlossen; Kioxia wird als möglicher Partner genannt.",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "tradingkey.com",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNm9RX0o3VnFYOVJKOEhYU0NsX0hFTURtRXI3OUpjVTFwMm03RHUwY19nSzFSY1NJUWY2VXRFa3VweHM3NC1SUFhPOUVHdmlSNlVFYXZQV1NMb1JJVTliMk02SkE5c3ltbGktbW5PbHdldkNDOEtZQUotQU9sdEt5bGUxbThlcWtkTThnYjFucUphRVZrOVRGZjUyY25YMVNTemN4eHo3RDVBSnpnT0pGcGF4RVNBUHhGM05TSm81dldacTlRQ1N5X3hCV3g1U1NWUTYtbXpUYzZqMUp6bkRiSXktR2EzN29OcUtvMnZrOUNvZVk?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Samsungs DRAM-Anteil nähert sich 40% — Micron verkleinert Rückstand zu SK Hynix auf 1,6 Prozentpunkte",
+      "summary": "Laut finance.biggo.com liegt Samsungs Marktanteil bei DRAM nahe 40%. Micron habe den Abstand zu SK Hynix auf 1,6 Prozentpunkte verringert.",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HVXBLS0l3dEt0ekd5N2RwZ1ViMTgzZ2hRd29fZUJScTRmZ0c5VGxyQUxHMkZyb3BpNVliLVdEcWpiQXo5V1JHRUlibkYxNEZzX3FyUC1UQTBTYm1XRS1lS1hwU3BaVGsyQlVHRU5VV3pRM3d6SkE?oc=5",
       "layer": "news"
     }
   ],
@@ -276,7 +276,7 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-07",
+    "date": "2026-09-08",
     "type": "no-material-change",
     "title": "Keine bestätigte materielle Richtungsänderung",
     "impactScore": 0,
@@ -297,18 +297,6 @@
     },
     {
       "date": "2026-09-07",
-      "title": "HBM4 squeezes DRAM supply as Samsung, SK Hynix inventories fall below 10 days",
-      "summary": "Aktuelle Meldung von digitimes: HBM4 squeezes DRAM supply as Samsung, SK Hynix inventories fall below 10 days",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 94,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaVNPd3RyWkcwa01DellWM1pMZFRzZ2dGOWQ1XzlzRVhDWTk0QS1fOUhmOXVSZ3oyQXMyejktN3Jjc0VGc2c3OEkwaEk5M0s1Ti1hRnpqTktUTjU2Y0NEUXl4eFFFakxRY1dPTS1iaE9RazhfYzBibE8zd21uWElpN2hMTW1VMTh3MGtzaw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-07",
       "title": "Apple Reportedly Signs NAND LTA Agreement, Kioxia May Be Candidate",
       "summary": "Apple Reportedly Signs NAND LTA Agreement, Kioxia May Be Candidate tradingkey.com",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
@@ -318,12 +306,24 @@
       "source": "tradingkey.com",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNm9RX0o3VnFYOVJKOEhYU0NsX0hFTURtRXI3OUpjVTFwMm03RHUwY19nSzFSY1NJUWY2VXRFa3VweHM3NC1SUFhPOUVHdmlSNlVFYXZQV1NMb1JJVTliMk02SkE5c3ltbGktbW5PbHdldkNDOEtZQUotQU9sdEt5bGUxbThlcWtkTThnYjFucUphRVZrOVRGZjUyY25YMVNTemN4eHo3RDVBSnpnT0pGcGF4RVNBUHhGM05TSm81dldacTlRQ1N5X3hCV3g1U1NWUTYtbXpUYzZqMUp6bkRiSXktR2EzN29OcUtvMnZrOUNvZVk?oc=5",
       "layer": "news"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Samsung's DRAM Share Nears 40%... Micron Closes Gap with SK Hynix to 1.6 Percentage Points",
+      "summary": "Samsung's DRAM Share Nears 40%... Micron Closes Gap with SK Hynix to 1.6 Percentage Points finance.biggo.com",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HVXBLS0l3dEt0ekd5N2RwZ1ViMTgzZ2hRd29fZUJScTRmZ0c5VGxyQUxHMkZyb3BpNVliLVdEcWpiQXo5V1JHRUlibkYxNEZzX3FyUC1UQTBTYm1XRS1lS1hwU3BaVGsyQlVHRU5VV3pRM3d6SkE?oc=5",
+      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-07T20:33:58.533Z",
+    "generatedAt": "2026-09-08T01:12:15.212Z",
     "count": 3,
-    "candidateCount": 42,
+    "candidateCount": 45,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -411,12 +411,12 @@
           "CSP-CapEx und Hardware-Inbetriebnahme"
         ],
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
-        "currentScore": 82,
-        "currentStatus": "red",
-        "confidence": 84,
+        "currentScore": 81,
+        "currentStatus": "orange",
+        "confidence": 83,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-07"
+        "indexAsOf": "2026-09-08"
       },
       {
         "marketId": "enterprise_ssd",
@@ -516,7 +516,7 @@
         "confidence": 76,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-07",
+        "indexAsOf": "2026-09-08",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -550,18 +550,6 @@
     },
     {
       "date": "2026-09-07",
-      "title": "HBM4 squeezes DRAM supply as Samsung, SK Hynix inventories fall below 10 days",
-      "summary": "Aktuelle Meldung von digitimes: HBM4 squeezes DRAM supply as Samsung, SK Hynix inventories fall below 10 days",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 94,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaVNPd3RyWkcwa01DellWM1pMZFRzZ2dGOWQ1XzlzRVhDWTk0QS1fOUhmOXVSZ3oyQXMyejktN3Jjc0VGc2c3OEkwaEk5M0s1Ti1hRnpqTktUTjU2Y0NEUXl4eFFFakxRY1dPTS1iaE9RazhfYzBibE8zd21uWElpN2hMTW1VMTh3MGtzaw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-07",
       "title": "Apple Reportedly Signs NAND LTA Agreement, Kioxia May Be Candidate",
       "summary": "Apple Reportedly Signs NAND LTA Agreement, Kioxia May Be Candidate tradingkey.com",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
@@ -571,6 +559,18 @@
       "source": "tradingkey.com",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNm9RX0o3VnFYOVJKOEhYU0NsX0hFTURtRXI3OUpjVTFwMm03RHUwY19nSzFSY1NJUWY2VXRFa3VweHM3NC1SUFhPOUVHdmlSNlVFYXZQV1NMb1JJVTliMk02SkE5c3ltbGktbW5PbHdldkNDOEtZQUotQU9sdEt5bGUxbThlcWtkTThnYjFucUphRVZrOVRGZjUyY25YMVNTemN4eHo3RDVBSnpnT0pGcGF4RVNBUHhGM05TSm81dldacTlRQ1N5X3hCV3g1U1NWUTYtbXpUYzZqMUp6bkRiSXktR2EzN29OcUtvMnZrOUNvZVk?oc=5",
       "layer": "news"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Samsung's DRAM Share Nears 40%... Micron Closes Gap with SK Hynix to 1.6 Percentage Points",
+      "summary": "Samsung's DRAM Share Nears 40%... Micron Closes Gap with SK Hynix to 1.6 Percentage Points finance.biggo.com",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HVXBLS0l3dEt0ekd5N2RwZ1ViMTgzZ2hRd29fZUJScTRmZ0c5VGxyQUxHMkZyb3BpNVliLVdEcWpiQXo5V1JHRUlibkYxNEZzX3FyUC1UQTBTYm1XRS1lS1hwU3BaVGsyQlVHRU5VV3pRM3d6SkE?oc=5",
+      "layer": "news"
     }
   ],
   "editorial": {
@@ -578,7 +578,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-07T20:34:17.118Z"
+      "generatedAt": "2026-09-08T01:12:35.006Z"
     }
   }
 }
