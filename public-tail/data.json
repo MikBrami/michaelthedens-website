@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-09T19:45:35.464Z",
+  "generatedAt": "2026-09-10T01:03:50.251Z",
   "platform": {
-    "dataAsOf": "2026-09-09",
+    "dataAsOf": "2026-09-10",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -48,7 +48,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 70,
+            "confidence": 69,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -71,11 +71,11 @@
       },
       {
         "id": "hbm",
-        "score": 74,
-        "baseScore": 74,
+        "score": 73,
+        "baseScore": 73,
         "freshShock": 0,
         "freshShockSignalId": null,
-        "indicativeScore": 74,
+        "indicativeScore": 73,
         "sufficientlyCovered": true,
         "status": "orange",
         "signals": 30,
@@ -109,10 +109,10 @@
           {
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
-            "score": 71,
+            "score": 70,
             "confidence": 88,
             "evidenceCount": 5,
-            "pressure": 71,
+            "pressure": 70,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -120,10 +120,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 79,
+            "score": 78,
             "confidence": 91,
             "evidenceCount": 5,
-            "pressure": 79,
+            "pressure": 78,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -143,14 +143,14 @@
         "signals": 20,
         "articleSignals": 15,
         "operationalSignals": 5,
-        "confidence": 75,
+        "confidence": 74,
         "coverage": 100,
         "drivers": [
           {
             "id": "demand",
             "label": "Nachfrage",
             "score": 82,
-            "confidence": 87,
+            "confidence": 86,
             "evidenceCount": 5,
             "pressure": 82,
             "relief": 0,
@@ -172,7 +172,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 59,
+            "confidence": 57,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -182,10 +182,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 78,
+            "score": 77,
             "confidence": 90,
             "evidenceCount": 3,
-            "pressure": 78,
+            "pressure": 77,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -194,7 +194,7 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-09",
+    "analysisAsOf": "2026-09-10",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
@@ -205,13 +205,25 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-09 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-10 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
+      "date": "2026-09-10",
+      "title": "NVIDIA baut AI‑Infrastruktur in Kooperation mit australischem Rechenzentrumsumfeld aus",
+      "summary": "NVIDIA kündigt Zusammenarbeit mit einem wachsenden Netzwerk australischer NVIDIA Cloud Partners (NCPs) und AI‑Infrastrukturpartner an, um Flächen-, Energie- und Shell‑Kapazitäten für mehrere Generationen von NVIDIA DSX™ AI factories zu erweitern — mit einem Ausbau von bis zu 2 Gigawatt bis 2027.",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 96,
+      "relevanceScore": 91,
+      "sourceQuality": 15,
+      "source": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-09",
-      "title": "Kioxia dementiert Gespräche mit SK hynix über gemeinsame Produktion, fordert stabile NAND‑Preise zur Sicherung von AI‑Investitionen",
-      "summary": "TrendForce: Kioxia weist Berichte über Gespräche mit SK hynix zur gemeinsamen Produktion zurück und betont, stabile NAND‑Preise seien nötig, um AI‑Investitionen nachhaltig zu finanzieren.",
+      "title": "Kioxia dementiert Gespräche mit SK hynix über gemeinsame Produktion, fordert stabile NAND‑Preise",
+      "summary": "Laut TrendForce dementiert Kioxia Gespräche über eine gemeinsame Produktion mit SK hynix und verlangt stabile NAND‑Preise, um AI‑Investitionen zu erhalten.",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 95,
       "relevanceScore": 100,
@@ -222,26 +234,14 @@
     },
     {
       "date": "2026-09-09",
-      "title": "Samsung setzt in Japan auf Packaging‑Vorteil, verringert HBM‑Abstand zu SK hynix",
-      "summary": "Digitimes: Samsung sucht in Japan Kapazitäten und Know‑how im Packaging, um den HBM‑Rückstand gegenüber SK hynix zu verkleinern.",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 94,
+      "title": "Rennen bis 2028: Samsung und SK hynix legen High‑NA EUV‑Zeitpläne für DRAM fest, Micron bleibt vage",
+      "summary": "Laut TrendForce geben Samsung und SK hynix Zeitpläne für den Einsatz von High‑NA EUV bei DRAM mit Blick auf 2028 vor, während Micron sich bedeckt hält.",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 95,
       "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLUtJdmhMbEdkX3drVDg2cFMtRHVoRE9ITVE4aEloT1lhMzBoU2lYaThTXzY5b3d2MFQ5Vmo2blVxZkVwUWZ5LTN1bFBRUm03ME5xN2NsTHRlRVY0M25URkp2ZFNZRzZ2ZE4tajJ5VkFyNGN6TTY3c0syeE1JVjdFTWNCdVlJdHp1bzJmTld2V3RiVW9ENWc?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "Nvidia und Meta treiben Nachfrage nach HBM — SK hynix im Fokus, ETFs könnten profitieren",
-      "summary": "Benzinga: Nvidia und Meta erhöhen die Nachfrage nach HBM; SK hynix steht als Profiteur im Blick der Anleger, bestimmte ETFs könnten davon profitieren.",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZGR5dDVoX3VqbS15VU95MU5USlk2cDgyQlJTR1lzczJyaFd4WW9kdVU1Um9MRV9za0g3RGJ3Tk14X3E3MlNYdHBjNGwxRENnVklIN04wTkh4RlB4YWNEWmZFV2h3eERFN1A4TDRVNmkwYkhTTFJxUFlFcjdOTnAwWF9TN3lDX0RqdFZfcUo0OW9YdmQ0eUlrUy1qR2hLVXdWRTFwRjN0T0dkUHNhUDNON0E0RTBXU3duaU15U2ZBcFkzTXY1amozRkxqUGxia25nS1lUYjZlMA?oc=5",
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTU1MNjNFZEt0UlFjY3NDYm13b3pzVUJaWllTNDNrelJDbE1sRUpTTWVId0EyeGVFMHFmM0puTC1oalU3Q183bnhJVFAtREIyWWU3TGd1Ukp2SjIwMU9zeU1jNGZzZ0lBV01IbGtBYVhNYWphZldaS0RaMDBsNHVHdEQzY1RzYjBXc0tmY2w4eEpaMGdiNXd2SWxHWFVtV1c0RmFEeWY0VVNVWjF6a3E4cGRQT2Zlczl2RlBvd25YV3dMUmZRdDJrWDAtU3Zra3NlcXVySDFiRWM1bjZpelVr?oc=5",
       "layer": "news"
     }
   ],
@@ -276,13 +276,25 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "type": "no-material-change",
     "title": "Keine bestätigte materielle Richtungsänderung",
     "impactScore": 0,
     "note": "Der aktuelle News-Layer wurde geprüft; ältere Accepted Signals bleiben im Modell erhalten, werden aber nicht als heutige Meldungen erneut ausgegeben."
   },
   "news": [
+    {
+      "date": "2026-09-10",
+      "title": "NVIDIA Expands AI Infrastructure Capacity in Partnership With Australia’s Data Center Ecosystem",
+      "summary": "NVIDIA today announced that it is collaborating with a growing ecosystem of Australian NVIDIA Cloud Partners (NCPs) and AI infrastructure partners to expand land, power and shell capacity designed to host multiple generations of NVIDIA DSX™ AI factories, supporting the nation’s growing demand for AI compute — with up to a 2-gigawatt buildout by 2027.",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 96,
+      "relevanceScore": 91,
+      "sourceQuality": 15,
+      "source": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+      "layer": "news"
+    },
     {
       "date": "2026-09-09",
       "title": "[News] Kioxia Denies SK hynix Joint Production Talks, Seeks NAND Price Stability to Sustain AI Investment",
@@ -297,33 +309,21 @@
     },
     {
       "date": "2026-09-09",
-      "title": "Samsung turns to Japan for packaging edge, narrows HBM gap with SK Hynix",
-      "summary": "Aktuelle Meldung von digitimes: Samsung turns to Japan for packaging edge, narrows HBM gap with SK Hynix",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 94,
+      "title": "[News] The Race to 2028: Samsung, SK hynix Set High-NA EUV Timelines for DRAM as Micron Stays Tight-Lipped",
+      "summary": "Aktuelle Meldung von TrendForce: [News] The Race to 2028: Samsung, SK hynix Set High-NA EUV Timelines for DRAM as Micron Stays Tight-Lipped",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 95,
       "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLUtJdmhMbEdkX3drVDg2cFMtRHVoRE9ITVE4aEloT1lhMzBoU2lYaThTXzY5b3d2MFQ5Vmo2blVxZkVwUWZ5LTN1bFBRUm03ME5xN2NsTHRlRVY0M25URkp2ZFNZRzZ2ZE4tajJ5VkFyNGN6TTY3c0syeE1JVjdFTWNCdVlJdHp1bzJmTld2V3RiVW9ENWc?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "Nvidia and Meta Are Hungry for HBM. SK Hynix Is on the Menu — These ETFs Could Cash In",
-      "summary": "Aktuelle Meldung von Benzinga: Nvidia and Meta Are Hungry for HBM. SK Hynix Is on the Menu — These ETFs Could Cash In",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZGR5dDVoX3VqbS15VU95MU5USlk2cDgyQlJTR1lzczJyaFd4WW9kdVU1Um9MRV9za0g3RGJ3Tk14X3E3MlNYdHBjNGwxRENnVklIN04wTkh4RlB4YWNEWmZFV2h3eERFN1A4TDRVNmkwYkhTTFJxUFlFcjdOTnAwWF9TN3lDX0RqdFZfcUo0OW9YdmQ0eUlrUy1qR2hLVXdWRTFwRjN0T0dkUHNhUDNON0E0RTBXU3duaU15U2ZBcFkzTXY1amozRkxqUGxia25nS1lUYjZlMA?oc=5",
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTU1MNjNFZEt0UlFjY3NDYm13b3pzVUJaWllTNDNrelJDbE1sRUpTTWVId0EyeGVFMHFmM0puTC1oalU3Q183bnhJVFAtREIyWWU3TGd1Ukp2SjIwMU9zeU1jNGZzZ0lBV01IbGtBYVhNYWphZldaS0RaMDBsNHVHdEQzY1RzYjBXc0tmY2w4eEpaMGdiNXd2SWxHWFVtV1c0RmFEeWY0VVNVWjF6a3E4cGRQT2Zlczl2RlBvd25YV3dMUmZRdDJrWDAtU3Zra3NlcXVySDFiRWM1bjZpelVr?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-09T19:45:35.601Z",
+    "generatedAt": "2026-09-10T01:03:50.461Z",
     "count": 3,
-    "candidateCount": 59,
+    "candidateCount": 42,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -416,7 +416,7 @@
         "confidence": 83,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-09"
+        "indexAsOf": "2026-09-10"
       },
       {
         "marketId": "enterprise_ssd",
@@ -513,10 +513,10 @@
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
         "currentScore": 81,
         "currentStatus": "orange",
-        "confidence": 75,
+        "confidence": 74,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-09",
+        "indexAsOf": "2026-09-10",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -537,6 +537,18 @@
   },
   "originalSignals": [
     {
+      "date": "2026-09-10",
+      "title": "NVIDIA Expands AI Infrastructure Capacity in Partnership With Australia’s Data Center Ecosystem",
+      "summary": "NVIDIA today announced that it is collaborating with a growing ecosystem of Australian NVIDIA Cloud Partners (NCPs) and AI infrastructure partners to expand land, power and shell capacity designed to host multiple generations of NVIDIA DSX™ AI factories, supporting the nation’s growing demand for AI compute — with up to a 2-gigawatt buildout by 2027.",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 96,
+      "relevanceScore": 91,
+      "sourceQuality": 15,
+      "source": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-09",
       "title": "[News] Kioxia Denies SK hynix Joint Production Talks, Seeks NAND Price Stability to Sustain AI Investment",
       "summary": "Aktuelle Meldung von TrendForce: [News] Kioxia Denies SK hynix Joint Production Talks, Seeks NAND Price Stability to Sustain AI Investment",
@@ -550,26 +562,14 @@
     },
     {
       "date": "2026-09-09",
-      "title": "Samsung turns to Japan for packaging edge, narrows HBM gap with SK Hynix",
-      "summary": "Aktuelle Meldung von digitimes: Samsung turns to Japan for packaging edge, narrows HBM gap with SK Hynix",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 94,
+      "title": "[News] The Race to 2028: Samsung, SK hynix Set High-NA EUV Timelines for DRAM as Micron Stays Tight-Lipped",
+      "summary": "Aktuelle Meldung von TrendForce: [News] The Race to 2028: Samsung, SK hynix Set High-NA EUV Timelines for DRAM as Micron Stays Tight-Lipped",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 95,
       "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLUtJdmhMbEdkX3drVDg2cFMtRHVoRE9ITVE4aEloT1lhMzBoU2lYaThTXzY5b3d2MFQ5Vmo2blVxZkVwUWZ5LTN1bFBRUm03ME5xN2NsTHRlRVY0M25URkp2ZFNZRzZ2ZE4tajJ5VkFyNGN6TTY3c0syeE1JVjdFTWNCdVlJdHp1bzJmTld2V3RiVW9ENWc?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "Nvidia and Meta Are Hungry for HBM. SK Hynix Is on the Menu — These ETFs Could Cash In",
-      "summary": "Aktuelle Meldung von Benzinga: Nvidia and Meta Are Hungry for HBM. SK Hynix Is on the Menu — These ETFs Could Cash In",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZGR5dDVoX3VqbS15VU95MU5USlk2cDgyQlJTR1lzczJyaFd4WW9kdVU1Um9MRV9za0g3RGJ3Tk14X3E3MlNYdHBjNGwxRENnVklIN04wTkh4RlB4YWNEWmZFV2h3eERFN1A4TDRVNmkwYkhTTFJxUFlFcjdOTnAwWF9TN3lDX0RqdFZfcUo0OW9YdmQ0eUlrUy1qR2hLVXdWRTFwRjN0T0dkUHNhUDNON0E0RTBXU3duaU15U2ZBcFkzTXY1amozRkxqUGxia25nS1lUYjZlMA?oc=5",
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTU1MNjNFZEt0UlFjY3NDYm13b3pzVUJaWllTNDNrelJDbE1sRUpTTWVId0EyeGVFMHFmM0puTC1oalU3Q183bnhJVFAtREIyWWU3TGd1Ukp2SjIwMU9zeU1jNGZzZ0lBV01IbGtBYVhNYWphZldaS0RaMDBsNHVHdEQzY1RzYjBXc0tmY2w4eEpaMGdiNXd2SWxHWFVtV1c0RmFEeWY0VVNVWjF6a3E4cGRQT2Zlczl2RlBvd25YV3dMUmZRdDJrWDAtU3Zra3NlcXVySDFiRWM1bjZpelVr?oc=5",
       "layer": "news"
     }
   ],
@@ -578,7 +578,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-09T19:45:50.773Z"
+      "generatedAt": "2026-09-10T01:04:08.084Z"
     }
   }
 }
