@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-10T19:41:06.523Z",
+  "generatedAt": "2026-09-11T01:04:32.270Z",
   "platform": {
-    "dataAsOf": "2026-09-10",
+    "dataAsOf": "2026-09-11",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -19,16 +19,16 @@
         "signals": 19,
         "articleSignals": 17,
         "operationalSignals": 2,
-        "confidence": 83,
+        "confidence": 82,
         "coverage": 100,
         "drivers": [
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 77,
+            "score": 76,
             "confidence": 90,
             "evidenceCount": 5,
-            "pressure": 77,
+            "pressure": 76,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -36,10 +36,10 @@
           {
             "id": "pricing",
             "label": "Preisdynamik",
-            "score": 81,
+            "score": 80,
             "confidence": 95,
             "evidenceCount": 2,
-            "pressure": 81,
+            "pressure": 80,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -48,7 +48,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 69,
+            "confidence": 68,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -58,10 +58,10 @@
           {
             "id": "aiDemand",
             "label": "AI-Nachfrage",
-            "score": 77,
+            "score": 76,
             "confidence": 90,
             "evidenceCount": 3,
-            "pressure": 77,
+            "pressure": 76,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -98,10 +98,10 @@
           {
             "id": "pricing",
             "label": "Preisdynamik",
-            "score": 68,
+            "score": 67,
             "confidence": 89,
             "evidenceCount": 1,
-            "pressure": 68,
+            "pressure": 67,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -172,9 +172,9 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 57,
+            "confidence": 56,
             "evidenceCount": 5,
-            "pressure": 80,
+            "pressure": 79,
             "relief": 0,
             "operationalFloor": 87,
             "formula": "pressure - relief × reliefOffset"
@@ -194,7 +194,7 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-10",
+    "analysisAsOf": "2026-09-11",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
@@ -205,15 +205,27 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-10 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-11 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-10",
-      "title": "Chinas CXMT führt bei Speicher-Gewinnmargen vor SK Hynix und Micron",
-      "summary": "Nikkei Asia berichtet, dass CXMT bei den Gewinnmargen im Speichersegment SK Hynix und Micron überholt habe.",
+      "title": "„Als würden Samsung Electronics und SK hynix gemeinsam daran arbeiten“ – warum Chinas HBM‑Allianz so mächtig ist",
+      "summary": "매일경제 berichtet, Chinas ‚HBM‑Allianz‘ wirke so stark, dass es ‚als würden Samsung Electronics und SK hynix gemeinsam daran arbeiten‘.",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1zTy1rb1BLMWpoZVlJbWthWHc0RjdwLTJMRnhVcERIZDh5em5kTkdHNkk1TjdXQjZWbHVqWnRiNkc4YWZta1pDUTFyVS1zdVFhWGVn?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Chinas CXMT überholt SK hynix und Micron und führt bei Speicher‑Gewinnmargen",
+      "summary": "Nikkei Asia meldet, CXMT habe SK hynix und Micron bei den Speicher‑Gewinnmargen übertroffen und den Spitzenplatz eingenommen.",
       "analysis": "Die Entwicklung betrifft die Versorgung und Kosten von Server-Memory. Für Betreiber und Systemintegratoren ist relevant, ob daraus höhere Preise, längere Lieferzeiten oder frühere Allokationsentscheidungen entstehen.",
-      "score": 95,
+      "score": 92,
       "relevanceScore": 88,
       "sourceQuality": 17,
       "source": "Nikkei Asia",
@@ -222,26 +234,14 @@
     },
     {
       "date": "2026-09-10",
-      "title": "Warum fallen die Aktien von Micron, SanDisk, SK Hynix und anderen Speicherherstellern?",
-      "summary": "Invezz analysiert die Gründe für den Kursrückgang von Micron, SanDisk, SK Hynix und weiteren Speicheraktien.",
+      "title": "Warum fallen die Speicheraktien von Micron, SanDisk, SK hynix und anderen?",
+      "summary": "Invezz untersucht die Gründe für die Kursrückgänge bei Micron, SanDisk, SK hynix und weiteren Speicheraktien.",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Invezz",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMjFHQXc2bDhXR0lldkV3OVFpNGNhWFZnM2RmdmRyOFk5ZUtycFlXUU43OE9iRDQybWtrV2NtUkV2SDNIdTY3aWFuTmFMODJSYlozMGRKVGE4RVdhVzZiWkNKR25FREhoTXJBMDltSlNIeG8ta0FOcTdJRzhXRGstR056SXduYW5hXzVOU2tfVWpXbW5ZNFh3el9kNUoyaUtG?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "TSMC, Samsung und Intel bündeln mit ASML Unterstützung für größere High‑NA EUV‑Photomasken — Übergang zu 6×12‑Zoll-Masken könnte Jahre dauern",
-      "summary": "Tom's Hardware berichtet, dass TSMC, Samsung und Intel gemeinsam mit ASML den Einsatz größerer High‑NA EUV‑Photomasken vorantreiben; der Wechsel zu 6×12‑Zoll-Masken könne trotz der koordinierten Anstrengung dennoch Jahre in Anspruch nehmen.",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 92,
-      "relevanceScore": 97,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPSUJqVUxGaV9xYkJPeURQOWxNcEtCcTE3YkdBTGpsMUZ0SExUQnRmY1FFYl9FQmRCQXY2THEzU1hfWEU4Q1RSM2locXVZdnRubnVpRGtyd3VuTUhMMENLcFkyRmphT1F2bFRIUGlXbUpUTmFqc0ZYN05hb2oxRWs4a2MxNjRwajF3SDdwTm1EeGVvY3JEMHFwaHVwNm9OYnBvVEItVVI2ckNsRC05STlBS2ZLbWNfaGhESXlFREJKZEl2OThMRTZ2em1TZm5Ya2ZpeTZ0b2JsRURNNi1FdmRfREo4djUzaXFwZElIRjd5NlBPX05wdEczdDNPVkhCTXNTZWU0OXc3dWZraUtjOGMxdHdlb1B6UUpVUEdSaVR4eURILUdBU1FZQk40QkxZb01sSzlBR1FvbGRwaGZV?oc=5",
       "layer": "news"
     }
   ],
@@ -276,7 +276,7 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-10",
+    "date": "2026-09-11",
     "type": "no-material-change",
     "title": "Keine bestätigte materielle Richtungsänderung",
     "impactScore": 0,
@@ -285,10 +285,22 @@
   "news": [
     {
       "date": "2026-09-10",
+      "title": "“As if Samsung Electronics and SK hynix were jointly developing it”... Why China’s “HBM alliance” is so formidable",
+      "summary": "Aktuelle Meldung von 매일경제: “As if Samsung Electronics and SK hynix were jointly developing it”... Why China’s “HBM alliance” is so formidable",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1zTy1rb1BLMWpoZVlJbWthWHc0RjdwLTJMRnhVcERIZDh5em5kTkdHNkk1TjdXQjZWbHVqWnRiNkc4YWZta1pDUTFyVS1zdVFhWGVn?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-10",
       "title": "China's CXMT tops SK Hynix, Micron to take memory profit margin crown",
       "summary": "Aktuelle Meldung von Nikkei Asia: China's CXMT tops SK Hynix, Micron to take memory profit margin crown",
       "analysis": "Die Entwicklung betrifft die Versorgung und Kosten von Server-Memory. Für Betreiber und Systemintegratoren ist relevant, ob daraus höhere Preise, längere Lieferzeiten oder frühere Allokationsentscheidungen entstehen.",
-      "score": 95,
+      "score": 92,
       "relevanceScore": 88,
       "sourceQuality": 17,
       "source": "Nikkei Asia",
@@ -300,30 +312,18 @@
       "title": "Why are Micron, SanDisk, SK Hynix and other memory stocks falling?",
       "summary": "Aktuelle Meldung von Invezz: Why are Micron, SanDisk, SK Hynix and other memory stocks falling?",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Invezz",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMjFHQXc2bDhXR0lldkV3OVFpNGNhWFZnM2RmdmRyOFk5ZUtycFlXUU43OE9iRDQybWtrV2NtUkV2SDNIdTY3aWFuTmFMODJSYlozMGRKVGE4RVdhVzZiWkNKR25FREhoTXJBMDltSlNIeG8ta0FOcTdJRzhXRGstR056SXduYW5hXzVOU2tfVWpXbW5ZNFh3el9kNUoyaUtG?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "TSMC, Samsung, and Intel shore up support with ASML to deploy larger High-NA EUV photomasks — 6×12-inch photomask transition may take years despite unified effort",
-      "summary": "Aktuelle Meldung von Tom's Hardware: TSMC, Samsung, and Intel shore up support with ASML to deploy larger High-NA EUV photomasks — 6×12-inch photomask transition may take years despite unified effort",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 92,
-      "relevanceScore": 97,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPSUJqVUxGaV9xYkJPeURQOWxNcEtCcTE3YkdBTGpsMUZ0SExUQnRmY1FFYl9FQmRCQXY2THEzU1hfWEU4Q1RSM2locXVZdnRubnVpRGtyd3VuTUhMMENLcFkyRmphT1F2bFRIUGlXbUpUTmFqc0ZYN05hb2oxRWs4a2MxNjRwajF3SDdwTm1EeGVvY3JEMHFwaHVwNm9OYnBvVEItVVI2ckNsRC05STlBS2ZLbWNfaGhESXlFREJKZEl2OThMRTZ2em1TZm5Ya2ZpeTZ0b2JsRURNNi1FdmRfREo4djUzaXFwZElIRjd5NlBPX05wdEczdDNPVkhCTXNTZWU0OXc3dWZraUtjOGMxdHdlb1B6UUpVUEdSaVR4eURILUdBU1FZQk40QkxZb01sSzlBR1FvbGRwaGZV?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-10T19:41:06.735Z",
+    "generatedAt": "2026-09-11T01:04:32.471Z",
     "count": 3,
-    "candidateCount": 39,
+    "candidateCount": 30,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -413,10 +413,10 @@
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
         "currentScore": 81,
         "currentStatus": "orange",
-        "confidence": 83,
+        "confidence": 82,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-10"
+        "indexAsOf": "2026-09-11"
       },
       {
         "marketId": "enterprise_ssd",
@@ -516,7 +516,7 @@
         "confidence": 74,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-10",
+        "indexAsOf": "2026-09-11",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -538,10 +538,22 @@
   "originalSignals": [
     {
       "date": "2026-09-10",
+      "title": "“As if Samsung Electronics and SK hynix were jointly developing it”... Why China’s “HBM alliance” is so formidable",
+      "summary": "Aktuelle Meldung von 매일경제: “As if Samsung Electronics and SK hynix were jointly developing it”... Why China’s “HBM alliance” is so formidable",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1zTy1rb1BLMWpoZVlJbWthWHc0RjdwLTJMRnhVcERIZDh5em5kTkdHNkk1TjdXQjZWbHVqWnRiNkc4YWZta1pDUTFyVS1zdVFhWGVn?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-10",
       "title": "China's CXMT tops SK Hynix, Micron to take memory profit margin crown",
       "summary": "Aktuelle Meldung von Nikkei Asia: China's CXMT tops SK Hynix, Micron to take memory profit margin crown",
       "analysis": "Die Entwicklung betrifft die Versorgung und Kosten von Server-Memory. Für Betreiber und Systemintegratoren ist relevant, ob daraus höhere Preise, längere Lieferzeiten oder frühere Allokationsentscheidungen entstehen.",
-      "score": 95,
+      "score": 92,
       "relevanceScore": 88,
       "sourceQuality": 17,
       "source": "Nikkei Asia",
@@ -553,23 +565,11 @@
       "title": "Why are Micron, SanDisk, SK Hynix and other memory stocks falling?",
       "summary": "Aktuelle Meldung von Invezz: Why are Micron, SanDisk, SK Hynix and other memory stocks falling?",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Invezz",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMjFHQXc2bDhXR0lldkV3OVFpNGNhWFZnM2RmdmRyOFk5ZUtycFlXUU43OE9iRDQybWtrV2NtUkV2SDNIdTY3aWFuTmFMODJSYlozMGRKVGE4RVdhVzZiWkNKR25FREhoTXJBMDltSlNIeG8ta0FOcTdJRzhXRGstR056SXduYW5hXzVOU2tfVWpXbW5ZNFh3el9kNUoyaUtG?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "TSMC, Samsung, and Intel shore up support with ASML to deploy larger High-NA EUV photomasks — 6×12-inch photomask transition may take years despite unified effort",
-      "summary": "Aktuelle Meldung von Tom's Hardware: TSMC, Samsung, and Intel shore up support with ASML to deploy larger High-NA EUV photomasks — 6×12-inch photomask transition may take years despite unified effort",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 92,
-      "relevanceScore": 97,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPSUJqVUxGaV9xYkJPeURQOWxNcEtCcTE3YkdBTGpsMUZ0SExUQnRmY1FFYl9FQmRCQXY2THEzU1hfWEU4Q1RSM2locXVZdnRubnVpRGtyd3VuTUhMMENLcFkyRmphT1F2bFRIUGlXbUpUTmFqc0ZYN05hb2oxRWs4a2MxNjRwajF3SDdwTm1EeGVvY3JEMHFwaHVwNm9OYnBvVEItVVI2ckNsRC05STlBS2ZLbWNfaGhESXlFREJKZEl2OThMRTZ2em1TZm5Ya2ZpeTZ0b2JsRURNNi1FdmRfREo4djUzaXFwZElIRjd5NlBPX05wdEczdDNPVkhCTXNTZWU0OXc3dWZraUtjOGMxdHdlb1B6UUpVUEdSaVR4eURILUdBU1FZQk40QkxZb01sSzlBR1FvbGRwaGZV?oc=5",
       "layer": "news"
     }
   ],
@@ -578,7 +578,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-10T19:41:19.875Z"
+      "generatedAt": "2026-09-11T01:04:58.482Z"
     }
   }
 }
