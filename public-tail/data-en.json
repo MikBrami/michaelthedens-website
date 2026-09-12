@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T19:43:11.575Z",
+  "generatedAt": "2026-09-12T01:07:09.717Z",
   "editorial": {
     "version": 5,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "b7e6b6351526ff8c1ed6d0bd",
+    "sourceHash": "ece4087d15ec63d957ee7137",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
-    "dataAsOf": "2026-09-11",
+    "dataAsOf": "2026-09-12",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -56,7 +56,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 68,
+            "confidence": 67,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -95,10 +95,10 @@
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 79,
+            "score": 78,
             "confidence": 91,
             "evidenceCount": 5,
-            "pressure": 79,
+            "pressure": 78,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -151,16 +151,16 @@
         "signals": 20,
         "articleSignals": 15,
         "operationalSignals": 5,
-        "confidence": 74,
+        "confidence": 73,
         "coverage": 100,
         "drivers": [
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 82,
+            "score": 81,
             "confidence": 86,
             "evidenceCount": 5,
-            "pressure": 82,
+            "pressure": 81,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -169,9 +169,9 @@
             "id": "pricing",
             "label": "Preisdynamik",
             "score": 72,
-            "confidence": 82,
+            "confidence": 81,
             "evidenceCount": 3,
-            "pressure": 72,
+            "pressure": 71,
             "relief": 0,
             "operationalFloor": 72,
             "formula": "pressure - relief × reliefOffset"
@@ -180,7 +180,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 56,
+            "confidence": 55,
             "evidenceCount": 5,
             "pressure": 79,
             "relief": 0,
@@ -202,26 +202,38 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-11",
+    "analysisAsOf": "2026-09-12",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
     "current": 79,
     "previous": 79,
     "status": "orange",
-    "confidence": 82,
+    "confidence": 81,
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation for memory and AI infrastructure remains tense. Server DRAM/RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check of 2026-09-11 reviewed the current news flow; it does not identify any newly confirmed material change in direction. New capacity and improved yields could relieve pressure but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain critical."
+    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the most constrained areas. The Daily Check on 2026-09-12 reviewed the current news flow; it does not identify any newly confirmed material change in direction. New capacity and improved yields can relieve pressure but will reach the market only with a time lag. For buyers, securing supply, alternative BOMs and early procurement remain critical."
   },
   "signals": [
+    {
+      "date": "2026-09-12",
+      "title": "AI’s HBM Shortage Strengthens Micron’s Hand—and Pressures Nvidia’s GPU Economics",
+      "summary": "Aktuelle Meldung von Yahoo Finance: AI’s HBM Shortage Strengthens Micron’s Hand—and Pressures Nvidia’s GPU Economics",
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand have a direct effect on available GPU systems and pricing across the AI infrastructure market.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRE1OOG1aM2U5aVdfeVdTUjF5eEVOX0hBRTVic2p3SjFQVW1ZcjBYU0h2TmtsczRENFo2UF9PSFpxRG9BS3lwZHJNQWFtZEsxemZFVEdtS1JVZ1kzMlRvcVBIYnlRcDdkcVZEcFIwSzVEbG5JTElCbUtqWVlFU0o1N2RyU01uWGhWcE1WYkxHNDNmRU1jLXc1dkNXQnA0XzA?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-11",
       "title": "AI memory chip boom turns into a pay bonanza for Micron, Samsung, SK Hynix workers",
       "summary": "Aktuelle Meldung von Invezz: AI memory chip boom turns into a pay bonanza for Micron, Samsung, SK Hynix workers",
-      "analysis": "The report is relevant for datacentre storage: it can affect prices, available capacities, or procurement strategy for enterprise SSDs.",
-      "score": 90,
+      "analysis": "The report is relevant to datacentre storage: it can affect prices, available capacities or procurement strategy for enterprise SSDs.",
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Invezz",
@@ -232,24 +244,12 @@
       "date": "2026-09-11",
       "title": "DeepSeek's New Model Claims Sharp Cut in HBM Usage; Samsung and SK Hynix Plunge Over 3% Intraday",
       "summary": "Aktuelle Meldung von finance.biggo.com: DeepSeek's New Model Claims Sharp Cut in HBM Usage; Samsung and SK Hynix Plunge Over 3% Intraday",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand have a direct effect on available GPU systems and pricing in the AI infrastructure market.",
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand have a direct effect on available GPU systems and pricing across the AI infrastructure market.",
       "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "finance.biggo.com",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JVS1kOGV6MHlyYW1XWmRmc0REZnE3ckgwYUxEdlp6ajVsa1FzZjNtRFp0RVdVejA5MGdSZ0JMXzdnYVh5aElZdjNpb1BXZURsaDVsZ0hEdWNTMy1RTXJ4SnF4dlB2VFJ5Wkd3NUlwaE9FMWFWZ0E?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "China's CXMT tops global memory chip profitability, surpassing Samsung Electronics and SK hynix",
-      "summary": "Aktuelle Meldung von 헤럴드경제: China's CXMT tops global memory chip profitability, surpassing Samsung Electronics and SK hynix",
-      "analysis": "The report is relevant for datacentre storage: it can affect prices, available capacities, or procurement strategy for enterprise SSDs.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "헤럴드경제",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJOFVVZTlwTUI3aGhhZTIxa3FEOWtMS3JRN3dHM3ViYjR3Q0hIcjhLdWd4am1uZVNaLS1Kek56YUlHSkFjMGpaQzNOOGExV0o1RGxhOG0taw?oc=5",
       "layer": "news"
     }
   ],
@@ -268,11 +268,11 @@
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: advanced packaging remains a central AI supply-chain bottleneck at least until H2 2027 despite the Chiayi expansion."
+      "event": "Forecast review: Advanced packaging remains a central AI supply-chain bottleneck at least until H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier review: AI asset-backed financing reflexivity"
+      "event": "Falsifier Review: AI Asset-Backed Financing Reflexivity"
     },
     {
       "date": "2027-03-31",
@@ -370,7 +370,7 @@
         "confidence": 82,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-11"
+        "indexAsOf": "2026-09-12"
       },
       {
         "marketId": "enterprise_ssd",
@@ -472,10 +472,10 @@
         "methodologyNote": "Market-pressure index and price forecast remain separate. Scenario weights of 50/20/30 are HEURISTIC rather than statistically calibrated event frequencies. Missing data is not a relief signal; correlated evidence is not double-counted.",
         "currentScore": 81,
         "currentStatus": "orange",
-        "confidence": 74,
+        "confidence": 73,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-11"
+        "indexAsOf": "2026-09-12"
       }
     ]
   }

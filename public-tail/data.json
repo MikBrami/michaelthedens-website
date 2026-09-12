@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T19:41:56.144Z",
+  "generatedAt": "2026-09-12T01:06:15.393Z",
   "platform": {
-    "dataAsOf": "2026-09-11",
+    "dataAsOf": "2026-09-12",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -48,7 +48,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 68,
+            "confidence": 67,
             "evidenceCount": 5,
             "pressure": 80,
             "relief": 0,
@@ -87,10 +87,10 @@
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 79,
+            "score": 78,
             "confidence": 91,
             "evidenceCount": 5,
-            "pressure": 79,
+            "pressure": 78,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -143,16 +143,16 @@
         "signals": 20,
         "articleSignals": 15,
         "operationalSignals": 5,
-        "confidence": 74,
+        "confidence": 73,
         "coverage": 100,
         "drivers": [
           {
             "id": "demand",
             "label": "Nachfrage",
-            "score": 82,
+            "score": 81,
             "confidence": 86,
             "evidenceCount": 5,
-            "pressure": 82,
+            "pressure": 81,
             "relief": 0,
             "operationalFloor": 0,
             "formula": "pressure - relief × reliefOffset"
@@ -161,9 +161,9 @@
             "id": "pricing",
             "label": "Preisdynamik",
             "score": 72,
-            "confidence": 82,
+            "confidence": 81,
             "evidenceCount": 3,
-            "pressure": 72,
+            "pressure": 71,
             "relief": 0,
             "operationalFloor": 72,
             "formula": "pressure - relief × reliefOffset"
@@ -172,7 +172,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 56,
+            "confidence": 55,
             "evidenceCount": 5,
             "pressure": 79,
             "relief": 0,
@@ -194,26 +194,38 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-11",
+    "analysisAsOf": "2026-09-12",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
     "current": 79,
     "previous": 79,
     "status": "orange",
-    "confidence": 82,
+    "confidence": 81,
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-11 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-12 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
+      "date": "2026-09-12",
+      "title": "AI‑getriebene HBM‑Knappheit stärkt Micron – belastet Nvidias GPU‑Ökonomie",
+      "summary": "Laut Yahoo Finance könnte die HBM‑Knappheit Microns Verhandlungsposition stärken und die Wirtschaftlichkeit von Nvidias GPUs unter Druck setzen.",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRE1OOG1aM2U5aVdfeVdTUjF5eEVOX0hBRTVic2p3SjFQVW1ZcjBYU0h2TmtsczRENFo2UF9PSFpxRG9BS3lwZHJNQWFtZEsxemZFVEdtS1JVZ1kzMlRvcVBIYnlRcDdkcVZEcFIwSzVEbG5JTElCbUtqWVlFU0o1N2RyU01uWGhWcE1WYkxHNDNmRU1jLXc1dkNXQnA0XzA?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-11",
-      "title": "KI-Speicherchip-Boom entwickelt sich zur Lohn-Bonanza für Beschäftigte von Micron, Samsung und SK Hynix",
-      "summary": "Bericht von Invezz: Der Boom bei AI-Speicherchips führt offenbar zu deutlich höheren Löhnen und Boni für Beschäftigte von Micron, Samsung und SK Hynix.",
+      "title": "AI‑Memory‑Chip‑Boom wird zur Lohn‑Bonanza für Beschäftigte von Micron, Samsung und SK Hynix",
+      "summary": "Laut Invezz profitieren Mitarbeitende bei Micron, Samsung und SK Hynix von höheren Löhnen und Boni infolge der starken Nachfrage nach AI‑Memory‑Chips.",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Invezz",
@@ -222,26 +234,14 @@
     },
     {
       "date": "2026-09-11",
-      "title": "DeepSeek: Neues Modell soll HBM-Nutzung stark senken; Samsung und SK Hynix intraday über 3% im Minus",
-      "summary": "Laut finance.biggo.com behauptet DeepSeek, sein neues Modell reduziere den HBM-Bedarf deutlich. Die Aktien von Samsung und SK Hynix gaben intraday mehr als 3% nach.",
+      "title": "DeepSeek‑Modell behauptet starke Reduktion des HBM‑Einsatzes; Samsung und SK Hynix verlieren intraday über 3%",
+      "summary": "Laut finance.biggo.com sagt DeepSeek, ein neues Modell reduziere den HBM‑Bedarf deutlich; darauf fielen die Aktien von Samsung und SK Hynix intraday um mehr als 3%.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "finance.biggo.com",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JVS1kOGV6MHlyYW1XWmRmc0REZnE3ckgwYUxEdlp6ajVsa1FzZjNtRFp0RVdVejA5MGdSZ0JMXzdnYVh5aElZdjNpb1BXZURsaDVsZ0hEdWNTMy1RTXJ4SnF4dlB2VFJ5Wkd3NUlwaE9FMWFWZ0E?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "Chinas CXMT führt weltweit bei der Rentabilität von Speicherchips und übertrifft Samsung Electronics und SK hynix",
-      "summary": "Bericht von 헤럴드경제: CXMT erzielt demnach die höchste Profitabilität im globalen Speicherchip-Markt und liegt damit vor Samsung Electronics und SK hynix.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "헤럴드경제",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJOFVVZTlwTUI3aGhhZTIxa3FEOWtMS3JRN3dHM3ViYjR3Q0hIcjhLdWd4am1uZVNaLS1Kek56YUlHSkFjMGpaQzNOOGExV0o1RGxhOG0taw?oc=5",
       "layer": "news"
     }
   ],
@@ -276,7 +276,7 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-11",
+    "date": "2026-09-12",
     "type": "no-material-change",
     "title": "Keine bestätigte materielle Richtungsänderung",
     "impactScore": 0,
@@ -284,11 +284,23 @@
   },
   "news": [
     {
+      "date": "2026-09-12",
+      "title": "AI’s HBM Shortage Strengthens Micron’s Hand—and Pressures Nvidia’s GPU Economics",
+      "summary": "Aktuelle Meldung von Yahoo Finance: AI’s HBM Shortage Strengthens Micron’s Hand—and Pressures Nvidia’s GPU Economics",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRE1OOG1aM2U5aVdfeVdTUjF5eEVOX0hBRTVic2p3SjFQVW1ZcjBYU0h2TmtsczRENFo2UF9PSFpxRG9BS3lwZHJNQWFtZEsxemZFVEdtS1JVZ1kzMlRvcVBIYnlRcDdkcVZEcFIwSzVEbG5JTElCbUtqWVlFU0o1N2RyU01uWGhWcE1WYkxHNDNmRU1jLXc1dkNXQnA0XzA?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-11",
       "title": "AI memory chip boom turns into a pay bonanza for Micron, Samsung, SK Hynix workers",
       "summary": "Aktuelle Meldung von Invezz: AI memory chip boom turns into a pay bonanza for Micron, Samsung, SK Hynix workers",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Invezz",
@@ -306,24 +318,12 @@
       "source": "finance.biggo.com",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JVS1kOGV6MHlyYW1XWmRmc0REZnE3ckgwYUxEdlp6ajVsa1FzZjNtRFp0RVdVejA5MGdSZ0JMXzdnYVh5aElZdjNpb1BXZURsaDVsZ0hEdWNTMy1RTXJ4SnF4dlB2VFJ5Wkd3NUlwaE9FMWFWZ0E?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "China's CXMT tops global memory chip profitability, surpassing Samsung Electronics and SK hynix",
-      "summary": "Aktuelle Meldung von 헤럴드경제: China's CXMT tops global memory chip profitability, surpassing Samsung Electronics and SK hynix",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "헤럴드경제",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJOFVVZTlwTUI3aGhhZTIxa3FEOWtMS3JRN3dHM3ViYjR3Q0hIcjhLdWd4am1uZVNaLS1Kek56YUlHSkFjMGpaQzNOOGExV0o1RGxhOG0taw?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-11T19:41:56.304Z",
+    "generatedAt": "2026-09-12T01:06:15.597Z",
     "count": 3,
-    "candidateCount": 39,
+    "candidateCount": 38,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -416,7 +416,7 @@
         "confidence": 82,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-11"
+        "indexAsOf": "2026-09-12"
       },
       {
         "marketId": "enterprise_ssd",
@@ -513,10 +513,10 @@
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
         "currentScore": 81,
         "currentStatus": "orange",
-        "confidence": 74,
+        "confidence": 73,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-11",
+        "indexAsOf": "2026-09-12",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -537,11 +537,23 @@
   },
   "originalSignals": [
     {
+      "date": "2026-09-12",
+      "title": "AI’s HBM Shortage Strengthens Micron’s Hand—and Pressures Nvidia’s GPU Economics",
+      "summary": "Aktuelle Meldung von Yahoo Finance: AI’s HBM Shortage Strengthens Micron’s Hand—and Pressures Nvidia’s GPU Economics",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRE1OOG1aM2U5aVdfeVdTUjF5eEVOX0hBRTVic2p3SjFQVW1ZcjBYU0h2TmtsczRENFo2UF9PSFpxRG9BS3lwZHJNQWFtZEsxemZFVEdtS1JVZ1kzMlRvcVBIYnlRcDdkcVZEcFIwSzVEbG5JTElCbUtqWVlFU0o1N2RyU01uWGhWcE1WYkxHNDNmRU1jLXc1dkNXQnA0XzA?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-11",
       "title": "AI memory chip boom turns into a pay bonanza for Micron, Samsung, SK Hynix workers",
       "summary": "Aktuelle Meldung von Invezz: AI memory chip boom turns into a pay bonanza for Micron, Samsung, SK Hynix workers",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Invezz",
@@ -559,18 +571,6 @@
       "source": "finance.biggo.com",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JVS1kOGV6MHlyYW1XWmRmc0REZnE3ckgwYUxEdlp6ajVsa1FzZjNtRFp0RVdVejA5MGdSZ0JMXzdnYVh5aElZdjNpb1BXZURsaDVsZ0hEdWNTMy1RTXJ4SnF4dlB2VFJ5Wkd3NUlwaE9FMWFWZ0E?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "China's CXMT tops global memory chip profitability, surpassing Samsung Electronics and SK hynix",
-      "summary": "Aktuelle Meldung von 헤럴드경제: China's CXMT tops global memory chip profitability, surpassing Samsung Electronics and SK hynix",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "헤럴드경제",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJOFVVZTlwTUI3aGhhZTIxa3FEOWtMS3JRN3dHM3ViYjR3Q0hIcjhLdWd4am1uZVNaLS1Kek56YUlHSkFjMGpaQzNOOGExV0o1RGxhOG0taw?oc=5",
-      "layer": "news"
     }
   ],
   "editorial": {
@@ -578,7 +578,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-11T19:42:35.018Z"
+      "generatedAt": "2026-09-12T01:06:30.076Z"
     }
   }
 }
