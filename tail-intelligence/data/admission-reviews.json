@@ -13311,6 +13311,3170 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_04b6e3421ff89de2006aa6fa243f3087d293bfd2d561cd4f26"
+    },
+    {
+      "decision": "rejected",
+      "title": "Samsung turns to Japan for packaging edge, narrows HBM gap with SK Hynix",
+      "fact": "DIGITIMES berichtet am 2026-09-09, Samsung habe ein Advanced‑Packaging‑Forschungszentrum in Yokohama eröffnet und strebe engere Zusammenarbeit mit japanischen Packaging‑Zulieferern an; Artikel ist paywalled und liefert keine unmittelbar quantifizierbare Kapazitätsänderung.",
+      "placement": "Yokohama (Japan) / Advanced packaging / globale HBM‑Lieferkette / kurzfristig (2–12 Monate)",
+      "mechanism": "Ankündigung von F&E‑/Kooperationsaktivitäten mit japanischen Packaging‑Zulieferern — potenziell langfristige Reduktion von Packaging‑Engpässen durch lokale Material‑/Tool‑Zugänge, jedoch kein sofortiger qualifizierter Produktions‑Output.",
+      "predictionId": "",
+      "predictionImpact": "Kein belastbarer, direkt beobachtbarer Einfluss auf bestehende TAIL‑Vorhersagen nachweisbar (Ankündigung, keine bestätigten Shipments oder Lead‑time‑Änderung).",
+      "falsifier": "Bis zum 2027-06-30: keine Nachweise (qualifizierte Shipments, zertifizierte CoWoS/SoIC/3D‑Stacking‑Output oder bestätigte Lead‑time‑Verbesserung) aus dem in Yokohama genannten Zentrum; falls konkrete qualifizierte Packaging‑Shipments (mit Datum, Menge oder Lead‑time) vorliegen, ist diese Ablehnung zu revidieren.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-09",
+      "novelty": "niedrig (Ankündigung/Standortmeldung; Thema Advanced Packaging bereits in Baseline S-2026-07-13-03 behandelt).",
+      "duplicateOf": "tail-2026-07-13-03",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 6,
+        "thesisRelevance": 12,
+        "forecastImpact": 5,
+        "falsifiability": 3,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260909VL223/samsung-packaging-hbm-sk-hynix-materials.html?chid=2&mod=3&q=samsung",
+          "label": "DIGITIMES (paywalled) – Artikelmetadaten und Headline",
+          "kind": "primary",
+          "supports": "Meldungsdatum und Headline; paywalled Artikel knapp zusammengefasst (Eröffnung Forschungszentrum Yokohama, Fokus Packaging)."
+        }
+      ],
+      "reason": "Recycled / thematisch bereits im Baseline‑Signal 'Advanced Packaging bleibt Engpass' aufgeführt (tail-2026-07-13-03). Der Digitimes‑Beitrag ist eine Ankündigung ohne nachgewiesene, sofortige Kapazitätswirkung, enthält keine quantitativen Shipments/Lead‑time‑Messungen und ist paywalled (keine vollständige Primärverifikation). Entsprechend Patrick‑Red‑Pencil: keine neue, belastbare, atomare Messung → ablehnen.",
+      "candidateId": "7741c0ce4b55672e8f7b",
+      "candidateKey": "92ad89661cc7713ec7427c66",
+      "reviewedAt": "2026-09-13T19:44:18.586Z",
+      "priorityScore": 40,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_008441db5485b0a1006aa6fc8bee0487d1a611590d8a5bb24d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Global Foundry Revenue Approaches US$53.49 Billion in 2Q26 (TrendForce)",
+      "fact": "TrendForce‑Pressrelease meldet, dass die kombinierten Umsätze der globalen Top‑10‑Foundries in 2Q26 um 11.5% QoQ auf nahezu US$53.49 Mrd. gestiegen sind (Publikationsdatum 2026-09-09).",
+      "placement": "Global / Top‑10 Foundries / Quartalsstatistik (2Q26)",
+      "mechanism": "Gemeldetes Umsatzwachstum wird TrendForce zufolge von starker Nachfrage für AI/HPC‑Main‑Chips und wachsender Nachfrage nach Peripherie‑AI‑ICs (PMICs, Power discretes) sowie Vorziehbestellungen in Konsumgüter‑Supply‑Chains getrieben — das erhöht kurzfristig Kapazitätsauslastung und foundry‑ASP.",
+      "predictionId": "P-2026-07-16-01",
+      "predictionImpact": "Erhöht die Evidenz, dass AI/HPC‑Nachfrage ein bedeutender Treiber für Advanced‑Node‑Foundry‑Auslastung bleibt und stützt die Basissicht, dass Advanced‑Node‑Umsätze und HPC‑Gewichtung in 2H26 hoch bleiben; kein unmittelbarer Widerspruch zu bestehenden Vorhersagen, erhöht jedoch die Wahrscheinlichkeit höherer Advanced‑node‑ASP‑Räume.",
+      "falsifier": "Bis zum 2026-11-15: Wenn die konsolidierten Umsätze der Top‑10 Foundries in 3Q26 nicht QoQ steigen (oder auf unter US$50 Mrd. fallen) oder wenn TSMC/leading foundries Q3‑Berichte einen deutlich geringeren AI/HPC‑Anteil als TrendForce angibt (z. B. <60% des Advanced‑node‑Revenues), würde die Interpretation vermindert.",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-09-09",
+      "novelty": "moderat (aktualisierte Quartalszahlen; bestätigt beschleunigten Foundry‑Umsatz durch AI/HPC).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 7,
+        "thesisRelevance": 12,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com.tw/presscenter/news/20260909-13224.html",
+          "label": "TrendForce – Pressrelease (chinesisch/presscenter) published 2026-09-09",
+          "kind": "primary",
+          "supports": "Direkte Quartalszahl: 'combined revenue of the world’s top 10 foundries rose 11.5% QoQ to nearly US$53.49 billion in 2Q26' und Begründung durch AI/HPC‑Nachfrage."
+        }
+      ],
+      "reason": "Primäre Branchenstatistik (TrendForce) ist verifiziert und relevant für die These, dass AI/HPC die Nachfrage nach Advanced Foundry‑Kapazität stützt. Trotzdem ist dies ein aggregierter Umsatz‑Signal (kein direktes, qualifiziertes Mess‑Kriterium für TAIL‑Index‑Metriken wie Lead Times oder kontraktierte Liefermengen). Es liefert wertvolle Kontext‑Evidenz, rechtfertigt aber keine sofortige Aufnahme als 'VERIFIED DATA'‑Falsifikation einer der Kernvorhersagen; daher Watchlist (Überwachung für Q3‑Berichte / TSMC‑Breakdowns).",
+      "candidateId": "05bb3e259c5c11bcf5d7",
+      "candidateKey": "ccaaee51ce2c32f8e65747dd",
+      "reviewedAt": "2026-09-13T19:44:18.586Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_008441db5485b0a1006aa6fc8bee0487d1a611590d8a5bb24d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia Denies SK hynix Production Talks",
+      "fact": "Mehrere Medien (Bloomberg‑Bericht, wiedergegeben durch BusinessKorea/TrendForce/Reuters‑Aggregatoren) zitieren Kioxia‑CEO Hiroo Ota am 2026-09-09 mit der Aussage, dass keine Gespräche über gemeinsame Produktion mit SK hynix geführt werden; Ota wies außerdem darauf hin, dass weitere, exzessive NAND‑Preisanstiege gedämpft werden sollten.",
+      "placement": "Unternehmensäußerung (Kioxia CEO) / globaler NAND‑Herstellermarkt / unmittelbare Wirkung: Kommunikations‑/M&A‑Signal",
+      "mechanism": "CEO‑Statement reduziert Konsolidierungs‑Gerüchte und signalisiert Management‑Absicht, Preissteigerungen zu begrenzen; beeinflusst Investoren‑/Partner‑Erwartungen, kann die Wahrscheinlichkeit einer kurzfristigen Produktionsfusion oder eines formellen JV reduzieren.",
+      "predictionId": "",
+      "predictionImpact": "Kein direkter, messbarer Einfluss auf numerische TAIL‑Kontrakt‑Metriken; relevant für strukturelle Konsolidierungsannahmen und Preisdynamik in NAND‑Markt‑Narrativen.",
+      "falsifier": "Wenn Kioxia und SK hynix vor dem 2027-03-31 eine formelle, vertraglich bindende Vereinbarung (MoU, JV, Produktions‑LTA mit klar definierter Fab/Output‑Scope) veröffentlichen, dann würde diese Beobachtung falsifiziert.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-09",
+      "novelty": "moderat (explizite CEO‑Äußerung, entgegen vorheriger Spekulationen).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 8,
+        "thesisRelevance": 14,
+        "forecastImpact": 10,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "nand",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/",
+          "label": "TrendForce – Bericht zu Kioxia‑Äußerungen (2026-09-09)",
+          "kind": "secondary",
+          "supports": "Zitiert Bloomberg als Primärquelle; fasst CEO‑Aussagen zu Nicht‑Besprechungen und Preisabsicht zusammen."
+        },
+        {
+          "url": "https://uk.finance.yahoo.com/news/kioxia-dismisses-sk-hynix-tie-004718564.html",
+          "label": "Yahoo / Bloomberg‑Reprint – zitiert Bloomberg (engl.)",
+          "kind": "secondary",
+          "supports": "Wiedergegebenes Bloomberg‑Interview mit Ota; nutzbar zur Verifikation der Zitate."
+        },
+        {
+          "url": "https://ir.newspim.com/news/view/20260909000938",
+          "label": "Newspim (koreanische Berichterstattung) – Auszug CEO‑Zitat",
+          "kind": "secondary",
+          "supports": "Regionale Primärwiederholung des Bloomberg‑Interviews; bestätigt Datum und Aussage."
+        }
+      ],
+      "reason": "Die Aussage ist durch Bloombergs Bericht (wiedergegeben in mehreren Quellen) belegbar und ist ein klarer Management‑Kommentar, der Spekulations‑/M&A‑Gerüchte dämpft. Nützlich für Narrativ‑Monitoring, aber kein direkter, quantifizierbarer Index‑Beleg (z. B. Shipments, Lead‑time, Preise mit Einheiten). Deshalb Watchlist statt Annahme: verfolgen, ob ein echtes JV/MoU veröffentlicht wird (Falsifier definiert).",
+      "candidateId": "c22329a2ebcfc385a95a",
+      "candidateKey": "997d9f729349e43a2fc96318",
+      "reviewedAt": "2026-09-13T19:44:18.591Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_008441db5485b0a1006aa6fc8bee0487d1a611590d8a5bb24d"
+    },
+    {
+      "decision": "rejected",
+      "title": "Kioxia rules out deeper SK Hynix ties, resists further NAND price hikes (DIGITIMES)",
+      "fact": "DIGITIMES‑Artikel (2026-09-09, paywalled) berichtet ähnlich wie Bloomberg/TrendForce, dass Kioxia eine Vertiefung der Fertigungskooperation mit SK hynix ausschließt und Preissteigerungen bremsen möchte; Inhalt wiederholt bereits in anderen (öffentlichen) Quellen verfügbar.",
+      "placement": "Digitimes (Taipei) / Unternehmensmeldungs‑Zusammenfassung / globaler NAND‑Markt",
+      "mechanism": "Redundante Wiedergabe CEO‑Aussage; kein zusätzliches, unabhängiges Primär‑Beweismaterial (keine neuen Zahlen, Shipments oder Vertragstexte).",
+      "predictionId": "",
+      "predictionImpact": "Kein zusätzlicher, eigenständiger Einfluss gegenüber den bereits zitierten Bloomberg/TrendForce‑Berichten; daher Duplikat.",
+      "falsifier": "Siehe c22329a2ebcfc385a95a: Falsifier ist das Eintreten eines formellen JV/Produktionsabkommens bis 2027-03-31.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-09",
+      "novelty": "sehr niedrig (Duplikation bereits öffentlich verbreiteter CEO‑Aussagen).",
+      "duplicateOf": "c22329a2ebcfc385a95a",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 2,
+        "thesisRelevance": 6,
+        "forecastImpact": 3,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "nand",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 15,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260909VL215/kioxia-sk-hynix-nand-price-manufacturing.html?mod=3&q=packaging",
+          "label": "DIGITIMES (paywalled) – Bericht/Headline 2026-09-09",
+          "kind": "secondary",
+          "supports": "Digitimes‑Wiedergabe der CEO‑Aussage; inhaltlich redundant zu Bloomberg/TrendForce."
+        }
+      ],
+      "reason": "Duplicate/Redundante Meldung zu bereits verifizierten CEO‑Zitaten (siehe c22329a2ebcfc385a95a). Gemäß Aufnahmeprinzipien werden wiederholte Reposts ohne neue, atomare, datierte Messung oder quantifizierbare Auswirkungen abgelehnt.",
+      "candidateId": "9a3d6ccbc168729f9a37",
+      "candidateKey": "790ee858861c7c14fb43115e",
+      "reviewedAt": "2026-09-13T19:44:18.599Z",
+      "priorityScore": 24,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_008441db5485b0a1006aa6fc8bee0487d1a611590d8a5bb24d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "[News] Kioxia Denies SK hynix Joint Production Talks, Seeks NAND Price Stability to Sustain AI Investment",
+      "fact": "Am 2026-09-09 berichtete TrendForce unter Berufung auf Medienberichte, dass Kioxia-CEO Hiroo Ota Gespräche über eine gemeinsame Produktionslösung mit SK hynix ausdrücklich verneint und zugleich erklärte, Kioxia wolle weitere starke NAND-Preissteigerungen dämpfen, um AI-Nachfrage nicht zu gefährden (Berichtsdatum: 2026-09-09). ([trendforce.com](https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/?utm_source=openai))",
+      "placement": "Geografie: global (Japanischer Hersteller mit globaler NAND‑Relevanz). Markt/Layer: NAND / Enterprise‑SSD / AI‑Storage. Horizont: kurzfristig (Q4 2026 – nahe Monitoring‑Periode).",
+      "mechanism": "Direkte Managementaussage (CEO) reduziert die Wahrscheinlichkeit kurzfristiger Produktrationalisierung oder exklusiver Produktionskonsolidierungen zwischen Kioxia und SK hynix; gleichzeitig signalisiert die Preisdisziplin-Absicht einen Versuch, übermäßige Preisvolatilität zu vermeiden, was die near‑term Preissignale (Kontrakt‑ und Spotpreise) modulieren kann. Primärer Kanal: Managementkommunikation → Käufer‑/Hyperscaler‑Verhandlungsverhalten → Preisbildung. ([trendforce.com](https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/?utm_source=openai))",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Dieses Ereignis erhöht leicht die Wahrscheinlichkeit, dass kurzfristige (bis 2027) Kapazitäts‑Konsolidierungen nicht eintreten, und stützt damit das Basisszenario von anhaltender Knappheit in 2027; gleichzeitig kann Kioxias Bekenntnis zur Preisdisziplin kurzfristig dämpfende Effekte auf extreme Preis‑Spikes haben (Netto: Verbleibend unterstützend für 'price_up'‑Basistrend, aber mit stärkerer moderierender Management‑Rhetorik).",
+      "falsifier": "Falsifiziert wird dieses Signal, falls Kioxia oder SK hynix bis zum 2026-10-31 eine verbindliche, öffentlich dokumentierte gemeinsame Produktionsvereinbarung (MoU/FTA mit konkreten Kapazitätsangaben) ankündigen oder wenn NAND‑Kontraktpreise in einem repräsentativen Enterprise‑SSD‑Kontraktkorb im Oktober 2026 um ≥10% q/q fallen (beide Fälle würden die Annahme der Nicht‑Konsolidierung/Preisdisziplin aufheben).",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-09",
+      "novelty": "Gering. Managementabweisung bestätigt zuvor kursierende Berichte/Marktspekulationen; kein neuer quantitativer Messwert.",
+      "duplicateOf": "tail-2026-07-14-nand-essd",
+      "evidenceStatus": "HEURISTIC",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 8,
+        "thesisRelevance": 13,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/",
+          "label": "TrendForce: Kioxia denies SK hynix joint production talks (2026-09-09)",
+          "kind": "primary",
+          "supports": "Berichtet das Management‑Zitat (Gegenanzeige gemeinsamer Produktion) und TrendForce‑Analyse zur Preisstabilität."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260909VL215/kioxia-sk-hynix-nand-price-manufacturing.html?mod=3&q=memory",
+          "label": "DigiTimes (sekundär): Kioxia lehnt engere Bindung an SK hynix ab (2026-09-09)",
+          "kind": "secondary",
+          "supports": "Sekundärbericht, der TrendForce/Bloomberg‑Aussagen reproduziert."
+        }
+      ],
+      "reason": "TrendForce‑Meldung dokumentiert eine explizite Management‑Äußerung vom 2026-09-09, die kurzfristig die Wahrscheinlichkeit einer unmittelbar wirksamen Produktionsfusion zwischen Kioxia und SK hynix mindert und zugleich Management‑Absichten zur Dämpfung weiterer NAND‑Preis‑Exzesse signalisiert. Die Beobachtung ist relevant für Preis‑ und Verfügbarkeitsoutlooks, bietet aber keine neue, quantitative Messung (kein bestätigter Vertrag, keine Shipment‑/Lead‑Time‑Messung) und reproduziert Erkenntnisse, die bereits im Baseline‑Set verankert sind; daher nur Watchlist‑Aufnahme (Monitoring empfohlen) statt unmittelbare Aufnahme als VERIFIED DATA‑Signal. Gegenläufige Berichte/primäre Vertragsnachweise fehlen derzeit. ([trendforce.com](https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/?utm_source=openai))",
+      "candidateId": "e32e1414ccebe49eae75",
+      "candidateKey": "c7b756ed6072411e2ccdc5f1",
+      "reviewedAt": "2026-09-13T19:44:18.606Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_068894cc1d0ad42c006aa6fc8be7e487d19199106b8aa572b1"
+    },
+    {
+      "decision": "accepted",
+      "title": "CXMT Faces HBM Memory Chip Shock As Yields Sink To 25% With Close To 80 Out Of 100 HBM3 Chips Failing Final Tests, Says Report",
+      "fact": "Am 2026-09-09 berichtete ChosunBiz, dass ChangXin Memory Technologies (CXMT) bei seiner HBM3 (8‑Hi) Versuchslinie eine End‑Good‑Yield von rund 25 % erzielt (Front‑End ≈30 % × Back‑End Test/Packaging ≈70 % ⇒ End‑Yield ≈25 %); das entspricht knapp einem Drittel des üblichen 'golden' Mass‑Production‑Ziels von ≈80 %. ([prod.chosunbiz.com](https://prod.chosunbiz.com/en/en-it/2026/09/09/4LKP5EL6FRERDLJLSCIATEFDJY/?utm_source=openai))",
+      "placement": "Geografie: China (CXMT, Hefei). Markt/Layer: HBM3 (High‑Bandwidth Memory) für AI‑Accelerators / Packaging‑intensive Memory. Horizont: kurzfristig → Q4 2026 bis Ende 2026 (Pilot/Qualifikationssignal).",
+      "mechanism": "Messbarer Fertigungs‑Yield (End‑of‑line final test yield in %) ist ein unmittelbar qualifizierbarer Engpass‑Faktor: ein End‑Yield von ≈25 % reduziert qualifizierte HBM‑Output‑Bits drastisch im Vergleich zu marktüblichen Massenproduktionszielen (~80 %), verzögert Kundenauslieferungen und zwingt Abnehmer (Hyperscaler/AI‑Clouds) zu Allokationen bei etablierteren Lieferanten (SK hynix, Samsung, Micron), wodurch HBM‑Kurzfristangebot verknappt und Preis‑/Allokationsdruck steigt. Diese Kausalität ist direkt und technisch begründbar (TSV-/Stacking‑Probleme, Packaging‑Defekte). ([prod.chosunbiz.com](https://prod.chosunbiz.com/en/en-it/2026/09/09/4LKP5EL6FRERDLJLSCIATEFDJY/?utm_source=openai))",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM3 in Q3/Q4 2026 länger dominant bleibt und dass ein breiter SK‑hynix‑HBM4‑Ramp sich stärker in H2 verschiebt (weil zusätzliche chinesische HBM‑Bits von CXMT kurzfristig nicht in signifikanter Menge qualifiziert werden). Nettoeffekt: stärkere Verfügbarkeitsschranke für HBM → stützt Preis‑/Allokationsrisiken und verzögert merkliche Kapazitätsentlastung.",
+      "falsifier": "Signal wäre falsifiziert, falls CXMT bis zum 2026-12-31 entweder (a) veröffentlichte, qualifizierte HBM3‑Shipments ≥100.000 End‑Units (öffentlich belegbar), oder (b) CXMT in einer technischen Meldung/Quartalsmitteilung eine End‑of‑line final test yield ≥70 % für die HBM3 8‑Hi‑Produktlinie angibt — beides würde die Annahme 'trial yields ≈25% bleiben bindend' widerlegen.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-09",
+      "novelty": "Moderat hoch — direkte, quantitative Yield‑Angabe (25 %) für eine neu aufgebaute HBM3‑Pilotlinie liefert eine knappe, überprüfbare Messgröße, die direkte Auswirkung auf kurzfristige HBM‑Verfügbarkeit hat.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "negative_supply",
+      "severity": 70,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://prod.chosunbiz.com/en/en-it/2026/09/09/4LKP5EL6FRERDLJLSCIATEFDJY/",
+          "label": "ChosunBiz / Chosun Ilbo (Original‑Report über CXMT HBM3 yields, 2026-09-09)",
+          "kind": "primary",
+          "supports": "Direkter Bericht mit quantitativer Yield‑Angabe (Front‑End ≈30% × Back‑End ≈70% ⇒ End‑Yield ≈25%)."
+        },
+        {
+          "url": "https://wccftech.com/cxmt-faces-hbm-memory-chip-shock-as-yields-sink-to-25-with-close-to-80-out-of-100-hbm3-chips-failing-final-tests-says-report/",
+          "label": "Wccftech (Reproduktion / Sekundärbericht, 2026-09-09)",
+          "kind": "secondary",
+          "supports": "Zusätzliche Zusammenfassung der technischen Gründe (TSV, Stacking) und Verweis auf die Chosun‑Berichterstattung."
+        }
+      ],
+      "reason": "Der ChosunBiz‑Bericht vom 2026-09-09 liefert eine konkrete, quantifizierbare Messung (End‑Yield ≈25 %) für CXMTs HBM3‑Pilotlauf — ein direktes, technisch relevantes Beobachtungsereignis, das unmittelbar die kurzfristige verfügbare HBM‑Bit‑Menge reduziert. Ich habe die Primärmeldung verifiziert, die Messgröße (Prozentangabe) geprüft und ein falsifizierbares, datiertes Review‑Kriterium gesetzt (qualifizierte Shipments oder Yield‑Verbesserung bis 2026-12-31). Aufgrund der quantitativen Natur, der technischen Plausibilität (TSV/Stacking‑Probleme) und der direkten Relevanz für die bestehenden Vorhersagen zur HBM‑Rampen wurde die Aufnahme akzeptiert (VERIFIED DATA). Gegenbelege (z. B. offizielle CXMT‑Mitteilung mit anderen Yield‑Zahlen) wurden nicht gefunden; Monitoring ist nötig, da Yield‑Verbesserungen bei Packaging/Stacking schnell möglich sind.",
+      "candidateId": "36be91d3b8b1758a3507",
+      "candidateKey": "44f5e4e7e6ce23b677e07642",
+      "reviewedAt": "2026-09-13T19:44:18.606Z",
+      "priorityScore": 86,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-44f5e4e7e6ce23b677e07642",
+        "title": "CXMT Faces HBM Memory Chip Shock As Yields Sink To 25% With Close To 80 Out Of 100 HBM3 Chips Failing Final Tests, Says Report",
+        "date": "2026-09-09",
+        "admittedAt": "2026-09-13T19:44:18.606Z",
+        "fact": "Am 2026-09-09 berichtete ChosunBiz, dass ChangXin Memory Technologies (CXMT) bei seiner HBM3 (8‑Hi) Versuchslinie eine End‑Good‑Yield von rund 25 % erzielt (Front‑End ≈30 % × Back‑End Test/Packaging ≈70 % ⇒ End‑Yield ≈25 %); das entspricht knapp einem Drittel des üblichen 'golden' Mass‑Production‑Ziels von ≈80 %. ([prod.chosunbiz.com](https://prod.chosunbiz.com/en/en-it/2026/09/09/4LKP5EL6FRERDLJLSCIATEFDJY/?utm_source=openai))",
+        "placement": "Geografie: China (CXMT, Hefei). Markt/Layer: HBM3 (High‑Bandwidth Memory) für AI‑Accelerators / Packaging‑intensive Memory. Horizont: kurzfristig → Q4 2026 bis Ende 2026 (Pilot/Qualifikationssignal).",
+        "tailInference": "Messbarer Fertigungs‑Yield (End‑of‑line final test yield in %) ist ein unmittelbar qualifizierbarer Engpass‑Faktor: ein End‑Yield von ≈25 % reduziert qualifizierte HBM‑Output‑Bits drastisch im Vergleich zu marktüblichen Massenproduktionszielen (~80 %), verzögert Kundenauslieferungen und zwingt Abnehmer (Hyperscaler/AI‑Clouds) zu Allokationen bei etablierteren Lieferanten (SK hynix, Samsung, Micron), wodurch HBM‑Kurzfristangebot verknappt und Preis‑/Allokationsdruck steigt. Diese Kausalität ist direkt und technisch begründbar (TSV-/Stacking‑Probleme, Packaging‑Defekte). ([prod.chosunbiz.com](https://prod.chosunbiz.com/en/en-it/2026/09/09/4LKP5EL6FRERDLJLSCIATEFDJY/?utm_source=openai))",
+        "predictionId": "P-2026-07-13-04",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM3 in Q3/Q4 2026 länger dominant bleibt und dass ein breiter SK‑hynix‑HBM4‑Ramp sich stärker in H2 verschiebt (weil zusätzliche chinesische HBM‑Bits von CXMT kurzfristig nicht in signifikanter Menge qualifiziert werden). Nettoeffekt: stärkere Verfügbarkeitsschranke für HBM → stützt Preis‑/Allokationsrisiken und verzögert merkliche Kapazitätsentlastung.",
+        "falsifier": "Signal wäre falsifiziert, falls CXMT bis zum 2026-12-31 entweder (a) veröffentlichte, qualifizierte HBM3‑Shipments ≥100.000 End‑Units (öffentlich belegbar), oder (b) CXMT in einer technischen Meldung/Quartalsmitteilung eine End‑of‑line final test yield ≥70 % für die HBM3 8‑Hi‑Produktlinie angibt — beides würde die Annahme 'trial yields ≈25% bleiben bindend' widerlegen.",
+        "nextReview": "2026-12-31",
+        "priorityScore": 86,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 18,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 70,
+        "confidence": 75,
+        "markets": [
+          "hbm",
+          "server_dram",
+          "ai_infrastructure"
+        ],
+        "signal": "negative_supply",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "ChosunBiz / Chosun Ilbo (Original‑Report über CXMT HBM3 yields, 2026-09-09)",
+            "url": "https://prod.chosunbiz.com/en/en-it/2026/09/09/4LKP5EL6FRERDLJLSCIATEFDJY/"
+          },
+          {
+            "label": "Wccftech (Reproduktion / Sekundärbericht, 2026-09-09)",
+            "url": "https://wccftech.com/cxmt-faces-hbm-memory-chip-shock-as-yields-sink-to-25-with-close-to-80-out-of-100-hbm3-chips-failing-final-tests-says-report/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit, dass HBM3 in Q3/Q4 2026 länger dominant bleibt und dass ein breiter SK‑hynix‑HBM4‑Ramp sich stärker in H2 verschiebt (weil zusätzliche chinesische HBM‑Bits von CXMT kurzfristig nicht in signifikanter Menge qualifiziert werden). Nettoeffekt: stärkere Verfügbarkeitsschranke für HBM → stützt Preis‑/Allokationsrisiken und verzögert merkliche Kapazitätsentlastung."
+        },
+        "admissionReviewKey": "44f5e4e7e6ce23b677e07642"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_068894cc1d0ad42c006aa6fc8be7e487d19199106b8aa572b1"
+    },
+    {
+      "decision": "rejected",
+      "title": "TSMC, Samsung, and Intel Focus on New Lithography Equipment from Dutch Company ASML",
+      "fact": "ASML und mehrere große Foundries/Chiphersteller veröffentlichten Anfang September 2026 kooperative Ankündigungen zur Unterstützung von High‑NA EUV und einer Initiative zur Transition zu 12‑inch (6×12) Photomasks; ASML‑Pressemitteilungen datieren diese Ankündigungen auf den 2026‑09‑07/08. ([asml.com](https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv?utm_source=openai))",
+      "placement": "Geografie: global (Niederlande, Taiwan, Korea, USA). Markt/Layer: Leading‑edge Lithography (Foundry / Advanced Logic / DRAM nodes). Horizont: mittelfristig bis langfristig (2028–2033 für breite Produktionsadoption und Masken‑Pilotlinien).",
+      "mechanism": "Technologie‑Koordination (ASML + Foundries + Maskenlieferanten) adressiert High‑NA EUV‑Produktionsengpässe und Photomask‑Stitching/Produktivitätsprobleme; die Wirkung auf reale Bit‑Supply oder DRAM‑Volumen ist jedoch langfristig (Pilotlinien 2031, Massenproduktion 2028–2033 je nach Hersteller) und bereits in den Baselines/Berichten dokumentiert. ([asml.com](https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv?utm_source=openai))",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Langfristig (2028+) kann die Initiative Kapazitäts‑Produktivität erhöhen und damit die Wahrscheinlichkeit einer 2028er‑Entspannung der Memory‑Preisspanne steigern. Kurzfristig (2026–2027) ist der Einfluss auf die Memory‑Knappheit jedoch begrenzt.",
+      "falsifier": "Falsifiziert wird die operative Relevanz dieses Signals, falls bis zum 2027-12-31 keine Pilot‑12‑inch‑Maskenlinie initiiert oder dokumentiert wird und die beteiligten Foundries keine bestätigten Zeitpläne für High‑NA‑HVM (z. B. Samsung DRAM HVM 2028 oder TSMC logic HVM 2030) beibehalten.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "Niedrig — die Entwicklung wurde bereits breit berichtet und ist in den vorhandenen Baseline‑Schnipseln (Auto/TAIL) enthalten.",
+      "duplicateOf": "S-AUTO-28b329255578ff6a8943398e",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 6,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 6,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv",
+          "label": "ASML / TSMC Pressemitteilung zur 12‑inch Photomask Initiative (2026-09-08)",
+          "kind": "primary",
+          "supports": "ASML/TSMC Initiative und Zeitrahmen (Pressemitteilung vom 2026-09-08)."
+        }
+      ],
+      "reason": "Obwohl die zugrundeliegende Meldung durch offizielle ASML‑Pressemitteilungen gedeckt und richtig ist (VERIFIED DATA), handelt es sich inhaltlich um ein bereits in den Baseline‑Sammelpositionen reflektiertes und breit berichtetes Industrieereignis (Duplikat: S‑AUTO‑28b329255578ff6a8943398e). Die Inbox‑Regel verlangt, recycelte/duplicate claims abzulehnen statt sie als neue, separate Annahme aufzunehmen; deshalb wird diese Kandidatur abgewiesen (rejected). Das Ereignis bleibt wichtig für mittelfristige Capacity/Technology‑Prognosen, sollte aber nicht als neuer TAIL‑Signal‑Eintrag wiederholt werden.",
+      "candidateId": "eacf16a52d69d4348997",
+      "candidateKey": "071e662bdc2d2f3dfa4b62a8",
+      "reviewedAt": "2026-09-13T19:44:18.613Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_068894cc1d0ad42c006aa6fc8be7e487d19199106b8aa572b1"
+    },
+    {
+      "decision": "rejected",
+      "title": "Apple yields to memory suppliers in historic strategy shift, with Kioxia tipped as NAND long-term agreement recipient",
+      "fact": "Digitimes (und anschließend aggregatoren) berichteten am 2026-09-09 über Spekulationen, Apple könnte in Verhandlungen Zugeständnisse an Memory‑Lieferanten machen und Kioxia als wichtigen Langfrist‑NAND‑Partner sehen; die Berichte sind weitgehend spekulativ und stützen sich auf anonyme Quellen/Analystenkommentare. ([digitimes.com](https://www.digitimes.com/news/a20260909VL215/kioxia-sk-hynix-nand-price-manufacturing.html?mod=3&q=memory&utm_source=openai))",
+      "placement": "Geografie: global (Apple/US‑OEMs), Markt/Layer: NAND / Enterprise‑SSD / Client BOM. Horizont: unscharf (spekulative mittelfristige Lieferverträge).",
+      "mechanism": "Spekulation über Abnahmeverträge (LTA) würde, falls wahr, Kapazitätsbindung und Preiswirkung über LTAs bewirken; aktuell fehlen aber bestätigte Vertragsdokumente oder offizielle Unternehmensmitteilungen, sodass die Behauptung nicht als beobachtetes, verifizierbares Ereignis gilt.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Ohne bestätigte Vertragsdaten ist der behauptete Effekt auf Memory‑Verfügbarkeit/Preis nicht quantifizierbar; die Meldung wiederholt Baseline‑Narrative (Hyperscaler/LTA → capacity_lock) ohne neue, belastbare Belege.",
+      "falsifier": "Signal wird falsifiziert, falls bis 2026-12-31 keine öffentlich belegte Langfrist‑Abnahmevereinbarung zwischen Apple und Kioxia (oder ein äquivalentes, dokumentiertes LTA) veröffentlicht oder durch SEC/Apple‑Disclosure bestätigt wird; bis dahin bleibt die Behauptung spekulativ.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-09",
+      "novelty": "Niedrig — spekulative Weiterverwertung bereits vorhandener Marktgerüchte; keine neue, qualifizierte Messung.",
+      "duplicateOf": "tail-2026-07-31-03",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 4,
+        "thesisRelevance": 10,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "capacity_lock",
+      "severity": 20,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260909VL215/kioxia-sk-hynix-nand-price-manufacturing.html?mod=3&q=memory",
+          "label": "DigiTimes (2026-09-09) — spekulativer Bericht zu Apple/Kioxia‑LTA",
+          "kind": "primary",
+          "supports": "Artikel basiert auf anonymen Quellen/Analysten; kein öffentliches Vertragsdokument gefunden."
+        },
+        {
+          "url": "https://aiglobalwire.com/article/apple-yields-to-memory-suppliers-in-historic-strategy-shift-with-63d1e164-059e-4fb1-91b3-be3e64a91f42",
+          "label": "AI Global Wire (Aggregierter Bericht, 2026-09-09)",
+          "kind": "secondary",
+          "supports": "Aggregierte Reproduktion der Digitimes‑Story; keine zusätzlichen Primärnachweise."
+        }
+      ],
+      "reason": "Die Digitimes‑Meldung ist primär spekulativ und reproduziert existierende Marktgerüchte (Apple/Kioxia/LTA). Es fehlt ein belastbarer Primärbeleg (kein veröffentlichtes LTA, keine offizielle Apple‑ oder Kioxia‑Mitteilung). Die Inbox‑Regeln verbieten die Aufnahme wiederaufgewärmter oder rein spekulativer Firmenstorys als bestätigte TAIL‑Signale; deshalb abgewiesen (rejected). Empfehlung: Monitoring auf offizielle Vertragsmeldungen; bis dahin keine Baseline‑Änderung.",
+      "candidateId": "339d4b9e6eef9da4d76f",
+      "candidateKey": "c7c3e4f092ac746269d45eed",
+      "reviewedAt": "2026-09-13T19:44:18.613Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_068894cc1d0ad42c006aa6fc8be7e487d19199106b8aa572b1"
+    },
+    {
+      "decision": "accepted",
+      "title": "SK hynix plant High‑NA‑EUV‑Einsatz in DRAM‑HVM bis 2028 (Zitat Reuters/ASML)",
+      "fact": "SK hynix gibt an, dass das Unternehmen anstrebt, High‑NA EUV (ASML) in die Massenproduktion von DRAM bis zum Jahr 2028 einzuführen.",
+      "placement": "Geographisch: SK hynix‑Fabs (Südkorea); Domain/Laye r: DRAM‑High‑Volume‑Manufacturing (advanced DRAM/HBM); Horizont: bis 2028 (Kalenderjahr).",
+      "mechanism": "Technische Einführung von ASML High‑NA EUV erhöht die Patterning‑Fähigkeit und (potentiell) die Bits/wafer für fortgeschrittene DRAM/Kapazitäten ab der HVM‑Einführung; dadurch kann sich mittelfristig die verfügbare high‑end DRAM‑Bit‑Kapazität erhöhen und Preisdruck abmildern.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Reduziert die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bis Ende 2028 bleiben (P-2026-07-11-01). Wirkung ist zeitverzögert: technische Einfügung 2028 → bit‑output Wirkung frühestens 2028 H2–2029.",
+      "falsifier": "Bis 2028‑12‑31: keine öffentliche Bestätigung von SK hynix, dass High‑NA‑gefertigte DRAM‑Wafers in High‑Volume‑Manufacturing (HVM) qualifiziert oder in nennenswerten Mengen (qualifizierte HVM‑Shipments) ausgeliefert wurden. Alternativ: SK hynix veröffentlicht am oder vor 2028‑12‑31 eine offizielle Verschiebung des 2028‑Ziels.",
+      "nextReview": "2029-01-15",
+      "eventDate": "2026-09-08",
+      "novelty": "Moderate — mehrere Firmen/ASML kommunizieren High‑NA‑Roadmaps, aber SK hynix‑Target‑Datum war bislang weniger explizit.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 9,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 13,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/asml-to-work-with-major-chipmakersto-use-latest-tools-for-larger-chips-4891167",
+          "label": "Reuters (via Investing.com) – Stephen Nellis: ASML‑Artikel mit SK hynix‑Zitat",
+          "kind": "primary",
+          "supports": "Berichtet, dass SK hynix in einer Firmenaussage anmerkt, man ziele auf 2028, um High‑NA EUV in DRAM‑Massenproduktion anzuwenden."
+        },
+        {
+          "url": "https://ourbrand.asml.com/m/1a5a2a9d0491701c/original/2026_01_28-Presentation-ASML-Press-Conference-Q4FY2025_FINAL.pdf",
+          "label": "ASML Präsentation / Q4FY2025 und Aussagen zu High‑NA (ASML)",
+          "kind": "primary",
+          "supports": "ASML dokumentiert High‑NA‑Systeme in Kundenbetrieb und Roadmap‑Einfügung 2027–2028; technische Reife und Kunden‑Koordination beschrieben."
+        },
+        {
+          "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-asml%EA%B3%BC-%EC%B0%A8%EC%84%B8%EB%8C%80-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%A0%9C%EC%A1%B0-%ED%98%91%EB%A0%A5-%ED%99%95%EB%8C%80",
+          "label": "Samsung Newsroom – Samsung/ASML Pressemitteilung (ergänzende Industry‑Scope)",
+          "kind": "secondary",
+          "supports": "Samsung kündigt Einführung von ASML High‑NA in DRAM‑HVM bis 2028 an; bestätigt industrieweit beschleunigte High‑NA‑Adoption."
+        }
+      ],
+      "reason": "Primärquelle (Reuters‑Bericht, gestützt durch direkte ASML‑Materialien und Samsung‑Pressemitteilung) berichtet, dass SK hynix ein 2028‑Ziel für High‑NA‑EUV‑Einfügung angegeben hat. Das ist ein datiertes, prüfbares Unternehmensziel (kein sofortiger Liefersatz). Wirkung auf die Vorhersage P-2026-07-11-01 ist plausibel, aber zeitverzögert; daher indexImpact=false. Admisssion erfüllt Anforderungen: datiertes Zitat, Platzierung, kausaler Mechanismus und ein klarer, prüfbarer Falsifizierer.",
+      "candidateId": "f32f0cbde38e731f1912",
+      "candidateKey": "4463e0ea1a29b160b3a1ab39",
+      "reviewedAt": "2026-09-13T19:46:22.836Z",
+      "priorityScore": 80,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-4463e0ea1a29b160b3a1ab39",
+        "title": "SK hynix plant High‑NA‑EUV‑Einsatz in DRAM‑HVM bis 2028 (Zitat Reuters/ASML)",
+        "date": "2026-09-08",
+        "admittedAt": "2026-09-13T19:46:22.836Z",
+        "fact": "SK hynix gibt an, dass das Unternehmen anstrebt, High‑NA EUV (ASML) in die Massenproduktion von DRAM bis zum Jahr 2028 einzuführen.",
+        "placement": "Geographisch: SK hynix‑Fabs (Südkorea); Domain/Laye r: DRAM‑High‑Volume‑Manufacturing (advanced DRAM/HBM); Horizont: bis 2028 (Kalenderjahr).",
+        "tailInference": "Technische Einführung von ASML High‑NA EUV erhöht die Patterning‑Fähigkeit und (potentiell) die Bits/wafer für fortgeschrittene DRAM/Kapazitäten ab der HVM‑Einführung; dadurch kann sich mittelfristig die verfügbare high‑end DRAM‑Bit‑Kapazität erhöhen und Preisdruck abmildern.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Reduziert die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bis Ende 2028 bleiben (P-2026-07-11-01). Wirkung ist zeitverzögert: technische Einfügung 2028 → bit‑output Wirkung frühestens 2028 H2–2029.",
+        "falsifier": "Bis 2028‑12‑31: keine öffentliche Bestätigung von SK hynix, dass High‑NA‑gefertigte DRAM‑Wafers in High‑Volume‑Manufacturing (HVM) qualifiziert oder in nennenswerten Mengen (qualifizierte HVM‑Shipments) ausgeliefert wurden. Alternativ: SK hynix veröffentlicht am oder vor 2028‑12‑31 eine offizielle Verschiebung des 2028‑Ziels.",
+        "nextReview": "2029-01-15",
+        "priorityScore": 80,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 9,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 13,
+          "timeSensitivity": 6
+        },
+        "severity": 30,
+        "confidence": 70,
+        "markets": [
+          "dram",
+          "hbm",
+          "semiconductors"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability"
+        ],
+        "classification": "Architecture Update",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Reuters (via Investing.com) – Stephen Nellis: ASML‑Artikel mit SK hynix‑Zitat",
+            "url": "https://www.investing.com/news/stock-market-news/asml-to-work-with-major-chipmakersto-use-latest-tools-for-larger-chips-4891167"
+          },
+          {
+            "label": "ASML Präsentation / Q4FY2025 und Aussagen zu High‑NA (ASML)",
+            "url": "https://ourbrand.asml.com/m/1a5a2a9d0491701c/original/2026_01_28-Presentation-ASML-Press-Conference-Q4FY2025_FINAL.pdf"
+          },
+          {
+            "label": "Samsung Newsroom – Samsung/ASML Pressemitteilung (ergänzende Industry‑Scope)",
+            "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-asml%EA%B3%BC-%EC%B0%A8%EC%84%B8%EB%8C%80-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%A0%9C%EC%A1%B0-%ED%98%91%EB%A0%A5-%ED%99%95%EB%8C%80"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Reduziert die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bis Ende 2028 bleiben (P-2026-07-11-01). Wirkung ist zeitverzögert: technische Einfügung 2028 → bit‑output Wirkung frühestens 2028 H2–2029."
+        },
+        "admissionReviewKey": "4463e0ea1a29b160b3a1ab39"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f5fb003fb954180006aa6fd12d13087d1a87eb21489267f31"
+    },
+    {
+      "decision": "rejected",
+      "title": "TrendForce‑Bericht zu High‑NA‑Timelines (dupliziert / sekundär)",
+      "fact": "TrendForce berichtet (2026‑09‑09) über Wettbewerber‑Zeitpläne zu High‑NA‑EUV (Samsung, SK hynix, TSMC) und fasst Industrie‑Kommentare zusammen.",
+      "placement": "Globaler DRAM/HBM‑Sektor; Bericht ist Sekundär‑Research (TrendForce).",
+      "mechanism": "Analyse‑/Herstelleraussagen‑Zusammenfassung; kein neues primäres Unternehmens‑Zitat gegenüber Reuters/ASML/Samsung, daher duplizierend.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Keine neue, unabhängige Messung; wiederholt Trend und Unternehmensaussagen und liefert keine zusätzliche, falsifizierbare Messgröße.",
+      "falsifier": "N/A — Artikel ist Sekundäranalyse; relevant falsifier ist an Primärziel gebunden (z. B. keine HVM‑Shipments bis 2028‑12‑31).",
+      "nextReview": "2026-12-01",
+      "eventDate": "2026-09-09",
+      "novelty": "Low — wiederholt bereits publizierte Primäraussagen (Reuters / ASML / Samsung).",
+      "duplicateOf": "f32f0cbde38e731f1912",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 10,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/09/09/news-the-race-to-2028-samsung-sk-hynix-set-high-na-euv-timelines-for-dram-as-micron-stays-tight-lipped/",
+          "label": "TrendForce – The Race to 2028 (Sekundäranalyse)",
+          "kind": "secondary",
+          "supports": "TrendForce fasst Hersteller‑Zeitpläne und Industriekommentare zu High‑NA EUV zusammen; keine eigene Primäraussage von SK hynix gefunden."
+        }
+      ],
+      "reason": "Dieser Kandidat wiederholt eine Sekundäranalyse (TrendForce) der gleichen Industrieaussagen, die bereits von primären Quellen (Reuters/ASML/Samsung) gemeldet wurden. Das ist ein Duplikat ohne eigene primäre Beobachtung — daher Ablehnung (rejected).",
+      "candidateId": "1e0ea09ee2f58a51248c",
+      "candidateKey": "153451bab3f9d9303b0f65ed",
+      "reviewedAt": "2026-09-13T19:46:22.846Z",
+      "priorityScore": 40,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f5fb003fb954180006aa6fd12d13087d1a87eb21489267f31"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia‑CEO (Hiroo Ota) sagt: 'NAND‑Preise sind bereits stark gestiegen' und dämpft weitere Preiserhöhungen",
+      "fact": "Am 2026‑09‑09 erklärte Kioxia‑CEO Hiroo Ota laut Bloomberg‑Bericht, NAND‑Preise 'haben bereits genug zugelegt' und er habe Vertriebs‑Teams angewiesen, keine aggressiven weiteren Preiserhöhungen gegenüber Data‑Center‑Kunden zu verfolgen.",
+      "placement": "Geographisch: Globales Kioxia‑Vertriebsverhalten; Domain: NAND / Enterprise‑SSD Pricing; Horizont: kurzfristig (Q3–Q4 2026) für Preisverhandlungen und Vertragsverhandlungen.",
+      "mechanism": "Unternehmensinterne Preisstrategie (Verkaufsinstruktion) begrenzt weitere einseitige Preiserhöhungen und dämpft kurzfristig Aufwärtsdruck auf Enterprise‑SSD‑Kontraktpreise; wirkt prozyklisch auf Nachfrage‑Budget bei Hyperscalern.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Mildert kurzfristigen Aufwärtsdruck auf Enterprise‑SSD‑Kontraktpreise (OUTLOOK‑enterprise_ssd). Könnte reduzieren das Risiko sofortiger weiterer konjunkturbedingter ASP‑Sprünge in Q3–Q4 2026; kein Garant für Preissenkung, aber dämpfend.",
+      "falsifier": "Bis 2026‑12‑31: Kioxia meldet öffentlich, dass es Verkaufsrichtlinien revidiert hat und aktiv höhere Preise gegenüber Hyperscalern/Enterprise‑Käufern durchsetzt; oder Q4‑2026 Kontrakt‑ASP‑Index für Enterprise‑SSD steigt erneut deutlich (+>15% QoQ) trotz Kioxia‑Ankündigung.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-09",
+      "novelty": "Moderate — CEO‑Interview ist bemerkenswert, weil es ein Lieferantenseitig initiiertes Preisdeck statt üblicher Preisnahme darstellt.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_down",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://wccftech.com/apple-wins-an-implied-reprieve-as-kioxia-ceo-declares-nand-prices-have-risen-enough/amp/",
+          "label": "Wccftech – Bericht zur Ota‑Äußerung (zitiert Bloomberg)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Kioxia‑CEO Hiroo Ota erklärt habe, Preise seien 'already risen enough' und Vertriebsanweisungen gegeben wurden."
+        },
+        {
+          "url": "https://financefeeds.com/kioxia-nand-price-ceiling-70-percent-sk-hynix/",
+          "label": "FinanceFeeds – Zusammenfassung des Bloomberg‑Interviews und Kontext (70% QoQ ASP‑Anstieg aktuell)",
+          "kind": "secondary",
+          "supports": "Fasst Ota‑Zitat zusammen und gibt Kontext zu Q2‑NAND‑ASP‑Sprung (~70% QoQ) als Grundlage für die Aussage."
+        },
+        {
+          "url": "https://technews.tw/2026/09/09/kioxia-ceo-declares-nand-prices-have-risen-enough/",
+          "label": "TechNews – Regionale Berichterstattung mit Direktzitaten und Marktkommentar",
+          "kind": "secondary",
+          "supports": "Übersetzt und zitiert Ota: ‚Prices have already risen enough‘; berichtet, er habe Vertriebs‑Teams angewiesen, nicht aggressiv höhere Preise durchzudrücken."
+        }
+      ],
+      "reason": "Mehrere verlässliche Wirtschaftsmedien (Berichterstattung basierend auf Bloomberg‑Interview vom 2026‑09‑09) melden ein direktes Management‑Statement von Kioxia‑CEO Hiroo Ota. Die Aussage ist datiert, prüfbar und hat eine klare, kurzfristig falsifizierbare Implikation für Enterprise‑SSD‑Preisbildung (OUTLOOK‑enterprise_ssd). Deshalb wird der Kandidat als accepted aufgenommen. IndexImpact bleibt false, da keine direkt beobachtete Erfüllung (Shipments/Lead‑time/Fill‑rate) vorliegt.",
+      "candidateId": "7a86a8c028c092ed784f",
+      "candidateKey": "f6c9db04b1dba8b3599d0cea",
+      "reviewedAt": "2026-09-13T19:46:22.846Z",
+      "priorityScore": 80,
+      "gateReasons": [
+        "primary source not retrieved"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f5fb003fb954180006aa6fd12d13087d1a87eb21489267f31"
+    },
+    {
+      "decision": "rejected",
+      "title": "Kioxia‑CEO lehnt SK‑Hynix‑Merger ab (Duplikat desselben CEO‑Interviews)",
+      "fact": "Berichte (2026‑09‑09) melden, dass Kioxia‑CEO Hiroo Ota in demselben Bloomberg‑Interview angekündigt hat, eine tiefere Produktionsteilung / Fusion mit SK Hynix auszuschließen.",
+      "placement": "Global / Unternehmensführungs‑Layer: Kioxia‑SK Hynix Beziehungen; Horizont: sofort (Statement).",
+      "mechanism": "Verwaltungsstatement: Management nennt kartellrechtliche und JV‑Strukturgründe für das Aus­schließen engerer Fertigungsintegration; wirkt auf Marktstruktur‑Narrative, aber ist primär ein strategisches Kommunikationssignal.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Kein direktes kurzfristiges Auswirkungssignal auf Preis‑/Verfügbarkeitsmetriken, eher strukturelle Klarstellung; reduziert kurzfristig die Wahrscheinlichkeit eines sofortigen Zusammenschlusses, aber bietet keine quantitativen, messbaren Lieferungs‑Effekte.",
+      "falsifier": "Falls vor 2027‑06‑30 Kioxia und SK hynix öffentlich einen bindenden Verhandlungs‑ oder Fusionsvertrag ankündigen, ist die Aussage falsifiziert.",
+      "nextReview": "2027-07-01",
+      "eventDate": "2026-09-09",
+      "novelty": "Low — dieselbe primäre Interviewquelle wie 7a86; keine neue Primärinformation.",
+      "duplicateOf": "7a86a8c028c092ed784f",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 6,
+        "forecastImpact": 4,
+        "falsifiability": 5,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 10,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://tradevae.com/news/stock-markets/kioxia-ceo-rejects-expanded-sk-hynix-manufacturing-tie-up-seeks-to-cap-memory-prices/",
+          "label": "TradeVae – Zusammenfassung des Bloomberg‑Interviews (SK Hynix‑Aussage)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Ota einen engeren Fertigungs‑Tie‑up mit SK Hynix wegen Kartell‑ und JV‑Komplikationen ablehnt."
+        },
+        {
+          "url": "https://www.econotimes.com/Kioxia-Rules-Out-SK-Hynix-Manufacturing-Partnership-1751600",
+          "label": "EconoTimes – Wiederholung des Interviewbefunds",
+          "kind": "secondary",
+          "supports": "Wiederholt Ota‑Aussage, dass Kioxia keine vertiefte Fertigungskooperation mit SK Hynix anstrebt."
+        }
+      ],
+      "reason": "Dieser Kandidat berichtet über denselben Bloomberg‑Interview‑Stammdaten wie Kandidat 7a86 (Preisdämpfung). Da die Kernaussage ein weiteres nicht‑neues Detail aus demselben Primärinterview ist und keine eigenständige, datierte, messbare Wirkung auf indexierte Metriken liefert, wird er als Duplikat abgelehnt (rejected).",
+      "candidateId": "17ec294dfa3189faaf07",
+      "candidateKey": "651f623b3702972f93d452c6",
+      "reviewedAt": "2026-09-13T19:46:22.856Z",
+      "priorityScore": 27,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f5fb003fb954180006aa6fd12d13087d1a87eb21489267f31"
+    },
+    {
+      "decision": "accepted",
+      "title": "SK hynix veröffentlicht erste HBF‑(High Bandwidth Flash)‑Spezifikation auf FMS 2026",
+      "fact": "SK hynix und Sandisk veröffentlichten gemeinsam die erste technische HBF‑Spezifikation (Konfigurationen: 8‑/16‑Layer, bis zu 512 GB, Bandbreitenklassen 0.4–3 TB/s) und reichten die Spezifikation über das Open Compute Project ein.",
+      "placement": "FMS 2026 (Santa Clara, CA) – globale HBF‑Spezifikation für AI‑Memory/AI‑Inference‑Layer; Industrie‑Scope (NAND/HBF neben HBM); Terminalzeitpunkt: 2026-08-04.",
+      "mechanism": "Standardisierung über OCP verringert Interoperabilitäts‑ und Integrationskosten zwischen NAND‑Anbietern und AI‑Accelerator‑Anbietern; HBF erlaubt gestapelte NAND‑Packages mit höherer effektiver Kapazität pro Package (bis 512 GB) und definierten Bandbreitenklassen, wodurch NAND‑basierte „AI‑Storage“ näher an HBM‑ähnliche Aufgaben herangeführt werden kann und langfristig die Speicher/Storage‑Architektur für Inference/Hot‑Data verändert.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Erhöht Wahrscheinlichkeit, dass HBM‑dominanz für bestimmte AI‑Inference‑Workloads länger fragmentiert bleibt und verschiebt Teile der Speicher‑Optimierungs‑Dynamik weg vom reinen HBM‑Ramp; kann die Breite des HBM4‑Ramp‑Effekts relativieren (qualitativ: tilts risk away from a single HBM‑only outcome).",
+      "falsifier": "Bis zum 2028-12-31 keine qualifizierten, kommerziellen HBF‑Produktlieferungen (≥1.000 validierte Packages/Monat an Endkunden oder Tier‑1 Hyperscaler) und keine OCP‑Konformitätsdokumentation für Produktions‑Grade HBF.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-08-04",
+      "novelty": "Erste öffentlich verfügbare Industrie‑OCP‑Spezifikation für High Bandwidth Flash; technische Parameter (GB/Bandbreitenklassen) erstmals datiert publiziert.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 13,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 10,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "nand",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://news.skhynix.com/en/hbf-at-fms-2026/",
+          "label": "SK hynix Pressemitteilung (HBF – FMS 2026)",
+          "kind": "primary",
+          "supports": "Unveiling der ersten HBF‑Spezifikation; technische Parameter; OCP‑Einreichung. "
+        },
+        {
+          "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-03-Sandisk-and-sk-hynix-advance-global-standardization-of-hbf",
+          "label": "Sandisk Pressemitteilung (OCP HBF Spec)",
+          "kind": "primary",
+          "supports": "Bestätigung der OCP‑Technikspezifikation und Konsortiumsarbeit."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/08/04/sk-hynix-moves-to-seize-hbf-standard-for-next-generation",
+          "label": "Seoul Economic Daily (Bericht, 2026-08-04)",
+          "kind": "secondary",
+          "supports": "mediale Zusammenfassung mit technischen Details (512GB, Bandbreitenklassen) und FMS‑Kontext."
+        }
+      ],
+      "reason": "Primäre Unternehmens‑Pressemitteilungen (SK hynix, Sandisk) belegen ein konkretes, datiertes technisches Release über OCP. Die Meldung erfüllt die Aufnahmebedingungen: atomare, datierte Messgrößen (GB, TB/s), klarer Placement‑Kontext (FMS 2026) und eine zugrundeliegende kausale Mechanik (Standardisierung reduziert Integrationskosten, ermöglicht NAND‑basiertes ‚AI‑Storage‘). IndexImpact ist falsch, weil keine qualifizierten Liefersatz‑Messungen vorliegen. Adversarial check (Red Pencil) bestanden: Primärquellen vorhanden, kein Promotions‑Recycling, Outcome ist falsifizierbar und gebunden an Produktions‑Messgrößen.",
+      "candidateId": "aab025d216633bb661ac",
+      "candidateKey": "5943b6386e2f583bfa2b0839",
+      "reviewedAt": "2026-09-13T19:46:22.863Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-5943b6386e2f583bfa2b0839",
+        "title": "SK hynix veröffentlicht erste HBF‑(High Bandwidth Flash)‑Spezifikation auf FMS 2026",
+        "date": "2026-08-04",
+        "admittedAt": "2026-09-13T19:46:22.863Z",
+        "fact": "SK hynix und Sandisk veröffentlichten gemeinsam die erste technische HBF‑Spezifikation (Konfigurationen: 8‑/16‑Layer, bis zu 512 GB, Bandbreitenklassen 0.4–3 TB/s) und reichten die Spezifikation über das Open Compute Project ein.",
+        "placement": "FMS 2026 (Santa Clara, CA) – globale HBF‑Spezifikation für AI‑Memory/AI‑Inference‑Layer; Industrie‑Scope (NAND/HBF neben HBM); Terminalzeitpunkt: 2026-08-04.",
+        "tailInference": "Standardisierung über OCP verringert Interoperabilitäts‑ und Integrationskosten zwischen NAND‑Anbietern und AI‑Accelerator‑Anbietern; HBF erlaubt gestapelte NAND‑Packages mit höherer effektiver Kapazität pro Package (bis 512 GB) und definierten Bandbreitenklassen, wodurch NAND‑basierte „AI‑Storage“ näher an HBM‑ähnliche Aufgaben herangeführt werden kann und langfristig die Speicher/Storage‑Architektur für Inference/Hot‑Data verändert.",
+        "predictionId": "P-2026-07-13-04",
+        "predictionImpact": "Erhöht Wahrscheinlichkeit, dass HBM‑dominanz für bestimmte AI‑Inference‑Workloads länger fragmentiert bleibt und verschiebt Teile der Speicher‑Optimierungs‑Dynamik weg vom reinen HBM‑Ramp; kann die Breite des HBM4‑Ramp‑Effekts relativieren (qualitativ: tilts risk away from a single HBM‑only outcome).",
+        "falsifier": "Bis zum 2028-12-31 keine qualifizierten, kommerziellen HBF‑Produktlieferungen (≥1.000 validierte Packages/Monat an Endkunden oder Tier‑1 Hyperscaler) und keine OCP‑Konformitätsdokumentation für Produktions‑Grade HBF.",
+        "nextReview": "2027-12-31",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 13,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 10,
+          "timeSensitivity": 7
+        },
+        "severity": 40,
+        "confidence": 75,
+        "markets": [
+          "hbm",
+          "nand",
+          "ai_infrastructure",
+          "semiconductors"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Architecture Update",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "SK hynix Pressemitteilung (HBF – FMS 2026)",
+            "url": "https://news.skhynix.com/en/hbf-at-fms-2026/"
+          },
+          {
+            "label": "Sandisk Pressemitteilung (OCP HBF Spec)",
+            "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-03-Sandisk-and-sk-hynix-advance-global-standardization-of-hbf"
+          },
+          {
+            "label": "Seoul Economic Daily (Bericht, 2026-08-04)",
+            "url": "https://en.sedaily.com/finance/2026/08/04/sk-hynix-moves-to-seize-hbf-standard-for-next-generation"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht Wahrscheinlichkeit, dass HBM‑dominanz für bestimmte AI‑Inference‑Workloads länger fragmentiert bleibt und verschiebt Teile der Speicher‑Optimierungs‑Dynamik weg vom reinen HBM‑Ramp; kann die Breite des HBM4‑Ramp‑Effekts relativieren (qualitativ: tilts risk away from a single HBM‑only outcome)."
+        },
+        "admissionReviewKey": "5943b6386e2f583bfa2b0839"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0815bad2bd87ecc6006aa6fd12c1cc87d187b7c3e519bbfb61"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia bestreitet Gespräche über gemeinsame Produktion mit SK hynix",
+      "fact": "Kioxia‑CEO Hiroo Ota sagte in einem Interview (zitiert via Bloomberg/Medien) am 2026-09-09, es liefen keine Verhandlungen über gemeinsame Produktion mit SK hynix; eine Dreier‑Produktion (Kioxia‑SK‑Sandisk) sei wegen Kartellfragen und bestehender JVs mit Sandisk nicht plausibel.",
+      "placement": "Unternehmens‑Interview (Bloomberg/Medien) – Aussage des Kioxia‑CEO; Relevanz: globaler NAND/Enterprise‑SSD‑Markt; Datum der Aussage: 2026-09-09.",
+      "mechanism": "Ein öffentliches Dementi reduziert kurzfristig die Wahrscheinlichkeit einer vertikalen Konsolidierung, die sonst Marktanteile/Capex‑Risikoteilung und damit mittelfristig Preise/Verfügbarkeit beeinflusst. Es ist ein signales Korrelationsfaktor—kein direktes Messereignis (keine Shipments/Lead‑Time‑Metrik).",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass Memory‑Knappheit durch fehlende Konsolidierungs‑Effekte länger bestehen bleibt; unterstützt Basishypothesen für anhaltende Preis‑/Allokationsspannung (qualitativ).",
+      "falsifier": "Ein verbindliches MOU oder ein unterzeichneter JV‑Vertrag zwischen Kioxia und SK hynix zur gemeinsamen Produktion (konkret: gemeinsamer Produktionsplan + Kapazitäts‑Zuweisung ≥1 Fab/Projekt) wird bis 2027-06-30 öffentlich gemeldet.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-09",
+      "novelty": "Unternehmens‑Klarstellung gegen Spekulationen; begrenzte Neuigkeit gegenüber Gerüchten, aber relevant zur Strukturierung von Konsolidierungs‑Risiken.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 6,
+        "thesisRelevance": 14,
+        "forecastImpact": 13,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/",
+          "label": "TrendForce (Zusammenfassung, zitiert Bloomberg)",
+          "kind": "secondary",
+          "supports": "Bericht über Ota‑Aussage und Kontext zu Kartell‑/JV‑Hindernissen."
+        },
+        {
+          "url": "https://www.japantimes.co.jp/business/2026/09/10/companies/kioxia-sk-hynix-tie-up-dismiss/",
+          "label": "Japan Times (sourced Bloomberg)",
+          "kind": "secondary",
+          "supports": "Syndizierte Bloomberg‑Berichterstattung über Ota‑Interview; direkte Zitate verfügbar."
+        }
+      ],
+      "reason": "Die Meldung ist durch glaubwürdige Wire‑/Medien‑Quellen (Bloomberg‑Syndication via Japan Times/TrendForce) belegbar und liefert ein aktuelles Unternehmens‑Signal über Konsolidierungsabsichten. Allerdings fehlt ein messbares Markt‑KPI (Shipments/Lead‑Times/Contract‑Prices), deshalb nur Watchlist: die Nachricht ändert kurzfristig die Konsolidierungs‑Wahrscheinlichkeit, aber sie ist kein direkter Index‑Beobachtungspunkt. RedPencilPass=false, weil die Aussage eine Management‑Absage ist (begrenzte, nicht‑spezifizierte Marktauswirkung) und das Item keine direkte, quantifizierbare Marktmessung liefert.",
+      "candidateId": "8dd5a489202b1ab248b0",
+      "candidateKey": "e3fd2467574fab501d232ca5",
+      "reviewedAt": "2026-09-13T19:46:22.871Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0815bad2bd87ecc6006aa6fd12c1cc87d187b7c3e519bbfb61"
+    },
+    {
+      "decision": "accepted",
+      "title": "Counterpoint: CXMT erreicht 10 % Umsatzanteil im globalen DRAM‑Markt (Q2 2026)",
+      "fact": "Counterpoint Research berichtet, dass ChangXin Memory Technologies (CXMT) im Q2 2026 einen Anteil von 10 % am globalen DRAM‑Umsatz hielt (Quartalssicht, revenue share).",
+      "placement": "Globaler DRAM‑Markt (Revenue‑Share), Beobachtungsperiode: Q2 2026; Quelle: Counterpoint Research Global Memory Tracker (Q2 2026), veröffentlicht 2026-08-03/04.",
+      "mechanism": "CXMTs rasche Umsatz‑/Shipment‑Expansion verschiebt Marktanteile weg von den traditionellen drei Anbietern; weil CXMT aber überwiegend Commodity/DDR‑Segments adressiert, reduziert dies kurzfristig nicht die Engpässe bei High‑end HBM/HBM4‑Kapazität — es ändert die Allokationsdynamik (weniger Druck auf commodity‑Preise in China, aber HBM‑Knappheit bleibt).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Stützt die Basishypothese, dass HBM/Server‑DRAM‑Knappheit strukturell bleibt (da CXMT‑Angebot Commodity‑DRAM liefert, nicht zwingend HBM‑High‑end), erhöht die Wahrscheinlichkeit, dass Preis‑/Allokationsstress in High‑end‑Segmenten anhält.",
+      "falsifier": "Counterpoint, WSTS oder ein gleichwertiges Tracker‑Reporting weisen nach, dass CXMTs Umsatzanteil in zwei aufeinanderfolgenden Quartalen (Q3 2026 & Q4 2026) auf <8 % gefallen ist oder dass CXMT materiale Produktions‑Rückgänge (≥25 % QoQ) meldet.",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-08-03",
+      "novelty": "Erstes dokumentiertes double‑digit (Umsatz‑)Marktanteilsereignis für einen chinesischen DRAM‑Hersteller in Q2 2026; vorlaufend gegenüber Konsens‑Prognosen.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 15,
+        "thesisRelevance": 20,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 65,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://counterpointresearch.com/en/insights/ai-demand-reshapes-dram-rankings-in-q2-2026",
+          "label": "Counterpoint Research – Global Memory Tracker, Q2 2026 (Primary)",
+          "kind": "primary",
+          "supports": "Explizite Angabe: CXMT 10% Umsatzanteil, Quartalszeitraum, Markt‑Rankings."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/03/chinas-cxmt-breaks-10-percent-in-global-dram-market",
+          "label": "Seoul Economic Daily (Sekundärbericht über Counterpoint)",
+          "kind": "secondary",
+          "supports": "Mediale Einordnung und Zitat von Counterpoint‑Daten."
+        }
+      ],
+      "reason": "Counterpoint liefert eine primäre, quantifizierte Marktbeobachtung (Umsatz‑Marktanteil Q2 2026). Die Beobachtung ist atomar (10 % Umsatzanteil, quartalsbezogen), datiert und valide als Marktmessung; sie ist deshalb admissible und kann Prognosen über strukturelle Knappheit und Allokationsdynamik in High‑end‑Segmenten relevant beeinflussen. IndexImpact=false, weil keine direkten Liefervolumen‑/Lead‑Time‑Metriken (qualified shipments / lead_time) vorliegen.",
+      "candidateId": "a5521816dcad9aebb5b3",
+      "candidateKey": "9d7ae9a9ed346fe42c32b24a",
+      "reviewedAt": "2026-09-13T19:46:22.877Z",
+      "priorityScore": 95,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-9d7ae9a9ed346fe42c32b24a",
+        "title": "Counterpoint: CXMT erreicht 10 % Umsatzanteil im globalen DRAM‑Markt (Q2 2026)",
+        "date": "2026-08-03",
+        "admittedAt": "2026-09-13T19:46:22.877Z",
+        "fact": "Counterpoint Research berichtet, dass ChangXin Memory Technologies (CXMT) im Q2 2026 einen Anteil von 10 % am globalen DRAM‑Umsatz hielt (Quartalssicht, revenue share).",
+        "placement": "Globaler DRAM‑Markt (Revenue‑Share), Beobachtungsperiode: Q2 2026; Quelle: Counterpoint Research Global Memory Tracker (Q2 2026), veröffentlicht 2026-08-03/04.",
+        "tailInference": "CXMTs rasche Umsatz‑/Shipment‑Expansion verschiebt Marktanteile weg von den traditionellen drei Anbietern; weil CXMT aber überwiegend Commodity/DDR‑Segments adressiert, reduziert dies kurzfristig nicht die Engpässe bei High‑end HBM/HBM4‑Kapazität — es ändert die Allokationsdynamik (weniger Druck auf commodity‑Preise in China, aber HBM‑Knappheit bleibt).",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Stützt die Basishypothese, dass HBM/Server‑DRAM‑Knappheit strukturell bleibt (da CXMT‑Angebot Commodity‑DRAM liefert, nicht zwingend HBM‑High‑end), erhöht die Wahrscheinlichkeit, dass Preis‑/Allokationsstress in High‑end‑Segmenten anhält.",
+        "falsifier": "Counterpoint, WSTS oder ein gleichwertiges Tracker‑Reporting weisen nach, dass CXMTs Umsatzanteil in zwei aufeinanderfolgenden Quartalen (Q3 2026 & Q4 2026) auf <8 % gefallen ist oder dass CXMT materiale Produktions‑Rückgänge (≥25 % QoQ) meldet.",
+        "nextReview": "2027-01-31",
+        "priorityScore": 95,
+        "scoreBreakdown": {
+          "sourceQuality": 20,
+          "novelty": 15,
+          "thesisRelevance": 20,
+          "forecastImpact": 18,
+          "falsifiability": 12,
+          "timeSensitivity": 10
+        },
+        "severity": 65,
+        "confidence": 85,
+        "markets": [
+          "dram",
+          "server_dram",
+          "semiconductors"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Counterpoint Research – Global Memory Tracker, Q2 2026 (Primary)",
+            "url": "https://counterpointresearch.com/en/insights/ai-demand-reshapes-dram-rankings-in-q2-2026"
+          },
+          {
+            "label": "Seoul Economic Daily (Sekundärbericht über Counterpoint)",
+            "url": "https://en.sedaily.com/finance/2026/09/03/chinas-cxmt-breaks-10-percent-in-global-dram-market"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Stützt die Basishypothese, dass HBM/Server‑DRAM‑Knappheit strukturell bleibt (da CXMT‑Angebot Commodity‑DRAM liefert, nicht zwingend HBM‑High‑end), erhöht die Wahrscheinlichkeit, dass Preis‑/Allokationsstress in High‑end‑Segmenten anhält."
+        },
+        "admissionReviewKey": "9d7ae9a9ed346fe42c32b24a"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0815bad2bd87ecc6006aa6fd12c1cc87d187b7c3e519bbfb61"
+    },
+    {
+      "decision": "watchlist",
+      "title": "ASML‑Initiative: TSMC und Samsung bekennen sich zu High‑NA EUV; 12‑inch Photomask‑Initiative angekündigt",
+      "fact": "ASML und TSMC (mit Teilnahme/Commitments von Samsung und weiteren Partnern) kündigten am 2026-09-07/08 eine Industrieinitiative an, die Übergang zu 12‑inch Photomasks zu treiben; TSMC beabsichtigt High‑NA HVM ab 2030 (6‑inch masks initial), Samsung plant High‑NA‑Einsatz in DRAM‑HVM ab 2028 (Unternehmensangaben/Medienberichte).",
+      "placement": "Ankündigung / Industry Initiative (ASML + TSMC + Partner) – SPIE BACUS/Konferenz‑Umfeld; Datum: 2026-09-08 (ASML/TSMC Pressemitteilung).",
+      "mechanism": "Verbindliche Commitments zu High‑NA‑Tooling und einer Mask‑Roadmap (6‑inch → 12‑inch) adressieren Photomask‑Produktivität und komplexe Patterning‑Constraints; langfristig können höhere Scanner‑Produktivität und veränderte Mask‑Formate Fab‑Produktivität steigern, damit mittelfristig die Produktionskosten pro Feature senken und Advanced‑Node‑Kapazität erhöhen. Kurzfristig aber sind viele weiterführende Komponenten (Mask‑Pilotline, Lieferkette für 12‑inch Masken) termingebunden und nicht unmittelbar verfügbar.",
+      "predictionId": "",
+      "predictionImpact": "Keine unmittelbare Messung, eher Layer‑/Roadmap‑Update für Advanced‑Nodes; hat potenziellen langfristigen Einfluss auf Kapazitäts‑/Kostenstruktur, aber keinen sofortigen Liefereffekt auf 2026/2027‑Zeithorizont.",
+      "falsifier": "Wenn bis 2031 keine 12‑inch Photomask Pilotline (nachweislich: Pilotline‑Ankündigung / FID / Finanzierung) dokumentiert ist ODER wenn TSMC/Samsung ihre High‑NA‑HVM‑Zeithorizonte öffentlich um >=2 Jahre verschieben, wird die praktische Umsetzbarkeit dieser Ankündigung infrage gestellt.",
+      "nextReview": "2027-09-01",
+      "eventDate": "2026-09-08",
+      "novelty": "Breite industrielle Bestätigung und Roadmap (12‑inch mask pilot line Ziel 2031; HVM‑Intentionen: TSMC 2030, Samsung DRAM 2028) — relevant als technischer Roadmap‑Update.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/tsmc-and-samsung-commit-to-adopting-asmls-high-na-euv-lithography-tools-by-2030/",
+          "label": "DatacenterDynamics (Bericht über Commitments)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung zur Adoption von High‑NA durch TSMC/Samsung; Angabe zu Timelines."
+        },
+        {
+          "url": "https://www.tekedia.com/samsung-tsmc-commit-to-asml-high-na-euv-as-ai-drives-chipmaking-complexity/",
+          "label": "Tekedia (Nachrichtenaggregation)",
+          "kind": "secondary",
+          "supports": "Branchentextliche Einordnung und Hinweis auf DRAM‑/Logic‑Timelines."
+        }
+      ],
+      "reason": "Die ASML/TSMC‑Pressemitteilung ist ein dokumentierter Roadmap‑/Kooperations‑Update mit klaren, datierten Zielgrößen (12‑inch mask pilot line Ziel 2031; TSMC High‑NA HVM 2030; Samsung DRAM‑Ziel 2028 in Sekundärberichten). Das Ereignis ist wichtig als Layer‑/Technologie‑Roadmap‑Signal, aber es liefert noch keine kurzfristig messbaren Liefervolumen‑ oder Preisdaten; deshalb Watchlist: beobachtenswert für 2028–2033‑Falsifier, aber kein unmittelbarer Index‑Einschlag in den vorliegenden Prognosen.",
+      "candidateId": "3dfbc0350d6775f3163d",
+      "candidateKey": "826a57bb95ab6f592853b08f",
+      "reviewedAt": "2026-09-13T19:46:22.881Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0815bad2bd87ecc6006aa6fd12c1cc87d187b7c3e519bbfb61"
+    },
+    {
+      "decision": "rejected",
+      "title": "Duplication / bestätigte Pressemitteilungen zu High‑NA EUV (ASML/TSMC/Samsung) — kein neues, aufnehmbares Signal",
+      "fact": "Am 2026-09-08 veröffentlichten ASML und TSMC eine gemeinsame Pressemitteilung, in der sie ein Industrie‑Initiative für 12‑inch (6×12) Photomasks für High‑NA EUV ankündigen; Samsung bestätigte am 2026-09-08, der Initiative beizutreten und High‑NA‑EUV in DRAM‑HVM bis 2028 einzuführen. (Quellen: ASML, TSMC, Samsung PR).",
+      "placement": "Global / Halbleiter‑Fertigung (Advanced lithography); Layer: Produktions‑Technologie / Fab‑Roadmap; Horizon: 2028–2033.",
+      "mechanism": "Technische/Produktions‑Argumentation: Übergang zu größeren 12‑inch‑Photomasken reduziert Stitching‑Limits, erhöht Scanner‑Produktivität und senkt Stückkosten; High‑NA‑EUV kann so in späteren Knoten voller in HVM eingesetzt werden (Pilotlinie Ziel 2031, HVM‑Einsatz 2030–2033 nach PRs).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Bezieht sich indirekt auf die langfristige Kapazitätsentwicklung von HBM/Server‑DRAM. Primärer Effekt ist timing‑verschiebend (Pilot 2031 / HVM 2030–33) und mildert nicht das in Prediction P-2026-07-11-01 angenommene 2027‑Knappheitspeak; kein kurzfristiger Entkräftenachweis.",
+      "falsifier": "Bis 2028-12-31 keine belegbaren Samsung‑ oder TSMC‑Nachweise für High‑NA‑EUV in DRAM‑HVM (zertifizierte Produktionsläufe/qualifizierte HVM‑Shipments) oder wenn die angekündigten Pilot‑Meilensteine (12‑inch pilot line) nicht bis 2031 dokumentiert werden.",
+      "nextReview": "2027-03-01",
+      "eventDate": "2026-09-08",
+      "novelty": "low (bereits in Baseline vorhanden)",
+      "duplicateOf": "S-AUTO-28b329255578ff6a8943398e",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 2,
+        "thesisRelevance": 15,
+        "forecastImpact": 5,
+        "falsifiability": 5,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "semiconductors",
+        "dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv",
+          "label": "ASML & TSMC Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "Press release dated 2026-09-08: '...establish a 12-inch mask pilot line by 2031... High‑NA ... HVM starting in 2030.'"
+        },
+        {
+          "url": "https://pr.cld.tsmc.com/english/news/3338",
+          "label": "TSMC PR (mirrored) – 2026-09-08",
+          "kind": "primary",
+          "supports": "TSMC: 'TSMC intends to use ASML’s High NA technology in high-volume manufacturing for advanced nodes starting in 2030'."
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+          "label": "Samsung Newsroom (2026-09-08)",
+          "kind": "primary",
+          "supports": "Samsung news release: 'Samsung will join the industry initiative... plans to introduce ASML’s High NA EUV into future DRAM HVM by 2028.'"
+        }
+      ],
+      "reason": "Ablehnung: Inhalt ist kein originärer Beleg sondern eine Zusammenfassung/Weiterverbreitung bestätigter Unternehmens‑Pressemitteilungen, die bereits in der Baseline dokumentiert sind (siehe S‑AUTO Einträge). Die Meldung liefert keine neue, quantifizierbare Messgröße (Shipments/qualified output/Lead‑time‑Verringerung) mit unmittelbarer Auswirkung auf die 2027‑Knappheitsannahme; daher kein Aufnahme‑Signal (Recycling / nicht neu).",
+      "candidateId": "c965b6b80ad1f52a8845",
+      "candidateKey": "913950a0e2dc6e86942fc1c9",
+      "reviewedAt": "2026-09-13T19:48:13.156Z",
+      "priorityScore": 50,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07dd2f368212d0e1006aa6fd8f176887d1ab5214151f6e887a"
+    },
+    {
+      "decision": "rejected",
+      "title": "Promotional / Meinungsanalyse zu SK hynix vs Micron (Aggregat/Analysten‑Rating) — nicht aufnahmefähig",
+      "fact": "Am 2026-09-08 publizierte Seeking Alpha (zitiert u.a. von Aggregatoren) ein Meinungsstück, das SK hynix als 'Strong Buy' gegenüber Micron bewertet, begründet mit HBM‑Führerschaft und erwarteter Angebotsknappheit bis 2030.",
+      "placement": "Global / Aktien‑ und Investor‑Thesis (Halbleiter‑Equities); Layer: Nachfrageseite & Marktstruktur; Horizon: 2026–2028 (Investment‑Zeithorizont).",
+      "mechanism": "Investment‑These: Bewertungsprämie für SK hynix stützt sich auf HBM‑Technologie‑Vorsprung, eingebundene LTAs und ein angenommener struktureller Nachfrageüberhang; dies ist eine Analysten‑/Meinungs‑Erzählung, keine neue Produktions‑Messung.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "These stützt die Basisherleitung, dass HBM/Server‑DRAM knapp bleiben; jedoch ist die Schlussfolgerung eine Meinungs‑/Bewertungsanalyse ohne direkten Messnachweis für Lieferzeiten oder qualifizierte Shipments und ändert die zugrundeliegende Vorhersage nicht.",
+      "falsifier": "Bis 2027-09-30: wenn SK hynix keine nachweislich dominierenden, qualifizierten HBM‑Shipments/Marktführerschaft vorlegt (e.g. belegte, verifizierte HBM‑Shipment‑Metriken gegenüber Wettbewerbern), oder wenn Vertrags‑/Preisdaten Micron deutlich gleichziehen.",
+      "nextReview": "2027-03-01",
+      "eventDate": "2026-09-08",
+      "novelty": "very low (Wiederholung bekannter Narratives)",
+      "duplicateOf": "S-AUTO-2fbda9055add9061096f0742",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 2,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 5,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 15,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://pluang.com/en/news-feed/sk-hynix-vs-micron-kali-ini-berbeda",
+          "label": "Pluang Aggregation (2026-09-08)",
+          "kind": "secondary",
+          "supports": "Aggregierte Zusammenfassung eines Seeking Alpha Artikels: 'SK hynix rated Strong Buy over Micron due to HBM market leadership and supply shortages until 2030.'"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4943973-sk-hynix-vs-micron-this-time-is-different",
+          "label": "Seeking Alpha — 'SK hynix Vs. Micron: This Time Is Different' (2026-09-08)",
+          "kind": "primary",
+          "supports": "Meinungsstück/Rating‑Kommentar: 'SK hynix Inc. is rated Strong Buy... on superior HBM leadership and supply shortages until 2030.'"
+        }
+      ],
+      "reason": "Ablehnung: Handelt sich um marktorientierte Meinungs‑/Investment‑Analyse (Promotional/Research commentary), kein neuer primärer Messwert (Shipments/Lead‑Time/kontraktierte Volumen). Der Kern‑Narrativ ist bereits in der Baseline und in mehreren Primärberichten dokumentiert; daher nicht aufnahmefähig als neues TAIL‑Signal.",
+      "candidateId": "19b6b0c04a0b15a77ce6",
+      "candidateKey": "b4d47796aebee984f9b4aa1d",
+      "reviewedAt": "2026-09-13T19:48:13.156Z",
+      "priorityScore": 39,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07dd2f368212d0e1006aa6fd8f176887d1ab5214151f6e887a"
+    },
+    {
+      "decision": "rejected",
+      "title": "Seeking Alpha Meinungsartikel: 'SK hynix Vs. Micron' — keine neue, verifizierbare Beobachtung",
+      "fact": "Seeking Alpha veröffentlichte am 2026-09-08 eine Meinungsanalyse, die SK hynix gegenüber Micron bevorzugt (Strong Buy) und das Argument einer anhaltenden HBM/Memory‑Knappheit bis circa 2030 vorträgt.",
+      "placement": "Global / Equity‑Thesis für Halbleiter (Investor Narrative); Layer: Nachfrage / Preisstruktur; Horizon: 2026–2028 (Anlegerperspektive).",
+      "mechanism": "Narrativ‑Mechanismus: Bewertung stützt sich auf erwartete strukturelle Knappheit, HBM‑Technologievorsprung und langfristige Abnahmeverträge; die Argumentation leitet Preis‑/Bewertungsimplikationen aus Annahmen ab, nicht aus neuen, quantifizierten Liefersignalen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Die Analyse ist korrelierend zur Vorhersage eines anhaltenden HBM/Server‑DRAM‑Engpasses, liefert jedoch keinen direkten, datengestützten Gegenbeweis oder neue qualifizierte Messungen; ändert Vorhersage nicht.",
+      "falsifier": "Bis 2027-09-30: Wenn Micron belegbar aufholt (zertifizierte HBM‑Shipments/qualifizierte HBM4‑Deployments ≥ SK hynix) oder wenn Memory‑Kontraktpreise zwei Quartale in Folge signifikant fallen, widerspricht das der Kernthese.",
+      "nextReview": "2027-03-01",
+      "eventDate": "2026-09-08",
+      "novelty": "very low",
+      "duplicateOf": "19b6b0c04a0b15a77ce6",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 13,
+        "forecastImpact": 7,
+        "falsifiability": 6,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://seekingalpha.com/article/4943973-sk-hynix-vs-micron-this-time-is-different",
+          "label": "Seeking Alpha — Primary Opinion Piece (2026-09-08)",
+          "kind": "primary",
+          "supports": "Artikeltext: 'SK hynix Inc. is rated Strong Buy... on superior HBM leadership and supply shortages until 2030.'"
+        }
+      ],
+      "reason": "Ablehnung: Primär‑Meinungsstück ohne neue, verifizierbare Messdaten. Zusätzlich ist die Story in bestehenden Baseline‑Signalen und Marktberichten bereits breit behandelt. Nach TAIL‑Kriterien sind Meinungsanalysen/Rating‑Kommentare allein keine hinreichende Basis zur Aufnahme.",
+      "candidateId": "ac8116515b1be7c11591",
+      "candidateKey": "c0eb271661d03497a3089dba",
+      "reviewedAt": "2026-09-13T19:48:13.157Z",
+      "priorityScore": 45,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07dd2f368212d0e1006aa6fd8f176887d1ab5214151f6e887a"
+    },
+    {
+      "decision": "rejected",
+      "title": "Technobezz‑Syndikat: Samsung–ASML High‑NA Kollaboration (wiederholt bestätigte PR) — kein neues Aufnahmesignal",
+      "fact": "Mehrere Pressemitteilungen am 2026-09-08 (Samsung, ASML, TSMC) bestätigen gemeinsame Initiative zur Einführung von 12‑inch Photomasks für High‑NA EUV; Samsung kündigt internes Ziel an, High‑NA‑EUV in DRAM‑HVM bis 2028 einzusetzen.",
+      "placement": "Global / Halbleiter‑Fertigung; Layer: Fab‑Technologie; Horizon: 2028–2033.",
+      "mechanism": "Technischer Mechanismus: 12‑inch Photomasks adressieren Stitching‑Limits in High‑NA Systemen und sollen pro‑Wafer Produktivität erhöhen — ermöglicht langfristig höhere qualifizierte Kapazität, hat aber keinen sofortigen Verfügbarkeits‑Falsifizierer (kein Shipments‑Beleg).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Konditional/langfristig: Könnte ab 2030+ tatsächlich Kapazitätsdruck mindern; hat jedoch keinen unmittelbaren Effekt auf die angenommene 2027‑Knappheit und liefert keine aktuellen Liefersignale.",
+      "falsifier": "Wenn bis 2028-12-31 Samsung keine dokumentierten, qualifizierten High‑NA‑DRAM‑HVM‑Shipments vorlegt oder die 12‑inch‑Pilotziele nicht bis 2031 erreicht werden, wäre die operative Wirkung deutlich geringer als behauptet.",
+      "nextReview": "2027-03-01",
+      "eventDate": "2026-09-08",
+      "novelty": "low",
+      "duplicateOf": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 1,
+        "thesisRelevance": 14,
+        "forecastImpact": 4,
+        "falsifiability": 5,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "semiconductors",
+        "dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 18,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+          "label": "Samsung Newsroom (2026-09-08)",
+          "kind": "primary",
+          "supports": "Samsung erklärt Teilnahme an 12‑inch Photomask Initiative und Ziel, High‑NA EUV in DRAM‑HVM bis 2028 einzusetzen."
+        },
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv",
+          "label": "ASML / TSMC Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "ASML/TSMC PR: '...establish a 12‑inch mask pilot line by 2031... HVM readiness by 2033.'"
+        }
+      ],
+      "reason": "Ablehnung: Aggregator‑Syndikation einer bereits verifizierten Unternehmensankündigung; kein zusätzlicher quantitativer Nachweis (Shipments / Fill‑Rates / Lead‑Time‑Verbesserung). Baseline enthält bereits die relevanten Primärmeldungen; somit nicht aufnahmewürdig.",
+      "candidateId": "828c5d9d3c9ed40bf688",
+      "candidateKey": "1b97a30ac54bc949e7f753af",
+      "reviewedAt": "2026-09-13T19:48:13.157Z",
+      "priorityScore": 44,
+      "gateReasons": [
+        "missing novelty",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07dd2f368212d0e1006aa6fd8f176887d1ab5214151f6e887a"
+    },
+    {
+      "decision": "rejected",
+      "title": "Applied Materials, AMD, Broadcom, Lam Research, and Marvell Technology Shares Skyrocket, What You Need To Know",
+      "fact": "Dritte‑Parteien‑Market‑News/StockStory‑Syndication (Publikation 2026-09-08) berichtet über Kursanstiege mehrerer Halbleiterwerte nach einer Reihe von Ankündigungen (Qualcomm–AWS, ASML/TSMC/Intel‑Meilensteine).",
+      "placement": "Global, Aktienmarkt/Media‑Syndication; kein enger produktspezifischer, datierter Lieferungs- oder Kapazitätsbeleg.",
+      "mechanism": "Kurzfristige Marktreaktion auf kombinierte Presse‑/Kooperationsmeldungen; kein direkter, qualifizierter Nachweis über veränderte Lieferung/Lead‑Times/kontraktierte Volumina in Halbleitermärkten.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "",
+      "nextReview": "2026-12-08",
+      "eventDate": "2026-09-08",
+      "novelty": "niedrig — aggregiert bekannte Pressemeldungen und Kooperationsankündigungen; keine neue Primärbeobachtung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 4,
+        "thesisRelevance": 6,
+        "forecastImpact": 5,
+        "falsifiability": 3,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://markets.chroniclejournal.com/observerreporter/article/stockstory-2026-9-8-applied-materials-amd-broadcom-lam-research-and-marvell-technology-shares-skyrocket-what-you-need-to-know",
+          "label": "StockStory via ChronicleJournal (Syndication)",
+          "kind": "secondary",
+          "supports": "Publikation/Datum und die Formulierung der Headline."
+        },
+        {
+          "url": "https://uk.finance.yahoo.com/news/applied-materials-amd-broadcom-lam-012718535.html",
+          "label": "Yahoo/Republishing (TradingView authoring)",
+          "kind": "secondary",
+          "supports": "Reproduktion der StockStory-Meldung."
+        }
+      ],
+      "reason": "Ablehnung: Kandidat ist ein zusammenfassender/handelbarer Marktkommentar (Syndication) ohne atomaren, qualifizierten Primärbeleg (z. B. kontrahierte Shipments, Lead‑Time‑Messung oder formale Unternehmensverkündung mit quantifizierten Volumina). Solche Promotions‑/Aktienmeldungen sind im TAIL‑Baseline‑Kontext bereits reichlich vertreten und liefern keine eindeutige, datierte Aussage, die ein bestehendes Forecast‑ID sinnvoll ändert. Ergebnis: rejected.",
+      "candidateId": "8020169b83ebc5fd4589",
+      "candidateKey": "36df25b44044e0256742707c",
+      "reviewedAt": "2026-09-13T19:48:13.164Z",
+      "priorityScore": 29,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing falsifier",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f7a5150513694df006aa6fd8f046887d184a33c3a5b416f8e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "ASML wins over TSMC, Samsung for EUV machines as AI demand surges",
+      "fact": "Am 2026-09-08 kündigten ASML, TSMC und Samsung gemeinsame Initiativen/Verpflichtungen an: Samsung plant die Einführung von ASML High‑NA EUV in DRAM‑High‑Volume‑Manufacturing (HVM) ab 2028; TSMC beabsichtigt High‑NA HVM für Advanced‑Nodes ab 2030; ASML/TSMC zielen auf eine 12‑inch‑Photomask‑Pilotlinie bis 2031 und Produktionsbereitschaft für 12‑inch High‑NA‑Systeme bis 2033. (ASML/TSMC/Samsung Pressemitteilungen, 2026-09-08).",
+      "placement": "Globaler Halbleiter‑Frontend (Lithographie) / Photomask‑Format und Produktions‑Timeline; Relevanz für DRAM/HBM (Memory) und Leading‑Edge‑Logic; Horizont: 2028–2033.",
+      "mechanism": "High‑NA EUV erhöht Auflösungs-/Patterning‑Kapazität, aber erzeugt durch bisherige Maskengrößen ('Stitching') einen Durchsatznachteil; die gemeinschaftliche Umstellung auf 12‑inch‑Photomasks soll Stitching‑Penalty reduzieren und Scanner‑Produktivität um bis zu ~40% erhöhen (ASML/Erklärungen). Das reduziert langfristig Kosten/Wafer und ermöglicht höhere effektive Produktionskapazität (potentielle mittelfristige Kapazitätsentspannung für DRAM/HBM/Logic sofern Masken‑Pilotline und Lieferkette realisiert werden).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt das Basisszenario, dass HBM und Server‑DRAM bis Ende 2028 strukturell knapp bleiben, liefert aber einen dokumentierten Pfad zu mittelfristiger Kapazitätsentspannung (capacity_relief) ab 2028–2033 falls Implementierung und Masken‑Supply erfolgreich verlaufen. Wirkung: begrenzt/vernünftig verzögert — keine sofortige Verifikation der Verfügbarkeit.",
+      "falsifier": "Bis zum 2029-12-31 zeigen Samsung‑ oder unabhängige Unternehmensmeldungen keine nachweisbaren High‑NA‑DRAM‑Massenshipments oder Qualifikationsnachweise (Produktions‑/Shipment‑Reports, SEC/Investor‑Statements oder bestätigte Kundenlieferungen). Alternativ: Bis zum 2031-12-31 ist keine 12‑inch‑Photomask‑Pilotline öffentlich dokumentiert (ASML/TSMC/Maskenlieferanten/Masken‑Fertigungsbeleg).",
+      "nextReview": "2031-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "moderat-hoch — erste branchenweite Commitments für High‑NA‑Adoption in spezifischen HF‑Markten + Masken‑Initiative.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 45,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv",
+          "label": "ASML / TSMC Pressemitteilung (Primär)",
+          "kind": "primary",
+          "supports": "Dokumentiert Initiative zur Transition auf 12‑inch Photomasks, Pilotline‑Ziel 2031, Produktionsbereitschaft 2033 und TSMC‑Zeitplan (High‑NA ab 2030)."
+        },
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML / Samsung Pressemitteilung (Primär)",
+          "kind": "primary",
+          "supports": "Samsung‑Statement: High‑NA EUV in DRAM‑HVM ab 2028; Teilnahme an 12‑inch Mask Initiative."
+        },
+        {
+          "url": "https://pr.cld.tsmc.com/english/news/3338",
+          "label": "TSMC Presseaussendung (Primär)",
+          "kind": "primary",
+          "supports": "TSMC‑Formulierung zur Zusammenarbeit mit ASML und Angabe des 2030‑Zeitfensters für High‑NA‑Einführung in HVM."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/asml-wins-over-tsmc-samsung-060500993.html",
+          "label": "Bloomberg via Yahoo (Sekundär)",
+          "kind": "secondary",
+          "supports": "Breite Berichterstattung und unabhängige Zusammenfassung der firmenseitigen Aussagen."
+        }
+      ],
+      "reason": "Annahme: Primäre Firmen‑Pressemitteilungen (ASML / Samsung / TSMC) datiert 2026-09-08 liefern ein atomares, datiertes Faktum (Adoptions‑/Pilot‑Timelines und Masken‑Initiative). Die Beobachtung ist direkt relevant für die Verfügbarkeitsschicht (availability) in der TAIL‑These: sie dokumentiert einen klaren, industriegestützten Pfad zu höherer effektiver Produktionskapazität (capacity_relief) — jedoch mit multi‑year Umsetzung und ohne sofortige shipment/lead‑time‑Messung. Deshalb: accepted als Layer‑Update/Signal mit falsifizierbarem, datiertem Prüfpunkt (siehe Falsifier).",
+      "candidateId": "c6e10187370c29f8aa33",
+      "candidateKey": "e729f81c150afc0c6908dc2a",
+      "reviewedAt": "2026-09-13T19:48:13.169Z",
+      "priorityScore": 83,
+      "gateReasons": [
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f7a5150513694df006aa6fd8f046887d184a33c3a5b416f8e"
+    },
+    {
+      "decision": "rejected",
+      "title": "SK Hynix Jumps 7% as AI Diverts Memory From Phones, Micron Holds Steady, Apple Slips",
+      "fact": "24/7 Wall St. (Publikation 2026-09-08) berichtet über intraday‑Kursbewegungen (SK hynix +7%) und interpretiert diese als Folge von AI‑Allocation, die Memory‑Kapazitäten von Smartphones weglenkt.",
+      "placement": "Marktkommentar / Aktienbewegung; keine verifizierbare Beobachtung über reale qualifizierte Shipments, Lead‑Times oder vertragliche Volumina.",
+      "mechanism": "Narrativ: Wafer‑Allokation hin zu HBM/HPC erhöht Kursreaktion von Memory‑Anbietern; diese Erklärung ist plausibel, aber der Artikel liefert keine quantifizierten, unabhängigen Messungen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "",
+      "nextReview": "2026-12-08",
+      "eventDate": "2026-09-08",
+      "novelty": "niedrig — kurzfristige Kursbewegungen und Interpretationen sind wiederholt und im Baseline bereits mehrfach dokumentiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 5,
+        "thesisRelevance": 8,
+        "forecastImpact": 5,
+        "falsifiability": 3,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 12,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://247wallst.com/investing/2026/09/08/sk-hynix-jumps-7-as-ai-diverts-memory-from-phones-micron-holds-steady-apple-slips/",
+          "label": "24/7 Wall St. (Primär für diese Headline)",
+          "kind": "secondary",
+          "supports": "Originalartikel mit Datum und Kursangaben; aber keine quantifizierten Supply‑ oder Shipment‑Daten."
+        }
+      ],
+      "reason": "Ablehnung: Das Item ist ein intraday‑Marktbericht mit Interpretationen der Kursbewegung. TAIL‑Aufnahme verlangt atomare, datierte Primärbelege mit messbaren Einheiten (Shipments, Lead‑Times, Kontraktvolumina) oder klar falsifizierbare Implikationen für eine vorhandene Vorhersage. Dieser Kandidat bietet kein solches Mess‑Datum und wiederholt Baseline‑Narrative; deshalb rejected.",
+      "candidateId": "6ebff2b35235e4ed351a",
+      "candidateKey": "84b5b13b043b6226f84eab77",
+      "reviewedAt": "2026-09-13T19:48:13.176Z",
+      "priorityScore": 36,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing falsifier",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f7a5150513694df006aa6fd8f046887d184a33c3a5b416f8e"
+    },
+    {
+      "decision": "rejected",
+      "title": "Sandisk poised to benefit from AI-driven NAND f...",
+      "fact": "Pluang / Seeking Alpha‑Syndication (Publikation 2026-09-08) stellt eine Investment‑/Narrativ‑These auf: SanDisk profitiert vom AI‑getriebenen NAND‑Zyklus (bullish industry outlook).",
+      "placement": "Meinungs/Investment‑Kommentar; kein quantifizierter Primärnachweis über qualifizierte Enterprise‑NAND‑Shipments, Vertragsvolumina oder Fill‑Rates.",
+      "mechanism": "These: AI‑Infrastrukturwachstum erhöht NAND‑Nachfrage, was bei Sandisk zu Umsatz‑/Margensteigerungen führen soll. Das ist plausibel, aber nicht als belastbare Beobachtung (keine konkreten, verifizierbaren Einheiten).",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "",
+      "nextReview": "2026-12-08",
+      "eventDate": "2026-09-08",
+      "novelty": "niedrig — wiederholt bereits bekannte Marktargumente und Firmendaten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 9,
+        "novelty": 6,
+        "thesisRelevance": 8,
+        "forecastImpact": 6,
+        "falsifiability": 3,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://pluang.com/en/news-feed/sandisk-nand-flash-supercycle-dorong-pertumbuhan",
+          "label": "Pluang (Syndicated Seeking Alpha content)",
+          "kind": "secondary",
+          "supports": "Artikeltext/These; keine Primär‑Shipments/kontrahierten Volumina."
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/mengapa-sandisk-corporation-jadi-ide-saham-favorit-saya-saat-ini",
+          "label": "Pluang (frühere/referenzielle Coverage)",
+          "kind": "secondary",
+          "supports": "Wiederveröffentlichter Investment‑Kommentar."
+        }
+      ],
+      "reason": "Ablehnung: Investment‑/Research‑Syndication ohne neuen, qualifizierten Primärnachweis (keine verifizierten Shipments, Fill‑Rates oder vertraglichen Zusagen). TAIL‑Regeln verlangen atomare, datierte Messgrößen für Admission; dieser Kandidat bleibt eine Meinungs‑/Analystenmeldung und wird deshalb rejected.",
+      "candidateId": "c5396fb4792b1ccff0eb",
+      "candidateKey": "7cf9c871a06f0ccecfc7e2cd",
+      "reviewedAt": "2026-09-13T19:48:13.179Z",
+      "priorityScore": 35,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing falsifier",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f7a5150513694df006aa6fd8f046887d184a33c3a5b416f8e"
+    },
+    {
+      "decision": "rejected",
+      "title": "Sandisk: NAND 'Game-Changing Week' — Meinungsstück / Wiederverwertung",
+      "fact": "Meinungs-/Analyseartikel behauptet, eine einzelne 'game-changing week' habe den NAND-Markt strukturell verändert; zugrundeliegende Primärangaben stammen aus Sandisk Q4-/Investor-Informationen (Q4-FY2026 results, 2026-08-05).",
+      "placement": "globaler NAND-/Enterprise‑SSD‑Markt; kurzfristige Marktreaktion (September 2026, Kommentardatum 2026-09-08).",
+      "mechanism": "Artikel stützt sich auf Sandisk‑Earnings, mehrjährige Verkaufsvereinbarungen und Aktienkursbewegungen; behaupteter Mechanismus: vertraglich gebundene Volumina und Preisvereinbarungen erhöhen kurzfristig effektive Preise und Margen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Kein spezifischer, messbarer Primärbeleg im Artikel für eine neue, quantifizierbare Marktverschiebung. Falsifier (Beispiel für spätere Überprüfung): Wenn Sandisk‑verifizierte qualifizierte Lie­ferungen/kontrahierte Volumen (Company filing) bis 2026‑12‑31 nicht mindestens 50 % der behaupteten vertraglich gebundenen Bits liefern kann, wäre das 'game‑changing' Narrativ deutlich abgeschwächt.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-08-05",
+      "novelty": "gering (Wiederholung bekannter Quartalszahlen und Marktinterpretationen).",
+      "duplicateOf": "S-2026-08-06-01",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 8,
+        "forecastImpact": 6,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 20,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-microsoft-look-value-stocks-171712246.html",
+          "label": "Berichterstattung / Zweitquelle zu SanDisk Q4 (Yahoo Finance)",
+          "kind": "secondary",
+          "supports": "Zusammenfassende Darstellung der Quartalszahlen und Guidance."
+        }
+      ],
+      "reason": "Der eingereichte Candidate ist ein Meinungs-/Analysebeitrag, der bekannte SanDisk‑Quartalsdaten (08‑05‑2026) rekombiniert und als 'game‑changer' bezeichnet. TAIL‑Baseline und bereits vorliegende Primary‑Berichte (siehe S-2026-08-06-01) enthalten dieselben Unternehmenszahlen und Marktauslegungen. Die Einreichung bringt kein neues, atomisches, datiertes Marktmaß (z.B. qualifizierte Shipments, Lead‑Time‑Messung oder kontrahierte Bit‑Lieferungen mit Datum) und ist damit weder neu noch überprüfbar in der für Aufnahme erforderlichen Form. Empfehlung: Ablehnung (recycled/promotional).",
+      "candidateId": "e8fdd3b598894c58857b",
+      "candidateKey": "07ae3c66c4252e48441ecb5d",
+      "reviewedAt": "2026-09-13T19:49:55.962Z",
+      "priorityScore": 27,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0377012a9077e067006aa6fdfd62a087d1bb034db4fb665ea6"
+    },
+    {
+      "decision": "rejected",
+      "title": "ASML bindet Samsung/TSMC/Intel — Industrie‑Kooperation (TheDecoder)",
+      "fact": "Mehrere offizielle Pressemitteilungen (ASML, Samsung, TSMC, Intel) vom 2026‑09‑07/08 bestätigen industrieweite Initiativen zu High‑NA EUV (12‑inch photomask initiative, Samsung‑ASML Collaboration, Intel Foundry Kooperation).",
+      "placement": "Branchenweite High‑NA EUV‑Kooperationen; Ankündigungen anlässlich SPIE/Investor‑Events (veröffentlicht 2026-09-08).",
+      "mechanism": "ASML und Kunden initiieren 12‑inch‑Photomask‑Initiative und erweitern Kollaborationen; Mechanismus: technische Roadmap und Tool‑Commitments beschleunigen High‑NA‑Readiness und ermöglichen spätere HVM‑Einführung (Samsung nennt DRAM‑HVM‑Einsatz ab 2028, TSMC koordiniert Maskentransition, Intel vermeldet High‑NA‑Test‑/Produktionserfolge).",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Falsifier für die operative Wirkung: Wenn bis 2028 weder Samsung noch TSMC signifikante High‑NA‑HVM‑Aufträge/Tool‑Installationen melden (keine ASML‑HHV‑Bestellungen/Installations‑Belege in Q1‑Q4 2028), reduziert das die behauptete kurzfristige Produktionswirkung.",
+      "nextReview": "2028-06-30",
+      "eventDate": "2026-09-08",
+      "novelty": "gering (Bestätigung bereits in Baseline / S‑AUTO Einträgen zu High‑NA/ASML).",
+      "duplicateOf": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 6,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML / Samsung Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "Samsung und ASML erweitern strategische Zusammenarbeit; Samsung plant High‑NA EUV in DRAM HVM ab 2028."
+        }
+      ],
+      "reason": "Der Candidate ist inhaltlich eine Wiederberichterstattung/Aggregation von offiziellen ASML/Kunden‑Pressemitteilungen vom 2026‑09‑07/08. TAIL‑Baseline enthält bereits dieselben High‑NA/ASML‑Signale (Duplikat). Die Einreichung trägt keine neue, separate, atomare Messgröße oder kausale Evidenz für eine sofortige Verfügbarkeitswirkung im Markt (keine qualifizierten Shipments/Lead‑Time‑Daten). Empfehlung: Ablehnung als Duplikat der bereits aufgenommenen Basissignale.",
+      "candidateId": "cbed839b459afa7d4c2d",
+      "candidateKey": "6b5a65aaca5a1fbfc8694e0f",
+      "reviewedAt": "2026-09-13T19:49:55.962Z",
+      "priorityScore": 45,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0377012a9077e067006aa6fdfd62a087d1bb034db4fb665ea6"
+    },
+    {
+      "decision": "accepted",
+      "title": "Counterpoint: Q2‑2026 — Micron schließt auf SK hynix (25% vs 26% DRAM‑Umsatzanteil)",
+      "fact": "Counterpoint Research — Global Memory Tracker, Q2 2026: Samsung 39% DRAM‑Umsatzanteil; SK hynix 26%; Micron 25% (Publikationsdatum 2026‑08‑04).",
+      "placement": "Q2 2026, globaler DRAM‑Umsatzanteil (Revenue share by vendor, Q2 2026).",
+      "mechanism": "Agentic‑AI‑getriebene Nachfrage und unterschiedliche Produkt-/Kundenmix‑Performance verschieben Umsatzanteile; Microns steilere Revenue‑Wachstumsrate (AI‑getriebene DRAM‑Umsätze) reduzierte den Abstand zu SK hynix von mehreren Punkten auf ~1 Prozentpunkt in Q2 2026.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Stärkt die These in P-2026-07-20-04, dass Memory‑Marktdynamik 2027 durch konzentrierte Nachfrage und Angebotsallokation bestimmt bleibt; beobachtbare Share‑Konvergenz erhöht das Risiko, dass Preis‑ und Allokationsdynamiken (nicht allein Bit‑Supply) den Markt bis 2027 prägen.",
+      "falsifier": "Falsifier (prüfbar): Wenn Counterpoint (oder äquivalente Primärtracker) für Q4 2026 (veröffentlicht bis 2027‑03‑31) zeigt, dass der kombinierte Umsatzanteil der Top‑3 (Samsung+SK hynix+Micron) fällt unter 80% UND DRAM‑Kontraktpreise zwei aufeinanderfolgende Quartale (Q3 & Q4 2026) um ≥10% QoQ sinken, dann schwächt dies die Schlussfolgerung, dass concentrated revenue‑share die Knappheit bis 2027 stützt.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-08-04",
+      "novelty": "moderat (konkrete, datierte Messung von Marktanteilen auf Revenue‑Basis).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://counterpointresearch.com/en/insights/ai-demand-reshapes-dram-rankings-in-q2-2026",
+          "label": "Counterpoint Research — Global Memory Tracker, Q2 2026 (press insight)",
+          "kind": "primary",
+          "supports": "\"Samsung 39% ... SK hynix 26% ... Micron 25%\" (Counterpoint Research, Global Memory Tracker, Q2 2026; Veröffentlichung 2026-08-04)."
+        },
+        {
+          "url": "https://www.malaysianwireless.com/2026/08/samsung-global-dram-market-q2-2026/",
+          "label": "Sekundäre Berichterstattung (Zusammenfassung Counterpoint, Aug 2026)",
+          "kind": "secondary",
+          "supports": "Zusammenfassende Darlegung der Counterpoint‑Zahlen (Samsung 39%, SK hynix 26%, Micron 25%)."
+        }
+      ],
+      "reason": "Counterpoint Research veröffentlicht eine klar datierte, quantifizierbare Messung (Revenue‑basierte DRAM‑Marktanteile, Q2 2026). Die Beobachtung, dass Micron mit 25% nur einen Prozentpunkt hinter SK hynix (26%) liegt, ist ein atomarer, datierter Marktsignal‑Beleg und unterstützt die TAIL‑These, dass Nachfrage‑ und Allokationsdynamiken den Memory‑Ausblick prägen. Die Einsendung erfüllt TAIL‑Aufnahmekriterien: datiertes Primärmaß mit Einordnung (Global DRAM‑Revenue, Q2 2026), kausales Mechanismusargument (AI‑getriebene Revenue‑Verschiebungen) und ein prüfbarer Falsifier sowie ein festes Next‑Review‑Datum. Aufnahme als akzeptiertes Signal empfohlen.",
+      "candidateId": "ff34e4a763749964f01d",
+      "candidateKey": "45a7d42bf7ef5a99271434b4",
+      "reviewedAt": "2026-09-13T19:49:55.962Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-45a7d42bf7ef5a99271434b4",
+        "title": "Counterpoint: Q2‑2026 — Micron schließt auf SK hynix (25% vs 26% DRAM‑Umsatzanteil)",
+        "date": "2026-08-04",
+        "admittedAt": "2026-09-13T19:49:55.962Z",
+        "fact": "Counterpoint Research — Global Memory Tracker, Q2 2026: Samsung 39% DRAM‑Umsatzanteil; SK hynix 26%; Micron 25% (Publikationsdatum 2026‑08‑04).",
+        "placement": "Q2 2026, globaler DRAM‑Umsatzanteil (Revenue share by vendor, Q2 2026).",
+        "tailInference": "Agentic‑AI‑getriebene Nachfrage und unterschiedliche Produkt-/Kundenmix‑Performance verschieben Umsatzanteile; Microns steilere Revenue‑Wachstumsrate (AI‑getriebene DRAM‑Umsätze) reduzierte den Abstand zu SK hynix von mehreren Punkten auf ~1 Prozentpunkt in Q2 2026.",
+        "predictionId": "P-2026-07-20-04",
+        "predictionImpact": "Stärkt die These in P-2026-07-20-04, dass Memory‑Marktdynamik 2027 durch konzentrierte Nachfrage und Angebotsallokation bestimmt bleibt; beobachtbare Share‑Konvergenz erhöht das Risiko, dass Preis‑ und Allokationsdynamiken (nicht allein Bit‑Supply) den Markt bis 2027 prägen.",
+        "falsifier": "Falsifier (prüfbar): Wenn Counterpoint (oder äquivalente Primärtracker) für Q4 2026 (veröffentlicht bis 2027‑03‑31) zeigt, dass der kombinierte Umsatzanteil der Top‑3 (Samsung+SK hynix+Micron) fällt unter 80% UND DRAM‑Kontraktpreise zwei aufeinanderfolgende Quartale (Q3 & Q4 2026) um ≥10% QoQ sinken, dann schwächt dies die Schlussfolgerung, dass concentrated revenue‑share die Knappheit bis 2027 stützt.",
+        "nextReview": "2027-03-31",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 10,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 30,
+        "confidence": 85,
+        "markets": [
+          "dram",
+          "server_dram"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "pricing"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Counterpoint Research — Global Memory Tracker, Q2 2026 (press insight)",
+            "url": "https://counterpointresearch.com/en/insights/ai-demand-reshapes-dram-rankings-in-q2-2026"
+          },
+          {
+            "label": "Sekundäre Berichterstattung (Zusammenfassung Counterpoint, Aug 2026)",
+            "url": "https://www.malaysianwireless.com/2026/08/samsung-global-dram-market-q2-2026/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Stärkt die These in P-2026-07-20-04, dass Memory‑Marktdynamik 2027 durch konzentrierte Nachfrage und Angebotsallokation bestimmt bleibt; beobachtbare Share‑Konvergenz erhöht das Risiko, dass Preis‑ und Allokationsdynamiken (nicht allein Bit‑Supply) den Markt bis 2027 prägen."
+        },
+        "admissionReviewKey": "45a7d42bf7ef5a99271434b4"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0377012a9077e067006aa6fdfd62a087d1bb034db4fb665ea6"
+    },
+    {
+      "decision": "rejected",
+      "title": "Samsung und TSMC übernehmen ASML High‑NA EUV — Tech Edition (Wiederholung offizieller Ankündigungen)",
+      "fact": "Offizielle Kunden‑ und ASML‑Pressemitteilungen vom 2026‑09‑07/08 bestätigen branchenweite Initiativen zur High‑NA EUV‑Einführung (Samsung nennt DRAM‑HVM‑Einsatz ab 2028; TSMC/Intel koordinierten Masken‑Initiativen).",
+      "placement": "High‑NA EUV Roadmap; Industrieinitiative zu 12‑inch Photomasks; Veröffentlichungsdatum 2026-09-08.",
+      "mechanism": "Offizielle Technologie‑Kooperationen und Masken‑Initiativen erhöhen technische Readiness und ermöglichen spätere HVM‑Einführungen; kurzfristig aber keine direkte, qualifizierte Lieferevidenz (keine Shipments/Lead‑Time‑Messung).",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Wenn bis Ende 2028 die Anzahl installierter High‑NA‑Scanner bei Kunden (ASML‑Installationsreports/Company filings) << den in den Ankündigungen implizierten HVM‑Rampen bleibt (z.B. keine signifikanten HVM‑Bestellungen/Installationen bis 2028‑12‑31), dann wäre die operative Kapazitätswirkung gering.",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "gering (dupliziert Basissignale zu High‑NA/ASML).",
+      "duplicateOf": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 6,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.samsungsemiconductor.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing/",
+          "label": "Samsung Newsroom — Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "Samsung und ASML erweitern Zusammenarbeit; Plan, High‑NA EUV in DRAM‑HVM einzusetzen (ab 2028, gemäß Pressemitteilung)."
+        }
+      ],
+      "reason": "Der Candidate berichtet im Wesentlichen über dieselben offiziellen ASML/Kunden‑Pressemitteilungen, die bereits als Basissignale in TAIL vorliegen. Die Ankündigungen sind verifiziert (Primärquellen), liefern aber kein neues, atomar messbares Markt‑Ereignis mit unmittelbarer Verfügbarkeitswirkung (z.B. Shipments, Lead‑Time‑Verbesserung). Deshalb Ablehnung als Duplikat/Redundant.",
+      "candidateId": "198b18f3ebb0e1a668d3",
+      "candidateKey": "20574e85da7a6c343df87d89",
+      "reviewedAt": "2026-09-13T19:49:55.966Z",
+      "priorityScore": 45,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0377012a9077e067006aa6fdfd62a087d1bb034db4fb665ea6"
+    },
+    {
+      "decision": "rejected",
+      "title": "ASML, TSMC und Samsung verstärken Zusammenarbeit für High‑NA/12\"‑Masken (Presserelease bestätigt)",
+      "fact": "ASML veröffentlichte am 2026-09-08 eine Reihe von Pressemitteilungen, die eine branchenweite Initiative mit TSMC (12‑inch‑Photomasken) und eine erweiterte strategische Zusammenarbeit mit Samsung (inkl. geplanter Einführung von High‑NA EUV in DRAM HVM bis 2028) ankündigen.",
+      "placement": "Global — Lithographie / Photomask‑Ecosystem; Scope: High‑NA EUV & 12‑inch‑Photomasks; Horizont: Pilotline 2031 → Produktionsreife 2033",
+      "mechanism": "Technologie‑/Produktionspfad: Umstellung von 6‑inch auf 12‑inch Photomasks erhöht Scanner‑Produktivität und reduziert Stitching‑Beschränkungen für High‑NA EUV, wodurch High‑NA‑Einsatz für fortgeschrittene DRAM‑ und Logic‑Layer skalierbarer wird.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Falls die Initiative tatsächlich zu einer beschleunigten High‑NA‑Einführung führt, könnte dies langfristig (2028–2033) das Angebot an fortgeschrittenen Logik- und Memory‑Layern verbessern und dadurch den erwarteten strukturellen HBM/Server‑DRAM‑Mangel in der langen Frist dämpfen. Kurzfristig ändert die Ankündigung aber nichts an aktuellen Allokationen.",
+      "falsifier": "Bis 2028-12-31: Keine Anzeichen für einen etablierten 12‑inch‑Masken‑Pilotbetrieb (no public pilot‑line milestone, keine Maskenlieferungen an Kunden) ODER ASML/TSMC/Samsung veröffentlichen dokumentiert, dass High‑NA‑Durchsatz/Mask‑Produktivität nicht über dem derzeitigen stitching‑Workaround liegt.",
+      "nextReview": "2026-12-15",
+      "eventDate": "2026-09-08",
+      "novelty": "Die berichtete Kooperation ist primär eine formalisierte Bestätigung bestehender Roadmaps (High‑NA / 12\" Mask‑Transition) und kein neues, eigenständiges Messereignis.",
+      "duplicateOf": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 4,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 72,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML / Samsung Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "ASML und Samsung bestätigen eine verstärkte Zusammenarbeit und nennen geplante Einführung von High‑NA EUV in DRAM HVM bis 2028."
+        },
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv",
+          "label": "ASML / TSMC Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "ASML und TSMC kündigen Initiative zur Transition auf 12‑inch Photomasks an; Ziel: Pilotline bis 2031, Produktionsreife in späteren Jahren."
+        }
+      ],
+      "reason": "Die Kandidatenschlagzeile fasst korrekt PR‑Ankündigungen zusammen, die durch ASML‑/TSMC‑/Samsung‑Pressemitteilungen vom 2026-09-08 belegt sind. Der Inhalt wiederholt allerdings bereits in der Baseline vorhandene High‑NA/Mask‑Signale (Duplicat: S‑AUTO‑Eintrag). Keine neue, unmittelbar messbare Marktbeobachtung (keine Shipments, keine Produktionszahlen) — daher Ablehnung (recycelt/duplicate).",
+      "candidateId": "17f86a5ace248990749c",
+      "candidateKey": "7ae3816c2e010b3d8b1ddcf9",
+      "reviewedAt": "2026-09-13T19:49:55.974Z",
+      "priorityScore": 46,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08415a5ef89abadf006aa6fdfd57cc87d19406ae76b26be4a3"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung Foundry setzt großen Teil der 4nm‑Kapazität für HBM4 ein (nicht von Samsung verifiziert)",
+      "fact": "Medienberichte (z. B. TechTimes, 2026-09-08) behaupten, Samsung habe mehr als die Hälfte seiner 4nm‑Foundry‑Kapazität für interne HBM4‑Basisdie reserviert, so dass Drittkunden um verbleibende 4nm‑Kapazität konkurrieren müssten.",
+      "placement": "Samsung Foundry (Global) — 4nm Foundry‑Node Kapazitätsallokation; kurzfristige Horizon: Q3–Q4 2026",
+      "mechanism": "Interne Kapazitätsallokation an priorisierte HBM4‑Basisdies reduziert verfügbare 4nm‑Foundry‑Substrate für externe Kunden, erhöht Allokation/Lock‑in für interne Memory‑Produktion und verschärft Knappheit für externe Logik/Kunden auf diesem Node.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Wenn zutreffend, würde dies die Verfügbarkeit von 4nm Foundry‑Kapazität für externe AI‑Chips verringern, HBM/Server‑DRAM‑Priorisierung verstärken und Preisdruck/Allokation auf Drittkunden erhöhen; könnte kurzfristig HBM‑/Server‑DRAM‑Knappheit und Preisauftrieb verstärken.",
+      "falsifier": "Bis 2026-12-31 veröffentlicht Samsung (in Earnings, Form 20‑F/JSX filing oder detailliertem Semiconductor‑Report) eine Kapazitätsaufteilung für 4nm, die eindeutig zeigt, dass ≤30% der 4nm‑Wafer‑Slots intern für HBM4 reserviert sind, oder Samsung weist in Q4‑2026 konkrete HBM4‑Durchsatzzahlen aus, die nicht mit einer >50%‑Allokation vereinbar sind.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "Die prozentuale Zuweisungs‑Behauptung (>50%) ist neu und material, wurde aber nicht durch ein primäres Samsung‑Dokument bestätigt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_lock",
+      "severity": 50,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.techtimes.com/articles/326959/20260908/samsung-foundry-pivots-half-4nm-capacity-hbm4-external-customers-compete-own-fab.htm",
+          "label": "TechTimes (Sekundärbericht, 2026-09-08)",
+          "kind": "secondary",
+          "supports": "TechTimes zitiert Quellen, die behaupten, Samsung habe einen großen Anteil seiner 4nm‑Kapazität für HBM4 reserviert; nennt aber keine Samsung‑Offizielle Zahlen."
+        },
+        {
+          "url": "https://news.samsungsemiconductor.com/global/category/news/",
+          "label": "Samsung Semiconductor Newsroom (Unternehmensseite — Übersicht)",
+          "kind": "primary",
+          "supports": "Samsung bestätigt HBM4‑Mass‑Production‑Ziele (Zeitplanangaben), liefert aber keinen dokumentierten Prozentsatz der 4nm‑Kapazitätsallokation an Dritte."
+        }
+      ],
+      "reason": "Die Kernaussage (>50% der 4nm‑Kapazität an HBM4) stammt aus Medienberichten ohne Verweis auf ein überprüfbares Samsung‑Disclosure mit numerischer Kapazitätsaufteilung. Ohne Primärquelle, die die prozentuale Allokation dokumentiert, bleibt die Behauptung nicht verifiziert. Die Meldung ist relevant (potentiell starke Verfügbarkeitswirkung) — daher Watchlist: überwachen bis definitive Kapazitäts‑Statements oder verlässliche, dokumentierte Produktions‑/Durchsatzzahlen veröffentlicht sind.",
+      "candidateId": "0cc2f07ffca59a22a002",
+      "candidateKey": "5942164f29f185a3adfb3814",
+      "reviewedAt": "2026-09-13T19:49:55.974Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08415a5ef89abadf006aa6fdfd57cc87d19406ae76b26be4a3"
+    },
+    {
+      "decision": "rejected",
+      "title": "TSMC und Samsung bekräftigen Commitment zu ASML High‑NA EUV (Ankündigungen bestätigt)",
+      "fact": "ASML veröffentlichte am 2026-09-08 eine Mitteilung, in der TSMC einer Initiative zur Umstellung auf 12\" Photomasks beitritt (Pilotline‑Ziel 2031) und ASML angibt, dass Samsung geplant hat, High‑NA EUV in DRAM HVM bis 2028 einzuführen; mehrere Medien berichten darüber.",
+      "placement": "Global — Foundry & Mask‑Ecosystem; Scope: High‑NA EUV Adoption Roadmap (Samsung: 2028 für DRAM HVM; TSMC: High‑NA in HVM ab 2030; 12\"‑Pilotline Ziel 2031)",
+      "mechanism": "Industrielle Standardisierung (12\" Photomasks) soll High‑NA‑Scanner produktiver machen (weniger Stitching), wodurch High‑NA‑Einsatz für größere Die und AI‑Beschleuniger technisch und wirtschaftlich praktikabler wird.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Langfristig (2028+) könnte beschleunigter High‑NA‑Einsatz zu zusätzlicher fortgeschrittener Produktionskapazität führen, was mittelfristig das Schärfepotential von HBM/Advanced Nodes reduziert; kurzfristig ist die Wirkung begrenzt.",
+      "falsifier": "Bis 2028-12-31: Keine nachprüfbaren Installationen/Operational High‑NA‑Scanner in Kunden‑HVM, oder die angekündigten 12\"‑Masken‑Pilotmeilensteine werden nicht erreicht (keine Pilotline‑Ankündigung bis 2031 bleibt bestehen).",
+      "nextReview": "2026-12-15",
+      "eventDate": "2026-09-08",
+      "novelty": "Die Meldung bestätigt und formalisiert Roadmap‑Schritte, ist aber überwiegend eine Bestätigung bereits bekannter High‑NA‑Ambitionen.",
+      "duplicateOf": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 4,
+        "thesisRelevance": 14,
+        "forecastImpact": 8,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv",
+          "label": "ASML / TSMC Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "ASML/TSMC‑Mitteilung zur Initiative für 12\" Photomasks; TSMC nennt Pilot‑Timeline und High‑NA‑Roadmap."
+        },
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML / Samsung Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "ASML und Samsung bestätigen verstärkte Zusammenarbeit und die beabsichtigte Einführung von High‑NA EUV in DRAM HVM bis 2028."
+        }
+      ],
+      "reason": "Primärquellen (ASML/Samsung/TSMC‑Meldungen vom 2026-09-08) bestätigen die Ankündigungen; der Inhalt überschneidet sich jedoch mit bereits eingebrachten Baseline‑Signalen (duplicate). Kein neues, unmittelbar messbares Marktereignis (keine Shipments/Installationsdaten) — daher Ablehnung als Duplikat.",
+      "candidateId": "9279113522b249bfa1f6",
+      "candidateKey": "190287d0c3539c153aad4c38",
+      "reviewedAt": "2026-09-13T19:49:55.978Z",
+      "priorityScore": 55,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08415a5ef89abadf006aa6fdfd57cc87d19406ae76b26be4a3"
+    },
+    {
+      "decision": "rejected",
+      "title": "Bericht (Demócrata): Samsung & TSMC stärken Allianz mit ASML — Wiederholung vorhandener PR‑Ankündigungen",
+      "fact": "Mehrere Medienaggregatoren fassten am 2026-09-08 PR‑Ankündigungen von ASML, Samsung und TSMC zur Zusammenarbeit für High‑NA EUV und 12\" Photomasks zusammen; die Primärquelle ist ASML/Samsung/TSMC Pressemitteilung vom selben Datum.",
+      "placement": "Global — Photomask/Equipment‑Ecosystem; Horizont: Pilotline 2031 / HVM 2033",
+      "mechanism": "Koordinierte Industrieinitiative zur Umstellung auf 12\" Photomasks erhöht potenziell die Wirtschaftlichkeit von High‑NA‑EUV für große Dies und komplexe Layer.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Primär eine PR‑Bestätigung bestehender Roadmaps; keine neue direkte Messung. Langfristiger Einfluss (2028+) auf Angebot möglich, kurzfristig keine Änderung am verfügbaren Supply‑Pool.",
+      "falsifier": "Fehlen von messbaren Pilot‑/Produktionsmeilensteinen oder der Nachweis, dass die 12\"‑Masken‑Initiative nicht zu Produktivitätsverbesserungen für High‑NA führt (keine Pilotline‑Ankündigung bis 2031).",
+      "nextReview": "2026-12-15",
+      "eventDate": "2026-09-08",
+      "novelty": "Niedrig — aggregiert bekannte PR‑Meldungen; keine neue Datenlinie.",
+      "duplicateOf": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 2,
+        "thesisRelevance": 10,
+        "forecastImpact": 5,
+        "falsifiability": 3,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML / Samsung Pressemitteilung (Primärquelle, 2026-09-08)",
+          "kind": "primary",
+          "supports": "Direkter PR‑Text, der Zusammenarbeit/Timeline erwähnt."
+        }
+      ],
+      "reason": "Die Meldung wiederholt Primär‑PR vom 2026-09-08 (ASML/TSMC/Samsung). Das Ereignis ist durch Primärquellen belegbar, liefert aber keine neue, quantifizierbare Marktbeobachtung und dupliziert bereits im Baseline vorhandene Signale — daher Ablehnung als Duplikat.",
+      "candidateId": "0ff804d37331bcbbde37",
+      "candidateKey": "95ea4acfaa39a9c32cf3b42a",
+      "reviewedAt": "2026-09-13T19:49:55.979Z",
+      "priorityScore": 36,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08415a5ef89abadf006aa6fdfd57cc87d19406ae76b26be4a3"
+    },
+    {
+      "decision": "rejected",
+      "title": "ASML Stock Rises 3% on TSMC and Samsung Commitments",
+      "fact": "Bericht (TradingView / Yahoo-Syndication) behauptet, ASML‑Aktie steige ~3% aufgrund von Commitments von TSMC und Samsung zu High‑NA EUV.",
+      "placement": "Marktreaktion / Equity‑Headline; Global / Kapitalmärkte; Publikationsdatum: 2026-09-08.",
+      "mechanism": "Diese Headline ist eine sekundäre Marktreaktion (Aktienkursbewegung) und stützt sich auf Primärmeldungen (ASML / Samsung / TSMC). Der berichtete Kursanstieg ist nicht selbst ein unabhängiges Supply-/Demand‑Signal für Halbleiter‑Output.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Kein materialer direkter Einfluss auf die Basisprediktion über Memory‑Knappheit 2027–2028 — die Aktie reflektiert Marktstimmung, nicht beobachtete Bit‑Shipments oder Lead‑Time‑Verbesserungen.",
+      "falsifier": "Wenn die zugrundeliegenden Primärmeldungen (ASML / Samsung / TSMC) bis 2026-09-15 nicht existieren oder ASML/Samsung/TSMC die behaupteten Commitments öffentlich widerrufen, wäre die Headline entkräftet.",
+      "nextReview": "2026-09-22",
+      "eventDate": "2026-09-08",
+      "novelty": "Niedrig — reine Headline/Syndikation über bereits veröffentlichtes Primärmaterial.",
+      "duplicateOf": "f39f1aedf618b0a439aa",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 5,
+        "forecastImpact": 3,
+        "falsifiability": 2,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ca.finance.yahoo.com/news/asml-stock-rises-3-tsmc-121714761.html",
+          "label": "Yahoo Finance / GuruFocus syndication (TradingView headline copy)",
+          "kind": "secondary",
+          "supports": "Syndizierte Headline, zeigt Marktreaktion und datiert die Story auf 2026-09-08."
+        },
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML Pressemitteilung (Primärquelle)",
+          "kind": "primary",
+          "supports": "ASML bestätigt erweiterte Zusammenarbeit mit Samsung und nennt High‑NA‑EUV‑Adoption; Datumsstempel 2026-09-08."
+        }
+      ],
+      "reason": "Die Inbox‑Meldung ist ein sekundärer, handelsorientierter Headline‑Syndikat‑Artikel (Aktienreaktion). Die zugrundeliegende, entscheidende Primärinformation stammt von ASML/Samsung/TSMC (Primärquellen). Als eigenständiger Beweis für Markt‑Supply/Lead‑Time‑Änderungen ist die Headline unzulänglich; außerdem ist dies inhaltlich ein Derivat der bestätigten Primärmeldung (siehe f39f1). Deshalb abgelehnt (rejected) — kein neu aufnehmbares, atomar verifizierbares TAIL‑Signal.",
+      "candidateId": "d1ca29d8c229c6a9ac09",
+      "candidateKey": "724ce218082400cc454f51ea",
+      "reviewedAt": "2026-09-13T19:51:41.710Z",
+      "priorityScore": 20,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f6f53ed00c1d16c006aa6fe642c9887d1a597569cc4bc1ab6"
+    },
+    {
+      "decision": "rejected",
+      "title": "Micron vs. Sandisk: 1 Artificial Intelligence (AI) Memory Winner Is Down 20% and Clearly the Superior Buy Today",
+      "fact": "Syndizierter Investment-Meinungsartikel (Motley Fool / Yahoo Finance) vergleicht Micron und Sandisk als Anlageoptionen; behauptet beide ~20% unter Allzeithoch und empfiehlt Micron.",
+      "placement": "Meinungs-/Anlage‑Artikel; Publikationsdatum: 2026-09-08; nicht‑primäre Kommunikationsform, keine direkte Messung von Bit‑Shipments, Lead Times oder Fill Rates.",
+      "mechanism": "Redaktionelle Investmentanalyse (Valuation/Produkt‑Exposure) — keine neue, überprüfbare Messung auf Produkt‑ oder Lieferkettenebene. Aussage ist prognostisch/promotional und wiederholt bekannte Markterzählungen.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Keine direkte, verifizierbare Änderung der Basisprediktion zur Memory‑Knappheit — reine Anlageempfehlung, keine beobachteten Kontraktdaten oder Lieferungen.",
+      "falsifier": "Wenn verlässliche, primäre Marktdaten (z. B. qualifizierte Shipments, Lead‑Time‑Metriken, Kontraktpreise) binnen 60 Tagen den gegenteiligen strukturellen Trend zeigen (z. B. abruphe Supply‑Zunahme), würde die Anlageargumentation entkräftet.",
+      "nextReview": "2026-11-08",
+      "eventDate": "2026-09-08",
+      "novelty": "Sehr niedrig — wiederveröffentlichte Anlage‑Meinung ohne primäre Messdaten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 5,
+        "novelty": 3,
+        "thesisRelevance": 6,
+        "forecastImpact": 2,
+        "falsifiability": 2,
+        "timeSensitivity": 1
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-vs-sandisk-1-artificial-113000528.html",
+          "label": "Yahoo Finance (Syndikation/Aggregation)",
+          "kind": "secondary",
+          "supports": "Breite Syndizierung der Anlage‑Story; bestätigt Publikationsdatum 2026-09-08 und zeigt, dass die ursprüngliche Quelle Motley Fool war, nicht The Globe and Mail (falsche Zuordnung in Inbox)."
+        }
+      ],
+      "reason": "Die Einreichung ist Werbung / Investment‑Meinung und wurde falsch als 'The Globe and Mail' attribuiert. Sie liefert keine neue, atomare Messgröße (Shipments, Lead Times, verifizierte Kontraktvolumina) und ist ein recycled, promotions‑naher Artikel — daher abgelehnt (rejected) für TAIL‑Aufnahme.",
+      "candidateId": "5522cbbe1addf6e7e509",
+      "candidateKey": "a0cca20adc1f9b2e55b6d386",
+      "reviewedAt": "2026-09-13T19:51:41.710Z",
+      "priorityScore": 19,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f6f53ed00c1d16c006aa6fe642c9887d1a597569cc4bc1ab6"
+    },
+    {
+      "decision": "watchlist",
+      "title": "ASML High NA EUV wins TSMC, Samsung deals",
+      "fact": "ASML, Samsung und TSMC veröffentlichten am 2026-09-08/2026-09-08 jeweils bestätigende Mitteilungen zur vertieften Zusammenarbeit bzw. Commitments für High‑NA EUV; Samsung nennt explizit Einführung von High‑NA EUV in DRAM‑HVM ab 2028, TSMC nennt geplante Nutzung in hochvolumigen Advanced‑Nodes (zitiert 2030).",
+      "placement": "Global; Halbleiter‑Fertigungsinfrastruktur / Lithographie‑Layer; Scope: High‑NA EUV Adoption für DRAM und Advanced Logic; Datumsangabe: 2026-09-08.",
+      "mechanism": "Commitments und strategische Partnerschaften zur Integration von ASML's High‑NA EUV (EXE‑Klasse) und die Umstellung auf größere Photomasken (6\"→12\"/6×12 Ansätze) reduzieren technische Hürden für High‑NA‑HVM und beschleunigen die Produktionsreife (höhere Auflösung/erhöhte potenzielle Durchsatz‑Effizienz auf relevanten Schichten).",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Diese dokumentierten Commitments erhöhen die Wahrscheinlichkeit, dass strukturelle Fertigungs‑Skalierbarkeit für Advanced Nodes und zukünftig auch für High‑Density Memory (HBM/DRAM) verbessert wird; dadurch sinkt die Wahrscheinlichkeit eines persistierenden Memory‑Engpasses nach 2028 (der Timing‑Risiko‑Teil der Basisprediktion wird partiell entlastet).",
+      "falsifier": "Bis 2028-12-31: Samsung führt keine messbare High‑NA‑HVM‑Produktion für DRAM ein (keine ausgewiesenen HVM‑Shipments mit High‑NA‑Layers und keine eindeutige Produktionsangabe). Bis 2030-12-31: TSMC nutzt High‑NA EUV nicht in hochvolumigen Advanced‑Node‑Fertigungen gemäß firmeneigenen Produktionsangaben.",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "Mittel — weite Verbreitung in den Medien, aber Primärmeldungen von ASML und Samsung liefern erstmals konkrete zeitliche Ziele (z. B. Samsung 2028, TSMC 2030) und technische Details (Photomask‑Standardwechsel).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML Pressemitteilung (Primärquelle)",
+          "kind": "primary",
+          "supports": "ASML bestätigt erweiterte Zusammenarbeit mit Samsung und nennt High‑NA‑EUV‑Adoption; explizit: Samsung plant High‑NA‑EUV in DRAM‑HVM ab 2028. (Publikationsdatum: 2026-09-08)."
+        },
+        {
+          "url": "https://news.samsung.com/cl/samsung-electronics-y-asml-amplian-su-asociacion-estrategica-para-la-fabricacion-avanzada-de-semiconductores",
+          "label": "Samsung Newsroom (Primärquelle / Regional Mirror)",
+          "kind": "primary",
+          "supports": "Samsung Newsroom bestätigt die Zusammenarbeit und nennt Zieljahre für High‑NA‑EUV‑Einführung in DRAM‑HVM (2028) — unterstützt die Datums- und Scope‑Angaben."
+        },
+        {
+          "url": "https://blockchain.news/ainews/asml-high-na-euv-wins-tsmc-samsung-deals",
+          "label": "Eingereichte Inbox‑Quelle (blockchain.news, sekundär)",
+          "kind": "secondary",
+          "supports": "Syndizierter Artikel, der dieselbe Primärmeldung zusammenfasst; nützlich zur Nachverfolgung der Inbox‑Quelle."
+        }
+      ],
+      "reason": "Primärquellen (ASML, Samsung) datieren beide 2026-09-08 und nennen konkrete Absichten/Timing für High‑NA‑EUV‑Adoption (Samsung: DRAM‑HVM ab 2028; TSMC: geplante Einbindung in hochvolumige Advanced‑Nodes, zitiert 2030). Die Einreichung ist ein direkt verifizierbares, datenbasiertes Update zur Fertigungs‑Layer‑Technologie (VERIFIED DATA). Die unmittelbare Verfügbarkeitseffekt ist erst in den Jahren nach 2026 zu erwarten; deshalb indexImpact=false, aber das Signal verändert die Pfad‑Wahrscheinlichkeit für Kapazitätsentwicklung und damit mittel‑ bis langfristig die Memory‑Verfügbarkeit. Admitted because die Primärquellen die Kernbehauptungen direkt stützen und wir eine messbare, falsifizierbare Review‑Frist setzen.",
+      "candidateId": "f39f1aedf618b0a439aa",
+      "candidateKey": "b8e3deecd904d62b7c8fb225",
+      "reviewedAt": "2026-09-13T19:51:41.712Z",
+      "priorityScore": 85,
+      "gateReasons": [
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f6f53ed00c1d16c006aa6fe642c9887d1a597569cc4bc1ab6"
+    },
+    {
+      "decision": "accepted",
+      "title": "INTC Stock Jumps Premarket As Intel Takes Early Lead In ASML's Next-Gen Chipmaking Technology – Samsung, TSMC Are Next",
+      "fact": "Intel Foundry und ASML gaben am 2026-09-07/2026-09-08 bekannt, dass Intel mehr als 1.000.000 300‑mm‑Wafers mit High‑NA EUV prozessiert hat (Anzahl umfasst Tool‑Installationsläufe, Zertifizierungs‑/R&D‑Runs und selektive HVM‑Layer für Intel® Core™ Ultra Series 3 'Panther Lake').",
+      "placement": "Intel Foundry (Monterey/SPIE‑Ankündigung) → High‑NA EUV Produktionsangabe; Global / Foundry & Logic‑Layer; Datumsangabe: 2026-09-07.",
+      "mechanism": "Intel hat High‑NA EUV (EXE‑Serie) in Tool‑Installationen, Zertifizierungen, R&D und ausgewählten Produktionsschichten eingesetzt; die >1M‑Wafers‑Zahl zeigt operationalisierte Tool‑Reife (Overlay, Throughput, Availability) und signalisiert, dass High‑NA bereits auf kritischen Schichten produktiv eingesetzt wird — dies reduziert technologische Unsicherheit für Advanced‑Node‑HVM.",
+      "predictionId": "P-2026-07-24-03",
+      "predictionImpact": "Stützt die Basisprediktion, dass Intel Data‑Center & AI (DCAI) Wachstum >35% im Q3 2026 und Capex ≥US$20 Mrd. plausibel bleibt: praktische High‑NA‑Reife erhöht Intels Produktionsflexibilität und Time‑to‑Revenue für fortgeschrittene CPUs/AI‑Produkte, was die operative Grundlage der DCAI‑Wachstumsannahme stärkt.",
+      "falsifier": "Wenn Intel bis zum Ende Q3 2026 (2026-09-30) keine belastbaren Volumenlieferungen/Produktionsergebnisse für Panther Lake (oder vergleichbare DCAI‑Produkte) ausweist, oder wenn Intel Q3‑DCAI‑Wachstum <35% und 2026‑Capex <US$20 Mrd. gemeldet werden, würde der angenommene operative Vorteil durch High‑NA entkräftet.",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-09-07",
+      "novelty": "Mittel — die Zahl (>1M Wafers) war neu, aber wurde zeitgleich von Intel/ASML veröffentlicht und breit berichtet.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 17,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry/intel-foundry-asml-accelerate-industry-readiness-for-high-na-euv.html",
+          "label": "Intel Newsroom (Primärquelle)",
+          "kind": "primary",
+          "supports": "Intel/ASML Communiqué: 'With more than one million wafers processed to date' — nennt Montage/Datum und beschreibt Verwendung in Zertifizierung, R&D und ausgewählten HVM‑Layern. (Publikationsdatum in Mitteilung 2026-09-07)."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-surpasses-one-million-high-na-euv-wafers-processed-outpaces-the-rest-of-the-industry-combined-company-also-trailblazing-giant-6-12-photomasks-to-speed-production-and-lower-costs1",
+          "label": "Tom's Hardware (Sekundärbericht)",
+          "kind": "secondary",
+          "supports": "Unabhängige Medienberichterstattung, fasst Intel/ASML‑Ankündigung zusammen und erläutert Kontext (Einsatz in Panther Lake, Photomask‑Themen)."
+        },
+        {
+          "url": "https://www.tradingview.com/news/gurufocus%3Af1f9bfd1d094b%3A0-asml-stock-rises-1-7-as-ai-demand-signal-strengthens/",
+          "label": "TradingView (Sekundärberichterstattung über Marktreaktion)",
+          "kind": "secondary",
+          "supports": "Zeigt Marktreaktionen und breitere Stimmung, die in der Inbox‑Meldung reflektiert wurde."
+        }
+      ],
+      "reason": "Primärquelle (Intel Newsroom) dokumentiert das >1.000.000‑Wafers‑Ergebnis direkt und nennt Produktionskontext (R&D, Zertifizierung, selektive HVM‑Layer). Das ist eine überprüfbare, atomare Messung mit Datum (2026‑09‑07) und konkreter Produktionsrelevanz für Advanced‑Node‑Fertigung. Die Beobachtung ist relevant für DCAI‑/Capex‑Beurteilung bei Intel (P‑2026‑07‑24‑03) und enthält eine klare, falsifizierbare Review‑Frist (Ende Q3 bzw. Q4 2026). Daher Aufnahme (accepted).",
+      "candidateId": "b8b1a583fc461501a465",
+      "candidateKey": "2bffa1eabe150381d9d44714",
+      "reviewedAt": "2026-09-13T19:51:41.719Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-2bffa1eabe150381d9d44714",
+        "title": "INTC Stock Jumps Premarket As Intel Takes Early Lead In ASML's Next-Gen Chipmaking Technology – Samsung, TSMC Are Next",
+        "date": "2026-09-07",
+        "admittedAt": "2026-09-13T19:51:41.719Z",
+        "fact": "Intel Foundry und ASML gaben am 2026-09-07/2026-09-08 bekannt, dass Intel mehr als 1.000.000 300‑mm‑Wafers mit High‑NA EUV prozessiert hat (Anzahl umfasst Tool‑Installationsläufe, Zertifizierungs‑/R&D‑Runs und selektive HVM‑Layer für Intel® Core™ Ultra Series 3 'Panther Lake').",
+        "placement": "Intel Foundry (Monterey/SPIE‑Ankündigung) → High‑NA EUV Produktionsangabe; Global / Foundry & Logic‑Layer; Datumsangabe: 2026-09-07.",
+        "tailInference": "Intel hat High‑NA EUV (EXE‑Serie) in Tool‑Installationen, Zertifizierungen, R&D und ausgewählten Produktionsschichten eingesetzt; die >1M‑Wafers‑Zahl zeigt operationalisierte Tool‑Reife (Overlay, Throughput, Availability) und signalisiert, dass High‑NA bereits auf kritischen Schichten produktiv eingesetzt wird — dies reduziert technologische Unsicherheit für Advanced‑Node‑HVM.",
+        "predictionId": "P-2026-07-24-03",
+        "predictionImpact": "Stützt die Basisprediktion, dass Intel Data‑Center & AI (DCAI) Wachstum >35% im Q3 2026 und Capex ≥US$20 Mrd. plausibel bleibt: praktische High‑NA‑Reife erhöht Intels Produktionsflexibilität und Time‑to‑Revenue für fortgeschrittene CPUs/AI‑Produkte, was die operative Grundlage der DCAI‑Wachstumsannahme stärkt.",
+        "falsifier": "Wenn Intel bis zum Ende Q3 2026 (2026-09-30) keine belastbaren Volumenlieferungen/Produktionsergebnisse für Panther Lake (oder vergleichbare DCAI‑Produkte) ausweist, oder wenn Intel Q3‑DCAI‑Wachstum <35% und 2026‑Capex <US$20 Mrd. gemeldet werden, würde der angenommene operative Vorteil durch High‑NA entkräftet.",
+        "nextReview": "2026-11-15",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 17,
+          "forecastImpact": 15,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 35,
+        "confidence": 78,
+        "markets": [
+          "semiconductors",
+          "hbm",
+          "dram"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Architecture Update",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Intel Newsroom (Primärquelle)",
+            "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry/intel-foundry-asml-accelerate-industry-readiness-for-high-na-euv.html"
+          },
+          {
+            "label": "Tom's Hardware (Sekundärbericht)",
+            "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-surpasses-one-million-high-na-euv-wafers-processed-outpaces-the-rest-of-the-industry-combined-company-also-trailblazing-giant-6-12-photomasks-to-speed-production-and-lower-costs1"
+          },
+          {
+            "label": "TradingView (Sekundärberichterstattung über Marktreaktion)",
+            "url": "https://www.tradingview.com/news/gurufocus%3Af1f9bfd1d094b%3A0-asml-stock-rises-1-7-as-ai-demand-signal-strengthens/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Stützt die Basisprediktion, dass Intel Data‑Center & AI (DCAI) Wachstum >35% im Q3 2026 und Capex ≥US$20 Mrd. plausibel bleibt: praktische High‑NA‑Reife erhöht Intels Produktionsflexibilität und Time‑to‑Revenue für fortgeschrittene CPUs/AI‑Produkte, was die operative Grundlage der DCAI‑Wachstumsannahme stärkt."
+        },
+        "admissionReviewKey": "2bffa1eabe150381d9d44714"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f6f53ed00c1d16c006aa6fe642c9887d1a597569cc4bc1ab6"
+    },
+    {
+      "decision": "watchlist",
+      "title": "ASML/Intel/Samsung/TSMC: Konkrete High‑NA‑EUV‑Commitments und Intel‑Meilenstein",
+      "fact": "ASML veröffentlicht am 2026-09-08 eine Pressemitteilung, in der Samsung ankündigt, ASMLs High‑NA EUV in DRAM‑High‑Volume‑Manufacturing (HVM) bis 2028 einzusetzen; TSMC nennt eine beabsichtigte High‑NA‑HVM‑Einführung für 2030. Intel meldet separat (Intel/ASML Mitteilung, 2026-09-07/08), dass mehr als 1.000.000 300‑mm‑Wafers mit High‑NA‑EUV verarbeitet wurden (Tool‑Zertifizierung, R&D und selektive Produktions‑Layer).",
+      "placement": "Global; DRAM/HBM Produktions‑layer (High‑NA EUV insertion); Horizonte: Samsung HVM‑Target 2028, TSMC Target 2030; Intel: selektive HVM‑Layer Aktivität per 2026-09-07/08.",
+      "mechanism": "High‑NA EUV erhöht optische Auflösung und erlaubt engere Patterning‑Schichten bzw. potenziell höhere Bits/Wafer oder vereinfachte Multi‑Patterning‑Schritte. Falls High‑NA in DRAM/HBM erfolgreich in HVM skaliert, kann dies qualifizierte Bit‑Output pro Wafer und qualifizierte Lieferkapazität langfristig erhöhen und so mittelfristig (ab HVM‑Ramp) die Verfügbarkeit dämpfen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Signalisiert eine mögliche technische Pfadbeschleunigung, die das Basisszenario von P-2026-07-11-01 (strukturelle Knappheit HBM/Server‑DRAM bis Ende 2028, Peak 2027) mittelfristig schwächen könnte — aber die Ankündigungen selbst liefern noch keine qualifizierten Shipments und falsifizieren P-2026-07-11-01 nicht per sofort.",
+      "falsifier": "Wenn bis 2028-12-31 Samsung's High‑NA‑DRAM‑HVM‑Linien keine nachprüfbaren qualifizierten DRAM‑Wafer‑Shipments in HVM melden (definiert als dauerhafte, industry‑reported qualifizierte Produktion ≥100.000 DRAM‑Wafers/Monat aus High‑NA‑Linien) ODER wenn Server‑DRAM‑Kontraktpreise zwei aufeinanderfolgende Quartale vor Ende 2028 um ≥10% fallen, dann ist der beobachtete Commit‑Effekt unwesentlich für die P‑2026‑07‑11‑01‑Projektion.",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "Direkte, datierte Hersteller‑/Equipment‑Commitments (ASML + Intel/Intel Foundry) zur konkreten Einführungs‑Timeline von High‑NA in DRAM‑HVM.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML Pressemitteilung 2026-09-08 (Samsung High‑NA Ankündigung)",
+          "kind": "primary",
+          "supports": "Direkte Angabe: Samsung plant High‑NA EUV für DRAM‑HVM bis 2028; TSMC nennt spätere Einführungsabsicht."
+        },
+        {
+          "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry/intel-foundry-asml-accelerate-industry-readiness-for-high-na-euv.html",
+          "label": "Intel / Intel Foundry Mitteilung (SPIE) 2026-09-07/08",
+          "kind": "primary",
+          "supports": "Intel meldet >1.000.000 verarbeitete 300‑mm‑Wafers mit High‑NA (Zertifizierung, R&D und selektive Produktions‑Layer)."
+        }
+      ],
+      "reason": "Primärquelle: ASML‑Pressemitteilung (2026-09-08) plus Intel‑Mitteilung verifizieren die Kernaussage: konkrete Hersteller‑Commitments und ein Intel‑Meilenstein (1M Wafers). Das ist ein datierter, atomarer Beobachtungs‑Signal mit klarer Technologie‑ und Timeline‑Angabe. Es ist relevant für die TAIL‑These zur Memory‑Knappheit, ändert aber kurzfristig nichts an Lieferzeiten oder Vertragspreisen (keine qualifizierten Shipments/Lead‑time‑Messungen); indexImpact bleibt false. Aufnahme als akzeptiertes Signal erfolgt, weil die Primärquellen vorhanden, datiert und direkt zitierbar sind.",
+      "candidateId": "c7e56edce1907f3aed1f",
+      "candidateKey": "59310bba1248b76d06b9105a",
+      "reviewedAt": "2026-09-13T19:51:41.733Z",
+      "priorityScore": 80,
+      "gateReasons": [
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0dc9e87318374e19006aa6fe64182487d19e133cad3e042cb0"
+    },
+    {
+      "decision": "rejected",
+      "title": "Duplicate / Berichterstattung über ASML‑High‑NA‑Commitments (NAI500)",
+      "fact": "Artikel wiederholt dieselbe Branchenmeldung (ASML/Samsung/TSMC High‑NA Commitments) ohne zusätzliche primäre Messungen oder neue, eigenständige Primärquellen.",
+      "placement": "Duplicate of c7e56edce1907f3aed1f (ASML/Intel Primärmeldungen vom 2026-09-07/08).",
+      "mechanism": "Keine eigenständige primäre Beobachtung; nur sekundäre Berichterstattung über denselben Commit‑Event.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Kein zusätzliches belastbares Impact‑Signal gegenüber der Primärquelle; wiederholt potenziellen mittelfristigen Einfluss auf Verfügbarkeit, liefert aber keine Messdaten.",
+      "falsifier": "Siehe Primärmeldung (c7e56edce1907f3aed1f).",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "Rehashed/sekundäre Berichterstattung der Primärmeldung.",
+      "duplicateOf": "c7e56edce1907f3aed1f",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 1,
+        "thesisRelevance": 10,
+        "forecastImpact": 5,
+        "falsifiability": 0,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "semiconductors",
+        "dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 10,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://nai500.com/blog/2026/09/asml-leads-the-ai-memory-cycle-as-samsung-and-tsmc-race-for-high-na-tools/",
+          "label": "NAI500 Artikel (sekundär, 2026-09-08)",
+          "kind": "secondary",
+          "supports": "Sekundäre Berichterstattung über denselben Commit‑Event; keine zusätzliche Primärdaten."
+        },
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML Pressemitteilung (Primärquelle)",
+          "kind": "primary",
+          "supports": "Primäre Quelle identifiziert; dieser Kandidat fügt kein neues Primärmaterial hinzu."
+        }
+      ],
+      "reason": "Dieser Kandidat rekondensiert bereits verifizierte Primärmeldungen (ASML/Intel). TAIL‑Regeln verbieten das mehrfach‑Aufnehmen derselben Primärbeobachtung als separate Akzeptanz; deshalb Ablehnung als Duplikat zugunsten des primären Eintrags (c7e56edce1907f3aed1f).",
+      "candidateId": "329255923256389fcb8e",
+      "candidateKey": "c70eb4f758c9f4e82b0f3095",
+      "reviewedAt": "2026-09-13T19:51:41.740Z",
+      "priorityScore": 26,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0dc9e87318374e19006aa6fe64182487d19e133cad3e042cb0"
+    },
+    {
+      "decision": "rejected",
+      "title": "Duplicate / Marktreaktion: ASML‑Aktien und High‑NA‑Adoption (Invezz)",
+      "fact": "Market‑and‑equity‑commentary meldet Kursanstieg von ASML angesichts Berichterstattung über High‑NA‑Commitments von Samsung/TSMC; keine neue Primärinformation zur Technologie‑Einführung.",
+      "placement": "Sekundär/Marktkommentar; duplicate of c7e56edce1907f3aed1f (ASML/Intel Primärmeldungen 2026-09-07/08).",
+      "mechanism": "Kurssprung reflektiert Investorenerwartungen an erhöhte Nachfrage nach High‑NA‑Tools, liefert jedoch keine qualifizierten Liefer- oder Produktionsdaten.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Marktreaktion signalisiert erhöhte Erwartung einer langfristigen Kapazitätserweiterung, ändert aber die tatsächliche Verfügbarkeit oder qualifizierten Shipments nicht.",
+      "falsifier": "Siehe Primärmeldung (c7e56edce1907f3aed1f) — Marktkurse sind kein Ersatz für qualifizierte Produktionsdaten.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "Niedrig — Handelskommentar auf Basis bereits publizierter Primärmeldungen.",
+      "duplicateOf": "c7e56edce1907f3aed1f",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 8,
+        "forecastImpact": 4,
+        "falsifiability": 0,
+        "timeSensitivity": 1
+      },
+      "markets": [
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 8,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+          "label": "ASML Pressemitteilung (Primärquelle)",
+          "kind": "primary",
+          "supports": "Identische Primärquelle; dieser Kandidat bietet keine neue Primärbeobachtung."
+        }
+      ],
+      "reason": "Marktkommentar / Kursberichterstattung ohne eigene Primärbeobachtung. TAIL‑Regeln: keine Aufnahme von rezyklierten Markt‑/Promotionsmeldungen als neue Signale; Ablehnung als Duplikat/sekundär.",
+      "candidateId": "a45d53842d5e9f77db88",
+      "candidateKey": "a66799b90779982994bd6250",
+      "reviewedAt": "2026-09-13T19:51:41.740Z",
+      "priorityScore": 21,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0dc9e87318374e19006aa6fe64182487d19e133cad3e042cb0"
+    },
+    {
+      "decision": "rejected",
+      "title": "Micron & SanDisk Pre‑Market Kommentar — kein neues Primärsignal",
+      "fact": "Beitragsstück (Invezz, 2026-09-08) berichtet kurzfristige Kursbewegungen von Micron und SanDisk und diskutiert 'ein Risiko', liefert jedoch keine neue, datierte Primärmessung (Shipments, Lead‑Times, vertragliche Änderungen).",
+      "placement": "Markt/Equity‑Kommentar; global, Unternehmens‑level; keine HVM‑Shipments oder Kapazitätsmessungen.",
+      "mechanism": "Kurzfristige Equity‑Reaktionen spiegeln Wahrnehmung von Risiko (z. B. China/Policy) — keine direkte Auswirkung auf Verfügbarkeit/Preisindizes ohne Primärdaten.",
+      "predictionId": "",
+      "predictionImpact": "Kein belastbarer Input zur Änderung von TAIL‑Vorhersagen (z. B. P-2026-07-11-01).",
+      "falsifier": "Falls der Artikel konkrete, verifizierbare Produktions‑/Lead‑time‑ oder Vertragssignale liefert (qualifizierte Shipments, bestätigte Vertragskündigungen) bis 2026-09-30, wäre die Bewertung zu überdenken; derzeit fehlen Primärdaten.",
+      "nextReview": "2026-09-30",
+      "eventDate": "2026-09-08",
+      "novelty": "Sehr gering — Tages‑Marktkommentar ohne Primärdaten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 5,
+        "forecastImpact": 4,
+        "falsifiability": 2,
+        "timeSensitivity": 1
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 20,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://invezz.com/pk/news/2026/09/08/micron-and-sandisk-up-nearly-2percent-premarket-but-one-risk-is-getting-harder-to-ignore/",
+          "label": "Invezz Kommentar (2026-09-08)",
+          "kind": "secondary",
+          "supports": "Berichtet Marktbewegung; keine qualifizierten Produktions‑ oder Vertragsdaten."
+        }
+      ],
+      "reason": "Reines Markt‑/Equity‑Kommentarstück ohne neue Primärbelege (Shipments, Lead‑Times, vertragliche Verpflichtungen). TAIL‑Aufnahmekriterien verlangen atomare, datierte Primärfakten für Akzeptanz; deshalb Ablehnung.",
+      "candidateId": "cd633c9bdaa49519a239",
+      "candidateKey": "d548bed8e269014ee435db37",
+      "reviewedAt": "2026-09-13T19:51:41.740Z",
+      "priorityScore": 21,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0dc9e87318374e19006aa6fe64182487d19e133cad3e042cb0"
     }
   ]
 }
