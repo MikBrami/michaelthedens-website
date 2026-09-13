@@ -6162,5 +6162,62 @@
         "label": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz"
       }
     ]
+  },
+  {
+    "id": "S-AUTO-d25873b789efc5ec1a7f41d3",
+    "date": "2026-09-08",
+    "title": "Firmus meldet >900 MW gebundene Kapazität und nennt OpenAI als Ankerkunden",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "dram"
+    ],
+    "companies": [],
+    "severity": 45,
+    "confidence": 70,
+    "signal": "demand_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "Firmus Technologies gibt an, die vertraglich gebundene Kapazität auf über 900 MW erhöht zu haben und OpenAI als Ankerkunden für zwei AI-Factory-Standorte in Malaysia benannt zu haben (Unternehmens-Pressemitteilung vom 2026-09-08).",
+    "tail_analysis": "Firmus' Ankervertrag mit OpenAI erhöht gebundene, zahlungsfähige Nachfrage nach Rack-/Datacenter-Kapazität (MW), was unmittelbar dedizierte Bestellungen für Server, GPU-Instanzen und zugehörigen Memory-Bedarf (Server-DRAM, HBM) induziert und somit die Nachfragekurve für Server-DRAM kurzfristig anhebt.",
+    "source": "Firmus Technologies — offizielle Pressemitteilung (2026-09-08)",
+    "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia",
+    "content_hash": "876018bcfc63b8b8584b",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T13:02:01.387Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "d25873b789efc5ec1a7f41d3",
+    "predictionId": "OUTLOOK-server_dram",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit eines anhaltend hohen Kurzfrist-Beschaffungsdrucks auf Server-DRAM (stärkt das 'demand_up'-Narrativ im OUTLOOK-server_dram), da ein OpenAI-Ankervertrag zusätzliche feste MW- und damit Compute-/Memory-Nachfrage bindet.",
+    "falsifier": "Wenn Firmus bis 2026-10-13 die OpenAI-Partnerschaft öffentlich als beendet, zurückgezogen oder wesentlich reduziert (z. B. MW-Reduktion ≥50 %) dokumentiert, oder wenn eine unabhängige Primärquelle OpenAI nicht als Ankerkunden bestätigt, dann widerlegt das die praktische Wirkung dieser Meldung.",
+    "nextReview": "2026-10-13",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit eines anhaltend hohen Kurzfrist-Beschaffungsdrucks auf Server-DRAM (stärkt das 'demand_up'-Narrativ im OUTLOOK-server_dram), da ein OpenAI-Ankervertrag zusätzliche feste MW- und damit Compute-/Memory-Nachfrage bindet."
+    },
+    "sources": [
+      {
+        "label": "Firmus Technologies — offizielle Pressemitteilung (2026-09-08)",
+        "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia"
+      },
+      {
+        "label": "CRN Asia — Sekundärberichterstattung zur Firmus-Pressemitteilung (Bericht Sept 2026)",
+        "url": "https://www.crnasia.com/news/2026/data-center/firmus-adds-openai-as-anchor-customer"
+      }
+    ]
   }
 ]

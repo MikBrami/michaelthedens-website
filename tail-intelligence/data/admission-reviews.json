@@ -2989,6 +2989,891 @@
       "model": "gpt-5-mini",
       "responseId": "resp_0a7ab8337843a398006aa6979cdb6487d0ab735a373c056d3c",
       "indexImpactReason": "Aggregate market share is context, not direct qualified supply or price evidence."
+    },
+    {
+      "candidateId": "2b267d1e492f5c4d7114",
+      "decision": "watchlist",
+      "title": "Behauptung: Köpfe von OpenAI und Google unterstützen Aufruf, AI-Entwicklung zu verlangsamen",
+      "fact": "Mehrere führende Persönlichkeiten aus Frontier-AI (u. a. OpenAI-Chefwissenschaftler Jakub Pachocki und OpenAI-CEO-Signale) unterstützen öffentlich die Idee, die Fortschrittsgeschwindigkeit von besonders leistungsfähigen Modellen zu drosseln; eine verifizierte, gleichzeitige ‚Unterstützung durch Google-CEO‘ ließ sich zum Prüfzeitpunkt nicht in einer Primärquelle bestätigen.",
+      "placement": "Global / AI-Infrastruktur-Policy / Kurzfristig (Wochen–Monate)",
+      "mechanism": "Öffentliche Äußerungen und interne Postings (Chief Scientist-Aufsatz, CEO-Kommentare, Mitarbeiterpetition) erhöhen politische und regulatorische Aufmerksamkeit und könnten die Geschwindigkeit von Modell-Rolls und damit kurzfr. Nachfrage nach Trainings-/Inferenz-Compute dämpfen — allerdings nur wenn größere Labs gleichsam handeln oder Regulierung folgt.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Unterstützt ein potenzielles Abschwächungs-Risiko für AI-getriebene Kurzfrist-Nachfrage nach Server-DRAM (Downside der 'demand_up' Annahme im OUTLOOK-server_dram), falls die Verlangsamung koordiniert und dauerhaft würde.",
+      "falsifier": "Bis 2026-10-13 sollten beide Firmen (OpenAI und Google) in offiziellen Primärverlautbarungen oder regulatorischen Eingaben ausdrücklich und koordiniert eine bindende Verlangsamungsvereinbarung nennen; das Fehlen einer solchen Bestätigung plus fortgesetzte ungehemmte Modell-Releases würde die praktische Wirkung stark schwächen.",
+      "nextReview": "2026-10-13",
+      "eventDate": "2026-09-06",
+      "novelty": "Gering bis moderat: Der Aufruf zur ‚Pacing‘ wurde bereits in H2 2026 von Angestellten und einzelnen Lab-Leadern thematisiert; die Neuigkeit wäre eine formale, koordinierte Executive-Backing-Erklärung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 8,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/07/29/openai-anthropic-endorse-call-government-pace-ai-progress/",
+          "label": "Washington Post — OpenAI und Anthropic unterstützen Aufruf an Regierung zur ‚Pacing‘ (Juli 29, 2026)",
+          "kind": "secondary",
+          "supports": "Bericht, dass OpenAI und Anthropic einen Brief/Anruf an Regulierer unterstützten, die ein Instrument zur ‚Pacing‘-Koordination fordern."
+        },
+        {
+          "url": "https://fortune.com/2026/09/08/openai-rsi-progress-jakub-pachocki-warns-dangers-slowdown-safety-rules/",
+          "label": "Fortune — OpenAI-Chefwissenschaftler argumentiert für koordinierte Verlangsamung (Sept 8, 2026)",
+          "kind": "secondary",
+          "supports": "Analyse und Zitat aus dem Aufsatz/Posting des OpenAI-Chefwissenschaftlers, das koordinierte Verlangsamung als Option beschreibt."
+        }
+      ],
+      "reason": "Teilweise verifizierbare Elemente (OpenAI-internes Signal / Chefwissenschaftler-Aufsatz; Mitarbeiter-Petition) sind vorhanden und relevant für TAILs Nachfrage-These. Die spezifische Behauptung in der Kandidaten-Headline — simultane, explizite ‚Backing‘ durch die Spitzen von OpenAI und Google — konnte jedoch nicht in einer Primärquelle belegt werden. Ohne eine klare, primäre Bestätigung (z. B. offizielle Statements oder gemeinsame Briefings von Google/CEO) ist die Aussage zu breit und teils irreführend. Opposing evidence / Kontext: zahlreiche Primär- und Qualitätsmedienberichte bestätigen OpenAI-/Anthropic-Signale zum ‚Slowdown‘, finden aber keine gleichzeitige, explizite Zustimmung durch den Google-CEO. Daher Watchlist (mehr Verifikation nötig).",
+      "candidateKey": "b592744db5acef24506eb4d0",
+      "reviewedAt": "2026-09-13T13:02:01.380Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02052e9beae478c4006aa69e36313887d2842503b8393699aa"
+    },
+    {
+      "candidateId": "c1a34fad33dc7ce2f918",
+      "decision": "accepted",
+      "title": "Firmus meldet >900 MW gebundene Kapazität und nennt OpenAI als Ankerkunden",
+      "fact": "Firmus Technologies gibt an, die vertraglich gebundene Kapazität auf über 900 MW erhöht zu haben und OpenAI als Ankerkunden für zwei AI-Factory-Standorte in Malaysia benannt zu haben (Unternehmens-Pressemitteilung vom 2026-09-08).",
+      "placement": "Asien-Pazifik (Malaysia) / AI-Infrastruktur / Kurz- bis Mittelfristig",
+      "mechanism": "Firmus' Ankervertrag mit OpenAI erhöht gebundene, zahlungsfähige Nachfrage nach Rack-/Datacenter-Kapazität (MW), was unmittelbar dedizierte Bestellungen für Server, GPU-Instanzen und zugehörigen Memory-Bedarf (Server-DRAM, HBM) induziert und somit die Nachfragekurve für Server-DRAM kurzfristig anhebt.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit eines anhaltend hohen Kurzfrist-Beschaffungsdrucks auf Server-DRAM (stärkt das 'demand_up'-Narrativ im OUTLOOK-server_dram), da ein OpenAI-Ankervertrag zusätzliche feste MW- und damit Compute-/Memory-Nachfrage bindet.",
+      "falsifier": "Wenn Firmus bis 2026-10-13 die OpenAI-Partnerschaft öffentlich als beendet, zurückgezogen oder wesentlich reduziert (z. B. MW-Reduktion ≥50 %) dokumentiert, oder wenn eine unabhängige Primärquelle OpenAI nicht als Ankerkunden bestätigt, dann widerlegt das die praktische Wirkung dieser Meldung.",
+      "nextReview": "2026-10-13",
+      "eventDate": "2026-09-08",
+      "novelty": "Moderat: Ein neuer kommerzieller Ankerkundenvertrag mit einem Frontier-AI-Käufer in SEA ist marktrelevant; vergleichbare Hyperscaler-Abnahmen sind bereits Baseline, aber Standort/MW und OpenAI-Nennung sind neu.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 9,
+        "thesisRelevance": 17,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 45,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia",
+          "label": "Firmus Technologies — offizielle Pressemitteilung (2026-09-08)",
+          "kind": "primary",
+          "supports": "Firmus gibt >900 MW gebundene Kapazität an und nennt OpenAI als Ankerkunden für AI Factory Sites in Malaysia."
+        },
+        {
+          "url": "https://www.crnasia.com/news/2026/data-center/firmus-adds-openai-as-anchor-customer",
+          "label": "CRN Asia — Sekundärberichterstattung zur Firmus-Pressemitteilung (Bericht Sept 2026)",
+          "kind": "secondary",
+          "supports": "Nachricht über Firmus-OpenAI-Partnerschaft; bestätigt MW-Ziffern und Einsatz von Nvidia Vera Rubin in Ankündigung."
+        }
+      ],
+      "reason": "Primärquelle (Unternehmens-Pressemitteilung von Firmus, 2026-09-08) dokumentiert explizit: (a) vertraglich gebundene Kapazität >900 MW und (b) OpenAI als Ankerkunden für zwei Standorte in Malaysia. Das ist ein atomarer, datierter Geschäftsvertrag mit einer klaren Einheit (MW) und geografischer Einordnung. Kausalmechanismus und Messbarkeit sind gegeben (MW = gebundene Nachfrage → zusätzlicher Bedarf an Server-Compute/DRAM). Opposing evidence: keine Primärquelle zum Zeitpunkt der Prüfung, die die Meldung direkt widerlegt; das Falsifier-Kriterium (Öffentliche Kündigung/Reduktion bis 2026-10-13) wurde gesetzt. Red-Pencil-Check bestanden: Primärquelle existiert, Aussage ist spezifisch, belegt und wirtschaftlich relevant. Deshalb Aufnahme (accepted) als nachrichtenbasierter Demand-Signal für ai_infrastructure / server_dram.",
+      "candidateKey": "d25873b789efc5ec1a7f41d3",
+      "reviewedAt": "2026-09-13T13:02:01.387Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-d25873b789efc5ec1a7f41d3",
+        "title": "Firmus meldet >900 MW gebundene Kapazität und nennt OpenAI als Ankerkunden",
+        "date": "2026-09-08",
+        "admittedAt": "2026-09-13T13:02:01.387Z",
+        "fact": "Firmus Technologies gibt an, die vertraglich gebundene Kapazität auf über 900 MW erhöht zu haben und OpenAI als Ankerkunden für zwei AI-Factory-Standorte in Malaysia benannt zu haben (Unternehmens-Pressemitteilung vom 2026-09-08).",
+        "placement": "Asien-Pazifik (Malaysia) / AI-Infrastruktur / Kurz- bis Mittelfristig",
+        "tailInference": "Firmus' Ankervertrag mit OpenAI erhöht gebundene, zahlungsfähige Nachfrage nach Rack-/Datacenter-Kapazität (MW), was unmittelbar dedizierte Bestellungen für Server, GPU-Instanzen und zugehörigen Memory-Bedarf (Server-DRAM, HBM) induziert und somit die Nachfragekurve für Server-DRAM kurzfristig anhebt.",
+        "predictionId": "OUTLOOK-server_dram",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit eines anhaltend hohen Kurzfrist-Beschaffungsdrucks auf Server-DRAM (stärkt das 'demand_up'-Narrativ im OUTLOOK-server_dram), da ein OpenAI-Ankervertrag zusätzliche feste MW- und damit Compute-/Memory-Nachfrage bindet.",
+        "falsifier": "Wenn Firmus bis 2026-10-13 die OpenAI-Partnerschaft öffentlich als beendet, zurückgezogen oder wesentlich reduziert (z. B. MW-Reduktion ≥50 %) dokumentiert, oder wenn eine unabhängige Primärquelle OpenAI nicht als Ankerkunden bestätigt, dann widerlegt das die praktische Wirkung dieser Meldung.",
+        "nextReview": "2026-10-13",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 17,
+          "novelty": 9,
+          "thesisRelevance": 17,
+          "forecastImpact": 18,
+          "falsifiability": 12,
+          "timeSensitivity": 9
+        },
+        "severity": 45,
+        "confidence": 70,
+        "markets": [
+          "ai_infrastructure",
+          "server_dram",
+          "dram"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Firmus Technologies — offizielle Pressemitteilung (2026-09-08)",
+            "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia"
+          },
+          {
+            "label": "CRN Asia — Sekundärberichterstattung zur Firmus-Pressemitteilung (Bericht Sept 2026)",
+            "url": "https://www.crnasia.com/news/2026/data-center/firmus-adds-openai-as-anchor-customer"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit eines anhaltend hohen Kurzfrist-Beschaffungsdrucks auf Server-DRAM (stärkt das 'demand_up'-Narrativ im OUTLOOK-server_dram), da ein OpenAI-Ankervertrag zusätzliche feste MW- und damit Compute-/Memory-Nachfrage bindet."
+        },
+        "admissionReviewKey": "d25873b789efc5ec1a7f41d3"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02052e9beae478c4006aa69e36313887d2842503b8393699aa"
+    },
+    {
+      "candidateId": "59bc5e0b955287f4580b",
+      "decision": "rejected",
+      "title": "Anekdotischer Bericht: Vermieter nahe zukünftigem Meta-AI-Rechenzentrum — Bauarbeiter als Hauptmieter",
+      "fact": "Bericht (angeblich Business Insider) ist eine lokale, anekdotische Schilderung, dass ein Vermieter viele Bauarbeiter als Mieter hat; keine Primärquelle (Business Insider-Artikel) konnte zum Prüfzeitpunkt verifiziert werden unter der angegebenen Headline/URL.",
+      "placement": "Lokal / Standortnaher Immobilienmarkt / Kurzfristig",
+      "mechanism": "Wenn valide, würde Verstärkung der Bauphasen-Beschäftigung kurzfristig lokale Mietnachfrage erhöhen; dies wäre ein lokaler Nachfrageimpuls, kein belegbarer Einfluss auf TAILs Makro‑Memory- oder Datacenter-Prognosen.",
+      "predictionId": "",
+      "predictionImpact": "Keine nachweisbare, direkte Auswirkung auf gelistete TAIL-Vorhersagen (keine klaren Verknüpfungen zu Server-DRAM-, HBM- oder globalen Kapazitäts-Prognosen).",
+      "falsifier": "Wenn eine verifizierbare Primärpublikation (Business Insider oder gleichwertig) mit Datum und konkret überprüfbaren Daten (Anzahl Bauarbeiter-Mieter, Anteil am Portfolio in %) bis 2026-10-13 vorgelegt wird, würde die Ablehnung neu bewertet.",
+      "nextReview": "2026-10-13",
+      "eventDate": "2026-09-13",
+      "novelty": "Gering (lokale Anekdote, viele Berichte über Bau- und Beschäftigungsimpulse durch Meta-Standorte existieren bereits).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 7,
+        "novelty": 5,
+        "thesisRelevance": 6,
+        "forecastImpact": 4,
+        "falsifiability": 6,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.knoe.com/2026/01/12/meta-data-center-brings-economic-boom-northeast-louisiana/",
+          "label": "KNOE — Beispielhafte Primärberichterstattung über Meta-Datacenter-Bau und lokale Effekte (Jan 12, 2026)",
+          "kind": "secondary",
+          "supports": "Belegt generell, dass Meta-Datacenter-Baustellen lokal spürbaren Beschäftigungs- und wirtschaftlichen Effekt erzeugen; ersetzt aber nicht die behauptete Business-Insider-Anekdote."
+        }
+      ],
+      "reason": "Die Kandidaten-Headline nennt Business Insider als Quelle; unter der angegebenen URL/Headline konnte kein verifizierbarer Business-Insider-Primärartikel gefunden werden. Die zugrundeliegende Behauptung ist zudem anekdotisch und lokal; selbst wenn wahr, wäre sie kein belastbarer, marktbreiterer Indikator für TAIL-Vorhersagen. Ohne eine nachprüfbare Primärquelle ist die Meldung nicht aufnehmbar. Empfehlung: Reject — kann erneut geprüft werden, wenn ein verifizierbarer Primärartikel oder konkrete Daten nachgereicht werden.",
+      "candidateKey": "b57de1d16ada1afadf40ccaa",
+      "reviewedAt": "2026-09-13T13:02:01.391Z",
+      "priorityScore": 30,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02052e9beae478c4006aa69e36313887d2842503b8393699aa"
+    },
+    {
+      "candidateId": "408b8faaec11b3175274",
+      "decision": "rejected",
+      "title": "Analysten-Updates: '5 big analyst AI moves' (Investing.com / Yahoo Finance)",
+      "fact": "Investing.com (und Spiegelartikel via Yahoo Finance) fasst mehrere Analysten-Notizen zusammen (Upgrades/Preisziele); die Existenz dieser Analysten-Kommentare ist in Primär- und Sekundärquellen verifizierbar, doch es handelt sich um wiederkehrende Analysten-Meinungen ohne ein neues, atomares Marktereignis.",
+      "placement": "Markt-Kommentar / Research / Kurzfristig",
+      "mechanism": "Analysten-Noten können Sentiment und kurzfristige Aktienbewertung beeinflussen, sprechen jedoch nicht zwingend für einen substantiellen, messbaren Einfluss auf die physische Nachfrage nach Memory- oder Datacenter-Kapazität, und wiederholen vielfach bekannte Narrative (Capex, AI-Buildout).",
+      "predictionId": "",
+      "predictionImpact": "Kein robustes, direktes Falsify/Support für gelistete TAIL-Vorhersagen; eher Market-sentiment-Information ohne neue quantitative Einheit (MW, Shipments, Preise).",
+      "falsifier": "Sollten die zitierten Analysten-Noten später Primärdaten (z. B. neue LTAs, bestätigte MW-Verträge, konkrete Liefertermine) liefern, kann die Aufnahme neu bewertet werden; bis dahin ist dies bloße Analysteninterpretation.",
+      "nextReview": "2026-10-13",
+      "eventDate": "2026-09-13",
+      "novelty": "Gering: Analystenkommentare wiederholen größtenteils bekannte Themen (Upgrades/Pricing-Expectations).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 4,
+        "thesisRelevance": 8,
+        "forecastImpact": 6,
+        "falsifiability": 10,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "demand_up",
+      "severity": 25,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://uk.finance.yahoo.com/news/5-big-analyst-ai-moves-093002220.html",
+          "label": "Yahoo Finance — Mirror / Syndication der Investing.com Zusammenfassung",
+          "kind": "secondary",
+          "supports": "Spiegelt die Investing.com-Zusammenfassung und zeigt weite Verbreitung des Analysten-Inhalts."
+        }
+      ],
+      "reason": "Primärquelle (Investing.com) verifiziert, dass Analysten-Updates vorliegen. TAIL-Aufnahmeskriterien verlangen jedoch für 'accepted' ein atomares, datiertes Ereignis mit messbarer Markteinwirkung (Einheit, Geographie, Mechanismus) und eine Verbindung zu einer bestehenden TAIL-Prognose. Analysten-Kommentare sind Meinungs-/Sentiment-Signale und vielfach in der Baseline bereits abgebildet; sie addieren keine neue, quantifizierbare Supply-/Demand-Einheit. Zudem sind solche Meldungen häufig 'recycled' und für Research-Zweig uninteressant. Deshalb Reject (keine Aufnahme), trotz verifizierbarer Quelle.",
+      "candidateKey": "ced9e315d871524c5b19813d",
+      "reviewedAt": "2026-09-13T13:02:01.393Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02052e9beae478c4006aa69e36313887d2842503b8393699aa"
+    },
+    {
+      "candidateId": "05a5f4050e9cfccbe93c",
+      "decision": "rejected",
+      "title": "Former Anthropic, Google researchers sound alarm over AI safety",
+      "fact": "Gelieferte Inbox-Zeile verweist auf einen Google-News-Aggregator-Eintrag (Türkiye Today Syndication) vom 2026-09-13, der zusammenfassend berichtet, dass ehemalige Forscher (Anthropic, Google) vor AI-Sicherheitsrisiken warnen.",
+      "placement": "Global; Tech-/Policy-Diskurs (Medienbericht, kein primärer akademischer/publisher-naher Quellennachweis).",
+      "mechanism": "Medienbericht; kein primärer Beleg für eine institutionelle Policy-Änderung oder messbare Auswirkung auf Hardware-/Supply-Chain-Kennzahlen.",
+      "predictionId": "",
+      "predictionImpact": "Kein belastbarer, quantifizierbarer Einfluss auf die im Inbox-Baseline gelisteten technischen/Marktprognosen nach Prüfung der Primärquellen.",
+      "falsifier": "Wenn innerhalb von 30 Tagen nach diesem Bericht keine primären Statements, Essays oder Peer-Review-Veröffentlichungen von den namentlich zitierten ehemaligen Forschern auftauchen, die über bloße Meinungsäußerungen hinausgehen, bestätigt das, dass die Aggregation keine neue, verifizierte Primärinformation enthielt.",
+      "nextReview": "2026-12-13",
+      "eventDate": "2026-09-13",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 6,
+        "forecastImpact": 4,
+        "falsifiability": 5,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 10,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.techmeme.com/260722/p5",
+          "label": "Techmeme (Aggregations-Index; verweist auf 'Türkiye Today' als einer vieler Quellen)",
+          "kind": "secondary",
+          "supports": "Aggregation, zeigt Verbreitung, aber kein Original-Primary-Statement der betroffenen Forscher."
+        }
+      ],
+      "reason": "Kein verifizierbarer Primärbeleg in den durchsuchten Quellennetzwerken: die Inbox-Zeile ist ein aggregierter Google-News-Eintrag (Türkiye Today Syndication). Die Meldung dokumentiert lediglich mediale Warnungen/Meinungsäußerungen ohne atomare, datierte, messbare Marktwirkung oder direkte Verbindung zu bestehenden Vorhersagen. Folge: Ablehnung (rejected) — kein VERIFIED DATA-Eintrag möglich.",
+      "candidateKey": "2439b5eda581977e8924d39c",
+      "reviewedAt": "2026-09-13T13:02:01.397Z",
+      "priorityScore": 26,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c99928a8ac715d8006aa69e366ef487d2ad3f933f04022493"
+    },
+    {
+      "candidateId": "9c514b8f0b6f0560d382",
+      "decision": "watchlist",
+      "title": "Anthropic, OpenAI CEOs call for slowdown in AI development",
+      "fact": "Am 2026-09-12 veröffentlichte Anthropic-CEO Dario Amodei einen Essay/öffentlichen Aufruf zum verlangsamten Tempo der KI-Entwicklung; dieser Ruf wurde öffentlich von anderen führenden Personen/CEOs (u.a. OpenAI) kommentiert und unterstützt, laut Axios-Bericht vom 2026-09-12.",
+      "placement": "Global / Industriepolitik & Governance; unmittelbarer Relevanzbereich: AI-Lab-Operations, Evaluations- und Sicherheitsverfahren (Eval-Isolation, Egress-Kontrollen).",
+      "mechanism": "Öffentlicher CEO-Appell erhöht politischen und regulatorischen Druck sowie den reputationsbasierten Anreiz für große Labs, strengere Eval-Isolations- und Sicherheitskontrollen einzuführen. Das ist ein sozialer/policy-getriebener Mechanismus (kein direkter, quantifizierbarer Supply-/Capacity-Effekt).",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass bis 2026-12-31 mindestens drei große AI-Labs strengere Eval-Isolation oder Netzwerk-/Egress-Kontrollen öffentlich dokumentieren; jedoch ist dies eine Inferenz (kein unmittelbarer Beleg für bereits durchgeführte Maßnahmen).",
+      "falsifier": "Bis 2026-12-31 werden weniger als drei große AI-Labs keine dokumentierten, öffentlich belegten Änderungen (Eval-Isolation, Netzwerk-Egress-Restriktionen oder Drittanbieter-Sandboxing) vorweisen — in diesem Fall wäre die angenommene Wirkung falsifiziert.",
+      "nextReview": "2026-12-13",
+      "eventDate": "2026-09-12",
+      "novelty": "mittel",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.axios.com/2026/09/12/anthropic-ai-amodei-pacing",
+          "label": "Axios – Bericht über Amodeis Aufruf und Reaktionen",
+          "kind": "primary",
+          "supports": "Bericht und Datum (2026-09-12) über öffentlichen Essay/Appell von Anthropic-CEO Dario Amodei und Reaktionen anderer Führungskräfte."
+        },
+        {
+          "url": "https://monorepo-sample1.nyt.net/2026/09/12/technology/anthropic-dario-amodei-ai-slowdown.html",
+          "label": "New York Times – thematische Berichterstattung/Essay-Zusammenfassung",
+          "kind": "secondary",
+          "supports": "Kontext und weitere Zitate; bestätigt Datum und öffentliche Reichweite des Essays."
+        }
+      ],
+      "reason": "Hochwertige Primärberichterstattung (Axios) belegt das Datum und die öffentliche Aktion (CEO-Essay vom 2026-09-12). Die Meldung ist relevant für die Prognose P-2026-07-22-02 (strengere Eval-Isolationen bis 31.12.2026), liefert aber keine sofort messbare Änderung (keine dokumentierten Lab-Policy-Memos oder regulatorische Verordnungen). Deshalb Watchlist (nicht VERIFIED DATA) — die Aussage ist nützlich, aber aktuell inferentiell; ein klar falsifizierbarer Prüfpfad (bis 2026-12-31) wurde definiert.",
+      "candidateKey": "19e06cd0b1fa595140797b43",
+      "reviewedAt": "2026-09-13T13:02:01.400Z",
+      "priorityScore": 78,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c99928a8ac715d8006aa69e366ef487d2ad3f933f04022493"
+    },
+    {
+      "candidateId": "05fd9d7b9f2a6dfb62cd",
+      "decision": "rejected",
+      "title": "Is QUALCOMM (QCOM) Cheap As Its Amazon AI Deal Fuels Data Center Hopes?",
+      "fact": "Die Inbox-Zeile verweist auf eine Finanz-/Meinungsanalyse (simplywall.st Syndication) vom 2026-09-13, die Qualcomm's Amazon-Deal als Katalysator für Data-Center-Hoffnungen bewertet; der zugrundeliegende Primärnachweis für die Geschäftsbeziehung ist ein Qualcomm-Press Release und eine 8‑K/SEC-Meldung (Qualcomm hat am 2026-09-08 eine mehrjährige Zusammenarbeit mit Amazon bestätigt).",
+      "placement": "Global / Unternehmens- & Kapitalmarktkontext; unmittelbare Relevanz: Qualcomm-Unternehmensmeldungen und Investorenrezeption (Aktienbewertung) — kein direkter Markt‑Supply-/Capacity‑Fakt im TAIL-Baseline-Sinn.",
+      "mechanism": "Unternehmens-PR und SEC-Filing informierten Investoren; Marktreaktion ist finanziell/kurstechnisch und stellt eine Meinungs-/Bewertungsanalyse dar, keine atomare Messgröße für Lieferzeiten, Waferoutput oder qualifizierte Shipments im Halbleitermarkt.",
+      "predictionId": "",
+      "predictionImpact": "Kein zulässiger, quantifizierbarer Einfluss auf die bestehenden TAIL-Marktfahrten (keine Aussage über Bit-Supply, Lead Times, Fill Rates oder verifizierte Shipments).",
+      "falsifier": "Wenn die Primärdokumente/SEC-Filings falsche oder irreführende Angaben zur Kooperation enthielten (z. B. keine substantielle Volumenbindung, kein Umsatzrealisierungshinweis), würde das die Investment-Thesis der Finanzartikel widerlegen. Das ist jedoch eine Unternehmensmeldung/8‑K-Prüffrage, kein TAIL-Markt-Falsifier.",
+      "nextReview": "2026-12-13",
+      "eventDate": "2026-09-08",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 3,
+        "thesisRelevance": 5,
+        "forecastImpact": 2,
+        "falsifiability": 3,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 15,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.qualcomm.com/news/releases/2026/09/qualcomm-announces-multi-generational-product-collaboration-with",
+          "label": "Qualcomm – Press Release (2026-09-08) zur mehrjährigen Kooperation mit Amazon",
+          "kind": "primary",
+          "supports": "Primäre Unternehmensmeldung zu Zusammenarbeit; belegt Existenz der Partnerschaft und Datum (2026-09-08)."
+        },
+        {
+          "url": "https://www.publicnow.com/view/DBF7C3D06C21A72EFD0B00DEFD9BB171A04ADF30",
+          "label": "8‑K / regulatorische Einreichung (Public) – Details zu Warrants und Kollaborationsbedingungen",
+          "kind": "primary",
+          "supports": "SEC/8‑K-ähnliche Verteilung, die finanzielle Konditionen (Warrant, Zeitrahmen) dokumentiert."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/qcom-stock-rises-premarket-cfo-081002402.html",
+          "label": "Yahoo Finance – Marktreaktion / Analystenzitate",
+          "kind": "secondary",
+          "supports": "Belegt Marktrezeption und Analystenkommentare; bestätigt, dass Finanzmedien die Kooperation als Kurstreiber behandelten."
+        }
+      ],
+      "reason": "Die Eingangszeile ist ein Investment-/Marktkommentar (simplywall.st) — solche Stücke sind ausdrücklich als 'promotional stock commentary' und nicht als geeignet für TAIL‑Aufnahme kategorisiert. Obwohl die zugrundeliegende Geschäftsvereinbarung zwischen Qualcomm und Amazon durch Qualcomm-PR und regulatorische Einreichungen belegt ist (Primärbelege vorhanden), stellt der Kandidat keine atomare Markt‑Messgröße (z. B. qualifizierte Shipments, Kapazitätsrampen mit überprüfbaren Volumina oder Lead‑Time-Änderungen) dar. Daher Rejection (rejected) — die Meldung bleibt für Investment-Research relevant, nicht für TAIL‑VERIFIED‑DATA-Aufnahme.",
+      "candidateKey": "77cb412fa2a6128945d99dc6",
+      "reviewedAt": "2026-09-13T13:02:01.403Z",
+      "priorityScore": 23,
+      "gateReasons": [
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c99928a8ac715d8006aa69e366ef487d2ad3f933f04022493"
+    },
+    {
+      "candidateId": "ea81b74b2f822540fc5e",
+      "decision": "watchlist",
+      "title": "TSMC's CoWoS Capacity to Double to 260,000 Wafers by 2028; Intel and OSAT Providers Capture Spillover Orders",
+      "fact": "Mehrere Sekundärberichte (Taiwanesische Medien zitiert in englischsprachigen Tech- und Branchenportalen) berichteten am 2026-09-11/12, dass TSMC angeblich plane, die CoWoS-Advanced-Packaging-Kapazität bis Ende 2028 auf ~260.000 Wafer/Monat zu erhöhen (von ~130.000 WPM Ende 2026).",
+      "placement": "Fokus: Advanced Packaging / Taiwan + US (Chiayi, AP7, Arizona-Facetten) — klarer Bezug zum Advanced-Packaging-Layer der AI-HW-Lieferkette.",
+      "mechanism": "Berichtliche Kapazitätsankündigung (sekundär) würde langfristig Advanced-Packaging-Engpässe abschwächen; aktuell liegt die Meldung aber in der Berichts-/Prognoseebene (keine TSMC-Offenlegung mit bestätigten Kapazitätskennzahlen in öffentlichen TSMC-Press Releases zum geprüften Zeitpunkt).",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Wenn die 260.000 WPM-Rampe verifiziert wird, entkräftet sie mittelfristig Teile der These, dass Advanced Packaging bis mindestens H2 2027 ein zentraler Engpass bleibt — allerdings liegt der gemeldete Zeitpunkt (Ende 2028) außerhalb des H2-2027-Horizonts und würde daher die ursprüngliche H2-2027-Behauptung nicht unmittelbar falsifizieren.",
+      "falsifier": "Primärfalsifier: Öffentliche TSMC-Ankündigung oder bestätigte regulatorische/Capex-/Finanzdokumente mit quantitativen CoWoS‑Kapazitätszielen ≥260,000 WPM nachprüfbar bis 2026-12-31 falsifizieren die Sekundärnatur der Meldung; invers: Wenn bis 2026-12-31 keine TSMC-Primärbestätigung vorliegt, bleibt die Meldung unbestätigt.",
+      "nextReview": "2026-12-13",
+      "eventDate": "2026-09-11",
+      "novelty": "mittel",
+      "duplicateOf": "",
+      "evidenceStatus": "HEURISTIC",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 17,
+        "forecastImpact": 10,
+        "falsifiability": 9,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://wccftech.com/report-tsmc-to-double-cowos-capacity-by-2028-as-ai-chip-shortage-spills-over-to-rivals/",
+          "label": "Wccftech – Bericht (verweist auf taiwanesische Medien/Analysten)",
+          "kind": "secondary",
+          "supports": "Sekundärberichterstattung mit genannter Zahl (~260,000 WPM) und benannten Fokus-Standorten (Chiayi, Arizona/AP7)."
+        },
+        {
+          "url": "https://eu.36kr.com/en/p/3627284731446275",
+          "label": "36Kr / Taiwan-Media-Analyse – zusätzliche Sekundärquelle",
+          "kind": "secondary",
+          "supports": "Sekundäre Branchenanalyse mit Schätzungen zur CoWoS-Kapazitätsentwicklung; keine offizielle TSMC-Pressemitteilung gefunden."
+        }
+      ],
+      "reason": "Die Meldung ist relevant für die Basistheorie zu Advanced Packaging (P-2026-07-13-03). Allerdings konnte in der durchsuchten Dokumentation keine direkte TSMC‑Primärmitteilung (Press Release, Form 8‑K, Capex-Disclosure) gefunden werden, welche die 260.000 WPM-Zahl als Unternehmensziel bestätigt. Sekundärberichte und Branchenanalysen nennen die Zahl, aber ohne Primärverifikation bleibt dies heuristisch/sekundär. Deshalb Watchlist (nicht VERIFIED DATA): weiter beobachten; klarer Primärbeleg (TSMC-Offenlegung oder offizielle regulatorische Einreichung) würde ein Upgrade erlauben.",
+      "candidateKey": "56ba6be2425add3f9cd62ad8",
+      "reviewedAt": "2026-09-13T13:02:01.409Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c99928a8ac715d8006aa69e366ef487d2ad3f933f04022493"
+    },
+    {
+      "candidateId": "25b9e525d649b8afbdc9",
+      "decision": "watchlist",
+      "title": "Microsoft and Chevron Sign 20-Year Power Deal For Texas Data Center",
+      "fact": "Chevron und Microsoft schlossen laut Medien- und Unternehmensmitteilungen am 2026-06-22 eine 20-jährige Stromliefervereinbarung (PPA) für 'Project Kilby': ein co‑located, gasbetriebenes Erzeugungsprojekt (~2.67 GW) zur direkten Stromversorgung eines Microsoft‑Rechenzentrumscampus in der Nähe von Pecos / Reeves County, West Texas.",
+      "placement": "Reeves County (Pecos-Region), West Texas; Domäne: ai_infrastructure (Datacenter‑Energieversorgung); Horizon/Vertragsdauer: 20 Jahre (PPA).",
+      "mechanism": "Ein co‑located Behind‑the‑Meter‑Gaskraftwerk mit einer 20‑jährigen PPA bindet Erzeugungskapazität direkt an einen Hyperscaler‑Campus (dedicated supply). Das reduziert Abhängigkeit vom öffentlichen Netz und demonstriert den Mechanismus, durch den große Datacenter Lasten zunehmend über dedizierte Energieprojekte statt über Standardnetzverträge decken.",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit von P-2026-07-12-04 (»Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen«). Der Nachweis eines >2 GW, 20‑jährigen Direktversorgungsarrangements erhöht die Posterior‑Wahrscheinlichkeit, dass sich dieses Muster in 2026–2028 weiter verallgemeinert.",
+      "falsifier": "Wenn bis zum 2027-12-31 nicht mindestens zwei weitere öffentlich belegte direkte PPA‑/Behind‑the‑Meter‑FID‑Vereinbarungen mit jeweils ≥1 GW (oder gleichwertige Multi‑hundert‑MW Bindungen) für Hyperscaler‑Rechenzentren in den USA bekannt werden, reduziert dies die Generalisierbarkeit dieses Signals deutlich.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-06-22",
+      "novelty": "mittel",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_lock",
+      "severity": 40,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/22/microsoft-and-chevron-plan-one-of-the-largest-gas-powered-data-center-projects-in-us/",
+          "label": "TechCrunch – Microsoft and Chevron plan one of the largest gas-powered data center projects in US",
+          "kind": "secondary",
+          "supports": "Berichtet 2026-06-22, nennt Project Kilby als ~2.67 GW gasbetriebenes Erzeugungsprojekt mit 20‑jähriger PPA zur Versorgung eines Microsoft‑Campus."
+        },
+        {
+          "url": "https://www.datacenterknowledge.com/build-design/chevron-lands-20-year-microsoft-deal-to-power-west-texas-ai-campus",
+          "label": "DataCenterKnowledge – Chevron lands 20‑year Microsoft deal to power West Texas AI campus",
+          "kind": "secondary",
+          "supports": "Beschreibt die 20‑jährige Vereinbarung und Co‑located Erzeugung (Project Kilby) zur direkten Versorgung des Microsoft‑Rechenzentrums."
+        },
+        {
+          "url": "https://www.latimes.com/business/story/2026-06-22/microsoft-and-chevron-sign-20-year-power-deal-for-texas-data-center",
+          "label": "LA Times – Microsoft and Chevron sign 20‑year power deal for Texas data center",
+          "kind": "secondary",
+          "supports": "Lokalisierung in West Texas (Pecos) und Bestätigung der 20‑jährigen PPA; hebt Klimakonsequenzen hervor."
+        }
+      ],
+      "reason": "Akzeptiert. Primäre, datierte und quantifizierbare Beobachtung (>2 GW, 20‑Jahres‑PPA) demonstriert den Mechanismus (dedicated energy PPAs) der Vorhersage P-2026-07-12-04. Quellen sind etablierte Nachrichten- und Industriepublikationen; ein überprüfbares, zukünftiges Falsifizierbares Kriterium ist gesetzt.",
+      "candidateKey": "4eaff614862fc69692261411",
+      "reviewedAt": "2026-09-13T13:02:01.415Z",
+      "priorityScore": 82,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_027ddbfbe2fcac8c006aa69e36e49087d29e1cbb29b1dcb2d3"
+    },
+    {
+      "candidateId": "ae25ce1811fd8fcc7116",
+      "decision": "rejected",
+      "title": "Area residents invited to nonpartisan town hall on proposed Effingham County OpenAI Data Center",
+      "fact": "OpenAI veröffentlichte Projektinformationen zu 'Project Camellia' und kündigte öffentliche Community‑Meetings / Open House‑Termine an (offenes Haus laut OpenAI am 2026-07-23); lokale Medien berichteten über Bürgerveranstaltungen und Proteste.",
+      "placement": "Effingham County, Georgia; Domäne: ai_infrastructure; Ereignis: Community town hall / Open House (öffentliches Informationsforum).",
+      "mechanism": "Kommunale Informations‑/Beteiligungsveranstaltungen signalisieren Planungs‑ und Outreach‑Aktivitäten, beeinflussen jedoch nicht direkt CapEx‑FID, Leistungsumfang oder qualifizierte Lieferungen.",
+      "predictionId": "P-2026-07-23-02",
+      "predictionImpact": "Kein materialer Beitrag zur Korrektur oder Falsifizierung von P-2026-07-23-02 (bindender Meilenstein für Camellia ≥2.5 GW bis Ende 2027). Die Town‑Hall ist ein Planungs-/Outreach‑Ereignis, kein bindender FID oder Volumen‑Beleg.",
+      "falsifier": "Wenn bis 2027-12-31 kein bindender, öffentlich belegter FID oder Vertrag für Project Camellia mit ≥1 GW Kapazität bekannt wird (oder das Projekt offiziell eingestellt wird), bleibt die bloße Town‑Hall unveränderte schwache Evidenz.",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-07-23",
+      "novelty": "niedrig",
+      "duplicateOf": "S-2026-07-23-02",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 2,
+        "thesisRelevance": 6,
+        "forecastImpact": 2,
+        "falsifiability": 3,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 10,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+          "label": "OpenAI – Building AI infrastructure with the Effingham County community (Project Camellia)",
+          "kind": "primary",
+          "supports": "OpenAI beschreibt Project Camellia, phased delivery 2028–2032 und öffentliche Community‑Events (Open House Juli 2026)."
+        },
+        {
+          "url": "https://www.ajc.com/news/2026/07/hot-topic-cool-reception-residents-denounce-proposed-openai-data-center/",
+          "label": "AJC – Local coverage of Effingham County OpenAI open house",
+          "kind": "secondary",
+          "supports": "Berichtet über die public open house-Veranstaltung und lokale Reaktionen."
+        }
+      ],
+      "reason": "Abgelehnt. Inhaltlich tatsächlich verifiziert (OpenAI + lokale Berichterstattung) — aber die Meldung ist eine Wiederholung / lokale Detailberichterstattung des bereits im Baseline‑Signal S-2026-07-23-02 dokumentierten Project‑Camellia. Sie liefert keinen neuen, bindenden Volumen‑ oder FID‑Beleg zur Änderung vorhandener Vorhersagen; daher keine Aufnahme.",
+      "candidateKey": "e92db07766325dc9ca272a8e",
+      "reviewedAt": "2026-09-13T13:02:01.420Z",
+      "priorityScore": 29,
+      "gateReasons": [
+        "missing novelty",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_027ddbfbe2fcac8c006aa69e36e49087d29e1cbb29b1dcb2d3"
+    },
+    {
+      "candidateId": "b1d9793f5f86ad373fac",
+      "decision": "rejected",
+      "title": "Which AMD GPU Is The Closest Equivalent To The Nvidia RTX 5080?",
+      "fact": "BGR veröffentlichte am 2026-09-12 einen Konsumenten/Performance‑Vergleichsartikel: Bewertung, welches AMD‑GPU‑Modell dem Nvidia RTX 5080 am nächsten kommt.",
+      "placement": "Publikums‑/Hardware‑Review; Domäne: Endkunden‑GPU‑Performance (keine direkte Headline‑Relevanz für Datacenter‑Memory/Storage‑Markt oder große AI‑Infra‑Vorhersagen).",
+      "mechanism": "Redaktioneller Leistungs‑Vergleich zwischen Desktop/Gaming‑GPU‑Produkten; kein messbarer Einfluss auf Marktvolumina, Lieferzeiten, Vertragsabschlüsse oder Datacenter‑Energiefragen.",
+      "predictionId": "",
+      "predictionImpact": "Keiner — Artikel ist nicht relevant für die in der TAIL‑Vorhersagenliste geführten Markt‑ oder Infrastrukturprognosen.",
+      "falsifier": "Nicht anwendbar (keine Verbindung zu einer existierenden Vorhersage).",
+      "nextReview": "2027-09-12",
+      "eventDate": "2026-09-12",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 5,
+        "thesisRelevance": 1,
+        "forecastImpact": 1,
+        "falsifiability": 1,
+        "timeSensitivity": 1
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 5,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.bgr.com/2252987/amd-gpu-equivalent-to-nvidia-rtx-5080/",
+          "label": "BGR – Which AMD GPU Is The Closest Equivalent To The Nvidia RTX 5080?",
+          "kind": "secondary",
+          "supports": "Artikel vom 2026-09-12 mit GPU‑Performancevergleichen; editorial/consumer focus."
+        }
+      ],
+      "reason": "Abgelehnt. Relevanz für die TAIL‑These (Memory/Storage/Datacenter‑Kapazität, Vertragsmuster, Energiemodelle) fehlt; es handelt sich um einen Verbraucher‑GPU‑Vergleich ohne quantifizierbaren Markt‑Impact für die vorhandenen Vorhersagen.",
+      "candidateKey": "011fbaf6a3f85f13885b7711",
+      "reviewedAt": "2026-09-13T13:02:01.420Z",
+      "priorityScore": 19,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_027ddbfbe2fcac8c006aa69e36e49087d29e1cbb29b1dcb2d3"
+    },
+    {
+      "candidateId": "896564ea4da3d44cbaf4",
+      "decision": "watchlist",
+      "title": "Meta’s $1.2B Kuna data center is up and running. Here’s what to know",
+      "fact": "Meta meldet offiziell, dass das Kuna Data Center (Idaho) am 2026-09-03 in Betrieb genommen wurde; Meta gibt Investitionssumme >US$1.2 Milliarden und nennt Wasser‑ und Community‑Maßnahmen als relevante Themen.",
+      "placement": "Kuna, Ada County, Idaho, USA; Domäne: ai_infrastructure (lokale Rechenzentrums‑Inbetriebnahme); Wirkungshorizont: laufender Betrieb/Deployment (ab 2026-09-03).",
+      "mechanism": "Die Inbetriebnahme bestätigt weitere reale AI‑Rechenkapazität online (served traffic). Das Ereignis ist ein operativer Meilenstein (»servering traffic«) und erhöht beobachtbare Deployments, ohne jedoch automatisch CapEx‑/Leasing‑Trends oder Memory‑Verfügbarkeiten zu verändern.",
+      "predictionId": "",
+      "predictionImpact": "Kein direkter, belegbarer Einfluss auf eine einzelne der gelieferten Vorhersagen (keine Bindung an eine in der Vorhersagenliste definierte FID/Volumengröße). Informiert jedoch die allgemeine Sicht auf fortgesetzte Datacenter‑Deployment‑Aktivität (qualitative Stütze für Nachfrage‑Thesen).",
+      "falsifier": "Wenn bis zum 2027-03-31 keine Evidence für produktiven Traffic (Anbieterangaben, Service‑Logs oder Zitate von Kunden/Hyperscalern) oder wenn das Projekt stillgelegt/erheblich zurückgestuft wird, würde die Bedeutung dieses Meilensteins als Signal zurückfallen.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-03",
+      "novelty": "mittel",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://datacenters.atmeta.com/2026/09/kuna-we-are-online/",
+          "label": "Meta Data Centers – Kuna, we are online! (Meta statement)",
+          "kind": "primary",
+          "supports": "Meta erklärt am 2026-09-03, dass das Kuna Data Center online und 'serving traffic' ist; Investitionssumme >US$1.2B genannt."
+        },
+        {
+          "url": "https://www.idahostatesman.com/news/business/article304464416.html",
+          "label": "Idaho Statesman – lokale Berichterstattung zur Inbetriebnahme (Bericht zu Kuna Data Center)",
+          "kind": "secondary",
+          "supports": "Lokaljournalistische Bestätigung der Inbetriebnahme, Hinweise zu Wasser‑ und Community‑Aspekten."
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/metas-12bn-data-center-in-kuna-idaho-goes-live/",
+          "label": "DCD – Meta's Kuna Data Center goes live",
+          "kind": "secondary",
+          "supports": "Berichtet über Inbetriebnahme und Investitionssumme (~US$1.2B) sowie Status 'serving traffic'."
+        }
+      ],
+      "reason": "Watchlist. Gut verifiziertes, datiertes Betriebsereignis (operative Inbetriebnahme), aber liefert keinen quantitativen, bindenden Beleg zur Änderung einer spezifischen Vorhersage in der gelieferten Liste. Aufnahme als Watchlist‑Signal, weil es die Beobachtungskette für sich ergänzende Nachfrage‑Indikatoren stärkt und für spätere Prognose‑Updates relevant bleiben kann.",
+      "candidateKey": "83dde6f040e1c7a089b93b65",
+      "reviewedAt": "2026-09-13T13:02:01.421Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_027ddbfbe2fcac8c006aa69e36e49087d29e1cbb29b1dcb2d3"
     }
   ]
 }
