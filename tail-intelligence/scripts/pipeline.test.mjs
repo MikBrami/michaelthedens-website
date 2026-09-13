@@ -46,7 +46,7 @@ test('Parallel retrieval still admits a shared observation only once and persist
  const root=fs.mkdtempSync(path.join(os.tmpdir(),'mtai-admission-'));
  try {
   for(const folder of ['scripts','data','config'])fs.mkdirSync(path.join(root,folder));
-  for(const file of ['review-inbox.mjs','admission-review.mjs','triage-inbox.mjs'])fs.copyFileSync('scripts/'+file,path.join(root,'scripts',file));
+  for(const file of ['review-inbox.mjs','admission-review.mjs','triage-inbox.mjs','analyst-request.mjs'])fs.copyFileSync('scripts/'+file,path.join(root,'scripts',file));
   const put=(file,data)=>fs.writeFileSync(path.join(root,file),JSON.stringify(data));
   put('data/inbox.json',{updated_at:new Date().toISOString(),items:Array.from({length:8},(_,i)=>({...item,id:'candidate'+i,title:'Qualified shipments batch '+i,published_at:new Date().toISOString()}))});
   put('config/methodology.json',methodology);put('data/articles.json',[]);put('config/market-outlook.json',{outlooks:[{marketId:'enterprise_ssd',view:'Supply remains tight',changeRules:'Qualified supply improves'}]});
@@ -58,4 +58,11 @@ test('Parallel retrieval still admits a shared observation only once and persist
   assert.equal(read('admission-status.json').reviewed,8);assert.equal(read('admission-status.json').accepted,1);assert.equal(read('admission-status.json').lastRun.concurrency,2);
   assert.equal(read('admission-backlog.json').items.length,8);assert.equal(read('admission-reviews.json').reviews.length,8);
  } finally {fs.rmSync(root,{recursive:true,force:true});}
+});
+
+import {analystRequest} from './analyst-request.mjs';
+test('Rate limiting retries with provider delay; quota exhaustion does not retry',async()=>{
+ let calls=0;const delays=[];const options={deadline:Date.now()+60000,wait:async ms=>delays.push(ms),fetchImpl:async()=>++calls===1?{ok:false,status:429,headers:{get:()=> '2'},json:async()=>({error:{code:'rate_limit_exceeded',message:'Rate limited'}})}:{ok:true}};
+ assert.equal((await analystRequest('mock',{},options)).ok,true);assert.equal(calls,2);assert.deepEqual(delays,[2000]);
+ calls=0;await assert.rejects(analystRequest('mock',{}, {...options,fetchImpl:async()=>{calls++;return {ok:false,status:429,json:async()=>({error:{code:'insufficient_quota'}})};}}),/insufficient_quota/);assert.equal(calls,1);
 });

@@ -12,7 +12,7 @@ Der gespeicherte Bestand enthielt 871 Kandidaten im 30-Tage-Fenster, davon 24 mi
 - Der bestehende Kandidatenbestand wird dauerhaft festgehalten. Ungeprüfte Kandidaten verschwinden nicht allein durch das Ablaufen des 30-Tage-Fensters.
 - Eine konservative Vorfilterung archiviert explizite Anlagekommentare ohne konkretes betriebliches Ereignis und gruppiert nahezu gleiche Überschriften. Unterschiedliche Zahlen, Richtungen und unklare Fälle bleiben getrennt. Rohdaten, Gründe und Zuordnungen bleiben erhalten; Gruppierung ist keine fachliche Aufnahme.
 - Erste lokale Vorfilterung: 18 Anlagekommentare und 12 nahe Dubletten. Keine umfassende semantische Bereinigung wird behauptet.
-- Vier parallele Quellenanfragen; Entscheidungen und Aufnahmeprüfung werden weiterhin nacheinander gespeichert, damit gleichzeitig recherchierte Belege nicht doppelt aufgenommen werden.
+- Zwei parallele Quellenanfragen; Entscheidungen und Aufnahmeprüfung werden weiterhin nacheinander gespeichert, damit gleichzeitig recherchierte Belege nicht doppelt aufgenommen werden.
 - Zusätzlicher stündlicher GitHub-Termin um Minute 37 UTC: bis zu 96 Kandidaten, maximal zehn Minuten Quellenprüfung. Bei höchstens 48 offenen Kandidaten überspringt der Zusatztermin die Verarbeitung. Die regulären Termine 05:17, 11:17, 17:17 und 23:17 UTC bearbeiten weiterhin bis zu 24 Kandidaten.
 - Kapazität, echte Bearbeitungsmenge, Restbestand, Laufzeit und Fehler werden protokolliert. Aus einem konfigurierten Maximum wird kein garantierter Fertigstellungstermin abgeleitet; GitHub kann geplante Starts verzögern.
 - Neue Meldungen und ältester Rückstand erhalten jeweils einen Teil der verfügbaren Plätze. Kuratierte Tagesdateien und historische Prognosen bleiben geschützt.
@@ -25,4 +25,11 @@ Erforderliche Bestätigungen: aktuelle tatsächlich bestätigte RDIMM-Liefermeng
 
 ## Tests
 
-14 Tests bestanden, darunter Vorfilterung, Erhalt gegenteiliger Meldungen und unterschiedlicher Mengen, Auswahl alter und neuer Kandidaten sowie ein Integrationstest mit parallelen Anfragen: acht bearbeitete Kandidaten mit derselben Beobachtung ergeben genau eine Aufnahme. Syntax-, Schema- und Public/Private-Grenzprüfungen bestanden.
+15 Tests bestanden, darunter Vorfilterung, Erhalt gegenteiliger Meldungen und unterschiedlicher Mengen, Auswahl alter und neuer Kandidaten sowie ein Integrationstest mit parallelen Anfragen: acht bearbeitete Kandidaten mit derselben Beobachtung ergeben genau eine Aufnahme. Syntax-, Schema- und Public/Private-Grenzprüfungen bestanden.
+
+
+## Erste produktive Messung
+
+Lauf 34758565079: Der ungekappte Eingang nahm 412 zuvor nicht gespeicherte Treffer auf, davon 27 mit Relevanz >=65. Das ist teilweise wiederentdeckter Altbestand und keine neue tägliche Zuflussrate. Rohbestand nun 898 Kandidaten. Nach 19 archivierten Anlagekommentaren und 12 gruppierten Meldungen blieben 867 Prüfkandidaten. Zwölf weitere Kandidaten wurden in 148 Sekunden geprüft; danach stoppte eine HTTP-429-Antwort die nächste Gruppe. Rest: 831. Der Workflow exportierte den Fehlerstatus korrekt; sein technischer Erfolg wurde nicht als vollständige Quellenprüfung gewertet.
+
+Nachbesserung: Parallelität von vier auf zwei reduziert, Baseline-Zusammenfassungen gekürzt, Retry-After wird berücksichtigt und transiente Ratenbegrenzungen maximal zweimal wiederholt. Kontingenterschöpfung (`insufficient_quota`) wird nicht wiederholt. Der konkrete API-Fehlercode und die Wiederholungszahl werden gemessen. Diese Nachbesserung wird im nächsten produktiven Durchlauf geprüft.

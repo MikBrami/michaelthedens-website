@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import { admissionState, canonical, eligibleCandidates, hasDirectIndexEvidence, reviewKey, validateReview } from './admission-review.mjs';
 
+import { analystRequest } from './analyst-request.mjs';
 import { triageCandidates, selectForReview } from './triage-inbox.mjs';
 
 const ROOT = new URL('../', import.meta.url);
@@ -40,10 +41,11 @@ const reviewedKeys = new Set([...latestReviews.values()].filter(r => r.decision 
 const pending = candidates.filter(c => !reviewedKeys.has(reviewKey(c)));
 // Bounded catch-up: older high-relevance evidence must not starve behind headlines.
 const limit = Math.min(96, Math.max(1, Number(process.env.TAIL_REVIEW_LIMIT) || 24));
-const concurrency = Math.min(4,Math.max(1,Number(process.env.TAIL_REVIEW_CONCURRENCY)||4));
+const concurrency = Math.min(2,Math.max(1,Number(process.env.TAIL_REVIEW_CONCURRENCY)||2));
 const startedAt = Date.now();
 const deadline = startedAt + Math.min(600000,Math.max(1000,Number(process.env.TAIL_REVIEW_BUDGET_MS)||600000));
 let reviewedThisRun = 0;
+let rateLimitRetries = 0;
 // Repair reviews produced before the constrained taxonomy contract first.
 const repairCandidates = candidates.filter(c => { const r=latestReviews.get(reviewKey(c)); return r?.decision === 'watchlist' && r.gateReasons?.some(reason => ['review contract upgrade','invalid drivers','invalid markets','invalid direction'].includes(reason)); });
 const selected = measurementRepair ? [] : repairCandidates.length ? repairCandidates.slice(0,limit) : selectForReview(pending,limit);
@@ -66,7 +68,7 @@ const schema = object({reviews:{type:'array',items:object({
 let error = null;
 if (selected.length && !process.env.OPENAI_API_KEY) error = 'Analyst unavailable: OPENAI_API_KEY is not configured.';
 async function requestBatch(batch) {
-    const response = await fetch('https://api.openai.com/v1/responses',{
+    const response = await analystRequest('https://api.openai.com/v1/responses',{
       method:'POST',signal:AbortSignal.timeout(Math.max(1,Math.min(180000,deadline-Date.now()))),
       headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`,'Content-Type':'application/json'},
       body:JSON.stringify({model,tools:[{type:'web_search'}],tool_choice:'required',include:['web_search_call.action.sources'],
@@ -85,10 +87,10 @@ async function requestBatch(batch) {
         ].join(' '),
         input:JSON.stringify({asOf:now,candidates:batch.map(({id,title,summary,url,published_at,relatedCandidates})=>({id,title,summary,url,published_at,relatedCandidates})),rubric:methodology.signalRubric,
           driverWeights:methodology.indexModel.driverWeights,signalDriverImpact:methodology.indexModel.signalDriverImpact,predictions,
-          baseline:[...articles.filter(a => a.public !== false && a.origin !== 'reviewed-inbox'),...[...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()].filter(r=>r.decision==='accepted' && r.acceptedSignal).map(r=>r.acceptedSignal)].map(({id,date,title,summary,signal,markets,url})=>({id,date,title,summary,signal,markets,url}))}),
+          baseline:[...articles.filter(a => a.public !== false && a.origin !== 'reviewed-inbox'),...[...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()].filter(r=>r.decision==='accepted' && r.acceptedSignal).map(r=>r.acceptedSignal)].map(({id,date,title,summary,signal,markets,url})=>({id,date,title,summary:String(summary||'').slice(0,240),signal,markets,url}))}),
         text:{format:{type:'json_schema',name:'tail_admission',strict:true,schema}}
       })
-    });
+    },{deadline,onRetry:info=>{rateLimitRetries++;console.log(`Analyst retry ${info.status} (${info.code}), waiting ${info.delayMs}ms.`);}});
     if (!response.ok) throw new Error(`Analyst HTTP ${response.status}`);
     const result = await response.json();
     if (result.status !== 'completed') throw new Error(`Analyst response ${result.status}`);
@@ -108,7 +110,7 @@ for (let i=0;!error && i<selected.length && Date.now()<deadline;i+=4*concurrency
   for(let j=i;j<Math.min(selected.length,i+4*concurrency);j+=4) wave.push(selected.slice(j,j+4));
   const responses=await Promise.allSettled(wave.map(requestBatch));
   for (const response of responses) {
-    if(response.status==='rejected') { error=String(response.reason?.message||response.reason); continue; }
+    if(response.status==='rejected') { if(Date.now()<deadline) error=String(response.reason?.message||response.reason); continue; }
     const {batch,proposals,sourceUrls,responseId}=response.value;
     const records = [];
     for (const item of batch) {
@@ -125,7 +127,7 @@ for (let i=0;!error && i<selected.length && Date.now()<deadline;i+=4*concurrency
 const state = admissionState(candidates,journal.reviews,{asOf:new Date().toISOString(),inboxUpdatedAt:inbox.updated_at,error});
 state.rawCandidates=rawCandidates.length;
 state.triage={archivedOpinions:triage.archivedOpinions,groupedDuplicates:triage.groupedDuplicates};
-state.lastRun={startedAt:now,completedAt:new Date().toISOString(),selected:selected.length,reviewed:reviewedThisRun,concurrency,limit,durationSeconds:Math.round((Date.now()-startedAt)/1000),budgetExhausted:Date.now()>=deadline};
+state.lastRun={startedAt:now,completedAt:new Date().toISOString(),selected:selected.length,reviewed:reviewedThisRun,concurrency,limit,rateLimitRetries,durationSeconds:Math.round((Date.now()-startedAt)/1000),budgetExhausted:Date.now()>=deadline};
 const throughput=await read('data/admission-throughput.json',{schemaVersion:1,runs:[]});
 throughput.runs.push({...state.lastRun,pending:state.pending,error});
 await write('data/admission-throughput.json',throughput);

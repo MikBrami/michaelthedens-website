@@ -35,7 +35,7 @@ jobs:
         working-directory: tail-intelligence
     env:
       TAIL_REVIEW_LIMIT: ${{ (github.event_name == 'push' || github.event.schedule == '37 * * * *') && '96' || '24' }}
-      TAIL_REVIEW_CONCURRENCY: '4'
+      TAIL_REVIEW_CONCURRENCY: '2'
       TAIL_REVIEW_BUDGET_MS: '600000'
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       OPENAI_ANALYST_MODEL: ${{ vars.OPENAI_ANALYST_MODEL || 'gpt-5-mini' }}
