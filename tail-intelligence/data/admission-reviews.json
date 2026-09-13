@@ -1536,6 +1536,987 @@
       ],
       "model": "gpt-5-mini",
       "responseId": "resp_0fa953e512ce75ae006aa694231ee087d0865145e2dc5c0c75"
+    },
+    {
+      "candidateId": "38b72fc179668e0c6e44",
+      "decision": "watchlist",
+      "title": "Samsung May Push HBM Base Dies to Cutting-Edge 2nm, Extending Its Own 4nm HBM4 Roadmap",
+      "fact": "ZDNet Korea berichtet am 2026-08-14, Samsung prüfe, die NRD‑K Line 2 (Giheung) von R&D in eine Foundry-/Send‑Fab‑Funktion umzuwandeln, um 2‑nm-Logik‑Base‑Dies für künftige HBM‑Produkte (HBM5/Custom HBM für Kunden wie NVIDIA) herzustellen; Inbetriebnahmeziel wird in Berichten als H2 2028 genannt.",
+      "placement": "Geographie: Korea (Giheung NRD‑K Line 2). Domäne: HBM‑Base‑Dies auf 2 nm (Foundry/Send‑Fab). Horizont: Ziel H2 2028 (laut Bericht).",
+      "mechanism": "Verlagerung von NRD‑K Line 2 in eine Foundry‑Rolle erzeugt lokale 2‑nm‑Base‑Die‑Fertigung (logische Basen für gestapelte HBM). Das würde Samsung erlauben, Abhängigkeit von externen Foundries zu verringern und die interne Fähigkeit zu steigern, HBM‑Stacks zu qualifizieren und auszuliefern, indem Engpässe bei Base‑Dies und Tool‑/Flächenverfügbarkeit reduziert werden.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unter Annahme erfolgreicher Umsetzung würde die Meldung die Wahrscheinlichkeit verringern, dass HBM und Server‑DRAM strukturell bis Ende 2028 knapp bleiben (P-2026-07-11-01) — aber nur mit Wirkung ab dem berichteten Zielhorizont (H2 2028). Kurzfristig (2026–H1 2028) verändert der Bericht die Verknappungswahrnehmung kaum.",
+      "falsifier": "Wenn bis zum 2028-12-31 keine der folgenden bestätigenden Primär‑Evidenzen auftauchen (Samsung‑Pressemitteilung, Samsung‑IR/SEC‑Filing/CapEx‑Zuschreibung, Genehmigungs‑/Baugenehmigungsdokument für NRD‑K Line 2 mit Foundry‑Scope, öffentlich einsehbare Beschaffungsaufträge für Foundry‑Werkzeuge oder sichtbare Tool‑lieferungen/Installationsmeldungen für Line 2), gilt der ZDNet‑Bericht als nicht umgesetzt und damit falsifiziert.",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-08-14",
+      "novelty": "Moderat — Rohmeldung über Umnutzung eines spezifischen R&D‑Line‑Assets auf 2 nm ist neu, aber bereits Gegenstand mehrerer Trade‑Reports.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 11,
+        "thesisRelevance": 16,
+        "forecastImpact": 13,
+        "falsifiability": 6,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 4,
+      "confidence": 0.45,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://zdnet.co.kr/view/?no=20260814101300",
+          "label": "ZDNet Korea – Originalreport (Primärquelle, 2026-08-14)",
+          "kind": "primary",
+          "supports": "Bericht: NRD‑K Line 2 könne von R&D in eine Foundry‑Send‑Fab konvertiert werden; Zielhorizont H2 2028; Zielprodukt 2 nm Base‑Dies für HBM."
+        },
+        {
+          "url": "https://wccftech.com/samsung-may-push-hbm-base-dies-to-cutting-edge-2nm-extending-its-own-4nm-hbm4-roadmap/",
+          "label": "Wccftech (Sekundärbericht, 2026-08-14)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung und Kontext (Verweis auf ZDNet als Quelle)."
+        }
+      ],
+      "reason": "ZDNet Korea (Primärbericht 2026-08-14) nennt eine konkrete interne Planprüfung (NRD‑K Line 2 → Foundry für 2 nm HBM‑Base‑Dies) mit einem Zielhorizont (H2 2028). Das ist ein datenpunktiger, aber nicht bestätigter Plan (keine Samsung‑Bestätigung, keine CapEx/Permit‑Daten in der Primärquelle). Das Item ist relevant für unsere HBM‑/Server‑DRAM‑These, aber bleibt spekulativ und daher auf Watchlist: ausreichend sourcing für Nachverfolgung, nicht genügend verifizierte Umsetzungsevidenz für eine ACCEPT‑Aufnahme.",
+      "candidateKey": "85c8ce95eba598258ef14a36",
+      "reviewedAt": "2026-09-13T12:22:52.748Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08aa23c8a99353dd006aa6952f2e4c87d1a4cc1b87e0ee20b2"
+    },
+    {
+      "candidateId": "f7761d482f4a9e775ee5",
+      "decision": "accepted",
+      "title": "NAND Supply Crunch Lifts YMTC to Third Place as Micron Slips Behind",
+      "fact": "Counterpoint Research berichtet am 2026-08-12 (Memory & Storage Tracker Q2 2026): YMTC (Yangtze Memory Technologies) erreichte 14% der globalen NAND‑Bit‑Shipments im Q2 2026 und stieg damit auf Rang 3 (nach Samsung 25%, SK hynix 22%), knapp vor Kioxia.",
+      "placement": "Geographie: global. Domäne: NAND‑Bit‑Shipments. Zeitfenster: Q2 2026. Einheit: 14% der weltweiten NAND‑Bit‑Shipments (Counterpoint Q2 2026 Tracker, Datum 2026-08-12).",
+      "mechanism": "Verschärfte NAND‑Knappheit und die Verschiebung der Nachfrage hin zu server‑/eSSD‑Bitbedarf (AI‑Inference) haben die relative Bit‑Verfügbarkeit und Zuteilung verändert; YMTC konnte durch erhöhte 267‑Layer Xtacking‑Produktion und Fokus auf preisaggressivere Segmente seinen Bit‑Output erhöhen und damit Anteil gewinnen.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Stützt das OUTLOOK‑Signal, dass Enterprise‑SSD/Server‑NAND kurzfristig durch Verfügbarkeit und Preisdruck gestützt bleibt; erhöht kurzfristig Wahrscheinlichkeit und Persistence von Verknappungs‑/Preisaufwärts‑Signalen im Enterprise‑NAND‑Korb bis zur nächsten qualifizierten Kapazitätswelle.",
+      "falsifier": "Historische, abschlussfähige Messung: Wenn Counterpoint seine Q2 2026 Tracker‑Zahl bis 2026-08-31 revidiert oder andere primäre Marktreports (z.B. offizielle Branchen‑Shipment‑Tabellen) Q2 2026‑Daten liefern, die YMTC < Kioxia bzw. YMTC < 14% ausweisen, wäre die Behauptung falsifiziert. (Prüfdatum: 2026-08-31).",
+      "nextReview": "2026-11-12",
+      "eventDate": "2026-08-12",
+      "novelty": "Hoch — erstes Quartals‑Top‑3‑Eintreten von YMTC nach Bit‑Shipments ist ein materialer Umbruch der Lieferanten‑Podien.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 6,
+      "confidence": 0.8,
+      "indexImpact": true,
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://counterpointresearch.com/en/insights/server-led-essds-hit-48-percent-of-nand-shipments",
+          "label": "Counterpoint Research – Memory & Storage Tracker Q2 2026 (Primärquelle, 2026-08-12)",
+          "kind": "primary",
+          "supports": "Counterpoint: \"YMTC entered the global Top 3 with a 14% shipment share\" (Q2 2026) und Daten zur Verlagerung der Nachfrage hin zu eSSDs (48% der Bits)."
+        }
+      ],
+      "reason": "Counterpoint Research (Primärquelle, 2026-08-12) liefert eine direkte, quantifizierbare Messung (14% Bit‑Shipments, Q2 2026). Die Beobachtung ist datenbasiert, nachvollziehbar und relevant für unsere Kurzfrist‑OUTLOOKs (enterprise SSD / NAND Verfügbarkeit und Pricing). Entsprechend erfüllt das Signal die Annahmekriterien für ACCEPT: atomices, datiertes, unitisiertes, quellennachweisbares Faktum mit klarer Auswirkung auf das OUTLOOK.",
+      "candidateKey": "945fc239013e27b447817700",
+      "reviewedAt": "2026-09-13T12:22:52.755Z",
+      "priorityScore": 84,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-945fc239013e27b447817700",
+        "title": "NAND Supply Crunch Lifts YMTC to Third Place as Micron Slips Behind",
+        "date": "2026-08-12",
+        "admittedAt": "2026-09-13T12:22:52.755Z",
+        "fact": "Counterpoint Research berichtet am 2026-08-12 (Memory & Storage Tracker Q2 2026): YMTC (Yangtze Memory Technologies) erreichte 14% der globalen NAND‑Bit‑Shipments im Q2 2026 und stieg damit auf Rang 3 (nach Samsung 25%, SK hynix 22%), knapp vor Kioxia.",
+        "placement": "Geographie: global. Domäne: NAND‑Bit‑Shipments. Zeitfenster: Q2 2026. Einheit: 14% der weltweiten NAND‑Bit‑Shipments (Counterpoint Q2 2026 Tracker, Datum 2026-08-12).",
+        "tailInference": "Verschärfte NAND‑Knappheit und die Verschiebung der Nachfrage hin zu server‑/eSSD‑Bitbedarf (AI‑Inference) haben die relative Bit‑Verfügbarkeit und Zuteilung verändert; YMTC konnte durch erhöhte 267‑Layer Xtacking‑Produktion und Fokus auf preisaggressivere Segmente seinen Bit‑Output erhöhen und damit Anteil gewinnen.",
+        "predictionId": "OUTLOOK-enterprise_ssd",
+        "predictionImpact": "Stützt das OUTLOOK‑Signal, dass Enterprise‑SSD/Server‑NAND kurzfristig durch Verfügbarkeit und Preisdruck gestützt bleibt; erhöht kurzfristig Wahrscheinlichkeit und Persistence von Verknappungs‑/Preisaufwärts‑Signalen im Enterprise‑NAND‑Korb bis zur nächsten qualifizierten Kapazitätswelle.",
+        "falsifier": "Historische, abschlussfähige Messung: Wenn Counterpoint seine Q2 2026 Tracker‑Zahl bis 2026-08-31 revidiert oder andere primäre Marktreports (z.B. offizielle Branchen‑Shipment‑Tabellen) Q2 2026‑Daten liefern, die YMTC < Kioxia bzw. YMTC < 14% ausweisen, wäre die Behauptung falsifiziert. (Prüfdatum: 2026-08-31).",
+        "nextReview": "2026-11-12",
+        "priorityScore": 84,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 6,
+        "confidence": 0.8,
+        "markets": [
+          "nand",
+          "enterprise_ssd",
+          "semiconductors"
+        ],
+        "signal": "negative_supply",
+        "driverScope": [
+          "availability",
+          "pricing"
+        ],
+        "classification": "Signal",
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": true,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Counterpoint Research – Memory & Storage Tracker Q2 2026 (Primärquelle, 2026-08-12)",
+            "url": "https://counterpointresearch.com/en/insights/server-led-essds-hit-48-percent-of-nand-shipments"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Stützt das OUTLOOK‑Signal, dass Enterprise‑SSD/Server‑NAND kurzfristig durch Verfügbarkeit und Preisdruck gestützt bleibt; erhöht kurzfristig Wahrscheinlichkeit und Persistence von Verknappungs‑/Preisaufwärts‑Signalen im Enterprise‑NAND‑Korb bis zur nächsten qualifizierten Kapazitätswelle."
+        },
+        "admissionReviewKey": "945fc239013e27b447817700"
+      },
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08aa23c8a99353dd006aa6952f2e4c87d1a4cc1b87e0ee20b2"
+    },
+    {
+      "candidateId": "1b1c9594f412eba397aa",
+      "decision": "watchlist",
+      "title": "Samsung Weighs Shipping Legacy Memory Backend to Vietnam to Unlock HBM Capacity",
+      "fact": "TechTimes berichtete am 2026-08-15 (unter Bezug auf DigiTimes/DealSite), Samsung prüfe, Teile der generischen DRAM‑ und NAND‑Packaging-/Test‑(Backend)‑Kapazität von Cheonan und Onyang nach Vietnam zu verlagern, um Platz und spezielle Backend‑Linien in Korea für HBM‑Stacking freizumachen; Samsung hat dies laut TechTimes nicht offiziell bestätigt.",
+      "placement": "Geographie: geplante Verlagerung von Samsung‑Backend (Cheonan & Onyang, Südkorea) → Vietnam (namentlich Tyen‑Binh / Bac Ninh / geplante SVS‑Anlage). Domäne: Backend Packaging & Test (DRAM, NAND) vs. HBM‑Backend. Horizont: laufende Prüfungsphase (Berichte Aug 14–15, 2026).",
+      "mechanism": "Durch Verlagerung commodity‑Backend‑Workloads ins Ausland würden in den koreanischen Cleanrooms Fläche, spezialisierte Bonder/Handler und qualifiziertes Personal frei, die für HBM‑Stacking (TCB/HCB/TSV‑Prozesse) erforderlich sind; das erhöht kurzfristig die Backend‑Durchsatzkapazität für HBM, sofern Verlagerung und Tool‑Prozesse termingerecht umgesetzt werden.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn umgesetzt, würde die Maßnahme die interne HBM‑Backend‑Durchsatzbegrenzung von Samsung mildern und damit mittelfristig die Wahrscheinlichkeit verringern, dass HBM/Server‑DRAM bis Ende 2028 strukturell knapp bleiben; aktuell bleibt der Bericht aber unbestätigt, daher nur Ableitungseffekt für die These (Überwachung empfohlen).",
+      "falsifier": "Falsifizierbar wenn bis zum 2027-12-31 keine der folgenden Primär‑Evidenzen auftauchen: offizielle Samsung‑Bestätigung, Investment/CapEx‑Ankündigung für Vietnam‑Backend mit Terminen, Genehmigungsunterlagen/Environment‑Permit für den Vietnam‑Site‑Plan oder reale Ausrüstungslieferungen/Installationsmeldungen zu einem Vietnam‑Backend mit Inbetriebnahme‑Terminen.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-08-15",
+      "novelty": "Moderat — bestätigt und ergänzt bereits beobachtete Vietnam‑Investmentaktivitäten, aber operativ noch unbestätigt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 3,
+      "confidence": 0.4,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.techtimes.com/articles/324595/20260815/samsung-weighs-shipping-legacy-memory-backend-vietnam-unlock-hbm-capacity.htm",
+          "label": "TechTimes – Bericht (2026-08-15)",
+          "kind": "primary",
+          "supports": "TechTimes zitiert DigiTimes/DealSite: Prüfung einer Verlagerung von Cheonan/Onyang Backend‑Workloads nach Vietnam, Samsung nicht offiziell bestätigt."
+        },
+        {
+          "url": "https://apps.digitimes.com/regions/index.php?cat=561&pg=3",
+          "label": "DigiTimes – Redaktionseintrag / Kurzheadline (Handels‑Report, Aug 14–15 2026)",
+          "kind": "secondary",
+          "supports": "Digitimes‑Headline/Regionalsegment berichtet (Paywall/Subscriber‑Text) über DealSite‑Quellen zur möglichen Backend‑Verlagerung."
+        }
+      ],
+      "reason": "Mehrere Trade‑Medien (Digitimes, TechTimes) berichten über eine Prüfung zur Verlagerung von Commodity‑Backend‑Workloads nach Vietnam, was technisch plausibel und relevant für HBM‑Throughput ist. Es fehlt aber eine Samsung‑Bestätigung oder ein dokumentierter CapEx/Permit‑Nachweis. Deshalb: WATCHLIST — nachverfolgen (Prüfdatum/Beleg bis Ende 2027), nicht akzeptieren als VERIFIED DATA.",
+      "candidateKey": "85cc9b04927d0eff382255d4",
+      "reviewedAt": "2026-09-13T12:22:52.758Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08aa23c8a99353dd006aa6952f2e4c87d1a4cc1b87e0ee20b2"
+    },
+    {
+      "candidateId": "24911d2d45ab0213b3ba",
+      "decision": "rejected",
+      "title": "China's YMTC Overtakes Kioxia for No. 3 in NAND — and It's Just Getting Started",
+      "fact": "Mehrere Medien wiederholen Counterpoint‑Daten (Q2 2026) — die Kernaussage (YMTC 14% Q2 2026) ist bereits durch Counterpoint Research (2026-08-12) verifiziert und wurde in Review ID f7761d482f4a9e775ee5 aufgenommen; dieser Kandidat bringt keine neue Primärinformation.",
+      "placement": "Globaler NAND‑Shipment‑Podium (Q2 2026) — identisch mit bereits geprüfter Counterpoint‑Angabe.",
+      "mechanism": "Kein neues Mechanismus‑Evidenzstück; Bericht ist eine redaktionelle Wiederholung/Aggregation der Counterpoint‑Zahlen.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Keine zusätzliche Information gegenüber bereits aufgenommenem Counterpoint‑Signal; kein separater Einfluss.",
+      "falsifier": "Dublette: Falsifizierbar durch Widerlegung der Counterpoint‑Zahl (siehe f7761d482f4a9e775ee5).",
+      "nextReview": "2026-11-12",
+      "eventDate": "2026-08-15",
+      "novelty": "Niedrig — Duplikat bereits verifizierter Counterpoint‑Daten.",
+      "duplicateOf": "f7761d482f4a9e775ee5",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 2,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "nand",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "negative_supply",
+      "severity": 6,
+      "confidence": 0.6,
+      "indexImpact": true,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://counterpointresearch.com/en/insights/server-led-essds-hit-48-percent-of-nand-shipments",
+          "label": "Counterpoint Research – Q2 2026 Tracker (Primärquelle bereits im Review f7761d48)",
+          "kind": "primary",
+          "supports": "Gleiche Primärangabe: \"YMTC entered the global Top 3 with a 14% shipment share\" (Q2 2026)."
+        }
+      ],
+      "reason": "Dieser Kandidat ist inhaltlich ein Duplikat bereits geprüfter und angenommenen Evidenz (Counterpoint Q2 2026, siehe f7761d48...). Die Policy verlangt Zurückweisung von Recycling/Duplikaten als separate Admissions; deshalb REJECT (duplicateOf verweist auf die bereits akzeptierte Kandidatur).",
+      "candidateKey": "5d7abbebc90fae0e9c9d1b34",
+      "reviewedAt": "2026-09-13T12:22:52.763Z",
+      "priorityScore": 41,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08aa23c8a99353dd006aa6952f2e4c87d1a4cc1b87e0ee20b2"
+    },
+    {
+      "candidateId": "d7bbf34f67fe0985658a",
+      "decision": "watchlist",
+      "title": "Südkoreanische HBM4‑Einstellungswelle: Samsung und SK hynix ziehen Design‑Personal ab",
+      "fact": "ChosunBiz berichtete am 2026-08-11, dass SK hynix im Vorjahr 3.201 neue Mitarbeiter in Südkorea einstellte und koreanische Medien (Korea JoongAng 2026-06-26; Digitimes 2026-08-16) eine gezielte, HBM4‑fokussierte Rekrutierungswelle von Samsung und SK hynix dokumentieren, die erfahrene Mid‑Career‑Designingenieure (7–12 Jahre) aus Fabless‑Firmen abzieht.",
+      "placement": "Geographie: Südkorea; Domäne: Halbleiter / HBM‑Design; Layer: Human‑Capital / kurzfristig (0–12 Monate).",
+      "mechanism": "Gedrängte Einstellungsaktivität bei den Memory‑Giganten erhöht die Nachfrage nach erfahrenen RTL/DFT/SoC‑Designern; Folge: Konzentration von Expertise bei Samsung/SK hynix, erhöhte Ersatzkosten und Risiko für Tape‑out‑Verzögerungen bei kleineren Fabless‑Anbietern. Kurzfristig kann das die HBM‑Qualifikationskraft der großen Abnehmer stärken (schnellere Integration), gleichzeitig die Designkapazität bei unabhängigen Lieferanten schwächen.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Signal für beschleunigte HBM4‑Qualifikation/Ramp bei den großen Herstellern (Samsung, SK hynix) steigt; Risiko für verzögerte Produkt‑Tape‑outs und geringere Innovationsbandbreite bei Fabless steigt — netto: erhöhte Unsicherheit, kurzfristig tendenziell positiv für HBM‑Supply‑Priorisierung durch Memory‑Giganten, negativ für Fabless‑Ökosystem.",
+      "falsifier": "Wenn bis 2027-06-30 keine nachweisbare Nettoverlagerung von mindestens 1.000 Mid‑Career‑Designingenieuren zu Samsung oder SK hynix dokumentiert ist (aggregierte gemeldete Neueinstellungen/öffentliche Personalstatistiken / Berufswechsel‑Meldungen) ODER bis 2027-06-30 nicht mindestens zwei unabhängige koreanische Fabless‑Firmen öffentlich Tape‑out‑Verzögerungen wegen Personalabgang melden, dann schwächt das dieses Signal deutlich.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-08-11",
+      "novelty": "Incremental – bestätigt und quantifiziert eine laufende Hiring‑Welle, keine einmalige technologische Enthüllung.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 10,
+        "falsifiability": 7,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "negative_supply",
+      "severity": 3,
+      "confidence": 0.6,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/08/11/B2ZES7X5KVF77PQFJWKEAVFCXY/?outputType=amp",
+          "label": "ChosunBiz – 'Samsung, SK hiring drains Korea fabless talent' (2026-08-11)",
+          "kind": "primary",
+          "supports": "\"SK hynix hired 3,201 new employees domestically last year…\"."
+        },
+        {
+          "url": "https://www.koreajoongangdaily.com/business/sk-hynix-launches-recruitment-push-aimed-at-samsungs-struggling-chip-units/12742169",
+          "label": "Korea JoongAng – 'SK hynix launches recruitment push' (2026-06-26)",
+          "kind": "primary",
+          "supports": "\"The company posted job listings… for 'HBM Foundry PI' and 'HBM Digital Design'\"."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260814VL211/samsung-design-sk-hynix-hbm4-talent.html",
+          "label": "DIGITIMES – 'HBM4 hiring war' (2026-08-16, paywalled)",
+          "kind": "secondary",
+          "supports": "\"South Korea's semiconductor talent shortage is intensifying as Samsung Electronics and SK Hynix recruit experienced chip designers…\"."
+        }
+      ],
+      "reason": "Glaubwürdige, mehrfach berichtete Beobachtung einer HBM4‑zentrierten Einstellungswelle. Liefert relevante, datierte Belege für Verlagerung von Design‑Expertise, ist aber kein unmittelbarer Beleg für veränderte HBM‑Liefermengen oder Preise; daher Watchlist (weiteres Monitoring erforderlich).",
+      "candidateKey": "49018fd972c9a9ea46f42d03",
+      "reviewedAt": "2026-09-13T12:25:01.739Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0def7bbc3f92d0b7006aa6959cf0b487d19ac651b9da0edfbb"
+    },
+    {
+      "candidateId": "f12105bd1db4623a5294",
+      "decision": "accepted",
+      "title": "YMTC überholt Micron/Kioxia nach Stück‑Shipments (Counterpoint Q2 2026)",
+      "fact": "Counterpoint Research dokumentierte am 2026-08-12 in seinem Q2‑2026 Memory & Storage Tracker, dass Yangtze Memory Technologies (YMTC) 14% der globalen NAND‑Bit‑Shipments im 2. Quartal 2026 erreichte und damit erstmals auf Platz 3 nach Stückvolumen stieg (Samsung 25%, SK hynix 22%), wobei YMTC Kioxia und Micron in Volumen übertraf.",
+      "placement": "Geographie: global; Domäne: NAND / Enterprise‑ & Consumer‑NAND; Layer: Marktanteile nach Bit‑Shipments; Horizont: Q2 2026 (sofortige Marktwirkung).",
+      "mechanism": "Die Verlagerung der AI‑Workload‑Mixes hin zu Inferenz hat Enterprise‑SSD‑Bitanteile auf ~48% in Q2 getrieben; hohe Bit‑Nachfrage plus YMTCs Produktionsausweitung (267‑Layer Xtacking Volumen) erlaubten YMTC, Volumenshare rasch auszubauen und damit die Lieferbasis auf Unit‑Ebene zu erweitern — das ändert die Wettbewerbsdynamik bei Stückmengen und beeinflusst Kanal‑Mix und Verhandlungspositionen in bestimmten Kundensegmenten.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Unterstützt die OUTLOOK‑These, dass der Enterprise‑SSD‑Markt strukturell verschoben wird (stärkere Kanal‑Umverteilung). Kurzfristig erhöht YMTCs Volumenzuwachs die Chance, dass Verfügbarkeits‑/Angebotsprobleme in bestimmten Channel‑Segmenten (Consumer vs. Enterprise) anders verteilt werden und damit die Normalisierungspfade (z.B. bessere Same‑SKU‑Verfügbarkeit) früher als erwartet eintreten können — allerdings bleibt YMTCs Umsatzmix noch endkundenlastig, daher ist der Preis‑/Ertrags‑Effekt begrenzt ohne Mix‑Verschiebung zu eSSD.",
+      "falsifier": "Wenn bis 2026-12-31 Counterpoint oder andere Tracker (z.B. IDC/Omdia) zwei aufeinanderfolgende Quartale melden, in denen YMTCs NAND‑Bit‑Share <12% bleibt ODER YMTC nicht nachweisbar in Richtung eSSD/Margin‑Upmix verschiebt (Revenue‑Ranking bleibt ≤5), dann entkräftet das die Annahme, dass YMTC kurzfristig die Enterprise‑SSD‑Verfügbarkeit signifikant verändert.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-08-12",
+      "novelty": "Hoch — sichtbare Neusortierung der Lieferantenpodiums nach Bit‑Shipments.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 17,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "verified_supply_relief",
+      "severity": 6,
+      "confidence": 0.8,
+      "indexImpact": true,
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://counterpointresearch.com/en/insights/server-led-essds-hit-48-percent-of-nand-shipments",
+          "label": "Counterpoint Research – 'Server‑Led eSSDs Hit 48%…' (2026-08-12)",
+          "kind": "primary",
+          "supports": "\"YMTC entered the global Top 3 with 14% shipment share in Q2 2026…\"."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/ymtc-breaks-into-the-top-three-nand-makers-for-the-first-time",
+          "label": "Tom's Hardware – Bericht über Counterpoint (2026-08-12)",
+          "kind": "secondary",
+          "supports": "\"Yangtze Memory Technologies shipped 14% of the world's NAND flash in Q2 2026…\"."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/articles/ymtc-breaks-top-three-nand-123544721.html",
+          "label": "Yahoo/aggregatoren – Zusammenfassende Berichte zu Counterpoint (2026-08-12)",
+          "kind": "secondary",
+          "supports": "\"YMTC shipped 14% of the world's NAND flash in Q2… entering top three.\""
+        }
+      ],
+      "reason": "Direktes, datiertes Tracker‑Signal (Counterpoint) mit klaren Einheiten (Prozent der Bits, Q2 2026). Belegt eine Verschiebung der Lieferantenstruktur nach Stückvolumen; hat messbare Folgen für OUTLOOK‑Enterprise_SSD. Aufnahme als Accepted ist gerechtfertigt: Primärquelle liegt vor, Unterstützung durch mehrere unabhängige Medien, konkrete Falsifizierer definiert.",
+      "candidateKey": "cf8223b527b2aa7b2cbc326a",
+      "reviewedAt": "2026-09-13T12:25:01.742Z",
+      "priorityScore": 85,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-cf8223b527b2aa7b2cbc326a",
+        "title": "YMTC überholt Micron/Kioxia nach Stück‑Shipments (Counterpoint Q2 2026)",
+        "date": "2026-08-12",
+        "admittedAt": "2026-09-13T12:25:01.742Z",
+        "fact": "Counterpoint Research dokumentierte am 2026-08-12 in seinem Q2‑2026 Memory & Storage Tracker, dass Yangtze Memory Technologies (YMTC) 14% der globalen NAND‑Bit‑Shipments im 2. Quartal 2026 erreichte und damit erstmals auf Platz 3 nach Stückvolumen stieg (Samsung 25%, SK hynix 22%), wobei YMTC Kioxia und Micron in Volumen übertraf.",
+        "placement": "Geographie: global; Domäne: NAND / Enterprise‑ & Consumer‑NAND; Layer: Marktanteile nach Bit‑Shipments; Horizont: Q2 2026 (sofortige Marktwirkung).",
+        "tailInference": "Die Verlagerung der AI‑Workload‑Mixes hin zu Inferenz hat Enterprise‑SSD‑Bitanteile auf ~48% in Q2 getrieben; hohe Bit‑Nachfrage plus YMTCs Produktionsausweitung (267‑Layer Xtacking Volumen) erlaubten YMTC, Volumenshare rasch auszubauen und damit die Lieferbasis auf Unit‑Ebene zu erweitern — das ändert die Wettbewerbsdynamik bei Stückmengen und beeinflusst Kanal‑Mix und Verhandlungspositionen in bestimmten Kundensegmenten.",
+        "predictionId": "OUTLOOK-enterprise_ssd",
+        "predictionImpact": "Unterstützt die OUTLOOK‑These, dass der Enterprise‑SSD‑Markt strukturell verschoben wird (stärkere Kanal‑Umverteilung). Kurzfristig erhöht YMTCs Volumenzuwachs die Chance, dass Verfügbarkeits‑/Angebotsprobleme in bestimmten Channel‑Segmenten (Consumer vs. Enterprise) anders verteilt werden und damit die Normalisierungspfade (z.B. bessere Same‑SKU‑Verfügbarkeit) früher als erwartet eintreten können — allerdings bleibt YMTCs Umsatzmix noch endkundenlastig, daher ist der Preis‑/Ertrags‑Effekt begrenzt ohne Mix‑Verschiebung zu eSSD.",
+        "falsifier": "Wenn bis 2026-12-31 Counterpoint oder andere Tracker (z.B. IDC/Omdia) zwei aufeinanderfolgende Quartale melden, in denen YMTCs NAND‑Bit‑Share <12% bleibt ODER YMTC nicht nachweisbar in Richtung eSSD/Margin‑Upmix verschiebt (Revenue‑Ranking bleibt ≤5), dann entkräftet das die Annahme, dass YMTC kurzfristig die Enterprise‑SSD‑Verfügbarkeit signifikant verändert.",
+        "nextReview": "2026-12-31",
+        "priorityScore": 85,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 17,
+          "forecastImpact": 18,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 6,
+        "confidence": 0.8,
+        "markets": [
+          "nand",
+          "enterprise_ssd",
+          "ai_infrastructure"
+        ],
+        "signal": "verified_supply_relief",
+        "driverScope": [
+          "availability",
+          "pricing"
+        ],
+        "classification": "Signal",
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": true,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Counterpoint Research – 'Server‑Led eSSDs Hit 48%…' (2026-08-12)",
+            "url": "https://counterpointresearch.com/en/insights/server-led-essds-hit-48-percent-of-nand-shipments"
+          },
+          {
+            "label": "Tom's Hardware – Bericht über Counterpoint (2026-08-12)",
+            "url": "https://www.tomshardware.com/tech-industry/ymtc-breaks-into-the-top-three-nand-makers-for-the-first-time"
+          },
+          {
+            "label": "Yahoo/aggregatoren – Zusammenfassende Berichte zu Counterpoint (2026-08-12)",
+            "url": "https://finance.yahoo.com/technology/articles/ymtc-breaks-top-three-nand-123544721.html"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Unterstützt die OUTLOOK‑These, dass der Enterprise‑SSD‑Markt strukturell verschoben wird (stärkere Kanal‑Umverteilung). Kurzfristig erhöht YMTCs Volumenzuwachs die Chance, dass Verfügbarkeits‑/Angebotsprobleme in bestimmten Channel‑Segmenten (Consumer vs. Enterprise) anders verteilt werden und damit die Normalisierungspfade (z.B. bessere Same‑SKU‑Verfügbarkeit) früher als erwartet eintreten können — allerdings bleibt YMTCs Umsatzmix noch endkundenlastig, daher ist der Preis‑/Ertrags‑Effekt begrenzt ohne Mix‑Verschiebung zu eSSD."
+        },
+        "admissionReviewKey": "cf8223b527b2aa7b2cbc326a"
+      },
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0def7bbc3f92d0b7006aa6959cf0b487d19ac651b9da0edfbb"
+    },
+    {
+      "candidateId": "af2fbb738f95d2d11755",
+      "decision": "watchlist",
+      "title": "Berichte: Micron plant HBM‑Kapazitätsverdopplung auf ~100.000 Wafers/Monat bis Ende 2026 (industry leaks)",
+      "fact": "Mehrere Branchenberichte (u. a. Electronic Times 2026-09-04, Digitimes‑Aggregatoren, Aju Press) zitierten Industriequellen, dass Micron geplant habe, bis Ende 2026 bis zu zusätzliche ~60.000 HBM‑Wafer/Monat zu addieren und damit die HBM‑Input‑Kapazität auf ~100.000 WPM zu erhöhen (gegenüber ~40–50k WPM zuvor). Es gibt derzeit keine bestätigende Micron‑Pressemitteilung mit diesen konkreten WPM‑Zahlen.",
+      "placement": "Geographie: global/USA‑zentriert (Micron); Domäne: HBM / Wafer‑Input‑Kapazität; Layer: Fertigungs‑Kapazität (Nameplate) / kurzfristig (Q4 2026).",
+      "mechanism": "Nameplate‑Erweiterung der Waferstarts erhöht potenziellen HBM‑Output; begrenzende Faktoren bleiben Packaging (CoWoS/CoWoS‑like) und Yield‑Reife. Ohne bestätigte Packaging‑/Yield‑Verbesserungen wandelt sich Nameplate‑Kapazität nicht automatisch in qualifizierte, auslieferbare HBM‑Units.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Falls bestätigt, würde eine materielle Micron‑Kapazitätserhöhung die Wahrscheinlichkeit reduzieren, dass HBM bis Ende 2028 strukturell knapp bleibt; derzeit ist der Effekt unsicher, weil Packaging‑ und Qualifikationspfade sowie Vertragsbindungen (LTAs) begrenzend sind.",
+      "falsifier": "Bis 2027-03-31 muss Micron in Form von öffentlichen Unternehmensangaben (10‑K/K‑Ergänzungen, Earnings‑Transcripts mit expliziten WPM‑Zahlen) ODER durch Tracker (Counterpoint/IDC/Omdia) eine konsistente Steigerung der HBM‑Auslieferungen zeigen, äquivalent zu ~>90k WPM‑Input oder deutlich höheren HBM‑Shipments; bleibt das aus, ist die Leaken‑Behauptung nicht bestätigt.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-04",
+      "novelty": "Mittel – potentielle Kapazitätsverschiebung, aber Quelle bisher indirekt/Leak‑basiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 11,
+        "thesisRelevance": 15,
+        "forecastImpact": 11,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 5,
+      "confidence": 0.45,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.etnews.com/20260904200006",
+          "label": "ETNews (English) – Branchenbericht zitiert Industry Sources (2026-09-04)",
+          "kind": "secondary",
+          "supports": "\"Micron plans to add up to 60,000 wafers per month in HBM production capacity… total ~100,000 WPM by year‑end.\""
+        },
+        {
+          "url": "https://m.ajupress.com/view/20260904180470902",
+          "label": "Aju Press – 'Micron expands HBM capacity' (2026-09-04)",
+          "kind": "secondary",
+          "supports": "\"Industry sources indicate Micron plans to add up to 60,000 wafers per month…\""
+        },
+        {
+          "url": "https://www.sahmcapital.com/news/content/full-transcript-micron-technology-q3-2026-earnings-call-2026-06-25",
+          "label": "Micron Q3 FY2026 Earnings Call transcript (2026-06-25) — Opposing/context evidence",
+          "kind": "primary",
+          "supports": "CEO: 'HBM4 ramping about twice as fast… cumulative shipment revenue for HBM4 has surpassed $1 billion' — aber keine WPM‑Zahlen."
+        }
+      ],
+      "reason": "Berichte stützen ein plausibles, marktrelevantes Leaksignal (Micron‑HBM­Sprint). Es fehlt jedoch eine direkte, öffentlich bestätigende Micron‑Angabe mit konkreten WPM‑Zahlen; ohne diese Primärverifikation bleibt das Signal unbestätigt und gehört auf die Watchlist für Follow‑Up.",
+      "candidateKey": "7d3ca4fac27f2ba0cc0afa8c",
+      "reviewedAt": "2026-09-13T12:25:01.745Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0def7bbc3f92d0b7006aa6959cf0b487d19ac651b9da0edfbb"
+    },
+    {
+      "candidateId": "804f78c21a34ff560734",
+      "decision": "rejected",
+      "title": "Werbemitteilung/Marktkommentar: DeepSeek behauptet KV‑Cache‑Reduktionen (HBM −75%, SSD −87.5%)",
+      "fact": "Mehrere Finanzmedien (z. B. Yahoo Finance 2026-09-11) berichteten, dass der chinesische AI‑Anbieter DeepSeek seine Modellgeneration V4.1‑Flash vorgestellt habe, die nach Firmenangaben den KV‑Cache‑Footprint stark reduziert (angegebene Effekte: HBM‑Footprint bis zu −75%, SSD‑Footprint bis zu −87.5% gegenüber Vorgängerversion). Die Zahlen stammen aus Firmenaussage/Produktankündigung und aus Community‑Summaries; unabhängige Drittbenchmarks zur Produktionsreife und systemweiten Einsparungen fehlen bislang.",
+      "placement": "Geographie: global (AI‑Modelldeployments); Domäne: AI‑Inference / HBM & Enterprise SSD Bedarf; Layer: Modellarchitektur (Inference‑KV‑Cache) / Near‑term Market Sentiment.",
+      "mechanism": "DeepSeek behauptet reduzierte KV‑Cache‑Speicherung pro Token durch Architektur‑/Komprimierungsänderungen; wenn echt, verringert dies heißes HBM‑Kapazitätsbedürfnis und persistenten SSD‑Footprint für KV‑Caches – doch die Aussage basiert auf Firmenangaben ohne unabhängige, reproduzierbare Benchmarks oder breit verifizierte Produktions‑Deployments.",
+      "predictionId": "tail-2026-07-14-hbm4-cost",
+      "predictionImpact": "Würde, falls bei produktiver Skalierung verifiziert, die Druckrichtung auf HBM‑Preise und HBM‑Kapazitätsnachfrage abschwächen. Aktueller Stand: rein promotive/unkontrollierte Behauptung — zu wenig belastbar, um bestehende Preis‑/Engpass‑Prognosen zu ändern.",
+      "falsifier": "Damit diese Behauptung als marktverändernd anerkannt wird, müssen bis 2027-06-30 unabhängige, reproduzierbare Benchmarks (Drittparteien oder veröffentlichte Integrationsberichte von Großkunden) die behaupteten KV‑Cache‑Einsparungen in realen Inferenz‑Workloads demonstrieren und belegen, dass dabei Latenz/Accuracy/Throughput erhalten bleiben; bis dahin gilt die Aussage als unbewiesen.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-11",
+      "novelty": "Niedrig/Mittel – technische Idee (KV‑Cache‑Optimierung) ist nicht neu, behaupteter Sprung ist jedoch groß; Quelle ist Produkt‑PR.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 8,
+        "thesisRelevance": 8,
+        "forecastImpact": 5,
+        "falsifiability": 4,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "hbm",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 2,
+      "confidence": 0.2,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-samsung-shares-dip-071811226.html",
+          "label": "Yahoo Finance / StockTwits‑Feed (2026-09-11)",
+          "kind": "secondary",
+          "supports": "Berichtet Marktreaktion und zitiert Behauptungen zu KV‑Cache‑Reduktion (HBM −75%, SSD −87.5%)."
+        },
+        {
+          "url": "https://aiwiki.ai/wiki/deepseek",
+          "label": "DeepSeek / Community‑Repository Hinweise (Aggregat)",
+          "kind": "secondary",
+          "supports": "Referenzen zu DeepSeek‑V4.1‑Flash Abbildungen; Primärquellen sind Firmendokumente/Repo."
+        },
+        {
+          "url": "https://www.sahmcapital.com/news/content/full-transcript-micron-technology-q3-2026-earnings-call-2026-06-25",
+          "label": "Micron Q3‑Earnings (Kontext/Opposing)",
+          "kind": "primary",
+          "supports": "Micron: 'cumulative HBM shipment revenue surpassed $1 billion' und Hinweis auf volle Kontrakte — zeigt, dass HBM‑Nachfrage aktuell stark und vertraglich gebunden ist; widerspricht schnellen, kurzfristigen Nachfragerückgängen."
+        }
+      ],
+      "reason": "Promotionaler/Market‑sentiment‑getriebener Claim ohne reproduzierbare, unabhängige Verifikation. Solche PR‑getriebenen Investment‑Schlagzeilen sind anfällig für Überreaktionen; gemäß TAIL‑Regeln werden sie abgelehnt, bis belastbare Drittbelege vorliegen.",
+      "candidateKey": "7895c6e24e03242112a1f2d7",
+      "reviewedAt": "2026-09-13T12:25:01.751Z",
+      "priorityScore": 34,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0def7bbc3f92d0b7006aa6959cf0b487d19ac651b9da0edfbb"
+    },
+    {
+      "candidateId": "aa82c8ebb7c45ed4acdc",
+      "decision": "watchlist",
+      "title": "Samsung, TSMC and Intel join ASML to build new technology barrier against China",
+      "fact": "Am 2026-09-07/2026-09-08 kündigten ASML und TSMC eine gemeinsame Initiative zur Umstellung von 6‑inch‑ auf 12‑inch‑Photomasken (Ziel: Pilotlinie 2031, Produktionsreife 2033) an; Samsung bestätigte Teilnahme, Intel veröffentlichte parallel Statements zur Kooperation/High‑NA‑EUV‑Bereitschaft.",
+      "placement": "Global; Halbleiter‑Frontend / Photomask‑Supply‑Chain; High‑NA EUV / fortgeschrittene Knoten; Horizont: Pilotproduktion 2031, Serieneinsatz ab 2033.",
+      "mechanism": "Die Umstellung auf 12‑inch‑Photomasken soll die Produktivität von High‑NA‑EUV‑Scannern erhöhen (ASML nennt ~40% höhere Durchsatzwirkung in Kommentaren), damit Kosten pro Chip senken und die Einsatzfähigkeit von High‑NA in hohen Stückzahlen für Foundry und (laut Samsung) DRAM verbessern.",
+      "predictionId": "",
+      "predictionImpact": "(Nicht direkt angegeben) Diese Ankündigung ist ein technologischer Architektur‑/Supply‑Chain‑Pfad und beeinflusst langfristig die Verfügbarkeit und Kosten von führenden Knoten; unmittelbare Wirkung auf 2026/2027‑Memory‑Knappheit ist unwahrscheinlich aufgrund langer Implementationszeiten (Pilot 2031, Produktion 2033).",
+      "falsifier": "Bis 2027‑12‑31: keine formelle, veröffentlichte Konsortialvereinbarung oder Pilot‑Line‑Projektplan (Pilot‑Standort, verbindliche Lieferantenliste, oder gemeinsame FID) oder einer der beteiligten Hersteller widerruft Teilnahme / nennt andere Zieltermine.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-09-07",
+      "novelty": "Technologie‑Standard‑Shift (12‑inch masks) mit Zeitplan — neu und relevant für Long‑Run‑Throughput; aber nicht vollständig neu (ASML/Intel High‑NA‑Zusammenarbeit vorher bekannt).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 9,
+        "thesisRelevance": 13,
+        "forecastImpact": 11,
+        "falsifiability": 6,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 4,
+      "confidence": 0.7,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/09/08/3357321/0/en/asml-and-tsmc-announce-initiative-to-pioneer-industry-transition-to-large-format-photomasks-for-high-na-euv.html",
+          "label": "ASML/TSMC Joint Press Release (GlobeNewswire) 2026-09-08",
+          "kind": "primary",
+          "supports": "ASML/TSMC announces industry initiative to transition to 12‑inch photomasks; targets 12‑inch pilot line by 2031 and production readiness by 2033; notes broad industry interest."
+        },
+        {
+          "url": "https://news.samsungsemiconductor.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing/",
+          "label": "Samsung Semiconductor Pressemitteilung 2026-09-08",
+          "kind": "primary",
+          "supports": "Samsung bestätigt Teilnahme an Initiative zur Entwicklung 12‑inch‑Photomasken und nennt Absicht, High‑NA EUV in DRAM‑HVM bis 2028 einzuführen."
+        },
+        {
+          "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry/intel-foundry-asml-accelerate-industry-readiness-for-high-na-euv.html",
+          "label": "Intel Foundry Statement (Intel Newsroom) 2026-09-07",
+          "kind": "primary",
+          "supports": "Intel betont Kooperation mit ASML zur Beschleunigung von High‑NA‑EUV‑Bereitschaft und berichtet über laufende Produktions‑/Qualifikationsaktivitäten."
+        }
+      ],
+      "reason": "Primärquellen (ASML, Samsung, Intel) bestätigen die technische Initiative und die Zielzeiträume; die Behauptung im Kandidatentitel, dies diene explizit als «Barrier gegen China», ist eine geopolitische Interpretation und wird von den Pressemitteilungen nicht wörtlich so formuliert. Die Information ist wichtig als langfristige Architektur‑/Supply‑Chain‑Entwicklung, hat aber wegen langer Zeitachsen (Pilot 2031 / Serien 2033) keine unmittelbar falsifizierende Wirkung auf kurzfristige Memory‑Verfügbarkeits‑Vorhersagen; deshalb Aufnahme als Watchlist (VERIFIED DATA) statt direkte Aufnahme als Index‑Falsifier.",
+      "candidateKey": "10e28ec08ff1620ffba735bf",
+      "reviewedAt": "2026-09-13T12:26:49.312Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f62eb7263a0b993006aa6961df07887d19757e186f53699d7"
+    },
+    {
+      "candidateId": "c9e73f3348172e5f645c",
+      "decision": "watchlist",
+      "title": "SK Hynix Targets $29B Nasdaq Offering – DRAM Jumps Over 4% Ahead Of Micron's Report",
+      "fact": "SK hynix reichte im Juni/Juli 2026 einen US‑Prospectus ein und zielte darauf ab, bis zu 45.45 Bio. KRW (~US$29,4 Mrd.) über ADS/NYSE‑Listing (Nasdaq: SKHY) einzusammeln; Prospekt/424B4 dokumentieren Zweckangaben: Investitionen in AI‑Memory‑Fabs und EUV‑Ausrüstung.",
+      "placement": "Global / Finanzmarkt → Halbleiter‑Investitionsfinanzierung; unmittelbare Wirkung auf Kapazität: Mittelzuführung für geplante Fab‑ und Tool‑Bestellungen (Zeithorizont: 2026–2031 für Capex‑Projekte).",
+      "mechanism": "Das große Kapitalangebot mobilisiert Finanzierung für SK hynix’ Ausbau‑ und Ausrüstungspläne (EUV‑Bestellungen, neue Fabs), was mittelfristig die potenzielle Bit‑Supply erhöhen kann; Wirkung ist zeitverzögert durch Bau‑ und Lieferzyklen.",
+      "predictionId": "",
+      "predictionImpact": "Erhöht langfristig die Wahrscheinlichkeit, dass größere Kapazitätsinvestitionen von SK hynix realisiert werden; kann das Risiko eines stärkeren Supply‑Upside nach 2027 erhöhen, verändert aber nicht unmittelbar die Verfügbarkeit in 2026/early‑2027.",
+      "falsifier": "Bis 2026-12-31: Angebot abgebrochen/verschoben oder endgültig emittierter Nettobetrag liegt <50% des angekündigten Maximalbetrags (d.h. <~US$15bn), oder SK hynix veröffentlicht, dass die Mittel nicht für fab‑/EUV‑Projekte verwendet werden.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-06-24",
+      "novelty": "Großes, dokumentiertes USD‑Finanzierungsziel für AI‑Memory‑Capex; relevant für mittelfristige Supply‑Prognosen.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 8,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 7,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 5,
+      "confidence": 0.75,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.otcmarkets.com/filing/html?guid=kce-kn0Vr938Oth&id=19574800",
+          "label": "SK hynix F‑1 / Registrierungseinreichung (SEC / OTC copy) 2026-06/07",
+          "kind": "primary",
+          "supports": "Form F‑1 / Prospectus‑Einreichung dokumentiert Ziel, bis zu 45.45 Bio. KRW (~US$29.4 Mrd.) über ADS/US‑Listing einzusammeln; Zweck: Fab‑/EUV‑Investitionen."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing",
+          "label": "Berichterstattung zu Prospekt und Zielsumme (Tom's Hardware)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung der Einreichung und Angabe des geplanten Maximalbetrags; Kontext zur Mittelverwendung für AI‑Memory‑Fabs."
+        }
+      ],
+      "reason": "Primäre regulatorische Einreichungen (F‑1 / 424B4) und konsistente Medienberichte verifizieren das angekündigte Angebot und die vorgesehenen Mittelverwendungen. Die Maßnahme ist ein bedeutender finanzieller Input für künftige Kapazitätserweiterungen; da die Effekte jedoch zeitverzögert sind und noch nicht in realen Shipments/Lead‑Time‑Verbesserungen sichtbar sind, wird die Beobachtung (Watchlist) empfohlen statt sofortiger Übernahme als Verified Supply‑Falsifier.",
+      "candidateKey": "4756f61d5fd03bf82ba0a80e",
+      "reviewedAt": "2026-09-13T12:26:49.314Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f62eb7263a0b993006aa6961df07887d19757e186f53699d7"
+    },
+    {
+      "candidateId": "80fe95a4c07a7f6727a3",
+      "decision": "watchlist",
+      "title": "Samsung is closing in on 40% HBM share",
+      "fact": "KB Securities berichtete am 2026-09-11 (Analystennote), dass Samsungs HBM‑Marktanteil nach Schätzung von ~33% in Q2 auf knapp 40% in Q4 2026 steigen könnte; Treiber: HBM4‑Umsatz im Q3 (KB schätzt >3× QoQ) und H2‑Anteil von HBM4 >60% der HBM‑Umsätze.",
+      "placement": "Global HBM‑Markt (Revenue‑Share) / Memory‑Layer; Kurzfristiger Horizont: Q3–Q4 2026 (Marktanteilsverschiebung innerhalb 2026).",
+      "mechanism": "Analystenschätzung: beschleunigte HBM4‑Shipments (Samsung‑Ramp), verbesserte Foundry‑Yields (2nm/4nm), und HBM4E‑Sample‑Lieferungen an Schlüsselkunden stützen relativ stärkeren Umsatzanteil von Samsung versus Wettbewerbern im H2 2026.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Unterstützt die Grundlage von P-2026-07-30-02 (Samsung erhöht HBM4‑Umsatz Q3 2026 sequenziell ≥2.5× Q2). Wenn KB‑Schätzung zutrifft, erhöht sich die Wahrscheinlichkeit, dass die Vorhersage erfüllt wird.",
+      "falsifier": "Wenn Samsungs ausgewiesener HBM4‑Umsatz im Q3 2026 in den offiziellen Quartalszahlen (oder in Samsung‑Disclosure bis 2026‑11‑15) unter dem 2.5‑fachen des Q2‑HBM4‑Umsatzes liegt, ist KBs Schätzung falsifiziert.",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-09-11",
+      "novelty": "Analystische Schätzung, die einen kurzfristigen Markt‑Share‑Shift nahelegt; relevant da direkt auf Q3/Q4‑Zeitraum abzielt.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 13,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 5,
+      "confidence": 0.6,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.insigtx.com/en/news/kb-securities-samsung-hbm4-sales-up-over-threefold-qoq-819906/",
+          "label": "Bericht über KB Securities‑Note (insigtX) 2026-09-11",
+          "kind": "secondary",
+          "supports": "Zitierte KB‑Securities‑Schätzung: HBM‑Marktanteil Samsung 33% (Q2) → ~40% (Q4); HBM4‑Umsatz Q3 >3× QoQ."
+        },
+        {
+          "url": "https://www.chaincatcher.com/en/article/2289024",
+          "label": "ChainCatcher Zusammenfassung der KB‑Notiz 2026-09-11",
+          "kind": "secondary",
+          "supports": "Wiedergabe der KB‑Schätzung inklusive HBM4‑Anteilsannahmen und Foundry‑Yield‑Beobachtung."
+        }
+      ],
+      "reason": "Die Kernaussage ist eine Analystenschätzung (KB Securities, 2026‑09‑11) — keine Unternehmensmeldung. Die Schätzung ist direkt relevant und testbar gegen Samsungs quartalsweise HBM‑Umsatzdaten; deshalb Watchlist mit einem klaren, überprüfbaren Falsifier (Samsungs Q3‑Reporting).",
+      "candidateKey": "856ac90363e5faba2253bd0b",
+      "reviewedAt": "2026-09-13T12:26:49.317Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f62eb7263a0b993006aa6961df07887d19757e186f53699d7"
+    },
+    {
+      "candidateId": "8e66cc7cc98eee413041",
+      "decision": "rejected",
+      "title": "Broadcom-Linked AI Selloff Hits Samsung, SK Hynix Stocks In Korea: DRAM Eyes Second Day In Red",
+      "fact": "Kurzfristige Marktreaktion: Nach enttäuschender Broadcom‑Guidance kam es zu einem globalen Selloff in Halbleiteraktien, wobei südkoreanische Titel (Samsung, SK hynix) starke Rückgänge verzeichneten (z. B. Kursrückgänge und KOSPI‑Stress am 2026‑06‑05).",
+      "placement": "Marktpreis‑/Aktienmarkt‑Ereignis; Korea‑Börsen: kurzfristige Kursbewegung, keine dokumentierte dauerhafte Verfügbarkeitsänderung im Memory‑Supply.",
+      "mechanism": "Investorischer Sentiment‑Spillover: Broadcoms Guidance löste Neubewertungen hinsichtlich AI‑Spend und Margendruck aus; Index‑/ETF‑Mechanismen und Hebelverkäufe verstärkten Korrektur in Korea.",
+      "predictionId": "",
+      "predictionImpact": "Keine substanzielle neue Long‑Run‑Information für bestehende Versorgung‑/Preis‑Prognosen; Ereignis ist bereits in der Basis erfasst (mehrere S‑Einträge über Broadcom‑Shock und Marktreaktionen).",
+      "falsifier": "Nicht anwendbar — Nachricht ist reaktive Marktberichterstattung und wiederholt zuvor dokumentierte Selloffs; kein einzigartiges, falsifizierbares Strukturereignis.",
+      "nextReview": "2026-10-01",
+      "eventDate": "2026-06-05",
+      "novelty": "Niedrig — retrospektive Markt‑Berichterstattung, bereits mehrfach in Baseline‑Feed verarbeitet.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 6,
+        "forecastImpact": 4,
+        "falsifiability": 4,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_down",
+      "severity": 3,
+      "confidence": 0.6,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-linked-ai-selloff-hits-064441875.html",
+          "label": "Yahoo Finance — Berichterstattung über Broadcom‑bedingten Selloff",
+          "kind": "secondary",
+          "supports": "Zusammenfassung globaler Marktreaktion nach Broadcom‑Guidance, Auswirkungen auf südkoreanische Chipaktien."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/06/05/kospi-plunges-55-percent-to-8160-as-broadcom-selloff-hits",
+          "label": "Seoul Economic Daily — KOSPI‑Reaktion (2026‑06‑05)",
+          "kind": "secondary",
+          "supports": "Lokalberichterstattung über starke Kursverluste koreanischer Halbleiterwerte und KOSPI‑Stress am 2026‑06‑05."
+        }
+      ],
+      "reason": "Die Meldung dokumentiert einen kurzzeitigen Markt‑Selloff, der bereits in der TAIL‑Baseline (S‑Einträge zu Broadcom‑Shock / KOSPI‑Stress / DRAM‑Reaktionen) erfasst ist. Kandidat bringt keinen neuen, belastbaren Primärnachweis für eine strukturelle Marktänderung (z.B. dauerhafte Nachfrageverlagerung, Lieferketten‑Ereignis oder kontraktierte Kapazitätsänderung) — gemäß Vorgabe werden wiederholte Markt‑Headlines und promotive Stock‑Commentary abgelehnt (Rejected).",
+      "candidateKey": "16b36a401091a3a8b406b538",
+      "reviewedAt": "2026-09-13T12:26:49.319Z",
+      "priorityScore": 32,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f62eb7263a0b993006aa6961df07887d19757e186f53699d7"
+    },
+    {
+      "candidateId": "44ff28a5a9aaf2293b02",
+      "decision": "rejected",
+      "title": "SanDisk – Bericht über verstärkte Korea‑Einstellungen: bereits bekannt / nicht ausreichend verifiziert",
+      "fact": "Behauptung: CHOSUNBIZ berichtet, SanDisk weitet die Einstellung von Ingenieuren in Südkorea wegen AI‑getriebener NAND‑Nachfrage aus (Headline: \"SanDisk expands Korea engineer hiring as AI boom fuels NAND race\").",
+      "placement": "Geographie: Südkorea; Domäne: NAND / Enterprise‑SSD; Layer: Talent/Engineering‑Hiring; Horizont: kurzfristig (Q3–Q4 2026).",
+      "mechanism": "Behaupteter Mechanismus: Steigende AI‑Inference‑Nachfrage erhöht kurzfristig den Bedarf an NAND/HBF‑Produkten → SanDisk rekrutiert zusätzliche Entwicklungs‑/Qualifizierungsingenieure in Korea, um Produktentwicklung, Paket‑Qualifikation und Kundenintegration zu beschleunigen (nicht direkt bit‑supply‑wirksam ohne Capex/Prod‑Output).",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Keine nachweisbare, kurzfristige Abschwächung der Vorhersage P-2026-07-20-04 (Memory bleibt 2027 knapp). Arbeitgeberseitige Einstellungsaktivitäten erhöhen Entwicklungs‑ und Qualifikationskapazität, sind aber kein belegter Indikator für sofort erhöhte Bit‑Supply oder niedrigere Preise.",
+      "falsifier": "Falsifizierer (messbar): SanDisk veröffentlicht bis 2026-10-31 keine firmengebundenen Angaben (Pressemitteilung, SEC/Investor‑Presentation oder offizielles Hiring‑Summary) mit konkreten Einstellungszahlen in Südkorea ≥100 Ingenieure oder keine kurzfristige (bis Q1 2027) Capex/Output‑Ankündigung, die eine konkrete Bit‑Supply‑Ausweitung belegt.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-13",
+      "novelty": "Gering. Inhalte wiederholen bereits bekannte Punkte (SanDisk HBF‑Patente, Sandisk‑Wachstums‑Guidance und Stellenanzeigen).",
+      "duplicateOf": "S-2026-08-06-01",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 8,
+        "forecastImpact": 4,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 10,
+      "confidence": 35,
+      "indexImpact": false,
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/06/24/MB2HQFHLEFAEPPPUZ73SJWQIUI/?outputType=amp",
+          "label": "CHOSUNBIZ: 'Sandisk patents NAND-under-GPU HBF...' (2026-06-24)",
+          "kind": "secondary",
+          "supports": "Bericht über SanDisks HBF‑Patent, HBF‑Konsortium mit SK hynix und Marktdynamik; belegt SanDisks AI‑NAND‑Fokus, nicht aber eine quantifizierte Korea‑Einstellungswelle."
+        },
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/08/14/HWTRZN5MYNDD5OW3ATY4BNPGEM/",
+          "label": "CHOSUNBIZ: 'Sandisk projects mid- to high‑teens growth...' (2026-08-14)",
+          "kind": "secondary",
+          "supports": "Analyse zu Umsatzprognosen und Nachfrage für NAND/eSSD; unterstreicht Trend, liefert aber keine konkrete Zahl zu Korea‑Einstellungen."
+        },
+        {
+          "url": "https://pubrio.com/companies/3103ad96-9326-4131-95cf-cad71badde9b?data=5db945a26f5840ce7a020e449005fce5%3AR4K1YmXbBmdAUnCEPU9DYFWhLy2%2BLIRw2ItwoxnnAYkx1YVG",
+          "label": "Pubrio / Hiring‑Signal‑Aggregat (SanDisk)",
+          "kind": "secondary",
+          "supports": "Aggregierte Rekrutierungsaktivität zeigt zahlreiche offene Rollen in mehreren Ländern inkl. Südkorea (listet ~12 offene Positionen in Südkorea), liefert jedoch keine verifizierte Gesamtzahl oder Bewilligung durch SanDisk/Investor‑Doc."
+        },
+        {
+          "url": "https://kr.expertini.com/job/2-kr-fpe-ce-backend-intern-for-cy26-autumn-semeter-south-korea-sandisk-f2505dd7de0a/amp/",
+          "label": "Beispiel Job‑Posting (Sandisk Stellenanzeige Korea, Mai 2026)",
+          "kind": "secondary",
+          "supports": "Konkrete Stellenausschreibungen belegen aktive Rekrutierung in Korea, aber keine aggregate Hiring‑Zahl oder formale Unternehmensankündigung über 'erweiterte Einstellungen'."
+        }
+      ],
+      "reason": "Entscheidung (Kurzfassung, Deutsch):\n1) Primärquelle nicht belastbar / doppelt gemeldet: Die vorgelegte Kandidaten‑Headline ist eine Kurzform, die auf Chosunbiz‑Berichten zur SanDisk‑Strategie und auf Recruitingsignalen basiert. Wir finden Chosunbiz‑Berichte, die SanDisks HBF‑Patent, Umsatzprognosen und die generelle AI‑getriebene NAND‑Nachfrage dokumentieren (CHOSUNBIZ 2026-06-24; 2026-08-14). ([biz.chosun.com](https://biz.chosun.com/en/en-it/2026/06/24/MB2HQFHLEFAEPPPUZ73SJWQIUI/?outputType=amp))\n2) Teilweise bestätigende, aber unvollständige Primärdaten: Es gibt aktive Stellenanzeigen und datengetriebene Aggregatoren, die laufende Sandisk‑Recruitingaktivität in Südkorea zeigen (z. B. Pubrio, einzelne Job‑Listings). Diese bestätigen Rekrutierungstätigkeit, liefern jedoch keine firmenseitige, quantifizierbare Ankündigung (z. B. \"SanDisk stellt 200 Ingenieure in Korea bis Q4 ein\") und sind kein Beleg für eine substanzielle kurzfristige Kapazitätserweiterung. ([pubrio.com](https://pubrio.com/companies/3103ad96-9326-4131-95cf-cad71badde9b?data=5db945a26f5840ce7a020e449005fce5%3AR4K1YmXbBmdAUnCEPU9DYFWhLy2%2BLIRw2ItwoxnnAYkx1YVG&utm_source=openai))\n3) Red‑Pencil / Baseline‑Duplikation: Das Kandidatensignal wiederholt bekannte Marktbeobachtungen (SanDisk‑HBF, stärkere NAND‑/eSSD‑Nachfrage) und überlappt mit bereits im Baseline enthaltenen Signals (z. B. S-2026-08-06-01; tail-2026-07-14-nand-essd). Es liefert keine neue, atomare, datierten Messgröße (Anzahl Einstellungen, konreter Starttermin, Impact‑Einheit), die eine Aufnahme als VERIFIED DATA rechtfertigen würde.\n4) Fehlende Prognoserelevanz: Selbst wenn SanDisk in Korea mehr Ingenieure einstellt, ist das kein unmittelbarer Falsifizierer für die Vorhersage P-2026-07-20-04 (Memory bleibt 2027 knapp), weil Einstellungen die Bit‑Lieferung/Capex/Qualified‑Output kurzfristig nicht beweisen. Daher keine überprüfbare Wirkung auf die Vorhersage.\n5) Opposing evidence / Unsicherheit: Es fehlt eine SanDisk‑Pressemitteilung, SEC‑Einreichung oder Investor‑Presentation mit konkreten Korea‑Hiring‑Zahlen oder kurzfristigen Capex/Output‑Versprechen; die vorhandenen Belege sind sekundär (Medienartikel, Jobportale). Ohne solche Primärbestätigungen bleibt die Behauptung nicht ausreichend verifizierbar.\nSchlussfolgerung: Kandidat ist abgelehnt. Empfehlung: Falls in den nächsten 6 Wochen eine firmenseitige Primärquelle (SanDisk‑Pressemitteilung, SEC‑Filing, Investor‑Deck oder ein klar quantifiziertes Hiring‑Summary mit Datum und Zahl) erscheint, dann erneute Begutachtung möglich (NextReview: 2026-10-15). ([biz.chosun.com](https://biz.chosun.com/en/en-it/2026/06/24/MB2HQFHLEFAEPPPUZ73SJWQIUI/?outputType=amp))",
+      "candidateKey": "810fcb784939a045dfd29728",
+      "reviewedAt": "2026-09-13T12:27:44.015Z",
+      "priorityScore": 26,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 2,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0242b9bcf6c13885006aa69689790487d19f01823041977877"
     }
   ]
 }

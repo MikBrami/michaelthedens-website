@@ -7,17 +7,17 @@
   "indexEvidenceAsOf": "2026-08-28",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-13T12:08:00.780Z",
-    "inboxUpdatedAt": "2026-09-13T12:07:52.830Z",
+    "checkedAt": "2026-09-13T12:27:44.017Z",
+    "inboxUpdatedAt": "2026-09-13T12:20:55.301Z",
     "status": "pending",
     "candidates": 871,
     "reviewed": 24,
-    "accepted": 0,
-    "watchlist": 13,
-    "rejected": 11,
+    "accepted": 2,
+    "watchlist": 7,
+    "rejected": 15,
     "pending": 847,
     "oldestPendingAt": "2026-08-14T12:59:49.000Z",
-    "lastCompletedReviewAt": "2026-09-13T12:08:00.780Z",
+    "lastCompletedReviewAt": "2026-09-13T12:27:44.015Z",
     "error": null
   },
   "overdueOperationalReviews": [
@@ -39,15 +39,15 @@
     }
   ],
   "sourceDataAsOf": "2026-08-28",
-  "knowledgeBaseSyncedAt": "2026-09-13T12:18:07.358Z",
+  "knowledgeBaseSyncedAt": "2026-09-13T12:27:44.118Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 16,
-  "lastSuccessfulUpdate": "2026-09-13T12:18:08.258Z",
-  "lastForecastRun": "2026-09-13T12:18:08.258Z",
+  "lastSuccessfulUpdate": "2026-09-13T12:27:45.056Z",
+  "lastForecastRun": "2026-09-13T12:27:45.056Z",
   "newlyProcessedArticles": 405,
-  "totalArticles": 125,
-  "articleCount": 125,
+  "totalArticles": 127,
+  "articleCount": 127,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -107,7 +107,7 @@
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-13T12:07:52.830Z",
+    "updatedAt": "2026-09-13T12:20:55.301Z",
     "newItems": 405,
     "totalItems": 1000,
     "duplicateItems": 300,
@@ -121,13 +121,13 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "24 geprüft · 847 offen · 0 aufgenommen"
+        "detail": "24 geprüft · 847 offen · 2 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "125 Artikel · Sync 2026-09-13 · jüngstes bestätigtes Signal 2026-08-28"
+        "detail": "127 Artikel · Sync 2026-09-13 · jüngstes bestätigtes Signal 2026-08-28"
       },
       {
         "id": "inbox",
@@ -155,7 +155,7 @@
     "current": 79,
     "previous": 79,
     "status": "orange",
-    "confidence": 81,
+    "confidence": 80,
     "riskPressure": 83,
     "riskFormula": "60% critical segment peak + 40% critical availability peak",
     "coverage": 100,
@@ -202,7 +202,7 @@
         "rawMetric": "Gewicht im Segmentindex: 15%"
       }
     ],
-    "interpretation": "Der MT·AI Executive Pulse liegt bei 79/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (81/100) und Risikodruck (83/100) werden separat ausgewiesen."
+    "interpretation": "Der MT·AI Executive Pulse liegt bei 79/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (80/100) und Risikodruck (83/100) werden separat ausgewiesen."
   },
   "markets": [
     {
@@ -276,10 +276,10 @@
       "indicativeScore": 81,
       "sufficientlyCovered": true,
       "status": "orange",
-      "signals": 20,
-      "articleSignals": 15,
+      "signals": 22,
+      "articleSignals": 17,
       "operationalSignals": 5,
-      "confidence": 73,
+      "confidence": 69,
       "coverage": 100,
       "drivers": [
         {
@@ -308,8 +308,8 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 87,
-          "confidence": 54,
-          "evidenceCount": 5,
+          "confidence": 45,
+          "evidenceCount": 6,
           "pressure": 79,
           "relief": 0,
           "operationalFloor": 87,
@@ -462,10 +462,10 @@
       "indicativeScore": 70,
       "sufficientlyCovered": true,
       "status": "orange",
-      "signals": 90,
-      "articleSignals": 88,
+      "signals": 91,
+      "articleSignals": 89,
       "operationalSignals": 2,
-      "confidence": 87,
+      "confidence": 81,
       "coverage": 100,
       "drivers": [
         {
@@ -494,8 +494,8 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 65,
-          "confidence": 85,
-          "evidenceCount": 5,
+          "confidence": 71,
+          "evidenceCount": 6,
           "pressure": 65,
           "relief": 0,
           "operationalFloor": 0,
@@ -524,8 +524,8 @@
       "indicativeScore": 67,
       "sufficientlyCovered": true,
       "status": "orange",
-      "signals": 30,
-      "articleSignals": 30,
+      "signals": 31,
+      "articleSignals": 31,
       "operationalSignals": 0,
       "confidence": 88,
       "coverage": 100,
@@ -586,10 +586,10 @@
       "indicativeScore": 64,
       "sufficientlyCovered": true,
       "status": "yellow",
-      "signals": 13,
-      "articleSignals": 12,
+      "signals": 15,
+      "articleSignals": 14,
       "operationalSignals": 1,
-      "confidence": 89,
+      "confidence": 84,
       "coverage": 100,
       "drivers": [
         {
@@ -618,8 +618,8 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 46,
-          "confidence": 89,
-          "evidenceCount": 5,
+          "confidence": 75,
+          "evidenceCount": 6,
           "pressure": 46,
           "relief": 0,
           "operationalFloor": 0,
@@ -710,18 +710,18 @@
     },
     {
       "name": "SK hynix",
-      "score": 84,
+      "score": 81,
+      "mentions": 17
+    },
+    {
+      "name": "Samsung",
+      "score": 79,
       "mentions": 15
     },
     {
       "name": "Micron",
-      "score": 83,
-      "mentions": 7
-    },
-    {
-      "name": "Samsung",
-      "score": 82,
-      "mentions": 13
+      "score": 78,
+      "mentions": 9
     },
     {
       "name": "NVIDIA",
@@ -852,7 +852,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-13T12:18:08.255Z"
+      "lastUpdated": "2026-09-13T12:27:45.054Z"
     },
     {
       "id": "hbm",
@@ -938,15 +938,15 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-13T12:18:08.255Z"
+      "lastUpdated": "2026-09-13T12:27:45.054Z"
     },
     {
       "id": "nand",
       "market": "NAND",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 72,
-      "confidenceScore": 88,
+      "relevanceScore": 69,
+      "confidenceScore": 75,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "NAND zeigt festere Preis- und Nachfrageindikatoren, bleibt aber weniger eng als DRAM/HBM.",
@@ -1004,17 +1004,19 @@
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
         "S-2026-07-20-05",
-        "S-2026-08-07-SKHYNIX-Y2-M17"
+        "S-2026-08-07-SKHYNIX-Y2-M17",
+        "S-AUTO-945fc239013e27b447817700",
+        "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T12:18:08.255Z"
+      "lastUpdated": "2026-09-13T12:27:45.054Z"
     },
     {
       "id": "enterprise_ssd",
       "market": "Enterprise SSD",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 73,
-      "confidenceScore": 88,
+      "relevanceScore": 70,
+      "confidenceScore": 78,
       "horizon": "H2 2026–2027",
       "direction": "up",
       "keyThesis": "Enterprise SSD profitiert von AI-Datenpipelines, Nearline-Wachstum und High-Capacity-Qualifizierung.",
@@ -1075,9 +1077,11 @@
         "tail-2026-07-14-nand-essd",
         "S-2026-07-29-05",
         "S-2026-07-20-05",
-        "S-2026-08-07-SKHYNIX-Y2-M17"
+        "S-2026-08-07-SKHYNIX-Y2-M17",
+        "S-AUTO-945fc239013e27b447817700",
+        "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T12:18:08.255Z"
+      "lastUpdated": "2026-09-13T12:27:45.054Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1085,7 +1089,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 79,
-      "confidenceScore": 87,
+      "confidenceScore": 86,
       "horizon": "2026–2030+",
       "direction": "up",
       "keyThesis": "AI Infrastructure wird durch Power, Datacenter-Kapazität, HBM, DRAM, eSSD und geopolitische Lieferketten begrenzt.",
@@ -1249,9 +1253,10 @@
         "S-2026-08-09-04",
         "S-2026-08-06-05",
         "S-2026-07-25-04",
-        "S-TAIL-DAILY-HEARTBEAT"
+        "S-TAIL-DAILY-HEARTBEAT",
+        "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T12:18:08.255Z"
+      "lastUpdated": "2026-09-13T12:27:45.054Z"
     }
   ],
   "indexCalculation": {
@@ -1260,7 +1265,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-13"
   },
-  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 127 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
@@ -1865,7 +1870,7 @@
         "public": true,
         "currentScore": 81,
         "currentStatus": "orange",
-        "confidence": 73,
+        "confidence": 69,
         "coverage": 100,
         "asOf": "2026-09-05",
         "indexAsOf": "2026-09-13"

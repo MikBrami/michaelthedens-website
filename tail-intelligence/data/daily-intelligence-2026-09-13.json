@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-13T12:18:07.358Z",
+  "updatedAt": "2026-09-13T12:27:44.118Z",
   "previousRun": "2026-09-12",
   "executivePulse": {
     "current": 79,
     "previous": 79,
     "status": "orange",
-    "confidence": 81,
+    "confidence": 80,
     "riskPressure": 83,
     "riskFormula": "60% critical segment peak + 40% critical availability peak",
     "coverage": 100,
@@ -53,10 +53,10 @@
         "rawMetric": "Gewicht im Segmentindex: 15%"
       }
     ],
-    "interpretation": "Der MT·AI Executive Pulse liegt bei 79/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (81/100) und Risikodruck (83/100) werden separat ausgewiesen."
+    "interpretation": "Der MT·AI Executive Pulse liegt bei 79/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (80/100) und Risikodruck (83/100) werden separat ausgewiesen."
   },
   "confidence": {
-    "current": 81,
+    "current": 80,
     "previous": 81,
     "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 847 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
@@ -527,6 +527,128 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-cf8223b527b2aa7b2cbc326a",
+      "title": "YMTC überholt Micron/Kioxia nach Stück‑Shipments (Counterpoint Q2 2026)",
+      "date": "2026-08-12",
+      "admittedAt": "2026-09-13T12:25:01.742Z",
+      "fact": "Counterpoint Research dokumentierte am 2026-08-12 in seinem Q2‑2026 Memory & Storage Tracker, dass Yangtze Memory Technologies (YMTC) 14% der globalen NAND‑Bit‑Shipments im 2. Quartal 2026 erreichte und damit erstmals auf Platz 3 nach Stückvolumen stieg (Samsung 25%, SK hynix 22%), wobei YMTC Kioxia und Micron in Volumen übertraf.",
+      "placement": "Geographie: global; Domäne: NAND / Enterprise‑ & Consumer‑NAND; Layer: Marktanteile nach Bit‑Shipments; Horizont: Q2 2026 (sofortige Marktwirkung).",
+      "tailInference": "Die Verlagerung der AI‑Workload‑Mixes hin zu Inferenz hat Enterprise‑SSD‑Bitanteile auf ~48% in Q2 getrieben; hohe Bit‑Nachfrage plus YMTCs Produktionsausweitung (267‑Layer Xtacking Volumen) erlaubten YMTC, Volumenshare rasch auszubauen und damit die Lieferbasis auf Unit‑Ebene zu erweitern — das ändert die Wettbewerbsdynamik bei Stückmengen und beeinflusst Kanal‑Mix und Verhandlungspositionen in bestimmten Kundensegmenten.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Unterstützt die OUTLOOK‑These, dass der Enterprise‑SSD‑Markt strukturell verschoben wird (stärkere Kanal‑Umverteilung). Kurzfristig erhöht YMTCs Volumenzuwachs die Chance, dass Verfügbarkeits‑/Angebotsprobleme in bestimmten Channel‑Segmenten (Consumer vs. Enterprise) anders verteilt werden und damit die Normalisierungspfade (z.B. bessere Same‑SKU‑Verfügbarkeit) früher als erwartet eintreten können — allerdings bleibt YMTCs Umsatzmix noch endkundenlastig, daher ist der Preis‑/Ertrags‑Effekt begrenzt ohne Mix‑Verschiebung zu eSSD.",
+      "falsifier": "Wenn bis 2026-12-31 Counterpoint oder andere Tracker (z.B. IDC/Omdia) zwei aufeinanderfolgende Quartale melden, in denen YMTCs NAND‑Bit‑Share <12% bleibt ODER YMTC nicht nachweisbar in Richtung eSSD/Margin‑Upmix verschiebt (Revenue‑Ranking bleibt ≤5), dann entkräftet das die Annahme, dass YMTC kurzfristig die Enterprise‑SSD‑Verfügbarkeit signifikant verändert.",
+      "nextReview": "2026-12-31",
+      "priorityScore": 85,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 17,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 6,
+      "confidence": 0.8,
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "signal": "verified_supply_relief",
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "classification": "Signal",
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": true,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Counterpoint Research – 'Server‑Led eSSDs Hit 48%…' (2026-08-12)",
+          "url": "https://counterpointresearch.com/en/insights/server-led-essds-hit-48-percent-of-nand-shipments"
+        },
+        {
+          "label": "Tom's Hardware – Bericht über Counterpoint (2026-08-12)",
+          "url": "https://www.tomshardware.com/tech-industry/ymtc-breaks-into-the-top-three-nand-makers-for-the-first-time"
+        },
+        {
+          "label": "Yahoo/aggregatoren – Zusammenfassende Berichte zu Counterpoint (2026-08-12)",
+          "url": "https://finance.yahoo.com/technology/articles/ymtc-breaks-top-three-nand-123544721.html"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Unterstützt die OUTLOOK‑These, dass der Enterprise‑SSD‑Markt strukturell verschoben wird (stärkere Kanal‑Umverteilung). Kurzfristig erhöht YMTCs Volumenzuwachs die Chance, dass Verfügbarkeits‑/Angebotsprobleme in bestimmten Channel‑Segmenten (Consumer vs. Enterprise) anders verteilt werden und damit die Normalisierungspfade (z.B. bessere Same‑SKU‑Verfügbarkeit) früher als erwartet eintreten können — allerdings bleibt YMTCs Umsatzmix noch endkundenlastig, daher ist der Preis‑/Ertrags‑Effekt begrenzt ohne Mix‑Verschiebung zu eSSD."
+      },
+      "admissionReviewKey": "cf8223b527b2aa7b2cbc326a"
+    },
+    {
+      "id": "S-AUTO-945fc239013e27b447817700",
+      "title": "NAND Supply Crunch Lifts YMTC to Third Place as Micron Slips Behind",
+      "date": "2026-08-12",
+      "admittedAt": "2026-09-13T12:22:52.755Z",
+      "fact": "Counterpoint Research berichtet am 2026-08-12 (Memory & Storage Tracker Q2 2026): YMTC (Yangtze Memory Technologies) erreichte 14% der globalen NAND‑Bit‑Shipments im Q2 2026 und stieg damit auf Rang 3 (nach Samsung 25%, SK hynix 22%), knapp vor Kioxia.",
+      "placement": "Geographie: global. Domäne: NAND‑Bit‑Shipments. Zeitfenster: Q2 2026. Einheit: 14% der weltweiten NAND‑Bit‑Shipments (Counterpoint Q2 2026 Tracker, Datum 2026-08-12).",
+      "tailInference": "Verschärfte NAND‑Knappheit und die Verschiebung der Nachfrage hin zu server‑/eSSD‑Bitbedarf (AI‑Inference) haben die relative Bit‑Verfügbarkeit und Zuteilung verändert; YMTC konnte durch erhöhte 267‑Layer Xtacking‑Produktion und Fokus auf preisaggressivere Segmente seinen Bit‑Output erhöhen und damit Anteil gewinnen.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Stützt das OUTLOOK‑Signal, dass Enterprise‑SSD/Server‑NAND kurzfristig durch Verfügbarkeit und Preisdruck gestützt bleibt; erhöht kurzfristig Wahrscheinlichkeit und Persistence von Verknappungs‑/Preisaufwärts‑Signalen im Enterprise‑NAND‑Korb bis zur nächsten qualifizierten Kapazitätswelle.",
+      "falsifier": "Historische, abschlussfähige Messung: Wenn Counterpoint seine Q2 2026 Tracker‑Zahl bis 2026-08-31 revidiert oder andere primäre Marktreports (z.B. offizielle Branchen‑Shipment‑Tabellen) Q2 2026‑Daten liefern, die YMTC < Kioxia bzw. YMTC < 14% ausweisen, wäre die Behauptung falsifiziert. (Prüfdatum: 2026-08-31).",
+      "nextReview": "2026-11-12",
+      "priorityScore": 84,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 6,
+      "confidence": 0.8,
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "signal": "negative_supply",
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "classification": "Signal",
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": true,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Counterpoint Research – Memory & Storage Tracker Q2 2026 (Primärquelle, 2026-08-12)",
+          "url": "https://counterpointresearch.com/en/insights/server-led-essds-hit-48-percent-of-nand-shipments"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Stützt das OUTLOOK‑Signal, dass Enterprise‑SSD/Server‑NAND kurzfristig durch Verfügbarkeit und Preisdruck gestützt bleibt; erhöht kurzfristig Wahrscheinlichkeit und Persistence von Verknappungs‑/Preisaufwärts‑Signalen im Enterprise‑NAND‑Korb bis zur nächsten qualifizierten Kapazitätswelle."
+      },
+      "admissionReviewKey": "945fc239013e27b447817700"
     }
   ],
   "predictionLogUpdates": [
@@ -641,13 +763,13 @@
     "date": "2026-09-13",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
+    "impactScore": 85,
     "note": "Evidenzprüfung offen: 847 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-13T12:18:07.358Z",
+    "generatedAt": "2026-09-13T12:27:44.118Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-13T12:07:52.830Z",
+    "inboxUpdatedAt": "2026-09-13T12:20:55.301Z",
     "inboxNewItems": 405,
     "highRelevanceCandidates": [
       {
@@ -806,22 +928,22 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-13T12:08:00.780Z",
-    "inboxUpdatedAt": "2026-09-13T12:07:52.830Z",
+    "checkedAt": "2026-09-13T12:27:44.017Z",
+    "inboxUpdatedAt": "2026-09-13T12:20:55.301Z",
     "status": "pending",
     "candidates": 871,
     "reviewed": 24,
-    "accepted": 0,
-    "watchlist": 13,
-    "rejected": 11,
+    "accepted": 2,
+    "watchlist": 7,
+    "rejected": 15,
     "pending": 847,
     "oldestPendingAt": "2026-08-14T12:59:49.000Z",
-    "lastCompletedReviewAt": "2026-09-13T12:08:00.780Z",
+    "lastCompletedReviewAt": "2026-09-13T12:27:44.015Z",
     "error": null
   },
   "indexCalculation": {
     "asOf": "2026-09-13",
-    "inputHash": "a30859296036d48837ecd5fe3391a5d52aa6b2ed603ac00b14d79fa1244b65a1",
+    "inputHash": "87042e4246c9544c2229a0c29eaac5630ccaa26bdfb9de007be2872c23a10427",
     "sourceDataAsOf": "2026-08-28"
   }
 }
