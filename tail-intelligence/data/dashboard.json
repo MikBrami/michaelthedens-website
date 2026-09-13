@@ -7,34 +7,34 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-13T17:13:10.936Z",
-    "inboxUpdatedAt": "2026-09-13T17:02:58.472Z",
+    "checkedAt": "2026-09-13T19:34:24.126Z",
+    "inboxUpdatedAt": "2026-09-13T19:27:33.422Z",
     "status": "pending",
-    "candidates": 873,
-    "reviewed": 132,
-    "accepted": 17,
-    "watchlist": 37,
-    "rejected": 78,
-    "pending": 741,
-    "oldestPendingAt": "2026-08-15T08:23:32.000Z",
-    "lastCompletedReviewAt": "2026-09-13T17:12:16.616Z",
+    "candidates": 876,
+    "reviewed": 156,
+    "accepted": 20,
+    "watchlist": 44,
+    "rejected": 92,
+    "pending": 720,
+    "oldestPendingAt": "2026-08-16T04:30:05.000Z",
+    "lastCompletedReviewAt": "2026-09-13T19:34:24.109Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 905,
+    "rawCandidates": 908,
     "triage": {
       "archivedOpinions": 20,
       "groupedDuplicates": 12
     },
     "lastRun": {
-      "startedAt": "2026-09-13T17:03:10.481Z",
-      "completedAt": "2026-09-13T17:13:10.941Z",
-      "selected": 96,
-      "reviewed": 40,
+      "startedAt": "2026-09-13T19:27:43.480Z",
+      "completedAt": "2026-09-13T19:34:24.131Z",
+      "selected": 24,
+      "reviewed": 24,
       "concurrency": 2,
-      "limit": 96,
+      "limit": 24,
       "rateLimitRetries": 0,
-      "durationSeconds": 600,
-      "budgetExhausted": true
+      "durationSeconds": 400,
+      "budgetExhausted": false
     }
   },
   "overdueOperationalReviews": [
@@ -56,15 +56,15 @@
     }
   ],
   "sourceDataAsOf": "2026-09-12",
-  "knowledgeBaseSyncedAt": "2026-09-13T17:13:11.128Z",
+  "knowledgeBaseSyncedAt": "2026-09-13T19:34:24.272Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-09-13T17:13:12.316Z",
-  "lastForecastRun": "2026-09-13T17:13:12.316Z",
-  "newlyProcessedArticles": 77,
-  "totalArticles": 143,
-  "articleCount": 143,
+  "lastSuccessfulUpdate": "2026-09-13T19:34:25.482Z",
+  "lastForecastRun": "2026-09-13T19:34:25.482Z",
+  "newlyProcessedArticles": 53,
+  "totalArticles": 146,
+  "articleCount": 146,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -118,16 +118,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 741 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 720 Kandidaten ausstehend.",
     "4 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-13T17:02:58.472Z",
-    "newItems": 77,
-    "totalItems": 1551,
+    "updatedAt": "2026-09-13T19:27:33.422Z",
+    "newItems": 53,
+    "totalItems": 1604,
     "duplicateItems": 300,
-    "relevantItems": 1117,
+    "relevantItems": 1124,
     "sourceErrors": []
   },
   "pipeline": {
@@ -137,19 +137,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "132 geprüft · 741 offen · 17 aufgenommen"
+        "detail": "156 geprüft · 720 offen · 20 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "143 Artikel · Sync 2026-09-13 · jüngstes bestätigtes Signal 2026-09-12"
+        "detail": "146 Artikel · Sync 2026-09-13 · jüngstes bestätigtes Signal 2026-09-12"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "1551 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "1604 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -727,12 +727,7 @@
     {
       "name": "SK hynix",
       "score": 80,
-      "mentions": 20
-    },
-    {
-      "name": "Samsung",
-      "score": 78,
-      "mentions": 19
+      "mentions": 21
     },
     {
       "name": "Micron",
@@ -743,6 +738,11 @@
       "name": "NVIDIA",
       "score": 78,
       "mentions": 1
+    },
+    {
+      "name": "Samsung",
+      "score": 77,
+      "mentions": 21
     },
     {
       "name": "Sandisk",
@@ -756,8 +756,8 @@
     },
     {
       "name": "Nvidia",
-      "score": 72,
-      "mentions": 15
+      "score": 71,
+      "mentions": 16
     },
     {
       "name": "Oracle",
@@ -776,7 +776,7 @@
       "market": "DRAM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 78,
+      "relevanceScore": 77,
       "confidenceScore": 84,
       "horizon": "2026–2027",
       "direction": "up",
@@ -833,6 +833,12 @@
           "title": "ASML / Intel / TSMC / Samsung: High‑NA EUV Fortschritt und Industrieinitiativen",
           "signal": "Kapazitätsentlastung",
           "score": 23
+        },
+        {
+          "id": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+          "title": "ASML & Samsung: High‑NA EUV soll erstmals in DRAM‑HVM eingesetzt werden (ASML‑Pressemitteilung)",
+          "signal": "Kapazitätsentlastung",
+          "score": 12
         }
       ],
       "sourceArticleIds": [
@@ -876,23 +882,25 @@
         "S-AUTO-2689c1742383e01df9ec2135",
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17",
+        "S-AUTO-590e3b6e0abcd5843f2d11c7",
         "S-AUTO-9c196e2fe4ccfb0fda7216e6",
         "S-AUTO-7e924042f548f055676f8769",
         "S-AUTO-64bb30d24aff52312b465626",
         "S-AUTO-d25873b789efc5ec1a7f41d3",
         "S-AUTO-28b329255578ff6a8943398e",
         "S-AUTO-2fbda9055add9061096f0742",
-        "S-AUTO-48cff5e2e35bb6e9f2a7416e"
+        "S-AUTO-48cff5e2e35bb6e9f2a7416e",
+        "S-AUTO-86f57c9ce4968b9706cd3a6f"
       ],
-      "lastUpdated": "2026-09-13T17:13:12.312Z"
+      "lastUpdated": "2026-09-13T19:34:25.478Z"
     },
     {
       "id": "hbm",
       "market": "HBM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 78,
-      "confidenceScore": 86,
+      "relevanceScore": 77,
+      "confidenceScore": 85,
       "horizon": "2026–2028",
       "direction": "up",
       "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
@@ -950,6 +958,12 @@
           "score": 13
         },
         {
+          "id": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+          "title": "ASML & Samsung: High‑NA EUV soll erstmals in DRAM‑HVM eingesetzt werden (ASML‑Pressemitteilung)",
+          "signal": "Kapazitätsentlastung",
+          "score": 12
+        },
+        {
           "id": "S-AUTO-c606575af5eb0035a69fcb7f",
           "title": "AMD MI400 ships with 432 GB HBM4 (MI455X) — Produkt-Launch / erste Lieferungen",
           "signal": "Kapazitätsentlastung",
@@ -995,14 +1009,17 @@
         "S-AUTO-4680a5772176dd47a7baf925",
         "S-AUTO-2689c1742383e01df9ec2135",
         "S-2026-08-07-SKHYNIX-Y2-M17",
+        "S-AUTO-303b216471b2e1ee1e3bea79",
+        "S-AUTO-590e3b6e0abcd5843f2d11c7",
         "S-AUTO-84351dc941259805a65972ee",
         "S-AUTO-28b329255578ff6a8943398e",
         "S-AUTO-2fbda9055add9061096f0742",
         "S-AUTO-4026d51f6952ba6f76e4f0eb",
+        "S-AUTO-86f57c9ce4968b9706cd3a6f",
         "S-AUTO-c606575af5eb0035a69fcb7f",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-13T17:13:12.312Z"
+      "lastUpdated": "2026-09-13T19:34:25.478Z"
     },
     {
       "id": "nand",
@@ -1072,7 +1089,7 @@
         "S-AUTO-945fc239013e27b447817700",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T17:13:12.312Z"
+      "lastUpdated": "2026-09-13T19:34:25.478Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1145,7 +1162,7 @@
         "S-AUTO-945fc239013e27b447817700",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T17:13:12.312Z"
+      "lastUpdated": "2026-09-13T19:34:25.478Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1341,6 +1358,7 @@
         "S-2026-07-21-02",
         "S-2026-07-28-03",
         "S-2026-08-09-04",
+        "S-AUTO-303b216471b2e1ee1e3bea79",
         "S-2026-08-06-05",
         "S-2026-07-25-04",
         "S-AUTO-64bb30d24aff52312b465626",
@@ -1355,7 +1373,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T17:13:12.312Z"
+      "lastUpdated": "2026-09-13T19:34:25.478Z"
     }
   ],
   "indexCalculation": {
@@ -1364,7 +1382,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-13"
   },
-  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 143 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 146 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",

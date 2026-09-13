@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-13T17:13:11.128Z",
+  "updatedAt": "2026-09-13T19:34:24.272Z",
   "previousRun": "2026-09-12",
   "executivePulse": {
     "current": 79,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 81,
     "previous": 81,
-    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 741 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 720 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 741 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 720 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -727,6 +727,77 @@
       "admissionReviewKey": "8c98ad283db308a6bbbf4675"
     },
     {
+      "id": "S-AUTO-303b216471b2e1ee1e3bea79",
+      "title": "Nvidia in talks to invest $3B in SB Energy for OpenAI data center agreement",
+      "date": "2026-08-17",
+      "admittedAt": "2026-09-13T19:31:47.510Z",
+      "fact": "Ursprünglicher Bericht: Reuters / The Information meldeten am 2026-08-15, Nvidia befinde sich in Gesprächen über eine Investition von bis zu $3 000 000 000 in SB Energy; NVIDIA bestätigte anschließend formell am 2026-08-17 eine $1.5 billion (USD) Investition in SB Energy zur Absicherung von LPS‑Kapazität für das PORTS‑Pike‑Campus (initial 4.25 IT‑GW LPS; Option auf weitere 3.75 IT‑GW).",
+      "placement": "PORTS‑Pike Technology Campus, Pike County, Ohio — AI‑infrastructure / LPS (land, power, shell) / IT‑GW layer; horizon: 2028–phased commissioning (near‑term project finance & capacity lock).",
+      "tailInference": "NVIDIA’s equity/investment plus credit support secures LPS Kapazität (4.25 IT‑GW initial) exklusiv für NVIDIA‑compute at PORTS‑Pike, wodurch ein großer Teil künftiger AI‑Compute‑Bedarf (und damit Host‑DRAM/HBM/NAND‑Bit‑Nachfrage) für diese Kapazität an NVIDIA gebunden wird — schafft ein materiales 'capacity_lock' und erhöht kurzfristig die Nachfrage‑ und Allokations‑Präsenz für Memory‑Pakete, speziell HBM/Server‑DRAM in Hyperscaler‑Deployments.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Stärkt die Baseline‑These, dass Kurzfristiges Beschaffungsrisiko hoch bleibt (capacity_lock → erhöhter Druck auf Server‑DRAM/HBM Verfügbarkeit und Preise). Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Allokationen und vertragliche Kapazitätsbindungen Memory‑Preise unterstützen; es ist kein sofortiger Liefervolumen‑Falsifier.",
+      "falsifier": "Bis zum 2027-06-30: keine nachweisbare Erhöhung der Vertrags‑Allokationen/Fill‑Rates für HBM/Server‑DRAM (kontraktbasierte Auslastung bzw. bestätigte qualifizierte Shipments) oder falls PORTS‑Pike LPS‑Zusage öffentlich zurückgezogen/neu verhandelt wird (offizielle Presse/SEC/8‑K Bestätigung), gilt die capacity_lock‑Wirkung als falsifiziert.",
+      "nextReview": "2027-06-30",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 60,
+      "confidence": 75,
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "hbm"
+      ],
+      "signal": "capacity_lock",
+      "driverScope": [
+        "availability",
+        "demand",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Reuters summary / Investing.com — Bericht über Gespräche (The Information / Reuters) 2026-08-15",
+          "url": "https://www.investing.com/news/stock-market-news/nvidia-in-talks-to-invest-3-billion-in-sb-energy-as-part-of-openai-data-center-deal-the-information-reports-4861844"
+        },
+        {
+          "label": "NVIDIA Press Release (Formelle Bestätigung) 2026-08-17",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx"
+        },
+        {
+          "label": "TechCrunch / weitere Berichterstattung (Sekundär)",
+          "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Stärkt die Baseline‑These, dass Kurzfristiges Beschaffungsrisiko hoch bleibt (capacity_lock → erhöhter Druck auf Server‑DRAM/HBM Verfügbarkeit und Preise). Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Allokationen und vertragliche Kapazitätsbindungen Memory‑Preise unterstützen; es ist kein sofortiger Liefervolumen‑Falsifier."
+      },
+      "admissionReviewKey": "303b216471b2e1ee1e3bea79"
+    },
+    {
       "id": "S-AUTO-7e924042f548f055676f8769",
       "title": "CXMT (长鑫/ChangXin) meldet Q2 2026 Operating Margin ~82% (Q2 per 2026-06-30)",
       "date": "2026-06-30",
@@ -1129,6 +1200,73 @@
       "admissionReviewKey": "64bb30d24aff52312b465626"
     },
     {
+      "id": "S-AUTO-590e3b6e0abcd5843f2d11c7",
+      "title": "KB증권: Samsung und SK hynix halten laut Q3‑Schätzung unter 10 Tage fertige Memory‑Bestände",
+      "date": "2026-09-07",
+      "admittedAt": "2026-09-13T19:29:39.554Z",
+      "fact": "KB Securities‑Schätzung (zitiert in Seoul Economic Daily) berichtet, dass die verfügbaren fertigen Memory‑Inventare von Samsung Electronics und SK hynix per Q3 2026 unter 10 Tagen lagen.",
+      "placement": "Hersteller‑Level (Samsung Electronics, SK hynix); globaler Memory‑Markt; relevanter Beobachtungszeitpunkt: 2026-09-07 (Seoul Economic Daily Veröffentlichung)",
+      "tailInference": "Aggressive AI‑Server‑Investitionen erhöhen Nachfrage nach HBM/Server‑DDR5 und eSSD; zugleich bindet die HBM4‑Ramp Wafer‑Kapazität (KB: HBM4 ≈ 3× Waferbedarf), wodurch verfügbare fertigware Verkaufsvolumina für Standard‑DRAM/NAND schrumpfen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Stützt P-2026-07-11-01 (HBM und Server‑DRAM bleiben strukturell knapp bis mindestens Ende 2028). Die sub‑10‑Tage‑Schätzung erhöht die Plausibilität eines strukturellen Angebotsengpasses 2026–2027 und erhöht kurzfristiges Allokations‑/Preisrisiko.",
+      "falsifier": "Bis 2026-12-31 veröffentlichen Samsung oder SK hynix (Quartalsbericht/IR‑Disclosure) oder KB Securities ein Update, das für das Q3/Q4‑Reporting fertige Memory‑Inventarstufen ≥ 10 Tage ausweist (d.h. Unternehmenangabe oder KB‑Korrektur), wodurch die ursprüngliche Sub‑10‑Tage‑Behauptung nicht haltbar ist. Als Impact‑Falsifier für die mit P-2026-07-11-01 verknüpften Marktfolgen: falls Server‑DRAM‑Kontraktpreise zwei zusammenhängende Quartale fallen oder bestätigte Lead Times vor 2027‑06‑30 auf normale Werte zurückkehren, reduziert das die Signalwirkung.",
+      "nextReview": "2026-10-15",
+      "priorityScore": 84,
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 65,
+      "confidence": 65,
+      "markets": [
+        "dram",
+        "server_dram",
+        "hbm"
+      ],
+      "signal": "negative_supply",
+      "driverScope": [
+        "demand",
+        "aiDemand",
+        "availability"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Seoul Economic Daily (Bericht, zitiert KB Securities, 2026-09-07)",
+          "url": "https://dcb0ucee30q2g.cloudfront.net/finance/2026/09/07/samsung-sk-hynix-memory-stockpiles-fall-below-10-days"
+        },
+        {
+          "label": "TechTimes (Sekundär‑Bericht zur KB/Seoul Economic Meldung)",
+          "url": "https://www.techtimes.com/articles/326837/20260907/memory-runs-dry-samsung-sk-hynix-drop-below-10-day-supply-hbm4-devours-capacity.htm"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Stützt P-2026-07-11-01 (HBM und Server‑DRAM bleiben strukturell knapp bis mindestens Ende 2028). Die sub‑10‑Tage‑Schätzung erhöht die Plausibilität eines strukturellen Angebotsengpasses 2026–2027 und erhöht kurzfristiges Allokations‑/Preisrisiko."
+      },
+      "admissionReviewKey": "590e3b6e0abcd5843f2d11c7"
+    },
+    {
       "id": "S-AUTO-945fc239013e27b447817700",
       "title": "YMTC steigt auf Platz 3 der globalen NAND-Bit-Shipments (Q2 2026).",
       "date": "2026-08-12",
@@ -1401,6 +1539,67 @@
         "forecastChange": "Stärkt die Annahme in P-2026-07-20-04, dass Memory‑Nachfrage 2026/2027 strukturell hoch bleibt und somit Kurz‑ bis Mittelfrist‑Preisdruck und Kapazitätsengpässe plausibel sind. Erhöht die Wahrscheinlichkeit eines anhaltenden 'demand_up' Signals im Memory‑Layer."
       },
       "admissionReviewKey": "2689c1742383e01df9ec2135"
+    },
+    {
+      "id": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+      "title": "ASML & Samsung: High‑NA EUV soll erstmals in DRAM‑HVM eingesetzt werden (ASML‑Pressemitteilung)",
+      "date": "2026-09-08",
+      "admittedAt": "2026-09-13T19:29:39.561Z",
+      "fact": "ASML und Samsung bestätigten in einer gemeinsamen Pressemitteilung (ASML) die Absicht, High‑NA EUV in zukünftigen DRAM‑High‑Volume‑Manufacturing‑Prozessen einzusetzen; ASML nennt 2028 als Zieljahr für Branchen‑erste Einführung in DRAM‑HVM.",
+      "placement": "Technologie/Produktions‑Layer; Samsung DRAM‑Fertigung (Südkorea/Global Fab‑Roadmap); Veröffentlichung: ASML Pressemitteilung 2026-09-08.",
+      "tailInference": "High‑NA EUV erhöht mögliche Masken‑/Layer‑Komplexität und ermöglicht dichteres Lithographie‑Patterning; technische Einführung kann langfristig die effektive Bits/wafer erhöhen und damit die mittelfristige Kapazitätserweiterung pro Fab verändern (aber keine sofortige Verbraucherbzw. Shipments‑Auswirkung).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Langfristige Implikation für Angebotserweiterung und Node‑Effizienz: die ASML/Samsung‑Roadmap reduziert mittelfristig den Angebotsdruck, verschiebt aber die Zeitachse der spürbaren Kapazitätserweiterung (Matching/Entsprechung mit OUTLOOK‑server_dram angenommen jenseits 2027).",
+      "falsifier": "Wenn bis 2028-12-31 Samsung oder ASML keine Qualifikations‑/HVM‑Nachricht (Tape‑in/HVM‑Qualification/Production‑Start‑Ankündigung) für High‑NA EUV in DRAM veröffentlicht oder ASML kommuniziert, dass DRAM‑HVM‑Einführung erst nach 2028 erfolgen wird, dann wäre die in der Pressemitteilung genannte Einführungstimeline unmittelbar falsifiziert.",
+      "nextReview": "2026-12-31",
+      "priorityScore": 82,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 13,
+        "timeSensitivity": 7
+      },
+      "severity": 30,
+      "confidence": 80,
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability"
+      ],
+      "classification": "Architecture Update",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "ASML Pressemitteilung (2026-09-08)",
+          "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Langfristige Implikation für Angebotserweiterung und Node‑Effizienz: die ASML/Samsung‑Roadmap reduziert mittelfristig den Angebotsdruck, verschiebt aber die Zeitachse der spürbaren Kapazitätserweiterung (Matching/Entsprechung mit OUTLOOK‑server_dram angenommen jenseits 2027)."
+      },
+      "admissionReviewKey": "86f57c9ce4968b9706cd3a6f"
     },
     {
       "id": "S-AUTO-48cff5e2e35bb6e9f2a7416e",
@@ -1797,13 +1996,13 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 87,
-    "note": "Evidenzprüfung offen: 741 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "note": "Evidenzprüfung offen: 720 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-13T17:13:11.128Z",
+    "generatedAt": "2026-09-13T19:34:24.272Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-13T17:02:58.472Z",
-    "inboxNewItems": 77,
+    "inboxUpdatedAt": "2026-09-13T19:27:33.422Z",
+    "inboxNewItems": 53,
     "highRelevanceCandidates": [
       {
         "id": "08ebfe8bde7318f5f7f0",
@@ -1961,39 +2160,39 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-13T17:13:10.936Z",
-    "inboxUpdatedAt": "2026-09-13T17:02:58.472Z",
+    "checkedAt": "2026-09-13T19:34:24.126Z",
+    "inboxUpdatedAt": "2026-09-13T19:27:33.422Z",
     "status": "pending",
-    "candidates": 873,
-    "reviewed": 132,
-    "accepted": 17,
-    "watchlist": 37,
-    "rejected": 78,
-    "pending": 741,
-    "oldestPendingAt": "2026-08-15T08:23:32.000Z",
-    "lastCompletedReviewAt": "2026-09-13T17:12:16.616Z",
+    "candidates": 876,
+    "reviewed": 156,
+    "accepted": 20,
+    "watchlist": 44,
+    "rejected": 92,
+    "pending": 720,
+    "oldestPendingAt": "2026-08-16T04:30:05.000Z",
+    "lastCompletedReviewAt": "2026-09-13T19:34:24.109Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 905,
+    "rawCandidates": 908,
     "triage": {
       "archivedOpinions": 20,
       "groupedDuplicates": 12
     },
     "lastRun": {
-      "startedAt": "2026-09-13T17:03:10.481Z",
-      "completedAt": "2026-09-13T17:13:10.941Z",
-      "selected": 96,
-      "reviewed": 40,
+      "startedAt": "2026-09-13T19:27:43.480Z",
+      "completedAt": "2026-09-13T19:34:24.131Z",
+      "selected": 24,
+      "reviewed": 24,
       "concurrency": 2,
-      "limit": 96,
+      "limit": 24,
       "rateLimitRetries": 0,
-      "durationSeconds": 600,
-      "budgetExhausted": true
+      "durationSeconds": 400,
+      "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-13",
-    "inputHash": "21d622154d6a1fdd475677b3117f81c056de717269a4f24ff63289ec21fb538f",
+    "inputHash": "a6bd09f5a2db3acbd0eeb5ff40c14f4025c6ded0d192a73a6f2ad9836ba2734a",
     "sourceDataAsOf": "2026-09-12"
   }
 }

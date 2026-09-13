@@ -6052,6 +6052,70 @@
     ]
   },
   {
+    "id": "S-AUTO-303b216471b2e1ee1e3bea79",
+    "date": "2026-08-17",
+    "title": "Nvidia in talks to invest $3B in SB Energy for OpenAI data center agreement",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "hbm"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "severity": 60,
+    "confidence": 75,
+    "signal": "capacity_lock",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "Ursprünglicher Bericht: Reuters / The Information meldeten am 2026-08-15, Nvidia befinde sich in Gesprächen über eine Investition von bis zu $3 000 000 000 in SB Energy; NVIDIA bestätigte anschließend formell am 2026-08-17 eine $1.5 billion (USD) Investition in SB Energy zur Absicherung von LPS‑Kapazität für das PORTS‑Pike‑Campus (initial 4.25 IT‑GW LPS; Option auf weitere 3.75 IT‑GW).",
+    "tail_analysis": "NVIDIA’s equity/investment plus credit support secures LPS Kapazität (4.25 IT‑GW initial) exklusiv für NVIDIA‑compute at PORTS‑Pike, wodurch ein großer Teil künftiger AI‑Compute‑Bedarf (und damit Host‑DRAM/HBM/NAND‑Bit‑Nachfrage) für diese Kapazität an NVIDIA gebunden wird — schafft ein materiales 'capacity_lock' und erhöht kurzfristig die Nachfrage‑ und Allokations‑Präsenz für Memory‑Pakete, speziell HBM/Server‑DRAM in Hyperscaler‑Deployments.",
+    "source": "Reuters summary / Investing.com — Bericht über Gespräche (The Information / Reuters) 2026-08-15",
+    "url": "https://www.investing.com/news/stock-market-news/nvidia-in-talks-to-invest-3-billion-in-sb-energy-as-part-of-openai-data-center-deal-the-information-reports-4861844",
+    "content_hash": "a1c0600c8a2d17be3eef",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T19:31:47.510Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "303b216471b2e1ee1e3bea79",
+    "predictionId": "OUTLOOK-server_dram",
+    "predictionImpact": "Stärkt die Baseline‑These, dass Kurzfristiges Beschaffungsrisiko hoch bleibt (capacity_lock → erhöhter Druck auf Server‑DRAM/HBM Verfügbarkeit und Preise). Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Allokationen und vertragliche Kapazitätsbindungen Memory‑Preise unterstützen; es ist kein sofortiger Liefervolumen‑Falsifier.",
+    "falsifier": "Bis zum 2027-06-30: keine nachweisbare Erhöhung der Vertrags‑Allokationen/Fill‑Rates für HBM/Server‑DRAM (kontraktbasierte Auslastung bzw. bestätigte qualifizierte Shipments) oder falls PORTS‑Pike LPS‑Zusage öffentlich zurückgezogen/neu verhandelt wird (offizielle Presse/SEC/8‑K Bestätigung), gilt die capacity_lock‑Wirkung als falsifiziert.",
+    "nextReview": "2027-06-30",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Stärkt die Baseline‑These, dass Kurzfristiges Beschaffungsrisiko hoch bleibt (capacity_lock → erhöhter Druck auf Server‑DRAM/HBM Verfügbarkeit und Preise). Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Allokationen und vertragliche Kapazitätsbindungen Memory‑Preise unterstützen; es ist kein sofortiger Liefervolumen‑Falsifier."
+    },
+    "sources": [
+      {
+        "label": "Reuters summary / Investing.com — Bericht über Gespräche (The Information / Reuters) 2026-08-15",
+        "url": "https://www.investing.com/news/stock-market-news/nvidia-in-talks-to-invest-3-billion-in-sb-energy-as-part-of-openai-data-center-deal-the-information-reports-4861844"
+      },
+      {
+        "label": "NVIDIA Press Release (Formelle Bestätigung) 2026-08-17",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx"
+      },
+      {
+        "label": "TechCrunch / weitere Berichterstattung (Sekundär)",
+        "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/"
+      }
+    ]
+  },
+  {
     "id": "S-2026-08-26-ASTRA",
     "date": "2026-08-26",
     "title": "Astra verschiebt Frontier-AI von Antworten zu autonomer Forschungsarbeit",
@@ -6604,6 +6668,67 @@
     ]
   },
   {
+    "id": "S-AUTO-590e3b6e0abcd5843f2d11c7",
+    "date": "2026-09-07",
+    "title": "KB증권: Samsung und SK hynix halten laut Q3‑Schätzung unter 10 Tage fertige Memory‑Bestände",
+    "category": "geopolitics",
+    "markets": [
+      "dram",
+      "server_dram",
+      "hbm"
+    ],
+    "companies": [
+      "Samsung",
+      "SK hynix"
+    ],
+    "severity": 65,
+    "confidence": 65,
+    "signal": "negative_supply",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "aiDemand",
+      "availability"
+    ],
+    "summary": "KB Securities‑Schätzung (zitiert in Seoul Economic Daily) berichtet, dass die verfügbaren fertigen Memory‑Inventare von Samsung Electronics und SK hynix per Q3 2026 unter 10 Tagen lagen.",
+    "tail_analysis": "Aggressive AI‑Server‑Investitionen erhöhen Nachfrage nach HBM/Server‑DDR5 und eSSD; zugleich bindet die HBM4‑Ramp Wafer‑Kapazität (KB: HBM4 ≈ 3× Waferbedarf), wodurch verfügbare fertigware Verkaufsvolumina für Standard‑DRAM/NAND schrumpfen.",
+    "source": "Seoul Economic Daily (Bericht, zitiert KB Securities, 2026-09-07)",
+    "url": "https://dcb0ucee30q2g.cloudfront.net/finance/2026/09/07/samsung-sk-hynix-memory-stockpiles-fall-below-10-days",
+    "content_hash": "9adf441d6d2a2712cd57",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T19:29:39.554Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "590e3b6e0abcd5843f2d11c7",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Stützt P-2026-07-11-01 (HBM und Server‑DRAM bleiben strukturell knapp bis mindestens Ende 2028). Die sub‑10‑Tage‑Schätzung erhöht die Plausibilität eines strukturellen Angebotsengpasses 2026–2027 und erhöht kurzfristiges Allokations‑/Preisrisiko.",
+    "falsifier": "Bis 2026-12-31 veröffentlichen Samsung oder SK hynix (Quartalsbericht/IR‑Disclosure) oder KB Securities ein Update, das für das Q3/Q4‑Reporting fertige Memory‑Inventarstufen ≥ 10 Tage ausweist (d.h. Unternehmenangabe oder KB‑Korrektur), wodurch die ursprüngliche Sub‑10‑Tage‑Behauptung nicht haltbar ist. Als Impact‑Falsifier für die mit P-2026-07-11-01 verknüpften Marktfolgen: falls Server‑DRAM‑Kontraktpreise zwei zusammenhängende Quartale fallen oder bestätigte Lead Times vor 2027‑06‑30 auf normale Werte zurückkehren, reduziert das die Signalwirkung.",
+    "nextReview": "2026-10-15",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Stützt P-2026-07-11-01 (HBM und Server‑DRAM bleiben strukturell knapp bis mindestens Ende 2028). Die sub‑10‑Tage‑Schätzung erhöht die Plausibilität eines strukturellen Angebotsengpasses 2026–2027 und erhöht kurzfristiges Allokations‑/Preisrisiko."
+    },
+    "sources": [
+      {
+        "label": "Seoul Economic Daily (Bericht, zitiert KB Securities, 2026-09-07)",
+        "url": "https://dcb0ucee30q2g.cloudfront.net/finance/2026/09/07/samsung-sk-hynix-memory-stockpiles-fall-below-10-days"
+      },
+      {
+        "label": "TechTimes (Sekundär‑Bericht zur KB/Seoul Economic Meldung)",
+        "url": "https://www.techtimes.com/articles/326837/20260907/memory-runs-dry-samsung-sk-hynix-drop-below-10-day-supply-hbm4-devours-capacity.htm"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-28b329255578ff6a8943398e",
     "date": "2026-09-08",
     "title": "ASML / Intel / TSMC / Samsung: High‑NA EUV Fortschritt und Industrieinitiativen",
@@ -6664,6 +6789,60 @@
       {
         "label": "ASML / TSMC – Initiative zum Übergang auf 12‑inch Photomasks (2026‑09‑08)",
         "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-86f57c9ce4968b9706cd3a6f",
+    "date": "2026-09-08",
+    "title": "ASML & Samsung: High‑NA EUV soll erstmals in DRAM‑HVM eingesetzt werden (ASML‑Pressemitteilung)",
+    "category": "memory",
+    "markets": [
+      "dram",
+      "hbm",
+      "semiconductors"
+    ],
+    "companies": [
+      "Samsung"
+    ],
+    "severity": 30,
+    "confidence": 80,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability"
+    ],
+    "summary": "ASML und Samsung bestätigten in einer gemeinsamen Pressemitteilung (ASML) die Absicht, High‑NA EUV in zukünftigen DRAM‑High‑Volume‑Manufacturing‑Prozessen einzusetzen; ASML nennt 2028 als Zieljahr für Branchen‑erste Einführung in DRAM‑HVM.",
+    "tail_analysis": "High‑NA EUV erhöht mögliche Masken‑/Layer‑Komplexität und ermöglicht dichteres Lithographie‑Patterning; technische Einführung kann langfristig die effektive Bits/wafer erhöhen und damit die mittelfristige Kapazitätserweiterung pro Fab verändern (aber keine sofortige Verbraucherbzw. Shipments‑Auswirkung).",
+    "source": "ASML Pressemitteilung (2026-09-08)",
+    "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
+    "content_hash": "607dc62638a06b9184e0",
+    "origin": "reviewed-inbox",
+    "classification": "Architecture Update",
+    "admittedAt": "2026-09-13T19:29:39.561Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "86f57c9ce4968b9706cd3a6f",
+    "predictionId": "OUTLOOK-server_dram",
+    "predictionImpact": "Langfristige Implikation für Angebotserweiterung und Node‑Effizienz: die ASML/Samsung‑Roadmap reduziert mittelfristig den Angebotsdruck, verschiebt aber die Zeitachse der spürbaren Kapazitätserweiterung (Matching/Entsprechung mit OUTLOOK‑server_dram angenommen jenseits 2027).",
+    "falsifier": "Wenn bis 2028-12-31 Samsung oder ASML keine Qualifikations‑/HVM‑Nachricht (Tape‑in/HVM‑Qualification/Production‑Start‑Ankündigung) für High‑NA EUV in DRAM veröffentlicht oder ASML kommuniziert, dass DRAM‑HVM‑Einführung erst nach 2028 erfolgen wird, dann wäre die in der Pressemitteilung genannte Einführungstimeline unmittelbar falsifiziert.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Langfristige Implikation für Angebotserweiterung und Node‑Effizienz: die ASML/Samsung‑Roadmap reduziert mittelfristig den Angebotsdruck, verschiebt aber die Zeitachse der spürbaren Kapazitätserweiterung (Matching/Entsprechung mit OUTLOOK‑server_dram angenommen jenseits 2027)."
+    },
+    "sources": [
+      {
+        "label": "ASML Pressemitteilung (2026-09-08)",
+        "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing"
       }
     ]
   },
