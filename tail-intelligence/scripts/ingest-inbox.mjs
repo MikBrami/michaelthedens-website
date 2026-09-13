@@ -252,7 +252,12 @@ async function main() {
   const merged = [...fresh, ...sanitizedExisting]
     .filter((item, index, arr) => arr.findIndex((candidate) => canonicalUrl(candidate.url) === canonicalUrl(item.url)) === index)
     .sort((a, b) => Number(b.relevance_score ?? 0) - Number(a.relevance_score ?? 0) || new Date(b.published_at) - new Date(a.published_at))
-    .slice(0, 1000);
+; // Keep admitted and pending evidence; never silently evict by score.
+
+  const historyUrl = new URL('data/ingestion-history.json', ROOT);
+  const ingestionHistory = await readJson(historyUrl, {schemaVersion:1,runs:[]});
+  ingestionHistory.runs.push({at:now,newItems:fresh.length,newRelevantItems:fresh.filter(i=>i.relevance_score>=65).length,collectedItems:collected.length,duplicateItems:duplicates.length});
+  await fs.writeFile(historyUrl,JSON.stringify(ingestionHistory,null,2)+'\n');
 
   const duplicateItems = [...duplicates, ...(currentInbox.duplicate_items || [])].slice(0, 300);
 

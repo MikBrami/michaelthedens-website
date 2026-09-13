@@ -16,6 +16,7 @@ on:
       - '.github/workflows/tail-dashboard.yml'
   schedule:
     - cron: '17 5,11,17,23 * * *'
+    - cron: '37 * * * *' # Catch-up only; preflight skips when <=48 pending.
   workflow_dispatch:
 
 permissions:
@@ -33,6 +34,9 @@ jobs:
       run:
         working-directory: tail-intelligence
     env:
+      TAIL_REVIEW_LIMIT: ${{ (github.event_name == 'push' || github.event.schedule == '37 * * * *') && '96' || '24' }}
+      TAIL_REVIEW_CONCURRENCY: '4'
+      TAIL_REVIEW_BUDGET_MS: '600000'
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       OPENAI_ANALYST_MODEL: ${{ vars.OPENAI_ANALYST_MODEL || 'gpt-5-mini' }}
       OPENAI_TRANSLATION_MODEL: ${{ vars.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini' }}
@@ -47,17 +51,27 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Decide whether catch-up is needed
+        id: catchup
+        env:
+          TAIL_IS_CATCHUP: ${{ github.event.schedule == '37 * * * *' }}
+        run: node scripts/catchup-gate.mjs >> "$GITHUB_OUTPUT"
+
       - name: Install
+        if: steps.catchup.outputs.run == 'true'
         run: npm install --ignore-scripts
 
       - name: Update, build and validate TAIL
+        if: steps.catchup.outputs.run == 'true'
         run: npm run ci
 
       - name: Validate public/private boundary
+        if: steps.catchup.outputs.run == 'true'
         working-directory: .
         run: npm test
 
       - name: Persist generated intelligence state safely
+        if: steps.catchup.outputs.run == 'true'
         working-directory: .
         run: |
           git config user.name 'TAIL Intelligence Bot'

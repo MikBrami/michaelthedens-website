@@ -20,3 +20,42 @@ test("Fractional confidence and unmeasured index effects stay on watchlist",()=>
 test("Same source and event cannot be readmitted with opposite direction",()=>{assert.equal(validateReview({...proposal,signal:"negative_supply"},{...context,knownArticles:[{url:proposal.sources[0].url,date:proposal.eventDate,signal:"verified_supply_relief"}]}).decision,"watchlist");});
 
 test("Aggregate market share may inform outlook but cannot move the index",()=>{const r=validateReview({...proposal,indexEvidence:{metricType:"qualified_shipments",marketId:"enterprise_ssd",observation:"Global NAND Bit-Anteil 14 Prozent in Q2 2026."}},context);assert.equal(r.decision,"accepted");assert.equal(r.acceptedSignal.indexImpact,false);});
+
+import {triageCandidates,selectForReview} from './triage-inbox.mjs';
+test('Triage archives explicit investment opinion but preserves operating news',()=>{
+ const items=[{...item,id:'a',title:'Is Micron stock the next Nvidia? Buy now'},{...item,id:'b',title:'Micron stock rises after earnings report details capacity expansion'}];
+ const t=triageCandidates(items);assert.equal(t.archivedOpinions,1);assert.equal(t.representatives[0].id,'b');
+});
+test('Headline grouping preserves opposing direction and distinct quantities',()=>{
+ const base={...item,title:'Samsung increases qualified HBM shipments to Nvidia by 20 percent'};
+ const same={...base,id:'b',title:base.title+' — News'};
+ const opposite={...base,id:'c',title:base.title.replace('increases','cuts')};
+ const quantity={...base,id:'d',title:base.title.replace('20','30')};
+ const t=triageCandidates([base,same,opposite,quantity]);assert.equal(t.groupedDuplicates,1);assert.equal(t.representatives.length,3);
+ const again=triageCandidates([base,same],[{candidateKey:reviewKey(base),decision:'accepted'}]);assert.equal(again.groupedDuplicates,1);
+});
+test('Catch-up selection reserves room for both oldest and newest evidence',()=>{
+ const p=Array.from({length:10},(_,i)=>({...item,id:String(i),published_at:`2026-09-${String(i+1).padStart(2,'0')}T00:00:00Z`}));
+ const selected=selectForReview(p,4);assert.deepEqual(new Set(selected.map(c=>c.id)),new Set(['9','8','0','1']));
+});
+
+import os from 'node:os';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+test('Parallel retrieval still admits a shared observation only once and persists all decisions',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'mtai-admission-'));
+ try {
+  for(const folder of ['scripts','data','config'])fs.mkdirSync(path.join(root,folder));
+  for(const file of ['review-inbox.mjs','admission-review.mjs','triage-inbox.mjs'])fs.copyFileSync('scripts/'+file,path.join(root,'scripts',file));
+  const put=(file,data)=>fs.writeFileSync(path.join(root,file),JSON.stringify(data));
+  put('data/inbox.json',{updated_at:new Date().toISOString(),items:Array.from({length:8},(_,i)=>({...item,id:'candidate'+i,title:'Qualified shipments batch '+i,published_at:new Date().toISOString()}))});
+  put('config/methodology.json',methodology);put('data/articles.json',[]);put('config/market-outlook.json',{outlooks:[{marketId:'enterprise_ssd',view:'Supply remains tight',changeRules:'Qualified supply improves'}]});
+  const day=new Date().toISOString().slice(0,10),future=new Date(Date.now()+86400000*7).toISOString().slice(0,10);
+  const fixture={...proposal,eventDate:day,nextReview:future};
+  fs.writeFileSync(path.join(root,'mock.mjs'),`const fixture=${JSON.stringify(fixture)}; globalThis.fetch=async (_url,options)=>{const request=JSON.parse(options.body), input=JSON.parse(request.input);await new Promise(r=>setTimeout(r,20));return {ok:true,json:async()=>({id:'mock',status:'completed',output:[{type:'web_search_call',action:{sources:[{url:fixture.sources[0].url}]}},{content:[{type:'output_text',text:JSON.stringify({reviews:input.candidates.map(c=>({...fixture,candidateId:c.id}))})}]}]})};};`);
+  execFileSync(process.execPath,['--import',path.join(root,'mock.mjs'),path.join(root,'scripts/review-inbox.mjs')],{env:{...process.env,OPENAI_API_KEY:'mock-only',TAIL_REVIEW_LIMIT:'8',TAIL_REVIEW_CONCURRENCY:'2'},stdio:'pipe'});
+  const read=file=>JSON.parse(fs.readFileSync(path.join(root,'data',file)));
+  assert.equal(read('admission-status.json').reviewed,8);assert.equal(read('admission-status.json').accepted,1);assert.equal(read('admission-status.json').lastRun.concurrency,2);
+  assert.equal(read('admission-backlog.json').items.length,8);assert.equal(read('admission-reviews.json').reviews.length,8);
+ } finally {fs.rmSync(root,{recursive:true,force:true});}
+});

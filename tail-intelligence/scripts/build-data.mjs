@@ -389,7 +389,7 @@ const publicSnapshot = {
     analysisAsOf: dashboard.analysisAsOf,
     sourceDataAsOf: dashboard.sourceDataAsOf,
     indexEvidenceAsOf: dashboard.indexEvidenceAsOf,
-    admissionReview: {status:admissionReview.status, checkedAt:admissionReview.checkedAt || null, pending:admissionReview.pending, reviewed:admissionReview.reviewed, accepted:admissionReview.accepted || 0},
+    admissionReview: {status:admissionReview.status, checkedAt:admissionReview.checkedAt || null, pending:admissionReview.pending, reviewed:admissionReview.reviewed, accepted:admissionReview.accepted || 0, rawCandidates:admissionReview.rawCandidates ?? null, triage:admissionReview.triage || null, lastRun:admissionReview.lastRun || null},
     overdueOperationalReviewCount: overdueIndicators.length,
     dataFreshness: dashboard.dataFreshness,
     processStatus: dashboard.processStatus,
