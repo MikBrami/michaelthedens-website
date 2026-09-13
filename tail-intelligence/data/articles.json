@@ -6236,6 +6236,67 @@
     ]
   },
   {
+    "id": "S-AUTO-4680a5772176dd47a7baf925",
+    "date": "2026-08-27",
+    "title": "NVIDIA sichert bis zu US$105 Mrd. Garantien für OpenAI‑Leases (PORTS‑Pike); Umfang: ~4.25 GW IT‑Load",
+    "category": "geopolitics",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "dram",
+      "hbm"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "severity": 70,
+    "confidence": 80,
+    "signal": "capacity_lock",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "NVIDIA hat in einer Form 10‑Q‑Offenlegung Garantien mit SB Energy zur Kreditabsicherung von Pacht-/Lease‑Verpflichtungen für das PORTS‑Pike Technology Campus (Pike County, Ohio) angegeben, die Leases für rund 4,25 GW IT‑Last abdecken; die aggregierte Verpflichtung wurde in der Einreichung mit einem Deckel von US$105.0 Milliarden angegeben. (NVIDIA 10‑Q filed 2026‑08‑27).",
+    "tail_analysis": "Residual‑value/credit support (Garantie) gegenüber dem Entwickler/Lessor (SB Energy) für Land, Stromanschlüsse und Gebäude (Land/Power/Shell). Garantien werden gemäß 10‑Q mit Inbetriebnahme einzelner Datenhallen wirksam und steigen phasenweise an, während bis zu neun Rechenzentren in Service gehen (erwarteter Beginn der Platzierung in Service ab FY2029). Dadurch reduziert NVIDIA/Backstoper‑Risiko für Projektfinanzierer, erhöht Finanzierbarkeit und kann beschleunigte Inbetriebnahme bzw. feste Allokation von Compute‑Mietern ermöglichen.",
+    "source": "NVIDIA Form 10‑Q (Q2 FY27) — 'guarantees with SB Energy' disclosure",
+    "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+    "content_hash": "19c97ea95ef0eb9de1c0",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T15:01:21.187Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "4680a5772176dd47a7baf925",
+    "predictionId": "OUTLOOK-server_dram",
+    "predictionImpact": "Stärkt das 'capacity_lock'‑Signal für große Hyperscale/Neocloud‑Mieter: ein vertraglich abgesichertes 4.25 GW‑Leasing‑Block mit einer Industriegarantie erhöht die Wahrscheinlichkeit, dass erhebliche Server‑DRAM‑Nachfrage langfristig gebunden bleibt und damit kurzfristige Beschaffungs‑/Allokationsrisiken für andere Käufer erhöht. Die unmittelbare Geldbindungs‑/Finanzierungswirkung kann Deployments 2028–2030 beschleunigen, was die Basiserwartung für Server‑DRAM‑Verfügbarkeit und Preisdynamik stützt (keine neue Preisprognose, nur Einordnung).",
+    "falsifier": "Bis zum 2029-12-31 liegen keine belastbaren Nachweise vor, dass mindestens 2.0 GW qualifizierter IT‑Kapazität am PORTS‑Pike in Service genommen wurden (keine abgeschlossenen, wirksamen 20‑Jahres‑Leases oder öffentlich bestätigte In‑Service‑Zertifikate für ≥2.0 GW) ODER NVIDIA entfernt in offiziellen Einreichungen/Kommunikationen den US$105bn‑Deckel bzw. die Garantien werden offenbar nie wirksam — dann ist der behauptete materialisierte 'capacity_lock'‑Impact falsifiziert.",
+    "nextReview": "2029-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Stärkt das 'capacity_lock'‑Signal für große Hyperscale/Neocloud‑Mieter: ein vertraglich abgesichertes 4.25 GW‑Leasing‑Block mit einer Industriegarantie erhöht die Wahrscheinlichkeit, dass erhebliche Server‑DRAM‑Nachfrage langfristig gebunden bleibt und damit kurzfristige Beschaffungs‑/Allokationsrisiken für andere Käufer erhöht. Die unmittelbare Geldbindungs‑/Finanzierungswirkung kann Deployments 2028–2030 beschleunigen, was die Basiserwartung für Server‑DRAM‑Verfügbarkeit und Preisdynamik stützt (keine neue Preisprognose, nur Einordnung)."
+    },
+    "sources": [
+      {
+        "label": "NVIDIA Form 10‑Q (Q2 FY27) — 'guarantees with SB Energy' disclosure",
+        "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf"
+      },
+      {
+        "label": "Berichterstattung (Sekundärquelle) zu NVIDIA/OpenAI/SB Energy Guarantee",
+        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backs-openai-ohio-ai-094906882.html"
+      }
+    ]
+  },
+  {
     "id": "S-2026-08-28-MICRON-ESSD-PRICE",
     "date": "2026-08-28",
     "title": "Micron erhöht Enterprise-SSD-Preise – TLC stärker als QLC, 60 TB unverändert",
@@ -6347,6 +6408,73 @@
     "sources": [
       {
         "label": "Aktuelle Micron-Preisliste / direkte Vertriebskanal-Evidenz"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-9c196e2fe4ccfb0fda7216e6",
+    "date": "2026-08-28",
+    "title": "CXMT meldet sehr hohe Q2‑2026-EBIT‑Marge (82%) – höhere DDR5‑Preise treiben Margen",
+    "category": "memory",
+    "markets": [
+      "dram",
+      "server_dram",
+      "semiconductors"
+    ],
+    "companies": [
+      "Micron",
+      "Samsung",
+      "SK hynix",
+      "CXMT"
+    ],
+    "severity": 60,
+    "confidence": 75,
+    "signal": "price_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "pricing",
+      "availability",
+      "demand"
+    ],
+    "summary": "ChangXin Memory Technologies (CXMT) meldete in seinem veröffentlichten Halbjahres-/Quartalsbericht (H1/2026) für das Q2‑2026‑Segment eine sehr hohe operative Rentabilität; externe Datenaufbereitungen (QUICK/FactSet, berichtet durch Nikkei/Regionen‑Presse) weisen für Q2 2026 eine EBIT-Marge von ~82% für CXMT aus, über SK hynix (ca. 76%) und Samsung Semiconductor (ca. 70%).",
+    "tail_analysis": "Verschiebung großer Player (Samsung, SK hynix, Micron) in Priorisierung von HBM/High‑value‑Memory reduzierte das verfügbare Angebot an commodity DDR5; zugleich stiegen DDR5‑Kontraktpreise – dadurch erhöhte sich die Verkaufs‑Marge für Anbieter mit Fokus auf commodity DDR5 (CXMT).",
+    "source": "CXMT (长鑫科技) — Unternehmens‑Dokument (SSE disclosure / IPO‑/Listing‑Dokumentation; enthält frühere Finanz‑Angaben und Verweise)",
+    "url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202512/002170_20251230_H2T8.pdf",
+    "content_hash": "2ce8b23e060855173148",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T14:57:51.291Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "9c196e2fe4ccfb0fda7216e6",
+    "predictionId": "P-2026-07-20-04",
+    "predictionImpact": "Bestätigt kurzfristige upside‑Risiken für DRAM‑/DDR5‑Preise und Margen, was die Basissicht stützt, dass Memory‑Pricing/Returns ihren Peak vor einer materiellen Kapazitätswelle erreichen (verstärktes Preis‑/Rendite‑Upside in H2 2026 und 2027).",
+    "falsifier": "Bis 2027-03-31: Wenn (a) globale DRAM‑Kontraktpreise zwei Quartale hintereinander jeweils ≥10% QoQ rückläufig sind (Contract basket), und (b) CXMTs ausgewiesene operative Marge in seinem Q4‑2026‑Quartalsbericht (für Zeitraum 2026‑10‑01 bis 2026‑12‑31) fällt unter die Peer‑Medianmarge (SK hynix/Samsung), dann ist der implizite Preis‑/Margen‑Beitrag von CXMT zur Stützung von P-2026-07-20-04 falsifiziert.",
+    "nextReview": "2026-12-01",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Bestätigt kurzfristige upside‑Risiken für DRAM‑/DDR5‑Preise und Margen, was die Basissicht stützt, dass Memory‑Pricing/Returns ihren Peak vor einer materiellen Kapazitätswelle erreichen (verstärktes Preis‑/Rendite‑Upside in H2 2026 und 2027)."
+    },
+    "sources": [
+      {
+        "label": "CXMT (长鑫科技) — Unternehmens‑Dokument (SSE disclosure / IPO‑/Listing‑Dokumentation; enthält frühere Finanz‑Angaben und Verweise)",
+        "url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202512/002170_20251230_H2T8.pdf"
+      },
+      {
+        "label": "ChosunBiz (englisch) — Bericht vom 2026-09-11 zitiert Nikkei/QUICK‑FactSet zum 82% EBIT‑Wert",
+        "url": "https://biz.chosun.com/en/en-it/2026/09/11/KMSOUTO6SNEPFO76V2HJJ45B34/?outputType=amp"
+      },
+      {
+        "label": "36Kr (Nachrichtensynthese, 2026-09-11) — berichtete auf Basis von QUICK/FactSet‑Daten",
+        "url": "https://eu.36kr.com/de/p/3978656089979652"
       }
     ]
   },
@@ -6527,6 +6655,66 @@
       {
         "label": "Yahoo/Insider‑Monkey / Barron’s‑Synthetisierung (sekundäre Berichterstattung)",
         "url": "https://ca.finance.yahoo.com/news/intel-backed-startup-says-beat-232338040.html"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-aff7ba84b671d4a85fa578c9",
+    "date": "2026-09-10",
+    "title": "Bloomberg: Microsoft plant Ausbau auf >38 GW Data‑Center‑Kapazität bis 2032 (eclipse NY Peak Demand)",
+    "category": "geopolitics",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "dram"
+    ],
+    "companies": [
+      "Microsoft"
+    ],
+    "severity": 70,
+    "confidence": 85,
+    "signal": "demand_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "availability",
+      "aiDemand"
+    ],
+    "summary": "Bloomberg berichtet, Microsoft plant, die weltweite Data‑Center‑Kapazität bis 2032 von ~12 GW auf mehr als 38 GW zu erhöhen; Bloomberg führt aus, dies würde den Spitzenstromverbrauch des US‑Bundesstaats New York übertreffen (Peak‑Vergleich).",
+    "tail_analysis": "Massiver Ausbau firmeneigener und angemieteter Data‑Center (Netto +≈26 GW IT‑Last) erhöht die direkte Nachfrage nach Server‑DRAM/HBM, Stromanschlüssen, Transformator‑Kapazität und spezieller Advanced‑Packaging/Server‑Hardware; dies vergrößert strukturelle Nachfrage nach Memory‑Bit‑Supply und lokalen Netzressourcen, was Preis‑/Auslastungs‑Druck erzeugen kann.",
+    "source": "Bloomberg (Bericht, 2026‑09‑10)",
+    "url": "https://news.bloomberglaw.com/business-and-practice/microsoft-plans-data-center-push-to-triple-its-computing-power",
+    "content_hash": "81081ee2ea94a8dc3e92",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T14:59:25.482Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "aff7ba84b671d4a85fa578c9",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis mindestens Ende 2028 (verstärkt 'negative_supply' / 'demand_up' Treiber für Server‑DRAM/HBM‑Knappheit).",
+    "falsifier": "Wenn Microsoft bis 2028‑12-31 öffentlich und rechtsverbindlich erklärt, dass die geplante 2032‑Kapazität ≤20 GW sein wird oder die Expansionspläne formell zurücknimmt, dann ist die angenommene zusätzliche Nachfragewirkung hinfällig.",
+    "nextReview": "2026-10-11",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis mindestens Ende 2028 (verstärkt 'negative_supply' / 'demand_up' Treiber für Server‑DRAM/HBM‑Knappheit)."
+    },
+    "sources": [
+      {
+        "label": "Bloomberg (Bericht, 2026‑09‑10)",
+        "url": "https://news.bloomberglaw.com/business-and-practice/microsoft-plans-data-center-push-to-triple-its-computing-power"
+      },
+      {
+        "label": "Bloomberg‑Syndication / Video‑Kurzfassung",
+        "url": "https://finance.yahoo.com/video/microsoft-plans-data-center-push-164902530.html"
       }
     ]
   },

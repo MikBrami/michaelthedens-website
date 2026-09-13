@@ -7,34 +7,34 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-13T13:25:15.044Z",
-    "inboxUpdatedAt": "2026-09-13T13:15:04.822Z",
+    "checkedAt": "2026-09-13T15:01:21.200Z",
+    "inboxUpdatedAt": "2026-09-13T14:54:52.516Z",
     "status": "pending",
-    "candidates": 868,
-    "reviewed": 68,
-    "accepted": 9,
-    "watchlist": 23,
-    "rejected": 36,
-    "pending": 800,
-    "oldestPendingAt": "2026-08-14T12:59:49.000Z",
-    "lastCompletedReviewAt": "2026-09-13T13:25:15.040Z",
+    "candidates": 870,
+    "reviewed": 92,
+    "accepted": 12,
+    "watchlist": 26,
+    "rejected": 54,
+    "pending": 778,
+    "oldestPendingAt": "2026-08-15T08:23:32.000Z",
+    "lastCompletedReviewAt": "2026-09-13T15:01:21.196Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 899,
+    "rawCandidates": 901,
     "triage": {
       "archivedOpinions": 19,
       "groupedDuplicates": 12
     },
     "lastRun": {
-      "startedAt": "2026-09-13T13:15:14.580Z",
-      "completedAt": "2026-09-13T13:25:15.049Z",
-      "selected": 96,
-      "reviewed": 28,
+      "startedAt": "2026-09-13T14:55:01.771Z",
+      "completedAt": "2026-09-13T15:01:21.204Z",
+      "selected": 24,
+      "reviewed": 24,
       "concurrency": 2,
-      "limit": 96,
-      "rateLimitRetries": 1,
-      "durationSeconds": 600,
-      "budgetExhausted": true
+      "limit": 24,
+      "rateLimitRetries": 0,
+      "durationSeconds": 379,
+      "budgetExhausted": false
     }
   },
   "overdueOperationalReviews": [
@@ -56,15 +56,15 @@
     }
   ],
   "sourceDataAsOf": "2026-09-12",
-  "knowledgeBaseSyncedAt": "2026-09-13T13:25:15.201Z",
+  "knowledgeBaseSyncedAt": "2026-09-13T15:01:21.339Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-09-13T13:25:16.355Z",
-  "lastForecastRun": "2026-09-13T13:25:16.355Z",
-  "newlyProcessedArticles": 14,
-  "totalArticles": 135,
-  "articleCount": 135,
+  "lastSuccessfulUpdate": "2026-09-13T15:01:22.743Z",
+  "lastForecastRun": "2026-09-13T15:01:22.743Z",
+  "newlyProcessedArticles": 42,
+  "totalArticles": 138,
+  "articleCount": 138,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -118,16 +118,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 800 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 778 Kandidaten ausstehend.",
     "4 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-13T13:15:04.822Z",
-    "newItems": 14,
-    "totalItems": 1432,
+    "updatedAt": "2026-09-13T14:54:52.516Z",
+    "newItems": 42,
+    "totalItems": 1474,
     "duplicateItems": 300,
-    "relevantItems": 1098,
+    "relevantItems": 1104,
     "sourceErrors": []
   },
   "pipeline": {
@@ -137,19 +137,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "68 geprüft · 800 offen · 9 aufgenommen"
+        "detail": "92 geprüft · 778 offen · 12 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "135 Artikel · Sync 2026-09-13 · jüngstes bestätigtes Signal 2026-09-12"
+        "detail": "138 Artikel · Sync 2026-09-13 · jüngstes bestätigtes Signal 2026-09-12"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "1432 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "1474 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -727,17 +727,17 @@
     {
       "name": "SK hynix",
       "score": 81,
-      "mentions": 18
+      "mentions": 19
     },
     {
       "name": "Samsung",
       "score": 79,
-      "mentions": 16
+      "mentions": 17
     },
     {
       "name": "Micron",
-      "score": 79,
-      "mentions": 9
+      "score": 78,
+      "mentions": 10
     },
     {
       "name": "NVIDIA",
@@ -755,14 +755,14 @@
       "mentions": 5
     },
     {
-      "name": "Nvidia",
-      "score": 73,
-      "mentions": 13
-    },
-    {
       "name": "TSMC",
       "score": 72,
       "mentions": 4
+    },
+    {
+      "name": "Nvidia",
+      "score": 72,
+      "mentions": 14
     },
     {
       "name": "Oracle",
@@ -776,7 +776,7 @@
       "market": "DRAM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 79,
+      "relevanceScore": 78,
       "confidenceScore": 85,
       "horizon": "2026–2027",
       "direction": "up",
@@ -863,16 +863,19 @@
         "S-2026-07-20-03",
         "S-2026-07-29-05",
         "S-2026-08-01-02",
+        "S-AUTO-4680a5772176dd47a7baf925",
         "S-2026-08-01-05",
         "S-2026-07-21-04",
+        "S-AUTO-aff7ba84b671d4a85fa578c9",
         "S-AUTO-2689c1742383e01df9ec2135",
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17",
+        "S-AUTO-9c196e2fe4ccfb0fda7216e6",
         "S-AUTO-7e924042f548f055676f8769",
         "S-AUTO-d25873b789efc5ec1a7f41d3",
         "S-AUTO-48cff5e2e35bb6e9f2a7416e"
       ],
-      "lastUpdated": "2026-09-13T13:25:16.351Z"
+      "lastUpdated": "2026-09-13T15:01:22.739Z"
     },
     {
       "id": "hbm",
@@ -968,12 +971,13 @@
         "S-2026-08-27-NVIDIA-HUGGINGFACE",
         "S-2026-08-27-SAMSUNG-LPDDR5X-PIM",
         "S-2026-07-29-05",
+        "S-AUTO-4680a5772176dd47a7baf925",
         "S-AUTO-2689c1742383e01df9ec2135",
         "S-2026-08-07-SKHYNIX-Y2-M17",
         "S-AUTO-4026d51f6952ba6f76e4f0eb",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-13T13:25:16.351Z"
+      "lastUpdated": "2026-09-13T15:01:22.739Z"
     },
     {
       "id": "nand",
@@ -1043,7 +1047,7 @@
         "S-AUTO-945fc239013e27b447817700",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T13:25:16.351Z"
+      "lastUpdated": "2026-09-13T15:01:22.739Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1116,7 +1120,7 @@
         "S-AUTO-945fc239013e27b447817700",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T13:25:16.351Z"
+      "lastUpdated": "2026-09-13T15:01:22.740Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1296,10 +1300,12 @@
         "S-2026-08-01-02",
         "S-2026-07-26-05",
         "S-2026-08-03-05",
+        "S-AUTO-4680a5772176dd47a7baf925",
         "S-2026-07-26-03",
         "S-2026-07-20-05",
         "S-2026-07-21-04",
         "tail-2026-07-14-huawei-swaysure",
+        "S-AUTO-aff7ba84b671d4a85fa578c9",
         "S-2026-08-07-01",
         "S-2026-07-21-02",
         "S-2026-07-28-03",
@@ -1315,7 +1321,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T13:25:16.351Z"
+      "lastUpdated": "2026-09-13T15:01:22.740Z"
     }
   ],
   "indexCalculation": {
@@ -1324,7 +1330,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-13"
   },
-  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 135 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 138 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
