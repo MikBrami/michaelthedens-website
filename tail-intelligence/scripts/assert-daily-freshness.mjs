@@ -20,6 +20,18 @@ async function main() {
   let fileExists = true;
   try { await fs.access(new URL(expected, DATA)); } catch { fileExists = false; }
 
+  const dashboard = await readJson(new URL('data/dashboard.json',ROOT),{});
+  const daily = await readJson(new URL('data/daily-intelligence-latest.json',ROOT),{});
+  const publicData = await readJson(new URL('../public-tail/data.json',ROOT),{});
+  const english = await readJson(new URL('../public-tail/data-en.json',ROOT),{});
+  for (const [name,snapshot] of [['DE',publicData],['EN',english]]) {
+    if (snapshot.executivePulse?.current !== dashboard.executivePulse?.current || snapshot.platform?.analysisAsOf !== dashboard.analysisAsOf) throw new Error(`${name}: index/analysis mismatch`);
+    for (const m of snapshot.platform?.markets || []) if (dashboard.markets.find(x=>x.id===m.id)?.score !== m.score) throw new Error(`${name}: segment mismatch ${m.id}`);
+    if (snapshot.platform?.sourceDataAsOf !== dashboard.sourceDataAsOf) throw new Error(`${name}: source timestamp mismatch`);
+  }
+  if (daily.automatedDaily && daily.executivePulse?.current !== dashboard.executivePulse?.current) throw new Error('Daily metrics lag canonical calculation');
+  if (publicData.platform?.admissionReview?.status !== 'complete' && publicData.dailyStatus?.type === 'no-material-change') throw new Error('Incomplete admission review cannot claim no material change');
+
   const latest = index?.latest || null;
   const ok = fileExists && latest === expected;
 

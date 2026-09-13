@@ -44,6 +44,10 @@ async function main() {
 
   const inbox = await readJson(INBOX, { updated_at: null, new_items: 0, items: [] });
   const dashboard = await readJson(DASHBOARD, {});
+  const admission = await readJson(new URL('data/admission-status.json',ROOT), { status: 'pending', pending: null });
+  const journal = await readJson(new URL('data/admission-reviews.json',ROOT), { reviews: [] });
+  const acceptedSignals = journal.reviews.filter(r => r.decision === 'accepted' && String(r.reviewedAt).slice(0,10) === nowIso.slice(0,10)).map(r => r.acceptedSignal).filter(Boolean);
+  const reviewPending = admission.status !== 'complete';
   const recentCutoff = Date.now() - 48 * 60 * 60 * 1000;
   const candidates = (inbox.items || [])
     .filter((item) => Number(item.relevance_score || 0) >= 65)
@@ -69,9 +73,11 @@ async function main() {
   const currentPulse = Number.isFinite(dashboardPulse) ? dashboardPulse : previousPulse;
   const currentConfidence = Number.isFinite(dashboardConfidence) ? dashboardConfidence : previousConfidence;
   const currentRisk = Number.isFinite(dashboardRisk) ? dashboardRisk : previousRisk;
-  const candidateText = candidates.length
-    ? `${candidates.length} aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft.`
-    : 'Seit dem vorherigen Daily Snapshot wurde kein neues Signal gefunden, das die TAIL-Aufnahmeschwelle bereits belastbar überschreitet.';
+  const candidateText = reviewPending
+    ? `Evidenzprüfung offen: ${admission.pending ?? 'unbekannt'} Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.`
+    : acceptedSignals.length ? `${acceptedSignals.length} neue Signale nach dokumentierter Evidenzprüfung aufgenommen.`
+    : 'Die relevanten Kandidaten wurden geprüft; daraus wurde kein neues materielles Signal aufgenommen.';
+
 
   const daily = {
     ...previous,
@@ -87,27 +93,26 @@ async function main() {
       ...(previous.confidence || {}),
       current: currentConfidence,
       previous: currentConfidence,
-      interpretation: `Datenvertrauen ${currentConfidence}/100 aus dem produktiven MT·AI-Index; Freshness ist bestätigt. ${candidateText}`
+      interpretation: `Datenvertrauen ${currentConfidence}/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. ${candidateText}`
     },
     riskPressure: {
       ...(previous.riskPressure || {}),
       current: currentRisk,
       previous: currentRisk
     },
-    momentum: candidates.length
-      ? `Keine bestätigte Richtungsänderung · ${candidates.length} aktuelle Meldungen im News-Layer`
-      : 'Keine bestätigte Richtungsänderung seit dem vorherigen Lauf',
-    acceptedSignals: [],
+    momentum: candidateText,
+    acceptedSignals,
+    admissionReview: admission,
     dailyStatus: {
       date: berlinDate,
-      type: 'no-material-change',
-      title: 'Keine bestätigte materielle Richtungsänderung',
-      impactScore: 0,
+      type: reviewPending ? 'review-pending' : acceptedSignals.length ? 'material-market-update' : 'no-material-change',
+      title: reviewPending ? 'Evidenzprüfung noch offen' : acceptedSignals.length ? 'Neue geprüfte Signale aufgenommen' : 'Keine neue materielle Evidenz nach Prüfung',
+      impactScore: acceptedSignals.length ? Math.max(...acceptedSignals.map(s => s.priorityScore)) : 0,
       note: candidateText
     },
     automatedDaily: {
       generatedAt: nowIso,
-      mode: 'freshness-safe-conservative',
+      mode: 'evidence-reviewed',
       inboxUpdatedAt: inbox.updated_at || null,
       inboxNewItems: Number(inbox.new_items || 0),
       highRelevanceCandidates: candidates.map((item) => ({
@@ -125,6 +130,7 @@ async function main() {
   };
 
   await fs.writeFile(target, JSON.stringify(daily, null, 2) + '\n');
+  await fs.writeFile(new URL('data/daily-intelligence-latest.json',ROOT), JSON.stringify(daily,null,2) + '\n');
 
   const status = await readJson(STATUS, {});
   await fs.writeFile(STATUS, JSON.stringify({

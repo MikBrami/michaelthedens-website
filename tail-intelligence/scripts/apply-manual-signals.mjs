@@ -70,22 +70,13 @@ latest.dataHygiene = {
   manualOverlayAppliedAt: indexSignalConfig.updatedAt || config.updatedAt || new Date().toISOString(),
   manualOverlayPolicy: 'Public signals require evidence and admission-gate review. Approved manual index signals are written to the Knowledge Base and scored mechanically; private channel intelligence remains excluded until quantified.'
 };
-latest.dailyStatus = {
-  ...(latest.dailyStatus || {}),
-  public: indexSignals.length
-    ? indexSignalConfig.publicDailyStatus !== false
-    : (latest.dailyStatus?.public ?? true),
-  type: publicSignals.length ? 'material-market-update' : latest.dailyStatus?.type,
-  title: indexSignals.length
-    ? (indexSignalConfig.dailyStatusTitle || primaryIndexSignal?.title || latest.dailyStatus?.title)
-    : (publicSignals.length ? 'Neue bestätigte AI-Agenten- und Effizienzsignale' : latest.dailyStatus?.title),
-  impactScore: publicSignals.length ? Math.max(Number(latest.dailyStatus?.impactScore || 0), indexSignals.length ? 10 : 8) : latest.dailyStatus?.impactScore,
-  note: indexSignals.length
-    ? (indexSignalConfig.dailyStatusNote || `${primaryIndexSignal?.title || 'Das bestätigte Marktsignal'} ist aufgenommen und wirkt mechanisch auf den Index.`)
-    : (publicSignals.length
-      ? 'Astra sowie GLM-5.3-Flash/Qwen3.8-Flash-Next stärken die These skalierbarer digitaler Arbeit. Die Capability-Signale werden beobachtet, verändern den Stressindex aber nicht ohne separate Markt- und Preissignale.'
-      : latest.dailyStatus?.note)
-};
+// Historical overlays retain their original dates and do not assert today's change.
+const today = String(latest.dailyStatus?.date || latest.updatedAt).slice(0,10);
+const newlyAccepted = publicSignals.filter(s => String(s.admittedAt || s.date || '').slice(0,10) === today);
+if (newlyAccepted.length && latest.admissionReview?.status === 'complete') {
+  latest.dailyStatus = { ...latest.dailyStatus, type: 'material-market-update', title: 'Neue geprüfte Signale aufgenommen',
+    impactScore: Math.max(...newlyAccepted.map(s => Number(s.priorityScore || 0))) };
+}
 
 const date = String(latest.dailyStatus?.date || latest.updatedAt || new Date().toISOString()).slice(0, 10);
 const datedPath = path.join(root, 'data', `daily-intelligence-${date}.json`);

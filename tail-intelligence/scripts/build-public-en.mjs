@@ -8,7 +8,7 @@ const outputPath = path.resolve(root, '..', 'public-tail', 'data-en.json');
 const outlookConfigPath = path.join(root, 'config', 'market-outlook-en.json');
 const tempPath = `${outputPath}.tmp`;
 const model = process.env.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini';
-const EDITORIAL_VERSION = 5;
+const EDITORIAL_VERSION = 6;
 
 const readJson = (filePath, fallback = null) => {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch { return fallback; }
@@ -287,6 +287,23 @@ async function translateWithOpenAI(source) {
   }
 }
 
+function writeFallback(source) {
+  const previous = readJson(outputPath, {});
+  const originals = source.originalSignals || source.signals;
+  const editorial = {
+    executivePulse: {interpretation: `MT·AI Executive Pulse: ${source.executivePulse.current}/100. Calculated ${source.platform.dataAsOf}; evidence dated ${source.platform.indexEvidenceAsOf || source.platform.sourceDataAsOf || 'unknown'}. ${source.platform.admissionReview?.status === 'complete' ? 'Evidence review complete.' : 'Evidence review pending; an unchanged index does not establish an unchanged market.'}`},
+    signals: originals.map(s => {
+      const old = (previous.signals || []).find(o => o.url === s.url && o.date === s.date && o.title === s.title);
+      return {title:s.title,summary:s.summary,analysis:old?.analysis || 'News item; market impact requires evidence review.'};
+    }),
+    catalysts: source.catalysts.map(c => ({event:(previous.catalysts || []).find(o=>o.date === c.date && o.event === c.event)?.event || c.event}))
+  };
+  const result = buildSnapshot(source,editorial);
+  result.editorial.mode = 'translation_pending';
+  result.editorial.sourceHash = null; // Retry translation next run.
+  fs.writeFileSync(outputPath,JSON.stringify(result,null,2)+'\n');
+}
+
 async function main() {
   const source = readJson(sourcePath);
   if (!source?.platform || !Array.isArray(source.signals) || !Array.isArray(source.catalysts)) {
@@ -301,7 +318,8 @@ async function main() {
   }
 
   if (!process.env.OPENAI_API_KEY) {
-    console.warn('::warning::OPENAI_API_KEY is not configured. Keeping the last valid English public snapshot.');
+    console.warn('::warning::English translation unavailable; publishing current metrics with translation status.');
+    writeFallback(source);
     return;
   }
 
@@ -315,7 +333,8 @@ async function main() {
     console.log(`Built English public snapshot v${EDITORIAL_VERSION} from ${hash} with ${model}: ${translated.signals.length} signals, ${translated.catalysts.length} catalysts, ${translated.marketOutlook?.outlooks?.length || 0} outlooks.`);
   } catch (error) {
     try { if (fs.existsSync(tempPath)) fs.unlinkSync(tempPath); } catch {}
-    console.warn(`::warning::English editorial build failed; preserving last valid snapshot. ${error.message}`);
+    console.warn(`::warning::English editorial build failed; current metrics preserved. ${error.message}`);
+    writeFallback(source);
   }
 }
 

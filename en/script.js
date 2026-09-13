@@ -86,7 +86,7 @@ function renderMarketOutlook(outlookInput) {
             </div>
           </div>
           <div class="outlook-score ${status}" aria-label="Current segment index">
-            <strong>${Number.isFinite(Number(outlook.currentScore)) ? Number(outlook.currentScore) : "–"}</strong><span>today /100</span>
+            <strong>${outlook.currentScore !== null && Number.isFinite(Number(outlook.currentScore)) ? Number(outlook.currentScore) : "–"}</strong><span>today /100</span>
           </div>
         </div>
 
@@ -140,9 +140,11 @@ function renderDashboard(snapshot) {
   document.getElementById("index-summary").textContent = pulse.interpretation || "MT·AI is assessing current market conditions.";
 
   const isCurrent = platform.dataFreshness === "current" && platform.processStatus === "ok";
-  const dot = document.querySelector(".status-dot");
-  if (!isCurrent) dot.classList.add("stale");
-  document.getElementById("freshness-text").textContent = `${isCurrent ? "Current" : "Review in progress"} · Data as of ${formatDate(platform.dataAsOf)} · ${platform.articleCount ?? "–"} sources in the current view`;
+  document.querySelector(".status-dot").classList.toggle("stale", !isCurrent);
+  const review = platform.admissionReview || {};
+  document.getElementById("freshness-text").textContent = `Calculated ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Evidence ${formatDate(platform.indexEvidenceAsOf || platform.sourceDataAsOf)} · ${review.status === 'complete' ? 'Review complete' : 'Evidence review pending'}`;
+  indexLabel.textContent = review.status === 'complete' ? 'REVIEWED' : 'REVIEW PENDING';
+  document.getElementById("signal-freshness").textContent = `News published ${formatDate((snapshot.signals || []).map(s => s.date).sort().at(-1))} · ${platform.articleCount ?? '–'} records in the knowledge base`;
 
   const markets = Array.isArray(platform.markets) ? platform.markets.slice(0, 6) : [];
   const indexMarketIds = ["server_dram", "hbm", "enterprise_ssd"];

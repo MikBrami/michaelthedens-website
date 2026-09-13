@@ -27,7 +27,8 @@ const allowedTopLevelKeys = new Set([
   'dailyStatus',
   'news',
   'newsLayer',
-  'marketOutlook'
+  'marketOutlook',
+  'editorial'
 ]);
 
 for (const key of Object.keys(publicData)) {

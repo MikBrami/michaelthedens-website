@@ -18,13 +18,17 @@ const analysisDate = String(snapshot.platform.analysisAsOf || daily.updatedAt ||
 const currentAccepted = (daily.acceptedSignals || [])
   .filter((signal) => signal.public !== false)
   .filter((signal) => Number(signal.priorityScore || 0) > 0)
-  .filter((signal) => String(signal.date || '').slice(0, 10) === analysisDate)
+  .filter((signal) => String(signal.admittedAt || signal.date || '').slice(0, 10) === analysisDate)
   .filter((signal) => signal.classification !== 'No Material Change');
 
 const news = Array.isArray(snapshot.news) ? snapshot.news : [];
 snapshot.signals = news;
 
-if (currentAccepted.length) {
+const review = snapshot.platform.admissionReview || {status:'pending',pending:null};
+if (review.status !== 'complete') {
+  snapshot.dailyStatus = {date:analysisDate,type:'review-pending',title:'Evidenzprüfung noch offen',impactScore:0,
+    note:`${review.pending ?? 'Unbekannte Anzahl'} Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung.`};
+} else if (currentAccepted.length) {
   snapshot.dailyStatus = {
     date: analysisDate,
     type: 'material-market-update',
@@ -52,7 +56,9 @@ const lead = index >= 85
       ? 'Die Lage bleibt gemischt und erfordert selektive Beobachtung.'
       : 'Der Markt zeigt derzeit vergleichsweise moderate Spannungen.';
 const marketText = markets.length ? `${markets.join(', ')} zählen aktuell zu den angespanntesten Bereichen.` : '';
-const reviewText = currentAccepted.length
+const reviewText = review.status !== 'complete'
+  ? `Berechnung vom ${analysisDate}; Quellenstand ${snapshot.platform.indexEvidenceAsOf || 'unbekannt'}. Die Evidenzprüfung ist noch nicht abgeschlossen (${review.pending ?? 'unbekannt'} Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage.`
+  : currentAccepted.length
   ? `Der Daily Check vom ${analysisDate} hat eine materielle Veränderung der Lage bestätigt.`
   : `Der Daily Check vom ${analysisDate} hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung.`;
 

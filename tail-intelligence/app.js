@@ -140,7 +140,7 @@ function showError(message) {
 }
 
 function renderPlatform(d) {
-  $('data-as-of').textContent = fmtDate(d.dataAsOf);
+  $('data-as-of').textContent = `${fmtDate(d.analysisAsOf || d.dataAsOf)} · Evidenz ${fmtDate(d.indexEvidenceAsOf || d.sourceDataAsOf)}`;
   $('last-update').textContent = fmtDate(d.lastSuccessfulUpdate);
   $('article-count').textContent = d.articleCount ?? d.totalArticles ?? '–';
   $('process-status').textContent = `${processIcon(d.processStatus)} ${statusLabel(d.processStatus)}`;
@@ -152,6 +152,7 @@ function renderPlatform(d) {
     const warningText = [d.error, ...(d.warnings || [])].filter(Boolean).join(' ');
     showError(warningText || 'TAIL meldet einen Warn- oder Fehlerstatus.');
   }
+  $('momentum').textContent = d.admissionReview?.status !== 'complete' ? `Evidenzprüfung offen: ${d.admissionReview?.pending ?? 'unbekannt'} Kandidaten` : '';
   $('pipeline').innerHTML = (d.pipeline?.steps || []).map(step => `<article><div class="row"><strong>${processIcon(step.status)} ${escapeHtml(step.label)}</strong><span>${statusLabel(step.status)}</span></div><small>${escapeHtml(step.detail)}</small></article>`).join('');
   $('markets').innerHTML = (d.markets || []).map(m => {
     const drivers = (m.drivers || []).map(driver => `${escapeHtml(driver.label)} ${driver.score ?? '–'}`).join(' · ');

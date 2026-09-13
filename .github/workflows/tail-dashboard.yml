@@ -8,6 +8,9 @@ on:
     branches: [main]
     paths:
       - 'tail-intelligence/scripts/**'
+      - 'scripts/**'
+      - 'script.js'
+      - 'en/script.js'
       - 'tail-intelligence/config/**'
       - 'tail-intelligence/package.json'
       - '.github/workflows/tail-dashboard.yml'
@@ -31,6 +34,7 @@ jobs:
         working-directory: tail-intelligence
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_ANALYST_MODEL: ${{ vars.OPENAI_ANALYST_MODEL || 'gpt-5-mini' }}
       OPENAI_TRANSLATION_MODEL: ${{ vars.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini' }}
     steps:
       - name: Checkout repository
@@ -41,7 +45,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
-          node-version: '22'
+          node-version: '24'
 
       - name: Install
         run: npm install --ignore-scripts
@@ -49,12 +53,16 @@ jobs:
       - name: Update, build and validate TAIL
         run: npm run ci
 
+      - name: Validate public/private boundary
+        working-directory: .
+        run: npm test
+
       - name: Persist generated intelligence state safely
         working-directory: .
         run: |
           git config user.name 'TAIL Intelligence Bot'
           git config user.email 'tail-intelligence-bot@users.noreply.github.com'
-          git add tail-intelligence/data public-tail/data.json public-tail/data-en.json
+          git add tail-intelligence/data public-tail/data.json public-tail/data-en.json index.html en/index.html
 
           if git diff --cached --quiet; then
             echo 'No generated TAIL changes to commit.'

@@ -158,6 +158,14 @@ function toArticle(signal, dailyDate) {
     content_hash: hash(`${signal.id}|${signal.title}|${signal.fact}|${signal.tailInference}`),
     origin: signal.origin || 'daily-intelligence',
     classification: signal.classification || null,
+    admittedAt: signal.admittedAt || null,
+    evidenceStatus: signal.evidenceStatus || null,
+    admissionReviewKey: signal.admissionReviewKey || null,
+    predictionId: signal.predictionId || null,
+    predictionImpact: signal.predictionImpact || null,
+    falsifier: signal.falsifier || null,
+    nextReview: signal.nextReview || null,
+    public: signal.public !== false,
     rank: signal.rank ?? null,
     estimate: signal.estimate || null,
     red_pencil: signal.redPencil || null,
@@ -188,6 +196,16 @@ async function main() {
       if (JSON.stringify(previous) !== JSON.stringify(article)) promoted += 1;
       byId.set(article.id, article);
     }
+  }
+
+  // Admission journal is authoritative even on curated days or across midnight.
+  // Keep historical daily records immutable; every reviewed signal still reaches KB.
+  const admissionJournal = await readJson(new URL('data/admission-reviews.json',ROOT),{reviews:[]});
+  for (const record of admissionJournal.reviews || []) {
+    if (record.decision !== 'accepted' || !record.acceptedSignal?.id || record.gateReasons?.length) continue;
+    const article = toArticle(record.acceptedSignal, String(record.reviewedAt).slice(0,10));
+    if (JSON.stringify(byId.get(article.id)) !== JSON.stringify(article)) promoted += 1;
+    byId.set(article.id,article);
   }
 
   const latestRecord = dailyRecords.at(-1);

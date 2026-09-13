@@ -108,7 +108,7 @@ function parseFeed(xml, source) {
       url,
       canonical_url: url,
       content_hash: hash(`${title}|${summary}`),
-      published_at: safeIso(published),
+      published_at: safeIso(published, null),
       summary,
       categories: source.categories || [],
       source_weight: source.weight ?? 1,
@@ -175,12 +175,14 @@ async function main() {
   const manual = await readJson(MANUAL, { items: [] });
   const articles = await readJson(ARTICLES, []);
 
+  const previousStatus = await readJson(STATUS, {});
   const collected = [];
   const errors = [];
   const enabledRssSources = config.sources.filter((source) => source.enabled && source.type === 'rss');
   for (const source of enabledRssSources) {
     try {
       const response = await fetch(source.url, {
+        signal: AbortSignal.timeout(20000),
         headers: {
           'user-agent': 'MT-AI-TAIL-Intelligence/2.0',
           'accept': 'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.5'
@@ -201,7 +203,7 @@ async function main() {
       source_id: 'manual-tail-inbox',
       source_name: item.source_name || 'TAIL Manual Inbox',
       discovery_source: 'TAIL Manual Inbox',
-      published_at: safeIso(item.published_at),
+      published_at: safeIso(item.published_at, null),
       status: item.status || 'new',
       source_weight: 1,
       base_score: 0,
@@ -264,9 +266,9 @@ async function main() {
   }, null, 2) + '\n');
 
   await fs.writeFile(STATUS, JSON.stringify({
-    status: errors.length ? 'warning' : 'ok',
+    status: errors.length === enabledRssSources.length ? 'error' : errors.length ? 'warning' : 'ok',
     last_attempt: now,
-    last_successful_update: now,
+    last_successful_update: errors.length === enabledRssSources.length ? previousStatus.last_successful_update || null : now,
     newly_processed_articles: fresh.length,
     collected_articles: collected.length,
     sources_checked: enabledRssSources.length,

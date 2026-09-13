@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { calculateIndexModel, statusForIndex } from './index-model.mjs';
 
 const root = path.resolve(process.cwd());
@@ -29,10 +30,7 @@ const forecastLedger = readJson(forecastLedgerPath, { forecasts: [] });
 const latestDaily = readJson(latestDailyPath, {});
 const operationalIndicatorData = readJson(operationalIndicatorsPath, { indicators: [] });
 const previousDashboard = readJson(outputPath, {});
-const previousPublishedIndex = previousDashboard.dataAsOf === articles.map((item) => item.date).filter(Boolean).sort().at(-1)
-  && Number.isFinite(latestDaily.executivePulse?.previous)
-  ? latestDaily.executivePulse.previous
-  : (Number.isFinite(previousDashboard.tailIndex) ? previousDashboard.tailIndex : null);
+
 
 const inbox = readJson(inboxPath, { updated_at: null, new_items: 0, duplicate_items: [], items: [] });
 const updateStatus = readJson(statusPath, {
@@ -110,7 +108,10 @@ function daysSinceDate(dateValue) {
 
 const newestDate = articles.map((a) => a.date).filter(Boolean).sort().at(-1);
 const operationalAsOf = operationalIndicatorData.indicators.map((item) => item.date).filter(Boolean).sort().at(-1);
-const indexAsOf = [newestDate, operationalAsOf].filter(Boolean).sort().at(-1);
+const indexAsOf = new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const admissionReview = readJson(path.join(dataDir,'admission-status.json'), {status:'pending',pending:null,reviewed:0,candidates:0});
+const overdueIndicators = operationalIndicatorData.indicators.filter(i => !i.supersededBy && i.nextReview < indexAsOf);
+const impactEvidenceAsOf = [...articles.filter(a => a.indexImpact !== false && !methodology.signalOverrides?.[a.id]?.excludedFromScores).map(a => a.date), operationalAsOf].filter(Boolean).sort().at(-1);
 const knowledgeBaseSyncedAt = updateStatus.knowledge_base_latest_daily_at
   ?? updateStatus.knowledge_base_sync_at
   ?? updateStatus.last_successful_update
@@ -210,8 +211,20 @@ function buildForecast(definition) {
 const forecasts = requiredForecasts.map(buildForecast);
 const missingForecasts = forecasts.filter((forecast) => forecast.sourceArticleIds.length === 0).map((forecast) => forecast.id);
 
+const historyPath = path.join(dataDir,'index-history.json');
+const history = readJson(historyPath,{schemaVersion:1,entries:[]});
+const inputHash = crypto.createHash('sha256').update(JSON.stringify({asOf:indexAsOf,articles,methodology,operationalIndicatorData})).digest('hex');
+const existingCalculation = history.entries.find(e => e.inputHash === inputHash);
+const previousPublishedIndex = existingCalculation?.previous ?? history.entries.at(-1)?.current ?? previousDashboard.executivePulse?.current ?? indexModel.executiveScore;
+if (!existingCalculation) {
+  history.entries.push({calculatedAt:new Date().toISOString(),asOf:indexAsOf,inputHash,current:indexModel.executiveScore,previous:previousPublishedIndex,
+    sourceDataAsOf:newestDate,indexEvidenceAsOf:impactEvidenceAsOf,formulaRevision:indexModel.formulaRevision,
+    markets:indexModel.markets.map(({id,score,confidence})=>({id,score,confidence}))});
+  fs.writeFileSync(historyPath,JSON.stringify(history,null,2)+'\n');
+}
+
 const overall = indexModel.executiveScore;
-const severe = normalizedArticles.filter((article) => article.score >= 75).sort((a, b) => b.score - a.score);
+const severe = normalizedArticles.filter((article) => article.public !== false && article.score >= 75).sort((a, b) => b.score - a.score);
 
 const inboxItems = Array.isArray(inbox.items) ? inbox.items : [];
 const duplicateItems = Array.isArray(inbox.duplicate_items) ? inbox.duplicate_items : [];
@@ -219,6 +232,9 @@ const inboxErrors = Array.isArray(updateStatus.source_errors) ? updateStatus.sou
 const inboxStatus = updateStatus.status === 'error' ? 'error' : updateStatus.status === 'warning' || !inbox.updated_at ? 'warning' : 'ok';
 
 const warnings = [
+  admissionReview.status !== 'complete' ? `Evidenzprüfung ${admissionReview.status === 'error' ? 'gestört' : 'offen'}: ${admissionReview.pending ?? 'unbekannt'} Kandidaten ausstehend.` : null,
+  overdueIndicators.length ? `${overdueIndicators.length} operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung.` : null,
+  evidenceAgeDays > 7 ? `Jüngste aufgenommene Quellenbeobachtung: ${newestDate}.` : null,
   dataFreshness === 'stale' ? `Knowledge Base wurde seit ${dataAgeDays} Tagen nicht synchronisiert.` : null,
   inboxStatus === 'warning' ? updateStatus.message : null,
   missingForecasts.length ? `Forecast Engine ohne Quellen für: ${missingForecasts.join(', ')}` : null
@@ -232,6 +248,7 @@ const errors = [
 const processStatus = errors.length ? 'error' : warnings.length ? 'warning' : 'ok';
 const syncedDate = knowledgeBaseSyncedAt ? String(knowledgeBaseSyncedAt).slice(0, 10) : 'unbekannt';
 const pipelineSteps = [
+  { id:'admission_review', label:'Evidenzprüfung', status:admissionReview.status === 'complete' ? 'ok' : 'warning', detail:`${admissionReview.reviewed} geprüft · ${admissionReview.pending ?? 'unbekannt'} offen · ${admissionReview.accepted || 0} aufgenommen` },
   { id: 'knowledge_base', label: 'TAIL Knowledge Base', status: dataFreshness === 'current' ? 'ok' : dataFreshness === 'stale' ? 'warning' : 'error', detail: `${normalizedArticles.length} Artikel · Sync ${syncedDate} · jüngstes bestätigtes Signal ${newestDate ?? 'unbekannt'}` },
   { id: 'inbox', label: 'TAIL Inbox', status: inboxStatus, detail: `${inboxItems.length} Inbox-Items · ${duplicateItems.length} Duplikate · ${inboxErrors.length} Quellenfehler` },
   { id: 'forecast_engine', label: 'Forecast Engine', status: missingForecasts.length ? 'error' : 'ok', detail: `${forecasts.length}/${requiredForecasts.length} Pflicht-Forecasts erzeugt` },
@@ -243,6 +260,10 @@ const dashboard = {
   platformVersion: '3.2',
   sourceOfTruth: 'TAIL Knowledge Base',
   dataAsOf: indexAsOf,
+  analysisAsOf: indexAsOf,
+  indexEvidenceAsOf: impactEvidenceAsOf,
+  admissionReview,
+  overdueOperationalReviews: overdueIndicators.map(({id,nextReview}) => ({id,nextReview})),
   sourceDataAsOf: newestDate,
   knowledgeBaseSyncedAt,
   dataFreshness,
@@ -263,6 +284,7 @@ const dashboard = {
     gates: methodology.gates,
     indexModel: {
       version: indexModel.version,
+      formulaRevision: indexModel.formulaRevision,
       formula: indexModel.formula,
       driverWeights: methodology.indexModel.driverWeights,
       executiveMarketWeights: methodology.indexModel.executiveMarketWeights,
@@ -312,6 +334,7 @@ const dashboard = {
   markets,
   manufacturers,
   forecasts,
+  indexCalculation: {asOf: indexAsOf, evidenceAsOf: impactEvidenceAsOf, formulaRevision:indexModel.formulaRevision, baselineAsOf:indexModel.baselineAsOf},
   executiveSummary: `TAIL steht auf ${overall}/100. ${markets.slice(0, 3).map((m) => m.label).join(', ')} sind die kritischsten Felder. Die Plattform liest ${normalizedArticles.length} Knowledge-Base-Artikel und erzeugt ${forecasts.length} Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.`,
   topSignals: severe.slice(0, 8).map((article) => ({
     id: article.id,
@@ -327,6 +350,16 @@ const dashboard = {
 };
 
 fs.writeFileSync(outputPath, JSON.stringify(dashboard, null, 2) + '\n');
+if (latestDaily.automatedDaily) {
+  latestDaily.executivePulse = dashboard.executivePulse;
+  latestDaily.confidence = {...latestDaily.confidence,current:dashboard.executivePulse.confidence};
+  latestDaily.riskPressure = {...latestDaily.riskPressure,current:dashboard.executivePulse.riskPressure};
+  latestDaily.indexCalculation = {asOf:indexAsOf,inputHash,sourceDataAsOf:newestDate};
+  fs.writeFileSync(latestDailyPath,JSON.stringify(latestDaily,null,2)+'\n');
+  const dailyName = `daily-intelligence-${String(latestDaily.dailyStatus?.date || latestDaily.updatedAt).slice(0,10)}.json`;
+  fs.writeFileSync(path.join(dataDir,dailyName),JSON.stringify(latestDaily,null,2)+'\n');
+}
+
 const articlesById = new Map(normalizedArticles.map((article) => [article.id, article]));
 const dailyDate = String(latestDaily.updatedAt || dashboard.dataAsOf || '').slice(0, 10);
 const acceptedSignals = Array.isArray(latestDaily.acceptedSignals) ? latestDaily.acceptedSignals : [];
@@ -353,13 +386,18 @@ const publicSnapshot = {
   generatedAt: new Date().toISOString(),
   platform: {
     dataAsOf: dashboard.dataAsOf,
+    analysisAsOf: dashboard.analysisAsOf,
+    sourceDataAsOf: dashboard.sourceDataAsOf,
+    indexEvidenceAsOf: dashboard.indexEvidenceAsOf,
+    admissionReview: {status:admissionReview.status, checkedAt:admissionReview.checkedAt || null, pending:admissionReview.pending, reviewed:admissionReview.reviewed, accepted:admissionReview.accepted || 0},
+    overdueOperationalReviewCount: overdueIndicators.length,
     dataFreshness: dashboard.dataFreshness,
     processStatus: dashboard.processStatus,
     articleCount: dashboard.articleCount,
     markets: ['server_dram', 'hbm', 'enterprise_ssd']
       .map((id) => dashboard.markets.find((market) => market.id === id))
       .filter(Boolean)
-      .map(({ id, label, score, status, signals }) => ({ id, label, score, status, signals }))
+      .map(({ id, label, score, status, signals, confidence, coverage }) => ({ id, label, score, status, signals, confidence, coverage }))
   },
   executivePulse: (({ current, previous, status, confidence, riskPressure, coverage, methodologyVersion, interpretation }) => ({ current, previous, status, confidence, riskPressure, coverage, methodologyVersion, interpretation }))(dashboard.executivePulse),
   signals: selectedSignals,

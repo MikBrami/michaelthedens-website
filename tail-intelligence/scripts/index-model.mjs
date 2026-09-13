@@ -136,7 +136,7 @@ function calculateDriver(articles, indicators, driverId, model, asOf) {
     pressure: Math.round(positive.value),
     relief: Math.round(relief.value),
     operationalFloor: Math.round(operationalFloor),
-    formula: 'pressure - relief × reliefOffset'
+    formula: 'max(pressure - relief × reliefOffset, operationalFloor)'
   };
 }
 
@@ -182,7 +182,8 @@ function calculateFreshShock(marketArticles, marketId, model, asOf) {
 export function calculateIndexModel(articles, methodology, options = {}) {
   const model = methodology.indexModel;
   if (!model) throw new Error('methodology.indexModel is missing');
-  const operationalIndicators = Array.isArray(options.operationalIndicators) ? options.operationalIndicators : [];
+  const allIndicators = Array.isArray(options.operationalIndicators) ? options.operationalIndicators : [];
+  const operationalIndicators = allIndicators.filter(i => !allIndicators.some(newer => newer.id === i.supersededBy && newer.date >= i.date && newer.market === i.market && newer.driver === i.driver));
 
   const baselineDates = [
     ...articles
