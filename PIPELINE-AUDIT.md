@@ -1,6 +1,6 @@
 # MT·AI Pipeline-Prüfung – 13. September 2026
 
-Status: Korrektur lokal implementiert und getestet; Veröffentlichung am 13. September vom Nutzer ausdrücklich freigegeben. Produktiver Durchlauf und Live-Prüfung stehen noch aus. Die beiden Executive-Daily-Brief-Aufträge und der persönliche Daily Brief wurden bereits auf den direkten JSON-Abruf und getrennte Zeitstände umgestellt.
+Status: Veröffentlicht und produktiv geprüft am 13. September 2026. GitHub-Lauf 34757511850 erfolgreich; Vercel-Produktionsdeployment dpl_DggQ6QgkxrQzhhNHxtQpGDyhew5c READY. Die beiden Executive-Daily-Brief-Aufträge und der persönliche Daily Brief wurden auf direkten JSON-Abruf und getrennte Zeitstände umgestellt.
 
 ## Nachgewiesene Ursachen
 
@@ -11,7 +11,7 @@ Status: Korrektur lokal implementiert und getestet; Veröffentlichung am 13. Sep
 5. Die HTML-Ausgabe enthielt lediglich Ladeplatzhalter. Ein Textabruf sah die tatsächlich nachgeladenen Zahlen nicht.
 6. Bei Übersetzungsproblemen blieb der komplette englische Snapshot zurück, einschließlich seiner Zahlen.
 
-## Vorbereitete Korrektur
+## Veröffentlichte Korrektur
 
 - Begrenzte, quellenbasierte Inbox-Prüfung über den vorhandenen OpenAI-API-Zugang. Vier Kandidaten je Anfrage, höchstens 24 je Lauf. Aktuelle Meldungen und Rückstand werden berücksichtigt.
 - Pro Kandidat ein protokollierter Entscheid mit Rubrik, Primärquellen, Ereignisdatum, Kausalität, Verweis auf bestehende Prognose, Falsifikator und Nachprüfung. Unvollständige Evidenz bleibt Watchlist. API-Ausfälle werden sichtbar.
@@ -25,11 +25,21 @@ Status: Korrektur lokal implementiert und getestet; Veröffentlichung am 13. Sep
 
 ## Prüfung
 
-Sieben Tests bestanden: offene Prüfung, fehlende Primärquellen/Prognosezuordnung, korrekte Aufnahme, Dubletten, ungültige Datumswerte, operative Zustandsablösung und nachweisbare Indexreaktion auf neue Preisevidenz.
+Zehn Tests bestanden, einschließlich zusätzlicher Regressionen für Konfidenzskala, richtungsunabhängige Dubletten und die Trennung von Marktanteil und direkter Indexevidenz. Ursprüngliche Prüffälle: offene Prüfung, fehlende Primärquellen/Prognosezuordnung, korrekte Aufnahme, Dubletten, ungültige Datumswerte, operative Zustandsablösung und nachweisbare Indexreaktion auf neue Preisevidenz.
 
 Der vollständige lokale Generierungs-/Sync-/Build-Lauf und die vorhandenen Schema-, Forecast-, Syntax- und Public/Private-Grenzprüfungen bestanden. DE, EN und interne Tages-/Dashboardwerte stimmen überein. Ältere Tagesdateien wurden nicht verändert.
 
-Noch nicht geprüft: echte Analystenantworten mit dem produktiven API-Schlüssel und anschließendes Vercel-Deployment. Lokal ist dieser Schlüssel nicht verfügbar. Die Browserprüfung des lokalen Servers war durch die Browser-Netzwerkumgebung blockiert; eine visuelle Freigabe wird daher nicht behauptet.
+Produktiv geprüft: Der OpenAI-Analyst hat 24 unterschiedliche Kandidaten und anschließend die betroffenen Entscheidungen erneut geprüft. Endstand: 1 Kontextbeleg angenommen (ohne Indexwirkung), 7 Watchlist, 16 abgelehnt; 847 Kandidaten bleiben offen. API-Fehler: keiner. Die erste reale Prüfung deckte weitere Schnittstellenprobleme auf, die korrigiert und erneut produktiv verifiziert wurden:
+
+- Erlaubte Märkte, Treiber und Signalarten als Schema-Auswahl statt freier Strings.
+- Ganzzahlige Severity/Confidence auf 0–100; keine unbemerkte 0–1-Skala.
+- Gleiche Quelle und gleiches Ereignis sind auch bei entgegengesetzter Wirkungsrichtung ein Duplikat.
+- Nur die jüngste Aufnahmeentscheidung zählt; zurückgezogene Einträge bleiben protokolliert, werden jedoch öffentlich und für den Index gesperrt.
+- Marktanteile allein belegen keine qualifizierte Angebots-/Preisänderung. Der aufgenommene YMTC-Beleg bleibt Kontext ohne Indexwirkung. Indexmessungen sind auf den belegten Produktmarkt begrenzt.
+
+Live-Abgleich: DE/EN-JSON und Browser zeigen Executive Pulse 79, Server DRAM 81, HBM 73, Enterprise SSD 81, Risk Pressure 83. Berechnung: 2026-09-13; Indexevidenz: 2026-08-28. Sichtbarer Status: Evidenzprüfung offen. Der numerische Executive Pulse steht bereits im HTML; nachgeladene Anzeige und Datenquelle stimmen überein. Englisch wurde produktiv übersetzt.
+
+Offen bleiben der Prüfrückstand von 847 Kandidaten und vier überfällige operative Nachprüfungen. Die regulären Läufe bearbeiten weitere Meldungen. Unveränderte 79 sind keine Bestätigung einer unveränderten Marktlage. Historischer Enterprise-SSD-Researchstand vom 5. September und dessen Referenzindex 83 bleiben getrennt vom heutigen Segmentindex.
 
 ## Freigabe und nächster Schritt
 
