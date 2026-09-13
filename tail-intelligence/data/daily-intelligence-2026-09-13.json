@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-13T13:02:01.646Z",
+  "updatedAt": "2026-09-13T13:11:47.629Z",
   "previousRun": "2026-09-12",
   "executivePulse": {
     "current": 79,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 81,
     "previous": 81,
-    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 831 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 827 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 831 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 827 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -529,6 +529,137 @@
       "date": "2026-08-26"
     },
     {
+      "id": "S-AUTO-82875560b85f7ec05b186bcd",
+      "title": "Anthropic-CEO und OpenAI-CEO fordern verlangsamte KI‑Entwicklung; OpenAI verschiebt IPO‑Pläne für 2026.",
+      "date": "2026-09-12",
+      "admittedAt": "2026-09-13T13:11:47.461Z",
+      "fact": "Anthropic‑CEO Dario Amodei veröffentlichte am 2026-09-12 den Essay \"We Must Pace the Frontier\" und forderte, die Entwicklungskapazitäten der Frontier‑AI zu verlangsamen; zeitgleich erklärte OpenAI‑CEO Sam Altman in einem Fortune‑Interview am 2026-09-12, ein OpenAI‑IPO werde 2026 nicht erfolgen (‚off the table for 2026‘).",
+      "placement": "Global — Frontier AI‑Lab‑Ebene; kurzfriste Relevanz (Monate).",
+      "tailInference": "Öffentliche CEO‑Aussagen erhöhen regulatorische Aufmerksamkeit und investorische Vorsicht, reduzieren kurzfristig die Wahrscheinlichkeit großer IPO‑Transaktionen und könnten Hyperscaler/Model‑Release‑Timings verlangsamen (Reputations‑/Governance‑Kosten → Verzögerung von Finanzierungsereignissen und Releases).",
+      "predictionId": "P-2026-07-16-03",
+      "predictionImpact": "Verringert die Wahrscheinlichkeit des Basisszenarios, dass das AI‑Infrastruktur‑IPO‑Fenster 2026 offen bleibt; konkret erhöht die bestätigte Absage/Schiebung eines großen Labs (OpenAI) das Risiko, dass mehrere 2026‑geplante AI‑Infrastruktur‑IPOs/Listings nicht stattfinden oder verschoben werden.",
+      "falsifier": "Bis zum 2026-12-31: Wenn OpenAI oder ein anderer großer AI‑Infrastruktur‑Anbieter ein verbindliches, öffentliches IPO‑Formular (z. B. Registrierungsunterlagen/gestellte S‑1 oder öffentliche Roadshow‑Ankündigung) einreicht und ein IPO in 2026 final terminiert bzw. wenn mindestens zwei Frontier‑Labs formell erklären, sie würden ihre Modell‑Release‑Pacing nicht verlangsamen, dann ist die angenommene Auswirkung auf das IPO‑Fenster falsifiziert.",
+      "nextReview": "2026-12-31",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "severity": 40,
+      "confidence": 75,
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "signal": "demand_down",
+      "driverScope": [
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Dario Amodei — \"We Must Pace the Frontier\" (Essay, 2026-09-12)",
+          "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+        },
+        {
+          "label": "Fortune — Interview mit Sam Altman (2026-09-12)",
+          "url": "https://fortune.com/2026/09/12/sam-altman-interview-ai-doomsday-safety-models-control-ipo-2027/"
+        },
+        {
+          "label": "AP / Agenturmeldung (Zusammenfassung, 2026-09-12)",
+          "url": "https://apnews.com/article/d59552edcb27892d8ee4d98a48397706"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Verringert die Wahrscheinlichkeit des Basisszenarios, dass das AI‑Infrastruktur‑IPO‑Fenster 2026 offen bleibt; konkret erhöht die bestätigte Absage/Schiebung eines großen Labs (OpenAI) das Risiko, dass mehrere 2026‑geplante AI‑Infrastruktur‑IPOs/Listings nicht stattfinden oder verschoben werden."
+      },
+      "admissionReviewKey": "82875560b85f7ec05b186bcd"
+    },
+    {
+      "id": "S-AUTO-8c98ad283db308a6bbbf4675",
+      "title": "Meta finanziert sieben neue Gasturbinen zur Stromversorgung seines Hyperion‑Data‑Centers in Louisiana.",
+      "date": "2026-03-27",
+      "admittedAt": "2026-09-13T13:11:47.469Z",
+      "fact": "Entergy Louisiana veröffentlichte am 2026-03-27 eine Mitteilung, dass Meta eine Vereinbarung getroffen hat, zusätzliche Erzeugungs- und Übertragungsinvestitionen zu finanzieren — einschließlich sieben neuer gasbetriebener Kraftwerksanlagen, die zusammen etwa +5.2 GW zusätzliche Erzeugungskapazität für das Hyperion‑Campus liefern sollen (Erklärung Entergy 2026-03-27).",
+      "placement": "Richland Parish, Louisiana — Energie‑/Versorgungs‑Layer für Meta's Hyperion AI‑Campus; kurzfristig bis mittelfristig (2026–2030).",
+      "tailInference": "Hyperscaler‑finanzierung von unmittelbarer Erzeugung und Leitungskapazität verlagert die Energiebeschaffung von marktgestützter Strombeschaffung zu eigens finanzierten/dedizierten Erzeugungsprojekten und PPAs; das erhöht die Tendenz großer Datacenter, dedizierte Energieprojekte zu bevorzugen (direkter Support für die Vorhersage, dass Datacenter Lasten verstärkt zu dedizierten Energieprojekten verschieben).",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Stärkt P-2026-07-12-04 ('Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen') — konkretes, datiertes Beispiel eines Hyperscalers, der sieben Gaskraftwerke und Transmission finanziert, erhöht die Wahrscheinlichkeit des Basisszenarios.",
+      "falsifier": "Bis zum 2027-06-30: Wenn die Entergy/Meta‑Projekte nicht regulatorisch genehmigt werden oder aufgehoben werden, und/oder wenn kein weiterer großer Hyperscaler bis 2027-06-30 eine vergleichbare (>1 GW) direkte Erzeugungs‑Finanzierungsvereinbarung abschließt, dann reduziert das die Evidenz, dass sich ein dauerhafter Trend etabliert hat und würde die Signalwirkung abschwächen.",
+      "nextReview": "2027-06-30",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 12,
+        "thesisRelevance": 19,
+        "forecastImpact": 17,
+        "falsifiability": 13,
+        "timeSensitivity": 8
+      },
+      "severity": 50,
+      "confidence": 80,
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability"
+      ],
+      "classification": "Layer Update",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Entergy Louisiana — Pressemitteilung (2026-03-27)",
+          "url": "https://www.prnewswire.com/news-releases/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings-302727258.html"
+        },
+        {
+          "label": "Meta Data Centers — eigene Mitteilung (Context/Project Hyperion)",
+          "url": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Stärkt P-2026-07-12-04 ('Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen') — konkretes, datiertes Beispiel eines Hyperscalers, der sieben Gaskraftwerke und Transmission finanziert, erhöht die Wahrscheinlichkeit des Basisszenarios."
+      },
+      "admissionReviewKey": "8c98ad283db308a6bbbf4675"
+    },
+    {
       "id": "S-AUTO-945fc239013e27b447817700",
       "title": "YMTC steigt auf Platz 3 der globalen NAND-Bit-Shipments (Q2 2026).",
       "date": "2026-08-12",
@@ -776,14 +907,14 @@
     "date": "2026-09-13",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 83,
-    "note": "Evidenzprüfung offen: 831 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 86,
+    "note": "Evidenzprüfung offen: 827 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-13T13:02:01.646Z",
+    "generatedAt": "2026-09-13T13:11:47.629Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-13T12:59:23.315Z",
-    "inboxNewItems": 412,
+    "inboxUpdatedAt": "2026-09-13T13:06:05.396Z",
+    "inboxNewItems": 6,
     "highRelevanceCandidates": [
       {
         "id": "08ebfe8bde7318f5f7f0",
@@ -941,37 +1072,38 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-13T13:02:01.428Z",
-    "inboxUpdatedAt": "2026-09-13T12:59:23.315Z",
+    "checkedAt": "2026-09-13T13:11:47.485Z",
+    "inboxUpdatedAt": "2026-09-13T13:06:05.396Z",
     "status": "error",
     "candidates": 867,
-    "reviewed": 36,
-    "accepted": 2,
-    "watchlist": 12,
+    "reviewed": 40,
+    "accepted": 4,
+    "watchlist": 14,
     "rejected": 22,
-    "pending": 831,
+    "pending": 827,
     "oldestPendingAt": "2026-08-14T12:59:49.000Z",
-    "lastCompletedReviewAt": "2026-09-13T13:02:01.421Z",
-    "error": "Analyst HTTP 429",
+    "lastCompletedReviewAt": "2026-09-13T13:11:47.477Z",
+    "error": "Analyst candidate coverage mismatch",
     "rawCandidates": 898,
     "triage": {
       "archivedOpinions": 19,
       "groupedDuplicates": 12
     },
     "lastRun": {
-      "startedAt": "2026-09-13T12:59:32.509Z",
-      "completedAt": "2026-09-13T13:02:01.434Z",
+      "startedAt": "2026-09-13T13:06:14.604Z",
+      "completedAt": "2026-09-13T13:11:47.490Z",
       "selected": 96,
-      "reviewed": 12,
-      "concurrency": 4,
+      "reviewed": 4,
+      "concurrency": 2,
       "limit": 96,
-      "durationSeconds": 148,
+      "rateLimitRetries": 1,
+      "durationSeconds": 332,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-13",
-    "inputHash": "4ebf68e6814fc4eff045b0f6f4e5dee9832bdac1f1098142a393661aba994568",
-    "sourceDataAsOf": "2026-09-08"
+    "inputHash": "db4cef0aa78a6a8ed1de36895d185730bc14893ae005923f5136f4cc8d80ad48",
+    "sourceDataAsOf": "2026-09-12"
   }
 }

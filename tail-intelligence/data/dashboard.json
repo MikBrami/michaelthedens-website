@@ -7,31 +7,32 @@
   "indexEvidenceAsOf": "2026-08-28",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-13T13:02:01.428Z",
-    "inboxUpdatedAt": "2026-09-13T12:59:23.315Z",
+    "checkedAt": "2026-09-13T13:11:47.485Z",
+    "inboxUpdatedAt": "2026-09-13T13:06:05.396Z",
     "status": "error",
     "candidates": 867,
-    "reviewed": 36,
-    "accepted": 2,
-    "watchlist": 12,
+    "reviewed": 40,
+    "accepted": 4,
+    "watchlist": 14,
     "rejected": 22,
-    "pending": 831,
+    "pending": 827,
     "oldestPendingAt": "2026-08-14T12:59:49.000Z",
-    "lastCompletedReviewAt": "2026-09-13T13:02:01.421Z",
-    "error": "Analyst HTTP 429",
+    "lastCompletedReviewAt": "2026-09-13T13:11:47.477Z",
+    "error": "Analyst candidate coverage mismatch",
     "rawCandidates": 898,
     "triage": {
       "archivedOpinions": 19,
       "groupedDuplicates": 12
     },
     "lastRun": {
-      "startedAt": "2026-09-13T12:59:32.509Z",
-      "completedAt": "2026-09-13T13:02:01.434Z",
+      "startedAt": "2026-09-13T13:06:14.604Z",
+      "completedAt": "2026-09-13T13:11:47.490Z",
       "selected": 96,
-      "reviewed": 12,
-      "concurrency": 4,
+      "reviewed": 4,
+      "concurrency": 2,
       "limit": 96,
-      "durationSeconds": 148,
+      "rateLimitRetries": 1,
+      "durationSeconds": 332,
       "budgetExhausted": false
     }
   },
@@ -53,16 +54,16 @@
       "nextReview": "2026-08-31"
     }
   ],
-  "sourceDataAsOf": "2026-09-08",
-  "knowledgeBaseSyncedAt": "2026-09-13T13:02:01.646Z",
+  "sourceDataAsOf": "2026-09-12",
+  "knowledgeBaseSyncedAt": "2026-09-13T13:11:47.629Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 5,
-  "lastSuccessfulUpdate": "2026-09-13T13:02:02.822Z",
-  "lastForecastRun": "2026-09-13T13:02:02.822Z",
-  "newlyProcessedArticles": 412,
-  "totalArticles": 128,
-  "articleCount": 128,
+  "evidenceAgeDays": 1,
+  "lastSuccessfulUpdate": "2026-09-13T13:11:48.783Z",
+  "lastForecastRun": "2026-09-13T13:11:48.783Z",
+  "newlyProcessedArticles": 6,
+  "totalArticles": 130,
+  "articleCount": 130,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -116,16 +117,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung gestört: 831 Kandidaten ausstehend.",
+    "Evidenzprüfung gestört: 827 Kandidaten ausstehend.",
     "4 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-13T12:59:23.315Z",
-    "newItems": 412,
-    "totalItems": 1412,
+    "updatedAt": "2026-09-13T13:06:05.396Z",
+    "newItems": 6,
+    "totalItems": 1418,
     "duplicateItems": 300,
-    "relevantItems": 1092,
+    "relevantItems": 1093,
     "sourceErrors": []
   },
   "pipeline": {
@@ -135,19 +136,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "36 geprüft · 831 offen · 2 aufgenommen"
+        "detail": "40 geprüft · 827 offen · 4 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "128 Artikel · Sync 2026-09-13 · jüngstes bestätigtes Signal 2026-09-08"
+        "detail": "130 Artikel · Sync 2026-09-13 · jüngstes bestätigtes Signal 2026-09-12"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "1412 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "1418 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -743,14 +744,14 @@
       "mentions": 1
     },
     {
-      "name": "Meta",
-      "score": 76,
-      "mentions": 4
-    },
-    {
       "name": "Sandisk",
       "score": 75,
       "mentions": 4
+    },
+    {
+      "name": "Meta",
+      "score": 73,
+      "mentions": 5
     },
     {
       "name": "Nvidia",
@@ -763,9 +764,9 @@
       "mentions": 4
     },
     {
-      "name": "Anthropic",
+      "name": "Amazon",
       "score": 72,
-      "mentions": 3
+      "mentions": 4
     }
   ],
   "forecasts": [
@@ -867,7 +868,7 @@
         "S-2026-08-07-SKHYNIX-Y2-M17",
         "S-AUTO-d25873b789efc5ec1a7f41d3"
       ],
-      "lastUpdated": "2026-09-13T13:02:02.818Z"
+      "lastUpdated": "2026-09-13T13:11:48.780Z"
     },
     {
       "id": "hbm",
@@ -953,7 +954,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-13T13:02:02.819Z"
+      "lastUpdated": "2026-09-13T13:11:48.780Z"
     },
     {
       "id": "nand",
@@ -1023,7 +1024,7 @@
         "S-AUTO-945fc239013e27b447817700",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T13:02:02.819Z"
+      "lastUpdated": "2026-09-13T13:11:48.780Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1096,14 +1097,14 @@
         "S-AUTO-945fc239013e27b447817700",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T13:02:02.819Z"
+      "lastUpdated": "2026-09-13T13:11:48.780Z"
     },
     {
       "id": "ai_infrastructure",
       "market": "AI Infrastructure",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 79,
+      "relevanceScore": 78,
       "confidenceScore": 86,
       "horizon": "2026–2030+",
       "direction": "up",
@@ -1178,6 +1179,12 @@
           "title": "HCLTech und Sarvam verankern Full-Stack Sovereign AI in einem indischen Datacenter",
           "signal": "Kapazitätsentlastung",
           "score": 39
+        },
+        {
+          "id": "S-AUTO-8c98ad283db308a6bbbf4675",
+          "title": "Meta finanziert sieben neue Gasturbinen zur Stromversorgung seines Hyperion‑Data‑Centers in Louisiana.",
+          "signal": "Kapazitätsentlastung",
+          "score": 20
         }
       ],
       "sourceArticleIds": [
@@ -1269,10 +1276,12 @@
         "S-2026-08-06-05",
         "S-2026-07-25-04",
         "S-AUTO-d25873b789efc5ec1a7f41d3",
+        "S-AUTO-8c98ad283db308a6bbbf4675",
+        "S-AUTO-82875560b85f7ec05b186bcd",
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-13T13:02:02.819Z"
+      "lastUpdated": "2026-09-13T13:11:48.780Z"
     }
   ],
   "indexCalculation": {
@@ -1281,7 +1290,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-13"
   },
-  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 128 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 130 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",

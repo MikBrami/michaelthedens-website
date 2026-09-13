@@ -1,5 +1,62 @@
 [
   {
+    "id": "S-AUTO-8c98ad283db308a6bbbf4675",
+    "date": "2026-03-27",
+    "title": "Meta finanziert sieben neue Gasturbinen zur Stromversorgung seines Hyperion‑Data‑Centers in Louisiana.",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure",
+      "supply_chain"
+    ],
+    "companies": [
+      "Meta"
+    ],
+    "severity": 50,
+    "confidence": 80,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability"
+    ],
+    "summary": "Entergy Louisiana veröffentlichte am 2026-03-27 eine Mitteilung, dass Meta eine Vereinbarung getroffen hat, zusätzliche Erzeugungs- und Übertragungsinvestitionen zu finanzieren — einschließlich sieben neuer gasbetriebener Kraftwerksanlagen, die zusammen etwa +5.2 GW zusätzliche Erzeugungskapazität für das Hyperion‑Campus liefern sollen (Erklärung Entergy 2026-03-27).",
+    "tail_analysis": "Hyperscaler‑finanzierung von unmittelbarer Erzeugung und Leitungskapazität verlagert die Energiebeschaffung von marktgestützter Strombeschaffung zu eigens finanzierten/dedizierten Erzeugungsprojekten und PPAs; das erhöht die Tendenz großer Datacenter, dedizierte Energieprojekte zu bevorzugen (direkter Support für die Vorhersage, dass Datacenter Lasten verstärkt zu dedizierten Energieprojekten verschieben).",
+    "source": "Entergy Louisiana — Pressemitteilung (2026-03-27)",
+    "url": "https://www.prnewswire.com/news-releases/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings-302727258.html",
+    "content_hash": "4b3711913b6c03974b3e",
+    "origin": "reviewed-inbox",
+    "classification": "Layer Update",
+    "admittedAt": "2026-09-13T13:11:47.469Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "8c98ad283db308a6bbbf4675",
+    "predictionId": "P-2026-07-12-04",
+    "predictionImpact": "Stärkt P-2026-07-12-04 ('Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen') — konkretes, datiertes Beispiel eines Hyperscalers, der sieben Gaskraftwerke und Transmission finanziert, erhöht die Wahrscheinlichkeit des Basisszenarios.",
+    "falsifier": "Bis zum 2027-06-30: Wenn die Entergy/Meta‑Projekte nicht regulatorisch genehmigt werden oder aufgehoben werden, und/oder wenn kein weiterer großer Hyperscaler bis 2027-06-30 eine vergleichbare (>1 GW) direkte Erzeugungs‑Finanzierungsvereinbarung abschließt, dann reduziert das die Evidenz, dass sich ein dauerhafter Trend etabliert hat und würde die Signalwirkung abschwächen.",
+    "nextReview": "2027-06-30",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Stärkt P-2026-07-12-04 ('Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen') — konkretes, datiertes Beispiel eines Hyperscalers, der sieben Gaskraftwerke und Transmission finanziert, erhöht die Wahrscheinlichkeit des Basisszenarios."
+    },
+    "sources": [
+      {
+        "label": "Entergy Louisiana — Pressemitteilung (2026-03-27)",
+        "url": "https://www.prnewswire.com/news-releases/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings-302727258.html"
+      },
+      {
+        "label": "Meta Data Centers — eigene Mitteilung (Context/Project Hyperion)",
+        "url": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/"
+      }
+    ]
+  },
+  {
     "id": "tail-2026-07-14-dram-prices",
     "date": "2026-07-14",
     "title": "DRAM-Preissignale bleiben klar aufwärtsgerichtet",
@@ -6217,6 +6274,66 @@
       {
         "label": "CRN Asia — Sekundärberichterstattung zur Firmus-Pressemitteilung (Bericht Sept 2026)",
         "url": "https://www.crnasia.com/news/2026/data-center/firmus-adds-openai-as-anchor-customer"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-82875560b85f7ec05b186bcd",
+    "date": "2026-09-12",
+    "title": "Anthropic-CEO und OpenAI-CEO fordern verlangsamte KI‑Entwicklung; OpenAI verschiebt IPO‑Pläne für 2026.",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "severity": 40,
+    "confidence": 75,
+    "signal": "demand_down",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "aiDemand"
+    ],
+    "summary": "Anthropic‑CEO Dario Amodei veröffentlichte am 2026-09-12 den Essay \"We Must Pace the Frontier\" und forderte, die Entwicklungskapazitäten der Frontier‑AI zu verlangsamen; zeitgleich erklärte OpenAI‑CEO Sam Altman in einem Fortune‑Interview am 2026-09-12, ein OpenAI‑IPO werde 2026 nicht erfolgen (‚off the table for 2026‘).",
+    "tail_analysis": "Öffentliche CEO‑Aussagen erhöhen regulatorische Aufmerksamkeit und investorische Vorsicht, reduzieren kurzfristig die Wahrscheinlichkeit großer IPO‑Transaktionen und könnten Hyperscaler/Model‑Release‑Timings verlangsamen (Reputations‑/Governance‑Kosten → Verzögerung von Finanzierungsereignissen und Releases).",
+    "source": "Dario Amodei — \"We Must Pace the Frontier\" (Essay, 2026-09-12)",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "content_hash": "4ec5d69f6ba83d52dbb6",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T13:11:47.461Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "82875560b85f7ec05b186bcd",
+    "predictionId": "P-2026-07-16-03",
+    "predictionImpact": "Verringert die Wahrscheinlichkeit des Basisszenarios, dass das AI‑Infrastruktur‑IPO‑Fenster 2026 offen bleibt; konkret erhöht die bestätigte Absage/Schiebung eines großen Labs (OpenAI) das Risiko, dass mehrere 2026‑geplante AI‑Infrastruktur‑IPOs/Listings nicht stattfinden oder verschoben werden.",
+    "falsifier": "Bis zum 2026-12-31: Wenn OpenAI oder ein anderer großer AI‑Infrastruktur‑Anbieter ein verbindliches, öffentliches IPO‑Formular (z. B. Registrierungsunterlagen/gestellte S‑1 oder öffentliche Roadshow‑Ankündigung) einreicht und ein IPO in 2026 final terminiert bzw. wenn mindestens zwei Frontier‑Labs formell erklären, sie würden ihre Modell‑Release‑Pacing nicht verlangsamen, dann ist die angenommene Auswirkung auf das IPO‑Fenster falsifiziert.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Verringert die Wahrscheinlichkeit des Basisszenarios, dass das AI‑Infrastruktur‑IPO‑Fenster 2026 offen bleibt; konkret erhöht die bestätigte Absage/Schiebung eines großen Labs (OpenAI) das Risiko, dass mehrere 2026‑geplante AI‑Infrastruktur‑IPOs/Listings nicht stattfinden oder verschoben werden."
+    },
+    "sources": [
+      {
+        "label": "Dario Amodei — \"We Must Pace the Frontier\" (Essay, 2026-09-12)",
+        "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+      },
+      {
+        "label": "Fortune — Interview mit Sam Altman (2026-09-12)",
+        "url": "https://fortune.com/2026/09/12/sam-altman-interview-ai-doomsday-safety-models-control-ipo-2027/"
+      },
+      {
+        "label": "AP / Agenturmeldung (Zusammenfassung, 2026-09-12)",
+        "url": "https://apnews.com/article/d59552edcb27892d8ee4d98a48397706"
       }
     ]
   }
