@@ -1,6 +1,6 @@
 # MT·AI: Aufarbeitung des Nachrichteneingangs
 
-Stand: 13. September 2026. Umsetzung lokal getestet; produktiver Durchlauf wird nach Veröffentlichung geprüft.
+Stand: 13. September 2026. Veröffentlicht und produktiv geprüft. Erfolgreicher Lauf: 34759299361; Datenexport vom 13. September 2026, 13:25 UTC.
 
 ## Ausgangsbefund
 
@@ -36,3 +36,14 @@ Nachbesserung: Parallelität von vier auf zwei reduziert, Baseline-Zusammenfassu
 
 
 Zweite Messung (Lauf 34758884352): Eine Ratenbegrenzung wurde nach der vom Anbieter genannten Wartezeit erfolgreich wiederholt. Eine andere Antwort bestand die Kandidaten-Zuordnung nicht; vier weitere Prüfungen wurden gespeichert. Restbestand 827. Der nächste Export verwendet verpflichtende Kandidaten-IDs als Objektschlüssel im Antwortschema; die Zuordnung hängt nicht mehr von frei geschriebenen IDs oder vollständigen Modell-Arrays ab. Einzelne nicht blockierende Antwortfehler lassen andere Kandidaten weiterlaufen.
+
+
+## Verifizierter Stand nach Korrektur
+
+Lauf 34759299361 prüfte innerhalb des zehnminütigen Quellenbudgets 28 weitere Kandidaten. Eine HTTP-429-Ratenbegrenzung wurde nach fünf Sekunden wiederholt; am Ende kein API-Fehler und keine fehlerhafte Kandidatenzuordnung. Die zuletzt noch nicht abgeschlossene Anfrage blieb für den nächsten Lauf offen. Generierung, Grenzprüfungen und Veröffentlichung erfolgreich.
+
+Gesamtstand: 899 Rohkandidaten; 19 Anlagekommentare vorgefiltert, 12 nahe Dubletten gruppiert; 868 Prüfkandidaten. Davon 68 geprüft (9 aufgenommen, 23 Watchlist, 36 abgelehnt), 800 noch offen. Gegenüber den ursprünglich 24 geprüften Kandidaten sind 44 weitere geprüft worden. Die Restbestandsänderung ist nachvollziehbar: 847 + 28 nacherfasste Kandidaten − 31 Vorfilterentscheidungen − 44 weitere Prüfungen = 800.
+
+Die Zahl 96 bleibt ausschließlich eine Obergrenze. Gemessener Durchsatz: 28 Kandidaten pro zehnminütigem Aufarbeitungslauf. Bei vergleichbarem Tempo und den eingerichteten Zusatzterminen ist für den verbleibenden Bestand grob mit ein bis zwei Tagen zu rechnen. Das ist eine Hochrechnung aus einem erfolgreichen Lauf, kein garantierter Termin; zusätzliche Meldungen, API-Störungen, Wiedervorlagen und verzögerte GitHub-Starts können ihn verändern.
+
+Live-DE/EN-Snapshots stimmen überein: 800 offen, 68 geprüft, 9 angenommen, Executive Pulse 79, jüngstes Indexevidenzdatum 11. September. Dieser Maximalzeitstempel bedeutet keine vollständige Aktualisierung aller Indexbestandteile. Die vier operativen Wiedervorlagen bleiben unabhängig davon offen und benötigen passende aktuelle Channel-/Projektbelege. Ein abgearbeiteter Nachrichteneingang bestätigt diese Beobachtungen nicht automatisch.
