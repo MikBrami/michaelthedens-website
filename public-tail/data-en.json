@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T19:21:04.274Z",
+  "generatedAt": "2026-09-13T01:00:33.273Z",
   "editorial": {
     "version": 5,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "856d94def3817ab0844f5cbb",
+    "sourceHash": "57d9384d086e5e56b7f40f44",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
-    "dataAsOf": "2026-09-12",
+    "dataAsOf": "2026-09-13",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -27,7 +27,7 @@
         "signals": 19,
         "articleSignals": 17,
         "operationalSignals": 2,
-        "confidence": 82,
+        "confidence": 81,
         "coverage": 100,
         "drivers": [
           {
@@ -56,9 +56,9 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 67,
+            "confidence": 66,
             "evidenceCount": 5,
-            "pressure": 80,
+            "pressure": 79,
             "relief": 0,
             "operationalFloor": 86,
             "formula": "pressure - relief × reliefOffset"
@@ -180,7 +180,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 55,
+            "confidence": 54,
             "evidenceCount": 5,
             "pressure": 79,
             "relief": 0,
@@ -202,7 +202,7 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-12",
+    "analysisAsOf": "2026-09-13",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
@@ -213,15 +213,27 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check of 2026-09-12 reviewed the current news flow and found no newly confirmed material change in direction. New capacity and improved yields can relieve pressure but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
+    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the most constrained areas. The Daily Check of 2026-09-13 reviewed the current news flow; it does not indicate any newly confirmed material change in direction. New capacity and improved yields can relieve pressure, but will only reach the market with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
       "date": "2026-09-12",
+      "title": "Samsung, TSMC and Intel join ASML to build new technology barrier against China",
+      "summary": "Aktuelle Meldung von 헤럴드경제: Samsung, TSMC and Intel join ASML to build new technology barrier against China",
+      "analysis": "This signal is upstream in the semiconductor supply chain. Only when investments convert into installed and qualified tools, stable yields and additional wafers will real supply relief emerge.",
+      "score": 91,
+      "relevanceScore": 97,
+      "sourceQuality": 6,
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE96MVNuRFo0ZXp5QjE4SXJCSm9WUjlHa0RITXBFeS1WajI3d2NLNDlwX252VTR0cm5VZFU1bmx6QlV1YzFIZWtPdUc0bEdQeVVZZHZaa2Mxaw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-12",
       "title": "Micron doubling HBM capacity as Samsung, SK Hynix scale up",
       "summary": "Micron doubling HBM capacity as Samsung, SK Hynix scale up Sammy Fans",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand directly affect available GPU systems and pricing in the AI infrastructure market.",
-      "score": 90,
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand feed directly through to available GPU systems and pricing in the AI infrastructure market.",
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Sammy Fans",
@@ -232,24 +244,12 @@
       "date": "2026-09-12",
       "title": "DeepSeek’s HBM claim rattles Samsung Electronics and SK Hynix",
       "summary": "Aktuelle Meldung von NeoTeo: DeepSeek’s HBM claim rattles Samsung Electronics and SK Hynix",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand directly affect available GPU systems and pricing in the AI infrastructure market.",
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand feed directly through to available GPU systems and pricing in the AI infrastructure market.",
       "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "NeoTeo",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbTZ3U3dOZmNMWlNNOUhBOFM4dHhycGRubGE1eDUxSUtycl9vWWdieFpoaW9KOXgzS01DYlhWUmNWYXhyODNuTl9WTUFmRlRoQ3Bxajk1Q1RtQ0t5cEtWeGY4ekhuMjhmWTNsR3hfc2l4c3FmX0xaaGxQdGM5N3pxeV9vbnZZU1g3NU44T1ZMdw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin",
-      "summary": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin Seoul Economic Daily",
-      "analysis": "The report is relevant for data-centre storage: it can affect prices, available capacity or procurement strategy for enterprise SSDs.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Seoul Economic Daily",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVThONmhRa08wdW9HVXBsVlZ6c2hQMDl6YXhQSVdqNzN2NDlfSjQzeVRSaWlDQUtmcWFYS0dtZ3kwb3hGY045Y3J1dzlTTEh0SUprU0NYbm1KTHdCSGhIZGh3eTloUHVUbHcxRUp4REp6VzhyVFVIVlJUNEVLY0tLTm5uclJOa2xtUy1OTGdGcENac01Eb19PcTIzbTFpcklZOU1v?oc=5",
       "layer": "news"
     }
   ],
@@ -268,11 +268,11 @@
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging remains a central AI supply‑chain bottleneck at least until H2 2027 despite the Chiayi expansion."
+      "event": "Forecast review: Advanced packaging will remain a central AI supply-chain bottleneck at least until H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier-Review: AI Asset-Backed Financing Reflexivity"
+      "event": "Falsifier review: AI asset-backed financing reflexivity"
     },
     {
       "date": "2027-03-31",
@@ -367,10 +367,10 @@
         "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated event frequencies.",
         "currentScore": 81,
         "currentStatus": "orange",
-        "confidence": 82,
+        "confidence": 81,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-12"
+        "indexAsOf": "2026-09-13"
       },
       {
         "marketId": "enterprise_ssd",
@@ -475,7 +475,7 @@
         "confidence": 73,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-12"
+        "indexAsOf": "2026-09-13"
       }
     ]
   }

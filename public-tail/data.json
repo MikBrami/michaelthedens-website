@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T19:19:56.675Z",
+  "generatedAt": "2026-09-13T00:59:45.268Z",
   "platform": {
-    "dataAsOf": "2026-09-12",
+    "dataAsOf": "2026-09-13",
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
@@ -19,7 +19,7 @@
         "signals": 19,
         "articleSignals": 17,
         "operationalSignals": 2,
-        "confidence": 82,
+        "confidence": 81,
         "coverage": 100,
         "drivers": [
           {
@@ -48,9 +48,9 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 86,
-            "confidence": 67,
+            "confidence": 66,
             "evidenceCount": 5,
-            "pressure": 80,
+            "pressure": 79,
             "relief": 0,
             "operationalFloor": 86,
             "formula": "pressure - relief × reliefOffset"
@@ -172,7 +172,7 @@
             "id": "availability",
             "label": "Verfügbarkeit / Allocation",
             "score": 87,
-            "confidence": 55,
+            "confidence": 54,
             "evidenceCount": 5,
             "pressure": 79,
             "relief": 0,
@@ -194,7 +194,7 @@
         "label": "Enterprise SSD"
       }
     ],
-    "analysisAsOf": "2026-09-12",
+    "analysisAsOf": "2026-09-13",
     "sourceDataAsOf": "2026-08-28"
   },
   "executivePulse": {
@@ -205,15 +205,27 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-12 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-13 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-12",
-      "title": "Micron verdoppelt HBM‑Kapazität, Samsung und SK Hynix bauen aus",
-      "summary": "Micron will seine HBM‑Kapazität verdoppeln, während Samsung und SK Hynix ebenfalls hochfahren.",
+      "title": "Samsung, TSMC und Intel arbeiten mit ASML an Technologieschranke gegen China",
+      "summary": "Samsung, TSMC und Intel schließen sich ASML an, um eine neue Technologieschranke gegenüber China aufzubauen.",
+      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
+      "score": 91,
+      "relevanceScore": 97,
+      "sourceQuality": 6,
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE96MVNuRFo0ZXp5QjE4SXJCSm9WUjlHa0RITXBFeS1WajI3d2NLNDlwX252VTR0cm5VZFU1bmx6QlV1YzFIZWtPdUc0bEdQeVVZZHZaa2Mxaw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Micron verdoppelt HBM-Kapazität, Samsung und SK Hynix bauen Kapazitäten aus",
+      "summary": "Micron verdoppelt seine HBM-Kapazität; zeitgleich skalieren Samsung und SK Hynix ihre Produktion.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Sammy Fans",
@@ -223,25 +235,13 @@
     {
       "date": "2026-09-12",
       "title": "DeepSeek‑Behauptung zu HBM verunsichert Samsung Electronics und SK Hynix",
-      "summary": "NeoTeo berichtet, dass DeepSeek mit einer HBM‑Behauptung Samsung Electronics und SK Hynix verunsichert.",
+      "summary": "DeepSeek behauptet Fortschritte bei HBM; die Aussage verunsichert Samsung Electronics und SK Hynix.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "NeoTeo",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbTZ3U3dOZmNMWlNNOUhBOFM4dHhycGRubGE1eDUxSUtycl9vWWdieFpoaW9KOXgzS01DYlhWUmNWYXhyODNuTl9WTUFmRlRoQ3Bxajk1Q1RtQ0t5cEtWeGY4ekhuMjhmWTNsR3hfc2l4c3FmX0xaaGxQdGM5N3pxeV9vbnZZU1g3NU44T1ZMdw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "Chinas CXMT mit 82% Operating Margin vor SK hynix und Samsung",
-      "summary": "Seoul Economic Daily meldet, dass CXMT eine Operating Margin von 82% erzielt und damit SK hynix sowie Samsung übertrifft.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Seoul Economic Daily",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVThONmhRa08wdW9HVXBsVlZ6c2hQMDl6YXhQSVdqNzN2NDlfSjQzeVRSaWlDQUtmcWFYS0dtZ3kwb3hGY045Y3J1dzlTTEh0SUprU0NYbm1KTHdCSGhIZGh3eTloUHVUbHcxRUp4REp6VzhyVFVIVlJUNEVLY0tLTm5uclJOa2xtUy1OTGdGcENac01Eb19PcTIzbTFpcklZOU1v?oc=5",
       "layer": "news"
     }
   ],
@@ -276,7 +276,7 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-12",
+    "date": "2026-09-13",
     "type": "no-material-change",
     "title": "Keine bestätigte materielle Richtungsänderung",
     "impactScore": 0,
@@ -285,10 +285,22 @@
   "news": [
     {
       "date": "2026-09-12",
+      "title": "Samsung, TSMC and Intel join ASML to build new technology barrier against China",
+      "summary": "Aktuelle Meldung von 헤럴드경제: Samsung, TSMC and Intel join ASML to build new technology barrier against China",
+      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
+      "score": 91,
+      "relevanceScore": 97,
+      "sourceQuality": 6,
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE96MVNuRFo0ZXp5QjE4SXJCSm9WUjlHa0RITXBFeS1WajI3d2NLNDlwX252VTR0cm5VZFU1bmx6QlV1YzFIZWtPdUc0bEdQeVVZZHZaa2Mxaw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-12",
       "title": "Micron doubling HBM capacity as Samsung, SK Hynix scale up",
       "summary": "Micron doubling HBM capacity as Samsung, SK Hynix scale up Sammy Fans",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Sammy Fans",
@@ -306,24 +318,12 @@
       "source": "NeoTeo",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbTZ3U3dOZmNMWlNNOUhBOFM4dHhycGRubGE1eDUxSUtycl9vWWdieFpoaW9KOXgzS01DYlhWUmNWYXhyODNuTl9WTUFmRlRoQ3Bxajk1Q1RtQ0t5cEtWeGY4ekhuMjhmWTNsR3hfc2l4c3FmX0xaaGxQdGM5N3pxeV9vbnZZU1g3NU44T1ZMdw?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin",
-      "summary": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin Seoul Economic Daily",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Seoul Economic Daily",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVThONmhRa08wdW9HVXBsVlZ6c2hQMDl6YXhQSVdqNzN2NDlfSjQzeVRSaWlDQUtmcWFYS0dtZ3kwb3hGY045Y3J1dzlTTEh0SUprU0NYbm1KTHdCSGhIZGh3eTloUHVUbHcxRUp4REp6VzhyVFVIVlJUNEVLY0tLTm5uclJOa2xtUy1OTGdGcENac01Eb19PcTIzbTFpcklZOU1v?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-12T19:19:56.885Z",
+    "generatedAt": "2026-09-13T00:59:45.465Z",
     "count": 3,
-    "candidateCount": 28,
+    "candidateCount": 17,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -413,10 +413,10 @@
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
         "currentScore": 81,
         "currentStatus": "orange",
-        "confidence": 82,
+        "confidence": 81,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-12"
+        "indexAsOf": "2026-09-13"
       },
       {
         "marketId": "enterprise_ssd",
@@ -516,7 +516,7 @@
         "confidence": 73,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-12",
+        "indexAsOf": "2026-09-13",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -538,10 +538,22 @@
   "originalSignals": [
     {
       "date": "2026-09-12",
+      "title": "Samsung, TSMC and Intel join ASML to build new technology barrier against China",
+      "summary": "Aktuelle Meldung von 헤럴드경제: Samsung, TSMC and Intel join ASML to build new technology barrier against China",
+      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
+      "score": 91,
+      "relevanceScore": 97,
+      "sourceQuality": 6,
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE96MVNuRFo0ZXp5QjE4SXJCSm9WUjlHa0RITXBFeS1WajI3d2NLNDlwX252VTR0cm5VZFU1bmx6QlV1YzFIZWtPdUc0bEdQeVVZZHZaa2Mxaw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-12",
       "title": "Micron doubling HBM capacity as Samsung, SK Hynix scale up",
       "summary": "Micron doubling HBM capacity as Samsung, SK Hynix scale up Sammy Fans",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Sammy Fans",
@@ -559,18 +571,6 @@
       "source": "NeoTeo",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbTZ3U3dOZmNMWlNNOUhBOFM4dHhycGRubGE1eDUxSUtycl9vWWdieFpoaW9KOXgzS01DYlhWUmNWYXhyODNuTl9WTUFmRlRoQ3Bxajk1Q1RtQ0t5cEtWeGY4ekhuMjhmWTNsR3hfc2l4c3FmX0xaaGxQdGM5N3pxeV9vbnZZU1g3NU44T1ZMdw?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin",
-      "summary": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin Seoul Economic Daily",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Seoul Economic Daily",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVThONmhRa08wdW9HVXBsVlZ6c2hQMDl6YXhQSVdqNzN2NDlfSjQzeVRSaWlDQUtmcWFYS0dtZ3kwb3hGY045Y3J1dzlTTEh0SUprU0NYbm1KTHdCSGhIZGh3eTloUHVUbHcxRUp4REp6VzhyVFVIVlJUNEVLY0tLTm5uclJOa2xtUy1OTGdGcENac01Eb19PcTIzbTFpcklZOU1v?oc=5",
-      "layer": "news"
     }
   ],
   "editorial": {
@@ -578,7 +578,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-12T19:20:18.920Z"
+      "generatedAt": "2026-09-13T01:00:08.474Z"
     }
   }
 }
