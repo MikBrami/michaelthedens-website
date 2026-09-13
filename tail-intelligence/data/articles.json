@@ -1535,6 +1535,69 @@
     ]
   },
   {
+    "id": "S-AUTO-c606575af5eb0035a69fcb7f",
+    "date": "2026-07-23",
+    "title": "AMD MI400 ships with 432 GB HBM4 (MI455X) — Produkt-Launch / erste Lieferungen",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "ai_infrastructure",
+      "semiconductors"
+    ],
+    "companies": [
+      "AMD"
+    ],
+    "severity": 30,
+    "confidence": 70,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "aiDemand"
+    ],
+    "summary": "AMD veröffentlichte die Instinct MI400-Serie (MI455X) mit 432 GB HBM4 pro GPU und nennt 23.3 TB/s Memory-Bandbreite; erste Produktseiten/Ankündigungen erschienen im Juli 2026 (Produktlaunch/Shipping-Ankündigung dokumentiert 2026-07-23).",
+    "tail_analysis": "Kommerzielle Auslieferung (Shipments) von MI400‑Systemen mit 432 GB HBM4 erhöht die verfügbare Liefermenge an HBM4‑gepackter Kapazität im AI‑Server‑Ökosystem und verschiebt kurzfristig die Nachfrage‑/Allokationsdynamik zwischen Lieferanten und Hyperscalern zugunsten zusätzlicher OEM‑Optionen.",
+    "source": "AMD - Produktseite Instinct MI400 (MI455X), Spezifikation: 432 GB HBM4",
+    "url": "https://www.amd.com/en/products/accelerators/instinct/mi400.html",
+    "content_hash": "b78b7ba6fc7dc1b92215",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T17:12:16.601Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "c606575af5eb0035a69fcb7f",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Stützt die These, dass HBM‑/Server‑DRAM‑Knappheit bis Ende 2028 anhält, indem sie zeigt, dass Premium‑HBM‑Produkte (größere Modules pro Device) kommerziell geliefert werden und damit die Nachfragekonzentration auf wenige High‑end‑Supplier erhöht; erhöht kurzfristig Allokations‑ und Priorisierungsrisiken (verstärkt negative_supply/Knappheits‑Bias für HBM/Server‑DRAM).",
+    "falsifier": "Bis 2026-12-31 liegen keine belegbaren Kunden‑Lieferungsnachweise (zwei unabhängige OEMs oder zwei große Hyperscaler) für tatsächlich ausgelieferte MI400‑Einheiten mit 432 GB HBM4 vor, oder AMD zieht die Produktseiten/Shipping‑Statements zurück.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Stützt die These, dass HBM‑/Server‑DRAM‑Knappheit bis Ende 2028 anhält, indem sie zeigt, dass Premium‑HBM‑Produkte (größere Modules pro Device) kommerziell geliefert werden und damit die Nachfragekonzentration auf wenige High‑end‑Supplier erhöht; erhöht kurzfristig Allokations‑ und Priorisierungsrisiken (verstärkt negative_supply/Knappheits‑Bias für HBM/Server‑DRAM)."
+    },
+    "sources": [
+      {
+        "label": "AMD - Produktseite Instinct MI400 (MI455X), Spezifikation: 432 GB HBM4",
+        "url": "https://www.amd.com/en/products/accelerators/instinct/mi400.html"
+      },
+      {
+        "label": "DatacenterDyanmics: AMD launches Instinct MI400 — Reporting zum Launch / Shipping (2026-07-23)",
+        "url": "https://www.datacenterdynamics.com/en/news/amd-launches-instinct-mi400-series-gpus-for-ai-workloads/"
+      },
+      {
+        "label": "AMD - Präsentationsunterlage (Produktdetails MI400 / HBM4 Kapazität erwähnt)",
+        "url": "https://www.amd.com/content/dam/amd/en/documents/corporate/events/advancing-ai-2025-distribution-deck.pdf"
+      }
+    ]
+  },
+  {
     "id": "S-2026-07-24-01",
     "date": "2026-07-24",
     "title": "Hormuz fällt auf einen Öltanker, während Brent über 100 US-Dollar steigt",
@@ -6541,6 +6604,70 @@
     ]
   },
   {
+    "id": "S-AUTO-28b329255578ff6a8943398e",
+    "date": "2026-09-08",
+    "title": "ASML / Intel / TSMC / Samsung: High‑NA EUV Fortschritt und Industrieinitiativen",
+    "category": "memory",
+    "markets": [
+      "semiconductors",
+      "hbm",
+      "dram"
+    ],
+    "companies": [
+      "Samsung",
+      "TSMC",
+      "Intel"
+    ],
+    "severity": 60,
+    "confidence": 75,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability"
+    ],
+    "summary": "ASML meldete am 2026-07-15 ein Readiness‑Milestone für High‑NA EUV mit einem ersten High‑Volume‑Logic‑Produkt (Intel Core® Ultra Series 3 \"Panther Lake\"); Anfang September 2026 kündigten ASML/TSMC und ASML/Samsung koordinierte Initiativen (u. a. Übergang zu 12‑inch‑Photomasken) an, Samsung gab an, High‑NA in künftige DRAM‑HVM‑Pläne bis 2028 einzubinden. Diese Pressemitteilungen sind datierte, primäre Quellen zur technologischen Reife und Kundenverpflichtung gegenüber High‑NA EUV. ([asml.com](https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone?utm_source=openai))",
+    "tail_analysis": "High‑NA EUV erhöht optische Auflösung und (bei begleitender Mask‑/Produktionsinfrastruktur) ermöglicht die Produktion engerer Geometrien und höhere Effizienz pro Fläche; dadurch kann High‑NA die Produktionsfähigkeit fortgeschrittener Logic‑ und (potenziell) DRAM/HBM‑Prozesse verbessern und den Zeitpunkt verschieben, zu dem fortgeschrittene Memory‑Bits verfügbar werden.",
+    "source": "ASML – High‑NA EUV erreicht Readiness‑Milestone (2026‑07‑15)",
+    "url": "https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone",
+    "content_hash": "c44079169043cc64b1f2",
+    "origin": "reviewed-inbox",
+    "classification": "Architecture Update",
+    "admittedAt": "2026-09-13T17:08:37.176Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "28b329255578ff6a8943398e",
+    "predictionId": "P-2026-07-20-04",
+    "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit, dass 'Memory bleibt 2027 knapp, Oversupply‑Risiko steigt 2028' (P-2026-07-20-04) teilweise gemildert wird — weil Kundenzusagen und technische Reife von High‑NA die Möglichkeit eröffnen, fortgeschrittene Memory/Logic‑Kapazität früher (oder mit höherer Produktivität) in den Markt zu bringen als in Modellen ohne diese Beobachtung.",
+    "falsifier": "Die technische/marktwirksame Wirkung auf P-2026-07-20-04 wäre falsifiziert, falls bis zum 2028-12-31 keine qualifizierten High‑NA‑basierten DRAM/HBM‑Shipments oder kein berichteter qualifizierter Produktions‑Output für DRAM/HBM (z. B. dokumentierte HVM‑Shipments oder veröffentlichte Vertrags‑/Shipment‑Zahlen) auftauchen, obwohl ASML/Samsung/TSMC/Intel in ihren Pressemitteilungen 2026 High‑NA‑Einfügedaten nannten.",
+    "nextReview": "2026-10-08",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Dieses Ereignis erhöht die Wahrscheinlichkeit, dass 'Memory bleibt 2027 knapp, Oversupply‑Risiko steigt 2028' (P-2026-07-20-04) teilweise gemildert wird — weil Kundenzusagen und technische Reife von High‑NA die Möglichkeit eröffnen, fortgeschrittene Memory/Logic‑Kapazität früher (oder mit höherer Produktivität) in den Markt zu bringen als in Modellen ohne diese Beobachtung."
+    },
+    "sources": [
+      {
+        "label": "ASML – High‑NA EUV erreicht Readiness‑Milestone (2026‑07‑15)",
+        "url": "https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone"
+      },
+      {
+        "label": "ASML / Intel – Zusammenarbeit zur Beschleunigung der Industry‑Readiness (2026‑09‑08)",
+        "url": "https://www.asml.com/en/news/press-releases/2026/intel-foundry-and-asml-collaborate-to-accelerate-industry-readiness-for-high-na-euv"
+      },
+      {
+        "label": "ASML / TSMC – Initiative zum Übergang auf 12‑inch Photomasks (2026‑09‑08)",
+        "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-d25873b789efc5ec1a7f41d3",
     "date": "2026-09-08",
     "title": "Firmus meldet >900 MW gebundene Kapazität und nennt OpenAI als Ankerkunden",
@@ -6594,6 +6721,62 @@
       {
         "label": "CRN Asia — Sekundärberichterstattung zur Firmus-Pressemitteilung (Bericht Sept 2026)",
         "url": "https://www.crnasia.com/news/2026/data-center/firmus-adds-openai-as-anchor-customer"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-64bb30d24aff52312b465626",
+    "date": "2026-09-10",
+    "title": "Große Data‑Center‑Zusagen in Finnland: Google, Microsoft, TikTok und andere kündigen zusammen >US$30.2 Mrd. Investitionen an (Regional‑Data‑Center‑Cluster)",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "dram"
+    ],
+    "companies": [
+      "Microsoft",
+      "Google"
+    ],
+    "severity": 50,
+    "confidence": 75,
+    "signal": "demand_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "Fortune berichtete am 2026‑09‑10, dass Google, Microsoft, TikTok und andere zusammen Investitionszusagen/Pläne über ~US$30.2 Mrd. in Finnland (Data‑Center‑Cluster: Hamina, Kajaani, Muhos, Vaala) angekündigt haben; Google allein nannte ~€13 Mrd. (~US$15.1 Mrd.).",
+    "tail_analysis": "Große direkte Investitionen in Data‑Center‑Standorte erhöhen lokale und regionale Bedarfskanäle für Server, Memory (Server‑DRAM, HBM), Enterprise‑SSD und Strom/Leasingdienste; sie binden Kapazität langfristig über FIDs/Lease‑Tails und können regionale Nachfrage für spezifizierte Komponenten signifikant erhöhen.",
+    "source": "Fortune Bericht (2026-09-10)",
+    "url": "https://fortune.com/2026/09/10/europe-data-center-capital-google-microsoft-tiktok-30-2-billion/",
+    "content_hash": "b3c7d2b630ef2c4a2ef5",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T17:08:37.200Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "64bb30d24aff52312b465626",
+    "predictionId": "P-2026-07-17-03",
+    "predictionImpact": "Unterstützt die Sicht, dass Hyperscaler‑Capex weiter wächst und Projekte sich in neue Regionen ausdehnen; erhöht kurzfristig Wahrscheinlichkeit, dass Hyperscaler‑Capex 2027 weiterhin positiv bleibt (verzögert mögliche 2028‑Normalisierung).",
+    "falsifier": "Wenn bis 2027-12-31 keine substantiellen FIDs, Bau‑Permits oder verbindlichen langfristigen Leases/Shipments für die angekündigten finnischen Projekte vorliegen (z. B. keine nachweisbaren MW‑FID/Leases/Additions >200 MW pro Projekt), oder wenn die Unternehmen öffentlich die Projekte ganz/teilweise zurückziehen, dann schwächt das den Signal‑Bezug zur Hyperscaler‑Capex‑Fortsetzung.",
+    "nextReview": "2027-01-15",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Unterstützt die Sicht, dass Hyperscaler‑Capex weiter wächst und Projekte sich in neue Regionen ausdehnen; erhöht kurzfristig Wahrscheinlichkeit, dass Hyperscaler‑Capex 2027 weiterhin positiv bleibt (verzögert mögliche 2028‑Normalisierung)."
+    },
+    "sources": [
+      {
+        "label": "Fortune Bericht (2026-09-10)",
+        "url": "https://fortune.com/2026/09/10/europe-data-center-capital-google-microsoft-tiktok-30-2-billion/"
       }
     ]
   },
@@ -6655,6 +6838,61 @@
       {
         "label": "Yahoo/Insider‑Monkey / Barron’s‑Synthetisierung (sekundäre Berichterstattung)",
         "url": "https://ca.finance.yahoo.com/news/intel-backed-startup-says-beat-232338040.html"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-84351dc941259805a65972ee",
+    "date": "2026-09-10",
+    "title": "NVIDIA kündigt Partnerschaften in Australien für bis zu 2 GW AI‑Factory‑Buildout bis 2027 an",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "hbm"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "severity": 45,
+    "confidence": 75,
+    "signal": "demand_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "NVIDIA gab in einer Pressemitteilung am 2026‑09‑10 an, mit mehreren australischen Datenzentrumspartnern zusammenzuarbeiten, um Land, Strom und Shell‑Kapazität für Multi‑Generation NVIDIA DSX™ AI‑Fabriken auszubauen — mit einem möglichen Umfang von bis zu 2 Gigawatt bis 2027.",
+    "tail_analysis": "NVIDIA liefert DSX™ AI‑Factory‑Blueprint und Koordination; Partner (NCPs, Rechenzentrumsbetreiber, Interconnect‑Provider) sollen Land‑ und Energieressourcen bereitstellen und Shell/Build‑outs entwickeln. Mechanismus ist ein industrieweites Kooperations‑/Vorverkaufs‑ und Infrastruktur‑Rollout, der die Nachfrage nach Server‑DRAM/HBM erhöht (Kapazitätsbedarf, Rack‑dichte, GPU‑Shelving).",
+    "source": "NVIDIA Investor‑Site (Press Release PDF)",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Expands-AI-Infrastructure-Capacity-in-Partnership-With-Australias-Data-Center-Ecosystem/default.aspx",
+    "content_hash": "7f2fbbc278ee64e80822",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T17:10:24.881Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "84351dc941259805a65972ee",
+    "predictionId": "OUTLOOK-server_dram",
+    "predictionImpact": "Kurzfristig erhöht die Ankündigung die wahrscheinliche Nachfrage nach Server‑DRAM/HBM (d.h. stärkt das 'Kurzfristiges Beschaffungsrisiko' im OUTLOOK‑server_dram); die Wirkung ist allerdings contingent auf FIDs, Interconnection‑Genehmigungen und reale Shipments.",
+    "falsifier": "Bis 2027-12-31: Keine der namentlich genannten Partnerschaften meldet verbindliche FIDs, zugeteilte Netzanschlüsse oder genehmigte Interconnection/Utilities‑Genehmigungen und es gibt keine qualifizierten Lieferungen/Shipments, die ≥0,5 GW aggregierte IT‑Load für die genannten Projekte freischalten. Erfüllt dies die Bedingung, ist die angekündigte 'up to 2 GW by 2027' Wirkungslos (Marketing/PR) für kurzfristige Server‑DRAM‑Nachfrage.",
+    "nextReview": "2027-01-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Kurzfristig erhöht die Ankündigung die wahrscheinliche Nachfrage nach Server‑DRAM/HBM (d.h. stärkt das 'Kurzfristiges Beschaffungsrisiko' im OUTLOOK‑server_dram); die Wirkung ist allerdings contingent auf FIDs, Interconnection‑Genehmigungen und reale Shipments."
+    },
+    "sources": [
+      {
+        "label": "NVIDIA Investor‑Site (Press Release PDF)",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Expands-AI-Infrastructure-Capacity-in-Partnership-With-Australias-Data-Center-Ecosystem/default.aspx"
       }
     ]
   },
@@ -6778,6 +7016,70 @@
       {
         "label": "eDaily / Seoul Economic — Berichterstattung zu CXMT-Gewinnmargen und Exportanstieg (12.09.2026)",
         "url": "https://en.edaily.co.kr/news/eda202609115063/"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-2fbda9055add9061096f0742",
+    "date": "2026-09-11",
+    "title": "KB Securities: Samsungs HBM‑Marktanteil nähert sich ~40 % (Analystenbericht)",
+    "category": "geopolitics",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "dram"
+    ],
+    "companies": [
+      "Samsung",
+      "SK hynix"
+    ],
+    "severity": 40,
+    "confidence": 70,
+    "signal": "demand_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "KB Securities sagte am 2026-09-11, Samsungs Anteil am HBM‑Markt werde sich in Q4 2026 auf nahezu 40 % erhöhen; KB erwartet, dass Samsungs HBM4‑Umsatz im Q3 2026 mehr als das Dreifache zum Vorquartal ausmacht und HBM4 >60 % der HBM‑Erlöse in H2 2026 ausmacht. (Seoul Economic Daily, 2026-09-11).",
+    "tail_analysis": "Samsungs HBM4‑Ramp (größere HBM4‑Shipments und gestiegene HBM4‑Erlöse), verbesserte Foundry‑Yields und Neukunden (ASIC/Cloud) erhöhen Samsungs relative HBM‑Anteil gegenüber Wettbewerbern; KB‑Note stützt sich auf Unternehmens‑Guidance und Branchenorder‑Momentum.",
+    "source": "Seoul Economic Daily — \"Samsung Electronics HBM Share to Near 40%, KB Sees 600,000‑Won Target\" (2026-09-11)",
+    "url": "https://en.sedaily.com/finance/2026/09/11/samsung-electronics-hbm-share-to-near-40-percent-kb-sees",
+    "content_hash": "9cb0d295a7cdb1e4fb2b",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-13T17:05:34.628Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "2fbda9055add9061096f0742",
+    "predictionId": "P-2026-07-30-02",
+    "predictionImpact": "Stützt P-2026-07-30-02 (\"Samsung steigert den HBM4‑Umsatz im Q3 2026 sequenziell mindestens auf das 2,5‑Fache gegenüber Q2 2026\"). Wenn KBs Aussage stimmt, reduziert das kurzfristig den Falsifizierungswahrscheinlichkeit des genannten Forecast‑Falsifiers.",
+    "falsifier": "Samsung veröffentlicht die Q3‑2026‑Finanzzahlen: gemeldeter HBM4‑Umsatz in Q3 2026 < 2.5× Q2 2026 (numerische Vergleichsbasis). Prüftermin: nach offizieller Samsung Q3‑Earnings‑Veröffentlichung (siehe NextReview).",
+    "nextReview": "2026-11-05",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Stützt P-2026-07-30-02 (\"Samsung steigert den HBM4‑Umsatz im Q3 2026 sequenziell mindestens auf das 2,5‑Fache gegenüber Q2 2026\"). Wenn KBs Aussage stimmt, reduziert das kurzfristig den Falsifizierungswahrscheinlichkeit des genannten Forecast‑Falsifiers."
+    },
+    "sources": [
+      {
+        "label": "Seoul Economic Daily — \"Samsung Electronics HBM Share to Near 40%, KB Sees 600,000‑Won Target\" (2026-09-11)",
+        "url": "https://en.sedaily.com/finance/2026/09/11/samsung-electronics-hbm-share-to-near-40-percent-kb-sees"
+      },
+      {
+        "label": "Kontra/Context — TrendForce / Branchenanalysen: SK hynix führt weiterhin HBM Bit‑Output (TrendForce zitiert) — konträrere Markt‑Share‑Projektionen",
+        "url": "https://m.ajupress.com/amp/20260803155943496"
+      },
+      {
+        "label": "Samsung Unternehmens‑Guidance / Frühere Firmenaussagen (Q1/Q2 Calls)",
+        "url": "https://en.sedaily.com/finance/2026/04/30/samsungs-hbm4-sold-out-for-year-to-exceed-half-of-hbm"
       }
     ]
   },
