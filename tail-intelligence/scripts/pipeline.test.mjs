@@ -52,10 +52,10 @@ test('Parallel retrieval still admits a shared observation only once and persist
   put('config/methodology.json',methodology);put('data/articles.json',[]);put('config/market-outlook.json',{outlooks:[{marketId:'enterprise_ssd',view:'Supply remains tight',changeRules:'Qualified supply improves'}]});
   const day=new Date().toISOString().slice(0,10),future=new Date(Date.now()+86400000*7).toISOString().slice(0,10);
   const fixture={...proposal,eventDate:day,nextReview:future};
-  fs.writeFileSync(path.join(root,'mock.mjs'),`const fixture=${JSON.stringify(fixture)}; globalThis.fetch=async (_url,options)=>{const request=JSON.parse(options.body), input=JSON.parse(request.input);await new Promise(r=>setTimeout(r,20));return {ok:true,json:async()=>({id:'mock',status:'completed',output:[{type:'web_search_call',action:{sources:[{url:fixture.sources[0].url}]}},{content:[{type:'output_text',text:JSON.stringify({reviews:input.candidates.map(c=>({...fixture,candidateId:c.id}))})}]}]})};};`);
+  fs.writeFileSync(path.join(root,'mock.mjs'),`const fixture=${JSON.stringify(fixture)}; globalThis.fetch=async (_url,options)=>{const request=JSON.parse(options.body), input=JSON.parse(request.input);await new Promise(r=>setTimeout(r,20));return {ok:true,json:async()=>({id:'mock',status:'completed',output:[{type:'web_search_call',action:{sources:[{url:fixture.sources[0].url}]}},{content:[{type:'output_text',text:JSON.stringify({reviews:Object.fromEntries(input.candidates.map(c=>[c.id,{...fixture,candidateId:'ignored-model-id'}]))})}]}]})};};`);
   execFileSync(process.execPath,['--import',path.join(root,'mock.mjs'),path.join(root,'scripts/review-inbox.mjs')],{env:{...process.env,OPENAI_API_KEY:'mock-only',TAIL_REVIEW_LIMIT:'8',TAIL_REVIEW_CONCURRENCY:'2'},stdio:'pipe'});
   const read=file=>JSON.parse(fs.readFileSync(path.join(root,'data',file)));
-  assert.equal(read('admission-status.json').reviewed,8);assert.equal(read('admission-status.json').accepted,1);assert.equal(read('admission-status.json').lastRun.concurrency,2);
+  assert.equal(read('admission-status.json').reviewed,8);assert.ok(read('admission-reviews.json').reviews.every(r=>r.candidateId.startsWith('candidate')));assert.equal(read('admission-status.json').accepted,1);assert.equal(read('admission-status.json').lastRun.concurrency,2);
   assert.equal(read('admission-backlog.json').items.length,8);assert.equal(read('admission-reviews.json').reviews.length,8);
  } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
