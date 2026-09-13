@@ -5,6 +5,8 @@ export const reviewKey = (item) => crypto.createHash('sha256')
 export const canonical = (value) => {
   try { const u = new URL(value); u.hash = ''; for (const k of [...u.searchParams.keys()]) if (/^(utm_|gclid|fbclid)/.test(k)) u.searchParams.delete(k); return u.toString().replace(/\/$/, ''); } catch { return ''; }
 };
+// Market share is context, not an absolute qualified-supply or price measurement.
+export const hasDirectIndexEvidence = (review) => Boolean(review.indexEvidence && review.indexEvidence.metricType !== 'none' && !/market.?share|bit.?share|shipment.?share|marktanteil|\banteil\b|\bshare\b|ranking|rang\s*\d|platz\s*\d/i.test(review.indexEvidence.observation || ''));
 export function eligibleCandidates(items, asOf) {
   const cutoff = Date.parse(asOf) - 30 * 86400000;
   const seen = new Set();
@@ -57,7 +59,7 @@ export function validateReview(review, { item, methodology, forecastIds, sourceU
     falsifier: review.falsifier, nextReview: review.nextReview, priorityScore: score, scoreBreakdown: breakdown,
     severity: review.severity, confidence: review.confidence, markets: review.markets,
     signal: review.signal, driverScope: review.driverScope, classification: review.classification,
-    indexEvidence: review.indexEvidence || null, evidenceStatus: review.evidenceStatus, indexImpact: review.indexImpact === true,
+    indexEvidence: review.indexEvidence || null, evidenceStatus: review.evidenceStatus, indexImpact: review.indexImpact === true && hasDirectIndexEvidence(review),
     freshShockEligible: false, public: true, origin: 'reviewed-inbox',
     admissionGate: { Evidence: true, Materiality: true, Causality: true, Falsifiability: true },
     sources: sources.map(s => ({ label: s.label, url: s.url })),

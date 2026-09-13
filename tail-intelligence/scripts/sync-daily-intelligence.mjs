@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
+import { hasDirectIndexEvidence } from './admission-review.mjs';
 
 const ROOT = new URL('../', import.meta.url);
 const DATA = new URL('data/', ROOT);
@@ -145,7 +146,8 @@ function toArticle(signal, dailyDate) {
     severity: Math.max(0, Math.min(100, severity)),
     confidence: Math.max(0, Math.min(100, confidence)),
     signal: signal.signal || inferSignal(signal),
-    indexImpact: signal.indexImpact !== false,
+    indexImpact: signal.indexImpact !== false && (signal.origin !== 'reviewed-inbox' || hasDirectIndexEvidence(signal)),
+    indexEvidence: signal.indexEvidence || null,
     freshShockEligible: signal.freshShockEligible === true,
     ...(Array.isArray(signal.driverScope) && signal.driverScope.length
       ? { driverScope: unique(signal.driverScope) }

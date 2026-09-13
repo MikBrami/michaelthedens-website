@@ -18,3 +18,5 @@ test('Admitted price evidence moves the model without changing weights',()=>{con
 
 test("Fractional confidence and unmeasured index effects stay on watchlist",()=>{for(const change of [{confidence:0.8},{indexEvidence:{metricType:"none",marketId:"enterprise_ssd",observation:"Aggregate market share"}}])assert.equal(validateReview({...proposal,...change},context).decision,"watchlist");});
 test("Same source and event cannot be readmitted with opposite direction",()=>{assert.equal(validateReview({...proposal,signal:"negative_supply"},{...context,knownArticles:[{url:proposal.sources[0].url,date:proposal.eventDate,signal:"verified_supply_relief"}]}).decision,"watchlist");});
+
+test("Aggregate market share may inform outlook but cannot move the index",()=>{const r=validateReview({...proposal,indexEvidence:{metricType:"qualified_shipments",marketId:"enterprise_ssd",observation:"Global NAND Bit-Anteil 14 Prozent in Q2 2026."}},context);assert.equal(r.decision,"accepted");assert.equal(r.acceptedSignal.indexImpact,false);});

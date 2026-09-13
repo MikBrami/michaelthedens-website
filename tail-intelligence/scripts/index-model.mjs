@@ -227,6 +227,7 @@ export function calculateIndexModel(articles, methodology, options = {}) {
     const policy = model.marketEvidencePolicies?.[id] || {};
     const marketArticles = articles.filter((article) => {
       if (!(article.markets || []).includes(id)) return false;
+      if (article.origin === 'reviewed-inbox' && article.indexEvidence?.marketId !== id) return false;
       if ((policy.excludeArticlesAlsoTagged || []).some((market) => (article.markets || []).includes(market))) return false;
       if (Array.isArray(policy.articleKeywords) && policy.articleKeywords.length) {
         const text = `${article.title || ''} ${article.summary || ''}`.toLowerCase();

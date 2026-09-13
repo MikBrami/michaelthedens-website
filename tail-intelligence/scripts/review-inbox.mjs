@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { admissionState, canonical, eligibleCandidates, reviewKey, validateReview } from './admission-review.mjs';
+import { admissionState, canonical, eligibleCandidates, hasDirectIndexEvidence, reviewKey, validateReview } from './admission-review.mjs';
 
 const ROOT = new URL('../', import.meta.url);
 const read = async (p, fallback) => { try { return JSON.parse(await fs.readFile(new URL(p,ROOT),'utf8')); } catch (error) { if (error.code === 'ENOENT') return fallback; throw error; } };
@@ -13,6 +13,13 @@ const ledger = await read('data/forecast-ledger.json',{forecasts:[]});
 const outlook = await read('config/market-outlook.json',{outlooks:[]});
 const journal = await read('data/admission-reviews.json',{schemaVersion:1,reviews:[]});
 const candidates = eligibleCandidates(inbox.items || [], now);
+let measurementRepair = false;
+for (const r of [...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()]) {
+  if (r.decision === 'accepted' && r.acceptedSignal?.indexImpact && !hasDirectIndexEvidence(r)) {
+    journal.reviews.push({...r, reviewedAt:now, indexImpact:false, indexImpactReason:'Aggregate market share is context, not direct qualified supply or price evidence.', acceptedSignal:{...r.acceptedSignal,indexImpact:false}});
+    measurementRepair = true;
+  }
+}
 // Reopen earlier admissions lacking the explicit scale / index-measurement contract.
 for (const r of [...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()]) {
   if (r.decision === 'accepted' && (r.contractVersion || 0) < 3) {
@@ -29,7 +36,7 @@ const limit = Math.min(48, Math.max(1, Number(process.env.TAIL_REVIEW_LIMIT) || 
 const newest = [...pending].sort((a,b) => b.published_at.localeCompare(a.published_at)).slice(0,Math.ceil(limit/2));
 // Repair reviews produced before the constrained taxonomy contract first.
 const repairCandidates = candidates.filter(c => { const r=latestReviews.get(reviewKey(c)); return r?.decision === 'watchlist' && r.gateReasons?.some(reason => ['review contract upgrade','invalid drivers','invalid markets','invalid direction'].includes(reason)); });
-const selected = repairCandidates.length ? repairCandidates.slice(0,limit) : [...newest,...pending.filter(c => !newest.some(n=>n.id===c.id)).slice(0,limit-newest.length)];
+const selected = measurementRepair ? [] : repairCandidates.length ? repairCandidates.slice(0,limit) : [...newest,...pending.filter(c => !newest.some(n=>n.id===c.id)).slice(0,limit-newest.length)];
 const predictions = [
   ...ledger.forecasts.filter(f => f.active && !f.confidenceFrozen).map(f => ({id:f.id,forecast:f.forecast,falsifier:f.adversarialCase?.trigger})),
   ...outlook.outlooks.map(o => ({id:`OUTLOOK-${o.marketId}`,forecast:o.view,falsifier:o.changeRules}))
