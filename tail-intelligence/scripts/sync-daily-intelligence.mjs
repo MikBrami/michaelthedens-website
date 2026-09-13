@@ -201,7 +201,11 @@ async function main() {
   // Admission journal is authoritative even on curated days or across midnight.
   // Keep historical daily records immutable; every reviewed signal still reaches KB.
   const admissionJournal = await readJson(new URL('data/admission-reviews.json',ROOT),{reviews:[]});
-  for (const record of admissionJournal.reviews || []) {
+  for (const record of new Map((admissionJournal.reviews || []).map(r=>[r.candidateKey,r])).values()) {
+    if (record.decision !== 'accepted') {
+      const id = `S-AUTO-${record.candidateKey}`;
+      if (byId.has(id)) byId.set(id,{...byId.get(id),indexImpact:false,public:false,quarantined:true,quarantineReason:'Admission reopened or withdrawn; see latest review.'});
+    }
     if (record.decision !== 'accepted' || !record.acceptedSignal?.id || record.gateReasons?.length) continue;
     const article = toArticle(record.acceptedSignal, String(record.reviewedAt).slice(0,10));
     if (JSON.stringify(byId.get(article.id)) !== JSON.stringify(article)) promoted += 1;

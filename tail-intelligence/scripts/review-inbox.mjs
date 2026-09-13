@@ -13,6 +13,14 @@ const ledger = await read('data/forecast-ledger.json',{forecasts:[]});
 const outlook = await read('config/market-outlook.json',{outlooks:[]});
 const journal = await read('data/admission-reviews.json',{schemaVersion:1,reviews:[]});
 const candidates = eligibleCandidates(inbox.items || [], now);
+// Reopen earlier admissions lacking the explicit scale / index-measurement contract.
+for (const r of [...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()]) {
+  if (r.decision === 'accepted' && (r.contractVersion || 0) < 3) {
+    const reopened = {...r, decision:'watchlist', contractVersion:3, reviewedAt:now, nextReview:now.slice(0,10), gateReasons:['review contract upgrade'], reason:'Reopened: verify integer 0-100 scales, independent evidence and direct index measurement.'};
+    delete reopened.acceptedSignal; journal.reviews.push(reopened);
+  }
+}
+await write('data/admission-reviews.json',journal);
 const latestReviews = new Map(journal.reviews.map(r => [r.candidateKey,r]));
 const reviewedKeys = new Set([...latestReviews.values()].filter(r => r.decision !== 'watchlist' || r.nextReview > now.slice(0,10)).map(r => r.candidateKey));
 const pending = candidates.filter(c => !reviewedKeys.has(reviewKey(c)));
@@ -20,7 +28,7 @@ const pending = candidates.filter(c => !reviewedKeys.has(reviewKey(c)));
 const limit = Math.min(48, Math.max(1, Number(process.env.TAIL_REVIEW_LIMIT) || 24));
 const newest = [...pending].sort((a,b) => b.published_at.localeCompare(a.published_at)).slice(0,Math.ceil(limit/2));
 // Repair reviews produced before the constrained taxonomy contract first.
-const repairCandidates = candidates.filter(c => { const r=latestReviews.get(reviewKey(c)); return r?.decision === 'watchlist' && r.contractVersion !== 2 && r.gateReasons?.some(reason => ['invalid drivers','invalid markets','invalid direction'].includes(reason)); });
+const repairCandidates = candidates.filter(c => { const r=latestReviews.get(reviewKey(c)); return r?.decision === 'watchlist' && r.gateReasons?.some(reason => ['review contract upgrade','invalid drivers','invalid markets','invalid direction'].includes(reason)); });
 const selected = repairCandidates.length ? repairCandidates.slice(0,limit) : [...newest,...pending.filter(c => !newest.some(n=>n.id===c.id)).slice(0,limit-newest.length)];
 const predictions = [
   ...ledger.forecasts.filter(f => f.active && !f.confidenceFrozen).map(f => ({id:f.id,forecast:f.forecast,falsifier:f.adversarialCase?.trigger})),
@@ -35,7 +43,7 @@ const schema = object({reviews:{type:'array',items:object({
   eventDate:str,novelty:str,duplicateOf:str,evidenceStatus:{type:'string',enum:['VERIFIED DATA','MODEL ESTIMATE','HEURISTIC','INFERENCE','NOT PROVEN']},
   classification:{type:'string',enum:['Signal','Layer Update','Architecture Update','Falsifier']},
   scoreBreakdown:object(Object.fromEntries(Object.keys(methodology.signalRubric).map(k=>[k,num]))),
-  markets:{type:'array',items:{type:'string',enum:['server_dram','hbm','enterprise_ssd','dram','nand','ai_infrastructure','semiconductors','supply_chain']}},driverScope:{type:'array',items:{type:'string',enum:Object.keys(methodology.indexModel.driverWeights)}},signal:{type:'string',enum:Object.keys(methodology.indexModel.signalDriverImpact)},severity:num,confidence:num,indexImpact:bool,redPencilPass:bool,
+  markets:{type:'array',items:{type:'string',enum:['server_dram','hbm','enterprise_ssd','dram','nand','ai_infrastructure','semiconductors','supply_chain']}},driverScope:{type:'array',items:{type:'string',enum:Object.keys(methodology.indexModel.driverWeights)}},signal:{type:'string',enum:Object.keys(methodology.indexModel.signalDriverImpact)},severity:{type:'integer',minimum:0,maximum:100},confidence:{type:'integer',minimum:0,maximum:100},indexImpact:bool,indexEvidence:object({metricType:{type:'string',enum:['none','contract_price','qualified_shipments','lead_time','fill_rate','observed_demand']},marketId:str,observation:str}),redPencilPass:bool,
   sources:{type:'array',items:object({url:str,label:str,kind:{type:'string',enum:['primary','secondary']},supports:str})},reason:str
 })}});
 let error = null;
@@ -56,12 +64,13 @@ if (!error) for (let i=0;i<selected.length;i+=4) {
           'Admission requires atomic dated sourced fact with units; placement with geography/domain/layer/horizon; causal mechanism; explicit impact on a supplied existing prediction ID; measurable falsifier with a future review date. No new forecasts or rewritten historical probabilities.',
           'Patrick red-pencil: reject already-true predictions, vague scope, unresolvable outcomes, movable goalposts and correlated duplicates. Link only a genuinely relevant existing prediction.',
           'An efficiency benchmark is not an observed reduction of total market demand. Future fab announcements are capacity_relief, which has no current availability effect. Use verified_supply_relief only for actual qualified shipments/lead-time/fill-rate improvement and demand_down only for observed demand reduction.',
+          'Severity and confidence are integer 0-100 scales: confidence 80 means 80 percent, never 0.8; severity 60 means 60/100, never 6/10. Market share alone is not qualified enterprise supply relief. indexEvidence must name an observed measurement in the exact product market; aggregate NAND share is not qualified eSSD shipment evidence. If no direct measurement, indexImpact false and metricType none. An admitted non-index signal can still inform the outlook. Do not reuse the same primary-source/event observation with another direction to evade duplicates. A falsifier must test the future prediction impact, not a historical correction deadline.',
           'Severity is observed market stress magnitude, not news importance. indexImpact true only for direct, bounded evidence in the named market/driver. Otherwise false. Never adjust a score to make it move.',
           'Provide direct source URLs actually retrieved, not aggregator links or invented references. An accepted fact must be directly supported by the primary source. Include specific supports text. Preserve uncertainty.'
         ].join(' '),
         input:JSON.stringify({asOf:now,candidates:batch.map(({id,title,summary,url,published_at})=>({id,title,summary,url,published_at})),rubric:methodology.signalRubric,
           driverWeights:methodology.indexModel.driverWeights,signalDriverImpact:methodology.indexModel.signalDriverImpact,predictions,
-          baseline:articles.filter(a => a.public !== false).map(({id,date,title,summary,signal,markets,url})=>({id,date,title,summary,signal,markets,url}))}),
+          baseline:[...articles.filter(a => a.public !== false && a.origin !== 'reviewed-inbox'),...[...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()].filter(r=>r.decision==='accepted' && r.acceptedSignal).map(r=>r.acceptedSignal)].map(({id,date,title,summary,signal,markets,url})=>({id,date,title,summary,signal,markets,url}))}),
         text:{format:{type:'json_schema',name:'tail_admission',strict:true,schema}}
       })
     });
@@ -80,7 +89,7 @@ if (!error) for (let i=0;i<selected.length;i+=4) {
     for (const item of batch) {
       const proposal = proposals.find(r=>r.candidateId===item.id);
       if (!proposal) throw new Error('Analyst returned unknown candidate');
-      records.push({...validateReview(proposal,{item,methodology,forecastIds,sourceUrls,asOf:new Date().toISOString(),knownArticles:[...articles,...journal.reviews.filter(r=>r.acceptedSignal).map(r=>r.acceptedSignal),...records.filter(r=>r.acceptedSignal).map(r=>r.acceptedSignal)]}),contractVersion:2,model,responseId:result.id});
+      records.push({...validateReview(proposal,{item,methodology,forecastIds,sourceUrls,asOf:new Date().toISOString(),knownArticles:[...articles.filter(a=>a.origin !== 'reviewed-inbox'),...[...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()].filter(r=>r.decision==='accepted' && r.acceptedSignal).map(r=>r.acceptedSignal),...records.filter(r=>r.acceptedSignal).map(r=>r.acceptedSignal)]}),contractVersion:3,model,responseId:result.id});
     }
     journal.reviews.push(...records);
     await write('data/admission-reviews.json',journal);

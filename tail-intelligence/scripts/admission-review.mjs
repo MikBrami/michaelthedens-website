@@ -39,8 +39,13 @@ export function validateReview(review, { item, methodology, forecastIds, sourceU
   if (!Array.isArray(review.markets) || !review.markets.length || review.markets.some(m => !['server_dram','hbm','enterprise_ssd','dram','nand','ai_infrastructure','semiconductors','supply_chain'].includes(m))) reasons.push('invalid markets');
   if (!Array.isArray(review.driverScope) || !review.driverScope.length || review.driverScope.some(d => !Object.hasOwn(methodology.indexModel.driverWeights,d))) reasons.push('invalid drivers');
   if (!Object.hasOwn(methodology.indexModel.signalDriverImpact, review.signal)) reasons.push('invalid direction');
-  if (![review.severity, review.confidence].every(n => Number.isFinite(n) && n >= 0 && n <= 100)) reasons.push('invalid severity/confidence');
-  if (review.duplicateOf || knownArticles.some(a => sources.some(s => [a.url,...(a.sources || []).map(x=>x.url)].some(u => canonical(u) && canonical(s.url) === canonical(u))) && a.signal === review.signal && a.date === review.eventDate)) reasons.push('duplicate evidence');
+  if (![review.severity, review.confidence].every(n => Number.isInteger(n) && n >= 0 && n <= 100)) reasons.push('invalid severity/confidence');
+  if (review.indexImpact === true) {
+    const evidence = review.indexEvidence;
+    if (!evidence || !['contract_price','qualified_shipments','lead_time','fill_rate','observed_demand'].includes(evidence.metricType) || !review.markets?.includes(evidence.marketId) || !evidence.observation || evidence.observation.length < 20) reasons.push('missing direct index measurement');
+    if (review.signal === 'verified_supply_relief' && !['qualified_shipments','lead_time','fill_rate'].includes(evidence?.metricType)) reasons.push('no qualified supply relief measurement');
+  }
+  if (review.duplicateOf || knownArticles.some(a => sources.some(s => [a.url,...(a.sources || []).map(x=>x.url)].some(u => canonical(u) && canonical(s.url) === canonical(u))) && a.date === review.eventDate)) reasons.push('duplicate evidence');
   if (score < methodology.gates.accepted) reasons.push('below admission threshold');
   const accepted = review.decision === 'accepted' && reasons.length === 0;
   const decision = accepted ? 'accepted' : review.decision === 'rejected' ? 'rejected' : 'watchlist';
@@ -52,7 +57,7 @@ export function validateReview(review, { item, methodology, forecastIds, sourceU
     falsifier: review.falsifier, nextReview: review.nextReview, priorityScore: score, scoreBreakdown: breakdown,
     severity: review.severity, confidence: review.confidence, markets: review.markets,
     signal: review.signal, driverScope: review.driverScope, classification: review.classification,
-    evidenceStatus: review.evidenceStatus, indexImpact: review.indexImpact === true,
+    indexEvidence: review.indexEvidence || null, evidenceStatus: review.evidenceStatus, indexImpact: review.indexImpact === true,
     freshShockEligible: false, public: true, origin: 'reviewed-inbox',
     admissionGate: { Evidence: true, Materiality: true, Causality: true, Falsifiability: true },
     sources: sources.map(s => ({ label: s.label, url: s.url })),

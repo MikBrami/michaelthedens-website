@@ -46,7 +46,7 @@ async function main() {
   const dashboard = await readJson(DASHBOARD, {});
   const admission = await readJson(new URL('data/admission-status.json',ROOT), { status: 'pending', pending: null });
   const journal = await readJson(new URL('data/admission-reviews.json',ROOT), { reviews: [] });
-  const acceptedSignals = journal.reviews.filter(r => r.decision === 'accepted' && String(r.reviewedAt).slice(0,10) === nowIso.slice(0,10)).map(r => r.acceptedSignal).filter(Boolean);
+  const acceptedSignals = [...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()].filter(r => r.decision === 'accepted' && String(r.reviewedAt).slice(0,10) === nowIso.slice(0,10)).map(r => r.acceptedSignal).filter(Boolean);
   const reviewPending = admission.status !== 'complete';
   const recentCutoff = Date.now() - 48 * 60 * 60 * 1000;
   const candidates = (inbox.items || [])
