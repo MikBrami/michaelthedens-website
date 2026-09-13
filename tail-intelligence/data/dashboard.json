@@ -3,17 +3,52 @@
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
   "dataAsOf": "2026-09-13",
+  "analysisAsOf": "2026-09-13",
+  "indexEvidenceAsOf": "2026-08-28",
+  "admissionReview": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-09-13T12:08:00.780Z",
+    "inboxUpdatedAt": "2026-09-13T12:07:52.830Z",
+    "status": "pending",
+    "candidates": 871,
+    "reviewed": 24,
+    "accepted": 0,
+    "watchlist": 13,
+    "rejected": 11,
+    "pending": 847,
+    "oldestPendingAt": "2026-08-14T12:59:49.000Z",
+    "lastCompletedReviewAt": "2026-09-13T12:08:00.780Z",
+    "error": null
+  },
+  "overdueOperationalReviews": [
+    {
+      "id": "OP-2026-08-17-SERVER-RDIMM-AVAILABILITY",
+      "nextReview": "2026-09-11"
+    },
+    {
+      "id": "OP-2026-08-17-STANDARD-DRAM-AVAILABILITY",
+      "nextReview": "2026-08-24"
+    },
+    {
+      "id": "OP-2026-08-17-ENTERPRISE-SSD-AVAILABILITY",
+      "nextReview": "2026-09-11"
+    },
+    {
+      "id": "OP-2026-08-19-ESSD-LEADTIME-VISIBILITY",
+      "nextReview": "2026-08-31"
+    }
+  ],
   "sourceDataAsOf": "2026-08-28",
-  "knowledgeBaseSyncedAt": "2026-09-13T00:59:44.156Z",
+  "knowledgeBaseSyncedAt": "2026-09-13T12:18:07.358Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 16,
-  "lastSuccessfulUpdate": "2026-09-13T10:16:49.300Z",
-  "lastForecastRun": "2026-09-13T10:16:49.300Z",
-  "newlyProcessedArticles": 407,
+  "lastSuccessfulUpdate": "2026-09-13T12:18:08.258Z",
+  "lastForecastRun": "2026-09-13T12:18:08.258Z",
+  "newlyProcessedArticles": 405,
   "totalArticles": 125,
   "articleCount": 125,
-  "processStatus": "ok",
+  "processStatus": "warning",
   "methodology": {
     "version": "3.1",
     "status": "warning",
@@ -37,6 +72,7 @@
     },
     "indexModel": {
       "version": "1.3",
+      "formulaRevision": "1.4",
       "formula": "Σ((segment base score + capped fresh shock) × segment weight)",
       "driverWeights": {
         "demand": 0.25,
@@ -64,19 +100,29 @@
     "memoryRawShare": 24.4
   },
   "error": null,
-  "warnings": [],
+  "warnings": [
+    "Evidenzprüfung offen: 847 Kandidaten ausstehend.",
+    "4 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung.",
+    "Jüngste aufgenommene Quellenbeobachtung: 2026-08-28."
+  ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-13T10:16:41.244Z",
-    "newItems": 407,
+    "updatedAt": "2026-09-13T12:07:52.830Z",
+    "newItems": 405,
     "totalItems": 1000,
     "duplicateItems": 300,
     "relevantItems": 1000,
     "sourceErrors": []
   },
   "pipeline": {
-    "status": "ok",
+    "status": "warning",
     "steps": [
+      {
+        "id": "admission_review",
+        "label": "Evidenzprüfung",
+        "status": "warning",
+        "detail": "24 geprüft · 847 offen · 0 aufgenommen"
+      },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
@@ -156,7 +202,7 @@
         "rawMetric": "Gewicht im Segmentindex: 15%"
       }
     ],
-    "interpretation": "Der MT·AI Executive Pulse liegt bei 85/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (88/100) und Risikodruck (88/100) werden separat ausgewiesen."
+    "interpretation": "Der MT·AI Executive Pulse liegt bei 79/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (81/100) und Risikodruck (83/100) werden separat ausgewiesen."
   },
   "markets": [
     {
@@ -183,7 +229,7 @@
           "pressure": 76,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "pricing",
@@ -194,7 +240,7 @@
           "pressure": 80,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "availability",
@@ -205,7 +251,7 @@
           "pressure": 79,
           "relief": 0,
           "operationalFloor": 86,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "aiDemand",
@@ -216,7 +262,7 @@
           "pressure": 76,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         }
       ],
       "label": "Server DRAM / RDIMM"
@@ -245,7 +291,7 @@
           "pressure": 81,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "pricing",
@@ -256,7 +302,7 @@
           "pressure": 71,
           "relief": 0,
           "operationalFloor": 72,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "availability",
@@ -267,7 +313,7 @@
           "pressure": 79,
           "relief": 0,
           "operationalFloor": 87,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "aiDemand",
@@ -278,7 +324,7 @@
           "pressure": 77,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         }
       ],
       "label": "Enterprise SSD"
@@ -307,7 +353,7 @@
           "pressure": 70,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "pricing",
@@ -318,7 +364,7 @@
           "pressure": 0,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "availability",
@@ -329,7 +375,7 @@
           "pressure": 69,
           "relief": 0,
           "operationalFloor": 78,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "aiDemand",
@@ -340,7 +386,7 @@
           "pressure": 70,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         }
       ],
       "label": "Supply Chain"
@@ -369,7 +415,7 @@
           "pressure": 78,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "pricing",
@@ -380,7 +426,7 @@
           "pressure": 67,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "availability",
@@ -391,7 +437,7 @@
           "pressure": 70,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "aiDemand",
@@ -402,7 +448,7 @@
           "pressure": 78,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         }
       ],
       "label": "HBM"
@@ -431,7 +477,7 @@
           "pressure": 79,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "pricing",
@@ -442,7 +488,7 @@
           "pressure": 63,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "availability",
@@ -453,7 +499,7 @@
           "pressure": 65,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "aiDemand",
@@ -464,7 +510,7 @@
           "pressure": 79,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         }
       ],
       "label": "AI Infrastructure"
@@ -493,7 +539,7 @@
           "pressure": 77,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "pricing",
@@ -504,7 +550,7 @@
           "pressure": 65,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "availability",
@@ -515,7 +561,7 @@
           "pressure": 59,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "aiDemand",
@@ -526,7 +572,7 @@
           "pressure": 75,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         }
       ],
       "label": "Semiconductors"
@@ -555,7 +601,7 @@
           "pressure": 78,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "pricing",
@@ -566,7 +612,7 @@
           "pressure": 74,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "availability",
@@ -577,7 +623,7 @@
           "pressure": 46,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "aiDemand",
@@ -588,7 +634,7 @@
           "pressure": 78,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         }
       ],
       "label": "NAND"
@@ -617,7 +663,7 @@
           "pressure": 0,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "pricing",
@@ -628,7 +674,7 @@
           "pressure": 0,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "availability",
@@ -639,7 +685,7 @@
           "pressure": 21,
           "relief": 0,
           "operationalFloor": 21,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         },
         {
           "id": "aiDemand",
@@ -650,7 +696,7 @@
           "pressure": 0,
           "relief": 0,
           "operationalFloor": 0,
-          "formula": "pressure - relief × reliefOffset"
+          "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
         }
       ],
       "label": "Standard DRAM / UDIMM"
@@ -806,7 +852,7 @@
         "S-2026-08-07-01",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-13T10:16:49.299Z"
+      "lastUpdated": "2026-09-13T12:18:08.255Z"
     },
     {
       "id": "hbm",
@@ -892,7 +938,7 @@
         "S-2026-07-29-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-13T10:16:49.299Z"
+      "lastUpdated": "2026-09-13T12:18:08.255Z"
     },
     {
       "id": "nand",
@@ -960,7 +1006,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-13T10:16:49.299Z"
+      "lastUpdated": "2026-09-13T12:18:08.255Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1031,7 +1077,7 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17"
       ],
-      "lastUpdated": "2026-09-13T10:16:49.299Z"
+      "lastUpdated": "2026-09-13T12:18:08.255Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1205,10 +1251,16 @@
         "S-2026-07-25-04",
         "S-TAIL-DAILY-HEARTBEAT"
       ],
-      "lastUpdated": "2026-09-13T10:16:49.300Z"
+      "lastUpdated": "2026-09-13T12:18:08.255Z"
     }
   ],
-  "executiveSummary": "TAIL steht auf 85/100. Server DRAM / RDIMM, Enterprise SSD, HBM sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "indexCalculation": {
+    "asOf": "2026-09-13",
+    "evidenceAsOf": "2026-08-28",
+    "formulaRevision": "1.4",
+    "baselineAsOf": "2026-09-13"
+  },
+  "executiveSummary": "TAIL steht auf 79/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 125 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
@@ -1241,17 +1293,6 @@
       "source": "TAIL Knowledge Base",
       "url": "tail://knowledge-base/tail-2026-07-14-skhynix-2030",
       "score": 86,
-      "status": "red"
-    },
-    {
-      "id": "S-2026-08-28-MICRON-RDIMM-PRICE",
-      "date": "2026-08-28",
-      "title": "Micron erhöht Server-RDIMM-Preise überwiegend um 20 Prozent",
-      "summary": "Die neue Micron-Preisliste bestätigt eine breite Preisrunde bei Server-Speicher. 64-GB-RDIMMs, derzeit das volumenstärkste Produkt, steigen um 20 Prozent. Auch die übrigen gängigen Server-RDIMM-Kapazitäten verteuern sich um 20 Prozent; 128-GB-RDIMMs steigen mit 15 Prozent etwas weniger stark.",
-      "analysis": "Der bislang unquantifizierte Micron-Preis-Watch ist bestätigt. Die Preisdynamik bei Server-DRAM/RDIMM steigt materiell; besonders relevant ist der volle 20-Prozent-Schritt beim volumenstarken 64-GB-Modul. MT·AI nimmt das Signal als indexwirksame Pricing-Evidenz auf, ohne daraus automatisch eine identische Verschlechterung der physischen Verfügbarkeit abzuleiten.",
-      "source": "Micron distributor pricing / channel intelligence",
-      "url": "tail://daily-intelligence/S-2026-08-28-MICRON-RDIMM-PRICE",
-      "score": 83,
       "status": "red"
     },
     {

@@ -1,23 +1,70 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-13T00:59:44.156Z",
+  "updatedAt": "2026-09-13T12:18:07.358Z",
   "previousRun": "2026-09-12",
   "executivePulse": {
     "current": 79,
     "previous": 79,
     "status": "orange",
-    "interpretation": "Daily Check 2026-09-13: Executive Pulse 79/100 aus dem produktiven MT·AI-Index. 8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft. Bestehende Thesen und Scores bleiben unverändert, bis neue Evidenz die Admission Gates erfüllt."
+    "confidence": 81,
+    "riskPressure": 83,
+    "riskFormula": "60% critical segment peak + 40% critical availability peak",
+    "coverage": 100,
+    "methodologyVersion": "1.3",
+    "drivers": [
+      {
+        "id": "demand",
+        "name": "Nachfrage",
+        "score": 78,
+        "absoluteSeverity": 78,
+        "delta": 0,
+        "weight": 0.25,
+        "coverage": 100,
+        "rawMetric": "Gewicht im Segmentindex: 25%"
+      },
+      {
+        "id": "pricing",
+        "name": "Preisdynamik",
+        "score": 74,
+        "absoluteSeverity": 74,
+        "delta": 0,
+        "weight": 0.2,
+        "coverage": 100,
+        "rawMetric": "Gewicht im Segmentindex: 20%"
+      },
+      {
+        "id": "availability",
+        "name": "Verfügbarkeit / Allocation",
+        "score": 82,
+        "absoluteSeverity": 82,
+        "delta": 0,
+        "weight": 0.4,
+        "coverage": 100,
+        "rawMetric": "Gewicht im Segmentindex: 40%"
+      },
+      {
+        "id": "aiDemand",
+        "name": "AI-Nachfrage",
+        "score": 77,
+        "absoluteSeverity": 77,
+        "delta": 0,
+        "weight": 0.15,
+        "coverage": 100,
+        "rawMetric": "Gewicht im Segmentindex: 15%"
+      }
+    ],
+    "interpretation": "Der MT·AI Executive Pulse liegt bei 79/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (81/100) und Risikodruck (83/100) werden separat ausgewiesen."
   },
   "confidence": {
     "current": 81,
     "previous": 81,
-    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Freshness ist bestätigt. 8 aktuelle relevante Meldungen liegen im News-Layer; keine davon wird ohne vollständige Evidence-/Materiality-Prüfung automatisch als TAIL-Signal hochgestuft."
+    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 847 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Keine bestätigte Richtungsänderung · 8 aktuelle Meldungen im News-Layer",
+  "momentum": "Evidenzprüfung offen: 847 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -592,18 +639,35 @@
   },
   "dailyStatus": {
     "date": "2026-09-13",
-    "type": "material-market-update",
-    "title": "Micron-Preisliste bestätigt neue Preisrunde bei Server-RDIMM und Enterprise SSD",
-    "impactScore": 10,
-    "note": "Die neue Micron-Preisliste quantifiziert den Preisdruck: Server-RDIMMs steigen überwiegend um 20 Prozent, 128-GB-Module um 15 Prozent. Enterprise-SSDs steigen im Mittel um rund 10 Prozent; TLC ist stärker betroffen als QLC, während die 60-TB-Klasse unverändert bleibt. Die bestätigten Werte ersetzen den bisherigen unquantifizierten Channel-Watch und wirken mechanisch auf die Segmentindizes.",
-    "public": false
+    "type": "review-pending",
+    "title": "Evidenzprüfung noch offen",
+    "impactScore": 0,
+    "note": "Evidenzprüfung offen: 847 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-13T00:59:44.156Z",
-    "mode": "freshness-safe-conservative",
-    "inboxUpdatedAt": "2026-09-13T00:59:34.041Z",
-    "inboxNewItems": 415,
+    "generatedAt": "2026-09-13T12:18:07.358Z",
+    "mode": "evidence-reviewed",
+    "inboxUpdatedAt": "2026-09-13T12:07:52.830Z",
+    "inboxNewItems": 405,
     "highRelevanceCandidates": [
+      {
+        "id": "08ebfe8bde7318f5f7f0",
+        "title": "AI Infrastructure Moats Rival Buffett's Stock-Picking Criteria: TSMC, ASML, and Nvidia Make the Cut",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5MMDlZN2JINjAzNkxrV2U2QkFuQWphR3F0NDVrRTlwSmRMbWVlTGZiYzMtMkVhbXVqZy1hV2JVVW93MVREdXZYdWZpcUU4Qm90aEd4RnJnUWJKb3ZIZ19WckdaRVFZSHdLZy1YSzVtZHFpRjVNNWc?oc=5",
+        "source": "finance.biggo.com",
+        "summary": "AI Infrastructure Moats Rival Buffett's Stock-Picking Criteria: TSMC, ASML, and Nvidia Make the Cut finance.biggo.com",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-13T06:25:00.000Z"
+      },
+      {
+        "id": "804f78c21a34ff560734",
+        "title": "DeepSeek Cut Its KV-Cache HBM Need 75% and SSD Need 87.5%. Micron and Sandisk Investors Should Pay Attention",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdTBkcTJTZUV4eFBPTGhURGNqTjRodllXRG02RnBXRklxRUpHMVEtNTJNaEVXYWZGbUpMUHFnY0h2cEM3Yjk5ZFBadFFjQl92M3R4T0tEZnZ6UVJKSnQxVmNqeWIyQ3gwREd6ZnkwYnJ5LUhOWkpiZGZ5WE5zejF6LVc2dzlNTml1Z25vbXE2cWVIb1E?oc=5",
+        "source": "Yahoo Finance",
+        "summary": "Aktuelle Meldung von Yahoo Finance: DeepSeek Cut Its KV-Cache HBM Need 75% and SSD Need 87.5%. Micron and Sandisk Investors Should Pay Attention",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-13T01:16:00.000Z"
+      },
       {
         "id": "af2fbb738f95d2d11755",
         "title": "Micron doubling HBM capacity as Samsung, SK Hynix scale up",
@@ -632,6 +696,15 @@
         "publishedAt": "2026-09-12T04:40:04.000Z"
       },
       {
+        "id": "3d5328900020f77b81e7",
+        "title": "South Korea's semiconductor exports top 400 trillion won for first time; CXMT's profit margin overtakes Samsung and SK Hynix",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE44eE5JQXBDZlZPZ2xsdm5NUHBqSklKTk9rQ1A5UkpiNC1hRlpTclZ3T1lRb3pBRzdxU1gyOGp6YzNaMFlOREFNeW9qeXR3VGV4QW4xYmNmM1ZlalZyWUNuSVhVOEVsYm1EMm1JQi10VmFpaEtnTFE?oc=5",
+        "source": "finance.biggo.com",
+        "summary": "Aktuelle Meldung von finance.biggo.com: South Korea's semiconductor exports top 400 trillion won for first time; CXMT's profit margin overtakes Samsung and SK Hynix",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-12T04:26:00.000Z"
+      },
+      {
         "id": "6582ab426c85f6eaa2d9",
         "title": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVThONmhRa08wdW9HVXBsVlZ6c2hQMDl6YXhQSVdqNzN2NDlfSjQzeVRSaWlDQUtmcWFYS0dtZ3kwb3hGY045Y3J1dzlTTEh0SUprU0NYbm1KTHdCSGhIZGh3eTloUHVUbHcxRUp4REp6VzhyVFVIVlJUNEVLY0tLTm5uclJOa2xtUy1OTGdGcENac01Eb19PcTIzbTFpcklZOU1v?oc=5",
@@ -648,33 +721,6 @@
         "summary": "Aktuelle Meldung von Yahoo Finance: AI’s HBM Shortage Strengthens Micron’s Hand—and Pressures Nvidia’s GPU Economics",
         "relevanceScore": 100,
         "publishedAt": "2026-09-11T23:01:33.000Z"
-      },
-      {
-        "id": "f813ca5d0a7af218a1f9",
-        "title": "AI memory chip boom turns into a pay bonanza for Micron, Samsung, SK Hynix workers",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcXBVbzVrU3hhVlVrZUh4WkhhYm95N3hVeGtPdEc2YndTdTdXX3JKMC1JNkFtdzlxWkM0U1NQUUk0R2NqNld4WndrdUtxd2c0Sk5DUnQ5UWpxNzNkRVVJVm1PWFNSVGhCckF2cFRib1VvOE9kNFl5MDVPNEhKamNPd2tZSDJpNG5QUGd5LXF1VXM0YThhUmF4ZlBfWTRBbUt0d2dZUm9hd3E3ZTI0Rl9EVU40REJWY2JWVUM0?oc=5",
-        "source": "Invezz",
-        "summary": "Aktuelle Meldung von Invezz: AI memory chip boom turns into a pay bonanza for Micron, Samsung, SK Hynix workers",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-11T10:48:22.000Z"
-      },
-      {
-        "id": "2a2d195fd0d6c4ed2594",
-        "title": "DeepSeek's New Model Claims Sharp Cut in HBM Usage; Samsung and SK Hynix Plunge Over 3% Intraday",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JVS1kOGV6MHlyYW1XWmRmc0REZnE3ckgwYUxEdlp6ajVsa1FzZjNtRFp0RVdVejA5MGdSZ0JMXzdnYVh5aElZdjNpb1BXZURsaDVsZ0hEdWNTMy1RTXJ4SnF4dlB2VFJ5Wkd3NUlwaE9FMWFWZ0E?oc=5",
-        "source": "finance.biggo.com",
-        "summary": "Aktuelle Meldung von finance.biggo.com: DeepSeek's New Model Claims Sharp Cut in HBM Usage; Samsung and SK Hynix Plunge Over 3% Intraday",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-11T07:35:00.000Z"
-      },
-      {
-        "id": "65499e98075cc45914a7",
-        "title": "China's CXMT tops global memory chip profitability, surpassing Samsung Electronics and SK hynix",
-        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJOFVVZTlwTUI3aGhhZTIxa3FEOWtMS3JRN3dHM3ViYjR3Q0hIcjhLdWd4am1uZVNaLS1Kek56YUlHSkFjMGpaQzNOOGExV0o1RGxhOG0taw?oc=5",
-        "source": "헤럴드경제",
-        "summary": "Aktuelle Meldung von 헤럴드경제: China's CXMT tops global memory chip profitability, surpassing Samsung Electronics and SK hynix",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-11T07:11:06.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -757,5 +803,25 @@
       "title": "PIM Productization Review",
       "why": "Unabhängige Accuracy-normalisierte Benchmarks, JEDEC-LPDDR6-PIM-Fortschritt, benannte Kunden und einen belastbaren Samsung-Mass-Production-Zeitplan prüfen."
     }
-  ]
+  ],
+  "admissionReview": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-09-13T12:08:00.780Z",
+    "inboxUpdatedAt": "2026-09-13T12:07:52.830Z",
+    "status": "pending",
+    "candidates": 871,
+    "reviewed": 24,
+    "accepted": 0,
+    "watchlist": 13,
+    "rejected": 11,
+    "pending": 847,
+    "oldestPendingAt": "2026-08-14T12:59:49.000Z",
+    "lastCompletedReviewAt": "2026-09-13T12:08:00.780Z",
+    "error": null
+  },
+  "indexCalculation": {
+    "asOf": "2026-09-13",
+    "inputHash": "a30859296036d48837ecd5fe3391a5d52aa6b2ed603ac00b14d79fa1244b65a1",
+    "sourceDataAsOf": "2026-08-28"
+  }
 }

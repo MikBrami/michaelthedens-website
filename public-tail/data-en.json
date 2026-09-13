@@ -1,209 +1,59 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T10:17:31.917Z",
+  "generatedAt": "2026-09-13T12:18:42.102Z",
   "editorial": {
-    "version": 5,
+    "version": 6,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "464b7d9b93dc31e74abe4f6f",
+    "sourceHash": "4793fd61f5923341a16907f4",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
     "dataAsOf": "2026-09-13",
+    "analysisAsOf": "2026-09-13",
+    "sourceDataAsOf": "2026-08-28",
+    "indexEvidenceAsOf": "2026-08-28",
+    "admissionReview": {
+      "status": "pending",
+      "checkedAt": "2026-09-13T12:08:00.780Z",
+      "pending": 847,
+      "reviewed": 24,
+      "accepted": 0
+    },
+    "overdueOperationalReviewCount": 4,
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
     "markets": [
       {
         "id": "server_dram",
+        "label": "Server DRAM / RDIMM",
         "score": 81,
-        "baseScore": 81,
-        "freshShock": 0,
-        "freshShockSignalId": null,
-        "indicativeScore": 81,
-        "sufficientlyCovered": true,
         "status": "orange",
         "signals": 19,
-        "articleSignals": 17,
-        "operationalSignals": 2,
         "confidence": 81,
-        "coverage": 100,
-        "drivers": [
-          {
-            "id": "demand",
-            "label": "Nachfrage",
-            "score": 76,
-            "confidence": 90,
-            "evidenceCount": 5,
-            "pressure": 76,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "pricing",
-            "label": "Preisdynamik",
-            "score": 80,
-            "confidence": 95,
-            "evidenceCount": 2,
-            "pressure": 80,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "availability",
-            "label": "Verfügbarkeit / Allocation",
-            "score": 86,
-            "confidence": 66,
-            "evidenceCount": 5,
-            "pressure": 79,
-            "relief": 0,
-            "operationalFloor": 86,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "aiDemand",
-            "label": "AI-Nachfrage",
-            "score": 76,
-            "confidence": 90,
-            "evidenceCount": 3,
-            "pressure": 76,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          }
-        ],
-        "label": "Server DRAM / RDIMM"
+        "coverage": 100
       },
       {
         "id": "hbm",
+        "label": "HBM",
         "score": 73,
-        "baseScore": 73,
-        "freshShock": 0,
-        "freshShockSignalId": null,
-        "indicativeScore": 73,
-        "sufficientlyCovered": true,
         "status": "orange",
         "signals": 30,
-        "articleSignals": 30,
-        "operationalSignals": 0,
         "confidence": 89,
-        "coverage": 100,
-        "drivers": [
-          {
-            "id": "demand",
-            "label": "Nachfrage",
-            "score": 78,
-            "confidence": 91,
-            "evidenceCount": 5,
-            "pressure": 78,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "pricing",
-            "label": "Preisdynamik",
-            "score": 67,
-            "confidence": 89,
-            "evidenceCount": 1,
-            "pressure": 67,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "availability",
-            "label": "Verfügbarkeit / Allocation",
-            "score": 70,
-            "confidence": 88,
-            "evidenceCount": 5,
-            "pressure": 70,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "aiDemand",
-            "label": "AI-Nachfrage",
-            "score": 78,
-            "confidence": 91,
-            "evidenceCount": 5,
-            "pressure": 78,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          }
-        ],
-        "label": "HBM"
+        "coverage": 100
       },
       {
         "id": "enterprise_ssd",
+        "label": "Enterprise SSD",
         "score": 81,
-        "baseScore": 81,
-        "freshShock": 0,
-        "freshShockSignalId": null,
-        "indicativeScore": 81,
-        "sufficientlyCovered": true,
         "status": "orange",
         "signals": 20,
-        "articleSignals": 15,
-        "operationalSignals": 5,
         "confidence": 73,
-        "coverage": 100,
-        "drivers": [
-          {
-            "id": "demand",
-            "label": "Nachfrage",
-            "score": 81,
-            "confidence": 86,
-            "evidenceCount": 5,
-            "pressure": 81,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "pricing",
-            "label": "Preisdynamik",
-            "score": 72,
-            "confidence": 81,
-            "evidenceCount": 3,
-            "pressure": 71,
-            "relief": 0,
-            "operationalFloor": 72,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "availability",
-            "label": "Verfügbarkeit / Allocation",
-            "score": 87,
-            "confidence": 54,
-            "evidenceCount": 5,
-            "pressure": 79,
-            "relief": 0,
-            "operationalFloor": 87,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "aiDemand",
-            "label": "AI-Nachfrage",
-            "score": 77,
-            "confidence": 90,
-            "evidenceCount": 3,
-            "pressure": 77,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          }
-        ],
-        "label": "Enterprise SSD"
+        "coverage": 100
       }
-    ],
-    "analysisAsOf": "2026-09-13",
-    "sourceDataAsOf": "2026-08-28"
+    ]
   },
   "executivePulse": {
     "current": 79,
@@ -213,14 +63,14 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. The Daily Check of 2026-09-13 reviewed the current news flow; it shows no newly confirmed material change in direction. New capacity and improved yields could relieve pressure, but will reach the market only with a time lag. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
+    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and enterprise SSDs are currently among the tightest areas. Calculation dated 2026-09-13; source status 2026-08-28. The evidence review is not yet complete (847 candidates open). The unchanged value therefore does not confirm an unchanged market situation. New capacity and improved yields can relieve pressure but will reach the market only with delay. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
     {
       "date": "2026-09-13",
       "title": "AI Infrastructure Moats Rival Buffett's Stock-Picking Criteria: TSMC, ASML, and Nvidia Make the Cut",
       "summary": "AI Infrastructure Moats Rival Buffett's Stock-Picking Criteria: TSMC, ASML, and Nvidia Make the Cut finance.biggo.com",
-      "analysis": "The signal sits upstream in the semiconductor supply chain. Only when investments convert into installed and qualified tools, stable yields and additional wafers does genuine supply relief materialise.",
+      "analysis": "This signal sits upstream in the semiconductor supply chain. Genuine supply relief will only occur when investments translate into installed and qualified tools, stable yields and additional wafers.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
@@ -232,7 +82,7 @@
       "date": "2026-09-13",
       "title": "DeepSeek Cut Its KV-Cache HBM Need 75% and SSD Need 87.5%. Micron and Sandisk Investors Should Pay Attention",
       "summary": "Aktuelle Meldung von Yahoo Finance: DeepSeek Cut Its KV-Cache HBM Need 75% and SSD Need 87.5%. Micron and Sandisk Investors Should Pay Attention",
-      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand feed directly into available GPU systems and pricing in the AI infrastructure market.",
+      "analysis": "HBM remains a central bottleneck for AI accelerators. Changes in production, qualification or demand directly affect available GPU systems and pricing in the AI infrastructure market.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
@@ -244,7 +94,7 @@
       "date": "2026-09-12",
       "title": "Samsung, TSMC and Intel join ASML to build new technology barrier against China",
       "summary": "Aktuelle Meldung von 헤럴드경제: Samsung, TSMC and Intel join ASML to build new technology barrier against China",
-      "analysis": "The signal sits upstream in the semiconductor supply chain. Only when investments convert into installed and qualified tools, stable yields and additional wafers does genuine supply relief materialise.",
+      "analysis": "This signal sits upstream in the semiconductor supply chain. Genuine supply relief will only occur when investments translate into installed and qualified tools, stable yields and additional wafers.",
       "score": 84,
       "relevanceScore": 97,
       "sourceQuality": 6,
@@ -268,11 +118,11 @@
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast review: Advanced packaging remains a central AI supply-chain bottleneck at least until H2 2027 despite the Chiayi expansion."
+      "event": "Forecast-Review: Advanced packaging remains a central AI supply-chain bottleneck at least until H2 2027 despite Chiayi expansion."
     },
     {
       "date": "2026-11-05",
-      "event": "Falsifier review: AI asset-backed financing reflexivity"
+      "event": "Falsifier-Review: AI asset-backed financing reflexivity"
     },
     {
       "date": "2027-03-31",

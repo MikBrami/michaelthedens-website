@@ -1,201 +1,51 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T10:16:49.300Z",
+  "generatedAt": "2026-09-13T12:18:08.259Z",
   "platform": {
     "dataAsOf": "2026-09-13",
+    "analysisAsOf": "2026-09-13",
+    "sourceDataAsOf": "2026-08-28",
+    "indexEvidenceAsOf": "2026-08-28",
+    "admissionReview": {
+      "status": "pending",
+      "checkedAt": "2026-09-13T12:08:00.780Z",
+      "pending": 847,
+      "reviewed": 24,
+      "accepted": 0
+    },
+    "overdueOperationalReviewCount": 4,
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 125,
     "markets": [
       {
         "id": "server_dram",
+        "label": "Server DRAM / RDIMM",
         "score": 81,
-        "baseScore": 81,
-        "freshShock": 0,
-        "freshShockSignalId": null,
-        "indicativeScore": 81,
-        "sufficientlyCovered": true,
         "status": "orange",
         "signals": 19,
-        "articleSignals": 17,
-        "operationalSignals": 2,
         "confidence": 81,
-        "coverage": 100,
-        "drivers": [
-          {
-            "id": "demand",
-            "label": "Nachfrage",
-            "score": 76,
-            "confidence": 90,
-            "evidenceCount": 5,
-            "pressure": 76,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "pricing",
-            "label": "Preisdynamik",
-            "score": 80,
-            "confidence": 95,
-            "evidenceCount": 2,
-            "pressure": 80,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "availability",
-            "label": "Verfügbarkeit / Allocation",
-            "score": 86,
-            "confidence": 66,
-            "evidenceCount": 5,
-            "pressure": 79,
-            "relief": 0,
-            "operationalFloor": 86,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "aiDemand",
-            "label": "AI-Nachfrage",
-            "score": 76,
-            "confidence": 90,
-            "evidenceCount": 3,
-            "pressure": 76,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          }
-        ],
-        "label": "Server DRAM / RDIMM"
+        "coverage": 100
       },
       {
         "id": "hbm",
+        "label": "HBM",
         "score": 73,
-        "baseScore": 73,
-        "freshShock": 0,
-        "freshShockSignalId": null,
-        "indicativeScore": 73,
-        "sufficientlyCovered": true,
         "status": "orange",
         "signals": 30,
-        "articleSignals": 30,
-        "operationalSignals": 0,
         "confidence": 89,
-        "coverage": 100,
-        "drivers": [
-          {
-            "id": "demand",
-            "label": "Nachfrage",
-            "score": 78,
-            "confidence": 91,
-            "evidenceCount": 5,
-            "pressure": 78,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "pricing",
-            "label": "Preisdynamik",
-            "score": 67,
-            "confidence": 89,
-            "evidenceCount": 1,
-            "pressure": 67,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "availability",
-            "label": "Verfügbarkeit / Allocation",
-            "score": 70,
-            "confidence": 88,
-            "evidenceCount": 5,
-            "pressure": 70,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "aiDemand",
-            "label": "AI-Nachfrage",
-            "score": 78,
-            "confidence": 91,
-            "evidenceCount": 5,
-            "pressure": 78,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          }
-        ],
-        "label": "HBM"
+        "coverage": 100
       },
       {
         "id": "enterprise_ssd",
+        "label": "Enterprise SSD",
         "score": 81,
-        "baseScore": 81,
-        "freshShock": 0,
-        "freshShockSignalId": null,
-        "indicativeScore": 81,
-        "sufficientlyCovered": true,
         "status": "orange",
         "signals": 20,
-        "articleSignals": 15,
-        "operationalSignals": 5,
         "confidence": 73,
-        "coverage": 100,
-        "drivers": [
-          {
-            "id": "demand",
-            "label": "Nachfrage",
-            "score": 81,
-            "confidence": 86,
-            "evidenceCount": 5,
-            "pressure": 81,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "pricing",
-            "label": "Preisdynamik",
-            "score": 72,
-            "confidence": 81,
-            "evidenceCount": 3,
-            "pressure": 71,
-            "relief": 0,
-            "operationalFloor": 72,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "availability",
-            "label": "Verfügbarkeit / Allocation",
-            "score": 87,
-            "confidence": 54,
-            "evidenceCount": 5,
-            "pressure": 79,
-            "relief": 0,
-            "operationalFloor": 87,
-            "formula": "pressure - relief × reliefOffset"
-          },
-          {
-            "id": "aiDemand",
-            "label": "AI-Nachfrage",
-            "score": 77,
-            "confidence": 90,
-            "evidenceCount": 3,
-            "pressure": 77,
-            "relief": 0,
-            "operationalFloor": 0,
-            "formula": "pressure - relief × reliefOffset"
-          }
-        ],
-        "label": "Enterprise SSD"
+        "coverage": 100
       }
-    ],
-    "analysisAsOf": "2026-09-13",
-    "sourceDataAsOf": "2026-08-28"
+    ]
   },
   "executivePulse": {
     "current": 79,
@@ -205,13 +55,13 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Der Daily Check vom 2026-09-13 hat die aktuelle Nachrichtenlage geprüft; daraus ergibt sich derzeit keine neu bestätigte materielle Richtungsänderung. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-13; Quellenstand 2026-08-28. Die Evidenzprüfung ist noch nicht abgeschlossen (847 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-13",
-      "title": "AI-Infrastruktur-Moats messen sich mit Buffetts Auswahlkriterien: TSMC, ASML und Nvidia zählen dazu",
-      "summary": "Analyse stellt TSMC, ASML und Nvidia als Beispiele nachhaltiger Wettbewerbsvorteile in der AI-Infrastruktur dar und vergleicht sie mit Warren Buffetts Aktienauswahlkriterien.",
+      "title": "AI-Infrastruktur-Moats konkurrieren mit Buffetts Auswahlkriterien: TSMC, ASML und Nvidia bestehen",
+      "summary": "Analyse vergleicht AI-Infrastruktur-Moats mit Buffetts Aktienkriterien und führt TSMC, ASML und Nvidia als passende Kandidaten an.",
       "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
       "score": 93,
       "relevanceScore": 100,
@@ -222,8 +72,8 @@
     },
     {
       "date": "2026-09-13",
-      "title": "DeepSeek reduziert KV-Cache-HBM-Bedarf um 75% und SSD-Bedarf um 87,5% – Micron- und Sandisk-Anleger sollten aufmerksam sein",
-      "summary": "Bericht: DeepSeek hat den HBM-Bedarf für KV-Cache um 75% und den SSD-Bedarf um 87,5% gesenkt; das Ergebnis könnte für Aktionäre von Micron und Sandisk relevant sein.",
+      "title": "DeepSeek reduziert KV-Cache-HBM-Bedarf um 75% und SSD-Bedarf um 87,5% – Micron- und Sandisk-Anleger sollten aufhorchen",
+      "summary": "DeepSeek senkt den KV-Cache-HBM-Bedarf um 75% und den SSD-Bedarf um 87,5%. Das dürfte für Anleger von Micron und Sandisk relevant sein.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 90,
       "relevanceScore": 100,
@@ -234,8 +84,8 @@
     },
     {
       "date": "2026-09-12",
-      "title": "Samsung, TSMC und Intel kooperieren mit ASML, um neue Technologiebarriere gegenüber China aufzubauen",
-      "summary": "Samsung, TSMC und Intel arbeiten mit ASML zusammen, um eine neue technische Hürde gegenüber China zu errichten; Details zur Zusammenarbeit wurden berichtet.",
+      "title": "Samsung, TSMC und Intel schließen sich ASML an, um neue Technologieschranke gegen China zu errichten",
+      "summary": "Bericht: Samsung, TSMC, Intel und ASML planen gemeinsame Schritte zum Aufbau einer neuen Technologieschranke gegenüber China.",
       "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
       "score": 84,
       "relevanceScore": 97,
@@ -277,10 +127,10 @@
   ],
   "dailyStatus": {
     "date": "2026-09-13",
-    "type": "no-material-change",
-    "title": "Keine bestätigte materielle Richtungsänderung",
+    "type": "review-pending",
+    "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "Der aktuelle News-Layer wurde geprüft; ältere Accepted Signals bleiben im Modell erhalten, werden aber nicht als heutige Meldungen erneut ausgegeben."
+    "note": "847 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
     {
@@ -321,9 +171,9 @@
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-13T10:16:49.482Z",
+    "generatedAt": "2026-09-13T12:18:08.391Z",
     "count": 3,
-    "candidateCount": 19,
+    "candidateCount": 17,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -578,7 +428,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-13T10:17:08.079Z"
+      "generatedAt": "2026-09-13T12:18:24.164Z"
     }
   }
 }
