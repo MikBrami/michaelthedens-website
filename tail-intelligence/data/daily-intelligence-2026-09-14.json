@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-14T05:31:46.818Z",
+  "updatedAt": "2026-09-14T10:45:50.179Z",
   "previousRun": "2026-09-13",
   "executivePulse": {
     "current": 78,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 81,
     "previous": 81,
-    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 579 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 572 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 579 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 572 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -598,6 +598,68 @@
       "admissionReviewKey": "a41fc1823c3c84f08ab851be"
     },
     {
+      "id": "S-AUTO-272c1d36e90cc133646942e5",
+      "title": "TrendForce (17.08.2026): Samsung & SK hynix 1H26 Anlageninvestitionen +35% YoY; Nvidia nicht unter Samsungs Top‑5‑Kunden",
+      "date": "2026-08-17",
+      "admittedAt": "2026-09-14T10:43:39.921Z",
+      "fact": "TrendForce berichtet am 2026‑08‑17, dass Samsung Electronics und SK hynix zusammen KRW 43.198 Trillionen in Halbleiteranlagen in H1 2026 investierten, ein Anstieg von 35.1% gegenüber KRW 31.9751 Trillionen in H1 2025. TrendForce vermerkt außerdem, dass NVIDIA nicht zu Samsungs Top‑5‑Kunden gehört (Analyse/Breakdown basierend auf 1H26 Firmenangaben/Marktbeobachtung).",
+      "placement": "Südkorea / Unternehmens‑Capex (Samsung & SK hynix) für Halbleiter‑Fabrik‑ und Packaging‑Investitionen, Berichtszeitraum 1H 2026.",
+      "tailInference": "Erhöhte Anlageninvestitionen legen die Basis für höhere Waferstarts, beschleunigte Node‑Rampen (Foundry & DRAM/HBM) sowie mehr Advanced Packaging/Backend‑Kapazität; kurzfristig erhöht das Capex die Wahrscheinlichkeit für spätere Kapazitätsausweitung und kann die Timing‑Risiken der Supply‑Tightness verschieben.",
+      "predictionId": "P-2026-07-14-02",
+      "predictionImpact": "Stützt die Annahme, dass Samsung aggressive Investitionen in Memory‑Fabriken tätigt; erhöht die Wahrscheinlichkeit, dass geplante Samsung‑Fabs (z. B. Yongin) und HBM‑Investitionen wie im Baseline‑Forecast erwähnt, baulich/finanziell vorangebracht werden — wirkt somit als Layer‑Update für P‑2026‑07‑14‑02 (Yongin‑Fab 2029).",
+      "falsifier": "Wenn Samsung und SK hynix ihre 1H26 Investitionsberichte formell revidieren (z. B. Combined Capex < KRW 40 Trillion) oder bis zum 2026-12-31 keine konkreten Capex‑Projekte bzw. Baubeginn-/FID‑Nachweise für die im Bericht implizierten Kapazitätsprojekte folgen (z. B. kein Yongin/Y2 FID), reduziert das die beobachtete Signalwirkung.",
+      "nextReview": "2026-12-31",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 45,
+      "confidence": 80,
+      "markets": [
+        "hbm",
+        "dram",
+        "semiconductors"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "classification": "Layer Update",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "TrendForce — Bericht 'Samsung, SK hynix 1H26 Chip Facility Investment Up 35%; NVIDIA Not Among Samsung’s Top Five Customers' (2026‑08‑17)",
+          "url": "https://www.trendforce.com/news/2026/08/17/news-samsung-sk-hynix-1h26-chip-facility-investment-up-35-nvidia-not-among-samsungs-top-five-customers/"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Stützt die Annahme, dass Samsung aggressive Investitionen in Memory‑Fabriken tätigt; erhöht die Wahrscheinlichkeit, dass geplante Samsung‑Fabs (z. B. Yongin) und HBM‑Investitionen wie im Baseline‑Forecast erwähnt, baulich/finanziell vorangebracht werden — wirkt somit als Layer‑Update für P‑2026‑07‑14‑02 (Yongin‑Fab 2029)."
+      },
+      "admissionReviewKey": "272c1d36e90cc133646942e5"
+    },
+    {
       "id": "S-AUTO-5b49f35f971eb05395d34367",
       "title": "CXMT Surged 531% on Debut — What It Means for Micron, SanDisk, and SK Hynix Investors",
       "date": "2026-07-27",
@@ -1114,14 +1176,32 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 86,
-    "note": "Evidenzprüfung offen: 579 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "note": "Evidenzprüfung offen: 572 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-14T05:31:46.818Z",
+    "generatedAt": "2026-09-14T10:45:50.179Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-14T05:21:37.658Z",
-    "inboxNewItems": 100,
+    "inboxUpdatedAt": "2026-09-14T10:37:43.557Z",
+    "inboxNewItems": 152,
     "highRelevanceCandidates": [
+      {
+        "id": "17ffb24e7e6c012e7743",
+        "title": "The HBM4 Hybrid Bonding Bottleneck: SK Hynix and Samsung Battle Over Copper-to-Copper Die Stacking for Next-Generation Accelerators",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTDlPZURPR2ttTFNOc2J3b01NZmFIU0lYSHBHdVdiWFlvWFUwMGZMaVIweFRkTWRLTzR0b2ZVSHQzbnBaelVXd2pUVXhhWlk1dl9wSWNabmtISW53NXZBLW5rS2E5TWRtZjd6UHdxNlBESFExXzhWZks4dS1MQ0Q5QUdld0RaLVZUV2pIZEhOTExjWnR0S3lRVHpB?oc=5",
+        "source": "streamlinefeed.co.ke",
+        "summary": "Aktuelle Meldung von streamlinefeed.co.ke: The HBM4 Hybrid Bonding Bottleneck: SK Hynix and Samsung Battle Over Copper-to-Copper Die Stacking for Next-Generation Accelerators",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-14T07:50:00.000Z"
+      },
+      {
+        "id": "05a77929d0693e32aebe",
+        "title": "TSMC, Samsung, SK Hynix Embrace 'High NA' Lithography Equipment, Strengthening ASML's AI Chip Equipment Monopoly",
+        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE40Q0M1eklFNFVld2dPQ0NSLUdLcGsza3lhSm5tejNZa0s2WGNUeHhWM0s3M2NRQWRkWWVlamdrQ0gtOW9CbnpZYy1n?oc=5",
+        "source": "재경일보",
+        "summary": "Aktuelle Meldung von 재경일보: TSMC, Samsung, SK Hynix Embrace 'High NA' Lithography Equipment, Strengthening ASML's AI Chip Equipment Monopoly",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-14T06:45:00.000Z"
+      },
       {
         "id": "3fa23c96ae142e23a23a",
         "title": "SK hynix deepens TSMC ties for 3D DRAM, diverges from Samsung - CHOSUNBIZ",
@@ -1148,24 +1228,6 @@
         "summary": "Aktuelle Meldung von Yahoo Finance: DeepSeek Cut Its KV-Cache HBM Need 75% and SSD Need 87.5%. Micron and Sandisk Investors Should Pay Attention",
         "relevanceScore": 100,
         "publishedAt": "2026-09-13T01:16:00.000Z"
-      },
-      {
-        "id": "af2fbb738f95d2d11755",
-        "title": "Micron doubling HBM capacity as Samsung, SK Hynix scale up",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPamJPUUJPYWR2MEhOSDEwVVlXZFFIUWk2dk5XX1lTemFObFp3c3QxS2czUVoycWtPWGdTQXFTY3BIaHFPMWRoYnltOWZ0WVhtVHd1T0d5NFlOUVJrbTlRTDRaV1lVZzY5UVprM1pXMWk1cUtEcUEyNmUxSWZ4XzdvcDh3Y200cTlzVEtxMVRYZkluMXhSckhPTmtPQXVLMWpa0gGgAUFVX3lxTE9qYk9RQk9hZHYwSE5IMTBVWVdkUUhRaTZ2TldfWVN6YU5sWndzdDFLZzNRWjJxa09YZ1NBcVNjcEhocU8xZGhieW05ZnRZWG1Ud3VPR3k0WU5RUmttOVFMNFpXWVVnNjlRWmszWlcxaTVxS0RxQTI2ZTFJZnhfN29wOHdjbTRxOXNUS3ExVFhmSW4xeFJySE9Oa09BdUsxalo?oc=5",
-        "source": "Sammy Fans",
-        "summary": "Micron doubling HBM capacity as Samsung, SK Hynix scale up Sammy Fans",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-12T07:25:45.000Z"
-      },
-      {
-        "id": "216f9f672473c960c101",
-        "title": "Micron doubling HBM capacity as Samsung, SK Hynix scale up",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZFBXOU1penBya19BcGRXQ2dSTUdEaDkwaWdscm1LcEJNWTBtTTFXU0VxSmhnWFItU2J5QW1KMU9XNVF0ZVIxWkJlTGIxRWVYWVVseU1mUHRXc1JYSVlWZnhkNVRuZDJpZ3dXSUtodGljcFZxaEdaLWRET2txajFlVDh6MkZFRTVHMW5Xd2hpQWJRTFQ2RTNvVDdFNNIBoAFBVV95cUxPamJPUUJPYWR2MEhOSDEwVVlXZFFIUWk2dk5XX1lTemFObFp3c3QxS2czUVoycWtPWGdTQXFTY3BIaHFPMWRoYnltOWZ0WVhtVHd1T0d5NFlOUVJrbTlRTDRaV1lVZzY5UVprM1pXMWk1cUtEcUEyNmUxSWZ4XzdvcDh3Y200cTlzVEtxMVRYZkluMXhSckhPTmtPQXVLMWpa?oc=5",
-        "source": "sammyfans.com",
-        "summary": "Micron doubling HBM capacity as Samsung, SK Hynix scale up sammyfans.com",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-12T06:57:53.000Z"
       },
       {
         "id": "aa82c8ebb7c45ed4acdc",
@@ -1278,41 +1340,41 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-14T05:31:46.705Z",
-    "inboxUpdatedAt": "2026-09-14T05:21:37.658Z",
+    "checkedAt": "2026-09-14T10:45:50.026Z",
+    "inboxUpdatedAt": "2026-09-14T10:37:43.557Z",
     "status": "error",
-    "candidates": 887,
-    "reviewed": 308,
-    "accepted": 34,
-    "watchlist": 82,
-    "rejected": 192,
-    "pending": 579,
-    "oldestPendingAt": "2026-08-17T08:38:17.000Z",
-    "lastCompletedReviewAt": "2026-09-14T05:31:46.692Z",
+    "candidates": 900,
+    "reviewed": 328,
+    "accepted": 35,
+    "watchlist": 87,
+    "rejected": 206,
+    "pending": 572,
+    "oldestPendingAt": "2026-08-17T14:15:15.000Z",
+    "lastCompletedReviewAt": "2026-09-14T10:45:50.015Z",
     "error": "The operation was aborted due to timeout",
     "batchErrors": [
       "The operation was aborted due to timeout"
     ],
-    "rawCandidates": 920,
+    "rawCandidates": 933,
     "triage": {
       "archivedOpinions": 20,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-14T05:21:46.440Z",
-      "completedAt": "2026-09-14T05:31:46.707Z",
-      "selected": 96,
-      "reviewed": 24,
+      "startedAt": "2026-09-14T10:37:56.910Z",
+      "completedAt": "2026-09-14T10:45:50.032Z",
+      "selected": 24,
+      "reviewed": 20,
       "concurrency": 2,
-      "limit": 96,
+      "limit": 24,
       "rateLimitRetries": 0,
-      "durationSeconds": 600,
-      "budgetExhausted": true
+      "durationSeconds": 473,
+      "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-14",
-    "inputHash": "b954986ae4a51a2c8f6bcb6a470dc5d740de2951bd6eb67ab83ab7e5cc46ceee",
+    "inputHash": "fc72585762681c362d21c41c049bb617c23b6da5d3d6fcb2760f79e042f1ae1a",
     "sourceDataAsOf": "2026-09-12"
   }
 }

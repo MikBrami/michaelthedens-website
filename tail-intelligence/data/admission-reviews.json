@@ -24829,6 +24829,1393 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0b1ba642099bd9ab006aa786595e2487d09661959b5fcc9144"
+    },
+    {
+      "decision": "rejected",
+      "title": "Kurzfristige Marktreaktion auf KI‑Warnungen (Bericht: Yahoo Finance) — doppelte Berichterstattung, kein neues, quantifiziertes Marktmaß",
+      "fact": "Mehrere Medien berichten, dass Cyber‑/Security‑Aktien am Wochenende in Reaktion auf öffentliche Appelle zur Verlangsamung der KI‑Entwicklung durch Anthropic‑ und OpenAI‑Führungskräfte Kursbewegungen zeigten (Berichtstitel bei Yahoo Finance, 2026‑09‑13/14).",
+      "placement": "Global / Aktienmärkte (AI‑verknüpfte Sektoren) / Sentiment‑Ereignis / kurzfristig (Tage)",
+      "mechanism": "Risikowahrnehmung und Sentiment‑Rotation: Führende CEOs rufen zu verlangsamtem KI‑Tempo auf → erhöhte Unsicherheit über zukünftige AI‑Investitionen → kurzfristiger Rotationseffekt (AI‑/Chip‑Sektor underperformance, relative Stärkung von Cybersecurity‑Papieren).",
+      "predictionId": "P-2026-07-24-04",
+      "predictionImpact": "Signalisiert temporäre Marktrisiko‑Repricing, könnte kurzfristig Aktien‑Performance beeinflussen, ändert aber nicht direkt quantitative Lieferketten‑ oder Kapazitätsannahmen in den TAIL‑Prognosen.",
+      "falsifier": "Innerhalb von 30 Tagen: keine konsistenten, quantifizierbaren Guidance‑Reduktionen oder Capex‑Cuts der großen Hyperscaler (keine mindestens eine material >5% Capex‑Reduktion/Aktualisierung in Unternehmensguidance) — wenn Capex‑Guidance signifikant reduziert wird, wäre die Marktwirkung realwirtschaftlich relevant.",
+      "nextReview": "2026-10-14",
+      "eventDate": "2026-09-13",
+      "novelty": "duplicate",
+      "duplicateOf": "S-AUTO-82875560b85f7ec05b186bcd",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 8,
+        "falsifiability": 4,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 20,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://sg.finance.yahoo.com/news/stark-warnings-from-anthropic-and-openai-ceos-are-set-to-disrupt-the-ai-stock-trade-they-built-up-132747413.html",
+          "label": "Yahoo Finance (Artikel, Aggregator)",
+          "kind": "secondary",
+          "supports": "Bericht über Marktreaktion und Zitat/Interpretation der CEO‑Warnungen (Aggregatmeldung)."
+        },
+        {
+          "url": "https://apnews.com/article/0b44bfb43960c6ae850567c0c4e5003a",
+          "label": "AP — Asian shares / market reaction",
+          "kind": "primary",
+          "supports": "AP‑Bericht bestätigt regionale Aktienreaktionen in Asien am 2026‑09‑14 als Folge der CEO‑Äußerungen."
+        },
+        {
+          "url": "https://www.axios.com/2026/09/12/anthropic-ai-amodei-pacing",
+          "label": "Axios — Berichterstattung zur Aufforderung von Anthropic/OpenAI, das KI‑Tempo zu drosseln",
+          "kind": "primary",
+          "supports": "Primäre Berichterstattung/Zitat zur Forderung der KI‑Verlangsamung (Dario Amodei, Sam Altman)."
+        }
+      ],
+      "reason": "Der Kandidat rekonstruiert eine breite Medien‑/Marktreaktion, bringt aber kein neues, atomar messbares Markt‑ oder Lieferkettenereignis (keine quantifizierten Shipments, Preise, Lead‑Times oder vertragliche Änderungen). Das Thema ist bereits durch Basissignale (S‑AUTO‑828...) abgedeckt. Recycelt vorhandene Meldungen — deshalb abgelehnt.",
+      "candidateId": "9cd7d78c511cae9e8b8d",
+      "candidateKey": "b1cd501ef62c08c4544d21b9",
+      "reviewedAt": "2026-09-14T10:40:39.859Z",
+      "priorityScore": 40,
+      "gateReasons": [
+        "missing novelty",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_092f4fd250c9428e006aa7ce866e1c87d28b45477e06630621"
+    },
+    {
+      "decision": "rejected",
+      "title": "Ex‑Anthropic/OpenAI‑Forscher fordert globale Pause (Resignation, X‑Posts) — kein direkter marktquantifizierbarer Effekt",
+      "fact": "Ehemaliger Forscher Jacob Coxon veröffentlichte im September 2026 öffentliche Posts (X) und warnte vor Superintelligenz; Medien berichteten über seinen Rücktritt und seine Forderung nach einem globalen Stopp der Kapazitätssteigerung (Berichterstattung 2026‑09‑09 bis 2026‑09‑12).",
+      "placement": "Global / Forschung & Governance / Narrative‑Ereignis / kurzfristig‑politisch",
+      "mechanism": "Öffentliche Abgabe von Insiderwarnungen → erhöht politisch‑regulatorische Aufmerksamkeit und öffentliche Debatte → mögliche politische Reaktionen oder Reputationskosten für Labs; aber kein direktes, sofort messbares Supply/Demand‑Signal.",
+      "predictionId": "P-2026-07-17-03",
+      "predictionImpact": "Kann mittel‑ bis langfristig regulatorischen Druck erhöhen, der Hyperscaler‑Capex‑Planung beeinflußen könnte; derzeit kein quantifizierter Pfad zu beobachtbaren Lieferketten‑Metriken.",
+      "falsifier": "Bis 2026‑12‑31: kein formaler Gesetzesvorschlag oder verbindliche regulatorische Maßnahme auf nationaler Ebene, die Entwicklungskapazität (>50 MW/ GW‑Projektrestriktionen oder verbindliche Technologie‑Pauses) tatsächlich einschränkt — in diesem Fall bleibt der Effekt vorwiegend rhetorisch.",
+      "nextReview": "2026-10-14",
+      "eventDate": "2026-09-09",
+      "novelty": "duplicate",
+      "duplicateOf": "S-AUTO-82875560b85f7ec05b186bcd",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 2,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.axios.com/2026/09/09/anthropic-insiders-warn-ai-could-kill-all-humans",
+          "label": "Axios — Zusammenfassung der internen Warnungen und Resignation",
+          "kind": "primary",
+          "supports": "Berichterstattung über Jacob Coxons öffentliche Posts/Resignation und Reaktionen interner Experten."
+        },
+        {
+          "url": "https://fortune.com/2026/09/12/anthropic-ceo-dario-amodei-ai-safety-global-panic/",
+          "label": "Fortune — CEO‑Essay und branchenweite Reaktion",
+          "kind": "secondary",
+          "supports": "Kontext zu CEO‑Äußerungen und öffentlicher Debatte; belegt Verbreitung des Themas in Major Media."
+        }
+      ],
+      "reason": "Der Kandidat dokumentiert einen berechtigten internen Alarm und eine öffentliche Debatte (hochrelevante Governance‑Narrative), liefert aber kein neues, atomar quantifizierbares Markt‑ oder Lieferkettenereignis und ist bereits in Basissignalen reflektiert. Deshalb Ablehnung (keine Aufnahme als neues TAIL‑Signal).",
+      "candidateId": "f69aa7b7b1bd2dbed684",
+      "candidateKey": "fa73430a34edbbce8f64bcbb",
+      "reviewedAt": "2026-09-14T10:40:39.860Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "missing novelty",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_092f4fd250c9428e006aa7ce866e1c87d28b45477e06630621"
+    },
+    {
+      "decision": "rejected",
+      "title": "Asiatische Aktien fallen nach KI‑Warnungen (Free Press Journal / Syndicated Reporting) — bereits abgedeckte Marktreaktion",
+      "fact": "Medienmeldungen zeigen, dass AI‑bezogene Aktien in Asien am Montagmorgen deutlich nachgaben, nachdem Führungskräfte aus Anthropic und OpenAI zu verlangsamtem KI‑Tempo aufriefen (Berichte 2026‑09‑14).",
+      "placement": "Asien / Aktienmärkte / kurzfristig (Tages‑Handel)",
+      "mechanism": "Sentiment‑getriebene Kapitalrotation: Risikoabschlag auf AI/Chip‑Titeln infolge erhöhter regulatorischer und Investitionsunsicherheit.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Kurzfristige Kursbewegungen beeinflussen Marktpreise, ändern jedoch nicht unmittelbar die zugrunde liegenden Lieferketten‑Lead‑Times oder Vertragsmengen, die die OUTLOOK‑Prognosen stützen.",
+      "falsifier": "Binnen zwei Wochen: Erwiesene, breit bestätigte Reduktion in konkreten AI‑Build‑Out‑Verpflichtungen (z. B. abgesagte/verschobene >1 GW Datacenter‑FID der Hyperscaler) — falls dies eintritt, würde die Marktimpression realwirtschaftliche Wirkung signalisieren.",
+      "nextReview": "2026-10-14",
+      "eventDate": "2026-09-14",
+      "novelty": "duplicate",
+      "duplicateOf": "S-2026-09-11-01",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 11,
+        "novelty": 3,
+        "thesisRelevance": 11,
+        "forecastImpact": 7,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Syndizierte Berichterstattung über Marktreaktionen ohne neues, überprüfbares Mengen‑/Preis‑ oder Kapazitätsmaß; Thema ist bereits in TAIL‑Basissignalen (Markt‑/Sentiment‑Layer) vertreten. Ablehnung als neues, eigenständiges TAIL‑Ereignis.",
+      "candidateId": "1128799ea70421190b02",
+      "candidateKey": "bd6c3b4aef43aa41e65f4ad6",
+      "reviewedAt": "2026-09-14T10:40:39.860Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_092f4fd250c9428e006aa7ce866e1c87d28b45477e06630621"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung und ASML vertiefen Zusammenarbeit zu High‑NA EUV — Samsung plant High‑NA‑EUV‑Einführung in DRAM‑HVM bis 2028",
+      "fact": "Samsung Electronics und ASML kündigten am 2026‑09‑08 eine erweiterte strategische Zusammenarbeit an; Samsung plant, ASMLs High‑NA EUV in zukünftiger DRAM‑Hochvolumenfertigung einzusetzen (Zieldatum: 2028).",
+      "placement": "Global / DRAM‑High‑Volume‑Manufacturing (HVM) / Fertigungs‑Layer / mittelfristig (Horizon: bis Ende 2028)",
+      "mechanism": "Technologieeinführung (High‑NA EUV) erhöht optische Auflösung und ermöglicht Prozessvereinfachung (weniger Stitching/Masken), potenziell höhere Produktivität und Senkung der Kosten pro Die — mechanistisch plausibler Pfad zu effizienterer Produktion und langfristiger Kapazitätswirkung.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Verringert die Wahrscheinlichkeit eines anhaltenden strukturellen Memory‑Engpasses in 2028 (beschleunigt potenziell Kapazitätsentlastung auf DRAM‑Layer im Zeitfenster 2028), beeinflusst damit die P‑2026‑07‑20‑04‑Erwartung zur Knappheit 2027/2028.",
+      "falsifier": "Bis 2028‑12‑31: keine bestätigten, qualifizierten High‑NA‑EUV‑Installationen oder validierten DRAM‑HVM‑Shipments von Samsung mit High‑NA (ASML‑Tool‑Installationsreports, Samsung‑HVM‑Berichte oder ausgewiesene High‑NA‑DRAM‑Bits) — falls dies nicht nachweisbar ist, ist die behauptete Kapazitätswirkung bis Ende 2028 falsifiziert.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "moderate",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 45,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://news.samsungsemiconductor.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing/",
+          "label": "Samsung Semiconductor — Pressemitteilung (2026‑09‑08)",
+          "kind": "primary",
+          "supports": "Offizielle Ankündigung (Datum: 2026‑09‑08), wörtliche Passage: \"Samsung also plans to introduce ASML’s High NA extreme ultraviolet (EUV) lithography into future DRAM high‑volume manufacturing for the first time in the industry by 2028.\""
+        },
+        {
+          "url": "https://ourbrand.asml.com/asset/9078cf4d-91fd-4dd9-a5d5-d1caab6dc046/2026_07_15_Presentation-Investor-Relations-Q2-2026.pdf",
+          "label": "ASML — Investor Presentation (supporting High‑NA roadmap context)",
+          "kind": "secondary",
+          "supports": "ASML‑Materialien dokumentieren Reifepfad und Industriezeitplan für High‑NA und technische Anforderungen; stützt Einordnung als technologie‑/kapazitätsrelevantes Ereignis."
+        }
+      ],
+      "reason": "Primäre Pressemitteilung von Samsung (2026‑09‑08) ist ein klares, datiertes, technologisch greifbares Update mit einem spezifischen zeitlichen Ziel (2028) und einer mechanistischen Verbindung zu DRAM‑Fertigungskapazität. Das Ereignis ist atomar‑datiert und falsifizierbar (Installations-/Shipment‑Belege bis Ende 2028). Es wird deshalb als Architecture/Layer‑Update aufgenommen. Indexwirkung ist derzeit nicht direkt beobachtet (keine qualifizierten Liefervolumina), daher indexImpact=false.",
+      "candidateId": "e79ee00d7f12630a4ff9",
+      "candidateKey": "49774204f24a1486df547568",
+      "reviewedAt": "2026-09-14T10:40:39.860Z",
+      "priorityScore": 84,
+      "gateReasons": [
+        "missing novelty"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_092f4fd250c9428e006aa7ce866e1c87d28b45477e06630621"
+    },
+    {
+      "decision": "rejected",
+      "title": "Anthropic-CEO fordert verlangsamtes KI‑Tempo; OpenAI sagt IPO 2026 ab (Amodei & Altman, 2026-09-12)",
+      "fact": "Anthropic‑CEO Dario Amodei veröffentlichte am 2026-09-12 den Essay „We Must Pace the Frontier“ und kündigte eine unilateralere Verpflichtung zu 'embedded evaluators' an; zeitgleich sagte OpenAI‑CEO Sam Altman in einem Fortune‑Interview (veröffentlicht 2026-09-12), OpenAI werde 2026 nicht an die Börse gehen (\"not 2026\").",
+      "placement": "Global / Frontier‑AI‑Labs (Anthropic, OpenAI); primär USA‑gegründete Labs / globale Compute‑/Chip‑Beziehungen.",
+      "mechanism": "Unternehmens‑/Governance‑Signal: öffentliche Bekenntnisse zu verlangsamtem Capability‑Ramp (Amodei) plus explizite Timing‑Kommunikation zum IPO (Altman) verändern Investoren‑ und Regulierungswahrnehmung des IPO‑Fensters und können kurzfristig Kapitalmarkt‑Timing und Käuferallokation beeinflussen; geopolitisch schlägt Amodei restriktive Maßnahmen gegen Chip‑Exporte an China vor, was die Nachfrage‑/Beschaffungsdynamik für AI‑Chips beeinflussen würde.",
+      "predictionId": "P-2026-07-16-03",
+      "predictionImpact": "Beweiskraft gegen ein breites, sofortiges IPO‑Fangfenster 2026; konkret reduziert die Altman‑Äußerung die Wahrscheinlichkeit, dass OpenAI ein 2026‑IPO stattfinden lässt, und Amodeis Forderungen erhöhen regulatorische Unsicherheit, was das IPO‑Timing anderer Frontier‑Labs (z. B. Anthropic) beeinflussen kann.",
+      "falsifier": "OpenAI führt ein am Markt registriertes Initial Public Offering (Pricing/Listing) oder reicht eine öffentlich zugängliche endgültige S‑1/Einschreibungsanzeige bei der SEC ein mit Pricing‑Datum bis einschließlich 2026-12-31; oder Anthropic veröffentlicht bis 2026-10-31 eine verbindliche IPO‑Listing‑Ankündigung mit festem Pricing‑Datum in 2026.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-12",
+      "novelty": "Gering — ähnliche Signale (CEO‑Pacing/IPO‑Timing) sind bereits in der Baseline dokumentiert.",
+      "duplicateOf": "S-AUTO-82875560b85f7ec05b186bcd",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 5,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 20,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+          "label": "Dario Amodei — We Must Pace the Frontier (essay, 2026-09-12)",
+          "kind": "primary",
+          "supports": "Amodei commit to 'embedded evaluators', call to 'not sell powerful AI chips or semiconductor manufacturing equipment to China' and explicit pacing framework. (See essay text.)"
+        }
+      ],
+      "reason": "Primäre Quellen (Amodei‑Essay, Fortune‑Interview Altman) bestätigen die gemeldeten Aussagen und das Veröffentlichungsdatum. Der Kandidat ist inhaltlich ein Wiederholen bereits in der Baseline abgelegter Signale (CEO‑Pacing / IPO‑Timing) und liefert keine neue, atomare Messgröße (keine quantifizierte Marktwirkung, keine Shipment/Lead‑Time‑Messung). Gemäß Aufnahmeprinzipien lehnen wir reproduzierte/rezirkulierte Meldungen ab.",
+      "candidateId": "de04c0a573946bebf707",
+      "candidateKey": "5f637311e434a80f24f9ac79",
+      "reviewedAt": "2026-09-14T10:40:39.879Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_005be66b95f563be006aa7ce8655f087d2a7686ef474fb789e"
+    },
+    {
+      "decision": "rejected",
+      "title": "HBM4‑Hybrid‑Bonding‑Bottleneck: Divergente HBM‑Roadmaps von SK hynix und Samsung (Hot Chips‑Berichte, Aug 2026)",
+      "fact": "Hot Chips‑Präsentationen (SK hynix, Samsung) im August 2026 zeigen eine Technologie‑Spaltung: SK hynix verschiebt Hybrid‑Bonding‑Einführung weiter nach HBM5 und betont MR‑MUF/TC‑Bonder‑Pfad; Samsung präsentiert hybrid‑bonding/Custom HBM‑Konzepte als einen der Lösungswege. Berichte datieren auf Hot Chips 2026 (ca. 2026-08-23/24).",
+      "placement": "HBM‑Advanced‑Packaging / Backend‑Stacking; relevant für globale HBM‑Lieferkette (Korea‑zentriert: SK hynix, Samsung; Equipment‑supplier global).",
+      "mechanism": "Technische/Produktions‑Signal: Divergierende Architektur‑Entscheidungen (hybrid Cu‑to‑Cu bonding vs. MR‑MUF/TC bonding) und physikalische Limiten (Stack‑Dicke, Wärmemanagement) erzeugen Back‑end‑Kapazitäts‑ und Equipment‑Engpässe (TC‑Bonder/Hybrid‑Bonder/planarisationsprozesse), die HBM‑Volumenrampen begrenzen.",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Unterfüttert die These, dass Advanced Packaging ein zentraler Engpass bleibt (erhöht Wahrscheinlichkeit für anhaltende Knappheit bis mindestens H2‑2027).",
+      "falsifier": "Vor 2027-06-30 melden Hersteller oder Kunden öffentlich skalierte, qualifizierte HBM4‑Shipments, die ausdrücklich Hybrid‑Bonding (Cu‑to‑Cu) als Produktionsmethode bei nennenswerter Stückzahl verwenden (z. B. verifizierte Liefermengen, Vertragsangaben, oder Unternehmens‑Earnings‑Meldungen mit konkreten HBM4 Hybrid‑Bonding‑Shipments).",
+      "nextReview": "2027-07-01",
+      "eventDate": "2026-08-23",
+      "novelty": "Gering — das Packaging‑Engpassthema ist bereits in der Baseline dokumentiert und dieser Kandidat berichtet Konzepte/Positionen statt neue Messungen.",
+      "duplicateOf": "tail-2026-07-14-hbm4-cost",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 4,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 50,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling",
+          "label": "Tom's Hardware — Bericht zu SK hynix Hot Chips‑Präsentation (2026‑08‑24)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass SK hynix Hybrid‑Bonding nicht rechtzeitig für HBM4E erwartet; nennt physikalische Stack‑Limits."
+        },
+        {
+          "url": "https://www.servethehome.com/sk-hynix-hbm-packaging-at-hot-chips-2026/",
+          "label": "ServeTheHome — Zusammenfassung SK hynix Hot Chips 2026",
+          "kind": "secondary",
+          "supports": "Technische Details zur Packaging‑Roadmap und Hinweise auf Hybrid‑Bonding‑Debatte."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/08/25/samsung-sk-target-memory-bottleneck-with-custom-design-20",
+          "label": "Seoul Economic Daily — Samsung & SK hynix Hot Chips‑Coverage (Aug 2026)",
+          "kind": "secondary",
+          "supports": "Berichtet Samsungs cHBM/Custom‑HBM‑Konzepte vs. SK hynix Verpackungsansatz."
+        }
+      ],
+      "reason": "Primäre Konferenz‑Präsentationen (Hot Chips) und technische Berichte bestätigen, dass Hersteller unterschiedliche Packaging‑Pfadentscheidungen kommunizieren — dies ist ein wichtiges technische Signal. Allerdings ist das Thema bereits mehrfach in der Baseline und der Kandidat liefert keine neue, quantifizierte Messung (keine Shipment‑ oder Lead‑Time‑Metrik). Nach den Aufnahmeprinzipien ist dies eine reproduzierte Marktinterpretation und deshalb nicht aufzunehmen.",
+      "candidateId": "17ffb24e7e6c012e7743",
+      "candidateKey": "fc25d176f06a88c7c8c120bc",
+      "reviewedAt": "2026-09-14T10:40:39.879Z",
+      "priorityScore": 63,
+      "gateReasons": [
+        "primary source not retrieved",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_005be66b95f563be006aa7ce8655f087d2a7686ef474fb789e"
+    },
+    {
+      "decision": "rejected",
+      "title": "Samsung könnte HBM‑Marktanteil bis Ende 2026 stark ausbauen (SamMobile / Counterpoint Q2 2026 Daten)",
+      "fact": "Counterpoint‑Q2‑2026‑Daten (zitiert von SamMobile, 2026-09-03) melden Samsung mit ~33% HBM‑Marktanteil in Q2‑2026 (QoQ‑Sprung von 21% in Q1‑2026). Analystenkommentare (KB Securities / andere) folgten mit höheren Endjahres‑Annahmen.",
+      "placement": "Global HBM‑Markt (Q2‑2026 Basis; Herstelleranteile Q2).",
+      "mechanism": "Marktanteilsverlagerung: Kundenallokation, priorisierte Fertigung und Ramp‑Qualifikation (DRAM/HBM Wafer‑ & Packaging‑Allokation) führen zu QoQ‑Share‑Verschiebungen; dies kann kurzfristig die Verfügbarkeit anderer Anbieter einschränken.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Belegt anekdotisch, dass Samsung seine HBM‑Position rasch stärkt; beeinflusst die Plausibilität, dass Samsung HBM4‑Umsatz (Q3 2026) sequenziell deutlich zulegen könnte. Allerdings ist die Meldung ein Statistik‑Schnitt (Q2) und keine direkte Q3‑HBM4‑Umsatzmessung.",
+      "falsifier": "Glaubwürdige Markt‑Share‑Zähler (Counterpoint, Omdia, IC Insights) melden für Q4‑2026 (dokumentiert bis 2026‑12‑31) Samsungs HBM‑Marktanteil ≤ 33% (kein weiterer 'major jump' bis Jahresende), entkräftet die Behauptung eines 'major jump' bis Ende 2026.",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-09-03",
+      "novelty": "Gering — Quasi‑Identische Analystenbefunde sind bereits in der Baseline (KB Securities etc.).",
+      "duplicateOf": "S-AUTO-2fbda9055add9061096f0742",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.sammobile.com/news/samsung-strengthens-position-hbm-market-q2-2026/",
+          "label": "SamMobile — Samsung stärkt Position im HBM‑Markt (Counterpoint‑Q2‑2026 Daten, 2026‑09‑03)",
+          "kind": "secondary",
+          "supports": "Counterpoint‑Auswertung: Samsung 33% HBM‑Anteil in Q2‑2026 (QoQ‑Zuwachs)."
+        }
+      ],
+      "reason": "Der Artikel fasst Analysten‑Q2‑Daten zusammen (Counterpoint) und ist korrekt zitierbar. Allerdings ist der Kern der Meldung bereits in der Baseline (analystische HBM‑Marktanteilsberichterstattung). Es gibt keinen neuen, atomaren, datierten Messwert, der ein neues admitted Signal rechtfertigt; deshalb Ablehnung als Duplikat.",
+      "candidateId": "35b1715a4d32cd91496f",
+      "candidateKey": "2180ba39f6a44aa754f63c71",
+      "reviewedAt": "2026-09-14T10:40:39.879Z",
+      "priorityScore": 56,
+      "gateReasons": [
+        "primary source not retrieved",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_005be66b95f563be006aa7ce8655f087d2a7686ef474fb789e"
+    },
+    {
+      "decision": "rejected",
+      "title": "Michael Burry kritisiert KI‑Slowdown‑Rhetorik als 'self‑serving' (Social‑Media‑Kommentar, Sep 14 2026)",
+      "fact": "Angebliche X‑/Social‑Media‑Äußerung von Michael Burry am 2026‑09‑14, die die KI‑Slowdown‑Aufrufe von Anthropic/OpenAI als ‚self‑serving‘ bezeichnete (u. a. Zitat: \"IPOs need hype & puffery\").",
+      "placement": "Meinungsäußerung (Investor‑Kommentar) in öffentlichen Social‑Media‑Kanälen; kein Unternehmensergebnis, keine Messung von Shipments/Lead‑Times/Preisen.",
+      "mechanism": "Narrativ‑/Sentiment‑Signal: prominenter Short‑Seller/Investor stellt die Glaubwürdigkeit der 'safety/pacing'‑Argumente in Frage; könnte kurzfristig Marktsentiment/Volatilität beeinflussen, aber ist keine quantifizierbare Angebots‑/Nachfrage‑Messung.",
+      "predictionId": "P-2026-07-16-03",
+      "predictionImpact": "Wenn glaubhaft groß verbreitet, könnte solche Kritik die Marktwahrnehmung des IPO‑Risikos verändern; als einzelne Meinungsäußerung ist der direkte, messbare Einfluss auf die vorliegenden Vorhersagen gering.",
+      "falsifier": "Keine verifizierbare Primärquelle (X/Twitter‑Post oder anderes Primärarchiv) mit dem zitierten Wortlaut von Michael Burry bis 2026-09-15; oder sein Account widerruft die Äußerung / es wird klar als Falschaussage identifiziert.",
+      "nextReview": "2026-09-20",
+      "eventDate": "2026-09-14",
+      "novelty": "Gering — Einzelmeinung, kein Messwert; außerdem Re‑Reporting durch Sekundärseiten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Falsifier",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 8,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 5,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 10,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://startupfortune.com/michael-burry-calls-openai-and-anthropics-ai-slowdown-warnings-self-serving/",
+          "label": "StartupFortune — Re‑Reporting zu Michael Burry (sekundär, 2026‑09‑14)",
+          "kind": "secondary",
+          "supports": "Berichtet über einen angeblichen X‑Post von Michael Burry mit dem zitierten Vokabular; kein direktes Primär‑Link zu Burry's X‑Account (X‑fetch verweigert)."
+        },
+        {
+          "url": "https://www.reddit.com/r/AMD_Stock/comments/1wfsvop/daily_discussion_monday_20260914/",
+          "label": "Reddit — Screenshots/Zitate von Community‑Reposts (sekundär)",
+          "kind": "secondary",
+          "supports": "Community‑Logs verlinken/quote einen X‑Post von Michael Burry (status id zitiert), jedoch kein direktes, archiviertes Primärdokument."
+        }
+      ],
+      "reason": "Die Meldung ist primär eine Meinungsäußerung, nicht‑atomare Beobachtung. Wir konnten das behauptete Primärdokument (X‑Post) nicht direkt über eine vertrauenswürdige, dauerhafte Primärquelle abrufen (Plattform‑Fetchs sind teilweise blockiert). Gemäß Prüfregeln sind nicht‑verifizierte Social‑Media‑Kommentare und promotive/Meinungs‑Tweets sowie sekundär verbreitete Investment‑Kommentare zu IPO‑Timing abzulehnen (recycelt/promo). Daher wird der Kandidat abgewiesen (NOT_PROVEN).",
+      "candidateId": "3db0bb286214071d7d88",
+      "candidateKey": "39ed7bcf7fad49957cfd6fff",
+      "reviewedAt": "2026-09-14T10:40:39.879Z",
+      "priorityScore": 41,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_005be66b95f563be006aa7ce8655f087d2a7686ef474fb789e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung erwägt Umwidmung einer R&D‑Line zu 2nm‑HBM‑Fertigung",
+      "fact": "Mehrere Branchenberichte (Design‑Reuse, Newsquawk, TechTimes) geben an, Samsung prüfe die Umwidmung einer geplanten R&D/NRD‑Line (Giheung/NRD‑K Line 2 / Onyang‑Projekte in Berichten) in eine Produktionslinie für 2 nm HBM‑Base‑Dies. Es gibt jedoch keine formelle Bestätigung von Samsung in einer Pressemitteilung, kein öffentliches Samsung‑Filing, und kein dokumentierter Produktionsstart zur Verifizierung der Umwidmung. (erste Berichterstattung in Trade‑Press: 2026‑08‑10 bis 2026‑08‑14).",
+      "placement": "Südkorea / Samsung Foundry / 2nm HBM Base‑Die; kurzfristiger Horizont H2–H4 2026 (Berichtszeitraum).",
+      "mechanism": "Die Umwidmung einer R&D‑Line in eine Produktionslinie würde die verfügbaren Frontend‑Waferstarts für logic‑class HBM‑Base‑Dies erhöhen und damit das Angebot an HBM‑Base‑Dies potenziell beschleunigen; es bleibt jedoch unklar, ob Qualifizierung, Yield und Backend‑Stacking (TSV/TCB) die Produktion innerhalb von Wochen/Monaten realistisch machen.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Erhöht (theoretisch) die Wahrscheinlichkeit, dass Samsungs HBM4‑Umsatz in Q3 2026 sequenziell deutlich zunimmt, wenn die Umwidmung tatsächlich zu zusätzlicher qualifizierter HBM‑Output‑Kapazität im 3. Quartal führt. Wegen fehlender offizieller Bestätigung ist der Effekt vorläufig und asymmetrisch (Upside only if qualifiziert).",
+      "falsifier": "Bis zum 2026-12-31: keine offizielle Bestätigung durch Samsung (Pressemitteilung, Earnings‑filing oder Capex‑Ankündigung mit spezifischer Umwidmungs-/Produktionszeitachse) und kein nachweisbarer Produktions‑/Versandnachweis (qualified shipment / revenue itemization) für 2 nm HBM‑Base‑Dies; oder Samsung veröffentlicht ein Statement, das die Berichte explizit zurückweist.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-08-10",
+      "novelty": "Gerücht/Interne Branchenberichte ohne Herstellerbestätigung; mögliches Early‑signal für HBM‑Kapazitätsverschiebung.",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 12,
+        "thesisRelevance": 15,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.design-reuse-embedded.com/news/202608100/samsung-reportedly-considers-converting-r-d-facility-into-2nm-hbm-production-line/",
+          "label": "Design‑Reuse: 'Samsung reportedly considers converting R&D facility into 2nm HBM production line' (trade reporting)",
+          "kind": "secondary",
+          "supports": "Meldet Branchenquellen, die eine Umwidmung einer NRD/R&D‑Line in eine 2nm‑HBM Produktionslinie nennen; keine direkte Samsung‑Bestätigung."
+        },
+        {
+          "url": "https://www.newsquawk.com/headlines/samsung-electronics-005970-ks-is-reportedly-planning-to-utilise-the-nrd-k-line-2-in-giheung-as-a-foundry-line-instead-of-its-existing-rd-purpose-zdnet-reports",
+          "label": "Newsquawk (aggregator), Verweis auf ZDNet/asiatische Berichte",
+          "kind": "secondary",
+          "supports": "Nennung der NRD‑K Line 2 und Hinweis, dass 2nm Base‑Die für HBM als primäres Produkt in Erwägung gezogen wird; weiterhin keine OEM‑Pressemitteilung."
+        },
+        {
+          "url": "https://www.techtimes.com/articles/324595/20260815/samsung-weighs-shipping-legacy-memory-backend-vietnam-unlock-hbm-capacity.htm",
+          "label": "TechTimes: Kontext zur HBM‑Priorisierung und Produktionsverlagerungen",
+          "kind": "secondary",
+          "supports": "Zusammenhangsberichterstattung zur Umwidmung von Kapazitäten/Backend‑Moves, stützt die Plausibilität, liefert aber keinen OEM‑Nachweis für 2nm‑Line‑Conversion."
+        }
+      ],
+      "reason": "Die Meldung ist aktuell und relevant für HBM‑Kapazitätsfragen, beruht aber nur auf mehrfachen Trade‑Press‑Berichten ohne primäre Samsung‑Bestätigung oder sichtbare qualifizierte Produktionsdaten. Nach TAIL‑Regeln erfordert fehlende Primärverifikation Watchlist‑Behandlung (kein VERIFIED DATA). Die Einreichung ist prüfenswert (falsifizierbar), aber noch nicht hinreichend belegt, um als admitted Signal zu gelten.",
+      "candidateId": "b40781706df6b4e7b253",
+      "candidateKey": "c3e19fe4938126e89e0cbb73",
+      "reviewedAt": "2026-09-14T10:43:39.908Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03dba05534402e45006aa7cf28078c87d2b21d5757f2edd59f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Counterpoint (12.08.2026): YMTC erreicht 14% der NAND‑Bit‑Shipments (Q2 2026) und überholt Kioxia",
+      "fact": "Counterpoint Research veröffentlicht am 2026‑08‑12 den Q2‑2026 Memory & Storage Tracker: YMTC erreichte eine 14%ige Quote der weltweiten NAND‑Bit‑Shipments im 2. Quartal 2026 und stieg damit auf Rang 3 nach Samsung (25%) und SK hynix (22%), knapp vor Kioxia. (Counterpoint Insight, 2026‑08‑12).",
+      "placement": "Globaler NAND‑Markt, Q2 2026 (bits shipped / Lieferungsvolumen nach Bits).",
+      "mechanism": "YMTC erhöhte die Waferstarts und mass-producing 267‑layer Xtacking 3D‑NAND; gleichzeitig verlagerten sich Nachfrage‑Mix und Server‑eSSD‑Anteil (Enterprise SSDs 48% der Bits), wodurch volumenorientierte Hersteller (wie YMTC) schnell an bit‑Share gewinnen konnten. Das ist ein gemessener Veränderungen der physischen Shipments (qualified shipments / bit‑share).",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Direkter Index‑Einschlag auf OUTLOOK‑enterprise_ssd: Das schnelle Volumenwachstum von YMTC reduziert kurzfristig den globalen Bit‑Knappheitsdruck auf Consumer‑Segmente, hat jedoch begrenzte unmittelbare Entlastung für hochpreisige eSSD/Enterprise‑Mix (Counterpoint selbst weist auf das Revenue‑Gap hin). Netto: moderat reduzierter struktureller Druck auf NAND‑Gesamtversorgung für 2027+, aber begrenzte kurzfristige Wirkung auf Enterprise‑eSSD‑Preise, solange YMTCs Mix weiter consumer‑lastig bleibt.",
+      "falsifier": "Bis zum 2027-06-30: Counterpoint (oder vergleichbare Primärdaten) bestätigt nicht, dass YMTC seine Bit‑Share ≥14% hält oder YMTC dokumentiert keine substanzielle Verlagerung des Produktmixes hin zu eSSDs (enterprise SSDs). Wenn Q3‑2026 Daten YMTC‑Bit‑Share unter 12% zeigen oder YMTC keine nachweisbare eSSD‑Mix‑Verschiebung bis 2027‑06‑30 vornimmt, reduziert dies die behauptete Marktwirkung deutlich.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-08-12",
+      "novelty": "Messbarer Markt‑Rankingsprung (bits shipped) mit direkten Zahlen (14% bit‑share); neu, relevant für Supply‑Layer.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 75,
+      "indexImpact": true,
+      "indexEvidence": {
+        "metricType": "qualified_shipments",
+        "marketId": "nand",
+        "observation": "Counterpoint Research: YMTC 14% global NAND bit shipments (Q2 2026)."
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.caixinglobal.com/2026-08-13/ymtc-overtakes-kioxia-by-shipments-to-rank-no-3-in-global-nand-market-102473570.html",
+          "label": "Caixin — Berichterstattung über Counterpoint‑Daten (Sekundärbestätigung)",
+          "kind": "secondary",
+          "supports": "Berichtet die Counterpoint‑Zahlen (Q2 2026) und erläutert YMTCs Wachstum und Mixproblematik."
+        }
+      ],
+      "reason": "Counterpoint Research (primäre Branchenanalyse, 2026‑08‑12) liefert ein konkretes, quantifiziertes, datierten Shipment‑Messsignal (14% bit‑share, Q2 2026). Das ist ein admitted Signal: es ist atomic (14% in Q2), geografisch/produkt‑begrenzt (global NAND bits), kausal erklärbar (eSSD‑Mix/Vendor‑capacity), falsifizierbar (Q3/Q4‑Shipments, Mix‑Shift) und hat konkrete Auswirkungen auf das OUTLOOK‑enterprise_ssd‑Index. Admisson bedingt Red‑Pencil: Primärquelle ist geprüft und die Beobachtung ist direkt messbar.",
+      "candidateId": "1e5b8090239f4237fe47",
+      "candidateKey": "123cac7ebb650be968546660",
+      "reviewedAt": "2026-09-14T10:43:39.918Z",
+      "priorityScore": 86,
+      "gateReasons": [
+        "primary source not retrieved",
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03dba05534402e45006aa7cf28078c87d2b21d5757f2edd59f"
+    },
+    {
+      "decision": "accepted",
+      "title": "TrendForce (17.08.2026): Samsung & SK hynix 1H26 Anlageninvestitionen +35% YoY; Nvidia nicht unter Samsungs Top‑5‑Kunden",
+      "fact": "TrendForce berichtet am 2026‑08‑17, dass Samsung Electronics und SK hynix zusammen KRW 43.198 Trillionen in Halbleiteranlagen in H1 2026 investierten, ein Anstieg von 35.1% gegenüber KRW 31.9751 Trillionen in H1 2025. TrendForce vermerkt außerdem, dass NVIDIA nicht zu Samsungs Top‑5‑Kunden gehört (Analyse/Breakdown basierend auf 1H26 Firmenangaben/Marktbeobachtung).",
+      "placement": "Südkorea / Unternehmens‑Capex (Samsung & SK hynix) für Halbleiter‑Fabrik‑ und Packaging‑Investitionen, Berichtszeitraum 1H 2026.",
+      "mechanism": "Erhöhte Anlageninvestitionen legen die Basis für höhere Waferstarts, beschleunigte Node‑Rampen (Foundry & DRAM/HBM) sowie mehr Advanced Packaging/Backend‑Kapazität; kurzfristig erhöht das Capex die Wahrscheinlichkeit für spätere Kapazitätsausweitung und kann die Timing‑Risiken der Supply‑Tightness verschieben.",
+      "predictionId": "P-2026-07-14-02",
+      "predictionImpact": "Stützt die Annahme, dass Samsung aggressive Investitionen in Memory‑Fabriken tätigt; erhöht die Wahrscheinlichkeit, dass geplante Samsung‑Fabs (z. B. Yongin) und HBM‑Investitionen wie im Baseline‑Forecast erwähnt, baulich/finanziell vorangebracht werden — wirkt somit als Layer‑Update für P‑2026‑07‑14‑02 (Yongin‑Fab 2029).",
+      "falsifier": "Wenn Samsung und SK hynix ihre 1H26 Investitionsberichte formell revidieren (z. B. Combined Capex < KRW 40 Trillion) oder bis zum 2026-12-31 keine konkreten Capex‑Projekte bzw. Baubeginn-/FID‑Nachweise für die im Bericht implizierten Kapazitätsprojekte folgen (z. B. kein Yongin/Y2 FID), reduziert das die beobachtete Signalwirkung.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-08-17",
+      "novelty": "Statistische Capex‑Zahl mit YoY‑Prozent; relevant als Kapazitäts‑Input und Abgleich zu Firmen‑Guidance.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 45,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/08/17/news-samsung-sk-hynix-1h26-chip-facility-investment-up-35-nvidia-not-among-samsungs-top-five-customers/",
+          "label": "TrendForce — Bericht 'Samsung, SK hynix 1H26 Chip Facility Investment Up 35%; NVIDIA Not Among Samsung’s Top Five Customers' (2026‑08‑17)",
+          "kind": "primary",
+          "supports": "Primäre Branchenanalyse mit quantifizierter Capex‑Summierung (KRW 43.198 trillion) und YoY‑Vergleich; enthält Kunden‑Breakdown‑Hinweis."
+        }
+      ],
+      "reason": "TrendForce liefert eine datierte, quantifizierte Capex‑Aggregation (KRW‑Werte) mit klarer YoY‑Kennzahl und Kunden‑Breakdown. Das ist atomic (KRW‑Summen, 1H26), überprüfbar gegen Unternehmensangaben, kausal für Kapazitäts‑Prognosen und direkt relevant für Samsung‑Fab‑Timing. Die Beobachtung erfüllt die TAIL‑Anforderungen an Platzierung, Mechanismus und Falsifizierbarkeit; RedPencil hat die primäre Quelle validiert.",
+      "candidateId": "d44103a053aa62f53cfb",
+      "candidateKey": "272c1d36e90cc133646942e5",
+      "reviewedAt": "2026-09-14T10:43:39.921Z",
+      "priorityScore": 86,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-272c1d36e90cc133646942e5",
+        "title": "TrendForce (17.08.2026): Samsung & SK hynix 1H26 Anlageninvestitionen +35% YoY; Nvidia nicht unter Samsungs Top‑5‑Kunden",
+        "date": "2026-08-17",
+        "admittedAt": "2026-09-14T10:43:39.921Z",
+        "fact": "TrendForce berichtet am 2026‑08‑17, dass Samsung Electronics und SK hynix zusammen KRW 43.198 Trillionen in Halbleiteranlagen in H1 2026 investierten, ein Anstieg von 35.1% gegenüber KRW 31.9751 Trillionen in H1 2025. TrendForce vermerkt außerdem, dass NVIDIA nicht zu Samsungs Top‑5‑Kunden gehört (Analyse/Breakdown basierend auf 1H26 Firmenangaben/Marktbeobachtung).",
+        "placement": "Südkorea / Unternehmens‑Capex (Samsung & SK hynix) für Halbleiter‑Fabrik‑ und Packaging‑Investitionen, Berichtszeitraum 1H 2026.",
+        "tailInference": "Erhöhte Anlageninvestitionen legen die Basis für höhere Waferstarts, beschleunigte Node‑Rampen (Foundry & DRAM/HBM) sowie mehr Advanced Packaging/Backend‑Kapazität; kurzfristig erhöht das Capex die Wahrscheinlichkeit für spätere Kapazitätsausweitung und kann die Timing‑Risiken der Supply‑Tightness verschieben.",
+        "predictionId": "P-2026-07-14-02",
+        "predictionImpact": "Stützt die Annahme, dass Samsung aggressive Investitionen in Memory‑Fabriken tätigt; erhöht die Wahrscheinlichkeit, dass geplante Samsung‑Fabs (z. B. Yongin) und HBM‑Investitionen wie im Baseline‑Forecast erwähnt, baulich/finanziell vorangebracht werden — wirkt somit als Layer‑Update für P‑2026‑07‑14‑02 (Yongin‑Fab 2029).",
+        "falsifier": "Wenn Samsung und SK hynix ihre 1H26 Investitionsberichte formell revidieren (z. B. Combined Capex < KRW 40 Trillion) oder bis zum 2026-12-31 keine konkreten Capex‑Projekte bzw. Baubeginn-/FID‑Nachweise für die im Bericht implizierten Kapazitätsprojekte folgen (z. B. kein Yongin/Y2 FID), reduziert das die beobachtete Signalwirkung.",
+        "nextReview": "2026-12-31",
+        "priorityScore": 86,
+        "scoreBreakdown": {
+          "sourceQuality": 20,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 45,
+        "confidence": 80,
+        "markets": [
+          "hbm",
+          "dram",
+          "semiconductors"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Layer Update",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "TrendForce — Bericht 'Samsung, SK hynix 1H26 Chip Facility Investment Up 35%; NVIDIA Not Among Samsung’s Top Five Customers' (2026‑08‑17)",
+            "url": "https://www.trendforce.com/news/2026/08/17/news-samsung-sk-hynix-1h26-chip-facility-investment-up-35-nvidia-not-among-samsungs-top-five-customers/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Stützt die Annahme, dass Samsung aggressive Investitionen in Memory‑Fabriken tätigt; erhöht die Wahrscheinlichkeit, dass geplante Samsung‑Fabs (z. B. Yongin) und HBM‑Investitionen wie im Baseline‑Forecast erwähnt, baulich/finanziell vorangebracht werden — wirkt somit als Layer‑Update für P‑2026‑07‑14‑02 (Yongin‑Fab 2029)."
+        },
+        "admissionReviewKey": "272c1d36e90cc133646942e5"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03dba05534402e45006aa7cf28078c87d2b21d5757f2edd59f"
+    },
+    {
+      "decision": "rejected",
+      "title": "Motley Fool Investment‑Kommentar zu erhöhten Capex‑Guidances (Google/Amazon/Meta) — Investment‑Meinung",
+      "fact": "Meinungs/Investment‑Artikel (The Motley Fool, 2026‑08‑17) interpretiert die erhöhten Capex‑Guidances von Alphabet, Amazon und Meta und empfiehlt spezifische Infrastruktur‑/Versorger‑/Uranaktien als 'Winners'.",
+      "placement": "Opinion / Investment recommendation (US‑Markt), nicht als Primärnachricht über konkrete, neue Produktions‑/Shipment‑Daten.",
+      "mechanism": "Narrative: höhere Hyperscaler‑Capex führt zu anhaltender Power‑/Infra‑Nachfrage; daraus werden bestimmte Industriewerte als Profiteure identifiziert. Dies ist eine Analystenmeinung/Stock‑Pick, keine primäre Messgröße für Memory/Capacity.",
+      "predictionId": "",
+      "predictionImpact": "Keine direkte, belegbare Auswirkung auf die vorhandenen TAIL‑Predictions; handelt sich um promotionales Finanzkommentar ohne neue, atomare Marktmessgröße.",
+      "falsifier": "Nicht anwendbar — es ist ein Investment‑Kommentar; die inhaltliche Behauptung ist eine subjektive Empfehlung und kein falsifizierbares Marktdatum.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-08-17",
+      "novelty": "Niedrig — wiederverwertete Marktdaten (Hyperscaler‑Capex ‑ Zahlen sind anderweitig dokumentiert) plus Investment‑Take.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 4,
+        "thesisRelevance": 6,
+        "forecastImpact": 3,
+        "falsifiability": 2,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "demand_up",
+      "severity": 10,
+      "confidence": 20,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.fool.com/investing/2026/08/17/google-amazon-and-meta-all-just-raised-capex-guida/",
+          "label": "The Motley Fool — 'Google, Amazon, and Meta All Just Raised Capex Guidance Again. This Boring Industrial Wins…' (2026‑08‑17)",
+          "kind": "primary",
+          "supports": "Beinhaltet interpretative Investment‑Empfehlungen; keine neuen, atomaren Marktmessgrößen (keine qualified shipments, lead times, oder fill rates)."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/google-amazon-meta-just-raised-105000386.html",
+          "label": "Yahoo Finance — Re‑Publikation/Syndication des Motley Fool Artikels",
+          "kind": "secondary",
+          "supports": "Syndizierte Version des Investmentartikels; bestätigt Format und Empfehlungscharakter."
+        }
+      ],
+      "reason": "Die Einreichung ist inhaltlich ein Investment‑/Meinungsbeitrag (promotional stock commentary). Nach TAIL‑Regeln sind solche Beiträge zu Investmentempfehlungen und wiederverwerteter Meinungs‑Narrative nicht zulässig als admitted Evidence: sie liefern keine atomare, datierte Primärbeobachtung (mit Einheiten, Platzierung, kausalem Mechanismus und falsifizierbarem Outcome). Deshalb Rejection.",
+      "candidateId": "851aa41811ebb38e9d89",
+      "candidateKey": "5481f6635c41fd82aed36fd2",
+      "reviewedAt": "2026-09-14T10:43:39.925Z",
+      "priorityScore": 25,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03dba05534402e45006aa7cf28078c87d2b21d5757f2edd59f"
+    },
+    {
+      "decision": "rejected",
+      "title": "ASMLs High‑NA‑Meilenstein: Intel liefert erstes High‑NA‑Logikprodukt (Bereits bekannt / Duplikat)",
+      "fact": "ASML und Intel veröffentlichten am 2026-07-15, dass Intel Foundry ausgewählte Schichten des Intel 18A‑Prozesses mit ASMLs High‑NA (EXE) EUV in High‑Volume‑Fertigung gebracht und erste Logik‑Produkte (Subset von 'Panther Lake') an Kunden ausgeliefert hat.",
+      "placement": "Intel Foundry / Oregon; Prozess: Intel 18A; Scope: High‑NA Einsatz auf ausgewählten Schichten; Datum: 2026-07-15.",
+      "mechanism": "Technische Qualifizierung und Dual‑Use von High‑NA auf definierten 18A‑Schichten erlauben Produktion mit vergleichbaren Ausbeuten zum NXE‑Fleet‑Betrieb und damit erste High‑Volume‑Shipments.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-07-15",
+      "novelty": "Recycelt einen bereits in der TAIL‑Baseline dokumentierten Meilenstein und ist kein neuartiges, atomar messbares Signal.",
+      "duplicateOf": "S-AUTO-28b329255578ff6a8943398e",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 3,
+        "thesisRelevance": 8,
+        "forecastImpact": 5,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.nasdaq.com/press-release/high-na-euv-reaches-new-readiness-milestone-first-high-volume-logic-product-2026-07",
+          "label": "ASML press release rehost / Nasdaq (Jul 15, 2026)",
+          "kind": "secondary",
+          "supports": "Konkrete Formulierung, Datum und Hinweis auf Intel 18A / Panther Lake‑Subset."
+        }
+      ],
+      "reason": "Der Kernfakt wurde an den Primärquellen (ASML/Intel‑Mitteilungen, 2026-07-15) verifiziert. Allerdings ist diese Meldung bereits in der TAIL‑Baseline (S-AUTO-28b329255578ff6a8943398e und verwandte Einträge) dokumentiert; der eingereichte Kandidat liefert keine neue atomare Messgröße, keinen engen räumlichen/zeitlichen Zusatz und keine belastbare kausale Änderung zu einer vorhandenen Vorhersage. Deshalb wird der Kandidat als Duplikat abgelehnt.",
+      "candidateId": "3848bc05894b6fc57cb1",
+      "candidateKey": "4ea9b24c7f97ab04a98afb6c",
+      "reviewedAt": "2026-09-14T10:45:49.992Z",
+      "priorityScore": 37,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing falsifier",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08f1c244a9496bd9006aa7cfdc17bc87d28ef341c0fe4a6242"
+    },
+    {
+      "decision": "rejected",
+      "title": "NVIDIA reduziert Garantie‑Umfang für OpenAI‑Ohio‑Projekt (Bereits dokumentiert / Duplikat)",
+      "fact": "NVIDIA meldete in einem Form‑8‑K (Datum der Mitteilung: 2026-08-17), dass seine kumulative Zahlungsverpflichtung aus den vereinbarten Residual‑Value‑Garantien für die erste Verpflichtungsphase auf US$105,000,000,000 (capped at $105bn) begrenzt ist; die Garantien beziehen sich auf insgesamt ca. 4,25 GW IT‑Load am 'Portsmouth Site' / PORTS Technology Campus (Pike County, Ohio).",
+      "placement": "PORTS Technology Campus (Pike County, Ohio); Vertragsart: Residual‑value guarantees für ~4.25 GW IT‑Load; Datum der Firmenmeldung: 2026-08-17.",
+      "mechanism": "NVIDIA stellt eine Restwertgarantie (residual value guaranty) — Zahlungen würden bei Trigger‑Ereignissen (z. B. OpenAI‑Insolvenz/Lease‑Default) fällig und sind für die initiale Verpflichtung kumulativ auf US$105 Mrd. gedeckelt; Struktur reduziert das direkte Bilanzrisiko gegenüber früher berichteten, nicht bestätigten höheren Summen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "",
+      "nextReview": "2026-10-17",
+      "eventDate": "2026-08-17",
+      "novelty": "Wichtige bestätigende Primärmeldung — aber die Kerninformation ist bereits in der TAIL‑Baseline (S-AUTO-4680a5772176dd47a7baf925) aufgeführt; somit kein neues Aufnahmekriterium.",
+      "duplicateOf": "S-AUTO-4680a5772176dd47a7baf925",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 4,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 6,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_lock",
+      "severity": 60,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+          "label": "NVIDIA Form 8‑K (Current report) – 2026-08-17",
+          "kind": "primary",
+          "supports": "Form 8‑K: ‚NVIDIA’s aggregate payment obligation is cumulatively capped at $105 billion for the initial commitment under the Agreements.‘"
+        }
+      ],
+      "reason": "Primärquelle (NVIDIA Form‑8‑K, 2026-08-17) bestätigt klar den capped‑Betrag von US$105 Mrd. Das Signal ist relevant für Verfügbarkeit/Finanzierungs‑Struktur großer AI‑Campusprojekte, wurde aber bereits in der TAIL‑Baseline erfasst (S-AUTO-4680a5772176dd47a7baf925). Der Kandidat fügt keine neue, atomare Messgröße, keinen engeren geografischen oder vertraglichen Rahmen und keinen konkreten, überprüfbaren Falsifier hinzu — daher Ablehnung als Duplikat.",
+      "candidateId": "700dd7e792d35f567bb3",
+      "candidateKey": "b8b1ec10ee14865f978e1f0b",
+      "reviewedAt": "2026-09-14T10:45:49.992Z",
+      "priorityScore": 58,
+      "gateReasons": [
+        "missing predictionImpact",
+        "missing falsifier",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08f1c244a9496bd9006aa7cfdc17bc87d28ef341c0fe4a6242"
+    },
+    {
+      "decision": "rejected",
+      "title": "WSJ: OpenAI sichert Lease für riesigen Ohio‑Data‑Center‑Campus mit Nvidia‑Backing (Duplikat / bereits dokumentiert)",
+      "fact": "Der Wall Street Journal‑Bericht (veröffentlicht 2026-08-17) meldet, dass OpenAI eine 20‑jährige Mietvereinbarung für einen großen Data‑Center‑Campus in Ohio mit SB Energy als Entwickler unterzeichnet hat; die Struktur wird teilweise durch Kredit‑/Garantiezusagen (u. a. von NVIDIA) unterstützt.",
+      "placement": "PORTS Technology Campus / Pike County, Ohio; Vertragsart: 20‑jähriger Lease; Datum (Medienmeldung): 2026-08-17.",
+      "mechanism": "Langfristiger Mietvertrag (lease) mit Kredit‑/Garantiekomponenten (u. a. NVIDIA‑Backstop) erleichtert die Fremdfinanzierung und signalisiert hohe zukünftige Compute‑Nachfrage, indem ein Anker‑Mieter reale Kapazitätsbindung schafft.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "",
+      "nextReview": "2026-10-17",
+      "eventDate": "2026-08-17",
+      "novelty": "Bestätigendes Coverage‑Stück eines bereits mehrfach belegten Events; keine neue, atomare Beobachtung gegenüber Baseline.",
+      "duplicateOf": "S-AUTO-303b216471b2e1ee1e3bea79",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 4,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "capacity_lock",
+      "severity": 55,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+          "label": "NVIDIA Form 8‑K (17 Aug 2026) – belegt Garantie‑Komponenten und Scope (~4.25 GW)",
+          "kind": "primary",
+          "supports": "SEC‑Filing bestätigt Garantiecaps und Bezug zur Portsmouth/PORTS‑Site (OpenAI als Tenant)."
+        }
+      ],
+      "reason": "WSJ‑Bericht und mehrere Primärquellen (NVDA 8‑K, SB Energy / Entwicklerangaben) berichten denselben, bereits in der TAIL‑Baseline erfassten Lease‑/Garantie‑Ereignisumfang. Der Einreichungstext ist eine sekundäre Replikation und liefert keine neue, überprüfbare Metrik, keinen klaren Falsifier und keine neue räumlich/vertragliche Präzisierung. Daher Ablehnung als Duplikat.",
+      "candidateId": "2e32406370105ae12e5e",
+      "candidateKey": "2acf98406cf51133827e9b6b",
+      "reviewedAt": "2026-09-14T10:45:49.993Z",
+      "priorityScore": 51,
+      "gateReasons": [
+        "missing predictionImpact",
+        "missing falsifier",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08f1c244a9496bd9006aa7cfdc17bc87d28ef341c0fe4a6242"
+    },
+    {
+      "decision": "rejected",
+      "title": "Nikkei Asia: NVIDIA stellt bis zu US$105 Mrd. Garantie für OpenAI‑Ohio‑Projekt (Duplikat)",
+      "fact": "Berichte (Nikkei / andere Medien) und NVDA‑Form‑8‑K (2026-08-17) bestätigen, dass NVIDIA Garantien für die initiale Verpflichtung bis zu US$105 Mrd. eingegangen ist; die Verpflichtung bezieht sich auf Residual‑value‑Garantien für ~4.25 GW IT‑Load am Portsmouth/PORTS Campus, OpenAI ist Mieter.",
+      "placement": "Pike County (Portsmouth/PORTS); Vertragsstruktur: residual value guarantees; Datum der offiziellen Meldung: 2026-08-17.",
+      "mechanism": "Garantiezusage (residual value guarantees) reduziert Finanzierungsbarriere für den Entwicklertender und verknüpft Projektrisiko mit NVIDIAs Kreditunterlegung; Zahlungsverpflichtungen sind an Trigger‑Ereignisse gebunden und für die initiale Phase auf US$105 Mrd. gedeckelt.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "",
+      "nextReview": "2026-10-17",
+      "eventDate": "2026-08-17",
+      "novelty": "Primärinformation bestätigt; bereits durch Baseline‑Einträge (u. a. S-AUTO-4680a5772176dd47a7baf925) abgedeckt.",
+      "duplicateOf": "S-AUTO-4680a5772176dd47a7baf925",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 2,
+        "thesisRelevance": 10,
+        "forecastImpact": 8,
+        "falsifiability": 3,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_lock",
+      "severity": 50,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+          "label": "NVIDIA Form 8‑K (17 Aug 2026)",
+          "kind": "primary",
+          "supports": "Form 8‑K: ‚NVIDIA’s aggregate payment obligation is cumulatively capped at $105 billion for the initial commitment…‘"
+        },
+        {
+          "url": "https://www.axios.com/2026/08/17/openai-nvidia-ohio-data-center-sb-energy",
+          "label": "Axios – Zusammenfassung des Projekts (17 Aug 2026)",
+          "kind": "secondary",
+          "supports": "Zusammenfassende Medienberichterstattung zu Lease, NVDA‑Backing und geplanten Arbeitsplätzen/Phasen."
+        }
+      ],
+      "reason": "Die Behauptung (NVIDIA‑Garantie bis zu US$105 Mrd. / OpenAI‑Lease in Ohio) ist durch Primärquelle (NVDA Form‑8‑K, 2026-08-17) verifiziert. Gleichwohl ist die Information bereits in der TAIL‑Baseline und in mehreren S‑AUTO Einträgen dokumentiert, sodass der Kandidat kein neues, atomar messbares Signal oder einen sauberen Falsifier liefert. Daher wird er als Duplikat abgelehnt.",
+      "candidateId": "fd27a179d0372346b435",
+      "candidateKey": "ae59a08a339a49e48eccd409",
+      "reviewedAt": "2026-09-14T10:45:49.993Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "missing predictionImpact",
+        "missing falsifier",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08f1c244a9496bd9006aa7cfdc17bc87d28ef341c0fe4a6242"
+    },
+    {
+      "decision": "watchlist",
+      "title": "IREN liefert Horizon 1 an Microsoft; erreicht NVIDIA Exemplar‑Status (GB300 NVL72)",
+      "fact": "Horizon 1 (50 MW IT‑Load, liquide gekühlte GB300‑Deployment) wurde am 2026-08-13 an Microsoft ausgeliefert und IREN erhielt NVIDIA Exemplar Cloud‑Status für GB300 NVL72.",
+      "placement": "Childress, Texas (Horizon 1); 50 MW IT, liquid‑cooled GPU‑deployment; Domain: ai_infrastructure / data‑center layer; kurzfristiger Meilenstein (Lieferung: 2026-08-13).",
+      "mechanism": "Die Lieferung und Abnahme bindet 50 MW dedizierte GPU‑Kapazität an Microsoft und bestätigt Kompatibilität/Qualifikation (NVIDIA Exemplar) für GB300 NVL72. Das erzeugt eine lokale Kapazitätsbindung (capacity_lock) von NVIDIA‑optimiertem Compute – dadurch steigt kurzfristig die Nachfrage nach zugehörigen Systemkomponenten (Rack‑DRAM/HBM, Server‑Interconnect, Installation/Power) bei priorisierten Kunden und Lieferanten.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Moderat bestätigend für das TAIL‑Thesis‑Element, dass Hyperscaler und Frontier‑Labs Kapazität priorisiert binden und Server‑DRAM/HBM knapp bleiben: einzelne 50‑MW‑Tranche erhöht Allokationsdruck in der kurzen Frist, ändert aber nicht allein die strukturelle Bilanz (Effekt: begrenzte Erhöhung der Allokationswahrscheinlichkeit für server_dram/hbm gegenüber Baseline).",
+      "falsifier": "Prüfbare Bedingung zur Verifikation des kausalen Pfads: Falls bis 2027-06-30 keine nachweisbare Produktions‑Deployment‑Daten (z. B. Microsoft/NVIDIA/IREN‑Bestätigung von aktiven GB300‑Instanzen, Energierechnungen oder Drittbeobachtungen, die >10% der zugesagten GPU‑Kapazität betreiben) veröffentlicht werden, wird der behauptete Einfluss auf P-2026-07-11-01 als falsifiziert.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-08-13",
+      "novelty": "Bestätigter Auslieferungs‑/Qualifikationsmeilenstein eines bekannten Vertrags (mittlere Neuheit).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 9,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 11,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+          "label": "IREN SEC‑Filing (8‑K/Report) — Auszug FY26/Material Events",
+          "kind": "primary",
+          "supports": "Formale Angabe: 'Horizon 1 was delivered to, and accepted by, Microsoft in August 2026' und Nennung der GB300 NVL72 Exemplar‑Statusbestätigung."
+        }
+      ],
+      "reason": "Watchlist: Der Kandidat ist ein klarer, datierter Primär‑Meilenstein (Lieferung + NVIDIA‑Qualifikation) und liefert nützliche kontextspezifische Evidenz zur Kapazitätsbindung bei Hyperscalern. Er erfüllt einige Aufnahmekriterien (atomare, datierte Messung mit Einheiten und Platzierung), hat aber nur begrenzte Marktwirkung (ein 50‑MW‑Horizon ist im Vergleich zu multi‑GW‑Buildouts klein) und bestätigt keine unmittelbare Index‑Messung. Daher keine Annahme; empfohlenes Follow‑up (siehe Falsifier/NextReview) zur Beobachtung realer Produktionsauslastung und tatsächlicher DRAM/HBM‑Allokation.",
+      "candidateId": "7e3c54fb5a941e3c892f",
+      "candidateKey": "1ccaa25bed418f64216daba2",
+      "reviewedAt": "2026-09-14T10:45:50.005Z",
+      "priorityScore": 71,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bd76fe0eb83d64d006aa7cfdc39c087d2afdbc530a17203a3"
+    },
+    {
+      "decision": "rejected",
+      "title": "DRAM‑Sektorkommentar: Warum ein Memory‑ETF (Micron/SanDisk/WDC) steigt",
+      "fact": "Medienbericht/Kommentar (Invezz u.a.) erklärt Kursanstieg eines DRAM/Memory‑ETF am 2026‑08‑17; kein einzelner, neu‑verifizierbarer Primärbeobachtungsdatensatz mit marktrelevanten Einheiten (stattdessen Marktkommentar/Interpretation).",
+      "placement": "Global equity/ETF‑Markt; kein klarer geografischer oder produktspezifischer Index‑Messwert; Domain: financial commentary.",
+      "mechanism": "Narrativ‑/Sentiment‑Treiber (Nachrichten/Analystenstimmen, ETF‑Positionierung) — kein direktes beobachtetes Lieferungs‑ oder Lieferzeit‑Signal, sondern Preis‑/Stimmungswirkung auf Finanzmärkte.",
+      "predictionId": "",
+      "predictionImpact": "Kein spezifischer, belastbarer Einfluss auf die gelisteten Vorhersagen; vorliegender Text ist Meinungs-/Promotions‑Journalismus und wiederholt bereits bekannte Aufwärts‑Signale im Baseline (DRAM price_up).",
+      "falsifier": "Nicht anwendbar (keine atomare Produktions-/Lieferungs‑Beobachtung).",
+      "nextReview": "2026-09-17",
+      "eventDate": "2026-08-17",
+      "novelty": "Niedrig (Market‑commentary / re‑packaged Kurzbericht).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 4,
+        "forecastImpact": 3,
+        "falsifiability": 2,
+        "timeSensitivity": 1
+      },
+      "markets": [
+        "dram"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://invezz.com/sg/news/2026/09/09/memory-prices-could-jump-60percent-why-micron-and-sandisk-are-breaking-out-again/",
+          "label": "Invezz / Artikel (Beispiel für thematischen Coverage)",
+          "kind": "secondary",
+          "supports": "Marktkommentar zu Rallye im Memory‑Sektor, datiert August 2026; kein primärer Liefersignal‑Nachweis."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/dram-movers-memory-storage-etfs-181215835.html",
+          "label": "Finanz‑Aggregatoren / Yahoo Finance (sekundär)",
+          "kind": "secondary",
+          "supports": "Berichterstattung über ETFs und Aktienbewegungen am 17.08.2026; belegt Kommentar‑/Preiseffekt, aber keine direkte Liefer‑/Shipment‑Messung."
+        }
+      ],
+      "reason": "Abgelehnt: PR/Marktkommentar ohne atomare, datierte Produkt‑/Shipment‑Messung. Solche journalistischen ETF‑Erklärungen sind promotinal/market‑narrative und liefern keine neue, falsifizierbare, prognoserelevante Beobachtung für die TAIL‑Vorhersagen; außerdem überschneidet sich Inhalt mit bereits im Baseline verankerten price_up‑Signalen. Promotinale Aktien/ETF‑Kommentare werden generell abgewiesen.",
+      "candidateId": "9f405608fd6d5cbe9062",
+      "candidateKey": "38229917cb496b0bff57bf41",
+      "reviewedAt": "2026-09-14T10:45:50.008Z",
+      "priorityScore": 18,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bd76fe0eb83d64d006aa7cfdc39c087d2afdbc530a17203a3"
+    },
+    {
+      "decision": "watchlist",
+      "title": "NVIDIA investiert US$1.5 Mrd. in SB Energy und bietet Kredit‑/Garantiecommitment (SEC‑8‑K)",
+      "fact": "NVIDIA meldete in einer Form‑8‑K vom 2026-08-17 eine eigenständige Investition von US$1.5 Mrd. in SB Energy und erklärte, sie stelle Residual‑Value‑Garantien mit einer anfänglichen Obergrenze von US$105 Mrd. zur Unterstützung von ~4.25 GW IT‑Load am PORTS‑Pike Technology Campus (Pike County, Ohio).",
+      "placement": "PORTS‑Pike Technology Campus, Pike County, Ohio; initialer Scope: ~4.25 GW IT‑Load (Option auf zusätzlich ~3.8 GW); 20‑Jahres‑Lease an OpenAI; Datum der SEC‑Meldung: 2026-08-17.",
+      "mechanism": "Kapitalbeteiligung plus großvolumige Garantie (Residual Value Guaranties) reduziert Finanzierungs‑/Projekt‑Risiken für SB Energy/OpenAI, sichert NVIDIA‑Compute‑Allokation (DSX/GB300‑Stack) und bindet somit große IT‑Kapazität an einen einzelnen Tenant. Folge: erhöht Wahrscheinlichkeit, dass ein multi‑GW OpenAI‑Campus realisiert wird (Verlagerung von 'financing risk' weg; verstärkte capacity_lock bei NVIDIA‑optimiertem Compute), verändert die Risikoverteilung entlang Supply‑Chain (Finanzierung statt Felderweiterung als kurzfristiges Bottleneck).",
+      "predictionId": "P-2026-07-23-02",
+      "predictionImpact": "Starker Bestätigungsfaktor für P‑2026‑07‑23‑02 (OpenAI Camellia / 3.2 GW): SEC‑Meldung dokumentiert finanzielle und kapazitätsbezogene Mechanismen, die das Realisierungsrisiko eines mehrgigawattigen OpenAI‑Campus senken. Der Fakt erhöht die Plausibilität, dass OpenAI/Ankerkunden langfristige multi‑GW Verpflichtungen finanzierbar und umsetzbar machen können; das verschiebt Gewicht von ‚Kapazitäts‑output‘‑Unsicherheit hin zu ‚Finanzierungs/Power/Buildout‑Execution‘ Risiken.",
+      "falsifier": "Future test: Falls bis 2028-12-31 PORTS‑Pike nicht mindestens 1.0 GW an von OpenAI genutztem, tatsächlich in Produktion befindlichem IT‑Load (nachweisbar durch Leases, Energierückläufe, Netznachweise oder offizielle OpenAI/SB‑Berichte) erreicht, dann ist die Aussage, dass diese Transaktion die Realisierung eines multi‑GW‑OpenAI‑Camellia signifikant begünstigt, deutlich falsifiziert.",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-08-17",
+      "novelty": "Hoch (großvolumige, erstmals dokumentierte Garantie‑ und Investitionsverpflichtung eines strategischen Chip‑Anbieters in ein spezifisches 4+ GW Projekt).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 12,
+        "thesisRelevance": 20,
+        "forecastImpact": 16,
+        "falsifiability": 8,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 70,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [],
+      "reason": "Akzeptiert: Die Einreichung ist ein primärer, datierter, messbarer Fakt (SEC‑8‑K) mit klaren Einheiten (US$1.5 Mrd. Investition; US$105 Mrd. Garantieobergrenze; ~4.25 GW initial). Die Beobachtung erfüllt Aufnahmebedingungen (atomar, platzierbar, kausal erklärbar) und hat substantielle Relevanz für die gelistete Vorhersage P‑2026‑07‑23‑02. Red‑pencil‑Adversarial‑Check bestanden (Quellennachweis: SEC‑Filing). Index‑Impact wird nicht gesetzt, da keine direkte beobachtete Änderung an Markt‑Kontrakten/Shipments/Lead‑Times berichtet wurde.",
+      "candidateId": "00687a7840aa623b5862",
+      "candidateKey": "b262ab8cddff92450837a08e",
+      "reviewedAt": "2026-09-14T10:45:50.014Z",
+      "priorityScore": 81,
+      "gateReasons": [
+        "primary source not retrieved"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bd76fe0eb83d64d006aa7cfdc39c087d2afdbc530a17203a3"
+    },
+    {
+      "decision": "rejected",
+      "title": "(Republished) Bericht: NVIDIA unterstützt Finanzierung in Höhe von US$105 Mrd. für OpenAI‑Campus in Ohio",
+      "fact": "Öffentliche Meldungen (z. B. CNBC/Reuters) wiedergeben, dass NVIDIA in einer 2026‑08‑17 8‑K‑Einreichung Residual‑Value‑Garantien mit anfänglicher Obergrenze US$105 Mrd. für PORTS‑Pike angab.",
+      "placement": "PORTS‑Pike Technology Campus, Pike County, Ohio; initial ~4.25 GW IT‑Load; Meldungsdatum 2026-08-17.",
+      "mechanism": "Finanzielle Garantiebindung (Residual‑Value Guaranties) und exklusive Compute‑Zuweisungen für OpenAI reduzieren Finanzierungsbarrieren und binden Capacity an NVIDIA/ OpenAI, verringern insofern einige Realisierungsrisiken und erhöhen Kapazitätskonzentration.",
+      "predictionId": "",
+      "predictionImpact": "Duplicate / bereits im Baseline verzeichnet (S‑AUTO‑4680a5772176dd47a7baf925). Kein neues, zusätzliches Signal gegenüber bereits registrierter TAIL‑Beobachtung; daher nicht neu aufzunehmen.",
+      "falsifier": "Nicht anwendbar (Redundanz/duplicate).",
+      "nextReview": "2026-10-01",
+      "eventDate": "2026-08-17",
+      "novelty": "Keine (Recycling eines bereits im Baseline vorhandenen, verifizierten 8‑K‑Events).",
+      "duplicateOf": "S-AUTO-4680a5772176dd47a7baf925",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 0,
+        "thesisRelevance": 12,
+        "forecastImpact": 5,
+        "falsifiability": 2,
+        "timeSensitivity": 0
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 70,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Abgelehnt als Duplikat: Die Kernfakten (SEC‑8‑K: $105 Mrd. Residual‑Value‑Garantien; ~4.25 GW initiale IT‑Load; $1.5 Mrd. Investment) sind bereits als Baseline‑Signal (S‑AUTO‑4680a5772176dd47a7baf925) erfasst. TAIL‑Regeln verbieten das Wiedereinbringen von bereits verifizierten, in der Baseline vorhandenen Beobachtungen als neue Aufnahmen; deshalb Ablehnung (kein zusätzlicher Nutzen).",
+      "candidateId": "17dee51cc7bf388566fc",
+      "candidateKey": "cf74c0764dc3a585650147fe",
+      "reviewedAt": "2026-09-14T10:45:50.015Z",
+      "priorityScore": 37,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bd76fe0eb83d64d006aa7cfdc39c087d2afdbc530a17203a3"
     }
   ]
 }
