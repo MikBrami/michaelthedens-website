@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-14T00:33:02.969Z",
+  "updatedAt": "2026-09-14T01:09:35.151Z",
   "previousRun": "2026-09-13",
   "executivePulse": {
     "current": 78,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 81,
     "previous": 81,
-    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 620 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 597 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 620 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 597 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -529,6 +529,145 @@
       "date": "2026-08-26"
     },
     {
+      "id": "S-AUTO-a41fc1823c3c84f08ab851be",
+      "title": "Huawei Prepares 160,000 Ascend 950DT Accelerators for DeepSeek Data Center",
+      "date": "2026-09-04",
+      "admittedAt": "2026-09-14T01:07:41.733Z",
+      "fact": "Berichte (Bloomberg, 2026-09-04) dokumentieren, dass DeepSeek plant, mindestens 160.000 Huawei Ascend 950DT‑Accelerator‑Einheiten in einem Gigawatt‑Skalen‑Data‑Center in Ulanqab / Inner Mongolia einzusetzen (geplante Nutzung primär für Inference, nicht Training).",
+      "placement": "Geographie: China (Ulanqab/Inner Mongolia); Domain/Layers: AI‑Accelerator‑Deployments / AI‑Infrastructure / Beschaffung von ASIC/Accelerator‑Units; Horizon: Build/Install‑Plan sichtbar in 2026–2028 (Planungs-/Bestellmeldung 2026-09-04).",
+      "tailInference": "Ein großer, zentraler Einkäufer (DeepSeek) ordnet große Mengen an inländischen Huawei‑Acceleratoren an; Skalenaufträge aggregieren Nachfrage, erschweren Substitution durch Wettbewerber und beschleunigen lokale HBA/HBM‑Zufuhrbedarfe — erhöht unmittelbare Nachfrage nach AI‑Acceleratoren und stützt die Thesis eines chinesischen Full‑Stack‑AI‑Pfads (Reduktion Abhängigkeit von NVidia).",
+      "predictionId": "P-2026-07-16-02",
+      "predictionImpact": "Stärkt P-2026-07-16-02 (WAIC/Huawei‑Ascend‑Pfad sichtbar): Die Meldung ist ein dokumentiertes Einkaufs-/Deploy‑Signal, das die These eines chinesischen Full‑Stack‑AI‑Pfads (Ascend‑Einsatz in großem Maßstab) stützt und zeigt, dass nennenswerte lokale Deployment‑Volumina geplant sind.",
+      "falsifier": "Wenn bis 2028-06-30 keine verifizierbaren Shipments/Installationsnachweise, keine öffentlich bestätigten Serienlieferungen oder keine Kundenabnahmen für ≥ 50.000 Ascend 950DT‑Einheiten am genannten Standort veröffentlicht sind, würde das die Aussagekraft des 160k‑Plans als reliable Indikator für eine schnelle Substitution/Skalierung deutlich schwächen.",
+      "nextReview": "2027-09-04",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 70,
+      "confidence": 80,
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "signal": "demand_up",
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Bloomberg (via Yahoo Finance syndication) — Mackenzie Hawkins & Haze Fan (Bloomberg copy)",
+          "url": "https://sg.finance.yahoo.com/news/deepseek-plans-big-huawei-ai-021120068.html"
+        },
+        {
+          "label": "TechNode (Syndication / Attribution to Bloomberg)",
+          "url": "https://technode.com/2026/09/07/deepseek-huawei-ascend-950dt-chips-inner-mongolia/"
+        },
+        {
+          "label": "The Edge Singapore (Bloomberg reproduction)",
+          "url": "https://www.theedgesingapore.com/amp/news/tech/deepseek-plans-big-huawei-ai-chip-order-power-new-data-centre--bloomberg"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Stärkt P-2026-07-16-02 (WAIC/Huawei‑Ascend‑Pfad sichtbar): Die Meldung ist ein dokumentiertes Einkaufs-/Deploy‑Signal, das die These eines chinesischen Full‑Stack‑AI‑Pfads (Ascend‑Einsatz in großem Maßstab) stützt und zeigt, dass nennenswerte lokale Deployment‑Volumina geplant sind."
+      },
+      "admissionReviewKey": "a41fc1823c3c84f08ab851be"
+    },
+    {
+      "id": "S-AUTO-5b49f35f971eb05395d34367",
+      "title": "CXMT Surged 531% on Debut — What It Means for Micron, SanDisk, and SK Hynix Investors",
+      "date": "2026-07-27",
+      "admittedAt": "2026-09-14T01:07:41.726Z",
+      "fact": "ChangXin Memory Technologies (CXMT) verzeichnete beim Shanghai STAR‑Market‑Listing am 2026-07-27 einen extremen Eröffnungs‑Anstieg; intraday‑Hoch bis ~531% über Ausgabepreis, tagesschlussnah ~466% (Debut‑Verhalten bestätigt durch mehrere Primär‑Marktberichte).",
+      "placement": "Geographie: China (Shanghai STAR Market); Domain/Layers: DRAM / Server‑DRAM / Aktien‑Markt‑Valuation; Horizon: 2026-07-27 (Listing‑Tag).",
+      "tailInference": "Geringer Streubesitz (≈6.7% Free float), starke Retail-/institutionelle Nachfrage und große, strategische Vorverträge/Erwartungen führten zu einem extremen Ersthandel (mechanischer Angebots‑/Float‑Effekt kombiniert mit AI‑Nachfrage‑Narrativ).",
+      "predictionId": "P-2026-07-14-01",
+      "predictionImpact": "Unterstützt P-2026-07-14-01 (CXMT‑Listing am 27. Juli; Mittel & LTAs stärken Mainstream-/Server‑DRAM): das tatsächliche Listing‑Datum und das Marktsignal (außerordentlich hohe Eröffnungspreise / Markt‑Bewertung) sind verifizierbare Ereignisse, die die Annahme starker Nachfrage- bzw. Strategiebindungen an CXMT stützen.",
+      "falsifier": "Falls CXMT bis 2027-07-27 keine nachweisbaren, mehrjährigen LTAs/konkreten Qualifikations‑Shipments (≥ USD 3 Mrd. an vertraglich bestätigten Abnahmemengen oder >=1 Mio. qualifizierte DRAM‑Module/SSDs/Packages) meldet, reduziert das die Aussagekraft des Debut‑Rally als Beleg für nachhaltige Nachfragebindung.",
+      "nextReview": "2027-07-27",
+      "priorityScore": 85,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 11,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 65,
+      "confidence": 82,
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "signal": "demand_up",
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Reporting (Reuters, via Investing.com)",
+          "url": "https://www.investing.com/news/stock-market-news/chipmaker-cxmt-vaults-to-top-of-chinas-valuation-with-466-surge-in-shanghai-debut-4812927"
+        },
+        {
+          "label": "Xinhua / CCTV English (Marktbericht)",
+          "url": "https://english.cctv.cn/2026/07/28/ARTIfhtrHAhUtj3KkVPxoMTz260728.shtml"
+        },
+        {
+          "label": "Forbes Marktbericht und Kontextanalyse",
+          "url": "https://www.forbes.com/sites/siladityaray/2026/07/27/chipmaker-courted-by-apple-soars-on-market-debut-and-briefly-becomes-chinas-most-valuable-company/"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Unterstützt P-2026-07-14-01 (CXMT‑Listing am 27. Juli; Mittel & LTAs stärken Mainstream-/Server‑DRAM): das tatsächliche Listing‑Datum und das Marktsignal (außerordentlich hohe Eröffnungspreise / Markt‑Bewertung) sind verifizierbare Ereignisse, die die Annahme starker Nachfrage- bzw. Strategiebindungen an CXMT stützen."
+      },
+      "admissionReviewKey": "5b49f35f971eb05395d34367"
+    },
+    {
       "id": "S-AUTO-4459416fabc8b86065bdb16c",
       "title": "Samsung priorisiert HBM4‑Produktion mit 4nm‑Base‑Die — HBM4E‑Samples verschickt (2026‑05‑29)",
       "date": "2026-05-29",
@@ -833,14 +972,14 @@
     "date": "2026-09-14",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 84,
-    "note": "Evidenzprüfung offen: 620 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 86,
+    "note": "Evidenzprüfung offen: 597 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-14T00:33:02.969Z",
+    "generatedAt": "2026-09-14T01:09:35.151Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-14T00:22:54.309Z",
-    "inboxNewItems": 44,
+    "inboxUpdatedAt": "2026-09-14T01:03:40.343Z",
+    "inboxNewItems": 16,
     "highRelevanceCandidates": [
       {
         "id": "08ebfe8bde7318f5f7f0",
@@ -897,15 +1036,6 @@
         "publishedAt": "2026-09-12T04:26:00.000Z"
       },
       {
-        "id": "6582ab426c85f6eaa2d9",
-        "title": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVThONmhRa08wdW9HVXBsVlZ6c2hQMDl6YXhQSVdqNzN2NDlfSjQzeVRSaWlDQUtmcWFYS0dtZ3kwb3hGY045Y3J1dzlTTEh0SUprU0NYbm1KTHdCSGhIZGh3eTloUHVUbHcxRUp4REp6VzhyVFVIVlJUNEVLY0tLTm5uclJOa2xtUy1OTGdGcENac01Eb19PcTIzbTFpcklZOU1v?oc=5",
-        "source": "Seoul Economic Daily",
-        "summary": "China's CXMT Tops SK hynix, Samsung With 82% Operating Margin Seoul Economic Daily",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-12T01:00:05.000Z"
-      },
-      {
         "id": "aa82c8ebb7c45ed4acdc",
         "title": "Samsung, TSMC and Intel join ASML to build new technology barrier against China",
         "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE96MVNuRFo0ZXp5QjE4SXJCSm9WUjlHa0RITXBFeS1WajI3d2NLNDlwX252VTR0cm5VZFU1bmx6QlV1YzFIZWtPdUc0bEdQeVVZZHZaa2Mxaw?oc=5",
@@ -913,6 +1043,15 @@
         "summary": "Aktuelle Meldung von 헤럴드경제: Samsung, TSMC and Intel join ASML to build new technology barrier against China",
         "relevanceScore": 97,
         "publishedAt": "2026-09-12T21:30:03.000Z"
+      },
+      {
+        "id": "c53bfc9879536928f4d8",
+        "title": "AI Industry Standard Discussions by Anthropic, OpenAI, and Google",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRElPNmw4Z0l3OWxVQ2psOTZlY2RKeTVpYlgyeThXNGtzRzE3V3JuYmR0YUNMNFhQbm85OWtBMmI4cmlFdHFxb29fUVF6TUJxWTdwRUdnUHZScG4wcXo4Wld2V3ozOVhZT2pEMHVJQUxRdDJESF9RSTRfM200QWN3THhITFhaRTdkYlRlWGtuNjIwZ1ZXNGRNQk91SFoxUVRVTXdiMQ?oc=5",
+        "source": "GuruFocus",
+        "summary": "Aktuelle Meldung von GuruFocus: AI Industry Standard Discussions by Anthropic, OpenAI, and Google",
+        "relevanceScore": 88,
+        "publishedAt": "2026-09-13T20:32:30.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -998,39 +1137,39 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-14T00:33:02.834Z",
-    "inboxUpdatedAt": "2026-09-14T00:22:54.309Z",
+    "checkedAt": "2026-09-14T01:09:35.035Z",
+    "inboxUpdatedAt": "2026-09-14T01:03:40.343Z",
     "status": "pending",
-    "candidates": 880,
-    "reviewed": 260,
-    "accepted": 30,
-    "watchlist": 73,
-    "rejected": 157,
-    "pending": 620,
-    "oldestPendingAt": "2026-08-16T04:30:05.000Z",
-    "lastCompletedReviewAt": "2026-09-14T00:31:53.234Z",
+    "candidates": 881,
+    "reviewed": 284,
+    "accepted": 32,
+    "watchlist": 79,
+    "rejected": 173,
+    "pending": 597,
+    "oldestPendingAt": "2026-08-17T08:38:17.000Z",
+    "lastCompletedReviewAt": "2026-09-14T01:09:34.973Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 913,
+    "rawCandidates": 914,
     "triage": {
       "archivedOpinions": 20,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-14T00:23:02.529Z",
-      "completedAt": "2026-09-14T00:33:02.837Z",
-      "selected": 96,
-      "reviewed": 32,
+      "startedAt": "2026-09-14T01:03:50.095Z",
+      "completedAt": "2026-09-14T01:09:35.040Z",
+      "selected": 24,
+      "reviewed": 24,
       "concurrency": 2,
-      "limit": 96,
+      "limit": 24,
       "rateLimitRetries": 0,
-      "durationSeconds": 600,
-      "budgetExhausted": true
+      "durationSeconds": 345,
+      "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-14",
-    "inputHash": "4ea5ab2c641863846ae2a63c3fc093b0894741b9bfcf5085078d9a9eb7cb17bb",
+    "inputHash": "d9dd01dbd93270e4d7ab04b706c170c9ce82bb6579b5b8587b08853359638a9e",
     "sourceDataAsOf": "2026-09-12"
   }
 }
