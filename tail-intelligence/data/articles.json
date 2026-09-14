@@ -1,5 +1,62 @@
 [
   {
+    "id": "S-AUTO-bed9afcf04769aecb537ebe6",
+    "date": "2024-09-20",
+    "title": "Microsoft-PPA treibt Restart von Three Mile Island (Crane Clean Energy Center) — große Hyperscaler‑Nuklear‑PPAs materialisieren sich",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure",
+      "supply_chain"
+    ],
+    "companies": [
+      "Microsoft"
+    ],
+    "severity": 50,
+    "confidence": 75,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability"
+    ],
+    "summary": "Am 2024-09-20 kündigte Constellation Energy ein 20-jähriges Power‑Purchase‑Agreement mit Microsoft an, das die Wiederinbetriebnahme von Three Mile Island Unit 1 (umbenannt: Crane Clean Energy Center) ermöglicht und rund 835 MW Netto‑Erzeugung für das PJM‑Netz bereitstellen soll.",
+    "tail_analysis": "Das 20‑jährige PPA schafft langfristige Einnahmen-/Preisgarantie (Revenue Certainty), die Constellation zur Finanzierung und zum $1.6B‑Restart‑Capex veranlasst; dadurch wird firm (baseload) CO2‑freier Strom (~835 MW) in PJM verfügbar, den Hyperscaler über langfristige Abnahmeverträge oder Front‑of‑the‑Meter‑Strukturen direkt nutzen können — dadurch verstärkt sich der Trend, Datacenter‑Lasten an dedizierte Energieprojekte zu koppeln.",
+    "source": "Constellation: Pressemitteilung zur Lancierung des Crane Clean Energy Center / Microsoft‑PPA (20‑Jahre, ~835 MW)",
+    "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+    "content_hash": "cc19547b0157cee648dc",
+    "origin": "reviewed-inbox",
+    "classification": "Layer Update",
+    "admittedAt": "2026-09-14T00:31:53.227Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "bed9afcf04769aecb537ebe6",
+    "predictionId": "P-2026-07-12-04",
+    "predictionImpact": "Dieses belegte, großvolumige Hyperscaler‑PPA erhöht die Wahrscheinlichkeit, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen wechseln (erhöht das Basisszenario‑Gewicht für P-2026-07-12-04).",
+    "falsifier": "Falls bis zum 2028-12-31 weniger als zwei weitere öffentlich bestätigte Hyperscaler‑geführte, bindende Multi‑hundert‑MW (> = 500 MW), mehrjährige PPA/Private‑Grid‑Entscheidungen verkündet werden (d.h. <3 gesamt inkl. Microsoft) und gleichzeitig das Crane Clean Energy Center bis 2028-12-31 keine nachweisbaren MWh an Microsoft geliefert hat, dann reduziert dies die Signalwirkung dieses Einzelfalls zur Unterstützung von P-2026-07-12-04.",
+    "nextReview": "2028-01-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Dieses belegte, großvolumige Hyperscaler‑PPA erhöht die Wahrscheinlichkeit, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen wechseln (erhöht das Basisszenario‑Gewicht für P-2026-07-12-04)."
+    },
+    "sources": [
+      {
+        "label": "Constellation: Pressemitteilung zur Lancierung des Crane Clean Energy Center / Microsoft‑PPA (20‑Jahre, ~835 MW)",
+        "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html"
+      },
+      {
+        "label": "Constellation 8‑K / Form der Bekanntgabe (Exhibit: Pressemitteilung)",
+        "url": "https://constellationenergy.gcs-web.com/static-files/17c95a8f-1c69-40d3-af2a-5531c50674be"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-8c98ad283db308a6bbbf4675",
     "date": "2026-03-27",
     "title": "Meta finanziert sieben neue Gasturbinen zur Stromversorgung seines Hyperion‑Data‑Centers in Louisiana.",
@@ -53,6 +110,60 @@
       {
         "label": "Meta Data Centers — eigene Mitteilung (Context/Project Hyperion)",
         "url": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-4459416fabc8b86065bdb16c",
+    "date": "2026-05-29",
+    "title": "Samsung priorisiert HBM4‑Produktion mit 4nm‑Base‑Die — HBM4E‑Samples verschickt (2026‑05‑29)",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Samsung"
+    ],
+    "severity": 60,
+    "confidence": 78,
+    "signal": "capacity_lock",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability"
+    ],
+    "summary": "Am 2026-05-29 veröffentlichte Samsung, dass es mit HBM4/HBM4E (1c DRAM + 4nm logic base die) in die Auslieferung/Probeshipments gegangen ist und die 4nm‑Basisdie‑Kapazität aktiv für HBM4‑Produkte einsetzt bzw. priorisiert.",
+    "tail_analysis": "Samsung kombiniert 1c DRAM‑Core mit einem 4nm Foundry‑Base‑Die für HBM4/HBM4E; dadurch beansprucht HBM4 die knappe 4nm‑Logikkapazität (Foundry‑Allokation), was die Verfügbarkeit von 4nm‑Kapazität für externe Logikkunden verknappt und HBM4‑Output/ASP erhöht — direkte Auswirkung auf Speicher‑Produkt‑Allokation und Preisbildung für AI‑Memory‑Segments.",
+    "source": "Samsung Global Newsroom: Beginn der HBM4/HBM4E‑Samples (2026‑05‑29)",
+    "url": "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
+    "content_hash": "1ba22b82d30ed383b44a",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-14T00:31:53.230Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "4459416fabc8b86065bdb16c",
+    "predictionId": "P-2026-07-30-02",
+    "predictionImpact": "Erhöht die Plausibilität, dass Samsung seinen HBM4‑Umsatz im Q3 2026 sequentiell deutlich ausweitet (unterstützt die Vorannahme eines starken HBM4‑Ramps für Q3 2026).",
+    "falsifier": "Wenn Samsungs ausgewiesener HBM4‑Umsatz im Q3 2026 nicht mindestens 2,5× des Q2 2026‑HBM‑Umsatzes beträgt (reported company figures) — d.h. offizielle Segmentzahlen aus Q3‑Bericht liegen unter dem 2.5×‑Schwellenwert — dann schwächt das dieses Signal erheblich.",
+    "nextReview": "2026-11-15",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Plausibilität, dass Samsung seinen HBM4‑Umsatz im Q3 2026 sequentiell deutlich ausweitet (unterstützt die Vorannahme eines starken HBM4‑Ramps für Q3 2026)."
+    },
+    "sources": [
+      {
+        "label": "Samsung Global Newsroom: Beginn der HBM4/HBM4E‑Samples (2026‑05‑29)",
+        "url": "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples"
       }
     ]
   },
@@ -1862,6 +1973,67 @@
       {
         "label": "Reuters – Wall Street falls as AI spending worries return",
         "url": "https://au.marketscreener.com/news/wall-st-falls-as-tech-earnings-spark-ai-spending-worries-oil-hits-100-ce7f51dede8cf622"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-d4d297d3a2250f49cccb0840",
+    "date": "2026-07-24",
+    "title": "Anthropic unterstützt strengere Massachusetts‑AI‑Kontrollen; OpenAI & Google widersprechen (legislative Spaltung)",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Anthropic",
+      "Google"
+    ],
+    "severity": 30,
+    "confidence": 75,
+    "signal": "geopolitical_split",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "aiDemand"
+    ],
+    "summary": "Anthropic hat die von der Massachusetts Senate‑Version (H.5576 / S.3228) enthaltene Regelung zur verpflichtenden unabhängigen Katastrophen‑Risikoevaluierung (Zusatz: unabhängige Drittprüfungen ca. alle 120 Tage) öffentlich befürwortet (öffentliche Stellungnahme vom 2026-06-26); der Senat verabschiedete die geänderte Version am 2026-07-24. OpenAI und Google haben sich gegen die engere 120‑Tage‑Kadenz gestellt und Lobbying gegen die Senatsfassung dokumentiert (Berichte im Aug–Sep 2026).",
+    "tail_analysis": "Formelle staatliche Regelung (Senats‑Amendment) fordert wiederkehrende, unabhängige Drittprüfungen (alle ~120 Tage) bei 'frontier' AI‑Entwicklern; Anthropic’s öffentliche Unterstützung erhöht regulatorische Wahrscheinlichkeit für striktere Prüf‑ und Compliance‑Anforderungen, während OpenAI/Google‑Gegenwehr den politischen Konflikt verdeutlicht; Ergebnis: erhöhte Wahrscheinlichkeit für schnellere oder verpflichtende Drittprüfungen und operationalen Compliance‑Aufwand für große Labs.",
+    "source": "FrontierStateLaw – Legislativchronik und Textauszüge (S.3228 / H.5576) (verzeichnet Senate Action 23–24 Jul 2026)",
+    "url": "https://frontierstatelaw.com/states/ma.html",
+    "content_hash": "9bb83df758c5ff2f104a",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-14T00:25:11.018Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "d4d297d3a2250f49cccb0840",
+    "predictionId": "P-2026-07-22-02",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass bis Ende 2026 mehrere große AI‑Labs öffentlich härtere Eval‑/Isolation‑ oder Drittanbieter‑Sandbox‑Kontrollen einführen (unterstützt das Ziel von P-2026-07-22-02).",
+    "falsifier": "Bis zum 2026-12-31 gibt es keine mindestens drei öffentlich dokumentierten, strengeren Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Maßnahmen (z. B. veröffentlichte Policy‑Changes, technische Sandbox‑Adoptions oder verpflichtende Drittprüfungen) bei großen AI‑Labs.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass bis Ende 2026 mehrere große AI‑Labs öffentlich härtere Eval‑/Isolation‑ oder Drittanbieter‑Sandbox‑Kontrollen einführen (unterstützt das Ziel von P-2026-07-22-02)."
+    },
+    "sources": [
+      {
+        "label": "FrontierStateLaw – Legislativchronik und Textauszüge (S.3228 / H.5576) (verzeichnet Senate Action 23–24 Jul 2026)",
+        "url": "https://frontierstatelaw.com/states/ma.html"
+      },
+      {
+        "label": "Boston Globe – 'Anthropic backs strict new AI regulations proposed in Massachusetts' (2026-06-26)",
+        "url": "https://www.bostonglobe.com/2026/06/26/business/anthropic-massachusetts-ai-regulations-bill/"
+      },
+      {
+        "label": "Insurance Journal – Bericht zur Spaltung der Industrie (OpenAI/Google Gegenwehr) (Aug 2026)",
+        "url": "https://www.insurancejournal.com/news/east/2026/08/20/882315.htm"
       }
     ]
   },
