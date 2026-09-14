@@ -7,36 +7,38 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-14T10:45:50.026Z",
-    "inboxUpdatedAt": "2026-09-14T10:37:43.557Z",
+    "checkedAt": "2026-09-14T11:06:30.988Z",
+    "inboxUpdatedAt": "2026-09-14T10:56:05.576Z",
     "status": "error",
-    "candidates": 900,
-    "reviewed": 328,
-    "accepted": 35,
-    "watchlist": 87,
-    "rejected": 206,
-    "pending": 572,
+    "candidates": 903,
+    "reviewed": 340,
+    "accepted": 37,
+    "watchlist": 94,
+    "rejected": 209,
+    "pending": 563,
     "oldestPendingAt": "2026-08-17T14:15:15.000Z",
-    "lastCompletedReviewAt": "2026-09-14T10:45:50.015Z",
+    "lastCompletedReviewAt": "2026-09-14T11:05:09.473Z",
     "error": "The operation was aborted due to timeout",
     "batchErrors": [
+      "The operation was aborted due to timeout",
+      "The operation was aborted due to timeout",
       "The operation was aborted due to timeout"
     ],
-    "rawCandidates": 933,
+    "rawCandidates": 936,
     "triage": {
       "archivedOpinions": 20,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-14T10:37:56.910Z",
-      "completedAt": "2026-09-14T10:45:50.032Z",
-      "selected": 24,
-      "reviewed": 20,
+      "startedAt": "2026-09-14T10:56:30.687Z",
+      "completedAt": "2026-09-14T11:06:30.991Z",
+      "selected": 96,
+      "reviewed": 12,
       "concurrency": 2,
-      "limit": 24,
+      "limit": 96,
       "rateLimitRetries": 0,
-      "durationSeconds": 473,
-      "budgetExhausted": false
+      "durationSeconds": 600,
+      "budgetExhausted": true
     }
   },
   "overdueOperationalReviews": [
@@ -58,15 +60,15 @@
     }
   ],
   "sourceDataAsOf": "2026-09-12",
-  "knowledgeBaseSyncedAt": "2026-09-14T10:45:50.179Z",
+  "knowledgeBaseSyncedAt": "2026-09-14T11:06:31.139Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 2,
-  "lastSuccessfulUpdate": "2026-09-14T10:45:51.402Z",
-  "lastForecastRun": "2026-09-14T10:45:51.402Z",
-  "newlyProcessedArticles": 152,
-  "totalArticles": 161,
-  "articleCount": 161,
+  "lastSuccessfulUpdate": "2026-09-14T11:06:32.709Z",
+  "lastForecastRun": "2026-09-14T11:06:32.709Z",
+  "newlyProcessedArticles": 14,
+  "totalArticles": 163,
+  "articleCount": 163,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -120,17 +122,23 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung gestört: 572 Kandidaten ausstehend.",
-    "4 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
+    "Evidenzprüfung gestört: 563 Kandidaten ausstehend.",
+    "4 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung.",
+    "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
   ],
   "inbox": {
-    "status": "ok",
-    "updatedAt": "2026-09-14T10:37:43.557Z",
-    "newItems": 152,
-    "totalItems": 1973,
+    "status": "warning",
+    "updatedAt": "2026-09-14T10:56:05.576Z",
+    "newItems": 14,
+    "totalItems": 1987,
     "duplicateItems": 300,
-    "relevantItems": 1185,
-    "sourceErrors": []
+    "relevantItems": 1189,
+    "sourceErrors": [
+      {
+        "source": "news-packaging-capacity",
+        "message": "HTTP 404"
+      }
+    ]
   },
   "pipeline": {
     "status": "warning",
@@ -139,19 +147,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "328 geprüft · 572 offen · 35 aufgenommen"
+        "detail": "340 geprüft · 563 offen · 37 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "161 Artikel · Sync 2026-09-14 · jüngstes bestätigtes Signal 2026-09-12"
+        "detail": "163 Artikel · Sync 2026-09-14 · jüngstes bestätigtes Signal 2026-09-12"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
-        "status": "ok",
-        "detail": "1973 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "status": "warning",
+        "detail": "1987 Inbox-Items · 300 Duplikate · 1 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -418,8 +426,8 @@
       "indicativeScore": 72,
       "sufficientlyCovered": true,
       "status": "orange",
-      "signals": 30,
-      "articleSignals": 30,
+      "signals": 31,
+      "articleSignals": 31,
       "operationalSignals": 0,
       "confidence": 89,
       "coverage": 100,
@@ -744,7 +752,7 @@
     {
       "name": "Samsung",
       "score": 75,
-      "mentions": 29
+      "mentions": 30
     },
     {
       "name": "Meta",
@@ -920,14 +928,14 @@
         "S-AUTO-86f57c9ce4968b9706cd3a6f",
         "S-AUTO-4463e0ea1a29b160b3a1ab39"
       ],
-      "lastUpdated": "2026-09-14T10:45:51.397Z"
+      "lastUpdated": "2026-09-14T11:06:32.706Z"
     },
     {
       "id": "hbm",
       "market": "HBM",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 76,
+      "relevanceScore": 75,
       "confidenceScore": 83,
       "horizon": "2026–2028",
       "direction": "up",
@@ -1070,6 +1078,7 @@
         "S-AUTO-84351dc941259805a65972ee",
         "S-AUTO-28b329255578ff6a8943398e",
         "S-AUTO-2fbda9055add9061096f0742",
+        "S-AUTO-ae2575d2fca61cff2737db0a",
         "S-AUTO-272c1d36e90cc133646942e5",
         "S-AUTO-5943b6386e2f583bfa2b0839",
         "S-AUTO-2bffa1eabe150381d9d44714",
@@ -1079,14 +1088,14 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-14T10:45:51.397Z"
+      "lastUpdated": "2026-09-14T11:06:32.706Z"
     },
     {
       "id": "nand",
       "market": "NAND",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 68,
+      "relevanceScore": 67,
       "confidenceScore": 79,
       "horizon": "H2 2026–2027",
       "direction": "up",
@@ -1137,6 +1146,12 @@
           "title": "SK hynix veröffentlicht erste HBF‑(High Bandwidth Flash)‑Spezifikation auf FMS 2026",
           "signal": "Kapazitätsentlastung",
           "score": 15
+        },
+        {
+          "id": "S-AUTO-187e0074ddff73d87b471af4",
+          "title": "YMTC (CCSH) reicht STAR‑Market‑IPO-Antrag ein; Xtacking‑Architektur und IPO‑Betrag dokumentiert",
+          "signal": "Kapazitätsentlastung",
+          "score": 14
         }
       ],
       "sourceArticleIds": [
@@ -1154,17 +1169,18 @@
         "S-2026-08-07-SKHYNIX-Y2-M17",
         "S-AUTO-945fc239013e27b447817700",
         "S-AUTO-5943b6386e2f583bfa2b0839",
+        "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-14T10:45:51.398Z"
+      "lastUpdated": "2026-09-14T11:06:32.706Z"
     },
     {
       "id": "enterprise_ssd",
       "market": "Enterprise SSD",
       "status": "orange",
       "momentum": "⬆️⬆️",
-      "relevanceScore": 71,
+      "relevanceScore": 70,
       "confidenceScore": 82,
       "horizon": "H2 2026–2027",
       "direction": "up",
@@ -1209,6 +1225,12 @@
           "title": "SK hynix koppelt Y2-DRAM/HBM- und M17-NAND-Ausbau an strukturelle AI-Nachfrage",
           "signal": "Kapazitätsentlastung",
           "score": 44
+        },
+        {
+          "id": "S-AUTO-187e0074ddff73d87b471af4",
+          "title": "YMTC (CCSH) reicht STAR‑Market‑IPO-Antrag ein; Xtacking‑Architektur und IPO‑Betrag dokumentiert",
+          "signal": "Kapazitätsentlastung",
+          "score": 14
         }
       ],
       "sourceArticleIds": [
@@ -1228,9 +1250,10 @@
         "S-2026-07-20-05",
         "S-2026-08-07-SKHYNIX-Y2-M17",
         "S-AUTO-945fc239013e27b447817700",
+        "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-14T10:45:51.398Z"
+      "lastUpdated": "2026-09-14T11:06:32.706Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1461,7 +1484,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-14T10:45:51.398Z"
+      "lastUpdated": "2026-09-14T11:06:32.706Z"
     }
   ],
   "indexCalculation": {
@@ -1470,7 +1493,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-14"
   },
-  "executiveSummary": "TAIL steht auf 78/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 161 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 78/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 163 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",

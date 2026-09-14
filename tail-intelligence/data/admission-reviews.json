@@ -26216,6 +26216,969 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0bd76fe0eb83d64d006aa7cfdc39c087d2afdbc530a17203a3"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Microsoft veröffentlicht MAI-Transcribe-2; Preis-Promo $0.10/Audio‑Stunde, Team‑Größe und \"auf allen Benchmarks\" nicht verifiziert",
+      "fact": "Microsoft veröffentlichte am 2026-09-03 das Transkriptionsmodell MAI-Transcribe-2 und bewarb einen Einführungs‑Preis von US$0.10 pro Audio‑Stunde (Launch‑Promotion bis 2026-12-31 laut Herstellerangaben).",
+      "placement": "Global; Modell‑Angebot über Microsoft Foundry / MAI Playground / Open Router; Domäne: Speech-to-text / Transcription; Zeitpunkt: 2026-09-03.",
+      "mechanism": "Microsoft bringt ein intern entwickeltes Speech‑to‑Text‑Model (MAI-Transcribe-2) mit verbesserten Messwerten in Benchmarks (z. B. FLEURS / WER) und reduziert den Listenpreis als Markteintritts‑Promotion — dadurch fällt der marginale Preis für großvolumige Transkriptionsstunden für Unternehmenskunden.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Falsifizierbar: Wenn Microsoft bis zum 2026-12-31 die 0.10 US$/Audio‑Stunde-Promotion beendet oder wenn unabhängige Benchmarks (drei unabhängige Evaluierungen von mindestens zwei anerkannten Benchmark‑Suiten) nicht zeigen, dass MAI-Transcribe-2 die relevanten Vergleichsmodelle (GPT‑Transcribe / Gemini Transcribe / Scribe v2) signifikant übertrifft, dann nimmt die Aussagekraft dieser Meldung deutlich ab.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-03",
+      "novelty": "Mittel (Produktupdate + aggressiver Promotion‑Preis, aber nicht eine völlig neue Kategorie).",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing",
+        "aiDemand"
+      ],
+      "signal": "price_down",
+      "severity": 20,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "hbm",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/",
+          "label": "Microsoft AI – offizielle Ankündigung MAI-Transcribe-2 (2026-09-03)",
+          "kind": "primary",
+          "supports": "Modelldetails, Benchmark‑Claims (FLEURS/WER) und Einführungs‑Preisangabe US$0.10/Audio‑Stunde (Promo bis Ende 2026)."
+        },
+        {
+          "url": "https://venturebeat.com/infrastructure/microsoft-ais-mai-transcribe-2-undercuts-openai-google-and-elevenlabs-on-price-and-speed",
+          "label": "VentureBeat – Bericht über MAI-Transcribe-2 (Sekundärbericht)",
+          "kind": "secondary",
+          "supports": "Berichterstattung über Preispositionierung, relative Geschwindigkeits- und Genauigkeitsaussagen gegenüber Wettbewerbern."
+        }
+      ],
+      "reason": "Die Kerndaten (Modellname, Publikationsdatum, Microsoft‑Preisangabe US$0.10/Audio‑Stunde) sind durch Microsoft‑Quellen verifizierbar. Die Inbox‑Claim‑Formulierung enthält jedoch zwei nicht‑verifizierte Elemente: die Behauptung einer 10‑köpfigen Entwicklermannschaft und die pauschale Aussage, das Modell unterliege \"allen Benchmarks\" der Rivalen. Diese Überdehnung macht die Meldung nicht sofort aufnahmewürdig als VERIFIED DATA/RedPencil‑Pass. Beobachtung empfohlen (Watchlist): der Preis‑Shock ist relevant für AI‑Inferenz‑Preisbildung, aber operative Messungen (unabhängige Benchmarks, Nutzungszahlen) und Team‑Größenangaben fehlen oder sind nicht belegt.",
+      "candidateId": "73bfd692b1bd69cd484c",
+      "candidateKey": "7d0a9a2ff8ba934c956f2793",
+      "reviewedAt": "2026-09-14T11:02:31.014Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d7e5c91b964da60006aa7d3938b4c87d19077d4d185c0d33d"
+    },
+    {
+      "decision": "accepted",
+      "title": "Counterpoint: Samsung erzielt 33 % Umsatzanteil am HBM‑Markt in Q2 2026",
+      "fact": "Counterpoint Research berichtet (Global Memory Tracker, Q2 2026), dass Samsung einen Umsatzanteil von 33 % am globalen HBM‑Markt im zweiten Quartal 2026 erreichte (Revenue‑share, Q2 2026).",
+      "placement": "Global HBM‑Markt (Revenue share), Quartal: Q2 2026 (Berichtsdatum Counterpoint: 2026-09-01).",
+      "mechanism": "Samsung verzeichnete eine deutliche Zunahme von HBM‑Umsatzanteilen durch gesteigerte HBM4‑/HBM3E‑Lieferungen und eine sequenzielle Marktanteilverschiebung gegenüber Konkurrenten (Counterpoint erklärt dies mit HBM‑Ramp/Shipments). Dies verändert die kurzfristige Anbieter‑Marktdynamik und beeinflusst Verhandlungspositionen gegenüber Hyperscalern/Accelerator‑OEMs.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Beobachtung stärkt die Evidenz, dass Samsung in Q2 2026 bereits signifikante HBM‑Umsätze erzielte; das ändert die Baseline für P-2026-07-30-02 (Erwartung: Samsung erhöht Q3‑HBM4‑Umsatz sequenziell ≥2.5× Q2). Diese Messung erhöht die prior probability für aggressive Samsung‑HBM‑Ramps, reduziert aber den Informationswert gegenüber einer direkten Q3‑Umsatzmessung.",
+      "falsifier": "Falsifizierbar: Wenn Samsungs ausgewiesener HBM‑Umsatz für Q3 2026 in den offiziellen Quartalsangaben am 2026-10/11 < 2.5× des in Q2 berichteten HBM‑Umsatzes ist, widerspricht das der impliziten Hoch‑Ramp‑Interpetation und reduziert die Tragweite dieses Signals.",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-09-01",
+      "novelty": "Hoch (12‑Punkte Q‑Q Verschiebung; signifikante kurzfristige Share‑Bewegung in einem knappen Markt).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 85,
+      "indexImpact": true,
+      "indexEvidence": {
+        "metricType": "observed_demand",
+        "marketId": "hbm",
+        "observation": "Counterpoint Research — Q2 2026 HBM revenue share: Samsung 33% (published 2026-09-01)."
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share",
+          "label": "Counterpoint Research – Global Memory Tracker (Q2 2026)",
+          "kind": "primary",
+          "supports": "Tabellarische Q2‑2026 Revenue‑Share‑Angaben mit HBM‑Umsatzanteilen; Counterpoint weist Samsung 33% HBM‑Revenue‑Share für Q2 2026 aus (Veröffentlicht 2026-09-01)."
+        },
+        {
+          "url": "https://en.yna.co.kr/view/AEN20260903010700320",
+          "label": "Yonhap / Sekundär‑Bericht über Counterpoint‑Daten (2026-09-03)",
+          "kind": "secondary",
+          "supports": "Nachrichtliche Bestätigung der Counterpoint‑Zahl: Samsung steigt auf 33% HBM‑Marktanteil in Q2 2026."
+        }
+      ],
+      "reason": "Die Aussage ist eine eng gefasste, datierte Messung (Umsatz‑Share Q2 2026) und wird direkt von Counterpoint‑Daten unterstützt (primäre Branchenanalyse). Sie ist damit zugelassen als VERIFIED DATA Signal. Die Einordnung als 'demand_up' reflektiert, dass Umsatz‑Share‑Verschiebungen in HBM typischerweise durch shipment/price/alloction‑Veränderungen ausgelöst werden; ihr unmittelbarer Nutzen besteht darin, die Erwartung für Samsungs Fähigkeit zu kurzfristigen HBM‑Lieferungen zu erhöhen. Der RedPencil‑Pass wurde erteilt, weil die Quelle primär ist, die Metrik eindeutig und prüfbar ist und das Ergebnis nicht bereits unzulässig in der Baseline dupliziert wurde.",
+      "candidateId": "1d52e3971318704b6386",
+      "candidateKey": "ae2575d2fca61cff2737db0a",
+      "reviewedAt": "2026-09-14T11:02:31.020Z",
+      "priorityScore": 87,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-ae2575d2fca61cff2737db0a",
+        "title": "Counterpoint: Samsung erzielt 33 % Umsatzanteil am HBM‑Markt in Q2 2026",
+        "date": "2026-09-01",
+        "admittedAt": "2026-09-14T11:02:31.020Z",
+        "fact": "Counterpoint Research berichtet (Global Memory Tracker, Q2 2026), dass Samsung einen Umsatzanteil von 33 % am globalen HBM‑Markt im zweiten Quartal 2026 erreichte (Revenue‑share, Q2 2026).",
+        "placement": "Global HBM‑Markt (Revenue share), Quartal: Q2 2026 (Berichtsdatum Counterpoint: 2026-09-01).",
+        "tailInference": "Samsung verzeichnete eine deutliche Zunahme von HBM‑Umsatzanteilen durch gesteigerte HBM4‑/HBM3E‑Lieferungen und eine sequenzielle Marktanteilverschiebung gegenüber Konkurrenten (Counterpoint erklärt dies mit HBM‑Ramp/Shipments). Dies verändert die kurzfristige Anbieter‑Marktdynamik und beeinflusst Verhandlungspositionen gegenüber Hyperscalern/Accelerator‑OEMs.",
+        "predictionId": "P-2026-07-30-02",
+        "predictionImpact": "Beobachtung stärkt die Evidenz, dass Samsung in Q2 2026 bereits signifikante HBM‑Umsätze erzielte; das ändert die Baseline für P-2026-07-30-02 (Erwartung: Samsung erhöht Q3‑HBM4‑Umsatz sequenziell ≥2.5× Q2). Diese Messung erhöht die prior probability für aggressive Samsung‑HBM‑Ramps, reduziert aber den Informationswert gegenüber einer direkten Q3‑Umsatzmessung.",
+        "falsifier": "Falsifizierbar: Wenn Samsungs ausgewiesener HBM‑Umsatz für Q3 2026 in den offiziellen Quartalsangaben am 2026-10/11 < 2.5× des in Q2 berichteten HBM‑Umsatzes ist, widerspricht das der impliziten Hoch‑Ramp‑Interpetation und reduziert die Tragweite dieses Signals.",
+        "nextReview": "2026-11-15",
+        "priorityScore": 87,
+        "scoreBreakdown": {
+          "sourceQuality": 20,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 17,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 30,
+        "confidence": 85,
+        "markets": [
+          "hbm",
+          "semiconductors"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "availability"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "observed_demand",
+          "marketId": "hbm",
+          "observation": "Counterpoint Research — Q2 2026 HBM revenue share: Samsung 33% (published 2026-09-01)."
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Counterpoint Research – Global Memory Tracker (Q2 2026)",
+            "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share"
+          },
+          {
+            "label": "Yonhap / Sekundär‑Bericht über Counterpoint‑Daten (2026-09-03)",
+            "url": "https://en.yna.co.kr/view/AEN20260903010700320"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Beobachtung stärkt die Evidenz, dass Samsung in Q2 2026 bereits signifikante HBM‑Umsätze erzielte; das ändert die Baseline für P-2026-07-30-02 (Erwartung: Samsung erhöht Q3‑HBM4‑Umsatz sequenziell ≥2.5× Q2). Diese Messung erhöht die prior probability für aggressive Samsung‑HBM‑Ramps, reduziert aber den Informationswert gegenüber einer direkten Q3‑Umsatzmessung."
+        },
+        "admissionReviewKey": "ae2575d2fca61cff2737db0a"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d7e5c91b964da60006aa7d3938b4c87d19077d4d185c0d33d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron plant, HBM‑Output bis Ende 2026 auf ~100.000 Wafer/Monat zu verdoppeln (Berichte)",
+      "fact": "Mehrere Branchenberichte (z. B. ETNews / Tech in Asia / Digitimes) melden, dass Micron plant, die monatliche HBM‑Kapazität bis Ende 2026 auf etwa 100.000 Waferstarts/Monat zu erhöhen (Addition ~60.000 WPM gegenüber 2025).",
+      "placement": "Geografisch: Taiwan & Singapur (Installationen / Equipment‑Bestellungen gemeldet); Produktmarkt: HBM (12‑layer HBM4 / HBM3E); Zeitpunkt: Pläne und Bestellaktivität berichtet Anfang September 2026.",
+      "mechanism": "Berichte stützen sich auf Branchenquellen: Micron soll zusätzliche Equipment‑Orders aufgegeben und Installationen in Fertigungsstätten in Taiwan und Singapur gestartet haben, um Wafer‑Starts für HBM deutlich zu erhöhen. Dies stellt eine Pipeline‑Ankündigung dar (Kapazitätserweiterung in Arbeit), hat aber noch keine verifizierten qualifizierten Shipments / Fill‑Rate‑Verbesserungen geliefert.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Relevanz: Diese Expansionsmeldung reduziert mittelfristig die Wahrscheinlichkeit extremer HBM‑Knappheit, wirkt als struktureller Supply‑Gegenpol zu P-2026-07-11-01 (HBM/Server‑DRAM Knappheit bis Ende 2028). Da es sich um Plan/Installations‑Berichte handelt, ist die sofortige Marktwirkung limitiert — überprüfbar bei beobachtbaren Shipments/Wafer‑Starts.",
+      "falsifier": "Falsifizierbar: Wenn Micron bis zum 2026-12-31 keine öffentlich nachweisbare Erhöhung der HBM‑Wafer‑Starts auf ~100.000 WPM (oder konsistent bestätigte zusätzliche ~60.000 WPM) meldet oder wenn unabhängige Lieferketten‑Messungen (z. B. qualifizierte Shipment‑Reports, Kunden‑LTA‑Zahlungen, offizielle Micron‑Ankündigung) ausbleiben, dann ist die Annahme einer near‑term‑Verdoppelung falsch.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-04",
+      "novelty": "Mittel (große Produktions‑Ankündigung, aber als Plan/Installations‑Bericht verbreitet).",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 9,
+        "thesisRelevance": 15,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "hbm",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.etnews.com/20260904200006",
+          "label": "ETNews (englische Fassung) – Branchenquelle: Micron plant HBM‑Kapazitätserhöhung (2026-09-04)",
+          "kind": "primary",
+          "supports": "Bericht, wonach Micron bis Ende 2026 bis zu ~60.000 zusätzliche HBM‑WPM hinzufügen will (Ziel ~100.000 WPM)."
+        },
+        {
+          "url": "https://news.nestia.com/detail/Micron-plans-to-double-HBM-output-as-AI-demand-grows/14163359",
+          "label": "Tech in Asia / Re‑Syndication – 'Micron plans to double HBM output' (2026-09-05)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung der Branchenberichte: Equipment‑Bestellungen, Installationen in Taiwan & Singapur, erwarteter Anstieg des 12‑layer HBM4 Anteils."
+        }
+      ],
+      "reason": "Die Berichte sind konsistent über mehrere Quellen und stammen von etablierten Industrie‑Reportern (ETNews, Tech in Asia, Digitimes‑Syndication). Allerdings handelt es sich um Plan‑/Installationsberichte basierend auf Branchenquellen — noch kein Nachweis qualifizierter Shipments, Lead‑Time‑ oder Fill‑Rate‑Verbesserungen. Gemäß Aufnahme‑Regeln gelten solche Ankündigungen nicht als bestätigte 'verified_supply_relief'. Deshalb Watchlist: die Meldung ist relevant für die HBM‑Verfügbarkeitserwartung, verdient aktive Überprüfung (Equipment‑Lieferungen, Microons eigene Bekanntmachungen, Shipment‑Daten), ist aber derzeit zu früh für eine VERIFIED DATA‑Aufnahme.",
+      "candidateId": "6a0d22529828769de5e4",
+      "candidateKey": "e1376235187963e2b12fe5e5",
+      "reviewedAt": "2026-09-14T11:02:31.024Z",
+      "priorityScore": 72,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d7e5c91b964da60006aa7d3938b4c87d19077d4d185c0d33d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Anklage behauptet: CXMT plante 'Project Hefei' zur Übernahme von Samsung‑DRAM‑Technologie (Anschuldigung, noch nicht rechtskräftig)",
+      "fact": "Berichte (u. a. Tom's Hardware, XenoSpectrum) berichten, dass eine Anklage der Seoul Central District Prosecutors' Office ein internes 'Project Hefei' dokumentiert, das angeblich die Absicht verzeichnete, Samsung‑Prozessrezepte und Personal systematisch zu akquirieren. Dies ist Gegenstand laufender Strafverfahren (Anschuldigung, nicht rechtskräftig).",
+      "placement": "Jurisdiktion: Südkorea (Seoul Central District); Domäne: Rechtliche/forensische Ermittlungen zu DRAM‑Prozessinformationen; Datum der Berichterstattung: Anfang September 2026.",
+      "mechanism": "Die Anklage beschreibt eine angebliche Roadmap (zeitliche Ziele, Personalrekrutierung, Prozess‑Recipe‑Plan mit ~620 Schritten), wonach CXMT in der Gründungsphase technologische Informationen von Samsung hätte übernehmen wollen. Wenn bewiesen, würde dies die technologische Basis und die Rechtssituation zwischen chinesischen und koreanischen Herstellern beeinflussen und politische Gegenmaßnahmen wahrscheinlicher machen.",
+      "predictionId": "P-2026-07-14-01",
+      "predictionImpact": "Relevanz: Die Anklage könnte das Risiko für CXMTs operativen Ausbau und internationale Partnerbeziehungen erhöhen, was mittelbar P-2026-07-14-01 (CXMT‑Listing / LTAs) und die Basiserwartung für chinesische DRAM‑Kapazitätssteigerungen beeinflusst. Da es sich um eine Anklage handelt, ist der direkte Effekt auf Märkte jedoch unbestimmt bis zu einem Gerichtsurteil oder klarer Unternehmens‑Reaktion.",
+      "falsifier": "Falsifizierbar: Wenn Gerichtsdokumente oder offizielle Ermittlungsakten bis zum 2026-10-31 jene behaupteten Roadmap‑Elemente nicht enthalten oder wesentliche Teile als unbewiesen zurückgewiesen werden (oder wenn CXMT gerichtlich entlastet wird), dann reduziert das die Aussagekraft dieser Meldung deutlich.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-05",
+      "novelty": "Hoch (juristische Enthüllung mit möglichen längerfristigen Auswirkungen auf Technologie‑Transfer und Supply‑Chain‑Politik).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 13,
+        "thesisRelevance": 12,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 45,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "dram",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://xenospectrum.com/en/cxmt-project-hefei-roadmap/",
+          "label": "XenoSpectrum – Zusammenfassung der Anklageberichterstattung (2026-09-05)",
+          "kind": "secondary",
+          "supports": "Wiedergabe von NoCut/CBS‑Berichten: Erwähnung eines 'Project Hefei' mit einem 620‑Schritt Process‑Recipe‑Plan laut Anklageschrift; weist ausdrücklich darauf hin, dass es sich um prosecutorial allegations handelt."
+        },
+        {
+          "url": "https://axis-intelligence.com/china-memory-chip-production/",
+          "label": "Axis Intelligence – Prospectus/Prospektanalyse zu CXMT (2026-09-01)",
+          "kind": "secondary",
+          "supports": "Analytische Gegenperspektive: untersucht CXMT‑Prospekt und zeigt, dass HBM‑Projekte nicht explizit in der Prospekt‑Use‑of‑Proceeds‑Tabelle erscheinen, was die Interpretation von Tech‑Steal‑Behauptungen relativiert."
+        }
+      ],
+      "reason": "Die Artikel berichten über eine strafrechtliche Anklage (Indictment) und fassen angebliche Dokumenten‑Inhalte zusammen; sie sind wichtig für Markt‑Risiko‑Überlegungen, verändern jedoch keine verifizierten Kapazitäts‑ oder Lieferungsdaten. Wegen des juristischen Charakters (Anschuldigung) und fehlender direkter Einsicht in die offiziellen Gerichtsakten ist die Meldung derzeit nicht als VERIFIED DATA zu akzeptieren. Watchlist: Die Anschuldigungen sind relevant und müssen juristisch/operativ weiter verfolgt (Gerichtsakten, CXMT‑Stellungnahmen, offizielle Ermittlungsdokumente) werden, bevor eine definitive Markteinschätzung gezogen werden kann.",
+      "candidateId": "19e51733b1263b63690e",
+      "candidateKey": "7206e230007921848207c693",
+      "reviewedAt": "2026-09-14T11:02:31.027Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d7e5c91b964da60006aa7d3938b4c87d19077d4d185c0d33d"
+    },
+    {
+      "decision": "rejected",
+      "title": "SanDisk Rises 8%, Micron Gains 5%: Is the NAND Pricing Cycle Still Accelerating?",
+      "fact": "Marktberichte meldeten einen starken Aktienanstieg bei SanDisk (+8%) und Micron (+~5%) am 2026-09-04; Kommentatoren fragten, ob dies ein Beschleunigungssignal des NAND-Preiszyklus sei. Die Meldung ist Marktreaktion/Kommentar, nicht einzugelöster primärer Lieferschritt.",
+      "placement": "Globaler NAND-/Enterprise‑SSD‑Markt; US‑Aktienmarkt Reaktion (Ticker SNDK, MU) am 2026-09-04.",
+      "mechanism": "Kurzfristiger Re‑Pricing‑Effekt: Anleger preisen höhere NAND‑ASP‑Erwartungen und LTAs ein; dies ist eine Marktpreisreaktion, kein direkter Nachweis von qualifizierten Shipments, Lead‑Time‑Verbesserungen oder kontraktierten Bit‑Volumina.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signalisiert erhöhte Markterwartungen für höhere Enterprise‑SSD/NAND‑Preise, ändert aber die Basissicht nicht ohne belegte qualifizierte Liefer- oder Fill‑Rate‑Daten.",
+      "falsifier": "Bis 2026-12-31: Zwei aufeinanderfolgende Quartale (z. B. Sep‑ und Dec‑Kontraktzyklen) mit einem Rückgang der vertraglichen NAND‑Kontraktpreise ≥10 % oder veröffentlichte qualifizierte Enterprise‑SSD‑Shipments/Fill‑Rates steigen deutlich (z. B. ≥20% QoQ) und widersprechen damit der Interpretation eines anhaltenden Preisaufschubs.",
+      "nextReview": "2026-10-14",
+      "eventDate": "2026-09-04",
+      "novelty": "Gering — wiederholt bereits in der TAIL‑Basis verankerte upward‑Preisindikatoren für NAND/Enterprise‑SSD.",
+      "duplicateOf": "tail-2026-07-14-nand-essd",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 4,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "aiDemand"
+      ],
+      "signal": "price_up",
+      "severity": 20,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-rises-8-micron-gains-150036400.html",
+          "label": "Yahoo Finance Artikel (Markt‑Kommentar, 2026-09-04)",
+          "kind": "secondary",
+          "supports": "Berichtet die Intraday‑Aktienbewegungen (SanDisk +8%, Micron +5%) und Marktkommentare zu NAND‑Preisbildung."
+        },
+        {
+          "url": "https://investor.sandisk.com/static-files/3a03584e-2bb8-454d-a003-4911c9b08948",
+          "label": "SanDisk (SNDK) Form 8‑K / Earnings (Q4 FY2026, 2026-08-05)",
+          "kind": "primary",
+          "supports": "Unternehmensangaben zu Umsatz/Preisanteil (kontextuell nützlich, aber nicht Beweis für anhaltende Preiszyklen)."
+        }
+      ],
+      "reason": "Marktkommentar mit Equity‑Repricing: keine neue, datierte, messbare Beobachtung von qualifizierten Shipments, Lead‑Time‑Verbesserung oder Fill‑Rate, die für eine TAIL‑Aufnahme (accepted/watchlist) erforderlich wäre. Überschneidet sich mit bestehenden Basissignalen (tail-2026-07-14-nand-essd). Deshalb abgelehnt.",
+      "candidateId": "82cc4df3a3a609e53b23",
+      "candidateKey": "98135990709fee0b1eaf973d",
+      "reviewedAt": "2026-09-14T11:05:09.436Z",
+      "priorityScore": 40,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09b81542db623e69006aa7d447479487d1972f35ea19753275"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia targets AI demand with NAND plan - Nikkei (via Investing.com)",
+      "fact": "Berichte (Investing.com / Nikkei‑Bericht, 2026-09-04) fassen Kioxias Strategie zusammen: verstärkte Positionierung von NAND/SSD‑Produkten für AI‑Inference‑Workloads, Investitionsfokus auf neue BiCS‑Generationen und Produktklassen für hohe IOPS/hohe Kapazität.",
+      "placement": "Kioxia (Japan) — globaler NAND/Enterprise‑SSD‑Kontext; Schwerpunkt AI‑Inference‑SSD‑Produkte (Enterprise/Datacenter) — berichtetes Datum 2026-09-04.",
+      "mechanism": "Produkt‑ und Portfolio‑Fokussierung: Kioxia shiftet R&D/Produktroadmap (BiCS‑Generationen, SSD‑IOPS/Capacity) hin zu AI‑Inference‑Use‑Cases; dies kann Nachfrage‑mix und ASPs stützen, aber ist kein direkter Nachweis für kurzfristige qualifizierte Shipments oder Fill‑Rate‑Verbesserung.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Unterstützt das Thesis‑Argument, dass AI‑getriebene NAND‑Nachfrage strukturell verstärkt werden kann; der Effekt auf Kontraktpreise und Lieferzeiten bleibt aber unquantifiziert.",
+      "falsifier": "Bis 2027-06-30: Kioxia veröffentlicht keine Produkt‑Qualifikationen/Shipments für die in dem Bericht genannten AI‑optimierten SSD‑Klassen, oder angekündigte LTAs/Produktlieferungen an Datacenter‑Kunden fehlen weiterhin — dann ist die berichtete Strategie nicht in tats. Marktwirkung umgesetzt.",
+      "nextReview": "2026-10-14",
+      "eventDate": "2026-09-04",
+      "novelty": "Mittel — bestätigt und operationalisiert eine von Kioxia bereits zuvor kommunizierte Investor‑/Produktstrategie (Investor Day/PR), aber bringt erneute Medienaufmerksamkeit.",
+      "duplicateOf": "3d748443f07df377499d",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/kioxia-targets-ai-demand-with-nand-plan--nikkei-93CH-4889637",
+          "label": "Investing.com (Nikkei‑Zusammenfassung, 2026-09-04)",
+          "kind": "secondary",
+          "supports": "Fasst Nikkei‑Bericht zusammen: Kioxia zielt auf AI‑Inference‑NAND/SSD‑Produkte ab; Artikeldatum 2026‑09‑04."
+        },
+        {
+          "url": "https://www.kioxia-holdings.com/en-jp/news/2026/20260602-1.html",
+          "label": "KIOXIA — Investor Day / Unternehmens‑Mitteilung (2026-06-02)",
+          "kind": "primary",
+          "supports": "Kioxia‑Unternehmenskommunikation (Investor Day) dokumentiert die strategische Ausrichtung auf AI‑Inference‑Produkte, BiCS‑Roadmap und LTAs — Primärquelle zur Validierung der Unternehmensabsicht."
+        }
+      ],
+      "reason": "Der Bericht wiederholt Kioxias strategische Ausrichtung, die bereits in Kioxia‑Primärunterlagen (Investor Day/PR) dokumentiert ist. Das Item liefert keinen neuen, datierten, messbaren Liefer‑ oder Preisbeleg (keine qualifizierten Shipments, Lead‑Time‑Änderungen oder verifizierte LTAs mit Lieferdaten). Wegen fehlender direkter, quantifizierbarer Primärdaten und weil es ein Wiederholen existierender Firmenstrategie ist, wird das Signal auf Watchlist gesetzt (weiter beobachten, nicht als VERIFIED DATA aufnehmen).",
+      "candidateId": "f75fffec6e9b0b3f307e",
+      "candidateKey": "d66df52d1e80135c9a8fa75f",
+      "reviewedAt": "2026-09-14T11:05:09.436Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09b81542db623e69006aa7d447479487d1972f35ea19753275"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia targets AI demand with NAND plan - Nikkei",
+      "fact": "Nikkei‑Berichte (mediale Zusammenfassungen erschienen 2026-09-04) schildern, dass Kioxia seine NAND‑Roadmap stärker auf AI‑Inference‑SSDs sowie BiCS‑10/11‑Generationen und höhere IOPS/Kapazitätsklassen ausrichten will.",
+      "placement": "Kioxia (Japan) — globaler NAND‑/Enterprise‑SSD‑Kontext, berichtetes Datum 2026-09-04; relevante Layer: NAND/SSD für Datacenter‑Inference.",
+      "mechanism": "Strategische Verschiebung in Produktroadmap und Kundenansprache (R&D/Produkt‑Design, LTAs mit Datacenter‑Kunden) könnte Nachfrage‑Mix und ASPs stützen, mittel‑ bis langfristige Auswirkung auf NAND‑Marktstruktur möglich, kurzfristig aber unquantifiziert.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Eher unterstützend für eine nachfragegetriebene Preiserholung bei Enterprise‑SSD/NAND; ohne verifizierbare Liefer‑ oder Fulfillment‑Metrik bleibt die Richtung unbestimmt.",
+      "falsifier": "Bis 2027-06-30: Keine nachprüfbaren Produktqualifikationen/Erstlieferungen oder LTAs an nennenswerte Datacenter‑Kunden für die angekündigten AI‑SSD‑Produkte; oder Kioxia senkt die angekündigten Pläne öffentlich — dann hat die Meldung keine realisierte Marktwirkung.",
+      "nextReview": "2026-10-14",
+      "eventDate": "2026-09-04",
+      "novelty": "Mittel — Verstärkt bekannte Unternehmensstrategie (June 2026 Investor Day) in neuen Medien‑Berichten.",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 7,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 35,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.kioxia-holdings.com/en-jp/news/2026/20260602-1.html",
+          "label": "KIOXIA — Investor Day / Unternehmens‑Mitteilung (2026-06-02)",
+          "kind": "primary",
+          "supports": "Kioxia dokumentiert dort die strategische Ausrichtung auf AI‑Inference‑Produkte, BiCS‑Roadmap und LTAs (Primärquelle zur Bestätigung der Unternehmensabsicht)."
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/kioxia-targets-ai-demand-with-nand-plan--nikkei-93CH-4889637",
+          "label": "Investing.com (Nikkei‑Zusammenfassung, 2026-09-04)",
+          "kind": "secondary",
+          "supports": "Medienzusammenfassung des angeblichen Nikkei‑Artikels am 2026‑09‑04, fasst Kioxias AI‑NAND‑Pläne zusammen."
+        }
+      ],
+      "reason": "Der Nikkei‑Bericht (wie in Investing.com wiedergegeben) reflektiert eine von Kioxia bereits offen kommunizierte strategische Ausrichtung (Primärquelle: Kioxia Investor Day, 2026‑06‑02). Es fehlt jedoch ein neues, datiertes, messbares Ergebnis (qualifizierte Shipments, Lead‑Time‑Änderungen, dokumentierte LTAs mit Lieferdaten). Deshalb Watchlist — nützlich zur Beobachtung, aber nicht als VERIFIED DATA aufzunehmen.",
+      "candidateId": "3d748443f07df377499d",
+      "candidateKey": "c481a290882491a7a0fd429c",
+      "reviewedAt": "2026-09-14T11:05:09.436Z",
+      "priorityScore": 72,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09b81542db623e69006aa7d447479487d1972f35ea19753275"
+    },
+    {
+      "decision": "rejected",
+      "title": "Semiconductor Investing Gets More Selective as HBM, CPU and NAND ‘Pinpoint’ ETFs Flood the Market",
+      "fact": "Medienberichte (IT조선 / it.chosun‑Syndicate u. a., 2026-09-04) beschreiben eine Zunahme thematischer 'pinpoint' ETFs, die HBM, CPU und NAND adressieren, und eine selektivere Anlegerallokation in Halbleitern.",
+      "placement": "Finanzmärkte / Kapitalallokation — Schwerpunkt Südkorea und internationale ETF‑Listings; Berichtdatum 2026-09-04.",
+      "mechanism": "Produktinnovationen im ETF‑Universum bündeln Anlegerkapital auf enge Sub‑Sektoren (HBM/CPU/NAND) und können kurzfristig Kurse einzelner Hersteller beeinflussen; dies ist ein Cash‑/Sentiment‑Signal, kein direkter physischer Supply‑/Demand‑Beleg (Shipments, Lead‑Times, Fill‑Rates).",
+      "predictionId": "P-2026-07-16-01",
+      "predictionImpact": "Begrenzte direkte Auswirkungen auf physische Knappheitsvorhersagen (HBM/Server‑DRAM‑Knappheit): ETF‑Flows sind Finanz‑Sentiment‑Indikatoren, keine verifizierten Liefereffekte.",
+      "falsifier": "Bis 2026-12-31: Falls die genannten ETFs signifikant (z. B. >US$5 Mrd AUM kumuliert) Kapital anziehen und gleichzeitig Hersteller nicht in der Lage sind, die nachfrageseitige Produktion zu erhöhen (keine Anzeichen gestiegener Shipments/Fill‑Rates), wäre das ein Hinweis, dass ETF‑Flows die reale Knappheit verstärken — andernfalls bleibt die Meldung ein reines Investment‑Produktsignal.",
+      "nextReview": "2026-10-14",
+      "eventDate": "2026-09-04",
+      "novelty": "Gering bis mittel — Produktinnovation im Finanzbereich, aber kein Nachweis physischer Marktveränderung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 4,
+        "thesisRelevance": 8,
+        "forecastImpact": 3,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 10,
+      "confidence": 20,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/investor/kiwoom-asset-management",
+          "label": "Aggregator / Index‑Seite (Referenz auf it.chosun Artikel, 2026-09-04)",
+          "kind": "secondary",
+          "supports": "Aggregierte Hinweis‑/Syndizierung des it.chosun Artikels über \"pinpoint\" ETFs (HBM/CPU/NAND)."
+        },
+        {
+          "url": "https://minegoldrush.com/index.php?news_id=81427",
+          "label": "Nachrichtenaggregator (Kopie/Snippet des it.chosun Artikels, 2026-09-04)",
+          "kind": "secondary",
+          "supports": "Wiederholt Kernaussagen: Zunahme thematischer Halbleiter‑ETFs und selektive Anlegerallokation; keine Primärdaten zu physischen Shipments."
+        }
+      ],
+      "reason": "Die Meldung beschreibt Produkte im Finanzsektor (ETF‑Listings) und Market‑Sentiment. Sie liefert keine datierten, quantitativen Primärbeobachtungen (Shipments, Lead‑Times, Fill‑Rates, Vertragspreise) und ist daher kein belastbares strukturelles Marktsignal für TAIL‑Aufnahme. Abgelehnt.",
+      "candidateId": "e59f97e12b221e42ba3b",
+      "candidateKey": "3a09f03918b4cb30bfc1f3dd",
+      "reviewedAt": "2026-09-14T11:05:09.442Z",
+      "priorityScore": 30,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09b81542db623e69006aa7d447479487d1972f35ea19753275"
+    },
+    {
+      "decision": "accepted",
+      "title": "YMTC (CCSH) reicht STAR‑Market‑IPO-Antrag ein; Xtacking‑Architektur und IPO‑Betrag dokumentiert",
+      "fact": "Die Muttergesellschaft von Yangtze Memory Technologies (CCSH/Changjiang Chunqiu) reichte einen IPO‑Prospekt/eine Listing‑Anmeldung für die STAR Market‑Platt-form ein (IPO‑Antrag/Erstanfrage im Aug./Aug.‑Ende 2026); die beantragte Brutto‑Emittierung wurde mit ~33,000 Mio. CNY (≈ ¥33.0 Mrd.) berichtet.",
+      "placement": "China (Shanghai STAR Market), Produkt‑Layer: NAND‑Flash (3D NAND, Xtacking®), Horizont: Firmenfinanzierung / mögliche Kapazitätserweiterung 2027+.",
+      "mechanism": "Ein erfolgreicher IPO würde CCSH/YMTC erhebliches Kapital (RMB‑Betrag in der Prospektangabe) zuführen, das vorrangig in Fabriken (Wafer‑Starts, Frontend) und R&D für Xtacking‑Iteration investiert werden kann; das erhöht potenziell künftige NAND‑Bit‑Output (Kapazitäts‑Upgrades) und damit mittelfristig das globale NAND‑Angebot.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Signal wirkt als schwächender Faktor für die Basishypothese, dass Memory‑Knappheit bis 2027/2028 persistiert: wenn IPO‑Proceeds zu konkreten FIDs/erhöhten qualifizierten Wafer‑Starts führen, reduziert das die Wahrscheinlichkeit einer längeren, strukturellen Knappheit (äquivalent zu eine moderate Senkung der Shortage‑Wahrscheinlichkeit für 2028).",
+      "falsifier": "Bis zum 2027-12-31 kein bestätigter Abschluss (Listing) oder – falls gelistet – keine veröffentlichte, verbindliche Kapazitätszusage / FID für Fabrik(er) mit ≥100k wafer‑starts/Monat kumuliert; wenn IPO nicht erfolgreich oder Proceeds < RMB 10 Mrd. für Fabrikausbau verwendet werden, ist der signalhafte Effekt auf die Verfügbarkeit falsifiziert.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-08-24",
+      "novelty": "IPO‑Einreichung einer sanktionierten großen chinesischen NAND‑Firma mit klarer Kapitalgröße (Proceeds) ist neu; interpretiert als Frühindikator für potenzielle kapazitätsgetriebene Angebotsänderungen.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.caixinglobal.com/2026-08-24/chinese-memory-chipmaker-ymtc-parent-files-for-49-billion-ipo-102477468.html",
+          "label": "Caixin – YMTC parent files for IPO (Aug 24, 2026)",
+          "kind": "primary",
+          "supports": "Bericht über Einreichung des IPO‑Antrags und Zielbetrag (~RMB 33.3bn/RMB 4.9bn)."
+        },
+        {
+          "url": "https://english.sse.com.cn/news/newsrelease/voice/c/c_20260827_10830148.shtml",
+          "label": "Shanghai Stock Exchange – Listing/Prospectus‑Veröffentlichung / Hinweise (Aug 2026)",
+          "kind": "primary",
+          "supports": "SSE‑Veröffentlichung zu YMTC/CCSH und Hinweis auf Xtacking‑Architektur; offizieller Listing‑Prozess dokumentiert."
+        }
+      ],
+      "reason": "Primärquelle(n) (SSE/Caixin) bestätigen, dass die YMTC‑Muttergesellschaft eine formale IPO‑Anmeldung/Listing‑Prüfung durchlief (Datum und angepeilter Emissionsbetrag sind dokumentiert). Die Meldung ist ein eindeutiger, datierter Signalindikator für mögliches künftiges Kapazitätswachstum (Kapitalzufuhr → potenzielle FIDs). Es gibt jedoch keine aktuellen, qualifizierten Shipment‑Messungen, also ist kein kurzfristiger Index‑Impact belegbar.",
+      "candidateId": "6ad913d943ff48936707",
+      "candidateKey": "187e0074ddff73d87b471af4",
+      "reviewedAt": "2026-09-14T11:05:09.464Z",
+      "priorityScore": 86,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-187e0074ddff73d87b471af4",
+        "title": "YMTC (CCSH) reicht STAR‑Market‑IPO-Antrag ein; Xtacking‑Architektur und IPO‑Betrag dokumentiert",
+        "date": "2026-08-24",
+        "admittedAt": "2026-09-14T11:05:09.464Z",
+        "fact": "Die Muttergesellschaft von Yangtze Memory Technologies (CCSH/Changjiang Chunqiu) reichte einen IPO‑Prospekt/eine Listing‑Anmeldung für die STAR Market‑Platt-form ein (IPO‑Antrag/Erstanfrage im Aug./Aug.‑Ende 2026); die beantragte Brutto‑Emittierung wurde mit ~33,000 Mio. CNY (≈ ¥33.0 Mrd.) berichtet.",
+        "placement": "China (Shanghai STAR Market), Produkt‑Layer: NAND‑Flash (3D NAND, Xtacking®), Horizont: Firmenfinanzierung / mögliche Kapazitätserweiterung 2027+.",
+        "tailInference": "Ein erfolgreicher IPO würde CCSH/YMTC erhebliches Kapital (RMB‑Betrag in der Prospektangabe) zuführen, das vorrangig in Fabriken (Wafer‑Starts, Frontend) und R&D für Xtacking‑Iteration investiert werden kann; das erhöht potenziell künftige NAND‑Bit‑Output (Kapazitäts‑Upgrades) und damit mittelfristig das globale NAND‑Angebot.",
+        "predictionId": "P-2026-07-20-04",
+        "predictionImpact": "Signal wirkt als schwächender Faktor für die Basishypothese, dass Memory‑Knappheit bis 2027/2028 persistiert: wenn IPO‑Proceeds zu konkreten FIDs/erhöhten qualifizierten Wafer‑Starts führen, reduziert das die Wahrscheinlichkeit einer längeren, strukturellen Knappheit (äquivalent zu eine moderate Senkung der Shortage‑Wahrscheinlichkeit für 2028).",
+        "falsifier": "Bis zum 2027-12-31 kein bestätigter Abschluss (Listing) oder – falls gelistet – keine veröffentlichte, verbindliche Kapazitätszusage / FID für Fabrik(er) mit ≥100k wafer‑starts/Monat kumuliert; wenn IPO nicht erfolgreich oder Proceeds < RMB 10 Mrd. für Fabrikausbau verwendet werden, ist der signalhafte Effekt auf die Verfügbarkeit falsifiziert.",
+        "nextReview": "2027-12-31",
+        "priorityScore": 86,
+        "scoreBreakdown": {
+          "sourceQuality": 20,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 10,
+          "timeSensitivity": 10
+        },
+        "severity": 40,
+        "confidence": 70,
+        "markets": [
+          "nand",
+          "enterprise_ssd",
+          "semiconductors"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "pricing"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Caixin – YMTC parent files for IPO (Aug 24, 2026)",
+            "url": "https://www.caixinglobal.com/2026-08-24/chinese-memory-chipmaker-ymtc-parent-files-for-49-billion-ipo-102477468.html"
+          },
+          {
+            "label": "Shanghai Stock Exchange – Listing/Prospectus‑Veröffentlichung / Hinweise (Aug 2026)",
+            "url": "https://english.sse.com.cn/news/newsrelease/voice/c/c_20260827_10830148.shtml"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Signal wirkt als schwächender Faktor für die Basishypothese, dass Memory‑Knappheit bis 2027/2028 persistiert: wenn IPO‑Proceeds zu konkreten FIDs/erhöhten qualifizierten Wafer‑Starts führen, reduziert das die Wahrscheinlichkeit einer längeren, strukturellen Knappheit (äquivalent zu eine moderate Senkung der Shortage‑Wahrscheinlichkeit für 2028)."
+        },
+        "admissionReviewKey": "187e0074ddff73d87b471af4"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07795cf8847d467d006aa7d44748dc87d1be073b51aa47915a"
+    },
+    {
+      "decision": "rejected",
+      "title": "Kurzfristige Kursbewegung: Micron/SanDisk‑Bounce (Sektor‑Rückkehr) — Marktkommentar, kein verwertbares Supply/Demand‑Signal",
+      "fact": "Intraday/pre‑market Kursbewegungen (z. B. Micron +~2%, SanDisk +~3% am 2026-09-04) wurden in mehreren Finanzmedien berichtet; dies ist eine kurzfristige Marktreaktion, kein belastbarer, dauerhafter technischer Indikator.",
+      "placement": "Global equities / US markets; Domäne: Aktien‑/Marktkommentar, Horizont: Intraday bis Wochen.",
+      "mechanism": "Preisbewegung getrieben von Trader‑Positions, Analystenkommentaren und sektorspezifischen Nachrichten/Flows (Kurzfrist‑Repricing), nicht notwendigerweise durch neue, messbare Angebots‑ oder Nachfrageänderungen im Memory‑Produktionsnetz.",
+      "predictionId": "",
+      "predictionImpact": "Keine verlässliche Auswirkung auf TAIL‑Makro‑Predictions: einzelne Kursrallys sind zu volatil und oft reaktionsgetrieben; sie sollten nicht als Grundlage für Angebots‑/Nachfrage‑Signale verwendet werden.",
+      "falsifier": "Wenn der Bericht eine andauernde, messbare Änderung in zugrundeliegenden Marktgrößen (z. B. zwei aufeinanderfolgende Quartale mit ≥10% Anstieg der DRAM‑Kontraktpreise oder nachweisbare Fill‑Rate‑Verbesserungen) liefert, wäre das relevant — bis dahin ist die Market‑Noise‑Hypothese bestätigt.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-04",
+      "novelty": "Gering — wiederkehrendes, erklärbares Kurs‑Bounce‑Ereignis; keine neue technische Messgröße.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 2,
+        "thesisRelevance": 5,
+        "forecastImpact": 3,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-sandisk-jump-4-even-151013489.html",
+          "label": "Yahoo Finance – Bestätigung kurzfristiger Kursbewegungen (Sep 4, 2026)",
+          "kind": "secondary",
+          "supports": "Bestätigt kurzfristige Kursbewegung; zeigt aber, dass es sich um Markt‑Repricing handelt."
+        }
+      ],
+      "reason": "Ablehnung: Der Kandidat ist marktorientierter, kurzlebiger 'stock‑move' Kommentar ohne neuen, datierbaren Liefervolumen‑/Preis‑Index‑Beweis oder kausale Unternehmens‑Ankündigung. Solche Artikel sind per Richtlinie nicht verwertbar als eigenständige, langfristig relevante Signals für die TAIL‑Prognosen (Promotional/market noise).",
+      "candidateId": "95496d8f852a9274e481",
+      "candidateKey": "ea6d9105c928969625129676",
+      "reviewedAt": "2026-09-14T11:05:09.467Z",
+      "priorityScore": 31,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07795cf8847d467d006aa7d44748dc87d1be073b51aa47915a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix prüft mögliche Joint‑Venture‑Fab in Japan (Chey Tae‑won, Sendai): Prüfungsstatus dokumentiert",
+      "fact": "SK Group‑Chairman Chey Tae‑won erklärte am 2026-08-31 in Sendai, dass SK hynix mehrere Standorte in Japan prüfe und Joint‑Production mit japanischen Partnern (u. a. Kioxia als Option) in Erwägung ziehe; SK‑Seite betonte, dass noch kein konkreter Plan bestätigt wurde.",
+      "placement": "Japan (potentielle Fabrikstandorte, Miyagi u.a.), Produkt‑Layer: NAND/Memory (NAND/HBM), Horizont: Machbarkeitsprüfung/Strategie 2026–2028.",
+      "mechanism": "Eine Japan‑Fab oder JV könnte Versorgungsdiversifikation und zusätzliche NAND/HBM‑Front‑/Back‑end‑Kapazität schaffen, was mittelfristig (nach FID/Qualifikation) das globale Angebot erhöhen und regionale Lieferketten‑Resilienz stärken würde; aktuell ist dies aber nur eine Explorations‑/Absichtserklärung.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Signal reduziert mittelfristig die Wahrscheinlichkeit extremer Knappheit, sofern Prüfungsphase in konkrete FID‑/Bau‑Signals überführt wird; im gegenwärtigen Prüfungszustand bleibt die Auswirkung unscharf und teilweise spekulativ.",
+      "falsifier": "Wenn bis zum 2027-06-30 kein Site‑Selection, Partner‑JV‑MoU oder verbindlicher FID mit mindestens einem Standort (oder eine offizielle Nicht‑Fortführungserklärung) veröffentlicht wird, dann ist die Explorations‑Hypothese für diesen Zeitraum falsifiziert.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-08-31",
+      "novelty": "Moderat — große Hersteller prüfen Standorte routinemäßig; die Erwähnung eines möglichen Japan‑JV durch den SK‑Chair ist aber material und neu für die TAIL‑Datenbank.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.japantimes.co.jp/business/2026/08/31/companies/sk-hynix-joint-venture-feasibility/",
+          "label": "The Japan Times – Bericht über Chey Tae‑wons Aussagen (Aug 31, 2026)",
+          "kind": "primary",
+          "supports": "Direkter Bericht, dass SK Group‑Chairman erklärte, Standorte in Japan würden geprüft."
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/amp/business/companies/20260831/sk-hynix-still-reviewing-feasibility-of-japan-semiconductor-plant/",
+          "label": "Korea Times – Bestätigung (Aug 31, 2026)",
+          "kind": "primary",
+          "supports": "Bericht, dass SK Hynix Prüfungen durchführt und keine bestätigten Entscheidungen vorliegen."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/02/news-sk-hynix-reportedly-weighs-japan-memory-plant-u-s-pressure-korean-approval-could-complicate-plans/",
+          "label": "TrendForce / Branchen‑Coverage – Kontext und regionale Wettbewerbsangebote (Sep 2, 2026)",
+          "kind": "secondary",
+          "supports": "Zusätzliche Bestätigung und Branchenkontext (Nikkei/Bloomberg‑Zitierung)."
+        }
+      ],
+      "reason": "Primärzitate (Chey Tae‑won & Medienberichte) bestätigen, dass SK Hynix Japan‑Standorte prüft; allerdings fehlen konkrete, bindende Größenangaben (CapEx‑Commitment, FID‑Datum, WPM‑Ziel). Das macht die Meldung aktuell zu einem validen Watchlist‑Signal (prüfungsstatus) statt zu einer akzeptierten, weil es in dieser Form keine sofort quantifizierbaren Verfügbarkeitsauswirkungen liefert.",
+      "candidateId": "4de18d7e38cb539ed637",
+      "candidateKey": "3cbaf0224147550f63bde1ce",
+      "reviewedAt": "2026-09-14T11:05:09.469Z",
+      "priorityScore": 69,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07795cf8847d467d006aa7d44748dc87d1be073b51aa47915a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung erreicht ~33% HBM‑Umsatzanteil (Q2 2026) — Counterpoint Q2‑Analyse",
+      "fact": "Counterpoint Research berichtet (Q2 2026, veröffentlicht 2026-09-01), dass Samsung rund 33% des globalen HBM‑Umsatzes in Q2 2026 hielt (SK hynix bei ~50% nach Counterpoint).",
+      "placement": "Global HBM‑Markt (Revenue share), Zeitachse: Abgrenzung Q2 2026 (Berichtsquartal); Domäne: HBM (High‑Bandwidth Memory) für AI‑Accelerators.",
+      "mechanism": "Samsung‑Anteil stieg durch frühe HBM4‑Vorserien/verbesserte Foundry‑/Packaging‑Yield‑Pfad und Kundenbindungs‑/LTA‑Abschlüsse; ein höherer Samsung‑Anteil verringert die Konzentration auf einen einzigen Zulieferer (SK hynix) und kann die Marktstruktur, Preisgestaltung und Allokation für HBM‑Produkte beeinflussen.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Unterstützt die These, dass HBM‑Marktdynamiken sich verschieben: die erhöhte Samsung‑Anteilnahme macht SK‑hynix‑alleinige Dominanz unwahrscheinlicher und erhöht die Chance, dass HBM‑Angebot/Verteilung bis Ende 2026/2027 diversifizierter wird; dies reduziert etwas das Risiko extremer Allokationen für H2 2026–2027.",
+      "falsifier": "Bis zum 2027-06-30 fällt Samsungs HBM‑Umsatzanteil unter 25% oder SK hynix meldet (durch bestätigte Publikationen) HBM4‑skalierte Shipments/Revenue, die SK Hynix‑Share wieder auf ≥45% anheben; in diesem Fall wäre der beobachtete 33%‑Sprung nur temporärer Markt‑Lärm.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-01",
+      "novelty": "Quantitativ relevant: Quartalsbasierter HBM‑Revenue‑Share (33%) ist ein klarer, datierter Marktanteil‑Messwert und ändert die Marktkonzentrations‑Narrative.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 35,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share",
+          "label": "Counterpoint Research – Global DRAM & HBM Market Share, Q2 2026 (Published 2026-09-01)",
+          "kind": "primary",
+          "supports": "Counterpoint‑Datensatz: Samsung HBM Revenue Share Q2 2026 ≈ 33% (datiert, quartalsbasiert)."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/11/samsung-electronics-hbm-share-to-near-40-percent-kb-sees",
+          "label": "Seoul Economic Daily / KB Securities – ergänzende Analystenschätzung (Sep 11, 2026)",
+          "kind": "secondary",
+          "supports": "Bestätigung durch Broker/Analysten‑Bericht, der die erhöhte Samsung‑HBM‑Position reflektiert."
+        }
+      ],
+      "reason": "Counterpoint (verifizierte, datierte Markt‑Share‑Release) dokumentiert Samsung ≈33% HBM‑Revenue‑Share in Q2 2026. Das ist ein klar quantifizierbares, datiertes Markt‑Signal (Anteil in Prozent), direkt relevant für HBM‑Verfügbarkeits‑ und Konzentrations‑Prognosen (siehe P‑2026‑07‑13‑04). Deshalb Zulassung als akzeptiertes Signal; es ist direkt überprüfbar und falsifizierbar anhand künftiger Quartalsreports.",
+      "candidateId": "9c24c07544c516900e60",
+      "candidateKey": "c1449a06150f2012145fa9f0",
+      "reviewedAt": "2026-09-14T11:05:09.473Z",
+      "priorityScore": 84,
+      "gateReasons": [
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07795cf8847d467d006aa7d44748dc87d1be073b51aa47915a"
     }
   ]
 }

@@ -6723,6 +6723,65 @@
     ]
   },
   {
+    "id": "S-AUTO-187e0074ddff73d87b471af4",
+    "date": "2026-08-24",
+    "title": "YMTC (CCSH) reicht STAR‑Market‑IPO-Antrag ein; Xtacking‑Architektur und IPO‑Betrag dokumentiert",
+    "category": "storage",
+    "markets": [
+      "nand",
+      "enterprise_ssd",
+      "semiconductors"
+    ],
+    "companies": [
+      "YMTC"
+    ],
+    "severity": 40,
+    "confidence": 70,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "pricing"
+    ],
+    "summary": "Die Muttergesellschaft von Yangtze Memory Technologies (CCSH/Changjiang Chunqiu) reichte einen IPO‑Prospekt/eine Listing‑Anmeldung für die STAR Market‑Platt-form ein (IPO‑Antrag/Erstanfrage im Aug./Aug.‑Ende 2026); die beantragte Brutto‑Emittierung wurde mit ~33,000 Mio. CNY (≈ ¥33.0 Mrd.) berichtet.",
+    "tail_analysis": "Ein erfolgreicher IPO würde CCSH/YMTC erhebliches Kapital (RMB‑Betrag in der Prospektangabe) zuführen, das vorrangig in Fabriken (Wafer‑Starts, Frontend) und R&D für Xtacking‑Iteration investiert werden kann; das erhöht potenziell künftige NAND‑Bit‑Output (Kapazitäts‑Upgrades) und damit mittelfristig das globale NAND‑Angebot.",
+    "source": "Caixin – YMTC parent files for IPO (Aug 24, 2026)",
+    "url": "https://www.caixinglobal.com/2026-08-24/chinese-memory-chipmaker-ymtc-parent-files-for-49-billion-ipo-102477468.html",
+    "content_hash": "6e071a6d344525eac0c9",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-14T11:05:09.464Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "187e0074ddff73d87b471af4",
+    "predictionId": "P-2026-07-20-04",
+    "predictionImpact": "Signal wirkt als schwächender Faktor für die Basishypothese, dass Memory‑Knappheit bis 2027/2028 persistiert: wenn IPO‑Proceeds zu konkreten FIDs/erhöhten qualifizierten Wafer‑Starts führen, reduziert das die Wahrscheinlichkeit einer längeren, strukturellen Knappheit (äquivalent zu eine moderate Senkung der Shortage‑Wahrscheinlichkeit für 2028).",
+    "falsifier": "Bis zum 2027-12-31 kein bestätigter Abschluss (Listing) oder – falls gelistet – keine veröffentlichte, verbindliche Kapazitätszusage / FID für Fabrik(er) mit ≥100k wafer‑starts/Monat kumuliert; wenn IPO nicht erfolgreich oder Proceeds < RMB 10 Mrd. für Fabrikausbau verwendet werden, ist der signalhafte Effekt auf die Verfügbarkeit falsifiziert.",
+    "nextReview": "2027-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Signal wirkt als schwächender Faktor für die Basishypothese, dass Memory‑Knappheit bis 2027/2028 persistiert: wenn IPO‑Proceeds zu konkreten FIDs/erhöhten qualifizierten Wafer‑Starts führen, reduziert das die Wahrscheinlichkeit einer längeren, strukturellen Knappheit (äquivalent zu eine moderate Senkung der Shortage‑Wahrscheinlichkeit für 2028)."
+    },
+    "sources": [
+      {
+        "label": "Caixin – YMTC parent files for IPO (Aug 24, 2026)",
+        "url": "https://www.caixinglobal.com/2026-08-24/chinese-memory-chipmaker-ymtc-parent-files-for-49-billion-ipo-102477468.html"
+      },
+      {
+        "label": "Shanghai Stock Exchange – Listing/Prospectus‑Veröffentlichung / Hinweise (Aug 2026)",
+        "url": "https://english.sse.com.cn/news/newsrelease/voice/c/c_20260827_10830148.shtml"
+      }
+    ]
+  },
+  {
     "id": "S-2026-08-26-ASTRA",
     "date": "2026-08-26",
     "title": "Astra verschiebt Frontier-AI von Antworten zu autonomer Forschungsarbeit",
@@ -7209,6 +7268,64 @@
       {
         "label": "36Kr (Nachrichtensynthese, 2026-09-11) — berichtete auf Basis von QUICK/FactSet‑Daten",
         "url": "https://eu.36kr.com/de/p/3978656089979652"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-ae2575d2fca61cff2737db0a",
+    "date": "2026-09-01",
+    "title": "Counterpoint: Samsung erzielt 33 % Umsatzanteil am HBM‑Markt in Q2 2026",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "semiconductors"
+    ],
+    "companies": [
+      "Samsung"
+    ],
+    "severity": 30,
+    "confidence": 85,
+    "signal": "demand_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "observed_demand",
+      "marketId": "hbm",
+      "observation": "Counterpoint Research — Q2 2026 HBM revenue share: Samsung 33% (published 2026-09-01)."
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "availability"
+    ],
+    "summary": "Counterpoint Research berichtet (Global Memory Tracker, Q2 2026), dass Samsung einen Umsatzanteil von 33 % am globalen HBM‑Markt im zweiten Quartal 2026 erreichte (Revenue‑share, Q2 2026).",
+    "tail_analysis": "Samsung verzeichnete eine deutliche Zunahme von HBM‑Umsatzanteilen durch gesteigerte HBM4‑/HBM3E‑Lieferungen und eine sequenzielle Marktanteilverschiebung gegenüber Konkurrenten (Counterpoint erklärt dies mit HBM‑Ramp/Shipments). Dies verändert die kurzfristige Anbieter‑Marktdynamik und beeinflusst Verhandlungspositionen gegenüber Hyperscalern/Accelerator‑OEMs.",
+    "source": "Counterpoint Research – Global Memory Tracker (Q2 2026)",
+    "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share",
+    "content_hash": "c1534575847c1c67b622",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-14T11:02:31.020Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "ae2575d2fca61cff2737db0a",
+    "predictionId": "P-2026-07-30-02",
+    "predictionImpact": "Beobachtung stärkt die Evidenz, dass Samsung in Q2 2026 bereits signifikante HBM‑Umsätze erzielte; das ändert die Baseline für P-2026-07-30-02 (Erwartung: Samsung erhöht Q3‑HBM4‑Umsatz sequenziell ≥2.5× Q2). Diese Messung erhöht die prior probability für aggressive Samsung‑HBM‑Ramps, reduziert aber den Informationswert gegenüber einer direkten Q3‑Umsatzmessung.",
+    "falsifier": "Falsifizierbar: Wenn Samsungs ausgewiesener HBM‑Umsatz für Q3 2026 in den offiziellen Quartalsangaben am 2026-10/11 < 2.5× des in Q2 berichteten HBM‑Umsatzes ist, widerspricht das der impliziten Hoch‑Ramp‑Interpetation und reduziert die Tragweite dieses Signals.",
+    "nextReview": "2026-11-15",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Beobachtung stärkt die Evidenz, dass Samsung in Q2 2026 bereits signifikante HBM‑Umsätze erzielte; das ändert die Baseline für P-2026-07-30-02 (Erwartung: Samsung erhöht Q3‑HBM4‑Umsatz sequenziell ≥2.5× Q2). Diese Messung erhöht die prior probability für aggressive Samsung‑HBM‑Ramps, reduziert aber den Informationswert gegenüber einer direkten Q3‑Umsatzmessung."
+    },
+    "sources": [
+      {
+        "label": "Counterpoint Research – Global Memory Tracker (Q2 2026)",
+        "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share"
+      },
+      {
+        "label": "Yonhap / Sekundär‑Bericht über Counterpoint‑Daten (2026-09-03)",
+        "url": "https://en.yna.co.kr/view/AEN20260903010700320"
       }
     ]
   },
