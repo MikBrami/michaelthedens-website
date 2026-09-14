@@ -23006,6 +23006,1829 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0652729747105282006aa748ddfb8c87d291d0e2c64d99c43e"
+    },
+    {
+      "decision": "rejected",
+      "title": "SK hynix deepens TSMC ties for 3D DRAM, diverges from Samsung - CHOSUNBIZ",
+      "fact": "Chosunbiz berichtet (2026-07-10), dass SK hynix für die HBM4‑Base‑Die vorläufig auf einen TSMC‑12‑nm‑Pfad setzt, während Samsung einen 4‑nm‑Pfad verfolgt; die Herstellerstrategien divergieren dadurch in Richtung Stabilität (SK) vs. Spitzenleistung (Samsung).",
+      "placement": "HBM4 Base‑die‑Strategie (Globaler Memory/Foundry‑Layer); relevante Geographie: Südkorea (SK hynix/Samsung) und Taiwan (TSMC); Zeithorizont: Near‑term 2026–2027 (HBM4/Ramp‑Generation).",
+      "mechanism": "Ein 12‑nm‑Base‑die‑Pfad über TSMC reduziert kurzfristiges Yield‑/Ramp‑Risiko im Vergleich zu einem aggressiveren 4‑nm‑Logic‑Pfad; das kann die Geschwindigkeit und das Volumen eines breiten HBM4‑Ramps dämpfen und damit die verfügbare HBM‑Bit‑Supply im kurzen Fristfenster begrenzen.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Stärkung der Plausibilität, dass SK‑hynix’s HBM4‑Ramp konservativer/versetzter ausfällt und das falsifier‑Kriterium von 'materiell skalierte HBM4‑Shipments' (früher breiter Ramp) für P-2026-07-13-04 schwieriger wird.",
+      "falsifier": "Bis 2026-10-15: SK hynix veröffentlicht bestätigte, qualifizierte HBM4‑Shipments in kommerziellem Umfang (öffentliche Presse-/Earnings‑Mitteilung mit quantifizierten HBM4‑Shipments ≥ 100.000 HBM‑äquivalenten Packages/Wafer‑Äquivalent pro Monat) — wenn ja, widerlegt das die Implikation einer verzögerten konservativen Ramp.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-07-10",
+      "novelty": "Niedrig — bestätigt und in bisherigen Baselinesignalen bereits reflektiert.",
+      "duplicateOf": "tail-2026-07-14-nvidia-skhynix-hbm4",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 2,
+        "falsifiability": 2,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/07/10/CMFZUDT7JJFJDEIIEZUAEK4K4M/?outputType=amp",
+          "label": "Chosunbiz – DRAM big three split HBM4 base-die paths (2026-07-10)",
+          "kind": "primary",
+          "supports": "Artikel dokumentiert explizit, dass SK hynix einen TSMC‑12‑nm‑Pfad für HBM4‑Base‑Die nutzt, während Samsung einen 4‑nm‑Pfad verfolgt (Published 2026.07.10)."
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/how-sk-hynixs-bet-on-a-niche-memory-chip-made-it-more-valuable-than-samsung-4757282",
+          "label": "Sekundäre Berichterstattung (kontextualisierend): Marktkommentar zu SK hynix/Memory (Reuters/Investing)",
+          "kind": "secondary",
+          "supports": "Kontext zu SK hynix' Strategie und Marktdynamik; unterstützt die Einordnung, ergänzt aber keine separaten quantitativen Ramp‑Daten."
+        }
+      ],
+      "reason": "Primärquelle (Chosunbiz, 2026‑07‑10) verifiziert die Beobachtung, liefert jedoch kein neues, atomares, quantifiziertes Marktereignis (keine bestätigten Shipments/Volumina) und ist in der TAIL‑Baseline/Signalmenge bereits abgebildet. Damit ist die Meldung redundant gegenüber vorhandenen Baselinesignalen (Duplicate) und erfüllte nicht die engen Zulassungsanforderungen für Aufnahme (fehlende atomare Messgröße, kein eindeutiger, testbarer unmittelbarer Einfluss auf Indizes).",
+      "candidateId": "3fa23c96ae142e23a23a",
+      "candidateKey": "896c8f7b5c7ae5bd754eadce",
+      "reviewedAt": "2026-09-14T05:24:03.235Z",
+      "priorityScore": 37,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0344971ca8ee6bd3006aa7846bba0c87d0912403247c811a67"
+    },
+    {
+      "decision": "rejected",
+      "title": "[News] SanDisk Reportedly Hunts for HBM, LPDDR Talent in Korea as AI Memory Race Heats Up",
+      "fact": "TrendForce (2026-04-13) berichtet, dass SanDisk aktiv ein HBF/HBF‑Ökosystem aufbaut und Pilot‑/Sample‑Initiativen plant (Prototyp/2H‑2026), unter Berufung auf ETNews und The Bell.",
+      "placement": "HBF (High‑Bandwidth Flash) / NAND‑Pilot‑Produktion; Geographie: Korea/Japan (Lieferkette & Zulieferer); Zeithorizont: Pilot/Prototyp 2H‑2026 mit Kommerzialisierungserwartung 2027.",
+      "mechanism": "Aufbau einer HBF‑Pilotlinie und frühzeitige Partnerintegration kann mittelfristig zusätzlichen NAND/HBF‑Output und Inferenz‑geeignete Flash‑Kapazität liefern; kurzfristig bleibt dies ein Entwicklungs-/Qualifizierungs‑Ereignis ohne sofortige Bit‑Supply‑Auswirkung.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Signalisiert ein mögliches mittelfristiges Entspannungs‑Pfad für NAND/Enterprise‑SSD (unterstützt das ‚Oversupply‑nach‑2028‘ Narrativ), wirkt jedoch nicht als unmittelbarer Falsifier für kurzfristige 2026/2027‑Knappheitsannahmen.",
+      "falsifier": "Bis 2027-06-30: SanDisk veröffentlicht offizielle, qualifizierte kommerzielle HBF‑Shipments (Presse/Earnings) mit quantifiziertem Output (z. B. >200k HBF‑GB‑Pakete/Monat oder vergleichbare kommerzielle SKU‑Shipments) — falls ja, reduziert das kurzfristige Knappheitsrisiko.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-04-13",
+      "novelty": "Gering bis moderat — TrendForce‑Scoop bestätigt bereits bekannte Aktivitäten (SK/SanDisk/Konsortium) und ist im TAIL‑Corpus teilweise abgedeckt.",
+      "duplicateOf": "S-2026-08-06-01",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 4,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 3,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/04/13/news-sandisk-reportedly-eyes-2h26-hbf-pilot-line-may-advance-previously-announced-timeline-by-half-a-year/",
+          "label": "TrendForce – SanDisk eyes 2H26 HBF pilot line (2026-04-13)",
+          "kind": "primary",
+          "supports": "TrendForce zitiert ETNews/The Bell und berichtet, dass SanDisk Partner in der Lieferkette anspricht und einen Pilot/Prototyp in 2H‑2026 anstrebt."
+        }
+      ],
+      "reason": "Die Meldung ist durch eine hochwertige Branchen‑Quelle (TrendForce) verifiziert, liefert aber kein atomares, sofort marktwirksames Volumen oder einen quantifizierten Lieferungshinweis; ähnliche SanDisk/NAND‑Signale sind bereits in der TAIL‑Baseline (S‑2026‑08‑06‑01) enthalten. Deshalb ist die Aufnahme als neues TAIL‑Signal nicht gerechtfertigt (Recycling/Redundanz).",
+      "candidateId": "895be10b9fbedb8fe55c",
+      "candidateKey": "c3a98a70ee2f9ac3ba3ecad7",
+      "reviewedAt": "2026-09-14T05:24:03.236Z",
+      "priorityScore": 42,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0344971ca8ee6bd3006aa7846bba0c87d0912403247c811a67"
+    },
+    {
+      "decision": "rejected",
+      "title": "China's AI Chip Makers See Revenue Soar, But CUDA and HBM Still Keep Them Behind NVIDIA",
+      "fact": "Quelle xenospectrum (als aggregierte Meldung) behauptet einen starken Umsatzanstieg chinesischer AI‑Chip‑Hersteller, weist zugleich aber auf strukturelle Nachteile (CUDA‑Ecosystem, HBM‑Verfügbarkeit) gegenüber NVIDIA hin. Primärquelle konnte nicht eindeutig verifiziert werden.",
+      "placement": "China / AI‑Accelerator Ökosystem; relevant für China‑domestic AI‑compute und globale AI‑Infrastruktur‑Zugänglichkeit; Zeithorizont: laufendes 1H–2H 2026 Wachstum/Struktur.",
+      "mechanism": "Wachstum lokaler Hersteller erhöht regionale Compute‑Deckung, bleibt aber durch HBM‑Engpässe und CUDA‑Bindung in Leistung und Kompatibilität begrenzt; das reduziert die Rate, mit der China globalen High‑End‑Accelerator‑Anforderungen substituiert.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar: Primärquelle nicht eindeutig verifizierbar; ein belastbarer Falsifier müsste quantifizierte, von Firmen veröffentlichte Umsatz‑ und Shipments‑Daten enthalten.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-14",
+      "novelty": "Nicht verifizierbar / potenziell redundant mit mehreren höherqualitativen Berichten (Tom's Hardware, Reuters, LA Times) über ähnliche Themen.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 6,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 4,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "aiDemand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinas-ai-accelerator-supplier-biren-posts-2-000-percent-year-over-year-revenue-growth-export-controls-benefit-homegrown-chips-as-nvidia-and-amd-exit-market",
+          "label": "Tom's Hardware – Beispiel hochwertiger Berichterstattung zu China AI‑Chips (contextual)",
+          "kind": "secondary",
+          "supports": "Berichtet quantifizierte starke Umsatzwachstumsfälle einzelner chinesischer Anbieter (z. B. Biren) und diskutiert weiterhin Einschränkungen durch HBM/CUDA‑Ecosystem."
+        }
+      ],
+      "reason": "Die angegebene xenospectrum‑Quelle konnte nicht als verlässliche Primärquelle verifiziert werden. Vergleichbare und höher‑qualitative Berichte (Tom's Hardware, LA Times, Reuters) behandeln dieselbe These, liefern aber unterschiedliche Quantifizierungen. Ohne einen klar verifizierbaren Primärnachweis ist die Meldung nicht admissionswürdig — sie wird abgelehnt (NOT PROVEN).",
+      "candidateId": "6758c4c7c2bead09fda2",
+      "candidateKey": "5dc5d00bd2c150a0d31ae215",
+      "reviewedAt": "2026-09-14T05:24:03.236Z",
+      "priorityScore": 38,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0344971ca8ee6bd3006aa7846bba0c87d0912403247c811a67"
+    },
+    {
+      "decision": "rejected",
+      "title": "Anthropic’s 3-Step ‘Pace the Frontier’ Plan Wins OpenAI, xAI and Microsoft Support: Is It Too Late to Slow AI Down?",
+      "fact": "Dario Amodei / Anthropic veröffentlichte am 2026-09-12 das Essay 'We Must Pace the Frontier' mit einem dreistufigen Plan zur verlangsamten Weiterentwicklung von Frontier‑Modellen; OpenAI/Altman und andere lab‑Leads äußerten Unterstützung/Übereinstimmung in Folgeberichten.",
+      "placement": "Global AI‑Governance / Frontier‑Model‑Deployment; Reichweite: zentrale AI‑Labs (Anthropic, OpenAI, xAI, Microsoft) und Regulierungsdiskurs; Zeithorizont: unmittelbare politische/öffentliche Reaktion (Sept 2026 onward).",
+      "mechanism": "Autoritative Stellungnahmen von Lab‑CEOs (Commitments zu externer Evaluierung/Koordination) können die politische Debatte und freiwillige Verifikationsmechanismen beschleunigen; das kann mittelfristig Demand‑Impulse/Deployment‑Timing beeinflussen, falls Labs koordiniert Entwicklungsraten anpassen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn ein koordiniertes 'Pacing' substantiell und anhaltend wird, könnte dies die Nachfrageseite für HBM/Server‑DRAM dämpfen und die Annahme, dass HBM/Server‑DRAM bis Ende 2028 strukturell knapp bleiben, in Frage stellen. Aktuell ist die Meldung aber eine öffentliche Initiative/Signal ohne unmittelbare, quantifizierbare Nachfrage‑Korrektur.",
+      "falsifier": "Bis 2026-12-31: Keine signifikante Änderung im Deployment/Shipments‑Sichtverhalten und Hyperscaler‑Capex‑Guidance bleibt auf mittels/hohem Kurs (z. B. unveränderte oder steigende Bestellungen für HBM/Server‑DRAM) — dies würde die praktische Wirkung des 'Pacing' auf die Nachfrage entkräften.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-12",
+      "novelty": "Niedrig — weit verbreitet berichtet und bereits im Basiscorpus abgebildet.",
+      "duplicateOf": "S-AUTO-82875560b85f7ec05b186bcd",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 4,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 30,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+          "label": "Primär: 'We Must Pace the Frontier' – Dario Amodei (Anthropic) essay (2026-09-12)",
+          "kind": "primary",
+          "supports": "Direkter Primärtext (Amodei) mit dem dreistufigen Plan; enthält die deklarierte Verpflichtung zu externen Evaluatoren und Vorschläge zur Koordination."
+        },
+        {
+          "url": "https://www.axios.com/2026/09/12/anthropic-ai-amodei-pacing",
+          "label": "Axios – Berichterstattung über Amodei's Plan und Branchenreaktion",
+          "kind": "secondary",
+          "supports": "Zusammenfassung der Kernpunkte und der unmittelbaren Reaktionen (z. B. OpenAI‑Altman Äußerungen)."
+        },
+        {
+          "url": "https://www.latimes.com/business/story/2026-09-12/amodei-altman-musk-call-for-slowing-ai-model-development",
+          "label": "LA Times – Kontext und Reaktionen",
+          "kind": "secondary",
+          "supports": "Breite Medienberichterstattung, die die Unterstützung mehrerer wichtiger Akteure dokumentiert."
+        }
+      ],
+      "reason": "Primärquelle (Amodei Essay, 2026‑09‑12) bestätigt die Behauptung; die Meldung ist jedoch bereits im Basiscorpus (S‑AUTO‑8287…) abgebildet und liefert keinen neuen, atomaren Marktmesswert (keine quantifizierten Orders, Shipments oder unmittelbare Capex‑Änderung). Die Forderung nach 'Pacing' ist ein relevantes Politik-/Governance‑Signal, aber ohne nachprüfbare, unmittelbar messbare Marktdaten bleibt die Meldung redundant für TAIL‑Aufnahme.",
+      "candidateId": "007df2fb740a6b610e9d",
+      "candidateKey": "9e5cee84b2e1f725af2821c5",
+      "reviewedAt": "2026-09-14T05:24:03.239Z",
+      "priorityScore": 52,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0344971ca8ee6bd3006aa7846bba0c87d0912403247c811a67"
+    },
+    {
+      "decision": "rejected",
+      "title": "KOSPI fällt >3% und durchbricht 6.600‑Punkte‑Marke; Samsung und SK hynix verlieren deutlich",
+      "fact": "Am 2026-09-14 fiel der südkoreanische KOSPI intraday um mehr als 3% und unterschritt die Marke von 6.600 Punkten; Markt‑Schwergewichte Samsung Electronics und SK hynix gaben deutlich nach (intraday‑Verluste von mehreren Prozentpunkten).",
+      "placement": "Südkorea / Gesamtaktienmarkt (Indexbewegung, intraday, kurzfristig)",
+      "mechanism": "Marktweite Risikoaversion und Gewinnmitnahme bei stark gewichteten Halbleiterwerten (Samsung, SK hynix) verstärkte den Indexrückgang; höhere Rohölpreise und globale Risikoindikatoren wurden in Berichten als Treiber genannt.",
+      "predictionId": "",
+      "predictionImpact": "Kein direkt verwertbarer, eindeutiger Einfluss auf eine der vorgegebenen TAIL‑Prognosen (reine Marktbewegung / Sentiment; keine neue, quantifizierbare Auswirkung auf Memory‑Lieferung, Lead‑Times oder qualifizierte Shipments).",
+      "falsifier": "Wenn der KOSPI bis 2026-09-21 nachhaltig (3 Handelstage) wieder über 6.700 schliesst und Samsung & SK hynix an diesen Tagen jeweils weniger als 1% fallen, wäre der berichtete Schock als kurzfristiges Sentiment‑Ereignis zu werten.",
+      "nextReview": "2026-09-21",
+      "eventDate": "2026-09-14",
+      "novelty": "gering (tägliche Marktbewegung)",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 2,
+        "thesisRelevance": 5,
+        "forecastImpact": 3,
+        "falsifiability": 2,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 20,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://apnews.com/article/0b44bfb43960c6ae850567c0c4e5003a",
+          "label": "AP – Marktbericht (KOSPI‑Zahlen)",
+          "kind": "primary",
+          "supports": "AP meldet KOSPI‑Abschlag und nennt Samsung/SK Hynix als große Verlierer (Intraday‑Niveau, 2026‑09‑14)."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/02/samsung-sk-hynix-slide-3-percent-as-kospi-plunges-to-6600",
+          "label": "Seoul Economic Daily – Marktbericht (Kontext zu KOSPI‑Rückgängen)",
+          "kind": "secondary",
+          "supports": "Berichte über starke Belastung durch Samsung und SK Hynix und Indexbewegungen in der fraglichen Periode (bestätigt starke Aktienrückgänge bei den beiden Titeln)."
+        }
+      ],
+      "reason": "Nachprüfung: Die Indexbewegung ist durch etablierte Nachrichtenagenturen bestätigt (VERIFIED DATA), liefert aber kein neues, atomares TAIL‑Signal für Speicherverfügbarkeit/Vertragspreise oder Lead‑Times. Das Item ist ein routinemässiger Marktbericht / Sentiment‑Signal und wiederholt etablierte Basissignale; daher wird es abgelehnt (kein verwertbarer Einfluss auf die vorliegenden Vorhersagen).",
+      "candidateId": "1ca8392f3b804f30dabb",
+      "candidateKey": "8fcc47d159a7f43c5d490d5d",
+      "reviewedAt": "2026-09-14T05:24:03.246Z",
+      "priorityScore": 28,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09da871bb760ce4d006aa7846baf1087d08c1853a6df5382bb"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Berichte: KEPCO schlägt 25 Bio. Won (~US$17–18 Mrd.) Strom‑Vorauszahlung vor; keine bestätigte Annahme durch Samsung/SK Hynix",
+      "fact": "Am 2026-09-03 berichteten mehrere koreanische Medien, dass Korea Electric Power Corporation (KEPCO) den großen Halbleiterunternehmen vorgeschlagen habe, künftige Stromrechnungen (≈₩25tn; ca. US$17–18 Mrd.) für fünf Jahre vorzuzahlen, um Mittel für Netzausbau zu mobilisieren. Öffentliche Bestätigungen einer Annahme durch Samsung Electronics oder SK hynix konnten in Primärquellen nicht klar bestätigt werden (Berichte sprechen von 'Ideenstadium' bzw. laufenden Gesprächen).",
+      "placement": "Südkorea / Energieinfrastruktur für Halbleiter‑Cluster / kurzfristig–mittelfristig (Netzausbau, 2027–2031 Projektzeitraum)",
+      "mechanism": "KEPCO will durch Vorabzahlungen Kapital für den Ausbau von Verteil‑ und Übertragungsinfrastruktur mobilisieren; wenn große Verbraucher (Samsung, SK hynix) zustimmen, könnte dies schnellere Netz‑FIDs und damit spätere Fab‑Leistungsmöglichkeiten erleichtern. Aktuell ist aber kein verbindlicher Vertrag oder Annahme‑Statement der Unternehmen veröffentlicht.",
+      "predictionId": "P-2026-07-25-01",
+      "predictionImpact": "Falls angenommen, würde das Vorhaben die Energie‑Versorgungsseite für größere AI/Memory‑Fabriken in Südkorea stützen und damit die Energie‑/Bereitstellungs‑Risiken verringern, was mittelbar die Wahrscheinlichkeit verkürzter Verzögerungen für SK‑bezogene Builds erhöhen könnte (Relevanz für P-2026-07-25-01: Erleichterung von FIDs/operativen Abschnitten).",
+      "falsifier": "Bis 2026-10-15 wird eines der folgenden öffentlich dokumentiert: (a) Samsung oder SK hynix unterzeichnet eine formelle Vereinbarung über die vorgeschlagene Vorauszahlung (Bestätigung = Teil‑Verifikation), oder (b) beide Unternehmen geben öffentlich ein explizites, dokumentiertes Ablehnungsstatement ab und KEPCO zieht Vorschlag zurück (Bestätigung der Ablehnung). Fehlen beide Zustimmungen/Ablehnungen bis 2026-10-15, bleibt die Behauptung, Samsung/SK hätten abgelehnt, unbestätigt.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-03",
+      "novelty": "mittel (Impliziert mögliche Finanzierungslösung für Netzengpässe)",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 8,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/03/kepco-asks-samsung-sk-hynix-to-prepay-25-trillion-won-in",
+          "label": "Seoul Economic Daily – Bestätigung der Meldung (Kontext, 'Ideenstadium')",
+          "kind": "secondary",
+          "supports": "Bestätigt KEPCO‑Vorschlag und nennt Details; berichtet, dass die Pläne noch keineswegs verbindlich seien und als Diskussionsgegenstand dargestellt werden."
+        }
+      ],
+      "reason": "Nach Prüfung: Der zentrale Teil‑Fakt (KEPCO‑Vorschlag ≈₩25tn) ist mehrfach berichtbar und datiert (2026‑09‑03). Es gibt aber kein eindeutiges primäres, öffentliches Statement von Samsung oder SK hynix, das die angebliche Ablehnung formal bestätigt. Da die Kandidataussage ('Samsung, SK Hynix reject') behauptet, die Unternehmen hätten abgelehnt, fehlt die Primärbestätigung; deshalb Watchlist (weitere Verifikation bis 2026‑10‑15 erforderlich).",
+      "candidateId": "14a231e8a693454fb8c3",
+      "candidateKey": "446e98714ad7fbe28978f69d",
+      "reviewedAt": "2026-09-14T05:24:03.250Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09da871bb760ce4d006aa7846baf1087d08c1853a6df5382bb"
+    },
+    {
+      "decision": "rejected",
+      "title": "Microns HBM‑Push: Berichte über deutlich ausgeweiteten Produktionsumfang (≈100k WSP/Monat berichtet)",
+      "fact": "Sekundärquellen berichten Anfang September 2026, dass Micron seine HBM‑Fertigung stark ausweiten will und Branchenquellen von bis zu ~100.000 HBM‑Wafer‑Starts/Monat bis Ende 2026 sprechen. Eine direkte Primärbestätigung durch Micron mit dieser konkreten Zahl konnte nicht gefunden werden; Micron‑Kommuniqués belegen umfangreiche Investitionspläne, nicht aber nachprüfbare, zertifizierte Shipments in der genannten Größenordnung per Referenzdatum.",
+      "placement": "Global / HBM‑Produktion (Frontend/Wafer‑Starts), kurzfristig (Q4 2026)",
+      "mechanism": "Wenn Micron tatsächlich HBM‑WSP‑Output in diese Größenordnung bringt, würde das die verfügbare HBM‑Bruttokapazität erhöhen und potenziell Druck auf HBM‑Preise/Allokation ausüben. Derzeit basieren die Zahlen aber auf Branchenquellen/Analysten und nicht auf einem Micron‑Statement mit messbarer, qualifizierter Ship‑Traceability.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wird die Produktionszahl verifiziert, würde sie einen klaren Falsifier für die Erwartung anhalten, dass HBM/Server‑DRAM strukturell knapp bleiben (P‑2026‑07‑11‑01). Aktuell aber keine direkte Verifikation vorhanden; somit kein admitted index‑impact.",
+      "falsifier": "Wenn Micron bis 2026-12-31 nicht in offiziellen Unternehmensdokumenten/earnings calls oder durch bestätigte, qualifizierte Shipments eine HBM‑Outputsteigerung auf ≈100.000 WSP/Monat dokumentiert, ist die berichtete Zahl als unbestätigt zu werten.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-06",
+      "novelty": "niedrig (Teilweise bereits in Baseline als Branchengerücht/Analystenannahme)",
+      "duplicateOf": "S-AUTO-4026d51f6952",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 15,
+        "forecastImpact": 8,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ciosea.economictimes.indiatimes.com/news/strategy-and-management/microns-hbm-push-points-to-a-far-larger-production-base/133843205",
+          "label": "ETCIOSEA / Economic Times – Bericht über Micron‑HBM‑Kapazitätspläne (branchenquellen)",
+          "kind": "secondary",
+          "supports": "Berichtet über Quellen, die Micron einen großen HBM‑Ausbau mit bis zu ~100k WSP/Monat bis Ende 2026 zuschreiben (Zitierung von Branchenquellen / Counterpoint)."
+        },
+        {
+          "url": "https://investors.micron.com/node/48921/pdf",
+          "label": "Micron – Unternehmensankündigung zu Investitionen (Micron Investor PR)",
+          "kind": "primary",
+          "supports": "Micron bestätigt erhöhte Investitionen in führende DRAM/HBM‑Fertigung und US‑Capex‑Programme, nennt aber keine verifizierbare, konkreten monatlichen HBM‑WSP‑Shipments in der genannten Größenordnung (Stand: überprüftes PR‑/Investor‑Material)."
+        }
+      ],
+      "reason": "Nach Prüfung: Es existieren mehrere Sekundärberichte/Analystenaussagen zur möglichen massiven HBM‑Kapazitätserweiterung (≈100k WSP/Monat). Ein verlässliches Primärdokument (Micron‑Statement oder Qualitätsnachweis über qualifizierte Shipments/lead‑times/fill‑rates) mit dieser konkreten Zahl konnte jedoch nicht gefunden werden. Zudem ist diese Beobachtung bereits als Branchensignal in der Baseline enthalten (Duplicate). Ohne Primär‑Ship/Lead‑Time‑Belege ist das Item nicht ausreichend atomar/verifizierbar für Admission; daher abgelehnt.",
+      "candidateId": "0135ebe4869f46a31584",
+      "candidateKey": "5e39e93506418517439a1217",
+      "reviewedAt": "2026-09-14T05:24:03.251Z",
+      "priorityScore": 49,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09da871bb760ce4d006aa7846baf1087d08c1853a6df5382bb"
+    },
+    {
+      "decision": "rejected",
+      "title": "Anthropic, OpenAI, Meta und Google veröffentlichten neue KI‑Modelle innerhalb einer Woche (Medienzusammenfassung)",
+      "fact": "Anfang September 2026 haben mehrere große Labore (Anthropic, OpenAI, Meta, Google) in einem engen Zeitfenster Produkt‑/Modell‑Updates bzw. neue Modelle angekündigt oder freigegeben; Branchenberichte beschrieben dies als 'Woche mit mehreren großen Modell‑Releases' (‚model fatigue‘‑Diskussion kam auf).",
+      "placement": "Global / AI‑Model Releases / kurzfriste Veröffentlichungswelle (2026‑09‑Anfang)",
+      "mechanism": "Konzentration von Release‑Events kann zu 'Model‑Fatigue' bei Unternehmenskäufern führen und kurzfristig Evaluations‑/Beschaffungszyklen verlängern; unmittelbarer Einfluss auf Hardware‑Beschaffung oder Speicher‑Verfügbarkeit bleibt jedoch unbestimmt und heterogen.",
+      "predictionId": "",
+      "predictionImpact": "Kein eindeutiger, quantifizierbarer Impact auf eine einzelne TAIL‑Prognose ohne zusätzliche Messgrößen (z.B. dokumentierte Verzögerungen bei Hardware‑Beschaffungen oder veränderte Capex‑Guidance großer Käufer).",
+      "falsifier": "Wenn bis 2026-10-01 keine signifikanten Kunden‑Beschaffungsverschiebungen, keine dokumentierten Verzögerungen bei großen AI‑Deployments und keine messbare Verringerung bei Hyperscaler‑Hardware‑Orders im Folgequartal auftreten, bleibt diese Meldung ein reines PR/Produktions‑Ereignis ohne breiteren Marktfalsschlag.",
+      "nextReview": "2026-10-01",
+      "eventDate": "2026-09-06",
+      "novelty": "niedrig (Meta/Google/OpenAI/Anthropic‑Releases sind einzeln bereits dokumentiert)",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 4,
+        "thesisRelevance": 8,
+        "forecastImpact": 6,
+        "falsifiability": 3,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 25,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://startupfortune.com/anthropic-openai-meta-and-google-all-shipped-new-ai-models-in-one-week/",
+          "label": "Startup Fortune – Zusammenfassung der Modell‑Releases (Sekundärbericht)",
+          "kind": "secondary",
+          "supports": "Fasst mehrere Unternehmensankündigungen in einem engen Zeitfenster zusammen und berichtet über Marktreaktionen (‚model fatigue‘)."
+        },
+        {
+          "url": "https://aibuzzwire.news/en/article/model-fatigue-ai-labs-frenetic-release-cadence",
+          "label": "AI Buzz Wire – Branchenzusammenfassung (Kontext 'model fatigue')",
+          "kind": "secondary",
+          "supports": "Berichtet über die hohe Frequenz an Modellankündigungen Anfang September 2026 und zitiert Kommentatoren zu Effekten auf Enterprise‑Käufer."
+        }
+      ],
+      "reason": "Nachprüfung: Die Releases an sich sind durch Unternehmens‑Ankündigungen/Pressetexte verifizierbar (VERIFIED DATA für die Releases), aber der Kandidat liefert keine neue, atomare Metrik (z.B. dokumentierte Verzögerung von Hardware‑Orders, quantifizierbare Nachfragerückgänge oder veränderte Preis‑/Lieferkennzahlen). Damit reicht die Einreichung nicht die Admission-Schwelle für TAIL‑Aufnahme (recycelt berichtete Releases/PR‑Ereignisse ohne messbaren Prognoseeinfluss) und wird abgelehnt.",
+      "candidateId": "da654ee3be01a486e507",
+      "candidateKey": "c311ec00b5ef7b5de12a221c",
+      "reviewedAt": "2026-09-14T05:24:03.251Z",
+      "priorityScore": 36,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09da871bb760ce4d006aa7846baf1087d08c1853a6df5382bb"
+    },
+    {
+      "decision": "rejected",
+      "title": "Micron verdoppelt HBM‑Waferstarts auf ~100.000 w/m – Bericht der Electronic Times (duplikat)",
+      "fact": "Laut Bericht der koreanischen Electronic Times (veröffentlicht 2026-09-04) plant Micron, seine HBM‑Input‑Kapazität bis Ende 2026 um bis zu ~60.000 Waferstarts/Monat zu erweitern und damit die Gesamt‑HBM‑Input‑Kapazität auf rund 100.000 Waferstarts/Monat zu bringen (Waferstarts/Monat als Einheit).",
+      "placement": "Global / Memory‑Frontend (HBM wafer‑starts), Horizont: bis Ende 2026 (kalenderdatum).",
+      "mechanism": "Namentlich: Ausbau von Frontend‑Waferstarts (Mehr Waferstarts → mehr verfügbare HBM‑Input, abhängig von Yield, Packaging‑Qualifikation und Testkapazität).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn echt und qualifiziert lieferbar, würde diese geplante Kapazität die Wahrscheinlichkeit für anhaltende strukturelle HBM-/Server‑DRAM‑Knappheit (P-2026-07-11-01) verringern; aktuell aber ist die Meldung nur ein Kapazitätsversprechen ohne bestätigte qualifizierten Shipments.",
+      "falsifier": "Bis 2027-01-31 müssen von Micron verifizierbare, qualifizierte HBM‑Shipments/qualified shipments (konkrete, nachprüfbare Kunden‑Shipments oder von Abnehmern bestätigte Lieferlisten) in einem Umfang >= 30k sellable HBM‑wafer‑equivalent/month (oder eine offizielle Micron‑Verlautbarung mit exakten Shipment‑Mengen) vorliegen; andernfalls ist die Behauptung wirkungslos für die Versorgungslage.",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-09-04",
+      "novelty": "Niedrig — bestätigt bereits als Meldung in der TAIL‑Sammlung (siehe S-AUTO-4026d51/Yonhap).",
+      "duplicateOf": "S-AUTO-4026d51",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 2,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 45,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.etnews.com/20260904200006",
+          "label": "Electronic Times (EN) — Bericht zur Micron‑HBM‑Kapazität (2026-09-04)",
+          "kind": "primary",
+          "supports": "Originalmeldung, nennt 'up to 60,000 wafers/month' Zubau und Ziel ~100,000 wafers/month bis Ende 2026."
+        },
+        {
+          "url": "https://www.igorslab.de/en/micron-double-hbm-capacity-100000-wafers-per-month-hbm4-share-rise/",
+          "label": "igor'sLAB — Aggregation/Kommentar zur ETNews‑Meldung",
+          "kind": "secondary",
+          "supports": "Zusammenfassung/Aggregation der Electronic Times‑Berichterstattung."
+        }
+      ],
+      "reason": "Bereits in der Basisdatenbank (S‑AUTO‑4026d51/Yonhap) erfasst; Meldung ist ein berichtetes Kapazitätsversprechen (nameplate/waferstarts) ohne verifizierte, qualifizierte Shipments. Nach TAIL‑Regeln werden Duplikate und rein kapazitätsversprechende Meldungen abgelehnt.",
+      "candidateId": "f2c256d98555e25d9f0d",
+      "candidateKey": "851ae46b189abe9842bf8445",
+      "reviewedAt": "2026-09-14T05:27:01.097Z",
+      "priorityScore": 47,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0558a26bc8f90b8b006aa784f3cf7487d083804088cf00143d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "US‑Amtssignale zu ‚targeted‘ Halbleiterzöllen (Lutnick, G20) – mögliche Folge: Druck auf Samsung / SK hynix",
+      "fact": "US‑Commerce‑Secretary Howard Lutnick erklärte am Rande des G20 Innovation Ministerial (Interview/Statements 2026-09-02) dass die Administration an einer 'targeted, thoughtful' Zollpolitik für Halbleiter arbeite: Fabriken in den USA würden befreit, Nicht‑US‑Produktion könnte Abgaben unterliegen (Ankündigung/G20‑Interview; Zahl 100% wurde historisch als Druckpunkt genannt, ist aber nicht als verabschiedete Regel publiziert).",
+      "placement": "USA‑Handelspolitik → globaler Halbleitermarkt; Geografische Reichweite: US‑Importregeln; Datum: 2026-09-02 (G20‑Statements/Interviews).",
+      "mechanism": "Politische Zollerhebung als Protektionstools: asymmetrische Zollbefreiungen für in‑US‑Produktion vs. Strafzölle auf ausländische Importe würden relative Wettbewerbspositionen verschieben und per Preissignalen kurzfristig Nachfrage/Allokation beeinflussen (Preise ↑; politische Fragmentierung der Lieferketten).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Signalisierte US‑Zollpolitik erhöht kurzfristig das Risiko höherer Preise und potenzieller Lieferketten‑Fragmentierung, was die Wahrscheinlichkeit verstärkter Knappheit/Preisauftrieb für HBM/Server‑DRAM (P-2026-07-11-01) erhöht — jedoch ist dies noch eine Politik‑Ankündigung ohne finalen Rechtsakt.",
+      "falsifier": "Wenn bis 2027-03-31 das US‑Handelsministerium / White House keine formelle Tarifregelung/Proklamation mit Raten ≥25% für Memory‑Warengruppen veröffentlicht oder wenn ein finaler Text die Regelung auf ≤15% (oder mit umfassenden Ausnahmen für Korea/EU/Japan) begrenzt, wird die Politik‑Ankündigung ihre Kurzfrist‑Marktwirkung verfehlen.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-02",
+      "novelty": "Mittel — bestätigt frühere Andeutungen (Jan 2026) und verschärft die politische Signalisierung; aber nicht ein finaler Rechtsakt.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 9,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 70,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.yna.co.kr/view/AEN20260903000200315",
+          "label": "Yonhap — Lutnick bestätigt Arbeit an 'targeted' Zollpolitik für Halbleiter (2026-09-03 reporting Lutnick 2026-09-02)",
+          "kind": "primary",
+          "supports": "Bericht über Lutnicks CNBC/G20‑Kommentare, nennt die Politikabsicht und dass in‑US‑Produzenten Begünstigungen erhalten sollen."
+        },
+        {
+          "url": "https://startupfortune.com/washington-threatens-samsung-and-sk-hynix-with-100-memory-chip-tariffs/",
+          "label": "Startup Fortune — Kommentar/Aggregation zur Thematik (Sep 6, 2026)",
+          "kind": "secondary",
+          "supports": "Meinungs/Analyse‑Artikel, fasst die politischen Signale zusammen; stützt sich auf primäre Berichte."
+        }
+      ],
+      "reason": "Die Administration hat in G20‑Statements (02.–03.09.2026) erneut 'targeted' Tarife als Option signalisiert; das ist wichtig und zeitkritisch, aber bislang eine Politik‑Ankündigung ohne endgültigen, rechtlich bindenden Tariftext. Deshalb Watchlist: relevant und potentiell marktschädlich, aber noch nicht ein finaler, überprüfbarer Akt.",
+      "candidateId": "5a4c5736f4f86298b5fd",
+      "candidateKey": "b9dce9bf9e880fa35eec6b3b",
+      "reviewedAt": "2026-09-14T05:27:01.097Z",
+      "priorityScore": 79,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0558a26bc8f90b8b006aa784f3cf7487d083804088cf00143d"
+    },
+    {
+      "decision": "accepted",
+      "title": "Hot Chips 2026 — Samsung: Base‑Die‑Roadmap zu Custom HBM / aHBM / zHBM (Architektur‑Update)",
+      "fact": "Auf Hot Chips (Vortrag 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes', gehalten von Sangwook Han am 2026-08-23) präsentierte Samsung eine dreiphasige Roadmap: 1) 'custom HBM' (Verkleinerung/Verlagerung von PHY/Peripherie auf Base‑Die), 2) aHBM (active HBM mit zusätzlichen PEs und Funktionen auf Base‑Die), 3) zHBM (vertikale Integration: DRAM‑Stack direkt über Prozessor).",
+      "placement": "Hot Chips Konferenz (Stanford, CA) — Technologie/Architekturebene: HBM Base‑Die → globaler HBM‑Produktions‑ und Designpfad; Datum der Präsentation: 2026-08-23.",
+      "mechanism": "Technisch: Verlagerung von PHY/Controller/Funktionen in einen Base‑Die auf fortgeschrittenen Logikprozessen → ermöglicht Reduktion der XPU‑Fläche, neue D2D‑Interconnects, potenziell bessere Bandbreite/Leistung, aber erhöht Bedarf an Leading‑Edge Foundry‑Logic und komplexer Packaging/Qualifikation (erhöhte Koppelung zu Advanced Foundry & Packaging Kapazitäten).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Architektur‑Update erhöht strukturelle Komplexität und potenziellen Ressourcenbedarf (Foundry‑Logic und Advanced Packaging), was kurzfristig die Wahrscheinlichkeit erhöht, dass HBM/Server‑DRAM‑Engpässe (P-2026-07-11-01) fortbestehen oder sich temporär verschärfen, bevor Integrations‑/Qualifikationspfade skaliert sind.",
+      "falsifier": "Wenn bis zum 2027-08-23 Samsung keine nachprüfbaren Kunden‑Designwins oder erste qualifizierte Muster (sampling) der custom HBM/aHBM‑Base‑Die an große Hyperscaler/Accelerator‑OEMs melden (konkrete Design‑Win‑Ankündigungen oder Shipping‑Belege), dann war die Roadmap wenig relevant für die kurzfristige Versorgungslage und der Einfluss auf P-2026-07-11-01 verfehlt.",
+      "nextReview": "2027-08-23",
+      "eventDate": "2026-08-23",
+      "novelty": "Hoch — original technisches Roadmap‑Material direkt auf Hot Chips (erste, veröffentlichte Roadmap‑Beschreibung von Samsung für cHBM/aHBM/zHBM).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 55,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://hc2026.hotchips.org/",
+          "label": "Hot Chips 2026 — Programmseite (Talk: 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes' — Sangwook Han, Samsung)",
+          "kind": "primary",
+          "supports": "Konferenzprogramm listet den Vortragstitel und Vortragender; Vortragsslides wurden am Veranstaltungstag bereitgestellt."
+        },
+        {
+          "url": "https://www.servethehome.com/samsung-evolving-hbm-base-die-at-hot-chips-2026/",
+          "label": "ServeTheHome — Live‑Berichterstattung / technische Zusammenfassung (Hot Chips 2026, 2026-08-23)",
+          "kind": "secondary",
+          "supports": "Detaillierte Live‑Berichterstattung zu den technischen Inhalten der Samsung‑Präsentation (Phase‑Beschreibung, technische Ziele)."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/hot-chips-2026-samsung-reveals-a-three-phase-hbm-roadmap-that-puts-logic-and-compute-inside-memory-zhbm-ultimately-stacks-dram-directly-on-top-of-the-processor",
+          "label": "Tom's Hardware — Bericht zu Samsung Hot Chips Präsentation",
+          "kind": "secondary",
+          "supports": "Unabhängige technische Analyse und Zitat der Roadmap‑Phasen."
+        }
+      ],
+      "reason": "Hot Chips‑Präsentation ist ein direktes, datiertes, technisches Roadmap‑Commitment von Samsung (Primärquelle: Hot Chips Programm / Präsentationsfolien). Die Einordnung als Architecture Update ist passend; das Ereignis ist prüfbar (Slides/Design‑Win‑Ankündigungen) — erfüllt die TAIL‑Annahmebedingungen für Zulassung.",
+      "candidateId": "aef1522e66b90722bbd7",
+      "candidateKey": "029e736996493b2eb9824659",
+      "reviewedAt": "2026-09-14T05:27:01.101Z",
+      "priorityScore": 80,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-029e736996493b2eb9824659",
+        "title": "Hot Chips 2026 — Samsung: Base‑Die‑Roadmap zu Custom HBM / aHBM / zHBM (Architektur‑Update)",
+        "date": "2026-08-23",
+        "admittedAt": "2026-09-14T05:27:01.101Z",
+        "fact": "Auf Hot Chips (Vortrag 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes', gehalten von Sangwook Han am 2026-08-23) präsentierte Samsung eine dreiphasige Roadmap: 1) 'custom HBM' (Verkleinerung/Verlagerung von PHY/Peripherie auf Base‑Die), 2) aHBM (active HBM mit zusätzlichen PEs und Funktionen auf Base‑Die), 3) zHBM (vertikale Integration: DRAM‑Stack direkt über Prozessor).",
+        "placement": "Hot Chips Konferenz (Stanford, CA) — Technologie/Architekturebene: HBM Base‑Die → globaler HBM‑Produktions‑ und Designpfad; Datum der Präsentation: 2026-08-23.",
+        "tailInference": "Technisch: Verlagerung von PHY/Controller/Funktionen in einen Base‑Die auf fortgeschrittenen Logikprozessen → ermöglicht Reduktion der XPU‑Fläche, neue D2D‑Interconnects, potenziell bessere Bandbreite/Leistung, aber erhöht Bedarf an Leading‑Edge Foundry‑Logic und komplexer Packaging/Qualifikation (erhöhte Koppelung zu Advanced Foundry & Packaging Kapazitäten).",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Architektur‑Update erhöht strukturelle Komplexität und potenziellen Ressourcenbedarf (Foundry‑Logic und Advanced Packaging), was kurzfristig die Wahrscheinlichkeit erhöht, dass HBM/Server‑DRAM‑Engpässe (P-2026-07-11-01) fortbestehen oder sich temporär verschärfen, bevor Integrations‑/Qualifikationspfade skaliert sind.",
+        "falsifier": "Wenn bis zum 2027-08-23 Samsung keine nachprüfbaren Kunden‑Designwins oder erste qualifizierte Muster (sampling) der custom HBM/aHBM‑Base‑Die an große Hyperscaler/Accelerator‑OEMs melden (konkrete Design‑Win‑Ankündigungen oder Shipping‑Belege), dann war die Roadmap wenig relevant für die kurzfristige Versorgungslage und der Einfluss auf P-2026-07-11-01 verfehlt.",
+        "nextReview": "2027-08-23",
+        "priorityScore": 80,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 16,
+          "forecastImpact": 14,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 55,
+        "confidence": 85,
+        "markets": [
+          "hbm",
+          "semiconductors",
+          "ai_infrastructure"
+        ],
+        "signal": "negative_supply",
+        "driverScope": [
+          "availability",
+          "pricing"
+        ],
+        "classification": "Architecture Update",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Hot Chips 2026 — Programmseite (Talk: 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes' — Sangwook Han, Samsung)",
+            "url": "https://hc2026.hotchips.org/"
+          },
+          {
+            "label": "ServeTheHome — Live‑Berichterstattung / technische Zusammenfassung (Hot Chips 2026, 2026-08-23)",
+            "url": "https://www.servethehome.com/samsung-evolving-hbm-base-die-at-hot-chips-2026/"
+          },
+          {
+            "label": "Tom's Hardware — Bericht zu Samsung Hot Chips Präsentation",
+            "url": "https://www.tomshardware.com/tech-industry/semiconductors/hot-chips-2026-samsung-reveals-a-three-phase-hbm-roadmap-that-puts-logic-and-compute-inside-memory-zhbm-ultimately-stacks-dram-directly-on-top-of-the-processor"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Architektur‑Update erhöht strukturelle Komplexität und potenziellen Ressourcenbedarf (Foundry‑Logic und Advanced Packaging), was kurzfristig die Wahrscheinlichkeit erhöht, dass HBM/Server‑DRAM‑Engpässe (P-2026-07-11-01) fortbestehen oder sich temporär verschärfen, bevor Integrations‑/Qualifikationspfade skaliert sind."
+        },
+        "admissionReviewKey": "029e736996493b2eb9824659"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0558a26bc8f90b8b006aa784f3cf7487d083804088cf00143d"
+    },
+    {
+      "decision": "rejected",
+      "title": "Aggregierte Meldung: 'Micron‑CEO lobt US‑Investitionen als Wettbewerbsvorteil' — keine primäre Verifikation gefunden",
+      "fact": "Aggregierte/kommentierende Artikel (z. B. finance.biggo.com, Sept. 6, 2026) behaupten, der Micron‑CEO habe US‑Investitionen als Differenzierer gegen mögliche US‑Tarifdrucke auf Samsung/SK hervorgehoben; ein direktes, primäres Zitat oder offizielle Micron‑Pressemeldung mit Wortlaut/Datum konnte in Primärquellen nicht eindeutig gefunden werden.",
+      "placement": "Unternehmens‑Kommunikation (Micron) / Marktkommentar; Datum der Aggregation: 2026-09-06.",
+      "mechanism": "Wenn vorhanden, würde die Aussage Markt‑Narrativ und Investorenerwartungen beeinflussen (Mikron als Begünstigter von onshore‑Fertigung), aber ohne verifizierbare Primärquelle bleibt der Mechanismus spekulativ.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Ohne Primärzitat ist der Einfluss unbestimmt; eine echte, verifizierte CEO‑Äußerung könnte die Wahrnehmung von Onshoring‑Vorteilen für Micron stärken und kurzfristig Preisdifferenziale/Allokationseffekte befördern, ist aber derzeit nicht nachweisbar.",
+      "falsifier": "Wenn bis 2026-12-31 keine verifizierbare Primärquelle (Micron‑Pressemitteilung, Earnings‑Call‑Transkript, oder eindeutig datiertes CEO‑Interview) mit dem behaupteten Wortlaut oder inhaltlichem Äquivalent erscheint, dann ist die Meldung nicht belegbar.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-06",
+      "novelty": "Niedrig — Wiederholung eines breiten Narrativs (Onshoring vs. Tarife); keine neue, datierte Primäräußerung identifiziert.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 4,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 30,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://startupfortune.com/washington-threatens-samsung-and-sk-hynix-with-100-memory-chip-tariffs/",
+          "label": "Startup Fortune / finance.biggo (Aggregation, 2026-09-06)",
+          "kind": "secondary",
+          "supports": "Aggregierte Darstellung / Analyse; zitiert kein direktes Micron‑CEO‑Transkript."
+        },
+        {
+          "url": "https://alphai.io/news/article/09-06/7800d9aa9c987b33/micron-ceo-touts-us-investment-as-differentiator-amid-targeted-tariff-pressure-on-samsung-sk-biggo-finance",
+          "label": "AlphAI (AI‑aggregator) — Hinweis auf die gleiche Aggregation",
+          "kind": "secondary",
+          "supports": "Wiederholung des nicht‑verifizierten Aggregats."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist eine sekundäre/aggregierte Kommentar‑Story ohne eindeutige Primärquelle (kein direktes Micron‑Zitat in Unternehmensmeldungen oder Earnings‑Call‑Transkripten identifiziert). Nach TAIL‑Regeln werden nicht verifizierbare, promotive oder wiederveröffentlichte Meinungsstücke abgelehnt.",
+      "candidateId": "fa8473a4f314867401e3",
+      "candidateKey": "5ce09c128a04fd9833b0805d",
+      "reviewedAt": "2026-09-14T05:27:01.107Z",
+      "priorityScore": 35,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0558a26bc8f90b8b006aa784f3cf7487d083804088cf00143d"
+    },
+    {
+      "decision": "rejected",
+      "title": "'Will K-chips go the way of LCD?' — CXMT rides Apple ambitions to challenge Samsung, SK hynix",
+      "fact": "Meinungs-/Analyseartikel behauptet, CXMT rücke durch Apple‑Ambitionen schnell zu einem ernsthaften Herausforderer von Samsung und SK hynix auf.",
+      "placement": "global / Halbleiter‑Markt (DRAM/HBM), publiziert 2026-09-05.",
+      "mechanism": "Narrativ: China‑basierte Volumenstrategie (CXMT) + große chinesische Kunden/Long‑term agreements könnten Marktanteile verschieben und Preisdruck auf koreanische Anbieter erzeugen — allerdings ohne verifizierte, neu gemessene Shipments, konzertierte LTAs mit Apple oder konkrete Yield‑/Bit‑Zahlen im Artikel.",
+      "predictionId": "",
+      "predictionImpact": "Kein eindeutiger, datierter Impact auf vorhandene Vorhersagen; Statement ist eher marktentwicklungskommentierend und rekonditioniert bereits in der Baseline dokumentierte CXMT‑/China‑Expansionssignale.",
+      "falsifier": "Innerhalb von 90 Tagen (bis 2026-12-04) veröffentlichte, von Kunden/Lieferanten verifizierbare Dokumente, die eines der folgenden zeigen: (a) Apple bestätigt eine verbindliche, mehrjährige DRAM/HBM‑LTA mit CXMT über ≥US$1 Mrd. Volumen; oder (b) CXMT meldet qualifizierte, monatliche HBM/DIMM‑Lieferungen ≥100k Wafer äquivalent mit unabhängigen Audit‑Nachweisen. Fehlen solche Belege, ist die Claim‑Lesart als nicht bestätigt zu werten.",
+      "nextReview": "2026-12-05",
+      "eventDate": "2026-09-05",
+      "novelty": "low",
+      "duplicateOf": "tail-2026-07-14-hyperscaler-lta / tail-2026-07-14-server-dram (Baseline-Fragmentierung und CXMT‑Debut‑Coverage existieren bereits).",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 2,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://siliconvalleyinvestclub.com/id/companies/cxmt/",
+          "label": "Aggregierter News‑Aggregator (verweist auf Herald‑Titelfragment)",
+          "kind": "secondary",
+          "supports": "Aggregator zeigt Existenz einer Herald‑Formulierung, aber keine direkt verifizierte Originalpublikation oder Bindung an dichte Primärdaten."
+        }
+      ],
+      "reason": "Ablehnung — Der eingereichte Kandidat ist ein marktkonditionierender Meinungs-/Analysebeitrag ohne neues, verifizierbares, atomares Messdatum (keine nachprüfbaren Shipments, Volumina oder verbindliche Apple‑LTA mit Datum und Umfang). Die Baseline enthält bereits mehrere, stärkere CXMT‑Signale (IPO, LTAs, Q2‑Marge und Marktanteilsberichte). Ich konnte das behauptete Herald‑Primärstück nicht in einer verifizierbaren Originalquelle auffinden; nur Aggregatoren und Reprints referenzieren das Headline‑Narrativ. Daher fehlt die Voraussetzung für VERIFIED DATA; die Behauptung ist reproduzierbar als Promotions‑/Meinungstext und nicht als neuer, quantifizierbarer Marktbeobachtung. ([siliconvalleyinvestclub.com](https://siliconvalleyinvestclub.com/id/companies/cxmt/?utm_source=openai))",
+      "candidateId": "55cc9439df3fb59ce41d",
+      "candidateKey": "fc22db759e8a18e10c1d4a93",
+      "reviewedAt": "2026-09-14T05:27:01.117Z",
+      "priorityScore": 29,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fc00b27cd5e8540006aa784f36f2887d0b117339da781191d"
+    },
+    {
+      "decision": "rejected",
+      "title": "Dell’s Monster Quarter Just Confirmed Micron’s Biggest Opportunity Is Not Just HBM",
+      "fact": "Analyseartikel verknüpft Dells starkes Quartal (AI‑Serverbacklog) mit einer Lesart, dass Micron nicht nur von HBM, sondern breit von DDR5/NAND‑Nachfrage profitiert.",
+      "placement": "global / Server‑Memory & Enterprise‑Storage Leseread (veröffentlicht 2026-09-05).",
+      "mechanism": "Lesart: Dell‑Backlog → breitere DDR5/NAND‑Nachfrage → stärkere Micron‑Fundamentaldaten. Artikel ist Marktkommentar, stützt sich auf Dell/Micron Earnings‑Zahlen, aber stellt keine neue, eigenständige Messung (keine kontrahierten Bit‑Volumina, keine LTAs mit konkreten Volumenangaben im neuen Artikel).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Bestärkt Baseline‑Outlook 'Kurzfristiges Beschaffungsrisiko bleibt hoch' (OUTLOOK‑server_dram), liefert aber keine direkte, quantifizierbare Änderung für existierende Prognosen.",
+      "falsifier": "Wenn die nächsten zwei Quartalszahlen (Micron Q4 und Dell Q3 releases) keine sequenzielle Erhöhung von Vertrags‑DDR5/NAND‑Verträgen, kein Aufbau dauerhaft vertraglich gebundener Bit‑Volumina und keine bestätigten, mehrjährigen LTAs zeigen (bis 2027-03-31), wäre die spezifische Lesart, dass Dell‑Ergebnisse Micron‑Fundamentaldaten über HBM hinaus dauerhaft stützen, deutlich geschwächt.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-05",
+      "novelty": "low",
+      "duplicateOf": "tail-2026-07-14-dram-prices / tail-2026-07-14-nand-essd",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 4,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 5,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "dram",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "demand_up",
+      "severity": 25,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.webull.com.sg/news/15526152317903872",
+          "label": "Repost / Syndication (Webull) des Barchart‑Stücks",
+          "kind": "secondary",
+          "supports": "Syndizierte Kopie bestätigt Veröffentlichungsdatum und Kernaussage des Artikels."
+        }
+      ],
+      "reason": "Ablehnung — Der Kandidat ist ein aussagekräftiger, aber konventioneller Marktnarrativ‑Kommentar, der Earnings‑Daten (Dell, Micron) interpretiert. Er liefert keine neue, atomare, datierte Messgröße (z. B. qualifizierte Shipments, kontrahierte Bit‑Volumina, nachgewiesene LTAs mit Volumina), die eine direkte Änderung einer existierenden Vorhersage verlangen würde. Die Aussage bestätigt vorliegende Baseline‑Signale zu breiter Memory‑Nachfrage, ist aber weder primär noch falsifizierbar in seinem vorgelegten Form. ([google.com](https://www.google.com/url?q=CAEStAEB6zswFddzmUsgH54KnzOpvlTLU1WcTGuF6D6dSqM1rCwp570kSjkyF61kraHfMeh6HqjDkofwQvWncLyOk23Q1gw7hDkH59YWe3jkmV8ubTFc1XKIiucxhBkJL1y6gYHz_-XnRhjvKAhy-eu824c8F6-DRq9Jc5P1clpCQpdBnnq6Ey39iW4JU0hhBKPoc74TnFq-tDWVkdV9kDyu7iHx4RfqRjsGwkVV2URd3PKPUYWs0DM&uoh=3&utm_source=openai))",
+      "candidateId": "fd98052c1128c6849b92",
+      "candidateKey": "731cf73fcf396f50500e4735",
+      "reviewedAt": "2026-09-14T05:27:01.117Z",
+      "priorityScore": 42,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fc00b27cd5e8540006aa784f36f2887d0b117339da781191d"
+    },
+    {
+      "decision": "rejected",
+      "title": "Memory Chip Giants Micron (MU), SanDisk, and SK Hynix Rally on Supply Tightness and AI Demand",
+      "fact": "Marktbericht/Recap (Blockonomi) dokumentiert Kurs‑Anstiege und wiederholt die These von anhaltender AI‑getriebener Memory‑Knappheit; nennt u.a. Zahlen zu Tages‑Kursbewegungen und Analystenkommentaren (UBS, Bernstein, Lynx).",
+      "placement": "global / Finanzmarkt‑News, publiziert 2026-09-05.",
+      "mechanism": "Kurssprung → interpretiert als Bestätigung von Angebotsknappheit (HBM/NAND) und Analysten‑Upgrades; Kein neues, überprüfbares Primärereignis (nur Aggregation von Marktdaten/Analystenmeinungen).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Stützt das Baseline‑Narrativ (Kurzfristiges Beschaffungsrisiko hoch), liefert jedoch keine neue, quantifizierbare Messgröße zur Änderung einer Prognose.",
+      "falsifier": "Wenn Preis- und Lieferzeit‑Indikatoren für DRAM/NAND (kontraktierte Preisindizes und Lead‑Time‑Messungen) in zwei aufeinanderfolgenden Quartalen (Q4 2026 & Q1 2027) nicht über dem Baseline‑Schwellenwert liegen (z. B. keine zwei positiven Preisquartale) oder wenn Bit‑Supply‑Zunahmen >20% QoQ erfolgen, dann falsifiziert das die Claim‑Lesart der anhaltenden strukturellen Verknappung.",
+      "nextReview": "2027-04-01",
+      "eventDate": "2026-09-05",
+      "novelty": "low",
+      "duplicateOf": "tail-2026-07-14-dram-prices / S-2026-07-24-03 (FT Oversupply‑Falsifier Diskussion)",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 3,
+        "thesisRelevance": 14,
+        "forecastImpact": 7,
+        "falsifiability": 5,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 35,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://blockonomi.com/memory-chip-giants-micron-mu-sandisk-and-sk-hynix-rally-on-supply-tightness-and-ai-demand/",
+          "label": "Blockonomi — Originalartikel (Marktreaktion/Analysten‑Recap).",
+          "kind": "primary",
+          "supports": "Beschreibt die Kursbewegungen und wiederholt Analystenkommentare; keine neuen Primärmetriken."
+        },
+        {
+          "url": "https://pro.edgex.exchange/en-US/news/article/micron-sandisk-sk-hynix-rally-ai-memory-demand",
+          "label": "Syndizierte Repost‑Seite (Bestätigung des Veröffentlichungsdatums und Kerninhalts).",
+          "kind": "secondary",
+          "supports": "Bestätigt die berichteten Kurs‑/Analystenpunkte; ebenfalls keine eigenständigen Primärdaten."
+        }
+      ],
+      "reason": "Ablehnung — Das Stück ist ein sektorspezifischer Markt‑Recap (Kursbewegungen, Analysten‑Upgrades). Es liefert keine neue, verifizierbare, datierte Primärmessung (bit‑shipments, LTAs mit Volumen, kontraktierte Preise mit Kalendertagen), die zur Aufnahme als VERIFIED DATA berechtigen würde. Inhaltlich überlappt und ergänzt er Baseline‑Signale, ändert aber keine konkrete Vorhersage. ([blockonomi.com](https://blockonomi.com/memory-chip-giants-micron-mu-sandisk-and-sk-hynix-rally-on-supply-tightness-and-ai-demand/?utm_source=openai))",
+      "candidateId": "9af792915140ba9ea639",
+      "candidateKey": "da4774ec95b99d0c9b7679b9",
+      "reviewedAt": "2026-09-14T05:27:01.117Z",
+      "priorityScore": 40,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fc00b27cd5e8540006aa784f36f2887d0b117339da781191d"
+    },
+    {
+      "decision": "rejected",
+      "title": "Anthropic's $2 Trillion IPO Countdown Begins — A Wildcard for Samsung and SK Hynix Fund Flows",
+      "fact": "Berichte/Analysen berichten, dass Anthropic eine mögliche IPO‑Bewertung von bis zu ~US$2 Bio. anstrebe und baldige IPO‑Mandate (Morgan Stanley, Goldman) vergeben werden könnten.",
+      "placement": "global / Kapitalmärkte (Tech/AI IPO‑Berichterstattung), datiert 2026-09-05.",
+      "mechanism": "Narrativ: Eine rekordhohe Anthropic‑IPO‑Bewertung würde erhebliche Kapitalumschichtungen aus Asset‑Klassen (inkl. potenziell semiconductors) nach sich ziehen. Aktuelle Berichte stützen sich auf FT‑Quellen und Gespräche mit Investoren; die $2 Bio. Zahl ist überwiegend Marktspekulation/Investor‑Erwartung, nicht ein von Anthropic bestätigter Emissionsplan.",
+      "predictionId": "",
+      "predictionImpact": "Hypothetischer Kanal‑Impact auf Fund‑Flows in Halbleiteraktien ist spekulativ; nicht geeignet, eine unmittelbare Änderung in existierenden TAIL‑Prognosen zu rechtfertigen ohne dokumentierte Allokations‑/Verkaufs‑Flüsse.",
+      "falsifier": "Wenn Anthropic bis 2026-12-31 keine öffentlich zugängliche S‑1/Prospekteinreichung mit verbindlicher Preisspanne und Pricing‑Ankündigung veröffentlicht oder wenn führende IPO‑Banker (lead left/stabilisation agent) öffentlich bestätigen, dass eine $2 Bio. Zielbewertung niemals ernsthaft intern diskutiert wurde, ist die $2 Bio. Narrative als Marktgerücht auszubuchen.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-05",
+      "novelty": "low",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 9,
+        "novelty": 4,
+        "thesisRelevance": 6,
+        "forecastImpact": 6,
+        "falsifiability": 6,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-close-awarding-morgan-stanley-194621239.html",
+          "label": "Yahoo Finance Repost des FT‑Berichts (zitiert FT als Quelle)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass FT angab, Anthropic stehe kurz vor der Vergabe von Mandaten; erwähnt $2 Bio. als Anlegererwartung."
+        },
+        {
+          "url": "https://www.forbes.com/sites/jonmarkman/2026/08/18/anthropics-run-rate-tops-65-billion-ahead-of-the-ipo/",
+          "label": "Forbes (Analyse zu Anthropic‑Run‑Rate und IPO‑Bewertungsdiskussionen)",
+          "kind": "secondary",
+          "supports": "Contextualisiert die spekulative Bewertung, weist auf unterschiedliche private Marktbewertungen hin; belegt, dass $2 Bio. eine Erwartung / Spekulation ist, nicht eine bestätigte Unternehmenszahl."
+        }
+      ],
+      "reason": "Ablehnung — Der Einreichungstext ist spekulative Kapitalmarktberichterstattung und wiederholt eine in mehreren Medien kursierende $2 Bio. Bewertungs‑Narrative, die auf Investorenerwartungen und FT‑Gerüchten basiert. Es handelt sich um ein Finanz‑Szenario, kein neues, datiertes Primärereignis (z. B. eingereichte S‑1 mit Pricing, bindende Allokations‑Dokumente oder veröffentlichte Ankerkäufe). Ohne Primärbestätigung (Firmeneinreichung, Underwriter‑Disclosure, oder verbindliche Pricing‑Angaben) ist die Behauptung nicht als VERIFIED DATA aufzunehmen. ([finance.yahoo.com](https://finance.yahoo.com/markets/stocks/articles/anthropic-close-awarding-morgan-stanley-194621239.html?utm_source=openai))",
+      "candidateId": "51747568e0089cacf343",
+      "candidateKey": "477518022df808c5de7ce2db",
+      "reviewedAt": "2026-09-14T05:27:01.117Z",
+      "priorityScore": 35,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fc00b27cd5e8540006aa784f36f2887d0b117339da781191d"
+    },
+    {
+      "decision": "rejected",
+      "title": "Marktbericht: Micron/SanDisk‑Rally — AI‑Memory‑Knappheit übertönt Zinsängste",
+      "fact": "Kurzfristige Aktienrallye bei Micron und SanDisk (Berichte vom 2026-09-04/05) basierend auf Marktstimmung/Chart‑Breakouts, nicht auf einem neuen qualifizierten Liefer‑ oder Deployment‑Ereignis.",
+      "placement": "Globales US‑/Equity‑Markt‑Sentiment; keine spezifische Produktion/Shipment/Lead‑Time‑Änderung angegeben.",
+      "mechanism": "Investorensentiment und technische Kursmuster (Breakouts, S&P‑Zuteilungs‑Gerüchte) treiben Kursanstiege; kein nachweislicher physischer Supply‑Shock oder qualifizierter Shipment‑Beleg.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Keine anwendbare falsifizierbare These — Meldung ist Marktkommentar/Technikanalyse ohne atomare marktphysische Behauptung.",
+      "nextReview": "2026-10-04",
+      "eventDate": "2026-09-04",
+      "novelty": "Wiederholte Marktkommentare und technische Aktienanalyse — kein neues Primärereignis.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 2,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 1,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 20,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.gate.com/en-us/news/detail/memory-stocks-surge-on-ai-demand-sandisk-jumps-119-micron-61-on-friday-17863034",
+          "label": "Sector coverage: memory stocks surge (Gate US, Sep 4–5 2026)",
+          "kind": "secondary",
+          "supports": "Berichte über Kursanstiege bei SanDisk und Micron am 4.–5. Sep. 2026; erklärt durch AI‑Demand‑Sentiment und technische Breakouts."
+        },
+        {
+          "url": "https://scanx.trade/stock-market-news/equity-markets/micron-sandisk-jump-memory-shortage-outweighs-fed-rate-fears/50081247",
+          "label": "Kurzmeldung: Rallye erklärt durch Memory‑Knappheit vs. Zinsängste (Scanx/aggregator)",
+          "kind": "secondary",
+          "supports": "Marktkommentar, aggregierte Schlagzeile—keine neue Primärdatenquelle."
+        }
+      ],
+      "reason": "Die Einreichung ist ein wiederkehrendes Marktsentiment/Technik‑Stück ohne atomare, datierte Primärbeobachtung (Shipments, Lead‑Time, verifizierte Preise). Das Thema ist bereits im Baseline‑Set (NAND/Enterprise‑SSD‑Festigung, DRAM‑Preisaufwärts) abgedeckt. Daher rejected: keine neue, überprüfbare Markt‑Messgröße oder direkter Einfluss auf bestehende Vorhersagen.",
+      "candidateId": "87d7c8c2a694694e9288",
+      "candidateKey": "0ea231cf91bc5f524a77f7e4",
+      "reviewedAt": "2026-09-14T05:30:01.139Z",
+      "priorityScore": 33,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a198e2ab1f3bfff006aa785a55d7487d0859afd48f96f782b"
+    },
+    {
+      "decision": "accepted",
+      "title": "Kioxia kündigt CXL‑NAND Modul (XL1) an — potenzielle Substitution von DRAM‑Host‑Bits",
+      "fact": "Kioxia hat am 2026-08-03 das XL1‑Series CXL‑kompatible Memory‑Expansion‑Modul (XL‑FLASH über CXL) vorgestellt/auf der FMS angekündigt; das Produkt zielt explizit darauf ab, weniger häufig genutzte Host‑Daten von DRAM auf NAND‑CXL auszulagern und so DRAM‑Host‑Bit‑Bedarf pro Server zu reduzieren. (Kioxia Pressemitteilung 2026-08-03).",
+      "placement": "Globale AI‑Server‑Memory‑Schicht (CXL‑vermittelte Memory‑Extension); kurzfristige Qualifikations‑/Pilotphase H2 2026–H1 2027 mit Produktions‑/Deployment‑Horizon 2027 sofern Qualifikation gelingt.",
+      "mechanism": "CXL‑angeschlossene NAND‑Module (XL‑FLASH) übernehmen 'cold' oder weniger häufig adressierte Host‑Daten, reduzieren damit die benötigten DRAM‑Host‑Bits pro Server und verringern unmittelbar die DRAM‑Nachfrage pro AI‑Server-Deployment.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Kann die prognostizierte strukturelle Knappheit bei HBM/Server‑DRAM (P-2026-07-11-01) mindern, indem ein Teil des Host‑Bit‑Bedarfs auf NAND‑CXL verlagert wird; konkrete Auswirkung abhängig von Qualifikations-, Latenz‑ und Effizienzmetriken im Hyperscaler‑Lab‑Test.",
+      "falsifier": "Bis 2027-12-31 keine dokumentierten, qualifizierten Deployments oder Produkt‑Qualifikationen bei mindestens zwei großen Hyperscalern/Cloud‑Anbietern, die XL1 direkt als Ersatz für Host‑DRAM in AI‑Servern nutzen; oder bis 2027-12-31 kein messbarer Rückgang der berichteten Server‑DRAM‑Kontraktvolumina (≥5% YoY) in zwei großen Hyperscaler‑Quarterly‑Reports, der explizit der XL1‑Einführung zugeschrieben werden kann.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-08-03",
+      "novelty": "Produktankündigung mit konkreter Architekturwirkung (CXL NAND als Memory‑Expansion). Die technische Idee (CXL + NAND SCM) ist nicht vollkommen neu, aber die kommerzielle XL1‑Ankündigung ist eine datierte Layer‑Update‑Beobachtung.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 30,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.kioxia.com/en-jp/business/news/2026/20260803-1.html",
+          "label": "Kioxia Pressemitteilung / Ankündigung XL1 (Kioxia, 2026-08-03).",
+          "kind": "primary",
+          "supports": "Kioxia kündigt die XL1 Serie (CXL‑kompatible NAND Memory Expansion Module) an und beschreibt Zielsetzung: Auslagerung weniger‑frequentierter Host‑Daten von DRAM auf XL‑FLASH."
+        },
+        {
+          "url": "https://en.sedaily.com/international/2026/09/05/kioxia-unveils-nand-based-cxl-module-to-replace-some-dram",
+          "label": "Berichterstattung: Kioxia stellt CXL NAND Modul vor (Seoul Economic Daily, 2026-09-05).",
+          "kind": "secondary",
+          "supports": "Fasst Produktfunktionen zusammen und nennt beabsichtigte DRAM‑Substitution in AI‑Servern."
+        },
+        {
+          "url": "https://www.gate.com/en-us/news/detail/kioxia-plans-cxl-nand-module-to-replace-partial-dram-boosting-capacity-2x-17862363",
+          "label": "Nachberichterstattung / Branchenkommentar (Gate US)",
+          "kind": "secondary",
+          "supports": "Zusätzliche Details/Erklärungen zur behaupteten Kapazitäts‑/Performance‑Verbesserung durch CXL‑NAND."
+        }
+      ],
+      "reason": "Primärquelle (Kioxia Pressemitteilung, 2026-08-03) belegt ein datiertes Produkt‑/Architekturupdate mit expliziter Aussage zur Absicht, DRAM‑Host‑Bits teilweise durch CXL‑angehängtes NAND zu substituieren. Die Einreichung erfüllt die TAIL‑Anforderungen für ein admitted Layer‑Update: datiertes Primärereignis, klares Mechanismus‑Argument, verknüpfbare Auswirkung auf die bestehende Vorhersage P-2026-07-11-01 und ein überprüfbares Falsifizierbarkeitskriterium (Qualifikation/Deployments und messbare Auswirkung auf DRAM‑Kontrakte).",
+      "candidateId": "8381de8bc99110188518",
+      "candidateKey": "fb8d49d0e82132264c37322c",
+      "reviewedAt": "2026-09-14T05:30:01.143Z",
+      "priorityScore": 84,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-fb8d49d0e82132264c37322c",
+        "title": "Kioxia kündigt CXL‑NAND Modul (XL1) an — potenzielle Substitution von DRAM‑Host‑Bits",
+        "date": "2026-08-03",
+        "admittedAt": "2026-09-14T05:30:01.143Z",
+        "fact": "Kioxia hat am 2026-08-03 das XL1‑Series CXL‑kompatible Memory‑Expansion‑Modul (XL‑FLASH über CXL) vorgestellt/auf der FMS angekündigt; das Produkt zielt explizit darauf ab, weniger häufig genutzte Host‑Daten von DRAM auf NAND‑CXL auszulagern und so DRAM‑Host‑Bit‑Bedarf pro Server zu reduzieren. (Kioxia Pressemitteilung 2026-08-03).",
+        "placement": "Globale AI‑Server‑Memory‑Schicht (CXL‑vermittelte Memory‑Extension); kurzfristige Qualifikations‑/Pilotphase H2 2026–H1 2027 mit Produktions‑/Deployment‑Horizon 2027 sofern Qualifikation gelingt.",
+        "tailInference": "CXL‑angeschlossene NAND‑Module (XL‑FLASH) übernehmen 'cold' oder weniger häufig adressierte Host‑Daten, reduzieren damit die benötigten DRAM‑Host‑Bits pro Server und verringern unmittelbar die DRAM‑Nachfrage pro AI‑Server-Deployment.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Kann die prognostizierte strukturelle Knappheit bei HBM/Server‑DRAM (P-2026-07-11-01) mindern, indem ein Teil des Host‑Bit‑Bedarfs auf NAND‑CXL verlagert wird; konkrete Auswirkung abhängig von Qualifikations-, Latenz‑ und Effizienzmetriken im Hyperscaler‑Lab‑Test.",
+        "falsifier": "Bis 2027-12-31 keine dokumentierten, qualifizierten Deployments oder Produkt‑Qualifikationen bei mindestens zwei großen Hyperscalern/Cloud‑Anbietern, die XL1 direkt als Ersatz für Host‑DRAM in AI‑Servern nutzen; oder bis 2027-12-31 kein messbarer Rückgang der berichteten Server‑DRAM‑Kontraktvolumina (≥5% YoY) in zwei großen Hyperscaler‑Quarterly‑Reports, der explizit der XL1‑Einführung zugeschrieben werden kann.",
+        "nextReview": "2027-06-30",
+        "priorityScore": 84,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 30,
+        "confidence": 65,
+        "markets": [
+          "nand",
+          "dram",
+          "ai_infrastructure"
+        ],
+        "signal": "demand_down",
+        "driverScope": [
+          "demand",
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Layer Update",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Kioxia Pressemitteilung / Ankündigung XL1 (Kioxia, 2026-08-03).",
+            "url": "https://www.kioxia.com/en-jp/business/news/2026/20260803-1.html"
+          },
+          {
+            "label": "Berichterstattung: Kioxia stellt CXL NAND Modul vor (Seoul Economic Daily, 2026-09-05).",
+            "url": "https://en.sedaily.com/international/2026/09/05/kioxia-unveils-nand-based-cxl-module-to-replace-some-dram"
+          },
+          {
+            "label": "Nachberichterstattung / Branchenkommentar (Gate US)",
+            "url": "https://www.gate.com/en-us/news/detail/kioxia-plans-cxl-nand-module-to-replace-partial-dram-boosting-capacity-2x-17862363"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Kann die prognostizierte strukturelle Knappheit bei HBM/Server‑DRAM (P-2026-07-11-01) mindern, indem ein Teil des Host‑Bit‑Bedarfs auf NAND‑CXL verlagert wird; konkrete Auswirkung abhängig von Qualifikations-, Latenz‑ und Effizienzmetriken im Hyperscaler‑Lab‑Test."
+        },
+        "admissionReviewKey": "fb8d49d0e82132264c37322c"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a198e2ab1f3bfff006aa785a55d7487d0859afd48f96f782b"
+    },
+    {
+      "decision": "rejected",
+      "title": "Aktienanalyse: SanDisk‑Breakout — NAND‑Nachfrage stärkt",
+      "fact": "Trading/Technical/Market‑Commentary (FXLeaders/aggregatoren) vom 2026-09-04/05 über einen Kursausbruch von SanDisk; keine neuartige primäre Lieferschein‑ oder Lieferzeit‑Messung.",
+      "placement": "US/Global Aktiemarkt/Treiber‑Narrativ; kein konkreter Produktions‑ oder Shipment‑Scope.",
+      "mechanism": "Technische und Sentiment‑Treiber (Chart‑Breakout, Erwartung an NAND‑Nachfrage) treiben Kursbewegung; keine Primärbestätigung einer physischen Nachfrageänderung.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar — Marketing/Trading‑Kommentar ohne atomare, überprüfbare Marktmessgröße.",
+      "nextReview": "2026-10-05",
+      "eventDate": "2026-09-04",
+      "novelty": "Gering — wiederholte technische/Trading‑Analyse ohne neue Primärdaten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 7,
+        "novelty": 2,
+        "thesisRelevance": 11,
+        "forecastImpact": 5,
+        "falsifiability": 1,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 15,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://alphai.io/news/article/09-05/6ad44d5f1922d39d/sandisk-sndk-stock-breaks-resistance-as-nand-demand-strengthens-but-memory-risks-remain",
+          "label": "Syndizierter Nachdruck/Aggregator (AlphaAI, Sep 5 2026).",
+          "kind": "secondary",
+          "supports": "Wiederholung der gleichen Trading‑/Sentiment‑Narrative."
+        }
+      ],
+      "reason": "Die Einreichung ist primär eine technische/Trading‑Analyse ohne neue Primärdaten (Shipments, Lead Times, verifizierte Preisnotierungen). Solche Markt‑/Aktienkommentare sind entweder Duplikate des bestehenden Baselinesignals (NAND/SSD Festigung) oder promotionsartig; sie erfüllen nicht die Anforderungen für Aufnahme (keine atomare, datierte, messbare Marktbeobachtung).",
+      "candidateId": "5eda6539dccad9fe5085",
+      "candidateKey": "885f47b49fe11fcf471aa4dc",
+      "reviewedAt": "2026-09-14T05:30:01.149Z",
+      "priorityScore": 30,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a198e2ab1f3bfff006aa785a55d7487d0859afd48f96f782b"
+    },
+    {
+      "decision": "rejected",
+      "title": "Analystenmeinung zu Micron und SanDisk (TradingView/GuruFocus)",
+      "fact": "Kolumnistische Analystenmeinung / Research‑Synthetisierung (veröffentlicht 2026-09-04) — beschreibt bullishes Argument, stützt sich auf Markt‑Verhalten und Unternehmensdaten, bietet jedoch keine neue qualifizierte Observation (Shipments, Lead Times, Kontraktpreise).",
+      "placement": "Equity/Analysten‑Kommentar; unklarer geografischer/produktbezogener Scope für physische Lieferkettenwirkung.",
+      "mechanism": "Bewertungs- und Sentimentmechanismus (Earnings/Guidance/Multiple‑Re‑Rating) — keine dokumentierte Auswirkung auf physische Speicherverfügbarkeiten.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar — Meinungsstück ohne prüfbares, atomares Outcome.",
+      "nextReview": "2026-10-04",
+      "eventDate": "2026-09-04",
+      "novelty": "Gering — Meinungsstück/Analystennote, bereits vielfach im Markt wiederholt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 9,
+        "novelty": 1,
+        "thesisRelevance": 12,
+        "forecastImpact": 4,
+        "falsifiability": 1,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "demand_up",
+      "severity": 18,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.gurufocus.com/news/9068750/analyst-has-strong-take-on-micron-sandisk-stocks",
+          "label": "Analystenkommentar / GuruFocus (veröff. 2026-09-04).",
+          "kind": "secondary",
+          "supports": "Analystenthese zu Micron und SanDisk, primär Equity‑Narrativ basierend auf Earnings/Technik."
+        },
+        {
+          "url": "https://swingtradebot.com/news-articles/22990230-memory-other-airelated-stocks-lead-markets",
+          "label": "Syndizierte Marktmeldung (SwingTradeBot).",
+          "kind": "secondary",
+          "supports": "Verstärkung des Analysten‑Narrativs; keine Primärdaten."
+        }
+      ],
+      "reason": "Die Einreichung ist eine wiederholte Analysten‑/Meinungsbeschreibung ohne neue, überprüfbare Primärbeobachtung (Shipments, Lead Times, verifizierte Vertragsvolumina). Solche Pieces gelten als Duplikate/Promotion gegenüber der Baseline und werden daher abgelehnt.",
+      "candidateId": "d79eeec40fa2faa71a1e",
+      "candidateKey": "c922ee18c6f771031d3ba61b",
+      "reviewedAt": "2026-09-14T05:30:01.151Z",
+      "priorityScore": 30,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a198e2ab1f3bfff006aa785a55d7487d0859afd48f96f782b"
+    },
+    {
+      "decision": "rejected",
+      "title": "Kurzfristige Aktienreaktion — Sandisk‑Kursanstieg nach Nvidia/Hugging Face‑Ankündigung",
+      "fact": "Am 2026-09-04 meldeten mehrere Medien einen intraday‑Anstieg der Sandisk‑Aktie (Ticker SNDK) um ~8 %, der mit Nvidia‑Meldungen zu Hugging Face in Verbindung gebracht wurde.",
+      "placement": "US‑Aktienmarkt; kurzfristige Marktreaktion; keine belegte Änderung von NAND‑Output oder Lieferzeiten.",
+      "mechanism": "Marktpreis‑Repricing: Anleger bewerteten die fortgeschriebene strategische Bedeutung von Speicher/NAND für AI‑Deployments und reagierten mit kurzfristigem Kursanstieg.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar — die Aussage beschreibt eine beobachtete Intraday‑Preisbewegung; kein kausales, dauerhaftes Markt‑Signal zur Lieferfähigkeit.",
+      "nextReview": "2026-10-04",
+      "eventDate": "2026-09-04",
+      "novelty": "Low — kurzfristige Preisbewegung ohne neue, fundamentale Verfügbarkeitsdaten; Thema bereits im TAIL‑Baseline behandelt (S-2026-08-06-01).",
+      "duplicateOf": "e47acbc452b984f90e93",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 4,
+        "forecastImpact": 2,
+        "falsifiability": 1,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "enterprise_ssd",
+        "nand",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.fool.com/investing/2026/09/04/why-sandisk-stock-rallied-today/",
+          "label": "Motley Fool — Why Sandisk Stock Rallied Today (Sep 4, 2026)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Sandisk‑Aktie am 4. Sep. intraday bis ~+8.9% stieg und die Nvidia/Hugging Face‑Nachricht als Treiber genannt wurde."
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/san-disk-naik-8-micron-naik-5-siklus-harga-nand-masih-berlanjut",
+          "label": "Pluang — SanDisk jumps 8% as NAND memory prices show signs (Sep 4, 2026)",
+          "kind": "secondary",
+          "supports": "Aggregator/News‑Feed mit Headline über einen 8%‑Kursanstieg von Sandisk am 4.9.2026."
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+          "label": "NVIDIA Blog — NVIDIA to Acquire Hugging Face (Sep 3, 2026)",
+          "kind": "primary",
+          "supports": "Nvidia veröffentlichte die definitive Ankündigung zur Übernahme von Hugging Face, was die Berichterstattung auslöste."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+          "label": "NVIDIA Form 8‑K (Sep 2, 2026) — Übernahmevereinbarung Hugging Face",
+          "kind": "primary",
+          "supports": "Regulatorische Einreichung bestätigt Deal‑Ankündigung und Datum (Form 8‑K)."
+        }
+      ],
+      "reason": "Ablehnung: Kandidat ist eine kurzfristige, kursgetriebene Schlagzeile (Markt‑Repricing) und liefert keine atomare, datierte Messung von Angebot, Lieferzeit, Vertragsvolumen oder gebundenen Shipments. Solche reinen Kursbewegungen gelten als promotionsartige Marktkommentare und sind bereits durch Basissignale (z. B. S-2026-08-06-01) abgedeckt. Zusätzlich ist dieser Eintrag ein Duplikat zu e47acbc452b984f90e93; er fügt keine neue, fälschbar messbare Information hinzu.",
+      "candidateId": "9217e8bb72168a363167",
+      "candidateKey": "ccb39574486049286fa01934",
+      "reviewedAt": "2026-09-14T05:31:46.687Z",
+      "priorityScore": 18,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b1ba642099bd9ab006aa786595e2487d09661959b5fcc9144"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Berichte: Micron peilt ~100.000 HBM‑Wafer/Monat bis Ende 2026 an (industriegetriebenes Ziel)",
+      "fact": "Mehrere Branchenberichte (ETNews zitiert von Digitimes/TrendForce/Regionalseiten) meldeten am 2026-09-04, Micron plane, seine HBM‑Eingangs‑Waferstarts bis Jahresende um bis zu ~60.000 wpm zu erhöhen und so auf ~100.000 wpm zu kommen.",
+      "placement": "Globaler Halbleitermarkt; Produkt‑Layer: HBM (HBM4/12‑Hi); Horizon: angekündigtes Jahresende 2026 (Zielperiode).",
+      "mechanism": "Kapazitätserweiterung durch große Produktions‑/Tool‑Investitionen (Installation neuer Frontend‑Tools und Erweiterung von Assembly/Test) zur Erhöhung der HBM‑Waferstarts; betrifft Verfügbarkeit (availability), aber bisher reported als Plan/Branchenquelle, nicht als bestätigte qualifizierte Shipments.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Teilweise Gegenkraft zum Basisszenario 'HBM und Server‑DRAM bleiben strukturell knapp bis Ende 2028' — wenn Micron die geplante Erweiterung tatsächlich qualifiziert ausliefert, würde dies Availability‑Druck mindern; als Ankündigung bleibt die sofortige Verfügbarkeitswirkung unbestätigt.",
+      "falsifier": "Bis 2027-06-30 muß Micron entweder (A) öffentlich melden, dass es zwei aufeinanderfolgende Monate mit qualifizierten HBM‑Shipments ≥80.000 Waferstarts/Monat erreicht hat (Falsifier: Bestätigung = Ankündigung lieferte reale Kapazität), oder (B) keine qualifizierten HBM‑Shipments ≥50.000 Wafers/Monat über zwei aufeinanderfolgende Monate melden (Falsifier zeigt, dass Ausbau das Verfügbarkeitsproblem nicht löst).",
+      "nextReview": "2027-07-15",
+      "eventDate": "2026-09-04",
+      "novelty": "Medium — größere, konkrete Mengenangabe (100k wpm) ist relevant für Verfügbarkeits‑Horizon, aber beruht auf Branchenquellen, nicht auf offizieller Micron‑Bestätigung.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 11,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 45,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/09/04/news-micron-reportedly-to-add-60k-hbm-wafersm-reaching-100k-by-year-end-to-narrow-gap-with-samsung-sk-hynix/",
+          "label": "TrendForce (9/4/2026) — Bericht zu Micron: +60k wpm, Ziel ~100k wpm bis Jahresende",
+          "kind": "secondary",
+          "supports": "Zitiert Branchenquellen/ETNews: Micron plane bis Ende 2026 HBM‑Waferstarts auf ~100.000 wpm zu steigern (Addition von ~60.000 wpm)."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260904VL206/micron-hbm-capacity-sk-hynix-samsung.html?chid=10&mod=3&q=nvidia",
+          "label": "DigiTimes (9/4/2026) — Re‑Reporting der ETNews‑Angaben zur Micron‑HBM‑Expansion",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Micron seine HBM‑Kapazität bis Ende 2026 auf etwa 100.000 Wafer/Monat erweitern wolle; nennt Installationen in Taiwan/Singapur und mögliche Hiroshima‑Investitionen."
+        },
+        {
+          "url": "https://www.igorslab.de/en/micron-double-hbm-capacity-100000-wafers-per-month-hbm4-share-rise/",
+          "label": "Igor's Lab (9/4/2026) — Einordnung, betont fehlende offizielle Bestätigung",
+          "kind": "secondary",
+          "supports": "Analytische Einordnung; weist darauf hin, dass die Zahl aus Branchenkreisen stammt und Micron bislang keine offizielle, quantifizierte Bestätigung veröffentlicht hat."
+        }
+      ],
+      "reason": "Watchlist: Die Meldung nennt eine konkrete mengen‑ und datumsbezogene Zielgröße (~100.000 Waferstarts/Monat bis Ende 2026), die für Availability‑Prognosen relevant ist (zu P-2026-07-11-01). Allerdings basiert sie auf Branchen‑Quellen/ETNews‑Zitaten, nicht auf einer direkten, offiziellen Micron‑Mitteilung oder auf berichteten, qualifizierten Shipments. Nach TAIL‑Regeln (keine Primärverifikation → keine VERIFIED DATA) verdient die Beobachtung eine Aufnahme auf Watchlist mit einem klaren Falsifier (qualifizierte Shipments/Lead‑Time‑Messung bis 2027-06-30). Opposing evidence: Micron‑Investor‑Kommunikationen und bisherige Unternehmensverlautbarungen liefern keine exakten 100k‑Zahlen (nur Ramp/Investment‑Hinweise), weshalb Vorsicht geboten ist. Quellen: TrendForce/DigiTimes/Igor's Lab aggregieren ETNews‑Aussagen. ([trendforce.com](https://www.trendforce.com/news/2026/09/04/news-micron-reportedly-to-add-60k-hbm-wafersm-reaching-100k-by-year-end-to-narrow-gap-with-samsung-sk-hynix/?utm_source=openai))",
+      "candidateId": "593d9e56d410eb91b442",
+      "candidateKey": "ca98b9d8a6ce74c10a5bc3af",
+      "reviewedAt": "2026-09-14T05:31:46.687Z",
+      "priorityScore": 75,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b1ba642099bd9ab006aa786595e2487d09661959b5fcc9144"
+    },
+    {
+      "decision": "rejected",
+      "title": "Duplikat/Headline: Sandisk‑Kursanstieg (NAND‑Preisstärke) — Pluang‑Aggregate",
+      "fact": "Mehrere Aggregatoren publizierten am 2026-09-04 Headlines wie 'Sandisk jumps 8% as NAND memory prices show signs of ongoing strength'.",
+      "placement": "Kurzfristige Marktbeobachtung; Headline/Price‑Action im US‑Equity‑Handel.",
+      "mechanism": "Kursbewegung infolge von breiter Marktstimmung und sektoraler Nachrichten (Nvidia/Hugging Face Deal + NAND‑Preissignale), nicht ein nachweisbarer Angebots-/Liefer‑Messwert.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar — die Meldung dokumentiert eine Preisbewegung; kein quantifizierbares, dauerhaftes Liefer‑ oder Preis‑Signal mit fassbaren Einheiten.",
+      "nextReview": "2026-10-04",
+      "eventDate": "2026-09-04",
+      "novelty": "Low — aggregierte Wiederholung einer intraday‑Kursbewegung; inhaltsgleich mit 9217e8bb72168a363167.",
+      "duplicateOf": "9217e8bb72168a363167",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 5,
+        "novelty": 2,
+        "thesisRelevance": 3,
+        "forecastImpact": 2,
+        "falsifiability": 1,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://pluang.com/en/news-feed/san-disk-naik-8-micron-naik-5-siklus-harga-nand-masih-berlanjut",
+          "label": "Pluang — SanDisk jumps 8% as NAND memory prices show signs (Sep 4, 2026)",
+          "kind": "secondary",
+          "supports": "Aggregierter News‑Feed mit Headline über ~8% Kursanstieg am 4.9.2026."
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/09/04/why-sandisk-stock-rallied-today/",
+          "label": "Motley Fool — Why Sandisk Stock Rallied Today (Sep 4, 2026)",
+          "kind": "secondary",
+          "supports": "Beschreibt, dass die Nvidia/Hugging Face‑Ankündigung als einer der Treiber für den Kursanstieg genannt wurde."
+        }
+      ],
+      "reason": "Ablehnung: Duplikat und reine Preis‑/Headline‑Wiedergabe ohne neue, datierte, messbare Angebots‑/Lieferinformationen; fügt dem Baseline keinen fälschbaren Sachverhalt hinzu und ist nach TAIL‑Regeln als recyclende Marktmeldung abzulehnen.",
+      "candidateId": "e47acbc452b984f90e93",
+      "candidateKey": "9848b33139c1d4fcc30d9a5a",
+      "reviewedAt": "2026-09-14T05:31:46.692Z",
+      "priorityScore": 16,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b1ba642099bd9ab006aa786595e2487d09661959b5fcc9144"
+    },
+    {
+      "decision": "rejected",
+      "title": "Kurzfristige Sektor‑Reaktion: Micron & Sandisk Kursanstieg wegen makroökonomischer Daten",
+      "fact": "Benzinga und andere berichteten am 2026-09-04 von einem ~4%igen Anstieg der Aktien von Micron und Sandisk im Zusammenhang mit einem 'hot jobs report' sowie sektorspezifischen Nachrichten.",
+      "placement": "US‑Aktienmarkt; Tagesmarktreaktion; keine belegte Veränderung der physischen Lieferketten‑Kennzahlen.",
+      "mechanism": "Makrodaten (Beschäftigungsbericht) + Sektor‑Nachrichten führten zu Risikoneubewertung und sektoraler Rotation; die Schlagzeile dokumentiert Marktbewegung, nicht fundamentale Kapazitätsänderung.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar — Beobachtete Tagesbewegung; kein fälschbarer, kausaler Angebots‑/Preis‑Effekt dokumentiert.",
+      "nextReview": "2026-10-04",
+      "eventDate": "2026-09-04",
+      "novelty": "Low — Tagesmarktbewegung, bereits durch andere TAIL‑Signale und Baseline‑Ereignisse adressiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 7,
+        "novelty": 2,
+        "thesisRelevance": 3,
+        "forecastImpact": 2,
+        "falsifiability": 1,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 12,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Ablehnung: Prominente Tages‑Marktbewegung ohne neue, belegbare Angebots‑ oder Preis‑Indexdaten. Solche Headlines sind tendenziell promotionsgetrieben und nicht geeignet als eigenständiges TAIL‑Evidenzsignal zur Veränderung von Verfügbarkeit oder Lieferketten‑Knoten.",
+      "candidateId": "99b4ca1897e31d1870ff",
+      "candidateKey": "16c611c7a50aa2b5624b1d55",
+      "reviewedAt": "2026-09-14T05:31:46.692Z",
+      "priorityScore": 18,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b1ba642099bd9ab006aa786595e2487d09661959b5fcc9144"
     }
   ]
 }

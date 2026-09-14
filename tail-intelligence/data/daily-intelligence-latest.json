@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-14T01:09:35.151Z",
+  "updatedAt": "2026-09-14T05:31:46.818Z",
   "previousRun": "2026-09-13",
   "executivePulse": {
     "current": 78,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 81,
     "previous": 81,
-    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 597 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 579 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 597 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 579 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -729,6 +729,77 @@
       "admissionReviewKey": "4459416fabc8b86065bdb16c"
     },
     {
+      "id": "S-AUTO-fb8d49d0e82132264c37322c",
+      "title": "Kioxia kündigt CXL‑NAND Modul (XL1) an — potenzielle Substitution von DRAM‑Host‑Bits",
+      "date": "2026-08-03",
+      "admittedAt": "2026-09-14T05:30:01.143Z",
+      "fact": "Kioxia hat am 2026-08-03 das XL1‑Series CXL‑kompatible Memory‑Expansion‑Modul (XL‑FLASH über CXL) vorgestellt/auf der FMS angekündigt; das Produkt zielt explizit darauf ab, weniger häufig genutzte Host‑Daten von DRAM auf NAND‑CXL auszulagern und so DRAM‑Host‑Bit‑Bedarf pro Server zu reduzieren. (Kioxia Pressemitteilung 2026-08-03).",
+      "placement": "Globale AI‑Server‑Memory‑Schicht (CXL‑vermittelte Memory‑Extension); kurzfristige Qualifikations‑/Pilotphase H2 2026–H1 2027 mit Produktions‑/Deployment‑Horizon 2027 sofern Qualifikation gelingt.",
+      "tailInference": "CXL‑angeschlossene NAND‑Module (XL‑FLASH) übernehmen 'cold' oder weniger häufig adressierte Host‑Daten, reduzieren damit die benötigten DRAM‑Host‑Bits pro Server und verringern unmittelbar die DRAM‑Nachfrage pro AI‑Server-Deployment.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Kann die prognostizierte strukturelle Knappheit bei HBM/Server‑DRAM (P-2026-07-11-01) mindern, indem ein Teil des Host‑Bit‑Bedarfs auf NAND‑CXL verlagert wird; konkrete Auswirkung abhängig von Qualifikations-, Latenz‑ und Effizienzmetriken im Hyperscaler‑Lab‑Test.",
+      "falsifier": "Bis 2027-12-31 keine dokumentierten, qualifizierten Deployments oder Produkt‑Qualifikationen bei mindestens zwei großen Hyperscalern/Cloud‑Anbietern, die XL1 direkt als Ersatz für Host‑DRAM in AI‑Servern nutzen; oder bis 2027-12-31 kein messbarer Rückgang der berichteten Server‑DRAM‑Kontraktvolumina (≥5% YoY) in zwei großen Hyperscaler‑Quarterly‑Reports, der explizit der XL1‑Einführung zugeschrieben werden kann.",
+      "nextReview": "2027-06-30",
+      "priorityScore": 84,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 30,
+      "confidence": 65,
+      "markets": [
+        "nand",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "signal": "demand_down",
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "classification": "Layer Update",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Kioxia Pressemitteilung / Ankündigung XL1 (Kioxia, 2026-08-03).",
+          "url": "https://www.kioxia.com/en-jp/business/news/2026/20260803-1.html"
+        },
+        {
+          "label": "Berichterstattung: Kioxia stellt CXL NAND Modul vor (Seoul Economic Daily, 2026-09-05).",
+          "url": "https://en.sedaily.com/international/2026/09/05/kioxia-unveils-nand-based-cxl-module-to-replace-some-dram"
+        },
+        {
+          "label": "Nachberichterstattung / Branchenkommentar (Gate US)",
+          "url": "https://www.gate.com/en-us/news/detail/kioxia-plans-cxl-nand-module-to-replace-partial-dram-boosting-capacity-2x-17862363"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Kann die prognostizierte strukturelle Knappheit bei HBM/Server‑DRAM (P-2026-07-11-01) mindern, indem ein Teil des Host‑Bit‑Bedarfs auf NAND‑CXL verlagert wird; konkrete Auswirkung abhängig von Qualifikations-, Latenz‑ und Effizienzmetriken im Hyperscaler‑Lab‑Test."
+      },
+      "admissionReviewKey": "fb8d49d0e82132264c37322c"
+    },
+    {
       "id": "S-AUTO-bed9afcf04769aecb537ebe6",
       "title": "Microsoft-PPA treibt Restart von Three Mile Island (Crane Clean Energy Center) — große Hyperscaler‑Nuklear‑PPAs materialisieren sich",
       "date": "2024-09-20",
@@ -858,6 +929,76 @@
         "forecastChange": "Erhöht die Wahrscheinlichkeit, dass bis Ende 2026 mehrere große AI‑Labs öffentlich härtere Eval‑/Isolation‑ oder Drittanbieter‑Sandbox‑Kontrollen einführen (unterstützt das Ziel von P-2026-07-22-02)."
       },
       "admissionReviewKey": "d4d297d3a2250f49cccb0840"
+    },
+    {
+      "id": "S-AUTO-029e736996493b2eb9824659",
+      "title": "Hot Chips 2026 — Samsung: Base‑Die‑Roadmap zu Custom HBM / aHBM / zHBM (Architektur‑Update)",
+      "date": "2026-08-23",
+      "admittedAt": "2026-09-14T05:27:01.101Z",
+      "fact": "Auf Hot Chips (Vortrag 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes', gehalten von Sangwook Han am 2026-08-23) präsentierte Samsung eine dreiphasige Roadmap: 1) 'custom HBM' (Verkleinerung/Verlagerung von PHY/Peripherie auf Base‑Die), 2) aHBM (active HBM mit zusätzlichen PEs und Funktionen auf Base‑Die), 3) zHBM (vertikale Integration: DRAM‑Stack direkt über Prozessor).",
+      "placement": "Hot Chips Konferenz (Stanford, CA) — Technologie/Architekturebene: HBM Base‑Die → globaler HBM‑Produktions‑ und Designpfad; Datum der Präsentation: 2026-08-23.",
+      "tailInference": "Technisch: Verlagerung von PHY/Controller/Funktionen in einen Base‑Die auf fortgeschrittenen Logikprozessen → ermöglicht Reduktion der XPU‑Fläche, neue D2D‑Interconnects, potenziell bessere Bandbreite/Leistung, aber erhöht Bedarf an Leading‑Edge Foundry‑Logic und komplexer Packaging/Qualifikation (erhöhte Koppelung zu Advanced Foundry & Packaging Kapazitäten).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Architektur‑Update erhöht strukturelle Komplexität und potenziellen Ressourcenbedarf (Foundry‑Logic und Advanced Packaging), was kurzfristig die Wahrscheinlichkeit erhöht, dass HBM/Server‑DRAM‑Engpässe (P-2026-07-11-01) fortbestehen oder sich temporär verschärfen, bevor Integrations‑/Qualifikationspfade skaliert sind.",
+      "falsifier": "Wenn bis zum 2027-08-23 Samsung keine nachprüfbaren Kunden‑Designwins oder erste qualifizierte Muster (sampling) der custom HBM/aHBM‑Base‑Die an große Hyperscaler/Accelerator‑OEMs melden (konkrete Design‑Win‑Ankündigungen oder Shipping‑Belege), dann war die Roadmap wenig relevant für die kurzfristige Versorgungslage und der Einfluss auf P-2026-07-11-01 verfehlt.",
+      "nextReview": "2027-08-23",
+      "priorityScore": 80,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 55,
+      "confidence": 85,
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "signal": "negative_supply",
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "classification": "Architecture Update",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Hot Chips 2026 — Programmseite (Talk: 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes' — Sangwook Han, Samsung)",
+          "url": "https://hc2026.hotchips.org/"
+        },
+        {
+          "label": "ServeTheHome — Live‑Berichterstattung / technische Zusammenfassung (Hot Chips 2026, 2026-08-23)",
+          "url": "https://www.servethehome.com/samsung-evolving-hbm-base-die-at-hot-chips-2026/"
+        },
+        {
+          "label": "Tom's Hardware — Bericht zu Samsung Hot Chips Präsentation",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/hot-chips-2026-samsung-reveals-a-three-phase-hbm-roadmap-that-puts-logic-and-compute-inside-memory-zhbm-ultimately-stacks-dram-directly-on-top-of-the-processor"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Architektur‑Update erhöht strukturelle Komplexität und potenziellen Ressourcenbedarf (Foundry‑Logic und Advanced Packaging), was kurzfristig die Wahrscheinlichkeit erhöht, dass HBM/Server‑DRAM‑Engpässe (P-2026-07-11-01) fortbestehen oder sich temporär verschärfen, bevor Integrations‑/Qualifikationspfade skaliert sind."
+      },
+      "admissionReviewKey": "029e736996493b2eb9824659"
     }
   ],
   "predictionLogUpdates": [
@@ -973,14 +1114,23 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 86,
-    "note": "Evidenzprüfung offen: 597 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "note": "Evidenzprüfung offen: 579 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-14T01:09:35.151Z",
+    "generatedAt": "2026-09-14T05:31:46.818Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-14T01:03:40.343Z",
-    "inboxNewItems": 16,
+    "inboxUpdatedAt": "2026-09-14T05:21:37.658Z",
+    "inboxNewItems": 100,
     "highRelevanceCandidates": [
+      {
+        "id": "3fa23c96ae142e23a23a",
+        "title": "SK hynix deepens TSMC ties for 3D DRAM, diverges from Samsung - CHOSUNBIZ",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpZzhJaDFUdldFeDg1enFJMS1iZzQwXzBJZnJYRW1mY2gyU0s0blJRekNWbGtYR1pnQnRVU0dPRkxrcFI5d0xyVmdiaVFXc2xaUERwdEFIOUlxY1ZmU3JhNUJKQ05vU2RLOWJBMXg0X0N4M3hxNWVDUU1R0gGOAUFVX3lxTE1KYzJHRExoZUJLT1NjUlJwVFdDTUFCWFYwMTBiQ2gxRFVVZkRkZ3paSWsxOXo3WFZpT3M1TFZ5LVhGQ1g5NUk3YmhXQ2xhbnlCYnFlMWV3Q3Bkc1Uxb3I3SEJKWjlsRFRIdS12VUdWdWQtejc2bWc4aC13RzdIQ25tejRCRmpmemdpUEJOanc?oc=5",
+        "source": "Chosunbiz",
+        "summary": "Aktuelle Meldung von Chosunbiz: SK hynix deepens TSMC ties for 3D DRAM, diverges from Samsung - CHOSUNBIZ",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-14T04:52:00.000Z"
+      },
       {
         "id": "08ebfe8bde7318f5f7f0",
         "title": "AI Infrastructure Moats Rival Buffett's Stock-Picking Criteria: TSMC, ASML, and Nvidia Make the Cut",
@@ -1018,24 +1168,6 @@
         "publishedAt": "2026-09-12T06:57:53.000Z"
       },
       {
-        "id": "aecad2bb56438ad66b51",
-        "title": "DeepSeek’s HBM claim rattles Samsung Electronics and SK Hynix",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbTZ3U3dOZmNMWlNNOUhBOFM4dHhycGRubGE1eDUxSUtycl9vWWdieFpoaW9KOXgzS01DYlhWUmNWYXhyODNuTl9WTUFmRlRoQ3Bxajk1Q1RtQ0t5cEtWeGY4ekhuMjhmWTNsR3hfc2l4c3FmX0xaaGxQdGM5N3pxeV9vbnZZU1g3NU44T1ZMdw?oc=5",
-        "source": "NeoTeo",
-        "summary": "Aktuelle Meldung von NeoTeo: DeepSeek’s HBM claim rattles Samsung Electronics and SK Hynix",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-12T04:40:04.000Z"
-      },
-      {
-        "id": "3d5328900020f77b81e7",
-        "title": "South Korea's semiconductor exports top 400 trillion won for first time; CXMT's profit margin overtakes Samsung and SK Hynix",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE44eE5JQXBDZlZPZ2xsdm5NUHBqSklKTk9rQ1A5UkpiNC1hRlpTclZ3T1lRb3pBRzdxU1gyOGp6YzNaMFlOREFNeW9qeXR3VGV4QW4xYmNmM1ZlalZyWUNuSVhVOEVsYm1EMm1JQi10VmFpaEtnTFE?oc=5",
-        "source": "finance.biggo.com",
-        "summary": "Aktuelle Meldung von finance.biggo.com: South Korea's semiconductor exports top 400 trillion won for first time; CXMT's profit margin overtakes Samsung and SK Hynix",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-12T04:26:00.000Z"
-      },
-      {
         "id": "aa82c8ebb7c45ed4acdc",
         "title": "Samsung, TSMC and Intel join ASML to build new technology barrier against China",
         "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE96MVNuRFo0ZXp5QjE4SXJCSm9WUjlHa0RITXBFeS1WajI3d2NLNDlwX252VTR0cm5VZFU1bmx6QlV1YzFIZWtPdUc0bEdQeVVZZHZaa2Mxaw?oc=5",
@@ -1045,13 +1177,22 @@
         "publishedAt": "2026-09-12T21:30:03.000Z"
       },
       {
-        "id": "c53bfc9879536928f4d8",
-        "title": "AI Industry Standard Discussions by Anthropic, OpenAI, and Google",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRElPNmw4Z0l3OWxVQ2psOTZlY2RKeTVpYlgyeThXNGtzRzE3V3JuYmR0YUNMNFhQbm85OWtBMmI4cmlFdHFxb29fUVF6TUJxWTdwRUdnUHZScG4wcXo4Wld2V3ozOVhZT2pEMHVJQUxRdDJESF9RSTRfM200QWN3THhITFhaRTdkYlRlWGtuNjIwZ1ZXNGRNQk91SFoxUVRVTXdiMQ?oc=5",
-        "source": "GuruFocus",
-        "summary": "Aktuelle Meldung von GuruFocus: AI Industry Standard Discussions by Anthropic, OpenAI, and Google",
+        "id": "14a231e8a693454fb8c3",
+        "title": "Samsung, SK Hynix reject KEPCO’s $17 billion power-bill prepayment plan",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5DS1AzbkRlNmV4cTRvaUFHZXdBSGdhVDNudmhvbVE3MnQ3X0tmZHVIWE4zZjBHdVZFblpsdHBiLW1zdFZWVVVMNVlNbU80ay12QXg5bF9vUmh4UWJWM0FsZGEtR01rLXlCdmFZZmtNLV9CWjdCaGFJ?oc=5",
+        "source": "kedglobal.com",
+        "summary": "Samsung, SK Hynix reject KEPCO’s $17 billion power-bill prepayment plan kedglobal.com",
+        "relevanceScore": 91,
+        "publishedAt": "2026-09-14T01:11:02.000Z"
+      },
+      {
+        "id": "007df2fb740a6b610e9d",
+        "title": "Anthropic’s 3-Step ‘Pace the Frontier’ Plan Wins OpenAI, xAI and Microsoft Support: Is It Too Late to Slow AI Down?",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPRE45Uk5SYURiMkVMa2g3ZVp0RnJmNDB6N0w2eFZVZnBzbDhMSUFaZi1Ga21haTg0YmRkRnhlalVfWVJDdTlkSkQ5b09UVFRhSk1fSXV3ZkUxMS1xMmFyd3BWeGVGS2o4M1Q1S2FiN1I5cFNGWjdqbmJSLWc5UzRobWxDOERLbkt5WjdDaWw5YUFCMTdoN2RYOFFnVDR2Z2xaOXRiWC10MUxTbHIySmJHb2NELWJicGxRQS1GaWFCS3hha002Q3R3Q1cxa1RKbEQ2QTRCN3JqNFA1Tk1aaVVrc3pXSTk3ZjVjcFHSAeoBQVVfeXFMT0ROOVJOUmFEYjJFTGtoN2VadEZyZjQwejdMNnhWVWZwc2w4TElBWmYtRmttYWk4NGJkZEZ4ZWpVX1lSQ3U5ZEpEOW9PVFRUYUpNX0l1d2ZFMTEtcTJhcndwVnhlRktqODNUNUthYjdSOXBTRlo3am5iUi1nOVM0aG1sQzhES25LeVo3Q2lsOWFBQjE3aDdkWDhRZ1Q0dmdsWjl0YlgtdDFMU2xyMkpiR29jRC1iYnBsUUEtRmlhQkt4YWtNNkN0d0NXMWtUSmxENkE0QjdyajRQNU5NWmlVa3N6V0k5N2Y1Y3BR?oc=5",
+        "source": "MarkTechPost",
+        "summary": "Aktuelle Meldung von MarkTechPost: Anthropic’s 3-Step ‘Pace the Frontier’ Plan Wins OpenAI, xAI and Microsoft Support: Is It Too Late to Slow AI Down?",
         "relevanceScore": 88,
-        "publishedAt": "2026-09-13T20:32:30.000Z"
+        "publishedAt": "2026-09-14T01:44:01.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -1137,39 +1278,41 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-14T01:09:35.035Z",
-    "inboxUpdatedAt": "2026-09-14T01:03:40.343Z",
-    "status": "pending",
-    "candidates": 881,
-    "reviewed": 284,
-    "accepted": 32,
-    "watchlist": 79,
-    "rejected": 173,
-    "pending": 597,
+    "checkedAt": "2026-09-14T05:31:46.705Z",
+    "inboxUpdatedAt": "2026-09-14T05:21:37.658Z",
+    "status": "error",
+    "candidates": 887,
+    "reviewed": 308,
+    "accepted": 34,
+    "watchlist": 82,
+    "rejected": 192,
+    "pending": 579,
     "oldestPendingAt": "2026-08-17T08:38:17.000Z",
-    "lastCompletedReviewAt": "2026-09-14T01:09:34.973Z",
-    "error": null,
-    "batchErrors": [],
-    "rawCandidates": 914,
+    "lastCompletedReviewAt": "2026-09-14T05:31:46.692Z",
+    "error": "The operation was aborted due to timeout",
+    "batchErrors": [
+      "The operation was aborted due to timeout"
+    ],
+    "rawCandidates": 920,
     "triage": {
       "archivedOpinions": 20,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-14T01:03:50.095Z",
-      "completedAt": "2026-09-14T01:09:35.040Z",
-      "selected": 24,
+      "startedAt": "2026-09-14T05:21:46.440Z",
+      "completedAt": "2026-09-14T05:31:46.707Z",
+      "selected": 96,
       "reviewed": 24,
       "concurrency": 2,
-      "limit": 24,
+      "limit": 96,
       "rateLimitRetries": 0,
-      "durationSeconds": 345,
-      "budgetExhausted": false
+      "durationSeconds": 600,
+      "budgetExhausted": true
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-14",
-    "inputHash": "d9dd01dbd93270e4d7ab04b706c170c9ce82bb6579b5b8587b08853359638a9e",
+    "inputHash": "b954986ae4a51a2c8f6bcb6a470dc5d740de2951bd6eb67ab83ab7e5cc46ceee",
     "sourceDataAsOf": "2026-09-12"
   }
 }

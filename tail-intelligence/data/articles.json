@@ -4439,6 +4439,70 @@
     ]
   },
   {
+    "id": "S-AUTO-fb8d49d0e82132264c37322c",
+    "date": "2026-08-03",
+    "title": "Kioxia kündigt CXL‑NAND Modul (XL1) an — potenzielle Substitution von DRAM‑Host‑Bits",
+    "category": "memory",
+    "markets": [
+      "nand",
+      "dram",
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Kioxia"
+    ],
+    "severity": 30,
+    "confidence": 65,
+    "signal": "demand_down",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "availability",
+      "aiDemand"
+    ],
+    "summary": "Kioxia hat am 2026-08-03 das XL1‑Series CXL‑kompatible Memory‑Expansion‑Modul (XL‑FLASH über CXL) vorgestellt/auf der FMS angekündigt; das Produkt zielt explizit darauf ab, weniger häufig genutzte Host‑Daten von DRAM auf NAND‑CXL auszulagern und so DRAM‑Host‑Bit‑Bedarf pro Server zu reduzieren. (Kioxia Pressemitteilung 2026-08-03).",
+    "tail_analysis": "CXL‑angeschlossene NAND‑Module (XL‑FLASH) übernehmen 'cold' oder weniger häufig adressierte Host‑Daten, reduzieren damit die benötigten DRAM‑Host‑Bits pro Server und verringern unmittelbar die DRAM‑Nachfrage pro AI‑Server-Deployment.",
+    "source": "Kioxia Pressemitteilung / Ankündigung XL1 (Kioxia, 2026-08-03).",
+    "url": "https://www.kioxia.com/en-jp/business/news/2026/20260803-1.html",
+    "content_hash": "d609e971668ac7ca67a2",
+    "origin": "reviewed-inbox",
+    "classification": "Layer Update",
+    "admittedAt": "2026-09-14T05:30:01.143Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "fb8d49d0e82132264c37322c",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Kann die prognostizierte strukturelle Knappheit bei HBM/Server‑DRAM (P-2026-07-11-01) mindern, indem ein Teil des Host‑Bit‑Bedarfs auf NAND‑CXL verlagert wird; konkrete Auswirkung abhängig von Qualifikations-, Latenz‑ und Effizienzmetriken im Hyperscaler‑Lab‑Test.",
+    "falsifier": "Bis 2027-12-31 keine dokumentierten, qualifizierten Deployments oder Produkt‑Qualifikationen bei mindestens zwei großen Hyperscalern/Cloud‑Anbietern, die XL1 direkt als Ersatz für Host‑DRAM in AI‑Servern nutzen; oder bis 2027-12-31 kein messbarer Rückgang der berichteten Server‑DRAM‑Kontraktvolumina (≥5% YoY) in zwei großen Hyperscaler‑Quarterly‑Reports, der explizit der XL1‑Einführung zugeschrieben werden kann.",
+    "nextReview": "2027-06-30",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Kann die prognostizierte strukturelle Knappheit bei HBM/Server‑DRAM (P-2026-07-11-01) mindern, indem ein Teil des Host‑Bit‑Bedarfs auf NAND‑CXL verlagert wird; konkrete Auswirkung abhängig von Qualifikations-, Latenz‑ und Effizienzmetriken im Hyperscaler‑Lab‑Test."
+    },
+    "sources": [
+      {
+        "label": "Kioxia Pressemitteilung / Ankündigung XL1 (Kioxia, 2026-08-03).",
+        "url": "https://www.kioxia.com/en-jp/business/news/2026/20260803-1.html"
+      },
+      {
+        "label": "Berichterstattung: Kioxia stellt CXL NAND Modul vor (Seoul Economic Daily, 2026-09-05).",
+        "url": "https://en.sedaily.com/international/2026/09/05/kioxia-unveils-nand-based-cxl-module-to-replace-some-dram"
+      },
+      {
+        "label": "Nachberichterstattung / Branchenkommentar (Gate US)",
+        "url": "https://www.gate.com/en-us/news/detail/kioxia-plans-cxl-nand-module-to-replace-partial-dram-boosting-capacity-2x-17862363"
+      }
+    ]
+  },
+  {
     "id": "S-2026-08-04-01",
     "date": "2026-08-04",
     "title": "CXMT plant zweite Beijing-Fab – Chinas DRAM-Ausbau wird zum mehrstädtischen Kapazitätssystem",
@@ -6535,6 +6599,69 @@
       {
         "label": "TechCrunch / weitere Berichterstattung (Sekundär)",
         "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-029e736996493b2eb9824659",
+    "date": "2026-08-23",
+    "title": "Hot Chips 2026 — Samsung: Base‑Die‑Roadmap zu Custom HBM / aHBM / zHBM (Architektur‑Update)",
+    "category": "geopolitics",
+    "markets": [
+      "hbm",
+      "semiconductors",
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Samsung"
+    ],
+    "severity": 55,
+    "confidence": 85,
+    "signal": "negative_supply",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "pricing"
+    ],
+    "summary": "Auf Hot Chips (Vortrag 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes', gehalten von Sangwook Han am 2026-08-23) präsentierte Samsung eine dreiphasige Roadmap: 1) 'custom HBM' (Verkleinerung/Verlagerung von PHY/Peripherie auf Base‑Die), 2) aHBM (active HBM mit zusätzlichen PEs und Funktionen auf Base‑Die), 3) zHBM (vertikale Integration: DRAM‑Stack direkt über Prozessor).",
+    "tail_analysis": "Technisch: Verlagerung von PHY/Controller/Funktionen in einen Base‑Die auf fortgeschrittenen Logikprozessen → ermöglicht Reduktion der XPU‑Fläche, neue D2D‑Interconnects, potenziell bessere Bandbreite/Leistung, aber erhöht Bedarf an Leading‑Edge Foundry‑Logic und komplexer Packaging/Qualifikation (erhöhte Koppelung zu Advanced Foundry & Packaging Kapazitäten).",
+    "source": "Hot Chips 2026 — Programmseite (Talk: 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes' — Sangwook Han, Samsung)",
+    "url": "https://hc2026.hotchips.org/",
+    "content_hash": "9aab4beaac3e333dae5d",
+    "origin": "reviewed-inbox",
+    "classification": "Architecture Update",
+    "admittedAt": "2026-09-14T05:27:01.101Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "029e736996493b2eb9824659",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Architektur‑Update erhöht strukturelle Komplexität und potenziellen Ressourcenbedarf (Foundry‑Logic und Advanced Packaging), was kurzfristig die Wahrscheinlichkeit erhöht, dass HBM/Server‑DRAM‑Engpässe (P-2026-07-11-01) fortbestehen oder sich temporär verschärfen, bevor Integrations‑/Qualifikationspfade skaliert sind.",
+    "falsifier": "Wenn bis zum 2027-08-23 Samsung keine nachprüfbaren Kunden‑Designwins oder erste qualifizierte Muster (sampling) der custom HBM/aHBM‑Base‑Die an große Hyperscaler/Accelerator‑OEMs melden (konkrete Design‑Win‑Ankündigungen oder Shipping‑Belege), dann war die Roadmap wenig relevant für die kurzfristige Versorgungslage und der Einfluss auf P-2026-07-11-01 verfehlt.",
+    "nextReview": "2027-08-23",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Architektur‑Update erhöht strukturelle Komplexität und potenziellen Ressourcenbedarf (Foundry‑Logic und Advanced Packaging), was kurzfristig die Wahrscheinlichkeit erhöht, dass HBM/Server‑DRAM‑Engpässe (P-2026-07-11-01) fortbestehen oder sich temporär verschärfen, bevor Integrations‑/Qualifikationspfade skaliert sind."
+    },
+    "sources": [
+      {
+        "label": "Hot Chips 2026 — Programmseite (Talk: 'HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes' — Sangwook Han, Samsung)",
+        "url": "https://hc2026.hotchips.org/"
+      },
+      {
+        "label": "ServeTheHome — Live‑Berichterstattung / technische Zusammenfassung (Hot Chips 2026, 2026-08-23)",
+        "url": "https://www.servethehome.com/samsung-evolving-hbm-base-die-at-hot-chips-2026/"
+      },
+      {
+        "label": "Tom's Hardware — Bericht zu Samsung Hot Chips Präsentation",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/hot-chips-2026-samsung-reveals-a-three-phase-hbm-roadmap-that-puts-logic-and-compute-inside-memory-zhbm-ultimately-stacks-dram-directly-on-top-of-the-processor"
       }
     ]
   },
