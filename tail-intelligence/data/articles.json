@@ -6539,6 +6539,71 @@
     ]
   },
   {
+    "id": "S-AUTO-07262d3ce13be295dcc26421",
+    "date": "2026-08-17",
+    "title": "OpenAI announces massive data center in Ohio with Nvidia guarantee",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "dram",
+      "hbm"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "severity": 60,
+    "confidence": 85,
+    "signal": "capacity_lock",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "aiDemand",
+      "demand"
+    ],
+    "summary": "Am 2026-08-17 meldete OpenAI öffentlich, dass es eine Vereinbarung zur Sicherung von ~8.0 GW IT‑Leistung am PORTS‑Pike Technology Campus (Pike County, Ohio) unterzeichnet hat; NVIDIA bestätigte in einer Form‑8‑K vom 2026-08-17 Residual‑value‑guaranties, die Kreditstütze für die initialen ~4.25 GW decken und insgesamt bei US$105,000,000,000 (Kappung) begrenzt sind. ([openai.com](https://openai.com/index/openai-joins-ports-pike-project/))",
+    "tail_analysis": "NVIDIAs Residual‑value‑Guarantees reduzieren Kreditrisiko für SB Energy und erleichtern die Fremdfinanzierung des Land/Power/Shell‑Aufbaus; das senkt die Finanzierungshürde für einen großmaßstäblichen, 20‑jährigen Lease an OpenAI und schafft damit eine binding capacity_lock- und demand_up‑Wirkung (gebundene Kapazität, priorisierte NVIDIA‑Supplierbindung). Die 8‑K nennt explizit Kreditstütze für Land/Strom/Shell und eine Kappung von US$105 Mrd., was direkten finanziellen Backstop‑Effekt dokumentiert. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm?utm_source=openai))",
+    "source": "OpenAI – 'OpenAI joins PORTS‑Pike project' (2026‑08‑17)",
+    "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+    "content_hash": "c31df5d79cc112e56113",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-14T17:02:53.601Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "07262d3ce13be295dcc26421",
+    "predictionId": "P-2026-07-23-02",
+    "predictionImpact": "Relevanter Beleg für die These hinter P-2026-07-23-02: OpenAI sichert sich multi‑GW Lease‑Positionen (dies bestätigt und erweitert die bekannte Camellia‑Position). Das Ereignis erhöht die Evidenz, dass OpenAI bis 2032 bindende, mehrjährige Leases im GW‑Maßstab realisiert und damit strukturelle Nachfrage/Capacity‑Lock im AI‑Infrastrukturmarkt verstärkt.",
+    "falsifier": "Bis zum 2029-12-31 liegt keiner der folgenden Punkte vor: (a) SB Energy oder OpenAI meldet öffentlich, dass ≥0.8 GW (800 MW) IT‑Kapazität am PORTS‑Pike als 'ready‑for‑service' in Produktion ist und OpenAI hat für diese Kapazität Zahlungen oder Lease‑Commencement‑Dokumente begonnen; ODER (b) NVIDIA reicht eine SEC‑Meldung ein, die die August‑2026 Residual‑value‑Guaranties formell reduziert oder aufhebt. Erfüllt einer dieser negativen Zustände die Bedingung, schwächt dies die behauptete Wirkung signifikant.",
+    "nextReview": "2027-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Relevanter Beleg für die These hinter P-2026-07-23-02: OpenAI sichert sich multi‑GW Lease‑Positionen (dies bestätigt und erweitert die bekannte Camellia‑Position). Das Ereignis erhöht die Evidenz, dass OpenAI bis 2032 bindende, mehrjährige Leases im GW‑Maßstab realisiert und damit strukturelle Nachfrage/Capacity‑Lock im AI‑Infrastrukturmarkt verstärkt."
+    },
+    "sources": [
+      {
+        "label": "OpenAI – 'OpenAI joins PORTS‑Pike project' (2026‑08‑17)",
+        "url": "https://openai.com/index/openai-joins-ports-pike-project/"
+      },
+      {
+        "label": "NVIDIA Form 8‑K (17.08.2026)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+      },
+      {
+        "label": "DatacenterKnowledge – Hintergrundanalyse (sekundär)",
+        "url": "https://www.datacenterknowledge.com/data-center-construction/nvidia-backs-openai-s-ohio-data-center-buildout-with-105b-guarantee"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-272c1d36e90cc133646942e5",
     "date": "2026-08-17",
     "title": "TrendForce (17.08.2026): Samsung & SK hynix 1H26 Anlageninvestitionen +35% YoY; Nvidia nicht unter Samsungs Top‑5‑Kunden",
@@ -6656,6 +6721,62 @@
       {
         "label": "TechCrunch / weitere Berichterstattung (Sekundär)",
         "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-ea06befd485e93aabbf9356e",
+    "date": "2026-08-17",
+    "title": "NVIDIA meldet residual‑value‑Garantie bis US$105 Mrd. für OpenAI‑Leases am PORTS‑Pike (Ohio)",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "dram",
+      "hbm"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "severity": 65,
+    "confidence": 85,
+    "signal": "capacity_lock",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "aiDemand"
+    ],
+    "summary": "NVIDIA hat am 2026-08-17 in einem Form‑8‑K‑Eintrag multiple \"residual value guaranties\" für SB Energy’s PORTS‑Pike Technology Campus (Pike County / Portsmouth Site, Ohio) offengelegt: kumulative Deckelung der Zahlungs‑Verpflichtung bei bis zu US$105,000,000,000 für die anfängliche Verpflichtung und Abdeckung von etwa 4.25 Gigawatt IT‑Load (mit Option auf weitere GW).",
+    "tail_analysis": "NVIDIA stellt residual‑value‑Garantien (kreditähnliche Restwertunterlegungen) gegenüber dem Lessor (SB Energy) zugunsten langfristiger leases, bei denen eine OpenAI‑Affiliate als Mieter genannt wird. Zahlungspflichten sind an Trigger‑Ereignisse (z. B. Mieter‑Insolvenz/Default, Ready‑for‑Service‑Meilensteine) gebunden; ökonomisch erhöht dies die Wahrscheinlichkeit von langfristig gebundenem Compute‑Nachfragevolumen und einer durch Garantie gestützten Kapazitätsbindungsstruktur (capacity_lock).",
+    "source": "NVIDIA Q2 / 10‑Q (Interim Report) - ergänzende Darstellung der Garantien",
+    "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+    "content_hash": "127860ec5d8aeb105aab",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-14T17:05:45.450Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "ea06befd485e93aabbf9356e",
+    "predictionId": "P-2026-07-20-04",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass Memory/Storage‑Nachfrage und Kapazitätsbindung (capacity_lock) 2027 weiter strukturellen Druck auf Preise und Verfügbarkeiten ausüben — d. h. das Basisprediktionsereignis 'Memory bleibt 2027 knapp' (P-2026-07-20-04) wird durch einen großen, langfristigen Nachfragedruck verstärkt, weil NVIDIA‑gestützte leases OpenAI‑gefährdetes Volumen (mehrjährige, geschützte Nachfrage) schaffen.",
+    "falsifier": "Bis 2027-12-31: Wenn (a) qualifizierte DRAM‑/HBM‑Kontraktpreise in zwei aufeinanderfolgenden Kalenderquartalen um ≥10% zurückgehen und (b) ausgewiesene Lead‑Times für Server‑DRAM/ HBMs in unabhängigen Lieferantenreports auf ≤8 Wochen fallen, dann widerspricht dies der Annahme, dass die NVIDIA‑garantierten leases die Knappheit 2027 stützen.",
+    "nextReview": "2026-12-17",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass Memory/Storage‑Nachfrage und Kapazitätsbindung (capacity_lock) 2027 weiter strukturellen Druck auf Preise und Verfügbarkeiten ausüben — d. h. das Basisprediktionsereignis 'Memory bleibt 2027 knapp' (P-2026-07-20-04) wird durch einen großen, langfristigen Nachfragedruck verstärkt, weil NVIDIA‑gestützte leases OpenAI‑gefährdetes Volumen (mehrjährige, geschützte Nachfrage) schaffen."
+    },
+    "sources": [
+      {
+        "label": "NVIDIA Q2 / 10‑Q (Interim Report) - ergänzende Darstellung der Garantien",
+        "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf"
       }
     ]
   },
