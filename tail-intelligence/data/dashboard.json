@@ -7,39 +7,40 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-15T19:19:53.045Z",
-    "inboxUpdatedAt": "2026-09-15T19:09:30.540Z",
+    "checkedAt": "2026-09-15T20:24:12.169Z",
+    "inboxUpdatedAt": "2026-09-15T20:14:50.475Z",
     "status": "error",
-    "candidates": 976,
-    "reviewed": 448,
+    "candidates": 977,
+    "reviewed": 452,
     "accepted": 48,
     "watchlist": 112,
-    "rejected": 288,
-    "pending": 528,
+    "rejected": 292,
+    "pending": 525,
     "oldestPendingAt": "2026-08-18T09:47:10.000Z",
-    "lastCompletedReviewAt": "2026-09-15T19:15:53.101Z",
+    "lastCompletedReviewAt": "2026-09-15T20:24:12.146Z",
     "error": "The operation was aborted due to timeout",
     "batchErrors": [
       "The operation was aborted due to timeout",
       "The operation was aborted due to timeout",
       "The operation was aborted due to timeout",
+      "The operation was aborted due to timeout",
       "The operation was aborted due to timeout"
     ],
-    "rawCandidates": 1011,
+    "rawCandidates": 1012,
     "triage": {
       "archivedOpinions": 22,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-15T19:09:52.580Z",
-      "completedAt": "2026-09-15T19:19:53.052Z",
-      "selected": 96,
-      "reviewed": 8,
+      "startedAt": "2026-09-15T20:15:11.648Z",
+      "completedAt": "2026-09-15T20:24:12.175Z",
+      "selected": 24,
+      "reviewed": 4,
       "concurrency": 2,
-      "limit": 96,
+      "limit": 24,
       "rateLimitRetries": 0,
-      "durationSeconds": 600,
-      "budgetExhausted": true
+      "durationSeconds": 540,
+      "budgetExhausted": false
     }
   },
   "overdueOperationalReviews": [
@@ -65,13 +66,13 @@
     }
   ],
   "sourceDataAsOf": "2026-09-15",
-  "knowledgeBaseSyncedAt": "2026-09-15T19:19:53.216Z",
+  "knowledgeBaseSyncedAt": "2026-09-15T20:24:12.326Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-09-15T19:19:54.507Z",
-  "lastForecastRun": "2026-09-15T19:19:54.507Z",
-  "newlyProcessedArticles": 91,
+  "lastSuccessfulUpdate": "2026-09-15T20:24:13.586Z",
+  "lastForecastRun": "2026-09-15T20:24:13.586Z",
+  "newlyProcessedArticles": 26,
   "totalArticles": 174,
   "articleCount": 174,
   "processStatus": "warning",
@@ -127,16 +128,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung gestört: 528 Kandidaten ausstehend.",
+    "Evidenzprüfung gestört: 525 Kandidaten ausstehend.",
     "5 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-15T19:09:30.540Z",
-    "newItems": 91,
-    "totalItems": 2780,
+    "updatedAt": "2026-09-15T20:14:50.475Z",
+    "newItems": 26,
+    "totalItems": 2806,
     "duplicateItems": 300,
-    "relevantItems": 1348,
+    "relevantItems": 1351,
     "sourceErrors": []
   },
   "pipeline": {
@@ -146,7 +147,7 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "448 geprüft · 528 offen · 48 aufgenommen"
+        "detail": "452 geprüft · 525 offen · 48 aufgenommen"
       },
       {
         "id": "knowledge_base",
@@ -158,7 +159,7 @@
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "2780 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "2806 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -939,7 +940,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-09-15T19:19:54.502Z"
+      "lastUpdated": "2026-09-15T20:24:13.582Z"
     },
     {
       "id": "hbm",
@@ -1110,7 +1111,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-15T19:19:54.502Z"
+      "lastUpdated": "2026-09-15T20:24:13.582Z"
     },
     {
       "id": "nand",
@@ -1196,7 +1197,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-15T19:19:54.502Z"
+      "lastUpdated": "2026-09-15T20:24:13.582Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1277,7 +1278,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-15T19:19:54.502Z"
+      "lastUpdated": "2026-09-15T20:24:13.582Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1536,7 +1537,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-15T19:19:54.502Z"
+      "lastUpdated": "2026-09-15T20:24:13.582Z"
     }
   ],
   "indexCalculation": {
