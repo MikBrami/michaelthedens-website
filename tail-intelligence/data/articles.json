@@ -8000,6 +8000,61 @@
     ]
   },
   {
+    "id": "S-AUTO-220050d4a4beaafaeaab1881",
+    "date": "2026-09-08",
+    "title": "TSMC Joins All Four Chipmakers on ASML High-NA EUV; Eindhoven Campus Breaks Ground",
+    "category": "ai_datacenter",
+    "markets": [
+      "semiconductors",
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Samsung",
+      "TSMC",
+      "Intel"
+    ],
+    "severity": 40,
+    "confidence": 75,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability"
+    ],
+    "summary": "ASML begann am 2026-09-08 mit dem Bau des neuen Brainport Industries Campus North in Eindhoven (Groundbreaking). Am 2026-09-07/08 kündigten ASML und TSMC eine gemeinsame Initiative zur Industriewechsel auf 12‑Zoll (12\") Photomasken zur Unterstützung von High‑NA EUV an; mehrere große Foundries (u.a. Intel, Samsung, TSMC) sind als High‑NA‑Anwender benannt.",
+    "tail_analysis": "(1) ASML‑Campus erhöht langfristige Fertigungs‑ und Logistikkapazität für EUV‑Scanner; (2) die ASML‑TSMC Initiative (12\" Photomasken) reduziert technische Masken‑/Stitching‑Beschränkungen für High‑NA‑Rollout und beschleunigt die Voraussetzung für High‑NA‑HVM‑Einsatz bei Foundries, wodurch Engpässe bei führenden Knotenpotenziell abgemildert werden (future capacity_relief für advanced nodes).",
+    "source": "ASML Pressemitteilung: Beginn Bau Brainport Industries Campus North (2026-09-08)",
+    "url": "https://www.asml.com/en/news/press-releases/2026/asml-begins-construction-of-new-eindhoven-campus",
+    "content_hash": "64e58110ca939ee472fa",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-15T15:39:43.003Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "220050d4a4beaafaeaab1881",
+    "predictionId": "P-2026-07-16-01",
+    "predictionImpact": "Unterstützt die Annahme in P-2026-07-16-01, dass Advanced Nodes einen hohen Anteil am Waferumsatz von TSMC (≥75% in Q3 analoger Betrachtung) behalten; die Initiative erhöht die technische Durchführbarkeit, Time‑to‑Volume und damit die Wahrscheinlichkeit, dass High‑NA‑fähige Advanced‑Node‑Produktion bestehen bleibt.",
+    "falsifier": "Bis 2028-12-31: keine öffentliche Demonstration eines funktionsfähigen Pilotpfads für 12\" Photomasken (Mask‑Ecosystem‑Pilot) und keine dokumentierte Fortschreibung/Terminvorgabe von TSMC/ASML für High‑NA‑HVM (z. B. TSMC veröffentlicht offen eine HVM‑Zeitreihe nach 2031) — erfüllt dieses Kriterium, dann schwächt das die Aussagekraft dieses Signals.",
+    "nextReview": "2027-09-08",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Unterstützt die Annahme in P-2026-07-16-01, dass Advanced Nodes einen hohen Anteil am Waferumsatz von TSMC (≥75% in Q3 analoger Betrachtung) behalten; die Initiative erhöht die technische Durchführbarkeit, Time‑to‑Volume und damit die Wahrscheinlichkeit, dass High‑NA‑fähige Advanced‑Node‑Produktion bestehen bleibt."
+    },
+    "sources": [
+      {
+        "label": "ASML Pressemitteilung: Beginn Bau Brainport Industries Campus North (2026-09-08)",
+        "url": "https://www.asml.com/en/news/press-releases/2026/asml-begins-construction-of-new-eindhoven-campus"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-28b329255578ff6a8943398e",
     "date": "2026-09-08",
     "title": "ASML / Intel / TSMC / Samsung: High‑NA EUV Fortschritt und Industrieinitiativen",
@@ -8715,6 +8770,63 @@
       {
         "label": "AP / Agenturmeldung (Zusammenfassung, 2026-09-12)",
         "url": "https://apnews.com/article/d59552edcb27892d8ee4d98a48397706"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-d49df151430374ee5685e33f",
+    "date": "2026-09-13",
+    "title": "Arbeitsgruppen von Anthropic, OpenAI und Google DeepMind beraten seit Juli 2026 über ein branchenweites AI‑Sicherheits‑Gremium (The Information / WP)",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Anthropic",
+      "Google"
+    ],
+    "severity": 20,
+    "confidence": 70,
+    "signal": "geopolitical_split",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "aiDemand"
+    ],
+    "summary": "Die The Information‑Berichterstattung (13. Sep 2026) dokumentiert, dass Vertreter von Anthropic, OpenAI und Google DeepMind auf Arbeitsgruppen‑Ebene seit Juli 2026 regelmäßig zusammentrafen, um ein industrieweites Frontier‑AI‑Standards‑/Sicherheitsgremium zu entwerfen (Pre‑release testing, unabhängige Evaluatoren, Benchmarking von Frontier‑Modellen).",
+    "tail_analysis": "Arbeitsgruppentreffen (unterhalb CEO‑Ebene) entwerfen verbindliche Test‑ und Audit‑Protokolle (z. B. Pre‑release‑Review, unabhängige Evaluatoren). Solche institutsübergreifenden Prüfprozesse erhöhen die Wahrscheinlichkeit, dass mehrere große Labs bis Jahresende strengere Eval‑/Egress‑Kontrollen veröffentlichen oder in Beschaffungs‑/Vertragsbedingungen verankern, und wirken direkt auf die Implementierung standardisierter Eval‑Protokolle bei Frontier‑Model‑Releases.",
+    "source": "The Information — Originalreport (Exklusivmeldung vom 13. Sep 2026; paywall).",
+    "url": "https://www.theinformation.com/",
+    "content_hash": "7cf374ae91da5dd5042f",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-15T15:36:44.704Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "d49df151430374ee5685e33f",
+    "predictionId": "P-2026-07-22-02",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass bis 2026 drei große AI‑Labs öffentlich strengere Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen einführen; damit stützt die Beobachtung P-2026-07-22-02 (stellt zusätzlichen ex‑ante Beleg für koordiniertes Governance‑Handeln dar).",
+    "falsifier": "Bis 2026-12-31 gibt es keine öffentlich dokumentierten Maßnahmen von mindestens drei großen AI‑Labs, die implementierte und nachvollziehbare Änderungen in Eval‑Isolation, Netzwerk‑Egress‑Regeln oder Drittanbieter‑Sandbox‑Kontrollen zeigen (z.B. veröffentlichte Richtlinien + nachweisbare Implementierungs‑/Beschaffungs‑Änderungen in Nutzer‑/Enterprise‑Verträgen).",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass bis 2026 drei große AI‑Labs öffentlich strengere Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen einführen; damit stützt die Beobachtung P-2026-07-22-02 (stellt zusätzlichen ex‑ante Beleg für koordiniertes Governance‑Handeln dar)."
+    },
+    "sources": [
+      {
+        "label": "The Information — Originalreport (Exklusivmeldung vom 13. Sep 2026; paywall).",
+        "url": "https://www.theinformation.com/"
+      },
+      {
+        "label": "Washington Post — unabhängige Bestätigung & Kontext (14. Sep 2026).",
+        "url": "https://www.washingtonpost.com/technology/2026/09/14/anthropic-openai-google-discussed-creating-new-ai-safety-body/"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T15:23:50.475Z",
+  "generatedAt": "2026-09-15T15:42:44.501Z",
   "platform": {
     "dataAsOf": "2026-09-15",
     "analysisAsOf": "2026-09-15",
@@ -8,31 +8,31 @@
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "error",
-      "checkedAt": "2026-09-15T15:23:49.586Z",
-      "pending": 539,
-      "reviewed": 428,
-      "accepted": 45,
-      "rawCandidates": 1001,
+      "checkedAt": "2026-09-15T15:42:43.059Z",
+      "pending": 528,
+      "reviewed": 440,
+      "accepted": 47,
+      "rawCandidates": 1002,
       "triage": {
         "archivedOpinions": 21,
         "groupedDuplicates": 13
       },
       "lastRun": {
-        "startedAt": "2026-09-15T15:13:49.319Z",
-        "completedAt": "2026-09-15T15:23:49.590Z",
-        "selected": 96,
-        "reviewed": 4,
+        "startedAt": "2026-09-15T15:33:44.198Z",
+        "completedAt": "2026-09-15T15:42:43.065Z",
+        "selected": 24,
+        "reviewed": 12,
         "concurrency": 2,
-        "limit": 96,
+        "limit": 24,
         "rateLimitRetries": 0,
-        "durationSeconds": 600,
-        "budgetExhausted": true
+        "durationSeconds": 538,
+        "budgetExhausted": false
       }
     },
     "overdueOperationalReviewCount": 5,
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 171,
+    "articleCount": 173,
     "markets": [
       {
         "id": "server_dram",
@@ -71,13 +71,13 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-15; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (539 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-15; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (528 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-15",
-      "title": "OpenAI arbeitet mit Anthropic und Google an AI-Sicherheit",
-      "summary": "Berichten zufolge kooperieren OpenAI, Anthropic und Google bei Maßnahmen zur AI-Sicherheit.",
+      "title": "Berichten zufolge arbeitet OpenAI mit Anthropic und Google an AI-Sicherheit",
+      "summary": "Bloomberg berichtet, OpenAI arbeite mit Anthropic und Google an Fragen der AI-Sicherheit.",
       "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
       "score": 98,
       "relevanceScore": 88,
@@ -88,8 +88,8 @@
     },
     {
       "date": "2026-09-15",
-      "title": "Samsungs Cheonan‑Werk verlagert Packaging‑Kapazität von Exynos zu HBM",
-      "summary": "Berichten zufolge stellt Samsungs Cheonan‑Fabrik Packaging‑Kapazitäten von Exynos‑Produkten auf HBM um.",
+      "title": "Samsungs Werk Cheonan verlagert Packaging-Kapazitäten von Exynos auf HBM",
+      "summary": "Digitimes meldet, Samsungs Cheonan-Werk verlagere Packaging-Kapazitäten zugunsten von HBM statt für Exynos.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 88,
       "relevanceScore": 91,
@@ -100,8 +100,8 @@
     },
     {
       "date": "2026-09-15",
-      "title": "MU‑Aktie steigt nach Micron‑Debüt von 512GB DDR5‑Server‑Speicher – AMD, Intel sollen neue Server‑Technologie validieren",
-      "summary": "Die MU‑Aktie zog an, nachdem Micron 512GB DDR5‑Server‑Speicher vorgestellt hat; AMD und Intel sollen die neue Server‑Technologie validieren.",
+      "title": "MU-Aktie steigt, nachdem Micron 512GB DDR5 Server Memory debütiert – AMD und Intel sollen neue Server-Technologie validieren",
+      "summary": "TradingView berichtet, die MU-Aktie stieg, nachdem Micron 512GB DDR5 Server Memory vorgestellt hat; AMD und Intel sollen die neue Server-Technologie validieren.",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 87,
       "relevanceScore": 91,
@@ -146,7 +146,7 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "539 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "528 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
     {
@@ -187,7 +187,7 @@
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-15T15:23:50.589Z",
+    "generatedAt": "2026-09-15T15:42:44.681Z",
     "count": 3,
     "candidateCount": 477,
     "freshnessWindowHours": 36,
@@ -444,7 +444,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-15T15:24:22.495Z"
+      "generatedAt": "2026-09-15T15:43:27.478Z"
     }
   }
 }

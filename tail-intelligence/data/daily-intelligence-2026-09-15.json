@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T15:23:49.707Z",
+  "updatedAt": "2026-09-15T15:42:43.211Z",
   "previousRun": "2026-09-14",
   "executivePulse": {
     "current": 78,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 81,
     "previous": 81,
-    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 539 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 528 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 539 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 528 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -806,6 +806,66 @@
       "admissionReviewKey": "c096b22335c4c4ca385b719e"
     },
     {
+      "id": "S-AUTO-220050d4a4beaafaeaab1881",
+      "title": "TSMC Joins All Four Chipmakers on ASML High-NA EUV; Eindhoven Campus Breaks Ground",
+      "date": "2026-09-08",
+      "admittedAt": "2026-09-15T15:39:43.003Z",
+      "fact": "ASML begann am 2026-09-08 mit dem Bau des neuen Brainport Industries Campus North in Eindhoven (Groundbreaking). Am 2026-09-07/08 kündigten ASML und TSMC eine gemeinsame Initiative zur Industriewechsel auf 12‑Zoll (12\") Photomasken zur Unterstützung von High‑NA EUV an; mehrere große Foundries (u.a. Intel, Samsung, TSMC) sind als High‑NA‑Anwender benannt.",
+      "placement": "Eindhoven (ASML‑Campus); globale Halbleiter‑Masken‑/Lithographie‑Ökonomie (High‑NA EUV → führende Knoten/Foundry‑Layer), Horizont: Pilot → Produktion (2028–2033 Bereich des Initiativplans).",
+      "tailInference": "(1) ASML‑Campus erhöht langfristige Fertigungs‑ und Logistikkapazität für EUV‑Scanner; (2) die ASML‑TSMC Initiative (12\" Photomasken) reduziert technische Masken‑/Stitching‑Beschränkungen für High‑NA‑Rollout und beschleunigt die Voraussetzung für High‑NA‑HVM‑Einsatz bei Foundries, wodurch Engpässe bei führenden Knotenpotenziell abgemildert werden (future capacity_relief für advanced nodes).",
+      "predictionId": "P-2026-07-16-01",
+      "predictionImpact": "Unterstützt die Annahme in P-2026-07-16-01, dass Advanced Nodes einen hohen Anteil am Waferumsatz von TSMC (≥75% in Q3 analoger Betrachtung) behalten; die Initiative erhöht die technische Durchführbarkeit, Time‑to‑Volume und damit die Wahrscheinlichkeit, dass High‑NA‑fähige Advanced‑Node‑Produktion bestehen bleibt.",
+      "falsifier": "Bis 2028-12-31: keine öffentliche Demonstration eines funktionsfähigen Pilotpfads für 12\" Photomasken (Mask‑Ecosystem‑Pilot) und keine dokumentierte Fortschreibung/Terminvorgabe von TSMC/ASML für High‑NA‑HVM (z. B. TSMC veröffentlicht offen eine HVM‑Zeitreihe nach 2031) — erfüllt dieses Kriterium, dann schwächt das die Aussagekraft dieses Signals.",
+      "nextReview": "2027-09-08",
+      "priorityScore": 81,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 40,
+      "confidence": 75,
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "ASML Pressemitteilung: Beginn Bau Brainport Industries Campus North (2026-09-08)",
+          "url": "https://www.asml.com/en/news/press-releases/2026/asml-begins-construction-of-new-eindhoven-campus"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Unterstützt die Annahme in P-2026-07-16-01, dass Advanced Nodes einen hohen Anteil am Waferumsatz von TSMC (≥75% in Q3 analoger Betrachtung) behalten; die Initiative erhöht die technische Durchführbarkeit, Time‑to‑Volume und damit die Wahrscheinlichkeit, dass High‑NA‑fähige Advanced‑Node‑Produktion bestehen bleibt."
+      },
+      "admissionReviewKey": "220050d4a4beaafaeaab1881"
+    },
+    {
       "id": "S-AUTO-28d69de59549559dfb52690b",
       "title": "DIGITIMES berichtet: Samsung HBM4‑Yield steigt; HBM4E bleibt herausfordernd",
       "date": "2026-08-18",
@@ -941,6 +1001,69 @@
         "forecastChange": "Erhöht (moderate) Wahrscheinlichkeit, dass die Nachfrageseite für HBM und Server‑DRAM robust bleibt; stützt die Basisprediktion, dass HBM und Server‑DRAM bis Ende 2028 strukturell knapp bleiben (P-2026-07-11-01) durch Verringerung regulatorischer Pausenrisiken."
       },
       "admissionReviewKey": "598f3d05ff5134fd19fc52f8"
+    },
+    {
+      "id": "S-AUTO-d49df151430374ee5685e33f",
+      "title": "Arbeitsgruppen von Anthropic, OpenAI und Google DeepMind beraten seit Juli 2026 über ein branchenweites AI‑Sicherheits‑Gremium (The Information / WP)",
+      "date": "2026-09-13",
+      "admittedAt": "2026-09-15T15:36:44.704Z",
+      "fact": "Die The Information‑Berichterstattung (13. Sep 2026) dokumentiert, dass Vertreter von Anthropic, OpenAI und Google DeepMind auf Arbeitsgruppen‑Ebene seit Juli 2026 regelmäßig zusammentrafen, um ein industrieweites Frontier‑AI‑Standards‑/Sicherheitsgremium zu entwerfen (Pre‑release testing, unabhängige Evaluatoren, Benchmarking von Frontier‑Modellen).",
+      "placement": "Global / Frontier‑AI Governance (Industry self‑standards) / Governance‑Layer / Horizont: Q4 2026 (sofortig bis Ende 2026 sichtbar)",
+      "tailInference": "Arbeitsgruppentreffen (unterhalb CEO‑Ebene) entwerfen verbindliche Test‑ und Audit‑Protokolle (z. B. Pre‑release‑Review, unabhängige Evaluatoren). Solche institutsübergreifenden Prüfprozesse erhöhen die Wahrscheinlichkeit, dass mehrere große Labs bis Jahresende strengere Eval‑/Egress‑Kontrollen veröffentlichen oder in Beschaffungs‑/Vertragsbedingungen verankern, und wirken direkt auf die Implementierung standardisierter Eval‑Protokolle bei Frontier‑Model‑Releases.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass bis 2026 drei große AI‑Labs öffentlich strengere Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen einführen; damit stützt die Beobachtung P-2026-07-22-02 (stellt zusätzlichen ex‑ante Beleg für koordiniertes Governance‑Handeln dar).",
+      "falsifier": "Bis 2026-12-31 gibt es keine öffentlich dokumentierten Maßnahmen von mindestens drei großen AI‑Labs, die implementierte und nachvollziehbare Änderungen in Eval‑Isolation, Netzwerk‑Egress‑Regeln oder Drittanbieter‑Sandbox‑Kontrollen zeigen (z.B. veröffentlichte Richtlinien + nachweisbare Implementierungs‑/Beschaffungs‑Änderungen in Nutzer‑/Enterprise‑Verträgen).",
+      "nextReview": "2026-12-31",
+      "priorityScore": 80,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 6
+      },
+      "severity": 20,
+      "confidence": 70,
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "signal": "geopolitical_split",
+      "driverScope": [
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "The Information — Originalreport (Exklusivmeldung vom 13. Sep 2026; paywall).",
+          "url": "https://www.theinformation.com/"
+        },
+        {
+          "label": "Washington Post — unabhängige Bestätigung & Kontext (14. Sep 2026).",
+          "url": "https://www.washingtonpost.com/technology/2026/09/14/anthropic-openai-google-discussed-creating-new-ai-safety-body/"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöht die Wahrscheinlichkeit, dass bis 2026 drei große AI‑Labs öffentlich strengere Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen einführen; damit stützt die Beobachtung P-2026-07-22-02 (stellt zusätzlichen ex‑ante Beleg für koordiniertes Governance‑Handeln dar)."
+      },
+      "admissionReviewKey": "d49df151430374ee5685e33f"
     }
   ],
   "predictionLogUpdates": [
@@ -1056,13 +1179,13 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 86,
-    "note": "Evidenzprüfung offen: 539 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "note": "Evidenzprüfung offen: 528 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-15T15:23:49.707Z",
+    "generatedAt": "2026-09-15T15:42:43.211Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-15T15:13:36.578Z",
-    "inboxNewItems": 138,
+    "inboxUpdatedAt": "2026-09-15T15:33:24.047Z",
+    "inboxNewItems": 7,
     "highRelevanceCandidates": [
       {
         "id": "32bc2e7d47ef3ef3353d",
@@ -1220,45 +1343,43 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-15T15:23:49.586Z",
-    "inboxUpdatedAt": "2026-09-15T15:13:36.578Z",
+    "checkedAt": "2026-09-15T15:42:43.059Z",
+    "inboxUpdatedAt": "2026-09-15T15:33:24.047Z",
     "status": "error",
-    "candidates": 967,
-    "reviewed": 428,
-    "accepted": 45,
-    "watchlist": 106,
-    "rejected": 277,
-    "pending": 539,
-    "oldestPendingAt": "2026-08-18T03:30:30.000Z",
-    "lastCompletedReviewAt": "2026-09-15T15:22:49.626Z",
+    "candidates": 968,
+    "reviewed": 440,
+    "accepted": 47,
+    "watchlist": 110,
+    "rejected": 283,
+    "pending": 528,
+    "oldestPendingAt": "2026-08-18T09:47:10.000Z",
+    "lastCompletedReviewAt": "2026-09-15T15:39:43.023Z",
     "error": "The operation was aborted due to timeout",
     "batchErrors": [
       "The operation was aborted due to timeout",
       "The operation was aborted due to timeout",
-      "The operation was aborted due to timeout",
-      "The operation was aborted due to timeout",
       "The operation was aborted due to timeout"
     ],
-    "rawCandidates": 1001,
+    "rawCandidates": 1002,
     "triage": {
       "archivedOpinions": 21,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-15T15:13:49.319Z",
-      "completedAt": "2026-09-15T15:23:49.590Z",
-      "selected": 96,
-      "reviewed": 4,
+      "startedAt": "2026-09-15T15:33:44.198Z",
+      "completedAt": "2026-09-15T15:42:43.065Z",
+      "selected": 24,
+      "reviewed": 12,
       "concurrency": 2,
-      "limit": 96,
+      "limit": 24,
       "rateLimitRetries": 0,
-      "durationSeconds": 600,
-      "budgetExhausted": true
+      "durationSeconds": 538,
+      "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-15",
-    "inputHash": "a908d317ed97cbac7aad4a0d293dc2d5afaa026747f91f6fca709736346ba554",
+    "inputHash": "f371b092d171877321e049b544f212c4f536b04d125f7a6e34ddd20853cff205",
     "sourceDataAsOf": "2026-09-14"
   }
 }
