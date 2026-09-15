@@ -1,35 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T20:24:13.589Z",
+  "generatedAt": "2026-09-15T22:18:50.739Z",
   "platform": {
-    "dataAsOf": "2026-09-15",
-    "analysisAsOf": "2026-09-15",
+    "dataAsOf": "2026-09-16",
+    "analysisAsOf": "2026-09-16",
     "sourceDataAsOf": "2026-09-15",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "error",
-      "checkedAt": "2026-09-15T20:24:12.169Z",
-      "pending": 525,
-      "reviewed": 452,
+      "checkedAt": "2026-09-15T22:18:49.658Z",
+      "pending": 529,
+      "reviewed": 462,
       "accepted": 48,
-      "rawCandidates": 1012,
+      "rawCandidates": 1026,
       "triage": {
         "archivedOpinions": 22,
         "groupedDuplicates": 13
       },
       "lastRun": {
-        "startedAt": "2026-09-15T20:15:11.648Z",
-        "completedAt": "2026-09-15T20:24:12.175Z",
-        "selected": 24,
-        "reviewed": 4,
+        "startedAt": "2026-09-15T22:08:49.386Z",
+        "completedAt": "2026-09-15T22:18:49.662Z",
+        "selected": 96,
+        "reviewed": 10,
         "concurrency": 2,
-        "limit": 24,
+        "batchSize": 1,
+        "limit": 96,
         "rateLimitRetries": 0,
-        "durationSeconds": 540,
-        "budgetExhausted": false
+        "timeoutRetries": 0,
+        "durationSeconds": 600,
+        "budgetExhausted": true
       }
     },
-    "overdueOperationalReviewCount": 5,
+    "overdueOperationalReviewCount": 9,
     "dataFreshness": "current",
     "processStatus": "ok",
     "articleCount": 174,
@@ -40,7 +42,7 @@
         "score": 80,
         "status": "orange",
         "signals": 19,
-        "confidence": 81,
+        "confidence": 80,
         "coverage": 100
       },
       {
@@ -58,7 +60,7 @@
         "score": 81,
         "status": "orange",
         "signals": 20,
-        "confidence": 72,
+        "confidence": 71,
         "coverage": 100
       }
     ]
@@ -67,29 +69,17 @@
     "current": 78,
     "previous": 78,
     "status": "orange",
-    "confidence": 81,
+    "confidence": 80,
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-15; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (525 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-16; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (529 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-15",
-      "title": "OpenAI arbeitet mit Anthropic und Google an AI‑Sicherheit",
-      "summary": "Berichten zufolge kooperiert OpenAI mit Anthropic und Google, um Fragen der AI‑Sicherheit zu erörtern.",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 98,
-      "relevanceScore": 88,
-      "sourceQuality": 20,
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaENkNHlJX1lkYlJtRzRtZ0NEaFpfbkxub0F1VkVUVHBvVTdMaHV1NjRDMnY5N09TTnIzRzFQZmFYcnY3ZkplMmxGQ1Y2OFRXT1kyTkNlWnZ0SjFsWHdHMWl6RklJeTFmMjVfYVN0ZTlidzhmR090TVdzRFRQd1ZmSFB2dXIyM1BLYVJDNlZMYy1PYnpTdTR0bHBYR2JwYWpMczAzSm5jU0JqYkJwb2V1SmhmMVJxSzRILXBZ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-15",
-      "title": "OpenAI, Google und Anthropic beraten Zusammenarbeit zu AI‑Sicherheitsfragen",
-      "summary": "Berichten zufolge führen OpenAI, Google und Anthropic Gespräche über eine Zusammenarbeit bei AI‑Sicherheitsfragen.",
+      "title": "OpenAI, Google und Anthropic verhandeln über Zusammenarbeit bei KI-Sicherheit",
+      "summary": "CNBC meldet, dass OpenAI, Google und Anthropic Gespräche über eine Zusammenarbeit in Fragen der KI-Sicherheit führen.",
       "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
       "score": 95,
       "relevanceScore": 88,
@@ -100,14 +90,26 @@
     },
     {
       "date": "2026-09-15",
-      "title": "SK Hynix liefert 16‑Layer HBM4 für Nvidias Rubin – Wo stehen Micron und Samsung?",
-      "summary": "Berichten zufolge liefert SK Hynix 16‑Layer HBM4 für Nvidias Rubin. Unklar ist, wie Micron und Samsung im Vergleich dastehen.",
+      "title": "OpenAI arbeitet mit Anthropic und Google an KI-Sicherheit",
+      "summary": "Reuters meldet: Bloomberg News berichtet, OpenAI arbeite mit Anthropic und Google an KI-Sicherheitsfragen.",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 95,
+      "relevanceScore": 88,
+      "sourceQuality": 20,
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaENkNHlJX1lkYlJtRzRtZ0NEaFpfbkxub0F1VkVUVHBvVTdMaHV1NjRDMnY5N09TTnIzRzFQZmFYcnY3ZkplMmxGQ1Y2OFRXT1kyTkNlWnZ0SjFsWHdHMWl6RklJeTFmMjVfYVN0ZTlidzhmR090TVdzRFRQd1ZmSFB2dXIyM1BLYVJDNlZMYy1PYnpTdTR0bHBYR2JwYWpMczAzSm5jU0JqYkJwb2V1SmhmMVJxSzRILXBZ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "TSMC könnte Samsung bei kundenspezifischer HBM-Produktion unterstützen",
+      "summary": "SammyGuru berichtet, dass TSMC Samsung möglicherweise bei der Produktion kundenspezifischer HBM unterstützen könnte.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeHJKTjE5Z2R4MmtsTUhmNHFLWUZoLVc0emxvUjE3anNVdFh5ak05SEZpbWhVZmdxc3VqRTFSTEwtU2tSeWNDRjNodTd3a0o5TWF0a2xOeUphMjRrNlFaTGxYMDctWmwwcnhMWFNpZkdHVUI1eWpZM2dSSHFFenRXWXFwMjQ1OGZYYzU1SlU4Z1Q4T2trOGl4bEJPdw?oc=5",
+      "source": "SammyGuru",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5pdk0zS055UGMwT1dERXR1MXVWbDM0TGtndENsVWNoVEdqYWxBZnBweTNhS21OMjBmSFBoTU94MXpUR1RXRFlaQ1FOVi04OHNjMUNlTW1XaGh1LUE4MFN3MlRZNktNUzFJTnpLQnFRWW5NX3oyYmxnTQ?oc=5",
       "layer": "news"
     }
   ],
@@ -142,25 +144,13 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-15",
+    "date": "2026-09-16",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "525 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "529 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
-    {
-      "date": "2026-09-15",
-      "title": "OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
-      "summary": "Aktuelle Meldung von Reuters: OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 98,
-      "relevanceScore": 88,
-      "sourceQuality": 20,
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaENkNHlJX1lkYlJtRzRtZ0NEaFpfbkxub0F1VkVUVHBvVTdMaHV1NjRDMnY5N09TTnIzRzFQZmFYcnY3ZkplMmxGQ1Y2OFRXT1kyTkNlWnZ0SjFsWHdHMWl6RklJeTFmMjVfYVN0ZTlidzhmR090TVdzRFRQd1ZmSFB2dXIyM1BLYVJDNlZMYy1PYnpTdTR0bHBYR2JwYWpMczAzSm5jU0JqYkJwb2V1SmhmMVJxSzRILXBZ?oc=5",
-      "layer": "news"
-    },
     {
       "date": "2026-09-15",
       "title": "OpenAI, Google, Anthropic discussing collaboration on AI safety issues",
@@ -175,21 +165,33 @@
     },
     {
       "date": "2026-09-15",
-      "title": "SK Hynix Is Shipping 16-Layer HBM4 for Nvidia Rubin: Where Do Micron And Samsung Stand?",
-      "summary": "Aktuelle Meldung von Benzinga: SK Hynix Is Shipping 16-Layer HBM4 for Nvidia Rubin: Where Do Micron And Samsung Stand?",
+      "title": "OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
+      "summary": "Aktuelle Meldung von Reuters: OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 95,
+      "relevanceScore": 88,
+      "sourceQuality": 20,
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaENkNHlJX1lkYlJtRzRtZ0NEaFpfbkxub0F1VkVUVHBvVTdMaHV1NjRDMnY5N09TTnIzRzFQZmFYcnY3ZkplMmxGQ1Y2OFRXT1kyTkNlWnZ0SjFsWHdHMWl6RklJeTFmMjVfYVN0ZTlidzhmR090TVdzRFRQd1ZmSFB2dXIyM1BLYVJDNlZMYy1PYnpTdTR0bHBYR2JwYWpMczAzSm5jU0JqYkJwb2V1SmhmMVJxSzRILXBZ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "TSMC May Help Samsung in Custom HBM Production",
+      "summary": "Aktuelle Meldung von SammyGuru: TSMC May Help Samsung in Custom HBM Production",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeHJKTjE5Z2R4MmtsTUhmNHFLWUZoLVc0emxvUjE3anNVdFh5ak05SEZpbWhVZmdxc3VqRTFSTEwtU2tSeWNDRjNodTd3a0o5TWF0a2xOeUphMjRrNlFaTGxYMDctWmwwcnhMWFNpZkdHVUI1eWpZM2dSSHFFenRXWXFwMjQ1OGZYYzU1SlU4Z1Q4T2trOGl4bEJPdw?oc=5",
+      "source": "SammyGuru",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5pdk0zS055UGMwT1dERXR1MXVWbDM0TGtndENsVWNoVEdqYWxBZnBweTNhS21OMjBmSFBoTU94MXpUR1RXRFlaQ1FOVi04OHNjMUNlTW1XaGh1LUE4MFN3MlRZNktNUzFJTnpLQnFRWW5NX3oyYmxnTQ?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-15T20:24:13.776Z",
+    "generatedAt": "2026-09-15T22:18:50.865Z",
     "count": 3,
-    "candidateCount": 481,
+    "candidateCount": 485,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -279,10 +281,10 @@
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
         "currentScore": 80,
         "currentStatus": "orange",
-        "confidence": 81,
+        "confidence": 80,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-15"
+        "indexAsOf": "2026-09-16"
       },
       {
         "marketId": "enterprise_ssd",
@@ -379,10 +381,10 @@
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
         "currentScore": 81,
         "currentStatus": "orange",
-        "confidence": 72,
+        "confidence": 71,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-15",
+        "indexAsOf": "2026-09-16",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -404,18 +406,6 @@
   "originalSignals": [
     {
       "date": "2026-09-15",
-      "title": "OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
-      "summary": "Aktuelle Meldung von Reuters: OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 98,
-      "relevanceScore": 88,
-      "sourceQuality": 20,
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaENkNHlJX1lkYlJtRzRtZ0NEaFpfbkxub0F1VkVUVHBvVTdMaHV1NjRDMnY5N09TTnIzRzFQZmFYcnY3ZkplMmxGQ1Y2OFRXT1kyTkNlWnZ0SjFsWHdHMWl6RklJeTFmMjVfYVN0ZTlidzhmR090TVdzRFRQd1ZmSFB2dXIyM1BLYVJDNlZMYy1PYnpTdTR0bHBYR2JwYWpMczAzSm5jU0JqYkJwb2V1SmhmMVJxSzRILXBZ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-15",
       "title": "OpenAI, Google, Anthropic discussing collaboration on AI safety issues",
       "summary": "Aktuelle Meldung von CNBC: OpenAI, Google, Anthropic discussing collaboration on AI safety issues",
       "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
@@ -428,14 +418,26 @@
     },
     {
       "date": "2026-09-15",
-      "title": "SK Hynix Is Shipping 16-Layer HBM4 for Nvidia Rubin: Where Do Micron And Samsung Stand?",
-      "summary": "Aktuelle Meldung von Benzinga: SK Hynix Is Shipping 16-Layer HBM4 for Nvidia Rubin: Where Do Micron And Samsung Stand?",
+      "title": "OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
+      "summary": "Aktuelle Meldung von Reuters: OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 95,
+      "relevanceScore": 88,
+      "sourceQuality": 20,
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaENkNHlJX1lkYlJtRzRtZ0NEaFpfbkxub0F1VkVUVHBvVTdMaHV1NjRDMnY5N09TTnIzRzFQZmFYcnY3ZkplMmxGQ1Y2OFRXT1kyTkNlWnZ0SjFsWHdHMWl6RklJeTFmMjVfYVN0ZTlidzhmR090TVdzRFRQd1ZmSFB2dXIyM1BLYVJDNlZMYy1PYnpTdTR0bHBYR2JwYWpMczAzSm5jU0JqYkJwb2V1SmhmMVJxSzRILXBZ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "TSMC May Help Samsung in Custom HBM Production",
+      "summary": "Aktuelle Meldung von SammyGuru: TSMC May Help Samsung in Custom HBM Production",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeHJKTjE5Z2R4MmtsTUhmNHFLWUZoLVc0emxvUjE3anNVdFh5ak05SEZpbWhVZmdxc3VqRTFSTEwtU2tSeWNDRjNodTd3a0o5TWF0a2xOeUphMjRrNlFaTGxYMDctWmwwcnhMWFNpZkdHVUI1eWpZM2dSSHFFenRXWXFwMjQ1OGZYYzU1SlU4Z1Q4T2trOGl4bEJPdw?oc=5",
+      "source": "SammyGuru",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5pdk0zS055UGMwT1dERXR1MXVWbDM0TGtndENsVWNoVEdqYWxBZnBweTNhS21OMjBmSFBoTU94MXpUR1RXRFlaQ1FOVi04OHNjMUNlTW1XaGh1LUE4MFN3MlRZNktNUzFJTnpLQnFRWW5NX3oyYmxnTQ?oc=5",
       "layer": "news"
     }
   ],
@@ -444,7 +446,7 @@
       "language": "de-DE",
       "model": "gpt-5-mini",
       "mode": "editorial_translation",
-      "generatedAt": "2026-09-15T20:25:03.146Z"
+      "generatedAt": "2026-09-15T22:19:32.671Z"
     }
   }
 }
