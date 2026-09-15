@@ -32521,6 +32521,311 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0078ad8ead4d334b006aa8d563739887d1a955fe623e4064ef"
+    },
+    {
+      "decision": "rejected",
+      "title": "TrendForce/DRAMeXchange: Q2‑2026 Top‑5 NAND‑Umsatz +77% QoQ (Bericht durch Chosunbiz verbreitet)",
+      "fact": "TrendForce‑/DRAMeXchange‑Bericht (gemeldet 2026‑08‑18) dokumentiert kombinierte Q2‑2026‑Umsätze der fünf größten NAND‑Hersteller von USD 68,87 Mrd. — ein Plus von +77 % gegenüber Q1‑2026 (Quarter‑on‑Quarter).",
+      "placement": "Globaler NAND‑Flash Markt; Enterprise‑/AI‑Server‑SSD‑Revenues; Bezugszeitraum: Q2 2026 (Stichtag 2026‑06‑30); veröffentl. 2026‑08‑18.",
+      "mechanism": "Bericht interpretiert erhöhte Enterprise‑SSD‑Lieferungen und höhere ASPs (durch AI‑Server‑Nachfrage) als Treiber des Umsatzsprungs; Mechanismus: AI‑Trainings/Inference‑Deployments erhöhen Bedarf an Enterprise‑SSD‑Kapazität, was zu höheren Volumes und ASPs führt.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Kurzfristig bestätigt dieser Umsatzanstieg das OUTLOOK-enterprise_ssd Thesis-Element, dass AI‑Datenpipelines und Enterprise‑Storage‑Nachfrage Preisdruck/Revenue‑Zyklen verstärken (direction: demand_up / price_up).",
+      "falsifier": "Wenn TrendForce / DRAMeXchange oder offizielle Hersteller‑Quartalsberichte bis 2026‑10‑31 die kombinierte Top‑5‑NAND‑Q3‑Umsatzentwicklung und ASP‑Trends zeigen, dass Q3‑2026 nicht mindestens stabile Preise/Absätze (kein QoQ‑Rückgang von mehr als 10 %) bietet, dann wäre der kurzfristige Preisdruck‑Interpretation widersprochen.",
+      "nextReview": "2026-11-18",
+      "eventDate": "2026-06-30",
+      "novelty": "Recycelt: Quartals‑Umsatzdaten wurden bereits in den TAIL‑Aufnahmen und S‑AUTO‑Feeds (TrendForce/DRAMeXchange) verarbeitet; kein neues, atomar anderes Signal.",
+      "duplicateOf": "tail-2026-07-14-nand-essd",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 1,
+        "thesisRelevance": 16,
+        "forecastImpact": 6,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 55,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/08/18/EQJXNJAQ7VEH7H5257KVZVMKHU/?outputType=amp",
+          "label": "Chosunbiz — Nachrichtenseite mit Zusammenfassung des TrendForce‑Berichts (veröff. 2026‑08‑18)",
+          "kind": "secondary",
+          "supports": "Berichterstattung der TrendForce‑Zahlen: Combined revenue of top five NAND flash brands rose 77% QoQ to USD 68.87 billion."
+        },
+        {
+          "url": "https://www.dramexchange.com/WeeklyResearch/Post/2/12803.html",
+          "label": "DRAMeXchange — Marktbericht (TrendForce/DRAMeXchange Zusammenfassung, publ. 2026‑08‑18)",
+          "kind": "primary",
+          "supports": "Originalpublikation/Zusammenfassung der TrendForce‑Analyse mit dem USD‑68.87B und +77% QoQ Wert."
+        }
+      ],
+      "reason": "Tatsächliche, datierte Umsatz‑Zahlen (TrendForce/DRAMeXchange) sind verifizierbar und relevant für Enterprise‑SSD‑Ausblick. Allerdings ist die Meldung ein erwartetes Quartalsupdate, das in den bereits aufgenommenen TAIL‑Signalen (tail-2026-07-14-nand-essd und S‑AUTO‑TrendForce/DRAMeXchange‑Feeds) implizit oder explizit enthalten ist. Die Einreichung liefert keine neue, atomare Beobachtung, keinen eindeutigen kausalen Hebel über das bereits dokumentierte Basissignal hinaus und damit keine admission‑würdige neue Aufnahme. Deshalb abgelehnt (Duplicate / Recycling).",
+      "candidateId": "84ac699b9cb84f8e7dac",
+      "candidateKey": "6ec0448261ed5ff8f3cf4bfb",
+      "reviewedAt": "2026-09-15T10:13:13.231Z",
+      "priorityScore": 51,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04246248796e0db1006aa919857cf887d09baae21ff78930c9"
+    },
+    {
+      "decision": "rejected",
+      "title": "OpenAI + NVIDIA: Vereinbarung für ~8 IT‑GW am PORTS‑Pike (Ohio) — 20‑Jahres‑Lease berichtet",
+      "fact": "Offizielle OpenAI‑ und NVIDIA‑Ankündigungen / SEC‑Offenlegung (veröffentlicht 2026‑08‑17/18) dokumentieren eine Vereinbarung, die OpenAI als Mieter eines PORTS‑Pike AI‑Campus (insgesamt ~8 IT‑GW, 20‑Jahres‑Leases) benennt; NVIDIA sichert Land/Power/Shell‑Kapazität für eine initiale 4.25 IT‑GW‑Phase und kündigt eine $1.5 Mrd. Equity‑Investition in SB Energy an; Kredit‑/Residual‑Garantien werden bis zu USD 105 Mrd. angegeben (phasenweise und mit vertraglichen Beendigungsbedingungen).",
+      "placement": "PORTS‑Pike Technology Campus, Pike County / Portsmouth (Ohio), USA; Domäne: Hyperscaler/Neocloud AI‑Campus; Horizon: Angekündigte Phasen 2028–2030 (erste Place‑in‑Service‑Prognosen).",
+      "mechanism": "Mechanismus: Langfristige, großvolumige Mietverträge (20 Jahre) und von NVIDIA gestützte Garantien erhöhen die Kapitalverfügbarkeit und verringern Entwickler‑Risiken für großskalige AI‑Campus; resultierende Nachfrage‑Bindung (capacity_lock) erhöht systemische Memory/Storage‑Nachfrage und kann kurzfristig Angebotsallokationen verstärken.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Unterstützt die OUTLOOK‑Aussage, dass kurzfristiges Beschaffungs‑/Allokationsrisiko für Server‑DRAM hoch bleibt (Impuls: capacity_lock / demand_up), da die Vereinbarung große, garantierte IT‑Lasten an den Markt bindet.",
+      "falsifier": "Wenn bis 2028‑12‑31 die Parteien keine bindenden, dokumentierten Phase‑1‑Leasingverträge/Place‑in‑Service‑Meldungen für mindestens 4.25 IT‑GW veröffentlichen oder wenn NVIDIA nachweislich die zugesagten Garantien/Investitions‑Verpflichtungen formell zurücknimmt, dann reduziert dies die behauptete Nachfragebindung und damit die Forecast‑Auswirkung.",
+      "nextReview": "2026-11-17",
+      "eventDate": "2026-08-17",
+      "novelty": "Grosse, aber bereits breit dokumentierte Marktmeldung; der TAIL‑Baseline und mehrere S‑AUTO‑Items (u.a. S-AUTO-4680a577, S-AUTO-07262d3c) haben dieses Porto/Guarantee‑Thema bereits aufgenommen.",
+      "duplicateOf": "S-AUTO-4680a5772176dd47a7baf925",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 3,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 80,
+      "confidence": 90,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "label": "OpenAI — offizielle Ankündigung zum PORTS‑Pike‑Projekt (Ankündigungsseite, 2026‑08‑17/18)",
+          "kind": "primary",
+          "supports": "OpenAI beschreibt die Vereinbarung für ~8 IT‑GW, 20‑Jahres‑Lease‑Struktur und strukturelle Details (Jobs, Credits, zeitliche Phasen)."
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx",
+          "label": "NVIDIA Investor Relations — Pressemitteilung (Garantien, Investition in SB Energy, 2026‑08‑17)",
+          "kind": "primary",
+          "supports": "NVIDIA beschreibt Garantieumfang, $1.5 Mrd. Investition in SB Energy und exklusive Compute‑Partnerschaft."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+          "label": "NVIDIA 8‑K / SEC‑Filing (vertragliche Bedingungen, Kündigungs‑/Beendigungs‑Klauseln, 2026‑08‑17)",
+          "kind": "primary",
+          "supports": "Formelle Offenlegung von Verpflichtungen, Terminationsklauseln und phasenweiser Effektivität der Garantien."
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/",
+          "label": "NVIDIA‑Blog (CEO Huang): erläuternde Darstellung zu Umfang, Phasen und Absicherungsmechanik",
+          "kind": "secondary",
+          "supports": "Technische und zeitliche Kontextierung: phasenweise Wirksamkeit, erste In‑Service‑Prognosen 2028–2030 und Einschränkungen."
+        }
+      ],
+      "reason": "Die Ankündigungen von OpenAI und NVIDIA sind durch offizielle Primärquellen verifizierbar und wichtig für Marktdynamik (große, langfristig gebundene IT‑Lasten). Allerdings ist das Thema bereits mehrfach in der TAIL‑Baseline / S‑AUTO‑Feeds aufgenommen (Duplikat). Zudem enthalten die SEC‑/Presseunterlagen ausdrückliche Vertragsklauseln, Fristen und phasenweise Wirksamkeit, die die sofortige, vollumfängliche Marktwirkung relativieren. Wegen Duplikation und weil die Aufnahme kein neues, unabhängiges, atomares Falsifizierbares Signal über das Baseline‑Set hinaus liefert, wird die Kandidatur abgelehnt.",
+      "candidateId": "e5ecbf628f2ad6b7a047",
+      "candidateKey": "efc654b5d056d82da622e3c6",
+      "reviewedAt": "2026-09-15T10:13:13.232Z",
+      "priorityScore": 76,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04246248796e0db1006aa919857cf887d09baae21ff78930c9"
+    },
+    {
+      "decision": "rejected",
+      "title": "Anadolu Ajansı: Nvidia investiert $1.5Mrd. und bietet bis zu $105Mrd. Garantie für OpenAI‑Rechenzentrum",
+      "fact": "Bericht (Anadolu Ajansı, 2026‑08‑17/18) fasst die von NVIDIA und OpenAI veröffentlichten Vereinbarungen zusammen: NVIDIA investiert $1.5 Mrd. in SB Energy und bietet gestufte Kredit-/Residual‑Garantien bis zu USD 105 Mrd. für LPS/Lease‑Zahlungen; OpenAI wird langfristiger 20‑Jahres‑Tenant für einen ~8 IT‑GW Campus am PORTS‑Pike.",
+      "placement": "PORTS‑Pike Campus, Pike County, Ohio (USA); Domäne: AI‑Campus‑Finanzierung/Lease; Horizon: 2028–2030 erste Phasen in Dienststellung.",
+      "mechanism": "Finanzierungssicherheiten (NVIDIA‑Garantien + Equity) senken Projektentwicklungs‑Risiken, machen große 20‑Jahres‑Leases bankfähiger und binden große IT‑Lasten langfristig (capacity_lock → Angebotsspannung für Memory/Storage).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Unterstützt die Erwartung eines fortgesetzten Beschaffungsrisikos für Server‑DRAM (mehr anhaltende Allokationsbindung bei Hyperscalern/Neoclouds); nominales Effektzeichen: demand_up / capacity_lock.",
+      "falsifier": "Falls bis 2028‑12‑31 keine dokumentierten Place‑in‑Service‑Meldungen oder bindenden Leases für Phase‑1 (mindestens 4.25 IT‑GW) erfolgen, oder NVIDIA seine Garantieverpflichtungen formell zurückzieht, dann wäre die behauptete Nachfragesperre deutlich abgeschwächt.",
+      "nextReview": "2026-11-17",
+      "eventDate": "2026-08-17",
+      "novelty": "Niedrig — dieselbe wirtschaftliche Meldung wie in den NVIDIA/OpenAI‑Primärquellen und bereits in der TAIL‑Baseline erfasst.",
+      "duplicateOf": "S-AUTO-4680a5772176dd47a7baf925",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 2,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 11,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 78,
+      "confidence": 88,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.aa.com.tr/en/economy/nvidia-to-invest-15b-provide-up-to-105b-guarantee-for-openai-data-center/4029715",
+          "label": "Anadolu Ajansı — Nachrichtenbericht (2026‑08‑17)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung der offiziellen Vereinbarungen: $1.5 Mrd. Investition und bis zu $105 Mrd. Garantieangaben."
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx",
+          "label": "NVIDIA Pressemitteilung (Primärquelle zur Garantie / Investition)",
+          "kind": "primary",
+          "supports": "Details zu Investition, Garantien und exklusiver Compute‑Partnerschaft mit SB Energy/OpenAI."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+          "label": "NVIDIA SEC‑Filing (8‑K) — Vertragsbedingungen, Beendigungs‑, Phasenhinweise",
+          "kind": "primary",
+          "supports": "Formelle Offenlegung mit Bedingungen, die die phasenweise Wirksamkeit und Begrenzungen der Verpflichtungen erläutern."
+        }
+      ],
+      "reason": "Die berichtete Investition und Garantie sind durch Primärquellen verifizierbar und marktrelevant. Jedoch ist diese Meldung bereits mehrfach in der TAIL‑Datenbank/S‑AUTO‑Feeds aufgenommen worden (Duplikation). Zusätzlich zeigen die SEC‑Offenlegungen Beschränkungen/Phasen, die die unmittelbare, vollen Marktwirkung relativieren. Deshalb keine Neuzulassung in die TAIL‑Signalsammlung.",
+      "candidateId": "547d70029acd2ba07612",
+      "candidateKey": "0a575e7e54385ad6038e5349",
+      "reviewedAt": "2026-09-15T10:13:13.233Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04246248796e0db1006aa919857cf887d09baae21ff78930c9"
+    },
+    {
+      "decision": "rejected",
+      "title": "Aggregator: 'Nvidia backs $105B for OpenAI's mega data center' (theneurondaily) — Wiederholung der offiziellen Ankündigung",
+      "fact": "Mehrere Medien‑Aggregatoren fassen dieselben offiziellen Primärquellen (OpenAI, NVIDIA, SEC) zusammen und berichten von bis zu USD 105 Mrd. Kredit-/Residual‑Garantie und einer $1.5 Mrd. NVIDIA‑Equity‑Zusage für SB Energy; Kerndetails datieren auf 2026‑08‑17/18.",
+      "placement": "PORTS‑Pike, Pike County, Ohio (USA); Domäne: Datacenter‑Finanzierung/Lease; Zeitraum: Ankündigung 2026‑08‑17.",
+      "mechanism": "Aggregierte Berichte wiederholen die Primärmechanik: durch Garantien und Equity‑Zufluss werden Projektfinanzierungskosten gesenkt und langfristige Leases (20 Jahre) ermöglicht, was Nachfrage‑Bindung (capacity_lock) erzeugt.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Repetitiv: stützt die Annahme der OUTLOOK‑Server‑DRAM, dass große, langfristige Build‑outs die kurzfristige Allokationsspannung erhöhen (direction: capacity_lock / demand_up).",
+      "falsifier": "Wenn bis 2028‑12‑31 keine Phase‑1‑Place‑in‑Service‑Meldung für mindestens 4.25 IT‑GW vorgelegt wird oder wenn die Garantieverpflichtungen formell reduziert/annulliert werden, vermindert dies die behauptete langfristige Nachfragesperre.",
+      "nextReview": "2026-11-17",
+      "eventDate": "2026-08-17",
+      "novelty": "Keine — Aggregator‑Wiedergabe bereits veröffentlichter Primärinformationen; kein eigenständiges Primärmaterial.",
+      "duplicateOf": "S-AUTO-4680a5772176dd47a7baf925",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 1,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 9,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 75,
+      "confidence": 82,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://timesof.ai/2026/08/nvidia-openai-ports-pike-ohio-deal",
+          "label": "Aggregator / Nachrichten‑Synthese (theneurondaily / timesof.ai style aggregator)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung der in Primärquellen veröffentlichten Vereinbarungen (Investition, Garantien, 8 IT‑GW, 20‑Jahres‑Leases)."
+        },
+        {
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "label": "OpenAI — Primärankündigung (siehe oben)",
+          "kind": "primary",
+          "supports": "Originaltext zur Vereinbarung und Umfang."
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx",
+          "label": "NVIDIA Pressemitteilung — Primärquelle",
+          "kind": "primary",
+          "supports": "NVIDIA‑Erläuterungen zur Garantie/Investition."
+        }
+      ],
+      "reason": "Der Aggregator‑Artikel wiederholt Primärinformationen (OpenAI / NVIDIA / SEC) ohne zusätzliches, belegbares Primärmaterial. Das Signal ist bereits in der TAIL‑Baseline und S‑AUTO‑Feeds erfasst; daher ist dies ein redundant eingereichter Kandidat und wird abgelehnt.",
+      "candidateId": "54e480f6d29951c4ab75",
+      "candidateKey": "2663d399cd3bdcef6dfa1dab",
+      "reviewedAt": "2026-09-15T10:13:13.233Z",
+      "priorityScore": 46,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04246248796e0db1006aa919857cf887d09baae21ff78930c9"
     }
   ]
 }
