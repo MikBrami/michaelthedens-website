@@ -1,51 +1,51 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T21:06:33.296Z",
+  "generatedAt": "2026-09-15T00:08:56.451Z",
   "editorial": {
     "version": 6,
     "language": "en-GB",
     "sourceLanguage": "mixed-original+de-DE",
-    "sourceHash": "2f95836db08b9c1597802a81",
+    "sourceHash": "d258ac76dd3fe92a06aa23c7",
     "model": "gpt-5-mini",
     "mode": "original_news_plus_editorial_translation"
   },
   "platform": {
-    "dataAsOf": "2026-09-14",
-    "analysisAsOf": "2026-09-14",
-    "sourceDataAsOf": "2026-09-12",
+    "dataAsOf": "2026-09-15",
+    "analysisAsOf": "2026-09-15",
+    "sourceDataAsOf": "2026-09-14",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "error",
-      "checkedAt": "2026-09-14T21:05:30.244Z",
-      "pending": 553,
-      "reviewed": 368,
-      "accepted": 39,
-      "rawCandidates": 954,
+      "checkedAt": "2026-09-15T00:07:58.682Z",
+      "pending": 546,
+      "reviewed": 388,
+      "accepted": 41,
+      "rawCandidates": 967,
       "triage": {
         "archivedOpinions": 20,
         "groupedDuplicates": 13
       },
       "lastRun": {
-        "startedAt": "2026-09-14T20:56:29.719Z",
-        "completedAt": "2026-09-14T21:05:30.252Z",
-        "selected": 24,
-        "reviewed": 8,
+        "startedAt": "2026-09-14T23:57:58.126Z",
+        "completedAt": "2026-09-15T00:07:58.686Z",
+        "selected": 96,
+        "reviewed": 20,
         "concurrency": 2,
-        "limit": 24,
+        "limit": 96,
         "rateLimitRetries": 0,
-        "durationSeconds": 540,
-        "budgetExhausted": false
+        "durationSeconds": 600,
+        "budgetExhausted": true
       }
     },
-    "overdueOperationalReviewCount": 4,
+    "overdueOperationalReviewCount": 5,
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 165,
+    "articleCount": 167,
     "markets": [
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 81,
+        "score": 80,
         "status": "orange",
         "signals": 19,
         "confidence": 81,
@@ -79,14 +79,26 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "The situation in memory and AI infrastructure remains strained. Server DRAM/RDIMM, HBM and enterprise SSDs are currently among the tightest areas. Calculation dated 2026-09-14; sources current to 2026-09-11. Evidence review remains incomplete (553 candidates outstanding). The unchanged score therefore does not imply an unchanged market. New capacity and improved yields may alleviate pressure but will reach the market only with a lag. For buyers, securing supply, alternative BOMs and early procurement remain critical."
+    "interpretation": "The situation for memory and AI infrastructure remains strained. Server DRAM / RDIMM, HBM and Enterprise SSDs are currently among the most constrained segments. Calculation dated 2026-09-15; source status 2026-09-11. Evidence review is not yet complete (546 candidates open). The unchanged value therefore does not confirm an unchanged market situation. New capacity and improved yields can provide relief but will reach the market only with delay. For buyers, supply assurance, alternative BOMs and early procurement remain decisive."
   },
   "signals": [
+    {
+      "date": "2026-09-15",
+      "title": "TSMC to Adopt High NA EUV in 2030; Samsung and SK Hynix to Begin Volume Production in 2028",
+      "summary": "TSMC to Adopt High NA EUV in 2030; Samsung and SK Hynix to Begin Volume Production in 2028 finance.biggo.com",
+      "analysis": "This signal sits upstream in the semiconductor supply chain. Only when investments convert to installed and qualified tools, stable yields and additional wafers will genuine supply relief emerge.",
+      "score": 91,
+      "relevanceScore": 97,
+      "sourceQuality": 6,
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBUQUU3ZUp4ejdrZ3lYejJSTGpBdHFrVldEOVZoSnc4Q0FLTFpmTzBYMnN3ekJWQXROd2xzb2hSOUVpX3I3aHpQNWJmZ2dJNkd1ZXdkS2ktZnlaN2VCd2FfMW92TC1WeU1pU3huMDdSVXNUZ3o3RVE?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-14",
       "title": "Chip Equipment Stocks Slide as AI Pacing Call Reaches Fab Spending: Applied Materials and Lam Research Fall 6%, ASML Sinks 5%",
       "summary": "Aktuelle Meldung von 24/7 Wall St.: Chip Equipment Stocks Slide as AI Pacing Call Reaches Fab Spending: Applied Materials and Lam Research Fall 6%, ASML Sinks 5%",
-      "analysis": "This signal sits upstream in the semiconductor supply chain. Only when investments convert into installed and qualified tools, stable yields and additional wafers will meaningful supply relief materialise.",
+      "analysis": "This signal sits upstream in the semiconductor supply chain. Only when investments convert to installed and qualified tools, stable yields and additional wafers will genuine supply relief emerge.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
@@ -98,24 +110,12 @@
       "date": "2026-09-14",
       "title": "What Anthropic's AI Slowdown Call Could Mean For Cloud Giants Amazon, Microsoft, Google",
       "summary": "What Anthropic's AI Slowdown Call Could Mean For Cloud Giants Amazon, Microsoft, Google Investor's Business Daily",
-      "analysis": "The report alters the expansion path for AI and datacentre infrastructure. More productive compute capacity pulls server memory, enterprise storage, networking and power infrastructure along with it.",
+      "analysis": "The report alters the build-out path of AI and datacentre infrastructure. More productive compute capacity draws server memory, enterprise storage, networking and power provisioning with it.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Investor's Business Daily",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVEtHUDZXaTlRWlh2UzRXRTZFeW9HYVBRZDRPMktBSGRGMzZnSXVjUmVNbWo5a0NFMjQxU0FSam9QMl94V0lMejRDVmNRRUptZHd0djNVbGMxUUFTcENSUGd5TERyWEladmRRRUtiaWZONEdkSEdGcTcxT1A5cF9xZ1VNMUJ6UzZuaTFHTUloUjN0QQ?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "Memory Stocks Lead AI Selloff as Anthropic and OpenAI Chiefs Urge Slower Development: Micron and SanDisk Sink 6%, SK Hynix Drops 7%",
-      "summary": "Aktuelle Meldung von 24/7 Wall St.: Memory Stocks Lead AI Selloff as Anthropic and OpenAI Chiefs Urge Slower Development: Micron and SanDisk Sink 6%, SK Hynix Drops 7%",
-      "analysis": "The report is relevant for datacentre storage: it can affect prices, available capacity or procurement strategy for enterprise SSDs.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "24/7 Wall St.",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQWWdzS2syakFOajVaTVJORW1nX2lrOGUzeXFNd1RkOEwxeVB3LWs1bF9NUEpTUjZVODZ2VWZZbFlQQ2diNDZDRS1LTURZbEhlSTZSM3RBZW4wVDZjVm9QMVFyc2NxbjQ0WVY3bENQNHhXQWJFZGNEMFlJTnQxWTFDZFpYenNpMXpJNDE4Z3VWSlNSY1IyV2ktSDRnbzFVY1ZFbDhwWFhMUGVrSXdxSlpMVVJQdjUxdDQ0dmdJTjcxMDNKbVVjZWlBdi03Wlp6SjJHTTNHcHBucjFUX2RzUFdmaXZMajVEbHJkSi1RNGZNUVlQQk1pQ0ZMZkQyaVFTYTln?oc=5",
       "layer": "news"
     }
   ],
@@ -130,11 +130,11 @@
     },
     {
       "date": "2026-10-01",
-      "event": "Switch IPO: examine filing, valuation and capital access"
+      "event": "Switch IPO: review filing, valuation and access to capital"
     },
     {
       "date": "2026-10-15",
-      "event": "Forecast-Review: Advanced packaging remains a central AI supply-chain bottleneck at least through H2 2027 despite the Chiayi expansion."
+      "event": "Forecast Review: Advanced packaging remains a central AI supply-chain bottleneck at least through H2 2027 despite the Chiayi expansion."
     },
     {
       "date": "2026-11-05",
@@ -231,12 +231,12 @@
           "CSP CapEx and hardware commissioning"
         ],
         "methodologyNote": "Scenario weights are subjective, evidence-based assessments rather than statistically estimated event frequencies.",
-        "currentScore": 81,
+        "currentScore": 80,
         "currentStatus": "orange",
         "confidence": 81,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-14"
+        "indexAsOf": "2026-09-15"
       },
       {
         "marketId": "enterprise_ssd",
@@ -341,7 +341,7 @@
         "confidence": 72,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-14"
+        "indexAsOf": "2026-09-15"
       }
     ]
   }

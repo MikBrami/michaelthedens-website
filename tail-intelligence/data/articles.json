@@ -233,6 +233,73 @@
     ]
   },
   {
+    "id": "S-AUTO-7c86e2f29f2df64fcc959e8c",
+    "date": "2026-06-30",
+    "title": "CoreWeave: Q2‑2026 Backlog und Nvidia‑Partnerschaft bestätigen Neocloud‑Nachfragetreiber",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "dram"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "severity": 40,
+    "confidence": 72,
+    "signal": "demand_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "CoreWeave meldete für das zweite Quartal 2026 einen Revenue‑Backlog von ungefähr USD 104 Milliarden (Stichtag 2026-06-30) und bestätigt eine NVIDIA‑Investition von USD 2,0 Milliarden (geschlossen 2026-01-23/26).",
+    "tail_analysis": "Große vertragliche Backlogs und eine direkte Kapitalzusage von NVIDIA signalisieren gebundenen, realen Nachfrage‑ und Buildout‑Verpflichtungsfluss (Land/Power/IT‑Load). Das erhöht kurzfristig die Nachfrage nach Datacenter‑Kapazität und damit nach Server‑DRAM/HBM (Host‑Bits) über vertraglich gebundene Deployments.",
+    "source": "The Cryptonomist — 'CoreWeave Nvidia AI Infrastructure Drives Data Center Growth' (14 Sep 2026)",
+    "url": "https://en.cryptonomist.ch/2026/09/14/coreweave-nvidia-ai-infrastructure/",
+    "content_hash": "6fbf2a98bbcb28c68306",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-15T00:05:58.522Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "7c86e2f29f2df64fcc959e8c",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass Server‑DRAM‑Knappheit (P-2026-07-11-01) fortbesteht/verschärft: CoreWeave’s großer Backlog und Nvidia‑Co‑Builds stützen anhaltende Allokationen in Richtung AI‑Server, was Preisdruck und Lead‑Time‑Verlängerungen für Server‑DRAM begünstigen könnte.",
+    "falsifier": "Bis 2026-12-31 bleiben CoreWeave/Written‑Backlog‑Verpflichtungen ≥50% bestehen, und Server‑DRAM‑Kontraktpreise fallen nicht zwei aufeinanderfolgende Quartale um ≥10% (Kontraktkorb). Wenn CoreWeave’s Backlog bis 2026-12-31 um >50% schrumpft und Server‑DRAM‑Kontraktpreise zwei Quartale in Folge ≥10% fallen, dann widerlegt dies den kausalen Impact auf P-2026-07-11-01.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass Server‑DRAM‑Knappheit (P-2026-07-11-01) fortbesteht/verschärft: CoreWeave’s großer Backlog und Nvidia‑Co‑Builds stützen anhaltende Allokationen in Richtung AI‑Server, was Preisdruck und Lead‑Time‑Verlängerungen für Server‑DRAM begünstigen könnte."
+    },
+    "sources": [
+      {
+        "label": "The Cryptonomist — 'CoreWeave Nvidia AI Infrastructure Drives Data Center Growth' (14 Sep 2026)",
+        "url": "https://en.cryptonomist.ch/2026/09/14/coreweave-nvidia-ai-infrastructure/"
+      },
+      {
+        "label": "CoreWeave Investor Relations — Pressemitteilung 'CoreWeave Reports Strong Second Quarter 2026 Results'",
+        "url": "https://coreweave2025ipo.q4web.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx"
+      },
+      {
+        "label": "SEC Filing (Form 8‑K / Purchase Agreement) — CoreWeave / NVIDIA (Jan 2026)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/crwv-20260123.htm"
+      },
+      {
+        "label": "NVIDIA Newsroom — 'NVIDIA and CoreWeave Strengthen Collaboration' (Jan 26, 2026)",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-coreweave-strengthen-collaboration-to-accelerate-buildout-of-ai-factories"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-7e924042f548f055676f8769",
     "date": "2026-06-30",
     "title": "CXMT (长鑫/ChangXin) meldet Q2 2026 Operating Margin ~82% (Q2 per 2026-06-30)",
@@ -8472,6 +8539,71 @@
       {
         "label": "AP / Agenturmeldung (Zusammenfassung, 2026-09-12)",
         "url": "https://apnews.com/article/d59552edcb27892d8ee4d98a48397706"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-320b6e2f774c187fec2fee96",
+    "date": "2026-09-14",
+    "title": "New warnings from OpenAI, Anthropic CEOs about the risks of AI to humanity revive a long-running debate",
+    "category": "geopolitics",
+    "markets": [
+      "ai_infrastructure",
+      "hbm",
+      "server_dram",
+      "dram"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "severity": 45,
+    "confidence": 65,
+    "signal": "demand_down",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "aiDemand",
+      "demand",
+      "availability"
+    ],
+    "summary": "Am 2026-09-14 veröffentlichten mehrere Leitmedien Zitate und Interviews, in denen die CEOs von Anthropic und OpenAI (Dario Amodei, Sam Altman) öffentlich für eine deliberate Verlangsamung der Frontier‑AI‑Entwicklung und stärkere industrieinterne Sicherheitskoordination warben.",
+    "tail_analysis": "Öffentliche CEO‑Appelle an verlangsamte Entwicklung erhöhen regulatorische Aufmerksamkeit und können kurzfristig Beschaffungs‑ und Deployment‑Entscheidungen großer Labore/Hyperscaler verzögern (Einkaufszyklen, FID‑Timing, Training‑Window‑Pauses). Das reduziert unmittelbar den AI‑Input‑Absatzdruck (Speicher/GPU/Datacenter) gegenüber einem ungebremsten Build‑out.",
+    "source": "ABC News (Bericht über CEO‑Zitate und Interviews, 2026-09-14)",
+    "url": "https://www-cdn.abcnews.com/US/wireStory/new-warnings-risks-ai-humanity-revive-long-running-136414576",
+    "content_hash": "5b339f30b684baebdfbf",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-15T00:05:58.487Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "320b6e2f774c187fec2fee96",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass der AI‑getriebene Nachfragepfad für HBM und Server‑DRAM 2026–2027 temporär abgeschwächt wird (weniger aggressiver kurzfristiger Host‑Bit‑Absatz), womit das Basisszenario ‚HBM und Server‑DRAM bleiben bis Ende 2028 knapp‘ (P-2026-07-11-01) partiell abgeschwächt werden könnte.",
+    "falsifier": "Bis 2026-12-31: Wenn keine der großen Frontier‑AI‑Labs oder Hyperscaler (OpenAI, Anthropic, Google, Microsoft, Amazon) öffentlich eine materielle (≥10%) Reduktion ihrer 2027‑Memory/GPU‑Beschaffungspläne oder einen formalen Pause‑/Delay‑Ankündigung für großangelegte Trainingsprojekte meldet, dann hat der CEO‑Appell keine beobachtbare kurzfristige Dämpfung des Beschaffungs‑Pfads bewirkt.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass der AI‑getriebene Nachfragepfad für HBM und Server‑DRAM 2026–2027 temporär abgeschwächt wird (weniger aggressiver kurzfristiger Host‑Bit‑Absatz), womit das Basisszenario ‚HBM und Server‑DRAM bleiben bis Ende 2028 knapp‘ (P-2026-07-11-01) partiell abgeschwächt werden könnte."
+    },
+    "sources": [
+      {
+        "label": "ABC News (Bericht über CEO‑Zitate und Interviews, 2026-09-14)",
+        "url": "https://www-cdn.abcnews.com/US/wireStory/new-warnings-risks-ai-humanity-revive-long-running-136414576"
+      },
+      {
+        "label": "Fortune (Altman‑Interview, 2026-09-14)",
+        "url": "https://fortune.com/2026/09/14/openai-ceo-sam-altman-fortune-interview-alyson-shontell/"
+      },
+      {
+        "label": "Axios (Marktreaktion / Gegenbefund, 2026-09-14)",
+        "url": "https://www.axios.com/2026/09/14/ai-stocks-apocalypse-wall-street"
       }
     ]
   }
