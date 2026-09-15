@@ -34681,6 +34681,604 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0032c35978dad188006aa9660d2ef487d0a19c1d72c7a6cbf5"
+    },
+    {
+      "decision": "rejected",
+      "title": "Korea Semiconductor Industry Association: Technologie‑Lücke Korea–China auf HBM 3 Jahre / DRAM 2 Jahre / NAND 1 Jahr (Bericht 2026‑09‑14)",
+      "fact": "Die Korea Semiconductor Industry Association wird in einem JoongAng-Artikel vom 2026-09-14 zitiert mit der Einschätzung, dass die Technologie‑Lücke zu China bei HBM rund 3 Jahre, bei DRAM rund 2 Jahre und bei NAND rund 1 Jahr beträgt (Einheit: Jahre).",
+      "placement": "Globaler Memory‑Markt (Vergleich Korea vs China); Produktebenen: HBM / DRAM / NAND; Datum der Aussage: 2026-09-14.",
+      "mechanism": "KSIA macht die Verringerung der Lücke primär an schnellen Kapazitätsausweitungen chinesischer Hersteller (CXMT, YMTC), staatlicher Förderung, Nutzung von Advanced Packaging / Exstacking/Hybrid‑Bond-Techniken und beschleunigten Test-/Ramp‑Aktivitäten (z. B. HBM3E‑Tests) fest. Die Quelle ist ein JoongAng-Artikel, der KSIA zitiert.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Diese Bewertung erhöht die Relevanz eines Szenarios, in dem zunehmende chinesische Produktions- und Qualifikationsfortschritte den strukturellen HBM-/Server‑DRAM‑Knappheitsdruck vorzeitig abschwächen könnten. Der Befund selbst ist allerdings eine Experteneinschätzung, kein qualifizierter Lieferungsnachweis.",
+      "falsifier": "Bis 2027-12-31 müssen konkrete qualifizierte Produktions‑/Shipment‑Belege vorliegen: (a) öffentlich verifizierbare, qualifizierte HBM‑Produkte (z. B. HBM3E/HBM4) von CXMT/YMTC in Serien‑Shipments; und (b) eine kombinierte, nachprüfbare Steigerung ihrer qualifizierten globalen DRAM/HBM‑Marktanteile um ≥5 Prozentpunkte gegenüber Q2 2026. Fehlen beide Elemente bis 2027-12-31, dann falsifiziert dies die operative Bedeutung der KSIA‑Einschätzung für eine frühere Angebotsentspannung.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-09-14",
+      "novelty": "Niedrig — weitgehend eine Zusammenfassung und Bestätigung von bereits in der TAIL‑Baseline / S-AUTO‑Berichterstattung vorhandenen Einschätzungen.",
+      "duplicateOf": "S-2026-07-24-02",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 4,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "nand",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://japanese.joins.com/JArticle/354971",
+          "label": "JoongAng Ilbo (Japanische Edition) — Artikel 2026-09-14",
+          "kind": "primary",
+          "supports": "JoongAng 2026-09-14 zitiert die Korea Semiconductor Industry Association: '...韓中のメモリー半導体技術格差はHBMが3年、DRAMが2年、NAND型フラッシュが1年に縮まった.' (siehe L71–L79)."
+        },
+        {
+          "url": "https://wccftech.com/cxmt-faces-hbm-memory-chip-shock-as-yields-sink-to-25-with-close-to-80-out-of-100-hbm3-chips-failing-final-tests-says-report/",
+          "label": "Wccftech (Sekundärmeldung, Opposing evidence)",
+          "kind": "secondary",
+          "supports": "Mehrere Berichte (zitiert 2026-09-09) melden schwere HBM‑Yieldprobleme bei CXMT (vermutete HBM3‑Yield ~25%), was die operative Fähigkeit chinesischer Anbieter, HBM kurzfristig in großem Maßstab zu liefern, infrage stellt."
+        }
+      ],
+      "reason": "Ablehnung: Die Meldung ist eine zitierte Experten‑Einschätzung (JoongAng/KSIA) und damit verifizierbar, liefert aber keine neuen, direkten qualifizierten Versand‑ oder Preis‑Messgrößen. Inhaltlich wiederholt sie bereits in der TAIL‑Baseline dokumentierte Themen (siehe S-2026-07-24-02 u.a.). Zusätzlich existiert ernstzunehmendes Gegen‑evidence (gemeldete CXMT‑HBM‑Yieldprobleme), das die operative Bedeutung der Aussage für eine frühzeitige Angebotsentspannung infrage stellt. Daher wird die Einlieferung abgewiesen (Recycling/Duplikat + keine unmittelbare, quantifizierbare Auswirkung).",
+      "candidateId": "e56efd22a9fc8a08a33d",
+      "candidateKey": "eef37f50dacd6c77d6c72e84",
+      "reviewedAt": "2026-09-15T19:12:53.050Z",
+      "priorityScore": 48,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05e869df400dea56006aa9980247fc87d2ac68c3673fb51c5c"
+    },
+    {
+      "decision": "rejected",
+      "title": "Berichte: OpenAI, Anthropic und Google seit Wochen in Gesprächen zu AI‑Sicherheitsstandards (Berichte 2026‑09‑14/15)",
+      "fact": "Mehrere Medien berichteten am 2026-09-14/15, dass OpenAI, Anthropic und Google DeepMind seit mehreren Wochen informell über die Schaffung eines branchenweiten AI‑Sicherheits-/Standardsgremiums beraten (Berichte: The Information / Washington Post / Yahoo).",
+      "placement": "Globaler AI‑Governance/Industry‑Coordination Kontext; Datum der Berichterstattung: 2026-09-14/15.",
+      "mechanism": "Berichte beruhen auf anonymen Quellen und Firmen‑Sprechern, die kontinuierliche, informelle Gespräche und Arbeitsgruppenaktivitäten zwischen den Firmen bestätigen; bislang kein formaler, öffentlich zugänglicher verbindlicher Standard oder Governance‑Vertag.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass führende Labs koordinierte Prüf- und Audit‑praktiken ernsthaft diskutieren, was die Wahrscheinlichkeit von strengeren Eval‑/Egress‑Kontrollen bis Ende 2026 erhöht (vgl. P‑2026‑07‑22‑02).",
+      "falsifier": "Falls bis 2026-12-31 keine öffentlich dokumentierte, gemeinsame Brancheninitiative, kein formal verankertes Prüf-/Audit‑Framework oder kein gemeinsames, prozessual erfülltes Audit‑Protokoll vorliegt, wäre die behauptete operative Wirkung widerlegt.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-14",
+      "novelty": "Sehr niedrig — dieselbe Arbeitsgruppenerzählung ist bereits in der Baseline dokumentiert (S-AUTO-d49df151430374ee5685e33f).",
+      "duplicateOf": "S-AUTO-d49df151430374ee5685e33f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 20,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ca.finance.yahoo.com/news/google-openai-anthropic-weigh-high-191132328.html",
+          "label": "Yahoo / Market Chatter (Syndicated, 2026-09-14/15)",
+          "kind": "secondary",
+          "supports": "Yahoo zitiert Berichte über laufende Gespräche zwischen Google, OpenAI und Anthropic über ein Standardsgremium."
+        },
+        {
+          "url": "https://news.bloomberglaw.com/privacy-and-data-security/openai-says-its-working-with-anthropic-google-on-ai-safety",
+          "label": "Bloomberg (sekundäre/komplementäre Berichterstattung)",
+          "kind": "secondary",
+          "supports": "Bloomberg fasst Firmenäußerungen zusammen, dass Gespräche über Sicherheitsmaßnahmen laufen."
+        }
+      ],
+      "reason": "Ablehnung: Thema ist bereits in der TAIL‑Baseline und S‑AUTO‑Feeds als laufende Arbeitsgruppen/Privatgespräche erfasst. Die Kandidatenmeldung bringt keine neue, quantifizierbare Politik‑ oder Governance‑Verpflichtung (kein neues, überprüfbares Outcome). Deshalb als Duplikat/reziprokes Reporting abgelehnt.",
+      "candidateId": "1f4833c2bf298fb38f48",
+      "candidateKey": "dd2d47714b56abe822b4a756",
+      "reviewedAt": "2026-09-15T19:12:53.051Z",
+      "priorityScore": 56,
+      "gateReasons": [
+        "primary source not retrieved",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05e869df400dea56006aa9980247fc87d2ac68c3673fb51c5c"
+    },
+    {
+      "decision": "accepted",
+      "title": "Micron demonstriert 512 GB DDR5‑RDIMM für Server; AMD und Intel zur Validierung genannt (GLOBE/Press‑Release 2026‑09‑15)",
+      "fact": "Micron gab am 2026-09-15 bekannt, dass das Unternehmen die Demonstration eines 512 GB Ultra‑Dense DDR5‑RDIMM‑Moduls auf mehreren Serverplattformen erfolgreich gezeigt hat (Einheit: 512 GB pro RDIMM).",
+      "placement": "Globaler Server‑Speichermarkt; Produktschicht: DDR5 RDIMM (Host‑Systemmemory) für Rechenzentrumsserver; Datum der Pressemitteilung: 2026-09-15.",
+      "mechanism": "Micron demonstrierte ein physisches 512 GB DDR5 RDIMM‑Modul und meldet enge Engineering‑Zusammenarbeit mit AMD und Intel, die Validierungsarbeiten durchführen sollen; technisch erlaubt das Modul höhere Host‑RAM‑Kapazitäten pro Sockel, was die kurzfristige Nachfrage nach alternativen High‑Bandwidth‑Memory‑Pfaden (z. B. HBM) in einigen Workloads relativieren kann.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Das Event erhöht die Wahrscheinlichkeit, dass erhöhte Host‑RAM‑Kapazitäten via Ultra‑Dense DDR5 die Druckspitzen auf HBM‑Supply in bestimmten Server‑Segmenten abmildern könnten (Relevanz für die Vorhersage 'Memory bleibt 2027 knapp' — siehe P-2026-07-20-04). Es ist kein unmittelbares, flächendeckendes Angebotsereignis, sondern ein technologischer Validierungsfortschritt mit Potenzial für Nachfrageverschiebungen.",
+      "falsifier": "Wenn bis 2027-06-30 (a) weder AMD noch Intel eine öffentliche OEM‑Qualifikation/Validierung für das 512 GB‑RDIMM bestätigen und (b) Micron keine bestätigten, qualifizierten Serienlieferungen von ≥50.000 Modulen an OEMs/Cloudkunden meldet, dann hat die Demonstration keinen messbaren Markt‑Impact und die prognostizierte Nachfrageverschiebung ist falsifiziert.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-15",
+      "novelty": "Mittel — direkte Produktdemonstration (512 GB RDIMM) ist neu für die TAIL‑Baseline; sie ist aber eine Firmenmeldung, keine sofortige Serienverfügbarkeit.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 15,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx",
+          "label": "Micron Investors / Pressemitteilung (2026-09-15)",
+          "kind": "primary",
+          "supports": "Micron PR: 'Micron ... successful demonstration of the world's first 512GB DDR5 module on multiple server platforms' und erwähnt Zusammenarbeit/Validierung mit AMD und Intel."
+        },
+        {
+          "url": "https://www.micron.com/about/press/news",
+          "label": "Micron — Newsroom (komplementäre Quelle)",
+          "kind": "secondary",
+          "supports": "Micron Newsroom listet die Produktankündigung und technische Details zu DDR5‑Modulen und Validierungszusammenarbeit."
+        }
+      ],
+      "reason": "Zulassung: Primäre, datierte Firmenmeldung (Micron PR 2026-09-15) dokumentiert eine konkrete technische Demonstration (512 GB DDR5 RDIMM). Das Ereignis ist eine messbare, datierte Produkt‑/Engineeringleistung (Einheit: 512 GB) mit klarer, prüfbarer Falsifizierbarkeit (OEM‑Validierung und Serien‑Shipments). Es ist relevant für die TAIL‑Thesen über Memory‑Knappheit, weil Ultra‑dense Host‑Memory die Nachfrage‑Dynamik gegenüber HBM beeinflussen kann. Deshalb akzeptiert (Signal, nicht direkte Index‑Messung).",
+      "candidateId": "c9f2c72253613378588a",
+      "candidateKey": "8a5701d057f8b4f60e46ba88",
+      "reviewedAt": "2026-09-15T19:12:53.052Z",
+      "priorityScore": 81,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-8a5701d057f8b4f60e46ba88",
+        "title": "Micron demonstriert 512 GB DDR5‑RDIMM für Server; AMD und Intel zur Validierung genannt (GLOBE/Press‑Release 2026‑09‑15)",
+        "date": "2026-09-15",
+        "admittedAt": "2026-09-15T19:12:53.052Z",
+        "fact": "Micron gab am 2026-09-15 bekannt, dass das Unternehmen die Demonstration eines 512 GB Ultra‑Dense DDR5‑RDIMM‑Moduls auf mehreren Serverplattformen erfolgreich gezeigt hat (Einheit: 512 GB pro RDIMM).",
+        "placement": "Globaler Server‑Speichermarkt; Produktschicht: DDR5 RDIMM (Host‑Systemmemory) für Rechenzentrumsserver; Datum der Pressemitteilung: 2026-09-15.",
+        "tailInference": "Micron demonstrierte ein physisches 512 GB DDR5 RDIMM‑Modul und meldet enge Engineering‑Zusammenarbeit mit AMD und Intel, die Validierungsarbeiten durchführen sollen; technisch erlaubt das Modul höhere Host‑RAM‑Kapazitäten pro Sockel, was die kurzfristige Nachfrage nach alternativen High‑Bandwidth‑Memory‑Pfaden (z. B. HBM) in einigen Workloads relativieren kann.",
+        "predictionId": "P-2026-07-20-04",
+        "predictionImpact": "Das Event erhöht die Wahrscheinlichkeit, dass erhöhte Host‑RAM‑Kapazitäten via Ultra‑Dense DDR5 die Druckspitzen auf HBM‑Supply in bestimmten Server‑Segmenten abmildern könnten (Relevanz für die Vorhersage 'Memory bleibt 2027 knapp' — siehe P-2026-07-20-04). Es ist kein unmittelbares, flächendeckendes Angebotsereignis, sondern ein technologischer Validierungsfortschritt mit Potenzial für Nachfrageverschiebungen.",
+        "falsifier": "Wenn bis 2027-06-30 (a) weder AMD noch Intel eine öffentliche OEM‑Qualifikation/Validierung für das 512 GB‑RDIMM bestätigen und (b) Micron keine bestätigten, qualifizierten Serienlieferungen von ≥50.000 Modulen an OEMs/Cloudkunden meldet, dann hat die Demonstration keinen messbaren Markt‑Impact und die prognostizierte Nachfrageverschiebung ist falsifiziert.",
+        "nextReview": "2027-06-30",
+        "priorityScore": 81,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 15,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 20,
+        "confidence": 70,
+        "markets": [
+          "server_dram",
+          "dram",
+          "ai_infrastructure"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Micron Investors / Pressemitteilung (2026-09-15)",
+            "url": "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx"
+          },
+          {
+            "label": "Micron — Newsroom (komplementäre Quelle)",
+            "url": "https://www.micron.com/about/press/news"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Das Event erhöht die Wahrscheinlichkeit, dass erhöhte Host‑RAM‑Kapazitäten via Ultra‑Dense DDR5 die Druckspitzen auf HBM‑Supply in bestimmten Server‑Segmenten abmildern könnten (Relevanz für die Vorhersage 'Memory bleibt 2027 knapp' — siehe P-2026-07-20-04). Es ist kein unmittelbares, flächendeckendes Angebotsereignis, sondern ein technologischer Validierungsfortschritt mit Potenzial für Nachfrageverschiebungen."
+        },
+        "admissionReviewKey": "8a5701d057f8b4f60e46ba88"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05e869df400dea56006aa9980247fc87d2ac68c3673fb51c5c"
+    },
+    {
+      "decision": "rejected",
+      "title": "Bloomberg: OpenAI arbeitet mit Anthropic und Google an AI‑Sicherheitsfragen (Bericht 2026‑09‑15)",
+      "fact": "Bloomberg berichtete am 2026-09-15, dass OpenAI Gespräche mit Anthropic PBC und Google DeepMind führt, um bei AI‑Sicherheitsfragen zusammenzuarbeiten; Firmenvertreter bestätigen laufende Diskussionen.",
+      "placement": "Global; Unternehmenskoordinierung zu AI‑Safety; Datum der Meldung: 2026-09-15.",
+      "mechanism": "Bericht stützt sich auf Firmenäußerungen und anonyme Quellen; bislang kein formelles öffentliches Abkommen dokumentiert.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Gleicher inhaltlicher Effekt wie Kandidat 1f4833c2...: erhöht die Wahrscheinlichkeit koordinierter Sicherheitsmaßnahmen, kann aber nicht allein als Beleg für verpflichtende Standards dienen.",
+      "falsifier": "Wenn bis 2026-12-31 keine gemeinsame, öffentlich dokumentierte Brancheninitiative, kein verbindliches Prüf-/Audit‑Protokoll oder kein erstmals implementiertes, gemeinsames Test‑Framework vorliegt, ist die behauptete operative Wirkung nicht bestätigt.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-15",
+      "novelty": "Sehr niedrig — dieselbe Narrative ist bereits in der Baseline/S‑AUTO dokumentiert und wurde oben (Kandidat 1f4833c2...) behandelt.",
+      "duplicateOf": "S-AUTO-d49df151430374ee5685e33f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 20,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.bloomberglaw.com/privacy-and-data-security/openai-says-its-working-with-anthropic-google-on-ai-safety",
+          "label": "Bloomberg — Bericht (2026-09-15)",
+          "kind": "primary",
+          "supports": "Bloomberg fasst Firmenäußerungen zusammen, dass OpenAI mit Anthropic und Google an Schritten zur AI‑Sicherheit arbeitet."
+        }
+      ],
+      "reason": "Ablehnung: Inhaltlich identisch zu bereits in der Baseline erfassten Arbeitsgruppensignalen (siehe S‑AUTO‑d49df151...). Keine neue, quantitativ überprüfbare Verpflichtung oder unmittelbares Deployment‑Outcome dokumentiert — daher Duplicate/Rejected.",
+      "candidateId": "03230a930cbd29b4adb0",
+      "candidateKey": "f46c45b1b0b8dfcb61abe5a2",
+      "reviewedAt": "2026-09-15T19:12:53.061Z",
+      "priorityScore": 57,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05e869df400dea56006aa9980247fc87d2ac68c3673fb51c5c"
+    },
+    {
+      "decision": "rejected",
+      "title": "Amazon.com (AMZN) Tests Its Valuation Following Anthropic And AWS AI Momentum",
+      "fact": "Marktkommentar/Headline über kurzfristige Kursbewegungen und Bewertungsdiskussion für Amazon (Ticker AMZN); keine neue, atomare, datierte Markt‑ oder Lieferkettenmessung.",
+      "placement": "Global / Equities / Marktkommentar (keine konkrete Produkt‑ oder Supply‑Chain‑Geographie).",
+      "mechanism": "Narrativ‑getriebener Kursimpuls: Anlegerreaktion auf Anthropic‑/AI‑Narrativ und kurzfristige Nachrichten (kein kausaler Supply‑Chain‑Effekt dokumentiert).",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar — die Meldung ist reine Marktkommentar/Preisreaktion ohne überprüfbare, indexrelevante Messgröße.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "gering",
+      "duplicateOf": "S-2026-07-31-02",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 5,
+        "forecastImpact": 3,
+        "falsifiability": 1,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://simplywall.st/news/us/capital-markets/page/9",
+          "label": "SimplyWallSt – Headline syndication",
+          "kind": "secondary",
+          "supports": "Syndizierter Investment‑Headline mit Interpretationsrahmen für AMZN‑Bewertung."
+        }
+      ],
+      "reason": "Ablehnung: reine Kurs/Headline‑Berichterstattung und Meinungs/Research‑Syndikation. Kein atomarer, datierter Messwert, keine neue direkte Auswirkung auf bestehende Vorhersagen (Baseline enthält bereits Amazon‑Monetarisierungs-/Anthropic‑Berichterstattung). Promo/Stock‑Kommentar wird nicht als TAIL‑Signal zugelassen.",
+      "candidateId": "7aa4e85f66229c532c35",
+      "candidateKey": "1e08c902e6716886ae92b6d2",
+      "reviewedAt": "2026-09-15T19:15:53.086Z",
+      "priorityScore": 19,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01696d25b0ccf829006aa998b571e487d28901d9afd9693506"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron demonstriert 512GB DDR5 RDIMM; Ziel: Serienproduktion H2 2027",
+      "fact": "Micron demonstrierte ein 512 GB DDR5 Registered DIMM (RDIMM) für Serversysteme und kommuniziert, dass Volumenproduktion für diese Module für das zweite Halbjahr 2027 anvisiert wird (Unternehmens‑Pressemitteilung vom 2026‑09‑15).",
+      "placement": "Global / Server‑DRAM (Server‑Main‑Memory) / Produkt‑Layer / Horizon: Produktion ab H2 2027.",
+      "mechanism": "Technologie‑ und Produkt‑Upgrade erhöht nutzbare Host‑Bits pro Server (mehr Byte‑Kapazität pro Sockel). Wenn 512 GB RDIMM in relevanten Mengen qualifiziert und an Hyperscaler/Cloud‑Kunden ausgeliefert werden, reduziert dies kurzfristig den Druck auf physische DRAM‑die‑Kapazität durch Host‑Bit‑Effizienz (wirkt verfügbarkeitsmildernd für Server‑DRAM‑Knappheit).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Potentielle Abschwächung des prognostizierten strukturellen Server‑DRAM‑Engpasses bis Ende 2028: Wenn die 512 GB‑RDIMM bis Ende 2027 in großen Stückzahlen qualifiziert und ausgeliefert werden, könnte die effektiv benötigte physische DRAM‑Die‑Menge pro Server sinken und damit die Schärfe des Engpasses im Prediction P-2026-07-11-01 verringern.",
+      "falsifier": "Bis zum 2027-12-31 legt Micron keine nachprüfbaren Belege vor, dass mindestens 100.000 qualifizierte 512 GB DDR5‑RDIMM‑Module an Cloud/Hyperscaler‑Kunden ausgeliefert wurden (Herstellerangaben, Kundenbestätigungen oder nachprüfbare Lieferstatistiken). Wenn diese Schwelle nicht erreicht wird, bleibt die Auswirkung auf P-2026-07-11-01 marginal.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-15",
+      "novelty": "hoch",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 18,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx",
+          "label": "Micron – offizielle Pressemitteilung (Produktankündigung, 2026‑09‑15).",
+          "kind": "primary",
+          "supports": "Micron bestätigt Demonstration eines 512 GB DDR5 RDIMM und nennt Ziel für Volumenproduktion: \"sometime in the second half of 2027\" (Unternehmenspublikation)."
+        },
+        {
+          "url": "https://www.sahmcapital.com/news/content/full-transcript-micron-technology-q3-2026-earnings-call-2026-06-25",
+          "label": "Earnings call / Managementkommentare zu Roadmap und 1‑gamma‑Technologie (Kontext).",
+          "kind": "secondary",
+          "supports": "Vorherige Micron‑Commits zu 1‑gamma‑Technologie und HVM‑Zeithorizonten, relevant zur Plausibilisierung des H2‑2027‑Ziels."
+        }
+      ],
+      "reason": "Akzeptiert: Die Meldung ist ein primärer, datierter Unternehmensbeleg (Pressemitteilung) für ein technisch‑konkretes Produkt (512 GB RDIMM) mit einem klar benannten Produktionshorizont (H2 2027). Sie erfüllt die Anforderungen an ein atomares, datiertes Faktum mit messbarer potenzieller Auswirkung auf das bestehende Vorhersagemodell P-2026-07-11-01 (Server‑DRAM‑Knappheit). IndexImpact bleibt vorerst false, da bislang keine bestätigten Volumenlieferungen oder qualifizierten Shipments vorliegen; die vorgeschlagene Falsifizierbarkeit (Liefer‑/Qualifikationsschwelle bis 2027‑12‑31) macht die Behauptung prüfbar.",
+      "candidateId": "9641b569167c96450df1",
+      "candidateKey": "0bbedd4873c68200a5b1a0e4",
+      "reviewedAt": "2026-09-15T19:15:53.087Z",
+      "priorityScore": 82,
+      "gateReasons": [
+        "missing novelty",
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01696d25b0ccf829006aa998b571e487d28901d9afd9693506"
+    },
+    {
+      "decision": "rejected",
+      "title": "Amazon Gains 1.6% as Its $53 Billion Anthropic Windfall Meets a Weapons Test",
+      "fact": "Kurzfristige Kursbewegung und Nachrichten‑Headline zu Amazon (AMZN) in Folge von Anthropic‑Gewinn‑Berichterstattung und geopolitischer Risikoerwähnung; keine neue, atomare Lieferketten‑ oder Kapazitätsmessung.",
+      "placement": "Global / Equities / Marktkommentar (keine konkrete Produkt‑ oder Supply‑Chain‑Geographie).",
+      "mechanism": "Preisreaktion auf kombinierte Geschäfts‑/Bilanznachrichten (einmaliger Investitionsgewinn) und geopolitische Schlagzeilen; nicht kausal zu einem TAIL‑Indexsignal im Speicher/AI‑Infrastrukturkontext.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar — Meldung ist Marktkommentar ohne definierbare, prüfbare Indexmetrik.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "gering",
+      "duplicateOf": "S-2026-07-31-02",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 4,
+        "forecastImpact": 3,
+        "falsifiability": 1,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 12,
+      "confidence": 25,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ca.finance.yahoo.com/news/amazon-gains-1-6-53-124133699.html",
+          "label": "Yahoo Finance / GuruFocus Syndication (Headline über Kursbewegung).",
+          "kind": "secondary",
+          "supports": "Berichtet intraday Kursbewegung (+1.6%) und referenziert Amazon/Anthropic‑Gewinndaten."
+        }
+      ],
+      "reason": "Ablehnung: Wiederholte, nicht‑atomare Headline über Kursbewegung und Bilanz‑One‑Offs; kein neuer, qualifizierbarer Einfluss auf TAIL‑Vorhersagen. Archiv/Grunddaten zur Amazon‑Bilanz sind bereits in der Baseline enthalten.",
+      "candidateId": "1dfbb41f9dacab9cf0fc",
+      "candidateKey": "274b0a0a96bd65d593396363",
+      "reviewedAt": "2026-09-15T19:15:53.101Z",
+      "priorityScore": 18,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01696d25b0ccf829006aa998b571e487d28901d9afd9693506"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung's Taylor Fab Begins Mass Production of Tesla AI5 Chips, Targets Full Capacity by Year-End",
+      "fact": "Berichte aus Sekundärmedien (mehrere koreanische/branchennahe Quellen) deuten auf fortgeschrittene Vorbereitungen und Pilot/Initialproduktion im Taylor (Texas) Fab hin; es fehlt jedoch ein primäres Samsung‑Statement, das einen Beginn der Massenproduktion per 2026‑09‑15 bestätigt.",
+      "placement": "Taylor Fab (Taylor, Texas, USA) / Foundry / Logik & AI‑Accelerator‑Produktion / Horizont: angeblich sofortig bzw. bis Jahresende 2026.",
+      "mechanism": "Wenn Taylor tatsächlich jetzt oder sehr kurzfristig massenproduziert, würde das die weltweite Advanced‑Foundry‑Kapazität erhöhen und damit mittelfristig Verfügbarkeitsrisiken für fortgeschrittene Nodes und damit verbundene Packaging/Interposer‑Kapazitäten reduzieren; derzeitige Berichte sind jedoch inkonsistent und beruhen auf Leaks/Industry‑Sources.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Würde das zeitnahe Massenhochfahren von Taylor die Prognose beeinflussen (z. B. Samsungs HBM4‑Umsatz‑Ramp in Q3 2026 und Server‑DRAM/HBM‑Kapazitätsverfügbarkeit), wäre dies relevant; aktuell ist die Evidenz unvollständig, sodass nur Beobachtung empfohlen wird.",
+      "falsifier": "Wenn bis 2026-12-31 keine formale Bestätigung von Samsung (Pressemitteilung / SEC/IR‑Filings) vorliegt, die einen tatsächlichen Start der Serienmassenproduktion am Taylor‑Standort dokumentiert (inkl. Nennung erster Kunden‑Shipments oder validierter Pilot‑Shipments), dann ist die heute behauptete Produktionsaufnahme nicht verifiziert und der Effekt entfällt.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-15",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 8,
+        "thesisRelevance": 15,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 45,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/15/samsung-starts-chip-output-at-texas-plant-on-tesla-orders",
+          "label": "Seoul Economic Daily (Bericht zu Chip‑Output am Taylor‑Standort, 2026‑09‑15).",
+          "kind": "secondary",
+          "supports": "Berichtet über angeblichen Start von Chip‑Output am Taylor‑Standort für Tesla‑Aufträge; beruft sich auf Branchenquellen."
+        }
+      ],
+      "reason": "Watchlist: Die Meldung enthält eine marktrelevante Behauptung (Taylor‑Massenproduktion gestartet), hat aber keine bestätigende Primärquelle von Samsung oder einem bestätigbaren Kunden‑Shipment. Es gibt widersprüchliche, sekundäre Berichte (teilweise Juli‑/Sep‑Berichterstattung), weshalb wir das Item beobachten und eine formale Bestätigung bis 2026‑12‑31 verlangen, bevor eine Aufnahme als VERIFIED DATA erfolgt. Patrick‑Red‑Pencil: vermeidet Annahmen über sofortige Verfügbarkeitswirkung ohne Shipments/Qualifikationen.",
+      "candidateId": "4c50f4461f02cfbdd3ba",
+      "candidateKey": "29e74528136a2f4b362a05e9",
+      "reviewedAt": "2026-09-15T19:15:53.101Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01696d25b0ccf829006aa998b571e487d28901d9afd9693506"
     }
   ]
 }

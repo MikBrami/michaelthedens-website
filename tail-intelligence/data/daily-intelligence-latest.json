@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T15:42:43.211Z",
+  "updatedAt": "2026-09-15T19:19:53.216Z",
   "previousRun": "2026-09-14",
   "executivePulse": {
     "current": 78,
@@ -866,6 +866,72 @@
       "admissionReviewKey": "220050d4a4beaafaeaab1881"
     },
     {
+      "id": "S-AUTO-8a5701d057f8b4f60e46ba88",
+      "title": "Micron demonstriert 512 GB DDR5‑RDIMM für Server; AMD und Intel zur Validierung genannt (GLOBE/Press‑Release 2026‑09‑15)",
+      "date": "2026-09-15",
+      "admittedAt": "2026-09-15T19:12:53.052Z",
+      "fact": "Micron gab am 2026-09-15 bekannt, dass das Unternehmen die Demonstration eines 512 GB Ultra‑Dense DDR5‑RDIMM‑Moduls auf mehreren Serverplattformen erfolgreich gezeigt hat (Einheit: 512 GB pro RDIMM).",
+      "placement": "Globaler Server‑Speichermarkt; Produktschicht: DDR5 RDIMM (Host‑Systemmemory) für Rechenzentrumsserver; Datum der Pressemitteilung: 2026-09-15.",
+      "tailInference": "Micron demonstrierte ein physisches 512 GB DDR5 RDIMM‑Modul und meldet enge Engineering‑Zusammenarbeit mit AMD und Intel, die Validierungsarbeiten durchführen sollen; technisch erlaubt das Modul höhere Host‑RAM‑Kapazitäten pro Sockel, was die kurzfristige Nachfrage nach alternativen High‑Bandwidth‑Memory‑Pfaden (z. B. HBM) in einigen Workloads relativieren kann.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Das Event erhöht die Wahrscheinlichkeit, dass erhöhte Host‑RAM‑Kapazitäten via Ultra‑Dense DDR5 die Druckspitzen auf HBM‑Supply in bestimmten Server‑Segmenten abmildern könnten (Relevanz für die Vorhersage 'Memory bleibt 2027 knapp' — siehe P-2026-07-20-04). Es ist kein unmittelbares, flächendeckendes Angebotsereignis, sondern ein technologischer Validierungsfortschritt mit Potenzial für Nachfrageverschiebungen.",
+      "falsifier": "Wenn bis 2027-06-30 (a) weder AMD noch Intel eine öffentliche OEM‑Qualifikation/Validierung für das 512 GB‑RDIMM bestätigen und (b) Micron keine bestätigten, qualifizierten Serienlieferungen von ≥50.000 Modulen an OEMs/Cloudkunden meldet, dann hat die Demonstration keinen messbaren Markt‑Impact und die prognostizierte Nachfrageverschiebung ist falsifiziert.",
+      "nextReview": "2027-06-30",
+      "priorityScore": 81,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 15,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 20,
+      "confidence": 70,
+      "markets": [
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Micron Investors / Pressemitteilung (2026-09-15)",
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx"
+        },
+        {
+          "label": "Micron — Newsroom (komplementäre Quelle)",
+          "url": "https://www.micron.com/about/press/news"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Das Event erhöht die Wahrscheinlichkeit, dass erhöhte Host‑RAM‑Kapazitäten via Ultra‑Dense DDR5 die Druckspitzen auf HBM‑Supply in bestimmten Server‑Segmenten abmildern könnten (Relevanz für die Vorhersage 'Memory bleibt 2027 knapp' — siehe P-2026-07-20-04). Es ist kein unmittelbares, flächendeckendes Angebotsereignis, sondern ein technologischer Validierungsfortschritt mit Potenzial für Nachfrageverschiebungen."
+      },
+      "admissionReviewKey": "8a5701d057f8b4f60e46ba88"
+    },
+    {
       "id": "S-AUTO-28d69de59549559dfb52690b",
       "title": "DIGITIMES berichtet: Samsung HBM4‑Yield steigt; HBM4E bleibt herausfordernd",
       "date": "2026-08-18",
@@ -1182,11 +1248,29 @@
     "note": "Evidenzprüfung offen: 528 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-15T15:42:43.211Z",
+    "generatedAt": "2026-09-15T19:19:53.216Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-15T15:33:24.047Z",
-    "inboxNewItems": 7,
+    "inboxUpdatedAt": "2026-09-15T19:09:30.540Z",
+    "inboxNewItems": 91,
     "highRelevanceCandidates": [
+      {
+        "id": "f1844f24bb4205dba86a",
+        "title": "SK Hynix Is Shipping 16-Layer HBM4 for Nvidia Rubin: Where Do Micron And Samsung Stand?",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeHJKTjE5Z2R4MmtsTUhmNHFLWUZoLVc0emxvUjE3anNVdFh5ak05SEZpbWhVZmdxc3VqRTFSTEwtU2tSeWNDRjNodTd3a0o5TWF0a2xOeUphMjRrNlFaTGxYMDctWmwwcnhMWFNpZkdHVUI1eWpZM2dSSHFFenRXWXFwMjQ1OGZYYzU1SlU4Z1Q4T2trOGl4bEJPdw?oc=5",
+        "source": "Benzinga",
+        "summary": "Aktuelle Meldung von Benzinga: SK Hynix Is Shipping 16-Layer HBM4 for Nvidia Rubin: Where Do Micron And Samsung Stand?",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-15T18:23:45.000Z"
+      },
+      {
+        "id": "e56efd22a9fc8a08a33d",
+        "title": "China’s YMTC Is Just 1 Year Behind The West On NAND, While CXMT Trails By Just 2 Years On DRAM And 3 Years On HBM, According To Korea Semiconductor Industry Association",
+        "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNRS1MTlNwazVPWXNNV2xlT1pxR2pPeWNJdWlmbWJtenJkY2JWSnNZc294NFEzejFXb2w1cjhyU21WVmh5SGR1Y2llTXp2VHg4aW12RkYtY1NNOXhKMjRYbU8zNWRLbGV0NmNoSHlSRE51ZU1XSExoX19GdDl4RmtRNXppTzRWTU1xUFJYOVFBZW9MZlBiSlFaLTcxUzNyOHBDQ1RkQ1AzWG5xQlphN1BVM0tjblZXMEVNcmxJX1FmWGw4ZmJvVmExMGpHVDFJdVdCTDQ4MlNVZ2JaRXVjVXMwaVZrbVJxVUFVeWsza2lSS2kxRmkxZThYLThzN2Q4bVhzNlBhOTZxZ3ltX0ZtMzZjMWRZRXA1YTg2U0g00gGbAkFVX3lxTE1FLUxOU3BrNU9Zc01XbGVPWnFHak95Y0l1aWZtYm16cmRjYlZKc1lzb3g0UTN6MVdvbDVyOHJTbVZWaHlIZHVjaWVNenZUeDhpbXZGRi1jU005eEoyNFhtTzM1ZEtsZXQ2Y2hIeVJETnVlTVdITGhfX0Z0OXhGa1E1emlPNFZNTXFQUlg5UUFlb0xmUGJKUVotNzFTM3I4cENDVGRDUDNYbnFCWmE3UFUzS2NuVlcwRU1ybElfUWZYbDhmYm9WYTEwakdUMUl1V0JMNDgyU1VnYlpFdWNVczBpVmttUnFVQVV5azNraVJLaTFGaTFlOFgtOHM3ZDhtWHM2UGE5NnFneW1fRm0zNmMxZFlFcDVhODZTSDQ?oc=5",
+        "source": "Wccftech",
+        "summary": "Aktuelle Meldung von Wccftech: China’s YMTC Is Just 1 Year Behind The West On NAND, While CXMT Trails By Just 2 Years On DRAM And 3 Years On HBM, According To Korea Semiconductor Industry Association",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-15T16:45:00.000Z"
+      },
       {
         "id": "32bc2e7d47ef3ef3353d",
         "title": "Samsung edges SK hynix as HBM4 lifts Korea chip earnings outlook - CHOSUNBIZ",
@@ -1240,24 +1324,6 @@
         "summary": "Aktuelle Meldung von Invezz: Why Micron, SanDisk and SK Hynix are suddenly at the centre of the AI selloff",
         "relevanceScore": 100,
         "publishedAt": "2026-09-14T12:51:59.000Z"
-      },
-      {
-        "id": "2ccdcdd311c4cb6a2ff4",
-        "title": "“Samsung’s HBM4 and China’s Commodity DRAM Offensive”: SK hynix Loses Ground as Global Memory-Market Competition Reshapes",
-        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xemhNS0htWDBVcU9pOFFpdHFXekg0MXpRdzVYdEp0NGRTVkZpSFhBZ3R3MzJNdXl5STFfV1hKZEV1YndXSElpMTRieVAycU1LUmVvRWNocw?oc=5",
-        "source": "economy.ac",
-        "summary": "Aktuelle Meldung von economy.ac: “Samsung’s HBM4 and China’s Commodity DRAM Offensive”: SK hynix Loses Ground as Global Memory-Market Competition Reshapes",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-14T08:05:17.000Z"
-      },
-      {
-        "id": "17ffb24e7e6c012e7743",
-        "title": "The HBM4 Hybrid Bonding Bottleneck: SK Hynix and Samsung Battle Over Copper-to-Copper Die Stacking for Next-Generation Accelerators",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTDlPZURPR2ttTFNOc2J3b01NZmFIU0lYSHBHdVdiWFlvWFUwMGZMaVIweFRkTWRLTzR0b2ZVSHQzbnBaelVXd2pUVXhhWlk1dl9wSWNabmtISW53NXZBLW5rS2E5TWRtZjd6UHdxNlBESFExXzhWZks4dS1MQ0Q5QUdld0RaLVZUV2pIZEhOTExjWnR0S3lRVHpB?oc=5",
-        "source": "streamlinefeed.co.ke",
-        "summary": "Aktuelle Meldung von streamlinefeed.co.ke: The HBM4 Hybrid Bonding Bottleneck: SK Hynix and Samsung Battle Over Copper-to-Copper Die Stacking for Next-Generation Accelerators",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-14T07:50:00.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -1343,43 +1409,44 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-15T15:42:43.059Z",
-    "inboxUpdatedAt": "2026-09-15T15:33:24.047Z",
+    "checkedAt": "2026-09-15T19:19:53.045Z",
+    "inboxUpdatedAt": "2026-09-15T19:09:30.540Z",
     "status": "error",
-    "candidates": 968,
-    "reviewed": 440,
-    "accepted": 47,
-    "watchlist": 110,
-    "rejected": 283,
+    "candidates": 976,
+    "reviewed": 448,
+    "accepted": 48,
+    "watchlist": 112,
+    "rejected": 288,
     "pending": 528,
     "oldestPendingAt": "2026-08-18T09:47:10.000Z",
-    "lastCompletedReviewAt": "2026-09-15T15:39:43.023Z",
+    "lastCompletedReviewAt": "2026-09-15T19:15:53.101Z",
     "error": "The operation was aborted due to timeout",
     "batchErrors": [
       "The operation was aborted due to timeout",
       "The operation was aborted due to timeout",
+      "The operation was aborted due to timeout",
       "The operation was aborted due to timeout"
     ],
-    "rawCandidates": 1002,
+    "rawCandidates": 1011,
     "triage": {
-      "archivedOpinions": 21,
+      "archivedOpinions": 22,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-15T15:33:44.198Z",
-      "completedAt": "2026-09-15T15:42:43.065Z",
-      "selected": 24,
-      "reviewed": 12,
+      "startedAt": "2026-09-15T19:09:52.580Z",
+      "completedAt": "2026-09-15T19:19:53.052Z",
+      "selected": 96,
+      "reviewed": 8,
       "concurrency": 2,
-      "limit": 24,
+      "limit": 96,
       "rateLimitRetries": 0,
-      "durationSeconds": 538,
-      "budgetExhausted": false
+      "durationSeconds": 600,
+      "budgetExhausted": true
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-15",
-    "inputHash": "f371b092d171877321e049b544f212c4f536b04d125f7a6e34ddd20853cff205",
-    "sourceDataAsOf": "2026-09-14"
+    "inputHash": "0a14c53112ee449390e272b4927909c092465e7d247dde08d06ebfda0450bf8c",
+    "sourceDataAsOf": "2026-09-15"
   }
 }
