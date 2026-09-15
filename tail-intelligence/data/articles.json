@@ -365,6 +365,65 @@
     ]
   },
   {
+    "id": "S-AUTO-a6c70a747ea255eaf37c4e9a",
+    "date": "2026-07-08",
+    "title": "Meta kündigt CA$13+ Milliarden, 1‑GW AI‑Campus in Sturgeon County (Alberta) an",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram",
+      "dram"
+    ],
+    "companies": [
+      "Meta"
+    ],
+    "severity": 55,
+    "confidence": 85,
+    "signal": "demand_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "Meta hat am 2026-07-08 den Bau eines 1 GW AI‑Rechenzentrums in Sturgeon County (Alberta, Kanada) angekündigt und nennt eine Investitionssumme von über CA$13 Milliarden; Meta übernimmt Finanzierung neuer Stromerzeugungs‑/Grid‑Infrastruktur für das Projekt.",
+    "tail_analysis": "Ein einzelner 1‑GW‑Hyperscaler‑Campus erhöht direkte Nachfrage nach Server‑/HBM‑Memory durch langfristige Beschaffungszyklen, LTAs und Priorisierungen bei Foundry/Packaging; diese Nachfrage erhöht Allokationsdruck und kann zu Verknappungs‑/Preis‑Effekten in Server‑DRAM/HBM‑Segmenten führen.",
+    "source": "Sturgeon County — Projekt‑ und Amtsinformationen (County Präsentation und Lokal‑Bestätigung)",
+    "url": "https://www.sturgeoncounty.ca/building-development/data-centre-development/",
+    "content_hash": "bc97e15dc40a824ba83a",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-15T01:32:55.898Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "a6c70a747ea255eaf37c4e9a",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Stützt die bestehende Vorhersage, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben: ein zusätzliches 1‑GW‑Campusprojekt erhöht kumulative Hyperscaler‑Nachfrage und trägt zur Kapazitätsbindung/Allokation bei.",
+    "falsifier": "Bis 2027-12-31 existieren keine belegbaren, ausgeführten Bindungsmeilensteine (keine eingereichten/erteilten Entwicklungs‑/Baugenehmigungen für die initiale Phase, keine ausgeführten verbindlichen Verträge zur Stromversorgung oder kein von Meta kommunizierter FID für erste Bauabschnitte). Wenn diese Kriterien erfüllt sind, reduziert das die Annahme eines unmittelbar wirkenden Nachfrage‑Impacts.",
+    "nextReview": "2027-07-08",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Stützt die bestehende Vorhersage, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben: ein zusätzliches 1‑GW‑Campusprojekt erhöht kumulative Hyperscaler‑Nachfrage und trägt zur Kapazitätsbindung/Allokation bei."
+    },
+    "sources": [
+      {
+        "label": "Sturgeon County — Projekt‑ und Amtsinformationen (County Präsentation und Lokal‑Bestätigung)",
+        "url": "https://www.sturgeoncounty.ca/building-development/data-centre-development/"
+      },
+      {
+        "label": "Reuters / Investing.com — Nachrichten‑Zusammenfassung (Breite Medienberichterstattung)",
+        "url": "https://www.investing.com/news/stock-market-news/meta-to-build-c13-billion-alberta-data-center-its-first-in-canada-4782223"
+      }
+    ]
+  },
+  {
     "id": "tail-2026-07-14-dram-prices",
     "date": "2026-07-14",
     "title": "DRAM-Preissignale bleiben klar aufwärtsgerichtet",
@@ -6844,6 +6903,123 @@
       {
         "label": "NVIDIA Q2 / 10‑Q (Interim Report) - ergänzende Darstellung der Garantien",
         "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-28d69de59549559dfb52690b",
+    "date": "2026-08-18",
+    "title": "DIGITIMES berichtet: Samsung HBM4‑Yield steigt; HBM4E bleibt herausfordernd",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Samsung"
+    ],
+    "severity": 45,
+    "confidence": 70,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "demand"
+    ],
+    "summary": "DIGITIMES berichtet (unter Bezug auf Seoul Economic Daily und Branchenquellen), dass Samsungs HBM4‑Produktionsausbeute gegen Mitte August 2026 nahe ~80% liegt (Berichtsdatum 2026‑08‑18), zugleich werde die Folgegeneration HBM4E härteren Qualifikations‑/Thermie‑Tests gegenüberstehen. (Digitimes, 2026‑08‑18; mehrere Branchenkorroborationen).",
+    "tail_analysis": "Höhere HBM4‑Ausbeuten (~80%) reduzieren kurzfristig Herstellkosten und erhöhen verfügbaren qualifizierten HBM4‑Output (capacity_relief für HBM4), erhöhen jedoch den Druck auf HBM4E‑Qualifikation (thermische/Packaging‑Limits), sodass mittel‑/langfristige High‑Layer‑Supply weiterhin von Packaging/Yield abhängt. Das ist ein physischer Produktions‑Indikator (Yield %).",
+    "source": "DIGITIMES – Hauptmeldung (2026‑08‑18)",
+    "url": "https://www.digitimes.com/news/a20260818VL207/samsung-hbm4-revenue-hbm-technology.html",
+    "content_hash": "0bcd12b91f0541ef0921",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-15T01:32:55.920Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "28d69de59549559dfb52690b",
+    "predictionId": "P-2026-07-30-02",
+    "predictionImpact": "Erhöht Wahrscheinlichkeit, dass Samsungs HBM4‑Umsatz im Q3 2026 sequenziell deutlich steigt (unterstützt P-2026-07-30-02). Gleichzeitig signalisiert der HBM4E‑Hinweis, dass High‑layer HBM‑Supply (HBM4E) weiterhin Risiken für das 2027‑Timing birgt.",
+    "falsifier": "Bis 2026‑11‑02 (Samsung Q3‑Bericht / Earnings Release): Samsungs ausgewiesener HBM4‑Umsatz im Q3 2026 liegt nicht mindestens 2.5× über dem ausgewiesenen HBM4‑/HBM‑Umsatz in Q2 2026 (damit wäre die erwartete sequenzielle Ramp‑Auswirkung falsifiziert). Alternativ: falls Samsung offizielle Yield‑Korrekturen oder Rückstufungen in einem SEC‑/IR‑Dokument vorlegt, die die ~80%‑Ausbeute widerlegen, gilt das ebenfalls als Falsifier.",
+    "nextReview": "2026-11-05",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht Wahrscheinlichkeit, dass Samsungs HBM4‑Umsatz im Q3 2026 sequenziell deutlich steigt (unterstützt P-2026-07-30-02). Gleichzeitig signalisiert der HBM4E‑Hinweis, dass High‑layer HBM‑Supply (HBM4E) weiterhin Risiken für das 2027‑Timing birgt."
+    },
+    "sources": [
+      {
+        "label": "DIGITIMES – Hauptmeldung (2026‑08‑18)",
+        "url": "https://www.digitimes.com/news/a20260818VL207/samsung-hbm4-revenue-hbm-technology.html"
+      },
+      {
+        "label": "Korrobrierende Branchenberichterstattung / Trade‑Summaries",
+        "url": "https://www.explainx.ai/blog/samsung-hbm4-80-percent-yield-ahead-of-schedule-august-2026"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-c096b22335c4c4ca385b719e",
+    "date": "2026-08-18",
+    "title": "TrendForce: Kombinierter Umsatz der Top‑5 NAND‑Flash‑Marken steigt Q2‑2026 sequenziell um 77 %; Micron auf Rang 3",
+    "category": "storage",
+    "markets": [
+      "nand",
+      "enterprise_ssd"
+    ],
+    "companies": [
+      "Micron"
+    ],
+    "severity": 55,
+    "confidence": 75,
+    "signal": "price_up",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "pricing"
+    ],
+    "summary": "TrendForce meldet am 2026-08-18, dass der kombinierte Quartalsumsatz der fünf größten börsennotierten NAND‑Flash‑Marken im 2Q26 gegenüber dem Vorquartal um 77 % auf US$68.87 Mrd. gestiegen ist; Micron erreichte US$11.85 Mrd. NAND‑Umsatz (QoQ +99.2 %) und rutschte damit auf Rang 3 der Umsatzrangliste.",
+    "tail_analysis": "TrendForce erläutert, dass AI‑Server‑Nachfrage und stark steigende ASPs (Enterprise‑SSD/AI‑Storage) die Umsatzsteigerung trieben; erhöhte ASPs plus Verschiebung des Absatzmix zu Enterprise‑/AI‑SSDs führten zu deutlich höheren Nettoumsätzen trotz begrenzter Bit‑Zunahme.",
+    "source": "TrendForce Pressemitteilung: \"Combined Revenue of Top Five NAND Flash Brands Rises 77% QoQ in 2Q26; Micron Moves Up to Third Place\"",
+    "url": "https://www.trendforce.com/presscenter/news/20260818-13186.html",
+    "content_hash": "10a60f19bb10c7523b1b",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-15T01:35:55.942Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "c096b22335c4c4ca385b719e",
+    "predictionId": "OUTLOOK-enterprise_ssd",
+    "predictionImpact": "Erhöht Evidenz für kurzfristig anhaltenden Preisdruck und Nachfrage‑Bevorzugung im Enterprise‑SSD/NAND‑Segment; stützt OUTLOOK‑enterprise_ssd (höhere Basisspannung für Preise/Erfüllung in H2 2026).",
+    "falsifier": "Wenn bis 2026-11-30 die kombinierten Umsätze der Top‑5 NAND‑Marken sequenziell um ≥15 % fallen UND Enterprise‑SSD‑Kontraktpreise zwei Quartale in Folge negativ notieren, widerspräche das der Interpretation, dass AI‑getriebene ASPs die Marktspannung nachhaltig halten.",
+    "nextReview": "2026-11-30",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht Evidenz für kurzfristig anhaltenden Preisdruck und Nachfrage‑Bevorzugung im Enterprise‑SSD/NAND‑Segment; stützt OUTLOOK‑enterprise_ssd (höhere Basisspannung für Preise/Erfüllung in H2 2026)."
+    },
+    "sources": [
+      {
+        "label": "TrendForce Pressemitteilung: \"Combined Revenue of Top Five NAND Flash Brands Rises 77% QoQ in 2Q26; Micron Moves Up to Third Place\"",
+        "url": "https://www.trendforce.com/presscenter/news/20260818-13186.html"
+      },
+      {
+        "label": "Sekundär‑Bericht (Chippong) – unabhängige Zusammenfassung der TrendForce‑Zahlen",
+        "url": "https://www.chippong.com/insights/nand-q2-2026-revenue-surge-supplier-economics/"
       }
     ]
   },
