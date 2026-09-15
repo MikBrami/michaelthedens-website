@@ -36329,6 +36329,771 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_01fe5b025ffb21f7006aa9c3c1066887d1827d4ca361834a29"
+    },
+    {
+      "decision": "rejected",
+      "title": "Nvidia‑CEO Huang kritisiert Anthropics Vorschlag für einen Antitrust‑Waiver als 'völlig unnötig' (gemeldet via CNBC‑RSS)",
+      "fact": "Gemeldete Schlagzeile: Jensen Huang habe öffentlich den von Anthropic vorgeschlagenen gesetzlichen/antitrust‑Waiver zur Koordination von AI‑Pacing als „völlig unnötig“ bezeichnet (Meldung datiert 2026-09-15).",
+      "placement": "Global / AI‑Infrastruktur / Unternehmens‑Governance / kurzfristig (Tage–Wochen)",
+      "mechanism": "Rhetorische Ablehnung durch Nvidia (ein wichtiger AI‑Infrastruktur‑Anbieter) würde, falls dauerhaft und breit geteilt, die politische/öffentliche Zustimmung für freiwillige Branchenselbstbeschränkungen schwächen und damit die Wahrscheinlichkeit fortgesetzter Build‑outs und damit AI‑Infrastruktur‑Nachfrage erhöhen. Die vorliegende Meldung ist jedoch ein Zitatbericht ohne bestätigte Primärquelle (CNBC‑Artikel nicht verifiziert), daher fehlt ein direkter, messbarer Marktkontakt (z. B. Vertragsabschlüsse, FIDs, Shipments).",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "verringert_Wahrscheinlichkeit (verringert die Chance, dass mindestens drei große AI‑Labs bis 2026 striktere Eval‑Isolation/Netzwerk‑Egress‑Kontrollen öffentlich und koordiniert umsetzen)",
+      "falsifier": "Bis zum Prüfdatum 2026-10-15: Wenn Nvidia (Jensen Huang) oder mindestens zwei weitere der großen AI‑Lab‑CEOs (z. B. OpenAI, Google DeepMind) öffentlich eine formelle Unterstützungs‑ oder Kooperationszusage für Anthropics 'pacing'‑Vorschlag (oder für ein legislatives/ausführungsseitiges Antitrust‑Waiver) abgeben, oder wenn ein kongreßseitiger Vorschlag/Executive Order explizit einen Antitrust‑Waiver für Sicherheitsgespräche vorlegt, dann widerlegt dies die Schlussfolgerung, dass Huangs Stellungnahme die Koordination des Pacing‑Vorschlags signifikant verhindert. Nächstes Review‑Datum: 2026-10-15.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "Niedrig — die Debatte (Amodei/Pacing vs. CEO‑Widerstand) ist bereits breit in der Baseline dokumentiert; kein neues, quantifiziertes Marktsignal.",
+      "duplicateOf": "S-AUTO-320b6e2f774c187fec2fee96",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 5,
+        "forecastImpact": 4,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 10,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+          "label": "Dario Amodei — 'We Must Pace the Frontier' (Primary essay, 2026-09-12)",
+          "kind": "primary",
+          "supports": "Belegt den konkreten Vorschlag von Anthropic (Pacing / embedded evaluators / ggf. Bitte um antitrust‑Waiver)."
+        }
+      ],
+      "reason": "Ablehnung — Das Kandidaten‑Item ist ein Schlagzeilenbericht (Google News RSS) ohne verifizierte Primärquelle für das zugeschriebene wörtliche Zitat auf CNBC. Die Kernsache (Industrieführer Huang lehnt ein verlangsamtes Tempo ab) ist bereits in der Baseline und in mehreren Sekundärquellen dokumentiert; es liefert kein neues, atomic‑datengestütztes Marktsignal (keine Mengen, keine Preise, keine Liefer‑/Shipment‑Metrik). Außerdem konnte der spezifische CNBC‑Artikel / das exakte wörtliche Zitat ('Completely unnecessary') nicht als Primärquelle verifiziert werden; deshalb ist der Wahrheitsgehalt und die Relevanz für die TAIL‑Forecasts nicht ausreichend belegbar. Ergebnis: Zur Aufnahme in die TAIL‑Evidenzbasis ungeeignet (rejected).",
+      "candidateId": "889534815fc37b2c37d0",
+      "candidateKey": "b38a407e331b6879945fb2b1",
+      "reviewedAt": "2026-09-15T22:27:40.181Z",
+      "priorityScore": 23,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f80cd4e0ad94451006aa9c5d518c887d2a175903263ad7568"
+    },
+    {
+      "decision": "rejected",
+      "title": "Berichte über Arbeitsgespräche zu einem industriegeführten AI‑Sicherheitsgremium (OpenAI/Anthropic/Google) — Duplikat / nicht neu",
+      "fact": "Berichterstattung (Bloomberg/Reuters/The Information) berichtet, dass OpenAI, Anthropic und Google DeepMind seit Juli 2026 in Arbeitsgruppengesprächen über ein industriegeführtes Standards‑/Sicherheitsgremium für Frontier‑Modelle stehen; OpenAI‑Sprecher bestätigte mehrwöchige Abstimmung (gemeldet 2026-09-15).",
+      "placement": "Geographie: global (USA‑zentriert, Washington DC/branche); Domäne: AI Governance / Modell‑Deployment; Layer: Regulierung / Industrie‑Selbstorganisation; Horizont: kurzfristig (Wochen bis Monate).",
+      "mechanism": "Gründung eines industriegeführten Prüf‑/Auditorgans würde die formalen Prüf‑, Incident‑Reporting‑ und Prä‑Release‑Evaluationsanforderungen zwischen führenden Labs vereinheitlichen, Compliance‑Kosten internalisieren und die Interaktion mit Regulierern (EU/US) koordinieren — dadurch veränderte Marktsignale für Deployment‑Timing und politische Rahmensetzung.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass bis Ende 2026 mehrere große AI‑Labs strengere Eval‑Isolation / Netzwerk‑Egress‑Kontrollen oder dokumentierte Austausch‑Protokolle veröffentlichen (moderater Effekt).",
+      "falsifier": "Wenn bis 2026-10-31 keine öffentlich dokumentierte, von den drei Labs selbst bestätigte Arbeitsgruppe, kein abgestimmtes Prüfrahmenpapier oder keine gemeinsame Erklärung/Gründungsabsicht offengelegt wird, reduziert dies die angenommene Kausalwirkung deutlich.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "Recycelt: dieselbe Beobachtung (gemeinsame Arbeitsgruppen seit Juli) ist bereits im Baseline‑Feed als S-AUTO‑d49df151430374ee5685e33f und damit nicht neu.",
+      "duplicateOf": "S-AUTO-d49df151430374ee5685e33f",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 2,
+        "thesisRelevance": 16,
+        "forecastImpact": 6,
+        "falsifiability": 4,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 20,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.channelnewsasia.com/business/openai-working-anthropic-google-ai-safety-bloomberg-news-reports-6386596",
+          "label": "Channel News Asia (Bloomberg/Reuters-Report)",
+          "kind": "primary",
+          "supports": "Chris Lehane sagte, OpenAI arbeite seit mehreren Wochen mit Anthropic und Google DeepMind an AI‑Safety."
+        },
+        {
+          "url": "https://news.bloomberglaw.com/us-law-week/attorney-general-blanche-opposes-ai-regulation-by-prosecution",
+          "label": "Bloomberg Law (Bericht/Synthese)",
+          "kind": "primary",
+          "supports": "Lehane: OpenAI sehe keine Notwendigkeit für einen Kartell‑Waiver, um zu Sicherheitsfragen zu koordinieren."
+        }
+      ],
+      "reason": "Ablehnung wegen Duplikation und mangelnder Neuheit: die Kernbehauptung (Arbeitsgruppengespräche zwischen OpenAI, Anthropic und Google über ein industriegeführtes Sicherheits-/Standardsgremium) ist bereits im Baseline als S‑AUTO‑d49df151430374ee5685e33f aufgenommen und durch Reuters/Bloomberg/Techmeme berichtet. Damit erfüllt der Kandidat nicht das TAIL‑Aufnahmekriterium für neue, atomare, datengestützte Fakten mit messbarer Markteinordnung. Zusätzlich ist die Meldung ein berichteter Abstimmungs‑/Diskussionsstatus (weiche Intervention), nicht die Gründung oder ein quantifizierbares Marktereignis — daher begrenzter unmittelbarer Forecast‑Impact und hohe Anfälligkeit für Interpretationsverschiebung. Gegenbelege/Context: FTC‑Vertreter und andere Marktakteure äußern öffentlich Skepsis gegenüber einer von der Industrie selbst gesteuerten Lösung (zitiert in Bloomberg/Reuters), was die institutionelle Umsetzbarkeit einschränkt.",
+      "candidateId": "86bcef9008d2eaabd5a2",
+      "candidateKey": "f8a77f53add0a781b450cfcd",
+      "reviewedAt": "2026-09-15T22:27:40.206Z",
+      "priorityScore": 54,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f4a9ddc2e5db100006aa9c5d5261487d2a36fd17386f0568a"
+    },
+    {
+      "decision": "rejected",
+      "title": "OpenAI, Google, Anthropic diskutieren gemeinsame KI‑Sicherheitsgespräche (Bericht)",
+      "fact": "2026-09-15: OpenAI-Politikchef Chris Lehane sagte in Washington, OpenAI habe seit mehreren Wochen Gespräche mit Anthropic PBC und Google DeepMind über Maßnahmen zur KI‑Sicherheit geführt (Zitat: „It’s better to try to work together to prioritize safety“).",
+      "placement": "Washington, D.C.; globale Frontier‑AI‑Governance / Industrie‑Koordination; kurzfristige Gespräche (Wochen)",
+      "mechanism": "Informelle, industrieinterne Abstimmung und Austausch von Sicherheitslearnings (Incident‑Reporting, Evaluationsprotokolle, Prüfverfahren). Ziel ist freiwillige Standardsetzung/Koordination statt formaler Antitrust‑Ausnahme; Umsetzung würde über gemeinsame Richtlinien, Reporting‑Templates oder koordinierte Releases laufen.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Signalisiert eine höhere Wahrscheinlichkeit, dass große Labs bis Ende 2026 dokumentierte Änderungen an Eval‑Isolation, Netzwerk‑Egress‑Kontrollen oder Drittanbieter‑Sandboxen veröffentlichen. Bericht belegt Absicht/Dialogsituation, liefert jedoch keinen Beleg für verbindliche, breit implementierte Maßnahmen.",
+      "falsifier": "Bis 2026-12-31: Keine der drei Firmen (OpenAI, Anthropic, Google/DeepMind) veröffentlicht öffentlich dokumentierte, nachprüfbare Änderungen an Eval‑Isolation/Netzwerk‑Egress/Sandbox‑Kontrollen und es erscheinen keine gemeinsamen Protokolle, Presse‑Statements oder geteilten Prüfprotokolle, die die gemeldeten Gespräche in konkrete, dokumentierte Kontrollen überführen.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-15",
+      "novelty": "Niedrig — gleiche Richtung und Teilnehmer wurden bereits im TAIL‑Baseline/Inbox (Arbeitsgruppen seit Juli 2026) dokumentiert; dieser Bericht ist ein weiterer Medienbericht über dieselbe Gesprächsserie.",
+      "duplicateOf": "S-AUTO-d49df151430374ee5685e33f",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 2,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 15,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.bloomberglaw.com/privacy-and-data-security/openai-says-its-working-with-anthropic-google-on-ai-safety",
+          "label": "Bloomberg (reporting Chris Lehane briefings)",
+          "kind": "primary",
+          "supports": "Bloomberg berichtet (15 Sep 2026) unter Berufung auf Chris Lehane, OpenAI habe seit mehreren Wochen Gespräche mit Anthropic und Google DeepMind geführt; Lehane: “It’s better to try to work together to prioritize safety.”."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat wiederholt einen aktuell berichteten Medienbefund (Lehane‑Zitat, 2026‑09‑15) über laufende Gespräche zwischen OpenAI, Anthropic und Google DeepMind. Wir haben das ursprüngliche Reporting bei Bloomberg/Reuters verifiziert (Primary reporting nach Bloomberg). Allerdings ist diese Beobachtung in der TAIL‑Baseline/Inbox bereits als laufende Arbeitsgruppe/Gespräche verzeichnet (S-AUTO-d49df151430374ee5685e33f). Die Meldung ist daher nicht neu/atomar gegenüber dem bestehenden Signal und liefert keine zusätzliche, unmittelbar verwertbare Messgröße (keine neue, datierte, quantifizierbare Änderung). Nach den Admission‑Regeln sind recycelte/duplizierte Claims abzulehnen. Außerdem fehlt bislang belastbare, dokumentierte Umsetzung (gemeinsame Protokolle, Normen oder verbindliche Maßnahmen), weshalb das Item die Aufnahmesschwelle nicht erfüllt und abgelehnt wird. Opposing/einschränkende Evidenz: Regulierungsbehörden (z. B. FTC) und Beobachter äußern Skepsis gegenüber privaten Koordinationsversuchen ohne klare Antitrust‑Regelung; zudem fehlt eine offizielle, gemeinsame Veröffentlichung der drei Firmen, und frühere Baseline‑Einträge dokumentieren denselben Gesprächsverlauf ohne Ergebnis (siehe Quellen). Siehe unterstützende Quellen für beide Seiten. ([news.bloomberglaw.com](https://news.bloomberglaw.com/privacy-and-data-security/openai-says-its-working-with-anthropic-google-on-ai-safety?utm_source=openai))",
+      "candidateId": "73b51a440827a90fb1e5",
+      "candidateKey": "462bc9c739c8295327f62ea3",
+      "reviewedAt": "2026-09-15T22:29:43.702Z",
+      "priorityScore": 47,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0da6968379a4dd1d006aa9c65c51f487d2a7d1d765fc5b0479"
+    },
+    {
+      "decision": "rejected",
+      "title": "Behauptete SK‑hynix‑Shipments von 16‑Layer HBM4 an NVIDIA Rubin sind nicht neu und nicht primär verifiziert",
+      "fact": "Berichte behaupten, SK hynix verschicke 48 GB 16‑Layer HBM4 für NVIDIAs Vera Rubin (Q3 2026-Kontext).",
+      "placement": "Globaler HBM‑Markt; spezifisch: HBM4 16‑Layer (48 GB) für NVIDIAs Vera Rubin‑Plattform; kurzfristiger Horizont Q3–Q4 2026.",
+      "mechanism": "Wenn SK hynix tatsächlich qualifizierte 16‑Layer‑HBM4‑Pakete in nennenswertem Volumen an NVIDIA liefert, erhöht das sofort verfügbares HBM‑Angebot für Rubin‑Systeme (Verfügbarkeit), reduziert unmittelbaren Druck auf Lead‑Times und kann Preisdruck im High‑End‑HBM‑Segment lindern; alternativ könnte enge Priorisierung an NVIDIA die Verfügbarkeitsverbesserung auf andere Marktteilnehmer begrenzen (capacity_lock vs. capacity_relief).",
+      "predictionId": "P-2026-07-11-04",
+      "predictionImpact": "Wäre die Lieferung von materiellen, qualifizierten 16‑Layer‑HBM4‑Shipments durch SK hynix bestätigt, würde dies die Falsifizierungsbedingung des Vorhersage‑IDs P-2026-07-11-04 (\"breite SK‑hynix‑HBM4‑Ramp verschiebt sich stärker in H2\") erfüllen und die angenommene Verzögerung gegenüber einem früheren breiten Ramp abschwächen oder falsifizieren.",
+      "falsifier": "Bis 2026-10-31: SK hynix veröffentlicht ein offizielles Unternehmens‑/Investor‑Statement oder eine SEC-/Finanzmeldung, die bestätigt, dass mindestens 10.000 Einheiten (48 GB, 16‑Layer HBM4 Pakete) an NVIDIA im Q3 2026 ausgeliefert wurden; oder NVIDIA bestätigt in einem offiziellen Statement die erhaltenen qualifizierten Stückzahlen (>=10k Pakete) für Vera Rubin. Falls nicht bestätigt, bleibt die Behauptung unbewiesen.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-15",
+      "novelty": "recycelt/dupliziert (Bereits im TAIL‑Baseline vorhanden: tail-2026-07-14-nvidia-skhynix-hbm4).",
+      "duplicateOf": "tail-2026-07-14-nvidia-skhynix-hbm4",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 2,
+        "thesisRelevance": 15,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 20,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.skhynix.com/en/computex-2026/",
+          "label": "SK hynix Newsroom (Computex)",
+          "kind": "primary",
+          "supports": "SK hynix hebt 16‑Layer HBM4‑Samples / 16‑Hi 48 GB HBM4 in Produktpräsentationen hervor; keine offizielle Massenversand‑Quantifizierung in dieser Meldung."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling",
+          "label": "Tom's Hardware (Hot Chips Berichterstattung)",
+          "kind": "secondary",
+          "supports": "Bericht zitiert Hot Chips‑Präsentation: 16‑Hi HBM4 in Kundenqualifikation, 12‑Hi in Serienproduktion; beschreibt Status, nicht ein offizielles Lieferprotokoll."
+        },
+        {
+          "url": "https://investors.micron.com/node/50236/pdf",
+          "label": "Micron Investor Release (Vergleichs‑Primärquelle)",
+          "kind": "primary",
+          "supports": "Micron nennt in Firmenmeldung Volume‑Shipments von HBM4 12H und Samples von 16‑Hi; dient als belegbarer Primärnachweis für einen anderen Hersteller, nicht als SK‑hynix‑Bestätigung."
+        }
+      ],
+      "reason": "Die eingereichte Meldung ist inhaltlich weder neu noch primär verifiziert; TAIL‑Baseline und mehrere frühere Berichte dokumentieren bereits, dass SK hynix eine führende Rolle bei HBM4‑Lieferungen für NVIDIA beansprucht. Ich konnte keine SK‑hynix‑Primärquelle (offizielle Pressemitteilung, Finanzmeldung oder NVIDIA‑Bestätigung) finden, die explizit und quantifiziert den massenhaften Versand (qualifizierte Auslieferung mit Stückzahl) von 48 GB 16‑Layer HBM4 an NVIDIA am 2026-09-15 belegt. Stattdessen zirkulieren Sekundär‑/Aggregatorenmeldungen und frühere Baseline‑Signale (tail-2026-07-14-nvidia-skhynix-hbm4). Nach den TAIL‑Aufnahmeregeln sind recycelte oder nicht‑primär verifizierte Behauptungen nicht zur Aufnahme geeignet; Folge: Ablehnung. Siehe unterstützende Sekundärquellen und vorhandene Baseline‑Einträge. ([news.skhynix.com](https://news.skhynix.com/en/computex-2026/?utm_source=openai))",
+      "candidateId": "f1844f24bb4205dba86a",
+      "candidateKey": "574a21caf1eb8390581a06e5",
+      "reviewedAt": "2026-09-15T22:29:43.721Z",
+      "priorityScore": 47,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0779d7ace4cecb2e006aa9c65c7b4487d28926107d9c36bb8c"
+    },
+    {
+      "decision": "rejected",
+      "title": "Micron demonstriert 512GB DDR5‑RDIMM; behauptet >60% niedrigeren Betriebsstrom",
+      "fact": "Am 2026-09-15 veröffentlichte Micron eine Pressemitteilung, die die erfolgreiche Demonstration eines 512 GB DDR5 RDIMM‑Moduls auf mehreren Serverplattformen meldet (Angabe: bis zu 9.200 MT/s) und behauptet, die Betriebskraftaufnahme um mehr als 60 % gegenüber vier 128 GB RDIMM‑Modulen zu reduzieren (Fußnote: 16.0W vs 44.2W). ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))",
+      "placement": "Global — Server‑DRAM / Data‑Center‑Memory; Volumenproduktion (von Micron erwartet) in H2 2027 laut Pressemitteilung.",
+      "mechanism": "Micron führt die höhere Kapazität und Effizienz auf vertikale Packaging‑Innovationen (gestapelte DRAM‑Dies mit TSV/vertical interconnect) zurück: mehr Bit‑Dichte pro Package reduziert die Anzahl der Module pro Sockel und damit die aggregierte Modul‑Betriebsleistung pro Server. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Kurzfristig begrenzte Wirkung auf P-2026-07-11-01 (‘Server‑DRAM bleibt bis mindestens Ende 2028 knapp’): die Demonstration signalisiert einen möglichen technologischen Pfad zur Erhöhung der nutzbaren Kapazität pro Server‑Socket, könnte mittelfristig (bei erfolgreicher Volumenproduktion und qualifizierten Lieferungen) den Druck auf Server‑DRAM‑Verfügbarkeit reduzieren. Aktuell liegen jedoch keine qualifizierten Volumenshipments oder beobachtbaren Verbesserungen von Lead‑Times/Fill‑Rates vor, sodass keine unmittelbare Entkräftung der Prognose erfolgt. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))",
+      "falsifier": "Bis 2027-12-31 existieren keine qualifizierten Volumen‑Shipments der 512GB RDIMM (definiert als ≥100.000 gelieferte 512GB‑Module an Hyperscaler/OEMs) ODER es gibt bis 2028‑Q1 keine messbare Verbesserung der Server‑DRAM Marktkennzahlen (z. B. keine zwei aufeinanderfolgenden Quartale mit rückläufigen Kontraktpreisen ≥5% oder keine Reduktion der bestätigten Lead‑Times gegenüber dem H1‑2027‑Niveau) — in diesem Fall ist die Demonstration nicht material zur Entschärfung von P-2026-07-11-01.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-15",
+      "novelty": "duplicate",
+      "duplicateOf": "S-AUTO-8a5701d057f8b4f60e46ba88",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 0,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 5,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 15,
+      "confidence": 90,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx",
+          "label": "Micron – Pressemitteilung (15.09.2026)",
+          "kind": "primary",
+          "supports": "Micron‑Pressemitteilung datiert 2026-09-15: Demonstration eines 512GB DDR5 RDIMM auf mehreren Serverplattformen; Angabe bis zu 9.200 MT/s; Behauptung 'reduziertes Betriebsstrombedarf um mehr als 60%' im Vergleich zu vier 128GB RDIMMs; Volumenproduktion erwartet H2 2027. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))"
+        }
+      ],
+      "reason": "Ablehnung als neues TAIL‑Signal: der Kandidat ist eine direkte Wiederholung eines bereits im Baseline‑Datensatz erfassten Ereignisses (S-AUTO-8a5701d057f8b4f60e46ba88) und bringt keine zusätzlichen, quantifizierbaren Marktbeobachtungen (z. B. qualifizierte Shipments, veränderte Lead‑Times oder gemessene Fill‑Rate‑Verbesserungen). Die zugrundeliegende Primärquelle (Micron‑Pressemitteilung vom 2026-09-15) ist verifiziert und beschreibt klar eine Demonstration sowie erwartete Volumenproduktion in H2 2027; gleichzeitig enthält die Meldung forward‑looking‑Hinweise und keine aktuellen, qualifizierten Lieferdaten, weshalb sie den Baseline‑Satz nicht als eigenständige, neue Evidenz für eine sofortige Versorgungserleichterung qualifiziert. Gegenbelege/Unsicherheit: das Paper/PR ist ausdrücklich forward‑looking und nennt keine echten Volumenlieferungen oder beobachtete Index‑Verbesserungen; Marktanalysen und Berichterstattung (Sekundärquellen) behandeln die Ankündigung ebenfalls als Demonstration/Ankündigung, nicht als bereits wirksame Kapazitätszufuhr. Aufgrund der Duplikation und des fehlenden, messbaren Marktausflusses wird der Kandidat abgewiesen; die Beobachtung bleibt aber für eine spätere Überprüfung relevant (nextReview 2027-12-31) falls Micron qualifizierte Volumenshipments meldet oder Lead‑Time/Preis‑Indikatoren sich messbar ändern. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))",
+      "candidateId": "580fe528e7b4c579a346",
+      "candidateKey": "97157838aa465a805cdfe70a",
+      "reviewedAt": "2026-09-15T22:31:36.327Z",
+      "priorityScore": 46,
+      "gateReasons": [
+        "missing novelty",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_019c5fe1d20fa462006aa9c6d7e38087d29089b71505d226fe"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Ex‑Anthropic‑Forscher tritt zurück und warnt vor unkontrolliertem, agentischem Frontier‑AI‑Bau",
+      "fact": "Am 2026-09-09 veröffentlichte der ehemalige Anthropic‑Forschungsmitarbeiter Jacob Coxon eine öffentliche Rücktrittserklärung (X/Twitter‑Thread), in der er erklärte, er habe Anthropic verlassen und dass Mitarbeiter bei Anthropic und OpenAI „ernsthaft glauben, die KI könne uns bis Ende des Jahrzecks alle töten“.",
+      "placement": "Geographie: USA (zentral: San Francisco‑frontier‑Labs); Domäne: Frontier‑AI / Evaluations‑ und Deployment‑Layer; Horizont: kurzfristig (H2 2026 — Wirkung bis 2026‑12‑31).",
+      "mechanism": "Die öffentliche Rücktritts‑ und Warnmeldung erhöht Reputations‑, regulatorischen und politische Druck auf Frontier‑Labs und verstärkt die Bereitschaft von Aufsichten, Auftraggebern und Konsortien, strengere Eval‑Isolation, Netzwerk‑Egress‑Kontrollen und formale Incident‑Reporting‑Regeln zu fordern. Dies beschleunigt firmeninterne Maßnahmen (z. B. OpenAI‑RL‑Pause, technische Reports, Hardening und Zusagen zu Disclosure‑Frameworks) und erhöht die Wahrscheinlichkeit, dass mehrere große Labs bis Jahresende dokumentierte, strengere Eval‑Isolation/Mitigation veröffentlichen.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit, dass mindestens drei große AI‑Labs bis 2026‑12‑31 strengere Eval‑Isolation, Network‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen veröffentlichen. Die Wirkung ist ein richtungsweisender Signal‑Push (+), nicht ein sicherer Abschluss: es erhöht die Eintrittswahrscheinlichkeit des Prognoseziels, weil es öffentliche, regulatorische und koordinatorische Kosten für Nicht‑Handeln erzeugt.",
+      "falsifier": "Bis zum 2026-12-31 werden weniger als drei große AI‑Labs (z. B. OpenAI, Anthropic, Google DeepMind, Microsoft/Anthropic‑Partner etc.) keine öffentlich dokumentierten, neuen oder verschärften Eval‑Isolation / Netzwerk‑Egress‑/Drittanbieter‑Sandbox‑Kontrollen vorweisen können (dann ist dieses Signal für P-2026-07-22-02 nicht bestanden).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-09",
+      "novelty": "Die Rücktritts‑Äußerung und die damit verbundene mediale Welle sind neu (frisch bestätigtes Whistleblower‑Signal), aber bereits breit berichtet; das Ereignis ist nicht eine wiederholte Meldung eines alten Einzelfalls.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 30,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.bloomberglaw.com/privacy-and-data-security/anthropic-worker-quits-over-ai-firms-gambling-with-our-lives",
+          "label": "Bloomberg Law — Bericht über Anthropic‑Forscher, Rücktritt und Warnungen (2026-09-09)",
+          "kind": "secondary",
+          "supports": "Ergänzende, überprüfbare Berichterstattung; zitiert Coxons Aussagen und Kontext (OpenAI/Anthropic‑Rennen)."
+        },
+        {
+          "url": "https://sayerji.substack.com/p/anthropics-ai-whistleblower-and-the",
+          "label": "Sayer Ji — kritische Einordnung / Gegenargument (Substack)",
+          "kind": "secondary",
+          "supports": "Opposing evidence / skepticism: diskutiert mögliche PR‑/Koordinations‑Narrative und hinterfragt Motive/Einordnung der Whistleblower‑Kampagne."
+        }
+      ],
+      "reason": "Kurzfassung (Deutsch): Primärquelle und mehrere etablierte Medien (NYT, Bloomberg u.a.) bestätigen, dass ein ehemaliger Anthropic‑Forscher (Jacob Coxon) am 2026-09-09 öffentlich zurücktrat und schwere Sicherheits‑/Geschwindigkeits‑Vorwürfe gegen Anthropic und OpenAI erhob. Die Beobachtung ist ein belastbares, aktuelles Signal, das reputations‑ und politikgetriebene Reaktionen auslöst und deshalb die Wahrscheinlichkeit erhöht, dass Anbieter und Aufsichten kurzfristig strengere Eval‑Isolation‑ und Sandbox‑Kontrollen veröffentlichen (relevanter Ziel‑Forecast: P-2026-07-22-02). Gegenargumente (PR‑Kampagnen, koordinierte Aktion) sind öffentlich diskutiert und verringern die Zuverlässigkeit eines einzelnen Whistleblower‑Statements; deshalb konservative Severity/Confidence‑Werte. Antwortentscheidung: angenommen (accepted) als Signal mit VERIFIZIERTER Primärquelle. Hinweise / Einschränkungen: Dieses Record belegt das Whistleblower‑Ereignis selbst — es ist kein automatischer Indikator für ein bestimmtes Regelwerk oder Markt‑Preise; die eigentliche Prognoseerfüllung erfordert, dass bis 2026-12-31 mindestens drei Labs dokumentierte Kontrolländerungen veröffentlichen. Wenn spätere Prüfungen zeigen, dass die Rücktritts‑Kampagne allein war (ohne organisatorische Änderung) oder offenbar inszeniert ist, wird die Admission re‑evaluated und ggf. zurückgestuft.",
+      "candidateId": "ffe661918cab955fc35a",
+      "candidateKey": "40f46233a6decae292b43d5f",
+      "reviewedAt": "2026-09-15T22:31:36.356Z",
+      "priorityScore": 80,
+      "gateReasons": [
+        "primary source not retrieved",
+        "red-pencil check incomplete"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07ffa162089b3b51006aa9c6d8dea487d2b3006574b019eb2e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Berichte: Anthropic, OpenAI und Google DeepMind führten seit Juli 2026 Arbeitsgruppengespräche über ein industriegeführtes AI‑Sicherheits-/Normen‑Gremium",
+      "fact": "Mehrere Medien berichten (unter Berufung auf The Information, 2026-09-13) dass Vertreter von Anthropic, OpenAI und Google DeepMind seit mindestens Juli 2026 in Arbeitsgruppen über die Einrichtung eines industriegeführten Standards-/Sicherheitsorgans für Frontier‑AI gesprochen haben; die Gespräche sind bislang nicht als formelle Organisation, Charta oder Mitgliedschaft publisch bestätigt.",
+      "placement": "Geographie: global (US‑zentriert); Domain/Lage: Frontier AI Governance / AI‑Infrastruktur‑Layer; Layer: Governance & Prä‑Release‑Testing; Horizont: laufend seit Juli 2026 (Bericht: 2026-09-13/15).",
+      "mechanism": "Geteilte, industriegeführte Test‑, Audit‑ und Prä‑Release‑Benchmarks könnten regulatorische Unsicherheit reduzieren (durch Vorwegnahme staatlicher Eingriffe) und zugleich Compliance‑/Zugangskosten erhöhen, was Marktanteile zu Gunsten großer, etablierter Labs verlagern kann (Entrenchment‑Effekt).",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass bis 2026 mehrere große Labs öffentlich strengere Eval‑Isolationen / Netzwerk‑Egress‑Kontrollen oder vergleichbare formale Prüfprotokolle einführen; das Signal ist indirekt (Koordination der Labs), nicht yet ein direkter Nachweis öffentlicher Policy‑Änderungen.",
+      "falsifier": "Bis 2026-12-31: Keine der drei genannten Labs (OpenAI, Anthropic, Google DeepMind) veröffentlicht dokumentierte, öffentlich zugängliche, verbindliche Standards, Eval‑Isolation‑Protokolle oder egress‑Beschränkungen, die explizit auf einem gemeinsamen industrieweiten Prüfrahmen basieren. (Wenn bis 2026-12-31 mindestens eine formale, veröffentlichte gemeinsame Prüf‑/Audit‑ordnung mit Mitglieds-/Governance‑Details vorliegt, falsifiziert das die Vorsicht dieser Watchlist‑Bewertung.)",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-13",
+      "novelty": "Berichtet eine koordinationsbezogene Governance‑Entwicklung (Arbeitsgruppen seit Juli) — relevant, aber nicht in sich ein messbares Markt‑Ereignis (keine Shipments/Verträge/Preise).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/09/15/ai-regulation-trump-congress-tech-politics/476b85aa-b0ba-11f1-92c2-5c918f4a6127_story.html",
+          "label": "Washington Post – Kontext: öffentliche Aussagen von Tech‑Führungskräften und Berichterstattung zu Sicherheitsaufrufen (Sep 15, 2026).",
+          "kind": "secondary",
+          "supports": "Berichtet über verstärkte öffentliche Aufrufe von Führungskräften (Altman, Amodei) zur Regulierung/Verlangsamung; liefert Kontext, aber nicht die Original‑Arbeitsgruppenquelle."
+        },
+        {
+          "url": "https://qz.com/anthropic-google-openai-ai-standards-body-091426",
+          "label": "Quartz – fasst The Information (13. Sep 2026) zusammen: Arbeitsgruppentreffen seit Juli.",
+          "kind": "secondary",
+          "supports": "Nimmt The Information als Quelle und berichtet, dass Vertreter seit mindestens Juli in Arbeitsgruppen über ein industriegeführtes Standards‑Gremium gesprochen haben."
+        },
+        {
+          "url": "https://pick-right.com/news/ai-standards-body-antitrust-waiver-microsoft-mai-code-of-conduct-2026-09-14/",
+          "label": "Analyse/Policy‑Kommentar (Pick Right) — betont fehlende Ankündigung, Antitrust‑Risiken und Unsicherheit über Governance (Sep 14, 2026).",
+          "kind": "secondary",
+          "supports": "Gegenargumente/Unsicherheiten: kein publizierter Charter, mögliche Antitrust‑Probleme, keine offizielle Ankündigung der Gruppen."
+        }
+      ],
+      "reason": "Der eingereichte TAIL‑Kandidat fasst Medienberichte über koordinierte Arbeitsgruppengespräche der drei Frontier‑Labs zusammen. Das Thema ist relevant für Governance‑ und Nachfrage‑Prognosen im AI‑Infrastruktur‑Sektor, liefert aber kein direkt messbares, atomisches Markt‑Ereignis (keine Volumen/Shipments/Verträge/Preise) und hängt von einem paywalled/weitervermittelten The‑Information‑Bericht. Ich konnte mehrere seriöse Sekundärquellen (Quartz, Washington Post) abrufen, die The Information zitieren; jedoch fehlt ein unverzichtbarer, öffentlich zugänglicher Primärnachweis (z. B. eine veröffentlichte Charta, ein offizielles Firmencommuniqué mit Arbeitsgruppendetails oder der Original‑Artikeltext von The Information), und die berichtete Koordination ist bisher nicht in konkrete, überprüfbare Markthandlungen überführt. Deshalb: Watchlist — relevant zur Beobachtung (kann die Wahrscheinlichkeit für P-2026-07-22-02 erhöhen), aber nicht für eine Aufnahme als VERIFIED DATA. Entgegengesetzte Evidenz: bislang keine formale Ankündigung, kein veröffentlichter Charter/Regelwerk; Kommentatoren weisen auf Antitrust‑ und Entrenchment‑Risiken hin, was die Interpretation der Meldung als rein positives Governance‑Signal einschränkt.",
+      "candidateId": "17e6db3e347d19ef8a1f",
+      "candidateKey": "de4271b3c03d61292f734796",
+      "reviewedAt": "2026-09-15T22:33:27.472Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0272af8e541af631006aa9c74884b887d2a37d230adc1ac40b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "OpenAI, Anthropic und Google führen Arbeitsgruppengespräche über ein branchenweites AI‑Standards‑Gremium",
+      "fact": "Die Information berichtete am 2026-09-13, dass Anthropic, OpenAI und Google seit Juli 2026 in Arbeitsgruppengesprächen stehen, um ein industrieführendes AI‑Standards‑Gremium zur Prüfung/Abnahme frontier‑fähiger Modelle zu schaffen.",
+      "placement": "Global / US‑zentriert; Domain: Frontier‑AI‑Modellentwicklung und -Safety; Layer: Governance / Pre‑release‑Testing; Horizont: kurzfristig (Q4 2026–H1 2027) für Festlegung von Standards, mittelfristig für mögliche Implementierung.",
+      "mechanism": "Gemeinsame Standards (z. B. unabhängige Pre‑Release‑Evaluierungen, Prüfungsprotokolle) könnten regulatorisches Tail‑Risk verringern (positiver Preis‑/Bewertungs‑Effekt für Big‑Labs), gleichzeitig Compliance‑Kosten und Eintrittsbarrieren für kleinere Anbieter erhöhen (verzögerte Releases, potenziell geringere IPO‑Aktivität).",
+      "predictionId": "P-2026-07-16-03",
+      "predictionImpact": "Signal könnte das IPO‑Fenster für AI‑Infrastruktur (P-2026-07-16-03) dämpfen: erhöhte Governance‑Auflagen und Unsicherheit könnten Emissionen verschieben oder zu strengeren Underwriting‑Bedingungen führen, somit kurzfristig weniger oder konservativere AI‑Infra‑IPOs.",
+      "falsifier": "Bis 2027-06-30: Wenn mindestens zwei relevante AI/AI‑Infrastructure‑IPOs (je ≥US$500M Bruttoerlös) stattfinden und beide zu oder über dem Preisspannenmittelpunkt bepreist werden, dann widerlegt dies die Behauptung, dass die berichteten Gremiengespräche die IPO‑Aktivität merklich dämpfen.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-13",
+      "novelty": "moderate — bestätigte, aber begrenzte Neuigkeit: The Information brachte erstmals die internen Arbeitsgruppengespräche, andere große Medien zitierten dies unmittelbar.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 13,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 20,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police",
+          "label": "The Information — Leo Schwartz (Erstbericht, paywalled)",
+          "kind": "primary",
+          "supports": "Bericht: 'have been holding working group meetings since July' (Arbeitsgruppengespräche seit Juli 2026)."
+        },
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/09/14/anthropic-openai-google-discussed-creating-new-ai-safety-body/",
+          "label": "Washington Post (zusammenfassende Bestätigung, zitiert The Information)",
+          "kind": "secondary",
+          "supports": "WP: 'Even before the public show of unity... Anthropic, OpenAI and Google were discussing the potential creation of a new industry body' (14.09.2026)."
+        }
+      ],
+      "reason": "Begründung (Deutsch, kurz):\n- Unterstützung: Relevante, namhafte Medien (The Information → Washington Post, France24, CNN/Syndication) berichten konsistent, The Information nennt explizit laufende Arbeitsgruppengespräche seit Juli 2026 (primäre Datums‑/Scope‑Angabe). ([theinformation.com](https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police))\n- Gegenprüfung / Opposing evidence: Keine der drei genannten Unternehmen hat ein formelles Gremium angekündigt oder eine verbindliche Vereinbarung veröffentlicht; Berichte beruhen auf anonymen Quellen und internen Zitaten (keine öffentliche Charta, Satzung oder Gründungsdokumente gefunden). Diverse Folgeberichte weisen auf fehlende Bestätigung durch die Firmen hin. (Somit bleibt die Behauptung: 'in Gesprächen' verifizierbar; die Wirkung/Implementierung ist aber unbestätigt.) ([theinformation.com](https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police))\n- Warum Watchlist: Die Meldung ist marktrelevant (Governance kann Kapitalflüsse/IPO‑Timing beeinflussen) und kurzfristig zeitkritisch, aber derzeit nicht atomar genug für eine Annahme: es fehlt eine formelle Gründungs‑/Satzungs‑ oder Durchsetzungsinstanz. Damit ist das Signal prüfenswert, aber nicht als VERIFIED DATA aufzunehmen.\n- Falsifizierbarkeit: Der oben definierte falsifier prüft die hier angenommene ökonomische Wirkung (IPO‑Aktivität) bis 2027‑06‑30; das Ziel ist prüfbar und unmissverständlich.\n- Empfehlung: Watchlist (Follow‑up 2026-10-15): Suche nach (a) offizielle Stellungnahmen/Charta der beteiligten Firmen, (b) Gründungsdokumente/Board‑Liste oder (c) zumindest ein öffentliches Protokoll mit verbindlichen Verpflichtungen. Falls solche Dokumente auftauchen, upgraden auf Signal/Layer‑Update mit erhöhtem Score; bleibt nur Berichterstattung, dann Rejected/Archive.",
+      "candidateId": "1f95dc1d5dfeb5798390",
+      "candidateKey": "6557875cfc5c1b2d05d99436",
+      "reviewedAt": "2026-09-15T22:33:27.500Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05e114031c4cb356006aa9c74888a887d2a2e0d4c1835c1249"
+    },
+    {
+      "decision": "rejected",
+      "title": "Fehlzuordnung: Huawei 3D‑Data‑Center (Konzept) vs. 100.000‑Karten‑Supercluster (Sugon)",
+      "fact": "Der eingereichte Artikel vermischt zwei unterschiedliche Beobachtungen: Huawei hat ein 3D‑Data‑Center‑Konstruktionskonzept und AIDC‑Produkte vorgestellt (AIDC Summit, 2026‑05‑15), während ein 100.000‑Karten‑Supercluster (Dawning/Sugon 'Shuguang/Dawning 8000 (Dengfeng)') am WAIC im Juli 2026 von Sugon vorgestellt und in Betrieb genommen wurde. Es gibt keinen primären Beleg, dass Huawei selbst einen 100.000‑Karten‑Produktions‑Supernode als 'Baseline' ausgeliefert oder bereitgestellt hat.",
+      "placement": "China (AIDC/AI‑Infrastructure); kurzfristig (H2 2026) — Behaupteter Produktions‑/Baseline‑Status für großskalige AI‑Compute‑Cluster.",
+      "mechanism": "Würde die Behauptung stimmen, so wäre der Mechanismus: massives horizontales Skalieren von AI‑Accelerator‑Arrays (100k Karten) erhöht verfügbare Cluster‑Compute, reduziert relative Knappheit an AI‑Host‑Bits und reduziert Druck auf Server‑DRAM/HBM‑Allokation durch grössere, zentralisierte Lieferungen. Diese Kausalität ist für Huawei‑Ansprüche jedoch nicht belegt; stattdessen ist ein gleichartiges Produktionsereignis primär Sugon zuzuordnen, sodass die behauptete Huawei‑Verfügbarkeit nicht existiert. ([digitalpower.huawei.com](https://digitalpower.huawei.com/en/news/data-center-facility/aidc-industry-summit?utm_source=openai))",
+      "predictionId": "P-2026-07-16-02",
+      "predictionImpact": "Kein validierender Einfluss auf P-2026-07-16-02 (WAIC‑Bestätigung von Huaweis Atlas‑950‑PoD wurde separat beobachtet). Die Kandidatenbehauptung würde, falls wahr, tendenziell den Engpass‑Ausblick (Server‑DRAM/HBM-Verfügbarkeit) abschwächen; da die 100k‑Deployment‑These aber nicht Huawei‑belegt ist, bleibt der Baseline‑Outlook unverändert.",
+      "falsifier": "Validierungstest (falsifizierbar): Huawei veröffentlicht bis 2027-06-30 eine offizielle Primärquelle (Unternehmens‑Pressemitteilung, regulatorische Einreichung oder nachprüfbare Kundenshipment‑/Qualifikationsdokumente) die belegt, dass Huawei eine in Produktion befindliche, qualifizierte Ascend/Atlas‑Supernode‑Installation mit ≥100,000 ausgelieferten/aktivierten Accelerator‑Karten (namentlich ausgewiesene Kartenzahl, Standort, Lieferdatum) bereitgestellt hat. Fehlt ein solcher Beleg bis 2027-06-30, ist die Behauptung falsifiziert.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-15",
+      "novelty": "Gering (bekannte Konzepte/Ankündigungen; keine neue, unabhängige Primärbeobachtung).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Falsifier",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 4,
+        "thesisRelevance": 16,
+        "forecastImpact": 7,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors",
+        "server_dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 20,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://digitalpower.huawei.com/en/news/data-center-facility/aidc-industry-summit",
+          "label": "Huawei — AIDC Industry Summit: 3D Data Center / AIDC strategy (official)",
+          "kind": "primary",
+          "supports": "Huawei dokumentiert die Vorstellung des 3D‑Data‑Center‑Konzepts beim 2026 Global AIDC Industry Summit (15.05.2026). Huawei beschreibt 3D‑Bauweisen und neue AIDC‑Konzepte, nicht jedoch die Lieferung eines 100.000‑Karten‑Produktions‑Superclusters durch Huawei. ([digitalpower.huawei.com](https://digitalpower.huawei.com/en/news/data-center-facility/aidc-industry-summit?utm_source=openai))"
+        },
+        {
+          "url": "https://sinolytics.de/global-business-news/blog/technology/waic-china-ai-supernodes/",
+          "label": "WAIC‑Berichterstattung / Konferenzberichte — Huawei zeigte Atlas‑950 SuperPoD (1,024 physisch, skalierbar), Sugon zeigte 100k‑Cluster",
+          "kind": "secondary",
+          "supports": "Konferenzberichte und Branchenanalysen (WAIC 2026) dokumentieren, dass Huawei ein Atlas‑950 SuperPoD‑Hardware‑Exponat (physische 1,024‑Karten‑Einheit, Skalierbarkeit bis 8,192 genannt) zeigte, während Sugon den 100.000‑Karten‑Cluster präsentierte. Dies widerspricht der Kandidatenvereinigung beider Beobachtungen zu einem Huawei‑100k‑Claim. ([sinolytics.de](https://sinolytics.de/global-business-news/blog/technology/waic-china-ai-supernodes/?utm_source=openai))"
+        },
+        {
+          "url": "https://gmt8press.com/flash/detail/1523497",
+          "label": "Aggregierter News‑Feed (Candidate source) — Titel mit conflation (Beispiel für die irreführende Meldung)",
+          "kind": "secondary",
+          "supports": "Beispiel des aggregierten/weiterverbreiteten Artikels, der die beiden getrennten Ereignisse (Huawei 3D‑Konzept; 100k‑Cluster) zusammenführt — Quelle ist nicht primär und dient als Hinweis auf die Fehlzuordnung. (niedrige Source‑Qualität). ([gmt8press.com](https://gmt8press.com/flash/detail/1523497?utm_source=openai))"
+        }
+      ],
+      "reason": "Kurzfassung (Deutsch): Der Kandidat misattribuiert einen realen, aber firmenspezifischen Befund (ein 100.000‑Karten‑Supercluster wurde tatsächlich öffentlich gezeigt/in Betrieb genommen — hauptsächlich zugeordnet zu Sugon/Dawning am WAIC, 2026‑07‑10) und verbindet diesen fälschlich mit Huaweis 3D‑Data‑Center‑Ankündigung. Huawei hat nach eigenen offiziellen Materialien ein 3D‑Data‑Center‑Konzept und Produkte (AIDC‑Strategie, Atlas‑950‑SuperPoD‑Exponat) vorgestellt, jedoch fehlen primäre Belege, dass Huawei selbst eine 100.000‑Karten‑Produktion/Qualifikation ausgeliefert hat. Aufgrund dieser Falschzuordnung, der Verwendung eines nicht‑primären Aggregators als Quelle und des Fehlens eines atomaren, datierten Primärbelegs für Huaweis behauptete 100k‑Auslieferung wird die Aufnahme abgelehnt. Opposing evidence: Sugon/STDaily (10.07.2026) dokumentiert den 100k‑Cluster; Huawei‑Material (15.05.2026) dokumentiert das 3D‑AIDC‑Konzept und Atlas‑950‑PoD, aber nicht eine 100k‑Produktion. ([chinagovernance.com](https://www.chinagovernance.com/document/900038984?utm_source=openai))",
+      "candidateId": "6b50b3241366c2057567",
+      "candidateKey": "6ec9dcfff7037181c588bba5",
+      "reviewedAt": "2026-09-15T22:35:05.239Z",
+      "priorityScore": 46,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0cf2b0fbf0ffcd04006aa9c7b7a96887d2a40accdfde4556ec"
+    },
+    {
+      "decision": "accepted",
+      "title": "Meta erweitert Eagle Mountain Data‑Center‑Campus (Utah) — offizielle Ankündigung",
+      "fact": "Meta kündigte am 2026-09-14 an, den Eagle Mountain Data Center Campus (Eagle Mountain, Utah, USA) zu erweitern und seine Investitionen in Utah auf mehr als 3 000 000 000 US‑Dollar zu erhöhen; die Ankündigung nennt erwartete Peak‑Baubeschäftigung >1.200 Personen und >300 dauerhafte Rechenzentrums‑Jobs. (Meta Data Centers, 2026‑09‑14).",
+      "placement": "Eagle Mountain, Utah, USA — Hyperscaler AI‑Datacenter‑Campus; geografische Domäne: US‑national / regional; Layer: ai_infrastructure (Rechenzentrums‑IT‑Load); kurzfristige Horizon: 2026–2028.",
+      "mechanism": "Direkter Ankündigungs‑ und CapEx‑Kanal: Meta bindet zusätzliches Kapital und Campus‑IT‑Fläche, was zu erhöhter Beschaffung von Rechenzentrums‑Hardware (Server, Memory, Storage, Power) führt. Diese erhöhte Hyperscaler‑Nachfrage erhöht kurzfristig den Druck auf Server‑DRAM/DDR- und HBM‑Zuteilungen und kann Vertrags‑/Spotpreise sowie Lieferzeiten in den betroffenen Produktmärkten stützen (Richtung: demand_up für server_dram/dram).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit des Kurzfrist‑Beschaffungsrisikos im OUTLOOK-server_dram (Richtung: demand_up). Die Ankündigung vergrößert die nachfrageseitige Belastung für Server‑DRAM (qualifizierte Host‑Bit‑Nachfrage) und bestätigt einen weiteren konkreten Hyperscaler‑Treiber, der das Basisszenario 'Beschaffungsrisiko bleibt hoch' stützt.",
+      "falsifier": "Bis zum 2027-03-14 keine nachweisbaren Bauaktivitäten (keine erteilten Baugenehmigungen, kein Baustart, keine Meldung zusätzlicher IT‑MW/Zuweisungen oder Meta‑Mitteilung von 'deferred/cancelled' für diese Erweiterung) — dann ist der angenommene Nachfrage‑Impact auf OUTLOOK-server_dram falsifiziert.",
+      "nextReview": "2027-03-14",
+      "eventDate": "2026-09-14",
+      "novelty": "Primäre Unternehmensankündigung (Meta) — neue, spezifische Campus‑Erweiterung; relevant für Hyperscaler‑Nachfrage, nicht bereits im Baseline als identische Beobachtung dokumentiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 10,
+        "thesisRelevance": 19,
+        "forecastImpact": 15,
+        "falsifiability": 13,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://datacenters.atmeta.com/2026/09/deepening-our-investment-in-eagle-mountain-utah/",
+          "label": "Meta Data Centers — 'Deepening Our Investment in Eagle Mountain, Utah' (2026‑09‑14)",
+          "kind": "primary",
+          "supports": "Ankündigungsdatum 2026‑09‑14; explizite Nennung 'increasing our investment in Utah to more than $3 billion'; Peak‑Baubeschäftigung '>1,200 construction workers' und '>300 jobs at the data center' (siehe Meta‑Text)."
+        },
+        {
+          "url": "https://eaglemountain.gov/eagle-mountain-welcomes-metas-deepened-community-investment/",
+          "label": "Eagle Mountain City — 'Eagle Mountain Welcomes Meta’s Community Investment' (City press release, 2026‑09‑14)",
+          "kind": "primary",
+          "supports": "Stadtbestätigung der Veranstaltung und Nennung der erweiterten Investition in Utah auf 'more than $3 billion'; lokale Kontextinformation zur Kooperation zwischen Stadt und Meta."
+        },
+        {
+          "url": "https://www.deseret.com/business/2026/04/15/utah-data-centers-artificial-intelligence-ai-water-energy-electricity-use-economic-impacts-jobs-tax-incentives/",
+          "label": "Deseret News — Kontext zu Wasser/Leitungs‑/Infrastruktur‑Risiken in Utah (Apr 2026)",
+          "kind": "secondary",
+          "supports": "Kontext: lokale Ressource und Infrastrukturfragen (Wasser, Strom) sowie frühere Investitionen/Infrastructure‑Aufwendungen von Meta in Utah, die mögliche Gegenkräfte oder Engpässe für Beschleunigung/Operationalisierung der Erweiterung aufzeigen."
+        }
+      ],
+      "reason": "Die Einreichung ist eine primäre Unternehmensankündigung (Meta Data Centers, 2026‑09‑14) und liefert ein atomar verifizierbares, datiertes Faktum mit quantifizierten Einheiten (US‑Dollar, Arbeitnehmerzahlen). Sie trifft die TAIL‑Annahmekriterien: konkrete Datumssignatur, geografische Platzierung, Kausalmechanismus (zusätzliche Hyperscaler‑IT‑Last → Nachfrage für Server‑DRAM steigt) und ein prüfbarer Falsifizierer. Opposing evidence (lokale Wasser/Power‑Constraints und kommunale Auseinandersetzungen über Steueranreize) wurde dokumentiert und reduziert nicht die Gültigkeit der Ankündigung, wohl aber die kurzfristige Realisierbarkeit/Timelines — daher moderate Severity und hohe Konfidenz.  Quellen: Meta‑Ankündigung + Eagle Mountain City Release; ergänzende lokale Medien zur Infrastruktur‑/Ressourcenlage.  ",
+      "candidateId": "ebc11e070d4d4956e67b",
+      "candidateKey": "957f7919efd09f7afc8827df",
+      "reviewedAt": "2026-09-15T22:35:05.274Z",
+      "priorityScore": 86,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-957f7919efd09f7afc8827df",
+        "title": "Meta erweitert Eagle Mountain Data‑Center‑Campus (Utah) — offizielle Ankündigung",
+        "date": "2026-09-14",
+        "admittedAt": "2026-09-15T22:35:05.274Z",
+        "fact": "Meta kündigte am 2026-09-14 an, den Eagle Mountain Data Center Campus (Eagle Mountain, Utah, USA) zu erweitern und seine Investitionen in Utah auf mehr als 3 000 000 000 US‑Dollar zu erhöhen; die Ankündigung nennt erwartete Peak‑Baubeschäftigung >1.200 Personen und >300 dauerhafte Rechenzentrums‑Jobs. (Meta Data Centers, 2026‑09‑14).",
+        "placement": "Eagle Mountain, Utah, USA — Hyperscaler AI‑Datacenter‑Campus; geografische Domäne: US‑national / regional; Layer: ai_infrastructure (Rechenzentrums‑IT‑Load); kurzfristige Horizon: 2026–2028.",
+        "tailInference": "Direkter Ankündigungs‑ und CapEx‑Kanal: Meta bindet zusätzliches Kapital und Campus‑IT‑Fläche, was zu erhöhter Beschaffung von Rechenzentrums‑Hardware (Server, Memory, Storage, Power) führt. Diese erhöhte Hyperscaler‑Nachfrage erhöht kurzfristig den Druck auf Server‑DRAM/DDR- und HBM‑Zuteilungen und kann Vertrags‑/Spotpreise sowie Lieferzeiten in den betroffenen Produktmärkten stützen (Richtung: demand_up für server_dram/dram).",
+        "predictionId": "OUTLOOK-server_dram",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit des Kurzfrist‑Beschaffungsrisikos im OUTLOOK-server_dram (Richtung: demand_up). Die Ankündigung vergrößert die nachfrageseitige Belastung für Server‑DRAM (qualifizierte Host‑Bit‑Nachfrage) und bestätigt einen weiteren konkreten Hyperscaler‑Treiber, der das Basisszenario 'Beschaffungsrisiko bleibt hoch' stützt.",
+        "falsifier": "Bis zum 2027-03-14 keine nachweisbaren Bauaktivitäten (keine erteilten Baugenehmigungen, kein Baustart, keine Meldung zusätzlicher IT‑MW/Zuweisungen oder Meta‑Mitteilung von 'deferred/cancelled' für diese Erweiterung) — dann ist der angenommene Nachfrage‑Impact auf OUTLOOK-server_dram falsifiziert.",
+        "nextReview": "2027-03-14",
+        "priorityScore": 86,
+        "scoreBreakdown": {
+          "sourceQuality": 19,
+          "novelty": 10,
+          "thesisRelevance": 19,
+          "forecastImpact": 15,
+          "falsifiability": 13,
+          "timeSensitivity": 10
+        },
+        "severity": 30,
+        "confidence": 85,
+        "markets": [
+          "ai_infrastructure",
+          "server_dram",
+          "dram"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Meta Data Centers — 'Deepening Our Investment in Eagle Mountain, Utah' (2026‑09‑14)",
+            "url": "https://datacenters.atmeta.com/2026/09/deepening-our-investment-in-eagle-mountain-utah/"
+          },
+          {
+            "label": "Eagle Mountain City — 'Eagle Mountain Welcomes Meta’s Community Investment' (City press release, 2026‑09‑14)",
+            "url": "https://eaglemountain.gov/eagle-mountain-welcomes-metas-deepened-community-investment/"
+          },
+          {
+            "label": "Deseret News — Kontext zu Wasser/Leitungs‑/Infrastruktur‑Risiken in Utah (Apr 2026)",
+            "url": "https://www.deseret.com/business/2026/04/15/utah-data-centers-artificial-intelligence-ai-water-energy-electricity-use-economic-impacts-jobs-tax-incentives/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit des Kurzfrist‑Beschaffungsrisikos im OUTLOOK-server_dram (Richtung: demand_up). Die Ankündigung vergrößert die nachfrageseitige Belastung für Server‑DRAM (qualifizierte Host‑Bit‑Nachfrage) und bestätigt einen weiteren konkreten Hyperscaler‑Treiber, der das Basisszenario 'Beschaffungsrisiko bleibt hoch' stützt."
+        },
+        "admissionReviewKey": "957f7919efd09f7afc8827df"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_054775a688a479dd006aa9c7b7a56c87d2977d39727c29eeec"
     }
   ]
 }

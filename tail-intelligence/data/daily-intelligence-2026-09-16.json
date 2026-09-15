@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T22:18:49.853Z",
+  "updatedAt": "2026-09-15T22:35:24.335Z",
   "previousRun": "2026-09-15",
   "executivePulse": {
     "current": 78,
@@ -57,14 +57,14 @@
   },
   "confidence": {
     "current": 80,
-    "previous": 81,
-    "interpretation": "Datenvertrauen 81/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 529 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "previous": 80,
+    "interpretation": "Datenvertrauen 80/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 520 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 529 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 520 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -599,6 +599,76 @@
         "forecastChange": "Erhöht die Wahrscheinlichkeit, dass der AI‑getriebene Nachfragepfad für HBM und Server‑DRAM 2026–2027 temporär abgeschwächt wird (weniger aggressiver kurzfristiger Host‑Bit‑Absatz), womit das Basisszenario ‚HBM und Server‑DRAM bleiben bis Ende 2028 knapp‘ (P-2026-07-11-01) partiell abgeschwächt werden könnte."
       },
       "admissionReviewKey": "320b6e2f774c187fec2fee96"
+    },
+    {
+      "id": "S-AUTO-957f7919efd09f7afc8827df",
+      "title": "Meta erweitert Eagle Mountain Data‑Center‑Campus (Utah) — offizielle Ankündigung",
+      "date": "2026-09-14",
+      "admittedAt": "2026-09-15T22:35:05.274Z",
+      "fact": "Meta kündigte am 2026-09-14 an, den Eagle Mountain Data Center Campus (Eagle Mountain, Utah, USA) zu erweitern und seine Investitionen in Utah auf mehr als 3 000 000 000 US‑Dollar zu erhöhen; die Ankündigung nennt erwartete Peak‑Baubeschäftigung >1.200 Personen und >300 dauerhafte Rechenzentrums‑Jobs. (Meta Data Centers, 2026‑09‑14).",
+      "placement": "Eagle Mountain, Utah, USA — Hyperscaler AI‑Datacenter‑Campus; geografische Domäne: US‑national / regional; Layer: ai_infrastructure (Rechenzentrums‑IT‑Load); kurzfristige Horizon: 2026–2028.",
+      "tailInference": "Direkter Ankündigungs‑ und CapEx‑Kanal: Meta bindet zusätzliches Kapital und Campus‑IT‑Fläche, was zu erhöhter Beschaffung von Rechenzentrums‑Hardware (Server, Memory, Storage, Power) führt. Diese erhöhte Hyperscaler‑Nachfrage erhöht kurzfristig den Druck auf Server‑DRAM/DDR- und HBM‑Zuteilungen und kann Vertrags‑/Spotpreise sowie Lieferzeiten in den betroffenen Produktmärkten stützen (Richtung: demand_up für server_dram/dram).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit des Kurzfrist‑Beschaffungsrisikos im OUTLOOK-server_dram (Richtung: demand_up). Die Ankündigung vergrößert die nachfrageseitige Belastung für Server‑DRAM (qualifizierte Host‑Bit‑Nachfrage) und bestätigt einen weiteren konkreten Hyperscaler‑Treiber, der das Basisszenario 'Beschaffungsrisiko bleibt hoch' stützt.",
+      "falsifier": "Bis zum 2027-03-14 keine nachweisbaren Bauaktivitäten (keine erteilten Baugenehmigungen, kein Baustart, keine Meldung zusätzlicher IT‑MW/Zuweisungen oder Meta‑Mitteilung von 'deferred/cancelled' für diese Erweiterung) — dann ist der angenommene Nachfrage‑Impact auf OUTLOOK-server_dram falsifiziert.",
+      "nextReview": "2027-03-14",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 10,
+        "thesisRelevance": 19,
+        "forecastImpact": 15,
+        "falsifiability": 13,
+        "timeSensitivity": 10
+      },
+      "severity": 30,
+      "confidence": 85,
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "signal": "demand_up",
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Meta Data Centers — 'Deepening Our Investment in Eagle Mountain, Utah' (2026‑09‑14)",
+          "url": "https://datacenters.atmeta.com/2026/09/deepening-our-investment-in-eagle-mountain-utah/"
+        },
+        {
+          "label": "Eagle Mountain City — 'Eagle Mountain Welcomes Meta’s Community Investment' (City press release, 2026‑09‑14)",
+          "url": "https://eaglemountain.gov/eagle-mountain-welcomes-metas-deepened-community-investment/"
+        },
+        {
+          "label": "Deseret News — Kontext zu Wasser/Leitungs‑/Infrastruktur‑Risiken in Utah (Apr 2026)",
+          "url": "https://www.deseret.com/business/2026/04/15/utah-data-centers-artificial-intelligence-ai-water-energy-electricity-use-economic-impacts-jobs-tax-incentives/"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöht die Wahrscheinlichkeit des Kurzfrist‑Beschaffungsrisikos im OUTLOOK-server_dram (Richtung: demand_up). Die Ankündigung vergrößert die nachfrageseitige Belastung für Server‑DRAM (qualifizierte Host‑Bit‑Nachfrage) und bestätigt einen weiteren konkreten Hyperscaler‑Treiber, der das Basisszenario 'Beschaffungsrisiko bleibt hoch' stützt."
+      },
+      "admissionReviewKey": "957f7919efd09f7afc8827df"
     },
     {
       "id": "S-AUTO-7c86e2f29f2df64fcc959e8c",
@@ -1245,13 +1315,13 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 86,
-    "note": "Evidenzprüfung offen: 529 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "note": "Evidenzprüfung offen: 520 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-15T22:18:49.853Z",
+    "generatedAt": "2026-09-15T22:35:24.335Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-15T22:08:34.867Z",
-    "inboxNewItems": 60,
+    "inboxUpdatedAt": "2026-09-15T22:25:00.781Z",
+    "inboxNewItems": 10,
     "highRelevanceCandidates": [
       {
         "id": "2edffc212838bfbad8d3",
@@ -1409,30 +1479,30 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-15T22:18:49.658Z",
-    "inboxUpdatedAt": "2026-09-15T22:08:34.867Z",
+    "checkedAt": "2026-09-15T22:35:24.161Z",
+    "inboxUpdatedAt": "2026-09-15T22:25:00.781Z",
     "status": "error",
-    "candidates": 991,
-    "reviewed": 462,
-    "accepted": 48,
-    "watchlist": 116,
-    "rejected": 298,
-    "pending": 529,
+    "candidates": 992,
+    "reviewed": 472,
+    "accepted": 49,
+    "watchlist": 119,
+    "rejected": 304,
+    "pending": 520,
     "oldestPendingAt": "2026-08-18T09:47:10.000Z",
-    "lastCompletedReviewAt": "2026-09-15T22:18:39.826Z",
-    "error": "Candidates 73b51a440827a90fb1e5: Analyst request timed out after 9802ms",
+    "lastCompletedReviewAt": "2026-09-15T22:35:05.274Z",
+    "error": "Candidates c8284d53eab6eb6e6c0f: Analyst request timed out after 18847ms",
     "batchErrors": [
-      "Candidates 86bcef9008d2eaabd5a2: Analyst request timed out after 9803ms",
-      "Candidates 73b51a440827a90fb1e5: Analyst request timed out after 9802ms"
+      "Candidates 923a64ecdf7d27f7b275: Analyst request timed out after 18849ms",
+      "Candidates c8284d53eab6eb6e6c0f: Analyst request timed out after 18847ms"
     ],
-    "rawCandidates": 1026,
+    "rawCandidates": 1027,
     "triage": {
       "archivedOpinions": 22,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-15T22:08:49.386Z",
-      "completedAt": "2026-09-15T22:18:49.662Z",
+      "startedAt": "2026-09-15T22:25:23.681Z",
+      "completedAt": "2026-09-15T22:35:24.166Z",
       "selected": 96,
       "reviewed": 10,
       "concurrency": 2,
@@ -1446,7 +1516,7 @@
   },
   "indexCalculation": {
     "asOf": "2026-09-16",
-    "inputHash": "23e87fcd94fa71b140ed409e774a2403beae23345ac7744a914c48db14057861",
+    "inputHash": "0838f319ed67f48e04cac39267ea5b7fe4eb3d31169bfde1b513d9686aba0fb1",
     "sourceDataAsOf": "2026-09-15"
   }
 }
