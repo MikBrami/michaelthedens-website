@@ -32826,6 +32826,638 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_04246248796e0db1006aa919857cf887d09baae21ff78930c9"
+    },
+    {
+      "decision": "rejected",
+      "title": "Behauptung: Cheonan‑Werk verlagert Packaging‑Kapazität von Exynos zu HBM",
+      "fact": "Berichte (Digitimes/Daum/Branchenseiten) behaupten, Samsung habe am Cheonan‑Standort Packaging‑Kapazität von Exynos/AP‑Paketen auf HBM‑Stacking umgeschichtet.",
+      "placement": "Südkorea / Samsung Cheonan (Packaging‑Campus).",
+      "mechanism": "Reported Mechanism: Umwidmung von Advanced‑Packaging‑Flächen/Personal von AP/Exynos‑Fan‑out/WLP hin zu HBM‑Stacking/TSV/2.5D‑Packaging, um HBM‑Finalisierungskapazität zu erhöhen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Primärquelle fehlt; Falsifizierer (beobachtbar): Samsung‑Produktionsdokumente oder offizielle Samsung‑Ankündigung, die bis 2026-10-15 klar widersprechen (z. B. offizielle Bestätigung, dass Cheonan weiterhin primär Exynos‑Packaging bearbeitet).",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "Recycelt frühere Berichte über Samsungs Cheonan‑Packaging‑Ambitionen; kein neues, primär‑verifiziertes Operativesignal.",
+      "duplicateOf": "S-AUTO-4459416fabc8b86065bdb16c",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 5,
+        "thesisRelevance": 6,
+        "forecastImpact": 4,
+        "falsifiability": 3,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 20,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://v.daum.net/v/20260915094310921",
+          "label": "Daum (koreanische Medienberichterstattung über Cheonan‑Kapazitätsverlagerung)",
+          "kind": "secondary",
+          "supports": "Bericht, wonach Samsung Cheonan Packaging‑Flächen zugunsten HBM ausrichtet (kein Samsung‑Statement)."
+        },
+        {
+          "url": "https://www.thelec.net/news/articleView.html?idxno=47",
+          "label": "TheElec — Hintergrund zu Cheonan Packaging und HBM‑Aktivitäten (historisch)",
+          "kind": "secondary",
+          "supports": "Historischer Kontext: Cheonan wurde bereits für Packaging/Advanced‑Packaging genutzt; keine unmittelbare Primärbestätigung der heute behaupteten Umschichtung."
+        }
+      ],
+      "reason": "Die Inbox‑Meldung wiederholt vorhandene Medienberichte über Samsungs Ausbau/Neuausrichtung von Packaging‑Kapazität in Cheonan, liefert aber keine bestätigende Primärquelle (Samsung‑Pressemitteilung, regulatorische Einreichung oder belegbare Produktionsdaten). Der Sachverhalt ist teilweise in der Baseline/Automated‑Feed bereits abgedeckt. Ohne Primärbestätigung und mit stark überlappender Vorberichterstattung lehne ich die Aufnahme ab.",
+      "candidateId": "54be9b34048d15369fa0",
+      "candidateKey": "bddf6d385d2337a264b67500",
+      "reviewedAt": "2026-09-15T10:25:56.919Z",
+      "priorityScore": 30,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fe02e037d61b7ac006aa91c81e2a887d1a3148a82e67db47c"
+    },
+    {
+      "decision": "rejected",
+      "title": "Behauptung: Samsung und SK hynix divergenzieren in Zell‑Design für sub‑10nm DRAM (2028)",
+      "fact": "Berichte (Digitimes‑Ableger) behaupten, Samsung und SK hynix verfolgten unterschiedliche Zell‑/Architekturpfade für sub‑10nm‑DRAM/High‑NA‑Rollout in 2028.",
+      "placement": "Global DRAM‑Roadmap / Hersteller‑Fertigungsentscheidungen (Südkorea / Foundry & Memory R&D).",
+      "mechanism": "Reported Mechanism: Firmenentscheidungen über 6F² vs 4F²/VCT/High‑NA‑EUV oder Peri‑Bonding/3D‑Ansätze sollen zu divergierenden Designpfaden führen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Keine verifizierbare Primärquelle; Falsifizierer: Offizielle technische Roadmaps/Investor‑Slides von Samsung oder SK hynix, die bis 2026-10-15 gemeinsame oder einheitliche Zellstrategie dokumentieren.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "Erscheint als redigierte Zusammenfassung brancheneigener Gerüchte; keine Primärbestätigung in Hersteller‑Kommunikationen gefunden.",
+      "duplicateOf": "S-2026-08-15-02",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 10,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 25,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/tag/high-na_euv/00114038.html",
+          "label": "DIGITIMES — Tag/Archiv (keine eindeutige Primärstory mit Hersteller‑Quote gefunden)",
+          "kind": "secondary",
+          "supports": "Aggregierte Branchensignale zu High‑NA/2028 DRAM‑Ambitionen; keine direkte Hersteller‑Bestätigung der behaupteten Divergenz."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist eine Zusammenfassung von Marktrumor/Analysten‑Berichten ohne eindeutige Primärquelle (offizielle Statements, regulatorische Filings oder Hersteller‑Investor‑Slides) für die behauptete, konkrete Divergenz. Solche Architekturmeldungen sind relevant, aber ohne Primärverifikation dürfen sie nicht als bestätigte Aufnahme angenommen werden; deshalb Ablehnung.",
+      "candidateId": "ed04e37f7a8b52fdbb09",
+      "candidateKey": "dce600df54bc5f53e31f8545",
+      "reviewedAt": "2026-09-15T10:25:56.920Z",
+      "priorityScore": 48,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fe02e037d61b7ac006aa91c81e2a887d1a3148a82e67db47c"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung SDS: Select‑Tier‑Partner von Anthropic (Claude) — Korea",
+      "fact": "Samsung SDS hat eine strategische Partnerschaft mit Anthropic/Claude angekündigt; koreanische Medien berichten, Samsung SDS sei der erste koreanische 'Select Tier' Partner im Claude‑Partnernetzwerk.",
+      "placement": "Südkorea / Enterprise‑AI / Partnernetzwerk (Claude Partner Network).",
+      "mechanism": "Mechanismus: Partnerschaft erlaubt Samsung SDS, Claude Enterprise & Integrationen für Samsung‑Kunden anzubieten und interne 'Client‑Zero' Deployments auf externe Kunden auszuweiten, was die Nachfrage nach Enterprise‑Deployments in Korea erhöhen könnte.",
+      "predictionId": "",
+      "predictionImpact": "Signalisiert graduelle Beschleunigung von Enterprise‑AI‑Deployments in Korea (dämpft leicht das Risiko einer kurzfristigen aiDemand‑Schwäche in der Region), aber keine direct quantifizierbare Hardware‑Shipment‑Messung.",
+      "falsifier": "Falsifizierer: Wenn Samsung SDS oder Anthropic bis 2026-12-15 keine kommerziellen Claude‑Enterprise‑Deployments oder bezifferten Kunden/Contracted‑ARR in Korea dokumentieren (z. B. Kunden‑referenzen oder kommerzielle Abo‑/LTA‑Ankündigungen), wird die Marktrelevanz der Partnerschaft stark eingeschränkt.",
+      "nextReview": "2026-12-15",
+      "eventDate": "2026-07-25",
+      "novelty": "Primärpresserelease (Samsung SDS) bereits am 2026-07-25; die Inbox‑Meldung ist zeitlich neu, aber inhaltlich bereits in Unternehmenskommunikation sichtbar.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 8,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 15,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.samsungsds.com/us/news/1295098_5933.html",
+          "label": "Samsung SDS (US newsroom) — Pressemitteilung zur strategischen Partnerschaft mit Anthropic (Claude).",
+          "kind": "primary",
+          "supports": "Samsung SDS bestätigt Partnerschaft mit Anthropic und interne 'Client Zero' Deployments (Pressemitteilung, 2026-07-25)."
+        },
+        {
+          "url": "https://en.sedaily.com/technology/2026/09/15/samsung-sds-becomes-first-korean-firm-to-reach-anthropic",
+          "label": "Seoul Economic Daily — Bericht (2026-09-15) über 'Select Tier' Status in Korea.",
+          "kind": "secondary",
+          "supports": "Journalistische Einordnung, dass Samsung SDS in Korea als erster Anbieter Select‑Tier Status erreicht haben soll."
+        }
+      ],
+      "reason": "Primärquelle (Samsung SDS Pressemitteilung, 2026‑07‑25) bestätigt die strategische Partnerschaft mit Anthropic/Claude; der spezifische 'Select Tier' Status wird in aktuellen koreanischen Medien (2026‑09‑15) berichtet. Die Nachricht zeigt Relevanz für regionale ai_infrastructure‑Nachfrage, liefert aber keine quantifizierbare, direkt messbare Liefer- oder Preiswirkung (keine Shipments, kein Volumen). Aufnahme deshalb auf Watchlist: relevant zu beobachten, aber derzeit kein atomarer, marktbindender Messwert, der eine sofortige Annahme (accepted) gegenüber den vorliegenden Vorhersagen rechtfertigt.",
+      "candidateId": "16ac93cf946cdc0f6f3e",
+      "candidateKey": "85ca576e888ce14f4d1ad043",
+      "reviewedAt": "2026-09-15T10:25:56.920Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fe02e037d61b7ac006aa91c81e2a887d1a3148a82e67db47c"
+    },
+    {
+      "decision": "accepted",
+      "title": "US‑Präsident lehnt Aufruf zu KI‑Verlangsamung ab — Marktrelevantes politisches Signal",
+      "fact": "US‑Präsident Donald J. Trump hat in öffentlichen Äußerungen (auf einer Veranstaltung und in sozialen Medien) die Forderungen von KI‑Leitern nach einer Verlangsamung der Frontier‑KI‑Entwicklung abgelehnt (Statement datiert 2026‑09‑14/15).",
+      "placement": "USA / nationale Politik / Technologie‑Regulierung.",
+      "mechanism": "Mechanismus: Eine klare, öffentlich formulierte Ablehnung regulatorischer Verlangsamungsaufrufe erhöht kurzfristig politische Toleranz für beschleunigte KI‑Investitionen und reduziert regulatorische Unsicherheit für Hyperscaler und Infrastruktur‑Finanzierungen. Das kann hyperscaler‑getriebene Beschaffungs‑Timelines und damit Nachfrage für HBM/Server‑DRAM kurzfristig stützen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Erhöht (moderate) Wahrscheinlichkeit, dass die Nachfrageseite für HBM und Server‑DRAM robust bleibt; stützt die Basisprediktion, dass HBM und Server‑DRAM bis Ende 2028 strukturell knapp bleiben (P-2026-07-11-01) durch Verringerung regulatorischer Pausenrisiken.",
+      "falsifier": "Falsifizierer (beobachtbar): Wenn bis 2026-12-15 entweder (a) die US‑Regierung formell bindende Einschränkungen/Verbote für bestimmte Frontier‑Model‑Deployments erlässt, ODER (b) zwei der drei größten Hyperscaler öffentlich einen verbindlichen, mindestens 30‑tägigen Pause/Reduktionsplan für neue AI‑Buildouts ankündigen, dann wäre die Annahme, dass Trumps Statement die Nachfragebeschleunigung stärkt, falsifiziert.",
+      "nextReview": "2026-12-15",
+      "eventDate": "2026-09-14",
+      "novelty": "Politische Entscheidung/Statement mit unmittelbarer Relevanz für regulatorische Unsicherheit rund um KI‑Buildouts; in dieser Form neu und direkt beobachtbar.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 18,
+        "falsifiability": 10,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 90,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/trump-rejects-silicon-valley-calls-165148820.html",
+          "label": "Yahoo Finance — 'Trump rejects Silicon Valley’s calls for AI slowdown' (Artikelreporting des Statements).",
+          "kind": "primary",
+          "supports": "Berichtet Trumps öffentliches Statement und Marktreaktion (Datum/Ort)."
+        },
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/09/14/onstage-call-with-nvidia-ceo-trump-deems-ai-fears-hoax/",
+          "label": "The Washington Post — 'In onstage call with Nvidia CEO, Trump deems AI fears a ‘hoax’' (Augmented reporting / original quote).",
+          "kind": "secondary",
+          "supports": "Wörtliche sowie kontextuelle Darstellung von Trumps Äußerungen (Datum: 2026‑09‑14)."
+        },
+        {
+          "url": "https://apnews.com/article/b85df16775ff7e9611a456b061a0e4b9",
+          "label": "AP News — Zusammenfassung der Aussagen und deren politischen Kontext.",
+          "kind": "secondary",
+          "supports": "Zusätzliche Berichterstattung zur Ablehnung regulatorischer Verlangsamungsaufrufe."
+        }
+      ],
+      "reason": "Das Ereignis ist ein sauber verifizierbares, datiertes politisches Statement (14.–15. Sept. 2026) von hoher Marktrelevanz: eine US‑Präsidentschaftsäußerung, die regulatorische Unsicherheit reduziert und damit die Nachfrage‑Erwartung für AI‑Infrastruktur kurzfristig stützen kann. Primärquellen (Nachrichtenberichte, Augenzeugenberichte/Transkripte) bestätigen das Statement; gegenteilige, bindende Maßnahmen wurden bis zur nächsten Überprüfung nicht beobachtet. Die Aufnahme als Signal (accepted) ist gerechtfertigt, weil die Meldung ein konkretes, prüfbares Einflussmoment auf die Nachfrage‑Seite liefert und sich direkt auf die bereits in der Inbox vorhandene Prognose P-2026-07-11-01 bezieht.",
+      "candidateId": "9d301ee0e400d5ef07fb",
+      "candidateKey": "598f3d05ff5134fd19fc52f8",
+      "reviewedAt": "2026-09-15T10:25:56.927Z",
+      "priorityScore": 80,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-598f3d05ff5134fd19fc52f8",
+        "title": "US‑Präsident lehnt Aufruf zu KI‑Verlangsamung ab — Marktrelevantes politisches Signal",
+        "date": "2026-09-14",
+        "admittedAt": "2026-09-15T10:25:56.927Z",
+        "fact": "US‑Präsident Donald J. Trump hat in öffentlichen Äußerungen (auf einer Veranstaltung und in sozialen Medien) die Forderungen von KI‑Leitern nach einer Verlangsamung der Frontier‑KI‑Entwicklung abgelehnt (Statement datiert 2026‑09‑14/15).",
+        "placement": "USA / nationale Politik / Technologie‑Regulierung.",
+        "tailInference": "Mechanismus: Eine klare, öffentlich formulierte Ablehnung regulatorischer Verlangsamungsaufrufe erhöht kurzfristig politische Toleranz für beschleunigte KI‑Investitionen und reduziert regulatorische Unsicherheit für Hyperscaler und Infrastruktur‑Finanzierungen. Das kann hyperscaler‑getriebene Beschaffungs‑Timelines und damit Nachfrage für HBM/Server‑DRAM kurzfristig stützen.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Erhöht (moderate) Wahrscheinlichkeit, dass die Nachfrageseite für HBM und Server‑DRAM robust bleibt; stützt die Basisprediktion, dass HBM und Server‑DRAM bis Ende 2028 strukturell knapp bleiben (P-2026-07-11-01) durch Verringerung regulatorischer Pausenrisiken.",
+        "falsifier": "Falsifizierer (beobachtbar): Wenn bis 2026-12-15 entweder (a) die US‑Regierung formell bindende Einschränkungen/Verbote für bestimmte Frontier‑Model‑Deployments erlässt, ODER (b) zwei der drei größten Hyperscaler öffentlich einen verbindlichen, mindestens 30‑tägigen Pause/Reduktionsplan für neue AI‑Buildouts ankündigen, dann wäre die Annahme, dass Trumps Statement die Nachfragebeschleunigung stärkt, falsifiziert.",
+        "nextReview": "2026-12-15",
+        "priorityScore": 80,
+        "scoreBreakdown": {
+          "sourceQuality": 19,
+          "novelty": 10,
+          "thesisRelevance": 16,
+          "forecastImpact": 18,
+          "falsifiability": 10,
+          "timeSensitivity": 7
+        },
+        "severity": 30,
+        "confidence": 90,
+        "markets": [
+          "ai_infrastructure",
+          "hbm",
+          "server_dram"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "aiDemand",
+          "availability"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Yahoo Finance — 'Trump rejects Silicon Valley’s calls for AI slowdown' (Artikelreporting des Statements).",
+            "url": "https://finance.yahoo.com/technology/ai/articles/trump-rejects-silicon-valley-calls-165148820.html"
+          },
+          {
+            "label": "The Washington Post — 'In onstage call with Nvidia CEO, Trump deems AI fears a ‘hoax’' (Augmented reporting / original quote).",
+            "url": "https://www.washingtonpost.com/politics/2026/09/14/onstage-call-with-nvidia-ceo-trump-deems-ai-fears-hoax/"
+          },
+          {
+            "label": "AP News — Zusammenfassung der Aussagen und deren politischen Kontext.",
+            "url": "https://apnews.com/article/b85df16775ff7e9611a456b061a0e4b9"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht (moderate) Wahrscheinlichkeit, dass die Nachfrageseite für HBM und Server‑DRAM robust bleibt; stützt die Basisprediktion, dass HBM und Server‑DRAM bis Ende 2028 strukturell knapp bleiben (P-2026-07-11-01) durch Verringerung regulatorischer Pausenrisiken."
+        },
+        "admissionReviewKey": "598f3d05ff5134fd19fc52f8"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fe02e037d61b7ac006aa91c81e2a887d1a3148a82e67db47c"
+    },
+    {
+      "decision": "rejected",
+      "title": "Amazon und Microsoft können GPUs kaufen — US‑Bauwirtschaft fehlt ~439.000 Arbeitskräfte",
+      "fact": "Die häufig zitierte Zahl von ~439.000 fehlenden Bauarbeitskräften stammt aus einer ABC‑Projektion (Associated Builders and Contractors) für 2025; neuere Aggregate/Artikel zitieren diese Zahl im Kontext des Data‑Center‑Buildouts, liefern aber keine zusätzliche, verifizierbare Messung, die den TAIL‑Baselinesignalwerten neu hinzufügt.",
+      "placement": "USA / Bau‑/Infrastruktur‑Arbeitsmarkt / kurzfristig (2025–2026)",
+      "mechanism": "Wettbewerb um qualifizierte Fachkräfte (Elektriker, Klempner, Monteure) zwischen Rechenzentrumsausbau und Wohn/Transportprojekten reduziert kurzfristig verfügbare Baukapazität; das kann Bau‑Lead‑Times verlängern und damit Datacenter‑Fertigstellung verschieben.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Bis zum 2026-12-31: offizielle BLS‑(oder ABC‑geprüfte) Re‑estimate, das die benötigten Netto‑Neubeschäftigungen für 2025/2026 um ≥200.000 nach unten revidiert oder Belege, dass Bau‑Beschäftigung und offene Stellen zusammen mindestens 300.000 neue, tatsächlich besetzte Stellen im Zeitraum 2025–2026 melden.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2025-01-24",
+      "novelty": "low",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 5,
+        "forecastImpact": 4,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://sg.finance.yahoo.com/topic/technology/",
+          "label": "Yahoo Finance / News‑Aggregator (Zitierung / Kontext)",
+          "kind": "secondary",
+          "supports": "Aggregierte Headlines und Re‑Publikationen verknüpfen die ABC‑Projektion mit Data‑Center‑Wettbewerb um Arbeitskräfte; liefert keine neue Messung."
+        }
+      ],
+      "reason": "Die Inbox‑Meldung ist im Kern eine aggregierte Headline, die eine frühere ABC‑Projektion (2025) recycelt und im Kontext des Data‑Center‑Buildouts einordnet. Wir konnten die 439.000‑Zahl zur Primärquelle (ABC) zurückverfolgen, aber das Candidate‑Item liefert keine neue, eindeutige und marktgebundene Messung (z. B. qualifizierte Shipments, Lead‑Time‑Änderung, kontraktierte Kapazität) die eine Änderung gegenüber dem TAIL‑Baseline erzeugen würde. Außerdem existieren neuere Gegenbewertungen/Schätzungen mit abweichenden Zahlen—die Aussage ist damit weder einzigartig noch sofort beeinflussend für die vorhandenen Vorhersagen. Entsprechend: rejected.",
+      "candidateId": "83e678cccec1f2920621",
+      "candidateKey": "db6b29c86ed3ae7e0a9ed962",
+      "reviewedAt": "2026-09-15T10:31:56.954Z",
+      "priorityScore": 29,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0313410ff8233d7a006aa91de93d4087d1adccdc84aed57e3f"
+    },
+    {
+      "decision": "rejected",
+      "title": "Samsung verdrängt SK hynix, da HBM4 die koreanische Chip‑Gewinnprognose hebt (Chosunbiz)",
+      "fact": "Chosunbiz berichtet, dass Marktstimmung und Analystenschätzungen Samsung aufgrund seiner verbesserten HBM4‑Produktion gegenüber SK hynix positiver einstufen. Dies ist ein Meinungs-/Earnings‑Outlook‑Artikel, kein neuer, verifizierter Messwert (z. B. ausgewiesene HBM4‑Umsätze oder konforme, kanalgebundene Shipments), und wiederholt bereits im Baseline vertretene Signale zu HBM4/Marktanteilen.",
+      "placement": "Südkorea / HBM‑Markt / Quartals‑Earnings‑Kontext (Q3‑2026 Schätzung)",
+      "mechanism": "Repricing der Unternehmen basierend auf erwarteten Margenverbesserungen durch HBM4‑Ramp; transfers von Markterwartung zu relativer Sentiment‑Verschiebung zwischen Samsung und SK hynix.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Bis 2026-10-31: Wenn Samsungs in Q3 ausgewiesener HBM4‑Umsatz oder Marktanteil nicht materialisiert (keine sequenzielle Umsatzsteigerung in HBM‑Line‑Items oder Samsung‑Q3‑HBM‑Umsatz < 2,5× Q2‑HBM‑Umsatz), wäre die Stimmungsthese falsifiziert.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "low",
+      "duplicateOf": "tail-2026-07-14-hbm4-cost",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 2,
+        "thesisRelevance": 15,
+        "forecastImpact": 8,
+        "falsifiability": 3,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "aiDemand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/09/15/KTK7BBY54BAEPEJ7YDRIEFTI3Q/",
+          "label": "Chosunbiz — Artikel (Primärmeldung des Candidate‑Items)",
+          "kind": "primary",
+          "supports": "Chosunbiz diskutiert Analystenrevisionen und das Sentiment‑Gap zwischen Samsung und SK hynix (Publikationsdatum: 2026‑09‑15)."
+        }
+      ],
+      "reason": "Der Chosunbiz‑Beitrag ist ein marktsentiment‑/earnings‑Ausblick und wiederholt Themen, die bereits im TAIL‑Baseline (HBM4‑Kosten, HBM‑Priorisierung, Samsung/SK‑Statements) dokumentiert sind. Er liefert keine neue, direkt quantifizierbare Messung (ausgewiesener HBM4‑Umsatz, kontrahierte Shipments oder Lead‑Time‑Verschiebung) die eine Admission als VERIFIED DATA rechtfertigen würde; deshalb reject (duplikativ / nicht‑additiv).",
+      "candidateId": "32bc2e7d47ef3ef3353d",
+      "candidateKey": "0e43e89dcdfb7a42891f0ab1",
+      "reviewedAt": "2026-09-15T10:31:56.958Z",
+      "priorityScore": 42,
+      "gateReasons": [
+        "missing predictionImpact",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0313410ff8233d7a006aa91de93d4087d1adccdc84aed57e3f"
+    },
+    {
+      "decision": "rejected",
+      "title": "Milliardär erhöht ASML‑Position, verkauft KLA und Lam — Benzinga (Aktien/13F‑Meldung)",
+      "fact": "Benzinga berichtet, dass Third Point (Dan Loeb) seine gemeldeten Q2‑2026 ASML‑Position erhöhte und Teilexits in KLA und Lam vornahm; die zugrundeliegende Primärverifikation ist die SEC Form‑13F‑Einreichung (Q2 2026) und nicht die Benzinga‑Aggregierung.",
+      "placement": "Global / Finanzmarkt / kurzfristig (Q2‑13F‑Bericht)",
+      "mechanism": "13F‑Meldepflichten zeigen institutionelle Portfolio‑Änderungen; solche Positionierungsänderungen können kurzfristiges Sentiment/Options‑Flows und Kursbewegungen beeinflussen, liefern aber keine direkte operativen Signale für die TAIL‑Vorhersagen zu Memory‑Supply/Demand.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Bis 2026-10-15: Falls die SEC‑13F‑Einreichung von Third Point (Q2 2026) keine Zunahme der ASML‑Haltung ausweist oder nachfolgende Form‑13Fs die Position vollständig negieren, wird die in Benzinga berichtete These falsifiziert.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-14",
+      "novelty": "low",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 2,
+        "forecastImpact": 2,
+        "falsifiability": 2,
+        "timeSensitivity": 1
+      },
+      "markets": [
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 15,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.benzinga.com/markets/large-cap/26/09/61775732/billionaire-investor-adds-to-asml-exits-rivals-kla-and-lam-plus-nvidia-broadcom",
+          "label": "Benzinga — Kandidatenartikel (Sekundärbericht)",
+          "kind": "secondary",
+          "supports": "Benzinga fasst die 13F‑Aktivitäten zusammen, bietet aber keine Original‑EDGAR‑Extrakte (Publikationsdatum: 2026‑09‑14)."
+        },
+        {
+          "url": "https://13f.finance/fund/third-point",
+          "label": "13F‑Aggregator / Form‑13F (Primärquelle für die Positionen)",
+          "kind": "primary",
+          "supports": "Q2‑2026 Form‑13F‑Daten zeigen eine gemeldete ASML‑Position (30.000 Aktien, gemeldeter Wert) — die 13F ist die Primärquelle für institutionelle Meldungen."
+        }
+      ],
+      "reason": "Das Candidate‑Item ist Finanz/Investor‑Journalismus (Positionsänderungen), nicht ein marktwidriger operativer Hinweis (Shipments, Lead‑Times, Vertragspreise). Solche 13F‑Meldungen sind verzögert und dienen vor allem der Kapitalmarkteinschätzung; sie ändern die TAIL‑Vorhersagen zur Memory‑Verfügbarkeit oder zu Lieferketten nicht direkt. Zudem ist der Bericht sekundär und kann direkt mit der SEC‑13F primär verifiziert werden — die Kandidatenmeldung bietet daher keinen eigenständigen, admissionstauglichen, marktverändernden Fakt. Deshalb rejected.",
+      "candidateId": "89f2c2e5735fcad69d47",
+      "candidateKey": "a76e5b674cbe8bb00d218d87",
+      "reviewedAt": "2026-09-15T10:31:56.958Z",
+      "priorityScore": 15,
+      "gateReasons": [
+        "missing predictionImpact",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0313410ff8233d7a006aa91de93d4087d1adccdc84aed57e3f"
+    },
+    {
+      "decision": "rejected",
+      "title": "„Samsung’s HBM4 und Chinas Commodity‑DRAM‑Offensive“: SK hynix verliert Terrain — economy.ac (Meinungsstück)",
+      "fact": "Das economy.ac‑Stück ist ein Meinungs-/Analyseartikel, der die HBM4‑Ramp von Samsung und Chinas aggressive DRAM‑Ausweitung diskutiert und behauptet, SK hynix verliere Marktanteile. Diese Narrative ist bereits in den Baselinesignalen (HBM4‑Ramp, CXMT/YMTC‑Ausbau, Marktanteilsverschiebungen) enthalten; economy.ac liefert keine neue, überprüfbare Primärmessung (z. B. verifizierte Shipments, kontraktierte Volumina).",
+      "placement": "Global / Memory‑Markt / strategisch (HBM/DRAM Marktstruktur)",
+      "mechanism": "Marktanteilsverschiebungen und Substitutionsdruck aus China könnten langfristig Preisdruck und Kapazitätsänderungen verursachen; economy.ac fasst diese Trendlinien narrativ zusammen ohne neue direkte Messungen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Bis 2026-12-31: Wenn Quartalsdaten (Counterpoint/Omdia/Unternehmens‑Earnings) Q3‑2026 keine materialisierten Marktanteilsverluste für SK hynix zeigen (z. B. SK‑HBM‑Share stabil ≥ vorherigem Quartal) oder China‑Player kein substantielles zusätzliches qualifiziertes Ship‑Volumen melden, ist die Thesenaussage widerlegt.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-14",
+      "novelty": "low",
+      "duplicateOf": "tail-2026-07-14-huawei-swaysure",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 5,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 3,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 45,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ca.marketscreener.com/news/sk-hynix-q2-profit-jumps-557-on-ai-chip-demand-misses-forecasts-ce7f51d2db81f323/",
+          "label": "Reuters (via Syndication/Aggregatoren) — SK hynix Q2 Ergebnis und HBM‑Hinweise",
+          "kind": "secondary",
+          "supports": "Reuters‑Berichterstattung bestätigt existierende Baseline‑Belege (starke operative Ergebnisse, HBM4‑Ramps) und bietet eine gegengewichtige Perspektive zur reinen 'Verlust von Terrain'‑Narrative."
+        },
+        {
+          "url": "https://ground.news/article/chinas-memory-chip-push-shakes-up-market-as-micron-gains-and-sk-hynix-loses-ground",
+          "label": "Ground.news / Sekundäranalysen über Marktanteile (Counterpoint‑Tracking)",
+          "kind": "secondary",
+          "supports": "Aggregierte Markt‑Tracker‑Berichte (Counterpoint/Analysten) zeigen dynamische Marktanteilsverschiebungen; economy.ac liefert jedoch keine originäre Tracker‑Messung, die den Baseline‑Fundus überlappt."
+        }
+      ],
+      "reason": "Das economy.ac‑Item ist ein sekundäres Analyse‑/Meinungsstück, das bestehende Baseline‑Signale (HBM4‑Ramp, China‑DRAM‑Aufbau, Marktanteilsverschiebungen) narrativ zusammenführt. Kein neues, direktes Primärdatenelement (z. B. qualifizierte Shipments, Lead‑Time‑Messung, vertragliche LTAs mit Volumina) wurde verifiziert. Weil die Thesen bereits im Baseline‑Set abgebildet sind und die Primärquelle nicht eindeutig verifizierbar ist, ist eine Aufnahme als VERIFIED DATA nicht möglich — rejected.",
+      "candidateId": "2ccdcdd311c4cb6a2ff4",
+      "candidateKey": "b10c7b51d34ec019ca16fdb8",
+      "reviewedAt": "2026-09-15T10:31:56.963Z",
+      "priorityScore": 31,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0313410ff8233d7a006aa91de93d4087d1adccdc84aed57e3f"
     }
   ]
 }
