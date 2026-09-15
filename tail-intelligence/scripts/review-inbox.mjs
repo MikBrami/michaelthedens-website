@@ -46,6 +46,8 @@ const startedAt = Date.now();
 const deadline = startedAt + Math.min(600000,Math.max(1000,Number(process.env.TAIL_REVIEW_BUDGET_MS)||600000));
 let reviewedThisRun = 0;
 let rateLimitRetries = 0;
+let timeoutRetries = 0;
+const batchSize = 1;
 // Repair reviews produced before the constrained taxonomy contract first.
 const repairCandidates = candidates.filter(c => { const r=latestReviews.get(reviewKey(c)); return r?.decision === 'watchlist' && r.gateReasons?.some(reason => ['review contract upgrade','invalid drivers','invalid markets','invalid direction'].includes(reason)); });
 const selected = measurementRepair ? [] : repairCandidates.length ? repairCandidates.slice(0,limit) : selectForReview(pending,limit);
@@ -70,8 +72,8 @@ if (selected.length && !process.env.OPENAI_API_KEY) error = 'Analyst unavailable
 async function requestBatch(batch) {
     const {candidateId: _ignored, ...reviewFields} = schema.properties.reviews.items.properties;
     const batchSchema = object({reviews:object(Object.fromEntries(batch.map(c=>[c.id,object(reviewFields)])))});
-    const response = await analystRequest('https://api.openai.com/v1/responses',{
-      method:'POST',signal:AbortSignal.timeout(Math.max(1,Math.min(180000,deadline-Date.now()))),
+    const result = await analystRequest('https://api.openai.com/v1/responses',{
+      method:'POST',
       headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`,'Content-Type':'application/json'},
       body:JSON.stringify({model,tools:[{type:'web_search'}],tool_choice:'required',include:['web_search_call.action.sources'],
         instructions: [
@@ -92,9 +94,7 @@ async function requestBatch(batch) {
           baseline:[...articles.filter(a => a.public !== false && a.origin !== 'reviewed-inbox'),...[...new Map(journal.reviews.map(r=>[r.candidateKey,r])).values()].filter(r=>r.decision==='accepted' && r.acceptedSignal).map(r=>r.acceptedSignal)].map(({id,date,title,summary,signal,markets,url})=>({id,date,title,summary:String(summary||'').slice(0,240),signal,markets,url}))}),
         text:{format:{type:'json_schema',name:'tail_admission',strict:true,schema:batchSchema}}
       })
-    },{deadline,onRetry:info=>{rateLimitRetries++;console.log(`Analyst retry ${info.status} (${info.code}), waiting ${info.delayMs}ms.`);}});
-    if (!response.ok) throw new Error(`Analyst HTTP ${response.status}`);
-    const result = await response.json();
+    },{deadline,parseJson:true,onRetry:info=>{if(info.status==='timeout')timeoutRetries++;else if(info.status===429)rateLimitRetries++;console.log(`Analyst retry for ${batch.map(c=>c.id).join(',')}: ${info.status} (${info.code}), waiting ${info.delayMs}ms.`);}});
     if (result.status !== 'completed') throw new Error(`Analyst response ${result.status}`);
     const parts = (result.output||[]).flatMap(o=>o.content||[]);
     const output = result.output_text || parts.find(p=>p.type==='output_text')?.text;
@@ -110,18 +110,16 @@ async function requestBatch(batch) {
 // Retrieval can overlap; commits and duplicate gates remain ordered and single-writer.
 let blockingError=Boolean(error);
 const batchErrors=[];
-for (let i=0;!blockingError && i<selected.length && Date.now()<deadline;i+=4*concurrency) {
+for (let i=0;!blockingError && i<selected.length && Date.now()<deadline;i+=batchSize*concurrency) {
   const wave=[];
-  for(let j=i;j<Math.min(selected.length,i+4*concurrency);j+=4) wave.push(selected.slice(j,j+4));
+  for(let j=i;j<Math.min(selected.length,i+batchSize*concurrency);j+=batchSize) wave.push(selected.slice(j,j+batchSize));
   const responses=await Promise.allSettled(wave.map(requestBatch));
-  for (const response of responses) {
+  for (const [responseIndex,response] of responses.entries()) {
     if(response.status==='rejected') {
-      if(Date.now()<deadline) {
-        error=String(response.reason?.message||response.reason);
-        batchErrors.push(error);
-        blockingError=/Analyst HTTP (401|403|429)/.test(error);
-        console.warn(`Analyst batch deferred: ${error}`);
-      }
+      error=`Candidates ${wave[responseIndex].map(c=>c.id).join(',')}: ${String(response.reason?.message||response.reason)}`;
+      batchErrors.push(error);
+      blockingError=/Analyst HTTP (401|403|429)/.test(error);
+      console.warn(`Analyst batch deferred: ${error}`);
       continue;
     }
     const {batch,proposals,sourceUrls,responseId}=response.value;
@@ -141,10 +139,14 @@ const state = admissionState(candidates,journal.reviews,{asOf:new Date().toISOSt
 state.batchErrors=batchErrors;
 state.rawCandidates=rawCandidates.length;
 state.triage={archivedOpinions:triage.archivedOpinions,groupedDuplicates:triage.groupedDuplicates};
-state.lastRun={startedAt:now,completedAt:new Date().toISOString(),selected:selected.length,reviewed:reviewedThisRun,concurrency,limit,rateLimitRetries,durationSeconds:Math.round((Date.now()-startedAt)/1000),budgetExhausted:Date.now()>=deadline};
+state.lastRun={startedAt:now,completedAt:new Date().toISOString(),selected:selected.length,reviewed:reviewedThisRun,concurrency,batchSize,limit,rateLimitRetries,timeoutRetries,durationSeconds:Math.round((Date.now()-startedAt)/1000),budgetExhausted:Date.now()>=deadline};
 const throughput=await read('data/admission-throughput.json',{schemaVersion:1,runs:[]});
 throughput.runs.push({...state.lastRun,pending:state.pending,error});
 await write('data/admission-throughput.json',throughput);
 await write('data/admission-status.json',state);
 console.log(`Admission: ${state.status}; ${state.pending} pending, ${state.reviewed} reviewed, ${state.accepted} accepted.`);
 if (error) console.warn(`::warning::${error}`);
+
+if (process.env.GITHUB_STEP_SUMMARY) {
+  await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `\n## Evidenzprüfung\n\nStatus: ${state.status}\n\n- Geprüft in diesem Lauf: ${reviewedThisRun}/${selected.length}\n- Offen: ${state.pending}\n- Timeout-Wiederholungen: ${timeoutRetries}\n- Fehlgeschlagene Anfragen: ${batchErrors.length}\n- Zeitbudget ausgeschöpft: ${state.lastRun.budgetExhausted}\n`);
+}

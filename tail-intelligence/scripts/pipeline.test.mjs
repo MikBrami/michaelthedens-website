@@ -52,11 +52,19 @@ test('Parallel retrieval still admits a shared observation only once and persist
   put('config/methodology.json',methodology);put('data/articles.json',[]);put('config/market-outlook.json',{outlooks:[{marketId:'enterprise_ssd',view:'Supply remains tight',changeRules:'Qualified supply improves'}]});
   const day=new Date().toISOString().slice(0,10),future=new Date(Date.now()+86400000*7).toISOString().slice(0,10);
   const fixture={...proposal,eventDate:day,nextReview:future};
-  fs.writeFileSync(path.join(root,'mock.mjs'),`const fixture=${JSON.stringify(fixture)}; globalThis.fetch=async (_url,options)=>{const request=JSON.parse(options.body), input=JSON.parse(request.input);await new Promise(r=>setTimeout(r,20));return {ok:true,json:async()=>({id:'mock',status:'completed',output:[{type:'web_search_call',action:{sources:[{url:fixture.sources[0].url}]}},{content:[{type:'output_text',text:JSON.stringify({reviews:Object.fromEntries(input.candidates.map(c=>[c.id,{...fixture,candidateId:'ignored-model-id'}]))})}]}]})};};`);
+  fs.writeFileSync(path.join(root,'mock.mjs'),`const fixture=${JSON.stringify(fixture)}; globalThis.fetch=async (_url,options)=>{const request=JSON.parse(options.body), input=JSON.parse(request.input);if(input.candidates.length!==1)throw new Error('Expected one candidate per request');await new Promise(r=>setTimeout(r,20));return {ok:true,json:async()=>({id:'mock',status:process.env.MOCK_PARTIAL_FAILURE && input.candidates[0].id==='candidate7'?'failed':'completed',output:[{type:'web_search_call',action:{sources:[{url:fixture.sources[0].url}]}},{content:[{type:'output_text',text:JSON.stringify({reviews:Object.fromEntries(input.candidates.map(c=>[c.id,{...fixture,candidateId:'ignored-model-id'}]))})}]}]})};};`);
   execFileSync(process.execPath,['--import',path.join(root,'mock.mjs'),path.join(root,'scripts/review-inbox.mjs')],{env:{...process.env,OPENAI_API_KEY:'mock-only',TAIL_REVIEW_LIMIT:'8',TAIL_REVIEW_CONCURRENCY:'2'},stdio:'pipe'});
   const read=file=>JSON.parse(fs.readFileSync(path.join(root,'data',file)));
   assert.equal(read('admission-status.json').reviewed,8);assert.ok(read('admission-reviews.json').reviews.every(r=>r.candidateId.startsWith('candidate')));assert.equal(read('admission-status.json').accepted,1);assert.equal(read('admission-status.json').lastRun.concurrency,2);
   assert.equal(read('admission-backlog.json').items.length,8);assert.equal(read('admission-reviews.json').reviews.length,8);
+  put('data/admission-reviews.json',{schemaVersion:1,reviews:[]});
+  const summary=path.join(root,'summary.md');
+  execFileSync(process.execPath,['--import',path.join(root,'mock.mjs'),path.join(root,'scripts/review-inbox.mjs')],{env:{...process.env,OPENAI_API_KEY:'mock-only',TAIL_REVIEW_LIMIT:'8',TAIL_REVIEW_CONCURRENCY:'2',MOCK_PARTIAL_FAILURE:'1',GITHUB_STEP_SUMMARY:summary},stdio:'pipe'});
+  const partial=read('admission-status.json');
+  assert.equal(partial.status,'error');assert.equal(partial.reviewed,7);assert.equal(partial.pending,1);
+  assert.equal(read('admission-reviews.json').reviews.length,7);assert.equal(partial.lastRun.batchSize,1);
+  assert.match(partial.batchErrors[0],/candidate7/);assert.match(fs.readFileSync(summary,'utf8'),/Status: error/);
+
  } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
 
@@ -65,4 +73,29 @@ test('Rate limiting retries with provider delay; quota exhaustion does not retry
  let calls=0;const delays=[];const options={deadline:Date.now()+60000,wait:async ms=>delays.push(ms),fetchImpl:async()=>++calls===1?{ok:false,status:429,headers:{get:()=> '2'},json:async()=>({error:{code:'rate_limit_exceeded',message:'Rate limited'}})}:{ok:true}};
  assert.equal((await analystRequest('mock',{},options)).ok,true);assert.equal(calls,2);assert.deepEqual(delays,[2000]);
  calls=0;await assert.rejects(analystRequest('mock',{}, {...options,fetchImpl:async()=>{calls++;return {ok:false,status:429,json:async()=>({error:{code:'insufficient_quota'}})};}}),/insufficient_quota/);assert.equal(calls,1);
+});
+
+test('Timeout retries once with a fresh signal and includes response body reads',async()=>{
+ for(const phase of ['fetch','body']) {
+  let calls=0;const signals=[],retries=[];
+  const result=await analystRequest('mock',{}, {deadline:Date.now()+600000,parseJson:true,wait:async()=>{},onRetry:r=>retries.push(r),fetchImpl:async(_url,options)=>{
+   signals.push(options.signal);calls++;
+   if(calls===1 && phase==='fetch')throw new DOMException('slow','TimeoutError');
+   const thisCall=calls;
+   return {ok:true,json:async()=>{if(thisCall===1)throw new DOMException('slow body','TimeoutError');return {status:'completed'};}};
+  }});
+  assert.equal(result.status,'completed');assert.equal(calls,2);assert.notEqual(signals[0],signals[1]);assert.equal(retries[0].code,'request_timeout');
+ }
+});
+test('Persistent timeout is bounded and a short remaining budget prevents retry',async()=>{
+ for(const budget of [600000,100000]) {
+  let calls=0;
+  await assert.rejects(analystRequest('mock',{}, {deadline:Date.now()+budget,wait:async()=>{},fetchImpl:async()=>{calls++;throw new DOMException('slow','TimeoutError');}}),/timed out/);
+  assert.equal(calls,budget===600000?2:1);
+ }
+});
+test('Malformed responses are not retried as timeouts',async()=>{
+ let calls=0;
+ await assert.rejects(analystRequest('mock',{}, {deadline:Date.now()+600000,parseJson:true,fetchImpl:async()=>{calls++;return {ok:true,json:async()=>{throw new SyntaxError('bad JSON');}};}}),/bad JSON/);
+ assert.equal(calls,1);
 });

@@ -97,4 +97,10 @@ jobs:
           git push origin HEAD:main
           git push --force-with-lease origin HEAD:refs/heads/agent/private-intelligence
 
+      # Persist successful reviews before exposing partial review failure to CI.
+      - name: Report evidence review failure after saving progress
+        if: steps.catchup.outputs.run == 'true'
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; const s=JSON.parse(fs.readFileSync('data/admission-status.json','utf8')); if(s.status==='error'){console.error('Evidence review failed; successful results were saved. Pending:',s.pending);process.exitCode=1;}"
+
       # Vercel deploys every main-branch push through its Git integration.
