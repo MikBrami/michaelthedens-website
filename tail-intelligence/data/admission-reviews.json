@@ -33458,6 +33458,290 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0313410ff8233d7a006aa91de93d4087d1adccdc84aed57e3f"
+    },
+    {
+      "decision": "rejected",
+      "title": "Cathie Wood kauft Meta / verkauft andere Megacaps (Benzinga‑Kurzmeldung)",
+      "fact": "Kurzmeldung über ARK-Invest‑Trades (Meta-Zukauf, Verkäufe von Amazon/AMD/Alphabet/Palantir) am 14.–15.09.2026; kein neues, quantifizierbares Markt‑Ereignis mit messbaren Einheiten für die TAIL‑Prognosen.",
+      "placement": "Global / US‑Aktienmarkt / Equity‑Flows / Spot (14–15 2026-09-14 bis 2026-09-15)",
+      "mechanism": "Portfolioumschichtung eines aktiven ETF‑Managers (ARK) — erhöhte Käufernachfrage für META‑Aktien; kein belegter Einfluss auf Speicher-, Datacenter‑ oder Supply‑Chain‑Kenngrößen in den TAIL‑Vorhersagen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Wenn ARK/ARKK‑Positionen innerhalb 30 Tagen (bis 2026-10-15) nicht in SEC‑Form 13F/13D oder Fonds‑Holdings reflektiert sind bzw. kein nachhaltiger (>5 % relative) Kursimpuls in META über zwei Handelstage verbleibt, schwächt das die Aussagekraft.",
+      "nextReview": "2026-10-16",
+      "eventDate": "2026-09-14",
+      "novelty": "recycelt/trading news",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 2,
+        "thesisRelevance": 4,
+        "forecastImpact": 3,
+        "falsifiability": 4,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 15,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/09/61704259/cathie-wood-buys-28-1-million-worth-of-meta-stock-dumps-alphabet-shares-as-mark-zuckerbergs-superintelligence-vision-takes-shape",
+          "label": "Benzinga – ARK/Meta Trades (Canonical Benzinga text found via Benzinga feed)",
+          "kind": "primary",
+          "supports": "Berichtet ARK‑Trades (Meta Zukauf, Verkäufe von Alphabet u.a.) und verknüpft sie mit Muse‑Hoffnung; keine Messung zu Supply/Demand, Lead‑Times oder Preisindizes."
+        },
+        {
+          "url": "https://www.webull.ca/news-detail/15551774134166528",
+          "label": "Webull / Republizierung (weiterer Mirror der Meldung)",
+          "kind": "secondary",
+          "supports": "Reproduktion der Benzinga‑Meldung; bestätigt Timing und Handels‑Narrativ."
+        }
+      ],
+      "reason": "Kurzmeldungen über Fonds‑Trades sind in der Regel Markt‑Geräusche und keine atomic, datierte Messgröße mit direkten Auswirkungen auf die TAIL‑Prognosen (keine qualifizierten Shipments, keine Preis‑ oder Liefertids‑Messung). Die Meldung ist entweder schon in Baseline‑Marktgeräuschen enthalten oder rein journalistische Handelsberichterstattung; erfüllt nicht die Aufnahmeanforderungen (keine eindeutige, quantifizierbare Wirkung auf vorhandene Vorhersagen).",
+      "candidateId": "f52925bf6053f6eca023",
+      "candidateKey": "fc8936d37a05932cf2d66592",
+      "reviewedAt": "2026-09-15T15:22:49.613Z",
+      "priorityScore": 24,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_027efc2c3cc4f29b006aa96215f2bc87d0a56eca0719cc383d"
+    },
+    {
+      "decision": "rejected",
+      "title": "TechRadar: 'Kioxia drückt NAND näher an DRAM‑Territorium'",
+      "fact": "Analyse/Feature‑Artikel über Produkt‑/Architekturtrends (Kioxia/Storage‑Class/XL‑NAND → höhere Performance nahe DRAM). Keine primäre, quantifizierbare Beobachtung (z. B. Shipments, Lead‑Times, Kontraktpreise) mit Einheiten, die eine TAIL‑Prognose ändert.",
+      "placement": "Global / NAND‑ Architektur / Produkt‑Layer / Tech‑Ankündigung (2026-09-15)",
+      "mechanism": "Technologische Substitution (CXL/NAND/SCM) könnte Host‑Bit‑Bedarf verringern bzw. DRAM‑Abhängigkeit mindern — allerdings ist das eine technische Roadmap/Analyse, keine dokumentierte Marktwirkung.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Konkreter, messbarer Substitutionsnachweis: innerhalb 12 Monaten (bis 2027-09-15) signifikante beobachtete Verringerung der Host‑DRAM‑Bestellungen zugunsten qualifizierter CXL/XL‑NAND‑Module (≥20 % beobachtetes Volumenverschiebung in Channel‑Auslieferungsdaten).",
+      "nextReview": "2027-09-16",
+      "eventDate": "2026-09-15",
+      "novelty": "Analyse / Technologie‑Interpretation",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 7,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 3,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "nand",
+        "dram",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "demand_down",
+      "severity": 20,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://tech.yahoo.com/computing/articles/kioxia-pushing-nand-closer-dram-011500677.html",
+          "label": "TechRadar (republiziert via Yahoo) – Technologieanalyse Kioxia",
+          "kind": "primary",
+          "supports": "Erörtert Kioxias Produktankündigungen und Positionierung von NAND‑/SCM‑Technologien in Richtung DRAM‑ähnlicher Rollen; kein Shipment/Preis/Lead‑Time‑Beleg."
+        },
+        {
+          "url": "https://cdn.prod.nntech.io/company-events/reports/912642aa-5972-3ad1-8704-5c33ba500438/presentation.pdf",
+          "label": "Kioxia FY/Investor Presentation (Produktkontext, technologische Hinweise)",
+          "kind": "secondary",
+          "supports": "Unternehmensmaterialien zu Produktroadmaps, dienen als Kontext, messen aber keine Marktkennzahlen."
+        }
+      ],
+      "reason": "Tech‑Features oder Interpretationen technischer Roadmaps sind nützlich für strategische Einschätzungen, erfüllen aber nicht die TAIL‑Aufnahmebedingungen: es fehlt ein atomic, datiertes Messsignal mit Einheiten (Shipments, Preise, Lead‑Times) und ein klarer, testbarer Einfluss auf eine der vorhandenen Vorhersagen. Deshalb Ablehnung.",
+      "candidateId": "238bf185da2468582e96",
+      "candidateKey": "fc40f43d2b065b90f4e59adc",
+      "reviewedAt": "2026-09-15T15:22:49.619Z",
+      "priorityScore": 42,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_027efc2c3cc4f29b006aa96215f2bc87d0a56eca0719cc383d"
+    },
+    {
+      "decision": "rejected",
+      "title": "Market‑Headline: Samsung, SK hynix begrenzen Vorbörse‑Verluste trotz -5.86% PHLX‑Einbruch",
+      "fact": "Der Philadelphia Semiconductor Index (SOX) fiel am 2026-09-14 um −5.86% (Schlusskurs 11,131.3 Punkte). Internationale Headlines berichteten von begrenzten Vorbörsenschwankungen einzelner koreanischer Hersteller, aber keine neue, qualifizierte Messgröße für Supply/Demand oder Kontraktpreise wurde geliefert.",
+      "placement": "US‑Markt / PHLX (Index‑Bewegung) / Equity‑Reaktion (2026-09-14)",
+      "mechanism": "Marktpreis‑Reaktion auf AI‑Nachfrage‑Unsicherheit / Zins‑ und Geopolitik‑Signale; Index‑Bewegung ist Preiswirkung, keine direkte Messung von Speicher‑Bit‑Supply oder Fill‑Rates.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Wenn binnen 30 Tagen (bis 2026-10-15) keine korrelierenden Änderungen in DRAM/HBM‑Kontraktpreisen oder Lieferzeiten sichtbar werden (z. B. zwei Quartale in Folge kontraktpreissenkende/steigende Indikatoren gemäß TAIL‑Indexdefinition), ist die Relevanz für die TAIL‑Vorhersagen gering.",
+      "nextReview": "2026-10-16",
+      "eventDate": "2026-09-14",
+      "novelty": "Marktbewegung / Index‑Schock",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 3,
+        "thesisRelevance": 6,
+        "forecastImpact": 5,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_down",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "PHLX",
+        "observation": "PHLX close 2026-09-14: 11,131.3 (−5.86%)."
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ng.investing.com/indices/phlx-semiconductor-historical-data",
+          "label": "Investing.com – PHLX historische Kurse (14 Sep 2026, −5.86%)",
+          "kind": "primary",
+          "supports": "Historische Indexdaten: PHLX Schlusskurs 14.09.2026 = 11,131.3, Veränderung −5.86%."
+        },
+        {
+          "url": "https://ca.investing.com/news/economy-news/wall-st-futures-slip-as-rising-oil-treasury-yields-compound-ai-anxiety-4839308",
+          "label": "Reuters/Investing.com‑Syndication – Kontext: Marktreaktion auf AI‑Risiken und Zinsängste",
+          "kind": "secondary",
+          "supports": "Erklärt die makro-/Nachfragesorgen, die den Index‑Rückgang mitbegründet haben; bestätigt Sektor‑Preisreaktion."
+        }
+      ],
+      "reason": "Der dokumentierte Index‑Rückgang (SOX −5.86% am 2026-09-14) ist ein verifizierbares Marktereignis (siehe Index‑Zeitreihe). Allerdings ist eine Indexbewegung allein kein TAIL‑admissibles Signal, weil sie keine atomare, messbare Änderung in den relevanten Lieferkettenmetriken (Shipments, Lead‑Times, Kontraktpreise) liefert und damit nicht direkt eine der bestehenden Vorhersagen falsifiziert oder modifiziert. Deshalb wird die Kandidatur abgelehnt.",
+      "candidateId": "351c8a495edf9178358d",
+      "candidateKey": "9316fc074a9912a50d92a387",
+      "reviewedAt": "2026-09-15T15:22:49.623Z",
+      "priorityScore": 39,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_027efc2c3cc4f29b006aa96215f2bc87d0a56eca0719cc383d"
+    },
+    {
+      "decision": "rejected",
+      "title": "IBD / Marktheadline: Dow‑Futures fallen, Nvidia/Micron/Sandisk drücken Futures vor Fed‑Sitzung",
+      "fact": "Marktberichte dokumentieren ein Futures‑/Aktien‑Absinken rund 14.–15.09.2026 ausgelöst durch AI‑Warnungen und erwartete Fed‑Zinserhöhung; dies ist eine Preis- und Sentiment‑Bewegung, keine neue, qualifizierte Supply/Demand‑Messung für TAIL.",
+      "placement": "Global / US‑Futures & Equities / Sentiment‑Shock (2026-09-14/15)",
+      "mechanism": "Nachrichten über AI‑Sicherheitsdiskussionen sowie höhere erwartete Zinsen führten zu Risikoaversion gegenüber AI‑gekoppelten Halbleitern; Folge: Kurs‑ und Futures‑Verkäufe.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Wenn binnen 30 Tagen (bis 2026-10-15) kein persistenter Verschiebungseffekt in Kapazitätsentscheidungen, Kontraktpreisen oder Lieferzeiten für Memory/Storage beobachtet wird, fällt die Aussagekraft gegen Null.",
+      "nextReview": "2026-10-16",
+      "eventDate": "2026-09-14",
+      "novelty": "Markt‑Sentiment / kurzfristiger Preis‑Shock",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 5,
+        "forecastImpact": 4,
+        "falsifiability": 4,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_down",
+      "severity": 25,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ca.investing.com/news/economy-news/wall-st-futures-slip-as-rising-oil-treasury-yields-compound-ai-anxiety-4839308",
+          "label": "Reuters / Investing.com – Marktkontext (Zins‑ und AI‑Sorgen)",
+          "kind": "primary",
+          "supports": "Berichtet, dass Futures und Halbleiteraktien infolge von AI‑Sicherheitswarnungen und erwarteter Fed‑Hike unter Druck gerieten; benennt Nvidia, Micron u. a. als zentrale Verlierer."
+        },
+        {
+          "url": "https://financereviewdaily.com/en/article/dow-futures-slide-as-nvidia-micron-sandisk-drop-on-ai-concerns",
+          "label": "Finance Review Daily (Reproduktion / Zusammenfassung der IBD‑Headline)",
+          "kind": "secondary",
+          "supports": "Spiegelt die IBD‑/Wire‑Headline wider; bestätigt die Marktrichtung in Futures/Equities."
+        }
+      ],
+      "reason": "Kurzfristige Markt‑/Sentiment‑Überschriften sind verifizierbar, aber sie erfüllen nicht die TAIL‑Aufnahmebedingungen: es fehlt eine atomare, datierte quantitative Messung (Shipments, Lead‑Times, Kontraktpreise, Fill‑Rates) und ein klarer, testbarer Pfad zu einer der bestehenden Vorhersagen. Solche Headlines bleiben Markt‑Rauschen und können bereits im Baseline‑Set reflektiert sein; daher Ablehnung.",
+      "candidateId": "fb670cbab459f34fa58d",
+      "candidateKey": "5f921a210935338602e3ca95",
+      "reviewedAt": "2026-09-15T15:22:49.626Z",
+      "priorityScore": 34,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_027efc2c3cc4f29b006aa96215f2bc87d0a56eca0719cc383d"
     }
   ]
 }
