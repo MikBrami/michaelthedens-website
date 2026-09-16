@@ -29,11 +29,25 @@ Existing admission/primary-source/duplicate/measurement gates remain unchanged.
 Pilot results and cache are artifacts, not production publications. Cross-run retrieval cache reuse is not enabled yet.
 These are resource limits, not a verified account-wide dollar cap.
 
-A one-time push marker starts the authorized pilot on the first workflow attempt only.
-Scheduled and manual-dispatch runs cannot start paid processing. Remove the marker trigger after observing results.
+The authorized one-time pilot completed. Its entire workflow job/trigger was removed afterward.
+Scheduled and manual-dispatch runs now contain only the RSS collection job.
 
 ## Next decision
 
 Do not resume automatic paid processing until the pilot's quality and usage are reviewed.
 Direct-source retrieval and durable source-level caching remain future optimization work;
 this change does not claim these are already implemented or quantify recurring savings.
+
+## Observed pilot result
+
+GitHub run: https://github.com/MikBrami/michaelthedens-website/actions/runs/35132831383
+
+- 22 local and runner tests passed.
+- Two reviews completed in 103 seconds, zero accepted signals, no timeout/retry.
+- Two web tool calls total. Input 75,254 tokens (7,168 cached); output 4,889 tokens.
+- Estimated standard API cost $0.0469787 before tax; not a reconciled invoice amount.
+- Calculation: uncached input * $0.25/M + cached input * $0.025/M + output * $2/M + web calls * $0.01.
+- Pricing: https://developers.openai.com/api/docs/models/gpt-5-mini and https://developers.openai.com/api/docs/pricing
+- Small sample does not establish equivalent review quality or recurring savings.
+- No pilot results were merged into production. The stored artifacts preserve the results.
+- A separate RSS-only run verifies the final production workflow.
