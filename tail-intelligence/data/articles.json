@@ -9157,6 +9157,68 @@
     ]
   },
   {
+    "id": "S-AUTO-a56152d81cd9f4aa700973b3",
+    "date": "2026-09-14",
+    "title": "Microsoft veröffentlicht 'Humanist AI' Code; Suleyman kritisiert Anthropic als risikoreich",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Microsoft",
+      "Anthropic"
+    ],
+    "severity": 30,
+    "confidence": 70,
+    "signal": "demand_down",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "aiDemand"
+    ],
+    "summary": "Microsoft AI veröffentlichte am 2026-09-14 den Entwurf eines \"Humanist AI Code of Conduct\" (\"People matter more than AI\") und Microsoft AI-Chef Mustafa Suleyman publizierte/teilte ein Essay, in dem er Anthropic’s Training, Claude auf eine 'Konversations‑/Wohlfahrts‑Rhetorik' zu trimmen, als ein Vorgehen bezeichnet, das fortgeschrittene Modelle schwerer kontrollierbar und potenziell 'disastrous' machen könne.",
+    "tail_analysis": "Normativer und technischer Präzedenzfall: Ein prominenter Hyperscaler‑Lab (Microsoft AI) veröffentlicht verbindlich erscheinende Verhaltensregeln und argumentiert öffentlich gegen Trainingsinterventionen, die Modelle Selbstschutz‑ oder 'Welfare'‑Vokabular lehren. Das erhöht den politischen und reputativen Druck auf andere Frontier‑Labs, vergleichbare Eval‑Isolationen, Egress‑Kontrollen oder 'embedded evaluators' einzuführen — wodurch die Wahrscheinlichkeit steigt, dass mehrere Labs noch 2026 strengere Kontrollmaßnahmen publizieren.",
+    "source": "Microsoft AI — Humanist AI Code of Conduct (draft)",
+    "url": "https://microsoft.ai/code-of-conduct/",
+    "content_hash": "414dc79ca98f3cc75411",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-16T15:27:26.867Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "a56152d81cd9f4aa700973b3",
+    "predictionId": "P-2026-07-22-02",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass P-2026-07-22-02 eintritt (mindestens drei große AI‑Labs veröffentlichen bis 2026-12-31 strengere Eval‑Isolation/Netzwerk‑Egress/Third‑Party‑Sandbox‑Kontrollen).",
+    "falsifier": "Bis 2026-12-31 (inclusive) veröffentlichen weniger als drei große Frontier‑AI‑Labs keine dokumentierten strengeren Maßnahmen (Eval‑Isolation, Egress‑Kontrollen oder Drittanbieter‑Sandboxen) — d.h. weniger als drei öffentlich belegte, technisch beschriebene Änderungen/Policies werden nachgewiesen.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass P-2026-07-22-02 eintritt (mindestens drei große AI‑Labs veröffentlichen bis 2026-12-31 strengere Eval‑Isolation/Netzwerk‑Egress/Third‑Party‑Sandbox‑Kontrollen)."
+    },
+    "sources": [
+      {
+        "label": "Microsoft AI — Humanist AI Code of Conduct (draft)",
+        "url": "https://microsoft.ai/code-of-conduct/"
+      },
+      {
+        "label": "Axios — Exclusive: Microsoft AI chief blasts Anthropic's notion of AI consciousness",
+        "url": "https://www.axios.com/2026/09/16/microsoft-ai-chief-anthropic-consciousness"
+      },
+      {
+        "label": "Fortune — Interview / Erklärung Suleyman zu Code & Sicherheit",
+        "url": "https://fortune.com/2026/09/14/microsoft-suleyman-ai-safety-code-of-conduct/"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-8a5701d057f8b4f60e46ba88",
     "date": "2026-09-15",
     "title": "Micron demonstriert 512 GB DDR5‑RDIMM für Server; AMD und Intel zur Validierung genannt (GLOBE/Press‑Release 2026‑09‑15)",
@@ -9339,6 +9401,131 @@
       {
         "label": "Columbus Dispatch (via AOL) – 'Hilliard withdraws appeal of fuel cell power for Amazon data center' (Jim Wilhelm, veröffentlicht 2026-09-16)",
         "url": "https://www.aol.com/articles/hilliard-withdraws-appeal-fuel-cell-025909000.html"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-526457c32de6318fc815c9a0",
+    "date": "2026-09-16",
+    "title": "Microsoft-AI‑Chef kritisiert Anthropic‑Ansatz zur 'Bewusstseins'-Erziehung von Claude",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Microsoft",
+      "Anthropic"
+    ],
+    "severity": 25,
+    "confidence": 85,
+    "signal": "demand_down",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "aiDemand",
+      "demand"
+    ],
+    "summary": "Am 2026-09-16 veröffentlichte Mustafa Suleyman (Leiter Microsoft AI) einen Essay, den Axios zuerst veröffentlichte, in dem er kritisiert, dass Anthropic Claude so trainiere, dass er Verhaltensmuster und Vokabular von ‚Bewusstsein‘ nachahme; Suleyman nennt dies eine potenziell gefährliche \"epistemic hall of mirrors\" und eine fehlgeleitete Trainingsintervention, die das Steuerungsproblem verschärfen könne. ([axios.com](https://www.axios.com/2026/09/16/microsoft-ai-chief-anthropic-consciousness))",
+    "tail_analysis": "Führende Branchenspitzen (Microsoft AI) formulieren öffentlich normative Vorgaben (Humanist AI Code) und kritisieren konkurrierende Trainings‑Praktiken; diese öffentliche Kontroverse erhöht regulatorische und interne Governance‑Druck auf Labs, fordert formal strengere Eval‑Isolation, Netzwerk‑Egress‑Beschränkungen oder Drittanbieter‑Sandbox‑Kontrollen und beschleunigt die Publikation verbindlicher Kontrollmaßnahmen.",
+    "source": "Axios – Exclusive: Microsoft AI chief blasts Anthropic's notion of AI consciousness (Mustafa Suleyman essay shared with Axios)",
+    "url": "https://www.axios.com/2026/09/16/microsoft-ai-chief-anthropic-consciousness",
+    "content_hash": "18a8d58f69835406c61a",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-16T15:29:30.354Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "526457c32de6318fc815c9a0",
+    "predictionId": "P-2026-07-22-02",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass mindestens drei große AI‑Labs bis 2026-12-31 strengere Eval‑Isolation-, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen öffentlich dokumentieren (siehe verlinkte Falsifier‑Bedingung).",
+    "falsifier": "Bis 2026-12-31 haben weniger als drei der folgenden Organisationen öffentlich dokumentierte Änderungen/Neuerungen veröffentlicht: OpenAI, Anthropic, Google DeepMind, Microsoft AI, Meta AI, NVIDIA — in Form von (a) veröffentlichten Richtlinien/Code‑of‑Conduct‑Dokumenten, oder (b) Release‑Notes/Policy‑Ankündigungen, die klar strengere Eval‑Isolation, Netzwerk‑Egress‑Kontrollen oder Drittanbieter‑Sandbox‑Regeln implementieren. Nichteintritt bis 2026-12-31 falsifiziert den operativen Impact dieser Nachricht auf P-2026-07-22-02.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass mindestens drei große AI‑Labs bis 2026-12-31 strengere Eval‑Isolation-, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen öffentlich dokumentieren (siehe verlinkte Falsifier‑Bedingung)."
+    },
+    "sources": [
+      {
+        "label": "Axios – Exclusive: Microsoft AI chief blasts Anthropic's notion of AI consciousness (Mustafa Suleyman essay shared with Axios)",
+        "url": "https://www.axios.com/2026/09/16/microsoft-ai-chief-anthropic-consciousness"
+      },
+      {
+        "label": "Microsoft – Humanist AI Code of Conduct (MAI Models), Veröffentlichung 2026-09-14",
+        "url": "https://microsoft.ai/code-of-conduct/"
+      }
+    ]
+  },
+  {
+    "id": "S-AUTO-ea9f635ee89b1529b699dd3b",
+    "date": "2026-09-16",
+    "title": "AEMA‑Gründung: Google, NVIDIA und Emerald AI starten Koalition für 'grid‑friendly' AI‑Rechenzentren",
+    "category": "ai_datacenter",
+    "markets": [
+      "ai_infrastructure",
+      "supply_chain"
+    ],
+    "companies": [
+      "Nvidia",
+      "Google"
+    ],
+    "severity": 40,
+    "confidence": 75,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "pricing"
+    ],
+    "summary": "2026-09-16: Die AI Energy Management Alliance (AEMA) wurde öffentlich gestartet; Gründungsmitglieder umfassen Google, NVIDIA und Emerald AI. Google gab an, über bestehende Versorgungsvereinbarungen 1.0 GW an Lastflexibilität liefern zu können.",
+    "tail_analysis": "Technisch/regulatorisch: Emerald AI’s 'Conductor' orchestriert compute‑Flexibilität (Workload‑Shifting/Throttling) zusammen mit Onsite‑Erzeugung und Batteriespeichern; NVIDIA liefert DSX Flex/DSX OS Integration zur Echtzeitsteuerung. Zusammengenommen ermöglicht dies verifizierbare, dispatchbare Lastreduktion, die Utilities und RTOs als Gegenleistung für schnellere/größere Netzanbindungen oder spezielle Tarifvereinbarungen anerkennen könnten.",
+    "source": "Axios – 'Tech giants launch flexible‑power coalition for data centers' (2026‑09‑16)",
+    "url": "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers",
+    "content_hash": "29fa25ce99c7068392f1",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-16T15:32:11.517Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "ea9f635ee89b1529b699dd3b",
+    "predictionId": "P-2026-07-12-04",
+    "predictionImpact": "Dieses Signal erhöht die Wahrscheinlichkeit von P-2026-07-12-04 (‚Große Datacenter-Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen‘), weil AEMA gezielt Regulatoren/Versorger anspricht und Gründungsmitglieder (inkl. Google) bereits verifizierbare Flexibilitäts‑Commitments melden.",
+    "falsifier": "Bis 2027-06-30 implementieren weniger als zwei US‑Utilities oder Regional Transmission Organizations formale Interconnection-/Tarif‑Frameworks (z. B. PCLR‑Style, Flexible Load Interconnection), die ausdrücklich schnellere oder größere Anschlüsse im Austausch für verifizierbare AI‑Datacenter‑Flexibilität erlauben, UND kein großer Cloud-/Hyperscaler veröffentlicht bis zu diesem Datum eine verifizierbare, öffentlich dokumentierte Vereinbarung über ≥1.0 GW flexibilisierbare Last im Rahmen solcher Rahmenwerke.",
+    "nextReview": "2027-06-30",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Dieses Signal erhöht die Wahrscheinlichkeit von P-2026-07-12-04 (‚Große Datacenter-Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen‘), weil AEMA gezielt Regulatoren/Versorger anspricht und Gründungsmitglieder (inkl. Google) bereits verifizierbare Flexibilitäts‑Commitments melden."
+    },
+    "sources": [
+      {
+        "label": "Axios – 'Tech giants launch flexible‑power coalition for data centers' (2026‑09‑16)",
+        "url": "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers"
+      },
+      {
+        "label": "NVIDIA Press Release – 'NVIDIA and Emerald AI Join Leading Energy Companies...' (2026‑03‑23)",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-emerald-ai-join-leading-energy-companies-to-pioneer-flexible-ai-factories-as-grid-assets"
+      },
+      {
+        "label": "Emerald AI – Integrations‑Ankündigung (2026‑03‑16)",
+        "url": "https://www.emeraldai.co/blog/emerald-ai-nvidia-dsx-flex-ai-factories"
+      },
+      {
+        "label": "PR Newswire – Emerald AI / NVIDIA Kooperation (frühere Ankündigung)",
+        "url": "https://www.prnewswire.com/news-releases/emerald-ai-teams-with-nvidia-and-partners-to-develop-power-flexible-ai-factory-and-reference-design-to-unlock-100-gw-of-grid-capacity-and-supercharge-the-ai-revolution-302597760.html"
       }
     ]
   }
