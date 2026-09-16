@@ -1,22 +1,14 @@
 name: TAIL Intelligence Platform v2
 
-# Single-writer workflow for generated TAIL state.
-# Generated data commits must not trigger another TAIL build.
-
+# Paid production processing is paused. Scheduled runs only collect RSS news.
 on:
   push:
     branches: [main]
     paths:
       - 'tail-intelligence/scripts/**'
-      - 'scripts/**'
-      - 'script.js'
-      - 'en/script.js'
-      - 'tail-intelligence/config/**'
-      - 'tail-intelligence/package.json'
       - '.github/workflows/tail-dashboard.yml'
   schedule:
     - cron: '17 5,11,17,23 * * *'
-    - cron: '37 * * * *' # Catch-up only; preflight skips when <=48 pending.
   workflow_dispatch:
 
 permissions:
@@ -27,82 +19,74 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-build-and-validate:
-    # Paid processing paused at owner request pending cost audit.
-    if: ${{ false }}
+  collect-news:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-    defaults:
-      run:
-        working-directory: tail-intelligence
-    env:
-      TAIL_REVIEW_LIMIT: ${{ (github.event_name == 'push' || github.event.schedule == '37 * * * *') && '96' || '24' }}
-      TAIL_REVIEW_CONCURRENCY: '2'
-      TAIL_REVIEW_BUDGET_MS: '600000'
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_ANALYST_MODEL: ${{ vars.OPENAI_ANALYST_MODEL || 'gpt-5-mini' }}
-      OPENAI_TRANSLATION_MODEL: ${{ vars.OPENAI_TRANSLATION_MODEL || 'gpt-5-mini' }}
+    timeout-minutes: 10
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
+          ref: main
           fetch-depth: 0
-
-      - name: Setup Node
-        uses: actions/setup-node@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '24'
-
-      - name: Decide whether catch-up is needed
-        id: catchup
-        env:
-          TAIL_IS_CATCHUP: ${{ github.event.schedule == '37 * * * *' }}
-        run: node scripts/catchup-gate.mjs >> "$GITHUB_OUTPUT"
-
-      - name: Install
-        if: steps.catchup.outputs.run == 'true'
-        run: npm install --ignore-scripts
-
-      - name: Update, build and validate TAIL
-        if: steps.catchup.outputs.run == 'true'
-        run: npm run ci
-
-      - name: Validate public/private boundary
-        if: steps.catchup.outputs.run == 'true'
-        working-directory: .
-        run: npm test
-
-      - name: Persist generated intelligence state safely
-        if: steps.catchup.outputs.run == 'true'
-        working-directory: .
+      - name: Collect RSS without OpenAI credentials
+        working-directory: tail-intelligence
+        run: node scripts/ingest-inbox.mjs
+      - name: Persist inbox only; preserve reviewed and public state
         run: |
           git config user.name 'TAIL Intelligence Bot'
           git config user.email 'tail-intelligence-bot@users.noreply.github.com'
-          git add tail-intelligence/data public-tail/data.json public-tail/data-en.json index.html en/index.html
-
-          if git diff --cached --quiet; then
-            echo 'No generated TAIL changes to commit.'
-            exit 0
-          fi
-
-          git commit -m 'chore: refresh TAIL intelligence state'
-
-          # Generated-state writes use a single-writer workflow. Refresh main before
-          # publishing and rerun from the new head instead of attempting to rebase
-          # generated JSON through concurrent changes.
+          git add tail-intelligence/data/inbox.json tail-intelligence/data/ingestion-history.json tail-intelligence/data/update-status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'chore: collect TAIL news without paid analysis'
           git fetch origin main
           if [ "$(git rev-parse origin/main)" != "$(git rev-parse HEAD^)" ]; then
-            echo '::warning::Main changed during generation; aborting this publish safely. The next queued/scheduled run will regenerate from the new head.'
-            exit 1
+            echo '::warning::Main changed; defer inbox publication to next collection.'
+            exit 0
           fi
-
           git push origin HEAD:main
-          git push --force-with-lease origin HEAD:refs/heads/agent/private-intelligence
+      - name: Explain paused state
+        run: echo 'Paid reviews and translations remain paused. RSS collection only; public evidence date is unchanged.' >> "$GITHUB_STEP_SUMMARY"
 
-      # Persist successful reviews before exposing partial review failure to CI.
-      - name: Report evidence review failure after saving progress
-        if: steps.catchup.outputs.run == 'true'
+  cost-pilot:
+    # One expressly authorized experiment, no schedule or manual-dispatch activation.
+    # Rerunning this workflow cannot repeat the paid experiment.
+    if: github.event_name == 'push' && github.run_attempt == 1 && contains(github.event.head_commit.message, '[tail-cost-pilot-2026-09-16]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Verify admission gates and cost limits without API calls
+        working-directory: tail-intelligence
+        run: node --test scripts/pipeline.test.mjs scripts/bounded-review.test.mjs
+      - name: Two-candidate isolated cost pilot
+        working-directory: tail-intelligence
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TAIL_PAID_REVIEW: pilot
+        run: node scripts/review-inbox.mjs
+      - name: Print usage and outcome, including incomplete responses
+        if: always()
+        working-directory: tail-intelligence
         run: |
-          node --input-type=module -e "import fs from 'node:fs'; const s=JSON.parse(fs.readFileSync('data/admission-status.json','utf8')); if(s.status==='error'){console.error('Evidence review failed; successful results were saved. Pending:',s.pending);process.exitCode=1;}"
-
-      # Vercel deploys every main-branch push through its Git integration.
+          if [ -f data/review-usage.jsonl ]; then cat data/review-usage.jsonl; fi
+          node --input-type=module -e "import fs from 'node:fs';const s=JSON.parse(fs.readFileSync('data/admission-status.json'));console.log(JSON.stringify({status:s.status,lastRun:s.lastRun,error:s.error}));"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tail-cost-pilot
+          retention-days: 30
+          path: |
+            tail-intelligence/data/review-usage.jsonl
+            tail-intelligence/data/review-cache/
+            tail-intelligence/data/admission-status.json
+            tail-intelligence/data/admission-reviews.json
+      # No git write, publication, translation or index recalculation in this pilot.

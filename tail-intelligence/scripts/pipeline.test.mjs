@@ -42,28 +42,29 @@ test('Catch-up selection reserves room for both oldest and newest evidence',()=>
 import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-test('Parallel retrieval still admits a shared observation only once and persists all decisions',()=>{
+test('Bounded pilot admits shared observations only once and persists partial progress',()=>{
  const root=fs.mkdtempSync(path.join(os.tmpdir(),'mtai-admission-'));
  try {
   for(const folder of ['scripts','data','config'])fs.mkdirSync(path.join(root,folder));
-  for(const file of ['review-inbox.mjs','admission-review.mjs','triage-inbox.mjs','analyst-request.mjs'])fs.copyFileSync('scripts/'+file,path.join(root,'scripts',file));
+  for(const file of ['review-inbox.mjs','admission-review.mjs','triage-inbox.mjs','analyst-request.mjs','bounded-review.mjs'])fs.copyFileSync('scripts/'+file,path.join(root,'scripts',file));
   const put=(file,data)=>fs.writeFileSync(path.join(root,file),JSON.stringify(data));
-  put('data/inbox.json',{updated_at:new Date().toISOString(),items:Array.from({length:8},(_,i)=>({...item,id:'candidate'+i,title:'Qualified shipments batch '+i,published_at:new Date().toISOString()}))});
+  put('data/inbox.json',{updated_at:new Date().toISOString(),items:Array.from({length:2},(_,i)=>({...item,id:'candidate'+i,title:'Qualified shipments batch '+i,published_at:new Date().toISOString()}))});
   put('config/methodology.json',methodology);put('data/articles.json',[]);put('config/market-outlook.json',{outlooks:[{marketId:'enterprise_ssd',view:'Supply remains tight',changeRules:'Qualified supply improves'}]});
   const day=new Date().toISOString().slice(0,10),future=new Date(Date.now()+86400000*7).toISOString().slice(0,10);
   const fixture={...proposal,eventDate:day,nextReview:future};
-  fs.writeFileSync(path.join(root,'mock.mjs'),`const fixture=${JSON.stringify(fixture)}; globalThis.fetch=async (_url,options)=>{const request=JSON.parse(options.body), input=JSON.parse(request.input);if(input.candidates.length!==1)throw new Error('Expected one candidate per request');await new Promise(r=>setTimeout(r,20));return {ok:true,json:async()=>({id:'mock',status:process.env.MOCK_PARTIAL_FAILURE && input.candidates[0].id==='candidate7'?'failed':'completed',output:[{type:'web_search_call',action:{sources:[{url:fixture.sources[0].url}]}},{content:[{type:'output_text',text:JSON.stringify({reviews:Object.fromEntries(input.candidates.map(c=>[c.id,{...fixture,candidateId:'ignored-model-id'}]))})}]}]})};};`);
-  execFileSync(process.execPath,['--import',path.join(root,'mock.mjs'),path.join(root,'scripts/review-inbox.mjs')],{env:{...process.env,OPENAI_API_KEY:'mock-only',TAIL_REVIEW_LIMIT:'8',TAIL_REVIEW_CONCURRENCY:'2'},stdio:'pipe'});
+  fs.writeFileSync(path.join(root,'mock.mjs'),`const fixture=${JSON.stringify(fixture)}; globalThis.fetch=async (_url,options)=>{const request=JSON.parse(options.body), input=JSON.parse(request.input);if(input.candidates.length!==1)throw new Error('Expected one candidate per request');await new Promise(r=>setTimeout(r,20));return {ok:true,json:async()=>({id:'mock',status:process.env.MOCK_PARTIAL_FAILURE && input.candidates[0].id==='candidate1'?'failed':'completed',output:[{type:'web_search_call',action:{sources:[{url:fixture.sources[0].url}]}},{content:[{type:'output_text',text:JSON.stringify({reviews:Object.fromEntries(input.candidates.map(c=>[c.id,{...fixture,candidateId:'ignored-model-id'}]))})}]}]})};};`);
+  execFileSync(process.execPath,['--import',path.join(root,'mock.mjs'),path.join(root,'scripts/review-inbox.mjs')],{env:{...process.env,OPENAI_API_KEY:'mock-only',TAIL_PAID_REVIEW:'pilot',TAIL_REVIEW_LIMIT:'8',TAIL_REVIEW_CONCURRENCY:'2'},stdio:'pipe'});
   const read=file=>JSON.parse(fs.readFileSync(path.join(root,'data',file)));
-  assert.equal(read('admission-status.json').reviewed,8);assert.ok(read('admission-reviews.json').reviews.every(r=>r.candidateId.startsWith('candidate')));assert.equal(read('admission-status.json').accepted,1);assert.equal(read('admission-status.json').lastRun.concurrency,2);
-  assert.equal(read('admission-backlog.json').items.length,8);assert.equal(read('admission-reviews.json').reviews.length,8);
+  assert.equal(read('admission-status.json').reviewed,2);assert.ok(read('admission-reviews.json').reviews.every(r=>r.candidateId.startsWith('candidate')));assert.equal(read('admission-status.json').accepted,1);assert.equal(read('admission-status.json').lastRun.concurrency,1);
+  assert.equal(read('admission-backlog.json').items.length,2);assert.equal(read('admission-reviews.json').reviews.length,2);
   put('data/admission-reviews.json',{schemaVersion:1,reviews:[]});
+  fs.rmSync(path.join(root,'data/review-cache'),{recursive:true,force:true});
   const summary=path.join(root,'summary.md');
-  execFileSync(process.execPath,['--import',path.join(root,'mock.mjs'),path.join(root,'scripts/review-inbox.mjs')],{env:{...process.env,OPENAI_API_KEY:'mock-only',TAIL_REVIEW_LIMIT:'8',TAIL_REVIEW_CONCURRENCY:'2',MOCK_PARTIAL_FAILURE:'1',GITHUB_STEP_SUMMARY:summary},stdio:'pipe'});
+  execFileSync(process.execPath,['--import',path.join(root,'mock.mjs'),path.join(root,'scripts/review-inbox.mjs')],{env:{...process.env,OPENAI_API_KEY:'mock-only',TAIL_PAID_REVIEW:'pilot',TAIL_REVIEW_LIMIT:'8',TAIL_REVIEW_CONCURRENCY:'2',MOCK_PARTIAL_FAILURE:'1',GITHUB_STEP_SUMMARY:summary},stdio:'pipe'});
   const partial=read('admission-status.json');
-  assert.equal(partial.status,'error');assert.equal(partial.reviewed,7);assert.equal(partial.pending,1);
-  assert.equal(read('admission-reviews.json').reviews.length,7);assert.equal(partial.lastRun.batchSize,1);
-  assert.match(partial.batchErrors[0],/candidate7/);assert.match(fs.readFileSync(summary,'utf8'),/Status: error/);
+  assert.equal(partial.status,'error');assert.equal(partial.reviewed,1);assert.equal(partial.pending,1);
+  assert.equal(read('admission-reviews.json').reviews.length,1);assert.equal(partial.lastRun.batchSize,1);
+  assert.match(partial.batchErrors[0],/candidate1/);assert.match(fs.readFileSync(summary,'utf8'),/Status: error/);
 
  } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
