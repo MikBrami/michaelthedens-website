@@ -7,35 +7,35 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-16T15:35:33.172Z",
-    "inboxUpdatedAt": "2026-09-16T15:25:03.343Z",
+    "checkedAt": "2026-09-16T17:53:06.378Z",
+    "inboxUpdatedAt": "2026-09-16T17:42:37.906Z",
     "status": "error",
-    "candidates": 1053,
-    "reviewed": 525,
-    "accepted": 56,
-    "watchlist": 150,
-    "rejected": 319,
-    "pending": 528,
+    "candidates": 1065,
+    "reviewed": 533,
+    "accepted": 57,
+    "watchlist": 155,
+    "rejected": 321,
+    "pending": 532,
     "oldestPendingAt": "2026-08-18T09:47:10.000Z",
-    "lastCompletedReviewAt": "2026-09-16T15:34:06.228Z",
-    "error": "Candidates d2c1dcf1f95e54a28f09: Analyst request timed out after 86912ms",
+    "lastCompletedReviewAt": "2026-09-16T17:51:57.920Z",
+    "error": "Candidates 03ae1deacff3d2077e9d: Analyst request timed out after 68425ms",
     "batchErrors": [
-      "Candidates 0800a7735283ccf8cae6: Analyst request timed out after 86915ms",
-      "Candidates d2c1dcf1f95e54a28f09: Analyst request timed out after 86912ms"
+      "Candidates 37d5e83924eac7a53063: Analyst request timed out after 68428ms",
+      "Candidates 03ae1deacff3d2077e9d: Analyst request timed out after 68425ms"
     ],
-    "rawCandidates": 1088,
+    "rawCandidates": 1102,
     "triage": {
       "archivedOpinions": 22,
-      "groupedDuplicates": 13
+      "groupedDuplicates": 15
     },
     "lastRun": {
-      "startedAt": "2026-09-16T15:25:32.643Z",
-      "completedAt": "2026-09-16T15:35:33.179Z",
-      "selected": 24,
+      "startedAt": "2026-09-16T17:43:05.853Z",
+      "completedAt": "2026-09-16T17:53:06.384Z",
+      "selected": 96,
       "reviewed": 8,
       "concurrency": 2,
       "batchSize": 1,
-      "limit": 24,
+      "limit": 96,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
       "durationSeconds": 600,
@@ -81,15 +81,15 @@
     }
   ],
   "sourceDataAsOf": "2026-09-16",
-  "knowledgeBaseSyncedAt": "2026-09-16T15:35:33.335Z",
+  "knowledgeBaseSyncedAt": "2026-09-16T17:53:06.550Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-09-16T15:35:34.637Z",
-  "lastForecastRun": "2026-09-16T15:35:34.637Z",
-  "newlyProcessedArticles": 109,
-  "totalArticles": 182,
-  "articleCount": 182,
+  "lastSuccessfulUpdate": "2026-09-16T17:53:07.874Z",
+  "lastForecastRun": "2026-09-16T17:53:07.874Z",
+  "newlyProcessedArticles": 72,
+  "totalArticles": 183,
+  "articleCount": 183,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -143,16 +143,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung gestört: 528 Kandidaten ausstehend.",
+    "Evidenzprüfung gestört: 532 Kandidaten ausstehend.",
     "9 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-16T15:25:03.343Z",
-    "newItems": 109,
-    "totalItems": 3304,
+    "updatedAt": "2026-09-16T17:42:37.906Z",
+    "newItems": 72,
+    "totalItems": 3376,
     "duplicateItems": 300,
-    "relevantItems": 1483,
+    "relevantItems": 1500,
     "sourceErrors": []
   },
   "pipeline": {
@@ -162,19 +162,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "525 geprüft · 528 offen · 56 aufgenommen"
+        "detail": "533 geprüft · 532 offen · 57 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "182 Artikel · Sync 2026-09-16 · jüngstes bestätigtes Signal 2026-09-16"
+        "detail": "183 Artikel · Sync 2026-09-16 · jüngstes bestätigtes Signal 2026-09-16"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "3304 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "3376 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -963,7 +963,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-09-16T15:35:34.632Z"
+      "lastUpdated": "2026-09-16T17:53:07.869Z"
     },
     {
       "id": "hbm",
@@ -1141,7 +1141,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-16T15:35:34.632Z"
+      "lastUpdated": "2026-09-16T17:53:07.869Z"
     },
     {
       "id": "nand",
@@ -1227,7 +1227,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T15:35:34.632Z"
+      "lastUpdated": "2026-09-16T17:53:07.869Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1308,7 +1308,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T15:35:34.632Z"
+      "lastUpdated": "2026-09-16T17:53:07.869Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1576,6 +1576,7 @@
         "S-AUTO-320b6e2f774c187fec2fee96",
         "S-AUTO-d4d297d3a2250f49cccb0840",
         "S-AUTO-28d69de59549559dfb52690b",
+        "S-AUTO-19626c46239d78cf09c72a6b",
         "S-AUTO-9904f14f9eb93ff2d998f7c1",
         "S-AUTO-5943b6386e2f583bfa2b0839",
         "S-AUTO-220050d4a4beaafaeaab1881",
@@ -1593,7 +1594,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T15:35:34.632Z"
+      "lastUpdated": "2026-09-16T17:53:07.869Z"
     }
   ],
   "indexCalculation": {
@@ -1602,7 +1603,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-16"
   },
-  "executiveSummary": "TAIL steht auf 78/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 182 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 78/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 183 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
