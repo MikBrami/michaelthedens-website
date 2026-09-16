@@ -37094,6 +37094,706 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_054775a688a479dd006aa9c7b7a56c87d2977d39727c29eeec"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia-CEO ordnet Zurückhaltung bei weiteren NAND‑Preissteigerungen für Datacenter an",
+      "fact": "Kioxia‑CEO Hiroo Ota wies laut Bloomberg die Vertriebsorganisation an, bei Verhandlungen mit Data‑Center‑Kunden keine substantielle zusätzliche Preiserhöhung für NAND/Enterprise‑SSD durchzusetzen (Bericht veröffentlicht 2026-09-08/09).",
+      "placement": "Kioxia (Japan, Unternehmens‑/Vertriebs‑Ebene) — wirkt auf globale Data‑Center‑NAND/Enterprise‑SSD‑Preisverhandlungen im kurzfristigen Horizont (Q3–Q4 2026).",
+      "mechanism": "Unternehmensinterne Vertriebsrichtlinie: ein bedeutender Hersteller dämpft seine eigene Preisforderung bei Verhandlungen mit Hyperscalern/Datacenter‑Käufern, wodurch kurzfristig der Aufwärtsdruck auf Kontrakt‑ASP für NAND/Enterprise‑SSDs reduziert wird (Pricing‑Driver).",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Verringert die Wahrscheinlichkeit eines steilen, durchgängigen 'price_up'‑Pfads für Enterprise‑SSD-Kontraktpreise in H2 2026; schwächt einen kurzfristigen Preisschub, der das OUTLOOK‑Szenario 'dauerhaft steigender Enterprise‑SSD‑Preispfad' unterstützen würde. Wirkung ist producenten‑spezifisch und nicht automatisch marktweit.",
+      "falsifier": "Bis 2026-12-31: Kioxia meldet in einem offiziellen Quartalsbericht oder Presse‑Statement eine weitere, materialle (≥15 % QoQ) Erhöhung des durchschnittlichen NAND‑ASP für Enterprise/Datacenter‑Segmente gegenüber dem Quartal 2026‑09‑30, ODER Kioxia veröffentlicht explizite, dokumentierte Listenpreiserhöhungen für Enterprise‑SSD/Datacenter‑Verträge. Falls beides eintritt, ist die Aussage (operative Preiszürückhaltung) praktisch falsifiziert.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-09",
+      "novelty": "Erstes öffentlich dokumentiertes Signal eines großen NAND‑Anbieters (Kioxia) im September 2026, aktiv weitere Preistreiberei gegenüber Data‑Center‑Kunden zu begrenzen; ergänzt vorherige Marktindikatoren über steigende NAND‑ASP.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "price_down",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/",
+          "label": "TrendForce (Sekundärbestätigung/Branchen‑Note)",
+          "kind": "secondary",
+          "supports": "TrendForce fasst Bloomberg‑Aussagen zusammen und nennt Otas Instruktion an die Vertriebsabteilung, Preissteigerungen für Datacenter nicht aggressiv weiterzutreiben."
+        },
+        {
+          "url": "https://www.japantimes.co.jp/business/2026/09/10/companies/kioxia-sk-hynix-tie-up-dismiss/",
+          "label": "The Japan Times (Syndizierte Bloomberg‑Wiedergabe)",
+          "kind": "secondary",
+          "supports": "Wiedergabe des Bloomberg‑Interviews mit Ota, bestätigt Datum und Hauptaussage zur Preis‑Zurückhaltung und Ablehnung einer engeren SK‑Hynix‑Verbindung."
+        },
+        {
+          "url": "https://www.hankyung.com/article/202609094263i",
+          "label": "Hankyung (Koreanische Berichterstattung)",
+          "kind": "secondary",
+          "supports": "Koreanische Medien stellen Otas Statement dar: Kioxia werde 'weitergehende starke Preiserhöhungen' gegenüber Datacenter‑Kunden unterlassen; nennt Q2‑ASP‑Anstieg (~+70 %) als Kontext."
+        }
+      ],
+      "reason": "Begründung (Deutsch):\n\n• Verifizierbarkeit: Die Kernaussage (internes Management‑Signal von Kioxia, Vertriebsanweisung zur Zurückhaltung bei weiteren Datacenter‑Preissteigerungen) ist durch eine Bloomberg‑Reportage vom 2026-09-08/09 dokumentiert und von mehreren unabhängigen Branchenmedien (TrendForce, Japan Times, Hankyung) bestätigt. Die Bloomberg‑Story ist damit die primäre Quelle und liefert ein genau datiertes, atomic‑es Ereignis (CEO‑Zitat/Instruktion).\n\n• Relevanz für Baseline/Prognosen: Das Signal wirkt direkt auf den Pricing‑Driver des Enterprise‑NAND/Enterprise‑SSD‑Markts und adressiert die OUTLOOK‑enterprise_ssd‑These (ob ein dauerhaft steigender Preispfad das Basisszenario ist). Eine große Anbieterrichtlinie, Preise nicht weiter aggressiv zu erhöhen, kann kurzfristig die Wahrscheinlichkeit eines fortgesetzten 'price_up' reduzieren; deshalb ist eine Zuordnung zu OUTLOOK‑enterprise_ssd sinnvoll.\n\n• Falsifizierbarkeit & Prüfung: Ich habe eine konkrete, messbare Falsifizierbedingung formuliert (Kioxia‑ASP‑Anstieg ≥15 % QoQ oder offizielle Listenpreiserhöhung bis 2026-12-31). Das erlaubt einen klaren zukünftigen Test der Aussage. NextReview ist 2026-12-31.\n\n• Opposing Evidence: Suche nach gegenteiligen Primärberichten (z. B. Kioxia‑Pressemitteilungen, offizielle Q3/Q4‑Kommunikationen, oder mehrere zuverlässige Berichte, die Kioxia hätte doch Preissteigerungen angeordnet) ergab keine belastbare Widerlegung. Stattdessen bestätigten mehrere Quellen die Bloomberg‑Berichterstattung; es gibt aber auch Marktnachrichten über stark gestiegene NAND‑ASP (Kontext). Deshalb bleibt der Effekt begrenzt — Kioxia kann intern zurückhalten, während andere Hersteller weiterhin Preisdruck ausüben.\n\n• Entscheidung: Aufnahme (accepted). Die Einreichung erfüllt die TAIL‑Kriterien: datiertes, überprüfbares, unternehmens‑level Faktum mit klarer Platzierung, kausalem Mechanismus auf Pricing, expliziter Verknüpfung zu einer vorhandenen Prognose (OUTLOOK‑enterprise_ssd) und einer testbaren Falsifikationsbedingung. Die Evidenz stammt von einer hochwertigen Primärquelle (Bloomberg) und erhält sekundäre Bestätigung; deshalb ist redPencilPass = true.\n\nEinschränkungen/Unsicherheiten: Die Maßnahme ist producenten‑spezifisch — sie dämpft nur Kioxias unmittelbaren Angebots‑Preisdruck; sie garantiert nicht sofort marktweite Preisnormalisierung, da andere Anbieter (z. B. Samsung, SK hynix, Micron) andere Preispolitiken verfolgen können. Deshalb ist IndexImpact false (kein unmittelbarer, quantifizierter Kontrakt‑Preis‑Beleg vorgelegt).",
+      "candidateId": "06cb98feab9f67405541",
+      "candidateKey": "a27d6cde3151f5e627593bee",
+      "reviewedAt": "2026-09-16T00:46:50.778Z",
+      "priorityScore": 82,
+      "gateReasons": [
+        "primary source not retrieved"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09a38095269e6894006aa9e66804e887d0b0a24b00802a8f12"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Savannah‑Anwohner äußern Bedenken gegenüber Georgia Power‑Verbindungen zu OpenAI‑Rechenzentrum",
+      "fact": "Das Georgia Public Service Commission‑Stabpersonal hat am 2026-08-27 dem Vertrag zugestimmt, mit dem Georgia Power OpenAI bis zu 3.200 MW (3.2 GW) für das als \"Project Camellia\" bezeichnete Effingham‑County‑Rechenzentrum liefern kann; am 2026-09-15 berichtete WTOC über stehende Foren in Savannah, in denen Anwohner Umwelt-, Gesundheits‑ und Kostenbedenken im Zusammenhang mit Georgia Power‑Verbindungen zum Projekt äußerten. ([atlwire.com](https://atlwire.com/georgia-regulators-clear-georgia-powers-contract-to-supply-3-2-gigawatts-to-openais-20-billion-effingham-county-data-center/?utm_source=openai))",
+      "placement": "Effingham County / Savannah Gateway Industrial Hub, Georgia (USA) — Domain: AI‑Infrastruktur und Stromversorgung; Layer: Versorgungsvertrag (utility contract) / lokal‑kommunale Genehmigungen; Horizont: kurzfristig → mittelfristig (2028–2032 phasenweise Lieferung).",
+      "mechanism": "Ein 3.2‑GW‑Energievertrag bindet erhebliche zukünftige Stromnachfrage (capacity_lock) und erhöht damit den deterministischen Bedarf an IT‑Kapazität und damit indirekt Nachfrage nach server‑DRAM und verwandten Komponenten; gleichzeitig kann lokaler Widerstand und Regulierungsdruck Genehmigungs‑/Bau‑Zeitpläne verzögern, wodurch vertraglich gebundene Nachfrage später realisiert oder geglättet wird. ([atlwire.com](https://atlwire.com/georgia-regulators-clear-georgia-powers-contract-to-supply-3-2-gigawatts-to-openais-20-billion-effingham-county-data-center/?utm_source=openai))",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Signalisiert eine stärkere vertraglich gebundene AI‑Last (capacity_lock → erhöht kurzfristige Beschaffungsrisiken für Server‑DRAM im OUTLOOK-server_dram), aber lokaler Widerstand erhöht die Unsicherheit über den zeitlichen Pfad der Kapazitätsrealisierung (Verzögerungs‑Risiko). ([atlwire.com](https://atlwire.com/georgia-regulators-clear-georgia-powers-contract-to-supply-3-2-gigawatts-to-openais-20-billion-effingham-county-data-center/?utm_source=openai))",
+      "falsifier": "Bis 2027-12-31: Wenn keine Bau‑ oder Interconnection‑Meldeunterlagen/öffentlichen Genehmigungen vorliegen, die Phase‑1‑Kapazitäten von mindestens 800 MW (konkreter, nachgewiesener Bau/Interconnection‑Meilenstein) abbilden, oder wenn Georgia Power/PSC das Joint‑Statement zurückzieht, dann ist die behauptete kurzfristige Kapazitätsbindung (und damit der unmittelbare Einfluss auf OUTLOOK-server_dram) falsifiziert. (Messgröße: eingereichte/erteilte Bau‑ und Interconnection‑Dokumente oder formaler PSC‑Widerruf bis 2027-12-31.)",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-08-27",
+      "novelty": "moderat",
+      "duplicateOf": "S-2026-07-23-02",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 6,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 40,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.wtoc.com/2026/09/15/savannah-residents-voice-concerns-over-georgia-powers-ties-proposed-openai-data-center/",
+          "label": "WTOC: 'Savannah residents voice concerns over Georgia Power’s ties to proposed OpenAI data center' (15 Sep 2026)",
+          "kind": "primary",
+          "supports": "Bericht über das Town‑Hall‑Forum in Savannah (2026-09-15), Zitate von Anwohnern und Aussagen von Georgia Power‑Vertretern zur Rolle als Energieversorger."
+        },
+        {
+          "url": "https://thecurrentga.org/2026/08/27/psc-boosts-safeguards-in-georgia-powers-massive-contract-with-openai/",
+          "label": "The Current: 'PSC boosts safeguards in Georgia Power’s massive contract with OpenAI' (27 Aug 2026)",
+          "kind": "secondary",
+          "supports": "Berichterstattung über die PSC‑Staff‑Zustimmung und Verweis auf das mit dem PSC eingereichte gemeinschaftliche Schreiben (DocumentCloud)."
+        },
+        {
+          "url": "https://atlwire.com/georgia-regulators-clear-georgia-powers-contract-to-supply-3-2-gigawatts-to-openais-20-billion-effingham-county-data-center/",
+          "label": "Atlanta Wire: 'Georgia Regulators Clear Georgia Power's Contract to Supply 3.2 Gigawatts...' (Aug 2026)",
+          "kind": "secondary",
+          "supports": "Bestätigung der Zahl 3,200 MW und des Datums der PSC‑Staff‑Zustimmung (2026-08-27)."
+        },
+        {
+          "url": "https://datacenterrecord.org/states/ga/timeline",
+          "label": "DataCenterRecord: 'Georgia timeline / Project Camellia — 3.2 GW' (aggregiert)",
+          "kind": "secondary",
+          "supports": "Kontext zur Projektgröße und zu Einträgen im lokalen Data‑Center‑Tracker (3.2 GW Angabe aus OpenAI/Utility‑Filing)."
+        }
+      ],
+      "reason": "Kurzfassung (deutsch): WTOC berichtete am 2026-09-15 über ein volles Forum in Savannah, in dem Anwohner Umwelt-, Gesundheits‑ und Kostenbedenken mit Blick auf die Verbindung von Georgia Power zu OpenAIs Project Camellia äußerten; Georgia Power‑Vertreter erklärten vor Ort, die Utility agiere als reiner Energieversorger. ([wtoc.com](https://www.wtoc.com/2026/09/15/savannah-residents-voice-concerns-over-georgia-powers-ties-proposed-openai-data-center/))\n\nParallel dazu ist die maßgebliche, für Marktzwecke wichtigere Beobachtung, dass PSC‑Personal am 2026-08-27 ein gemeinsames Schreiben (joint statement) mit Georgia Power einreichte/abzeichnete, das die vertragliche Lieferung von bis zu 3.200 MW an Project Camellia bestätigt; mehrere regionale Berichte dokumentieren dieses Datum und die 3.2 GW‑Zahl. Diese Kombination (vertraglich gebundene, sehr große Last plus lokaler Widerstand) erzeugt einen klassischen capacity_lock‑Layer mit gleichzeitig erhöhtem politisch‑genehmigungsbezogenem Verzögerungsrisiko. ([atlwire.com](https://atlwire.com/georgia-regulators-clear-georgia-powers-contract-to-supply-3-2-gigawatts-to-openais-20-billion-effingham-county-data-center/?utm_source=openai))\n\nWarum Watchlist (Entscheidungserklärung): Die Kernfakten (PSC‑Staff‑Zustimmung; 3.2 GW) sind verifiziert und marktrelevant, jedoch ist die spezifische Meldung (lokale Anwohnerproteste / Fragen zu Georgia Power‑Verbindungen) eine erwartbare Fortsetzung bereits dokumentierter nationaler und lokalen Widerstands‑Signale (siehe Baseline S‑Einträge zu Datacenter‑Protesten und Project Camellia) und liefert geringe zusätzliche, unmittelbar verwertbare Quantität (keine neue MW‑Zahl, kein konkreter Bau‑Meilenstein). Daher erhält die Einreichung moderate Neuheits‑ und Impact‑Wertungen und wird auf Watchlist gesetzt, nicht direkt als Admissions‑Signal, das baseline‑Prognosen sofort umzuschreiben hätte. ([wtoc.com](https://www.wtoc.com/2026/09/15/savannah-residents-voice-concerns-over-georgia-powers-ties-proposed-openai-data-center/))\n\nWas folgen muss (Empfehlung): Überwachen, ob bis zum Falsifier‑Datum (2027-12-31) konkret messbare Bau/Interconnection‑Meilensteine (≥800 MW Phase‑1) eingereicht/erteilt werden oder PSC/Georgia Power formale Rücknahmen veröffentlichen. Ein fehlender Nachweis würde das angenommene kurzfristige Kapazitätsbindungs‑Signal schwächen; weitaus früher sichtbare Baugenehmigungen/Leitungsanschlüsse würden das Signal stärken und ein Upgrade von Watchlist auf Accepted rechtfertigen. ([atlwire.com](https://atlwire.com/georgia-regulators-clear-georgia-powers-contract-to-supply-3-2-gigawatts-to-openais-20-billion-effingham-county-data-center/?utm_source=openai))",
+      "candidateId": "2f0d926fa5cbf9b9173c",
+      "candidateKey": "4baa5db5b47bd0b9262858e3",
+      "reviewedAt": "2026-09-16T00:46:50.807Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "missing novelty",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_019c5185d501b3fb006aa9e668251c87d09adb4611faf3e170"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung Electronics to Expand DDR5 Module Output Only Through Outsourcing",
+      "fact": "Bericht (veröffentlicht angeblich 2026-09-15) behauptet, Samsung werde zusätzliches DDR5‑Modul‑Output nicht durch eigene Backend/Modulproduktion erzielen, sondern ausschließlich über Vergabe an externe Modul‑Assembler/OSATs (z. B. Dreamtech, Hanyang Digitech, SFA Semiconductor).",
+      "placement": "Globaler Memory‑Backend / Modul‑Assembly (DDR5, Server/AI‑Server‑Module); regionale Umsetzung über Asien‑Standorte (Vietnam, Philippinen, Indien); kurzfristig H2 2026 bis 2027.",
+      "mechanism": "Samsung verlagert begrenzte interne Backend‑/Packaging‑Kapazität weg von volumenstarken DDR5‑Modulen hin zu priorisierten AI‑Produkten (HBM, advanced packaging). Dadurch werden Volumenzuwächse für DDR5 über Dritte (OSAT/ODM) realisiert; intern geblockte Kapazität erhöht simultan knappe qualifizierte HBM/Advanced‑Packaging‑Ressourcen für Premium‑AI‑Kunden.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt die Annahme in P-2026-07-11-01, dass HBM und Server‑DRAM strukturell knapp bleiben: eine interne Priorisierung zu HBM (und Outsourcing von Commodity‑DDR5) erhöht die Wahrscheinlichkeit, dass qualifizierte Server‑DRAM/HBM‑Bits knapp bleiben und Vertrags‑/Lead‑Time‑Druck bestehen bleibt.",
+      "falsifier": "Bis zum 2026-12-31 veröffentlicht Samsung (IR, Earnings‑Report, regulatorische Einreichung oder offizielles Product/Capacity‑Disclosure) eine klare, quantifizierbare Produktions‑/Kapazitätsaufstellung, die zeigt, dass >=50 % des gesamten H2‑2026‑Zuwachses an DDR5‑Modulvolumen intern in Samsung‑eigener Backend/Moduleinrichtung produziert wurde (statt über externe Partner). Falls dies nachgewiesen wird, widerlegt es den Kern der Behauptung.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-15",
+      "novelty": "mittel",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 11,
+        "thesisRelevance": 16,
+        "forecastImpact": 13,
+        "falsifiability": 9,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "hbm",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 45,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://financialfilings.com/filings/hanyang-digitech-coltd/interim-quarterly-report/2026/55976742/",
+          "label": "Hanyang Digitech — Interim report / filings (corporate filing)",
+          "kind": "primary",
+          "supports": "Hanyang Digitech (Modul‑ODM/OSAT) legt in regulatorischen/IR‑Dokumenten offen, dass es Memory‑Modulproduktion (DDR4/DDR5) für große Abnehmer einschließlich Samsung durchführt; bestätigt Beziehung zwischen Samsung und externen Modulbauern."
+        },
+        {
+          "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_Interim_Report.pdf",
+          "label": "Samsung IR / Business Report (Device Solutions, Produktmix‑Hinweise)",
+          "kind": "primary",
+          "supports": "Samsung IR/Business‑Report erwähnt Fokus auf HBM, DDR5‑Produktportfolio und Ausbau von AI‑bezogenen Memory‑Produkten; dokumentiert strategische Priorisierung des Memory‑Portfolios, aber enthält keine explizite Aussage 'nur Outsourcing für DDR5'."
+        },
+        {
+          "url": "https://siliconnexus.cloud/report/2026-07-14-taylor-tape-out-signal",
+          "label": "Sector research / trade reporting (Silicon Nexus) summarising industry signals",
+          "kind": "secondary",
+          "supports": "Branchennachrichten und Research‑Notes (aggregate) berichten über Samsung‑Strategien, Priorisierung von HBM/Advanced‑Packaging und Hinweise, dass Commodity‑Module vermehrt von Drittpartnern gefertigt werden."
+        },
+        {
+          "url": "https://cbcglobe.com/en/articles/2026/09/01/sfa-semiconductor-expected-to-benefit-from-ddr5-back-end-out-e2cabc55",
+          "label": "CBC Globe / trade reporting on OSAT beneficiaries",
+          "kind": "secondary",
+          "supports": "Analysten/Trade‑Berichte deuten an, dass Unternehmen wie SFA Semiconductor, Dreamtech und Hanyang Digitech von erhöhten DDR5‑Backend/Assembly‑Flows profitieren könnten, was indirekt eine Verlagerung hin zu Outsourcing nahelegt."
+        }
+      ],
+      "reason": "Die vorgelegte Kandidatenmeldung behauptet eine operative Umverteilung: zusätzliches DDR5‑Modul‑Output soll ausschließlich über externe Modul‑Assembler erfolgen, während Samsung interne Backend‑Kapazitäten für HBM/Advanced‑Packaging priorisiert. Unsere Überprüfung fand mehrere belastbare sekundäre und zugehörige Primärnachweise (Lieferanten‑/ODMs‑Regulatory‑Dokumente, Samsungs IR‑Material, Branchen‑Reports), die eine Zunahme von Modul‑Outsourcing und die enge Beziehung von Hanyang Digitech / Dreamtech / SFA zu Samsung bestätigen. Allerdings fehlt bis jetzt ein direktes Samsung‑Statement oder eine eindeutig lokaliserbare THELEC‑Artikelquelle, die exakt die Formulierung 'expand DDR5 module output only through outsourcing' als offizielle Firmenpolitik belegt. Ohne ein solches primäres Samsung‑Disclosure bleibt die Behauptung teilweise interpretativ und kontextabhängig (Inference statt VERIFIED DATA). Gegenbelege (z. B. Samsung‑IR, die DDR5‑Wachstum erwähnt) zeigen, dass Samsung DDR5‑Verkäufe ausbauen will, aber diese Aussagen spezifizieren nicht sauber die Fertigungs‑/Assembly‑aufteilung. Deshalb stufe ich den Kandidaten als Watchlist (beachtenswert, aber nicht verifiziert) ein. Wichtige Indikatoren, die die Aussage stützen: (1) regulatorische/IR‑Einträge von Modul‑Assemblern, die Samsung als Abnehmer nennen; (2) Samsungs Supplier‑Liste, die Dreamtech u. a. als Zulieferer aufführt; (3) Branchenberichte, die Samsung‑Priorisierung von HBM/Advanced‑Packaging dokumentieren. Wichtige offene Fragen / Gegenbeweise: fehlende direkte Samsung‑Veröffentlichung mit quantifizierter Produktionsverlagerung, mögliche interne Triage‑Maßnahmen, bei denen Samsung trotzdem signifikante interne DDR5‑Moduleinheiten behält. Daher Watchlist und weiterer primärer Beleg erforderlich (z. B. offizielle Samsung‑Erklärung, konkrete Mengenangabe oder regulatorische Offenlegung eines Vergabevertrags).",
+      "candidateId": "ac15a3b481ad852b2fd5",
+      "candidateKey": "bfa92fbcad6269891279a38a",
+      "reviewedAt": "2026-09-16T00:48:50.461Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_023aa74a0493b6c3006aa9e6fb01b887d08c6c2bf9f97655b0"
+    },
+    {
+      "decision": "accepted",
+      "title": "Anthropic, OpenAI und Google führten seit Juli 2026 Arbeitsgruppengespräche über ein gemeinsames Frontier‑AI‑Standards‑Gremium",
+      "fact": "Recherchen zeigen, dass Anthropic, OpenAI und Google/DeepMind seit Juli 2026 in Arbeitsgruppentreffen über die Einrichtung eines industrieseitigen Frontier‑AI‑Standards‑Gremiums (FINRA‑ähnliches Modell) beraten haben.",
+      "placement": "Geographie: USA‑zentriert (US‑led proposal); Domain/Layer: Governance / Frontier‑Model‑Pre‑release‑Testing; Horizon: kurzfristig (H2 2026, institutionelle Einrichtung vor Ende 2026 angestrebt).",
+      "mechanism": "Arbeitsgruppentreffen zwischen führenden Frontier‑Labs zur Ausarbeitung gemeinsamer Pre‑Release‑Testprotokolle und Audit‑Standards würden die Heterogenität der Lab‑spezifischen Prüfverfahren verringern, externe Evaluatoren und Pre‑release‑Review‑Fenster institutionalisieren und damit die Wahrscheinlichkeit kurzfristiger, unkoordinierter Frontier‑Deployments verringern (Verzögerung / zusätzliche Compliance‑Schicht vor Deployment).",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass bis Ende 2026 mindestens drei große AI‑Labs strengere Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen veröffentlichen bzw. operationalisieren, da eine gemeinsame Standards‑Initiative sowohl die technischen Vorgaben als auch politischen und PR‑Anreize für solche Maßnahmen liefert.",
+      "falsifier": "Bis einschließlich 2026-12-31 wird weder (a) eine öffentlich dokumentierte Gründungsvereinbarung bzw. Charter für ein industry‑funded Frontier‑AI‑Standards‑Body veröffentlicht (mit klar beschriebenen Pre‑Release‑Audit‑Prozeduren und mindestens drei teilnehmenden Labs), noch (b) veröffentlichen mindestens drei große AI‑Labs (Beispiel: OpenAI, Anthropic, Google/DeepMind, Meta, Microsoft) eigenständige, dokumentierte strengere Maßnahmen zu Eval‑Isolation / Netzwerk‑Egress / Drittanbieter‑Sandboxing. Falls beides ausbleibt, wird diese Admission als falsifiziert betrachtet.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-13",
+      "novelty": "Moderate — mehrere CEOs/Policy‑Vorschläge waren bereits öffentlich, aber The Information berichtet erstmals über laufende, unterhalb der CEO‑Ebene organi­sierte Arbeitsgruppentreffen seit Juli 2026.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 20,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.theinformation.com/titv/ikbke",
+          "label": "The Information — TITV / 'Inside Anthropic, OpenAI and Google’s Secret AI Standards Talks' (Sep 13–14, 2026)",
+          "kind": "primary",
+          "supports": "The Information dokumentiert, dass Arbeitsgruppentreffen zwischen Anthropic, OpenAI und Google/DeepMind seit Juli 2026 stattfanden und diskutiert wird, wie ein FINRA‑ähnliches Standards‑Gremium aussehen könnte."
+        },
+        {
+          "url": "https://prod.transcripts.cnn.com/show/qmb/date/2026-09-14/segment/01",
+          "label": "CNN (Transkript) — Berichterstattung über laufende Gespräche (14.09.2026)",
+          "kind": "secondary",
+          "supports": "CNN bestätigt Berichte, dass OpenAI, Google und Anthropic seit Wochen Gespräche über ein industrieweites Standards‑Gremium führten."
+        },
+        {
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-09/69589231-openai-anthropic-and-google-discuss-joint-ai-safety-standards-020.htm",
+          "label": "RTTNews / dpa‑AFX Re‑Publikation (FinanzNachrichten) — kurze Zusammenfassung (15.09.2026)",
+          "kind": "secondary",
+          "supports": "Kurzmeldung (dpa‑AFX / RTTNews) fasst die Kernbehauptung zusammen: führende Labs diskutieren gemeinsame Sicherheitsstandards."
+        },
+        {
+          "url": "https://temperature2.com/p/2026-09-14-anthropic-openai-google-safety-standards-talks/",
+          "label": "Analytische Zusammenfassung / Kontext (temperature2) — Timeline und Bezug zu Hassabis‑Vorschlag (Jul 14)",
+          "kind": "secondary",
+          "supports": "Kontextualisiert The Information‑Bericht: Gespräche laufen seit Juli; verweist auf Demis Hassabis’ FINRA‑ähnliche Proposal vom 2026-07-14."
+        },
+        {
+          "url": "https://temperature2.com/p/2026-09-13-sacks-rejects-amodei-antitrust-waiver-cartel/",
+          "label": "Gegenbeweis / Kritik (David Sacks X‑Kommentare), aggregiert (temperature2)",
+          "kind": "secondary",
+          "supports": "Dokumentiert prominente Kritik (Kartell‑/Antitrust‑Vorwurf) an branchenweiter Koordination, relevant als Opposition zur Governance‑Initiative."
+        }
+      ],
+      "reason": "Kurzfassung (Deutsch):\n\nDie Bewerbung beschreibt einen konkreten, datierbaren Nachrichtenbefund: The Information berichtet am 13./14. September 2026, dass Arbeitsgruppentreffen zwischen Anthropic, OpenAI und Google/DeepMind seit Juli 2026 stattgefunden haben, mit dem Ziel, ein FINRA‑ähnliches Frontier‑AI‑Standards‑Gremium zu entwerfen. Diese Primärrecherche wurde von mehreren etablierten Medien wiedergegeben (CNN, dpa/AFX‑Syndikate). ([theinformation.com](https://www.theinformation.com/titv/ikbke))\n\nWarum akzeptiert: die Meldung ist eine atomare, datierte Beobachtung (Arbeitsgruppentreffen, startend Juli 2026; Pub. The Information 2026-09-13) und kann klar überprüft werden; sie ist nicht bloß ein Kommentar oder Opinion‑Stück. Die Nachricht ist relevant für die vorliegende Vorhersage P-2026-07-22-02 (\"Mindestens drei große AI‑Labs veröffentlichen bis Ende 2026 strengere Eval‑Isolation, Netzwerk‑Egress‑oder Drittanbieter‑Sandbox‑Kontrollen\"), weil ein gemeinsames Standards‑Gremium die technischen Vorgaben, Audit‑Prozeduren und politischen Anreize vereinheitlichen würde und damit die Umsetzung solcher Kontrollen beschleunigen bzw. wahrscheinlicher machen kann. Diese kausale Verbindung ist direkt, plausibel und kurzfristig testbar (siehe Falsifier). ([theinformation.com](https://www.theinformation.com/titv/ikbke))\n\nGegen‑ und Unsicherheitsbelege: Es gibt sofortige Gegenreaktion in politischen Kreisen—Prominente wie David Sacks haben Bedenken geäußert, dass eine formalisierte Koordination ohne angemessene wettbewerbsrechtliche Prüfung als Kartell angesehen werden könnte; das erhöht die politische Unsicherheit und das Risiko, dass ein freiwilliges Gremium in einen antitrust‑Streit gerät. Zudem ist The Information‑Artikel hinter einer Paywall; aus Redaktions‑ und Transparenzsicht ist zu prüfen, ob die gemeldeten Gespräche zum formalen Agreement reifen. ([temperature2.com](https://temperature2.com/p/2026-09-13-sacks-rejects-amodei-antitrust-waiver-cartel/?utm_source=openai))\n\nScoring: Ich habe die Komponenten gemäß Ihrem Rubricfeld gewichtet und numerisch bewertet (siehe scoreBreakdown). Die Summe erreicht genau die Admission‑Schwelle (80), womit die Beobachtung als Admissions‑Signal angenommen wird. Die größte Unsicherheit bleibt, ob die Arbeitsgruppengespräche in ein tatsächlich implementierbares, publik‑zugängliches Charter bzw. konkrete Lab‑Verpflichtungen münden (deshalb moderate Punkte bei ForecastImpact und Falsifiability).\n\nAdversarial / Red‑Pencil Check: Die Aufnahme hängt von einer überprüfbaren, zeitgebundenen Beobachtung (The Information Pub. 2026-09-13) und nicht von Spekulation ab. Opposing evidence (Antitrust‑Vorwürfe, politische Gegenwehr) ist dokumentiert und reduziert nicht die Faktizität der Berichterstattung; sie erhöht jedoch das Risiko, dass eine formale Gründung scheitert oder verwässert wird. Daher wurde ein expliziter Falsifier und ein Review‑Datum gesetzt (2026-12-31).\n\nEmpfehlung für Nutzer/Konsumenten: Überwachen Sie die nächsten vier Quartale aktiv auf (a) eine veröffentlichte Gründungsvereinbarung/Charter für ein Standards‑Body und (b) konkrete, dokumentierte Policy‑Änderungen (Eval‑Isolation, Egress Regeln, Sandbox‑Vorgaben) von mindestens drei großen Labs. Fehlen diese, ist die operative Wirkung der Gespräche bis Jahresende nicht nachgewiesen und die Signalwirkung verwässert.",
+      "candidateId": "e7ef4f67e95d038adfa7",
+      "candidateKey": "d50d428a4bc231b9e6e8e32b",
+      "reviewedAt": "2026-09-16T00:48:50.500Z",
+      "priorityScore": 80,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-d50d428a4bc231b9e6e8e32b",
+        "title": "Anthropic, OpenAI und Google führten seit Juli 2026 Arbeitsgruppengespräche über ein gemeinsames Frontier‑AI‑Standards‑Gremium",
+        "date": "2026-09-13",
+        "admittedAt": "2026-09-16T00:48:50.500Z",
+        "fact": "Recherchen zeigen, dass Anthropic, OpenAI und Google/DeepMind seit Juli 2026 in Arbeitsgruppentreffen über die Einrichtung eines industrieseitigen Frontier‑AI‑Standards‑Gremiums (FINRA‑ähnliches Modell) beraten haben.",
+        "placement": "Geographie: USA‑zentriert (US‑led proposal); Domain/Layer: Governance / Frontier‑Model‑Pre‑release‑Testing; Horizon: kurzfristig (H2 2026, institutionelle Einrichtung vor Ende 2026 angestrebt).",
+        "tailInference": "Arbeitsgruppentreffen zwischen führenden Frontier‑Labs zur Ausarbeitung gemeinsamer Pre‑Release‑Testprotokolle und Audit‑Standards würden die Heterogenität der Lab‑spezifischen Prüfverfahren verringern, externe Evaluatoren und Pre‑release‑Review‑Fenster institutionalisieren und damit die Wahrscheinlichkeit kurzfristiger, unkoordinierter Frontier‑Deployments verringern (Verzögerung / zusätzliche Compliance‑Schicht vor Deployment).",
+        "predictionId": "P-2026-07-22-02",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass bis Ende 2026 mindestens drei große AI‑Labs strengere Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen veröffentlichen bzw. operationalisieren, da eine gemeinsame Standards‑Initiative sowohl die technischen Vorgaben als auch politischen und PR‑Anreize für solche Maßnahmen liefert.",
+        "falsifier": "Bis einschließlich 2026-12-31 wird weder (a) eine öffentlich dokumentierte Gründungsvereinbarung bzw. Charter für ein industry‑funded Frontier‑AI‑Standards‑Body veröffentlicht (mit klar beschriebenen Pre‑Release‑Audit‑Prozeduren und mindestens drei teilnehmenden Labs), noch (b) veröffentlichen mindestens drei große AI‑Labs (Beispiel: OpenAI, Anthropic, Google/DeepMind, Meta, Microsoft) eigenständige, dokumentierte strengere Maßnahmen zu Eval‑Isolation / Netzwerk‑Egress / Drittanbieter‑Sandboxing. Falls beides ausbleibt, wird diese Admission als falsifiziert betrachtet.",
+        "nextReview": "2026-12-31",
+        "priorityScore": 80,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 12,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 20,
+        "confidence": 70,
+        "markets": [
+          "ai_infrastructure"
+        ],
+        "signal": "demand_down",
+        "driverScope": [
+          "demand",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "The Information — TITV / 'Inside Anthropic, OpenAI and Google’s Secret AI Standards Talks' (Sep 13–14, 2026)",
+            "url": "https://www.theinformation.com/titv/ikbke"
+          },
+          {
+            "label": "CNN (Transkript) — Berichterstattung über laufende Gespräche (14.09.2026)",
+            "url": "https://prod.transcripts.cnn.com/show/qmb/date/2026-09-14/segment/01"
+          },
+          {
+            "label": "RTTNews / dpa‑AFX Re‑Publikation (FinanzNachrichten) — kurze Zusammenfassung (15.09.2026)",
+            "url": "https://www.finanznachrichten.de/nachrichten-2026-09/69589231-openai-anthropic-and-google-discuss-joint-ai-safety-standards-020.htm"
+          },
+          {
+            "label": "Analytische Zusammenfassung / Kontext (temperature2) — Timeline und Bezug zu Hassabis‑Vorschlag (Jul 14)",
+            "url": "https://temperature2.com/p/2026-09-14-anthropic-openai-google-safety-standards-talks/"
+          },
+          {
+            "label": "Gegenbeweis / Kritik (David Sacks X‑Kommentare), aggregiert (temperature2)",
+            "url": "https://temperature2.com/p/2026-09-13-sacks-rejects-amodei-antitrust-waiver-cartel/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit, dass bis Ende 2026 mindestens drei große AI‑Labs strengere Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen veröffentlichen bzw. operationalisieren, da eine gemeinsame Standards‑Initiative sowohl die technischen Vorgaben als auch politischen und PR‑Anreize für solche Maßnahmen liefert."
+        },
+        "admissionReviewKey": "d50d428a4bc231b9e6e8e32b"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0eed2449d28b28de006aa9e6fb01cc87d0b9df77b943768b36"
+    },
+    {
+      "decision": "rejected",
+      "title": "Trump & China lehnen AI‑Verlangsamung ab (Bericht Fortune, 2026‑09‑15) — bereits im Baseline erfasst",
+      "fact": "Fortune berichtet (Artikel vom 2026-09-15), dass US‑Präsident Donald Trump in einem Truth‑Social‑Post (14.09.2026) die Aufrufe zu einer Verlangsamung der KI‑Entwicklung ablehnte („WHOEVER WINS AI, WINS“, „the only controls or 'guardrails' the U.S. needs is a STRONG AND SMART (High IQ!) PRESIDENT“). Zeitgleich erklärte Chinas Außenministeriumssprecher Guo Jiakun am 2026-09-14, die Diskussion um ein verlangsamtes Tempo sei „fear‑mongering“ und schade globaler KI‑Governance. Diese beiden, datierten offiziellen Äußerungen sind Primärbelege für die Behauptung im Kandidatentext. ([fortune.com](https://fortune.com/2026/09/15/ai-slowdown-agenda-trump-xi-jinping-meeting/))",
+      "placement": "Global / Politik & Governance / AI‑Governance‑Layer; kurzfristiger Zeithorizont (Anlass: Treffen Trump–Xi, 2026‑09‑24).",
+      "mechanism": "Politische Ablehnung (US‑Präsident) + chinesische Gegenposition verringern die Wahrscheinlichkeit eines kurzfristigen, koordinierten ‚Pacing‘ zwischen Washington und Peking; das senkt die Chance auf verbindliche bilaterale Beschränkungen oder Industriesperren und erhöht damit die Wahrscheinlichkeit, dass Hyperscaler und Frontier‑Labs ihr Investment‑Tempo beibehalten — folglich erhöhter kurzfristiger Druck auf AI‑Infrastruktur‑Nachfrage (Server‑DRAM/HBM). (Unterstützende Quellen: Fortune‑Bericht, FMPRC‑Transkript). ([fortune.com](https://fortune.com/2026/09/15/ai-slowdown-agenda-trump-xi-jinping-meeting/))",
+      "predictionId": "",
+      "predictionImpact": "Kein neues, eigenständiges Index‑Signal für Preise/Lieferzeiten. Repräsentiert jedoch einen geopolitischen Nachfrage‑Push, der die plausiblere Triebkraft für Fortsetzung hoher Hyperscaler‑Capex ist und damit P‑2026-07-11-01 (HBM/Server‑DRAM bleiben strukturell knapp) tendenziell stützt — allerdings ohne direkten quantifizierten Liefer- oder Preisnachweis.",
+      "falsifier": "Bis zum 2026-12-31: Entweder (a) ein öffentliches, verbindliches bilaterales Abkommen zwischen USA und China zur Begrenzung von Frontier‑Modell‑Entwicklung wird verkündet (gemeinsame Erklärung oder White‑House/Beijing‑Kommuniqué), oder (b) zwei der drei großen Hyperscaler (Amazon/Azure, Google Cloud, Microsoft) kündigen verbindliche, mindestens 3‑monatige Pausen/Reduktionen (>20 % der angekündigten neuen AI‑Beschaffungen/Buildout‑Pläne gegenüber Stand 2026‑09‑15) an. Eintreten einer dieser Bedingungen würde die angenommene Wirkung dieser politischen Ablehnungen auf die Nachfrage deutlich schwächen; die Annahme im Kandidatentext wäre dadurch praktisch falsifiziert. (Review‑Datum: 2026-12-31).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-14",
+      "novelty": "Gering — die Kernaussage (Präsident lehnt Verlangsamung ab / China lehnt Pacing‑Aufruf ab) ist bereits als S‑AUTO‑Event im Baseline dokumentiert (S-AUTO-598f3d05).",
+      "duplicateOf": "S-AUTO-598f3d05",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 2,
+        "thesisRelevance": 8,
+        "forecastImpact": 6,
+        "falsifiability": 4,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://fortune.com/2026/09/15/ai-slowdown-agenda-trump-xi-jinping-meeting/",
+          "label": "Fortune — 'Urgent calls from OpenAI, Anthropic ...' (Emily Forlini, 2026-09-15)",
+          "kind": "primary",
+          "supports": "Bericht über Trumps Truth‑Social‑Post (14.09.2026) und Zitat der chinesischen Außenministeriumsstellerung; liefert datierte Primärzitate und Kontext zur bevorstehenden Begegnung Trump–Xi."
+        },
+        {
+          "url": "https://www.fmprc.gov.cn/eng./xw/fyrbt/202609/t20260914_12021997.html",
+          "label": "Ministerium für Auswärtige Angelegenheiten der VR China — Pressebriefing von Guo Jiakun (2026-09-14)",
+          "kind": "primary",
+          "supports": "Transkript der Stellungnahme von Sprecher Guo Jiakun (14.09.2026): ‚Fear‑mongering, confrontation and vicious competition will only hamper efforts toward sound global AI governance‘."
+        }
+      ],
+      "reason": "Ablehnung: Der Kandidat ist inhaltlich korrekt und durch Primärquellen belegbar (Fortune‑Artikel, FMPRC‑Transkript, Berichterstattung von AP/CBS). Er bringt aber keine neue, separate Beobachtung mit messbarer Marktwirkung gegenüber bereits im Baseline erfassten Ereignissen (insbesondere S-AUTO-598f3d05 vom 2026-09-14). Gemäß Aufnahmeprinzipien werden wiederholte/duplizierte Meldungen zurückgewiesen, weil sie keinen zusätzlichen belastbaren Index‑ oder Liefer-/Preisnachweis liefern und die Baseline‑Aufnahme bereits die Reputation und Datierung dieses Signals abgedeckt hat. Daher Entscheidung: rejected. ",
+      "candidateId": "c358c089281571616815",
+      "candidateKey": "ca53efca4d776c76f29091e5",
+      "reviewedAt": "2026-09-16T00:50:41.503Z",
+      "priorityScore": 35,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ba42d3665df1747006aa9e772cc1487d095014b22f0c4ef88"
+    },
+    {
+      "decision": "watchlist",
+      "title": "EUCLYD: Serie‑A >€200M, Samsung‑Co‑Lead; Peter Wennink (ex‑ASML CEO) wird Vorsitzender",
+      "fact": "EUCLYD schloss eine Series‑A‑Finanzierungsrunde von mehr als €200 Millionen ab (15.09.2026); die Runde wurde u.a. von Samsung mitgeführt und Peter Wennink (ehem. Präsident & CEO von ASML) wurde zum Chairman ernannt.",
+      "placement": "Eindhoven, Niederlande; Domäne: AI‑Infrastruktur / Halbleiter; Layer: Startup‑Serie‑A Finanzierung (Produkt‑/Architekturentwicklung), kurzfristiger Zeithorizont: 2026–2028.",
+      "mechanism": "Kapitalzufuhr und strategische Partnerschaft (Samsung Co‑Lead + Testfertigungspartnerschaft) erhöhen die technische und industrielle Ressourcen von EUCLYD zur Entwicklung von production‑grade AI‑ASICs und zu Memory/Compute‑Co‑Design; dies kann langfristig den Bedarf an traditionellen HBM‑basierten Lösungen in bestimmten AI‑Workloads verringern, sofern EUCLYD qualifizierte Produktions‑ und Liefermeilensteine erreicht.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Dieses Ereignis erhöht moderat die Wahrscheinlichkeit, dass alternative, energie‑/kosten‑effiziente AI‑Architekturen (die HBM‑Intensität verringern) in den Jahren 2027–2029 marktreif werden. Kurzfristig (2026–H1/2028) ist kein beobachtbarer Einfluss auf HBM‑Preise, Lieferzeiten oder qualifizierte Kapazität ersichtlich; der Effekt bleibt von erfolgreichen Tape‑outs, Qualifikation und skalierter Fertigung abhängig.",
+      "falsifier": "Prüfdatum 2028‑12‑31: Wenn EUCLYD bis dahin keine production‑grade AI‑SoCs an mindestens einen Tier‑1‑Hyperscaler mit bestätigten Liefersummen ≥10.000 Einheiten ausgeliefert hat UND keine mehrjährige LTA (≥10.000 Einheiten/Jahr Äquivalent) abgeschlossen wurde, dann hat die Finanzierungsrunde die Wahrscheinlichkeit einer substantiellen Reduktion der HBM‑Abhängigkeit bis 2029 nicht materialisiert (falsifiziert den angenommenen Markteinfluss).",
+      "nextReview": "2027-03-15",
+      "eventDate": "2026-09-15",
+      "novelty": "Größere Series‑A (>€200M) mit Samsung Co‑Lead und die Ernennung eines hochrangigen Ex‑ASML‑CEOs als Chairman — neues, bedeutendes Kapital und Industrie‑Validierung für einen europäischen AI‑Chip‑Pfad.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 13,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors",
+        "hbm"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.euclyd.ai/press-release",
+          "label": "EUCLYD Press Release (Series A >€200M, Peter Wennink Chairman)",
+          "kind": "primary",
+          "supports": "Ankündigung: Series A >€200M, co‑led by Samsung; Peter Wennink joins as Chairman; Testchip gefertigt bei Samsung."
+        },
+        {
+          "url": "https://nltimes.nl/2026/09/15/eindhoven-ai-chip-making-company-euclyd-raises-eu200-million-investors",
+          "label": "NL Times – Eindhoven AI startup raises >€200M",
+          "kind": "secondary",
+          "supports": "Bericht zur Finanzierung, Nennung Samsung und Peter Wennink (15 Sept 2026)."
+        },
+        {
+          "url": "https://www.prnewswire.com/nl/persberichten/euclyd-haalt-meer-dan-tweehonderd-miljoen-euro-op-om-ai-radicaal-efficienter-te-maken-302878044.html",
+          "label": "PR Newswire (NL) – PR‑Verbreitung der EUCLYD‑Mitteilung",
+          "kind": "secondary",
+          "supports": "PR‑Verbreitung mit Details zu Investoren und Technologiefokus."
+        },
+        {
+          "url": "https://siliconangle.com/2026/09/15/euclyd-raises-230m-to-develop-chips-for-ai-agents/",
+          "label": "SiliconANGLE – Branchenbericht über Runde und Strategie",
+          "kind": "secondary",
+          "supports": "Unabhängiger Technologie‑Branchenbericht zu Umfang und strategischem Fokus der Runde."
+        },
+        {
+          "url": "https://sifted.eu/articles/euclyd-efficient-ai-series-a",
+          "label": "Sifted – Analyse der Series‑A und europäischer Kontext",
+          "kind": "secondary",
+          "supports": "Kontext: Bedeutung der Runde für europäische AI‑Chip‑Ökosphäre."
+        }
+      ],
+      "reason": "Verifizierung und Einordnung (Deutsch):\n1) Primärverifikation: EUCLYD veröffentlichte am 2026‑09‑15 eine Series‑A‑Mitteilung, die eine Finanzierung von \"more than €200 million\" meldet; in der Pressemitteilung werden Samsung und mehrere Fonds als Co‑Leads genannt und Peter Wennink (ehem. ASML‑CEO) als Chairman benannt. ([euclyd.ai](https://www.euclyd.ai/press-release?utm_source=openai))\n2) Sekundärmedien bestätigen Umfang und Beteiligte und liefern unabhängige Kontext‑Berichterstattung (NL Times, SiliconANGLE, Sifted). ([nltimes.nl](https://nltimes.nl/2026/09/15/eindhoven-ai-chip-making-company-euclyd-raises-eu200-million-investors?utm_source=openai))\n3) Warum Watchlist (nicht Annahme): Die Meldung ist ein klarer Signal‑Event (significant capital + strategic board appointment), liefert aber KEINE unmittelbar beobachtbare Wirkung auf Marktpreise, Lead‑Times oder qualifizierte Lieferkapazität für HBM/Server‑DRAM. Nach TAIL‑Regeln ist ein Finanzierungsereignis ohne nachweisliche qualifizierte Shipments oder messbare Fill‑Rate‑Effekte kein VERIFIED supply_relief für Memory‑Märkte; sein Markteinfluss bleibt kontingent auf erfolgreichen Tape‑outs, Qualifikation und skaliertem Produktionsoutput. Die belegbaren Primärdaten rechtfertigen daher eine Watchlist‑Aufnahme (Gesamt‑Score 69) statt einer sofortigen Aufnahme als marktbewegendes, indexwirksames Signal.\n4) Gegenargumente / widersprechende Evidenz: Frühere Berichte (z. B. Berichte über gesuchte Finanzierung statt abgeschlossener Runde) belegten nur Interesse; die heutige PR schließt dies ab. Trotz Samsung‑Co‑Lead gibt es bislang keine Bestätigung großer LTAs, qualifizierter Shipments oder Hyperscaler‑Deployments, die für eine Index‑Auswirkung nötig wären. ([euclyd.ai](https://www.euclyd.ai/press-release?utm_source=openai))\n5) Empfehlung und Follow‑Up: Beobachten (Watchlist). Nächster Überprüfungstermin: 2027‑03‑15. Relevante Trigger für Upgrade auf ACCEPT wären: öffentliche Ankündigung eines production‑qualified Tape‑outs, bestätigte qualifizierte Shipments an Tier‑1‑Hyperscaler (≥10.000 Einheiten) oder ein mehrjähriger LTA mit quantifizierbarem Volumen; Trigger für Downgrade/Reject wäre ein Rückzug/Verzicht auf Finanzierung oder klare Angaben, dass Samsung lediglich passiver Finanzier ohne technische Kooperation bleibt.\nQuellen der Kernthesen: EUCLYD‑Pressemitteilung + unabhängige Berichterstattung. ([euclyd.ai](https://www.euclyd.ai/press-release?utm_source=openai))",
+      "candidateId": "027c332a39d37e8fd5b0",
+      "candidateKey": "6dc72faf21b85089622378ca",
+      "reviewedAt": "2026-09-16T00:50:41.518Z",
+      "priorityScore": 69,
+      "gateReasons": [
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b52ed17b1941df3006aa9e772a1e487d08115eeaf30bb3850"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung will Cheonan‑Packaging auf HBM‑Produktion umstellen (Industriequelle)",
+      "fact": "Am 2026-09-15 berichtete die koreanische Nachrichtenquelle Sisajournale, Samsung plane, die in Cheonan bisher für Exynos‑AP‑WLP genutzten Packaging‑Linien schrittweise einzustellen und die verfügbaren Anlagen auf HBM‑(High‑Bandwidth‑Memory)‑Packaging/Backend umzurüsten. (Bericht beruft sich auf anonyme Branchenquellen; Samsung Newsroom bestätigt separat HBM‑Ausbaupläne in Chungcheong, jedoch keine formelle Bestätigung der beschriebenen Linienumstellung.)",
+      "placement": "Cheonan (Südkorea); Backend/Advanced‑Packaging‑Layer; Produktschicht: HBM‑Packaging; Zeithorizont: kurzfristig — Umstellung ab 2027 laut Bericht.",
+      "mechanism": "Reallokation bestehender Backend/Packaging‑Kapazität: vorhandene WLP/Packaging‑Equipment für Exynos wird schrittweise nicht abgebaut, sondern für HBM‑Packaging (höherwertige, AI‑Memory‑Packages) umgerüstet; dadurch wird inländische HBM‑Packaging‑Kapazität relativ erhöht und verfügbare Packaging‑Kapazität für andere Produktlinien eingeschränkt (Allokations‑Effekt).",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Unterstützt die TAIL‑These, dass Advanced Packaging ein anhaltender Engpass für AI‑Lieferketten bleibt: wenn ein großer Anbieter wie Samsung Produktionskapazität gezielt auf HBM‑Packaging umlenkt, erhöht dies Konkurrenz um begrenzte Advanced‑Packaging‑Ressourcen und stützt die Erwartung, dass Packaging‑Lead‑Times und Allokation bis mindestens H2 2027 angespannt bleiben.",
+      "falsifier": "Bis zum 2027-06-30 liegen verlässliche, primäre Gegenbelege vor: (a) Samsung‑Unternehmenskommunikation oder amtliche Genehmigungs‑/Permit‑Einträge zeigen, dass Cheonan weiterhin laufend Exynos‑WLP/Packaging ausführt (keine Umrüstung) und keine HBM‑Packaging‑Konversion stattgefunden hat; oder (b) Samsung veröffentlicht eine formelle Bestätigung, dass Cheonan nicht in HBM‑Packaging umgebaut wurde. Wenn eines dieser Ereignisse bis zum 2027-06-30 nachgewiesen wird, ist die gemeldete Reallokation falsifiziert.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-15",
+      "novelty": "Moderat — Samsung hatte bereits HBM‑Ausbaupläne für Chungcheong angekündigt (Samsung Newsroom 2026-07-02), aber die exakte Umstellung einzelner Cheonan‑Packaging‑Linien von Exynos auf HBM wurde bisher nur in exklusiven Branchenberichten mit anonymen Quellen genannt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_lock",
+      "severity": 45,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://v.daum.net/v/20260915094310921",
+          "label": "시사저널e (Sisajournale) — Exklusivbericht 2026-09-15",
+          "kind": "primary",
+          "supports": "Bericht (15.09.2026) zitiert anonyme Branchenquellen: schrittweiser Abzug von Exynos‑Packaging aus Cheonan und Umrüstung der Anlagen auf HBM‑Packaging."
+        },
+        {
+          "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1-%EB%AF%B8%EB%9E%98-%EC%84%B1%EC%9E%A5-%EC%9C%84%ED%95%B4-%EC%B6%A9%EC%B2%AD%EC%97%90-140%EC%A1%B0%EC%9B%90-%ED%88%AC%EC%9E%90-%EA%B3%84%ED%9A%8D",
+          "label": "Samsung Newsroom — Chungcheong HBM‑Investitionspläne (2026-07-02)",
+          "kind": "secondary",
+          "supports": "Samsung bestätigt Investitionspläne für Onyang/Cheonan zur HBM‑Fähigkeitsausweitung, nennt Modernisierung und Ausbau von HBM‑Kapazitäten in Chungcheong."
+        },
+        {
+          "url": "https://apps.digitimes.com/news/a20260814VL222.html",
+          "label": "DIGITIMES (branche) — Bericht zu Verlagerung/Umverteilung von Backend‑Arbeit (2026-08-14)",
+          "kind": "secondary",
+          "supports": "Bezahlartikel (14.08.2026) berichtet, Samsung prüfe Verlagerung von Legacy‑Packaging/Testing nach Vietnam, um Inlandskapazität für HBM freizusetzen (kontextuelle Bestätigung der Branchenbewegung)."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat beruht auf einem exklusiven Bericht (Sisajournale, 2026-09-15) mit anonymen Branchenquellen, der eine konkrete operative Umstellung in Cheonan beschreibt. Relevante, vertrauenswürdige kontextuelle Bestätigungen existieren (Samsung Newsroom: HBM‑Ausbaupläne in Chungcheong; Digitimes: Branchenberichte über Verlagerung von Legacy‑Packaging), aber es fehlt eine formelle, instrumentell verifizierte Primärbestätigung seitens Samsung (keine offizielle Pressemitteilung oder behördliche Permit‑Einträge, die die Linienumrüstung mit quantitativen Einheiten belegen). Deshalb wird die Meldung nicht als VERIFIED DATA aufgenommen, aber wegen ihrer direkten Relevanz für Advanced‑Packaging‑Knappheit, Plausibilität und Nähe zu anderen Berichten auf Watchlist gesetzt. Opposing evidence im Artikel selbst (Zitate von Samsung‑SystemLSI‑Vertretern), die Entwicklung und Support für Exynos weiter betonen, reduziert die Beweiskraft. Empfehlungen: Monitoring auf (a) Samsung‑Standort‑/Permit‑Meldungen, (b) offizielle Ankündigungen zu Linien‑Umrüstungen oder Kapazitätsangaben (Wafer/Monat oder Anzahl Linien) und (c) lokale Investitions‑/Baugenehmigungen; Review‑Datum 2027-06-30, bis dahin ist der Kandidat als indikatives, nicht verifiziertes Signal einzustufen.",
+      "candidateId": "923a64ecdf7d27f7b275",
+      "candidateKey": "ea8e6ea6be65aa9ea4a6afb0",
+      "reviewedAt": "2026-09-16T00:52:47.442Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03caee79e214300a006aa9e7e1afd887d0b44140a7b78e3836"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Speed Is the New Capacity: Why AI Infrastructure Needs a New Power Strategy",
+      "fact": "JLL (EMEA Mid‑Year Data Centre Report) dokumentiert, dass hyperscale‑Campusprojekte, die zwischen 2026–2028 geplant sind, im Mittel 175 km von großen EMEA‑Städten liegen vs. 46 km für 2022–2025; LBNL identifiziert >40 Ansätze zur Beschleunigung großer Netzanschlüsse; PJM berichtet am 2026-09-15, dass >50 GW an Projekten bereits Vereinbarungen unterzeichnet haben.",
+      "placement": "Geographie: EMEA (primär) und USA (PJM); Domäne: ai_infrastructure (Power/Energy Layer); Layer: Netzanschluss/Onsite‑Erzeugung/Tarif‑Modelle; Horizont: Near‑term (2026–2028).",
+      "mechanism": "Netzverfügbarkeits‑ und Genehmigungsengpässe verschieben Standortwahl und Wirtschaftlichkeit: Betreiber priorisieren \"speed‑to‑power\" (schnell verfügbare MW) über Nähe zu Kunden; als Reaktion steigen Bilateralverträge, Onsite‑Erzeugung, modulare Energie und spezielle Großlasttarife, wodurch Projekte mit verfügbarer Lieferung bevorzugt werden und andere Marktsegmente relative Knappheit erfahren.",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Unterstützt die Sicht, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen wechseln (P-2026-07-12-04). Die zitierten Messgrößen (JLL 175 km; LBNL >40 Beschleunigungsansätze; PJM >50 GW mit Vereinbarungen) liefern daten‑ und datumgestützte Belege, erhöhen die Plausibilität des Forecast‑Mechanismus, ändern aber nicht automatisch eine punkt‑wahrscheinlichkeitszuweisung (Evidenzstärke: moderat).",
+      "falsifier": "Bis 2027-06-30 fehlen nachprüfbar mindestens drei (≥3) öffentlich dokumentierte, verbindliche FIDs oder Take‑or‑pay/Onsite‑Generation‑Supply‑Agreements in verschiedenen Märkten (aggregiert ≥600 MW), und es werden keine formalen Großlast‑Tarifregelungen (separater Tarifrahmen oder Take‑or‑pay) von mindestens zwei großen US‑ oder EMEA‑Versorgern verabschiedet. Wenn diese drei bindenden Supply‑/Tarif‑Meilensteine bis 2027-06-30 nicht vorhanden sind, reduziert das die Evidenz, dass \"speed‑to‑power\" den Markt breit in dedizierte Energieprojekte umschichtet.",
+      "nextReview": "2027-07-15",
+      "eventDate": "2026-09-15",
+      "novelty": "moderat (Bestätigung eines sich abzeichnenden Musters mit neuen numerischen Befunden)",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 17,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 45,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.datacenterknowledge.com/energy-power-supply/speed-is-the-new-capacity-why-ai-infrastructure-needs-a-new-power-strategy",
+          "label": "Data Center Knowledge — Speed Is the New Capacity",
+          "kind": "secondary",
+          "supports": "Übersichtsartikel (2026-09-15) zu 'speed‑to‑power'; zitiert JLL, LBNL und PJM als Belege."
+        },
+        {
+          "url": "https://www.jll.com/en-de/newsroom/ai-boom-redraws-europes-data-centre-map-as-power-access",
+          "label": "JLL — AI boom redraws Europe's data centre map (EMEA Mid‑Year Data Centre Report 2026)",
+          "kind": "primary",
+          "supports": "JLL‑Angabe (2026-08-06): hyperscale‑Campusprojekte 2026–2028 im Schnitt 175 km von großen EMEA‑Hubs vs. 46 km für 2022–2025."
+        }
+      ],
+      "reason": "Entscheidung: Watchlist. Begründung (kurz auf Deutsch): Der eingereichte Artikel fasst und kontextualisiert mehrere primäre Befunde (JLL‑Standorteffekt, LBNL‑Lösungsreport, PJM‑Interconnection‑Status). Er liefert datengetriebene, datierte Einzelgrößen (z. B. 175 km; >40 Ansätze; >50 GW Vereinbarungen), die das Narrativ stützen, dass \"speed‑to‑power\" die Standort‑ und Beschaffungsentscheidung von AI‑Datacentern treibt. Allerdings ist der Beitrag ein thematischer Industry‑Commentary, kein alleinstehender Primärbeobachtungs‑Breakthrough, und die Implikationen für marktweite Allokationen/Preise sind noch heterogen und kontextabhängig. Opposing evidence: In einigen Kernmärkten bleibt die Kernnachfrage (FLAP‑D) mit 3.8 GW Live‑Kapazität und substantiellen Bau‑/Pipelinezahlen bestehen (JLL; L39–L46), und mehrere Gründungs‑/Sovereign‑Deals (z. B. Stark finanzierte Middle‑East/Government‑Backed‑FIDs) zeigen, dass alternative Beschleunigungs‑Pfad‑Modelle (Sovereign‑Backing, Private‑Grid, modulare Onsite‑Erzeugung) bereits selektiv funktionieren — das bedeutet keine einheitliche Verlagerung und macht das Outcome contingent und regional verschieden. Wegen der synthesehaften Natur des Kandidaten sowie verbleibender Messlücken (wie aggregierte MW‑FIDs, verbindliche Tarifänderungen über mehrere Regionen) ordne ich den Kandidaten auf Watchlist ein: er erhöht die Evidenz für P-2026-07-12-04, liefert aber (noch) kein einzelnes, unwiderlegbares, breit skaliertes Primärereignis mit unmittelbar quantifizierbarem Marktpreis‑Impact. Kommentare / Hinweise zur Validierung: Die wichtigsten, belastbaren Einzeldaten wurden gegen die Originalquellen verifiziert (JLL 2026-08-06; LBNL 2026-06-11; PJM 2026-06/09/2026/2026-09-15). Umausweichliche Unsicherheiten bleiben hinsichtlich Tempo, regionaler Streuung und kumulativer MW‑FID‑Summen; die vorgeschlagene Falsifizierbedingung (Frist 2027-06-30) ist messbar und sollte zur nächsten Überprüfung verwendet werden.",
+      "candidateId": "c8284d53eab6eb6e6c0f",
+      "candidateKey": "02d8c501804a448b1aff7ce5",
+      "reviewedAt": "2026-09-16T00:52:47.468Z",
+      "priorityScore": 74,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fa57078d1d7e72b006aa9e7e1a45487d08a1c5089e105645c"
     }
   ]
 }
