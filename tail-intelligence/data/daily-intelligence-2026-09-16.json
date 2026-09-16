@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T01:34:38.841Z",
+  "updatedAt": "2026-09-16T06:48:35.531Z",
   "previousRun": "2026-09-15",
   "executivePulse": {
     "current": 78,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 80,
     "previous": 80,
-    "interpretation": "Datenvertrauen 80/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 510 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 80/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 511 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 510 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 511 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -529,6 +529,69 @@
       "date": "2026-08-26"
     },
     {
+      "id": "S-AUTO-c9c332f6ada7a63807252e98",
+      "title": "Hilliard zieht Berufung gegen Brennstoffzellen‑Genehmigung für Amazon‑Rechenzentrum zurück",
+      "date": "2026-09-15",
+      "admittedAt": "2026-09-16T06:42:55.100Z",
+      "fact": "Die Stadt Hilliard (Ohio) zog am 2026-09-15 ihre Berufung vor der Ohio Environmental Review Appeals Commission gegen die Ohio EPA‑Genehmigung für eine 72.9‑Megawatt (netto) Brennstoffzellen‑Anlage (228 Bloom‑Energy‑Units) zurück, die das Amazon Web Services‑Rechenzentrum an Scioto Darby Road mit On‑site‑Strom versorgen soll. (City of Hilliard Pressemitteilung 2026-09-15; Medienbericht/Columbus Dispatch 2026-09-16).",
+      "placement": "Hilliard, Franklin County, Ohio, USA — Domäne: ai_infrastructure (Datacenter Energie) — Layer: On‑site Erzeugung / direkte Versorgungsverträge — Horizont: kurzfristig/near‑term (Bau/Operation in den kommenden 12–24 Monaten laut Projektunterlagen).",
+      "tailInference": "Das Zurückziehen der Berufung entfernt einen lokalen rechtlichen Blockierpunkt und erhöht die erwartete Realisierung des 72.9 MW On‑site‑Brennstoffzellenprojekts (AEP Ohio / Bloom Energy) für das AWS‑Campus. Dadurch steigt die Wahrscheinlichkeit, dass große Datacenter‑Lasten durch dedizierte Energieprojekte (On‑site Gensets, Take‑or‑pay oder PPA‑nahartige Vereinbarungen und Direktanschlüsse) versorgt werden statt ausschließlich über das öffentliche Netz, was den Pfad in P-2026-07-12-04 stützt.",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Moderate Erhöhung der Eintrittswahrscheinlichkeit von P-2026-07-12-04 (\"Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen\"). Dieser Kandidat ist ein konkretes, lokal datiertes Beispiel (72.9 MW) für das erwartete Muster.",
+      "falsifier": "Bis zum 2027-09-30 gibt es keinen formalen FID oder Baubeginn für die 72.9 MW Brennstoffzellenanlage, oder AEP Ohio/Amazon kündigen die Projektstreichung oder ziehen die relevanten OPSB/PTIO‑Anträge zurück. Falls das Projekt bis zum genannten Datum nicht in Bau ist oder offiziell abgesagt wurde, schwächt das die Aussagekraft dieses Signals erheblich.",
+      "nextReview": "2027-09-30",
+      "priorityScore": 84,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 19,
+        "forecastImpact": 14,
+        "falsifiability": 13,
+        "timeSensitivity": 8
+      },
+      "severity": 15,
+      "confidence": 90,
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "City of Hilliard – Pressemitteilung 'City of Hilliard ends fuel cell permit appeal, calls for stronger local input' (Andrea Litchfield, 2026-09-15)",
+          "url": "https://hilliardohio.gov/city-of-hilliard-ends-fuel-cell-permit-appeal-calls-for-stronger-local-input/"
+        },
+        {
+          "label": "Columbus Dispatch (via AOL) – 'Hilliard withdraws appeal of fuel cell power for Amazon data center' (Jim Wilhelm, veröffentlicht 2026-09-16)",
+          "url": "https://www.aol.com/articles/hilliard-withdraws-appeal-fuel-cell-025909000.html"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Moderate Erhöhung der Eintrittswahrscheinlichkeit von P-2026-07-12-04 (\"Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen\"). Dieser Kandidat ist ein konkretes, lokal datiertes Beispiel (72.9 MW) für das erwartete Muster."
+      },
+      "admissionReviewKey": "c9c332f6ada7a63807252e98"
+    },
+    {
       "id": "S-AUTO-9904f14f9eb93ff2d998f7c1",
       "title": "Samsung nutzt TSMC-Prozesse für HBM‑Base‑Die (Bericht)",
       "date": "2026-09-15",
@@ -861,15 +924,24 @@
     "date": "2026-09-16",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 82,
-    "note": "Evidenzprüfung offen: 510 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 84,
+    "note": "Evidenzprüfung offen: 511 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-16T01:34:38.841Z",
+    "generatedAt": "2026-09-16T06:48:35.531Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-16T01:24:15.454Z",
-    "inboxNewItems": 14,
+    "inboxUpdatedAt": "2026-09-16T06:38:09.879Z",
+    "inboxNewItems": 88,
     "highRelevanceCandidates": [
+      {
+        "id": "ea21bd733a69f3539e99",
+        "title": "Samsung reportedly taps TSMC for custom HBM base dies as new foundry dynamics emerge",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaUpMZFVEdnFNdlZPTW8tN3JGVGt3cjlxdFlzcVpHalJ4ZlVJc1BrZ3d2d3d1NHJFWGVEZmdlSTVwXzZEcUxEVEhFTW9mLUpHWEhQOVEwNkIzRUU4OXhJOEhWdEhydWVCX2s0UTJVOUhZNVZhckhNZFl4NmtIbHVHVWZKaUszVEZyLUE?oc=5",
+        "source": "digitimes.com",
+        "summary": "Aktuelle Meldung von digitimes.com: Samsung reportedly taps TSMC for custom HBM base dies as new foundry dynamics emerge",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-16T01:51:58.000Z"
+      },
       {
         "id": "2edffc212838bfbad8d3",
         "title": "TSMC May Help Samsung in Custom HBM Production",
@@ -932,15 +1004,6 @@
         "summary": "What Anthropic's AI Slowdown Call Could Mean For Cloud Giants Amazon, Microsoft, Google Investor's Business Daily",
         "relevanceScore": 100,
         "publishedAt": "2026-09-14T14:41:00.000Z"
-      },
-      {
-        "id": "e1c490a1227428942b09",
-        "title": "Memory Stocks Lead AI Selloff as Anthropic and OpenAI Chiefs Urge Slower Development: Micron and SanDisk Sink 6%, SK Hynix Drops 7%",
-        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQWWdzS2syakFOajVaTVJORW1nX2lrOGUzeXFNd1RkOEwxeVB3LWs1bF9NUEpTUjZVODZ2VWZZbFlQQ2diNDZDRS1LTURZbEhlSTZSM3RBZW4wVDZjVm9QMVFyc2NxbjQ0WVY3bENQNHhXQWJFZGNEMFlJTnQxWTFDZFpYenNpMXpJNDE4Z3VWSlNSY1IyV2ktSDRnbzFVY1ZFbDhwWFhMUGVrSXdxSlpMVVJQdjUxdDQ0dmdJTjcxMDNKbVVjZWlBdi03Wlp6SjJHTTNHcHBucjFUX2RzUFdmaXZMajVEbHJkSi1RNGZNUVlQQk1pQ0ZMZkQyaVFTYTln?oc=5",
-        "source": "24/7 Wall St.",
-        "summary": "Aktuelle Meldung von 24/7 Wall St.: Memory Stocks Lead AI Selloff as Anthropic and OpenAI Chiefs Urge Slower Development: Micron and SanDisk Sink 6%, SK Hynix Drops 7%",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-14T13:18:00.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -1026,35 +1089,35 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-16T01:34:38.673Z",
-    "inboxUpdatedAt": "2026-09-16T01:24:15.454Z",
+    "checkedAt": "2026-09-16T06:48:35.350Z",
+    "inboxUpdatedAt": "2026-09-16T06:38:09.879Z",
     "status": "error",
-    "candidates": 998,
-    "reviewed": 488,
-    "accepted": 52,
-    "watchlist": 128,
-    "rejected": 308,
-    "pending": 510,
+    "candidates": 1011,
+    "reviewed": 500,
+    "accepted": 53,
+    "watchlist": 135,
+    "rejected": 312,
+    "pending": 511,
     "oldestPendingAt": "2026-08-18T09:47:10.000Z",
-    "lastCompletedReviewAt": "2026-09-16T01:33:51.840Z",
-    "error": "Candidates 77445410f343519d1228: Analyst request timed out after 46793ms",
+    "lastCompletedReviewAt": "2026-09-16T06:47:53.690Z",
+    "error": "Candidates 34e1b9f4c71f5c1d78ad: Analyst request timed out after 41618ms",
     "batchErrors": [
-      "Candidates 34e1b9f4c71f5c1d78ad: Analyst request timed out after 46796ms",
-      "Candidates 77445410f343519d1228: Analyst request timed out after 46793ms"
+      "Candidates 44ea44b3c97c515dd5a9: Analyst request timed out after 41621ms",
+      "Candidates 34e1b9f4c71f5c1d78ad: Analyst request timed out after 41618ms"
     ],
-    "rawCandidates": 1033,
+    "rawCandidates": 1046,
     "triage": {
       "archivedOpinions": 22,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-16T01:24:38.189Z",
-      "completedAt": "2026-09-16T01:34:38.679Z",
-      "selected": 24,
-      "reviewed": 8,
+      "startedAt": "2026-09-16T06:38:34.864Z",
+      "completedAt": "2026-09-16T06:48:35.356Z",
+      "selected": 96,
+      "reviewed": 12,
       "concurrency": 2,
       "batchSize": 1,
-      "limit": 24,
+      "limit": 96,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
       "durationSeconds": 600,
@@ -1063,7 +1126,7 @@
   },
   "indexCalculation": {
     "asOf": "2026-09-16",
-    "inputHash": "b8fca18cfe787637ad4d46c40c06be33a8b60c17b126da017f1f3bc51cc39b0b",
+    "inputHash": "caeb70ff686d4f5829566776e32f987564a404a88903d4f5dffd2f173f75dc8a",
     "sourceDataAsOf": "2026-09-15"
   }
 }

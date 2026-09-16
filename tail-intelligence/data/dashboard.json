@@ -7,35 +7,35 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-16T01:34:38.673Z",
-    "inboxUpdatedAt": "2026-09-16T01:24:15.454Z",
+    "checkedAt": "2026-09-16T06:48:35.350Z",
+    "inboxUpdatedAt": "2026-09-16T06:38:09.879Z",
     "status": "error",
-    "candidates": 998,
-    "reviewed": 488,
-    "accepted": 52,
-    "watchlist": 128,
-    "rejected": 308,
-    "pending": 510,
+    "candidates": 1011,
+    "reviewed": 500,
+    "accepted": 53,
+    "watchlist": 135,
+    "rejected": 312,
+    "pending": 511,
     "oldestPendingAt": "2026-08-18T09:47:10.000Z",
-    "lastCompletedReviewAt": "2026-09-16T01:33:51.840Z",
-    "error": "Candidates 77445410f343519d1228: Analyst request timed out after 46793ms",
+    "lastCompletedReviewAt": "2026-09-16T06:47:53.690Z",
+    "error": "Candidates 34e1b9f4c71f5c1d78ad: Analyst request timed out after 41618ms",
     "batchErrors": [
-      "Candidates 34e1b9f4c71f5c1d78ad: Analyst request timed out after 46796ms",
-      "Candidates 77445410f343519d1228: Analyst request timed out after 46793ms"
+      "Candidates 44ea44b3c97c515dd5a9: Analyst request timed out after 41621ms",
+      "Candidates 34e1b9f4c71f5c1d78ad: Analyst request timed out after 41618ms"
     ],
-    "rawCandidates": 1033,
+    "rawCandidates": 1046,
     "triage": {
       "archivedOpinions": 22,
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-16T01:24:38.189Z",
-      "completedAt": "2026-09-16T01:34:38.679Z",
-      "selected": 24,
-      "reviewed": 8,
+      "startedAt": "2026-09-16T06:38:34.864Z",
+      "completedAt": "2026-09-16T06:48:35.356Z",
+      "selected": 96,
+      "reviewed": 12,
       "concurrency": 2,
       "batchSize": 1,
-      "limit": 24,
+      "limit": 96,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
       "durationSeconds": 600,
@@ -81,15 +81,15 @@
     }
   ],
   "sourceDataAsOf": "2026-09-15",
-  "knowledgeBaseSyncedAt": "2026-09-16T01:34:38.841Z",
+  "knowledgeBaseSyncedAt": "2026-09-16T06:48:35.531Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-09-16T01:34:40.103Z",
-  "lastForecastRun": "2026-09-16T01:34:40.103Z",
-  "newlyProcessedArticles": 14,
-  "totalArticles": 178,
-  "articleCount": 178,
+  "lastSuccessfulUpdate": "2026-09-16T06:48:36.829Z",
+  "lastForecastRun": "2026-09-16T06:48:36.829Z",
+  "newlyProcessedArticles": 88,
+  "totalArticles": 179,
+  "articleCount": 179,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -143,16 +143,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung gestört: 510 Kandidaten ausstehend.",
+    "Evidenzprüfung gestört: 511 Kandidaten ausstehend.",
     "9 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-16T01:24:15.454Z",
-    "newItems": 14,
-    "totalItems": 2937,
+    "updatedAt": "2026-09-16T06:38:09.879Z",
+    "newItems": 88,
+    "totalItems": 3025,
     "duplicateItems": 300,
-    "relevantItems": 1379,
+    "relevantItems": 1401,
     "sourceErrors": []
   },
   "pipeline": {
@@ -162,19 +162,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "488 geprüft · 510 offen · 52 aufgenommen"
+        "detail": "500 geprüft · 511 offen · 53 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "178 Artikel · Sync 2026-09-16 · jüngstes bestätigtes Signal 2026-09-15"
+        "detail": "179 Artikel · Sync 2026-09-16 · jüngstes bestätigtes Signal 2026-09-15"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "2937 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "3025 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -785,14 +785,14 @@
       "mentions": 3
     },
     {
-      "name": "Amazon",
-      "score": 69,
-      "mentions": 5
-    },
-    {
       "name": "Nvidia",
       "score": 69,
       "mentions": 22
+    },
+    {
+      "name": "Amazon",
+      "score": 66,
+      "mentions": 6
     }
   ],
   "forecasts": [
@@ -963,7 +963,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-09-16T01:34:40.098Z"
+      "lastUpdated": "2026-09-16T06:48:36.824Z"
     },
     {
       "id": "hbm",
@@ -1141,7 +1141,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-16T01:34:40.098Z"
+      "lastUpdated": "2026-09-16T06:48:36.824Z"
     },
     {
       "id": "nand",
@@ -1227,7 +1227,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T01:34:40.098Z"
+      "lastUpdated": "2026-09-16T06:48:36.824Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1308,7 +1308,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T01:34:40.098Z"
+      "lastUpdated": "2026-09-16T06:48:36.824Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1450,6 +1450,12 @@
           "title": "Micron demonstriert 512 GB DDR5‑RDIMM für Server; AMD und Intel zur Validierung genannt (GLOBE/Press‑Release 2026‑09‑15)",
           "signal": "Kapazitätsentlastung",
           "score": 7
+        },
+        {
+          "id": "S-AUTO-c9c332f6ada7a63807252e98",
+          "title": "Hilliard zieht Berufung gegen Brennstoffzellen‑Genehmigung für Amazon‑Rechenzentrum zurück",
+          "signal": "Kapazitätsentlastung",
+          "score": 7
         }
       ],
       "sourceArticleIds": [
@@ -1574,10 +1580,11 @@
         "S-AUTO-71c3683003af3ba1b1c73a28",
         "S-AUTO-d50d428a4bc231b9e6e8e32b",
         "S-AUTO-8a5701d057f8b4f60e46ba88",
+        "S-AUTO-c9c332f6ada7a63807252e98",
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T01:34:40.099Z"
+      "lastUpdated": "2026-09-16T06:48:36.824Z"
     }
   ],
   "indexCalculation": {
@@ -1586,7 +1593,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-16"
   },
-  "executiveSummary": "TAIL steht auf 78/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 178 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 78/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 179 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",

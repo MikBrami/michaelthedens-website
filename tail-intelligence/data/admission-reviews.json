@@ -38523,6 +38523,976 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_02847a78a2caa4c6006aa9f178e68487d2914200ee6d3702ea"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Meta’s Mark Zuckerberg joins Nvidia’s Huang in pushing back against AI slowdown (META:NASDAQ)",
+      "fact": "Mark Zuckerberg veröffentlichte am 2026-09-15 auf X eine Stellungnahme, in der er sich gegen pauschale Verlangsamungsaufrufe stellte („People won't want to use agents that are misaligned…“); dies folgte einem öffentlichen Auftritt von NVIDIA‑CEO Jensen Huang (All‑In Summit, 2026-09-14), der ebenfalls deutlich gegen einen AI‑Slowdown Stellung nahm («we're not going to let [an AI slowdown] happen»).",
+      "placement": "Geographie: USA; Domain/Layer: AI‑Infrastruktur / Führungsmeinungs‑Layer; Horizont: kurzfristig (Wochen bis Monate).",
+      "mechanism": "Führende CEO‑Stimmen reduzieren politisches und marktbasiertes Momentum für koordinierte Beschränkungen oder Moratorien; dadurch sinkt kurzfristig die Wahrscheinlichkeit, dass Regulierungs‑ oder industrieweite Selbstbeschränkungen die geplanten Datacenter‑Buildouts und zugehörige Speicher‑/Compute‑Beschaffungen dämpfen. Die Wirkung ist hauptsächlich reputational/politisch‑signalend und wirkt über Regierungs‑ und Investorenerwartungen auf Hyperscaler‑Capex und Leasing‑Entscheidungen.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Dieses Signal schwächt kurzfristig (Q4 2026–H1 2027) die Wahrscheinlichkeit, dass ein koordinierter AI‑Verlangsamungs‑Shock die Beschaffungsnachfrage für Server‑DRAM merklich reduziert; es stützt weiterhin die Basisannahme, dass kurzfristiges Beschaffungsrisiko hoch bleibt, verringert aber die Eintrittswahrscheinlichkeit eines sofortigen demand_down‑Falsifiers für server_dram. ([tech.yahoo.com](https://tech.yahoo.com/ai/meta-ai/articles/meta-chief-pushes-back-ai-031042935.html?utm_source=openai))",
+      "falsifier": "Bis 2026-12-31: Wenn (a) mindestens zwei große Hyperscaler (z. B. Google/Alphabet, Microsoft, Amazon) ihre 2027‑AI‑bezogene Capex‑Guidance um ≥10 % (YoY) nach unten anpassen ODER (b) drei führende Frontier‑Labs (z. B. OpenAI, Anthropic, Google/DeepMind) öffentlich verbindliche, zeitlich und inhaltlich spezifizierte Moratorien auf Frontier‑Modelldeployments ankündigen (Mitteilung mit Datum und Umfang), dann hat das Management‑Pushback die kurzfristige Nachfrage‑Pfadannahme nicht dauerhaft bestätigt.",
+      "nextReview": "2026-10-16",
+      "eventDate": "2026-09-15",
+      "novelty": "Niedrig bis moderat — reiteriert und bündelt bereits sichtbare CEO‑Gegenstimmen gegen Slowdown‑Aufrufe.",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 6,
+        "thesisRelevance": 14,
+        "forecastImpact": 13,
+        "falsifiability": 9,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+          "label": "TechCrunch – Huang onstage call with Trump (All‑In Summit, 2026-09-14)",
+          "kind": "primary",
+          "supports": "Belegt Huang's on‑stage phone call mit Präsident Trump und sein klares Zurückweisen eines AI‑Slowdowns."
+        },
+        {
+          "url": "https://www.ndtv.com/video/mark-zuckerberg-calls-for-responsible-ai-development-1158828",
+          "label": "NDTV – Bericht zu Zuckerbergs X‑Post (2026-09-16)",
+          "kind": "secondary",
+          "supports": "Wiederholt den Wortlaut der X‑Stellungnahme und kontextualisiert Meta's Sicherheitsbezug (Muse‑Delay)."
+        }
+      ],
+      "reason": "Kurzfassung (Deutsch):\n- Was wir verifiziert haben: Zwei hochrangige Industrieäußerungen in aufeinanderfolgenden Tagen — Jensen Huang (onstage, 2026-09-14) und Mark Zuckerberg (X‑Post, 2026-09-15) — haben öffentlich gegen kollektive Verlangsamungsaufrufe Stellung genommen. Diese Primärberichterstattung liegt in AFP/Newswire‑Syndication und Technologie‑Medien vor. ([techcrunch.com](https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/?utm_source=openai)).\n- Warum Watchlist (nicht Accepted): Der Einzelfakt (CEO‑Statements) ist datiert und belegbar, hat jedoch begrenzte, indirekte ökonomische Evidenz (reputationales Signal statt messbarer Änderung in Capex, Lead‑Times oder vertraglich gebundenem Bedarf). Viele Basis‑Signals in der TAIL‑Baseline bereits zeigen breitere, quantitativere Nachfrage‑ und Vertrags‑Dynamiken (z. B. Mult GW‑Lease‑Ankündigungen, LTAs, Aktienreaktionen, Hyperscaler‑Capex‑Guidance), wodurch diese Meldung eher ein zusätzliches narratives Gegenargument zum Slowdown‑Narrativ darstellt als ein eigenständiger, indexwirksamer Beleg. Opposing evidence: parallel existieren starke Signale für tatsächliche Sicherheits‑/Regulierungs‑Diskussionen und interne Sicherheitsreserven (z. B. OpenAI/Anthropic‑Warnungen), die weiterhin das Risiko eines Nachfrageeinbruchs oder regulatorischer Einschränkungen stützen. ([seekingalpha.com](https://seekingalpha.com/article/4946016-ai-slowdown-fear-is-a-gift)).\n- Wirkung auf Prognosen: Rationale Wirkung ist, kurzfristig (Wochen–Monate), die politische und marktpsychologische Eintrittswahrscheinlichkeit eines koordinierten Slowdown‑Ereignisses zu verringern; sie ändert aber nicht per se gemessene Beschaffungsgrößen (Kontraktabschlüsse, FIDs, Shipments, Lead‑Times). Deshalb wird OUTLOOK‑server_dram nicht automatisch als falsifiziert oder bestätigt; die Meldung mildert nur eine downside‑Variante. ([techcrunch.com](https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/?utm_source=openai)).\n- Nächste Schritte / Prüfgrößen: Wir beobachten innerhalb der nächsten ~30–45 Tage (nächste Review‑Frist 2026-10-16) konkrete, messbare Indikatoren: veränderte Capex‑Guidance von Hyperscalern, verbindliche Lease‑/LTA‑Ankündigungen, oder tatsächliche öffentliche, datierte Moratorien von Frontier‑Labs. Falls solche quantitativen Indikatoren eintreten, würde das die Signalbewertung auf Accepted (mit indexImpact Prüfung) oder auf Rejected/Red‑pencil ändern. \nBelege (Auswahl der wichtigsten Quellen): TechCrunch (Huang onstage call).; AFP/Yahoo und NDTV (Zuckerberg X‑Post). ([techcrunch.com](https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/?utm_source=openai)).",
+      "candidateId": "f0532fd6ab11a0f4cef0",
+      "candidateKey": "d5b58d47ebe5efa8fc619a74",
+      "reviewedAt": "2026-09-16T06:40:02.159Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0cf5809c20b0b8cf006aaa396c6bc887d0b64e0410c06a04d7"
+    },
+    {
+      "decision": "rejected",
+      "title": "Micron demonstriert 512GB DDR5 RDIMM für Next‑Gen‑Server (dup)",
+      "fact": "Micron demonstrierte am 2026-09-15 ein 512 GB DDR5 RDIMM (angemeldete Spitzenrate bis 9.200 MT/s) und nannte erwartete Volumenproduktion in H2 2027.",
+      "placement": "Global / Server‑DRAM‑Layer (Modul/Packaging) / kurzfristig‑mittelfristig (Volumenproduktion angekündigt H2 2027).",
+      "mechanism": "Vertikale Interposer-/TSV‑Packagierung ermöglicht höher dichte DRAM‑Stacks pro Package; dadurch können mehr Host‑Bits pro Sockel bereitgestellt und Datentransfers zwischen Speicher- und Speicherebenen reduziert werden — wirksam nur bei qualifizierten Volumenlieferungen. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx?utm_source=openai))",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Kein materialer Widerspruch zum Forecast P-2026-07-11-01 (Server‑DRAM bleibt strukturell knapp bis Ende 2028). Die Ankündigung ist ein technologie‑/Produkt‑Signal (potentielle Erhöhung effektiver Host‑Bits pro Server), ändert die zugrundeliegende Bit‑Supply‑Prognose nicht, solange keine geprüften Volumen‑Shipments und OEM‑Produkteinsatzdaten vorliegen. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx?utm_source=openai))",
+      "falsifier": "Bis 2027-12-31: Micron weist qualifizierte Shipments von ≥100.000 512 GB DDR5‑RDIMMs/Monat nach und mindestens zwei große Server‑OEMs listen das Modul als produktionsgetestete, vom Kunden bestellbare Option in ihren Spezifikationen (dann würde die Ankündigung die P‑2026‑07‑11‑01‑Annahme über Verfügbarkeitsknappheit merklich schwächen).",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-15",
+      "novelty": "Gering (Bereits in Baseline aufgenommen; keine neue Primärevidenz über Volumenlieferungen).",
+      "duplicateOf": "S-AUTO-8a5701d057f8b4f60e46ba88",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 2,
+        "thesisRelevance": 14,
+        "forecastImpact": 6,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 15,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx",
+          "label": "Micron Press Release — 'Micron Advances Memory Innovation...' (2026-09-15)",
+          "kind": "primary",
+          "supports": "Primäre Pressemitteilung: Demonstration eines 512GB DDR5 RDIMM, Angabe 9,200 MT/s, Validierungs‑Hinweis zu AMD/Intel und Hinweis auf Volumenproduktion in H2 2027. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx?utm_source=openai))"
+        },
+        {
+          "url": "https://www.storagereview.com/news/micron-shows-a-512gb-ddr5-rdimm-12tb-per-dual-socket-server-at-9200-mt-s-volume-production-in-2h-2027",
+          "label": "StorageReview — Bericht zur Demonstration und Volumenzeitplan",
+          "kind": "secondary",
+          "supports": "Sekundärbericht bestätigt Demonstration, 12TB pro Dual‑Socket‑Server Angabe und die von Micron genannte Volumenproduktion in H2 2027. ([storagereview.com](https://www.storagereview.com/news/micron-shows-a-512gb-ddr5-rdimm-12tb-per-dual-socket-server-at-9200-mt-s-volume-production-in-2h-2027?utm_source=openai))"
+        },
+        {
+          "url": "https://www.hpcwire.com/off-the-wire/micron-advances-memory-innovation-with-ultra-dense-module-for-next-gen-servers/",
+          "label": "HPCwire — Nachberichterstattung der Micron‑Ankündigung",
+          "kind": "secondary",
+          "supports": "Zusätzliche Medien‑Zusammenfassung der Ankündigung, Validierungs‑Hinweis zu AMD/Intel. ([hpcwire.com](https://www.hpcwire.com/off-the-wire/micron-advances-memory-innovation-with-ultra-dense-module-for-next-gen-servers/?utm_source=openai))"
+        }
+      ],
+      "reason": "Ablehnung (Duplikat + unzureichende Wirkung auf Baseline‑Forecast). Der Candidate ist eine Wiederholung der Micron‑Pressemitteilung vom 2026-09-15 (bereits als S-AUTO-8a5701… in der Baseline erfasst) und liefert keine neue Primärbeobachtung über qualifizierte Volumenlieferungen oder OEM‑Produkteinsatz, die nötig wären, um die bestehende Vorhersage P-2026-07-11-01 (Server‑DRAM‑Knappheit bis Ende 2028) substanziell zu ändern. Die Quelle ist glaubwürdig und verifiziert (Micron‑Release). Gleichwohl ist die Behauptung produkt‑/technologieorientiert und forward‑looking (Volumenproduktion H2 2027) — ohne nachweisbare Shipments bleibt der Effekt auf Verfügbarkeit und Preise unbewiesen. Deshalb wird der Kandidat als Duplicate/Promotional‑Signal abgelehnt. Primärquelle(n) dokumentieren die Ankündigung und das von Micron genannte Timing. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx?utm_source=openai))",
+      "candidateId": "959d513ff695bd103c6c",
+      "candidateKey": "a54fabd6e53ddaaa313d087f",
+      "reviewedAt": "2026-09-16T06:40:02.186Z",
+      "priorityScore": 54,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c717a801c55ea49006aaa396c62f087d08acb1b2971925ff8"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Berichte: Samsung prüft Verlagerung von konventioneller Memory‑Packaging‑Kapazität (Cheonan/Onyang) nach Vietnam zugunsten von HBM‑Stacking",
+      "fact": "Laut Branchenberichten (DealSite, zitiert durch DigiTimes und andere) prüft Samsung Electronics (Bericht first published 2026-08-14) die Verlagerung von Teilen der Packaging-/Test‑(Back‑end)‑Kapazitäten für konventionelle DRAM- und NAND‑Module aus den koreanischen Standorten Cheonan und Onyang nach Vietnam, um in Korea Fläche und spezialisierte Backend‑Tools für HBM‑Stacking freizumachen. ",
+      "placement": "Teile der Packaging-/Test‑Kapazität; Ursprung: Cheonan & Onyang, Südkorea -> Ziel: Vietnam; Domäne: HBM / konventionelles DRAM & NAND Back‑end; Zeitpunkt/Quelle: Branchenberichte vom 2026-08-14 (DigiTimes / DealSite; weiterverbreitet durch TechTimes u.a.).",
+      "mechanism": "Durch Verlagerung von weniger spezialisierten Packaging-/Test‑linien (konventionelles DRAM/NAND) nach Vietnam würden in Cheonan/Onyang sauberer nutzbare Reinraumfläche und spezialisierte Bonding-/Stacking‑Werkzeuge (TCB/HCB/Hybrid‑Copper/TSV‑Lines) frei, wodurch Samsung die HBM‑Stacking‑Durchsatzkapazität erhöhen könnte. Das wirkt primär auf die Verfügbarkeit (availability) von qualifizierter HBM‑Packaging‑Kapazität, nicht unmittelbar auf ausgelieferte HBM‑Shipments bis zur Qualifikation.",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Informiert und tendenziell reduziert die Wahrscheinlichkeit von P-2026-07-13-03 (\"Advanced Packaging bleibt trotz Chiayi‑Ausbau bis mindestens H2 2027 ein zentraler AI‑Lieferkettenengpass\"). Die Meldung ist ein Indikator für ein Management‑Rebalancing hin zu mehr HBM‑Backend‑Kapazität in Korea, verringert aber das Risiko dieses Engpasses nur schwach bis moderat, solange Transfers, Qualifikationen und Serien‑Trials nicht bestätigt sind.",
+      "falsifier": "Bis 2026-12-31 besteht keine dokumentierte, messbare Folge der berichteten Pläne: kein bestätigter Transfer von Packaging/Test‑Equipment oder Serien‑Pilotlauf konventioneller DRAM/NAND‑Back‑end in Vietnam (z. B. Pressemitteilung von Samsung, SVS/Samsung Vietnam Produktions‑Ankündigung, öffentliche VSO/Vietnam‑Trial‑Berichte, Import/CapEx‑Dokumentation), ODER Samsung veröffentlicht bis 2026-12-31 eine offizielle Erklärung, die die beabsichtigte Verlagerung ausdrücklich verneint. Falls eines dieser Ereignisse eintritt, widerlegt das die Annahme, dass die berichten Pläne kurzfristig HBM‑Packaging‑Kapazität in Korea freisetzen.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-08-14",
+      "novelty": "Teilweise neu für das TAIL‑Baseline‑Korpus: frühere TAIL‑Einträge dokumentieren Samsungs HBM‑Priorisierung und Cheonan‑HBM‑Erweiterungen, aber Berichte über aktive Pläne, konventionelle Packaging‑Volumina gezielt nach Vietnam zu verlagern, wurden erst in Branchen‑Lecks (DealSite → DigiTimes, 2026-08-14) veröffentlicht und sind noch nicht von Samsung bestätigt.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://apps.digitimes.com/news/a20260814VL222.html",
+          "label": "DIGITIMES: Samsung weighs moving legacy memory backend work to Vietnam to free up capacity for HBM (14 Aug 2026, zitiert DealSite)",
+          "kind": "primary",
+          "supports": "Berichtet, dass Samsung erwägt, Teile der konventionellen DRAM/NAND Packaging- und Test‑Arbeit aus Cheonan/Onyang nach Vietnam zu verlagern, um in Korea Platz für HBM‑Stacking zu schaffen; nennt DealSite als ursprüngliche Quelle und datiert Veröffentlichung 2026-08-14. Samsung habe die Pläne nicht öffentlich bestätigt."
+        },
+        {
+          "url": "https://dealsite.co.kr/articles/167015",
+          "label": "DealSite (koreanischer Branchenbericht, 2026-08-12): Original‑Leck zur möglichen Verlagerung (Paywall/Bezahlartikel)",
+          "kind": "primary",
+          "supports": "Laut DealSite (ursprüngliche koreanische Berichterstattung) prüfen Industriequellen eine Teilverlagerung von Post‑Processing‑Volumina nach Vietnam; Datum: 2026-08-12 (DealSite Premium‑Posting)."
+        },
+        {
+          "url": "https://www.techtimes.com/articles/324595/20260815/samsung-weighs-shipping-legacy-memory-backend-vietnam-unlock-hbm-capacity.htm",
+          "label": "TechTimes (15 Aug 2026) — Zusammenfassung von DigiTimes/DealSite",
+          "kind": "secondary",
+          "supports": "Fasst DigiTimes/DealSite‑Bericht zusammen und hebt hervor, dass Samsung die Verlagerung erwägt, um HBM‑Backendkapazität in Korea freizusetzen; bestätigt weiter, dass Samsung dem Bericht zufolge noch keine offizielle Bestätigung geliefert habe."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/06/10/news-samsung-may-announce-new-gwangju-advanced-packaging-base-by-end-june-as-capacity-expansion-continues/",
+          "label": "TrendForce (2026-06-10) — Kontext: Cheonan/Onyang HBM‑Back‑end‑Expansion (separate TrendForce‑Berichterstattung)",
+          "kind": "secondary",
+          "supports": "TrendForce hatte zuvor Cheonan/Onyang als HBM‑Back‑end‑Standorte und Ausbaupläne dokumentiert; diese Quelle liefert kontextuelle Bestätigung, dass Cheonan/Onyang bereits HBM‑Back‑end‑Kapazitäten priorisieren, aber nennt keine Verlagerung nach Vietnam."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist ein relevanter, zeitnaher Branchenhinweis: mehrere Branchenmedien (Digitimes, TechTimes u.a.) berichten auf Basis eines DealSite‑Lecks (12.–14. Aug. 2026), dass Samsung erwägt, konventionelle Memory‑Packaging/Testing‑Volumina aus Cheonan/Onyang nach Vietnam zu verlagern, um in Korea mehr HBM‑Stacking‑Kapazität zu ermöglichen. Die Berichte sind jedoch kein formaler Unternehmens‑Commitment, es fehlen bestätigte Transfers, Serien‑Trials oder Shipment‑/Qualifikationsdaten. Deshalb erreicht die Beobachtung nicht die Evidenzstufe VERIFIED DATA und darf die Forecast‑Ouput‑Messungen (z. B. Lead Times, Fill Rates, qualifizierte HBM‑Shipments) noch nicht als verändert behandeln. Der Eintrag wird auf Watchlist gesetzt: er ist relevant für die Vorhersage P-2026-07-13-03 (Advanced Packaging als Engpass), aber momentan nur ein Indikator/Plan (nicht bewiesene Kapazitätsfreisetzung). Weitere Überprüfung auf dokumentierte Transfers, Samsung‑Statements oder Vietnam‑Produktionsankündigungen bis 2026-12-31 erforderlich.",
+      "candidateId": "2f724351a95fcfae8cd4",
+      "candidateKey": "0fe3da9beb94f75f8b83cd0f",
+      "reviewedAt": "2026-09-16T06:41:45.761Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d766e4fff3e2e56006aaa39c2544087d084e70bb4c6968b73"
+    },
+    {
+      "decision": "rejected",
+      "title": "Samsung reportedly pushes conventional memory modules to partners in Vietnam and India as HBM crowds its back end",
+      "fact": "Berichte (DIGITIMES; Branchenmedien, 2026-08-14 / 2026-09-15) melden, Samsung prüfe/verstärke die Auslagerung von konventionellen DRAM‑/SSD‑Modul‑Montage- und Testvolumina an OSAT‑Partner in Vietnam und Indien, damit koreanische Backend‑Linien (Cheonan/Onyang) mehr Kapazität für HBM/Advanced Packaging frei machen. ",
+      "placement": "Geographie: Südkorea → Vietnam / Indien (Backend/OSAT); Domäne: Memory‑Backend (Modulmontage, Final‑Test, Packaging); Layer: Fertigungs‑Backend; Horizont: kurzfristig (H2 2026 – Q1 2027).",
+      "mechanism": "Kausaler Mechanismus: HBM‑Ramps (höhere Stückkosten, spezialisierte Stacking/Bonding) beanspruchen begrenzte Backend‑Fläche und -Ausrüstung; Samsung verlagert niedrigkomplexe, volumengetriebene Modulmontage an externe OSAT‑Partner in Vietnam/Indien, um interne Flächen/Ausrüstung für HBM/Advanced‑Packaging freizuhalten. Dies reduziert kurzfristig interne Kapazität für konventionelle Module und verschiebt Volumen-Risiken auf Partner‑OSATs.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt die bestehende Hypothese in P-2026-07-11-01 (HBM und Server‑DRAM bleiben strukturell knapp bis Ende 2028). Die berichtete Auslagerung legt nahe, dass begrenzte Backend‑Kapazität bevorzugt HBM gebunden wird, was kurzfristig die Verfügbarkeit konventioneller Server‑DRAM‑Module verschärfen oder die Allokationspraxis verstärken könnte.",
+      "falsifier": "Bis 2026-12-31 müssen entweder (a) Samsung in einem öffentlichen Earnings‑Release, Formular oder einer offiziellen Betriebsmitteilung ausweisen, dass Cheonan/Onyang ≥70 % der konventionellen DDR5/SSD‑Backend‑Volumina für Q4 2026 bearbeitet haben (gemessen an berichteten Modulmengen oder expliziter Kapazitätsverteilung), oder (b) OSAT‑Partner in Vietnam/Indien keine signifikante Produktionssteigerung (≤10 % YoY Modulvolumen in Q4 2026) nachweisen; wenn eine dieser Bedingungen erfüllt ist, widerlegt das die unmittelbare Marktwirkung der hier berichteten Auslagerung.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-08-14",
+      "novelty": "Nicht neu: wiederholt und konkretisiert bereits dokumentierte Branchentrends, wonach Samsung HBM priorisiert und konventionelle Modulvolumen an Partner auslagert; kein atomarer, neuartiger Messwert.",
+      "duplicateOf": "S-2026-07-30-02",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 3,
+        "thesisRelevance": 16,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "negative_supply",
+      "severity": 45,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://apps.digitimes.com/news/a20260814VL222.html",
+          "label": "DIGITIMES — 'Samsung weighs moving legacy memory backend work to Vietnam to free up capacity for HBM' (paywalled)",
+          "kind": "secondary",
+          "supports": "Digitimes-Header (2026-08-14) berichtet, Samsung prüfe Verlagerung von DRAM/NAND Packaging & Testing von Cheonan/Onyang nach Vietnam, um Backend‑Kapazität für HBM freizugeben."
+        },
+        {
+          "url": "https://siliconnexus.cloud/news/005930",
+          "label": "TheElec (zusammengefasst via Silicon Nexus) — Bericht über DDR5‑Modul‑Outsourcing nach Vietnam/Indien (2026-09-15)",
+          "kind": "secondary",
+          "supports": "Fasst TheElec‑Scoop zusammen: Samsung outsourcet DDR5‑Modul‑Wachstum an OSAT‑Partner in Vietnam/Indien; nennt angebliche Partner (Dreamtech, Hanyang Digitech u.a.)."
+        },
+        {
+          "url": "https://v.daum.net/v/20260901075838147",
+          "label": "Südkoreanische Berichterstattung (Daum) / Analystenkommentar zu SFA Semiconductors — berichtet Nutzen aus Samsung‑Reorganisation (2026-09)",
+          "kind": "secondary",
+          "supports": "Analysten/Unternehmenskommentare berichten, dass Onyang‑Reorganisation DDR5‑Outsourcing an OSATs fördert; lokale Zulieferer erwarten Volumenzuwächse."
+        },
+        {
+          "url": "https://factory.qpx.kr/news/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-DDR5-%EB%AA%A8%EB%93%88-%EC%99%B8%EC%A3%BC%EB%A7%8C-%EB%8A%98%EB%A6%B0%EB%8B%A4-%EB%B2%A0%ED%8A%B8%EB%82%A8-%EC%9D%B8%EB%8F%84-%EB%93%B1-%ED%95%B4%EC%99%B8%EC%83%9D%EC%82%B0-%ED%99%95%EB%8C%80-72261",
+          "label": "Kuration/Media Aggregator — Zusammenfassung TheElec (2026-09-15)",
+          "kind": "secondary",
+          "supports": "Mehrere koreanische Medien/Analysten fassen TheElec‑Bericht zusammen: Samsung verlagert 'low‑end' Modulvolumen ins Ausland, behält HBM/Advanced Packaging in Korea."
+        }
+      ],
+      "reason": "Ablehnung — Duplication & mangelnde Neuheit. Die Meldung bestätigt bereits dokumentierte und im Baseline aufgeführte Trends (Samsung priorisiert HBM/Advanced Packaging und nutzt LTAs/Verträge). Kandidat liefert keine neuen, atomaren, quantifizierbaren Messgrößen (keine firmenseitige, veröffentlichte Volumen‑ oder Lieferkennzahl) und ist daher ein wiederholtes Marktsignal/Medien‑Scoop ohne hinreichende Einzeldaten zur Aufnahme. Deshalb erfüllt die Einreichung nicht die Aufnahmeanforderungen (atomare, datierte, meßbare Beobachtung mit nachprüfbarem Impact) und wird abgewiesen.",
+      "candidateId": "fe46a5e0a3b610921313",
+      "candidateKey": "f60f08b32d95dfb51c810c90",
+      "reviewedAt": "2026-09-16T06:41:45.802Z",
+      "priorityScore": 58,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bde1e41b1da42de006aaa39c27c8487d0901548ef46f190a9"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Berichte: Samsung erwägt Verlagerung von Commodity‑Packaging / DDR5‑ und NAND‑Backend nach Vietnam, um in Korea Flächen für HBM‑Stacking freizumachen",
+      "fact": "Branchenberichte (Digitimes / DealSite / Fachpresse) melden, dass Samsung prüft, Teile der allgemeinen DRAM‑ und NAND‑Packaging‑/Test‑Lines von Cheonan/Onyang nach Vietnam zu verlagern, um Backend‑Fläche und spezialisierte Equipment‑Linien in Korea für HBM‑Stacking zu nutzen.",
+      "placement": "Südkorea (Cheonan/Onyang) → Vietnam; Backend/Packaging/L1‑HBM‑Stacking; kurz‑bis mittelfristiger Horizont (6–18 Monate Umsetzungspotenzial ab Berichtsdatum).",
+      "mechanism": "Durch Verlagerung von Commodity‑Packaging und Test (DDR5/NAND) werden saubere Reinraumflächen, Bonding‑/Stacking‑Equipment und qualifiziertes Personal in den koreanischen Backend‑Sites freigesetzt; diese Flächen/Lines können für HBM‑Stapelung (TSV/through‑stack Prozesse / advanced stacking) umgerüstet werden, wodurch die qualifizierte HBM‑Stacking‑Kapazität steigen könnte.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn umgesetzt und mit qualifizierten HBM‑Shipments gekoppelt, würde dies das Risiko anhaltender HBM/Server‑DRAM‑Knappheit (P-2026-07-11-01) verringern – mittelfristig eine partielle Verfügbarkeitserleichterung (capacity_relief) für HBM; es ist jedoch keine direkte Bestätigung für sofortige Versorgungserleichterung.",
+      "falsifier": "Bis 2027-06-30 gibt es keine offizielle Samsung‑Bestätigung einer Verlagerung mit quantifizierten Kapazitätszahlen ODER Samsung veröffentlicht eine offizielle Ankündigung, dass legacy‑Packaging aus Cheonan/Onyang nach Vietnam verlagert wurde und die HBM‑qualifizierten Auslieferungen aus Onyang/Cheonan um mindestens 50.000 HBM‑Wafer/Monat (qualifizierte, ausgelieferte HBM‑Wafers) gestiegen sind.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-08-14",
+      "novelty": "Moderat — bestätigt frühere Branchenmuster (Backend‑Verlagerung als Hebel für HBM‑Kapazität), aber neue Implementationserörterung für Samsung/Vietnam.",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 9,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 11,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://apps.digitimes.com/news/a20260814VL222.html",
+          "label": "Digitimes / DealSite (Branchenbericht über Verlagerungsüberlegungen nach Vietnam)",
+          "kind": "secondary",
+          "supports": "Berichtet, Samsung prüfe die Verlagerung von Commodity DRAM/NAND Packaging & Testing aus Cheonan/Onyang nach Vietnam, um in Korea Fläche und Equipment für HBM‑Stacking freizumachen. (Publikationsdatum: 2026‑08‑14)."
+        },
+        {
+          "url": "https://www.techtimes.com/articles/324595/20260815/samsung-weighs-shipping-legacy-memory-backend-vietnam-unlock-hbm-capacity.htm",
+          "label": "TechTimes (Zusammenfassung der Brancheberichte)",
+          "kind": "secondary",
+          "supports": "Fasst Berichte zusammen, wonach Samsung Packaging/Testing verschieben könnte, um Backend‑Kapazität in Korea für HBM zu schaffen. (Publikationsdatum: 2026‑08‑15)."
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure",
+          "label": "Samsung (FMS 2026‑Präsentation; HBM‑Roadmap)",
+          "kind": "primary",
+          "supports": "Samsung bestätigt öffentlich eine HBM‑Roadmap und priorisiert HBM/Advanced‑Packaging‑Lösungen im Kontext AI‑Memory‑Strategie — belegt den Unternehmensfokus auf HBM, jedoch keine Bestätigung einer Verlagerung nach Vietnam. (FMS‑Bericht, 2026)."
+        },
+        {
+          "url": "https://semiconductor.samsung.com/news-events/news/samsung-develops-industrys-first-hkmg-based-ddr5-memory-ideal-for-bandwidth-intensive-advanced-computing-applications/",
+          "label": "Samsung (DDR5‑Sampling / Produktankündigung)",
+          "kind": "primary",
+          "supports": "Samsung kommuniziert weiterhin Aktivität im DDR5‑Segment (Sampling / Produktentwicklung), was nahelegt, dass DDR5‑Produktion/Projektportfolios parallel betrieben werden; dies widerspricht einer sofortigen flächendeckenden Stilllegung. (Publikationskontext 2026)."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/06/10/news-samsung-may-announce-new-gwangju-advanced-packaging-base-by-end-june-as-capacity-expansion-continues/",
+          "label": "TrendForce (zusätzliche Branchenkontext/Capacity‑Reports)",
+          "kind": "secondary",
+          "supports": "Berichtet über Samsungs Ausbaupläne für Advanced Packaging und mögliche regionale Deployments zur Steigerung spezialisierter Backend‑Kapazität; stützt die Plausibilität einer Umverteilung von Commodity‑Lines. (2026‑06)."
+        }
+      ],
+      "reason": "Die Meldung basiert auf glaubhaften Branchenquellen, die berichten, Samsung hole Commodity‑Packaging aus Korea in Betracht, um Backend‑Kapazität für HBM freizumachen; es fehlt jedoch eine offizielle Samsung‑Bestätigung mit quantifizierten Kapazitäts‑ oder Lieferdaten. Ohne primäre Firmenankündigung oder beobachtbare Änderung der qualifizierten HBM‑Shipments kann der Sachverhalt nicht als verifizierte, indexrelevante Supply‑Relief‑Messung akzeptiert werden. Opposing evidence: Samsung‑Unternehmenskommunikationen zeigen gleichzeitig aktive DDR5‑/SSD‑Programme und HBM‑Roadmaps, was auf einen parallel betriebenen Produktmix statt auf eine simplifizierte Umwidmung hindeutet. ([digitimes.com](https://www.digitimes.com/news/a20260814VL222/samsung-hbm-dram-capacity-vietnam.html?mod=3&q=packaging&utm_source=openai))",
+      "candidateId": "b582ac7f9c750e39938f",
+      "candidateKey": "94ea0083e6205044dfce91b9",
+      "reviewedAt": "2026-09-16T06:42:55.054Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_047a7725fec3bd74006aaa3a2a052487d096ab90356e2dccae"
+    },
+    {
+      "decision": "accepted",
+      "title": "Hilliard zieht Berufung gegen Brennstoffzellen‑Genehmigung für Amazon‑Rechenzentrum zurück",
+      "fact": "Die Stadt Hilliard (Ohio) zog am 2026-09-15 ihre Berufung vor der Ohio Environmental Review Appeals Commission gegen die Ohio EPA‑Genehmigung für eine 72.9‑Megawatt (netto) Brennstoffzellen‑Anlage (228 Bloom‑Energy‑Units) zurück, die das Amazon Web Services‑Rechenzentrum an Scioto Darby Road mit On‑site‑Strom versorgen soll. (City of Hilliard Pressemitteilung 2026-09-15; Medienbericht/Columbus Dispatch 2026-09-16).",
+      "placement": "Hilliard, Franklin County, Ohio, USA — Domäne: ai_infrastructure (Datacenter Energie) — Layer: On‑site Erzeugung / direkte Versorgungsverträge — Horizont: kurzfristig/near‑term (Bau/Operation in den kommenden 12–24 Monaten laut Projektunterlagen).",
+      "mechanism": "Das Zurückziehen der Berufung entfernt einen lokalen rechtlichen Blockierpunkt und erhöht die erwartete Realisierung des 72.9 MW On‑site‑Brennstoffzellenprojekts (AEP Ohio / Bloom Energy) für das AWS‑Campus. Dadurch steigt die Wahrscheinlichkeit, dass große Datacenter‑Lasten durch dedizierte Energieprojekte (On‑site Gensets, Take‑or‑pay oder PPA‑nahartige Vereinbarungen und Direktanschlüsse) versorgt werden statt ausschließlich über das öffentliche Netz, was den Pfad in P-2026-07-12-04 stützt.",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Moderate Erhöhung der Eintrittswahrscheinlichkeit von P-2026-07-12-04 (\"Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen\"). Dieser Kandidat ist ein konkretes, lokal datiertes Beispiel (72.9 MW) für das erwartete Muster.",
+      "falsifier": "Bis zum 2027-09-30 gibt es keinen formalen FID oder Baubeginn für die 72.9 MW Brennstoffzellenanlage, oder AEP Ohio/Amazon kündigen die Projektstreichung oder ziehen die relevanten OPSB/PTIO‑Anträge zurück. Falls das Projekt bis zum genannten Datum nicht in Bau ist oder offiziell abgesagt wurde, schwächt das die Aussagekraft dieses Signals erheblich.",
+      "nextReview": "2027-09-30",
+      "eventDate": "2026-09-15",
+      "novelty": "Direkte lokale Verwaltungsentscheidung (Berichtigung/Beendigung einer gegenständlichen Berufung) mit konkreter Kapazitätsangabe (72.9 MW, 228 Einheiten).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 19,
+        "forecastImpact": 14,
+        "falsifiability": 13,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 15,
+      "confidence": 90,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://hilliardohio.gov/city-of-hilliard-ends-fuel-cell-permit-appeal-calls-for-stronger-local-input/",
+          "label": "City of Hilliard – Pressemitteilung 'City of Hilliard ends fuel cell permit appeal, calls for stronger local input' (Andrea Litchfield, 2026-09-15)",
+          "kind": "primary",
+          "supports": "Direkte Bestätigung der Rücknahme der Berufung am 2026-09-15; nennt die 72.9‑MW Anlage und 228 Bloom Energy Units sowie AEP Ohio als Errichter/Betreiber."
+        },
+        {
+          "url": "https://www.aol.com/articles/hilliard-withdraws-appeal-fuel-cell-025909000.html",
+          "label": "Columbus Dispatch (via AOL) – 'Hilliard withdraws appeal of fuel cell power for Amazon data center' (Jim Wilhelm, veröffentlicht 2026-09-16)",
+          "kind": "secondary",
+          "supports": "Nachrichtliche Berichterstattung (Columbus Dispatch) mit Zusammenfassung der Pressemitteilung und Kontext zu rechtlicher Zuständigkeit (OPSB/Ohio Revised Code)."
+        }
+      ],
+      "reason": "Die Einreichung enthält ein überprüfbares, datiertes Primärdokument (städtische Pressemitteilung 2026-09-15), das eine konkrete Projektgröße (72.9 MW) und Projektbeteiligte (AEP Ohio, Bloom Energy, AWS) nennt. Das Ereignis erfüllt die formalen Aufnahmeanforderungen: atomare, datierte Faktenaussage mit Einheiten; klarer geografischer und domänenbezogener Placement; ein plausibler kausaler Mechanismus, der die Wahrscheinlichkeit des bestehenden Vorhersage‑Pfads (P-2026-07-12-04) erhöht; und ein prüfbarer Falsifizierer mit Zukunftsdatum (2027-09-30). \n\nGegenargumente/Opposing evidence: Frühere Kommunikation zeigte, dass Staatsrecht lokale Einflussmöglichkeiten limitiert (OPSB‑Zuständigkeit) und AEP Ohio bereits im Oktober 2025 eine city‑Antragsrücknahme nutzte — das Projekt war daher keineswegs garantiert und die Rücknahme der Berufung bestätigt eher das Ende eines legalen Wegs als einen unmittelbaren Baubeginn. Zudem ist das Signal regional/isoliert (ein Campus) und stellt keine unmittelbar messbare globale Kapazitätsveränderung dar. Daher wurde die Schwere (severity) konservativ angesetzt und die Forecast‑Impact‑Punktzahl moderat gewählt. \n\nAuf Basis der Primärquelle, ihrer Direktheit für die angenommene Ursache‑Wirkung (On‑site‑Erzeugung → verstärkte Nutzung dedizierter Energieprojekte) und der vorhandenen Prüfbarkeit setze ich dieses Item als 'accepted' (Signal), mit der Verknüpfung zur Vorhersage P-2026-07-12-04. Die nächste Überprüfung ist für 2027-09-30 geplant, um FID/Baubeginn/Abbruch zu verifizieren. ",
+      "candidateId": "f63b092ad30ca1c539bd",
+      "candidateKey": "c9c332f6ada7a63807252e98",
+      "reviewedAt": "2026-09-16T06:42:55.100Z",
+      "priorityScore": 84,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-c9c332f6ada7a63807252e98",
+        "title": "Hilliard zieht Berufung gegen Brennstoffzellen‑Genehmigung für Amazon‑Rechenzentrum zurück",
+        "date": "2026-09-15",
+        "admittedAt": "2026-09-16T06:42:55.100Z",
+        "fact": "Die Stadt Hilliard (Ohio) zog am 2026-09-15 ihre Berufung vor der Ohio Environmental Review Appeals Commission gegen die Ohio EPA‑Genehmigung für eine 72.9‑Megawatt (netto) Brennstoffzellen‑Anlage (228 Bloom‑Energy‑Units) zurück, die das Amazon Web Services‑Rechenzentrum an Scioto Darby Road mit On‑site‑Strom versorgen soll. (City of Hilliard Pressemitteilung 2026-09-15; Medienbericht/Columbus Dispatch 2026-09-16).",
+        "placement": "Hilliard, Franklin County, Ohio, USA — Domäne: ai_infrastructure (Datacenter Energie) — Layer: On‑site Erzeugung / direkte Versorgungsverträge — Horizont: kurzfristig/near‑term (Bau/Operation in den kommenden 12–24 Monaten laut Projektunterlagen).",
+        "tailInference": "Das Zurückziehen der Berufung entfernt einen lokalen rechtlichen Blockierpunkt und erhöht die erwartete Realisierung des 72.9 MW On‑site‑Brennstoffzellenprojekts (AEP Ohio / Bloom Energy) für das AWS‑Campus. Dadurch steigt die Wahrscheinlichkeit, dass große Datacenter‑Lasten durch dedizierte Energieprojekte (On‑site Gensets, Take‑or‑pay oder PPA‑nahartige Vereinbarungen und Direktanschlüsse) versorgt werden statt ausschließlich über das öffentliche Netz, was den Pfad in P-2026-07-12-04 stützt.",
+        "predictionId": "P-2026-07-12-04",
+        "predictionImpact": "Moderate Erhöhung der Eintrittswahrscheinlichkeit von P-2026-07-12-04 (\"Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen\"). Dieser Kandidat ist ein konkretes, lokal datiertes Beispiel (72.9 MW) für das erwartete Muster.",
+        "falsifier": "Bis zum 2027-09-30 gibt es keinen formalen FID oder Baubeginn für die 72.9 MW Brennstoffzellenanlage, oder AEP Ohio/Amazon kündigen die Projektstreichung oder ziehen die relevanten OPSB/PTIO‑Anträge zurück. Falls das Projekt bis zum genannten Datum nicht in Bau ist oder offiziell abgesagt wurde, schwächt das die Aussagekraft dieses Signals erheblich.",
+        "nextReview": "2027-09-30",
+        "priorityScore": 84,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 19,
+          "forecastImpact": 14,
+          "falsifiability": 13,
+          "timeSensitivity": 8
+        },
+        "severity": 15,
+        "confidence": 90,
+        "markets": [
+          "ai_infrastructure"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "City of Hilliard – Pressemitteilung 'City of Hilliard ends fuel cell permit appeal, calls for stronger local input' (Andrea Litchfield, 2026-09-15)",
+            "url": "https://hilliardohio.gov/city-of-hilliard-ends-fuel-cell-permit-appeal-calls-for-stronger-local-input/"
+          },
+          {
+            "label": "Columbus Dispatch (via AOL) – 'Hilliard withdraws appeal of fuel cell power for Amazon data center' (Jim Wilhelm, veröffentlicht 2026-09-16)",
+            "url": "https://www.aol.com/articles/hilliard-withdraws-appeal-fuel-cell-025909000.html"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Moderate Erhöhung der Eintrittswahrscheinlichkeit von P-2026-07-12-04 (\"Große Datacenter‑Lasten wechseln verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen\"). Dieser Kandidat ist ein konkretes, lokal datiertes Beispiel (72.9 MW) für das erwartete Muster."
+        },
+        "admissionReviewKey": "c9c332f6ada7a63807252e98"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0df8119a64c5105d006aaa3a2a1aa487d0b2ec72230b9281c4"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia-CEO ordnet Zurückhaltung bei NAND‑Preiserhöhungen an, um AI‑Investitionssentiment zu schützen",
+      "fact": "Kioxia‑CEO Hiroo Ota wies Berichten zufolge seine Vertriebsorganisation an, bei Verhandlungen mit Rechenzentrumsbetreibern auf starke NAND‑Preiserhöhungen zu verzichten (gemeldet Anfang September 2026).",
+      "placement": "Globaler NAND/Enterprise‑SSD‑Vertragsmarkt; Kunden‑Domain: Hyperscaler / Data‑Center; Layer: Preisbildung; Horizont: kurzfristig (H2 2026, beobachtbar Q4 2026–Q1 2027).",
+      "mechanism": "Unternehmensinterne Preisrichtlinie (direkte Anweisung an Sales), die die Verhandlungsbasis für Abnahmeverträge verringert und dadurch das Ausmaß und die Geschwindigkeit von Vertrags‑ASP‑Steigerungen dämpfen könnte; indirekt schützt dies Hyperscaler‑Budgetspielraum und damit Investitionsbereitschaft in AI‑Build‑outs.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Reduziert die kurzfristige (H2 2026–H1 2027) Wahrscheinlichkeit eines anhaltenden, breiten Anstiegs der Enterprise‑SSD/NAND‑Kontraktpreise (das OUTLOOK-enterprise_ssd 'price_up' Basissignal), indem einer der großen Anbieter seine Preisverhandlungs‑Aggressivität dämpft; die Wirkung ist allerdings begrenzt, falls andere Anbieter Preisrallyes weiter anführen.",
+      "falsifier": "Bis 2027-04-30: Wenn ein repräsentativer Enterprise‑SSD/NAND Kontrakt‑ASP‑Index (z. B. ein von TrendForce/bei Marktanbietern berichteter Enterprise‑SSD Kontraktkorb) in Q4 2026 und Q1 2027 jeweils um ≥10 % QoQ ansteigt (zwei aufeinanderfolgende starke Preissprünge), dann hat die Kioxia‑Anweisung die Marktdynamik nicht materiell gebremst und die angenommene dämpfende Wirkung ist falsifiziert.",
+      "nextReview": "2027-04-30",
+      "eventDate": "2026-09-09",
+      "novelty": "Der Vorgang ist neu für diese Zyklusphase — ein führender NAND‑Hersteller hat explizit formale Zurückhaltung angeordnet, statt Preiserhöhungen offensiv fortzuführen.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "price_down",
+      "severity": 30,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.japantimes.co.jp/business/2026/09/10/companies/kioxia-sk-hynix-tie-up-dismiss/",
+          "label": "The Japan Times — 'Kioxia dismisses SK Hynix tie‑up, vows to ease chip price rises' (2026‑09‑10)",
+          "kind": "secondary",
+          "supports": "Berichtet über Otas Äußerungen und zitiert, dass Kioxia die Vertriebsanweisung zur Zurückhaltung bei Preiserhöhungen ausgesprochen hat; bestätigt Datum und Zitatkontext."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/",
+          "label": "TrendForce — Branchenbericht (2026‑09‑09)",
+          "kind": "secondary",
+          "supports": "Branchenquelle berichtet über dieselbe Aussage und Kontext (Preisstabilität gegenüber Hyperscalern) und liefert Markt‑Kontext zur Größenordnung der QoQ‑Preisbewegungen im NAND‑Zyklus."
+        }
+      ],
+      "reason": "Kurzfassung (Deutsch): Mehrere glaubwürdige Berichte zitieren Kioxia‑CEO Hiroo Ota mit einer konkreten internen Richtlinie: Vertriebsmitarbeitende sollen in Verhandlungen mit Rechenzentrumsbetreibern keine starken zusätzlichen NAND‑Preiserhöhungen durchsetzen. Diese Anweisung (gemeldet Anfang Sept. 2026) ist eine beobachtbare, datierbare Managemententscheidung, die unmittelbar die Preis‑Layer des Enterprise‑NAND/SSD‑Marktes berührt und damit relevant für das OUTLOOK‑enterprise_ssd Basissignal ist. ([bloomberg.com](https://bloomberg.com/latest/chip-wars?utm_source=openai))\n\nWarum angenommen (accepted):\n- Eindeutige, datierbare Handlung: Managementanweisung an Sales (Event Date 2026‑09‑09), mehrfach von etablierten Quellen berichtet; die Quelle (Bloomberg, ergänzt durch Japan Times / TrendForce / ChosunBiz) hat hohe Relevanz für Marktpreisbildung. ([bloomberg.com](https://bloomberg.com/latest/chip-wars?utm_source=openai))\n- Atomare Marktwirkung: klare Reichweite (Verhandlungsverhalten gegenüber Hyperscalern / Rechenzentren) und unmittelbar auf Preisbildung gerichtet — erfüllt die Aufnahmeanforderung, weil es eine konkrete, beobachtbare Layer‑Änderung ist.\n\nEinschränkungen & Gegenbelege:\n- Ein einzelner Anbieter (auch großer) kann Preise nur begrenzt allein steuern; andere Hersteller könnten Preiserhöhungen weiterverfolgen, sodass die Markt‑Preiswirkung abgeschwächt bleibt. Gegenbelege liegen in Berichten über weiterhin starke QoQ‑ASP‑Anstiege bei NAND in H1/H2 2026 und in Berichten, dass mehrere Hersteller LTAs/Price‑locks abschließen (Trend‑Kontext). ([trendforce.com](https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/?utm_source=openai))\n- Keine direkte Messung (noch) von Kontrakt‑ASP‑Index‑Änderungen, daher kein direkter Index‑Impact; die Aussage ist eine Unternehmensentscheidung, kein Preisindex‑Beobachtung. Deshalb ist indexImpact=false und wir verwenden einen klaren, reproduzierbaren falsifier (siehe oben).\n\nOperationalisierung (wie zu testen):\n- Beobachten: repräsentative Enterprise‑SSD/NAND Kontrakt‑ASP‑Daten von Marktanbietern (TrendForce, andere Kontrakt‑baskets) für Q4 2026 und Q1 2027.\n- Falsifikation: zwei aufeinanderfolgende QoQ‑Sprünge ≥10% zeigen, dass die Maßnahme den Markt nicht materiell gedämpft hat (Falsifier‑Bed. erfüllt). Diese Metrik ist absichtlich streng, weil Unternehmensanweisungen oft nur partielle Effekte haben.\n\nBewertungsschlüssel (Kurz): Quelle gut (Bloomberg + etablierte Begleitberichterstattung), Relevanz hoch für NAND/Enterprise‑SSD Pricing, Vorhersage‑Auswirkung moderat, Falsifizierbarkeit vorhanden; Gesamtscore (gemäß vorgegebener Rubrik) = 80 → erfüllt Aufnahme‑Schwelle für 'accepted'.",
+      "candidateId": "708d51a59ac3f7d45d38",
+      "candidateKey": "09cbc65e0337e1ea196fdee8",
+      "reviewedAt": "2026-09-16T06:44:32.352Z",
+      "priorityScore": 80,
+      "gateReasons": [
+        "primary source not retrieved"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01cdafdd9ec58621006aaa3a6f456487d08ab57fc5f6ec598a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Zuckerberg unterstützt Huangs Gegenposition zum AI‑Slowdown (CEO‑Stellungnahme, 2026‑09‑15)",
+      "fact": "Meta‑CEO Mark Zuckerberg äußerte am 2026-09-15, dass Wettbewerb und Product‑Liability AI‑Labs genügend Anreize geben, Sicherheit einzubauen, und stellte sich damit sichtbar gegen einen koordinierten Entwicklungs‑Slowdown.",
+      "placement": "Global / AI‑Infrastruktur (CEO‑Policy‑Signal); Kurzfristig (Tage–Wochen) bis mittelfristig (Monate) Einfluss auf Nachfrage‑Narrativ",
+      "mechanism": "Öffentliche CEO‑Stellungnahme reduziert politische und industrieweite Unterstützung für einen koordinierten Entwicklungsstopp; das stärkt Erwartung an kontinuierliche Produkt‑ und Infrastrukturinvestitionen (Datacenter, Server‑DRAM) durch Hyperscaler und Neoclouds und damit anhaltenden AI‑Workloads.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Dieses Signal erhöht tendenziell die Wahrscheinlichkeit, dass die AI‑getriebene Nachfrage für Server‑DRAM und HBM erhalten bleibt oder beschleunigt wird, und damit unterstützt es die Annahme in P-2026-07-11-01 (strukturelle Knappheit bis Ende 2028). Es ist kein endgültiger Beweis, sondern ein kurzfristiges Nachfrage‑Narrativ‑Signal.",
+      "falsifier": "Bis zum 2026-10-31: Mehrere führende AI‑Labs (mindestens OpenAI, Anthropic, Google/DeepMind und Meta) unterzeichnen eine öffentlich dokumentierte, gemeinsame und verbindlichen Zusage zu einem branchenweiten, koordinierten Verlangsamungs‑/Pacing‑Rahmen (z. B. gemeinsame Erklärung, formelle Vereinbarung oder gleichwertiger antitrust‑genehmigter Mechanismus). Wenn dies eintritt, schwächt es die Implikation dieser abweichenden CEO‑Stellungnahme deutlich.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-15",
+      "novelty": "Niedrig – die Aussage ist ein aktuelles CEO‑Zitat innerhalb einer breit berichteten Debatte, mehrfach publiziert und nicht neuartig inhaltlich.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 7,
+        "thesisRelevance": 16,
+        "forecastImpact": 13,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://m.investing.com/news/stock-market-news/metas-zuckerberg-says-ai-labs-have-enough-incentive-to-build-safely-4902846?ampMode=1",
+          "label": "Reuters‑Syndication / Investing.com (Sep 15, 2026)",
+          "kind": "primary",
+          "supports": "Zuckerberg: 'Any lab that doesn’t focus on alignment will fall behind' and cited Meta delaying Muse to strengthen security."
+        },
+        {
+          "url": "https://www.axios.com/2026/09/14/trump-jensen-huang-nvidia-ai-all-in-summit",
+          "label": "Axios — Kontext zu Jensen Huang / All‑In Summit (Huang/Trump Ergänzung zur Debatte)",
+          "kind": "secondary",
+          "supports": "Dokumentiert Huang/Trump‑Interaktion und Huang‑Position gegen ein pauschales Verlangsamen der Entwicklung."
+        }
+      ],
+      "reason": "Die Einreichung beschreibt eine eindeutig datierte, zitierbare CEO‑Stellungnahme (Mark Zuckerberg, 2026-09-15), die Reuters als Primärquelle berichtete. Die Aussage ist relevant für die TAIL‑These, weil sie das Industrie‑Narrativ gegen einen koordinierten AI‑Slowdown stärkt und damit kurzfristig Druck auf AI‑Infrastruktur‑Nachfrage (Server‑DRAM/HBM) aufrecht erhält. Allerdings ist die Beobachtung keine einmalige, überraschende Neuigkeit (mehrere CEOs und Medien berichten parallel über die Debatte), sie ist narrativ und kein direkter Messwert (keine beobachtbaren Vertrags‑ oder Shipment‑Änderungen). Deshalb klassifiziere ich sie als Signal und setze die Admission auf watchlist: brauchbare, verifizierte Aussage mit klarer Kurzfristwirkung auf Nachfrage‑Narrativ, aber unvollständiger kausaler Beweiskette für dauerhaftes Markt‑Impact. Falsifizierbarkeit ist gegeben (siehe Deadline 2026‑10‑31), Red‑Pencil‑Check schlägt fehl, weil die Beobachtung einzeln narrativ ist und nicht sofortige, quantifizierbare Marktwirkungen belegt. Quellen: Reuters‑Bericht (wiederveröffentlicht) plus Kontextberichterstattung zu Jensen Huang (Axios) wurden überprüft. ",
+      "candidateId": "cbcde50c35f0f82673a3",
+      "candidateKey": "f06726fae072c63fdacc54d8",
+      "reviewedAt": "2026-09-16T06:44:32.386Z",
+      "priorityScore": 71,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_081c51cfb31eff79006aaa3a6f449887d08dab36edaf8d6cf5"
+    },
+    {
+      "decision": "rejected",
+      "title": "Samsung reportedly taps TSMC for custom HBM base dies as new foundry dynamics emerge",
+      "fact": "ZDNet Korea meldet am 2026-09-15, dass Samsung eine \"Two‑track\"-Strategie prüft: HBM‑Base‑Dies für kundenspezifische (cHBM) Produkte sollen sowohl auf Samsung‑Foundry‑Prozessen als auch auf TSMC‑Prozessen gefertigt werden.",
+      "placement": "Geographie: global; Domäne: HBM / AI‑Infrastructure; Layer: Base‑die‑Foundry‑Supply (Foundry‑Zulieferung für cHBM); Horizont: kurzfristig bis mittelfristig (Reportdatum 2026-09-15; operative Qualifikation/Shipments bis Ende 2027 relevant).",
+      "mechanism": "Dual‑Sourcing der Base‑Dies (Samsung Foundry + TSMC) erhöht die Lieferanten‑Flexibilität für kundenspezifische HBM (cHBM), verändert Foundry‑Allokationen und kann Qualifikations‑/Timingrisiken verschieben. Es ist eine Strukturänderung der Lieferkette, keine direkte bestätigte Erhöhung qualifizierter HBM‑Shipments.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Neutral bis leicht dämpfend auf das Upside‑Risiko der Vorhersage P-2026-07-11-01 (HBM und Server‑DRAM bleiben knapp bis Ende 2028): falls umgesetzt, könnte Dual‑Sourcing die Single‑foundry‑Konzentration reduzieren, aber es gibt aktuell keine verifizierten Shipment‑/Lead‑Time‑Messungen, die die Knappheit vor Mitte 2027 signifikant auflösen.",
+      "falsifier": "Bis 2027-09-30 müssen öffentlich verifizierbare Nachweise vorliegen, dass Samsung HBM‑Module (oder kundenseitige Qualifikationsdokumente / Produkt‑Specs / Shipping Notices) enthalten, deren Base‑Die tatsächlich von TSMC gefertigt wurden. Ausbleiben solcher Belege bis 2027-09-30 würde den Bericht als nicht realisierten Beschaffungswechsel falsifizieren.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "niedrig (Duplicate of existing baseline signal S-AUTO-9904f14f9eb93ff2d998f7c1)",
+      "duplicateOf": "S-AUTO-9904f14f9eb93ff2d998f7c1",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 2,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 4,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://zdnet.co.kr/view/?no=20260915100431",
+          "label": "ZDNet Korea — Bericht: Samsung plant 'Two‑track' (Samsung Foundry + TSMC) für cHBM Base‑Dies",
+          "kind": "primary",
+          "supports": "ZDNet (2026-09-15) berichtet, Samsung prüfe die gleichzeitige Nutzung von Samsung‑Foundry‑ und TSMC‑Prozessen für Base‑Dies in kundenspezifischen HBM‑Produkten."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260710VL213/samsung-sk-hynix-micron-hbm4-manufacturing.html?chid=10&mod=3&q=samsung",
+          "label": "DIGITIMES — Analyse zu HBM4 Base‑Dies (paywalled, Jul 10 2026)",
+          "kind": "secondary",
+          "supports": "DIGITIMES (2026-07-10) analysiert unterschiedliche Foundry‑Wege für HBM4 Base‑Dies (Samsung, SK hynix, Micron) und ist wiederholt Ausgangspunkt für Folgeberichte."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/hot-chips-2026-samsung-reveals-a-three-phase-hbm-roadmap-that-puts-logic-and-compute-inside-memory-zhbm-ultimately-stacks-dram-directly-on-top-of-the-processor",
+          "label": "Tom's Hardware — Hot Chips 2026: Samsung‑Roadmap (Base‑Die als Enabler für cHBM)",
+          "kind": "secondary",
+          "supports": "Tom's Hardware (Hot Chips 2026) dokumentiert Samsungs Base‑Die‑Roadmap und hebt hervor, dass Samsung Base‑Dies auf Advanced‑Logic‑Prozessen herstellt; das liefert konzeptionelle Kontextbestätigung für Dual‑Sourcing‑Berichte."
+        }
+      ],
+      "reason": "Ablehnung wegen Duplikation und fehlender neuer, überprüfbarer Primärbelege: Die Kernmeldung (Samsung prüft TSMC‑Prozesse für HBM‑Base‑Dies) wurde bereits im Baseline‑Inventar erfasst (S-AUTO-9904f14f9eb93ff2d998f7c1). Die berichteten Quellen (ZDNet Korea, Digitimes‑Analyse, Tom's Hardware-Kontext) stützen, dass die Story in Umlauf ist, liefern aber derzeit keinen direkten, verifizierbaren Nachweis von qualifizierten Shipments oder konkreten Produktions‑Volumina. Gemäß Aufnahme‑Regeln werden recycelte/duplizierte Meldungen abgelehnt; ein Watchlist‑ oder Akzeptanz‑Fall würde einen neuen, atomaren Primärnachweis (z. B. Kunden‑Qualifikation, offizielle Lieferbestätigung oder Samsung/TSMC‑Pressemitteilung mit Volumen/Zeitrahmen) erfordern. Opposing evidence / Unsicherheit: manche frühere Digitimes‑Stücke wurden von Unternehmen bestritten oder als unbestätigt bezeichnet; außerdem bleibt unklar, ob ein process‑mix tatsächlich kurzfristig verfügbare, qualifizierte HBM‑Shipments erzeugt. Empfehlung: keinen Basiseintrag duplizieren; überprüfe 2027-09-30 auf qualifizierte Shipping/Qualification‑Belege.",
+      "candidateId": "ea21bd733a69f3539e99",
+      "candidateKey": "de3881f774a0564074ce8925",
+      "reviewedAt": "2026-09-16T06:46:03.798Z",
+      "priorityScore": 37,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e380679ccdc3333006aaa3ad084f087d0a04c3eb6b7e88bb6"
+    },
+    {
+      "decision": "rejected",
+      "title": "OpenAI, Anthropic and Google secretly joined forces to collaborate on AI safety",
+      "fact": "SiliconANGLE behauptet, OpenAI, Anthropic und Google hätten sich 'heimlich' zusammengeschlossen, um gemeinsam an AI‑Sicherheit zu arbeiten.",
+      "placement": "Global / Governance- und Policy‑Layer (Branchenkoordination) / kurzfristig (Tage–Wochen).",
+      "mechanism": "Gesprächs- und Koordinationsformate zwischen Frontier‑Labs können freiwillige Sicherheits‑Vorgaben, unabhängige Prüfverfahren oder Absprachen über Veröffentlichungs‑/Deploy‑Pacing beschleunigen. Solche Maßnahmen würden das Entwicklungstempo und damit kurzfristig die Nachfrage‑/Deployment‑Geschwindigkeit dämpfen (aiDemand ↓ → kurzfr. Nachfrageeffekt).",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Diese Meldung (wenn korrekt verstanden als fortgesetzte Gespräche) erhöht qualitativ die Wahrscheinlichkeit, dass bis Ende 2026 mehrere große AI‑Labs strengere Eval‑Isolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen veröffentlichen. Sie stützt somit P-2026-07-22-02; die Beobachtung ist jedoch bereits Teil der Baseline (siehe Duplicate).",
+      "falsifier": "Bis zum 2026-10-15 liegt keine veröffentlichte, von OpenAI, Anthropic und Google gemeinsam unterzeichnete Absichtserklärung oder Gründung eines formellen, branchenübergreifenden Sicherheitsgremiums mit klaren Governance‑Details vor. Falls eine solche formelle, gemeinschaftliche Einrichtung bis 2026-10-15 veröffentlicht und von allen drei Unternehmen bestätigt wird, würde dies das Kandidaten-Claim (formal ‚joined forces‘) stützen; andernfalls gilt die ‚secret pact‘‑Behauptung als nicht nachweisbar.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "Recycelt bereits in der Baseline dokumentierte Berichterstattung über Arbeitsgruppengespräche; der Kandidat überhöht den Sachverhalt ('secretly joined forces' vs. 'in talks/working groups').",
+      "duplicateOf": "S-AUTO-d49df151430374ee5685e33f",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 2,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 10,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+          "label": "TechCrunch: Zusammenfassung und Kontext (verweist auf Bloomberg/Lehane)",
+          "kind": "secondary",
+          "supports": "TechCrunch berichtet, dass OpenAI, Anthropic und Google seit Wochen in Gesprächen seien und verweist auf Lehane/Bloomberg als Quelle."
+        },
+        {
+          "url": "https://siliconangle.com/2026/09/15/openai-anthropic-and-google-secretly-joined-forces-to-collaborate-on-ai-safety/",
+          "label": "SiliconANGLE: Ursprünglicher Kandidatenartikel (RSS‑Aggregator verlinkt diesen)",
+          "kind": "secondary",
+          "supports": "Der Artikel verwendet eine reißerische Formulierung ('secretly joined forces'), bietet aber keine zusätzliche Primär‑Substanz über das Bloomberg/WP‑Reporting hinaus."
+        }
+      ],
+      "reason": "Begründung (Deutsch):\n1) Primärprüfung: Recherchen zeigen, dass seriöse Medien (Bloomberg; ergänzend TechCrunch, Washington Post) am 2026-09-15/14 berichteten, OpenAI habe bestätigt, seit mehreren Wochen mit Anthropic und Google DeepMind über AI‑Sicherheitsfragen zu sprechen (Quelle: Chris Lehane / Washington‑Briefing). ([news.bloomberglaw.com](https://news.bloomberglaw.com/ip-law/openai-says-its-working-with-anthropic-google-on-ai-safety?utm_source=openai))\n2) Warum abgelehnt: Der eingereichte Kandidat überhöht die Meldung sprachlich (‚secretly joined forces‘ suggeriert einen formellen, verbindlichen Pakt). Die belegten Primärquellen dokumentieren dagegen Gespräche/Arbeitsgruppen und keine veröffentlichte, von allen drei Firmen unterzeichnete, formelle Kooperationsvereinbarung. Außerdem ist dieselbe Beobachtung bereits in der Baseline erfasst (Duplicate: S-AUTO-d49df151430374ee5685e33f), damit handelt es sich um ein Recycling einer bereits aufgenommenen Nachricht (Developer‑Regel: ablehnen/reject recycled or duplicate claims). \n3) Auswirkungen: Die bestätigten Gespräche stützen die Erwartung, dass Branchenteilnehmer strengere freiwillige Sicherheits‑Praktiken prüfen oder (teilweise) umsetzen — das erhöht qualitativ die Relevanz von P-2026-07-22-02. Es gibt jedoch (a) keine direkte, messbare Markt‑Metrik (kein Index‑Impact) und (b) keine neue, datierte, atomare Beobachtung, die eine Admission rechtfertigen würde. \n4) Falsifizierbarkeit & Review: Ein klarer, prüfbarer Falsifier wurde angegeben (formelle, gemeinsame Absichtserklärung oder Gründungs‑dokumentation bis 2026-10-15). Solange nur Berichte über Gespräche bestehen, darf die Kandidatendarstellung als übertrieben und nicht als verifizierte, neue Faktaufnahme gelten. \nDeshalb: Entscheidung = rejected. (Red‑pencil check: die Einreichung ist in Baseline bereits enthalten bzw. überzeichnet den bestätigten Sachverhalt.)",
+      "candidateId": "e971d097e8ca22c24861",
+      "candidateKey": "d8c0a73e404b00850f0ab56a",
+      "reviewedAt": "2026-09-16T06:46:03.824Z",
+      "priorityScore": 47,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_083da4afed14e22c006aaa3ad09a0887d0bc245ebe2dfa5ccc"
+    },
+    {
+      "decision": "watchlist",
+      "title": "KSIA‑Einschätzung (2026‑09‑14): China verkürzt Technologieabstand zu Korea — NAND ~1 Jahr, DRAM ~2 Jahre, HBM ~3 Jahre",
+      "fact": "Die Korea Semiconductor Industry Association sagte laut Berichten am 2026-09-14, der technologische Abstand China↔Südkorea im Speicherbereich sei verkleinert auf: NAND ≈1 Jahr, DRAM ≈2 Jahre, HBM ≈3 Jahre.",
+      "placement": "Geographie: China vs Südkorea; Domäne: Memory/HBM‑DRAM‑NAND; Layer: Technologie/Verfügbarkeit; Horizont: kurzfristig–mittelfristig (2026–2028).",
+      "mechanism": "KSIA‑Einschätzung basiert auf beobachteten Faktoren: beschleunigte Technologieadoption (z.B. Kupfer‑Hybrid‑Bonding/wafer‑bonding statt konventioneller Micro‑bumps), aggressive Fab‑Ausbaupläne (zusätzliche 300mm‑Fabs) und teilweiser Inlandsersatz kritischer DUV/Tool‑Komponenten; diese technischen und kapazitiven Fortschritte können, sobald sie in qualifizierte Auslieferungen und höhere HBM‑/DRAM‑Yields übersetzt werden, Verfügbarkeitsdruck auf HBM/Server‑DRAM reduzieren und Preisdynamik beeinflussen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn die KSIA‑Beurteilung zutrifft und in qualifizierte Massenlieferungen mündet, reduziert das die Wahrscheinlichkeit, dass HBM und Server‑DRAM bis Ende 2028 strukturell knapp bleiben (P-2026-07-11-01). Kurz: Signal wirkt als Angebotserleichterungsfaktor gegenüber dem Basisszenario, verringert kurzfristig die Knappheitswahrscheinlichkeit und könnte den erwarteten Engpasshöhepunkt (2027) abmildern oder zeitlich verschieben.",
+      "falsifier": "Messbare Falsifizierbedingung (prüft Wirkung auf Verfügbarkeit): Bis zum 2027-12-31 keine signifikanten qualifizierten HBM‑Massenlieferungen von chinesischen Herstellern (z.B. kombinierte, berichtete qualifizierte HBM‑Equivalenz‑Lieferungen von CXMT+YMTC < 50.000 qualifizierte HBM‑äquivalente Wafer/Monat) ODER die berichteten HBM‑End‑Yields bleiben ≤40% bei weiter fehlender Kontraktausweitung für HBM/Server‑DRAM. Falls diese Bedingungen eintreten, hat die KSIA‑Einschätzung nicht zu messbarer Verfügbarkeits‑/Preiswirkung geführt (falsifiziert die operative Relevanz für P-2026-07-11-01).",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-14",
+      "novelty": "KSIA‑Statement zu schnellerem Einholen des Technologieabstands (neu gegenüber bisherigen 4–5‑Jahres‑Einschätzungen).",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 13,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "nand",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.koreajoongangdaily.com/business/china-narrows-hbm-gap-with-korea-technology-lead-down-to-3-years/12873832",
+          "label": "Korea JoongAng Daily – 'China narrows HBM gap with Korea' (2026-09-14)",
+          "kind": "primary",
+          "supports": "Bericht (2026-09-14) zitiert die Korea Semiconductor Industry Association: technischer Abstand HBM 3 Jahre, DRAM 2 Jahre, NAND 1 Jahr."
+        },
+        {
+          "url": "https://eu.36kr.com/en/p/3985323312191369",
+          "label": "36Kr / Tech商业 (englische Fassung) – 'China's domestic storage chips…' (2026-09-16)",
+          "kind": "secondary",
+          "supports": "36Kr fasst KSIA‑/Korean‑Medienbericht zusammen und ergänzt Kontexte zu CXMT/YMTC Kapazitäts‑ und Prozessplänen (wafer‑Kapazitätsannahmen, G4/G5‑Pfad, Hybrid‑bonding‑Hinweise)."
+        },
+        {
+          "url": "https://www.digitimes.cn/tech/dt/n/shwnws.asp?CnlID=1&PACKAGEID=78840&id=0000767910_VGQL9DYK00J4591ZLLJH9",
+          "label": "DigiTimes (CN) – Bericht zu CXMT HBM‑Yields (2026-09-09)",
+          "kind": "secondary",
+          "supports": "Mehrere Berichte dokumentieren niedrige CXMT‑HBM‑Yields (~25–30%), was die operative Wettbewerbsfähigkeit von China in HBM einschränkt."
+        },
+        {
+          "url": "https://www.cnbeta.com.tw/articles/tech/1577138.htm",
+          "label": "cnBeta – Zusammenfassung: Berichte über CXMT HBM‑Yield ~25% (Sept 2026)",
+          "kind": "secondary",
+          "supports": "Zusammenfassende Berichterstattung über Quellenangaben, die HBM‑End‑Yield um ~25% angeben (konkreter Gegenbeleg zur schnellen 'HBM‑Aufhol'‑Interpretation)."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/04/chinas-cxmt-tops-10-percent-of-dram-market-nears-sk-hynix/",
+          "label": "Seoul Economic Daily (engl.) – CXMT Marktanteil und Wettbewerbs‑Kontext (Sept 2026)",
+          "kind": "secondary",
+          "supports": "Berichterstattung zu CXMT Marktanteils‑Anstieg (Q2 2026) und Branchenbeobachter, die den Technologieabstand in den letzten 12–24 Monaten deutlich schrumpfen sehen."
+        }
+      ],
+      "reason": "Entscheidung (deutsch): Der Kandidat berichtet eine klar datierte, quantifizierte Expertenschätzung (KSIA), die unmittelbar relevant für unsere Speicher‑/HBM‑Availability‑Outlooks ist. Primäre Berichterstattung (Korea JoongAng Daily, 2026-09-14) liefert die zugrunde liegende Attribution; 36Kr verbreitet und kontextualisiert die Bewertung (2026-09-16). Die Aufnahme wird akzeptiert, weil die Meldung: a) atomar und datiert ist (KSIA‑Einschätzung mit konkreten Jahres‑/Generationsabständen), b) messbare Implikationen für eine vorhandene Vorhersage hat (P-2026-07-11-01) und c) eine prüfbare Falsifizierbedingung formuliert werden kann (qualifizierte HBM‑Shipments / Yields bis 2027‑12‑31).\nGegencheck / rote Stift‑Kontrolle: prominente Gegenbelege (mehrere Berichte vom 2026‑09‑09 bis 2026‑09‑12) dokumentieren sehr niedrige gemeldete HBM‑Yields bei CXMT (~25–30%), was die praktische Fähigkeit, kurzfristig HBM‑Supply zu liefern, stark einschränkt. Diese gegenteilige Evidenz senkt die operative Schlagkraft der KSIA‑Aussage für HBM‑Verfügbarkeiten und wurde im Scoring durch moderate Severity/Confidence und explizite Falsifizierklausel berücksichtigt. Deshalb setzen wir indexImpact=false (keine direkten, bereits verifizierten Lieferungs‑/Preis‑Metriken vorliegend).\nEmpfehlung: Aufnahme als Signal (accepted). Monitoring: überprüfung der qualifizierten HBM/Server‑DRAM‑Shipments und reported Yields von CXMT/YMTC sowie offizieller KSIA‑Publikationen; nächste formale Prüfung/Review am 2027-12-31 (Falsifier‑Deadline).",
+      "candidateId": "63dfed34bb3089f4a946",
+      "candidateKey": "872b3b964aa72e4f642b14a0",
+      "reviewedAt": "2026-09-16T06:47:53.641Z",
+      "priorityScore": 86,
+      "gateReasons": [
+        "unverified evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e94cabcaa07fcbe006aaa3b2c31c887d096b956dedd525241"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia dämpft NAND‑Preistreiberei; CEO wies Vertrieb an, scharfe Erhöhungen bei Rechenzentrums‑Kunden zu vermeiden",
+      "fact": "Kioxia‑CEO Hiroo Ota sagte in einem Bloomberg‑Interview (reported 2026‑09‑09) und wies laut Berichten seine Vertriebsorganisation an, bei Verhandlungen mit Datencenter‑Betreibern keine starken weiteren NAND‑Preiserhöhungen zu verlangen; Kioxia meldete zuvor einen QoQ‑Anstieg der NAND‑ASP um ca. 70 % im Q2‑2026. ",
+      "placement": "Globaler NAND‑Preislayer — Produktmarkt: NAND / Enterprise‑SSD; Geographie: global (Hyperscaler‑Kunden, Hauptwirkung bei USA / Japan / Korea); Horizont: kurzfristig (Q3–Q4 2026) bis mittelfristig (bis 2027)",
+      "mechanism": "Management‑Signal/vertriebliche Preisdisziplin: Kioxia beabsichtigt, weitere aggressive Listenpreiserhöhungen zu unterlassen, um Hyperscaler‑Investitionsbereitschaft nicht zu erodieren; das dämpft marktweite Spot‑/Kontrakt‑Preisaufwärtsdynamik, solange andere große Anbieter (Samsung, SK hynix, Micron) nicht vollständig kompensieren und Käufer nicht Preisweitergabe erzwingen.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Relevanz für P-2026-07-20-04 (\"Memory bleibt 2027 knapp ... Preis‑ und Renditedynamik erreicht Höhepunkt vor materieller Kapazitätswelle\"): Dieses Managementsignal reduziert die kurzfristige Wahrscheinlichkeit, dass NAND‑Kontraktpreise ungebremst in der zuvor beobachteten Größenordnung weiter explodieren, und erhöht die Wahrscheinlichkeit, dass sich Preis‑Beschleunigung in H2 2026 abschwächt. Es widerlegt jedoch nicht die Basiserwartung struktureller Knappheit bis 2027 (keine direkte Aussage zu Bits/Lead‑Times).",
+      "falsifier": "Innerhalb des nächsten Berichtszyklus: Wenn Q3‑2026 (Berichterstattung/Markttracker) für NAND‑ASP einen weiteren QoQ‑Anstieg von ≥50 % ausweist, oder wenn mindestens zwei der großen NAND‑Anbieter (Samsung, SK hynix, Micron, Kioxia) öffentliche Quartalsangaben/Tracker‑Daten melden, die zeigen, dass ASP‑Anstieg und echte Vertrags‑Preise weiterhin im ähnlich starken Aufwärtsbereich liegen (QoQ ≥50 %), dann hat Kioxias Richtlinie die Marktpreisdynamik nicht signifikant gebremst (Falsifikationsdatum: 2026‑11‑16). Als sekundärer Falsifier: Falls bis 2026‑12‑31 keine materialisierten mehrjährigen LTAs bestehen, die >=50 % von Kioxias bzw. relevanter Hyperscaler‑Bedarfe abdecken, würde die behauptete Nachfrage‑Sicherung durch LTAs nicht auftreten.",
+      "nextReview": "2026-11-16",
+      "eventDate": "2026-09-09",
+      "novelty": "Gering bis mäßig (Management‑Eskalation: erstmals öffentlich dokumentierte bewusste Preisdämpfungsanweisung eines führenden NAND‑Anbieters während der aktuellen Rally).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "price_down",
+      "severity": 40,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/09/16/6UCSFS4X2JCHZIEN734XA53ILI/?outputType=amp",
+          "label": "ChosunBiz – Artikel (übersetzt) berichtet Ota‑Zitat und verweist auf Bloomberg; Publikationsdatum 2026‑09‑16",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Ota laut Bloomberg anordnete, Vertrieb solle bei Datenzentrums‑Verhandlungen keine steilen Preissteigerungen fordern; nennt QoQ‑ASP‑Anstieg ~70 % für Q2‑2026."
+        },
+        {
+          "url": "https://www.taipeitimes.com/News/biz/archives/2026/09/10/2003863982",
+          "label": "Taipei Times (wiedergibt Bloomberg‑Inhalte), 2026‑09‑10",
+          "kind": "secondary",
+          "supports": "Wiederholt Ota‑Aussage: 'Prices have already risen enough' und dass er Vertrieb instruiert habe, nicht weiter aggressive Preiserhöhungen bei Hyperscalern zu verfolgen; nennt Q2‑2026 ASP‑Anstieg 70 % QoQ."
+        },
+        {
+          "url": "https://www.businesstimes.com.sg/startups-tech/technology/kioxia-dismisses-sk-hynix-tie-vows-ease-chip-price-rises",
+          "label": "The Business Times / Reuters‑Syndication (Berichterstattung zu Bloomberg‑Interview), 2026‑09‑09",
+          "kind": "secondary",
+          "supports": "Weitere unabhängige Nachrichtensynthese des Bloomberg‑Interviews mit identischen Kernaussagen zur Preis‑Richtung und Ablehnung engerer SK‑Hynix‑Verflechtung."
+        }
+      ],
+      "reason": "Begründung (Deutsch):\n- Was bestätigt wurde: Mehrere etablierte Nachrichtenanbieter (Verweis auf Bloomberg‑Berichterstattung via Taipei Times, ChosunBiz, Business Times) berichten konsistent, dass Kioxia‑CEO Hiroo Ota öffentlich sagte, er habe Vertrieb angewiesen, keine weiteren scharfen NAND‑Preiserhöhungen gegenüber Datenzentren zu verfolgen; Q2‑2026‑ASP‑Sprünge (~+70 % QoQ) werden als Kontext genannt. (Quellen: CHOSUNBIZ, Taipei Times, Business Times). ([biz.chosun.com](https://biz.chosun.com/en/en-it/2026/09/16/6UCSFS4X2JCHZIEN734XA53ILI/?outputType=amp))\n\n- Warum Watchlist nicht Accepted: Die Einordnung bleibt unvollständig für eine VERIFIED DATA‑Aufnahme. Die Meldung ist ein management‑Statement (Absicht/Verhandlungsanweisung), kein beobachtetes, gebundenes Marktmaß (z. B. kontrahierter Preisindex, qualifizierte Shipments, Lead‑Time‑Besserung). Die TAIL‑Aufnahmebedingungen verlangen eine atomare, quantifizierbare und primär verifizierte Messung (z. B. beobachtete Kontraktpreis‑Änderung, Fill‑Rate‑Verbesserung oder dokumentierte LTA‑Volumina). Solange der Schritt primär als Kommunikationssignal vorliegt (nicht als nachweisliche Markteinwirkung), ist die Evidenz als nicht abschließend eingestuft (NOT PROVEN). Deshalb Watchlist.\n\n- Gegenmeinung / widersprechende Evidenz: Mehrere Marktindikatoren zeigen weiterhin starke Preisdynamik und Anbieter‑Investitionen (Baseline‑Signale: tail-2026-07-14-nand-essd; Sandisk/Micron/TrendForce‑Daten zu stark steigenden Enterprise‑SSD‑Preisen). Selbst mit Kioxia‑Signalling könnten andere Hersteller oder Marktmechaniken (begrenzte Kapazität, Allokationen, LTAs) die Preise weitertragen. Beispiele: TrendForce‑Projektionen und Unternehmens‑Renditedaten zeigen anhaltenden Aufwärtsdruck; außerdem existieren bereits Floor‑/LTA‑Deals, die Preiserwartungen stützen. (Opposing evidence zitiert im Baseline). ([trendforce.com](https://www.trendforce.com/news/2026/09/09/news-kioxia-denies-sk-hynix-joint-production-talks-seeks-nand-price-stability-to-sustain-ai-investment/?utm_source=openai))\n\n- Wirkung auf Vorhersagen: Das Signal ist relevant für P-2026-07-20-04 (Memory‑Knappheit/Preisdynamik). Es reduziert kurzfristig die Wahrscheinlichkeit extremer weiterer QoQ‑ASP‑Sprünge, verändert aber die zugrunde liegende Knappheitsannahme nicht in Abwesenheit beobachteter Liefermengen oder Lead‑Time‑Verbesserungen.\n\n- Nächste Schritte: Überprüfen am 2026‑11‑16 auf konkrete Marktkennzahlen (Q3‑2026 ASPs gemessen durch TrendForce/Refinitiv/Unternehmensberichte; dokumentierte LTA‑Volumina), um zu beurteilen, ob das Managementsignal tatsächlich Preisdruck absorbiert hat. Wenn beobachtete ASP‑Zahlen wieder stark steigen (siehe Falsifier), die Einordnung wird revidiert (mögliche Ablehnung der Signaleffizienz).",
+      "candidateId": "e7474775f3456af21058",
+      "candidateKey": "74c0cffce524fa4577f40f53",
+      "reviewedAt": "2026-09-16T06:47:53.690Z",
+      "priorityScore": 75,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0058f1de695c8c81006aaa3b2bfc5887d0b9bad93f9658f742"
     }
   ]
 }
