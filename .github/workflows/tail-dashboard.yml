@@ -28,6 +28,8 @@ concurrency:
 
 jobs:
   update-build-and-validate:
+    # Paid processing paused at owner request pending cost audit.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     defaults:
