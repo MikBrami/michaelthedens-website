@@ -37794,6 +37794,735 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0fa57078d1d7e72b006aa9e7e1a45487d08a1c5089e105645c"
+    },
+    {
+      "decision": "accepted",
+      "title": "Samsung nutzt TSMC-Prozesse für HBM‑Base‑Die (Bericht)",
+      "fact": "Am 2026-09-15 berichtete ZDNet (wiedergegeben über Daum), dass Samsung Electronics plant, für kundenspezifische HBM‑(cHBM / NVHBM) Base‑Dies sowohl die eigene Foundry (Samsung Foundry, z.B. SF4) als auch TSMC‑Prozesse parallel zu nutzen («투트랙»/two‑track).",
+      "placement": "Globaler HBM‑Lieferketten‑Layer — Base‑Die / Foundry‑Schicht; Gültig ab Veröffentlichung 2026-09-15; relevante Domänen: HBM (Memory), Foundry/Advanced Logic, AI‑Infrastruktur.",
+      "mechanism": "Samsung will Kundenanforderungen an Prozess‑/Designpräferenzen bedienen, indem es Base‑Dies entweder in Samsung‑Foundry (z.B. 4nm SF4) oder bei TSMC fertigen lässt; das erlaubt, kombiniert mit Samsungs eigenen Core‑DRAM‑Dies, kundenspezifische NVHBM‑Stacks zu qualifizieren und reduziert Bindung an ein einziges Foundry‑Kit, wodurch kurzfristig die Quellenflexibilität für kundenspezifische HBM‑Aufträge steigt.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass Samsung im Q3 2026 den berichteten HBM4‑Umsatzsprung erreicht (Forecast P-2026-07-30-02: Q3 HBM4‑Umsatz ≥2.5× Q2), weil Kunden, die einen TSMC‑Prozess für die Base‑Die wünschen, nun über Samsung/HYBRID‑Sourcing bedient werden können und damit Adoptions‑/Qualifikationshürden sinken.",
+      "falsifier": "Bis zum Review‑Datum (2026-10-31) gilt die Beobachtung als wirkungsvoll falsifiziert, falls entweder (a) Samsungs offiziell ausgewiesener HBM4‑Umsatz für Q3 2026 unter dem 2,5‑fachen des Q2‑Werts liegt (d.h. die konkrete, veröffentlichte Quartalszahlen‑Vergleichsbedingung des verknüpften Forecast‑Falsifiers nicht erfüllt ist), oder (b) bis 2026-10-31 keine Kundensamples/öffentlichen Hinweise vorliegen, die kombinierte Produkte mit Samsung Core‑DRAM und TSMC‑produzierten Base‑Dies (konkret benannte Kunden‑Ankündigung oder qualifizierte Sample‑/Shipment‑Meldung) nachweisen.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-15",
+      "novelty": "Moderat — bestätigt und konkretisiert einen relativen Wandel in Samsungs zuvor «vollständig intern» gehaltenem Base‑Die‑Sourcing für kundenspezifische HBM; mehrere frühe Branchen‑Berichte haben das Thema aufgegriffen, aber ZDNet liefert explizite 'two‑track' Formulierung.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 17,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure",
+        "dram"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://v.daum.net/v/20260915135750059",
+          "label": "Daum (republication of ZDNet Korea article)",
+          "kind": "primary",
+          "supports": "Artikel zitiert ZDNet Korea (Redaktion Jang Kyung‑yoon) mit klarer Aussage, dass Samsung für cHBM Base‑Dies 'intern und TSMC 투트랙' plant. Veröffentlichung 2026-09-15."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/samsungs-fab-roadmap-examined",
+          "label": "Tom's Hardware — Kontext zu Samsungs HBM/Base‑Die‑Strategie",
+          "kind": "secondary",
+          "supports": "Erläutert Samsungs Nutzung von Foundry‑Prozessen für HBM‑Base‑Dies (SF4 4nm) und den Kontext für kundenspezifische HBM‑Produkte; korrespondiert mit ZDNet‑Beschreibungen."
+        },
+        {
+          "url": "https://joonklee.com/insights/hbm-supply-chain-korea/",
+          "label": "Analyse 'HBM Supply Chain' (Joon K Lee)",
+          "kind": "secondary",
+          "supports": "Explainer zur Arbeitsteilung in der HBM‑Kette; nennt, dass SK hynix Base‑Dies bei TSMC bezieht und dass Samsung traditionell intern gefertigt hat — liefert kontextuelle Gegenprobe zur ZDNet‑Aussage."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/08/news-samsung-reportedly-targets-in-house-silicon-photonics-pic-testing-by-end-2026-using-tsmc-qualified-tools/",
+          "label": "TrendForce / Branchenberichterstattung (zusätzliche Kontext‑Quelle)",
+          "kind": "secondary",
+          "supports": "Branchen‑Berichte zu Supply‑Chain‑Verschiebungen und Einsatz von TSMC‑qualifizierten Tools in angrenzenden Bereichen; stützt Plausibilität von Cross‑Sourcing‑Maßnahmen."
+        }
+      ],
+      "reason": "Zentraler, datierter Primärbericht (ZDNet Korea, publiziert 2026-09-15 und abrufbar via Daum) dokumentiert eine konkrete Änderung in Samsungs HBM‑Base‑Die‑Sourcing (Two‑track: Samsung Foundry + TSMC) mit klarer operationaler Reichweite: Basis‑Logik‑Dies für kundenspezifische HBM. Die Meldung ist durch mehrere unabhängige Branchen‑Berichte und technische Analysen (Tom's Hardware, TrendForce, HBM‑Supply‑Chain‑Analysen) gestützt; es gibt kein öffentliches, belastbares Gegenstatement von Samsung, das die Meldung komplett widerlegt. Die Beobachtung ist damit ein überprüfbares, kurzfristig marktrelevantes Signal zur Availability‑Dimension des HBM‑Layers. Ich habe eine messbare Falsifizierungsbedingung (Q3‑Umsatz‑Relation und/oder fehlende kombinierte Sample/Shipment‑Meldungen bis 2026-10-31) definiert. Auf Basis der geprüften Quellen, der direkten Zitatlage und des klaren Ableitungsmechanismus passe ich die Aufnahme auf 'accepted' an; redPencil‑Adversarial‑Checks wurden durchgeführt (keine Wiederverwendung eines bereits eingespeisten Baseline‑Beobachtungsereignisses, kein Werbetext, eindeutiger Datumstempel, überprüfbare Primärquelle).",
+      "candidateId": "e8abd5f8f3147a3c3b14",
+      "candidateKey": "9904f14f9eb93ff2d998f7c1",
+      "reviewedAt": "2026-09-16T01:27:28.762Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-9904f14f9eb93ff2d998f7c1",
+        "title": "Samsung nutzt TSMC-Prozesse für HBM‑Base‑Die (Bericht)",
+        "date": "2026-09-15",
+        "admittedAt": "2026-09-16T01:27:28.762Z",
+        "fact": "Am 2026-09-15 berichtete ZDNet (wiedergegeben über Daum), dass Samsung Electronics plant, für kundenspezifische HBM‑(cHBM / NVHBM) Base‑Dies sowohl die eigene Foundry (Samsung Foundry, z.B. SF4) als auch TSMC‑Prozesse parallel zu nutzen («투트랙»/two‑track).",
+        "placement": "Globaler HBM‑Lieferketten‑Layer — Base‑Die / Foundry‑Schicht; Gültig ab Veröffentlichung 2026-09-15; relevante Domänen: HBM (Memory), Foundry/Advanced Logic, AI‑Infrastruktur.",
+        "tailInference": "Samsung will Kundenanforderungen an Prozess‑/Designpräferenzen bedienen, indem es Base‑Dies entweder in Samsung‑Foundry (z.B. 4nm SF4) oder bei TSMC fertigen lässt; das erlaubt, kombiniert mit Samsungs eigenen Core‑DRAM‑Dies, kundenspezifische NVHBM‑Stacks zu qualifizieren und reduziert Bindung an ein einziges Foundry‑Kit, wodurch kurzfristig die Quellenflexibilität für kundenspezifische HBM‑Aufträge steigt.",
+        "predictionId": "P-2026-07-30-02",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass Samsung im Q3 2026 den berichteten HBM4‑Umsatzsprung erreicht (Forecast P-2026-07-30-02: Q3 HBM4‑Umsatz ≥2.5× Q2), weil Kunden, die einen TSMC‑Prozess für die Base‑Die wünschen, nun über Samsung/HYBRID‑Sourcing bedient werden können und damit Adoptions‑/Qualifikationshürden sinken.",
+        "falsifier": "Bis zum Review‑Datum (2026-10-31) gilt die Beobachtung als wirkungsvoll falsifiziert, falls entweder (a) Samsungs offiziell ausgewiesener HBM4‑Umsatz für Q3 2026 unter dem 2,5‑fachen des Q2‑Werts liegt (d.h. die konkrete, veröffentlichte Quartalszahlen‑Vergleichsbedingung des verknüpften Forecast‑Falsifiers nicht erfüllt ist), oder (b) bis 2026-10-31 keine Kundensamples/öffentlichen Hinweise vorliegen, die kombinierte Produkte mit Samsung Core‑DRAM und TSMC‑produzierten Base‑Dies (konkret benannte Kunden‑Ankündigung oder qualifizierte Sample‑/Shipment‑Meldung) nachweisen.",
+        "nextReview": "2026-10-31",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 17,
+          "forecastImpact": 15,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 40,
+        "confidence": 78,
+        "markets": [
+          "hbm",
+          "semiconductors",
+          "ai_infrastructure",
+          "dram"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Daum (republication of ZDNet Korea article)",
+            "url": "https://v.daum.net/v/20260915135750059"
+          },
+          {
+            "label": "Tom's Hardware — Kontext zu Samsungs HBM/Base‑Die‑Strategie",
+            "url": "https://www.tomshardware.com/tech-industry/samsungs-fab-roadmap-examined"
+          },
+          {
+            "label": "Analyse 'HBM Supply Chain' (Joon K Lee)",
+            "url": "https://joonklee.com/insights/hbm-supply-chain-korea/"
+          },
+          {
+            "label": "TrendForce / Branchenberichterstattung (zusätzliche Kontext‑Quelle)",
+            "url": "https://www.trendforce.com/news/2026/09/08/news-samsung-reportedly-targets-in-house-silicon-photonics-pic-testing-by-end-2026-using-tsmc-qualified-tools/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit, dass Samsung im Q3 2026 den berichteten HBM4‑Umsatzsprung erreicht (Forecast P-2026-07-30-02: Q3 HBM4‑Umsatz ≥2.5× Q2), weil Kunden, die einen TSMC‑Prozess für die Base‑Die wünschen, nun über Samsung/HYBRID‑Sourcing bedient werden können und damit Adoptions‑/Qualifikationshürden sinken."
+        },
+        "admissionReviewKey": "9904f14f9eb93ff2d998f7c1"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0532768b2da3eeca006aa9efd7b10087d29c4ac68c67dbaa53"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Microsoft veröffentlicht 'Humanist AI' Code of Conduct nach Agenten‑Sicherheitsvorfällen",
+      "fact": "Microsoft veröffentlichte am 2026-09-14 einen Entwurf \"Humanist AI Code of Conduct\" für seine MAI‑Modelle (öffentliche Konsultation).",
+      "placement": "Global; Microsoft MAI (frontier) Modelle; Governance/Policy‑Layer; kurzfristig (Q4 2026).",
+      "mechanism": "Öffentliche Veröffentlichung eines verbindlich wirkenden Verhaltenskodex (Chain of Command, Absolute Constraints, Human‑in‑the‑loop/Interruptibilität). Der Schritt antwortet direkt auf Juli‑2026 Sicherheitsvorfälle (OpenAI / Hugging Face; Anthropic) und erhöht regulatorischen sowie brancheninternen Druck auf vergleichbare Labore, Evaluationen zu verschärfen oder Agenten‑Einsatz zurückzunehmen — was kurzfristig die Bereitschaft zur aggressiven Agenten‑Rollout/Agentic‑Feature‑Monetarisierung dämpfen kann.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass mindestens drei große AI‑Labs bis Ende 2026 öffentlich strengere Eval‑Isolation, Netzwerk‑Egress‑Kontrollen oder Drittanbieter‑Sandbox‑Regeln dokumentieren (unterstützt P-2026-07-22-02).",
+      "falsifier": "Bis 2026-12-31 veröffentlichen weniger als drei große AI‑Labs (Beispiele: OpenAI, Anthropic, Google DeepMind, Meta, Microsoft) öffentlich dokumentierte, verbindliche Änderungen an Evaluationsisolation, Netzwerk‑Egress‑ oder Drittanbieter‑Sandbox‑Kontrollen. Review‑Datum: 2026-12-31.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-14",
+      "novelty": "Moderat — formale, veröffentlichte Codifizierung einer bereits vertretenen 'Humanist' Haltung, aber erstmals als öffentlich konsultierter Entwurf mit operativen Vorgaben.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://microsoft.ai/code-of-conduct/",
+          "label": "Microsoft — Humanist AI Code of Conduct (Entwurf, 2026-09-14)",
+          "kind": "primary",
+          "supports": "\"This document outlines the intended behavior and values of MAI models.\" (Code Preface, 2026-09-14)."
+        }
+      ],
+      "reason": "Kurzfassung (Deutsch): Die eingereichte TAIL‑Kandidatur ist im Kern eine korrekte Nachrichtenzusammenfassung: Microsoft publizierte am 2026-09-14 einen öffentlich konsultierten Entwurf eines \"Humanist AI\" Code of Conduct für seine MAI‑Modelle. Wir verifizierten den Primärtext bei Microsoft sowie die relevanten Vorfälle, auf die der Text explizit Bezug nimmt (OpenAI/Hugging Face disclosure vom 2026-07-21; Anthropic‑Review vom 2026-07-30).\n\nWarum Watchlist (nicht Accepted): Die Meldung ist verifizierbar und relevant für die Governance‑/Safety‑Schicht der AI‑Infrastruktur, aber sie liefert keinen klaren, atomaren Markt‑Metrik‑Impuls (keine sofort messbare Mengeneinheit oder Preiswirkung). Die Einreichung macht zudem keine quantifizierbare Vorhersage selbst — sie ist ein Layer‑/Governance‑Signal, das plausibel die Wahrscheinlichkeit des bestehenden Vorhersageziels P-2026-07-22-02 erhöht, aber die Wirkung ist indirekt und zeitlich unscharf. Daher passt sie in die Watchlist‑Kategorie (Score 72, Schwelle für Watchlist ≥65; Annahme erfordert ≥80 nach Rubrik).\n\nGegenevidenz / Abwägung: Microsofts Dokument ist explizit ein Entwurf für Konsultation und sagt selbst, es werde derzeit nicht zum Training genutzt; das reduziert unmittelbare Durchsetzungswirkung. Gleichzeitig haben OpenAI und Anthropic bereits öffentlich eingestanden, dass Evaluations‑Containment fehlgeschlagen ist; das erhöht aber auch die Chance, dass andere Labs rasch formelle Maßnahmen ankündigen. Diese Unsicherheit rechtfertigt Watchlist statt direkter Aufnahme als 'marktbewegendes' Signal.\n\nEmpfohlener Prüfpfad: Überprüfen bis 2026-12-31, ob mindestens drei große Labs öffentlich strengere Evaluationsisolation/Network‑Egress/Sandbox‑Kontrollen dokumentiert haben (Falsifier oben). Bei Erfüllung dieses Tests könnte der Eintrag in ein höheres Relevanz‑Ranking verschoben werden; bei Nichterfüllung bleibt er als indikatives Governance‑Signal auf Watchlist.\n\n(Quellen: Microsoft Code of Conduct (2026-09-14); OpenAI disclosure (2026-07-21); Anthropic disclosure (2026-07-30).) ",
+      "candidateId": "205e8d100d030d8f166c",
+      "candidateKey": "5cced1a3271287fccbb529e3",
+      "reviewedAt": "2026-09-16T01:27:28.801Z",
+      "priorityScore": 72,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05b87619fbedb2a2006aa9efd7c72087d2ada211ffea405fdf"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung will Exynos‑Packaging in Cheonan zurückfahren und Anlagen für HBM‑Packaging umwidmen (Exynos 2700 → Onyang, FO‑WLP entfällt)",
+      "fact": "Am 2026-09-15 berichtete die südkoreanische Publikation Sisajournal-e, dass Samsung plant, die Exynos‑Packaging‑Linien in Cheonan schrittweise einzustellen, die Exynos 2700‑Packagingaufgaben nach Onyang zu verlegen und künftig auf eine Side‑by‑Side (SbS) Konfiguration statt FO‑WLP zu setzen; die Cheonan‑Anlagen sollen stattdessen auf HBM‑Advanced‑Packaging umgestellt werden. (Quelle: Sisajournal-e, 2026-09-15).",
+      "placement": "Geographie: Cheonan → Onyang (Südkorea). Domain/Layer: Advanced packaging / HBM‑Packaging (post‑frontend, Backend/Assembly & Test). Kurzfristiger Horizont: Umsetzung angekündigt mit Blick auf die Exynos‑2700‑Produktionswelle (läuft ab 2026/2027 Produktionszyklus).",
+      "mechanism": "Corporate Re‑allocation der vorhandenen Packaging‑Kapazität: bestehende FO‑WLP/Exynos‑Package‑Equipment in Cheonan wird für HBM‑Packaging umgerüstet; Exynos‑Packaging wandert nach Onyang, wodurch Cheonans Kapazität für HBM‑Packages (Interposer/stack/2.5D/3D‑HBM Backend) potenziell steigt. Das wirkt sich auf die Verfügbarkeit (availability) von HBM‑Packaging (nicht unmittelbar auf HBM‑Die‑Wafer‑Bit‑Output) aus, weil Backend‑Kapazität ein Qualifikationsengpass für HBM‑Komponenten sein kann.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Signal begründet einen teilweisen Gegenfaktor zum Basisszenario, dass HBM und Server‑DRAM bis Ende 2028 strukturell knapp bleiben: die Umwidmung von Cheonan‑Packaging zu HBM‑Packaging reduziert einen potenziellen Advanced‑Packaging‑Engpass und könnte die Schärfe des erwarteten HBM‑Packaging‑Bottlenecks verringern. Da es sich bislang um eine angekündigte Reorganisation (kein beobachteter Anstieg qualifizierter HBM‑Shipments) handelt, ist die erwartete Wirkung nur partiell und zeitverzögert.",
+      "falsifier": "Bis zum 2027-06-30: wenn Samsung keine bestätigte Fertigstellung der Umrüstung (offizielle Mitteilung oder verifizierbare Firmenangabe) vorlegt oder wenn es bis zum 2027-06-30 keine messbare Zunahme qualifizierter HBM‑Package‑Output‑Indikatoren aus Cheonan gibt (z. B. veröffentlichte HBM‑Package‑Lines in Betrieb, HBM‑Package‑Stückzahl/Monat, oder explizit berichtete Cheonan‑HBM‑Shipments), dann ist die behauptete Verfügbarkeitserleichterung als nicht eingetreten zu werten und das beobachtete Signal falsifiziert für die kurzfristige Entschärfung von P-2026-07-11-01.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-15",
+      "novelty": "Moderat — bestätigt und ergänzt Samsungs bereits bekannte HBM‑Investitionen (HBM‑Massproduction/Shipments und regionale Investitionspläne), liefert aber neue Detailinformation zur Umverlagerung konkreter Packaging‑Lines (Cheonan→Onyang) und zur beabsichtigten Packaging‑Topologie (SbS statt FO‑WLP).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 10,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=423699",
+          "label": "Sisajournal-e: '[단독] 삼성전자, 천안서 엑시노스 패키징 접고 HBM 설비로 전환' (2026-09-15)",
+          "kind": "primary",
+          "supports": "Berichtet konkret, dass Exynos‑Packaging in Cheonan schrittweise eingestellt und für HBM‑Packaging umgerüstet wird; Exynos 2700‑Packaging soll nach Onyang verlagert werden; FO‑WLP soll beim Exynos 2700 ausgelassen und SbS angewandt werden."
+        },
+        {
+          "url": "https://www.sammyfans.com/2026/09/15/samsung-exynos-2700-packaging-shift-hbm/amp/",
+          "label": "SammyFans (Sekundärbericht, 2026-09-15)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung des Sisajournal‑e‑Berichts für ein englischsprachiges Publikum; bestätigt Datum und Kernaussagen zur Verlagerung und Packaging‑Änderung."
+        },
+        {
+          "url": "https://news.samsungsemiconductor.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples/",
+          "label": "Samsung Semiconductor Newsroom: 'Begins Shipment of Industry‑First HBM4E Samples' (2026-05-29)",
+          "kind": "secondary",
+          "supports": "Kontext: Samsung hat HBM4/HBM4E‑Shipments und HBM‑Investitionen öffentlich bestätigt; unterlegt die Plausibilität, dass Samsung Backend/Packaging‑Kapazität für HBM ausbaut."
+        },
+        {
+          "url": "https://en.yna.co.kr/view/AEN20260702002600320",
+          "label": "Yonhap: Bericht zu Samsung/Chungcheong HBM‑Investitionen (2026-07-02)",
+          "kind": "secondary",
+          "supports": "Bestätigt staatlich/industrieweit kommunizierte HBM‑ und Packaging‑Investitionspläne in der Chungcheong‑Region, gibt breiteren Investitionskontext."
+        }
+      ],
+      "reason": "Entscheidung: WATCHLIST. Begründung (auf Deutsch):\n\n- Primäre Bestätigung: Die wichtigste Behauptung (Umwidmung von Exynos‑Packaging‑Linien in Cheonan hin zu HBM‑Packaging und Verlagerung der Exynos‑2700‑Packagingaufgaben nach Onyang sowie die Absicht, FO‑WLP beim Exynos 2700 zu streichen zugunsten einer Side‑by‑Side‑Konfiguration) wird datiert und konkret in einem berichtenden Artikel der südkoreanischen Publikation Sisajournal-e (2026-09-15) genannt. Die Meldung liefert Ortsangaben (Cheonan, Onyang) und beschreibt die beabsichtigte Packaging‑Topologie, daher handelt es sich nicht um rein spekulative Gerüchte. ([sisajournal-e.com](https://www.sisajournal-e.com/news/articleView.html?idxno=423699)).\n\n- Warum nur WATCHLIST (nicht ACCEPTED): Die Meldung dokumentiert eine Unternehmensabsicht und eine Umstrukturierungsplanung, aber sie liefert keine direkten, quantitativen Messgrößen (keine zählbaren Package‑Lines in Betrieb, keine HBM‑Package‑Stückzahlen/Monat, keine qualifizierten zusätzlichen HBM‑Shipments aus Cheonan). Nach den TAIL‑Aufnahmekriterien würde ein ACCEPTED‑Signal ein atomares, datiertes Faktum mit Einheiten (z.B. \"Cheonan liefert X HBM‑Packages/Monat ab Datum Y\") und einen klar nachweisbaren Effekt auf die Index‑Metrik (z. B. Lead Time, Fill Rate, qualifizierte Shipments) erfordern. Diese quantitativen Maße fehlen in der vorliegenden Berichterstattung, daher ist die Beobachtung wertvoll und relevant, aber noch nicht ausreichend, um P-2026-07-11-01 als falsifiziert oder signifikant nach unten zu adjustieren. Stattdessen ist dies ein plausibler early‑signal, das die thesisRelevance erhöht, aber die direkte Forecast‑Impact erst nach verifizierbaren Output‑/Lead‑Time‑Messungen bestätigt werden kann. Siehe auch Samsungs eigene HBM‑Ankündigungen (HBM4E‑Samples/Shipments) und regionale Investitionsmeldungen, die Kontext liefern, aber nicht die spezifische Cheonan→Onyang‑Line‑Conversion quantifizieren. ([news.samsungsemiconductor.com](https://news.samsungsemiconductor.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples/?utm_source=openai)).\n\n- Opposing / ergänzende Evidenz: Samsung‑Newsroom und andere Quellen bestätigen mass‑production/shipments und große Investitions‑Programme für HBM in der Region (was die Plausibilität erhöht), jedoch gibt es (Stand 2026-09-15) keine offizielle Samsung‑Pressemitteilung, die ausdrücklich die schrittweise Stilllegung von Exynos‑Packaging‑Linien in Cheonan oder deren formelle Umschaltung in HBM‑Package‑Output mit Produktionszahlen dokumentiert. Deshalb bleibt der Status der Umsetzung unsicher und überprüfbar. ([news.samsungsemiconductor.com](https://news.samsungsemiconductor.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples/?utm_source=openai)).\n\n- Nächste Schritte / Monitoring‑Plan: Überprüfen bis 2027-06-30 auf (1) offizielle Samsung‑Mitteilung zum Abschluss der Umrüstung oder zur Inbetriebnahme von HBM‑Package‑Lines in Cheonan; (2) verifizierbare Produktions/Shipments‑Indikatoren (HBM‑Package‑Lines in Betrieb, HBM‑Packages/Monat, nachweisbare Lead‑Time‑Verbesserungen) aus Samsung oder Branchenmessern (z. B. offizielle Samsung Semiconductor‑News, Ministerial‑Verlautbarungen, oder verifizierbare Kontraktdaten). Das oben definierte Falsifier‑Kriterium prüft diese Punkte. Bis zur Erfüllung dieser Kriterien bleibt der Eintrag als WATCHLIST, da die Information relevant und zeitnah ist, aber die für Admission nötigen quantitativen/verifizierten Indexdaten fehlen.\n\n- Score: Die Punktevergabe reflektiert mittlere Quellenqualität (regionaler Wirtschaftsjournalismus), gute Relevanz zur TAIL‑Thesis (HBM/Packaging Engpässe) und begrenzte unmittelbare Forecast‑Auswirkung (Plan ≠ gemessene Kapazitätssteigerung). ([sisajournal-e.com](https://www.sisajournal-e.com/news/articleView.html?idxno=423699)).",
+      "candidateId": "71aee73c7ca01e4a86c3",
+      "candidateKey": "a54323b3fff2cb8716f99cc9",
+      "reviewedAt": "2026-09-16T01:29:29.502Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01af2c2ab7080437006aa9f08107c887d29181ec2a4e359bf1"
+    },
+    {
+      "decision": "rejected",
+      "title": "How the reckless AI race among Anthropic, OpenAI and China spawned today’s safety crisis",
+      "fact": "Behauptung (Meinungsstück): Ein \"rücksichtsloser\" Wettlauf zwischen Anthropic, OpenAI und China habe die aktuelle KI‑Sicherheitskrise ausgelöst (mediale / meinungsorientierte These, kein einzelnes, überprüfbares Markt‑ oder Lieferkettenereignis).",
+      "placement": "Global / Technologiepolitik & AI‑Sicherheit / kurzfristig (Publikationsdatum 2026-09-15 gemäß Inbox‑Metadaten, Primärquelle nicht verifizierbar).",
+      "mechanism": "Narrative Kausalkette im Artikel: kommerzieller Wettbewerbsdruck und geopolitische Rivalität führten zu beschleunigter Modellverbesserung, verkürzten Evaluationszyklen und geschwächten Sicherheitskontrollen, was zu realen Sicherheitsvorfällen (z. B. Evaluations‑/Sandbox‑Überschreitungen) geführt habe. (Diese Mechanik ist interpretativ; konkrete, quantifizierbare Einzelemissionen/Shipments/Vertragsdaten fehlen im Candidate‑Text.)",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "Kommentar/Meinungsstück — keine neue, atomare Beobachtung mit Einheiten oder marktrelevanter Messgröße.",
+      "duplicateOf": "S-AUTO-320b6e2f774c187fec2fee96",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 5,
+        "thesisRelevance": 8,
+        "forecastImpact": 6,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 10,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+          "label": "OpenAI - 'OpenAI and Hugging Face partner to address security incident during model evaluation'",
+          "kind": "primary",
+          "supports": "Direkte Bestätigung eines Sicherheitsvorfalls während einer Evaluation, Beispiel für die im Artikel genannten Evaluations-/Sandbox‑Risiken."
+        },
+        {
+          "url": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed/",
+          "label": "Ars Technica - Zusammenfassung der Branchenreaktion auf Amodeis Essay",
+          "kind": "secondary",
+          "supports": "Unterstützt, dass die Debatte über 'Slowdown' breit in den Medien berichtet wird (Kontext, Meinungs‑/Policy‑Debatte)."
+        },
+        {
+          "url": "https://aitoolsreview.co.uk/insights/us-china-ai-race-lobbying",
+          "label": "Analyse/Commentary (branchenweiter Kontext zur US‑China 'Race' Rhetorik)",
+          "kind": "secondary",
+          "supports": "Kontext zur geopolitischen 'Race' Narration, die der Candidate‑These als Hintergrund dient."
+        },
+        {
+          "url": "https://dev.dailyrotation.com/",
+          "label": "Aggregator / Daily rotation (enthält Verweise auf Genetic Literacy Project‑Einträge am 2026-09-15)",
+          "kind": "secondary",
+          "supports": "Zeigt, dass der Candidate‑Titel als Headline in Aggregatoren auftauchte; es konnte jedoch kein verifizierbarer Primärartikel mit genau diesem Titel auf der Genetic Literacy Project‑Domain gefunden werden."
+        }
+      ],
+      "reason": "Ablehnung — Begründung (Deutsch):\n\n1) Keine Primärverifikation: Ich konnte das behauptete Primärdokument (Artikel mit exakt diesem Titel auf der Genetic Literacy Project‑Domain) nicht verifizieren. Aggregatoren und die GLP‑Startseite/Autorenseite listen verwandte Beiträge, aber es fehlt ein klar identifizierbarer Primärartikel mit dem exakten Titel und veröffentlichtem Text. Gemäß Aufnahme-Regeln ist ohne Primärverifikation eine Annahme als VERIFIED DATA ausgeschlossen; fehlende Primärquelle zwingt zur Ablehnung (NOT PROVEN). (Quellen: Genetic Literacy Project Suche, Aggregator). \n\n2) Nicht‑atomar / kein marktrelevantes Messsignal: Der Kandidat ist ein Meinungs/Analyse‑Beitrag, keine konkrete, datierte, numerische Beobachtung (keine Mengen, Preise, Shipments, Lead‑Times, Vertragsdaten). Die TAIL‑Aufnahmekriterien verlangen atomare, datierte Beobachtungen mit Einheiten für Aufnahme — das erfüllt dieser Text nicht.\n\n3) Duplikat / bereits im Baseline‑Corpus: Die Kernaussage (Branchenrennen → Sicherheitsprobleme / Appell zum Verlangsamen) ist bereits in den gelieferten Baseline‑Signals (z. B. S-AUTO-320b6e2f774c187fec2fee96 und zahlreiche Medienberichte über Amodei/OpenAI) abgebildet; der Candidate liefert keine neue, quantifizierbare Evidenz zur Änderung eines bestehenden Forecasts.\n\n4) Falsifizierbarkeit & Mechanismus fehlen: Die These bleibt breit, retrospektiv und interpretativ. Es fehlt ein prüfbarer, präziser Falsifizierer (z. B. messbare Rückgänge von Vorfällen unter kontrollierten Bedingungen, konkrete Vertrags‑/Shipment‑Belege, die die These stützen oder widerlegen). Die beste verfügbare, belastbare Primärquelle für einen relevanten Vorfall ist OpenAI's offizielle Beschreibung des Hugging‑Face‑Evaluationsvorfalls — das unterstützt die Existenz von Sicherheitsproblemen, aber nicht die kausale Gesamtaussage des Candidate (\"die Recklessness hat die Krise 'geboren'\"). (Siehe OpenAI‑Statement). \n\nDeshalb: Rejected. Empfehlung: Wenn ein verifizierter Primärartikel (voller Text auf einer identifizierbaren Publisher‑URL) geliefert wird, der eine einzelne, datierbare Beobachtung (z. B. Anzahl und Datum von Vorfällen, formale regulatorische Maßnahmen, konkrete Vertrags/Deployment‑Änderungen) enthält, kann der Kandidat neu bewertet werden. Zusammenfassend: interessante Meinungsanalyse, aber ungeeignet als TAIL‑Evidenz (keine verifizierbare, atomare Messung; Duplikat; nicht falsifizierbar).",
+      "candidateId": "4591d3aea74d5d927aa0",
+      "candidateKey": "b00dba6775c69f3ed46d9cdd",
+      "reviewedAt": "2026-09-16T01:29:29.545Z",
+      "priorityScore": 30,
+      "gateReasons": [
+        "missing predictionImpact",
+        "missing falsifier",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08a6857d29de14e1006aa9f0811d7087d29dd735682137a4a5"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix präsentiert 'Logic‑Foundry'-Richtung für 3D‑DRAM‑Peripherie (Future Forum, 2026‑09‑08)",
+      "fact": "Am 2026-09-08 präsentierte SK hynix auf seinem '2026 Future Forum' die technologische Richtung, Peripherieschaltungen von 3D‑gestapelten DRAM‑Modulen mit Logik‑Foundry‑Prozessen zu realisieren (‚logic foundry conversion of DRAM peripheral circuits‘) und bestätigte gleichzeitig, dass die Basis‑Die‑Nutzung von TSMC‑Logikprozessen bereits ab HBM4 vorgesehen ist. ",
+      "placement": "Geographie: Südkorea / globaler Halbleitermarkt; Domain: DRAM/HBM Design & Packaging; Layer: Peripherie‑/Base‑die (HBM4) und vorgeschlagene '3D Stacked DRAM on Logic' Integration; Horizont: kurzfristig → Konzeptvorstellung 2026, technische Umsetzung/Qualifikation unbestimmt (2026–2028 horizon).",
+      "mechanism": "SK hynix trennt funktional Speicherzellen und Peripheriefunktionen: Speicherzellen bleiben in memory‑optimierten Prozessen, Peripherie/Controller werden in fortgeschrittenen Logik‑Foundry‑prozessen (kleinere Nodes) gefertigt und mittels 3D‑Stacking/feiner Bonding‑Technik vertikal integriert. Ziel: breitere Datenbusbreiten, Ultra‑Short‑Reach‑Verbindungen, geringere Latenz und bessere Energieeffizienz für HBM/3D‑DRAM‑Anwendungen. ",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Unterstützt die These in P-2026-07-13-04, dass HBM4‑/SK‑hynix‑Ramps relevant für das H2‑Timing sind; das Statement erhöht die Wahrscheinlichkeit, dass SK hynix HBM4‑/custom‑HBM‑Entwicklungen (mit Foundry‑Basisdies) als technisches Pfadmittel in H2 vorantreibt (qualitativ: erhöht Confidence).",
+      "falsifier": "Bis zum Prüfdatum (siehe NextReview) gibt es keine öffentlich belegbaren technischen oder Produktionsmeilensteine von SK hynix, die eine qualifizierte, volumenreife Produktion von HBM4‑Basisdies auf TSMC‑Logikprozessen oder eine konkrete, datierten Kooperation/Volumenvertrag mit TSMC für 3D‑DRAM‑Base‑Dies belegen; stattdessen eine explizite Absage durch SK hynix würde das Signal falsifizieren.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-08",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_lock",
+      "severity": 20,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.skhynix.com/en/tsmc-technology-symposium-2026/",
+          "label": "SK hynix – Newsroom: TSMC Symposium (April 23, 2026)",
+          "kind": "primary",
+          "supports": "SK hynix erklärt dort die 'Integration of memory and logic' und nennt explizit: 'adoption of TSMC’s advanced logic processes for the base die starting with HBM4' (Publikationsdatum 2026-04-23)."
+        },
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/09/14/52TBQREJFBCPHOPGMIPCVMD26Y/?outputType=amp",
+          "label": "ChosunBiz: Berichterstattung zum '2026 Future Forum' (veröff. 2026-09-14)",
+          "kind": "secondary",
+          "supports": "Bericht dokumentiert die Präsentation am 2026-09-08, nennt 'maximizing data bus width; ultra short reach; converting DRAM peripheral circuits to logic foundry' und zitiert Branchenmeinungen, dass SK hynix noch nicht verbindlich erklärt habe, 3D‑DRAM komplett an externe Foundries auszulagern."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung fasst korrekt eine öffentlich dokumentierte technische Richtungsangabe von SK hynix zusammen (Primärquelle: SK hynix Newsroom; Sekundärberichterstattung: ChosunBiz). Gleichzeitig ist die Kernaussage des Kandidaten – ein pauschaler 'Shift' von 3D‑DRAM zu Logik‑Foundries bzw. eine ausgeprägte Ausweitung der TSMC‑Zusammenarbeit – zu weit gefasst: SK hynix stellte auf dem Future Forum eine Entwicklungs‑/Designrichtung und Personalaufbau vor, hat aber keine verbindliche, quantifizierbare Volumen‑ oder Fertigungsvereinbarung für 3D‑DRAM‑Base‑Dies mit TSMC veröffentlicht. Gegnerische/kontextualisierende Evidence (Branchenexperten, Reporting) weist darauf hin, dass eine tatsächliche Auslagerung des 3D‑DRAM‑Fertigungsprozesses an externe Foundries derzeit als nicht hoch wahrscheinlich eingeschätzt wird. Aus diesen Gründen erfüllt der Kandidat die TAIL‑Aufnahmekriterien nicht für eine unmittelbare positive Aufnahme (accepted): die Beobachtung ist relevant und primär belegt, bleibt aber konzeptionell und unverbindlich (keine Einheiten/Volumina, kein FID/Vertrag), sodass wir sie als Watchlist‑Signal aufnehmen, das die bestehende Vorhersage P-2026-07-13-04 eher stützt als widerspricht. Prüfung auf Erfüllung des Falsifiers erfolgt am 2026-12-31.",
+      "candidateId": "87be3cad59904134ca76",
+      "candidateKey": "87485bb0ef9cef7bb9150a62",
+      "reviewedAt": "2026-09-16T01:31:36.751Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "missing novelty",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0281a6138a0481e8006aa9f0f9c30487d2ab9b0a6437a31d5a"
+    },
+    {
+      "decision": "rejected",
+      "title": "'China is the Enemy' — Meinungsstück / unbelegte Vorwurfskette, keine primäre Verifikation",
+      "fact": "Behauptung (in einem aggregierten RSS-Eintrag): Ein namentlich nicht verifizierter 'Tech‑expert' behauptet, Anthropic und OpenAI würden Angst schüren (u. a. Schlagwort 'China is the Enemy'), um Konkurrenz zu schwächen.",
+      "placement": "Global / AI‑Branche; narrative/politische Debatte über 'Pacing the Frontier' (Kurzfristig; Public‑Debatte, 2026‑09).",
+      "mechanism": "Interpretative / rhetorische Behauptung: eine Kommentierung (Op‑Ed/Meinungsstück) die kommerzielle oder geopolitische Motive hinter Führungsaufrufen zum 'Slowdown' unterstellt. Keine beobachtete Markt‑Metrik (keine Mengen, Preise, Lead‑Times, Shipments) und kein belegter kausaler Pfad, der Lieferketten‑ oder Preisindikatoren unmittelbar verändert.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Bis 2026-10-15: Veröffentlichung einer primären, vertrauenswürdigen Quelle (namentliche Identität des 'Tech‑experten', datiertes Zitat im O‑Ton mit Wortlaut 'China is the Enemy' und dokumentierbare direkte Anschuldigungen gegen Anthropic/OpenAI) — oder ein klar belegter, unabhängiger Beleg, dass die betroffenen Labs absichtlich koordinierte PR/Lobby‑Maßnahmen zur Furchterzeugung initiierten. Fehlen solche Primärbelege bis zu diesem Datum bestätigt diese Review‑Einschätzung.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-15",
+      "novelty": "low",
+      "duplicateOf": "S-AUTO-82875560b85f7ec05b186bcd",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 6,
+        "thesisRelevance": 8,
+        "forecastImpact": 4,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 20,
+      "confidence": 35,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.axios.com/2026/09/13/ai-labs-regulation-safety",
+          "label": "Axios – Zusammenfassung der CEO‑Aufrufe zum 'Slowdown'",
+          "kind": "secondary",
+          "supports": "Fasst Aufrufe mehrerer Lab‑CEOs zusammen und diskutiert das Dilemma 'slowing down vs falling behind'."
+        }
+      ],
+      "reason": "Ablehnung — Begründung (deutsch):\n\n1) Keine Primärverifikation des eingereichten RSS‑Beitrags: Der Kandidat ist ein aggregierter/Meinungs‑RSS‑Eintrag (voz.us) ohne im Einreichungsobjekt nachweisbare Primärquelle oder O‑Ton‑Zitat des angeblichen 'Tech‑experten'. Wir konnten das konkrete voz.us‑Original nicht als primäre, verifizierbare Quelle aufrufen; deshalb fehlt der erforderliche Primärnachweis. ([news.google.com](https://news.google.com/rss/articles/CBMioAJBVV95cUxNakdOOE4zbWlTNHlVYTN5R1dIdTVjcWRZc1lVX2JFcU9vaEhGZy1IWVk4V094bHU3d010STN2U1h0N2pZVDNhOFIwMDZYU28yT2xlOW8tajJqNXJuOWtldnFOZnI1MkRsU3MwaG8xcWEzYW9WbkR4SVhRYzA0bjhoVzFLTHJXS3BOMjdqTW1seE9GMUxzRC01eUI4ZldSUnVDZTk2UVRnaTBHZzlXWHVXdGdKT3MxM05LUnpDMEhPc3l1NXIyeTV5b1c1aGFORXpURjBQQmlhSXhaSVhrYks2cllGbE9QTllVbEQzVDNlbEhNY0NJYmpseDdYWUljN2xPS2J6cTRKeExNUkwza3NUdGgtTk1jQ1lwZFp0dDlxR3c?oc=5))\n\n2) Aussage ist bereits im Baseline‑Set abgebildet / nicht markt‑relevant als neues Signal: Die Kernidee — führende AI‑CEOs fordern ein verlangsamtes Tempo ('pacing the frontier') — ist durch mehrere verlässliche Berichte dokumentiert (z. B. Washington Post, Axios) und erscheint bereits im Inbox/Baseline (S‑AUTO‑82875560… vom 2026‑09‑12). Das vorgelegte Kandidatenstück liefert keine neue, atomare, datierte Markt‑Messung (keine Mengen, Preise, Shipments, Lead‑Times) und ist damit kein belastbares Eingangssignal für die TAIL‑Marktindizes. ([washingtonpost.com](https://www.washingtonpost.com/business/2026/09/12/anthropic-ai-dario-amodei/5cc3cc44-aec8-11f1-b498-8697f35a6743_story.html?utm_source=openai))\n\n3) Inhalt ist im Kern ein Meinungs-/Attributionsvorwurf (Motiv‑These): Solche Narrativbehauptungen (‚sie schüren Angst, um Konkurrenz zu schwächen‘) sind interpretativ, schwer falsifizierbar und häufig rekonstruktions‑/kontextabhängig. Es gibt Presse‑ und Podcast‑Diskussionen, die genau solche Vorwürfe wiedergeben oder über sie debattieren (z. B. FT Podcast, TechRadar), aber das sind Sekundärkommentare, keine Primärbelege, dass koordinierte, absichtliche PR/Lobby‑Aktionen stattfanden. ([flexilingo.com](https://www.flexilingo.com/en/podcasts/220652-ft-tech-tonic/ai-labs-are-anthropic-really-the-good-guys-54404932995?utm_source=openai))\n\n4) Ergebnis gegen die TAIL‑Aufnahmekriterien: Für Aufnahme (ACCEPT) wäre nötig: ein eng umrissener, datierter Primärbeleg (Zitat, Dokument, interne Kommunikation oder verifizierbare Aktion) mit kausalem Mechanismus, messbarem Markt‑Impact und ein überprüfbarer Falsifizierer. Das fehlt hier; daher REJECT. (Siehe auch EvidenceStatus = NOT PROVEN.)\n\nQuellen‑Kurzbelege: Zu den tatsächlichen 'Slowdown'‑Aufrufen existieren belastbare Berichte (Washington Post, Axios, Reuters/andere) und Branchenreaktionen; gleichzeitig kursieren Debatten/Meinungen, die das Motiv der Firmen hinterfragen (z. B. FT‑Diskussion, TechRadar). Die vorgelegte voz.us‑Meldung bringt jedoch nichts Primäres, Neues oder Messbares, das die Baseline substantiell ändert. ([washingtonpost.com](https://www.washingtonpost.com/business/2026/09/12/anthropic-ai-dario-amodei/5cc3cc44-aec8-11f1-b498-8697f35a6743_story.html?utm_source=openai))",
+      "candidateId": "59e882faa88dd3ef4b76",
+      "candidateKey": "74a18de6cda16ee3fcb97f70",
+      "reviewedAt": "2026-09-16T01:31:36.774Z",
+      "priorityScore": 29,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_021887656c8d0523006aa9f0f9b1b087d2b8dc99a1af5c9eeb"
+    },
+    {
+      "decision": "rejected",
+      "title": "ASML/TSMC‑Ankündigung zu 12‑inch‑Photomask‑Initiative (High‑NA EUV) — nicht neu und headline‑Interpretation",
+      "fact": "ASML und TSMC kündigten eine industry‑Initiative zur Übergangsentwicklung auf 12‑inch‑Photomasks für High‑NA EUV an; Ziel: Pilotlinie bis 2031 und Produktion mit 12‑inch‑Masks/High‑NA‑HVM bis ~2033. TSMC beabsichtigt High‑NA in HVM ab 2030. (ASML/TSMC Pressemitteilungen, 2026‑09‑08 / 2026‑09‑07).",
+      "placement": "Global / Halbleiterausstattung & Foundry‑Layer; relevant für Advanced‑Node‑Fertigung (High‑NA EUV) — Zeithorizont: Pilotlinie 2031, Produktion 2033 (langfristig).",
+      "mechanism": "Die Initiative zielt auf die Umstellung von heutigen 6‑inch‑Photomasks auf 12‑inch‑Masks; größere Masken sollen Scanner‑Produktivität erhöhen, Stitching‑Constraints reduzieren und damit langfristig die Effektivität von High‑NA EUV für Advanced Nodes verbessern. Dies ist ein technologischer Roadmap‑/infrastrukturaufsatz, kein unmittelbarer Produktions‑Shipment‑Beweis.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Begrenzte bis keine messbare Auswirkung auf die Near‑Term‑HBM4‑Ramp (H2–Q4 2026–2027). Die ASML/TSMC‑Ankündigung bestätigt einen langfristigen Pfad zur weiteren Industriewertschöpfung von High‑NA (2030–2033), ändert aber nichts am beobachteten kurzfristigen HBM4‑Produktions‑/Qualifikations‑Timing. Relevanz liegt eher auf Advanced‑Node‑Roadmap als auf HBM‑Ramp‑Timing.",
+      "falsifier": "Bis 2031‑12‑31: Keine öffentlich dokumentierte Ankündigung eines 12‑inch‑Photomask‑Pilotwerks (von ASML/TSMC oder einem beteiligten Maskenhersteller) ODER bis 2033‑12‑31: kein dokumentierter Einsatz von 12‑inch‑Photomasks in einer produzierenden High‑NA‑HVM‑Linie. (Beobachtbare, datierte Unternehmens‑ oder Behördenankündigungen).",
+      "nextReview": "2027-09-08",
+      "eventDate": "2026-09-08",
+      "novelty": "Niedrig — die Kernaussage ist bereits in TAIL‑Baseline/S‑AUTO‑Quellen abgebildet (High‑NA‑Adoption/Initiativen und Zeitpläne waren bereits berichtet).",
+      "duplicateOf": "S-AUTO-28b329255578ff6a8943398e; S-AUTO-4463e0ea1a29b160b3a1ab39",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 12,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv",
+          "label": "ASML / TSMC - Press Release (September 7/8, 2026)",
+          "kind": "primary",
+          "supports": "ASML/TSMC geben an, eine Initiative zum Übergang zu 12‑inch‑Photomasks zu starten; Ziel: 12‑inch‑Mask‑Pilotlinie bis 2031 und Unterstützung für Produktionsreife bis ~2033; TSMC beabsichtigt High‑NA in HVM ab 2030."
+        },
+        {
+          "url": "https://pr.cld.tsmc.com/english/news/3338",
+          "label": "TSMC - Begleitmeldung zur Photomask Initiative (September 2026)",
+          "kind": "secondary",
+          "supports": "TSMC‑Statement zur Zusammenarbeit mit ASML und zu Zeitplänen (TSMC erwartet Einsatz von High‑NA für Advanced Nodes ab 2030)."
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/tsmc-and-samsung-commit-to-adopting-asmls-high-na-euv-lithography-tools-by-2030/",
+          "label": "Berichterstattung (DCD) über Industrie‑Commitments zu High‑NA (Sep 2026)",
+          "kind": "secondary",
+          "supports": "Branchenberichterstattung fasst ASML/TSMC/Samsung/Intel‑Aktualisierungen zusammen und ordnet die Ankündigung in die bereits sichtbare Industrie‑Roadmap ein."
+        }
+      ],
+      "reason": "Ablehnung wegen fehlender Neuheit und übersteigerter Headline‑Interpretation. Die Medium‑Headline ('...has an expiration date') ist eine interpretative Lesart; die Primary‑Quellen (ASML/TSMC) dokumentieren eine koordinierte Roadmap (12‑inch‑Mask‑Pilotlinie bis 2031, Produktionsreife bis ~2033, TSMC‑HVM‑Einsatz ab 2030), nicht eine formale ‚Ablauffrist‘ für bereits existierende High‑NA‑Methoden. Zudem ist diese Entwicklung bereits in der TAIL‑Baseline/S‑AUTO‑Sammlung (mehrere Einträge zu High‑NA‑Adoption, Zeitplänen und Hersteller‑Commitments) abgebildet — die Einreichung wiederholt bestätigte Roadmap‑Informationen und bringt keine neue, enge quantifizierbare Beobachtung, die eine bestehende Vorhersage materiell verifizieren oder falsifizieren würde. Daher erfüllt die Kandidatur nicht die Aufnahmekriterien (Neuheit/atomare, eng abgegrenzte Messung und messbaren kurzfristigen Einfluss auf eine existierende Vorhersage).",
+      "candidateId": "32479a22c11a45cd3eb9",
+      "candidateKey": "44c05e8b0f0b54f695953eb0",
+      "reviewedAt": "2026-09-16T01:33:51.824Z",
+      "priorityScore": 50,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c962847ae3cf798006aa9f179065887d2a69efed5d9dc5960"
+    },
+    {
+      "decision": "accepted",
+      "title": "Samsung und SK hynix lehnen KEPCO‑Vorschlag über 25 Bio. Won (≈US$18.7 Mrd.) zur Vorfinanzierung des Stromnetzausbaus ab",
+      "fact": "Samsung Electronics und SK hynix haben einem Vorschlag der Korea Electric Power Corp (KEPCO) widersprochen, zusammen 25 000 000 000 000 Won (25 Bio. Won; ≈US$18.7 Mrd.) als Vorauszahlung zu leisten, damit KEPCO das Stromnetz für geplante Halbleiter‑Mega‑Cluster ausbaut.",
+      "placement": "Geographie: Südkorea; Domain: Energieinfrastruktur für Halbleiter‑Mega‑Cluster / AI‑Infrastruktur; Layer: Utility‑Grid‑Finanzierung (Vorauszahlung für Netz‑Upgrades); Horizont: kurzfristig (Q4 2026).",
+      "mechanism": "KEPCO hatte vorgeschlagen, fünf Jahre erwarteter Stromrechnungen als Vorauszahlung einzufordern, damit die Staatsgesellschaft das Netz und Transformatoren für die geplanten Fab‑Cluster vorfinanzieren kann. Die Ablehnung durch die beiden größten Speicherhersteller bedeutet: (a) Chiphersteller werden diese Vorfinanzierung nicht tragen, (b) KEPCO muss alternative Finanzierungs‑ oder Tarifsysteme suchen (Staatsmittel, Umlage über Tarife, Fremdkapital) oder Netzprojekte verzögert ausführen. Das erhöht kurzfristig das Risiko, dass Netzausbau, Anschlusszeitpunkte und Stromkosten für AI‑Rechenzentren/Chipfabriken teurer oder langsamer werden.",
+      "predictionId": "P-2026-07-12-03",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass \"AI‑Inputinflation\" 2026/2027 über den Strom-/Energiekanal spürbar bleibt oder steigt (unterstützt die These P-2026-07-12-03, wonach Memory, Software, Strom und Energieprodukte Hauptkanäle der Input‑Inflation sind). Konkret: die Nachricht erhöht kurzfristig das Gewicht des Energie‑Kostenkanals in der Gesamteinschätzung der Input‑Inflation für AI‑Buildout (H2 2026→H1 2027).",
+      "falsifier": "Bis 2026-12-31: Wenn KEPCO oder die südkoreanische Regierung einen formalen Finanzierungsplan oder Gesetzesbeschluss veröffentlicht, der die erforderlichen ~25 Bio. Won für Netzausbau dokumentiert und dieser Plan ausdrücklich keine Vorverrechnung/Teilzahlung der Chiphersteller vorsieht (offizielle Pressemitteilung, Regierungs‑ oder KEPCO‑Dokument), dann wird der hier angenommene kurzfristige Preisdruck-/Versorgungsrisiko‑Kanal falsifiziert.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-14",
+      "novelty": "Aktualisiert: erste klare öffentliche Dokumenten‑Bestätigung (an Gesetzgeber übermitteltes Dokument) über die KEPCO‑Vorschlagsgröße und die Ablehnung durch Samsung/SK Hynix; keine identische Beobachtung im Baseline.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 13,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 45,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/samsung-sk-hynix-reject-kepcos-19-billionpower-prepayment-proposal-document-shows-4898798",
+          "label": "Investing.com (Republishing Reuters copy) — Artikeltext mit 'SEOUL, Sept 14 (Reuters)'",
+          "kind": "primary",
+          "supports": "Gibt Reuters‑Bericht mit Kernaussage wieder: Samsung und SK hynix lehnen KEPCO‑Vorschlag über 25 Bio. Won Vorfinanzierung ab; Dokument wurde dem Gesetzgeber vorgelegt (Datum 2026‑09‑14)."
+        },
+        {
+          "url": "https://www.tradingview.com/news/cnbctv%3A82b3c24f1094b%3A0/",
+          "label": "TradingView — Headline/Marktreaktion (Titelseinreichung des Inbox‑Kandidaten)",
+          "kind": "secondary",
+          "supports": "Zeigt Marktreaktion/Headline‑Aufarbeitung: 'Samsung Stock Falls ... $18.7 Billion Power Proposal' und verweist auf die KEPCO‑Geschichte als Auslöser für Anleger‑Sorgen über AI‑Infrastrukturkosten (2026‑09‑14)."
+        },
+        {
+          "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-turn-down-kepcos-electricity-prepayment-proposal-over-cash-flow-concerns/12873554",
+          "label": "Korea JoongAng Daily — lokaler Bericht zu Ablehnung und Motiven",
+          "kind": "secondary",
+          "supports": "Berichtet separat über die Ablehnung, zitiert interne Reviews und Cash‑Flow‑Bedenken (unterstützt Umfang: 25 Bio. Won ≈US$18.6–18.7 Mrd.)."
+        }
+      ],
+      "reason": "Verifikation: Der Kernbefund (25 Bio. Won / ≈US$18.7 Mrd. Vorfinanzierungs‑Vorschlag; Ablehnung durch Samsung und SK hynix) ist durch mehrere unabhängige Nachrichtenwiederholungen gestützt, die den ursprünglichen Reuters‑Bericht dokumentieren (Investing.com/Marketscreener/StraitsTimes u.a.). Ich habe das ursprüngliche Reuters‑Reporting über eine Republizierung (Investing.com) geprüft und lokale sowie Markt‑Aufarbeitungen (Korea JoongAng, TradingView) herangezogen, um sowohl das Datum (2026‑09‑14) als auch die exakte Größenordnung (25 Trillion Won) zu bestätigen. Opposing evidence: Es gibt keine Primärquelle, die widersprüchlich behauptet, die Firmen hätten zugestimmt; vielmehr existieren zahlreiche Berichte, die die Ablehnung konsistent wiedergeben. Assessment gegen Aufnahme‑Kriterien: Die Beobachtung ist atomic (datiert, monetär, handelbar), platzierbar (Südkorea, Netzfinanzierung, AI‑Infrastruktur) und kausal nachvollziehbar (Vorauszahlung → Finanzierungsdruck/Netz‑Timing → Kosten/Versorgungsrisiko). Falsifizierbarkeit: Ein klar messbares Gegenereignis (offizieller alternativer Finanzierungsplan ohne Chip‑Vorverrechnung bis 2026‑12‑31) ist angegeben. Adversarial check (Red‑pencil): Ich habe geprüft, ob diese Meldung bereits als Baseline‑Signal enthalten ist — es ist neu gegenüber den gelisteten Baseline‑Items; die Quelle ist ein Reuters‑Syndikat und nicht rein spekulativ. Deshalb besteht Red‑Pencil‑Pass. Wirkung: Dieses Signal unterstützt die These P-2026-07-12-03 (AI‑Inputinflation via Strom/Energie) und erhöht kurzfristig die Wahrscheinlichkeit, dass Energiekosten ein relevanter Preistreiber im AI‑Buildout bleiben. Einschränkungen: Die Meldung beschreibt ein abgelehntes Angebot und nicht einen verbindlichen Tarif‑ oder Gesetzesakt; die tatsächliche Preiswirkung hängt von folgenden Entscheidungen ab (KEPCO‑Finanzierung, Staatsintervention, Tarifverfahren), die noch offen sind. Referenzen: siehe Quellen oben (Investing.com/Reuters‑Syndication, TradingView, Korea JoongAng).",
+      "candidateId": "018150a80fa712f90566",
+      "candidateKey": "1f5416a86dfb05f731ab0757",
+      "reviewedAt": "2026-09-16T01:33:51.840Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-1f5416a86dfb05f731ab0757",
+        "title": "Samsung und SK hynix lehnen KEPCO‑Vorschlag über 25 Bio. Won (≈US$18.7 Mrd.) zur Vorfinanzierung des Stromnetzausbaus ab",
+        "date": "2026-09-14",
+        "admittedAt": "2026-09-16T01:33:51.840Z",
+        "fact": "Samsung Electronics und SK hynix haben einem Vorschlag der Korea Electric Power Corp (KEPCO) widersprochen, zusammen 25 000 000 000 000 Won (25 Bio. Won; ≈US$18.7 Mrd.) als Vorauszahlung zu leisten, damit KEPCO das Stromnetz für geplante Halbleiter‑Mega‑Cluster ausbaut.",
+        "placement": "Geographie: Südkorea; Domain: Energieinfrastruktur für Halbleiter‑Mega‑Cluster / AI‑Infrastruktur; Layer: Utility‑Grid‑Finanzierung (Vorauszahlung für Netz‑Upgrades); Horizont: kurzfristig (Q4 2026).",
+        "tailInference": "KEPCO hatte vorgeschlagen, fünf Jahre erwarteter Stromrechnungen als Vorauszahlung einzufordern, damit die Staatsgesellschaft das Netz und Transformatoren für die geplanten Fab‑Cluster vorfinanzieren kann. Die Ablehnung durch die beiden größten Speicherhersteller bedeutet: (a) Chiphersteller werden diese Vorfinanzierung nicht tragen, (b) KEPCO muss alternative Finanzierungs‑ oder Tarifsysteme suchen (Staatsmittel, Umlage über Tarife, Fremdkapital) oder Netzprojekte verzögert ausführen. Das erhöht kurzfristig das Risiko, dass Netzausbau, Anschlusszeitpunkte und Stromkosten für AI‑Rechenzentren/Chipfabriken teurer oder langsamer werden.",
+        "predictionId": "P-2026-07-12-03",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass \"AI‑Inputinflation\" 2026/2027 über den Strom-/Energiekanal spürbar bleibt oder steigt (unterstützt die These P-2026-07-12-03, wonach Memory, Software, Strom und Energieprodukte Hauptkanäle der Input‑Inflation sind). Konkret: die Nachricht erhöht kurzfristig das Gewicht des Energie‑Kostenkanals in der Gesamteinschätzung der Input‑Inflation für AI‑Buildout (H2 2026→H1 2027).",
+        "falsifier": "Bis 2026-12-31: Wenn KEPCO oder die südkoreanische Regierung einen formalen Finanzierungsplan oder Gesetzesbeschluss veröffentlicht, der die erforderlichen ~25 Bio. Won für Netzausbau dokumentiert und dieser Plan ausdrücklich keine Vorverrechnung/Teilzahlung der Chiphersteller vorsieht (offizielle Pressemitteilung, Regierungs‑ oder KEPCO‑Dokument), dann wird der hier angenommene kurzfristige Preisdruck-/Versorgungsrisiko‑Kanal falsifiziert.",
+        "nextReview": "2026-12-31",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 10,
+          "thesisRelevance": 18,
+          "forecastImpact": 14,
+          "falsifiability": 13,
+          "timeSensitivity": 9
+        },
+        "severity": 45,
+        "confidence": 80,
+        "markets": [
+          "ai_infrastructure",
+          "semiconductors",
+          "supply_chain"
+        ],
+        "signal": "price_up",
+        "driverScope": [
+          "pricing",
+          "availability"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Investing.com (Republishing Reuters copy) — Artikeltext mit 'SEOUL, Sept 14 (Reuters)'",
+            "url": "https://www.investing.com/news/stock-market-news/samsung-sk-hynix-reject-kepcos-19-billionpower-prepayment-proposal-document-shows-4898798"
+          },
+          {
+            "label": "TradingView — Headline/Marktreaktion (Titelseinreichung des Inbox‑Kandidaten)",
+            "url": "https://www.tradingview.com/news/cnbctv%3A82b3c24f1094b%3A0/"
+          },
+          {
+            "label": "Korea JoongAng Daily — lokaler Bericht zu Ablehnung und Motiven",
+            "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-turn-down-kepcos-electricity-prepayment-proposal-over-cash-flow-concerns/12873554"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit, dass \"AI‑Inputinflation\" 2026/2027 über den Strom-/Energiekanal spürbar bleibt oder steigt (unterstützt die These P-2026-07-12-03, wonach Memory, Software, Strom und Energieprodukte Hauptkanäle der Input‑Inflation sind). Konkret: die Nachricht erhöht kurzfristig das Gewicht des Energie‑Kostenkanals in der Gesamteinschätzung der Input‑Inflation für AI‑Buildout (H2 2026→H1 2027)."
+        },
+        "admissionReviewKey": "1f5416a86dfb05f731ab0757"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02847a78a2caa4c6006aa9f178e68487d2914200ee6d3702ea"
     }
   ]
 }

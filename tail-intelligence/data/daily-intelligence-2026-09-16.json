@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T00:54:23.281Z",
+  "updatedAt": "2026-09-16T01:34:38.841Z",
   "previousRun": "2026-09-15",
   "executivePulse": {
     "current": 78,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 80,
     "previous": 80,
-    "interpretation": "Datenvertrauen 80/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 518 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 80/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 510 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 518 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 510 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -529,6 +529,150 @@
       "date": "2026-08-26"
     },
     {
+      "id": "S-AUTO-9904f14f9eb93ff2d998f7c1",
+      "title": "Samsung nutzt TSMC-Prozesse für HBM‑Base‑Die (Bericht)",
+      "date": "2026-09-15",
+      "admittedAt": "2026-09-16T01:27:28.762Z",
+      "fact": "Am 2026-09-15 berichtete ZDNet (wiedergegeben über Daum), dass Samsung Electronics plant, für kundenspezifische HBM‑(cHBM / NVHBM) Base‑Dies sowohl die eigene Foundry (Samsung Foundry, z.B. SF4) als auch TSMC‑Prozesse parallel zu nutzen («투트랙»/two‑track).",
+      "placement": "Globaler HBM‑Lieferketten‑Layer — Base‑Die / Foundry‑Schicht; Gültig ab Veröffentlichung 2026-09-15; relevante Domänen: HBM (Memory), Foundry/Advanced Logic, AI‑Infrastruktur.",
+      "tailInference": "Samsung will Kundenanforderungen an Prozess‑/Designpräferenzen bedienen, indem es Base‑Dies entweder in Samsung‑Foundry (z.B. 4nm SF4) oder bei TSMC fertigen lässt; das erlaubt, kombiniert mit Samsungs eigenen Core‑DRAM‑Dies, kundenspezifische NVHBM‑Stacks zu qualifizieren und reduziert Bindung an ein einziges Foundry‑Kit, wodurch kurzfristig die Quellenflexibilität für kundenspezifische HBM‑Aufträge steigt.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass Samsung im Q3 2026 den berichteten HBM4‑Umsatzsprung erreicht (Forecast P-2026-07-30-02: Q3 HBM4‑Umsatz ≥2.5× Q2), weil Kunden, die einen TSMC‑Prozess für die Base‑Die wünschen, nun über Samsung/HYBRID‑Sourcing bedient werden können und damit Adoptions‑/Qualifikationshürden sinken.",
+      "falsifier": "Bis zum Review‑Datum (2026-10-31) gilt die Beobachtung als wirkungsvoll falsifiziert, falls entweder (a) Samsungs offiziell ausgewiesener HBM4‑Umsatz für Q3 2026 unter dem 2,5‑fachen des Q2‑Werts liegt (d.h. die konkrete, veröffentlichte Quartalszahlen‑Vergleichsbedingung des verknüpften Forecast‑Falsifiers nicht erfüllt ist), oder (b) bis 2026-10-31 keine Kundensamples/öffentlichen Hinweise vorliegen, die kombinierte Produkte mit Samsung Core‑DRAM und TSMC‑produzierten Base‑Dies (konkret benannte Kunden‑Ankündigung oder qualifizierte Sample‑/Shipment‑Meldung) nachweisen.",
+      "nextReview": "2026-10-31",
+      "priorityScore": 82,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 17,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 40,
+      "confidence": 78,
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure",
+        "dram"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Daum (republication of ZDNet Korea article)",
+          "url": "https://v.daum.net/v/20260915135750059"
+        },
+        {
+          "label": "Tom's Hardware — Kontext zu Samsungs HBM/Base‑Die‑Strategie",
+          "url": "https://www.tomshardware.com/tech-industry/samsungs-fab-roadmap-examined"
+        },
+        {
+          "label": "Analyse 'HBM Supply Chain' (Joon K Lee)",
+          "url": "https://joonklee.com/insights/hbm-supply-chain-korea/"
+        },
+        {
+          "label": "TrendForce / Branchenberichterstattung (zusätzliche Kontext‑Quelle)",
+          "url": "https://www.trendforce.com/news/2026/09/08/news-samsung-reportedly-targets-in-house-silicon-photonics-pic-testing-by-end-2026-using-tsmc-qualified-tools/"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöht die Wahrscheinlichkeit, dass Samsung im Q3 2026 den berichteten HBM4‑Umsatzsprung erreicht (Forecast P-2026-07-30-02: Q3 HBM4‑Umsatz ≥2.5× Q2), weil Kunden, die einen TSMC‑Prozess für die Base‑Die wünschen, nun über Samsung/HYBRID‑Sourcing bedient werden können und damit Adoptions‑/Qualifikationshürden sinken."
+      },
+      "admissionReviewKey": "9904f14f9eb93ff2d998f7c1"
+    },
+    {
+      "id": "S-AUTO-1f5416a86dfb05f731ab0757",
+      "title": "Samsung und SK hynix lehnen KEPCO‑Vorschlag über 25 Bio. Won (≈US$18.7 Mrd.) zur Vorfinanzierung des Stromnetzausbaus ab",
+      "date": "2026-09-14",
+      "admittedAt": "2026-09-16T01:33:51.840Z",
+      "fact": "Samsung Electronics und SK hynix haben einem Vorschlag der Korea Electric Power Corp (KEPCO) widersprochen, zusammen 25 000 000 000 000 Won (25 Bio. Won; ≈US$18.7 Mrd.) als Vorauszahlung zu leisten, damit KEPCO das Stromnetz für geplante Halbleiter‑Mega‑Cluster ausbaut.",
+      "placement": "Geographie: Südkorea; Domain: Energieinfrastruktur für Halbleiter‑Mega‑Cluster / AI‑Infrastruktur; Layer: Utility‑Grid‑Finanzierung (Vorauszahlung für Netz‑Upgrades); Horizont: kurzfristig (Q4 2026).",
+      "tailInference": "KEPCO hatte vorgeschlagen, fünf Jahre erwarteter Stromrechnungen als Vorauszahlung einzufordern, damit die Staatsgesellschaft das Netz und Transformatoren für die geplanten Fab‑Cluster vorfinanzieren kann. Die Ablehnung durch die beiden größten Speicherhersteller bedeutet: (a) Chiphersteller werden diese Vorfinanzierung nicht tragen, (b) KEPCO muss alternative Finanzierungs‑ oder Tarifsysteme suchen (Staatsmittel, Umlage über Tarife, Fremdkapital) oder Netzprojekte verzögert ausführen. Das erhöht kurzfristig das Risiko, dass Netzausbau, Anschlusszeitpunkte und Stromkosten für AI‑Rechenzentren/Chipfabriken teurer oder langsamer werden.",
+      "predictionId": "P-2026-07-12-03",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass \"AI‑Inputinflation\" 2026/2027 über den Strom-/Energiekanal spürbar bleibt oder steigt (unterstützt die These P-2026-07-12-03, wonach Memory, Software, Strom und Energieprodukte Hauptkanäle der Input‑Inflation sind). Konkret: die Nachricht erhöht kurzfristig das Gewicht des Energie‑Kostenkanals in der Gesamteinschätzung der Input‑Inflation für AI‑Buildout (H2 2026→H1 2027).",
+      "falsifier": "Bis 2026-12-31: Wenn KEPCO oder die südkoreanische Regierung einen formalen Finanzierungsplan oder Gesetzesbeschluss veröffentlicht, der die erforderlichen ~25 Bio. Won für Netzausbau dokumentiert und dieser Plan ausdrücklich keine Vorverrechnung/Teilzahlung der Chiphersteller vorsieht (offizielle Pressemitteilung, Regierungs‑ oder KEPCO‑Dokument), dann wird der hier angenommene kurzfristige Preisdruck-/Versorgungsrisiko‑Kanal falsifiziert.",
+      "nextReview": "2026-12-31",
+      "priorityScore": 82,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 13,
+        "timeSensitivity": 9
+      },
+      "severity": 45,
+      "confidence": 80,
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "signal": "price_up",
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Investing.com (Republishing Reuters copy) — Artikeltext mit 'SEOUL, Sept 14 (Reuters)'",
+          "url": "https://www.investing.com/news/stock-market-news/samsung-sk-hynix-reject-kepcos-19-billionpower-prepayment-proposal-document-shows-4898798"
+        },
+        {
+          "label": "TradingView — Headline/Marktreaktion (Titelseinreichung des Inbox‑Kandidaten)",
+          "url": "https://www.tradingview.com/news/cnbctv%3A82b3c24f1094b%3A0/"
+        },
+        {
+          "label": "Korea JoongAng Daily — lokaler Bericht zu Ablehnung und Motiven",
+          "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-turn-down-kepcos-electricity-prepayment-proposal-over-cash-flow-concerns/12873554"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöht die Wahrscheinlichkeit, dass \"AI‑Inputinflation\" 2026/2027 über den Strom-/Energiekanal spürbar bleibt oder steigt (unterstützt die These P-2026-07-12-03, wonach Memory, Software, Strom und Energieprodukte Hauptkanäle der Input‑Inflation sind). Konkret: die Nachricht erhöht kurzfristig das Gewicht des Energie‑Kostenkanals in der Gesamteinschätzung der Input‑Inflation für AI‑Buildout (H2 2026→H1 2027)."
+      },
+      "admissionReviewKey": "1f5416a86dfb05f731ab0757"
+    },
+    {
       "id": "S-AUTO-d50d428a4bc231b9e6e8e32b",
       "title": "Anthropic, OpenAI und Google führten seit Juli 2026 Arbeitsgruppengespräche über ein gemeinsames Frontier‑AI‑Standards‑Gremium",
       "date": "2026-09-13",
@@ -717,14 +861,14 @@
     "date": "2026-09-16",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 80,
-    "note": "Evidenzprüfung offen: 518 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 82,
+    "note": "Evidenzprüfung offen: 510 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-16T00:54:23.281Z",
+    "generatedAt": "2026-09-16T01:34:38.841Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-16T00:44:01.050Z",
-    "inboxNewItems": 47,
+    "inboxUpdatedAt": "2026-09-16T01:24:15.454Z",
+    "inboxNewItems": 14,
     "highRelevanceCandidates": [
       {
         "id": "2edffc212838bfbad8d3",
@@ -882,21 +1026,21 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-16T00:54:23.120Z",
-    "inboxUpdatedAt": "2026-09-16T00:44:01.050Z",
+    "checkedAt": "2026-09-16T01:34:38.673Z",
+    "inboxUpdatedAt": "2026-09-16T01:24:15.454Z",
     "status": "error",
     "candidates": 998,
-    "reviewed": 480,
-    "accepted": 50,
-    "watchlist": 125,
-    "rejected": 305,
-    "pending": 518,
+    "reviewed": 488,
+    "accepted": 52,
+    "watchlist": 128,
+    "rejected": 308,
+    "pending": 510,
     "oldestPendingAt": "2026-08-18T09:47:10.000Z",
-    "lastCompletedReviewAt": "2026-09-16T00:52:47.468Z",
-    "error": "Candidates 205e8d100d030d8f166c: Analyst request timed out after 95617ms",
+    "lastCompletedReviewAt": "2026-09-16T01:33:51.840Z",
+    "error": "Candidates 77445410f343519d1228: Analyst request timed out after 46793ms",
     "batchErrors": [
-      "Candidates e8abd5f8f3147a3c3b14: Analyst request timed out after 95620ms",
-      "Candidates 205e8d100d030d8f166c: Analyst request timed out after 95617ms"
+      "Candidates 34e1b9f4c71f5c1d78ad: Analyst request timed out after 46796ms",
+      "Candidates 77445410f343519d1228: Analyst request timed out after 46793ms"
     ],
     "rawCandidates": 1033,
     "triage": {
@@ -904,13 +1048,13 @@
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-16T00:44:22.636Z",
-      "completedAt": "2026-09-16T00:54:23.127Z",
-      "selected": 96,
+      "startedAt": "2026-09-16T01:24:38.189Z",
+      "completedAt": "2026-09-16T01:34:38.679Z",
+      "selected": 24,
       "reviewed": 8,
       "concurrency": 2,
       "batchSize": 1,
-      "limit": 96,
+      "limit": 24,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
       "durationSeconds": 600,
@@ -919,7 +1063,7 @@
   },
   "indexCalculation": {
     "asOf": "2026-09-16",
-    "inputHash": "028b69c98881dfaae58666557e871087f84265f8c9e68748878bcf7af7ff683c",
+    "inputHash": "b8fca18cfe787637ad4d46c40c06be33a8b60c17b126da017f1f3bc51cc39b0b",
     "sourceDataAsOf": "2026-09-15"
   }
 }

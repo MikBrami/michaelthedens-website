@@ -7,21 +7,21 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-16T00:54:23.120Z",
-    "inboxUpdatedAt": "2026-09-16T00:44:01.050Z",
+    "checkedAt": "2026-09-16T01:34:38.673Z",
+    "inboxUpdatedAt": "2026-09-16T01:24:15.454Z",
     "status": "error",
     "candidates": 998,
-    "reviewed": 480,
-    "accepted": 50,
-    "watchlist": 125,
-    "rejected": 305,
-    "pending": 518,
+    "reviewed": 488,
+    "accepted": 52,
+    "watchlist": 128,
+    "rejected": 308,
+    "pending": 510,
     "oldestPendingAt": "2026-08-18T09:47:10.000Z",
-    "lastCompletedReviewAt": "2026-09-16T00:52:47.468Z",
-    "error": "Candidates 205e8d100d030d8f166c: Analyst request timed out after 95617ms",
+    "lastCompletedReviewAt": "2026-09-16T01:33:51.840Z",
+    "error": "Candidates 77445410f343519d1228: Analyst request timed out after 46793ms",
     "batchErrors": [
-      "Candidates e8abd5f8f3147a3c3b14: Analyst request timed out after 95620ms",
-      "Candidates 205e8d100d030d8f166c: Analyst request timed out after 95617ms"
+      "Candidates 34e1b9f4c71f5c1d78ad: Analyst request timed out after 46796ms",
+      "Candidates 77445410f343519d1228: Analyst request timed out after 46793ms"
     ],
     "rawCandidates": 1033,
     "triage": {
@@ -29,13 +29,13 @@
       "groupedDuplicates": 13
     },
     "lastRun": {
-      "startedAt": "2026-09-16T00:44:22.636Z",
-      "completedAt": "2026-09-16T00:54:23.127Z",
-      "selected": 96,
+      "startedAt": "2026-09-16T01:24:38.189Z",
+      "completedAt": "2026-09-16T01:34:38.679Z",
+      "selected": 24,
       "reviewed": 8,
       "concurrency": 2,
       "batchSize": 1,
-      "limit": 96,
+      "limit": 24,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
       "durationSeconds": 600,
@@ -81,15 +81,15 @@
     }
   ],
   "sourceDataAsOf": "2026-09-15",
-  "knowledgeBaseSyncedAt": "2026-09-16T00:54:23.281Z",
+  "knowledgeBaseSyncedAt": "2026-09-16T01:34:38.841Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-09-16T00:54:24.549Z",
-  "lastForecastRun": "2026-09-16T00:54:24.549Z",
-  "newlyProcessedArticles": 47,
-  "totalArticles": 176,
-  "articleCount": 176,
+  "lastSuccessfulUpdate": "2026-09-16T01:34:40.103Z",
+  "lastForecastRun": "2026-09-16T01:34:40.103Z",
+  "newlyProcessedArticles": 14,
+  "totalArticles": 178,
+  "articleCount": 178,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -143,14 +143,14 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung gestört: 518 Kandidaten ausstehend.",
+    "Evidenzprüfung gestört: 510 Kandidaten ausstehend.",
     "9 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-16T00:44:01.050Z",
-    "newItems": 47,
-    "totalItems": 2923,
+    "updatedAt": "2026-09-16T01:24:15.454Z",
+    "newItems": 14,
+    "totalItems": 2937,
     "duplicateItems": 300,
     "relevantItems": 1379,
     "sourceErrors": []
@@ -162,19 +162,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "480 geprüft · 518 offen · 50 aufgenommen"
+        "detail": "488 geprüft · 510 offen · 52 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "176 Artikel · Sync 2026-09-16 · jüngstes bestätigtes Signal 2026-09-15"
+        "detail": "178 Artikel · Sync 2026-09-16 · jüngstes bestätigtes Signal 2026-09-15"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "2923 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "2937 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -747,7 +747,7 @@
     {
       "name": "SK hynix",
       "score": 78,
-      "mentions": 27
+      "mentions": 28
     },
     {
       "name": "NVIDIA",
@@ -766,8 +766,8 @@
     },
     {
       "name": "Samsung",
-      "score": 75,
-      "mentions": 32
+      "score": 74,
+      "mentions": 34
     },
     {
       "name": "Sandisk",
@@ -866,6 +866,12 @@
           "score": 18
         },
         {
+          "id": "S-AUTO-9904f14f9eb93ff2d998f7c1",
+          "title": "Samsung nutzt TSMC-Prozesse für HBM‑Base‑Die (Bericht)",
+          "signal": "Kapazitätsentlastung",
+          "score": 16
+        },
+        {
           "id": "S-AUTO-2bffa1eabe150381d9d44714",
           "title": "INTC Stock Jumps Premarket As Intel Takes Early Lead In ASML's Next-Gen Chipmaking Technology – Samsung, TSMC Are Next",
           "signal": "Kapazitätsentlastung",
@@ -950,13 +956,14 @@
         "S-AUTO-957f7919efd09f7afc8827df",
         "S-AUTO-320b6e2f774c187fec2fee96",
         "S-AUTO-272c1d36e90cc133646942e5",
+        "S-AUTO-9904f14f9eb93ff2d998f7c1",
         "S-AUTO-2bffa1eabe150381d9d44714",
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-86f57c9ce4968b9706cd3a6f",
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-09-16T00:54:24.544Z"
+      "lastUpdated": "2026-09-16T01:34:40.098Z"
     },
     {
       "id": "hbm",
@@ -1024,6 +1031,12 @@
         {
           "id": "S-AUTO-28d69de59549559dfb52690b",
           "title": "DIGITIMES berichtet: Samsung HBM4‑Yield steigt; HBM4E bleibt herausfordernd",
+          "signal": "Kapazitätsentlastung",
+          "score": 16
+        },
+        {
+          "id": "S-AUTO-9904f14f9eb93ff2d998f7c1",
+          "title": "Samsung nutzt TSMC-Prozesse für HBM‑Base‑Die (Bericht)",
           "signal": "Kapazitätsentlastung",
           "score": 16
         },
@@ -1119,6 +1132,7 @@
         "S-AUTO-320b6e2f774c187fec2fee96",
         "S-AUTO-272c1d36e90cc133646942e5",
         "S-AUTO-28d69de59549559dfb52690b",
+        "S-AUTO-9904f14f9eb93ff2d998f7c1",
         "S-AUTO-5943b6386e2f583bfa2b0839",
         "S-AUTO-2bffa1eabe150381d9d44714",
         "S-AUTO-4026d51f6952ba6f76e4f0eb",
@@ -1127,7 +1141,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-16T00:54:24.544Z"
+      "lastUpdated": "2026-09-16T01:34:40.098Z"
     },
     {
       "id": "nand",
@@ -1213,7 +1227,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T00:54:24.544Z"
+      "lastUpdated": "2026-09-16T01:34:40.098Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1294,7 +1308,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T00:54:24.544Z"
+      "lastUpdated": "2026-09-16T01:34:40.098Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1392,6 +1406,12 @@
         {
           "id": "S-AUTO-28d69de59549559dfb52690b",
           "title": "DIGITIMES berichtet: Samsung HBM4‑Yield steigt; HBM4E bleibt herausfordernd",
+          "signal": "Kapazitätsentlastung",
+          "score": 16
+        },
+        {
+          "id": "S-AUTO-9904f14f9eb93ff2d998f7c1",
+          "title": "Samsung nutzt TSMC-Prozesse für HBM‑Base‑Die (Bericht)",
           "signal": "Kapazitätsentlastung",
           "score": 16
         },
@@ -1530,6 +1550,7 @@
         "S-2026-08-06-05",
         "S-2026-07-25-04",
         "S-AUTO-a6c70a747ea255eaf37c4e9a",
+        "S-AUTO-1f5416a86dfb05f731ab0757",
         "S-AUTO-64bb30d24aff52312b465626",
         "S-AUTO-84351dc941259805a65972ee",
         "S-AUTO-d25873b789efc5ec1a7f41d3",
@@ -1543,6 +1564,7 @@
         "S-AUTO-320b6e2f774c187fec2fee96",
         "S-AUTO-d4d297d3a2250f49cccb0840",
         "S-AUTO-28d69de59549559dfb52690b",
+        "S-AUTO-9904f14f9eb93ff2d998f7c1",
         "S-AUTO-5943b6386e2f583bfa2b0839",
         "S-AUTO-220050d4a4beaafaeaab1881",
         "S-AUTO-fb8d49d0e82132264c37322c",
@@ -1555,7 +1577,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-16T00:54:24.545Z"
+      "lastUpdated": "2026-09-16T01:34:40.099Z"
     }
   ],
   "indexCalculation": {
@@ -1564,7 +1586,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-16"
   },
-  "executiveSummary": "TAIL steht auf 78/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 176 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 78/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 178 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
