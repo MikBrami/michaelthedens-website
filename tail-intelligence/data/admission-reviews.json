@@ -39493,6 +39493,864 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0058f1de695c8c81006aaa3b2bfc5887d0b9bad93f9658f742"
+    },
+    {
+      "decision": "rejected",
+      "title": "Micron demonstriert 512 GB DDR5 RDIMM; AMD und Intel validieren — Duplikat zum bereits erfassten Primärereignis",
+      "fact": "Micron demonstrierte am 2026-09-15 ein 512 GB DDR5 RDIMM (bis zu 9.200 MT/s; Micron nennt >60% geringeren Betriebsstrom gegenüber vier 128 GB RDIMMs). AMD und Intel sind laut Micron \"actively validating\" das Modul; Micron erwartet Volumenerzeugung in H2 2027. (Quelle: Micron-Pressemitteilung 2026-09-15).",
+      "placement": "Globaler Server‑DRAM‑Markt (server_dram, dram); Modul-/DIMM‑Layer; Relevanter Zeithorizont: Volumenproduktion H2 2027 (Micron‑Angabe).",
+      "mechanism": "Vertikale Interconnect‑Packaging‑Innovation (gestapelte DRAM‑Dies mit TSVs) erhöht die Kapazität pro RDIMM auf 512 GB und ermöglicht bis zu ~12 TB DDR5‑Hauptspeicher in 24‑Slot Dual‑Socket‑Servern; dadurch kann die benötigte Anzahl physischer RDIMMs pro Server sinken und so das effektive 'Host‑Bit'‑Engpasssignal relativieren — jedoch nur, sofern valide Qualifikationen, OEM‑Plattformunterstützung und tatsächlich qualifizierte Serienlieferungen erfolgen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Gering negativ (mildert leicht die Knappheitswahrscheinlichkeit für Server‑DRAM 2027): Die Demonstration signalisiert einen technischen Pfad zur höheren Host‑Bit‑Dichte, ändert aber die kurzfristige Knappheitsannahme der Vorhersage nicht, weil es sich um eine Demonstration mit erwarteter Volumenproduktion H2 2027 handelt und noch keine qualifizierten Serienlieferungen vorliegen.",
+      "falsifier": "Bis 2027-09-30: Micron startet keine Volumenproduktion der 512 GB RDIMM (Micron nannte H2 2027) ODER AMD/Intel veröffentlichen bis 2027-09-30 keine bestätigten Plattform‑Support-/BIOS‑Kompatibilitätsdokumente/Qualified‑Vendor‑Lists für die 512 GB‑RDIMM. Falls diese beiden Qualifikations-/Produktionskriterien nicht erfüllt sind, bleibt die Demonstration ohne messbare Wirkung auf P-2026-07-11-01.",
+      "nextReview": "2027-10-01",
+      "eventDate": "2026-09-15",
+      "novelty": "Niedrig — das Ereignis ist bereits in der TAIL‑Baseline als S-AUTO-8a5701d057f8b4f60e46ba88 erfasst (Micron‑Demo 2026-09-15).",
+      "duplicateOf": "S-AUTO-8a5701d057f8b4f60e46ba88",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 15,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx",
+          "label": "Micron Technology – Pressemitteilung (GlobeNewswire) 2026-09-15",
+          "kind": "primary",
+          "supports": "Primärquelle: bestätigt Demonstration eines 512GB DDR5 RDIMM am 2026-09-15; nennt bis zu 9,200 MT/s, \">60%\" geringeren Betriebsstrom vs. vier 128GB RDIMMs, AMD und Intel seien \"actively validating\" und erwartet Volumenproduktion H2 2027. (Siehe Micron‑Pressemitteilung, L7–L19, L26)."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mu-stock-rises-micron-debuts-142303900.html",
+          "label": "Yahoo Finance – Marktbericht / Sekundärbericht (2026-09-15)",
+          "kind": "secondary",
+          "supports": "Sekundärberichterstattung, bestätigt Firmenangaben zur Demonstration und Validierungs‑Aussage zu AMD/Intel; nützlich zur unabhängigen Bestätigung der PR‑Meldung."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260916VL209/micron-ddr5-256gb-dram-capacity.html",
+          "label": "DigiTimes – Branchenbericht (2026-09-16)",
+          "kind": "secondary",
+          "supports": "Branchendurchsicht, ergänzt Kontext zur Produktankündigung und ordnet die 512GB‑RDIMM in die vorhandenen Sampling/Produktions‑Zeitpläne ein."
+        }
+      ],
+      "reason": "Grund für Ablehnung: Das Candidate‑Signal ist eine direkte Wiederholung eines bereits im Baseline‑Korpus erfassten Primärereignisses (S-AUTO-8a5701...), das auf derselben Micron‑Pressemitteilung vom 2026-09-15 basiert. Die Behauptung ist durch die Primärquelle verifizierbar (siehe Micron‑PR), liefert aber keine neue, zusätzliche Information (keine qualifizierten Serienlieferungen, keine OEM‑Produktlisten, kein sofortiger Effekt auf Kontraktpreise oder Lead‑Times). Nach den TAIL‑Aufnahmeregeln werden recycelte/duplizierte Ereignisse abgelehnt. Außerdem fehlt noch ein direkter, messbarer Markt‑Output (qualified shipments / observed lead‑time oder fill‑rate Änderung), deshalb ist das Signal zwar echt, aber nicht neu oder ausreichend belastbar, um die server‑DRAM‑Knappheitsprognose (P-2026-07-11-01) zu verändern. Opposing evidence: Micron selbst bezeichnet die Volumenproduktion erst für H2 2027 und nennt die Aussagen als forward‑looking (Pressemitteilung Zeilen 26 & 30–33); bis dahin bleibt der Effekt hypothetisch. Quellen: Micron PR (primary) sowie unabhängige Berichte (Yahoo Finance, DigiTimes) zur Bestätigung.",
+      "candidateId": "d9d1ea57b9b36f078892",
+      "candidateKey": "cebc73c3236bacced35c178f",
+      "reviewedAt": "2026-09-16T09:58:04.096Z",
+      "priorityScore": 52,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d5bff3db2a59d98006aaa67e4942887d2bfeb168e5601534a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron demonstriert 512GB DDR5‑RDIMM mittels gestapelter DRAM‑Verpackung",
+      "fact": "Micron demonstrierte am 2026-09-15 einen 512 GB DDR5 RDIMM (bis zu 9.200 MT/s) auf mehreren Serverplattformen; Micron nennt erwartete Volumenproduktion in H2 2027. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))",
+      "placement": "Global / Server‑DRAM (RDIMM) / Modul‑Layer / Horizon: Demonstration (kurzfristig); mögliche Serienauswirkung ab H2 2027 wenn qualifiziert und in Volumen geliefert.",
+      "mechanism": "Erhöhte Kapazität pro Modul durch vertikale Stapelung von DRAM‑Dies und Durchkontaktierungen (TSVs), wodurch mehr GB pro RDIMM möglich werden, ohne unmittelbar zusätzliche Wafer‑Bit‑Supply zu erzeugen. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Potentiell abschwächender Effekt auf die Server‑DRAM‑Knappheit (availability ↓) — aber nur wenn qualifizierte Volumenshipments und OEM‑Listungen erfolgen. Kurzfristig (bis H1 2027) kein belegter Markt‑Entspannungseffekt; die Demonstration allein ändert Verfügbarkeits‑ und Preisindikatoren nicht. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))",
+      "falsifier": "Bis zum 2027-12-31 meldet Micron keine qualifizierten Serienlieferungen (>=100.000 Stück) von 512GB RDIMMs an OEMs/Distributoren. Und bis zum 2028-06-30 zeigen Server‑DRAM‑Marktindikatoren keine messbare Verringerung der Lead‑Times (z. B. Lead‑Times < 8 Wochen) oder zwei aufeinanderfolgende Quartale rückläufiger Kontraktpreise. Falls beide Bedingungen erfüllt bleiben, ist die Hypothese, dass die Demonstration die strukturelle Knappheit materiell abschwächt, falsifiziert.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-15",
+      "novelty": "Erste öffentlich deklarierte Demonstration eines 512GB DDR5 RDIMM für Serverplattformen (gestapelte DRAM‑Verpackung).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 10,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx",
+          "label": "Micron (Pressemitteilung, GlobeNewswire) – Demonstration des 512GB DDR5 RDIMM; Datum: 2026-09-15.",
+          "kind": "primary",
+          "supports": "Belegt die Demonstration, Spezifikation (512 GB, bis 9.200 MT/s), Mechanismus (gestapelte DRAM‑Verpackung/TSVs) und Microns Aussage zu erwarteter Volumenproduktion H2 2027. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))"
+        },
+        {
+          "url": "https://www.storagereview.com/news/micron-shows-a-512gb-ddr5-rdimm-12tb-per-dual-socket-server-at-9200-mt-s-volume-production-in-2h-2027",
+          "label": "StorageReview – Berichterstattung zur Demonstration und zu erwarteter Volumenproduktion.",
+          "kind": "secondary",
+          "supports": "Unabhängige Sekundärquelle, ordnet die Demonstration ein und nennt dieselbe H2‑2027 Zeitachse für Volumenproduktion; bestätigt, dass es sich bislang um eine Demo handelt. ([storagereview.com](https://www.storagereview.com/news/micron-shows-a-512gb-ddr5-rdimm-12tb-per-dual-socket-server-at-9200-mt-s-volume-production-in-2h-2027?utm_source=openai))"
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260916VL209/micron-ddr5-256gb-dram-capacity.html",
+          "label": "Digitimes – Branchenbericht zur Demonstration und Marktkontext.",
+          "kind": "secondary",
+          "supports": "Stützt Einordnung: Demonstration ist technologisch bedeutsam, aber Produktion/Qualifikation bleiben die kritischen nächsten Schritte für Marktwirkung. ([digitimes.com](https://www.digitimes.com/news/a20260916VL209/micron-ddr5-256gb-dram-capacity.html?utm_source=openai))"
+        }
+      ],
+      "reason": "Kurzbewertung (Deutsch): Micron hat am 2026-09-15 öffentlich die Demonstration eines 512GB DDR5 RDIMM für Serverplattformen bekanntgegeben; die Primärquelle ist eine Micron‑Pressemitteilung vom selben Datum, die Details zu Kapazität, bis zu 9.200 MT/s und der verwendeten gestapelten DRAM‑Verpackung (TSV) enthält. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))\n\nWarum Watchlist (keine Annahme): Die Meldung ist ein klarer, datierter Architektur‑/Produkt‑Meilenstein (VERIFIED DATA), hat aber derzeit nur Demonstrations‑Status. Micron nennt selbst Volumenproduktion „sometime in the second half of 2027“, also sind tatsächliche Marktlieferungen, OEM‑Listungen und beobachtbare Effekte auf Lead‑Times, Fill‑Rates oder Kontraktpreise noch nicht verifiziert. Ohne qualifizierte Serienlieferungen bleibt die Wirkung auf die strukturelle Server‑DRAM‑Verfügbarkeit (Vorhersage P-2026-07-11-01) hypothetisch und zeitlich verschoben. ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))\n\nGegen‑Belege / Unsicherheiten: Microns Ankündigung ist ausdrücklich forward‑looking; es fehlen aktuell (a) bestätigte Serien‑Shipments, (b) OEM‑Produkteinträge mit validierten Stückzahlen und (c) beobachtbare Marktindizes (Lead‑Times / Kontraktpreise), die auf eine Entspannung hinweisen. Sekundärberichte bestätigen die H2‑2027‑Erwartung und heben hervor, dass die Demonstration allein keine sofortige Verfügbarkeitsverbesserung garantiert. ([storagereview.com](https://www.storagereview.com/news/micron-shows-a-512gb-ddr5-rdimm-12tb-per-dual-socket-server-at-9200-mt-s-volume-production-in-2h-2027?utm_source=openai))\n\nImplikation für die TAIL‑These: Falls Micron und Ökosystempartner (OEMs) die 512GB‑RDIMMs in Volumen qualifizieren und liefern, könnte dies die praktischen Memory‑Kapazitätsengpässe auf Systemebene abmildern (mehr GB pro Server ohne sofortigen Anstieg der Die‑Bit‑Produktion). Bis zur Verifikation bleibt dies jedoch eine potenzielle Architekturlösung — relevant, aber nicht ausreichend, um das Basisszenario einer strukturellen Server‑DRAM‑Knappheit vorzeitig zu verwerfen. Daher Watchlist; wir prüfen erneut nach dokumentierten Volumenlieferungen und marktlichen Indikatoren (Lead‑Times / Kontraktpreise). ([investors.micron.com](https://investors.micron.com/news/press-release/2026/Micron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers/default.aspx))",
+      "candidateId": "6434e837e7302263a39c",
+      "candidateKey": "dce724d5465f887247c00a1b",
+      "reviewedAt": "2026-09-16T09:58:04.115Z",
+      "priorityScore": 73,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_073165231f28e578006aaa67e3bffc87d2b281d8a2031b693a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Galaxy S27 Could Use Micron’s Latest 1γ DRAM Alongside Samsung Memory",
+      "fact": "Berichte (Medienberichte / Branchenblogs) behaupten, Samsung führe Qualitätsprüfungen an Microns 1γ (1‑gamma) LPDDR5X für den Einsatz in Teilen der Galaxy S27‑Serie durch; Micron selbst hat 1γ‑DRAM‑Produkte und Samples veröffentlicht, eine offizielle Bestätigung von Samsung fehlt jedoch.",
+      "placement": "Globaler Smartphone‑BOM‑Layer (Galaxy S27‑SKUs); Produkt‑Launch‑Horizon: Q4 2026 (erwarteter Launch‑Fenster, etwa 2026‑10‑01 bis 2026‑11‑30).",
+      "mechanism": "Wenn Samsung für einzelne Galaxy S27‑SKUs Microns 1γ LPDDR5X annimmt, verändert das die Lieferantenallokation für hochdichte Mobil‑DRAM: es kann Microns mobile Bit‑Absatz und Marktanteil kurzfristig erhöhen, Samsung reduziert Lieferantenkonzentration und mögliche Preisdynamiken für Premium‑LPDDR5X. Die zugrundeliegende technische Logik ist, dass 1γ höhere Bit‑Dichte/Leistung bzw. bessere Energieeffizienz gegenüber älteren Nodes bietet (Micron‑Produktangaben).",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Geringer — dieses Signal würde höchstens die Verteilung von Mobil‑DRAM‑Volumen zwischen Lieferanten (Micron vs. Samsung/andere) verschieben; es falsifiziert nicht die Basisaussage, dass Memory 2027 knapp bleibt. Erwarteter Effekt: marginale Upside für Microns mobile Umsatzanteile, kein unmittelbarer Kapazitätsrelief‑Effekt für Server‑/HBM‑Märkte.",
+      "falsifier": "Bis zum 2026‑10‑31: keine offizielle Samsung‑Produktseite, Launch‑Datenblatt oder verifizierbare SKU‑Spezifikation (z. B. Samsung‑Pressrelease, Samsung.com Produkt‑Spec, oder von Samsung offiziell bestätigter Teardown) nennt Micron 1γ LPDDR5X als Lieferanten für mindestens eine veröffentlichte Galaxy S27‑SKU. Falls eine solche offizielle Angabe bis 2026‑10‑31 erscheint, gilt die Meldung als bestätigt.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-16",
+      "novelty": "Incremental: bestätigt weiterführende Berichte über Microns 1γ‑Ramp und neue Kunden‑Tests, liefert aber kein primäres OEM‑Statement.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 8,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 15,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260916PD210/samsung-galaxy-micron-mobile-dram.html",
+          "label": "Digitimes – Bericht über Samsung‑Tests von Micron 1γ LPDDR5X (branchenbericht)",
+          "kind": "secondary",
+          "supports": "Berichtet, Samsung führe Qualitätsprüfungen an Microns 1γ LPDDR5X für mögliche Verwendung in Galaxy S27‑Modellen. (keine OEM‑Bestätigung)."
+        },
+        {
+          "url": "https://www.thebell.co.kr/front/newsview.asp?key=202609101456182240102682",
+          "label": "The Bell (KR) – Branchenquelle über Qual‑Tests für Galaxy S27",
+          "kind": "secondary",
+          "supports": "Koreanischer Branchenbericht (The Bell) meldet Qualitätsprüfungen von Micron 1γ LPDDR5X durch Samsungs MX‑Division (Datum gemeldet: 2026‑09‑10)."
+        },
+        {
+          "url": "https://www.sammyfans.com/2026/09/16/samsung-galaxy-s27-may-use-micron-1y-lpddr5x-dram/amp/",
+          "label": "SammyFans / SamMobile – Aggregierte Medienberichterstattung (engl.)",
+          "kind": "secondary",
+          "supports": "Aggregierte Berichte über möglichen Einsatz von Micron 1γ LPDDR5X in Teilen der Galaxy S27‑Serie; beruft sich auf Branchenquellen (keine offizielle Samsung‑Bestätigung)."
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2025/Micron-Announces-Shipment-of-1-1-gamma-DRAM-Pioneering-Memory-Technology-Advancements-for-Future-Compute-Needs-02-25-2025/default.aspx",
+          "label": "Micron – Offizielle Produktankündigung / 1γ DRAM (Micron Press Release)",
+          "kind": "primary",
+          "supports": "Micron dokumentiert Existenz, Samples/Shipments und Leistungsversprechen der 1γ (1‑gamma) DRAM‑Node (Produktdaten / Ramp‑Statements). Diese Quelle belegt Technologieexistenz und versprochenen Leistungs‑/Effizienzvorteil, aber nicht die Samsung‑Adoption."
+        }
+      ],
+      "reason": "Entscheidung: watchlist. Erklärung: Die Inbox‑Meldung ist derzeit ein industrienahe Gerücht/Branchenbericht, der zwei verschiedene Aussagen kombiniert: (a) Micron besitzt und rampte die 1γ‑DRAM‑Technologie (Micron‑Pressrelease und Produktinformationen). ([investors.micron.com](https://investors.micron.com/news/press-release/2025/Micron-Announces-Shipment-of-1-1-gamma-DRAM-Pioneering-Memory-Technology-Advancements-for-Future-Compute-Needs-02-25-2025/default.aspx?utm_source=openai)) (b) Branchenmedien berichten, Samsung führe Qualifikationsprüfungen an Microns 1γ LPDDR5X für mögliche Verwendung in Galaxy S27‑Modellen. ([digitimes.com](https://www.digitimes.com/news/a20260916PD210/samsung-galaxy-micron-mobile-dram.html?utm_source=openai))  \n\nAbwägung: Die Meldung ist relevant für die TAIL‑These, weil Mobil‑OEM‑Adoption von neuen DRAM‑Nodes die Verteilung von Bit‑Volumen und kurzfristige Allokationen beeinflussen kann. Allerdings fehlt eine OEM‑Primärbestätigung (Samsung‑Statement, Samsung Produkt‑Spec oder verifizierbarer Teardown), sodass die Kausalkette zu einer marktrelevanten Änderung (z. B. Entschärfung des Memory‑Engpasses) nicht nachweisbar ist. Microns eigenes Material bestätigt 1γ‑Produkte, nicht aber diese spezifische Samsung‑Integration. ([investors.micron.com](https://investors.micron.com/news/press-release/2025/Micron-Announces-Shipment-of-1-1-gamma-DRAM-Pioneering-Memory-Technology-Advancements-for-Future-Compute-Needs-02-25-2025/default.aspx?utm_source=openai))\n\nFolgeentscheidung: Watchlist statt Aufnahme als VERIFIED DATA. Begründung: Keine primäre OEM‑Quelle -> EvidenceStatus = NOT PROVEN; Nachricht verdient Monitoring, da eine OEM‑Bestätigung innerhalb der kommenden Launch‑Wochen (Horizon Q4 2026) möglich ist. Falsifier definiert ein messbares, zukünftiges Prüfdatum (2026‑10‑31) und eine klare Verifizierungsbedingung (offizielle Samsung‑SKU‑Angabe oder Launch‑Spec), damit das Signal später entweder upgegraded (bei Bestätigung) oder verworfen werden kann. \n\nScore‑Rationale: Quelle ist mittelmäßig vertrauenswürdig (Branchenpresse + Micron‑PR), Neuigkeitswert moderat (incremental zu bereits bekannten Micron‑Ramp‑Berichten), Relevanz für die TAIL‑Thesis vorhanden aber begrenzt (verschiebt Lieferantenmix, ändert nicht strukturelle Server/HBM‑Kapazität). Daher Gesamtbewertung an der Watchlist‑Schwelle (65). ([investors.micron.com](https://investors.micron.com/news/press-release/2025/Micron-Announces-Shipment-of-1-1-gamma-DRAM-Pioneering-Memory-Technology-Advancements-for-Future-Compute-Needs-02-25-2025/default.aspx?utm_source=openai))",
+      "candidateId": "3abd4730b63f4009d8f2",
+      "candidateKey": "a9373d996dae6949cb587e43",
+      "reviewedAt": "2026-09-16T09:59:42.571Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04e435bf3c67652b006aaa682c556887d2819eeee34198315e"
+    },
+    {
+      "decision": "rejected",
+      "title": "Behauptung: Samsung erhöht DRAM- und NAND-Preise bis Ende 2026 um bis zu 10%",
+      "fact": "Berichte (zitiert: Unbox PH/Aggregatoren) behaupten, Samsung plane zusätzliche Preiserhöhungen für mobile DRAM und NAND um ca. 7–10% bis Ende 2026.",
+      "placement": "Global / Mobile-DRAM- und Mobile-NAND-Vertragsmarkt; Kernwirkung auf Smartphone-OEMs (Q4 2026).",
+      "mechanism": "Angebots-/Nachfrage‑Mechanismus: Herstellerallokation hin zu HBM/Server-DRAM + starke AI-Server-Nachfrage erhöht Verhandlungsmacht der Memory-Anbieter; Samsung soll dies nutzen, um Vertrags‑Nachpreise gegenüber Smartphone-OEMs durchzusetzen.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Eine verifizierte Samsung‑Verhandlung mit bestätigter Preiswirkung +7–10% bis 2026-12-31 würde die bestehende TAIL‑These (Memory bleibt 2027 knapp) kurzfristig stützen (preisseitiger Verstärker), aber würde das Basisszenario für strukturelle Knappheit 2027 nicht per se neu erzeugen.",
+      "falsifier": "Bis 2026-12-31 liegen keine von Samsung offiziell herausgegebenen Vertrags‑ oder IR‑Mitteilungen, keine bestätigten OEM‑Kundenbestätigungen und keine regulatorischen Filing‑Belege vor, die einen tatsächlichen Preisanstieg (vertraglich oder in ausgewiesenen OEM‑Einkaufskonditionen) von ≥7% für mobile DRAM/NAND durch Samsung dokumentieren; dann ist die Behauptung nicht bewiesen.",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-09-16",
+      "novelty": "Niedrig — wiederholt gemeldete Preisaufwärtssignale; berichtetes Zahlenband (7–10%) ist sekundär aus Branchenberichten.",
+      "duplicateOf": "tail-2026-07-14-dram-prices; tail-2026-07-14-nand-essd; S-2026-07-30-02",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 3,
+        "thesisRelevance": 14,
+        "forecastImpact": 10,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5743135/samsung-berencana-naikkan-harga-memori-untuk-ponsel-hingga-10-persen",
+          "label": "ANTARA News (Bericht, 2026-09-16)",
+          "kind": "secondary",
+          "supports": "Berichtet, Samsung prüfe Erhöhungen für mobile DRAM/NAND um 7–10%; zitiert anonyme Branchenquellen."
+        },
+        {
+          "url": "https://www.trendforce.com/presscenter/news/20260703-13134.html",
+          "label": "TrendForce (Branchen‑Pricing‑Note, 2026-07)",
+          "kind": "primary",
+          "supports": "TrendForce dokumentiert hohe QoQ‑Anstiege bei DRAM/NAND‑Kontraktpreisen in 1H/2Q‑2026 und prognostiziert weitere, aber moderatere QoQ‑Zuwächse für 3Q/4Q26 — liefert kontextuelle Preis‑Dynamik, nicht eine Samsung‑Selbstbekräftigung für +7–10%."
+        },
+        {
+          "url": "https://v.daum.net/v/20260908142233110",
+          "label": "Daum Aggregator (verweist auf 시사저널e, 2026-09-08)",
+          "kind": "secondary",
+          "supports": "Koreanische Berichterstattung, die anonyme Branchenquellen zitiert und Samsung‑Verhandlungsabsichten über zusätzliche mobile‑Memory‑Preiserhöhungen meldet."
+        }
+      ],
+      "reason": "Ablehnung — keine Primärbestätigung durch Samsung (IR/Pressemitteilung, regulatorisches Filing oder bestätigte OEM‑Kommunikation) wurde gefunden; die Meldung basiert auf einseitigen Branchenquellen / Medien‑Syndikation (zitiert: 시사저널e und Regional‑Aggregatoren). TAIL‑Baseline enthält bereits mehrfach dokumentierte upward price_signals (tail-2026-07-14-dram-prices; tail-2026-07-14-nand-essd) und firmennahen Kontext (S-2026-07-30-02: Samsung zielt auf langfristige Verträge), sodass die Kandidatenaussage weder atomar neu noch ausreichend verifiziert ist. Opposing / moderating evidence: TrendForce und andere Marktreports signalisieren zwar weiter steigende Kontraktpreise, aber auch eine Abschwächung der prozentualen Zuwächse und begrenzte Käufer‑Zahlungsbereitschaft in Endmärkten (Beleg für begrenzte Durchsetzbarkeit von 7–10% gegenüber allen OEMs). Wegen fehlender Primärquelle und wegen hoher Übereinstimmung mit bereits im Baseline‑Set enthaltenen Preis‑Signalen wird die Einreichung abgelehnt. Eine Wiederaufnahme ist möglich, falls Samsung selbst oder ein verifizierter OEM bis 2026-12-31 ein dokumentiertes Vertrags‑/Preis‑Change‑Filing (oder klar datierte IR‑Anweisung) publiziert, das die behauptete Erhöhung (≥7%) nachweist.",
+      "candidateId": "1c1e6499336ff1c8e27e",
+      "candidateKey": "24e7d8a63155fa68ea2ef39b",
+      "reviewedAt": "2026-09-16T09:59:42.610Z",
+      "priorityScore": 46,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_029081c4a45fc683006aaa682c530c87d2b1d06b0d61c3c5ee"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung verlagert zusätzliche DDR5‑Modulproduktion an OSAT‑Partner zugunsten von HBM‑Packaging",
+      "fact": "Nach Branchenberichten fordert Samsung Partner in Vietnam, Indien und den Philippinen auf, zusätzliche DDR5‑Modul- und SSD‑Montage-/Testvolumen zu übernehmen, um interne Back‑End‑Flächen (Cheonan, Onyang) für HBM/Advanced‑Packaging freizumachen (The Elec / berichtet von DIGITIMES, Meldung 2026‑09‑15/16).",
+      "placement": "Geographie: Südkorea (Onyang, Cheonan) und Partnerstandorte (Vietnam, Indien, Philippinen); Domain: Memory Backend / Packaging & Module Assembly; Horizon: kurzfristig (Q4 2026).",
+      "mechanism": "Reallokation von knappen Backend-/Packaging‑Flächen: Samsung verlagert weniger komplexe DDR5‑Module/SSD‑Montage an OSAT‑Partner, um eigene Packaging‑Kapazität für höherwertiges HBM (HBM4/HBM4E) freizuhalten. Das reduziert kurzfristig interne DDR5‑Module‑Output und verschiebt physische Verfügbarkeit/Allokation in Partnernetzwerke, was Verfügbarkeit und Preise für Server‑DDR5/Module beeinflussen kann.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit eines kurzfristig verschärften Angebotsengpasses (negative_supply) für Server‑DRAM/DDR5‑Module und unterstützt das Basisszenario, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben; erhöht kurzfristig Preisdruck und Allokationsrisiken für Server‑DRAM.",
+      "falsifier": "Bis 2026-11-30: Keine öffentlichen Partnerankündigungen (z. B. Dreamtech, Hanyang Digitech, SFA Semicon) oder behördliche Einträge, die zusätzliche DDR5‑Module‑Produktionskapazitäten in Vietnam/Indien/Philippinen um mindestens 50 Mio. Einheiten/Jahr dokumentieren, ODER Samsung veröffentlicht eine formelle Stellungnahme, die bestätigt, dass keine zusätzliche Outsourcing‑Verlagerung stattfindet. Tritt eines dieser Ereignisse ein, so widerlegt das die berichtete operative Verlagerung und ihren kurzfristigen Angebots‑Impact.",
+      "nextReview": "2026-11-30",
+      "eventDate": "2026-09-15",
+      "novelty": "medium",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260916VL201/samsung-memory-module-vietnam-india-production-hbm-packaging.html",
+          "label": "DIGITIMES – Artikel (zitiert The Elec; paywall)",
+          "kind": "secondary",
+          "supports": "Digitimes berichtet am 2026-09-16, dass The Elec am 2026-09-15 berichtete, Samsung weise Partner in Vietnam/Indien/Philippinen an, zusätzliche DDR5‑Modul-/SSD‑Produktion zu übernehmen, um Onyang/Cheonan‑Packaging für HBM freizumachen."
+        },
+        {
+          "url": "https://www.sammobile.com/news/samsung-will-now-charge-more-to-make-5nm-or-better-chips-for-its-clients/",
+          "label": "SamMobile – thematisch verwandter Bericht (Foundry‑Pricing/ HB M‑Base‑dies)",
+          "kind": "secondary",
+          "supports": "SamMobile berichtet über Foundry/Logik‑Preisänderungen (keinen Beleg für das Outsourcing der DDR5‑Module); zeigt inhaltliche Diskrepanz zur Kandidatenbeschreibung, die SamMobile als Quelle nennt."
+        },
+        {
+          "url": "https://www.sammyfans.com/2026/09/15/samsung-is-freeing-ddr5-and-ssd-memory-factory-for-hbm/",
+          "label": "SammyFans / Tech‑Blog – sekundäre Berichterstattung",
+          "kind": "secondary",
+          "supports": "Wiederholt die Behauptung, Samsung verlagere DDR5/SSD‑Module an OSAT‑Partner, um eigenes Backend für HBM freizumachen (Publikationsdatum 2026-09-15/16)."
+        }
+      ],
+      "reason": "Kurzfassung (Deutsch):\n- Was berichtet wurde: Branchenmedien (DIGITIMES zitiert The Elec) meldeten am 15/16. September 2026, Samsung habe begonnen, weiteres Volumen konventioneller DDR5‑Module und SSD‑Montage an externe Partner (Vietnam, Indien, Philippinen) zu geben, um eigene Back‑End‑Kapazität für HBM/Advanced‑Packaging in Onyang/Cheonan freizuhalten. ([digitimes.com](https://www.digitimes.com/news/a20260916VL201/samsung-memory-module-vietnam-india-production-hbm-packaging.html))\n\n- Verifikation & Quellenqualität: Die ursprünglich genannte Primärquelle (The Elec) konnte in dieser Prüfung nicht direkt frei eingesehen werden; DIGITIMES berichtet die Story und nennt The Elec als Urheber. Weitere sekundäre Blogs/Newsseiten wiederholen die Behauptung, während die in der Kandidaten‑Zusammenfassung genannte SamMobile‑URL nicht denselben Outsourcing‑Sachverhalt bestätigt (SamMobile berichtet statt dessen über Foundry‑Preisänderungen/Foundry‑Themen). Damit fehlt derzeit ein unmittelbar zugänglicher, direktes Primärzitat von Samsung oder einer der benannten Partner, das die operative Verlagerung mit klaren Zahlen belegt. ([digitimes.com](https://www.digitimes.com/news/a20260916VL201/samsung-memory-module-vietnam-india-production-hbm-packaging.html))\n\n- Vergleich mit dem Baseline: Die Meldung ist konsistent mit bereits vorhandenen Basissignalen (z. B. mehrere Einträge im Baseline‑Snapshot, die Samsung‑Priorisierung von HBM und Packaging dokumentieren), jedoch bietet sie einen konkreteren operativen Schritt (Outsourcing der Module an OSAT‑Partner). Da Baseline‑Einträge bereits eine HBM‑Priorisierung zeigen, ist die Nachricht teilweise rekombinierend, aber operationaler Detailgehalt wäre neu und potenziell marktrelevant. (siehe baseline S‑Einträge zu Samsung/HBM). \n\n- Opposing evidence / Unsicherheit: Es fehlt ein öffentliches, überprüfbares Primärdokument (z. B. Samsung‑Pressemitteilung, Partner‑Investitionsmeldung oder formelle Produktionszahlen). SamMobile (in der Kandidatenbeschreibung genannt) deckt die behauptete Aussage nicht; das vermindert die SourceQuality. Außerdem könnte Samsung schlicht Produktionszuweisungen intern anpassen ohne formale externe Ankündigung, was die Prüf‑ und Falsifizierbarkeit erschwert. \n\nEntscheidungsschluss: Watchlist.\nBegründung: Die Aussage ist plausibel und marktrelevant (treibt Availability/Price‑Risiken für Server‑DRAM/DDR5) und wird von mehreren sekundären Berichten getragen, aber sie fehlt an einem direkt einsehbaren Primärnachweis (The Elec‑Original nicht direkt verifiziert, Samsung/Partner‑Bestätigung fehlt). Gemäß TAIL‑Regeln kann dieser Kandidat nicht als VERIFIED DATA aufgenommen werden; er bleibt aber auf Watchlist, da er das vorhandene Thesis‑Narrativ (HBM‑Priorisierung, negative_supply für Server‑DRAM) konkretisiert und kurzfristig relevant sein könnte. Weitere Prüfung (Partner‑Ankündigungen, Samsung‑Stellungnahme, offizielle Produktions‑/Kapazitätsangaben) ist für ein Upgrade nötig. \n\nNächste Schritte: Monitoren auf\n1) eine direkte The Elec‑Publikation (voller Text) oder Samsung/Partner‑Pressemitteilung, die Transfer‑Volumes oder partnerbezogene Produktionskapazitäten nennt; oder\n2) firmen- oder behördlich dokumentierte Kapazitätserhöhungen bei Dreamtech, Hanyang Digitech, SFA Semicon in Vietnam/Indien/Philippinen (Zielprüfung bis 2026-11-30). Wenn eines davon gefunden wird, wird der Fall erneut bewertet (mögliche Hochstufung zu Accepted, falls harte quantitative Messwerte vorliegen).",
+      "candidateId": "126ed0e63e85447f6c30",
+      "candidateKey": "bb123a8a0dd674756ed50733",
+      "reviewedAt": "2026-09-16T10:01:23.300Z",
+      "priorityScore": 74,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_079dc2de53f2de43006aaa688ed62087d283e506dc15decfae"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Appalachian Power plant Übertragungs‑Upgrades für Google‑Campus in Botetourt (Daleville Area Transmission Improvements)",
+      "fact": "Appalachian Power kündigte das \"Daleville Area Transmission Improvements\"‑Projekt an: Neubau/Aufrüstung von ~17 Meilen 138‑kV‑Leitung, ~0.1 Meilen neue 138‑kV‑Leitung, Upgrades der Botetourt/Cloverdale/Mount Union/Trinity‑Umspannwerke und Bau einer neuen Unterstation; öffentliches Open‑House angekündigt; Antrag bei Virginia SCC für Herbst 2027 geplant, Fertigstellung Ende 2029. ([aeptransmission.com](https://aeptransmission.com/Virginia/DalevilleArea/?utm_source=openai))",
+      "placement": "Geographie: Botetourt County / Daleville (Virginia, USA). Domäne/Layer: AI‑Infrastruktur / Netzanschluss & Übertragungsinfrastruktur. Horizon: Antragsstellung Herbst 2027, Bauende geplant Ende 2029. ([aeptransmission.com](https://aeptransmission.com/Virginia/DalevilleArea/?utm_source=openai))",
+      "mechanism": "Kausaler Mechanismus: Google plant einen hyperskaligen Data‑Center‑Campus in Botetourt; als 'new customer' treibt dies AEP/Appalachian Power zu Leitungs‑ und Unterstations‑Aufrüstungen (mehr Kapazität und Redundanz). Diese Upgrades sind Voraussetzung, damit die erwartete zusätzliche elektrische Last des Campus sicher ans Netz angeschlossen werden kann; Google sagt, es zahlt für die upgrades. Damit erhöht die Beobachtung die Wahrscheinlichkeit näher bevorstehender physischer AI‑Compute‑Kapazität am Standort (Erhöhung der lokalen Nachfrage nach Strom und anschließender Datacenter‑Deployment‑Kapazität). ([cardinalnews.org](https://cardinalnews.org/2026/05/15/appalachian-power-plans-upgrades-to-serve-google-data-centers-in-botetourt/))",
+      "predictionId": "P-2026-07-23-01",
+      "predictionImpact": "Signal unterstützt die Relevanz/Fristigkeit von P-2026-07-23-01 (Alphabet investiert 2026 ≥ US$195 Mrd.; Google Cloud starkes Wachstum). Direkter Befund: ein konkreter Netz‑Upgradepfad und Projektzeitplan erhöhen die plausiblen, unmittelbar erforderlichen Capex‑Abflüsse und operationalen Vorbereitungen für Googles Build‑out, wodurch die kurzfristige (2026) Investitions‑/Capex‑Wahrscheinlichkeit von Alphabet leicht erhöht wird — aber das Ausmaß (US$‑Betrag) bleibt unbestimmt. (Beleg: AEP Projektbeschreibung und Google/County‑Ankündigungen). ([aeptransmission.com](https://aeptransmission.com/Virginia/DalevilleArea/?utm_source=openai))",
+      "falsifier": "Dieses Signal würde seine Wirkung auf P-2026-07-23-01 als unwesentlich falsifizieren, falls eines der folgenden bis zum Review‑Datum eintritt: (a) Appalachian Power zieht den SCC‑Antrag zurück oder veröffentlicht bis 2027-10-01 keinen formalen Einreichungsnachweis für das Daleville‑Projekt; ODER (b) Google/Alphabet veröffentlicht bis 2027-12-31 eine offizielle Streichung oder Verschiebung des Botetourt‑Campus (z. B. Rücktritt aus dem Performance Agreement oder öffentliche Rücknahme der Bau‑/Grading‑Genehmigung), was zeigt, dass die Netz‑Upgrades nicht zu substantiellen Alphabet‑Capex‑Ausgaben führen. ([aeptransmission.com](https://aeptransmission.com/Virginia/DalevilleArea/?utm_source=openai))",
+      "nextReview": "2027-10-01",
+      "eventDate": "2026-05-15",
+      "novelty": "Lokale/technische Details zu AEPs Daleville‑Projekt (17 mi 138‑kV, Substation‑Upgrades, Zeitplan) — nicht in der vorgelegten Baseline. ([aeptransmission.com](https://aeptransmission.com/Virginia/DalevilleArea/?utm_source=openai))",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 10,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://cardinalnews.org/2026/05/15/appalachian-power-plans-upgrades-to-serve-google-data-centers-in-botetourt/",
+          "label": "Cardinal News (Lokaler Bericht, 2026-05-15)",
+          "kind": "secondary",
+          "supports": "Bericht über AEP Open House, Zitat AEP‑Sprecher, Bestätigung dass der neue Kunde Google ist und Verweis auf Projektumfang und Zeitplan."
+        },
+        {
+          "url": "https://www.botetourtva.gov/m/newsflash/Home/Detail/1084",
+          "label": "Botetourt County — Google Advances Botetourt County Data Center Campus Project (amtliche Mitteilung)",
+          "kind": "secondary",
+          "supports": "County‑Mitteilung bestätigt Google‑Projekt in Botetourt und dass Google Infrastruktur‑Unterstützung leistet; Kontext zur Datacenter‑Ankündigung."
+        }
+      ],
+      "reason": "Entscheidung (auf Deutsch): Watchlist. Bewertung: Die Beobachtung ist ein verifizierbarer, datierter lokaler Infrastruktur‑Signal mit primärem Dokumentationspfad auf der AEP‑Projektseite (VERIFIED DATA). Sie ist relevant für AI‑Infrastruktur‑Nachfrage und für Hypothesen über kurzfristige Capex‑Aktivität bei Google/Alphabet, entzieht sich jedoch einer hohen direkten Auswirkung auf die konkreten Zahlen in P-2026-07-23-01 (US$195 Mrd.), weil der Gesamt‑Alphabet‑Capex dort aggregiert und von vielen weiteren Faktoren bestimmt wird. Die Beweislage ist solide (AEP Projektseite + lokale Berichterstattung), gut falsifizierbar (prüfbare SCC‑Einreichung / Google‑Projektstatus) und zeitlich relevant (konkreter Projektzeitplan). Die numerische Score‑Summe (68) liegt knapp über der Watchlist‑Schwelle (65) und unter der Annahme‑Schwelle (80), daher wird der Kandidat zur Überwachung aufgenommen, nicht sofort als marktbewegendes, indexrelevantes Signal angenommen. Widerspruchsprüfung: Baseline‑Daten enthalten zahlreiche AI‑Infrastruktur‑Ankündigungen, aber dieses spezielle Netz‑Upgrade (Daleville Area Transmission Improvements, 17 mi 138‑kV etc.) wurde nicht vorher dokumentiert in der Baseline; gegenteilige Quellen finden sich nicht. Empfehlung: Review am 2027-10-01 prüfen (SCC‑Antrag veröffentlicht? Baubeginn? Google‑Status), dann Neu‑Einstufung (accepted/rejected) vornehmen. ([aeptransmission.com](https://aeptransmission.com/Virginia/DalevilleArea/?utm_source=openai))",
+      "candidateId": "ce4161cb5fce458d1a0b",
+      "candidateKey": "95d8ebea2e7d2403156fabd4",
+      "reviewedAt": "2026-09-16T10:01:23.338Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e0c976b590ef195006aaa688ebf3087d2b233f8a3a1ea98f2"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT meldet massenhafte Produktion von LPDDR6 (erstes OEM‑Deployment: Xiaomi 18 Fold, 2026‑09‑07)",
+      "fact": "ChangXin Memory Technologies (CXMT) kündigte am 2026-09-07 an, dass seine selbstentwickelte LPDDR6‑Speicherfamilie in Serienfertigung ist; das Paket ist als 16 GB (16 Gb dies) 1295‑ball FBGA verfügbar, spezifiziert bis 12800 Mbps, und soll erstmalig im Xiaomi 18 Fold gehandelt/ausgeliefert werden. (CXMT Pressemitteilung 2026‑09‑07).",
+      "placement": "China (CXMT Fabriken) → kommerzielle Mobiltelefon‑Komponenten (LPDDR6 für Flagship‑Smartphones) → H2 2026 (sofortige Serienfertigung / kurzfristige Handset‑Deployment‑Horizon).",
+      "mechanism": "Konkrete Massenfertigung und ein dokumentiertes erstes OEM‑Deployment erhöhen kurzfristig verfügbares LPDDR6‑Volumen für High‑end‑Smartphones; das verschiebt Wettbewerbsdruck und OEM‑Beschaffungsallokationen gegenüber Samsung/SK hynix und kann die LPDDR‑Sparte (mobile DRAM) entlasten, während die Wirkung auf Server‑DRAM/HBM begrenzt bleibt, solange Stückzahlen und Qualifikationsraten klein bleiben.",
+      "predictionId": "P-2026-07-14-01",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass CXMT seine Marktstellung im Mainstream/Mobil‑DRAM in 2026–2027 weiter stärkt und damit die in P-2026-07-14-01 angenommene Wirkung von CXMT‑Mitteln/LTAs auf Mainstream-/Server‑DRAM verbessert (wirkung vor allem auf Mobil‑DRAM‑BOM‑Dynamik und OEM‑Abhängigkeiten; kein direkter Widerspruch zur Server/HBM‑Knappheitsannahme).",
+      "falsifier": "Bis 2026-12-31: keine unabhängige Bestätigung (OEM‑Teardown, Xiaomi‑Shipment‑Bericht, oder Branchen‑Teardown) dass kommerzielle Xiaomi 18 Fold‑Geräte mit CXMT LPDDR6 ausgeliefert wurden; ODER bis 2027-03-31: CXMT meldet in Geschäftsberichten/Quartalszahlen kumulative LPDDR6‑Shipments < 1.0 Mio. Einheiten (oder CXMT meldet Rückkehr aus 'mass production' in offiziellen Quellen). In diesem Fall ist der kommerzielle Markt‑Impact auf OEM‑Beschaffung und CXMT‑Stellung minimal und die signalisierte Marktvorauswirkung wird falsifiziert.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-07",
+      "novelty": "hoch",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 15,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.cxmt.com/en/news/info_21.html",
+          "label": "CXMT - Newsroom: 'CXMT Pioneers Mass-Production of LPDDR6' (2026-09-07)",
+          "kind": "primary",
+          "supports": "CXMT publizierte am 2026-09-07 eine Firmenmeldung, die explizit 'mass production' von LPDDR6 für eine 16GB‑Packung (16Gb dies, 1295‑ball FBGA) und die Erstverwendung im Xiaomi 18 Fold nennt."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/08/news-cxmt-starts-lpddr6-mass-production-at-12800mbps-open-to-global-customers-as-apple-ties-draw-attention/",
+          "label": "TrendForce – Branchenbericht zu CXMT LPDDR6 (2026-09-08)",
+          "kind": "secondary",
+          "supports": "Branchenmedien berichten am 2026-09-08 über die CXMT‑Ankündigung und bestätigen das Xiaomi‑Deployment; TrendForce ordnet die Ankündigung in den Wettbewerb mit Samsung/SK hynix ein."
+        },
+        {
+          "url": "https://news.skhynix.com/en/1c-lpddr6-development-2026/",
+          "label": "SK hynix – Entwicklungsankündigung LPDDR6 (2026-03-10)",
+          "kind": "secondary",
+          "supports": "SK hynix kündigte am 2026-03-10 die Entwicklung eines 16Gb LPDDR6‑DIE und nannte Vorbereitungen für Massenfertigung / Lieferungen in H2 2026; keine explizite öffentliche Massenfertigungs‑Startmeldung vor dem CXMT‑Datum gefunden."
+        },
+        {
+          "url": "https://news.samsungsemiconductor.com/global/ces-innovation-awards-2026-honoree-lpddr6-worlds-first-next-gen-lpddr-optimized-for-high-performing-on-device-ai/",
+          "label": "Samsung Semiconductor – LPDDR6 Demo / CES 2026 (Produktdemonstration/Technologievorstellung)",
+          "kind": "secondary",
+          "supports": "Samsung präsentierte LPDDR6‑Silizium und erhielt Sichtbarkeit bei CES/FMS 2026, veröffentlichte jedoch keine öffentlich datierte Massenproduktionsankündigung, die vor dem CXMT‑Datum mass production bestätigt."
+        }
+      ],
+      "reason": "Primärquelle vorhanden und datiert: CXMT veröffentlichte am 2026-09-07 eine firmeneigene Pressemeldung, die einen Massenproduktionsstart von LPDDR6 und ein erstes OEM‑Deployment (Xiaomi 18 Fold) angibt. Die Meldung ist dadurch eine verifizierbare, atomare, datierte Beobachtung mit konkreten Produktspezifikationen (16 GB Paket, 12800 Mbps) und enger geografisch/produktbezogener Platzierung (China → Mobilgeräte). Sekundärquellen (Branchenberichte) corroborieren die Ankündigung. Die Marktwirkung ist begrenzt (anfängliche Stückzahlen, Mobil‑Segment), aber relevant für Vorhersagen, die CXMTs Marktstellung und Mobil‑DRAM‑Auslieferungen betreffen; sie ist deshalb für P-2026-07-14-01 relevant. Opposing evidence (SK hynix / Samsung) zeigt Entwicklungs‑/Vorbereitungs‑Ankündigungen, aber keine öffentlich datierte Massenproduktionsmeldung vor dem 2026-09-07‑Datum, was die Kernaussage (CXMT mass production started on 2026-09-07) stützt.",
+      "candidateId": "84b6b9132eea2463bbf7",
+      "candidateKey": "73aff065fce9264e74ee511c",
+      "reviewedAt": "2026-09-16T10:02:50.277Z",
+      "priorityScore": 81,
+      "gateReasons": [
+        "missing novelty"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b748df4c70850cc006aaa68f3942887d2913d39b3f33305a6"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Berichte: Samsung treibt erneut höhere mobile‑DRAM‑ und NAND‑Preise gegenüber Smartphone‑Kunden voran (Berichte 2026‑09‑15/16)",
+      "fact": "Mehrere Branchenmedien berichten am 2026‑09‑15/16, dass Samsung Electronics aktiv höhere Mobil‑DRAM‑ und NAND‑Verkaufspreise gegenüber Smartphone‑OEMs durchsetzen will; Berichtsbereiche nennen Erhöhungs‑rahmen (häufig 7–20 %) und melden, Apple habe einer Q1‑2027‑Preiserhöhung zugestimmt. (Quellen: Aju/Digitimes/Antara u.a.).",
+      "placement": "Global (Hauptkunden: Apple + chinesische Smartphone‑OEMs); Produktebene: mobile DRAM (LPDDR) und mobile NAND; Layer: Supply/pricing; Horizont: Q4 2026–Q1 2027.",
+      "mechanism": "Angebotsdisziplin der großen Memory‑Hersteller (Umleitung von Produktionskapazität in HBM/Server/AI‑Segments) plus starke AI‑Server‑Nachfrage reduziert verfügbare mobile Bits, wodurch Samsung höhere Kontraktpreise verhandelt; OEM‑Kunden (Apple, chinesische Marken) müssen Preiserhöhungen annehmen oder Margen/Listenpreise anheben.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Unterstützt die These P-2026-07-20-04 (Memory bleibt 2027 knapp). Falls die berichteten Erhöhungen wirksam werden, erhöht sich die Wahrscheinlichkeit, dass Vertrags‑ und Kundenpreise 2027 weiter ansteigen (price_up) und dass Preisdruck vor einer materiellen Kapazitätswelle anhält.",
+      "falsifier": "Bis 2026-12-31 müssen verlässliche, dokumentierbare Kontraktdaten oder offizielle Kundenbestätigungen vorliegen: wenn keine vertraglich bestätigte Preiserhöhung von Samsung für mobile DRAM oder mobile NAND von mindestens 7 % gegenüber Q4‑2026 existiert ODER wenn führende Kunden (Apple oder mehrere große chinesische OEMs) öffentlich bestätigen, dass sie die Erhöhung für Q1‑2027 ablehnen, gilt die Meldung als falsifiziert. Nächste Überprüfung: 2026-10-16.",
+      "nextReview": "2026-10-16",
+      "eventDate": "2026-09-15",
+      "novelty": "niedrig — stützt und wiederholt einen bereits vorhandenen Preisdruck‑/Knappheitstrend in der TAIL‑Baseline.",
+      "duplicateOf": "tail-2026-07-14-dram-prices",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 5,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "nand"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 40,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://m.ajupress.com/view/20260915174070742",
+          "label": "Aju Press — Bericht zu geplanten Samsung‑Memory‑Preissteigerungen (15.09.2026)",
+          "kind": "secondary",
+          "supports": "Meldet Berichte (Jiemian/Branchenquellen), nennt geplante signifikante Preissteigerungen für DRAM/NAND und berichtet, Apple habe einer Q1‑2027‑Erhöhung zugestimmt."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260916VL210/apple-samsung-2027-smartphone-cost.html?chid=10",
+          "label": "DIGITIMES — 'Apple reportedly accepts Samsung's 1Q27 memory hike' (16.09.2026)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Branchenquellen Samsung‑Preiserhöhungen für Q1‑2027 melden und Apple angeblich zugestimmt habe; Artikel ist paywalled, beruft sich auf Jiemian/Aju und Industriequellen."
+        },
+        {
+          "url": "https://www.antaranews.com/berita/5743135/samsung-berencana-naikkan-harga-memori-untuk-ponsel-hingga-10-persen",
+          "label": "ANTARA — Zusammenfassender Nachrichtenbericht (16.09.2026)",
+          "kind": "secondary",
+          "supports": "Fasst Berichte zusammen, nennt geplanten Spielraum von ~7–10 % für DRAM/NAND und möglichen Verhandlungszeitpunkt Q4 2026/Q1 2027."
+        },
+        {
+          "url": "https://www.sammobile.com/news/chinese-phone-makers-are-rejecting-samsungs-latest-memory-price-increase/",
+          "label": "SamMobile — Gegenbeispiel / Opposition (July–Sept 2026 Berichte)",
+          "kind": "secondary",
+          "supports": "Meldet, dass einige chinesische Smartphone‑Hersteller Preisforderungen von Samsung abgelehnt oder verhandelt haben; widerspricht einer pauschalen, sofortigen Durchsetzung."
+        }
+      ],
+      "reason": "Mehrere Branchenmedien (Aju, Digitimes, regionale Agenturen) berichteten am 15.–16. September 2026, dass Samsung versucht, erneut Mobil‑DRAM‑ und NAND‑Kontraktpreise gegenüber Smartphone‑Kunden anzuheben und dass Apple (laut Berichten) eine Q1‑2027‑Erhöhung akzeptiert haben soll. Diese Berichte sind konsistent mit der bestehenden TAIL‑Baseline (fortgesetzter price_up‑/negative_supply‑Trend für Memory) und damit relevant für P-2026-07-20-04. Allerdings fehlen freie, primäre Verifizierungen (keine öffentliche, schriftliche Samsung‑Preislistenausgabe oder offizielle Kundenvereinbarung wurde gefunden). Zudem gibt es widersprüchliche Berichte, dass einzelne chinesische OEMs Forderungen ablehnten oder nachverhandelten. Deshalb wird der Kandidat auf Watchlist gesetzt (nicht angenommen): er ist ein aktuelles Signal mit moderatem Einfluss auf die Basisaussage ‚Memory bleibt 2027 knapp‘, aber es fehlt belastbare Primärbestätigung und die Aussage wiederholt vorhandene Basissignale. Relevante Oppositions‑Belege (Hersteller‑Ablehnung, fehlende offizielle Samsung‑Kommunikation) wurden dokumentiert und als Falsifier definiert. Nächste Überprüfung geplant am 2026‑10‑16.",
+      "candidateId": "fb49a248491915ac11aa",
+      "candidateKey": "2697149e9f6c144946af13cb",
+      "reviewedAt": "2026-09-16T10:02:50.316Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0522ad22b5648330006aaa68f3827487d2a6fcbec8898e5284"
+    },
+    {
+      "decision": "rejected",
+      "title": "TradingView‑Zusammenfassung zu NVDA: HBM4‑Wettlauf, Cloud‑Nachfrage, angebliches $10B Anthropic‑Investment",
+      "fact": "Aggregierte Schlagzeile: Nvidia/HBM4‑Lieferwettkampf + Cloud‑Nachfrage; Reuters‑Berichte über Nvidia‑Gespräche, bis zu $10 Mrd. als möglicher Ankerinvestor in Anthropics geplante IPO (Report vom 2026-09-11). Primärquellen: Micron bestätigt High‑Volume‑Shipments von HBM4 (2026-03-16) und Samsung bestätigt HBM4/HBM4E‑Sample‑Shipments (2026-02 und 2026-05-29).",
+      "placement": "Globaler HBM‑Markt und AI‑Cloud‑Beschaffung (NVIDIA Vera Rubin Plattform / HBM4 Layer), kurzfristiger Horizont Q3–Q4 2026; Domain: hbm / ai_infrastructure / semiconductors.",
+      "mechanism": "Wenn Nvidia als großer strategischer Investor/Anker in Anthropic auftritt oder Cloud‑Abnahmeverpflichtungen ausgeweitet werden, stärkt das die Nachfrage nach Nvidia‑Systemen und damit die Priorisierung/Allokation von HBM4‑Belieferung an Nvidia‑Kanäle (demand_up → Availability‑Stress). Parallel berichten Micron und Samsung von HBM4‑Volumensendungen bzw. HBM4E‑Samples, die die Angebotsseite technisch vorantreiben, aber kurzfristig nicht zwangsläufig die Allokation für breiten Markt entlasten.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Bestätigt das zugrundeliegende Thesis‑Narrativ (verstärkte AI‑Nachfrage treibt HBM‑Knappheit), liefert aber keine neuartige, gebundene Messung, die die Vorhersage (strukturelle Knappheit bis Ende 2028) material abändert. Wirkung: eher konfirmatorisch/erasierend für Nachfrage‑Seite, kein belastbarer Falsifier für das Basispredikat.",
+      "falsifier": "Bis 2026-10-31: öffentliches, verbindliches Dokument (Form 8‑K, Anthropic S‑1/Prospekt oder Nvidia‑Ankündigung) das Nvidia als bestätigten Ankerinvestor mit einer verbindlichen Investitionszusage von ≥US$10,000,000,000 nennt → bestätigt. Falls bis 2026-10-31 kein solches öffentliches, rechtsverbindliches Dokument vorliegt, ist die ‚$10B‑Anker‘‑Behauptung als ungeprüft/fehlend zu werten.",
+      "nextReview": "2026-10-16",
+      "eventDate": "2026-09-16",
+      "novelty": "low — die Kernpunkte (HBM4‑Ramp/Proben, HBM4E‑Samples, Nvidia–Anthropic‑Talks) sind bereits in der TAIL‑Baseline und den S‑AUTO Einträgen dokumentiert; die TradingView‑Headline fasst vorhandene Primärmeldungen zusammen.",
+      "duplicateOf": "tail-2026-07-14-nvidia-skhynix-hbm4",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 2,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 3,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-in-High-Volume-Production-of-HBM4-Designed-for-NVIDIA-Vera-Rubin-PCIe-Gen6-SSD-and-SOCAMM2-03-16-2026/default.aspx",
+          "label": "Micron – Pressemitteilung: 'Micron in High‑Volume Production of HBM4...' (2026-03-16).",
+          "kind": "primary",
+          "supports": "Micron bestätigt High‑Volume‑Shipments von HBM4 36GB (12‑High) und nennt Shipment von 48GB (16‑High) Samples; Datum: 2026-03-16."
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/exclusivenvidia-in-talks-to-invest-in-anthropics-mega-ipo-sources-say-4898552",
+          "label": "Investing.com (Wiedergabe des Reuters‑Exklusivberichts): 'Nvidia in talks to invest in Anthropic’s mega IPO' (Bericht datiert 2026-09-11, Originalquelle: Reuters).",
+          "kind": "secondary",
+          "supports": "Bericht (Reuters‑Syndication): Anthropic verhandelt, Nvidia könnte als Ankerinvestor bis zu US$10 Mrd. investieren; Pläne sind noch in Diskussion. (Reported 2026-09-11.)"
+        },
+        {
+          "url": "https://www.tradingview.com/news/tradingview%3A542962d9f23e6%3A0-key-facts-nvidia-named-top-pick-by-cantor-fitzgerald-10b-anthropic-deal/",
+          "label": "TradingView – 'Key facts' (Aggregat/Headline, 2026-09-16).",
+          "kind": "secondary",
+          "supports": "Aggregierte Short‑Bullets, die HBM4‑Lieferwettlauf, Cloud‑Nachfrage und die $10B‑Anthropic‑Berichterstattung zusammenfassen; keine neue Primärmeldung."
+        }
+      ],
+      "reason": "Kurzfassung (Deutsch): Die Einreichung ist eine redigierte Aggregation (TradingView) vorhandener Primärmeldungen und liefert keine neue, atomare Beobachtung, die den TAIL‑Baseline‑Forecasten materiell widerspricht oder sie verändert. Die zugrundeliegenden Behauptungen lassen sich an Primärquellen prüfen: Micron (High‑Volume‑Shipments HBM4, 2026-03-16) und Samsung (HBM4E‑Sample‑Shipments, 2026-05-29) belegen technische Angebotsfortschritte; Reuters‑Syndication‑Berichte über Nvidia‑Gespräche zu einem möglichen bis zu US$10 Mrd. Investment in Anthropic (berichteter Zeitpunkt 2026-09-11) sind vorhanden und weit verbreitet. Allerdings ist die TradingView‑Meldung selbst kein originärer, datierter Primärbeleg mit einer einzelnen, überprüfbaren Messgröße (z. B. 'qualifizierte Shipments von X Einheiten am Y‑Datum' oder 'vertragliche Zusage US$Z am Y‑Datum').\n\nWarum abgelehnt: (1) Duplikation — dieselben Kernelemente (HBM4‑Ramp, HBM4E‑Samples, Nvidia‑Anthropic‑Gerüchte) sind bereits in der TAIL‑Baseline/S‑AUTO‑Sammlung dokumentiert (z. B. tail-2026-07-14-nvidia-skhynix-hbm4 und mehrere S‑AUTO Einträge). Das reduziert Neuigkeitswert und verhindert Aufnahme als separater TAIL‑Signaladmission. (2) Unvollständigkeit für Aufnahme: Die Kandidatur liefert keinen atomaren, datierten, quantifizierbaren Messwert mit klarer räumlicher/produktbezogener Platzierung und keinem klaren, prüfbaren Mechanismus mit einem zukünftigen Falsifizierer, wie von der Aufnahme‑Checkliste verlangt. (3) Bewegliche/unklare Behauptung zum '$10B'‑Investment: Reuters meldet Gespräche/Überlegungen (Quelle: Reuters‑Syndication), nicht eine verbindliche Zusage — das ist ein bewegliches Gerücht ohne unmittelbar überprüfbare vertragliche Dokumentation.\n\nGegenbelege/Opposition: Die Primärmeldungen von Micron und Samsung belegen zwar HBM4‑Volumen‑Aktivitäten (March/May 2026), gleichzeitig zeigen viele Baseline‑Einträge und S‑AUTO‑Berichte, dass obwohl technisch Proben/Volumen laufen, qualifizierte Liefer‑Allokation, Yield‑Probleme und Priorisierungen (Hyperscaler/LTA) die Verfügbarkeit für breiten Markt weiterhin begrenzen. Damit ist das Gesamtbild: technische Rampen + anhaltende Allokationssteuerung, nicht ein klarer sofortiger Angebotsüberschuss.\n\nErgebnis: Ablehnung (rejected). Empfehlung: Kandidat zur Wiedervorlage beobachten; wenn binnen der falsifier‑Frist (siehe oben) ein öffentliches, verbindliches Dokument (S‑1/8‑K/Prospekt) Nvidia als bestätigten Ankerinvestor mit einer verbindlichen US$10bn‑Zusage enthält, oder wenn ein Primär‑lieferbericht konkrete, quantifizierbare HBM4‑Shipments/Qualifikationen für breite Kundengruppen (mit Mengen und Datumsangaben) veröffentlicht wird, ist ein erneuter, gezielter Review gerechtfertigt (nächste Prüfung: 2026-10-16).",
+      "candidateId": "b0bf7ad556dbe772d684",
+      "candidateKey": "af05f4d241ba0e7f3a13625b",
+      "reviewedAt": "2026-09-16T10:05:42.694Z",
+      "priorityScore": 48,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0aff00741d3c29cb006aaa694a6fb087d284471a77e6002d4f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "36Kr: »NVIDIA treibt AI‑Datacenter‑Transformation — chinesische Hersteller wollen nicht an den Rand gedrängt werden«",
+      "fact": "36Kr berichtet am 2026-09-16, dass NVIDIA mit seiner Kyber/800V‑DC‑Architektur und der Rubin/Vera‑Rubin‑Plattform eine grundlegende Architekturveränderung in AI‑Datacentern vorantreibt und dass chinesische Leistungselektronik‑/SST‑ und SiC/GaN‑Anbieter (z. B. Innoscience, Megmeet) aktiv Strategien verfolgen, um in dieser 800V‑Lieferkette nicht „wegrationalisiert“ zu werden. (36Kr, 2026-09-16).",
+      "placement": "Geographie: China → globale Lieferkette; Domain: ai_infrastructure; Layer: Power‑Conversion / SST / SiC/GaN Komponenten; Horizon: kurzfristig bis mittelfristig (H2 2026 – H1 2027).",
+      "mechanism": "NVIDIAs Verschiebung zu 800V‑DC/Kyber‑Racks erhöht die Nachfrage nach SST, SiC- und GaN‑Bauteilen sowie nach zertifizierten Rack‑Integratoren; NVIDIA‑Partnerauswahl, Vorabbindungen und strenge Fabrik‑Audits schaffen lock‑in‑Effekte (höhere Margen für qualifizierte Lieferanten), wodurch Anbieter, die nicht in NVIDIA‑Ökosysteme gelangen, Gefahr laufen, vom globalen Deployments‑Markt ausgeschlossen zu werden. Chinesische Zulieferer versuchen demgegenüber, über OEM‑Partnerschaften, lokale GPU‑Stacks oder Kostenvorteile Marktanteile zu sichern.   ",
+      "predictionId": "P-2026-07-22-01",
+      "predictionImpact": "Richtet sich indirekt gegen P-2026-07-22-01 (Wistron/Vera‑Rubin‑Produktion in Fort Worth). Die Meldung erhöht moderat die Plausibilität, dass Vera‑Rubin‑Systeme (Rubin/Vera Rubin) in Produktion und Auslieferung sind — was die Chance, dass OEM‑Partner (inkl. Wistron) Pilot/Serienproduktion vor dem Falsifier‑Datum nachweisen, leicht erhöht. Aussage bleibt indirekt und nicht deterministisch; kein überzeugender, einzelner kontrahierter Liefernachweis für Fort Worth ist hier enthalten.  ",
+      "falsifier": "Bis 2027-06-30: Keine öffentliche Dokumentation, dass ein chinesischer SST/SiC/GaN‑Anbieter von NVIDIA als qualifizierter Lieferant für 800V/Kyber‑Rack‑Komponenten gelistet oder durch einen verifizierbaren Liefervertrag/Qualifikationsmeilenstein (z. B. veröffentlichte LTA, NVIDIA‑Partnerliste oder OEM‑Qualifikationsbericht) bestätigt wurde. Im Gegenteil: falls NVIDIA oder große Hyperscaler bis 2027-06-30 explizit nur Nicht‑China‑Lieferanten für 800V‑Produkte benennen, widerspricht das der These, dass chinesische Hersteller kurzfristig »nicht an den Rand« gedrängt werden.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-16",
+      "novelty": "Incremental — konsolidiert bekannte Signale (800V/Kyber, Rubin‑Ramp, Interesse chinesischer Zulieferer) zu einem industriepolitischen Narrativ.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 25,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://eu.36kr.com/en/p/3985697915042560",
+          "label": "36Kr (englisch) — »NVIDIA is driving a major transformation...«",
+          "kind": "primary",
+          "supports": "Artikel publiziert 2026-09-16 berichtet, dass NVIDIA 800V/Kyber‑Architektur und Rubin‑Ramp Produktionsimplikationen hat und namentlich chinesische SST/SiC/GaN‑Anbieter (Innoscience, Megmeet) genannt werden (Beleg für das Narrativ)."
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Ramps-Into-Full-Production-to-Power-Agentic-AI-Factories-Worldwide/default.aspx",
+          "label": "NVIDIA — Pressemitteilung: Vera Rubin ramped into full production (2026-05-31)",
+          "kind": "secondary",
+          "supports": "NVIDIA‑Quelle bestätigt Vera Rubin Produktions‑Ramp (Datum: 2026-05-31). Zeigt, dass NVIDIA‑Hardware‑Rollout und damit Nachfrage nach zugehöriger Infrastruktur real sind."
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2025/05/21/3086170/0/en/NVIDIA-Selects-Navitas-to-Collaborate-on-Next-Generation-800-V-HVDC-Architecture.html",
+          "label": "Navitas / GLOBE (21 May 2025) — Kollaboration zu 800V HVDC",
+          "kind": "secondary",
+          "supports": "Frühere Industrieankündigung, die NVIDIAs 800V‑HVDC/Kyber‑Ambitionen und Partner‑Ökosystem (GaN/SiC Zulieferer) belegt — technische Grundlage des in 36Kr beschriebenen Mechanismus."
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/nvidia-prepares-data-center-industry-for-1mw-racks-and-800-volt-dc-power-architectures/",
+          "label": "DataCenterDynamics — Berichte zu 1MW/Kyber & 800V (Oct 2025)",
+          "kind": "secondary",
+          "supports": "Unabhängige Branchenberichterstattung über den technologischen Schritt zu 1MW‑Racks und 800V‑Architekturen; belegt Industrie‑Trend, schafft Kontext für 36Kr‑Analyse."
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/china-ai-hardware-stocks-slump-after-news-us-plans-to-ban-imports-of-chinese-components-4836331",
+          "label": "Syndicated coverage (Reuters → Investing.com): US‑Berichte zu möglichen Beschränkungen/Importverboten für chinesische Datacenter‑Komponenten (Aug 2026)",
+          "kind": "secondary",
+          "supports": "Gegenbeleg/kontext: Politische/Regulierungs‑Risiken (Trust/Geopolitik) können chinesische Hersteller effektiv vom US‑Deployments‑Markt ausschließen; widerspricht der These, dass China kurzfristig vollständig »reclaimen« kann."
+        }
+      ],
+      "reason": "Watchlist — primäre Meldung ist eine zusammenfassende Branchenanalyse (36Kr, 2026-09-16) über die Architekturverschiebung hin zu 800V/Kyber‑Racks und die strategischen Reaktionen chinesischer Leistungselektronik‑Anbieter. Die Kernaussage ist plausibel und durch NVIDIA‑Quellen (Vera Rubin Ramp) sowie frühere Partnerankündigungen (Navitas, Branchenberichterstattung) gestützt, liefert aber keinen einzelnen, eindeutigen, quantifizierbaren Primärbeleg (z. B. named, contracted, qualified Chinese supplier für 800V‑Rack‑Komponenten oder ein konkreter $‑Vertrag/lieferbarer LTA). Deshalb erfüllt der Kandidat nicht die strengen Aufnahmebedingungen für «accepted» (er fehlt die atomare, datierte, messbare Einheit/Impact). \n\nGegenargumente: regulative/Trust‑Barrieren und US‑Maßnahmen gegen chinesische Datacenter‑Komponenten (Berichte Aug 2026) sowie NVIDIAs strenge Audit‑/Partnerselektion signalisieren reale Hürden für chinesische Anbieter, die die 36Kr‑These relativieren. \n\nEmpfohlene Aktion: Beobachten bis 2027-06-30; relevante Trigger für Upgrade wären: (a) NVIDIA oder ein großer Hyperscaler veröffentlicht eine offizielle 800V‑Partnerliste, die einen chinesischen SST/SiC/GaN‑Hersteller als qualifiziert aufführt; oder (b) ein veröffentlichtes, verifiziertes Liefer-/LTA‑Dokument (mit Datum und Volumen/Monat) zwischen einem chinesischen Leistungselektronik‑Anbieter und einem NVIDIA‑Partner/OEM für 800V‑Rack‑Komponenten. Sollte eines dieser Ereignisse eintreten, wäre eine Neubewertung mit möglicher Aufnahme als signifikante Layer‑Update‑Evidence gerechtfertigt.",
+      "candidateId": "ae3a2750dea48ac4e762",
+      "candidateKey": "8adcc61432cd1194f6221cde",
+      "reviewedAt": "2026-09-16T10:05:42.721Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d8cecb7dee02544006aaa694a736c87d28a5f7cd82d1eed62"
+    },
+    {
+      "decision": "rejected",
+      "title": "DIGITIMES/SammyFans‑Gerücht: Samsung teste Micron 1γ LPDDR5X für Galaxy S27 (2026-09-16)",
+      "fact": "DIGITIMES berichtet am 2026-09-16, Samsung teste angeblich Micron’s 1γ‑LPDDR5X‑Mobile‑DRAM für mögliche Nutzung im Galaxy S27.",
+      "placement": "Galaxy S27 Serie (Smartphone, global); Lieferanten-/Supply‑Chain‑Ebene; kurzfristige Horizon (H2 2026).",
+      "mechanism": "Qualifizierungs‑/Testläufe einer Drittanbieter‑LPDDR5X‑Quelle würden die Lieferanten‑Diversifizierung von Samsung erhöhen und könnten mittelfristig marginale DRAM‑Sourcing‑Verschiebungen verursachen; die Meldung beschreibt jedoch Tests/Erwägungen, nicht bestätigte Serienlieferungen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Validierung erfordert eine öffentliche Bestätigung von Samsung oder Micron, dass Micron 1γ LPDDR5X für das Galaxy S27 qualifiziert wurde und Serienlieferungen vorgesehen sind — mit einem konkreten Liefer-/Qualifikationsdatum bis 2026-11-30. Wenn bis 2026-11-30 weder offizielle Bestätigung noch nachweisbare qualifizierte Shipments vorliegen, bleibt die Behauptung unbestätigt.",
+      "nextReview": "2026-11-30",
+      "eventDate": "2026-09-16",
+      "novelty": "low",
+      "duplicateOf": "S-2026-08-27-SAMSUNG-LPDDR5X-PIM",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 5,
+        "forecastImpact": 2,
+        "falsifiability": 4,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 10,
+      "confidence": 25,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260916PD210/samsung-galaxy-micron-mobile-dram.html",
+          "label": "DIGITIMES – Artikel (2026-09-16)",
+          "kind": "primary",
+          "supports": "Berichtet, dass Samsung angeblich Micron’s 1γ LPDDR5X für mögliche Verwendung im Galaxy S27 testet (Datum 2026-09-16)."
+        },
+        {
+          "url": "https://www.sammyfans.com/2026/09/16/samsung-galaxy-s27-may-use-micron-1y-lpddr5x-dram/amp/",
+          "label": "SammyFans – Reposting des DigiTimes‑Gerüchts (2026-09-16)",
+          "kind": "secondary",
+          "supports": "Fasst DigiTimes‑Bericht zusammen und nennt Datum/Autoren; verstärkt das Gerücht, liefert aber keine zusätzliche Primärbestätigung."
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2025/Micron-Ships-Worlds-First-1-1-Gamma-Based-LPDDR5X-Enabling-Rich-Mobile-AI-Experiences-06-03-2025/default.aspx",
+          "label": "Micron – Pressemitteilung (2025-06-03)",
+          "kind": "primary",
+          "supports": "Micron bestätigt, dass 1γ‑LPDDR5X gefertigt/versandt wurde (Samples/Produktverfügbarkeit seit 2025); diese Quelle belegt Existenz der Technologie, aber nicht eine Samsung‑Qualifikation für S27."
+        }
+      ],
+      "reason": "Ablehnung — Grund: unbestätigtes Mediengerücht ohne Herstellerbestätigung und in hohem Maße reziprok zu bereits bekannten Informationen. DIGITIMES (gestützt durch SammyFans‑Syndication) berichtet am 2026-09-16 über «Tests/Erwägungen», jedoch fehlt eine direkte Bestätigung von Samsung oder Micron, dass Micron 1γ LPDDR5X für Serienlieferungen im Galaxy S27 qualifiziert wurde. Micron selbst hat die Verfügbarkeit von 1γ‑LPDDR5X im Juni 2025 offiziell kommuniziert (Samples/Initialshipments), sodass die technologische Basis nicht neu ist; die Meldung ist daher gering neu und eher ein Lieferanten‑Gerücht als ein belegter Liefer‑/Verfügbarkeits‑Fakt. Gegenbeweise / Kontext: Micron‑Pressemitteilung (2025‑06‑03) zeigt 1γ‑LPDDR5X existiert, und das Baseline‑Repository enthält bereits Samsung‑LPDDR5X‑PIM‑Aktivitäten (S-2026-08-27), sodass diese Meldung keine klar richtungsweisende Neuigkeit liefert. Ohne Hersteller‑Bestätigung ist die Beobachtung nicht als VERIFIED DATA oder als Index‑Ereignis einzuordnen; daher wird die Einreichung abgelehnt. Empfehlung: Nachprüfen bis 2026-11-30 — falls Samsung oder Micron eine qualifikations‑/lieferungsbezogene Bestätigung (konkretes Serienlieferdatum, Mengenangabe in GB oder Stück/Monat oder 供應‐Vertrag) publiziert, kann die Aufnahme neu bewertet werden.",
+      "candidateId": "f685da61c4e84ce509fe",
+      "candidateKey": "96bb033c14145262034058da",
+      "reviewedAt": "2026-09-16T10:06:50.615Z",
+      "priorityScore": 22,
+      "gateReasons": [
+        "missing predictionImpact",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08fa84a3cfaa222e006aaa69f6e53c87d2b8c9951a366102b4"
     }
   ]
 }
