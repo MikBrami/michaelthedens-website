@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T15:00:20.427Z",
+  "updatedAt": "2026-09-18T19:37:21.983Z",
   "previousRun": "2026-09-16",
   "executivePulse": {
     "current": 77,
-    "previous": 78,
+    "previous": 77,
     "status": "orange",
     "confidence": 79,
     "riskPressure": 83,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 79,
     "previous": 79,
-    "interpretation": "Datenvertrauen 79/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 36 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 79/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 53 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 36 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 53 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,6 +527,74 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-bc9a657a2bbda3388ee045b3",
+      "title": "$8 Mrd.-Rahmen: Generac langfristige Liefervereinbarung mit Amazon für Rechenzentrums-Notstrom",
+      "date": "2026-09-16",
+      "admittedAt": "2026-09-18T19:36:58.290Z",
+      "fact": "Generac hat am 2026-09-16 eine langfristige Liefervereinbarung mit Amazon unterzeichnet, die anfängliche Lieferungen in Höhe von mindestens US$2.4 Mrd. für 2027–2028 ausweist und einen gesamthaften Kaufzielrahmen von bis zu US$8 Mrd. über die Laufzeit enthält; begleitend wurden Amazon‑Warrants auf bis zu 1,693,745 Aktien ausgegeben. Quelle: Generac Form 8‑K und Unternehmensmeldung (2026‑09‑16).",
+      "placement": "Geographie/Domain: globales Hyperscale‑Datacenter‑Beschaffungsnetz (Amazon Web Services); Layer: Datacenter-Energie/On‑site Backup‑Generation; Horizon: sofortig bis 2028 (erster Liefertranche), längerfristige Option bis multiple Jahre.",
+      "tailInference": "Ursächliches Wirkprinzip: Langfristige Liefervereinbarung und begleitende finanzielle Rechte (Warrants) binden On‑site‑Generator‑Kapazität als ergänzenden Energie-/Resilienzlayer für Amazon‑Rechenzentren. Direkter Kanal: erhöhte Nachfrage nach Großgeneratoren und Enclosure/ Switchgear, was die short‑term Nachfrage nach Datacenter‑Energielösungen und damit angrenzende Procurement-/Build‑Timelines erhöht.",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Stärkt die Basis für die These, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Direktanschlüssen und speziellen Lieferverträgen (Take‑or‑pay / direkte Liefervereinbarungen) wechseln; konkret erhöht dies die Wahrscheinlichkeit, dass sich ein Teil des Datacenter‑Buildouts über On‑site/contracted generation statt vollständig über Netzanschlüsse realisiert.",
+      "falsifier": "Bis 2028-12-31: Wenn Generac kumulierte ausgelieferte Nettoumsätze an Amazon aus dieser Vereinbarung <US$500 Mio. bleiben und/oder die ausgegebenen Warrants mangels Liefer‑/Zahlungsmeilensteine nicht vesten (Warrant‑Verfall), dann ist der beobachtbare Markt‑Impact auf den Trend zu dedizierten Energieprojekten nicht bestätigt; Review‑Datum: 2029-01-31.",
+      "nextReview": "2029-01-31",
+      "priorityScore": 82,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 40,
+      "confidence": 78,
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "signal": "demand_up",
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Generac Form 8‑K (Disclosure of Transaction Agreement) — 2026‑09‑16",
+          "url": "https://investors.generac.com/static-files/7fd7f15a-24c2-4822-b08b-9a2b3319dab6"
+        },
+        {
+          "label": "Generac Unternehmensmeldung / Pressemitteilung — 'Generac Signs Global Supply Agreement with Leading Hyperscale Data Center Operator' (2026‑09‑16)",
+          "url": "https://investors.generac.com/node/16221/pdf"
+        },
+        {
+          "label": "WPR / lokale Berichterstattung (zusammenfassend)",
+          "url": "https://www.wpr.org/news/generac-deal-amazon-supply-generators-data-centers-waukesha"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Stärkt die Basis für die These, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Direktanschlüssen und speziellen Lieferverträgen (Take‑or‑pay / direkte Liefervereinbarungen) wechseln; konkret erhöht dies die Wahrscheinlichkeit, dass sich ein Teil des Datacenter‑Buildouts über On‑site/contracted generation statt vollständig über Netzanschlüsse realisiert."
+      },
+      "admissionReviewKey": "bc9a657a2bbda3388ee045b3"
     }
   ],
   "predictionLogUpdates": [
@@ -641,15 +709,24 @@
     "date": "2026-09-18",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
-    "note": "Evidenzprüfung offen: 36 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 82,
+    "note": "Evidenzprüfung offen: 53 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-18T15:00:20.427Z",
+    "generatedAt": "2026-09-18T19:37:21.983Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-18T14:58:35.736Z",
-    "inboxNewItems": 109,
+    "inboxUpdatedAt": "2026-09-18T19:35:23.231Z",
+    "inboxNewItems": 125,
     "highRelevanceCandidates": [
+      {
+        "id": "3282eb130baeb98e8e11",
+        "title": "China’s CXMT Enters NAND Memory Market, Challenging Samsung, SK Hynix And Micron",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE91d2ZuVlNwT2Fzc1FWcm54NlRhMXdTanllaUxDQjRQXzhhdzgzU01Ec1RtR1VRRndGOVVNamxVejNTanBHZDNYYVNJekw4c3BPTDFkQUw5dnhjMWJGcmxmdy1RdzkybW5qZlVpd3Rqbw?oc=5",
+        "source": "Tech4Gamers",
+        "summary": "Aktuelle Meldung von Tech4Gamers: China’s CXMT Enters NAND Memory Market, Challenging Samsung, SK Hynix And Micron",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-18T16:58:35.000Z"
+      },
       {
         "id": "6df6e3bb0dbfd0537824",
         "title": "Nvidia, Alphabet, AMD secure 85% of 2027 HBM supply",
@@ -712,15 +789,6 @@
         "summary": "Aktuelle Meldung von Reuters: EXCLUSIVE: China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC",
         "relevanceScore": 100,
         "publishedAt": "2026-09-18T05:23:00.000Z"
-      },
-      {
-        "id": "69e3d0372fffd86025ef",
-        "title": "EXCLUSIVE-China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC",
-        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaHhFZjdOaWhGSFZvZS10ZWNLNkU3VVptR2VaR2dudXhhS1ZSWlJjd0tidmhOeV9qWko5aTRESndzT2hoM3F4Q0VoaFF3UDY5ZUhiZWJucnh6WlhaMzJKX2E0dVp4UjlVQ0FrR2Zaa0tKeTRyMVlkZ25ZV29WQTYxSVRWY2VNN2RhdlJaQlRlZTlNVjZCUHpaM0pkeVdSdkptNlQ2czY3c3g3YXBRN2FXRlAzSzZNbVNEQjVVU2ZLYVZZRFpHSENDWm9fTER4VUZVRzVoSGRseVVjUTAyU2FkU2VOdlJNVXhYd3ZZLUhn0gHuAUFVX3lxTE9oeEVmN05paEZIVm9lLXRlY0s2RTdVWm1HZVpHZ251eGFLVlJaUmN3S2J2aE55X2paSjlpNERKd3NPaGgzcXhDRWhoUXdQNjllSGJlYm5yeHpaWFozMkpfYTR1WnhSOVVDQWtHZlprS0p5NHIxWWRnbllXb1ZBNjFJVFZjZU03ZGF2UlpCVGVlOU1WNkJQelozSmR5V1J2Sm02VDZzNjdzeDdhcFE3YVdGUDNLNk1tU0RCNVVTZkthVllEWkdIQ0Nab19MRHhVRlVHNWhIZGx5VWNRMDJTYWRTZU52Uk1VeFh3dlktSGc?oc=5",
-        "source": "Devdiscourse",
-        "summary": "Aktuelle Meldung von Devdiscourse: EXCLUSIVE-China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-18T05:21:56.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -806,29 +874,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-18T15:00:20.295Z",
-    "inboxUpdatedAt": "2026-09-18T14:58:35.736Z",
+    "checkedAt": "2026-09-18T19:37:21.849Z",
+    "inboxUpdatedAt": "2026-09-18T19:35:23.231Z",
     "status": "pending",
-    "candidates": 40,
-    "reviewed": 4,
-    "accepted": 0,
-    "watchlist": 3,
+    "candidates": 59,
+    "reviewed": 6,
+    "accepted": 1,
+    "watchlist": 4,
     "rejected": 1,
-    "pending": 36,
-    "oldestPendingAt": "2026-09-18T01:12:52.000Z",
-    "lastCompletedReviewAt": "2026-09-18T15:00:20.268Z",
+    "pending": 53,
+    "oldestPendingAt": "2026-09-18T03:24:07.000Z",
+    "lastCompletedReviewAt": "2026-09-18T19:37:21.818Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 40,
+    "rawCandidates": 60,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
       "archivedOpinions": 0,
-      "groupedDuplicates": 0
+      "groupedDuplicates": 1
     },
     "lastRun": {
-      "startedAt": "2026-09-18T14:59:27.747Z",
-      "completedAt": "2026-09-18T15:00:20.296Z",
+      "startedAt": "2026-09-18T19:36:28.049Z",
+      "completedAt": "2026-09-18T19:37:21.850Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -836,13 +904,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 52,
+      "durationSeconds": 54,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-18",
-    "inputHash": "3da29e5e7f31e814fb3026018079a8263e4410eb41f891e2de94955aed0edacc",
+    "inputHash": "1ef38abd2ae7dd7c5ba199e440fd5a7bdf74a5fcbbdab6bb901656449fcdb5f4",
     "sourceDataAsOf": "2026-09-16"
   }
 }

@@ -42553,6 +42553,213 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_03f89ca3e3910165006aad51ecbc9487d1bb745a4ab1948d96"
+    },
+    {
+      "decision": "accepted",
+      "title": "$8 Mrd.-Rahmen: Generac langfristige Liefervereinbarung mit Amazon für Rechenzentrums-Notstrom",
+      "fact": "Generac hat am 2026-09-16 eine langfristige Liefervereinbarung mit Amazon unterzeichnet, die anfängliche Lieferungen in Höhe von mindestens US$2.4 Mrd. für 2027–2028 ausweist und einen gesamthaften Kaufzielrahmen von bis zu US$8 Mrd. über die Laufzeit enthält; begleitend wurden Amazon‑Warrants auf bis zu 1,693,745 Aktien ausgegeben. Quelle: Generac Form 8‑K und Unternehmensmeldung (2026‑09‑16).",
+      "placement": "Geographie/Domain: globales Hyperscale‑Datacenter‑Beschaffungsnetz (Amazon Web Services); Layer: Datacenter-Energie/On‑site Backup‑Generation; Horizon: sofortig bis 2028 (erster Liefertranche), längerfristige Option bis multiple Jahre.",
+      "mechanism": "Ursächliches Wirkprinzip: Langfristige Liefervereinbarung und begleitende finanzielle Rechte (Warrants) binden On‑site‑Generator‑Kapazität als ergänzenden Energie-/Resilienzlayer für Amazon‑Rechenzentren. Direkter Kanal: erhöhte Nachfrage nach Großgeneratoren und Enclosure/ Switchgear, was die short‑term Nachfrage nach Datacenter‑Energielösungen und damit angrenzende Procurement-/Build‑Timelines erhöht.",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Stärkt die Basis für die These, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Direktanschlüssen und speziellen Lieferverträgen (Take‑or‑pay / direkte Liefervereinbarungen) wechseln; konkret erhöht dies die Wahrscheinlichkeit, dass sich ein Teil des Datacenter‑Buildouts über On‑site/contracted generation statt vollständig über Netzanschlüsse realisiert.",
+      "falsifier": "Bis 2028-12-31: Wenn Generac kumulierte ausgelieferte Nettoumsätze an Amazon aus dieser Vereinbarung <US$500 Mio. bleiben und/oder die ausgegebenen Warrants mangels Liefer‑/Zahlungsmeilensteine nicht vesten (Warrant‑Verfall), dann ist der beobachtbare Markt‑Impact auf den Trend zu dedizierten Energieprojekten nicht bestätigt; Review‑Datum: 2029-01-31.",
+      "nextReview": "2029-01-31",
+      "eventDate": "2026-09-16",
+      "novelty": "Dieses Ereignis ist neu gegenüber dem Baseline‑Set: es dokumentiert eine konkrete, langfristige Liefervereinbarung zwischen einem Generator‑OEM und einem Hyperscaler mit quantifizierbarem Initial‑Volumen (US$2.4 Mrd. in 2027–2028) und einem Option/Ceiling (US$8 Mrd.), was die Energie‑Layer‑These substantiell aktualisiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://investors.generac.com/static-files/7fd7f15a-24c2-4822-b08b-9a2b3319dab6",
+          "label": "Generac Form 8‑K (Disclosure of Transaction Agreement) — 2026‑09‑16",
+          "kind": "primary",
+          "supports": "Details zur Transaction Agreement: initiale Lieferungen von US$2.4 Mrd. (2027–2028), Gesamtzielrahmen bis US$8 Mrd., und Begleit‑Warrants gegenüber Amazon; enthält Vertragsklauseln und Risiken."
+        },
+        {
+          "url": "https://investors.generac.com/node/16221/pdf",
+          "label": "Generac Unternehmensmeldung / Pressemitteilung — 'Generac Signs Global Supply Agreement with Leading Hyperscale Data Center Operator' (2026‑09‑16)",
+          "kind": "primary",
+          "supports": "Unternehmensbeschreibung der Vereinbarung, Nennung des US$2.4 Mrd. Initial‑Liefervolumens und des bis zu US$8 Mrd. umfassenden Rahmenwerts; Aussagen des CEO zur Produktionsausweitung."
+        },
+        {
+          "url": "https://www.wpr.org/news/generac-deal-amazon-supply-generators-data-centers-waukesha",
+          "label": "WPR / lokale Berichterstattung (zusammenfassend)",
+          "kind": "secondary",
+          "supports": "Journalistische Zusammenfassung und lokale Kontextinformationen zu Generacs Geschäftsfeld und Standort."
+        }
+      ],
+      "reason": "Primärquelle (Generac Form 8‑K und Unternehmensmeldung vom 2026‑09‑16) dokumentieren eine konkrete, datierten Vereinbarung mit quantifizierbaren Initiallieferungen (US$2.4 Mrd. für 2027–2028) und einem vertraglichen Zielrahmen bis US$8 Mrd.; das ist ein atomarer, datierter Fakt mit Einheiten und klarer Platzierung in der Datacenter‑Energie‑Schicht. Die Sache besteht aus zwei relevanten Evidenzkategorien: (a) bestätigte Vertragsankündigung mit benanntem initialem Volumen und Ceiling (Primärquelle), (b) begleitende Marktberichterstattung. Opposing evidence / Unsicherheit: das 8‑Mrd. ist ein maximales Kaufziel/Optionen‑Ceiling und nicht ein garantierter, sofortiger Auftrag — das Form 8‑K einschließlich Haftungsausschlüssen zeigt Ausstiegsklauseln, Vesting‑Bedingungen für Warrants und Abhängigkeit von Liefermeilensteinen; das schwächt die sofortige Wirkung auf Angebotsverfügbarkeit. Deshalb indexImpact=false (kein direkter beobachteter Shipments‑Index oder Lead‑Time‑Messung). Die vorgeschlagene Auswirkung ist konkret und testbar (Falsifier mit Review‑Datum 2029‑01‑31). Gesamtpunktzahl 82/100 erfüllt die Aufnahme‑Schwelle; Red‑Pencil‑Check: Wahrheit des Faktums ist primärverifiziert, Umfangsbehauptung (US$8 Mrd.) ist jedoch optional/bedingungsbehaftet — dokumentiert und offen im 8‑K; Aufnahme daher zulässig als Signal (demand_up) mit moderater Severity und hohe praktische Relevanz für P-2026-07-12-04.",
+      "candidateId": "6968ab6636e697fc2750",
+      "candidateKey": "bc9a657a2bbda3388ee045b3",
+      "reviewedAt": "2026-09-18T19:36:58.290Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-bc9a657a2bbda3388ee045b3",
+        "title": "$8 Mrd.-Rahmen: Generac langfristige Liefervereinbarung mit Amazon für Rechenzentrums-Notstrom",
+        "date": "2026-09-16",
+        "admittedAt": "2026-09-18T19:36:58.290Z",
+        "fact": "Generac hat am 2026-09-16 eine langfristige Liefervereinbarung mit Amazon unterzeichnet, die anfängliche Lieferungen in Höhe von mindestens US$2.4 Mrd. für 2027–2028 ausweist und einen gesamthaften Kaufzielrahmen von bis zu US$8 Mrd. über die Laufzeit enthält; begleitend wurden Amazon‑Warrants auf bis zu 1,693,745 Aktien ausgegeben. Quelle: Generac Form 8‑K und Unternehmensmeldung (2026‑09‑16).",
+        "placement": "Geographie/Domain: globales Hyperscale‑Datacenter‑Beschaffungsnetz (Amazon Web Services); Layer: Datacenter-Energie/On‑site Backup‑Generation; Horizon: sofortig bis 2028 (erster Liefertranche), längerfristige Option bis multiple Jahre.",
+        "tailInference": "Ursächliches Wirkprinzip: Langfristige Liefervereinbarung und begleitende finanzielle Rechte (Warrants) binden On‑site‑Generator‑Kapazität als ergänzenden Energie-/Resilienzlayer für Amazon‑Rechenzentren. Direkter Kanal: erhöhte Nachfrage nach Großgeneratoren und Enclosure/ Switchgear, was die short‑term Nachfrage nach Datacenter‑Energielösungen und damit angrenzende Procurement-/Build‑Timelines erhöht.",
+        "predictionId": "P-2026-07-12-04",
+        "predictionImpact": "Stärkt die Basis für die These, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Direktanschlüssen und speziellen Lieferverträgen (Take‑or‑pay / direkte Liefervereinbarungen) wechseln; konkret erhöht dies die Wahrscheinlichkeit, dass sich ein Teil des Datacenter‑Buildouts über On‑site/contracted generation statt vollständig über Netzanschlüsse realisiert.",
+        "falsifier": "Bis 2028-12-31: Wenn Generac kumulierte ausgelieferte Nettoumsätze an Amazon aus dieser Vereinbarung <US$500 Mio. bleiben und/oder die ausgegebenen Warrants mangels Liefer‑/Zahlungsmeilensteine nicht vesten (Warrant‑Verfall), dann ist der beobachtbare Markt‑Impact auf den Trend zu dedizierten Energieprojekten nicht bestätigt; Review‑Datum: 2029-01-31.",
+        "nextReview": "2029-01-31",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 10,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 40,
+        "confidence": 78,
+        "markets": [
+          "ai_infrastructure"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "availability",
+          "demand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Generac Form 8‑K (Disclosure of Transaction Agreement) — 2026‑09‑16",
+            "url": "https://investors.generac.com/static-files/7fd7f15a-24c2-4822-b08b-9a2b3319dab6"
+          },
+          {
+            "label": "Generac Unternehmensmeldung / Pressemitteilung — 'Generac Signs Global Supply Agreement with Leading Hyperscale Data Center Operator' (2026‑09‑16)",
+            "url": "https://investors.generac.com/node/16221/pdf"
+          },
+          {
+            "label": "WPR / lokale Berichterstattung (zusammenfassend)",
+            "url": "https://www.wpr.org/news/generac-deal-amazon-supply-generators-data-centers-waukesha"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Stärkt die Basis für die These, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Direktanschlüssen und speziellen Lieferverträgen (Take‑or‑pay / direkte Liefervereinbarungen) wechseln; konkret erhöht dies die Wahrscheinlichkeit, dass sich ein Teil des Datacenter‑Buildouts über On‑site/contracted generation statt vollständig über Netzanschlüsse realisiert."
+        },
+        "admissionReviewKey": "bc9a657a2bbda3388ee045b3"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fe531d758905d0f006aad92be2bf487d2adc50cf8cf628108"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Microsoft- / OpenAI‑Interne Aussagen zu 'largest theft of labor' (NYT) — Gerichtsakten unredacted, journalistische Berichterstattung",
+      "fact": "Unredacted-Gerichtsunterlagen, berichtet vom New York Times (17–18. September 2026), enthalten Zitate interner Microsoft/OpenAI-Diskussionen, in denen ein Microsoft‑Mitarbeiter (Brent Hecht, Director of Applied Science) die großmaßstäbliche Verwendung von Presseartikeln für Modelltraining als potenziell „an astonishing theft of unprecedented proportions“ bzw. „the largest theft of labor in human history“ bezeichnet.",
+      "placement": "Geographisch: USA; Domäne/Layer: Urheberrechtliche/Datensatz-Nutzung für LLM‑Training; Horizont: laufende Zivilklage (NYT v. OpenAI/Microsoft) mit unredacted summary-judgment‑Filings veröffentlicht 2026-09-17/18.",
+      "mechanism": "Direkter Mechanismus ist nicht eine sofort messbare Marktwirkung, sondern ein juristischer und reputationsbasierter Kanal: die unredacted Gerichtsakten dokumentieren interne Anerkennung von Risiko/Unrecht bei großflächigem Scraping von Publisher‑Inhalten — was mögliche Rechtsansprüche, Lizenzforderungen, Schadensersatzforderungen und strengere Beschränkungen für Trainingsdaten zur Folge haben kann.",
+      "predictionId": "",
+      "predictionImpact": "Kein direkt zugeordnetes vorhandenes Vorhersage‑ID‑Impact (konnte keiner der gelieferten Vorhersagen eindeutig zugeordnet werden). Der Kandidat liefert Beleg über interne Einschätzungen, nicht über quantifizierbare Markt‑ oder Liefergrößen.",
+      "falsifier": "Bis 2026-10-18 liegen eindeutige, primäre Gerichtsunterlagen (d.h. die unredacted summary‑judgment‑filings oder Court‑Docket‑Einträge) vor, die a) die hier zitierten Aussagen eindeutig nicht enthalten oder b) die Zitatzuweisung an Brent Hecht (oder die anderen benannten Personen) widerlegt. Wenn solche primären Dokumente bis 2026-10-18 veröffentlicht werden, falsifiziert das die Kernannahme, dass die unredacted Akten die zitierten Wortlaute enthalten.",
+      "nextReview": "2026-10-18",
+      "eventDate": "2026-09-17",
+      "novelty": "mittel",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 8,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/business/2026/09/17/microsoft-exec-called-ai-largest-theft-labor-history-court-records-show/",
+          "label": "Washington Post — Zusammenfassung und Zitatverifikation",
+          "kind": "secondary",
+          "supports": "Unabhängige Berichterstattung über die im NYT‑Bericht zitierten Gerichtsunterlagen und Nennung des Zitats von Brent Hecht."
+        }
+      ],
+      "reason": "Der Kandidat dokumentiert eine relevante journalistische Veröffentlichung (New York Times) über unredacted Gerichtsunterlagen, die interne Microsoft/OpenAI‑Kommentare zu großflächigem Scraping und seinen Risiken zitieren. Für TAIL‑Aufnahme als 'admitted fact' sind jedoch strengere Anforderungen nötig: eine atomare, datierte Messgröße mit Einheiten, klare Platzierung in einem Index‑Maß, kausaler Mechanismus auf eine vorhandene Vorhersage‑ID und ein falsifizierbarer, quantifizierbarer Outcome. Dieser Artikel liefert qualitatives, juristisches und reputationsbasiertes Signal — wichtig für Kontext und Risiko‑Narrative — aber keine direkte, quantifizierbare Markt‑Messung oder ein explizites, passendes Vorhersage‑ID‑Impact aus der gelieferten Liste. Zudem fehlt im Inbox‑Set eine verifizierte Primärquelle (gerichtliche Docket‑URL oder das tatsächliche unredacted Filing als PDF), die wir als primären Beleg einsehen und extrahieren könnten. Deshalb darf der Candidate nicht als VERIFIED DATA angenommen werden; er bleibt Watchlist, bis die primären Gerichtsakten oder ein eindeutiges, zitierbares Docket‑Eintrag (mit Seitenangaben und Wortlaut) vorgelegt und verifiziert werden können. Opposing evidence: Bis jetzt gibt es keine veröffentlichte Gegendarstellung von NYT, Microsoft oder OpenAI, die das Vorhandensein der zitierten Aussagen leugnet; aber nur die Original‑Gerichtsakten gelten als primärer Beleg und wurden dem Prüfer nicht direkt geliefert. Die Aufnahme als Watchlist bewahrt die Beobachtungspflicht und fordert die fehlende Primärverifikation ein.",
+      "candidateId": "39dba28f647a04fa0b98",
+      "candidateKey": "4f560570cc5d125482ed7516",
+      "reviewedAt": "2026-09-18T19:37:21.818Z",
+      "priorityScore": 55,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e5def8deb7f5e5f006aad92da8d8c87d294515ec1b0ee1477"
     }
   ]
 }
