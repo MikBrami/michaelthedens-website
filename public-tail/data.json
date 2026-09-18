@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T11:45:54.825Z",
+  "generatedAt": "2026-09-18T15:00:21.456Z",
   "platform": {
     "dataAsOf": "2026-09-18",
     "analysisAsOf": "2026-09-18",
@@ -8,18 +8,18 @@
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-09-18T11:45:52.975Z",
-      "pending": 12,
-      "reviewed": 2,
+      "checkedAt": "2026-09-18T15:00:20.295Z",
+      "pending": 36,
+      "reviewed": 4,
       "accepted": 0,
-      "rawCandidates": 14,
+      "rawCandidates": 40,
       "triage": {
         "archivedOpinions": 0,
         "groupedDuplicates": 0
       },
       "lastRun": {
-        "startedAt": "2026-09-18T11:44:44.983Z",
-        "completedAt": "2026-09-18T11:45:52.975Z",
+        "startedAt": "2026-09-18T14:59:27.747Z",
+        "completedAt": "2026-09-18T15:00:20.296Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 68,
+        "durationSeconds": 52,
         "budgetExhausted": false
       }
     },
@@ -73,9 +73,21 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-18; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (12 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-18; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (36 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
+    {
+      "date": "2026-09-18",
+      "title": "Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity",
+      "summary": "Aktuelle Meldung von CNBC: Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 100,
+      "relevanceScore": 96,
+      "sourceQuality": 17,
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQLWVDWHVZSXRaSnJENExMeU1PSjI3dXFEMUY3NWdsT1VOTU53NzJ6MXRZRl9Od3FQRFNpSllldGxYenM4RmdhVlp5MjJ1YmVvV01KTTI1Xy1BSTJrNmRuS24tME9DckN1ejRxQno5elpteEV6RlRGNFRaNkUzb1EtN0Q3SnExQlnSAYwBQVVfeXFMTlVtampvZjJYUEo4WERsUnYxd3AxdG9MWTdFY0pUcXNQYWp6Q2tsS1lfZTNESEdBaHV1T0VfcVpIVVNjSDRkV09wMDROWWZtaXlTQ1Jrd3NGVXBCdXMtWE1GWVlzSk9aekpRek00U3NwMXdWa2ttZFZlU3UtZmsxS2F6bHh6a25STXI0dHI?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-18",
       "title": "EXCLUSIVE: China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC",
@@ -90,26 +102,14 @@
     },
     {
       "date": "2026-09-18",
-      "title": "CXMT to increase pressure on Samsung, SK Hynix with new NAND memory move",
-      "summary": "Aktuelle Meldung von huaweicentral.com: CXMT to increase pressure on Samsung, SK Hynix with new NAND memory move",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "title": "Nvidia, Alphabet, AMD secure 85% of 2027 HBM supply",
+      "summary": "Nvidia, Alphabet, AMD secure 85% of 2027 HBM supply Crypto Briefing",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "huaweicentral.com",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTW5RdU5iQ243NlBaOWhMYTJVQlBCdnFuQVkxNGlSUGltUkxkNnNEekhsQzNDeFBZS0YwTENINkZKNUtveXh5NDBraEhoZ2lUUkxaYk9Vb1hDV3huTWR0aC1KMnZRdl90N1Q5U05mZTJ0Q2hxSG4wR21BTEY2SU5PR2ZBeWFGVnVYWFpYVVU2MnRnYlFfVUtqTTNnU0paREluOG9MX9IBqgFBVV95cUxQLWFMVHhzc0hJc2h2QUdtRmFRNWN1OWM4SUtKNVRTN0ZGTFdBekN0SVUyZnhCcVlWR3N3WU9HajZieXVULW9yQ2ZLTkhFS2JWZkFfUExEMWphUjNJWjZGbFNQNml0Zm9OdlRnOWhuNjF3X2w5S2RLU2NKbUJ5TmlXSGhoQlJsWU9aaGI2eVNESkFLT1cwNktmNXBDSi16R1JZclVMNmtKdy1SZw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-18",
-      "title": "CXMT Plans Beijing NAND Flash R&D Line as DRAM Leader Eyes YMTC's Turf",
-      "summary": "Aktuelle Meldung von Pandaily: CXMT Plans Beijing NAND Flash R&D Line as DRAM Leader Eyes YMTC's Turf",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pandaily",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BT1lpNkppZW8xMTJoNENKNF9JakVSa1N2LXlWQktWZXVGUGFIQXJvZlNEaThNYnN6QmY3aHlwWGJqSHBlYTIwb1lldHUxcXVlYlpkQzZ3aGJBdmFyWmdKZzh6dm94UHct?oc=5",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxQlE5dE5iX2NBYmVWamp3SGRfUWxQclBvRE16V2xxRzF5alg1aExDM2VuSmRDbjFTYXhnbmdUbGVZc0F2OFlWUjc3OVN6anNPWFlzVkhGMGVrNlBEejA4MWhUMFFKUTdWd2xyM25aV2M?oc=5",
       "layer": "news"
     }
   ],
@@ -144,9 +144,21 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "12 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "36 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
+    {
+      "date": "2026-09-18",
+      "title": "Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity",
+      "summary": "Aktuelle Meldung von CNBC: Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 100,
+      "relevanceScore": 96,
+      "sourceQuality": 17,
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQLWVDWHVZSXRaSnJENExMeU1PSjI3dXFEMUY3NWdsT1VOTU53NzJ6MXRZRl9Od3FQRFNpSllldGxYenM4RmdhVlp5MjJ1YmVvV01KTTI1Xy1BSTJrNmRuS24tME9DckN1ejRxQno5elpteEV6RlRGNFRaNkUzb1EtN0Q3SnExQlnSAYwBQVVfeXFMTlVtampvZjJYUEo4WERsUnYxd3AxdG9MWTdFY0pUcXNQYWp6Q2tsS1lfZTNESEdBaHV1T0VfcVpIVVNjSDRkV09wMDROWWZtaXlTQ1Jrd3NGVXBCdXMtWE1GWVlzSk9aekpRek00U3NwMXdWa2ttZFZlU3UtZmsxS2F6bHh6a25STXI0dHI?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-18",
       "title": "EXCLUSIVE: China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC",
@@ -161,33 +173,21 @@
     },
     {
       "date": "2026-09-18",
-      "title": "CXMT to increase pressure on Samsung, SK Hynix with new NAND memory move",
-      "summary": "Aktuelle Meldung von huaweicentral.com: CXMT to increase pressure on Samsung, SK Hynix with new NAND memory move",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "title": "Nvidia, Alphabet, AMD secure 85% of 2027 HBM supply",
+      "summary": "Nvidia, Alphabet, AMD secure 85% of 2027 HBM supply Crypto Briefing",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "huaweicentral.com",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTW5RdU5iQ243NlBaOWhMYTJVQlBCdnFuQVkxNGlSUGltUkxkNnNEekhsQzNDeFBZS0YwTENINkZKNUtveXh5NDBraEhoZ2lUUkxaYk9Vb1hDV3huTWR0aC1KMnZRdl90N1Q5U05mZTJ0Q2hxSG4wR21BTEY2SU5PR2ZBeWFGVnVYWFpYVVU2MnRnYlFfVUtqTTNnU0paREluOG9MX9IBqgFBVV95cUxQLWFMVHhzc0hJc2h2QUdtRmFRNWN1OWM4SUtKNVRTN0ZGTFdBekN0SVUyZnhCcVlWR3N3WU9HajZieXVULW9yQ2ZLTkhFS2JWZkFfUExEMWphUjNJWjZGbFNQNml0Zm9OdlRnOWhuNjF3X2w5S2RLU2NKbUJ5TmlXSGhoQlJsWU9aaGI2eVNESkFLT1cwNktmNXBDSi16R1JZclVMNmtKdy1SZw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-18",
-      "title": "CXMT Plans Beijing NAND Flash R&D Line as DRAM Leader Eyes YMTC's Turf",
-      "summary": "Aktuelle Meldung von Pandaily: CXMT Plans Beijing NAND Flash R&D Line as DRAM Leader Eyes YMTC's Turf",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pandaily",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BT1lpNkppZW8xMTJoNENKNF9JakVSa1N2LXlWQktWZXVGUGFIQXJvZlNEaThNYnN6QmY3aHlwWGJqSHBlYTIwb1lldHUxcXVlYlpkQzZ3aGJBdmFyWmdKZzh6dm94UHct?oc=5",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxQlE5dE5iX2NBYmVWamp3SGRfUWxQclBvRE16V2xxRzF5alg1aExDM2VuSmRDbjFTYXhnbmdUbGVZc0F2OFlWUjc3OVN6anNPWFlzVkhGMGVrNlBEejA4MWhUMFFKUTdWd2xyM25aV2M?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-18T11:45:55.035Z",
+    "generatedAt": "2026-09-18T15:00:21.615Z",
     "count": 3,
-    "candidateCount": 480,
+    "candidateCount": 529,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -402,6 +402,18 @@
   "originalSignals": [
     {
       "date": "2026-09-18",
+      "title": "Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity",
+      "summary": "Aktuelle Meldung von CNBC: Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 100,
+      "relevanceScore": 96,
+      "sourceQuality": 17,
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQLWVDWHVZSXRaSnJENExMeU1PSjI3dXFEMUY3NWdsT1VOTU53NzJ6MXRZRl9Od3FQRFNpSllldGxYenM4RmdhVlp5MjJ1YmVvV01KTTI1Xy1BSTJrNmRuS24tME9DckN1ejRxQno5elpteEV6RlRGNFRaNkUzb1EtN0Q3SnExQlnSAYwBQVVfeXFMTlVtampvZjJYUEo4WERsUnYxd3AxdG9MWTdFY0pUcXNQYWp6Q2tsS1lfZTNESEdBaHV1T0VfcVpIVVNjSDRkV09wMDROWWZtaXlTQ1Jrd3NGVXBCdXMtWE1GWVlzSk9aekpRek00U3NwMXdWa2ttZFZlU3UtZmsxS2F6bHh6a25STXI0dHI?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-18",
       "title": "EXCLUSIVE: China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC",
       "summary": "Aktuelle Meldung von Reuters: EXCLUSIVE: China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
@@ -414,26 +426,14 @@
     },
     {
       "date": "2026-09-18",
-      "title": "CXMT to increase pressure on Samsung, SK Hynix with new NAND memory move",
-      "summary": "Aktuelle Meldung von huaweicentral.com: CXMT to increase pressure on Samsung, SK Hynix with new NAND memory move",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "title": "Nvidia, Alphabet, AMD secure 85% of 2027 HBM supply",
+      "summary": "Nvidia, Alphabet, AMD secure 85% of 2027 HBM supply Crypto Briefing",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "huaweicentral.com",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTW5RdU5iQ243NlBaOWhMYTJVQlBCdnFuQVkxNGlSUGltUkxkNnNEekhsQzNDeFBZS0YwTENINkZKNUtveXh5NDBraEhoZ2lUUkxaYk9Vb1hDV3huTWR0aC1KMnZRdl90N1Q5U05mZTJ0Q2hxSG4wR21BTEY2SU5PR2ZBeWFGVnVYWFpYVVU2MnRnYlFfVUtqTTNnU0paREluOG9MX9IBqgFBVV95cUxQLWFMVHhzc0hJc2h2QUdtRmFRNWN1OWM4SUtKNVRTN0ZGTFdBekN0SVUyZnhCcVlWR3N3WU9HajZieXVULW9yQ2ZLTkhFS2JWZkFfUExEMWphUjNJWjZGbFNQNml0Zm9OdlRnOWhuNjF3X2w5S2RLU2NKbUJ5TmlXSGhoQlJsWU9aaGI2eVNESkFLT1cwNktmNXBDSi16R1JZclVMNmtKdy1SZw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-18",
-      "title": "CXMT Plans Beijing NAND Flash R&D Line as DRAM Leader Eyes YMTC's Turf",
-      "summary": "Aktuelle Meldung von Pandaily: CXMT Plans Beijing NAND Flash R&D Line as DRAM Leader Eyes YMTC's Turf",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pandaily",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BT1lpNkppZW8xMTJoNENKNF9JakVSa1N2LXlWQktWZXVGUGFIQXJvZlNEaThNYnN6QmY3aHlwWGJqSHBlYTIwb1lldHUxcXVlYlpkQzZ3aGJBdmFyWmdKZzh6dm94UHct?oc=5",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxQlE5dE5iX2NBYmVWamp3SGRfUWxQclBvRE16V2xxRzF5alg1aExDM2VuSmRDbjFTYXhnbmdUbGVZc0F2OFlWUjc3OVN6anNPWFlzVkhGMGVrNlBEejA4MWhUMFFKUTdWd2xyM25aV2M?oc=5",
       "layer": "news"
     }
   ]
