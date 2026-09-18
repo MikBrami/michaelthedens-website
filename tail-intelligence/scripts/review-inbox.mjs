@@ -23,8 +23,29 @@ const ledger = await read('data/forecast-ledger.json',{forecasts:[]});
 const outlook = await read('config/market-outlook.json',{outlooks:[]});
 const journal = await read('data/admission-reviews.json',{schemaVersion:1,reviews:[]});
 const backlog = await read('data/admission-backlog.json',{schemaVersion:1,items:[]});
-const rawCandidates = [...new Map([...backlog.items,...eligibleCandidates(inbox.items || [],now)].map(c=>[reviewKey(c),c])).values()];
-await write('data/admission-backlog.json',{schemaVersion:1,updatedAt:now,items:rawCandidates});
+
+// Paid-review epoch: keep the historical backlog on disk, but only spend API
+// budget on items ingested after the configured restart cutoff.
+const reviewCutoff = process.env.TAIL_REVIEW_CUTOFF || null;
+const reviewCutoffMs = Date.parse(reviewCutoff || '');
+const isActiveReviewCandidate = (item) => {
+  if (!Number.isFinite(reviewCutoffMs)) return true;
+  const ingestedAt = Date.parse(item.ingested_at || '');
+  return Number.isFinite(ingestedAt) && ingestedAt >= reviewCutoffMs;
+};
+const allRawCandidates = [...new Map([
+  ...backlog.items,
+  ...eligibleCandidates(inbox.items || [],now)
+].map(c=>[reviewKey(c),c])).values()];
+const rawCandidates = allRawCandidates.filter(isActiveReviewCandidate);
+const historicalCandidatesSkipped = allRawCandidates.length - rawCandidates.length;
+await write('data/admission-backlog.json',{
+  schemaVersion:1,
+  updatedAt:now,
+  reviewCutoff,
+  historicalCandidatesSkipped,
+  items:allRawCandidates
+});
 const triage = triageCandidates(rawCandidates,journal.reviews);
 const candidates = triage.representatives;
 await write('data/admission-triage.json',{schemaVersion:1,at:now,rawCandidates:rawCandidates.length,representatives:candidates.length,archivedOpinions:triage.archivedOpinions,groupedDuplicates:triage.groupedDuplicates,decisions:triage.decisions});
@@ -146,6 +167,8 @@ for (let i=0;!blockingError && i<selected.length && Date.now()+180000<=deadline;
 const state = admissionState(candidates,journal.reviews,{asOf:new Date().toISOString(),inboxUpdatedAt:inbox.updated_at,error});
 state.batchErrors=batchErrors;
 state.rawCandidates=rawCandidates.length;
+state.reviewCutoff=reviewCutoff;
+state.historicalCandidatesSkipped=historicalCandidatesSkipped;
 state.triage={archivedOpinions:triage.archivedOpinions,groupedDuplicates:triage.groupedDuplicates};
 state.lastRun={startedAt:now,completedAt:new Date().toISOString(),selected:selected.length,reviewed:reviewedThisRun,concurrency,batchSize,limit,rateLimitRetries,timeoutRetries,durationSeconds:Math.round((Date.now()-startedAt)/1000),budgetExhausted:Date.now()>=deadline};
 const throughput=await read('data/admission-throughput.json',{schemaVersion:1,runs:[]});
