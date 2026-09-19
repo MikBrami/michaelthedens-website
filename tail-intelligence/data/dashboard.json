@@ -2,34 +2,34 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-09-18",
-  "analysisAsOf": "2026-09-18",
+  "dataAsOf": "2026-09-19",
+  "analysisAsOf": "2026-09-19",
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-18T19:37:21.849Z",
-    "inboxUpdatedAt": "2026-09-18T19:35:23.231Z",
+    "checkedAt": "2026-09-19T01:12:13.037Z",
+    "inboxUpdatedAt": "2026-09-19T01:09:39.067Z",
     "status": "pending",
-    "candidates": 59,
-    "reviewed": 6,
+    "candidates": 74,
+    "reviewed": 8,
     "accepted": 1,
-    "watchlist": 4,
+    "watchlist": 6,
     "rejected": 1,
-    "pending": 53,
-    "oldestPendingAt": "2026-09-18T03:24:07.000Z",
-    "lastCompletedReviewAt": "2026-09-18T19:37:21.818Z",
+    "pending": 66,
+    "oldestPendingAt": "2026-09-18T07:03:05.000Z",
+    "lastCompletedReviewAt": "2026-09-19T01:12:12.995Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 60,
+    "rawCandidates": 77,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
-      "archivedOpinions": 0,
-      "groupedDuplicates": 1
+      "archivedOpinions": 1,
+      "groupedDuplicates": 2
     },
     "lastRun": {
-      "startedAt": "2026-09-18T19:36:28.049Z",
-      "completedAt": "2026-09-18T19:37:21.850Z",
+      "startedAt": "2026-09-19T01:11:12.615Z",
+      "completedAt": "2026-09-19T01:12:13.039Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 54,
+      "durationSeconds": 60,
       "budgetExhausted": false
     }
   },
@@ -63,6 +63,14 @@
       "nextReview": "2026-09-16"
     },
     {
+      "id": "OP-2026-08-19-CHINA-H200-AI-DEMAND",
+      "nextReview": "2026-09-18"
+    },
+    {
+      "id": "OP-2026-08-19-CHINA-H200-GEOPOLITICAL-SPLIT",
+      "nextReview": "2026-09-18"
+    },
+    {
       "id": "OP-2026-08-19-ESSD-LEADTIME-VISIBILITY",
       "nextReview": "2026-08-31"
     },
@@ -84,13 +92,13 @@
     }
   ],
   "sourceDataAsOf": "2026-09-16",
-  "knowledgeBaseSyncedAt": "2026-09-18T19:37:21.983Z",
+  "knowledgeBaseSyncedAt": "2026-09-19T01:12:13.195Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 2,
-  "lastSuccessfulUpdate": "2026-09-18T19:37:23.314Z",
-  "lastForecastRun": "2026-09-18T19:37:23.314Z",
-  "newlyProcessedArticles": 125,
+  "evidenceAgeDays": 3,
+  "lastSuccessfulUpdate": "2026-09-19T01:12:14.534Z",
+  "lastForecastRun": "2026-09-19T01:12:14.534Z",
+  "newlyProcessedArticles": 126,
   "totalArticles": 184,
   "articleCount": 184,
   "processStatus": "warning",
@@ -146,16 +154,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 53 Kandidaten ausstehend.",
-    "10 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
+    "Evidenzprüfung offen: 66 Kandidaten ausstehend.",
+    "12 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-18T19:35:23.231Z",
-    "newItems": 125,
-    "totalItems": 4505,
+    "updatedAt": "2026-09-19T01:09:39.067Z",
+    "newItems": 126,
+    "totalItems": 4631,
     "duplicateItems": 300,
-    "relevantItems": 1842,
+    "relevantItems": 1870,
     "sourceErrors": []
   },
   "pipeline": {
@@ -165,19 +173,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "6 geprüft · 53 offen · 1 aufgenommen"
+        "detail": "8 geprüft · 66 offen · 1 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "184 Artikel · Sync 2026-09-18 · jüngstes bestätigtes Signal 2026-09-16"
+        "detail": "184 Artikel · Sync 2026-09-19 · jüngstes bestätigtes Signal 2026-09-16"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "4505 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "4631 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -208,8 +216,8 @@
       {
         "id": "demand",
         "name": "Nachfrage",
-        "score": 77,
-        "absoluteSeverity": 77,
+        "score": 76,
+        "absoluteSeverity": 76,
         "delta": 0,
         "weight": 0.25,
         "coverage": 100,
@@ -218,8 +226,8 @@
       {
         "id": "pricing",
         "name": "Preisdynamik",
-        "score": 73,
-        "absoluteSeverity": 73,
+        "score": 72,
+        "absoluteSeverity": 72,
         "delta": 0,
         "weight": 0.2,
         "coverage": 100,
@@ -330,7 +338,7 @@
           "id": "demand",
           "label": "Nachfrage",
           "score": 80,
-          "confidence": 85,
+          "confidence": 84,
           "evidenceCount": 5,
           "pressure": 80,
           "relief": 0,
@@ -341,7 +349,7 @@
           "id": "pricing",
           "label": "Preisdynamik",
           "score": 72,
-          "confidence": 80,
+          "confidence": 79,
           "evidenceCount": 3,
           "pressure": 70,
           "relief": 0,
@@ -352,7 +360,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 87,
-          "confidence": 49,
+          "confidence": 48,
           "evidenceCount": 5,
           "pressure": 79,
           "relief": 0,
@@ -385,7 +393,7 @@
       "signals": 33,
       "articleSignals": 30,
       "operationalSignals": 3,
-      "confidence": 58,
+      "confidence": 57,
       "coverage": 80,
       "drivers": [
         {
@@ -414,7 +422,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 78,
-          "confidence": 60,
+          "confidence": 59,
           "evidenceCount": 5,
           "pressure": 69,
           "relief": 0,
@@ -453,10 +461,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 77,
+          "score": 76,
           "confidence": 91,
           "evidenceCount": 5,
-          "pressure": 77,
+          "pressure": 76,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -464,10 +472,10 @@
         {
           "id": "pricing",
           "label": "Preisdynamik",
-          "score": 66,
+          "score": 65,
           "confidence": 89,
           "evidenceCount": 1,
-          "pressure": 66,
+          "pressure": 65,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -515,10 +523,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 78,
+          "score": 77,
           "confidence": 92,
           "evidenceCount": 5,
-          "pressure": 78,
+          "pressure": 77,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -599,10 +607,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 58,
+          "score": 57,
           "confidence": 86,
           "evidenceCount": 5,
-          "pressure": 58,
+          "pressure": 57,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -966,7 +974,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-09-18T19:37:23.310Z"
+      "lastUpdated": "2026-09-19T01:12:14.529Z"
     },
     {
       "id": "hbm",
@@ -1144,7 +1152,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-18T19:37:23.310Z"
+      "lastUpdated": "2026-09-19T01:12:14.529Z"
     },
     {
       "id": "nand",
@@ -1230,7 +1238,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-18T19:37:23.310Z"
+      "lastUpdated": "2026-09-19T01:12:14.529Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1311,7 +1319,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-18T19:37:23.310Z"
+      "lastUpdated": "2026-09-19T01:12:14.529Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1598,14 +1606,14 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-18T19:37:23.310Z"
+      "lastUpdated": "2026-09-19T01:12:14.529Z"
     }
   ],
   "indexCalculation": {
-    "asOf": "2026-09-18",
+    "asOf": "2026-09-19",
     "evidenceAsOf": "2026-09-11",
     "formulaRevision": "1.4",
-    "baselineAsOf": "2026-09-18"
+    "baselineAsOf": "2026-09-19"
   },
   "executiveSummary": "TAIL steht auf 77/100. Server DRAM / RDIMM, Enterprise SSD, Supply Chain sind die kritischsten Felder. Die Plattform liest 184 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
@@ -1776,7 +1784,7 @@
         "confidence": 79,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-18"
+        "indexAsOf": "2026-09-19"
       },
       {
         "marketId": "enterprise_ssd",
@@ -2215,7 +2223,7 @@
         "confidence": 70,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-18"
+        "indexAsOf": "2026-09-19"
       }
     ]
   }
