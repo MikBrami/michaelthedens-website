@@ -43181,6 +43181,145 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0642c20761d48796006aae9b87bf4c87d0b21e609b64c37d04"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Klage behauptet illegale Absprache zur Verlangsamung der KI‑Entwicklung zwischen Anthropic, OpenAI, SpaceXAI und Google",
+      "fact": "Nach einem heute (2026-09-19) verbreiteten AP‑News‑Bericht wurde eine zivilrechtliche Klage eingereicht, die behauptet, Anthropic, OpenAI, SpaceXAI und Google hätten eine illegale Absprache getroffen, um die Entwicklung von KI gemeinschaftlich zu verlangsamen (Artikel berichtet über die Klagebehauptung, kein direktes Zitat der Klageschrift im Bericht).",
+      "placement": "Geographie: USA (federal court filing, Bericht über US‑Klage). Domäne/Layer: AI‑Infrastruktur / Marktstruktur; Horizont: kurzfristig — mögliche Auswirkungen auf Produkt‑Release‑Cadence und zahlungswirksame Abonnentenleistungen in den nächsten Monaten.",
+      "mechanism": "Wenn ein koordinierter, rechtswidriger Pacing‑Abschluss (Kartellabrede) zwischen führenden Frontier‑AI‑Labs tatsächlich besteht und umgesetzt wird, reduziert dies die Geschwindigkeit von Produkt‑ und Modell‑Upgrades. Das verringert kurzfristig die beobachtbare Wertschöpfung für zahlende Kunden, dämpft die unmittelbare Nachfrage nach zusätzlicher Rechen‑ und Memory‑Kapazität (aiDemand → demand_down) und könnte Investitionsentscheidungen (Capex/Leases) verschieben.",
+      "predictionId": "P-2026-07-11-04",
+      "predictionImpact": "Mögliche Richtung: demand_down für AI‑Infrastruktur (reduzierte kurzfristige Nachfrage nach Compute/Memory). Dieser Signal‑Beobachtung würde, wenn verifiziert und andauernd, das Falsifier‑Kriterium von P-2026-07-11-04 (dass sinkende Inferenzkosten die Gesamtinvestitionen nicht bremsen) in Richtung Teil‑Falsifikation verschieben.",
+      "falsifier": "Bis 2027-03-19: Keine nationale/zivilrechtlich durchgesetzte oder marktweit implementierte, verbindliche Vereinbarung zur branchenweiten Verlangsamung; gleichzeitig werden mehrere unabhängige Frontier‑Labs (mindestens zwei der betroffenen Firmen oder vergleichbare Konkurrenten) mit datierten Releases/Produkt‑Upgrades und nachweisbaren Leistungsverbesserungen fortfahren (z. B. öffentlich dokumentierte Major‑Model‑Releases oder signifikante produktseitige Feature‑Upgrades für zahlende Kunden), die zeigen, dass kein andauernder, kollektiver Pacing‑Effekt vorliegt. Falls bis 2027-03-19 eine rechtskräftig verifizierte, umgesetzte Branchenspanne/Abrede (gerichtliche Feststellung, Vergleich mit überprüfbaren Durchführungsmaßnahmen) vorliegt, wäre das ein Bestätiger.",
+      "nextReview": "2027-03-19",
+      "eventDate": "2026-09-19",
+      "novelty": "Die Klage behauptet eine neuartige rechtliche Lesart von öffentlich bekannten Aufforderungen zur 'Pace'/'Slowdown' (zuvor teilw. öffentliche Appelle/Arbeitsgruppengespräche). Als juristische Behauptung ist sie aktuell neu; der behauptete Markt‑Effekt (koordinierte Reduktion von Releases) wäre jedoch eine erhebliche Abweichung von zuvor beobachteten, weiterhin normalen Release‑Cadences.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://apnews.com/article/960af4308161eaf4ed13c383b0ce1c1b",
+          "label": "AP News — 'Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown' (reported 2026-09-19)",
+          "kind": "primary",
+          "supports": "AP berichtet über die Einreichung einer zivilrechtlichen Klage, die behauptet, die genannten Unternehmen hätten eine illegale Vereinbarung zur Verlangsamung der KI‑Entwicklung getroffen. Der Artikel zitiert die Klagebehauptung, stellt aber keinen vollständigen Text der Klageschrift als Primärdokument bereit."
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/09/19/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google/d5e8147a-b447-11f1-92c2-5c918f4a6127_story.html",
+          "label": "Washington Post — Bericht über die Klage (Korrespondenz zu AP/Nachrichtenlage)",
+          "kind": "secondary",
+          "supports": "Zusätzliche Medienberichterstattung bestätigt, dass mehrere große Nachrichtenorganisationen über dieselbe Klagebehauptung berichten; kein direkter Link auf die originale Klageschrift wurde in der Berichterstattung gefunden."
+        }
+      ],
+      "reason": "Der eingereichte TAIL‑Check erkennt eine klar marktrelevante Behauptung (mögliche koordinierte Verlangsamung der KI‑Entwicklung), aber die vorgelegten Quellen (AP und Folgeberichterstattung) dokumentieren lediglich, dass eine Klage diese Behauptung erhebt. Wichtige Aufnahmeanforderungen für eine Annahme (admission) fehlen: kein zugängliches Primärdokument (vollständige Klageschrift oder Gerichtsakte) mit der exakten, datierten Behauptungstextstelle wurde geprüft; es fehlen auch direkte, messbare Marktdaten (z. B. dokumentierte, industry‑wide Release‑Stops, Vertragstexte, datierte gemeinsame Umsetzungsmaßnahmen) die eine unmittelbare Nachfrage‑Reduktion belegen. Ohne Primärnachweis und ohne eine atomare, datierte Messgröße für die Auswirkung bleibt die Beobachtung nicht verifiziert. Deshalb wird die Meldung auf Watchlist gesetzt — weiter beobachten und Primärbelege (Klage‑PDF / Gerichtsakte / gerichtliche Entscheidung oder beobachtbare, quantifizierbare Marktwirkung) anfordern. Opposing evidence: laufende Produkt‑Releases und öffentliche Erklärungen der betroffenen Firmen (bislang) deuten nicht auf einen nachweisbaren, implementierten, andauernden Release‑Stopp hin; Medienberichte zitieren weiterhin Produktaktivitäten. Solange kein Primärbeleg vorliegt, ist die Behauptung nicht als VERIFIED DATA aufzunehmen.",
+      "candidateId": "b9a4402918a70228c6c3",
+      "candidateKey": "49e1cf604fbbf81ecad39703",
+      "reviewedAt": "2026-09-19T19:20:26.375Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a2f1456c0e4113f006aaee04631e887d09e586c1e49929a36"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT NAND Memory Plans — R&D‑Linie geplant, keine qualifizierten Shipments",
+      "fact": "Berichte (u.a. Reuters‑Syndication) vom 2026-09-18: ChangXin Memory Technologies (CXMT) plant, an seinem zweiten Werk in der Region Peking eine Forschungs‑und‑Entwicklungs( R&D )‑Produktionslinie für 3D‑NAND/Flash einzurichten und führt frühe Gespräche mit möglichen Kunden.",
+      "placement": "China / Beijing‑Fab (zweite Fabrik) — Manufacturing‑Layer (R&D‑Produktionslinie) — kurzfristig (Ankündigung 2026‑09‑18; kein kurzfristiger Output nachgewiesen).",
+      "mechanism": "CXMTs R&D‑NAND‑Linie würde die Produktpalette von DRAM auf NAND erweitern; wenn daraus FIDs, qualifizierte Produktions‑Waves oder Kunden‑LTA‑Shipments folgen, könnten zusätzliche Bit‑Supply die Enterprise‑SSD und NAND‑Marktdynamik mittelfristig entspannen. Aktuell ist die Wirkung nur potenziell, nicht beobachtet.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Potentielle Abschwächung des Enterprise‑SSD Preisdrucks / Entspannung der NAND‑Knappheit ab dem Zeitpunkt, an dem CXMT qualifizierte NAND‑Shipments oder eine verbindliche Kapazitätsangabe liefert. Momentaner Befund ist jedoch nur Ankündigung — kein nachweisbarer Lieferungs‑ oder Preis‑Effekt.",
+      "falsifier": "Bis 2027-03-31: kein nachweisbarer qualifizierter NAND‑Shipment (keine ausgewiesenen, kundenqualifizierten Lieferungen), keine FID/CapEx‑Angabe für NAND‑Produktionskapazität und keine offizielle, überprüfbare Kunden‑LTA für NAND. Falls solche Belege bis zu diesem Datum erscheinen, erhöht das die Einigungswahrscheinlichkeit; falls nicht, bleibt die Ankündigung primär ein R&D/Strategiebekenntnis ohne Marktwirkung.",
+      "nextReview": "2026-10-18",
+      "eventDate": "2026-09-18",
+      "novelty": "CXMTs Eintritt in NAND ist neu für das Unternehmen (bisher fokussiert auf DRAM); die Meldung berichtet nur eine geplante R&D‑Linie ohne konkrete Kapazitäts-, Zeit‑ oder Output‑Angaben.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://stratnewsglobal.com/technology/cxmt-nand-memory-plans/",
+          "label": "StratNews Global — CXMT NAND Memory Plans Signal Market Expansion (aggregator/article)",
+          "kind": "secondary",
+          "supports": "Berichtet die CXMT‑Planung einer 3D‑NAND R&D‑Produktionslinie in der neuen Beijing‑Fabrik; datiert 2026‑09‑18."
+        },
+        {
+          "url": "https://uk.investing.com/news/stock-market-news/cxmt-plans-flash-memory-chip-expansion-amid-global-shortage-reuters-93CH-4874101",
+          "label": "Investing.com (Reuters‑syndication) — 'CXMT plans flash memory chip expansion amid global shortage' (2026‑09‑18)",
+          "kind": "primary",
+          "supports": "Führt Reuters‑Quellenangaben an: CXMT plane eine R&D‑NAND‑Produktionslinie in Peking; Artikel nennt Datum 2026‑09‑18. Keine Kapazitäts‑ oder Shipment‑Angaben im Artikel."
+        }
+      ],
+      "reason": "Die Kandidatennachricht beschreibt eine Unternehmensplanung (eine R&D‑NAND‑Linie bei CXMT), publiziert am 2026-09-18. Wir haben die ursprüngliche Meldung in mehreren Sekundärquellen (StratNews Global, Reuters‑Syndication via Investing.com, TrendForce‑Sammelmeldungen) verifiziert. Wichtige Requirements für TAIL‑Aufnahme fehlen jedoch: es gibt keinen Primärnachweis für FID, verfügbare Kapazitätszahlen, qualifizierte NAND‑Shipments oder messbare Index‑Effekte (Lead Time, Fill Rate, Contract Price) — die Meldung bleibt eine Produkt‑/Technologieankündigung ohne beobachtbaren Marktoutput. Damit ist die Aussage nicht als VERIFIED DATA einzuordnen; sie bleibt ein relevanter Signal‑Input, das eine mögliche zukünftige Kapazitätswirkung nahelegt, aber derzeit nicht belegbar ist. Aus diesem Grund setze ich die Aufnahme als 'watchlist' — beobachtungswürdig, aber noch nicht belegbar genug für Aufnahme als verifizierte Markteinwirkung. Fehlende Gegenbelege wurden gesucht; es gibt Berichte über CXMT‑IPO, frühe Verträge und Industry‑Rumors, aber keine offizielle CXMT‑Mitteilung mit FID/Shipment/CapEx‑Angaben zum NAND‑Line‑Output. Empfehlung: prüfe in 30 Tagen (2026‑10‑18) auf FID, CapEx‑Budget, qualifizierte NAND‑Shipments, Kunden‑LTA oder offizielle CXMT‑Financial‑Disclosure zur zweiten Fabrik. Falls solche Belege auftauchen, ist Neuaufnahme als stärkerer Signaltyp möglich; falls nicht, verbleibt die Beobachtung als strategisches R&D‑Signal ohne aktuellen Availability‑Impact.\n\nAdversarial check / Red‑pencil‑Notiz: Diese Meldung wäre unzulässig als 'verified_supply_relief' oder als Index‑Impact, solange keine qualifizierten Shipments / Lead‑time‑Verbesserungen / rückverfolgbare Liefermengen vorliegen. Deshalb redPencilPass=false und indexImpact=false.\n\nEmpfohlener Falsifier (konkret & prüfbar): Bis 2027-03-31 muss CXMT mindestens eines der folgenden öffentlich und primär nachweisbar liefern: a) bestätigte, kundenqualifizierte NAND‑Shipments (Menge, SKU, Kunde, Ship‑Date), b) eine formelle FID mit ausgewiesener NAND‑CapEx und Zeitplan, oder c) eine verbindliche LTA mit kundenseitigen Abnahmevolumina für NAND. Fehlen all dieser Punkte, bleibt die Ankündigung eine R&D‑Absicht ohne beobachtbare Marktwirkung und damit ein Watchlist‑Signal.\n\nLink zu relevantem existierendem TAIL‑Forecast: OUTLOOK-enterprise_ssd — diese Meldung könnte mittelfristig die Enterprise‑SSD‑Verfügbarkeit und Preisdynamik beeinflussen, ist aber derzeit nicht ausreichend belegt, um das Outlook zu normalisieren.",
+      "candidateId": "0a7c1915addc6d8f07ca",
+      "candidateKey": "a9e56e08bc11077b196e7490",
+      "reviewedAt": "2026-09-19T19:21:16.443Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ba8d40a1eab0c7f006aaee07a9cd487d09796573a24f48b3d"
     }
   ]
 }
