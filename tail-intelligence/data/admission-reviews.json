@@ -43320,6 +43320,159 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ba8d40a1eab0c7f006aaee07a9cd487d09796573a24f48b3d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Nvidia bildet AEMA zur Förderung von power‑flexiblen AI‑Rechenzentren",
+      "fact": "NVIDIA, Google und Emerald AI gründeten die 'AI Energy Management Alliance' (AEMA) und kündigten den Bau eines als \"power‑flexible\" beschriebenen AI‑Rechenzentrums an; Ankündigung wurde öffentlich am 2026-09-16 kommuniziert und breit berichtete Medien referenzierten Artikel am 2026-09-19.",
+      "placement": "Geographie/Domain nicht klar definiert in der Kandidatenquelle; Ankündigung nennt USA/regionale Testprojekte (z. B. Virginia) in sekundären Presseberichten, keine atomare Platzierung mit exakter Adresse/Layer/Horizon in der Inbox‑Textquelle.",
+      "mechanism": "Gemeldete Mechanismen: dynamische Laststeuerung durch Workload‑Shifting, Batterieentladung, Onsite‑Erzeugung und Abstimmung mit Versorgern; Quellen beschreiben Ziel, Netzanschlüsse schneller und flexibler zu ermöglichen.",
+      "predictionId": "",
+      "predictionImpact": "Keine hinreichend explizite, datierte und messbare Auswirkung auf eines der gelieferten Vorhersagen nachweisbar aus der Kandidatenquelle. (Fehlt: verknüpfter quantifizierbarer Effekt auf Lieferzeiten, Preise, verfügbare Kapazität oder ein konkretes P‑ID aus dem Bestand.)",
+      "falsifier": "Fehlende. Kandidatenquelle gibt kein prüfbares, zukünftiges Metrum (Datum + Schwelle) an, das die Ankündigung widerspricht oder bestätigt (z. B. qualifizierte Shipments, Leistungs‑/Flexibilitätsmessung, verbindliche In‑Service‑Datumserklärung).",
+      "nextReview": "2026-10-03",
+      "eventDate": "2026-09-16",
+      "novelty": "Moderat: die Koalition selbst ist neu, aber die Idee von grid‑flexiblen Rechenzentren und vorherige Nvidia/Partner‑Power‑Initiativen waren bereits in der Baseline dokumentiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 12,
+        "thesisRelevance": 15,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 30,
+      "confidence": 64,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+          "label": "NVIDIA Blog – AEMA announcement (primary company statement)",
+          "kind": "primary",
+          "supports": "NVIDIAs Blogpost vom 2026-09-16 beschreibt die Gründung der AI Energy Management Alliance und nennt Zielsetzung, Rahmen und geplante Testprojekte; nennt 'purpose‑built power‑flexible AI factory' als Ziel."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-forms-alliance-build-230932870.html",
+          "label": "Yahoo Finance – Artikel über Nvidia‑Allianz (candidate aggregator)",
+          "kind": "secondary",
+          "supports": "Yahoo Finance (veröffentlicht 2026-09-19) fasst die Ankündigung zusammen und nennt, dass der Verbund mit Google und Emerald AI die Entwicklung eines power‑flexiblen AI‑Rechenzentrums begonnen habe."
+        },
+        {
+          "url": "https://ca.finance.yahoo.com/news/global-technology-pioneers-emerald-ai-130000807.html",
+          "label": "Business Wire / Pressemitteilung (via Yahoo Finance) – Emerald AI / AEMA",
+          "kind": "secondary",
+          "supports": "Business‑Wire‑Veröffentlichung (zitiert in Finanzmedien) dokumentiert die AEMA‑Gründung, Teilnehmerliste und Zitattexte; bestätigt den 2026-09-16 Veröffentlichungsrahmen."
+        }
+      ],
+      "reason": "Die Inbox‑Kandidatenquelle beschreibt eine klare, aktuelle Unternehmensankündigung (AEMA) und nennt den Bau eines 'power‑flexible' AI‑Rechenzentrums. Die Ankündigung ist primär belegt (NVIDIA Blog / Pressemitteilung) und wurde breit berichtet. Für TAIL‑Aufnahme fehlt jedoch mindestens eine der zwingenden Anforderungen: (1) eine atomare, datierte Messgröße mit Einheiten (z. B. In‑Service‑Datum und MW‑/GW‑Leistung, qualifizierte Shipments, nachgewiesene Lead‑Time‑Änderung oder konkrete Preise), (2) eine explizite Verknüpfung zu einem existierenden Vorhersage‑ID aus dem gelieferten Bestand (keine der P‑IDs wird direkt adressiert), und (3) ein falsifizierbares, genaues Kriterium (Datum + Messgrenze) in der Ankündigung. Ohne diese Elemente kann die Nachricht das Baseline‑Forecast‑Set nicht robust verändern. Zusätzlich finden sich in der Baseline bereits verwandte Signale (capacity_lock, capacity_relief, AEMA‑ähnliche Partnerschaften und NVIDIA Power‑Initiativen), weshalb die Meldung eher eine Bestätigung/Erweiterung vorhandener Themen als ein eindeutig neues, sofort marktbewegendes Faktum darstellt. Deshalb: Watchlist (weiter beobachten, mehr primäre Messdaten erforderlich). Empfehlungen: Fordern Sie ein nachprüfbares Liefer‑/Inbetriebnahme‑Datum (YYYY‑MM‑DD), nominelle MW/GW‑Zahl des Projekts und eine messbare Metrik zur Flexibilität (z. B. % variable Last innerhalb X Minuten), oder verknüpfen Sie die Ankündigung explizit mit einer vorhandenen P‑ID (z. B. P-2026-07-24-02 oder OUTLOOK‑ai_infrastructure) mit einem klaren Auswirkungspfad und einem falsifizierer.",
+      "candidateId": "cac66483d7ca719457a7",
+      "candidateKey": "37c6bce7cc3217adbd21a303",
+      "reviewedAt": "2026-09-20T01:09:21.324Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e515fbdaf1e2d40006aaf321fbe2c87d2b4784c5709d7333a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Solidigm prüft möglichen ersten NAND‑Fab‑Standort in den USA (Berichte 2026‑09‑18)",
+      "fact": "Mehreren Industrie‑Medienberichten zufolge prüft Solidigm (SK hynix‑Tochter) die Errichtung einer ersten NAND‑Front‑End‑Fabrik in den USA; Upstate New York und östliche US‑Standorte werden als mögliche Standorte genannt. Es handelt sich um Prüfungen/Erwägungen, keine verbindliche Entscheidung oder FID.",
+      "placement": "Geographie: USA (Upstate New York / Ostküste). Domain/Layer: NAND‑Front‑End‑Waferproduktion (semiconductor fabrication). Horizont: Frühphase Evaluierung / Standortauswahl (Kurzfristig: Q4 2026–H1 2027 Überprüfung; mittelfristig: mögliche FID 2027–2028).",
+      "mechanism": "Falls Solidigm eine US‑NAND‑Front‑End‑Fab baut (in Ergänzung zu bereits vorhandenen Back‑End‑/Packaging‑Aktivitäten in den USA), würde dies langfristig US‑lokale NAND‑Bit‑Supply erhöhen und die Abhängigkeit von ausländischen Front‑End‑Fabs reduzieren. Der aktuelle Bericht beschreibt interne Erwägungen und Standortprüfungen — kein bestätigter Capex‑Commitment oder Baubeginn.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Ein bestätigter Solidigm‑Fab‑Buildout in den USA würde das OUTLOOK‑enterprise_ssd‑Szenario in Richtung früherer Kapazitätsentlastung (capacity_relief) verschieben; da die Meldung aber nur eine Prüfung beschreibt, ist die unmittelbare Marktauswirkung begrenzt und unsicher.",
+      "falsifier": "Wenn bis 2027-12-31 keine formelle FID, verbindliche Standortauswahl (County/State), Öffentlichkeitsakte zu Genehmigungen oder ein konkreter Capex‑Commitment (Dollarbetrag, erwarteter Start der Baumaßnahmen) veröffentlicht sind, spricht das gegen einen US‑Fab‑Buildout in einem wirtschaftlich relevanten Zeithorizont und falsifiziert den unmittelbaren Kapazitätseinfluss dieser Meldung.",
+      "nextReview": "2027-01-18",
+      "eventDate": "2026-09-18",
+      "novelty": "Solidigm (SK hynix NAND‑Unit) wurde zuvor als US‑Headquarter und R&D‑Stätte geführt; die berichtete Prüfung einer US‑Front‑End‑FAB ist neu gegenüber der Baseline, die bisher hauptsächlich Back‑End/Packaging‑Buildouts in den USA dokumentiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/sk-hynixs-solidigm-unit-is-weighing-nand-memory-chip-factory-in-us-sources-say-4906708",
+          "label": "Investing.com (Reuters‑Syndication) — Bericht über Solidigm‑Prüfungen (2026‑09‑18)",
+          "kind": "primary",
+          "supports": "Bericht, dass Solidigm prüft, eine NAND‑Fab in den USA zu errichten; Upstate New York als mögliches Ziel; Quellen: 'drei mit der Angelegenheit vertraute Personen'."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/18/sk-hynix-weighs-first-us-nand-plant-as-ai-demand-surges",
+          "label": "Seoul Economic Daily (engl. Übersetzung) — Industriequellen (2026‑09‑18)",
+          "kind": "secondary",
+          "supports": "Erläuterung, dass Solidigm eine erste NAND‑Front‑End‑Produktionsbasis in den USA prüft; stellt klar, dass dies Planungs‑/Prüfungsstadium ist."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260918VL223/solidigm-nand-sk-hynix-manufacturing-fab.html",
+          "label": "DigiTimes — Branchendienst (2026‑09‑18)",
+          "kind": "secondary",
+          "supports": "Bericht über Standortprüfungen und mögliche Verbindung zu Intels Ohio‑Site; nennt Upstate New York / Ostküste als Kandidaten."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist relevant für die TAIL‑Memory/Enterprise‑SSD‑Baselines, weil eine Solidigm‑Front‑End‑Fab in den USA die Verfügbarkeit von qualifizierten NAND‑Bits beeinflussen könnte. Die vorliegenden Quellen berichten konsistent über Prüfungen/Erwägungen (mehrere Branchenmedien und Reuters‑Syndication), liefern aber keine Primärverifikationen eines FID, Bauauftrags, Capex‑Commitments oder verbindlicher Genehmigungen. Nach TAIL‑Aufnahmekriterien ist damit die Meldung nicht ausreichend beweisend für eine ACCEPT‑Aufnahme (erforderlich wären konkrete, datierte Primärbelege wie FID, behördliche Einreichungen oder bestätigte Vertragszahlen). Deshalb: watchlist. Fehlende Primärverifikation und die Möglichkeit, dass dies ein frühes strategisches Gespräch/Scoping bleibt, rechtfertigen Beobachtung (Watchlist) statt Annahme. Nächste Überprüfung zum 2027‑01‑18, um nach FID/Standortauswahl oder gegenteiligen Belegen zu suchen.",
+      "candidateId": "7413300f3cea59d7d90a",
+      "candidateKey": "095b374526a52e185d6a03ec",
+      "reviewedAt": "2026-09-20T01:09:46.247Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a6bc135cfda9d53006aaf3241790087d298a5a68d1412de1c"
     }
   ]
 }
