@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-20T01:09:46.438Z",
+  "updatedAt": "2026-09-20T09:50:12.817Z",
   "previousRun": "2026-09-19",
   "executivePulse": {
     "current": 77,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 79,
     "previous": 79,
-    "interpretation": "Datenvertrauen 79/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 92 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 79/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 111 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 92 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 111 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,6 +527,75 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-39fce5d99087a695658f9de8",
+      "title": "Huawei verschiebt/benennt 2027-Launch neuer Ascend‑AI‑NPUs; gezielte Herausforderung an Nvidia",
+      "date": "2026-09-17",
+      "admittedAt": "2026-09-20T09:50:12.673Z",
+      "fact": "Huawei kündigte an, zwei neue Ascend-AI-Beschleuniger (u.a. Ascend 960DT/960PR‑Serie) mit geplanter Markteinführung in 2027 zu bringen und den Launch gegenüber früheren Plänen vorzuziehen.",
+      "placement": "Ankündigung bei HUAWEI CONNECT 2026; Geographie: China (Shanghai); Domäne: AI‑Infrastruktur / AI‑Beschleuniger; Horizont: Produktverfügbarkeit in 2027 (quartalsgenaue Nennung in Primärquellen: Q1 2027 für Ascend 960DT, Q3 2027 für 960PR laut Huawei/Reporting).",
+      "tailInference": "Produkt-Roadmap‑Beschleunigung und fokussierte Systemintegration (Atlas/TaiShan SuperPoD‑/SuperCluster‑Pfad) → erhöhte inländische Angebotserwartung für Ascend‑NPUs, stärkere Wettbewerbs‑/Substitutionswirkung gegenüber Nvidia‑GPUs im chinesischen AI‑Deployments‑Pfad; wirkt über erhöhte qualifizierte Lieferungen (wenn Produktion/Shipments erfolgen) sowie über Preis-/Allokationsdruck in regionalen Beschaffungsmärkten.",
+      "predictionId": "P-2026-07-16-02",
+      "predictionImpact": "Erhöht Wahrscheinlichkeit, dass Huaweis Atlas‑950/950‑Familie und die angekündigten SuperPoD/SuperCluster‑Pfad als sichtbarer chinesischer Full‑Stack‑AI‑Pfad bestätigt werden; konkret erhöht dies das Eintreten des in P-2026-07-16-02 beschriebenen Outcomes (\"WAIC bestätigt Huaweis Atlas‑950‑SuperPoD und DeepSeek V4 als sichtbaren chinesischen Full‑Stack‑AI‑Pfad auf Ascend\").",
+      "falsifier": "Bis 2027-12-31 kein belastbarer Nachweis (Produktionsstart, qualifizierte Serien‑Shipments oder von Huawei veröffentlichte Verfügbarkeitshinweise / Kunden‑Deployments) für die Ascend‑960DT/960PR‑Serie; alternativ: offizielle Verschiebung der genannten Quartale durch Huawei bis 2027-12-31.",
+      "nextReview": "2027-01-15",
+      "priorityScore": 82,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 30,
+      "confidence": 70,
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Huawei – HUAWEI CONNECT 2026 Keynotes / Produkt‑Ankündigungen (Primärquelle)",
+          "url": "https://www.huawei.com/en/news/2026/9/hc-agentic-thinkpro-pto-cann"
+        },
+        {
+          "label": "TechCrunch – Bericht zur Ankündigung (Sekundärquelle)",
+          "url": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
+        },
+        {
+          "label": "Reuters (via Yahoo/Finance) – Zusammenfassendes News‑Reporting (Sekundärquelle)",
+          "url": "https://finance.yahoo.com/news/chinas-huawei-launch-two-ai-024013563.html"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöht Wahrscheinlichkeit, dass Huaweis Atlas‑950/950‑Familie und die angekündigten SuperPoD/SuperCluster‑Pfad als sichtbarer chinesischer Full‑Stack‑AI‑Pfad bestätigt werden; konkret erhöht dies das Eintreten des in P-2026-07-16-02 beschriebenen Outcomes (\"WAIC bestätigt Huaweis Atlas‑950‑SuperPoD und DeepSeek V4 als sichtbaren chinesischen Full‑Stack‑AI‑Pfad auf Ascend\")."
+      },
+      "admissionReviewKey": "39fce5d99087a695658f9de8"
     }
   ],
   "predictionLogUpdates": [
@@ -641,15 +710,42 @@
     "date": "2026-09-20",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
-    "note": "Evidenzprüfung offen: 92 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 82,
+    "note": "Evidenzprüfung offen: 111 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-20T01:09:46.438Z",
+    "generatedAt": "2026-09-20T09:50:12.817Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-20T01:07:39.142Z",
-    "inboxNewItems": 59,
+    "inboxUpdatedAt": "2026-09-20T09:48:19.477Z",
+    "inboxNewItems": 124,
     "highRelevanceCandidates": [
+      {
+        "id": "1931993602930e74cbcd",
+        "title": "China's CXMT Begins Mass Production of 5th-Gen DRAM, Unveils 24Gb LPDDR5X in Pursuit of Samsung, SK Hynix",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rQ3RYeHNzd1ljUU1Vc3lsNGFqVWJvcV85TWtEUDhXLS1tSG9oVUpOSHdZSENxTHU1OGh5UGpZWTlKd0luR3dld1BON05kSzF2LVY4QzBKdUthaDg3OG1EM21iejRVRDBGSEhwR182RTRNdTMtaFE?oc=5",
+        "source": "finance.biggo.com",
+        "summary": "China's CXMT Begins Mass Production of 5th-Gen DRAM, Unveils 24Gb LPDDR5X in Pursuit of Samsung, SK Hynix finance.biggo.com",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-20T09:05:00.000Z"
+      },
+      {
+        "id": "c0099638e5c76f06b872",
+        "title": "China’s CXMT Pushes Into NAND as Samsung, SK Hynix Lead AI-Server eSSDs; Solidigm Weighs U.S. Plant [Tech Log]",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBLd1NDS3d0NHFTeVZNaXhBZXFvUC1jVzRpMU95Vlp3SHFkTllfNmRjS0hEU3hPbElEdHhsU1ZMVlo5Tm9IazQyZ2MtTVJGZUp5S1lnZg?oc=5",
+        "source": "bloomingbit",
+        "summary": "Aktuelle Meldung von bloomingbit: China’s CXMT Pushes Into NAND as Samsung, SK Hynix Lead AI-Server eSSDs; Solidigm Weighs U.S. Plant [Tech Log]",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-20T06:50:36.000Z"
+      },
+      {
+        "id": "64839794e5ad3bd7d275",
+        "title": "Samsung vs SK Hynix vs CXMT: Who Wins the AI Memory War and Which Stock Should You Buy?",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNm9LUjd6YU1iWXlvejFnZk9OOEluX05McldIRmk2M0V3VVVITEhBdkpuNF9fcU5HYmhtS20wSDd2cDRLcm5uTTBTU3pyVW5CQ3l1OUlTZ0EtM3JTZjBuMlVqaWMzYTlVcllCaGc1SHZOeVJuSXFKdWJpb0RKOXlfNHBOV0h2M2xmSWxfelVmZHQ0Y251YlNmWnNDLXFRWXNoN19BQUZHa25hbGJwWi1GOEF3U0pMWHlvNmVDTjBFY25zOUpB?oc=5",
+        "source": "TradingKey",
+        "summary": "Aktuelle Meldung von TradingKey: Samsung vs SK Hynix vs CXMT: Who Wins the AI Memory War and Which Stock Should You Buy?",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-19T15:13:54.000Z"
+      },
       {
         "id": "3f87eb5c3be756e8d4d1",
         "title": "Micron Confirms TSMC Will Manufacture Next-Gen HBM Base Dies — All Three Major Memory Makers Now on Board",
@@ -678,6 +774,15 @@
         "publishedAt": "2026-09-19T04:07:18.000Z"
       },
       {
+        "id": "b6aa47a837d2ae41e9f9",
+        "title": "Samsung, SK Hynix’s memory lead faces growing pressure from CXMT, Micron",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUmxsaU9OeGYtb05taTlGb3Fjdnp3T1NBV3dlbkczbG45R1B1UFg3bGVzbmhzYTJDZE9TY3NKVGpESDNwSHozWTM5eFJvY2FFUV9na1RLbGZ0b0V3eFAyaEdNaXhrcUxZODhhSHNxWkZySFY2WWRQck4wVUt0bWtRTFRnbEVjYUZ6ZzJlbU5vTmNQN0hNWV93MU9Qd3g3ckw5T3E0dEt6Q3plUnPSAbABQVVfeXFMTVd4T1VOdXlhdnBpNTNUREMzWXJCYVh1dk1YRmZvaVZ6ZFhLcmZkNVVjckZZVGdUZEdjanJldHJEV1JYb2JXaFF3S0wxUEJNMTlnU09mMXlfMlJvaGZVNFNVWV83Y25ZeFlRYThRbmlpQk00SUhnTDMzQVRMbC1Fc2ZkLVJKZDZucS1FYXNlb2tyOHVENjAwVlF6M2NERVpVb1B3WTVZU1NlOXpDSHdyUWc?oc=5",
+        "source": "Sammy Fans",
+        "summary": "Aktuelle Meldung von Sammy Fans: Samsung, SK Hynix’s memory lead faces growing pressure from CXMT, Micron",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-19T03:03:50.000Z"
+      },
+      {
         "id": "8ea584e4ea7c20abf14f",
         "title": "China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC",
         "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQbmd2dF9YYWpUYmhMR0hnUlJNNl9TSXVLc1hrcjI5QURCQlBFOHNPQVVIalVjZkxoMFVzOUloVGpoNWlqY0ZWaWw3YzNOeFZScDEzZmZZVDVBX1VEYXFGYkoxeFNLVmxGRjZhanlvNGQ5MV92Q05Rc0ViVko5blpvSGlRNnBGd3lVZExTWUFHUWZLQ24tMmcwXzlJeEwwZjF6YW81YkdSNlZ5X3dRLWZHVEJFNmJ6ZjF1d3FTdkJ5MF9icW9hajBfWFZpamdFdmtPZmVxTVRqMzducS1FWnJ5OXRYU3kxVzFmS3JQOUNfY3ZrTi16Q29yRFRR0gH6AUFVX3lxTFBuZ3Z0X1hhalRiaExHSGdSUk02X1NJdUtzWGtyMjlBREJCUEU4c09BVUhqVWNmTGgwVXM5SWhUamg1aWpjRlZpbDdjM054VlJwMTNmZllUNUFfVURhcUZiSjF4U0tWbEZGNmFqeW80ZDkxX3ZDTlFzRWJWSjluWm9IaVE2cEZ3eVVkTFNZQUdRZktDbi0yZzBfOUl4TDBmMXphbzViR1I2Vnlfd1EtZkdUQkU2YnpmMXV3cVN2QnkwX2Jxb2FqMF9YVmlqZ0V2a09mZXFNVGozN25xLUVacnk5dFhTeTFXMWZLclA5Q19jdmtOLXpDb3JEVFE?oc=5",
@@ -685,42 +790,6 @@
         "summary": "China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC electronics.economictimes.indiatimes.com",
         "relevanceScore": 100,
         "publishedAt": "2026-09-19T01:44:24.000Z"
-      },
-      {
-        "id": "c608de54b8992bc60876",
-        "title": "China's biggest DRAM maker is reportedly moving into NAND flash production to take on Samsung and YMTC",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPQm15NUxvcWd6ajJwVGxlRUpuR2lPOF9meTVRemhfbGRldF83UUE1X3A0VzNGYUtXMFpsMWV4ZllnbF9HZkpxNlNza3hxOUY5UUJYZ0ZXUzE5bjBkNmpNN194UGgtZ2pSZ195c2hKUWNnUFVfZlh0NDZJVUV5ZHZLYTRKS3J6RjcwUHBkWkZ6dFdCZjRMNmZDRWk0TXhaNFBuNHNvQzBNODF3S0dIWHA4R29ERzEzTExiaHgtR25KcUZHUVdub2ljOVVLbU9TMWM3alFqLXF5YWVJNUw2ZFhfd3p1Z2c?oc=5",
-        "source": "TweakTown",
-        "summary": "Aktuelle Meldung von TweakTown: China's biggest DRAM maker is reportedly moving into NAND flash production to take on Samsung and YMTC",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-18T23:05:09.000Z"
-      },
-      {
-        "id": "495a2f5d360d63e5f00b",
-        "title": "China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC | Gulf Times",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRkpOUGlwRmhwTS1GLUhyeUxLbUl2NGNWNWZtNHJUanNhWUxpR0t5ZEMwcklPRTlXYW52YmwtZU1IVEJEYkM2QXRfeXhVU0h1YnRnNEJzXzEwZWgyR1paWXg5NUx1OHVwSTVWMERsQjk2bXh1dzVlVDhCOFRvVUtiMWNNN0JWS2F1dldXVVZsOHc1NUYtMERiV3VjelpiVWhJOE5Cb2FlWGc2am85b2JmalRCTjFhaURERnF4RGdzZVBPY1E1WmtUMWwxcWhyeXlaUDAyZzd30gHWAUFVX3lxTE1GSk5QaXBGaHBNLUYtSHJ5TEttSXY0Y1Y1Zm00clRqc2FZTGlHS3lkQzBySU9FOVdhbnZibC1lTUhUQkRiQzZBdF95eFVTSHVidGc0QnNfMTBlaDJHWlpZeDk1THU4dXBJNVYwRGxCOTZteHV3NWVUOEI4VG9VS2IxY003QlZLYXV2V1dVVmw4dzU1Ri0wRGJXdWN6WmJVaEk4TkJvYWVYZzZqbzlvYmZqVEJOMWFpRERGcXhEZ3NlUE9jUTVaa1QxbDFxaHJ5eVpQMDJnN3c?oc=5",
-        "source": "Gulf Times",
-        "summary": "Aktuelle Meldung von Gulf Times: China's CXMT eyes flash-memory push amid global shortage; firm to take on Samsung, YMTC | Gulf Times",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-18T21:00:00.000Z"
-      },
-      {
-        "id": "6207af344189a3044be2",
-        "title": "CXMT Prepares To Enter NAND Market, Challenging Samsung, YMTC Amid Memory Crunch",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQa2ZoQ0o4Nll1a2dZdGFPOXBpSkt6Z0xDeHJzZGdpSWZHc0dZb3UxT0MyNGtVcjVkZWZQNmR2ejFINVdGNXdkZ2VqcXVUNC16dnFRUW84NDR6NVNLdTkyUE1KTzY2eVV0TXJ2dnNPRnM4amZfX2ZudmdtRnlUWlRRcTA0a0tsY1NMTklRNnA5aTc3T3c2UDVkYjVvZ29weTdiZzZwR09n?oc=5",
-        "source": "Tekedia",
-        "summary": "Aktuelle Meldung von Tekedia: CXMT Prepares To Enter NAND Market, Challenging Samsung, YMTC Amid Memory Crunch",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-18T19:31:40.000Z"
-      },
-      {
-        "id": "f0d5fbebca16acae45f1",
-        "title": "China's CXMT Eyes NAND Flash Entry in Challenge to Samsung, YMTC",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ibnI5a3ZPcmJHbzJvVlI1YUhCbDBOQkREWVRBa3hTdUUtRWh3dVBldHd2bnlpc2lTQnpZWHdDZnF4VWZLenc4bGd6UFgwVEg0ZXZoX3BKRUNjcFEzM0RBWlMwX0FTZDgweDV3c2xYTXBZbE1tZVE?oc=5",
-        "source": "finance.biggo.com",
-        "summary": "China's CXMT Eyes NAND Flash Entry in Challenge to Samsung, YMTC finance.biggo.com",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-18T18:17:00.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -806,29 +875,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-20T01:09:46.275Z",
-    "inboxUpdatedAt": "2026-09-20T01:07:39.142Z",
+    "checkedAt": "2026-09-20T09:50:12.702Z",
+    "inboxUpdatedAt": "2026-09-20T09:48:19.477Z",
     "status": "pending",
-    "candidates": 108,
-    "reviewed": 16,
-    "accepted": 1,
-    "watchlist": 14,
+    "candidates": 129,
+    "reviewed": 18,
+    "accepted": 2,
+    "watchlist": 15,
     "rejected": 1,
-    "pending": 92,
-    "oldestPendingAt": "2026-09-18T08:22:04.000Z",
-    "lastCompletedReviewAt": "2026-09-20T01:09:46.247Z",
+    "pending": 111,
+    "oldestPendingAt": "2026-09-18T08:36:00.000Z",
+    "lastCompletedReviewAt": "2026-09-20T09:50:12.673Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 114,
+    "rawCandidates": 138,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
-      "archivedOpinions": 2,
-      "groupedDuplicates": 4
+      "archivedOpinions": 4,
+      "groupedDuplicates": 5
     },
     "lastRun": {
-      "startedAt": "2026-09-20T01:08:46.348Z",
-      "completedAt": "2026-09-20T01:09:46.276Z",
+      "startedAt": "2026-09-20T09:49:26.725Z",
+      "completedAt": "2026-09-20T09:50:12.703Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -836,13 +905,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 60,
+      "durationSeconds": 46,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-20",
-    "inputHash": "52dce86c2505fb127f05659dbda3174de7114d41a59931cdf3144929628efc84",
-    "sourceDataAsOf": "2026-09-16"
+    "inputHash": "193fedad76c916c8b8666b0cf7e1e59f7cac88670249f95f71f82879370252d3",
+    "sourceDataAsOf": "2026-09-17"
   }
 }

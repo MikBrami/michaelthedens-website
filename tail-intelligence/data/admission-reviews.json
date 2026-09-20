@@ -43473,6 +43473,228 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0a6bc135cfda9d53006aaf3241790087d298a5a68d1412de1c"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Solidigm prüft erstes NAND‑Fab in den USA — unbestätigt, indikative Quellen",
+      "fact": "Mehrere Branchenberichte (Seoul Economic Daily, Digitimes, Reuters‑Syndication/Investing) melden, Solidigm prüfe den Bau einer ersten NAND‑Fabrik in den USA (Stand: Berichte datiert 2026‑09‑18). Es gibt jedoch keine formelle Bestätigung von Solidigm oder SK hynix über einen verbindlichen FID, Standortentscheidung oder genehmigte Investitionssumme; Solidigm‑/SK‑Kommunikationen nennen «keine bestätigten Pläne».",
+      "placement": "Geographie: USA (Berichte nennen u.a. Upstate New York / East Coast als Kandidat); Domain/Lager: NAND‑Front‑End‑Fertigung (semiconductors → nand / enterprise_ssd); Horizon: potenzielle Anlageentscheidung 2026–2029 (Berichterstattung 2026‑09‑18).",
+      "mechanism": "Ursache‑Wirkungs‑Logik: Wenn Solidigm tatsächlich ein US‑NAND‑Frontend‑Fab aufbauen würde, entstünde zusätzliche qualifizierte NAND‑Frontend‑Produktion in Nordamerika, was in den mittleren Fristen (2–4 Jahre nach FID) die Verfügbarkeit (lead times, bit‑supply) für Enterprise‑NAND und eSSD‑Märkte erhöhen und Preisdruck/Allokation reduzieren könnte. Aktuell ist dies jedoch nur ein planungs-/prüfungsbericht ohne nachweisbare Produktionswirkung.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signal könnte, falls bestätigt und mit FID, langfristig (≥2028) die Enterprise‑SSD Verfügbarkeit verbessern (verringertes Allokationsrisiko), was das OUTLOOK‑enterprise_ssd‑Szenario für «price_up» abschwächen würde. Auf kurze Frist (2026–H1‑2027) ist kein unmittelbarer Index‑Impact zu erwarten.",
+      "falsifier": "Bis 2026‑10‑31: Keine verbindliche Unternehmensmitteilung (Press Release, SEC/Regulatory Filing) von Solidigm oder SK hynix, kein Bauantrag/Permitting‑Eintrag in einem benannten US‑County und keine bestätigte Land‑/Site‑Lease; wenn bis 2026‑10‑31 eine formelle FID, ein genehmigter Standortvertrag oder ein offizieller SK/ Solidigm‑Pressetext mit konkreten Investitionszahlen veröffentlicht wird, falsifiziert das die aktuellen Unsicherheiten und hebt Watchlist‑Status auf.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Moderate — Die Idee einer US‑NAND‑Fertigung durch Solidigm ist neu für die TAIL‑Inbox, aber im weiteren Marktkontext konsistent mit laufenden US/Alliierte‑Kapazitätserweiterungsdiskussionen.",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 9,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 13,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/18/sk-hynix-weighs-first-us-nand-plant-as-ai-demand-surges",
+          "label": "Seoul Economic Daily (English) — Bericht 2026‑09‑18 über Solidigm/ SK hynix Prüfung US‑NAND‑Fab",
+          "kind": "secondary",
+          "supports": "Meldet, Solidigm prüfe den Bau einer NAND‑Fabrik in den USA; nennt Upstate New York als möglichen Kandidaten; beschreibt dies als Prüfungs-/Planungsstadium (kein FID)."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260918VL223/solidigm-nand-sk-hynix-manufacturing-fab.html",
+          "label": "Digitimes — Branchenbericht 2026‑09‑18",
+          "kind": "secondary",
+          "supports": "Berichtet, Solidigm erwäge eine erste US‑NAND‑Fabrik und prüfe Ostküsten‑Standorte; zitiert Supply‑Chain‑Quellen (kein offizielles Unternehmenscommuniqué)."
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/sk-hynixs-solidigm-unit-is-weighing-nand-memory-chip-factory-in-us-sources-say-4906708",
+          "label": "Investing.com (Reuters‑syndicated item) — 2026‑09‑18",
+          "kind": "secondary",
+          "supports": "Synthetisiert Reuters‑Quellen, berichtet über Prüfungen zum Bau einer US‑NAND‑Fabrik durch Solidigm; stellt dies als Informationen von 'drei mit der Angelegenheit vertrauten Personen' dar."
+        },
+        {
+          "url": "https://news.solidigm.com/en-WW/",
+          "label": "Solidigm Newsroom (Unternehmensseite) — Allgemeine News‑Archiv (keine Bestätigung zum Fab‑Bau gefunden per Crawl)",
+          "kind": "primary",
+          "supports": "Unternehmens‑Newsroom enthält keine formelle Bestätigung eines US‑NAND‑Fab‑FID oder Standortvertrag (Stand: Crawl/Recherche 2026‑09). Das Fehlen einer offiziellen Mitteilung erhöht Unsicherheit."
+        }
+      ],
+      "reason": "Der Kandidat ist relevant für TAIL‑Outlooks zu NAND/Enterprise‑SSD. Mehrere Medien berichteten am 2026‑09‑18, Solidigm prüfe den Bau einer ersten NAND‑Fabrik in den USA (Upstate New York/ East Coast als Kandidat). Diese Berichte stützen die Behauptung als marktgetriebene Planungs‑/Quellenmeldung, liefern aber keine primären, direkt belegten Unternehmens‑FIDs, behördlichen Genehmigungen oder Messungen (z. B. qualifizierte Shipments, Lead‑Time‑Änderungen). Die TAIL‑Aufnahmeanforderungen verlangen eine atomic, datierte, quellverifizierte Beobachtung mit messbarer Wirkung oder ein überprüfbares FID/Permit — das liegt hier nicht vor. Deshalb wird das Signal auf Watchlist gehalten und nicht als VERIFIED DATA akzeptiert. \n\nOpposing evidence / Kontext: Solidigm/SK‑Kommunikate enthalten keine bestätigende Pressemitteilung; einige Artikel zitieren Firmenvertreter, die „nichts bestätigt“ hätten. Marktfolgen (Verfügbarkeit/Preise) bleiben spekulativ ohne FID und ohne konkreten Bau‑/Permitting‑Nachweis. Entgegen‑ oder unterstützende Indikatoren (z. B. Anträge auf Standortgenehmigungen, SEC‑Filing, bestätigte Land‑Leases) wurden bis zur nächsten Review‑Frist nicht gefunden. \n\nEmpfohlene nächste Schritte: Überprüfen auf Firmenmitteilungen, SEC‑/Regulatory‑Filings, County‑Permitting‑Daten oder bestätigte FID/Lease‑Ankündigungen bis 2026‑10‑31; bei positiver Bestätigung kann die Aufnahme zu «accepted» überführt werden, sofern die Quelle ein verifizierbares, datiertes Ereignis (FID, Permit, Lease) liefert und mindestens ein Index‑metrischer Effekt (z. B. angekündigte erwartete kW‑Output/Startdatum) angegeben wird.",
+      "candidateId": "5177fb4603e702e6c82d",
+      "candidateKey": "3f0dd957df13a4bf55afb6b1",
+      "reviewedAt": "2026-09-20T09:49:50.753Z",
+      "priorityScore": 72,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e7513063e41c756006aafac27ddd887d19f301cc8b6423895"
+    },
+    {
+      "decision": "accepted",
+      "title": "Huawei verschiebt/benennt 2027-Launch neuer Ascend‑AI‑NPUs; gezielte Herausforderung an Nvidia",
+      "fact": "Huawei kündigte an, zwei neue Ascend-AI-Beschleuniger (u.a. Ascend 960DT/960PR‑Serie) mit geplanter Markteinführung in 2027 zu bringen und den Launch gegenüber früheren Plänen vorzuziehen.",
+      "placement": "Ankündigung bei HUAWEI CONNECT 2026; Geographie: China (Shanghai); Domäne: AI‑Infrastruktur / AI‑Beschleuniger; Horizont: Produktverfügbarkeit in 2027 (quartalsgenaue Nennung in Primärquellen: Q1 2027 für Ascend 960DT, Q3 2027 für 960PR laut Huawei/Reporting).",
+      "mechanism": "Produkt-Roadmap‑Beschleunigung und fokussierte Systemintegration (Atlas/TaiShan SuperPoD‑/SuperCluster‑Pfad) → erhöhte inländische Angebotserwartung für Ascend‑NPUs, stärkere Wettbewerbs‑/Substitutionswirkung gegenüber Nvidia‑GPUs im chinesischen AI‑Deployments‑Pfad; wirkt über erhöhte qualifizierte Lieferungen (wenn Produktion/Shipments erfolgen) sowie über Preis-/Allokationsdruck in regionalen Beschaffungsmärkten.",
+      "predictionId": "P-2026-07-16-02",
+      "predictionImpact": "Erhöht Wahrscheinlichkeit, dass Huaweis Atlas‑950/950‑Familie und die angekündigten SuperPoD/SuperCluster‑Pfad als sichtbarer chinesischer Full‑Stack‑AI‑Pfad bestätigt werden; konkret erhöht dies das Eintreten des in P-2026-07-16-02 beschriebenen Outcomes (\"WAIC bestätigt Huaweis Atlas‑950‑SuperPoD und DeepSeek V4 als sichtbaren chinesischen Full‑Stack‑AI‑Pfad auf Ascend\").",
+      "falsifier": "Bis 2027-12-31 kein belastbarer Nachweis (Produktionsstart, qualifizierte Serien‑Shipments oder von Huawei veröffentlichte Verfügbarkeitshinweise / Kunden‑Deployments) für die Ascend‑960DT/960PR‑Serie; alternativ: offizielle Verschiebung der genannten Quartale durch Huawei bis 2027-12-31.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-09-17",
+      "novelty": "Angekündigte Beschleunigung (konkreter 2027‑Launch/Q‑Vorgaben) gegenüber allgemeineren Roadmap‑Hinweisen; exakter Quartalsrahmen als neues, datiertes Produktversprechen.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.huawei.com/en/news/2026/9/hc-agentic-thinkpro-pto-cann",
+          "label": "Huawei – HUAWEI CONNECT 2026 Keynotes / Produkt‑Ankündigungen (Primärquelle)",
+          "kind": "primary",
+          "supports": "Huawei veröffentlicht Roadmap‑Details zu Ascend/Atlas/TaiShan bei HUAWEI CONNECT (Shanghai) und nennt konkrete Quartalsziele für Ascend 960DT (Q1 2027) und 960PR (Q3 2027)."
+        },
+        {
+          "url": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
+          "label": "TechCrunch – Bericht zur Ankündigung (Sekundärquelle)",
+          "kind": "secondary",
+          "supports": "Unabhängiges Reporting, das die Huawei‑Ankündigungen und das Timing (Q1 2027 für Ascend 960DT) bestätigt."
+        },
+        {
+          "url": "https://finance.yahoo.com/news/chinas-huawei-launch-two-ai-024013563.html",
+          "label": "Reuters (via Yahoo/Finance) – Zusammenfassendes News‑Reporting (Sekundärquelle)",
+          "kind": "secondary",
+          "supports": "Reuters‑Berichterstattung (wiedergegeben auf Yahoo/Finance) nennt 2027‑Launch und zentrale Zitate/Details von Huaweis Führungskräften auf dem Event."
+        }
+      ],
+      "reason": "Die Inbox‑Kandidatenbehauptung ist direkt durch Huaweis eigene Ankündigung auf HUAWEI CONNECT 2026 sowie durch unabhängige Qualitätsmedien (Reuters/TechCrunch) verifizierbar und datiert (2026‑09‑17). Die Meldung ist ein atomarer, datierter Produkt‑Timeline‑Fakt (konkrete Quartale für 960DT/960PR), erfüllt die Anforderungsbedingungen für Aufnahme: sie ist präzise datiert, mit klarer Platzierung (Event/Ort), plausibler kausaler Mechanik (Roadmap‑Beschleunigung → künftige Angebotserhöhung / Wettbewerbswirkung) und einem testbaren Falsifizierer (Keine Serien‑Shipments / Verschiebung bis 2027‑12‑31). Die Aussage ist nicht rein prognostisch, sondern eine von Huawei selbst deklarierte Liefer-/Launch‑Absicht, daher VERIFIED DATA. Das Signal wirkt vorwiegend auf die Verfügbarkeit (future capacity_relief) und auf das AI‑Nachfrage/Deployment‑Ökosystem (aiDemand), weshalb die Aufnahme als Signal gerechtfertigt ist.",
+      "candidateId": "ae00f0b633fd765e409d",
+      "candidateKey": "39fce5d99087a695658f9de8",
+      "reviewedAt": "2026-09-20T09:50:12.673Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-39fce5d99087a695658f9de8",
+        "title": "Huawei verschiebt/benennt 2027-Launch neuer Ascend‑AI‑NPUs; gezielte Herausforderung an Nvidia",
+        "date": "2026-09-17",
+        "admittedAt": "2026-09-20T09:50:12.673Z",
+        "fact": "Huawei kündigte an, zwei neue Ascend-AI-Beschleuniger (u.a. Ascend 960DT/960PR‑Serie) mit geplanter Markteinführung in 2027 zu bringen und den Launch gegenüber früheren Plänen vorzuziehen.",
+        "placement": "Ankündigung bei HUAWEI CONNECT 2026; Geographie: China (Shanghai); Domäne: AI‑Infrastruktur / AI‑Beschleuniger; Horizont: Produktverfügbarkeit in 2027 (quartalsgenaue Nennung in Primärquellen: Q1 2027 für Ascend 960DT, Q3 2027 für 960PR laut Huawei/Reporting).",
+        "tailInference": "Produkt-Roadmap‑Beschleunigung und fokussierte Systemintegration (Atlas/TaiShan SuperPoD‑/SuperCluster‑Pfad) → erhöhte inländische Angebotserwartung für Ascend‑NPUs, stärkere Wettbewerbs‑/Substitutionswirkung gegenüber Nvidia‑GPUs im chinesischen AI‑Deployments‑Pfad; wirkt über erhöhte qualifizierte Lieferungen (wenn Produktion/Shipments erfolgen) sowie über Preis-/Allokationsdruck in regionalen Beschaffungsmärkten.",
+        "predictionId": "P-2026-07-16-02",
+        "predictionImpact": "Erhöht Wahrscheinlichkeit, dass Huaweis Atlas‑950/950‑Familie und die angekündigten SuperPoD/SuperCluster‑Pfad als sichtbarer chinesischer Full‑Stack‑AI‑Pfad bestätigt werden; konkret erhöht dies das Eintreten des in P-2026-07-16-02 beschriebenen Outcomes (\"WAIC bestätigt Huaweis Atlas‑950‑SuperPoD und DeepSeek V4 als sichtbaren chinesischen Full‑Stack‑AI‑Pfad auf Ascend\").",
+        "falsifier": "Bis 2027-12-31 kein belastbarer Nachweis (Produktionsstart, qualifizierte Serien‑Shipments oder von Huawei veröffentlichte Verfügbarkeitshinweise / Kunden‑Deployments) für die Ascend‑960DT/960PR‑Serie; alternativ: offizielle Verschiebung der genannten Quartale durch Huawei bis 2027-12-31.",
+        "nextReview": "2027-01-15",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 10,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 30,
+        "confidence": 70,
+        "markets": [
+          "ai_infrastructure",
+          "semiconductors"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Huawei – HUAWEI CONNECT 2026 Keynotes / Produkt‑Ankündigungen (Primärquelle)",
+            "url": "https://www.huawei.com/en/news/2026/9/hc-agentic-thinkpro-pto-cann"
+          },
+          {
+            "label": "TechCrunch – Bericht zur Ankündigung (Sekundärquelle)",
+            "url": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
+          },
+          {
+            "label": "Reuters (via Yahoo/Finance) – Zusammenfassendes News‑Reporting (Sekundärquelle)",
+            "url": "https://finance.yahoo.com/news/chinas-huawei-launch-two-ai-024013563.html"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht Wahrscheinlichkeit, dass Huaweis Atlas‑950/950‑Familie und die angekündigten SuperPoD/SuperCluster‑Pfad als sichtbarer chinesischer Full‑Stack‑AI‑Pfad bestätigt werden; konkret erhöht dies das Eintreten des in P-2026-07-16-02 beschriebenen Outcomes (\"WAIC bestätigt Huaweis Atlas‑950‑SuperPoD und DeepSeek V4 als sichtbaren chinesischen Full‑Stack‑AI‑Pfad auf Ascend\")."
+        },
+        "admissionReviewKey": "39fce5d99087a695658f9de8"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d80a5c972b6709c006aafac3eee3c87d1878cf0d0b4ba35f6"
     }
   ]
 }
