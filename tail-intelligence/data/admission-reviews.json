@@ -44359,6 +44359,133 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0c0747e834ee9529006ab10ab06b6087d19459c22ff362af74"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Prysmian liefert aluminium-basierte, niedrig‑CO2‑Kabel an Amazon‑Rechenzentrum (Prysmian/Rio Tinto/Amazon)",
+      "fact": "Prysmian und Rio Tinto haben laut Unternehmens‑Pressemitteilung verkündet, dass elektrische Niederspannungs‑/Building‑Wire‑Kabel aus ELYSIS®‑Aluminium für die Installation in einem Amazon‑Rechenzentrum in Ohio vertraglich vereinbart wurden (Prysmian Pressemitteilung, 2026-09-18).",
+      "placement": "Geographie: USA (nahe Columbus, Ohio). Domänen/Layers: On‑site Datacenter-Energieinfrastruktur / Building‑wire. Horizon: sofortiger Projekt-Contract (Ankündigung 2026-09-18) mit erwarteter Installation in laufendem Bauprojekt.",
+      "mechanism": "Der beobachtete Mechanismus ist eine Materialsubstitution in der On‑site‑Energieverkabelung: statt herkömmlichem Kupfer/Standard‑Aluminium sollen kabeltechnisch spezifizierte Leiter aus ELYSIS® inert‑anoden‑geschmolzenem, niedrig‑CO2‑Aluminium eingesetzt werden. Das wirkt auf Emissions‑ und Beschaffungsprofile der Datacenter‑Bauphase und potenziell auf Lieferanten‑Nachfrage nach Low‑carbon‑Aluminium, aber nicht direkt auf Halbleiter‑Bit‑Supply, Preise oder Lead‑Times.",
+      "predictionId": "",
+      "predictionImpact": "Kein klarer, direkter Einfluss auf die vorhandenen Vorhersagen im TAIL‑Korpus (keine der vorliegenden Vorhersagen erwähnt Data‑Center‑Building‑Wire‑Materialwahl als kausalen Treiber).",
+      "falsifier": "Bis 2026-12-31 fehlen jegliche nachprüfbaren Belege für gelieferte/installete ELYSIS®‑Kabel (Fotos/Abnahmeprotokoll von Amazon oder Prysmian, Fracht-/Ship‑to‑Site‑Dokumentation) ODER Amazon veröffentlicht eine formelle Gegendarstellung, die die Verwendung von ELYSIS®‑Aluminium für das genannte Ohio‑Projekt verneint.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Erster dokumentierter Einsatz (vertraglich) von inert‑anode/ELYSIS®‑Aluminiumkabeln in einem Amazon‑Rechenzentrum; technisch neu für Data‑Center‑„building‑wire“‑Einsatz, aber eng begrenzt und nicht marktumschlagend per se.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 12,
+        "thesisRelevance": 15,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.prysmian.com/en/media/press-releases/breakthrough-low-carbon-aluminum-cables-reduce-the-carbon-footprint-of-ai-infrastructure",
+          "label": "Prysmian Group – Press Release (EN)",
+          "kind": "primary",
+          "supports": "Direkte Unternehmens‑Pressemitteilung (dated 2026-09-18) beschreibt Vertrag/Abnahme zur Lieferung von ELYSIS®‑Aluminiumkabeln für ein Amazon‑Rechenzentrum in Ohio."
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/prysmian-rio-tinto-to-supply-amazon-data-center-in-ohio-with-low-carbon-aluminum/",
+          "label": "DatacenterDymanics – Bericht",
+          "kind": "secondary",
+          "supports": "Unabhängige Branchenberichterstattung, datiert 2026-09-21, bestätigt Prysmian/Rio Tinto und nennt Standort Ohio; sekundäre Bestätigung der Unternehmensmeldung."
+        }
+      ],
+      "reason": "Die Kandidatenbeschreibung (Google‑RSS) ist durch Primärquellen verifizierbar: Prysmian veröffentlichte am 2026-09-18 eine Pressemitteilung, die eine vertragliche Lieferung von ELYSIS®‑Aluminiumkabeln an ein Amazon‑Rechenzentrum nahe Columbus, Ohio, dokumentiert. Das ist ein konkret datiertes, abgrenzbares Faktum über Materialwahl im Rechenzentrumsbau (entspricht dem Anforderungsprofil für Aufnahme). Allerdings fehlt eine Verbindung zu einer der im Inbox‑Metadaten gelisteten Vorhersagen (keine vorhandene Vorhersage bezieht sich auf Building‑Wire‑Materialwahl oder direkten Einfluss auf Memory/Storage‑Märkte). Ohne eine explizite, gelinkte Vorhersage‑Auswirkung, eine messbare Marktkennzahl (z. B. Volumen in Tonnen, Liefermengen, Lead‑Time‑Änderung) oder einen quantifizierbaren Index‑Effekt kann der Eintrag nicht als voll aufgenommen (accepted) werden. Daher: Watchlist. Zusätzlich empfehle ich einen Nachweis (Fracht/Installationsabnahme, Amazon‑Bestätigung oder dokumentierte gelieferte Tonnage) bis 2026-12-31, um das Signal in ein belastbares, vorhersage‑relevantes Ereignis zu verwandeln.",
+      "candidateId": "631386ae7d7a8631b019",
+      "candidateKey": "2d6b36274ae40c52009ad1bc",
+      "reviewedAt": "2026-09-21T17:04:58.807Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07998f4233014503006ab1638ffe5c87d2a2536f1c6e348cea"
+    },
+    {
+      "decision": "watchlist",
+      "title": "China’s top AI models generieren nur ~10% von OpenAI/Anthropic‑Umsatz — SCMP berichtet (Rhodium Group zitiert)",
+      "fact": "Der South China Morning Post‑Artikel vom 2026-09-18 berichtet, dass die führenden chinesischen KI‑Modelle zusammengenommen nur rund 10 Prozent des für OpenAI und Anthropic berichteten Umsatzes erzeugen, laut einer Analyse der US‑Forschungsgruppe Rhodium Group (Artikel publiziert 2026-09-18).",
+      "placement": "Geographie: China vs. US; Domain: AI‑Labore & kommerzielle Modell‑Monetarisierung; Layer: Nachfrage / AI‑Monetarisierung (Kurzfristig / 30–90 Tage Sicht).",
+      "mechanism": "Die Behauptung ist ein Umsatz‑/Monetarisierungsvergleich (ARR/Revenue) zwischen Gruppen chinesischer AI‑Modellbetreiber und US‑Frontlabs (OpenAI, Anthropic). Wenn korrekt, reduziert eine erhebliche Umsatzlücke Chinas unmittelbaren finanziellen Hebel gegenüber US‑Frontfirmen, was mittelbar Investitions‑ und Beschaffungsdynamiken im globalen AI‑Infrastrukturmarkt beeinflussen könnte (weniger grenzüberschreitende Kaufkraft, geringerer unmittelbarer Bedarf an Hyperscaler‑Compute in China).",
+      "predictionId": "P-2026-07-21-04",
+      "predictionImpact": "Wenn die berichtete ~10%-Umsatzrelation bestätigt wird, reduziert das die Wahrscheinlichkeit, dass chinesische Labs kurzfristig (Q4 2026–H1 2027) US‑ähnliche, volumengetriebene Nachfrage nach globalen High‑end‑AI‑Infrastrukturkomponenten erzeugen würde; dies könnte die relative Nachfragekomponente in Vorhersage P-2026-07-21-04 (Google entwickelt Frozen‑v2 Serverchip) leicht erhöhen, weil US‑Labs dominanter bleiben und Google/US‑Infrastrukturpriorisierungen stärker ausfallen.",
+      "falsifier": "Innerhalb 30 Tagen (bis 2026-10-18) wird ein primärer Rhodium Group‑Bericht oder ein konsolidierter Primärdaten‑Datensatz veröffentlicht, der entweder (a) die in SCMP genannten ARR‑Zahlen und die ~10% Relation bestätigt (=> bestätigt) oder (b) die Rhodium‑Schätzung widerlegt/abweichende Zahlen veröffentlicht (z. B. chinesische ARR ≥ 30% der kombinierten OpenAI+Anthropic ARR) (=> falsifiziert).",
+      "nextReview": "2026-10-18",
+      "eventDate": "2026-09-18",
+      "novelty": "Die Behauptung nennt eine neue (datiert: 2026-09-18) Marktquantifizierung (Umsatz‑Share) und ist insofern neu gegenüber dem Baseline.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 12,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 25,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Erläuterung und Beurteilung: Die Kandidatenaussage ist eine klar datierte, atomare Marktquantifizierung (Umsatzanteil ≈10%) und hat Relevanz für Fragen der relativen Nachfrage‑ und Investitionskraft chinesischer vs. US‑KI‑Labs. Allerdings liegt die einzige abgerufene Primärquelle hier in Form eines Medienberichts (SCMP), der eine Rhodium Group‑Analyse zitiert. Für volle Aufnahme (ACCEPTED/VERIFIED DATA) verlangt das Aufnahmeprotokoll: direkte Primärverifikation (Rhodium Group‑Report oder veröffentlichte Primärdaten mit den genannten ARR‑Zahlen), plus eine adversariale Widerlegungssuche. Diese Primärbestätigung fehlt in den geprüften Quellen (nur SCMP Aggregation wurde bestätigt). Ohne das original veröffentlichte Rhodium‑Dataset oder eine weitere unabhängige Primärquelle bleibt die Behauptung plausibel, aber nicht verifiziert. Außerdem ist der direkte Einfluss auf die bereitgestellten Handels‑/Supply‑Predictions nur indirekt und begrenzt; die Kandidatenaussage allein liefert kein messbares Index‑Signal (z. B. qualifizierte Shipments, Lead‑Time, Kontraktpreise) für die Hardware‑Märkte. Deshalb wird die Aufnahme auf WATCHLIST gesetzt. Nächste Prüfung fordert das Rhodium‑Originaldokument oder äquivalente Primärdaten bis 2026-10-18; falls nicht lieferbar, wird das Signal abgelehnt oder downgraded. Die Bewertung vermeidet Überinterpretation und schützt gegen sekundäre Aggregator‑Fehler.",
+      "candidateId": "d002bca104ca6bdc5483",
+      "candidateKey": "46743f21c4fa5f4ba18b8f68",
+      "reviewedAt": "2026-09-21T17:05:31.403Z",
+      "priorityScore": 59,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0936f57ac7d0bb1d006ab163baf5e087d2ba57f7ccd45692d0"
     }
   ]
 }
