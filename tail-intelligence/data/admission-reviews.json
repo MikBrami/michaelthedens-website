@@ -44486,6 +44486,136 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0936f57ac7d0bb1d006ab163baf5e087d2ba57f7ccd45692d0"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Perpetual underdog AMD nips at Nvidia's heels as it joins the $1T club",
+      "fact": "Bericht (The Register via Google News RSS) behauptet, AMD habe eine Marktkapitalisierung von US$1 Bio. (\"$1T\") erreicht und nähere sich Nvidia im AI-/Chip‑Wettbewerb.",
+      "placement": "Global; Unternehmens‑Valuation / Semiconductor‑Layer; kurzfristorientiert (Meldung datiert 2026-09-21).",
+      "mechanism": "Marktkapitalisierung als Indikator für Marktstärke und Kapitalzufluss; implizierte erhöhte Wettbewerbsfähigkeit könnte Nachfrage‑Signals/Investitionsbereitschaft in AI‑Infrastruktur und OEMs beeinflussen — derzeit aber nur als Preis-/Sentiment‑Signal, nicht als nachweisbare Änderung der physischen Supply/Capacity.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "demand_up",
+      "falsifier": "Bis zum 2026-10-31: Wenn AMDs Marktkapitalisierung (nach US‑Marktclose) nicht > US$950 Mrd. an mindestens fünf Handelstagen liegt und es keine bestätigte Primärquelle (Originalartikel The Register oder AMD‑Statement) mit eindeutiger Marktkapitalisierungs‑Zahl gibt, dann wird die behauptete $1T‑Ereignishaftung als unbestätigt eingestuft.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-21",
+      "novelty": "low",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 10,
+        "thesisRelevance": 13,
+        "forecastImpact": 13,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Primärnachweis fehlt / nicht verifizierbar: Die Kandidatenmeldung referenziert offenbar einen The Register‑Artikel (Datum 2026‑09‑21) über AMDs angeblichen Eintritt in den US$1‑Billionen‑Club. Ich konnte die angegebene Google‑News‑RSS‑URL laden, aber das eigentliche Primärdokument (The Register oder ein offizielles AMD‑Statement) ließ sich über die verfügbaren Toolaufrufe nicht direkt öffnen bzw. nicht als primäre Quelle verifizieren. Ohne Zugang zur Originalquelle (The Register Artikeltext oder ein bestätigendes Primärdokument wie AMD‑Investor‑Mitteilung / Börsenmeldung) fehlt ein atomarer, datierten und belegten Fakt mit Einheiten (z. B. explizite Marktkapitalisierung in US$ zum Stichtag) — Voraussetzung für Aufnahme als VERIFIED DATA oder Akzeptanz. Zudem besteht ein Oppositionsrisiko (Recycling/Headline‑Sensationsmeldung): Marktkapitalisierungs‑Claims werden oft intraday von Kursbewegungen getriggert und können nach kurzer Zeit wieder revidiert werden; daher ist eine kurzfristige Echtzeit‑Quellverifikation nötig. Folgerung: Watchlist. Benötigte zusätzliches Primär‑Evidenz‑Set (adversarial check fehlt): (1) The Register Artikeltext inkl. Publikationsdatum und Direktzitat der genannten Marktkapitalisierung ODER (2) Offizielles AMD‑Investor‑Release / SEC‑Filing mit Marktkapitalisierungsangabe zum genannten Datum ODER (3) Börsendaten (Markt‑Close Market Cap in US$) dokumentiert für 2026‑09‑21. Ohne diese Primärbelege bleibt der Claim NOT PROVEN. Nächste Prüfung geplant am 2026-10-31, inklusive Prüfung von Börsenmarktkappen und Originalartikel. Hinweise: Falls der Nutzer Primärlink auf The Register oder ein AMD‑Statement liefern kann, mache ich umgehende Nachprüfung; ansonsten bleibe ich auf Watchlist.",
+      "candidateId": "46adf7ec05ee5058d62a",
+      "candidateKey": "fb1d1ec825834210bdc8465c",
+      "reviewedAt": "2026-09-21T21:06:32.122Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09e9f8f030aa8c1f006ab19c40dbd487d0bc18066a5264a944"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Unbestätigter Bericht: AMD habe Kunden über 10%-Chippreiserhöhung (Q4) informiert, angeblich durch steigende TSMC‑Kosten (berichtet 2026-09-18).",
+      "fact": "Berichte (Wccftech / ChannelGate leak → nachberichtet von Finanzmedien) behaupten, AMD habe Kunden informiert, dass bestimmte Chip‑Preise ab Q4 2026 um rund 10 % steigen sollen; als Treiber werden höhere Fertigungskosten bei TSMC genannt. (Ereignisdatum in Sekundärmedien: 2026-09-18.)",
+      "placement": "global / Halbleiter‑Produktpreise / Marktpreis‑Auswirkung innerhalb Q4 2026",
+      "mechanism": "Höhere Foundry‑Fertigungskosten bei TSMC würden Hersteller (z. B. AMD) zwingen, Listenpreise oder Kundenverträge anzupassen; folglich steigen Großkunden‑Kontraktpreise und potenziell Cloud‑GPU/Instance‑Tarife.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Informiert das bestehende Speicher-/Halbleiter‑Basisszenario (Memory‑/Chip‑Preis‑Aufwärtsdruck). Signal: price_up — erhöht Wahrscheinlichkeitsmasse für kurz- bis mittelfristige Preissteigerungen bei Halbleitern.",
+      "falsifier": "Sowohl AMD als auch TSMC veröffentlichen bis 2026-09-25 eine verbindliche, öffentlich zugängliche Mitteilung (Pressemeldung oder SEC‑Filing) mit konkreten Preisänderungs‑Mitteilungen an Kunden, ODER glaubwürdige Unternehmens‑Kommunikation weist die behauptete Preiserhöhung öffentlich zurück. Wenn beides ausbleibt, ist der Leak falsifiziert (kein validierbarer Preisübergang in den nächsten 7 Tage).",
+      "nextReview": "2026-09-25",
+      "eventDate": "2026-09-18",
+      "novelty": "Bericht scheint ein Leak aus WeChat/ChannelGate (sekundär zitiert von Wccftech → breit nachberichtet). Keine Primärquelle (AMD/TSMC) aufzufinden; daher Neuigkeit besteht nur als unbestätigte Marktgeschichte.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 7,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-rises-premarket-report-092213707.html",
+          "label": "Yahoo Finance / Stocktwits (Nachbericht, 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Sekundärquellen (Wccftech, ChannelGate) eine 10%-Preiserhöhung ab Q4 2026 für AMD‑Chips melden; nennt TSMC‑Kosten als Treiber."
+        },
+        {
+          "url": "https://newsable.asianetnews.com/amp/markets/amd-stock-rises-premarket-report-flags-chip-price-hike-linked-to-tsmc-costs-articleshow-k9bhuov",
+          "label": "Asianet/Newsable (Nachbericht, 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Nachberichterstattung des gleichen Leaks; nennt ähnliche Zahlen und verweist auf den WeChat/ChannelGate/Wccftech Ursprung."
+        }
+      ],
+      "reason": "Bei Eingangskandidaten verlangt die TAIL‑Policy Primärverifikation (Unternehmensmitteilung, SEC‑Filing, verbindliche Preisliste oder direktes Kunden‑Kommuniqué) für eine belastbare Preis‑Signal‑Aufnahme. Die vorgelegten Quellen sind sekundäre Re‑Reports eines nicht verifizierten WeChat‑Leaks (Wccftech/ChannelGate) ohne AMD‑ oder TSMC‑Bestätigung. Es wurde keine gegenteilige Primärquelle (öffentliche AMD/TSMC‑Verlautbarung) in der verfügbaren Evidenz gefunden; ebenso liegt kein direkter Vertragstext oder konkreter Preis‑Schedule vor. Daher erfüllt der Kandidat nicht die Aufnahmebedingungen für VERIFIED DATA oder Annahme. Watchlist statt Ablehnung, weil die Meldung marktbewegend ist und leicht verifizierbare Primärdokumente in den nächsten Tagen erwartet werden können (NextReview 2026-09-25).",
+      "candidateId": "2adc242307b1039bf3d1",
+      "candidateKey": "ddcd8b6925ffbfbfae76b18a",
+      "reviewedAt": "2026-09-21T21:07:02.526Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04785e001e20e556006ab19c584c6087d0a72a07a53e59aca2"
     }
   ]
 }
