@@ -43955,6 +43955,201 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0b95ddeac8f0ee2a006ab033b172a887d2bbdfb3c20b591aef"
+    },
+    {
+      "decision": "accepted",
+      "title": "HanmiGlobal übernimmt Bau‑PM für SK hynix HBM‑Packaging‑Standort in West Lafayette (Indiana)",
+      "fact": "HanmiGlobal erbringt Construction Project Management‑(PM)‑Dienste für SK hynix’ in Bau befindliches HBM (High Bandwidth Memory) Packaging‑/R&D‑Werk in West Lafayette, Indiana (Ankündigung publiziert 2026-09-21).",
+      "placement": "West Lafayette, Indiana, USA — Advanced Packaging / HBM Packaging & R&D (Back‑end/Packaging‑Layer), mittelfristiger Produktionshorizont (Inbetriebnahme‑Ziel laut SK hynix: Ende 2028/2029).",
+      "mechanism": "Das benannte Projektmanagement (PM) von HanmiGlobal trägt zur Steuerung und Beschleunigung von Bau, Qualifikationstests und Inbetriebnahme bei; dies kann die zeitliche Realisierung der Packaging‑Kapazität (HBM‑Package‑Output) verkürzen oder das Risiko von Bauverzögerungen mindern, wodurch die verfügbaren HBM‑Pakete des globalen Lieferpfads mittelfristig erhöht werden könnten.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Moderate Abwärtswirkung auf die Schwere des prognostizierten HBM/Server‑DRAM‑Engpasses bis Ende 2028–2029 durch beschleunigten US‑Packaging‑Output; reicht nicht automatisch aus, das Basisszenario (strukturelle Knappheit bis mindestens Ende 2028) zu falsifizieren, reduziert jedoch die Upside‑Wahrscheinlichkeit extremer Verknappung, wenn die Anlage termingerecht qualifizierte Shipments liefert.",
+      "falsifier": "Bis 2029-12-31: SK hynix meldet qualifizierte HBM‑Package‑Shipments aus der West Lafayette‑Anlage ≥100.000 HBM‑Packages/Monat (oder eine dokumentierte, gebuchte Produktionskapazität von ≥100k Packages/Monat), was zeigen würde, dass die Anlage marktwirksam zur Entspannung der HBM‑Verfügbarkeit beiträgt. Nächste Überprüfung: 2029-12-31.",
+      "nextReview": "2029-12-31",
+      "eventDate": "2026-09-21",
+      "novelty": "Gering bis mittel — bestätigt und konkretisiert bereits bekannte SK‑hynix‑Indiana‑Pläne mit einem neuen benannten PM‑Partner (HanmiGlobal).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-realestate/2026/09/21/ZDFEJZBJUFAERN3PP6MWLN4FYU/?outputType=amp",
+          "label": "ChosunBiz (EN) — HanmiGlobal manages SK hynix HBM plant build in Indiana",
+          "kind": "primary",
+          "supports": "Artikel (2026-09-21) berichtet, HanmiGlobal habe die Bau‑Projektmanagement‑Dienste für SK hynix’ HBM‑Packaging‑Projekt in West Lafayette, Indiana, übernommen; nennt HanmiGlobal und Standort."
+        },
+        {
+          "url": "https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana-01/",
+          "label": "SK hynix Press Release / Newsroom — Groundbreaking Ceremony for HBM Production Base in Indiana",
+          "kind": "primary",
+          "supports": "SK hynix bestätigt den West‑Lafayette‑Standort, den Zweck (HBM Packaging/Advanced Packaging R&D) und einen Zielzeitraum (Produktionsziel/Operations‑Ziel around 2028/2029), was den Kontext und die zu erwartende Produktionshorizont liefert."
+        }
+      ],
+      "reason": "Die Einreichung ist eine konkrete, datierte und quellennachweisbare Primärmeldung, die ein spezifisches, atomares Ereignis dokumentiert (Benennung von HanmiGlobal als PM‑Dienstleister für die SK‑hynix‑HBM‑Anlage in West Lafayette). Primärquellen (lokale Wirtschaftsberichterstattung + SK hynix‑Publikation) sind verfügbar und konsistent. Die Meldung ist relevant für die TAIL‑These zur HBM/Server‑DRAM‑Verfügbarkeit, weil sie die Realisierung der US‑Packaging‑Kapazität konkretisiert; sie ist jedoch kein sofortiger Beleg für gegenwärtige Lieferentlastung (kein qualifizierter Shipment‑Nachweis), deshalb ist indexImpact false. Adversarial checks fanden keine Primär‑Widerlegung; die Information stammt von einer etablierten Berichterstatterquelle und der Unternehmens‑Newsseite. Das vorgeschlagene Falsifier‑Kriterium (qualifizierte Shipments bis 2029‑12‑31 mit einer messbaren Schwelle) ist überprüfbar und terminiert die nächste Überprüfung.",
+      "candidateId": "ddf96080daab286f7b2e",
+      "candidateKey": "965c715ae023d058ae2744d3",
+      "reviewedAt": "2026-09-21T01:05:26.552Z",
+      "priorityScore": 84,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-965c715ae023d058ae2744d3",
+        "title": "HanmiGlobal übernimmt Bau‑PM für SK hynix HBM‑Packaging‑Standort in West Lafayette (Indiana)",
+        "date": "2026-09-21",
+        "admittedAt": "2026-09-21T01:05:26.552Z",
+        "fact": "HanmiGlobal erbringt Construction Project Management‑(PM)‑Dienste für SK hynix’ in Bau befindliches HBM (High Bandwidth Memory) Packaging‑/R&D‑Werk in West Lafayette, Indiana (Ankündigung publiziert 2026-09-21).",
+        "placement": "West Lafayette, Indiana, USA — Advanced Packaging / HBM Packaging & R&D (Back‑end/Packaging‑Layer), mittelfristiger Produktionshorizont (Inbetriebnahme‑Ziel laut SK hynix: Ende 2028/2029).",
+        "tailInference": "Das benannte Projektmanagement (PM) von HanmiGlobal trägt zur Steuerung und Beschleunigung von Bau, Qualifikationstests und Inbetriebnahme bei; dies kann die zeitliche Realisierung der Packaging‑Kapazität (HBM‑Package‑Output) verkürzen oder das Risiko von Bauverzögerungen mindern, wodurch die verfügbaren HBM‑Pakete des globalen Lieferpfads mittelfristig erhöht werden könnten.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Moderate Abwärtswirkung auf die Schwere des prognostizierten HBM/Server‑DRAM‑Engpasses bis Ende 2028–2029 durch beschleunigten US‑Packaging‑Output; reicht nicht automatisch aus, das Basisszenario (strukturelle Knappheit bis mindestens Ende 2028) zu falsifizieren, reduziert jedoch die Upside‑Wahrscheinlichkeit extremer Verknappung, wenn die Anlage termingerecht qualifizierte Shipments liefert.",
+        "falsifier": "Bis 2029-12-31: SK hynix meldet qualifizierte HBM‑Package‑Shipments aus der West Lafayette‑Anlage ≥100.000 HBM‑Packages/Monat (oder eine dokumentierte, gebuchte Produktionskapazität von ≥100k Packages/Monat), was zeigen würde, dass die Anlage marktwirksam zur Entspannung der HBM‑Verfügbarkeit beiträgt. Nächste Überprüfung: 2029-12-31.",
+        "nextReview": "2029-12-31",
+        "priorityScore": 84,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 30,
+        "confidence": 70,
+        "markets": [
+          "hbm",
+          "ai_infrastructure",
+          "semiconductors"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "ChosunBiz (EN) — HanmiGlobal manages SK hynix HBM plant build in Indiana",
+            "url": "https://biz.chosun.com/en/en-realestate/2026/09/21/ZDFEJZBJUFAERN3PP6MWLN4FYU/?outputType=amp"
+          },
+          {
+            "label": "SK hynix Press Release / Newsroom — Groundbreaking Ceremony for HBM Production Base in Indiana",
+            "url": "https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana-01/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Moderate Abwärtswirkung auf die Schwere des prognostizierten HBM/Server‑DRAM‑Engpasses bis Ende 2028–2029 durch beschleunigten US‑Packaging‑Output; reicht nicht automatisch aus, das Basisszenario (strukturelle Knappheit bis mindestens Ende 2028) zu falsifizieren, reduziert jedoch die Upside‑Wahrscheinlichkeit extremer Verknappung, wenn die Anlage termingerecht qualifizierte Shipments liefert."
+        },
+        "admissionReviewKey": "965c715ae023d058ae2744d3"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0549d79008ae694d006ab082bf4e6887d28a5b334ada67085c"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Solidigm prüft erstes US‑NAND‑Werk; Upstate New York als möglicher Standort",
+      "fact": "Nach mehreren Medienberichten (u.a. Reuters, DIGITIMES) prüft Solidigm—die US‑NAND‑Tochter von SK hynix—den Bau einer ersten NAND‑Waferfab in den USA; Upstate New York wird als führender Kandidat genannt. Berichte datieren auf 2026-09-18 und betonen, dass keine bindende Entscheidung oder Kapazitätsangaben vorliegen.",
+      "placement": "Geographie: Upstate New York, USA; Domäne: NAND / enterprise SSD Wafer‑Fertigung; Layer: Frontend Wafer‑Fabrication; Horizon: frühphase Standortprüfung (keine FID oder Baubeginn angegeben).",
+      "mechanism": "Ein zusätzlicher US‑NAND‑Wafer‑Fab würde langfristig die weltweite NAND‑Bit‑Verfügbarkeit erhöhen und die Abhängigkeit von Solidigms Dalian‑Produktion verringern, wodurch geopolitische/Export‑Risiken für Kunden in Nordamerika reduziert würden. Aktuell ist dies allerdings nur ein Prüfungs‑/Standort‑prozess ohne bestätigte Investitionssummen, WSPM oder Zeitplan.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signal könnte das OUTLOOK-enterprise_ssd‑Szenario in Richtung frühzeitiger Kapazitätsentlastung beeinflussen, falls aus der Prüfung bis Ende 2027 eine konkrete FID/erster Baubeginn mit quantifiziertem WSPM resultiert. Zum jetzigen Stand ist der Impact hypothetisch und nicht indexrelevant.",
+      "falsifier": "Bis 2027-12-31 wird kein bindender FID, kein öffentlich benannter Standortvertrag mit Upstate New York, und keine von Solidigm/SK hynix bestätigte wafers‑per‑month (WSPM) Kapazitätsangabe veröffentlicht. Falls bis dahin ein FID oder klarer Kapazitätsplan (>=50k WSPM) veröffentlicht wird, widerlegt das Watchlist‑Status (Evidence upgrades).",
+      "nextReview": "2026-12-18",
+      "eventDate": "2026-09-18",
+      "novelty": "Moderat — Standortprüfungen sind relevant, aber Gerüchte über US‑Fabs erscheinen häufig; keine neuen bestätigten Kapazitätsdaten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260918VL223/solidigm-nand-sk-hynix-manufacturing-fab.html",
+          "label": "DIGITIMES: 'Solidigm weighs first US NAND fab, explores upstate New York' (2026-09-18)",
+          "kind": "secondary",
+          "supports": "DIGITIMES meldet die gleiche Standortprüfung mit Datum 2026-09-18, betont aber, dass die Story hinter einer Paywall steht und Details (Budget, WSPM, Zeitplan) fehlen."
+        }
+      ],
+      "reason": "Die vorgelegten Quellen (Reuters, DIGITIMES) berichten übereinstimmend über eine laufende Standortprüfung von Solidigm für eine US‑NAND‑Fab mit Upstate New York als möglichem Kandidaten (Berichtsdatum 2026-09-18). Die verfügbaren Berichte beruhen auf anonymen Quellen und auf einer bestätigenden, aber nicht bindenden Formulierung von SK hynix ('no specific plans have been confirmed'). Es fehlt eine atomare, datierte, quantifizierte Beobachtung (z.B. FID‑Datum, Investitionssumme, WSPM, qualifizierte Shipments oder Lead‑time‑Verbesserung). Nach den TAIL‑Aufnahmekriterien ist das Material daher nicht ausreichend, um VERIFIED DATA zu vergeben oder eine Annahme zu begründen: es handelt sich um eine frühe Prüfungs‑/Explorationsmeldung ohne messbare Kapazitätswirkung. Deshalb wird die Kandidatur als Watchlist aufgenommen (evidenzbasierte Überwachung empfohlen).",
+      "candidateId": "46761bf352f0fbe96880",
+      "candidateKey": "b81abd1908afecbe01ea17b3",
+      "reviewedAt": "2026-09-21T01:05:53.908Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_06fb16834d1c23c9006ab082d6b16087d2af796b7b315e5cf9"
     }
   ]
 }
