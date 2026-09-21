@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-21T01:05:54.113Z",
+  "updatedAt": "2026-09-21T10:45:47.998Z",
   "previousRun": "2026-09-20",
   "executivePulse": {
     "current": 77,
@@ -57,14 +57,14 @@
   },
   "confidence": {
     "current": 78,
-    "previous": 79,
-    "interpretation": "Datenvertrauen 79/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 129 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "previous": 78,
+    "interpretation": "Datenvertrauen 78/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 170 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 129 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 170 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -529,6 +529,74 @@
       "date": "2026-08-26"
     },
     {
+      "id": "S-AUTO-58c7a1ee1cfcd267a61c81f1",
+      "title": "Anthropic-Model Claude (Opus) wurde in Sicherheitsforschung verwendet, um in OpenAI‑Systeme zu gelangen; Bug-Bounty-Auszahlung bestätigt",
+      "date": "2026-07-25",
+      "admittedAt": "2026-09-21T10:45:47.771Z",
+      "fact": "Security-Researcher der Firma Hacktron nutzten Anthropic’s Claude (Opus‑Modellvarianten) als Teil eines exploit‑Chains, die am 2026-07-25 begonnen wurde und innerhalb von Tagen Zugang zu OpenAI‑Mitarbeiter‑ChatGPT‑Accounts und einem internen Software‑Repository ermöglichte; OpenAI patchte die gemeldeten Schwachstellen und zahlte der Forschergruppe laut Bericht eine Bug‑Bounty in Höhe von US$6,500 (Zahlung dokumentiert, Issue als behoben markiert).",
+      "placement": "Geografie: global / Domain: AI‑Infrastruktur & Software‑Security / Layer: interne Betriebs‑ und Entwicklerinfrastruktur (SSO, Forum, interne Repos) / Datum(s): Primär-Entdeckungsereignis gemeldet 2026-07-25; öffentliche Berichterstattung und Unternehmens‑Kommunikation am 2026-09-18; Bug‑Bounty‑Auszahlung dokumentiert per 2026-09-01 in Forscher‑Timeline.",
+      "tailInference": "Kausaler Mechanismus: Forscher ketteten eine Drittanbieter‑Forum‑(Discourse) Schwachstelle und eine Bild/Decoder‑Schwachstelle (libheif‑/Image‑Decoder) zusammen; Claude wurde eingesetzt, um Exploit‑Pipelines, Payloads und Nachforschungs‑Schritte zu automatisieren/zu beschleunigen, wodurch Angriffsfläche über Identitäts‑/SSO‑Grenzen hinweg ausgenutzt werden konnte. OpenAI reagierte mit Patch, Credential‑Revocation und Bounty‑Zahlung.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit von Governance‑ und Regulierungsmaßnahmen sowie strengeren Eval‑/Sandbox‑Kontrollen in 2026; es unterstützt die Aufnahme von strengeren Eval‑Isolationen/Netzwerk‑Egress‑Kontrollen, wie in P-2026-07-22-02 (\"Mindestens drei große AI‑Labs veröffentlichen bis Ende 2026 strengere Eval‑Isolation …\") gefordert.",
+      "falsifier": "Bis 2027-03-01 liegt kein unabhängiger, primärer Audit‑ oder CVE‑Eintrag vor, der den Einsatz von Claude/Opus in der beschriebenen exploit‑Kette bestätigt, oder die Forscher/Dokumentation revidieren die Timeline/Zahlungsangabe (z. B. Datum der Bounty, Kausalzusammenhang zwischen Claude‑Einsatz und Exploit).",
+      "nextReview": "2027-03-01",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 13,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 40,
+      "confidence": 80,
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "signal": "geopolitical_split",
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "TechCrunch – \"Researchers used Anthropic’s Claude to hack into OpenAI\" (2026-09-18)",
+          "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/"
+        },
+        {
+          "label": "Anthropic – Alignment assessment / Sicherheitspost (Unternehmens‑Statement)",
+          "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents"
+        },
+        {
+          "label": "The Hacker News – technische Zusammenfassung (2026-09)",
+          "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html?hl=en_US"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Dieses Ereignis erhöht die Wahrscheinlichkeit von Governance‑ und Regulierungsmaßnahmen sowie strengeren Eval‑/Sandbox‑Kontrollen in 2026; es unterstützt die Aufnahme von strengeren Eval‑Isolationen/Netzwerk‑Egress‑Kontrollen, wie in P-2026-07-22-02 (\"Mindestens drei große AI‑Labs veröffentlichen bis Ende 2026 strengere Eval‑Isolation …\") gefordert."
+      },
+      "admissionReviewKey": "58c7a1ee1cfcd267a61c81f1"
+    },
+    {
       "id": "S-AUTO-965c715ae023d058ae2744d3",
       "title": "HanmiGlobal übernimmt Bau‑PM für SK hynix HBM‑Packaging‑Standort in West Lafayette (Indiana)",
       "date": "2026-09-21",
@@ -707,15 +775,69 @@
     "date": "2026-09-21",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 84,
-    "note": "Evidenzprüfung offen: 129 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 86,
+    "note": "Evidenzprüfung offen: 170 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-21T01:05:54.113Z",
+    "generatedAt": "2026-09-21T10:45:47.998Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-21T01:03:51.269Z",
-    "inboxNewItems": 69,
+    "inboxUpdatedAt": "2026-09-21T10:42:33.260Z",
+    "inboxNewItems": 233,
     "highRelevanceCandidates": [
+      {
+        "id": "7df16a1ef77c12528492",
+        "title": "Micron (MU) and SK Hynix Confront Growing Challenge from China's CXMT DRAM Expansion",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTWZ3SWZXcXU1TW13dlFrWGtQVHhCSWdoWG1DbHp6UWxlOThDREhDUXhMMlFRU3ZNZFpCTWZGQVd0SXJ0RTU0eTlNUU5MUVVCbDV3SmYxaFl3M1dyQXRyRFZkdDZHYUNtTXdHZjhxYi1WdkNlM05CekpoUEJybnZmQ0NETWY4RHhoa1VHS1h5dGdqUVZEazdMY0g5M25lWGpOSkFERGZ3V2g?oc=5",
+        "source": "Blockonomi",
+        "summary": "Aktuelle Meldung von Blockonomi: Micron (MU) and SK Hynix Confront Growing Challenge from China's CXMT DRAM Expansion",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-21T09:54:52.000Z"
+      },
+      {
+        "id": "7b80c2ecd3236d869e9f",
+        "title": "Micron, SanDisk stocks face a new test today: CXMT may have found the pressure point",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVjhveGtocmNLSVc2eDlNbERQX2Y3S2VDLUJTRGJORldfVFdKdzRGaDc0bDVqSFo2aEtmYmxEQ044WXJIcWoxeUtZVFJCam9OdzJzcF9qemROYzRySzJtZmRnZmxEYjdFbDVWSkJWbVpySkQ0UWtHdEpMTGg5cDFxdmYwX1ZQbkhPTHV1Ti1RV2p1alRURExHRXdYVUVCMDhIdmdUb3NYQjA4VFpGSTJuTFdTUkhjYnpXekE?oc=5",
+        "source": "Invezz",
+        "summary": "Aktuelle Meldung von Invezz: Micron, SanDisk stocks face a new test today: CXMT may have found the pressure point",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-21T08:35:11.000Z"
+      },
+      {
+        "id": "d6100d195ea08b848013",
+        "title": "CXMT’s newest DRAM narrows the gap with Samsung and SK hynix, without EUV tools",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeGVxQjlGem0yX2lyb09zU3pXOXpmODNMTC0yRmduWnZsWWpPeFlIaDEtRnd6ZjM5STMtRDhGM01CTkRXa0s2UEJqQUgtblVobFhNWDJiSFdZazlETnhLRzlYdnpXeDloUzNnclRHX2pBQjZkSC05MDlkSVBSaHhMRQ?oc=5",
+        "source": "Tech Wire Asia",
+        "summary": "CXMT’s newest DRAM narrows the gap with Samsung and SK hynix, without EUV tools Tech Wire Asia",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-21T08:03:32.000Z"
+      },
+      {
+        "id": "ebb344534c5dea2bf062",
+        "title": "China’s CXMT Says New DRAM Platform Enters Mass Production, Challenging Samsung and SK Hynix",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSTJRQlh3YnFMM2FsUE9jYzEtblVjazBHZEgxSWtWSzB1VVB1TWY0ZEN2OVpLRVIzYllZbEFlcUI0aE8wb1VNX0xXMUNtZjlTcmUzajV1ZHlRVk5RZWxQZXlMZ0RWSUhEdGlRV3B4ZzhyVVAtZVQ3dnJQUHFLVDlfVU5WWjNUTmdHa2dVQVByc2dPM3ZVcmQ1c1ZQamdqemducVFXR2xSX0dEdTZXdVB1dFVhdE05UQ?oc=5",
+        "source": "Tekedia",
+        "summary": "Aktuelle Meldung von Tekedia: China’s CXMT Says New DRAM Platform Enters Mass Production, Challenging Samsung and SK Hynix",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-21T05:42:48.000Z"
+      },
+      {
+        "id": "9d7a2f589ffb1f1a5d79",
+        "title": "China’s CXMT Says It Has Reached Advanced DRAM Mass Production, Challenging Samsung, SK Hynix and Micron in Memory Chips",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLWZ0LWJ2bnl6cTBYb3gzdi02a2FwZ3cyOXdGSVVST3hmOVhqb0xHNVlwN20wbXY4SDJqakczVlNsMFI2bTlfMXlhbGVZa3VWYUY1c3ZlTG5MRGF0T25HT1pJU2FaeFU1MC14S3dJWHd0MVJXNU9KUkswT2JOT1k4dGh2UEhQSTZr?oc=5",
+        "source": "sg.finance.yahoo.com",
+        "summary": "Aktuelle Meldung von sg.finance.yahoo.com: China’s CXMT Says It Has Reached Advanced DRAM Mass Production, Challenging Samsung, SK Hynix and Micron in Memory Chips",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-21T04:14:00.000Z"
+      },
+      {
+        "id": "6ca560425450cadded82",
+        "title": "Samsung Narrows HBM Gap With SK hynix to 17 Points",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWFowWFZPYVh1NFJUX0ppUy1oazF4ZVlFajlZSS1kb0J6d2NFTUFQaUlKaV9jcGlFb0RGNWk4U0NGdV9wc0ZRazJMZVV3WVQxNGZmTHVJOHZCa2dNS0hEdDlfNWNUYnZpVGRfT1FQU3ZlUXlmT2hVdkk4RU1CT0QtUWNRZ1paVXZiajJBTDd5a0oyU0psZEpz?oc=5",
+        "source": "Seoul Economic Daily",
+        "summary": "Samsung Narrows HBM Gap With SK hynix to 17 Points Seoul Economic Daily",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-21T01:28:23.000Z"
+      },
       {
         "id": "8865a288832711a37600",
         "title": "OpenAI Just Beat Google, Meta, and Amazon To This Key Milestone. Is It Bullish for AI Stocks.",
@@ -733,60 +855,6 @@
         "summary": "Aktuelle Meldung von Demócrata: China brings to production its new DRAM memory to compete with Samsung, SK Hynix, and Micron",
         "relevanceScore": 100,
         "publishedAt": "2026-09-20T14:05:19.000Z"
-      },
-      {
-        "id": "88e2129451a0e9c5fd71",
-        "title": "China's CXMT Starts Mass Production of G5 DRAM at 11.95nm, Challenging Samsung and SK Hynix",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVk5IcG5XSWxpR05ENy1iWWtnREU4SU1ZeUhEWmRNeGVlVFc4SUoyVHRTSXlNaG9lNzloa0o2Q1ZYdkNGQXRXTk42eks2N2YzM1pBVFV0RDdoUjFIaGhGZU8wbkcxbWJPUUxvb0ZjZm9uM3Rpd1NyMGo5OWJwb2tCRk5GbDlKLUhsZndiUkVQUjI?oc=5",
-        "source": "The Eastern Herald",
-        "summary": "China's CXMT Starts Mass Production of G5 DRAM at 11.95nm, Challenging Samsung and SK Hynix The Eastern Herald",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-20T10:13:59.000Z"
-      },
-      {
-        "id": "1931993602930e74cbcd",
-        "title": "China's CXMT Begins Mass Production of 5th-Gen DRAM, Unveils 24Gb LPDDR5X in Pursuit of Samsung, SK Hynix",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rQ3RYeHNzd1ljUU1Vc3lsNGFqVWJvcV85TWtEUDhXLS1tSG9oVUpOSHdZSENxTHU1OGh5UGpZWTlKd0luR3dld1BON05kSzF2LVY4QzBKdUthaDg3OG1EM21iejRVRDBGSEhwR182RTRNdTMtaFE?oc=5",
-        "source": "finance.biggo.com",
-        "summary": "China's CXMT Begins Mass Production of 5th-Gen DRAM, Unveils 24Gb LPDDR5X in Pursuit of Samsung, SK Hynix finance.biggo.com",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-20T09:05:00.000Z"
-      },
-      {
-        "id": "c0099638e5c76f06b872",
-        "title": "China’s CXMT Pushes Into NAND as Samsung, SK Hynix Lead AI-Server eSSDs; Solidigm Weighs U.S. Plant [Tech Log]",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBLd1NDS3d0NHFTeVZNaXhBZXFvUC1jVzRpMU95Vlp3SHFkTllfNmRjS0hEU3hPbElEdHhsU1ZMVlo5Tm9IazQyZ2MtTVJGZUp5S1lnZg?oc=5",
-        "source": "bloomingbit",
-        "summary": "Aktuelle Meldung von bloomingbit: China’s CXMT Pushes Into NAND as Samsung, SK Hynix Lead AI-Server eSSDs; Solidigm Weighs U.S. Plant [Tech Log]",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-20T06:50:36.000Z"
-      },
-      {
-        "id": "64839794e5ad3bd7d275",
-        "title": "Samsung vs SK Hynix vs CXMT: Who Wins the AI Memory War and Which Stock Should You Buy?",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNm9LUjd6YU1iWXlvejFnZk9OOEluX05McldIRmk2M0V3VVVITEhBdkpuNF9fcU5HYmhtS20wSDd2cDRLcm5uTTBTU3pyVW5CQ3l1OUlTZ0EtM3JTZjBuMlVqaWMzYTlVcllCaGc1SHZOeVJuSXFKdWJpb0RKOXlfNHBOV0h2M2xmSWxfelVmZHQ0Y251YlNmWnNDLXFRWXNoN19BQUZHa25hbGJwWi1GOEF3U0pMWHlvNmVDTjBFY25zOUpB?oc=5",
-        "source": "TradingKey",
-        "summary": "Aktuelle Meldung von TradingKey: Samsung vs SK Hynix vs CXMT: Who Wins the AI Memory War and Which Stock Should You Buy?",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-19T15:13:54.000Z"
-      },
-      {
-        "id": "3f87eb5c3be756e8d4d1",
-        "title": "Micron Confirms TSMC Will Manufacture Next-Gen HBM Base Dies — All Three Major Memory Makers Now on Board",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZZ2thaVBZUTRFbVJQYXFVZGgwclNpMm1ZZzk1clRKaWRFQzZjWUljamhjRDREX1g0Z3h2YlBqWUJWQ1B1VWZIcEFsQms0NkI5alNKdW1EWktaS1RMVnV2b202RU1zNTNwaGZzNmxEN0pLcWo2RVE?oc=5",
-        "source": "finance.biggo.com",
-        "summary": "Aktuelle Meldung von finance.biggo.com: Micron Confirms TSMC Will Manufacture Next-Gen HBM Base Dies — All Three Major Memory Makers Now on Board",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-19T04:58:57.000Z"
-      },
-      {
-        "id": "e5effaad59725fca46fc",
-        "title": "CXMT eyes NAND flash market, challenging Samsung and YMTC",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZlRFdTgtdy1PaDFiTzc5N25LRmhRcEZ0X094bDUzalpJX0hINmxjTzdMYzFwVjhFRklXQU1RaEoyYVZuWTJNVTdLX2lWcXU4c0FEc3FpRlY4VXJrLUhQcVhCaS1PRHZmTzUzOUFVX0I4TmhTZEd5ZEpoTmY1MzNyQlZUWmhYcnR1cENjM2Z6ckp4cnpTUms5LXN30gGfAUFVX3lxTE5GMVNJdHFMY05GRVBrS2Mwd1JVYzBWdGVlRmRqZmJtckhKdmV0ajhqQjRPSnhHaW1PV2sxc2RUcGxzRXZMU21KQ1E1NnhtVTJvUjNmTVZCSTRJcm9taGNRaWk2Y2dLdmpDbUdiU1kxcG1XeVl5TjhZbjhrd3lZcWgyZ0REbVlkVFNaM2VDWkxVVWlzeUFITjdPRnFoQ1U4WQ?oc=5",
-        "source": "sammyfans.com",
-        "summary": "CXMT eyes NAND flash market, challenging Samsung and YMTC sammyfans.com",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-19T04:48:05.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -872,29 +940,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-21T01:05:53.947Z",
-    "inboxUpdatedAt": "2026-09-21T01:03:51.269Z",
+    "checkedAt": "2026-09-21T10:45:47.813Z",
+    "inboxUpdatedAt": "2026-09-21T10:42:33.260Z",
     "status": "pending",
-    "candidates": 153,
-    "reviewed": 24,
-    "accepted": 3,
-    "watchlist": 20,
+    "candidates": 196,
+    "reviewed": 26,
+    "accepted": 4,
+    "watchlist": 21,
     "rejected": 1,
-    "pending": 129,
-    "oldestPendingAt": "2026-09-18T08:48:37.000Z",
-    "lastCompletedReviewAt": "2026-09-21T01:05:53.908Z",
+    "pending": 170,
+    "oldestPendingAt": "2026-09-18T09:00:06.000Z",
+    "lastCompletedReviewAt": "2026-09-21T10:45:47.771Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 165,
+    "rawCandidates": 210,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
-      "archivedOpinions": 5,
-      "groupedDuplicates": 7
+      "archivedOpinions": 6,
+      "groupedDuplicates": 8
     },
     "lastRun": {
-      "startedAt": "2026-09-21T01:05:01.935Z",
-      "completedAt": "2026-09-21T01:05:53.948Z",
+      "startedAt": "2026-09-21T10:44:41.032Z",
+      "completedAt": "2026-09-21T10:45:47.814Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -902,13 +970,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 52,
+      "durationSeconds": 66,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-21",
-    "inputHash": "5aa3ebb91e3e1ad1561598d8e7d303e7efb309be45533bc292f405c6d8bbfd6f",
+    "inputHash": "e3a29077f6e3161cc6f98c868380c8706c30a15487480bcfcefdd8004c6209a7",
     "sourceDataAsOf": "2026-09-21"
   }
 }

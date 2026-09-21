@@ -44150,6 +44150,215 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_06fb16834d1c23c9006ab082d6b16087d2af796b7b315e5cf9"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Amazon blockiert angeblich Metas Muse‑Agent beim Checkout",
+      "fact": "Berichte (GeekWire, TechCrunch u. a.) melden, dass Amazon den Zugriff von Metas neuem Muse‑AI‑Agenten auf Amazon.com für Einkauf/Checkout blockiert hat.",
+      "placement": "geographisch: global (Amazon.com, primär USA); Domain/Layers: e‑commerce Plattformzugang / Agentic‑Commerce; Horizon: aktuell (2026‑09‑21).",
+      "mechanism": "Plattformzugangsbeschränkung: Amazon verweigert Agent‑basierten Zugriff auf seine Kunden‑Checkout‑Flows aus Sicherheits‑, Datenschutz‑ und Transparenz‑Gründen, wodurch Muse nicht mehr in der Lage ist, auf Amazon Artikel zu suchen oder Zahlungen abzuschließen.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "reduziert kurzfristig die Effektivität von agent‑gesteuerter Einkaufslast auf Amazon als Vertriebskanal; könnte die praktische AI‑Nachfrage nach agent‑fähigen Checkout‑Integrationen verlangsamen und Merchant‑Integrationspfade (aiDemand/demand) kurzfristig dämpfen.",
+      "falsifier": "Bis 2026-10-05: Amazon veröffentlicht eine formale Zulassungs‑ oder Policy‑Änderung, die Muse (oder allgemein agent‑initiierte Checkout‑Flows) explizit erlaubt, oder Meta veröffentlicht stichhaltigen technischen Nachweis, dass Muse weiterhin erfolgreich und wiederholt Checkout‑Transaktionen auf Amazon.com (mit Datum, Transaktions‑IDs und sichtbaren Bestellnummern) ausführt.",
+      "nextReview": "2026-10-06",
+      "eventDate": "2026-09-21",
+      "novelty": "Moderate — Agentic‑Checkout‑Blockaden wurden in 2025–2026 bereits gegen andere Anbieter (Perplexity, Google‑Agenten) berichtet, aber die direkte Konfrontation zwischen zwei großen Vertragspartnern (Amazon vs. Meta) ist neu.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand",
+        "availability"
+      ],
+      "signal": "capacity_lock",
+      "severity": 28,
+      "confidence": 54,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/",
+          "label": "GeekWire: Amazon blocks Meta’s Muse AI assistant in new standoff over agentic shopping",
+          "kind": "secondary",
+          "supports": "Bericht, dass Amazon den Muse‑Agenten blockiert hat und Sicherheits‑/Datenschutzgründe anführt."
+        },
+        {
+          "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+          "label": "TechCrunch: Meta debuts its Muse AI agent (background on Muse; includes notes zu agentic checkout)",
+          "kind": "secondary",
+          "supports": "Hintergrund zu Muse‑Funktionen (agentic Checkout via Stripe Link) und Hinweise, dass Händler/Plattformen Agents blockieren könnten."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist konsistent mit mehreren aktuellen Technologieberichten (u. a. GeekWire). Allerdings fehlt in der vorliegenden Beweislage ein primärer, direkt‑verifizierbaren Amazon‑Statement (z. B. offizielles Amazon Press Release, Hilfs‑Dokumentation oder eine verbindliche Support‑Richtlinie) sowie ein technischer Nachweis (z. B. reproduzierbare Transaktions‑Logs oder ein Meta‑Statusupdate), das das Blockieren eindeutig und auf einen konkreten Policy‑Mechanismus datiert. Nach den Adversarial‑Checks und den Aufnahme‑kriterien verlangt TAIL primäre, datierte, direkt zitierbare Belege und eine messbare Index‑Metrik, bevor eine Aufnahme als VERIFIED DATA möglich ist. Daher: Watchlist mit klar formulierten fehlenden Beweisen und einem falsifier, der prüfbar ist.",
+      "candidateId": "69b12bff47c941819ebe",
+      "candidateKey": "40c3455e7b9c3c5af86acfd5",
+      "reviewedAt": "2026-09-21T10:45:03.799Z",
+      "priorityScore": 71,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02603d318e92579f006ab10a9af0dc87d1900e4d168fcb0ddf"
+    },
+    {
+      "decision": "accepted",
+      "title": "Anthropic-Model Claude (Opus) wurde in Sicherheitsforschung verwendet, um in OpenAI‑Systeme zu gelangen; Bug-Bounty-Auszahlung bestätigt",
+      "fact": "Security-Researcher der Firma Hacktron nutzten Anthropic’s Claude (Opus‑Modellvarianten) als Teil eines exploit‑Chains, die am 2026-07-25 begonnen wurde und innerhalb von Tagen Zugang zu OpenAI‑Mitarbeiter‑ChatGPT‑Accounts und einem internen Software‑Repository ermöglichte; OpenAI patchte die gemeldeten Schwachstellen und zahlte der Forschergruppe laut Bericht eine Bug‑Bounty in Höhe von US$6,500 (Zahlung dokumentiert, Issue als behoben markiert).",
+      "placement": "Geografie: global / Domain: AI‑Infrastruktur & Software‑Security / Layer: interne Betriebs‑ und Entwicklerinfrastruktur (SSO, Forum, interne Repos) / Datum(s): Primär-Entdeckungsereignis gemeldet 2026-07-25; öffentliche Berichterstattung und Unternehmens‑Kommunikation am 2026-09-18; Bug‑Bounty‑Auszahlung dokumentiert per 2026-09-01 in Forscher‑Timeline.",
+      "mechanism": "Kausaler Mechanismus: Forscher ketteten eine Drittanbieter‑Forum‑(Discourse) Schwachstelle und eine Bild/Decoder‑Schwachstelle (libheif‑/Image‑Decoder) zusammen; Claude wurde eingesetzt, um Exploit‑Pipelines, Payloads und Nachforschungs‑Schritte zu automatisieren/zu beschleunigen, wodurch Angriffsfläche über Identitäts‑/SSO‑Grenzen hinweg ausgenutzt werden konnte. OpenAI reagierte mit Patch, Credential‑Revocation und Bounty‑Zahlung.",
+      "predictionId": "P-2026-07-22-02",
+      "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit von Governance‑ und Regulierungsmaßnahmen sowie strengeren Eval‑/Sandbox‑Kontrollen in 2026; es unterstützt die Aufnahme von strengeren Eval‑Isolationen/Netzwerk‑Egress‑Kontrollen, wie in P-2026-07-22-02 (\"Mindestens drei große AI‑Labs veröffentlichen bis Ende 2026 strengere Eval‑Isolation …\") gefordert.",
+      "falsifier": "Bis 2027-03-01 liegt kein unabhängiger, primärer Audit‑ oder CVE‑Eintrag vor, der den Einsatz von Claude/Opus in der beschriebenen exploit‑Kette bestätigt, oder die Forscher/Dokumentation revidieren die Timeline/Zahlungsangabe (z. B. Datum der Bounty, Kausalzusammenhang zwischen Claude‑Einsatz und Exploit).",
+      "nextReview": "2027-03-01",
+      "eventDate": "2026-07-25",
+      "novelty": "Die Kombination (externer Modell‑Assistent + chaining von Drittanbieter‑Forum‑Vulnerability zu internen SSO/Repo‑Zugängen) ist neu und relevant für AI‑Security‑Aufenthalte; mehrere Medienberichte und ein Anthropic‑Post bestätigen Aspekte.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 13,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 40,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+          "label": "TechCrunch – \"Researchers used Anthropic’s Claude to hack into OpenAI\" (2026-09-18)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass ein drei‑köpfiges Team von Hacktron Claude Opus 5 nutzte, um eine exploit‑Kette zu konstruieren; OpenAI erhielt Meldung, patchte die Probleme und Hacktron erhielt laut Timeline US$6,500."
+        },
+        {
+          "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+          "label": "Anthropic – Alignment assessment / Sicherheitspost (Unternehmens‑Statement)",
+          "kind": "primary",
+          "supports": "Anthropic beschreibt reproduzierbare Beispiele, in denen Varianten ihres Modells in Sicherheitsforschung und exploit‑Reproduktionen auftauchen; liefert kontextuelle technische Details zu Modellverhalten (unterstützt Kausalbehauptungen über Modell‑Rolle)."
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html?hl=en_US",
+          "label": "The Hacker News – technische Zusammenfassung (2026-09)",
+          "kind": "secondary",
+          "supports": "Konkrete Timeline: Zugang zu OpenAI‑Mitarbeiter‑Accounts, Zugriff auf internes Repository, Reparatur innerhalb ~14 Stunden nach Meldung und Bug‑Bounty Zahlung am 2026-09-01 (als Teil der Forscher‑Timeline)."
+        }
+      ],
+      "reason": "Primär‑Belege: mehrere unabhängige Technologie‑Medien (TechCrunch, The Hacker News, CBS, The Guardian u.a.) berichten die gleiche Kernsequenz und verweisen auf die Forscher‑Publikation/Timeline; Anthropic liefert ein firmenseitiges Alignment/Security‑Posting, das Modell‑Verhalten und Reproduktionsversuche dokumentiert. Die Behauptung ist damit als datengestütztes, datiertes Ereignis aufnehmbar: (i) exploit‑Kette wurde durchgeführt, (ii) Claude/Opus spielte eine dokumentierte Hilfsrolle, (iii) OpenAI patchte und zahlte US$6,500. Diese Aufnahme besteht aus einer eng gefassten, falsifizierbaren Aussage mit klarem Mechanismus und messbarer Outcome (Bounty‑Betrag, Patch/Issue‑Status). Der Eintrag stärkt die Erwartung von kurzfristig strengeren Eval‑/Sandbox‑Kontrollen (verknüpft mit P-2026-07-22-02). Adversarial‑Check: Quellenlage ist mehrfach bestätigt; keine Hinweise gefunden, dass es sich um Recirculated PR ohne primäre Forscher‑Timeline handelt. Daher akzeptiert.",
+      "candidateId": "d6da487441cb6636bccf",
+      "candidateKey": "58c7a1ee1cfcd267a61c81f1",
+      "reviewedAt": "2026-09-21T10:45:47.771Z",
+      "priorityScore": 86,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-58c7a1ee1cfcd267a61c81f1",
+        "title": "Anthropic-Model Claude (Opus) wurde in Sicherheitsforschung verwendet, um in OpenAI‑Systeme zu gelangen; Bug-Bounty-Auszahlung bestätigt",
+        "date": "2026-07-25",
+        "admittedAt": "2026-09-21T10:45:47.771Z",
+        "fact": "Security-Researcher der Firma Hacktron nutzten Anthropic’s Claude (Opus‑Modellvarianten) als Teil eines exploit‑Chains, die am 2026-07-25 begonnen wurde und innerhalb von Tagen Zugang zu OpenAI‑Mitarbeiter‑ChatGPT‑Accounts und einem internen Software‑Repository ermöglichte; OpenAI patchte die gemeldeten Schwachstellen und zahlte der Forschergruppe laut Bericht eine Bug‑Bounty in Höhe von US$6,500 (Zahlung dokumentiert, Issue als behoben markiert).",
+        "placement": "Geografie: global / Domain: AI‑Infrastruktur & Software‑Security / Layer: interne Betriebs‑ und Entwicklerinfrastruktur (SSO, Forum, interne Repos) / Datum(s): Primär-Entdeckungsereignis gemeldet 2026-07-25; öffentliche Berichterstattung und Unternehmens‑Kommunikation am 2026-09-18; Bug‑Bounty‑Auszahlung dokumentiert per 2026-09-01 in Forscher‑Timeline.",
+        "tailInference": "Kausaler Mechanismus: Forscher ketteten eine Drittanbieter‑Forum‑(Discourse) Schwachstelle und eine Bild/Decoder‑Schwachstelle (libheif‑/Image‑Decoder) zusammen; Claude wurde eingesetzt, um Exploit‑Pipelines, Payloads und Nachforschungs‑Schritte zu automatisieren/zu beschleunigen, wodurch Angriffsfläche über Identitäts‑/SSO‑Grenzen hinweg ausgenutzt werden konnte. OpenAI reagierte mit Patch, Credential‑Revocation und Bounty‑Zahlung.",
+        "predictionId": "P-2026-07-22-02",
+        "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit von Governance‑ und Regulierungsmaßnahmen sowie strengeren Eval‑/Sandbox‑Kontrollen in 2026; es unterstützt die Aufnahme von strengeren Eval‑Isolationen/Netzwerk‑Egress‑Kontrollen, wie in P-2026-07-22-02 (\"Mindestens drei große AI‑Labs veröffentlichen bis Ende 2026 strengere Eval‑Isolation …\") gefordert.",
+        "falsifier": "Bis 2027-03-01 liegt kein unabhängiger, primärer Audit‑ oder CVE‑Eintrag vor, der den Einsatz von Claude/Opus in der beschriebenen exploit‑Kette bestätigt, oder die Forscher/Dokumentation revidieren die Timeline/Zahlungsangabe (z. B. Datum der Bounty, Kausalzusammenhang zwischen Claude‑Einsatz und Exploit).",
+        "nextReview": "2027-03-01",
+        "priorityScore": 86,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 13,
+          "thesisRelevance": 18,
+          "forecastImpact": 17,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 40,
+        "confidence": 80,
+        "markets": [
+          "ai_infrastructure"
+        ],
+        "signal": "geopolitical_split",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "TechCrunch – \"Researchers used Anthropic’s Claude to hack into OpenAI\" (2026-09-18)",
+            "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/"
+          },
+          {
+            "label": "Anthropic – Alignment assessment / Sicherheitspost (Unternehmens‑Statement)",
+            "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents"
+          },
+          {
+            "label": "The Hacker News – technische Zusammenfassung (2026-09)",
+            "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html?hl=en_US"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Dieses Ereignis erhöht die Wahrscheinlichkeit von Governance‑ und Regulierungsmaßnahmen sowie strengeren Eval‑/Sandbox‑Kontrollen in 2026; es unterstützt die Aufnahme von strengeren Eval‑Isolationen/Netzwerk‑Egress‑Kontrollen, wie in P-2026-07-22-02 (\"Mindestens drei große AI‑Labs veröffentlichen bis Ende 2026 strengere Eval‑Isolation …\") gefordert."
+        },
+        "admissionReviewKey": "58c7a1ee1cfcd267a61c81f1"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c0747e834ee9529006ab10ab06b6087d19459c22ff362af74"
     }
   ]
 }

@@ -2422,6 +2422,67 @@
     ]
   },
   {
+    "id": "S-AUTO-58c7a1ee1cfcd267a61c81f1",
+    "date": "2026-07-25",
+    "title": "Anthropic-Model Claude (Opus) wurde in Sicherheitsforschung verwendet, um in OpenAI‑Systeme zu gelangen; Bug-Bounty-Auszahlung bestätigt",
+    "category": "geopolitics",
+    "markets": [
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "severity": 40,
+    "confidence": 80,
+    "signal": "geopolitical_split",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "aiDemand"
+    ],
+    "summary": "Security-Researcher der Firma Hacktron nutzten Anthropic’s Claude (Opus‑Modellvarianten) als Teil eines exploit‑Chains, die am 2026-07-25 begonnen wurde und innerhalb von Tagen Zugang zu OpenAI‑Mitarbeiter‑ChatGPT‑Accounts und einem internen Software‑Repository ermöglichte; OpenAI patchte die gemeldeten Schwachstellen und zahlte der Forschergruppe laut Bericht eine Bug‑Bounty in Höhe von US$6,500 (Zahlung dokumentiert, Issue als behoben markiert).",
+    "tail_analysis": "Kausaler Mechanismus: Forscher ketteten eine Drittanbieter‑Forum‑(Discourse) Schwachstelle und eine Bild/Decoder‑Schwachstelle (libheif‑/Image‑Decoder) zusammen; Claude wurde eingesetzt, um Exploit‑Pipelines, Payloads und Nachforschungs‑Schritte zu automatisieren/zu beschleunigen, wodurch Angriffsfläche über Identitäts‑/SSO‑Grenzen hinweg ausgenutzt werden konnte. OpenAI reagierte mit Patch, Credential‑Revocation und Bounty‑Zahlung.",
+    "source": "TechCrunch – \"Researchers used Anthropic’s Claude to hack into OpenAI\" (2026-09-18)",
+    "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+    "content_hash": "f94ff67436395f3e15ab",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-21T10:45:47.771Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "58c7a1ee1cfcd267a61c81f1",
+    "predictionId": "P-2026-07-22-02",
+    "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit von Governance‑ und Regulierungsmaßnahmen sowie strengeren Eval‑/Sandbox‑Kontrollen in 2026; es unterstützt die Aufnahme von strengeren Eval‑Isolationen/Netzwerk‑Egress‑Kontrollen, wie in P-2026-07-22-02 (\"Mindestens drei große AI‑Labs veröffentlichen bis Ende 2026 strengere Eval‑Isolation …\") gefordert.",
+    "falsifier": "Bis 2027-03-01 liegt kein unabhängiger, primärer Audit‑ oder CVE‑Eintrag vor, der den Einsatz von Claude/Opus in der beschriebenen exploit‑Kette bestätigt, oder die Forscher/Dokumentation revidieren die Timeline/Zahlungsangabe (z. B. Datum der Bounty, Kausalzusammenhang zwischen Claude‑Einsatz und Exploit).",
+    "nextReview": "2027-03-01",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Dieses Ereignis erhöht die Wahrscheinlichkeit von Governance‑ und Regulierungsmaßnahmen sowie strengeren Eval‑/Sandbox‑Kontrollen in 2026; es unterstützt die Aufnahme von strengeren Eval‑Isolationen/Netzwerk‑Egress‑Kontrollen, wie in P-2026-07-22-02 (\"Mindestens drei große AI‑Labs veröffentlichen bis Ende 2026 strengere Eval‑Isolation …\") gefordert."
+    },
+    "sources": [
+      {
+        "label": "TechCrunch – \"Researchers used Anthropic’s Claude to hack into OpenAI\" (2026-09-18)",
+        "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/"
+      },
+      {
+        "label": "Anthropic – Alignment assessment / Sicherheitspost (Unternehmens‑Statement)",
+        "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents"
+      },
+      {
+        "label": "The Hacker News – technische Zusammenfassung (2026-09)",
+        "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html?hl=en_US"
+      }
+    ]
+  },
+  {
     "id": "S-2026-07-26-01",
     "date": "2026-07-26",
     "title": "Houthi-Angriffe erreichen Jizan und bedrohen Yanbu als wichtigste Hormuz-Umgehung",
