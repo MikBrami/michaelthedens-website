@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T15:33:50.766Z",
+  "generatedAt": "2026-09-22T20:14:42.739Z",
   "platform": {
     "dataAsOf": "2026-09-22",
     "analysisAsOf": "2026-09-22",
@@ -8,18 +8,18 @@
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-09-22T15:33:48.931Z",
-      "pending": 76,
-      "reviewed": 40,
+      "checkedAt": "2026-09-22T20:14:41.197Z",
+      "pending": 77,
+      "reviewed": 42,
       "accepted": 4,
-      "rawCandidates": 300,
+      "rawCandidates": 305,
       "triage": {
         "archivedOpinions": 6,
         "groupedDuplicates": 17
       },
       "lastRun": {
-        "startedAt": "2026-09-22T15:32:44.237Z",
-        "completedAt": "2026-09-22T15:33:48.932Z",
+        "startedAt": "2026-09-22T20:13:18.922Z",
+        "completedAt": "2026-09-22T20:14:41.198Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 64,
+        "durationSeconds": 82,
         "budgetExhausted": false
       }
     },
@@ -73,9 +73,21 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-22; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (76 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-22; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (77 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
+    {
+      "date": "2026-09-22",
+      "title": "CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
+      "summary": "Aktuelle Meldung von Wccftech: CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Wccftech",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcmVGcnZyLVVicFI3azE3Vklic3BIdVUxMUJEYmQzZjZkbUdpSS0yckJ4R2FUcjlFMFU1ejN6bGVaSnIwakZEYWhYMlRwUGoydzZETmFwY05DT2V4Mi1xajlrMlo0VkNVNXBfTVRBTGZKYklUMUJLRkxGalh6RXNqUEREd1BxX0RwaWFwaEI3OU9YYVVhTmIxbE9xSHd3N0o4d3dUTFYyTWN4dHRiNWZzd1dxVDVLMnRBU2xpMmRILUlkYzB2VkQ3ckdvZGdKZ9IB0wFBVV95cUxQUGVUbWxMaTdOOWowVVlnMjNyQTBhY3VkYzFvdTRhSlZWa1dkUGFscFZBTWRsNVVMNlZrYlZneHVvYWRQaFZKZHd0WG1xU3JraW91aDZnd1pXTWlqWHpIR19kVDJ5dDUzVTNqQ1dNQzBKb1ZRZGFteTd5TEUxMVpSTGtkVmp5S1RWcm1Lc2hCOGlDajJON3k2aXdGcUVlc1duSWdnZURhNzV5ZUZMQS1KZGUxWWJGQTI5Skt2QTZYQ0xNbVZ3dkdkT2NmWHBDVDZFNWM4?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-22",
       "title": "Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
@@ -93,23 +105,11 @@
       "title": "Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
       "summary": "Aktuelle Meldung von Investing.com Nigeria: Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Investing.com Nigeria",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOal9RVTU2Q3U3MkVvTFJ5VXk1SEFwUzNEMXAzS2libjZWNWpSQXVxRDA5aGJqaWFhVXVMS1h2WFFLV20ycUFWMlJ1VVJuclRQVWZHWUpzTEEtX0VLRWdTbzlFb1lkWHZRdi1EMjdRVWkzUlQ1blYwdVRmRDQ4WlFldGFiZmg2VkVrcjZaalRCWndNN0k3ZkNXQU44VmJFd3puc2JxNi1vbmdiYlBDSnVnN3ROVnFmWUhjaXRBZTVxSi0?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Samsung Reportedly Ramps 4nm Capacity For Memory Chips, Stepping Up Competition With SK Hynix, Micron",
-      "summary": "Aktuelle Meldung von Stocktwits: Samsung Reportedly Ramps 4nm Capacity For Memory Chips, Stepping Up Competition With SK Hynix, Micron",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Stocktwits",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNdzRJeUVLRG04eW15ZS1keGR3ancwT0U3S3dBVXFmRXB3LWtfWktSUEc2dmgxT2NmTUI4VHVOOWU1eVJpYlFBaExkZ2lHV0sxZjhsYXZlUkh2dDVSU1FYOTFzMGktWlVvZ1lYVnpUNWp5dFl1MEI5R1lQQ3FTemZaR2JqSENPMmgxajVlODhSN1IzYk1rallmZWZkTnFocE52LVp5bE9QNVl4WFVSRXg0VjNkOHdEZ0NVZ0tlX0pUbGpLc0l0a2ZDb09FenhCVUtoSGwyWDFRVEh0Q180SFpBMDdiMndocWl6dFlpeGotX2hzaGhHWVE?oc=5",
       "layer": "news"
     }
   ],
@@ -144,9 +144,21 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "76 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "77 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
+    {
+      "date": "2026-09-22",
+      "title": "CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
+      "summary": "Aktuelle Meldung von Wccftech: CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Wccftech",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcmVGcnZyLVVicFI3azE3Vklic3BIdVUxMUJEYmQzZjZkbUdpSS0yckJ4R2FUcjlFMFU1ejN6bGVaSnIwakZEYWhYMlRwUGoydzZETmFwY05DT2V4Mi1xajlrMlo0VkNVNXBfTVRBTGZKYklUMUJLRkxGalh6RXNqUEREd1BxX0RwaWFwaEI3OU9YYVVhTmIxbE9xSHd3N0o4d3dUTFYyTWN4dHRiNWZzd1dxVDVLMnRBU2xpMmRILUlkYzB2VkQ3ckdvZGdKZ9IB0wFBVV95cUxQUGVUbWxMaTdOOWowVVlnMjNyQTBhY3VkYzFvdTRhSlZWa1dkUGFscFZBTWRsNVVMNlZrYlZneHVvYWRQaFZKZHd0WG1xU3JraW91aDZnd1pXTWlqWHpIR19kVDJ5dDUzVTNqQ1dNQzBKb1ZRZGFteTd5TEUxMVpSTGtkVmp5S1RWcm1Lc2hCOGlDajJON3k2aXdGcUVlc1duSWdnZURhNzV5ZUZMQS1KZGUxWWJGQTI5Skt2QTZYQ0xNbVZ3dkdkT2NmWHBDVDZFNWM4?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-22",
       "title": "Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
@@ -164,30 +176,18 @@
       "title": "Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
       "summary": "Aktuelle Meldung von Investing.com Nigeria: Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Investing.com Nigeria",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOal9RVTU2Q3U3MkVvTFJ5VXk1SEFwUzNEMXAzS2libjZWNWpSQXVxRDA5aGJqaWFhVXVMS1h2WFFLV20ycUFWMlJ1VVJuclRQVWZHWUpzTEEtX0VLRWdTbzlFb1lkWHZRdi1EMjdRVWkzUlQ1blYwdVRmRDQ4WlFldGFiZmg2VkVrcjZaalRCWndNN0k3ZkNXQU44VmJFd3puc2JxNi1vbmdiYlBDSnVnN3ROVnFmWUhjaXRBZTVxSi0?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Samsung Reportedly Ramps 4nm Capacity For Memory Chips, Stepping Up Competition With SK Hynix, Micron",
-      "summary": "Aktuelle Meldung von Stocktwits: Samsung Reportedly Ramps 4nm Capacity For Memory Chips, Stepping Up Competition With SK Hynix, Micron",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Stocktwits",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNdzRJeUVLRG04eW15ZS1keGR3ancwT0U3S3dBVXFmRXB3LWtfWktSUEc2dmgxT2NmTUI4VHVOOWU1eVJpYlFBaExkZ2lHV0sxZjhsYXZlUkh2dDVSU1FYOTFzMGktWlVvZ1lYVnpUNWp5dFl1MEI5R1lQQ3FTemZaR2JqSENPMmgxajVlODhSN1IzYk1rallmZWZkTnFocE52LVp5bE9QNVl4WFVSRXg0VjNkOHdEZ0NVZ0tlX0pUbGpLc0l0a2ZDb09FenhCVUtoSGwyWDFRVEh0Q180SFpBMDdiMndocWl6dFlpeGotX2hzaGhHWVE?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-22T15:33:50.980Z",
+    "generatedAt": "2026-09-22T20:14:42.949Z",
     "count": 3,
-    "candidateCount": 591,
+    "candidateCount": 620,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -402,6 +402,18 @@
   "originalSignals": [
     {
       "date": "2026-09-22",
+      "title": "CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
+      "summary": "Aktuelle Meldung von Wccftech: CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Wccftech",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcmVGcnZyLVVicFI3azE3Vklic3BIdVUxMUJEYmQzZjZkbUdpSS0yckJ4R2FUcjlFMFU1ejN6bGVaSnIwakZEYWhYMlRwUGoydzZETmFwY05DT2V4Mi1xajlrMlo0VkNVNXBfTVRBTGZKYklUMUJLRkxGalh6RXNqUEREd1BxX0RwaWFwaEI3OU9YYVVhTmIxbE9xSHd3N0o4d3dUTFYyTWN4dHRiNWZzd1dxVDVLMnRBU2xpMmRILUlkYzB2VkQ3ckdvZGdKZ9IB0wFBVV95cUxQUGVUbWxMaTdOOWowVVlnMjNyQTBhY3VkYzFvdTRhSlZWa1dkUGFscFZBTWRsNVVMNlZrYlZneHVvYWRQaFZKZHd0WG1xU3JraW91aDZnd1pXTWlqWHpIR19kVDJ5dDUzVTNqQ1dNQzBKb1ZRZGFteTd5TEUxMVpSTGtkVmp5S1RWcm1Lc2hCOGlDajJON3k2aXdGcUVlc1duSWdnZURhNzV5ZUZMQS1KZGUxWWJGQTI5Skt2QTZYQ0xNbVZ3dkdkT2NmWHBDVDZFNWM4?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-22",
       "title": "Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
       "summary": "Aktuelle Meldung von 富途牛牛: Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
@@ -417,23 +429,11 @@
       "title": "Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
       "summary": "Aktuelle Meldung von Investing.com Nigeria: Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Investing.com Nigeria",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOal9RVTU2Q3U3MkVvTFJ5VXk1SEFwUzNEMXAzS2libjZWNWpSQXVxRDA5aGJqaWFhVXVMS1h2WFFLV20ycUFWMlJ1VVJuclRQVWZHWUpzTEEtX0VLRWdTbzlFb1lkWHZRdi1EMjdRVWkzUlQ1blYwdVRmRDQ4WlFldGFiZmg2VkVrcjZaalRCWndNN0k3ZkNXQU44VmJFd3puc2JxNi1vbmdiYlBDSnVnN3ROVnFmWUhjaXRBZTVxSi0?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Samsung Reportedly Ramps 4nm Capacity For Memory Chips, Stepping Up Competition With SK Hynix, Micron",
-      "summary": "Aktuelle Meldung von Stocktwits: Samsung Reportedly Ramps 4nm Capacity For Memory Chips, Stepping Up Competition With SK Hynix, Micron",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Stocktwits",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNdzRJeUVLRG04eW15ZS1keGR3ancwT0U3S3dBVXFmRXB3LWtfWktSUEc2dmgxT2NmTUI4VHVOOWU1eVJpYlFBaExkZ2lHV0sxZjhsYXZlUkh2dDVSU1FYOTFzMGktWlVvZ1lYVnpUNWp5dFl1MEI5R1lQQ3FTemZaR2JqSENPMmgxajVlODhSN1IzYk1rallmZWZkTnFocE52LVp5bE9QNVl4WFVSRXg0VjNkOHdEZ0NVZ0tlX0pUbGpLc0l0a2ZDb09FenhCVUtoSGwyWDFRVEh0Q180SFpBMDdiMndocWl6dFlpeGotX2hzaGhHWVE?oc=5",
       "layer": "news"
     }
   ]

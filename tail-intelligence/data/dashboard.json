@@ -7,20 +7,20 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-22T15:33:48.931Z",
-    "inboxUpdatedAt": "2026-09-22T15:30:53.671Z",
+    "checkedAt": "2026-09-22T20:14:41.197Z",
+    "inboxUpdatedAt": "2026-09-22T20:11:26.317Z",
     "status": "pending",
-    "candidates": 115,
-    "reviewed": 40,
+    "candidates": 118,
+    "reviewed": 42,
     "accepted": 4,
-    "watchlist": 35,
+    "watchlist": 37,
     "rejected": 1,
-    "pending": 76,
-    "oldestPendingAt": "2026-09-18T11:49:38.000Z",
-    "lastCompletedReviewAt": "2026-09-22T15:33:48.896Z",
+    "pending": 77,
+    "oldestPendingAt": "2026-09-18T12:01:13.000Z",
+    "lastCompletedReviewAt": "2026-09-22T20:14:41.161Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 300,
+    "rawCandidates": 305,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
@@ -28,8 +28,8 @@
       "groupedDuplicates": 17
     },
     "lastRun": {
-      "startedAt": "2026-09-22T15:32:44.237Z",
-      "completedAt": "2026-09-22T15:33:48.932Z",
+      "startedAt": "2026-09-22T20:13:18.922Z",
+      "completedAt": "2026-09-22T20:14:41.198Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 64,
+      "durationSeconds": 82,
       "budgetExhausted": false
     }
   },
@@ -92,13 +92,13 @@
     }
   ],
   "sourceDataAsOf": "2026-09-21",
-  "knowledgeBaseSyncedAt": "2026-09-22T15:33:49.093Z",
+  "knowledgeBaseSyncedAt": "2026-09-22T20:14:41.365Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-09-22T15:33:50.764Z",
-  "lastForecastRun": "2026-09-22T15:33:50.764Z",
-  "newlyProcessedArticles": 176,
+  "lastSuccessfulUpdate": "2026-09-22T20:14:42.737Z",
+  "lastForecastRun": "2026-09-22T20:14:42.737Z",
+  "newlyProcessedArticles": 126,
   "totalArticles": 187,
   "articleCount": 187,
   "processStatus": "warning",
@@ -154,16 +154,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 76 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 77 Kandidaten ausstehend.",
     "12 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-22T15:30:53.671Z",
-    "newItems": 176,
-    "totalItems": 6321,
+    "updatedAt": "2026-09-22T20:11:26.317Z",
+    "newItems": 126,
+    "totalItems": 6447,
     "duplicateItems": 300,
-    "relevantItems": 2342,
+    "relevantItems": 2375,
     "sourceErrors": []
   },
   "pipeline": {
@@ -173,7 +173,7 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "40 geprüft · 76 offen · 4 aufgenommen"
+        "detail": "42 geprüft · 77 offen · 4 aufgenommen"
       },
       {
         "id": "knowledge_base",
@@ -185,7 +185,7 @@
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "6321 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "6447 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -974,7 +974,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-09-22T15:33:50.758Z"
+      "lastUpdated": "2026-09-22T20:14:42.731Z"
     },
     {
       "id": "hbm",
@@ -1159,7 +1159,7 @@
         "S-AUTO-965c715ae023d058ae2744d3",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-22T15:33:50.759Z"
+      "lastUpdated": "2026-09-22T20:14:42.732Z"
     },
     {
       "id": "nand",
@@ -1245,7 +1245,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-22T15:33:50.759Z"
+      "lastUpdated": "2026-09-22T20:14:42.732Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1326,7 +1326,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-22T15:33:50.759Z"
+      "lastUpdated": "2026-09-22T20:14:42.732Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1628,7 +1628,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-22T15:33:50.759Z"
+      "lastUpdated": "2026-09-22T20:14:42.732Z"
     }
   ],
   "indexCalculation": {

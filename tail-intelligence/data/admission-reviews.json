@@ -45331,6 +45331,137 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0596ce76635ad385006ab29fc2885087d0b2951371d15344d5"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Reuters: CXMT plant NAND‑Forschungs‑/R&D‑Linie in Beijing; YMTC berichtet, DRAM‑Samples zu testen",
+      "fact": "Reuters meldete am 2026-09-18, dass CXMT (ChangXin) plant, in seiner neuen Beijing‑Anlage eine Forschungs‑/R&D‑Produktionslinie für NAND‑Flash einzurichten; frühere Berichte dokumentieren, dass YMTC Low‑Power‑DRAM‑Proben an Kunden verschickte (keine qualifizierten Serienlieferungen ausgewiesen).",
+      "placement": "China (Beijing / nationale Memory‑Wertschöpfung); Produkt‑Layer: DRAM ↔ NAND (Fabs/R&D‑Line); Horizont: Angekündigte R&D‑Linie (near‑term), keine qualifizierte Massenlieferung nachgewiesen (medium‑horizon).",
+      "mechanism": "Wenn CXMT tatsächlich in NAND hochskaliert und YMTC in DRAM skaliert, könnten sich die chinesischen Hersteller von spezialisierten Nischen zu integrierten Memory‑Anbietern entwickeln, was mittelfristig (2027–2028) die globale Bit‑Angebotsstruktur verändert und Preis‑/Allokationsdynamiken in DRAM und NAND beeinflussen könnte. Aktuell ist das aber eine Ankündigung ohne quantifizierten Durchsatz oder Shipments; der kausale Pfad zur echten Verfügbarkeit (qualified shipments, lead‑time, fill‑rate) ist offen und erfordert Yield‑/Qualification‑Messgrößen.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Potentiell vermindert CXMTs NAND‑Ambition langfristig das Risiko eines anhaltenden NAND‑Engpasses (falsifier für ein 2028er Oversupply‑Falsifier), gleichzeitig könnte YMTCs DRAM‑Vorstoß den erwarteten Server‑DRAM‑Knappheitspfad verändern. Der Einfluss ist derzeit unscharf; keine direkte Index‑Evidenz vorliegend.",
+      "falsifier": "Bis 2027-12-31: CXMT liefert qualifizierte 3D‑NAND‑Shipments an OEMs (erhobene, verifizierbare Auslieferungsmenge in GB oder Stück) ODER YMTC liefert verifizierte, qualifizierte DRAM‑Shipments (GB/Month oder Wafer‑Output). Wenn bis 2027-12-31 keine qualifizierten Serien‑Shipments nachgewiesen sind, bleibt die Meldung nur eine R&D/Plan‑Ankündigung und hat keine belegte Verfügbarkeitswirkung.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "CXMT‑Ankündigung in NAND‑Richtung ist neu gegenüber Baseline (vorher CXMT primär DRAM). YMTC‑DRAM‑Samples waren bereits zuvor berichtet (kontextuell).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 6,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tomshardware.com/pc-components/ssds/chinas-premiere-memory-maker-cxmt-eyes-producing-flash-for-ssds-report-claims-3d-nand-research-and-development-line-rumored-for-its-second-manufacturing-facility-near-beijing",
+          "label": "Tom's Hardware – Kontext/weiterführende Berichterstattung",
+          "kind": "secondary",
+          "supports": "Fasst Reuters‑Bericht zusammen und betont, dass die R&D‑Linie von CXMT kein klar definiertes Output‑/Produktionsziel nennt (opposing nuance)."
+        }
+      ],
+      "reason": "Primärquelle (Reuters, 2026‑09‑18) bestätigt, dass CXMT offiziell eine NAND‑R&D‑Linie plant — das ist relevant und neu gegenüber der Baseline. Allerdings fehlt im Bericht eine gemessene, qualifizierte Output‑Angabe (Wafer/Month, GB shipped, Lead‑time, Fill‑Rate). Baseline‑Evidence enthält bereits enge Zusammenhänge zwischen CXMT/YMTC und Marktanteilen, sowie frühere Hinweise auf YMTC‑DRAM‑Samples; das macht die Meldung potentiell redundant als bloße Wettbewerbs‑Narrative, aber sie bleibt relevant. Wegen fehlender, direkten Messgrößen zur Verfügbarkeitswirkung (keine qualifizierten Shipments oder beobachtete Lead‑Time‑Änderung) erfüllt die Meldung nicht die Admission‑Anforderungen für eine ACCEPTED Aufnahme mit VERIFIED DATA. Ich setze daher WATCHLIST und fordere überprüfbare Shipment‑/Qualification‑Belege bis zum Falsifier‑Datum. Gegenbelege/Unsicherheiten: mehrere Follow‑ups betonen, dass es sich um R&D/Pläne ohne quantifizierten Output handelt; Yield/Qualification‑Risiken werden in der Branche breit diskutiert.",
+      "candidateId": "efffb42f1af6ac3a0143",
+      "candidateKey": "fef04d433fda301c65dd9572",
+      "reviewedAt": "2026-09-22T20:14:14.287Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0168f300e4334981006ab2e160c8e087d29beb74ec6c2fc03e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron Technology (MU) Stock Climbs As Chinese Rival CXMT Plans NAND Flash Expansion",
+      "fact": "Berichte (u. a. Reuters, wiedergegeben in Blockonomi) melden, dass CXMT (ChangXin Memory Technologies) plant, an seinem neuen Standort in Beijing eine Forschungs‑/Entwicklungs‑Produktionslinie für NAND‑Flash (3D‑NAND) aufzubauen und so in das NAND‑/SSD‑Segment zu expandieren.",
+      "placement": "Geographie: China (Beijing). Domäne/Layer: NAND/enterprise_ssd — R&D/Frühe Produktionslinie (nicht nachgewiesene qualifizierte Shipments). Horizont: kurzfristig — Ankündigung/Plan (2026‑09‑18), mögliche Produktionswirkung unbestätigt.",
+      "mechanism": "Wenn CXMT eine funktionale R&D-/Pilotlinie in NAND erfolgreich validiert und skaliert, würde dies den globalen NAND‑Bit‑Ausbau erhöhen und langfristig den verfügbaren qualifizierten NAND‑Output steigern. Aktuell ist der Mechanismus jedoch ein Plan/Ankündigung; kein Nachweis für qualifizierte Shipments, Lead‑Time‑Verbesserung oder Preiswirkung.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Potentiell mildernder Einfluss auf die Basisaussage 'Memory bleibt 2027 knapp' — nur falls CXMT binnen einem klar abgrenzbaren Zeitfenster (siehe Falsifier) qualifizierte Produktion und messbare Bit‑Supply liefert. Zur Zeit unbestätigt.",
+      "falsifier": "Wenn bis 2026-12-31 keine offizielle CXMT‑Ankündigung mit dokumentierten qualifizierten NAND‑Shipments, nachprüfbaren Lead‑Time‑Verbesserungen oder bestätigten Kapazitätszahlen (Wafer/Monat bzw. GB‑Bits/Quartal) vorliegt, dann falsifiziert die beobachtete Ankündigung die Lieferungseffekt‑Hypothese.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "CXMT erweitert off‑label von DRAM zu NAND‑R&D; Ankündigung ist neu im Timeline‑Kontext, aber folgt längerfristigen Signals zur chinesischen Memory‑Expansion.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://blockonomi.com/micron-technology-mu-stock-climbs-as-chinese-rival-cxmt-plans-nand-flash-expansion/",
+          "label": "Blockonomi (Syndicated story referencing Reuters)",
+          "kind": "secondary",
+          "supports": "Berichtet die Schlagzeile und zitiert Reuters‑Bericht, datiert 2026‑09‑18, über CXMT‑Pläne für NAND‑R&D/Produktionslinie."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung fasst korrekt ein aktuelles Medien‑Signal (CXMT‑Plan zur NAND‑Erweiterung, berichtet 2026‑09‑18). Bei der TAIL‑Aufnahmeprüfung fehlen jedoch die für 'admission/VERIFIED DATA' erforderlichen primären, quantitativen Nachweise: es gibt keine direkte Bestätigung von CXMT über eine abgeschlossene qualifizierte Produktions‑/Shipment‑Phase, keine beobachteten Lead‑Time‑ oder Fill‑Rate‑Messungen im NAND/Enterprise‑SSD‑Markt und keine klaren, datierten Kapazitätsangaben (Wafer/Monat oder GB‑Bits). Ohne solche direkten Messgrößen bleibt dieses Signal ein plausibler, aber unbewiesener Plan/Ankündigung — deshalb Watchlist. \n\nGegenbelege/Adversarial Check: mehrere Quellen (Reuters, MarketScreener, Investing.com u. a.) wiederholen dieselbe namens‑und modus‑abhängige Quelle; es fehlt ein CXMT‑Pressrelease, amtliche Produktionsdaten oder unabhängige Lieferdaten, die den behaupteten Produktions‑Impact bestätigen. Die Meldung könnte Marktbewegung (z. B. MU‑Kurs) erklären, ist aber kein Nachweis für 'verified_supply_relief' oder für eine unmittelbar messbare Verfügbarkeitserhöhung. Aufnahme auf Watchlist empfiehlt Überprüfung bis 2026‑12‑31 auf: offizielle CXMT‑Kommunikation mit konkreten Kapazitätszahlen oder Dritt‑Metriken (qualifizierte Shipments, Lead Times, Fill Rates) — nur dann ist ein Upgrade auf VERIFIED DATA möglich.",
+      "candidateId": "d80fa87fe29745085ac1",
+      "candidateKey": "f58552254ebccd5f504750d8",
+      "reviewedAt": "2026-09-22T20:14:41.161Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d940aed0dc86105006ab2e196763c87d28f97275e49cd0e63"
     }
   ]
 }
