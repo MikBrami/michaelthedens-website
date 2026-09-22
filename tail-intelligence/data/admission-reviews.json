@@ -44915,6 +44915,150 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ab7e42f06ad29ab006ab24eb77ef087d189b222625b2cbfe8"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung reported ramp von 4nm‑Kapazität für Memory‑Base‑Dies (HBM4) — nicht primär verifiziert",
+      "fact": "Berichte deuten darauf hin, dass Samsung seine 4nm‑Foundry‑Kapazität für Base‑Dies von HBM4 zunehmend nutzt und eine Ramp‑Up‑Phase für 4nm‑Memory‑Produkte fährt.",
+      "placement": "Samsung Foundry (Pyeongtaek Campus), 4nm Base‑Dies für HBM4; geografisch Südkorea; Domäne: HBM/Server‑Memory; kurzfristiger Horizont: Q4 2026–Q1 2027.",
+      "mechanism": "Interne Umverteilung/Reservierung von 4nm‑Foundry‑Wafern zur Fertigung von HBM4‑Base‑Dies (Logik‑Base‑Die) führt zu verringerter externer Foundry‑Verfügbarkeit und schnelleren HBM4‑Shipments seit Samsung; dadurch potenzielle Verringerung der für andere Foundry‑Kunden verfügbaren 4nm‑Kapazität und erhöhter Wettbewerb um HBM‑Supply gegenüber SK hynix und Micron.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Signal untermauert das Risiko, dass SK hynix‑zentrierte HBM4‑Rampings sich verzögern oder Marktanteile an Samsung verlieren; wirkt in Richtung 'capacity_lock' / 'negative_supply' für andere Foundry‑Kunden und erhöht Knappheitsrisiken im HBM‑Layer.",
+      "falsifier": "Bis 2026-10-31 veröffentlicht Samsung ein offizielles Stückzahl‑(qualified wafers/month) oder Umsatz‑Statement, das entweder (A) eine bestätigte qualifizierte 4nm‑HBM‑Shipments‑Rate ≥ 15,000 Wafer/Monat (falsifiziert die Unsicherheit und würde die Meldung verifizieren) ODER (B) Samsung dokumentiert, dass weniger als 5,000 qualifizierte HBM‑4nm‑Wafer/Monat produziert wurden (widerlegt die behauptete breitenwirksame Kapazitätsumverteilung).",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-22",
+      "novelty": "Moderat — mehrere Industrieberichte hatten ähnliche Behauptungen bereits Anfang bis Mitte September 2026, aber keine öffentliche Samsung‑Stückzahlangabe liegt vor.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 45,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_conference_eng.pdf",
+          "label": "Samsung IR – 1Q26 Konferenz/Interim (Erwähnung 4nm Ramp für AI/HPC‑Produkte)",
+          "kind": "primary",
+          "supports": "Samsung erwähnt vollständige Ramp/Volumenaufbau von 4nm‑Produkten und Targeting von AI/HPC‑Anwendungen, aber enthält keine exakten qualifizierten Wafer‑Stückzahlen für HBM4."
+        },
+        {
+          "url": "https://www.mt.co.kr/en/industry/2026/09/21/2026092114333425215",
+          "label": "MoneyToday / koreanische Branchenberichte (Zusammenfassung Sep 21, 2026)",
+          "kind": "secondary",
+          "supports": "Bericht, dass Samsung die 4nm‑Produktion in vollem Betrieb hat und 4nm‑Kapazität für HBM4 erhöht; nennt Pyeongtaek‑Campus und mögliche Kapazitätserweiterungen."
+        },
+        {
+          "url": "https://www.digitimes.com/tag/samsung/00144.html",
+          "label": "Digitimes / Taiwan‑Supply‑Chain‑Berichte (mehrere Artikel Anfang–Mitte Sep 2026)",
+          "kind": "secondary",
+          "supports": "Mehrere Branchennachrichten, welche die Umverteilung eines signifikanten Anteils der 4nm‑Kapazität zu HBM4 base dies melden; liefern Zahlenbereiche in Fachberichten (nicht von Samsung bestätigt)."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung fasst eine laufende Berichterstattung zusammen, wonach Samsung seine 4nm‑Foundryressourcen verstärkt für HBM4‑Base‑Dies nutzt und damit die Konkurrenz zu SK hynix und Micron verschärft. Primäre, veröffentlichte Samsung‑Quellen (Investor/IR‑Material) bestätigen das strategische Ziel, 4nm‑Produkte für AI/HPC zu rampen, liefern aber keine direkten, quantitativen Primärmessungen (z. B. qualifizierte Wafer/Monat oder bestätigte HBM4‑Shipment‑Mengen), die zur Erfüllung der TAIL‑Aufnahmekriterien nötig wären (atomare, datierte Messung mit Einheiten). Externe Branchennachrichten (Digitimes, MoneyToday, Tech press) berichten konsistent über eine signifikante Umverteilung/Reservierung der 4nm‑Linien für HBM4; diese sind jedoch sekundäre Quellen mit teils widersprüchlichen Zahlenangaben. ([images.samsung.com](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_conference_eng.pdf?utm_source=openai))  \nGegenbelege: Es fehlen offizielle Samsung‑Stückzahlangaben oder verifizierbare qualifizierte Shipment‑/Lead‑Time‑Metriken; einige Berichte weisen auf inkonsistente Yield‑/Stückzahlangaben und mögliche Produktionsrestriktionen. Wegen dieses fehlenden Primärnachweises kann die Meldung nicht als VERIFIED DATA aufgenommen werden. Die passende Aktion ist 'watchlist' bis ein klarer, quantitativer Primärnachweis (z. B. Samsung‑Statement mit qualifizierten Wafer‑/Shipment‑Zahlen oder offizielle Q‑Reporting‑Angabe zu HBM4‑Umsätzen) vorliegt. \nEmpfohlene nächste Schritte: (1) Überprüfen, ob Samsung in den kommenden Quartals‑/IR‑Publikationen (oder in einer Ad‑hoc‑Pressemitteilung) explizite qualifizierte Wafer/Monat‑Zahlen oder HBM4‑Umsatzzahlen publiziert (Zieltermin für nächste Review: 2026-10-31). (2) Suchen nach bestätigten Lieferverträgen/Abnahmebestätigungen mit Kunden (z. B. Nvidia) oder offiziellen Shipments/Qualified Shipments (mit Datum und Menge). \nBewertung gegen die TAIL‑Rubrik: Quellenqualität ist gut bis mittel (Samsung IR ist zuverlässig, Branchennachrichten sind sekundär); Neuheitswert moderat (Berichterstattung mehrfach seit Anfang September 2026); Relevanz zum Baseline‑Thesis (HBM/Server‑DRAM Knappheit) hoch; Impact auf Forecasts messbar aber nicht quantifiziert; Falsifizierbarkeit vorhanden (siehe oben) — deshalb 'watchlist'. ([images.samsung.com](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_conference_eng.pdf?utm_source=openai))",
+      "candidateId": "da9d1a98cd6587eb9195",
+      "candidateKey": "5f1230a0333885e5026d4f18",
+      "reviewedAt": "2026-09-22T09:49:58.108Z",
+      "priorityScore": 79,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05ead36f77a79c98006ab24f2c3a6c87d09c7a53b97ced358e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT erwägt NAND‑F&E‑Linie; potenzieller Druck auf Samsung / SK hynix, aber keine qualifizierten Shipments nachgewiesen",
+      "fact": "Reuters‑Bericht (2026‑09‑18) – CXMT (ChangXin Memory Technologies) plant laut zwei Personen mit Kenntnis der Angelegenheit eine Forschungs‑und‑Entwicklungs‑Produktionslinie für 3D‑NAND an einer neuen Anlage in Beijing. (vgl. Reuters / Sekundärberichterstattung: TrendForce, HuaweiCentral).",
+      "placement": "Geografie: Beijing, China; Domain/Layer: NAND‑Flash Fertigung (R&D‑Produktionslinie) — keine bestätigte Serienproduktion oder qualifizierte NAND‑Shipments zum Berichtstermin.",
+      "mechanism": "Erweiterung der Produktpalette von DRAM zu NAND (R&D‑Linie) erhöht mittelfristig die verfügbare Bit‑Kapazität in China und könnte nach Markteintritt Preisdruck auf etablierte Anbieter (Samsung, SK hynix, Micron) erzeugen — insbesondere im Commodity/Consumer‑NAND‑Segment; Wirkpfad ist Wettbewerbsangebot → Marktanteilsgewinn in China → Preisdruck. Der aktuelle Bericht belegt aber nur Planungs-/R&D‑Absicht, nicht qualifizierte Output‑Änderung.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signal liefert zusätzliche Basis für ein erhöhtes Abwärtsrisiko bei Enterprise‑/Commodity‑NAND‑Preisen (enterprise_ssd outlook). Wirkung ist mittel‑ bis langfristig und hängt von Qualifikation/Shipments.",
+      "falsifier": "Bis 2027‑06‑30: Keine öffentliche Bestätigung von CXMT über qualifizierte NAND‑Shipments oder verifizierbare Produktionskapazität (z. B. bestätigte >0 wafers/month NAND‑Shipments oder ein von Kunden signiertes NAND‑LTA). Wenn CXMT bis 2027‑06‑30 qualifizierte NAND‑Shipments oder ein LTA (mit Mengenangabe) nachweist, reduziert das die Unsicherheit und verschiebt den Eintrag von Watchlist zu Accepted.",
+      "nextReview": "2027-07-01",
+      "eventDate": "2026-09-18",
+      "novelty": "CXMT–NAND‑R&D‑Bericht ist neu gegenüber Baseline; bisherige Baseline dokumentiert hauptsächlich DRAM‑/HBM‑Expansion (CXMT DRAM‑IPO, Produktionspläne) und YMTC‑NAND, nicht bestätigte CXMT‑NAND‑Shipments.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_down",
+      "severity": 35,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.huaweicentral.com/cxmt-to-increase-pressure-on-samsung-sk-hynix-with-new-nand-memory-move/amp/",
+          "label": "HuaweiCentral – Zusammenfassung / Sekundärbericht (2026‑09‑18).",
+          "kind": "secondary",
+          "supports": "Signalisiert Marktreaktionen / Interpretationen (Druck auf Samsung/SK hynix) basierend auf Reuters/andere Berichte."
+        }
+      ],
+      "reason": "Der übermittelte Kandidat berichtet korrekt über eine wiederholt zitierten Medienbericht (Reuters) vom 2026‑09‑18, wonach CXMT eine R&D‑NAND‑Linie in Beijing prüft. Das ist relevant für die OUTLOOK‑Einschätzung zu Enterprise‑SSD/NAND‑Preisen, liefert aber keine direkten, datierten Messungen von qualifiziertem Output, Lieferungen oder vertraglich gesicherten Volumina (erforderlich für 'VERIFIED DATA' oder direkte Indexwirkung). Ohne bestätigte Shipments, LTA‑Mengen oder Lead‑Time‑Änderungen bleibt die Aussage prognostisch/planbasiert und anfällig für Planänderungen oder technische/Yield‑Probleme. Deshalb wird der Kandidat auf Watchlist gesetzt; die Falsifizierbarkeit ist gegeben (konkreter, überprüfbarer Liefer‑/LTA‑Nachweis bis 2027‑06‑30). Opposing evidence: Baseline enthält mehrere Items (z. B. Kioxia/Micron/Samsung‑Ankündigungen, HBF/advanced packaging Engpässe, YMTC Bit‑Shipments), die zeigen, dass kurzfristige Marktanteilsverschiebungen und Preiswirkung von CXMT allein unwahrscheinlich sind, solange keine qualifizierten Shipments vorliegen. IndexImpact bleibt false, weil keine metrische Messung des Produktausstoßes oder der Preise aus primären Quellen vorliegt.",
+      "candidateId": "52e2397150a5881bbbaa",
+      "candidateKey": "72fe2624ac6d79f95664e211",
+      "reviewedAt": "2026-09-22T09:50:23.048Z",
+      "priorityScore": 76,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02144286a7dcd60e006ab24f4663e487d082b21bdb4132dfd4"
     }
   ]
 }
