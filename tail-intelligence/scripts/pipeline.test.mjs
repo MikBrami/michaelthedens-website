@@ -26,6 +26,17 @@ test('Triage archives explicit investment opinion but preserves operating news',
  const items=[{...item,id:'a',title:'Is Micron stock the next Nvidia? Buy now'},{...item,id:'b',title:'Micron stock rises after earnings report details capacity expansion'}];
  const t=triageCandidates(items);assert.equal(t.archivedOpinions,1);assert.equal(t.representatives[0].id,'b');
 });
+test('Free prefilter removes noise and clusters paraphrased cross-publisher duplicates',()=>{
+ const base={...item,id:'m1',relevance_score:92,title:'Micron raises server DRAM contract prices 20 percent as allocation tightens',summary:'Supplier pricing and allocation update for RDIMM customers.',source_name:'Source A'};
+ const duplicate={...base,id:'m2',title:'Server DRAM prices jump 20 percent as Micron tightens RDIMM supply',summary:'Micron contract pricing and allocation are tighter.',source_name:'Source B'};
+ const generic={...item,id:'n1',relevance_score:78,title:'Nvidia weekly news roundup',summary:'A collection of product and market headlines.'};
+ const weak={...item,id:'n2',relevance_score:70,title:'Samsung discusses AI chips',summary:'General company commentary.'};
+ const t=triageCandidates([base,duplicate,generic,weak]);
+ assert.equal(t.groupedDuplicates,1);
+ assert.equal(t.archivedGenericNews,1);
+ assert.equal(t.archivedLowRelevance,1);
+ assert.equal(t.representatives.length,1);
+});
 test('Headline grouping preserves opposing direction and distinct quantities',()=>{
  const base={...item,title:'Samsung increases qualified HBM shipments to Nvidia by 20 percent'};
  const same={...base,id:'b',title:base.title+' — News'};
