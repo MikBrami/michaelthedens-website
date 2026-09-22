@@ -13,7 +13,8 @@ export function eligibleCandidates(items, asOf) {
   return items.filter(item => {
     const date = Date.parse(item.published_at || '');
     const title = String(item.title || '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
-    if (!item.id || !title || seen.has(title) || item.relevance_score < 65 || !Number.isFinite(date) || date < cutoff || date > Date.parse(asOf)) return false;
+    const minimumScore = item.source_id === 'manual-tail-inbox' ? 0 : 72;
+    if (!item.id || !title || seen.has(title) || Number(item.relevance_score || 0) < minimumScore || !Number.isFinite(date) || date < cutoff || date > Date.parse(asOf)) return false;
     seen.add(title); return true;
   }).sort((a, b) => b.relevance_score - a.relevance_score || a.published_at.localeCompare(b.published_at));
 }
