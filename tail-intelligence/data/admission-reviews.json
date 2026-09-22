@@ -44771,6 +44771,150 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_059316862ab4d77a006ab1dbdd5b1887d1aa271aef6298891f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: „Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says“ (Investing.com / Google News‑RSS)",
+      "fact": "Berichtet wird, Bernstein habe offenbar für August/3Q26 höhere HBM‑Umsatzprognosen für Samsung als für SK hynix (implizit: Samsung HBM‑Wachstum/Revenue > SK hynix im betrachteten Zeitfenster).",
+      "placement": "Globaler HBM‑Markt; Unternehmensvergleich Samsung vs SK hynix; kurzfristige (August / 3Q2026) Umsatz-/Shipments‑Fenster.",
+      "mechanism": "Analysten‑Auswertung (Bernstein) basierend auf südkoreanischen Exportdaten und firmenspezifischer HBM‑Bit/Revenue‑Zuordnung; implizierte Kanalwirkung: Samsung zeigt laut Bernstein eine stärkere HBM‑Revenue‑Momentum in dem betrachteten Quartal, was Marktanteile und ASP‑Dynamik verschiebt.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Lieferbarer Primärnachweis (Bernstein Research Note oder Bernstein‑Direktzitat mit quantifizierten HBM‑Umsatz-/Shipments‑Zahlen oder Samsung/ SK‑Quartalsangaben), datiert und mit klaren Einheiten (US$ oder GB) veröffentlicht bis 2026-09-29. Falls Bernstein‑Primärquelle nicht verfügbar ist, falsifiziert: eindeutiges Bernstein‑Widerlegen oder direkte Samsung/SK‑Ergebnisangaben, die SK‑hynix in HBM‑Revenue deutlich über Samsung ausweisen (mit Quartalszahlen) bis 2026-09-29.",
+      "nextReview": "2026-09-29",
+      "eventDate": "2026-09-22",
+      "novelty": "Gering bis moderat — die Debatte über HBM‑Momentum zwischen Samsung und SK hynix ist seit Juli/August 2026 öffentlich (mehrere Research‑Notizen und Medienberichte).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/bernstein-lifts-price-targets-on-memory-stocks-to-reflect-higher-hbm-prices-4752370",
+          "label": "Investing.com – Bericht zu Bernstein / HBM (Medienbericht über Bernstein‑Analyse)",
+          "kind": "secondary",
+          "supports": "Investing.com Artikel berichtet, Bernstein habe Research‑Analysen veröffentlicht, die Samsung im HBM‑Momentum hervorheben (Publikationszeitraum: August 2026). Der Artikel zitiert keine vollständige Bernstein‑Primärnote mit den zugrunde liegenden quantitativen Zahlen."
+        },
+        {
+          "url": "https://www.xxquant.com/en/institution/institutional-research/78f5eff6256e66e837495a16a48cf759",
+          "label": "xxQuant / Reposting interpretation of Bernstein note (summary) — quantifiziert Bernstein‑projection: Samsung ~US$12B 3Q26 HBM vs SK hynix ~US$5.6B (interpreted)",
+          "kind": "secondary",
+          "supports": "Dreitparteien‑Zusammenfassung gibt konkrete Zahlen, die die behauptete Richtung (Samsung > SK hynix HBM revenue) stützen; jedoch ist dies keine Bernstein‑Originalnote."
+        }
+      ],
+      "reason": "Die Inbox‑Meldung referenziert eine Investing.com‑Coverage, die wiederum Bernstein als Quelle nennt. Für eine Aufnahme (Admit) ist laut TAIL‑Rubrik ein Primärnachweis (Bernstein‑Research‑Note oder ein direktes Bernstein‑Zitat mit klaren, datierten Zahlen/Einheiten) erforderlich. Die vorliegenden Sekundärquellen (Investing.com und Reposts/Interpretationen) plausibilisieren die Richtung, liefern aber keine verifizierbare Primärquelle mit den mindestens geforderten atomaren Einheiten (z. B. US$ HBM‑Revenue oder GB/wafer‑Shipments für August/3Q26) und keine explizite Benennung der räumlichen/produktbezogenen Platzierung (welche HBM‑SKUs, Regionen, oder ob Revenue = recognized sales vs. shipment proxies). Außerdem fehlt ein verknüpfter predictionId aus dem gegebenen Forecast‑Set, ein konkreter Mechanismus für Marktwirkung (z.B. wie viel ASP‑Anstieg oder Market‑share‑Verschiebung) und ein datierter, überprüfbarer Falsifier. Gegenbelege / Unsicherheiten bestehen: mehrere Research‑Notizen/Medienberichte zeigen divergierende Einschätzungen (einige Aussagen heben SK hynix‑Stärke oder hohe SK‑HBM‑Kapazität hervor), weshalb die Richtung nicht eindeutig primärbestätigt ist. Daher entspricht die Evidenzlage dem Watchlist‑Status: relevant, potenziell signifikant, aber nicht primär verifiziert und nicht ausreichend falsifizierbar mit den vorliegenden Quellen.\n\nBenötigte fehlende Evidenz zur Aufnahme (Admit):\n- Bernstein‑Primärnote (PDF oder offizielles Research‑Release) mit datierter Quantifizierung (z. B. \"Bernstein estimate: Samsung HBM revenue US$X for 3Q26; SK hynix US$Y for 3Q26\"), oder ein direktes Bernstein‑Zitat in einem qualitativ hochwertigen Medium, datiert und mit Zahlen/Einheiten.\n- Falls Bernstein‑Note nicht verfügbar: direkte Samsung oder SK hynix Quartalsangaben, die HBM‑Revenue/Shipments für August/3Q26 mit eindeutigen Einheiten dokumentieren und die Richtung bestätigen oder widerlegen.\n- Ein klarer Falsifier‑Test (siehe oben) mit Deadline 2026-09-29.\n\nAuf Basis der aktuellen Inbox und der durchsuchten Sekundärquellen ist die Meldung wichtig für die TAIL‑These (HBM‑Knappheit / Marktanteilsverschiebung) — aber die Prüfanforderungen für Verified Data sind noch nicht erfüllt. Deshalb: watchlist und erneute Prüfung geplant zum 2026-09-29, sofern Primärdokumente geliefert werden oder öffentlich werden.\n\nGegenindikatoren / Opposing evidence (Kurz):\n- Berichte und Firmenmeldungen seit August 2026 zeigen, dass SK hynix in einigen Metriken (z. B. frühere Massenproduktionserfolge, Yield‑Probleme bei Wettbewerbern) Stärke zeigt — das schafft Unsicherheit in einer einseitigen Behauptung ohne Primärzahlen. \n- Einige Marktzusammenfassungen (z. B. andere Research‑Posts) legen nahe, dass Bit‑Share‑Prognosen differieren (manche erwarten SK‑Stärke), weshalb eine einzelne Sekundärmeldung nicht ausreicht.\n\nEmpfohlene nächste Schritte (falls Sie die Inbox‑Behauptung verfolgen möchten):\n1) Beschaffen Sie die Bernstein‑Primärnote oder ein direktes Bernstein‑Zitat mit Zahlen.  \n2) Falls verfügbar, liefern Sie die exakten Samsung/SK‑Quartals‑HBM‑Umsatz‑ oder Shipment‑Zahlen.  \n3) Wenn Sie möchten, kann ich bis zu zwei Web‑Anfragen verwenden, um gezielt nach Bernsteins Primärnote oder einem offiziellen Bernstein‑Zitat zu suchen (und anschließend die Aufnahmeentscheidung zu aktualisieren).",
+      "candidateId": "9237bbcd9bee32bfeaf0",
+      "candidateKey": "d088e267f3cd1c542c33a7f6",
+      "reviewedAt": "2026-09-22T09:47:35.356Z",
+      "priorityScore": 57,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0843f334595fc97c006ab24e9415a087d188e71dba43327943"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK Hynix/Solidigm prüft US‑NAND‑Fabrik (gemeldete Reuters‑Quelle)",
+      "fact": "Bericht (zitiert als \"SEOUL/NEW YORK, 2026-09-18 (Reuters)\"): Solidigm, die US‑Tochter von SK hynix, prüft den Bau einer NAND‑Flash‑Fabrik in den USA; Upstate New York wird als führender Kandidat genannt.",
+      "placement": "Geographie: USA (Upstate New York als führender Kandidat). Domäne/Layer: NAND/Enterprise‑SSD Supply‑Layer. Horizon: potenzielle Fabrikentscheidung in den nächsten 6–24 Monaten (gemeldet 2026-09-18).",
+      "mechanism": "Kapitalinvestition / Fabrikbau (Greenfield oder Leasing) würde zusätzliche NAND‑Bit‑Supply schaffen und mittelfristig Verfügbarkeit und Preisdruck in Enterprise‑NAND/SSD‑Märkten verändern; aktuell aber nur Prüfungs-/Sondierungsstadium ohne FID/Permits/Shipments.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Wenn bestätigt als FID/qualifizierter Ramp (2027–2028), würde dies das Basisszenario der anhaltenden Memory‑Knappheit (P-2026-07-20-04) nach unten korrigieren — vermindertes Risiko für ein lang anhaltendes Preis‑ und Rendite‑Upside. Wirkung vor allem auf markets: nand, enterprise_ssd; driverScope: availability.",
+      "falsifier": "Bis 2027-12-31 keine der folgenden drei überprüfbaren Aktionen erfolgt: (a) formeller FID (Firm Investment Decision) oder veröffentlichte verbindliche staatliche Förderzusage für eine konkrete US‑Site; (b) öffentliche Baugenehmigung / Umweltgenehmigung für eine benannte County/State‑Parzelle; (c) erste qualifizierte Si‑Wafer/packaged NAND‑Shipments mit Solidigm‑Branding aus einer US‑Fertigung. Fehlen aller drei Punkte bis 2027-12-31 falsifiziert den unmittelbaren Capacity‑Relief‑Effekt.",
+      "nextReview": "2027-03-18",
+      "eventDate": "2026-09-18",
+      "novelty": "Marktneuigkeit: Standort‑/FID‑Gerücht über US‑NAND‑Fertigung (Upstate New York) — potenziell relevant für mittelfristige NAND‑Kapazitätsprojektionen.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 13,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/sk-hynixs-solidigm-unit-is-weighing-nand-memory-chip-factory-in-us-sources-say-4906708",
+          "label": "Investing.com (rehost attributing report to Reuters; 'SEOUL/NEW YORK, Sept 18 (Reuters)')",
+          "kind": "secondary",
+          "supports": "Bericht, Datum (2026-09-18), behauptete Kernaussage: Solidigm prüft US‑NAND‑Fabrik; nennt Upstate New York als führenden Kandidaten."
+        },
+        {
+          "url": "https://ca.marketscreener.com/news/sk-hynix-s-solidigm-unit-is-weighing-nand-memory-chip-factory-in-us-sources-say-ce785adad98cf221/",
+          "label": "MarketScreener (rehost, cites Reuters)",
+          "kind": "secondary",
+          "supports": "Wiederholung der Reuters‑attribuierten Meldung mit gleicher Kernaussage und Datum."
+        }
+      ],
+      "reason": "Die eingesandte Kandidatenmeldung zitiert eine Reuters‑Story datiert 2026-09-18, die behauptet, Solidigm prüfe eine NAND‑Fabrik in den USA (Upstate New York als führender Kandidat). Als TAIL‑Reviewer musste die Original‑Primärquelle (die angebliche Reuters‑Seite auf reuters.com) verifiziert werden; in meiner Recherche konnte kein direktes Reuters‑Artikel‑Permalink auf reuters.com gefunden werden (stattdessen mehrere sekundäre Rehosts/News‑Aggregatoren, die Reuters als Quelle nennen). Ohne das Original‑Reuters‑Posting / eine offizielle Firmenmitteilung / ein fundiertes Primärdokument (FID, regulatorische Einreichung, Firmenpressetext) fehlt die erforderliche Primärverifikation. Gegenbelege oder Unternehmensbestätigungen konnten mit dem vorgegebenen Werkzeugbudget nicht eindeutig gefunden oder verifiziert; deshalb bleibt die behauptete Fabrikplanung unbestätigt. \n\nOpposing evidence / Risikoprüfung: die Meldung ist zurzeit ein Standort‑/Sondierungsgerücht (keine nachprüfbare FID/Permit/Shipment). Laut TAIL‑Regeln sind Angekündigte / geprüfte Fabrik‑Pläne ohne direkten FID/qualifizierte Shipments nicht als VERIFIED DATA oder als unmittelbare verified_supply_relief aufzunehmen; zukünftige Fabrik‑Ankündigungen zählen als capacity_relief‑Signale, haben aber kurzfristig keine Availability‑Messung. Ein angenommenes FID würde weiteres Monitoring erfordern (Permits, Capex‑Bekanntgabe, Produktionsstartdaten). \n\nAdmission‑Entscheidung (watchlist) begründet: Kandidat ist relevant für die Basisszenarien (NAND/Enterprise‑SSD Availability und P-2026-07-20-04), ist neu und potenziell markteinflussreich, aber es fehlt die Primärverifikation (kein Reuters‑Permalink / keine offizielle SK hynix/Solidigm‑Mitteilung / keine behördliche Einreichung gefunden). Nach TAIL‑Vorgaben darf ich ohne Primärbeleg und ohne klar falsifizierbare, messbare Outcome‑Komponente die Meldung nicht als VERIFIED DATA akzeptieren. \n\nNächste Schritte: Überprüfen auf (1) Original‑Reuters‑Artikel auf reuters.com mit Permalink und Artikeltext, (2) eine offizielle SK hynix / Solidigm‑Pressemitteilung oder regulatorische Einreichung (z.B. US‑SEC, NY State economic development notice) oder (3) ein FID/Bau‑Permit/erste qualifizierte Shipments. Falls eines davon vorgelegt wird, sollte die Aufnahme als ACCEPTED mit indexImpact‑Beurteilung neu bewertet werden.",
+      "candidateId": "e907b96da7bd84b5e72d",
+      "candidateKey": "77342b8e508cb76d68a328ed",
+      "reviewedAt": "2026-09-22T09:48:03.508Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ab7e42f06ad29ab006ab24eb77ef087d189b222625b2cbfe8"
     }
   ]
 }
