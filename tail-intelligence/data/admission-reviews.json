@@ -44616,6 +44616,161 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_04785e001e20e556006ab19c584c6087d0a72a07a53e59aca2"
+    },
+    {
+      "decision": "watchlist",
+      "title": "LG erhält NVIDIA‑Validierung für 600 kW CDU; Microsoft‑Zusammenarbeit nicht belegt",
+      "fact": "LG Electronics hat eine NVIDIA‑AI‑Factory‑/Infrastructure‑Validierung für seine 600 kW Coolant Distribution Unit (CDU) erhalten (Pressemitteilung von LG / PR Newswire, 2026‑07‑27). Der eingereichte Kandidat behauptet zusätzlich eine Ausweitung der AI‑Zusammenarbeit mit Microsoft — dafür findet sich in den geprüften Primärquellen kein bestätigter Beleg.",
+      "placement": "Geographie/Domain: global / AI‑Data‑Center Cooling & Thermal Management (Infrastruktur‑Layer); Horizon: beobachtbarer Produktvalidierungs‑ und Kunden‑Vertriebsraum, unmittelbar (t0–t+6 Monate).",
+      "mechanism": "Direkter Validierungsnachweis (NVIDIA AI‑Factory/Infrastructure validation) erhöht LGs Vertriebs‑ und Qualifikationsfähigkeit gegenüber Hyperscalern und Systemintegratoren, wodurch LG potenziell schneller qualifizierte Shipments für Liquid‑Cooling‑Systems liefern kann. Die behauptete Microsoft‑Expansion würde zusätzlich Nachfrage/Referenzwirkung schaffen, ist aber nicht belegt.",
+      "predictionId": "OUTLOOK-ai_infrastructure",
+      "predictionImpact": "Wenn die Microsoft‑Zusammenarbeit belegbar wäre, würde dies das driverWeight‑Profil in erster Linie auf 'availability' (0.4) und 'aiDemand' (0.15) stützen — ein belegter Hyperscaler‑Partner erhöht kurzfristig die Wahrscheinlichkeit schnellerer Qualifikations‑Deployments und Allokationspriorität. Aufgrund fehlender Microsoft‑Bestätigung bleibt der beobachtbare Impact vorerst begrenzt auf LGs validierte Produkt‑Qualifikation (Vertriebs/Markt‑zugang), nicht auf bestätigte Großlieferungen oder Hyperscaler‑Bindungen.",
+      "falsifier": "Bis 2026‑12‑31: Keine öffentliche, primäre Microsoft‑Quelle (Microsoft‑Pressemitteilung, SEC‑Filing, Microsoft Newsroom Eintrag) oder Hyperscaler‑Kundenankündigung, die eine formale Kooperation/Bestellung/Referenz mit LGs NVIDIA‑zertifizierter CDU bestätigt. Wenn eine solche primäre Microsoft‑Quelle vor dem Datum vorhanden ist, falsifiziert dies die Watchlist‑Bewertung.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-07-27",
+      "novelty": "Moderat — NVIDIA‑Zertifizierungen für Kühltechnik sind relevante, aber wiederholbare Industrieereignisse; die Hinzufügung einer Microsoft‑Kooperation wäre neu.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 12,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.lg.com/global/newsroom/b2b/product-and-solutions/lg-electronics-earns-nvidia-ai-factory-validation-for-its-600kw-coolant-distribution-unit1/",
+          "label": "LG Global Newsroom – NVIDIA AI Factory Validation für 600 kW CDU (Pressemitteilung, 2026‑07‑27)",
+          "kind": "primary",
+          "supports": "Direkte Bestätigung, dass LG die NVIDIA‑Validierung für seine 600 kW Coolant Distribution Unit erhalten hat; beschreibt technische Absicht, Marktansprache und Vertriebsziele."
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/lg-electronics-earns-nvidia-ai-factory-validation-for-its-600kw-coolant-distribution-unit-302835085.html",
+          "label": "PR Newswire – LG erhält NVIDIA AI Factory Validation (2026‑07‑27)",
+          "kind": "secondary",
+          "supports": "PR‑Syndication der LG‑Pressemitteilung, bestätigt Veröffentlichungsdatum und Kernaussage."
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/",
+          "label": "NVIDIA Blog – Zusammenarbeit NVIDIA und LG Group (AI Factory Kontext)",
+          "kind": "secondary",
+          "supports": "Beschreibt technische Zusammenarbeit/Kooperationen zwischen NVIDIA und LG in einem breiteren 'AI Factory'‑Kontext, bestätigt Beziehungsebene zu NVIDIA, belegt aber keine Microsoft‑Kooperation."
+        }
+      ],
+      "reason": "Die Kandidateneingabe mischt eine verifizierbare Teilbehauptung (LG erhielt NVIDIA‑Validierung für eine 600 kW CDU; Primärquelle: LG Pressemitteilung, 2026‑07‑27) mit einer unbewiesenen Behauptung, dass LG und Microsoft ihre AI‑Zusammenarbeit ausgeweitet hätten. Unsere Web‑Verifizierung (LG/Presse, NVIDIA Blog, PR Newswire) bestätigt die NVIDIA‑Zertifizierung, findet aber keine primäre Microsoft‑Bestätigung, die eine ausgeweitete Kooperation mit LG im Kontext der NVIDIA‑zertifizierten Kühllösung belegt. Admission‑Standards verlangen eine atomare, datierte, primär belegte Tatsache mit klarer Messbarkeit und Platzierung; die Microsoft‑Komponente fehlt daher. Gegenbelege: keine Primärquelle von Microsoft oder Microsoft‑Newsroom‑Eintrag wurde gefunden; Reddit/soziale Aggregatoren sind nicht ausreichend. Deshalb Watchlist (keine Annahme).",
+      "candidateId": "225564dd57aaa09f6cfc",
+      "candidateKey": "ab99428206629fd418233fe8",
+      "reviewedAt": "2026-09-22T01:37:33.170Z",
+      "priorityScore": 69,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b5479955b721f3d006ab1dbc3dc2087d1938633ea10a39bf2"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Anthropic und OpenAI suchen kleinere 20–30 MW‑Rechenzentrumsdeals; Anthropic zuvor ~460 MW mit Nscale (Berichtskopie von CNBC)",
+      "fact": "Berichterstattung (sekundär) vom 2026-09-18: CNBC berichtet laut Reprints, Anthropic und OpenAI suchten gezielt kleinere, modulare Data‑Center‑Deals (ca. 20–30 MW) in Regionen wie UK und den Nordics, zusätzlich zu ihren bereits angekündigten Gigawatt‑Projekten; frühere Berichte nennen eine Anthropic‑Cloud‑Vereinbarung (~US$45 Mrd.) mit Nscale für ~460 MW in West Virginia.",
+      "placement": "Geografie: UK / Nordics / global supplement to existing Gigawatt campuses; Domain/Layer: AI‑Infrastructure (Inference‑/Edge‑Deployments); Horizont: kurzfristig (H2 2026 – H1 2027).",
+      "mechanism": "Strategischer Schwenk von großen, langfristigen Gigawatt‑LTAs zu modularen 20–30 MW‑Sites, um Inference‑Kapazität schneller und mit geringerem regulatorischem/energiepolitischem Friktion bereitzustellen; dadurch erhöhte kurzfristige Nachfrage nach server_dram/hbm für verteilte Inference‑Deployments.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt das Basisteam‑Szenario, dass AI‑Server‑Nachfrage (server_dram / hbm) kurzfristig hoch bleibt (demand_up / negative_supply), da zusätzliche kleine Inference‑Standorte die effektive Nachfrage nach Memory/Server‑Kapazität erhöhen können.",
+      "falsifier": "Bis 2026-12-31 liegt keine primäre Bestätigung (Original‑CNBC‑Artikel oder direkte Statements/Filings von Anthropic/OpenAI/Nscale/jeweiligen Datacenterbetreibern) vor, die explizit legitime, vertragliche Absichten für wiederholte 20–30 MW‑Deals in UK/Nordics dokumentiert. Prüfungstermin: 2026-12-31.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 9,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 13,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "server_dram",
+        "ai_infrastructure",
+        "hbm"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://aiunderstanding.org/news/anthropic-and-openai-hunt-for-smaller-data-center-deals",
+          "label": "AI Understanding (republished headline referencing CNBC)",
+          "kind": "secondary",
+          "supports": "Kopie/Republish der CNBC‑Headline und kurze Zusammenfassung (verweist auf CNBC-Story vom 2026-09-18 über Suche nach 20–30 MW‑Sites)."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-openai-seek-smaller-data-125150303.html",
+          "label": "Yahoo Finance (Republish)",
+          "kind": "secondary",
+          "supports": "Kurzfassung: Anthropic und OpenAI suchten kleinere Data‑Center‑Deals in UK und Nordics; nennt CNBC als Originalquelle."
+        },
+        {
+          "url": "https://forecastgeo.com/article/anthropic-and-openai-hunt-for-smaller-data-center-deals-sources-tell-c-fdab783b",
+          "label": "ForecastGeo (Republish)",
+          "kind": "secondary",
+          "supports": "Aggregierte Reproduktion des CNBC‑Titels/Thesen; führt Details zu Anthropic/Nscale‑Deal aus früheren Berichten an."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat zitiert einen CNBC‑Artikel (Datum 2026-09-18) mit potentiell marktrelevanter Richtung: Hyperscaler/AI‑Labs suchen kleinere, modulare 20–30 MW‑Sites zusätzlich zu existierenden Gigawatt‑Leases. Ich konnte mehrere Reprints/Aggregate (Sekundärquellen) mit identischen Behauptungen finden, konnte jedoch das Original‑CNBC‑Stück nicht als primäre Quelle öffnen/verifizieren. Ohne Zugriff auf die primäre CNBC‑Seite oder eine direkte Firmenbestätigung bleibt die zentrale, atomare Behauptung (konkrete 20–30 MW‑Deals in UK/Nordics und der Umfang der Anthropic‑Nscale‑Vereinbarung) unbestätigt. Nach den TAIL‑Regeln erfordert Fehlen einer Primärbestätigung Watchlist statt Annahme; außerdem ist die Behauptung prüfbar (Falsifizierer auf 2026-12-31 gesetzt). Gegenbelege: keine zuverlässige Primärquelle gefunden; mehrere Sekundärkopien verweisen auf CNBC, was das Signal plausibel, aber nicht verifiziert macht.",
+      "candidateId": "36a4a98fab6dbef63117",
+      "candidateKey": "32771489a1af00f7eb104af4",
+      "reviewedAt": "2026-09-22T01:37:59.106Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_059316862ab4d77a006ab1dbdd5b1887d1aa271aef6298891f"
     }
   ]
 }
