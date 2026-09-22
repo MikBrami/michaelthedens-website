@@ -45200,6 +45200,137 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_01bd4343a7624591006ab251602eac87d2b82e065480ccd6ca"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Samsung beschleunigt HBM4‑Volumenproduktion; Bernstein sagt +72% QoQ HBM‑Umsatz für Q3 voraus",
+      "fact": "Meldung behauptet, Samsung beschleunige die HBM4‑Volumenproduktion und Bernstein prognostiziere einen 72%igen sequenziellen Anstieg (QoQ) der HBM‑Umsätze für Q3 2026.",
+      "placement": "Globaler Halbleitermarkt — HBM‑Revenue, Quartals‑Horizon (2026‑Q3), Firmen‑Ebene (Samsung).",
+      "mechanism": "Frühere als erwartete Yield‑/Qualifikationsverbesserungen und beschleunigte HBM4‑Shipments von Samsung würden HBM‑Mix und damit HBM‑Umsatzsequenz im Q3 2026 erhöhen; Bernstein‑Regressionsmodell nutzt Korea‑Exportdaten als Leading Indicator, um HBM‑Revenue nach Herstellern zu schätzen.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Die Behauptung würde das bestehende Baseline‑Prediction P-2026-07-30-02 (Samsung steigert HBM4‑Umsatz in Q3 2026) informieren, indem sie eine konkrete (aber schwächer als die Baseline) numerische Sequenzrichtung liefert. Falls Bernstein‑Zahl von +72% verifiziert wird, spricht das für eine signifikante Samsung‑Upside im HBM‑Mix, jedoch schwächer als die Baseline‑Schwelle (2.5×).",
+      "falsifier": "Offiziell ausgewiesener Samsung HBM‑Umsatz für Q3 2026 (Form 8‑K / Earnings Release oder Samsung IR Disclosure) dokumentiert am oder vor 2026-11-10 einen sequenziellen HBM‑Umsatzanstieg von weniger als 72% QoQ → Behauptung falsifiziert. Nächste Review‑Deadline: 2026-11-10.",
+      "nextReview": "2026-11-10",
+      "eventDate": "2026-09-22",
+      "novelty": "Moderat — verbindet mehrere bereits im Baseline‑Set vorhandene Signale (Samsung HBM4‑Ramp, Bernstein‑Regressionsanalysen) in einer konkreten numerischen Prognose.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/company-news/samsung-leads-hbm4-shipments-as-korea-export-data-shows-strength--report-93CH-4871213",
+          "label": "Investing.com — Bericht zu Samsung HBM4‑Shipments und Bernstein‑Analyse",
+          "kind": "secondary",
+          "supports": "Berichtet über Bernstein‑Analyse, nennt einen deutlich hohen QoQ‑Anstieg (in mehreren Berichten ~80% QoQ) für Samsungs HBM‑Umsatz in Q3 und interpretiert Korea‑Exportdaten als Indikator für HBM4‑Ramp."
+        }
+      ],
+      "reason": "Admissonsprüfung: Die Kandidatenmeldung kombiniert zwei getrennte Elemente — (A) ein operatives Update zu Samsung HBM4‑Volumenproduktion und (B) eine konkrete Bernstein‑Zahl (+72% QoQ). Ich konnte sekundäre Berichte finden, die Bernsteins Analyse zusammenfassen und konsistente Hinweise auf eine starke Samsung‑HBM4‑Ramp geben (teilweise berichten Sekundärquellen über ~80% QoQ). Allerdings wurde das Bernstein‑Originaldokument (Primärquelle) oder ein direktes Bernstein‑Zitat mit der exakten Angabe +72% in den verfügbaren Primär‑IR/SEC/Press‑Releases nicht verifiziert. Die vorgelegten Seiten sind Aggregatoren/Analystenzusammenfassungen, keine Bernstein‑Primärveröffentlichung oder Samsungs offizielle HBM‑Umsatz‑Offenlegung mit der geforderten atomaren, datierten Metrik. Deshalb fehlen kritische Prüfungsanforderungen: (1) Primärquelle von Bernstein mit der exakten 72%‑Zahl, (2) Samsungs offizielle HBM‑Umsatzaufstellung für Q3 2026 oder ein Samsung‑IR‑Beleg, der die behauptete QoQ‑Zahl bestätigt, und (3) ein klarer, quantifizierbarer Index‑Messwert (z. B. ausgewiesener HBM‑Umsatz in USD für Q2 und Q3 2026) zur direkten Falsifikation. Ohne diese Primärnachweise kann die Behauptung nicht als VERIFIED DATA aufgenommen werden. Daher wird der Kandidat auf Watchlist gesetzt: er hat moderate Relevanz (informiert P-2026-07-30-02) und ist zeitnah überprüfbar, aber aktuell nicht ausreichend belegt. Empfohlene nächste Schritte: Fordere das originale Bernstein‑Research‑Note oder ein Bernstein‑Zitat mit Datum und die Samsung IR/Q3‑Earnings‑Release mit ausgewiesenen HBM‑Revenue‑Teilsummen (oder eine firmenzertifizierte Aufschlüsselung) — diese müssen vor 2026-11-10 vorgelegt werden, damit die Beobachtung hochgestuft werden kann.",
+      "candidateId": "7b1ca752eaebd0447563",
+      "candidateKey": "332707631065acb45250fa7c",
+      "reviewedAt": "2026-09-22T15:33:22.386Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d047a1e7b00898a006ab29f9da30487d0b067c80b70ec1b51"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Solidigm prüft US‑NAND‑Fab; Berichterstattung durch TipRanks (sekundär) basiert auf Reuters‑Quellen",
+      "fact": "Mehrere Medien berichten (auf Basis von Reuters‑Quellen) am 2026-09-18, dass Solidigm (SK hynix‑Tochter) erwägt, eine NAND‑Flash‑Fabrik in den USA zu bauen; Upstate New York wird als mögliches Ziel genannt.",
+      "placement": "Geographie: USA (Upstate New York genannt). Markt/Layer: NAND / enterprise_ssd / nand. Zeithorizont: potenzielle Fabrikentscheidung (Kurz‑ bis Mittelfrist; Entscheidung/FID nicht gemeldet).",
+      "mechanism": "Wenn eine US‑NAND‑Fabrik realisiert würde, erhöht das langfristig die regionale Frontend‑(Wafer‑)Kapazität für NAND, könnte lokale Lieferketten stärken und geopolitische Lieferrisiken für US‑Kunden reduzieren; aktuell ist dies aber nur ein Prüfungs-/Planungssignal ohne nachgewiesene Shipments oder FID.",
+      "predictionId": "",
+      "predictionImpact": "Kein expliziter, verknüpfter Effekt auf eines der in der Inbox aufgeführten Vorhersagen. (Der Kandidat liefert kein numerisches/gedatetes Signal, das direkt eine vorhandene Vorhersage modifiziert.)",
+      "falsifier": "Wenn bis 2026-12-31 keine glaubwürdige Standortentscheidung (z. B. verbindliche FID, öffentliches Statement mit Investitionssumme oder von SK hynix/Solidigm bestätigte Standortwahl) veröffentlicht wird, dann falsifiziert dies die kurzfristige Interpretation als unmittelbar marktverändernde Fabrikentscheidung.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Das Thema (Solidigm/SK hynix US‑Aktivitäten) ist bereits in der Berichterstattung vorhanden, aber der konkrete Standort‑/Fab‑Hinweis vom 2026-09-18 ist ein neues, berichtetes Detail.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 9,
+        "thesisRelevance": 14,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tipranks.com/news/sk-hynix-stock-jumps-as-solidigm-weighs-u-s-nand-factory",
+          "label": "TipRanks — Sekundärartikel (Headline/Summation)",
+          "kind": "secondary",
+          "supports": "TipRanks fasst die Berichte zusammen: 'Solidigm is considering building a NAND flash memory chip factory in the U.S.' (Veröffentlichung 2026-09-18)."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung (TipRanks‑Headline) reflektiert eine berichtete, datierte Medienmeldung vom 2026-09-18, die auf Reuters‑Quellen beruht. Wir konnten die primäre Berichterstattung (Reuters) für den Kernpunkt verifizieren. Allerdings erfüllt der Kandidat nicht die TAIL‑Aufnahmekriterien für Admission: es fehlt ein atomar‑gedatetes Messsignal (z. B. verbindliche FID/Investitionssumme oder qualifizierte Shipments mit Mengen/Leadtimes), es wurde kein konkreter, bisheriger Effekt auf einen der im Inbox‑Forecasts gelisteten Vorhersagen angegeben, und es fehlt ein klar formulierter, prüfbarer Falsifikator im Ursprungstext. Deshalb setze ich die Klassifikation auf Watchlist statt auf Annahme. Opposing evidence: Es gibt aktuell keine Bestätigung von SK hynix/Solidigm (kein FID, keine offizielle Standortfreigabe) — mehrere Berichte sind auf anonyme 'people familiar' / industry sources zurückgeführt, was die Unsicherheit erhöht. Quellen: Reuters (Primärbericht) und TipRanks (sekundäre Zusammenfassung).",
+      "candidateId": "ab09bf9ecf13cf6794f2",
+      "candidateKey": "3db1da20c7868132587ed789",
+      "reviewedAt": "2026-09-22T15:33:48.896Z",
+      "priorityScore": 55,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0596ce76635ad385006ab29fc2885087d0b2951371d15344d5"
     }
   ]
 }
