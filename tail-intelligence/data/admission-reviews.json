@@ -45774,6 +45774,143 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_04dc1a19d4df5960006ab3a3620e1087d1a18f01db3ed16382"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT chases NAND; YMTC samples DRAM — unbestätigte Branchenberichte",
+      "fact": "Berichte (u.a. shattered.io) behaupten, CXMT bereite eine 3D‑NAND‑Forschungs-/R&D‑Linie vor, während YMTC Low‑Power‑DRAM‑Samples an Kunden geschickt habe und einen DRAM‑Produktionsentscheid bis Ende 2026 prüfe.",
+      "placement": "China; Fab/R&D‑Scope (NAND‑R&D bei CXMT; DRAM‑Vorserie/Samples bei YMTC); kurzfristiger Horizont: Q4 2026 Entscheidung/erste Kundenfeedback‑Phase.",
+      "mechanism": "Vertikale Diversifikation chinesischer Memory‑Player: CXMT könnte durch Aufbau einer NAND‑R&D‑linie in den NAND‑Stack (Host/SSD) vordringen; YMTCs DRAM‑Samples würden vorhandene NAND‑Fabrik‑ und Design‑Kompetenz nutzen, um in DRAM‑Host‑/HBM‑Märkte zu dringen. Beide Schritte könnten Marktstruktur (Wettbewerb, Preis‑/Allokationsdruck) verändern, falls sie zu qualifizierten Serienlieferungen führen.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Wenn CXMT/YMTC erfolgreich qualifizierte Serien‑Shipments in NAND bzw. DRAM starten, würde dies tendenziell Verfügbarkeit (availability) erhöhen und Preisdruck auf etablierte Anbieter/Verträge ausüben; kurzfristig (bis Ende 2027) könnte es Allokations- und Preisdynamiken im Server‑DRAM und NAND/Enterprise‑SSD‑Segment verändern.",
+      "falsifier": "Bis 2026-11-30 kein glaubwürdiger Nachweis: (a) CXMT bestätigt eine qualifizierte 3D‑NAND‑Pilotlieferung an einen namhaften OEM/Cloud‑Kunden mit Menge ≥100k NAND‑Packages oder (b) YMTC bestätigt qualifizierte DRAM‑Serienlieferungen (>=100k DRAM‑DIMM‑Äquivalente) an einen externen Kunden; falls weder Bedingung erfüllt, falsifiziert das die unmittelbare Marktauswirkung bis Ende 2026.",
+      "nextReview": "2026-10-07",
+      "eventDate": "2026-09-23",
+      "novelty": "moderat — etabliertere Gerüchte/Frühberichte, aber Thema gewinnt Breitenberichterstattung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 7,
+        "novelty": 12,
+        "thesisRelevance": 14,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://shattered.io/cxmt-nand-ymtc-dram-chip-war-2026/",
+          "label": "Original candidate (shattered.io)",
+          "kind": "secondary",
+          "supports": "Behauptet, CXMT plane NAND‑R&D/3D‑NAND‑Linie; YMTC habe Low‑Power‑DRAM‑Samples an Kunden geschickt und prüfe DRAM‑Produktion."
+        },
+        {
+          "url": "https://www.eetimes.com/chinas-dram-specialist-cxmt-eyes-nand-flash-entry/",
+          "label": "EE Times – Sekundärverifizierung/Branchenbericht",
+          "kind": "secondary",
+          "supports": "Berichtet ebenfalls über CXMTs NAND‑Ambitionen und YMTCs DRAM‑Ambitionen; liefert kontextuelle Firmen‑/Branchenkommentare."
+        }
+      ],
+      "reason": "Die eingereichte Meldung ist ein zusammengesetzter Branchenbericht/Rumor (shattered.io) mit Kopien in mehreren Tech‑News‑Aggregaten. Wir konnten das zentrale, für Aufnahme erforderliche primäre, quantitative Belegmerkmal nicht finden: keine bestätigten qualifizierten Serien‑Shipments, keine offizielle CXMT/YMTC‑Pressemitteilung, keine verifizierbare OEM‑Kundenbestätigung oder konkrete Mengenangaben. Damit fehlt die notwendige atomare, datierte und mit Einheiten versehene Beobachtung (z.B. qualifizierte Shipments, Lead‑Time‑Änderung, fill‑rate‑Messung) zur Validierung eines unmittelbaren Verfügbarkeits‑ oder Preis‑Signals. Opposing evidence/qualifying context: etablierte Quellen berichten zwar über Pläne und Samples, gleichzeitig fehlen offizielle Bestätigungen; frühere Berichterstattung zeigte ähnliche Gerüchte, die erst Monate später (oder gar nicht) zu Serienlieferungen führten. Deshalb Watchlist — weiter beobachten, bis es eine primäre, datierte Bestätigung (qualifizierte Shipments / OEM‑Abnahme / offizielle Mengennennung) gibt. Empfehlungen für nächste Prüfung: Suche nach (1) Unternehmens‑Pressemitteilungen von CXMT oder YMTC mit konkreten Produktions-/Shipment‑KPI (Datum, Menge, Produktklasse), (2) OEM/Cloud‑Kundenbestätigungen oder regulatorischen Einreichungen, die qualifizierte Volumina dokumentieren, (3) nationale Export-/Zoll‑Shipement‑Stats, die in Menge/Produkttyp Rheinland sind. Falls solche Primärbelege auftauchen, kann die Aufnahme als VERIFIED DATA geprüft werden; bis dahin bleibt die Meldung unproven und auf Watchlist gesetzt.",
+      "candidateId": "636d265c01278b0e6e1e",
+      "candidateKey": "02878facc62fc39841a3c40e",
+      "reviewedAt": "2026-09-23T15:29:01.611Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e0c9685ae818d89006ab3f021634887d192e43caee9fcd94d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK Hynix/Solidigm prüft US‑NAND‑Fabrik; Upstate New York als Kandidat",
+      "fact": "Berichte (Aggregatoren verweisen auf Reuters-Quellen) melden, dass SK hynixs US‑Tochter Solidigm einen NAND‑Fertiger in den USA prüft; Upstate New York wird als führender Kandidat genannt.",
+      "placement": "Geographie: USA (Upstate New York); Markt/Layer: NAND / Enterprise‑SSD / Halbleiter‑Fertigungs‑Layer; Horizont: potenzielle Produktionsplanung (mehrjährig).",
+      "mechanism": "Strategische On‑shoring‑/Reshoring‑Erwägung: Prüfung einer dedizierten NAND‑Fabrik in den USA (Optionen reichen offenbar von Leasing vorhandener Standorte bis zu Neubau). Falls umgesetzt, würde dies langfristig die US‑Frontend‑NAND‑Kapazität erhöhen und globale Lieferketten‑Allokationen beeinflussen; aktuell ist dies jedoch nur Planungs-/Evaluationsstatus ohne verlässliche FID oder qualifizierte Shipments.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signal würde langfristig die Verfügbarkeit (availability) verbessern und damit das OUTLOOK‑Szenario 'enterprise_ssd' in Richtung Entspannung verschieben, falls FID, Bau und qualifizierte Shipments tatsächlich erfolgen. Zum gegenwärtigen Zeitpunkt bleibt der Impact unscharf.",
+      "falsifier": "Bis 2027-12-31 müssen konkrete, dokumentierte Primärereignisse eintreten: (a) eine offizielle FID/Capex‑Genehmigung von SK hynix/Solidigm für eine US‑NAND‑Fab mit geklärtem Standort und Kapazitätsrahmen, oder (b) öffentliche, eintragbare Land-/Bauankäufe oder Baugenehmigungen in Upstate New York, oder (c) nachweisbare Zeitreihe qualifizierter NAND‑Shipments aus einer neugebauten US‑Fabrik. Fehlen diese Nachweise bis 2027-12-31, falsifiziert dies die Aussage, dass die Meldung einen belastbaren kurzfristigen Supply‑Impact darstellt.",
+      "nextReview": "2026-10-18",
+      "eventDate": "2026-09-18",
+      "novelty": "Die Meldung ist ein neuer, aber nicht einzigartiger Planungsbericht; ähnliche On‑shoring‑Erwägungen und Solidigm/ SK‑Hynix‑IPO/Restrukturierungs‑Stories liefen bereits 2026.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/sk-hynixs-solidigm-unit-is-weighing-nand-memory-chip-factory-in-us-sources-say-4906708",
+          "label": "Investing.com (zitiert Reuters‑Quellen)",
+          "kind": "secondary",
+          "supports": "Bericht (verweist auf Reuters‑Quellen) datiert 2026-09-18: nennt Solidigm‑Prüfung einer US‑NAND‑Fabrik und Upstate New York als führenden Kandidaten."
+        }
+      ],
+      "reason": "Der Kandidat berichtet, dass Solidigm eine US‑NAND‑Fabrik prüft und Upstate New York als möglicher Standort gilt. Die vorhandenen, abrufbaren Meldungen sind Planungs‑/Quellenberichte (nicht offizielle Firmen‑FID‑Ankündigungen oder qualifizierte Shipments). Es fehlt an Primärverifikation (offizielle SK hynix/Solidigm‑Mitteilung, behördliche Baugenehmigung, Landkauf oder bestätigter FID) und an quantitativen, datierten Output‑Messungen. Deshalb genügt die Beobachtung derzeit nicht den Anforderungen für 'VERIFIED DATA' oder für eine Annahme; sie übersteigt jedoch die Schwelle für Ablehnung und wird als Watchlist‑Signal aufgenommen, weil eine Umsetzung erhebliche Verfügbarkeitsfolgen hätte. Opposing evidence: in den verfügbaren Artikeln finden sich keine bestätigten FIDs, Zeitpläne oder verbindlichen Capex‑Beträge; einige Medien stellen die Meldung als 'Erwägung' dar und nennen nur anonyme Quellen. Adversarial check: Primärquellen fehlen — redPencilPass = false.",
+      "candidateId": "c14724b9eb9fcdd25425",
+      "candidateKey": "d7662c531914c5dde31e8d6c",
+      "reviewedAt": "2026-09-23T15:29:37.527Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02ec8e439420bbf7006ab3f03dc9ac87d1abd6b1e1838dc3e8"
     }
   ]
 }

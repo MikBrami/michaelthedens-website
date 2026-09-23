@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T10:01:43.556Z",
+  "generatedAt": "2026-09-23T15:29:39.360Z",
   "platform": {
     "dataAsOf": "2026-09-23",
     "analysisAsOf": "2026-09-23",
@@ -8,18 +8,18 @@
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-09-23T10:01:41.955Z",
-      "pending": 81,
-      "reviewed": 46,
+      "checkedAt": "2026-09-23T15:29:37.563Z",
+      "pending": 85,
+      "reviewed": 48,
       "accepted": 4,
-      "rawCandidates": 318,
+      "rawCandidates": 331,
       "triage": {
-        "archivedOpinions": 7,
-        "groupedDuplicates": 17
+        "archivedOpinions": 8,
+        "groupedDuplicates": 18
       },
       "lastRun": {
-        "startedAt": "2026-09-23T10:00:04.913Z",
-        "completedAt": "2026-09-23T10:01:41.957Z",
+        "startedAt": "2026-09-23T15:28:31.921Z",
+        "completedAt": "2026-09-23T15:29:37.564Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 97,
+        "durationSeconds": 65,
         "budgetExhausted": false
       }
     },
@@ -73,43 +73,43 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-23; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (81 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-23; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (85 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-09-23",
-      "title": "Goldman Sachs Research Report Analysis: SK hynix HBM Pricing Rises, LTA Locks in Demand",
-      "summary": "Aktuelle Meldung von 深潮TechFlow: Goldman Sachs Research Report Analysis: SK hynix HBM Pricing Rises, LTA Locks in Demand",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "title": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
+      "summary": "Aktuelle Meldung von TrendForce: [News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 99,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZ1ZtWVF1UGo1V3ViLWxkT3lFWXh3LThCaWNWZE01SnJuMWFWNlFGX0NXYTd4bG9icXNfUWlSQjU2MFotal9WWDR1WlRld1lhTnBrYzZWdkg3QkpMSW1UMlBfaWhvZGt1UWpFQUdqSWlWaHFONEh4STdKNEVNaGphaC13aE1hY2t3RVVyQWtIQ2xNUm9GN3ZVNjVjNEZSeDJqellMRENXdHYta1c0Q1QtXzFaZ2RhUDh1TEVIVUoyMWtSR2pqakc3SlY5cEp1Tmd3TVE?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "YMTC wins German injunctions against Micron in latest round of NAND patent battle",
+      "summary": "Aktuelle Meldung von digitimes: YMTC wins German injunctions against Micron in latest round of NAND patent battle",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 94,
+      "relevanceScore": 100,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc3pTbkRNbGEyQ1o0ajVOUEtvSlRRRGIzNkd0SzVSeTNQakpKdnBfanpPQllac1QyVDhGQmwzcHJDZUR3aUgtZkhXcWRELU15NnMzQ1JZTGpESzFlSks4dTdrRGRVTWthb0dWbXh4em5vU01YeTFnNk9xZGFYUkdyTm5mSWdKNlUzd0FvYg?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "CXMT Chases NAND as YMTC Preps DRAM, 3 Sources Say [2026]",
+      "summary": "Aktuelle Meldung von shattered.io: CXMT Chases NAND as YMTC Preps DRAM, 3 Sources Say [2026]",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "深潮TechFlow",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBOTVBWYWVzVW13Vl9icXJ4aVJka1BFazdtaDZmaEE4WXJoTzF3ZDJGYWkxdzNaTXhneTRWSlpheWd0MU9Yekk4ZHhueTA0RXZTSkFhM09hQTdxVzNy?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
-      "summary": "Aktuelle Meldung von Businesskorea: Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Businesskorea",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11aXVacW8yRmxobGllTVowRlQyMzZTc1RpdGQ1SURXSUdtc29LMndXX05NUE9jZW1VTW1tRmtGWTR6VkMteGI5SnZtQVR5bVB6SnhjandVZ3ZQel9naV9WZm5wUUJnSDlpM0RpTWhCaDI1ejA1?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "SK Hynix Holds Goldman's Buy Rating as Samsung Closes In and CXMT Ramps Up",
-      "summary": "Aktuelle Meldung von AD HOC NEWS: SK Hynix Holds Goldman's Buy Rating as Samsung Closes In and CXMT Ramps Up",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 89,
-      "relevanceScore": 100,
-      "sourceQuality": 2,
-      "source": "AD HOC NEWS",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPLXpzQ05JZDdkWXgxRkZBN25uR25iUFZRbmVzNlFPVlFuZ2prNGZFNHljMHpXaHprNHh3eUpKeDdBV1NuTU85SHRrZjhSUUxVTUxEQUJHOVNCcGVlVEstOVZJYzlIV3pDNksxRDBlQUhZelZfUmlmN1VvUE9ha3IxN3NsbWh1OXFOQTg5dDZESkt6M0FuRi16NklpNUVTbWtwSm1Bd3JJcHBTUWtKeWVFblJ3dWtzdzBlUU1uTkx3R1hickhtSFZTR2dXM3NnMmIzbmsydWVTMVZTQVBTUjU0?oc=5",
+      "source": "shattered.io",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4ydEJ1M0xwTkt5YTc1QUJpSi02bTF4X0E4TUs4OU56MEhXRGlqNDdOMExCVnU3ZzR5WkZZSUFQTjIzQm5yc0YtR0hqZVhMaW8yOE1XZEZveWhab2dXOFlzRnBMaUNFUQ?oc=5",
       "layer": "news"
     }
   ],
@@ -144,50 +144,50 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "81 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "85 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
     {
       "date": "2026-09-23",
-      "title": "Goldman Sachs Research Report Analysis: SK hynix HBM Pricing Rises, LTA Locks in Demand",
-      "summary": "Aktuelle Meldung von 深潮TechFlow: Goldman Sachs Research Report Analysis: SK hynix HBM Pricing Rises, LTA Locks in Demand",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "title": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
+      "summary": "Aktuelle Meldung von TrendForce: [News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 99,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZ1ZtWVF1UGo1V3ViLWxkT3lFWXh3LThCaWNWZE01SnJuMWFWNlFGX0NXYTd4bG9icXNfUWlSQjU2MFotal9WWDR1WlRld1lhTnBrYzZWdkg3QkpMSW1UMlBfaWhvZGt1UWpFQUdqSWlWaHFONEh4STdKNEVNaGphaC13aE1hY2t3RVVyQWtIQ2xNUm9GN3ZVNjVjNEZSeDJqellMRENXdHYta1c0Q1QtXzFaZ2RhUDh1TEVIVUoyMWtSR2pqakc3SlY5cEp1Tmd3TVE?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "YMTC wins German injunctions against Micron in latest round of NAND patent battle",
+      "summary": "Aktuelle Meldung von digitimes: YMTC wins German injunctions against Micron in latest round of NAND patent battle",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 94,
+      "relevanceScore": 100,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc3pTbkRNbGEyQ1o0ajVOUEtvSlRRRGIzNkd0SzVSeTNQakpKdnBfanpPQllac1QyVDhGQmwzcHJDZUR3aUgtZkhXcWRELU15NnMzQ1JZTGpESzFlSks4dTdrRGRVTWthb0dWbXh4em5vU01YeTFnNk9xZGFYUkdyTm5mSWdKNlUzd0FvYg?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "CXMT Chases NAND as YMTC Preps DRAM, 3 Sources Say [2026]",
+      "summary": "Aktuelle Meldung von shattered.io: CXMT Chases NAND as YMTC Preps DRAM, 3 Sources Say [2026]",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "深潮TechFlow",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBOTVBWYWVzVW13Vl9icXJ4aVJka1BFazdtaDZmaEE4WXJoTzF3ZDJGYWkxdzNaTXhneTRWSlpheWd0MU9Yekk4ZHhueTA0RXZTSkFhM09hQTdxVzNy?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
-      "summary": "Aktuelle Meldung von Businesskorea: Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Businesskorea",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11aXVacW8yRmxobGllTVowRlQyMzZTc1RpdGQ1SURXSUdtc29LMndXX05NUE9jZW1VTW1tRmtGWTR6VkMteGI5SnZtQVR5bVB6SnhjandVZ3ZQel9naV9WZm5wUUJnSDlpM0RpTWhCaDI1ejA1?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "SK Hynix Holds Goldman's Buy Rating as Samsung Closes In and CXMT Ramps Up",
-      "summary": "Aktuelle Meldung von AD HOC NEWS: SK Hynix Holds Goldman's Buy Rating as Samsung Closes In and CXMT Ramps Up",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 89,
-      "relevanceScore": 100,
-      "sourceQuality": 2,
-      "source": "AD HOC NEWS",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPLXpzQ05JZDdkWXgxRkZBN25uR25iUFZRbmVzNlFPVlFuZ2prNGZFNHljMHpXaHprNHh3eUpKeDdBV1NuTU85SHRrZjhSUUxVTUxEQUJHOVNCcGVlVEstOVZJYzlIV3pDNksxRDBlQUhZelZfUmlmN1VvUE9ha3IxN3NsbWh1OXFOQTg5dDZESkt6M0FuRi16NklpNUVTbWtwSm1Bd3JJcHBTUWtKeWVFblJ3dWtzdzBlUU1uTkx3R1hickhtSFZTR2dXM3NnMmIzbmsydWVTMVZTQVBTUjU0?oc=5",
+      "source": "shattered.io",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4ydEJ1M0xwTkt5YTc1QUJpSi02bTF4X0E4TUs4OU56MEhXRGlqNDdOMExCVnU3ZzR5WkZZSUFQTjIzQm5yc0YtR0hqZVhMaW8yOE1XZEZveWhab2dXOFlzRnBMaUNFUQ?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-23T10:01:43.791Z",
+    "generatedAt": "2026-09-23T15:29:39.582Z",
     "count": 3,
-    "candidateCount": 476,
+    "candidateCount": 522,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -402,38 +402,38 @@
   "originalSignals": [
     {
       "date": "2026-09-23",
-      "title": "Goldman Sachs Research Report Analysis: SK hynix HBM Pricing Rises, LTA Locks in Demand",
-      "summary": "Aktuelle Meldung von 深潮TechFlow: Goldman Sachs Research Report Analysis: SK hynix HBM Pricing Rises, LTA Locks in Demand",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "title": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
+      "summary": "Aktuelle Meldung von TrendForce: [News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 99,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZ1ZtWVF1UGo1V3ViLWxkT3lFWXh3LThCaWNWZE01SnJuMWFWNlFGX0NXYTd4bG9icXNfUWlSQjU2MFotal9WWDR1WlRld1lhTnBrYzZWdkg3QkpMSW1UMlBfaWhvZGt1UWpFQUdqSWlWaHFONEh4STdKNEVNaGphaC13aE1hY2t3RVVyQWtIQ2xNUm9GN3ZVNjVjNEZSeDJqellMRENXdHYta1c0Q1QtXzFaZ2RhUDh1TEVIVUoyMWtSR2pqakc3SlY5cEp1Tmd3TVE?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "YMTC wins German injunctions against Micron in latest round of NAND patent battle",
+      "summary": "Aktuelle Meldung von digitimes: YMTC wins German injunctions against Micron in latest round of NAND patent battle",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 94,
+      "relevanceScore": 100,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc3pTbkRNbGEyQ1o0ajVOUEtvSlRRRGIzNkd0SzVSeTNQakpKdnBfanpPQllac1QyVDhGQmwzcHJDZUR3aUgtZkhXcWRELU15NnMzQ1JZTGpESzFlSks4dTdrRGRVTWthb0dWbXh4em5vU01YeTFnNk9xZGFYUkdyTm5mSWdKNlUzd0FvYg?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "CXMT Chases NAND as YMTC Preps DRAM, 3 Sources Say [2026]",
+      "summary": "Aktuelle Meldung von shattered.io: CXMT Chases NAND as YMTC Preps DRAM, 3 Sources Say [2026]",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "深潮TechFlow",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBOTVBWYWVzVW13Vl9icXJ4aVJka1BFazdtaDZmaEE4WXJoTzF3ZDJGYWkxdzNaTXhneTRWSlpheWd0MU9Yekk4ZHhueTA0RXZTSkFhM09hQTdxVzNy?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
-      "summary": "Aktuelle Meldung von Businesskorea: Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Businesskorea",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11aXVacW8yRmxobGllTVowRlQyMzZTc1RpdGQ1SURXSUdtc29LMndXX05NUE9jZW1VTW1tRmtGWTR6VkMteGI5SnZtQVR5bVB6SnhjandVZ3ZQel9naV9WZm5wUUJnSDlpM0RpTWhCaDI1ejA1?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "SK Hynix Holds Goldman's Buy Rating as Samsung Closes In and CXMT Ramps Up",
-      "summary": "Aktuelle Meldung von AD HOC NEWS: SK Hynix Holds Goldman's Buy Rating as Samsung Closes In and CXMT Ramps Up",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 89,
-      "relevanceScore": 100,
-      "sourceQuality": 2,
-      "source": "AD HOC NEWS",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPLXpzQ05JZDdkWXgxRkZBN25uR25iUFZRbmVzNlFPVlFuZ2prNGZFNHljMHpXaHprNHh3eUpKeDdBV1NuTU85SHRrZjhSUUxVTUxEQUJHOVNCcGVlVEstOVZJYzlIV3pDNksxRDBlQUhZelZfUmlmN1VvUE9ha3IxN3NsbWh1OXFOQTg5dDZESkt6M0FuRi16NklpNUVTbWtwSm1Bd3JJcHBTUWtKeWVFblJ3dWtzdzBlUU1uTkx3R1hickhtSFZTR2dXM3NnMmIzbmsydWVTMVZTQVBTUjU0?oc=5",
+      "source": "shattered.io",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4ydEJ1M0xwTkt5YTc1QUJpSi02bTF4X0E4TUs4OU56MEhXRGlqNDdOMExCVnU3ZzR5WkZZSUFQTjIzQm5yc0YtR0hqZVhMaW8yOE1XZEZveWhab2dXOFlzRnBMaUNFUQ?oc=5",
       "layer": "news"
     }
   ]
