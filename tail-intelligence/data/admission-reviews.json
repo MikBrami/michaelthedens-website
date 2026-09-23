@@ -45617,6 +45617,163 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0a1d6d531f1d6d58006ab32c2e870c87d0bf7b349b718221c9"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: AI‑Labs (Anthropic) kaufen Memory direkt; Anthropic‑DRAM‑Nachfrage rivalisiert NVIDIA",
+      "fact": "Berichte behaupten, dass Anthropic (und andere Frontier‑AI‑Labs) ab 2027 direkt HBM/DRAM von Speicherherstellern einkaufen und dass Anthropic’s erwartete DRAM‑Nachfrage 2027 (konvertiert in 1‑Gb‑Einheiten) mit Nvidia vergleichbar sei (DigitalTimes / Edge Water Research‑Zahlen: ~40–50 Mrd. 1Gb‑Einheiten genannt).",
+      "placement": "Global / Memory‑Produktfamilie (DRAM, HBM); Kernwirkung auf Server‑DRAM‑ und HBM‑Versorgung sowie auf Ai‑Infrastructure‑Beschaffung (Horizon: 2027).",
+      "mechanism": "Direktkäufe durch große AI‑Labs würden die traditionelle Käuferkette (Hyperscaler/Chip‑Vermittler) umgehen, Memory‑Hersteller direkt binden, langfristige Abnahmeraten erhöhen und damit Allokation/Preise für andere Käufer verschieben.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Verstärkt kurz- bis mittelfristige Verknappungs‑/Preisaufwärtsrisiken für Server‑DRAM und HBM; erhöht Wahrscheinlichkeit für 'capacity_lock' und verlängert negative_supply‑Signal bis 2027.",
+      "falsifier": "Bis zum 2026-11-23 öffentlich verfügbare, primäre Beschaffungsverträge (signed LTAs), bestätigte Volumenangaben oder Hersteller‑Lieferdaten, die Anthropic‑DRAM‑Käufe in 1Gb‑äquivalenten Einheiten ≥40 Mrd. für 2027 belegen, sind nicht vorgelegt worden. Falsifizierung = Veröffentlichung solcher primären Bestätigungen vor dem 2026-11-23. (Review‑Datum: 2026-11-23)",
+      "nextReview": "2026-11-23",
+      "eventDate": "2026-09-23",
+      "novelty": "Mittel — Thema (AI direkte Einkäufe) wurde in verschiedenen Berichten aufgegriffen, aber spezifische hohe Volumenschätzungen sind neu/umstritten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 11,
+        "thesisRelevance": 16,
+        "forecastImpact": 13,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "hbm",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 45,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://m.ajupress.com/view/20260923172325340",
+          "label": "Aju Press — 'AI giants go straight to memory makers' (Bericht vom 2026-09-23, zitiert Digitimes/Analystenschätzungen)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass OpenAI/Anthropic direkte Einkäufe ab 2027 erwarten; zitiert TrendForce/Digitimes/Edge Water Zahlen ohne Primärdokumente."
+        },
+        {
+          "url": "https://aiindustrytoday.com/news/openai-anthropic-expected-to-expand-direct-hbm-and-dram-purchases-in-2027/",
+          "label": "AI Industry Today (2026-09-22) — Zusammenfassung von Digitimes/Marktanalysen",
+          "kind": "secondary",
+          "supports": "Nimmt Digitimes‑Bericht und Markt‑Schätzungen auf; keine primären Herstellerverträge oder konkrete Lieferdaten."
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-and-Anthropic-Announce-Strategic-Agreement-to-Scale-Next-Generation-AI-Infrastructure/default.aspx",
+          "label": "Micron Pressemitteilung (2026-06-22) — strategische Zusammenarbeit mit Anthropic",
+          "kind": "primary",
+          "supports": "Bestätigt eine strategische Kooperation zwischen einem Memory‑Hersteller (Micron) und Anthropic, liefert jedoch keine quantifizierten DRAM‑Volumen oder direkte 2027‑Abnahmeverträge in 1Gb‑Einheiten."
+        },
+        {
+          "url": "https://www.reddit.com/r/SKHynix/comments/1wo0wn7/ai_companies_to_directly_purchase_memory/",
+          "label": "Reddit‑Thread (Sammelstelle der Berichterstattung)",
+          "kind": "secondary",
+          "supports": "Sammelt Digitimes‑/Edge Water Zitate (40–50 Mrd. 1Gb‑Units). Nicht primär belegend."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung zitiert eine medienvermittelte Zusammenfassung (Google News → chosun/Digitimes‑Berichte), die wiederum auf Marktforschungs‑Projektionen (Digitimes zitiert Edge Water Research) verweist. Es fehlt ein primärer, belastbaren Nachweis (z. B. unterzeichnete LTAs mit Volumenangabe, offizielle Hersteller‑Lieferstatistiken oder veröffentlichte OEM‑Bestellvolumina), die die zentrale, quantitativen Behauptung (Anthropic = ~40–50 Mrd. 1‑Gb‑DRAM‑Äquivalente in 2027) bestätigen. Ein relevanter Primärbeleg (Micron‑Kooperation) existiert, nennt aber keine der behaupteten Mengen; andere Quellen berichten Schätzungen, sind aber Sekundär‑Aggregatoren. Deshalb kann diese Meldung nicht als VERIFIED DATA aufgenommen werden. Gegenbelege / Unsicherheit: etablierte Hersteller und Analytiker berichten gleichzeitig über starke Nachfrage, aber auch über mögliche Kapazitätserweiterungen und unterschiedliche Schätzungen — das Resultat ist widersprüchlich und sensitiv gegenüber Annahmen über 1Gb‑Konversion, Produktmix (HBM vs. DDR5) und Vertragsrahmen. Ohne primäre, datierten Volumenbeleg bleibt der Sachverhalt unbewiesen und muss auf Watchlist bleiben, bis konkrete LTAs/Shipment‑Daten oder Hersteller‑Bestätigungen vorliegen. Weiteres Adversarial‑Check‑Ergebnis: keine Primärquelle für die 40–50 Mrd. 1Gb‑Zahl gefunden; die Zahl kursiert nur in Sekundärberichten (Digitimes/Edge Water via Branchen‑Aggregatoren). Siehe unterstützende und marginal widersprechende Quellen oben. (Wichtige Last‑bearing Statements wurden mit Quellen belegt.)",
+      "candidateId": "ab22ce6ff4359c3879be",
+      "candidateKey": "90f311c70639629544c5f4d1",
+      "reviewedAt": "2026-09-23T10:01:05.907Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_06e213ee7de7552f006ab3a326bfa487d1917866fcda89c026"
+    },
+    {
+      "decision": "watchlist",
+      "title": "VanEck-Kommentar (Benzinga): ‘Forget the AI Bubble…’ — Marktauslegung, kein neues Primärereignis",
+      "fact": "Benzinga veröffentlichte am 2026-09-18 einen Artikel, in dem VanEck-Produktmanager Nick Frasse argumentiert, dass Anbieter wie Micron (MU), SK hynix, ASML und TSMC den Takt der AI‑Infrastruktur‑Ausweitung steuern und damit Flaschenhälse bzw. Preisdynamiken im Memory-/Foundry‑Stack bestimmen. (Quelle: Benzinga-Artikel, 2026-09-18).",
+      "placement": "global; Semiconductor‑Supply‑Chain (Foundry, Lithography, Memory, Advanced Packaging); kurzfristig (H2 2026–H1 2027)",
+      "mechanism": "Marktkommentar / Expertenaussage: Frasse legt einen kausalen Zusammenhang nahe, wonach physische Produktions‑ und Tool‑Engpässe (ASML/TSMC) sowie Memory‑Kapazitätsplanung (MU, SK hynix) direkten Einfluss auf Lieferzeiten, Allokation und Vertrags‑Preise für HBM/Server‑DRAM haben — dadurch wird die Pace des Data‑Center‑Buildouts determiniert.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informationell unterstützend für die Annahme eines anhaltenden HBM-/Server‑DRAM‑Engpasses bis mindestens Ende 2028; erhöht die Plausibilität des Basisszenarios, dass 2027 der Engpasshöhepunkt ist, aber liefert kein direktes, quantifizierbares Messsignal.",
+      "falsifier": "Bis 2027-06-30: Server‑DRAM Vertrags‑Referenzpreise fallen zwei Quartale in Folge ≥10 % oder bestätigte Lead Times für qualifizierte Server‑DRAM‑Lieferungen normalisieren (≤8 Wochen). Falls eines dieser Outcomes eintritt, widerlegt das die wesentliche Behauptung, dass technologie‑/Kapazitätsengpässe (MU/SK‑hynix/TSMC/ASML) kurzfristig die Knappheit fortsetzen.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-18",
+      "novelty": "Kommentar/Analyse (nicht-primär); keine beobachtete neue Shipment-, Vertrags- oder Messgröße.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand",
+        "pricing"
+      ],
+      "signal": "capacity_lock",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.benzinga.com/markets/equities/26/09/61865346/forget-the-ai-bubble-vanecks-nick-frasse-explains-how-mu-sk-hynix-asml-and-tsmc-control-the-pace-of-token-factories",
+          "label": "Benzinga — Artikel mit Zitaten von VanEck / Nick Frasse (veröffentlicht 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Primäre Meldung/Meinung: Zitiert VanEck‑Produktmanager Nick Frasse, der Kapazitäts- und Tool‑Engpässe (MU, SK hynix, ASML, TSMC) als steuernde Faktoren des AI‑Buildouts beschreibt."
+        },
+        {
+          "url": "https://www.vaneck.com/us/en/blogs/thematic-investing/is-the-ai-build-out-still-on-track-and-what-is-the-semiconductor-selloff-telling-investors/",
+          "label": "VanEck — begleitender Blog/Kommentar (VanEck-Quelle mit ähnlicher Argumentation)",
+          "kind": "secondary",
+          "supports": "VanEck‑Kommentar/Analyse, liefert Kontext zur Position von VanEck und ähnlichen Argumentationslinien zu Kapazitäts‑/Tool‑Limitern."
+        }
+      ],
+      "reason": "Der Kandidat ist ein marktbewertender Kommentar/Interview (Benzinga) und stellt keine neue, primär verifizierbare Messgröße (z. B. qualifizierte Shipments, konkrete Liefertermine, vertraglich bestätigte Bit‑Volumes oder beobachtete Lead‑Time‑Messungen) vor. Die Behauptung ist relevant für die bestehende Vorhersage P-2026-07-11-01 (Server‑DRAM/HBM Knappheit), liefert aber nur eine interpretative Unterstützung — kein direktes, datengestütztes Beobachtungs‑Ereignis. Entsprechend ist die Aufnahme als Watchlist angemessen: beobachtenswert, aber ohne Primärverifikation und damit nicht als VERIFIED DATA aufnehmbar. Opposing evidence (z. B. tatsächliche Preis‑ oder Lead‑Time‑Normalisierungen) wurde nicht vorgelegt; bis eine solche Primärmessung vorliegt bleibt die Aussage inferenziell. Quellen: Benzinga (2026-09-18) und VanEck‑Blog. Falsifizierbares Outcome und Review‑Datum sind gesetzt; red‑pencil‑Pass bleibt False, weil keine primäre Messung vorliegt und die Aussage in Teilen bereits im Baseline‑Kontext (capacity_lock / demand_up / negative_supply) diskutiert wurde — daher kein neuartiger, belastbarer Fakt zur direkten Aufnahme in den Index.",
+      "candidateId": "53940219a315aca78721",
+      "candidateKey": "9e5ff1b1997ad062c2189f48",
+      "reviewedAt": "2026-09-23T10:01:41.915Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04dc1a19d4df5960006ab3a3620e1087d1a18f01db3ed16382"
     }
   ]
 }
