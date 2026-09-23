@@ -45462,6 +45462,161 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0d940aed0dc86105006ab2e196763c87d28f97275e49cd0e63"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung und SK hynix forcieren HBM‑Ausbau; Nachfrage und knappe Verfügbarkeit bleiben zentral",
+      "fact": "BusinessKorea berichtet, dass Samsung und SK hynix den Ausbau der HBM‑Produktion forcieren, während HBM‑/AI‑Memory‑Angebot weiterhin angespannt bleibt (Berichtsdatum BusinessKorea: 2026-09-11; Candidate‑Publikationsdatum im Inbox‑Metadatum: 2026-09-23).",
+      "placement": "Geografie: globaler HBM/AI‑Memory‑Markt mit Schwerpunkt Südkorea; Domain/Layer: HBM / server_dram / ai_infrastructure; Horizon: kurzfristig (H2 2026–H1 2027).",
+      "mechanism": "Kapazitätserweiterung durch Umwidmung/Erweiterung von Foundry‑/Packaging‑Lines und Beschleunigung von HBM4‑Ramp; Konsequenz: zusätzliche Wafer/Package‑Output sollte verfügbare HBM‑Host‑Bits erhöhen, aber LTAs, Yield‑Probleme und Priorisierung großer Hyperscaler können die kurzfristige Verfügbarkeit weiter beschränken.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert die Vorhersage, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028; beobachtete Nachricht unterstützt die Annahme, dass Anbieter Kapazität aufbauen, aber nicht zwangsläufig kurzfristige Entspannung bringt.",
+      "falsifier": "Messbare Falsifikation: Bis 2027-06-30 müssen qualifizierte HBM‑Shipments (ausgewiesen von Samsung oder SK hynix Disclosure/IR oder durch offizielle Lieferrapporte) steigen und dokumentiert werden auf ≥200.000 HBM‑Packages/Monat (oder ein gleichwertiger, klarer, quantifizierter Produktionsindikator). Falls bis 2027-06-30 keine veröffentlichte, auditable Zunahme der qualifizierten HBM‑Shipments bzw. kein signifikanter Lead‑Time‑Rückgang (z. B. kontrahierbare Lead‑Times <12 Wochen für HBM‑SKUs) auftritt, ist die Wirkungswirkung der berichteten Ausbaubemühungen nicht bestätigt.",
+      "nextReview": "2027-07-01",
+      "eventDate": "2026-09-11",
+      "novelty": "Niedrig–mittel: Meldung fasst laufende, mehrfach berichtete Branchenentwicklungen zusammen (Ausbauabsichten, Preisdruck, LTAs); kein einzelner neuer, atomarer Primärbeleg (z. B. konkrete Shipments oder verbindliche FIDs mit quantifizierten Outputzahlen) im Candidate‑Text.",
+      "duplicateOf": "tail-2026-07-14-hbm4-cost",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 6,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 45,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=276742",
+          "label": "BusinessKorea – Samsung HBM market share / supply commentary (article 2026-09-11)",
+          "kind": "primary",
+          "supports": "Artikel (2026-09-11) beschreibt, dass Samsung und SK hynix HBM‑Ausbaupläne verfolgen und verweist auf anhaltende Angebotsknappheit sowie Markterwartung, dass Memory‑Knappheit bis mindestens 2028 bestehen bleibt."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/01/memory-shortage-deepens-as-hbm-export-price-tops-70",
+          "label": "Seoul Economic Daily – HBM Exportpreise und Engpassbefunde (2026-09-01)",
+          "kind": "secondary",
+          "supports": "Bericht mit quantitativen Indikatoren (z. B. HBM‑Exportpreisangaben, Erwähnung von knappem Output), die die BusinessKorea‑Darstellung einer knappen HBM‑Versorgung kontextualisieren."
+        }
+      ],
+      "reason": "Die Inbox‑Candidate‑Zeile ist konsistent mit wiederholten Branchenberichten (Samsung und SK hynix forcieren HBM‑Erweiterungen gegen eine angespannte Angebotslage). Für TAIL‑Aufnahme als VERIFIED DATA / accepted müssten jedoch ein atomarer, datierter Primärnachweis vorliegen (z. B. offizielle, quantifizierte Shipments, FID mit konkreten Produktionszahlen oder ein verbindlicher Lieferrapport), der die Richtung, Größe (Einheiten) und den unmittelbar beobachtbaren Verfügbarkeits‑Effekt belegt. Die vorgelegten Quellen dokumentieren Ausbauabsichten und Preis/Inventar‑Signale, liefern aber keine direkten, überprüfbaren Produktionsmengen oder Lead‑Time‑Messungen. Außerdem ist die Meldung inhaltlich nahe an bereits im Baseline vorhandenen Signalen (z. B. tail-2026-07-14-hbm4-cost), weshalb der Mehrwert für eine sofortige Annahme begrenzt ist. Deshalb watchlist: relevant und richtungsweisend, aber nicht hinreichend atomar oder primär verifiziert für eine ACCEPT‑Aufnahme. Nächster Review zu Beginn Juli 2027, um gemessene HBM‑Shipments/Lead‑Times nachzusehen.",
+      "candidateId": "779db978fb70c64e4ac3",
+      "candidateKey": "653728f0f40abf9afeea2e1d",
+      "reviewedAt": "2026-09-23T01:32:30.378Z",
+      "priorityScore": 69,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c345376e354ffe8006ab32c1353cc87d0ac99791ceddee264"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung könnte DRAM-Produktion auslagern und HBM priorisieren",
+      "fact": "Nach mehreren Sekundärberichten (The Elec zitiert) erwägt Samsung, konventionelle DRAM-/DDR5‑Modul- und SSD‑Fertigung stärker an externe Partner (z. B. Dreamtech, Hanyang Digitech, SFA Semicon) auszulagern, um interne Backend-/Packaging‑Kapazität für höherwertige HBM‑Produkte zu reservieren. (primäre Quelle nicht verifiziert).",
+      "placement": "Global; Unternehmensstrategie von Samsung Electronics; Domain: Memory / Packaging / AI‑Memory (HBM); kurzfristiger Horizont (Q4 2026–H1 2027) für Umverteilung interner Kapazität.",
+      "mechanism": "Verlagerung von Low‑value DRAM‑/Module‑Assembly und SSD‑Packaging an Drittanbieter gibt Samsung Back‑end‑/Packaging‑Flächen und Equipment frei, die in Advanced‑Packaging/Interposer/HBM‑Stacking (HBM4/HBM4E) umgerüstet werden können. Das reduziert kurzfristig verfügbare In‑house-Volumen von konventionellem DRAM/Module-Outflow und erhöht relative Priorität und knappe Allokation für HBM.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Stützt das Basisszenario struktureller Knappheit bei HBM und Server‑DRAM bis mindestens Ende 2028; erhöht kurzfristig Risiko struktureller Unterversorgung (vergleiche P-2026-07-11-01).",
+      "falsifier": "Bis 2026-12-31: Samsung veröffentlicht ein offizielles, dokumentiertes Programm/Regulatory‑Filing oder ein Investor‑Fact‑Sheet, das die Verlagerung von mehr als 20 % der konventionellen DRAM/Module‑Assembly‑Kapazität an Drittlieferanten quantifiziert; ODER Samsung liefert Q4‑2026‑Produktzahlen/Segment‑Breakdown, die keinen Rückgang der in‑house DDR5/Module‑Ausbringung im Vergleich zu Q3 zeigen.",
+      "nextReview": "2026-10-05",
+      "eventDate": "2026-09-18",
+      "novelty": "Modifikation der globalen Memory‑Supply‑Kette: Outsourcing‑Shift von Samsung (mögliches Umverteilen von Backend‑Kapazität zu HBM).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.techradar.com/pro/samsung-could-follow-micron-by-outsourcing-ddr5-and-ssd-production-to-third-parties-to-focus-on-more-lucrative-hbm-and-enterprise-products-could-sandisk-follow-suit",
+          "label": "TechRadar Pro — 'Samsung could follow Micron by outsourcing DDR5 and SSD production...'",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Samsung konventionelle DRAM/Module-Assembly und SSD‑Fertigung an Drittanbieter verlagern will, um Packaging‑Flächen für HBM freizusetzen (zitiert anonyme Quellen)."
+        },
+        {
+          "url": "https://www.gizmochina.com/2026/09/19/samsung-offloading-dram-production-to-allocate-factory-space-to-ai-memory/",
+          "label": "Gizmochina — 'Samsung offloading DRAM production to allocate factory space to AI memory'",
+          "kind": "secondary",
+          "supports": "Fasst Berichte zusammen, nennt mögliche Outsourcing‑Partner (Dreamtech u.a.) und liefert Zahlendetails zu behauptetem Fokus auf HBM."
+        },
+        {
+          "url": "https://techpixa.com/news/samsung-reportedly-plans-to-outsource-dram-production",
+          "label": "TechPixa — 'Samsung Reportedly Plans to Outsource DRAM Production'",
+          "kind": "secondary",
+          "supports": "Weitere Sekundärberichterstattung, wiederholt die Kernbehauptung mit ähnlichen zitierten Quellen; keine primäre Samsung‑Mitteilung gefunden."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/articles/samsung-betting-suppliers-handle-conventional-191000916.html",
+          "label": "Yahoo Finance (Aggregat) — 'Samsung is betting suppliers can handle conventional memory'",
+          "kind": "secondary",
+          "supports": "Aggregierte Berichterstattung, zitiert Personen 'familiar with the matter' und beschreibt Reallokationsargument (Cheonan/Onyang Packaging → HBM)."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung basiert auf mehrere Sekundärberichte (zitiert in aggregierenden Tech‑News‑Feeds). Ich konnte innerhalb des verfügbaren Suchbudgetts keine primäre, von Samsung stammende Bestätigung (Pressemitteilung, SEC/IR‑Filing, The Elec Originalartikel mit Archiv‑URL oder ein eindeutig identifizierbares Primärinterview) finden. Nach TAIL‑Regeln erfordert die Aufnahme als 'accepted' eine direkte Primärverifikation plus einen belastbaren, datierten, messbaren Nachweis sowie eine saubere Falsifizierbarkeit. Diese primären Belege fehlen in der vorliegenden Inbox‑Prüfung — daher 'watchlist'.\n\nOpposing evidence / Risiken: viele Sekundärquellen paraphrasieren offenbar denselben anonymen The‑Elec‑/Korea‑Supply‑Chain‑Tipp; das erhöht Rezyklierungsrisiko. Mehrere Firmen‑IR‑Dokumente (Samsung Q1/IR‑Präsentationen) und Marktreports bestätigen zwar eine HBM‑Priorisierung als Strategie, liefern aber keine Aussage über ein konkretes, quantifizierbares Outsourcing‑Programm oder über das Volumen an ausgelagerter DRAM‑Kapazität. Ohne primäre, datierte Company‑Quelle bleibt der Claim unproven.\n\nEmpfohlene nächste Schritte: 1) Prüfen Sie The Elec (Originalartikel) und Samsung IR/Pressemitteilungen um 2026‑09‑16–2026‑09‑19; 2) suchen Sie nach formalen Samsung‑Statements (IR release, regulatory filing) oder nach dokumentierten Verträgen mit genannten Outsourcern (Dreamtech, Hanyang Digitech, SFA Semicon); 3) falls Primärquelle gefunden wird, erneute Prüfung für 'accepted' mit direkten Zitat‑Support, klarer Mengenangabe, Datum und messbarer Index‑Auswirkung (z. B. % ausgelagerte Module‑Output).",
+      "candidateId": "6a605d2fe9019191ca0c",
+      "candidateKey": "abfc06f533f68a8e68540dd5",
+      "reviewedAt": "2026-09-23T01:33:05.143Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a1d6d531f1d6d58006ab32c2e870c87d0bf7b349b718221c9"
     }
   ]
 }

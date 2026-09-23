@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T20:14:42.739Z",
+  "generatedAt": "2026-09-23T01:33:06.804Z",
   "platform": {
-    "dataAsOf": "2026-09-22",
-    "analysisAsOf": "2026-09-22",
+    "dataAsOf": "2026-09-23",
+    "analysisAsOf": "2026-09-23",
     "sourceDataAsOf": "2026-09-21",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-09-22T20:14:41.197Z",
-      "pending": 77,
-      "reviewed": 42,
+      "checkedAt": "2026-09-23T01:33:05.193Z",
+      "pending": 80,
+      "reviewed": 44,
       "accepted": 4,
-      "rawCandidates": 305,
+      "rawCandidates": 313,
       "triage": {
-        "archivedOpinions": 6,
+        "archivedOpinions": 7,
         "groupedDuplicates": 17
       },
       "lastRun": {
-        "startedAt": "2026-09-22T20:13:18.922Z",
-        "completedAt": "2026-09-22T20:14:41.198Z",
+        "startedAt": "2026-09-23T01:32:01.939Z",
+        "completedAt": "2026-09-23T01:33:05.195Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 82,
+        "durationSeconds": 63,
         "budgetExhausted": false
       }
     },
@@ -73,15 +73,27 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-22; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (77 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-23; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (80 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
+    {
+      "date": "2026-09-23",
+      "title": "Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
+      "summary": "Aktuelle Meldung von Businesskorea: Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Businesskorea",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11aXVacW8yRmxobGllTVowRlQyMzZTc1RpdGQ1SURXSUdtc29LMndXX05NUE9jZW1VTW1tRmtGWTR6VkMteGI5SnZtQVR5bVB6SnhjandVZ3ZQel9naV9WZm5wUUJnSDlpM0RpTWhCaDI1ejA1?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-22",
       "title": "CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
       "summary": "Aktuelle Meldung von Wccftech: CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Wccftech",
@@ -93,23 +105,11 @@
       "title": "Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
       "summary": "Aktuelle Meldung von 富途牛牛: Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "富途牛牛",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOUcwdi1ZVEJheFhrdmVfX3dCa3ZZQW1uVEFoRXdidHN5dHVXdFFDNm5UMnRoVFQ0eEYzczdENXhxbEwyVnE0TktkaXl1Y1ZHb0pNbkw2UnZjMDBOOEEtcUtlYVZ5MFJ6MkN4WW1KT2dIemQ4Q0VmT0xkcHhoWUIxYzBhOVZhcVVrX2prdDAxM0xGd2hNazd1NWQyYzk3akZFRFB1eEY0aUNRX3gzUGQzOV93OGFoQUpMdUE?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
-      "summary": "Aktuelle Meldung von Investing.com Nigeria: Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Investing.com Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOal9RVTU2Q3U3MkVvTFJ5VXk1SEFwUzNEMXAzS2libjZWNWpSQXVxRDA5aGJqaWFhVXVMS1h2WFFLV20ycUFWMlJ1VVJuclRQVWZHWUpzTEEtX0VLRWdTbzlFb1lkWHZRdi1EMjdRVWkzUlQ1blYwdVRmRDQ4WlFldGFiZmg2VkVrcjZaalRCWndNN0k3ZkNXQU44VmJFd3puc2JxNi1vbmdiYlBDSnVnN3ROVnFmWUhjaXRBZTVxSi0?oc=5",
       "layer": "news"
     }
   ],
@@ -140,19 +140,31 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-22",
+    "date": "2026-09-23",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "77 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "80 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
+    {
+      "date": "2026-09-23",
+      "title": "Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
+      "summary": "Aktuelle Meldung von Businesskorea: Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Businesskorea",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11aXVacW8yRmxobGllTVowRlQyMzZTc1RpdGQ1SURXSUdtc29LMndXX05NUE9jZW1VTW1tRmtGWTR6VkMteGI5SnZtQVR5bVB6SnhjandVZ3ZQel9naV9WZm5wUUJnSDlpM0RpTWhCaDI1ejA1?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-22",
       "title": "CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
       "summary": "Aktuelle Meldung von Wccftech: CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Wccftech",
@@ -164,30 +176,18 @@
       "title": "Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
       "summary": "Aktuelle Meldung von 富途牛牛: Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "富途牛牛",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOUcwdi1ZVEJheFhrdmVfX3dCa3ZZQW1uVEFoRXdidHN5dHVXdFFDNm5UMnRoVFQ0eEYzczdENXhxbEwyVnE0TktkaXl1Y1ZHb0pNbkw2UnZjMDBOOEEtcUtlYVZ5MFJ6MkN4WW1KT2dIemQ4Q0VmT0xkcHhoWUIxYzBhOVZhcVVrX2prdDAxM0xGd2hNazd1NWQyYzk3akZFRFB1eEY0aUNRX3gzUGQzOV93OGFoQUpMdUE?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
-      "summary": "Aktuelle Meldung von Investing.com Nigeria: Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Investing.com Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOal9RVTU2Q3U3MkVvTFJ5VXk1SEFwUzNEMXAzS2libjZWNWpSQXVxRDA5aGJqaWFhVXVMS1h2WFFLV20ycUFWMlJ1VVJuclRQVWZHWUpzTEEtX0VLRWdTbzlFb1lkWHZRdi1EMjdRVWkzUlQ1blYwdVRmRDQ4WlFldGFiZmg2VkVrcjZaalRCWndNN0k3ZkNXQU44VmJFd3puc2JxNi1vbmdiYlBDSnVnN3ROVnFmWUhjaXRBZTVxSi0?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-22T20:14:42.949Z",
+    "generatedAt": "2026-09-23T01:33:07.027Z",
     "count": 3,
-    "candidateCount": 620,
+    "candidateCount": 601,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -280,7 +280,7 @@
         "confidence": 77,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-22"
+        "indexAsOf": "2026-09-23"
       },
       {
         "marketId": "enterprise_ssd",
@@ -380,7 +380,7 @@
         "confidence": 68,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-22",
+        "indexAsOf": "2026-09-23",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -401,11 +401,23 @@
   },
   "originalSignals": [
     {
+      "date": "2026-09-23",
+      "title": "Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
+      "summary": "Aktuelle Meldung von Businesskorea: Samsung, SK hynix Race to Expand HBM Output as Supply Remains Tight",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Businesskorea",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11aXVacW8yRmxobGllTVowRlQyMzZTc1RpdGQ1SURXSUdtc29LMndXX05NUE9jZW1VTW1tRmtGWTR6VkMteGI5SnZtQVR5bVB6SnhjandVZ3ZQel9naV9WZm5wUUJnSDlpM0RpTWhCaDI1ejA1?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-22",
       "title": "CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
       "summary": "Aktuelle Meldung von Wccftech: CXMT Chases NAND as YMTC Storms Into DRAM Territory, Igniting a Chinese Memory & Storage Chip Turf War, Says Report",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "Wccftech",
@@ -417,23 +429,11 @@
       "title": "Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
       "summary": "Aktuelle Meldung von 富途牛牛: Samsung accelerates HBM4 volume production! Bernstein forecasts a 72% quarter-on-quarter surge in HBM revenue for Q3 as memory market sentiment continues to heat up.",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "富途牛牛",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOUcwdi1ZVEJheFhrdmVfX3dCa3ZZQW1uVEFoRXdidHN5dHVXdFFDNm5UMnRoVFQ0eEYzczdENXhxbEwyVnE0TktkaXl1Y1ZHb0pNbkw2UnZjMDBOOEEtcUtlYVZ5MFJ6MkN4WW1KT2dIemQ4Q0VmT0xkcHhoWUIxYzBhOVZhcVVrX2prdDAxM0xGd2hNazd1NWQyYzk3akZFRFB1eEY0aUNRX3gzUGQzOV93OGFoQUpMdUE?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
-      "summary": "Aktuelle Meldung von Investing.com Nigeria: Samsung’s HBM growth outpaces SK Hynix in August, Bernstein says By Investing.com",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Investing.com Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOal9RVTU2Q3U3MkVvTFJ5VXk1SEFwUzNEMXAzS2libjZWNWpSQXVxRDA5aGJqaWFhVXVMS1h2WFFLV20ycUFWMlJ1VVJuclRQVWZHWUpzTEEtX0VLRWdTbzlFb1lkWHZRdi1EMjdRVWkzUlQ1blYwdVRmRDQ4WlFldGFiZmg2VkVrcjZaalRCWndNN0k3ZkNXQU44VmJFd3puc2JxNi1vbmdiYlBDSnVnN3ROVnFmWUhjaXRBZTVxSi0?oc=5",
       "layer": "news"
     }
   ]
