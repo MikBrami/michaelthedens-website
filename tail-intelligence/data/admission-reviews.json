@@ -45911,6 +45911,159 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_02ec8e439420bbf7006ab3f03dc9ac87d1abd6b1e1838dc3e8"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT jagt NAND, während YMTC in DRAM‑Territorium vorstößt (Medienberichte)",
+      "fact": "Berichte aus Fachmedien und Technik‑News aggregieren, dass ChangXin (CXMT) Pläne zur Erforschung/Produktion von 3D‑NAND (NAND‑Flash) prüft, während Yangtze Memory (YMTC) Tests/Low‑Power‑DRAM‑Samples an Kunden ausgeliefert haben soll — beides als Indiz, dass beide chinesischen Hersteller in das jeweils andere Memory‑Segment vordringen.",
+      "placement": "Geographie: China; Domain/Layer: Halbleiterproduktion (DRAM und NAND); Horizon: laufend/nahe Zukunft (R&D‑/Pilotphase, unbestätigte HV‑Fertigung).",
+      "mechanism": "Strategische Ausweitung bestehender Produktionsportfolios: CXMT werde angeblich NAND‑F&E/‑R&D‑Linien planen, um von AI‑getriebener NAND‑Nachfrage zu profitieren; YMTC liefere DRAM‑Testsamples bzw. prüfe DRAM‑Produktion, was die Wettbewerbsdynamik zwischen lokalen chinesischen DRAM‑ und NAND‑Anbietern verstärken würde. Der behauptete Wirkungspfad ist: neue Anbieter → erhöhter inländischer Angebotspfad → potenziell gedämpfter Preisdruck/Erhöhung der Versorgung (oder Verschärfung der Kapazitätskonkurrenz), abhängig von Qualifikations‑ und Lieferfähigkeiten.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Informiert P-2026-07-20-04 (\"Memory bleibt 2027 knapp, ...\"), indem es ein mögliches Beschleuniger-/Abschwächungsargument liefert: wenn CXMT und YMTC erfolgreich NAND/DRAM qualifizieren, könnten sie längerfristig Kapazität liefern und das Knappheitsrisiko abmildern; aktuell sind aber Berichte nur indikativ und nicht proof of qualified volume.",
+      "falsifier": "Bis 2027-06-30 gibt es keine verifizierbaren, qualifizierten Produktions‑Shipments (mit konkreten Liefervolumina oder zertifizierten Kundenlieferungen) von CXMT in 3D‑NAND‑Produkten oder von YMTC in standardkonformen DRAM‑Produkten. Ein positiver Falsifier wäre ein veröffentlichter, auditierbarer Liefernachweis (z. B. offizielle Kunden‑Lieferscheine, belegte Kontraktmengen oder Unternehmensberichte), datiert und mit Mengenangabe (z. B. 'CXMT lieferte X TB 3D‑NAND‑Module an Kunde Y am 2027‑05‑01').",
+      "nextReview": "2027-07-01",
+      "eventDate": "2026-09-18",
+      "novelty": "Moderate — varias Berichte bündeln dasselbe Trendsignal (beide Firmen bewegen sich in das jeweils andere Segment), aber keine einzelne Primärquelle liefert verifizierte Produktionsmengen.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 20,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.eetimes.com/chinas-dram-specialist-cxmt-eyes-nand-flash-entry/",
+          "label": "EE Times — China’s DRAM Specialist CXMT Eyes NAND Flash Entry",
+          "kind": "secondary",
+          "supports": "Bericht, dass CXMT angeblich plant, in NAND (3D‑NAND) vorzustoßen; Kontext über YMTC‑Bewegungen in Richtung DRAM ebenfalls angeführt."
+        },
+        {
+          "url": "https://wccftech.com/cxmt-chases-nand-as-ymtc-storms-into-dram-territory-igniting-a-chinese-memory-storage-chip-turf-war-says-report/amp/",
+          "label": "Wccftech — Aggregierter Bericht zum Turf‑War",
+          "kind": "secondary",
+          "supports": "Zusammenfassung mehrerer Quellen, dass CXMT NAND‑Ambitionen hat und YMTC DRAM‑Tests durchführt; kein primärer Lieferschein oder Mengenangabe."
+        },
+        {
+          "url": "https://www.tomshardware.com/pc-components/ssds/chinas-premiere-memory-maker-cxmt-eyes-producing-flash-for-ssds-report-claims-3d-nand-research-and-development-line-rumored-for-its-second-manufacturing-facility-near-beijing",
+          "label": "Tom's Hardware — Berichterstattung zu CXMT‑NAND‑R&D",
+          "kind": "secondary",
+          "supports": "Berichtet über angebliche 3D‑NAND‑R&D‑Ambitionen von CXMT und ordnet dies in den Marktkontext ein."
+        }
+      ],
+      "reason": "Der Kandidat ist thematisch relevant für die TAIL‑Memory‑Outlook (insbesondere Availability/Capacity‑Fragmente). Allerdings fehlt primäre, verifizierbare Evidenz: keine der referenzierten Berichte liefert einen direkten, datierten Beleg für qualifizierte Produktions‑Shipments, konkrete Mengen oder bestätigte Kundenlieferungen — Anforderungen, die für eine Aufnahme als VERIFIED DATA oder für Akzeptanz erfüllt sein müssen. Die Berichte sind aktuell (September 2026) und sinnvoll als Frühindikator; wegen fehlender quantifizierbarer Messung und möglicher Recyling/Aggregation desselben unbestätigten Gerüchts wird der Kandidat auf Watchlist gesetzt. Adversarial check: Quellen sind Sekundär‑Tech‑Medien und Aggregatoren; kein Primär‑Beleg (Unternehmens‑10‑K/PR mit konkreten Liefermengen, offizielles Kunden‑Statement oder verifizierte Kontraktankündigung) gefunden — daher redPencilPass = false. Empfehlung: Behalte auf Watchlist bis ein Primärnachweis (qualifizierte Shipments, Kunden‑LTA mit Volumina oder offizielle Unternehmensangabe mit Mengen/Terminen) vorliegt. Nächste Überprüfung geplant zum 2027-07-01.",
+      "candidateId": "82e430701c3ce77a8244",
+      "candidateKey": "b1c44d156785106c18fddf7a",
+      "reviewedAt": "2026-09-23T20:22:59.268Z",
+      "priorityScore": 63,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09b5495a7446ae60006ab43508ade887d1bba57f847e978226"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Tokyo Electron, Infineon und Micron bauen Indiens Fab‑Arbeitskräfte aus — qualitativer Beleg, kein quantifizierbares Markt‑Ereignis",
+      "fact": "BusinessToday‑Artikel berichtet am 2026-09-18, dass Firmen wie Tokyo Electron, Infineon und Micron Initiativen zum Aufbau von Fertigungs‑ und Packaging‑Fachkräften in Indien vorantreiben (Trainingszentren, lokale Entwicklungs‑ und Equipment‑Präsenz).",
+      "placement": "Geographie: Indien; Domain/Layer: Halbleiter‑Ökosystem (Workforce, Equipment‑Dev, Training); Horizon: laufend / kurzfristig (Ankündigungen Sept 2026).",
+      "mechanism": "Bericht beschreibt Kapazitäts‑/Kompetenzaufbau über Trainingseinrichtungen, lokale Entwicklungszentren und Partnerschaften mit einheimischen OEMs/Regierung (Semicon 2.0). Das ist ein Aufbau des Angebots‑ und Lieferkettenlayers (langfristig), aber kein nachweislicher, unmittelbar messbarer Einfluss auf qualifizierte Lieferungen, Lead Times oder Vertragsmengen.",
+      "predictionId": "",
+      "predictionImpact": "Kein direkt zugeordnetes bestehendes Vorhersage‑ID‑Impact: Der Kandidat liefert einen qualitativen Hinweis auf Kapazitätsaufbau/Workforce, liefert jedoch kein atomar datiertes Lieferungs‑ oder Preisereignis, das eine der gelisteten Vorhersagen eindeutig bestätigen oder falsifizieren würde.",
+      "falsifier": "Bis 2027-06-30 muss mindestens eines der Unternehmen (Micron, Infineon, Tokyo Electron) eine öffentlich verifizierbare, quantifizierte Meldung veröffentlichen, die entweder (a) >1.000 qualifizierte Fab‑Techniker‑Platzierungen/Abschlüsse (zertifizierte Trainees an konkreten Trainingszentren in Indien) oder (b) >50.000 qualifizierte HBM/DRAM‑Wafer‑Äquivalente/Monat neu qualifizierter Produktionskapazität (durch Ankündigung von serienfähigen Shipments oder qualifizierten LTAs) belegt. Wenn bis zu diesem Datum keine quantifizierbaren, überprüfbaren Messgrößen (Trainging‑Absolventen oder qualifizierte Kapazitäts/Shipment‑Metriken) veröffentlicht werden, bleibt die Aussage qualitativ und wirkt nicht als beständiges Markt‑Signal für Verfügbarkeits‑ oder Preisvorhersagen.",
+      "nextReview": "2027-07-15",
+      "eventDate": "2026-09-18",
+      "novelty": "Gering bis moderat — bestätigt und kumuliert bereits dokumentierte Semicon‑2.0 / Semicon India‑Entwicklungen (Ankündigungen während SEMICON India 2026).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 9,
+        "thesisRelevance": 11,
+        "forecastImpact": 8,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.businesstoday.in/amp/technology/news/story/beyond-design-how-tokyo-electron-infineon-and-micron-are-building-indias-fab-workforce-556535-2026-09-18",
+          "label": "BusinessToday — 'Beyond design: How Tokyo Electron, Infineon and Micron are building India's fab workforce' (2026-09-18)",
+          "kind": "primary",
+          "supports": "Artikel veröffentlicht 2026-09-18 berichtet Ankündigungen zu Trainingszentren, lokale Entwicklungs‑ und Workforce‑Initiativen von Tokyo Electron, Infineon, Micron in Indien."
+        },
+        {
+          "url": "https://www.eetimes.com/semicon-india-2026-india-starts-packaging-chips-as-ecosystem-takes-shape/",
+          "label": "EE Times — Berichterstattung SEMICON India 2026 (Unterstützung: Micron/Trainings/Packaging‑Ankündigungen)",
+          "kind": "secondary",
+          "supports": "Berichtet zu SEMICON India 2026‑Diskussionen, inklusive Micron‑Anmerkungen zu Ausweitung von Produktion/Packaging und Ausbildungs‑/Skilling‑Initiativen."
+        },
+        {
+          "url": "https://apps.digitimes.com/news/a20260918VL211/semicon-2026-production-commercial-investment.html?dt_ref=topic",
+          "label": "DigiTimes — Zusammenfassung der Industrieankündigungen (Equipment, Materials, Training statt neuer Fab‑Launches)",
+          "kind": "secondary",
+          "supports": "Analytische Zusammenfassung, dass viele Anbieter Investitionen in Equipment, Materialien, Packaging und Training ankündigten, nicht primär neue Fabs; widerspruchsfrei mit BusinessToday."
+        }
+      ],
+      "reason": "Der Kandidat ist eine qualitativ nützliche Bestätigung, dass mehrere große Akteure Trainings‑ und lokale Entwicklungsaktivitäten in Indien vorantreiben (Semicon 2.0 Kontext). Er liefert jedoch kein atomar datiertes, messbares Ergebnis (z. B. qualifizierte Shipments, Lead‑Time‑Verbesserung, konkrete LTA‑Volumina oder Preiswirkung), das eine der gelisteten Vorhersagen in der TAIL‑Baseline eindeutig beeinflussen oder verifizieren/falsifizieren würde. Primärquellen existieren (BusinessToday, Regierungs‑/Event‑Statements), aber sie berichten Ankündigungen/Programme ohne die für eine Aufnahme als VERIFIED DATA benötigten, quantifizierbaren Marktmetriken. Außerdem besteht das Risiko, dass dies ein kumulatives, bereits in der Baseline abgedecktes Thema (»Semicon 2.0 / India builds workforce and supply chain«) ist und damit keine neue, isolierbare Evidenz liefert. Deshalb wird Watchlist empfohlen: behalte das Signal, fordere aber konkrete, quantifizierbare Folgebelege (Trainings‑Absolventenzahlen, qualifizierte Shipments, LT‑Messungen oder LTA‑Volumina), bevor eine Akzeptanz erfolgt.",
+      "candidateId": "9be29f504aab39a5f0f5",
+      "candidateKey": "e1c829a4eab173831c27f08f",
+      "reviewedAt": "2026-09-23T20:23:50.374Z",
+      "priorityScore": 53,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08ac8ac8e35965dc006ab435238a5887d18a1b1636191a177e"
     }
   ]
 }
