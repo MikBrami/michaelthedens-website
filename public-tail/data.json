@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T01:26:26.934Z",
+  "generatedAt": "2026-09-24T10:02:31.070Z",
   "platform": {
     "dataAsOf": "2026-09-24",
     "analysisAsOf": "2026-09-24",
@@ -8,18 +8,18 @@
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-09-24T01:26:25.373Z",
-      "pending": 86,
-      "reviewed": 52,
+      "checkedAt": "2026-09-24T10:02:29.192Z",
+      "pending": 88,
+      "reviewed": 54,
       "accepted": 4,
-      "rawCandidates": 338,
+      "rawCandidates": 346,
       "triage": {
         "archivedOpinions": 8,
         "groupedDuplicates": 18
       },
       "lastRun": {
-        "startedAt": "2026-09-24T01:25:22.826Z",
-        "completedAt": "2026-09-24T01:26:25.375Z",
+        "startedAt": "2026-09-24T10:01:20.540Z",
+        "completedAt": "2026-09-24T10:02:29.194Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 62,
+        "durationSeconds": 68,
         "budgetExhausted": false
       }
     },
@@ -73,15 +73,27 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-24; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (86 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-24; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (88 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
+    {
+      "date": "2026-09-24",
+      "title": "CXMT gains ground in DRAM as Samsung, SK Hynix shift more capacity to HBM",
+      "summary": "Aktuelle Meldung von digitimes: CXMT gains ground in DRAM as Samsung, SK Hynix shift more capacity to HBM",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 97,
+      "relevanceScore": 100,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdVhneWFPVzc3R2c4SkxXcjdYOUpnc2VOSTVCdjFpb2tQalVYRUpLS3Z0WE9hSFZWMXBXRnJSMDc1Y2lDMi1YUTBzOWFxbjhtcGNyQ1hncDJXUGNoaW5vaDYxaHRodmdqLWdpbnpjZ2ZHQU5KMWNNNUh1WEp6UXlnNXpuMDJwdmNmcW1Ec0EzekxoVW8?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-23",
       "title": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
       "summary": "Aktuelle Meldung von TrendForce: [News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 95,
+      "score": 91,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "TrendForce",
@@ -93,23 +105,11 @@
       "title": "Samsung Electronics and SK Hynix Q3 Operating Profit Combined Forecast Nears 190 Trillion Won; China's CXMT Emerges as Wild Card",
       "summary": "Aktuelle Meldung von finance.biggo.com: Samsung Electronics and SK Hynix Q3 Operating Profit Combined Forecast Nears 190 Trillion Won; China's CXMT Emerges as Wild Card",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "finance.biggo.com",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ndjhpVUdicmZJZVNPMHhncFI0VWVVRHUtdEhOenM2QkE2WDJZZnBLZmdvTWZFTlhOcmJsM0cxSnFNX1IwcHh0WkZaSFpEUnRpTHRqTVpZSEhaOFVUc25NQkhYZ2lyZHdRQlNLOFMwd2VoUXRKYmc?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-24",
-      "title": "Micron Eyes $50 Billion in Q4 Revenue, Rapidly Closing In on Samsung and SK Hynix with HBM4",
-      "summary": "Micron Eyes $50 Billion in Q4 Revenue, Rapidly Closing In on Samsung and SK Hynix with HBM4 finance.biggo.com",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DTUdfT09WZ2plcVNEbXloVUxBcU91dUZsSnZpWUFkTVJFa0RPTk1yOXNkSm5sQnZIUS1WQ09fVTJ0SExDblpkV3NPZkJHZW9IS2hWSGFMVHR2WUNPdEpidi03R0JNeC1zWkZvZ0xKMEdQVTVzckE?oc=5",
       "layer": "news"
     }
   ],
@@ -144,15 +144,27 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "86 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "88 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
+    {
+      "date": "2026-09-24",
+      "title": "CXMT gains ground in DRAM as Samsung, SK Hynix shift more capacity to HBM",
+      "summary": "Aktuelle Meldung von digitimes: CXMT gains ground in DRAM as Samsung, SK Hynix shift more capacity to HBM",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 97,
+      "relevanceScore": 100,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdVhneWFPVzc3R2c4SkxXcjdYOUpnc2VOSTVCdjFpb2tQalVYRUpLS3Z0WE9hSFZWMXBXRnJSMDc1Y2lDMi1YUTBzOWFxbjhtcGNyQ1hncDJXUGNoaW5vaDYxaHRodmdqLWdpbnpjZ2ZHQU5KMWNNNUh1WEp6UXlnNXpuMDJwdmNmcW1Ec0EzekxoVW8?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-23",
       "title": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
       "summary": "Aktuelle Meldung von TrendForce: [News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 95,
+      "score": 91,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "TrendForce",
@@ -164,30 +176,18 @@
       "title": "Samsung Electronics and SK Hynix Q3 Operating Profit Combined Forecast Nears 190 Trillion Won; China's CXMT Emerges as Wild Card",
       "summary": "Aktuelle Meldung von finance.biggo.com: Samsung Electronics and SK Hynix Q3 Operating Profit Combined Forecast Nears 190 Trillion Won; China's CXMT Emerges as Wild Card",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "finance.biggo.com",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ndjhpVUdicmZJZVNPMHhncFI0VWVVRHUtdEhOenM2QkE2WDJZZnBLZmdvTWZFTlhOcmJsM0cxSnFNX1IwcHh0WkZaSFpEUnRpTHRqTVpZSEhaOFVUc25NQkhYZ2lyZHdRQlNLOFMwd2VoUXRKYmc?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-09-24",
-      "title": "Micron Eyes $50 Billion in Q4 Revenue, Rapidly Closing In on Samsung and SK Hynix with HBM4",
-      "summary": "Micron Eyes $50 Billion in Q4 Revenue, Rapidly Closing In on Samsung and SK Hynix with HBM4 finance.biggo.com",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DTUdfT09WZ2plcVNEbXloVUxBcU91dUZsSnZpWUFkTVJFa0RPTk1yOXNkSm5sQnZIUS1WQ09fVTJ0SExDblpkV3NPZkJHZW9IS2hWSGFMVHR2WUNPdEpidi03R0JNeC1zWkZvZ0xKMEdQVTVzckE?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-24T01:26:27.157Z",
+    "generatedAt": "2026-09-24T10:02:31.300Z",
     "count": 3,
-    "candidateCount": 534,
+    "candidateCount": 432,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -401,11 +401,23 @@
   },
   "originalSignals": [
     {
+      "date": "2026-09-24",
+      "title": "CXMT gains ground in DRAM as Samsung, SK Hynix shift more capacity to HBM",
+      "summary": "Aktuelle Meldung von digitimes: CXMT gains ground in DRAM as Samsung, SK Hynix shift more capacity to HBM",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 97,
+      "relevanceScore": 100,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdVhneWFPVzc3R2c4SkxXcjdYOUpnc2VOSTVCdjFpb2tQalVYRUpLS3Z0WE9hSFZWMXBXRnJSMDc1Y2lDMi1YUTBzOWFxbjhtcGNyQ1hncDJXUGNoaW5vaDYxaHRodmdqLWdpbnpjZ2ZHQU5KMWNNNUh1WEp6UXlnNXpuMDJwdmNmcW1Ec0EzekxoVW8?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-23",
       "title": "[News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
       "summary": "Aktuelle Meldung von TrendForce: [News] German Court Reportedly Finds Micron Infringed Two YMTC NAND Patents, Grants Injunctions",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 95,
+      "score": 91,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "TrendForce",
@@ -417,23 +429,11 @@
       "title": "Samsung Electronics and SK Hynix Q3 Operating Profit Combined Forecast Nears 190 Trillion Won; China's CXMT Emerges as Wild Card",
       "summary": "Aktuelle Meldung von finance.biggo.com: Samsung Electronics and SK Hynix Q3 Operating Profit Combined Forecast Nears 190 Trillion Won; China's CXMT Emerges as Wild Card",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "finance.biggo.com",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ndjhpVUdicmZJZVNPMHhncFI0VWVVRHUtdEhOenM2QkE2WDJZZnBLZmdvTWZFTlhOcmJsM0cxSnFNX1IwcHh0WkZaSFpEUnRpTHRqTVpZSEhaOFVUc25NQkhYZ2lyZHdRQlNLOFMwd2VoUXRKYmc?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-24",
-      "title": "Micron Eyes $50 Billion in Q4 Revenue, Rapidly Closing In on Samsung and SK Hynix with HBM4",
-      "summary": "Micron Eyes $50 Billion in Q4 Revenue, Rapidly Closing In on Samsung and SK Hynix with HBM4 finance.biggo.com",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DTUdfT09WZ2plcVNEbXloVUxBcU91dUZsSnZpWUFkTVJFa0RPTk1yOXNkSm5sQnZIUS1WQ09fVTJ0SExDblpkV3NPZkJHZW9IS2hWSGFMVHR2WUNPdEpidi03R0JNeC1zWkZvZ0xKMEdQVTVzckE?oc=5",
       "layer": "news"
     }
   ]
