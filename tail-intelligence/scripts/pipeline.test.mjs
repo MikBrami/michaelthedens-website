@@ -37,6 +37,19 @@ test('Free prefilter removes noise and clusters paraphrased cross-publisher dupl
  assert.equal(t.archivedLowRelevance,1);
  assert.equal(t.representatives.length,1);
 });
+test('Free triage keeps measurable memory events despite a modest relevance score',()=>{
+ const headlines=[
+  'CXMT G5 DRAM Enters Mass Production with 50% Higher Dies Per Wafer',
+  'Micron demonstrates 512GB DDR5 module for AI servers',
+  'Samsung to Double HBM4 Output Next Year, Sources Say',
+  'YMTC wins patent battle against Micron'
+ ];
+ const candidates=headlines.map((title,i)=>({...item,id:`event-${i}`,title,relevance_score:i===2||i===3?83:69}));
+ const eligible=eligibleCandidates(candidates,asOf);
+ const triaged=triageCandidates(eligible);
+ assert.equal(eligible.length,4);
+ assert.equal(triaged.representatives.length,4);
+});
 test('Headline grouping preserves opposing direction and distinct quantities',()=>{
  const base={...item,title:'Samsung increases qualified HBM shipments to Nvidia by 20 percent'};
  const same={...base,id:'b',title:base.title+' — News'};
