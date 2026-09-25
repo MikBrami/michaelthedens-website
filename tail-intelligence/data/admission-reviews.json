@@ -46813,6 +46813,151 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_080c59d973f712e2006ab5cee344b487d2950381cb6e9b1f46"
+    },
+    {
+      "decision": "watchlist",
+      "title": "ITC‑Untersuchung gegen Micron wegen Netlist‑Patenten; Samsung‑Lizenz als Bewertungsmaßstab",
+      "fact": "Am 2026-09-24/25 meldete Netlist und bestätigende Berichte, dass die U.S. International Trade Commission (ITC) die Einleitung einer Untersuchung gegen Micron Technology über angebliche Verletzungen von vier Netlist‑Patenten über DDR5/MRDIMM/Server‑Memory-Produkte beschlossen hat; Netlist verweist dabei auf eine kürzlich abgeschlossene Samsung‑Lizenzvereinbarung im Bereich Server/HBM‑IP mit einem Referenzwert (ca. US$897–898M) als Benchmark.",
+      "placement": "USA / ITC‑Verfahren; Produktdomäne: DDR5 Server‑DIMMs / High‑Bandwidth Memory (HBM); Layer: Lieferketten‑/IP‑Regelungs‑Layer; Horizont: kurzfristig (Q4 2026) für Import‑/Zoll‑Restriktionen.",
+      "mechanism": "Netlist hat beim ITC ein Verfahren zur Durchsetzung von Ausschluss‑ und Unterlassungsmaßnahmen wegen Patentverletzung eingeleitet; ein ITC‑Ausschluss oder einstweilige Maßnahmen könnten Importe/Verwendung bestimmter Micron‑DDR5/MRDIMM/HBM‑Module in den USA stoppen oder deren Lieferketten umleiten, wodurch qualifizierte verfügbare Server‑DRAM/HBM‑Lieferungen in den USA/NA kurzfristig knapper würden.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Das Signal erhöht das Risiko einer kurzfristigen Verschärfung der Server‑DRAM/HBM‑Knappheit (negative_supply) für Q4 2026–H1 2027, weil ein ITC‑Ausschluss oder Verzögerungen bei Einfuhren Lieferzeiten und verfügbare Mengen weiter verschlechtern können.",
+      "falsifier": "Bis 2026-12-31: Keine ITC‑Zwischenverfügung, kein Antrag auf Ausschlussmaßnahme genehmigt und keine signifikante Lieferunterbrechung in qualifizierten Micron‑Server‑DRAM/HBM‑Produktlinien (gemessen an bestätigten Lead‑Time‑Änderungen <2 Wochen und unveränderten qualifizierten Liefermengen laut dargestellten OEM‑Ankündigungen).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-24",
+      "novelty": "Netlist hat ITC‑Institution gegen andere Hersteller geführt; die gezielte Einleitung gegen Micron mit Verweis auf die Samsung‑Lizenz als Benchmark ist neu und relevant für kurzfristige Availability‑Risiken.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "server_dram",
+        "dram",
+        "hbm",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 55,
+      "confidence": 72,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investors.netlist.com/news/us-international-trade-commission-votes-to-institute-investigation-into-micron-technology-inc/270dd13b-f73f-4be8-a85a-13b5b56ecba8",
+          "label": "Netlist: ITC instituted investigation press release (Netlist Investors)",
+          "kind": "primary",
+          "supports": "Netlist bestätigt, dass die ITC eine Untersuchung gegen Micron bezüglich vier Netlist‑Patenten zu DDR5/MRDIMM/HBM eingeleitet hat; Netlist stellt die Samsung‑Lizenz/Kooperation als Branchenbenchmark dar."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926094127/nlst-20260627x10q.htm",
+          "label": "Netlist SEC Filing / Kontext zu Patentstreitigkeiten (10‑Q)",
+          "kind": "secondary",
+          "supports": "Netlist SEC‑Einreichungen dokumentieren die Patentverletzungs‑Klagen/ITC‑Aktivitäten und die Relevanz der betreffenden Patente für DDR5‑RDIMM/MRDIMM und HBM‑Produkte; gibt Kontext zu früheren Vergleichen und Lizenzwerten."
+        },
+        {
+          "url": "https://ca.investing.com/news/stock-market-news/itc-institutes-probe-into-micron-over-netlist-patents-93CH-4851797",
+          "label": "Investing.com: Bericht über ITC‑Probe gegen Micron",
+          "kind": "secondary",
+          "supports": "Unabhängige Nachrichtenquelle berichtet, dass das ITC‑Verfahren gegen Micron eingeleitet wurde und nennt die betroffenen Patentnummern und den Untersuchungsumfang."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist eine klar datierte und belegte juristische Handlung (ITC‑Institution), die unmittelbar die Verfügbarkeit von qualifiziertem Server‑DRAM/HBM in den USA beeinflussen kann. Die Primärquelle (Netlist‑Mitteilung) und unabhängige Berichte bestätigen Institution und die Hervorhebung der Samsung‑Lizenz als Bewertungsmaßstab; die Beobachtung ist damit prüfbar, relevant für die bestehende Vorhersage P-2026-07-11-01 und ausreichend konkret, um als Signal zur Aufnahme in die TAIL‑Datenbank zu gelten.",
+      "candidateId": "c7b3fee28cb82615851b",
+      "candidateKey": "a6f1078116ba782f1fd720e4",
+      "reviewedAt": "2026-09-25T10:14:11.387Z",
+      "priorityScore": 86,
+      "gateReasons": [
+        "red-pencil check incomplete"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0904f8c7357fb6ad006ab64959501087d08c4d9bb3e347823c"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht über 10%-Preisaufschlag bei AMD‑Chips (verbreitet über ChannelGate → Wccftech → Finanzmedien)",
+      "fact": "Unbestätigter Bericht (ChannelGate, aufgegriffen durch Wccftech) behauptet, TSMC habe Foundry‑Quotierungen um ~10 % erhöht; AMD habe daraufhin Kunden über eine etwa 10%ige Preiserhöhung für AI‑Acceleratoren, GPUs und Chipsets ab Q4 2026 informiert.",
+      "placement": "Global / Produkt‑Scope: AMD‑gefertigte Chips (AI‑Acceleratoren, Consumer‑GPUs, Motherboard‑Chipsets); Wirkungshorizont: Q4 2026.",
+      "mechanism": "Kosten‑Durchschlag: Steigende Produktionskosten bei TSMC (höhere Foundry‑Quotierungen) würden von AMD in Form von Listenpreiserhöhungen an Kunden weitergegeben, wodurch Produkt‑Preise (u.a. GPU/Accelerator SKUs) steigen.",
+      "predictionId": "tail-2026-07-14-dram-prices",
+      "predictionImpact": "Kurzfristiger Verstärkungs‑Effekt des bestehenden price_up‑Signals im Halbleiterbereich (Preisdruck auf ausgewählte AMD‑SKU‑Segmente in Q4 2026); jedoch nur als unbestätigter Markengerüchtssignalgeber.",
+      "falsifier": "Bis 2026-10-15 werden keine formalen, von AMD oder TSMC veröffentlichten Dokumente/Regulatory Filings/Investor‑Ankündigungen gefunden, die eine verbindliche, unternehmensbestätigte Erhöhung der Foundry‑Quotierungen um ~10 % oder eine AMD‑Mitteilung an Kunden über eine verbindliche 10% Listenpreiserhöhung für die genannten Produktkategorien ausweisen. (Wenn eine solche Bestätigung vorliegt, ist die Watchlist‑Bewertung zu revidieren.)",
+      "nextReview": "2026-10-16",
+      "eventDate": "2026-09-18",
+      "novelty": "Recyceltes Lieferketten‑Gerücht (ChannelGate → Wccftech → Finanzseiten); keine Primärbestätigung gefunden.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 7,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-rises-premarket-report-092213707.html",
+          "label": "Yahoo Finance — Artikel über vorherrschende Meldungen (veröff. 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Aktien vorbörslich gestiegen sind und verweist auf einen unbestätigten ChannelGate/Wccftech‑Leak von ~10% Preiserhöhung ab Q4 2026."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/18/news-amd-reportedly-plans-10-price-hike-for-gpus-ai-chips-chipsets-in-4q26-as-tsmc-costs-rise/",
+          "label": "TrendForce / Wccftech‑Bericht (Syndication) — 2026-09-18",
+          "kind": "secondary",
+          "supports": "Fasst Supply‑Chain‑Leak zusammen: angebliche ~10% Erhöhung für GPUs, AI‑Chips und Chipsets; weist darauf hin, dass Ryzen‑Preise nicht ausdrücklich bestätigt wurden."
+        }
+      ],
+      "reason": "Die eingereichte Inbox‑Meldung ist ein handelsbezogenes Medien-Signal, das auf einem unverifizierten ChannelGate‑Leak basiert und von mehreren Finanz‑/Tech‑Seiten (Yahoo Finance, TrendForce/Wccftech‑Syndication) wiedergegeben wurde. Es liegt jedoch kein Primärnachweis (keine AMD‑ oder TSMC‑Offenlegung, kein regulatorisches Filing, keine verbindliche Kundenmitteilung) vor, die die behauptete 10%‑Erhöhung oder eine formale AMD‑Preisanpassung bestätigt. Nach den TAIL‑Aufnahmekriterien fehlt eine atomare, datierte Primärquelle mit messbarer Einheit: deshalb kann die Meldung nicht als VERIFIED DATA aufgenommen werden. Ein Watchlist‑Eintrag wird empfohlen, bis eine Primärbestätigung oder belastbare Gegeninformation verfügbar ist. Zusätzlich wurden keine gegenteiligen Primärdaten gefunden, die das Gerücht eindeutig falsifizieren; deshalb Watchlist statt Rejection. Red‑pencil‑Check schlägt fehl (keine Primärbestätigung).",
+      "candidateId": "2adc242307b1039bf3d1",
+      "candidateKey": "ddcd8b6925ffbfbfae76b18a",
+      "reviewedAt": "2026-09-25T10:14:30.099Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c4e54c0e09ca4e8006ab6497391c087d1bea9f7ddbea5d795"
     }
   ]
 }
