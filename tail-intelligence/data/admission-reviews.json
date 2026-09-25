@@ -47164,6 +47164,162 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_07eef6fb73596a23006ab6987ed03487d193edf33b13e7ec8d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron (MU): HBM‑Nachfrage und NAND‑Preise als Prüfstein für den Memory‑Zyklus — Meldung nicht als atomices Primärbeleg verifizierbar",
+      "fact": "Bericht/Kommentar (AlphaStreet/News‑Syndikation) fasst Micron‑Signale so zusammen: HBM‑Nachfrage kombiniert mit steigenden NAND‑Kontrakten definiert den nächsten Testpunkt des Memory‑Zyklus (Publikationsdatum angegeben: 2026-09-25).",
+      "placement": "Globaler Memory‑Markt (HBM und NAND), Domäne: Halbleiter / AI‑Infrastruktur; kurzfristige (Q4 2026–Q2 2027) Relevanz.",
+      "mechanism": "Preis-/Allokations‑Mechanismus: erhöhte HBM‑Priorisierung (Wafer‑Trade‑Off zu Commodity‑DRAM) reduziert verfügbare Bits für Commodity‑DRAM/NAND, erhöht Vertrags‑ und Spot‑ASPs; Kunden‑LTAs und Take‑or‑Pay‑Strukturen können Preisdurchhaltefähigkeit stützen, ändern aber nicht unmittelbar die physische Bit‑Zufuhr, die durch FAB/Ramp‑Timing bestimmt wird.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert P-2026-07-11-01 (HBM und Server‑DRAM bleiben strukturell knapp bis Ende 2028). Wenn die berichteten HBM‑Allokationen und NAND‑Kontrakte tatsächlich andauern, stützt das die These der anhaltenden Knappheit und verlängert den Zeitpunkt der Normalisierung; allerdings ist die Meldung selbst eher narrative/kommentierend als ein direkter Beleg für anhaltende physische Knappheit.",
+      "falsifier": "Messbare, prüfbare Kondition zur Falsifikation der behaupteten Richtung: Wenn Markt‑Kontraktpreise für Server‑DRAM (vergleichbarer Kontraktkorb) binnen zwei konsekutiver Quartale (Reporting‑Quarters) um ≥10 % rückläufig sind ODER bestätigte Lead Times für Server‑DRAM/Qualified HBM‑Modules auf ≤8 Wochen fallen, dann widerlegt das die unmittelbare Interpretation, dass HBM‑Demand+NAND‑Pricing den Knappheits‑Pfad verlängert. Review‑Datum zur Überprüfung: 2027-03-31.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-25",
+      "novelty": "gering‑moderat (synthese vorhandener Management‑ und Branchensignale; keine neue primäre Messgröße).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 15,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "nand",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "price_up",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.alphastreet.com/micron-technology-inc-mu-q1-2026-earnings-call-transcript/",
+          "label": "AlphaStreet — Micron Earnings / Transcript (used to verify management HBM/pricing commentary)",
+          "kind": "secondary",
+          "supports": "Earnings‑/management‑Kommentare, z.B. HBM‑Volumen/Verkaufs‑Aussagen und Preis‑Diskussionen, aber kein einzelner, datierter Messwert zu Bit‑Shipments, Lead‑Times oder kontrahierten ASPs."
+        },
+        {
+          "url": "https://www.trendforce.com/research/download/RP260924PL",
+          "label": "TrendForce — 4Q26 Memory Price Forecast (industry bulletin)",
+          "kind": "secondary",
+          "supports": "Branchenbericht mit kurzfristigen Preisprognosen und Sektoranalyse (bestätigt geteilte Markterwartungen zu Q4‑2026 Preisaufwärtsdruck), aber keine Einzelbeobachtung, die die Meldung als primären, atomic Beleg verifiziert."
+        },
+        {
+          "url": "https://micron.gcs-web.com/static-files/9c0becf5-df56-4eec-bd67-453dda68b273",
+          "label": "Micron — Unternehmenspräsentation / Slides (Micron‑Investor Slides mit HBM/DRAM/NAND Aussagen)",
+          "kind": "primary",
+          "supports": "Micron‑Corporate‑Deck enthält Formulierungen zu HBM‑Auslastung, Marktposition und strategischen Verträgen; dies ist ein primäres Unternehmensdokument, liefert jedoch keine isolierten, unabhängigen Messwerte (z.B. qualifizierte Shipments, Lead‑Times oder vertragliche ASP‑Niveaus mit absoluten Einheiten)."
+        }
+      ],
+      "reason": "Die eingesandte Kurzmeldung fasst markt‑/Analystenkommentare zur Rolle von HBM‑Nachfrage und NAND‑Preisniveaus als Test des Memory‑Zyklus zusammen. Bei der TAIL‑Aufnahmeprüfung fehlt jedoch ein verifizierbarer, atomarer Primärbeleg (z. B. ein veröffentlichter, datierter Wert für qualifizierte HBM‑Shipments in Wafern/Monat, ein beobachteter Kontrakt‑ASP mit Währungseinheit und Gültigkeitszeitraum oder eine dokumentierte Lead‑Time‑Messung), die nötig wäre, um die Meldung als VERIFIED DATA anzunehmen. Die Aussage wiederholt und synthetisiert bereits in der Baseline dokumentierte Signale (HBM‑Priorisierung, NAND‑Price‑Strength, Management‑Kommentare) und ist damit eher eine narrative Bestätigung als ein neues, belastbares, abgrenzbares Ereignis. Ohne direkten, quantifizierbaren Primärnachweis bleibt die Aufnahme auf Watchlist angemessen; nextReview empfiehlt sich zum 2027-03-31, oder früher, falls konkrete Vertrags‑ASP‑Offenlegungen, qualifizierte Shipment‑Reports oder Lead‑Time‑Messungen veröffentlicht werden.",
+      "candidateId": "ecb92ab7aa671253220a",
+      "candidateKey": "b1e4964b3565e855eec35c82",
+      "reviewedAt": "2026-09-25T20:31:44.764Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03d91e4610c04078006ab6da124d3087d1b66aae0800a1de12"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Micron über $1.000 / JPMorgan: 'higher and longer' Memory‑Supercycle",
+      "fact": "Bericht, dass Micron Technology den Aktienkurs von US$1.000 überschritten habe und dies Micron zusammen mit SanDisk und drei weiteren Branchengiganten in Allzeithochs platziere; außerdem wird eine JPMorgan‑Zitatzeile wiedergegeben, die den Memory‑Supercycle als 'higher and longer' beschreibt.",
+      "placement": "Global / Finanzmärkte; relevant für Server‑DRAM/HBM‑Preis- und Nachfrageausblick (MARKT: dram, server_dram, hbm).",
+      "mechanism": "Marktpreis‑Meilenstein (Aktienkurs) interpretiert als Marktsentiment‑Signal für anhaltend hohe AI‑Memory‑Nachfrage; implizite Kausalannahme: höhere erwartete Nachfrage und Vertragsvolumina stützen Anbieter‑Profitabilität und ziehen Aktienbewertungen nach oben.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Signal würde das Basisszenario stützen, dass HBM und Server‑DRAM strukturell knapp bleiben; ein bestätigendes Preis-/Sentiment‑Signal würde die Wahrscheinlichkeit erhöhen, dass der Engpass bis mindestens Ende 2028 anhält.",
+      "falsifier": "Wenn Micron's Aktienkurs nachhaltig (>= 30 Kalendertage) wieder unter US$800 fällt und/oder nachfolgende Markt‑/Unternehmensdaten (z. B. Quartalsweise Vertragsvolumina, Lead‑Times, HBM‑Shipments) zeigen, dass AI‑Memory‑Nachfrage nicht länger als zwei Quartale über dem historischen Zyklus verbleibt; Überprüfungsdatum: 2026-11-18.",
+      "nextReview": "2026-11-18",
+      "eventDate": "2026-09-18",
+      "novelty": "Gering — Marktmeilensteine und Bull‑Narrative zu Memory‑Rallys waren in den vergangenen Wochen mehrfach berichtet.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ibtimes.com.au/micron-technology-ai-memory-demand-stock-surge-1875252",
+          "label": "IBTimes: 'Micron Stock Climbs Above $1,031...'",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Micron Mitte September über US$1.000 gehandelt wurde und diskutiert AI‑Memory‑Nachfrage als Treiber."
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/09/04/micron-vs-sandisk-which-ai-memory-stock-is-the-bet//",
+          "label": "The Motley Fool: Vergleich Micron / SanDisk (Sept 2026)",
+          "kind": "secondary",
+          "supports": "Analysen, die die Rallye von Micron und SanDisk sowie die Argumentation höherer, längerer Nachfrage darstellen."
+        },
+        {
+          "url": "https://www.zacks.com/commentary/2987320/micron-sandisk-and-the-next-leg-higher-in-memory-stocks",
+          "label": "Zacks: 'Micron, Sandisk and the Next Leg Higher' (Sept 2026)",
+          "kind": "secondary",
+          "supports": "Marktkommentar, der Micron‑ und SK‑Hynix‑Allzeithochs bzw. Rally‑Narrative berichtet."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung mischt einen überprüfbaren Marktmeilenstein (Aktienkurs > US$1.000) mit interpretativen/pressereport‑Behauptungen (Zuordnung zu 'SanDisk und drei weiteren Branchengiganten in Allzeithochs') und einem angeblichen JPMorgan‑Zitat ('higher and longer'). Bei Prüfung wurden mehrere Sekundärquellen gefunden, die bestätigen, dass Micron Mitte September 2026 kurzfristig oberhalb US$1.000 gehandelt wurde. Allerdings fehlt ein eindeutig identifizierbares Primärdokument, das das angebliche JPMorgan‑Zitat direkt dokumentiert, sowie ein sauberes Primär‑Beleg (z. B. offizielles JPMorgan‑Research oder ein SEC/Unternehmensstatement), das die zusammengesetzte Behauptung in der eingereichten Form stützt. \n\nZusätzlich ist die Meldung im Wesentlichen Marktsentiment/Preis‑Meilenstein‑Narrativ (recycletes Finanzmedienmaterial) und bringt keine neuartige, atomare, datierte Messgröße (z. B. qualifizierte Shipments, Lead‑Time‑Messung oder vertraglich festes Volumen) mit den für eine Aufnahme erforderlichen Kausalparametern. Nach den Aufnahme‑Kriterien ist deshalb kein VERIFIED DATA‑Signal angebracht. \n\nEmpfehlung: Watchlist — sammle/fordere Primärquellen: (1) Original‑JPMorgan‑Research‑Note mit dem genauen Wortlaut und Datum; (2) Primäre Intraday/Closing‑Preisquelle (Exchange/SEC‑Filings oder offizielle Handelsstatistik) die das Überschreiten von US$1,000 am angegebenen Datum bestätigt; (3) Belege, welche die Behauptung stützen, dass 'drei weitere Branchengiganten' gleichzeitig Allzeithochs erreichten (konkrete Namen + Datum). Fehlende Primärbelege verhindern jetzt die Aufnahme als VERIFIED DATA oder Akzeptanz. \n\nGegen‑Evidence: Es gibt keine Primärquelle für das JPMorgan‑Zitat in den geprüften Presseberichten; außerdem ist das Narrativ bereits mehrfach in Analystenkommentaren und Presseartikeln wiederholt worden (Recycling). Das macht die Meldung relevant für Sentiment‑Tracking, aber nicht als eindeutiges, ursachen‑nachweisbares Marktereignis mit direkter, messbarer Auswirkung auf die vorhandenen Vorhersagen.",
+      "candidateId": "cf23964830fc8731e3eb",
+      "candidateKey": "8d6d68ece32fd07cc96c7865",
+      "reviewedAt": "2026-09-25T20:32:10.868Z",
+      "priorityScore": 59,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0475c3cde600eefb006ab6da30fba887d1bd05e667a474ee0d"
     }
   ]
 }
