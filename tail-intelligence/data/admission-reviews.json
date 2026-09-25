@@ -46958,6 +46958,212 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0c4e54c0e09ca4e8006ab6497391c087d1bea9f7ddbea5d795"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CleanMax: Data-&-AI‑Vertragskapazität ~10× in zwei Jahren (Firmendokumente)",
+      "fact": "CleanMax meldet, dass die Data‑&‑AI‑Segment‑Vertragskapazität von ~254 MW (2024-03-31) auf etwa 2,397 MW (≈2.4 GW) zum 2026-03-31 gestiegen ist und damit rund 42 % des gesamten Vertragsportfolios ausmacht (Management‑Angabe/Investor‑Letter und Pressemitteilung).",
+      "placement": "Geographisch: Indien; Domäne/Layer: Unternehmens‑RE‑Power‑Sales (PPA) für Datacenter/AI; Horizont: Aktualität zum Bilanzstichtag 2026-03-31.",
+      "mechanism": "Direkte Nachfrage von Datacentern/Hyperscalern führte zu mehr und grösseren Power Purchase Agreements (PPAs) — Unternehmen nennt konkrete Kunden (z. B. Google, Meta, Apple, Equinix, Iron Mountain, STT GDC) und berichtet über hinzugekommene PPA‑Volumina, wodurch sich der Anteil der Data‑&‑AI‑Verträge am Vertragsbuch stark erhöhte.",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Stützt die These in P-2026-07-12-04, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direkt‑Versorgungsverträgen wechseln (belegt: wachsender Anteil von Data‑&‑AI‑PPAs in CleanMax’ Portfolio).",
+      "falsifier": "Bis 2027-03-31: CleanMax veröffentlicht keine bestätigende Fortsetzung (z. B. Q1 FY27 Shareholder Letter / Formale Pressemitteilung) der Data‑&‑AI‑Vertragskapazität ≥2.0 GW oder CleanMax reduziert/öffentlich korrigiert die 2,397 MW‑Zahl. Falls die gemeldete PPA‑Kapazität für Data‑&‑AI ≤2.0 GW am 2027-03-31 ist, ist die Signifikanz für die Vorhersagewirkung falsifiziert.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-03-31",
+      "novelty": "Moderat — bestätigt und quantifiziert einen bereits beobachteten Trend (Data/AI‑PPA‑Wachstum), aber die 10×‑Zahl ist neu und firmenseitig datiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://nsearchives.nseindia.com/corporate/CLEANMAX_18032026090658_Shareholderlettersign.pdf",
+          "label": "CleanMax Shareholder Letter / Investor Communication (Q1 FY27 disclosures)",
+          "kind": "primary",
+          "supports": "‚In the 11 months ended March 1, 2026 we have delivered 1.3 GW of operational capacity... Our 2,397 MW of Data & AI contracted capacity — nearly 10x growth in two years — is just the beginning.‘ (Firmaangabe; datiert; gibt MW und Vergleichsbasis an)."
+        }
+      ],
+      "reason": "Der Kandidat ist eine firmenseitige, datierte Behauptung (Investor Letter / Pressemitteilung) mit konkreten Einheiten (MW/GW) und Vergleichsdatum. Ich habe die primären CleanMax‑Publikationen/Investor‑Kommunikationen (Q4/FY26 / Shareholder Letter) verifiziert. Die Behauptung ist relevant für die Baseline‑These, dass Datacenter‑Lasten verstärkt auf dedizierte Energieprojekte und PPAs gehen. Allerdings handelt es sich um eine Unternehmensangabe (nicht unabhängige behördliche Statistik oder qualifizierte shipments‑/preis‑Messung); sie liefert keinen direkten, gebundenen Index‑Messwert der Marktauswirkung (darum indexImpact=false). Aus Adversarial‑Sicht besteht das Risiko, dass die Zahl vor allem die firmenseitige Accounting/Contracting‑Definition und nicht sofort beobachtbare Marktlieferungen widerspiegelt; deshalb wird die Meldung auf Watchlist genommen und ein Follow‑up zum 2027-03-31 vorgeschlagen, um nachhaltige Ausführung/Shipments/zahlungswirksame FIDs zu prüfen. Opposing evidence gesucht: keine widersprechende Primärquelle gefunden, aber unabhängige Markendaten (z. B. Drittanalysten‑Shipment/Fill‑Rate‑Metriken) fehlen in den vorgelegten Quellen, was die Auswirkung auf Preise/Verfügbarkeit unklar lässt.",
+      "candidateId": "e6589a7af6d927683e26",
+      "candidateKey": "b772b711420b6dd84c2a861a",
+      "reviewedAt": "2026-09-25T15:51:26.684Z",
+      "priorityScore": 77,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08b2004ee90917b2006ab69866c68487d1926bec2916f63ec8"
+    },
+    {
+      "decision": "accepted",
+      "title": "Gründung der AI Energy Management Alliance (AEMA): Google, NVIDIA, Emerald AI starten Koalition für 'grid‑friendly' AI‑Rechenzentren",
+      "fact": "Am 2026-09-16/17 gründeten Emerald AI, NVIDIA und Google die AI Energy Management Alliance (AEMA), eine branchenübergreifende Koalition zur Förderung flexibler, netzfreundlicher AI‑Rechenzentren, inklusive Forderungen an Versorger/Netzbetreiber auf schnellere und größere Netzanschlüsse für datenintensive Rechenzentren.",
+      "placement": "Geographie: primär USA (Gründungs‑Ankündigungen mit globaler Reichweite); Domäne: ai_infrastructure / Power‑Layer; Layer: Netzanschluss / Demand‑Response; Horizon: kurzfristig (H2 2026 → Q1 2027)",
+      "mechanism": "AEMA will Standardisierungen, Betriebs‑ und Zertifizierungsrahmen für 'flexible load' (demand response, load shifting), gemeinsame Referenzdesigns und Abstimmung mit Utilities/Regional Grid Operators durchsetzen; in der Praxis sollen Rechenzentren kurzfristig Leistung reduzieren/verschieben und im Gegenzug bevorzugte/ beschleunigte Netzanschlüsse, größere Kapazitätszuteilung oder Tarife erhalten.",
+      "predictionId": "P-2026-07-12-04",
+      "predictionImpact": "Erhöht die Eintrittswahrscheinlichkeit, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen wechseln (unterstützt die Operationalisierung des in P-2026-07-12-04 beschriebenen Pfads).",
+      "falsifier": "Bis 2027-03-31: Keine öffentlich dokumentierte Annahme oder formale Implementierung von AEMA‑Standards/Verfahren durch mindestens zwei große Utilities oder Regional Grid Operators (z. B. FERC‑Regionen/ISOs) und gleichzeitig keine Ankündigung von mindestens zwei Datacenter‑Projekten mit beschleunigten/erweiterten Netzanschlüssen, die ausdrücklich AEMA‑Protokolle als Bedingung nennen.",
+      "nextReview": "2027-04-01",
+      "eventDate": "2026-09-16",
+      "novelty": "AEMA bündelt Anbieter‑, Infrastruktur‑ und Versorgungsakteure formell, um Rechenzentren als steuerbare Grid‑Lasten zu promoten; das ist eine organisatorisch neue, praktisch sofort handhabbare Maßnahme gegenüber vorherigen Einzel‑Pilotinitiativen.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+          "label": "NVIDIA Blog: 'Emerald AI, Google and NVIDIA Launch the AI Energy Management Alliance (AEMA)'",
+          "kind": "primary",
+          "supports": "NVIDIA blog post (published 2026-09-16) announces the launch of the AI Energy Management Alliance (AEMA) and that Emerald AI, Google and NVIDIA are founding members; describes aim to advance data centers that dynamically manage electricity use and to convene power producers, utilities and regional grid operators."
+        },
+        {
+          "url": "https://www.emeraldai.co/news",
+          "label": "Emerald AI Newsroom: AEMA launch (2026-09-17)",
+          "kind": "primary",
+          "supports": "Emerald AI press/news listing (published 2026-09-17) cites coalition formation, states founding members and launch partners and frames objective as making demand response/integrated grid services part of data center development."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-google-emerald-ai-launch-133054307.html",
+          "label": "Yahoo Finance (aggregator/report): 'NVIDIA, Google, Emerald AI launch AI data center power coalition' (2026-09-18)",
+          "kind": "secondary",
+          "supports": "News coverage (2026-09-18) that repeats coalition launch, notes AEMA's push for faster/larger grid connections in exchange for flexibility commitments."
+        }
+      ],
+      "reason": "Primärquelle(n) (NVIDIA Blog, Emerald AI Newsroom) bestätigen ein datiertes, atomic Event (AEMA‑Gründung, 2026-09-16/17). Die Ankündigung dokumentiert einen konkreten Mechanismus (Demand‑Response / Netzabstimmung) und einen klare Zielsetzung gegenüber Versorgern (schnellere/erweiterte Netzanschlüsse). Das Signal ist relevant für die bestehende Vorhersage P-2026-07-12-04 (Datacenter → dedizierte Energieprojekte / Sondertarife / Direktanschlüsse): AEMA etabliert Koordinations‑ und Standardisierungsmechanismen, die diese Transition erleichtern. IndexImpact ist nicht gegeben (kein beobachteter Markt‑Output, Shipments, Lead‑Time‑Änderung). Die Falsifizierbarkeit ist erfüllt: ein konkrete, überprüfbare Implementations‑/Adoptionsbedingung bis 2027-03-31 wurde angegeben. Quellen sind vertrauenswürdig; die Gesamtpunktzahl (82) übersteigt die 80‑Schwelle für Annahme.",
+      "candidateId": "d18bc886db4b3decd317",
+      "candidateKey": "bb182d23358d88b6a532ac80",
+      "reviewedAt": "2026-09-25T15:51:57.976Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-bb182d23358d88b6a532ac80",
+        "title": "Gründung der AI Energy Management Alliance (AEMA): Google, NVIDIA, Emerald AI starten Koalition für 'grid‑friendly' AI‑Rechenzentren",
+        "date": "2026-09-16",
+        "admittedAt": "2026-09-25T15:51:57.976Z",
+        "fact": "Am 2026-09-16/17 gründeten Emerald AI, NVIDIA und Google die AI Energy Management Alliance (AEMA), eine branchenübergreifende Koalition zur Förderung flexibler, netzfreundlicher AI‑Rechenzentren, inklusive Forderungen an Versorger/Netzbetreiber auf schnellere und größere Netzanschlüsse für datenintensive Rechenzentren.",
+        "placement": "Geographie: primär USA (Gründungs‑Ankündigungen mit globaler Reichweite); Domäne: ai_infrastructure / Power‑Layer; Layer: Netzanschluss / Demand‑Response; Horizon: kurzfristig (H2 2026 → Q1 2027)",
+        "tailInference": "AEMA will Standardisierungen, Betriebs‑ und Zertifizierungsrahmen für 'flexible load' (demand response, load shifting), gemeinsame Referenzdesigns und Abstimmung mit Utilities/Regional Grid Operators durchsetzen; in der Praxis sollen Rechenzentren kurzfristig Leistung reduzieren/verschieben und im Gegenzug bevorzugte/ beschleunigte Netzanschlüsse, größere Kapazitätszuteilung oder Tarife erhalten.",
+        "predictionId": "P-2026-07-12-04",
+        "predictionImpact": "Erhöht die Eintrittswahrscheinlichkeit, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen wechseln (unterstützt die Operationalisierung des in P-2026-07-12-04 beschriebenen Pfads).",
+        "falsifier": "Bis 2027-03-31: Keine öffentlich dokumentierte Annahme oder formale Implementierung von AEMA‑Standards/Verfahren durch mindestens zwei große Utilities oder Regional Grid Operators (z. B. FERC‑Regionen/ISOs) und gleichzeitig keine Ankündigung von mindestens zwei Datacenter‑Projekten mit beschleunigten/erweiterten Netzanschlüssen, die ausdrücklich AEMA‑Protokolle als Bedingung nennen.",
+        "nextReview": "2027-04-01",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 14,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 30,
+        "confidence": 70,
+        "markets": [
+          "ai_infrastructure",
+          "supply_chain"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "pricing",
+          "demand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "NVIDIA Blog: 'Emerald AI, Google and NVIDIA Launch the AI Energy Management Alliance (AEMA)'",
+            "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/"
+          },
+          {
+            "label": "Emerald AI Newsroom: AEMA launch (2026-09-17)",
+            "url": "https://www.emeraldai.co/news"
+          },
+          {
+            "label": "Yahoo Finance (aggregator/report): 'NVIDIA, Google, Emerald AI launch AI data center power coalition' (2026-09-18)",
+            "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-google-emerald-ai-launch-133054307.html"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Eintrittswahrscheinlichkeit, dass große Datacenter‑Lasten verstärkt zu dedizierten Energieprojekten, Sondertarifen und Direktanschlüssen wechseln (unterstützt die Operationalisierung des in P-2026-07-12-04 beschriebenen Pfads)."
+        },
+        "admissionReviewKey": "bb182d23358d88b6a532ac80"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07eef6fb73596a23006ab6987ed03487d193edf33b13e7ec8d"
     }
   ]
 }
