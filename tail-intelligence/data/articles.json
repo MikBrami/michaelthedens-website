@@ -233,6 +233,66 @@
     ]
   },
   {
+    "id": "S-AUTO-7ea2d4dab07159b5ac2f8d0a",
+    "date": "2026-06-24",
+    "title": "Micron meldet $22bn Kundenanzahlungen und bindende Multi‑Year‑SCAs; HBM‑Kapazität de facto verplant (sold‑out‑Claim)",
+    "category": "memory",
+    "markets": [
+      "hbm",
+      "server_dram",
+      "dram",
+      "ai_infrastructure"
+    ],
+    "companies": [
+      "Micron"
+    ],
+    "severity": 60,
+    "confidence": 75,
+    "signal": "capacity_lock",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "demand"
+    ],
+    "summary": "Micron berichtet in den FQ3‑2026 Prepared Remarks (2026-06-24), dass die bis dahin abgeschlossenen 16 Strategic Customer Agreements (SCA) zu ‚cash deposits and related financial commitments of $22 billion‘ führen; 14 der 16 SCAs weisen kumulierte Remaining Performance Obligations (RPO) von ~US$100bn aus. Micron und Folgeberichterstattung stellen HBM/DRAM‑Kapazität als durch langfristige Abnahmevereinbarungen de facto verplant/sold‑out bis mindestens 2027 dar.",
+    "tail_analysis": "Mehrjährige, take‑or‑pay/Preisband‑SCAs mit hohen An- bzw. Kautionszahlungen (≈US$18bn in Cash) bindet verfügbare HBM‑Bits an Kunden, reduziert freien Spot‑/qualifizierten Lieferbestand und erzeugt capacity_lock sowie aufwärtsgerichteten Preisdruck.",
+    "source": "Micron – Fiscal Q3 2026 Earnings Call Prepared Remarks (Micron Investor Relations), 2026-06-24",
+    "url": "https://investors.micron.com/static-files/631b1a32-5537-46ae-8f40-82e42fc79dfe",
+    "content_hash": "ea2530892c4950486a85",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-26T09:54:35.501Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "7ea2d4dab07159b5ac2f8d0a",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028; erhöht die Eintrittswahrscheinlichkeit des Engpass‑Szenarios insbesondere für 2027.",
+    "falsifier": "Bis 2026-12-31: Micron veröffentlicht eine aktualisierte Investor‑Disclosure (10‑Q / Earnings Prepared Remarks / Press Release) die entweder (a) bestätigt, dass aggregierte Cash‑Deposits/Commitments für die abgeschlossenen SCAs < US$22bn OR (b) Micron erklärt, dass HBM/DRAM‑Kapazität für 2027 nicht mehr als ‚sold out‘ klassifiziert wird (konkret: veröffentlichte, qualifizierte verfügbare HBM‑Wafer‑Monatskapazität ≥ 20% der Markt‑Bedarfsannahme), oder mehrere große Kunden stornieren/redenoneieren SCAs. Review‑Datum: 2026-12-31.",
+    "nextReview": "2026-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028; erhöht die Eintrittswahrscheinlichkeit des Engpass‑Szenarios insbesondere für 2027."
+    },
+    "sources": [
+      {
+        "label": "Micron – Fiscal Q3 2026 Earnings Call Prepared Remarks (Micron Investor Relations), 2026-06-24",
+        "url": "https://investors.micron.com/static-files/631b1a32-5537-46ae-8f40-82e42fc79dfe"
+      },
+      {
+        "label": "Marktberichterstattung zur SCA‑Größe und 'sold out' HBM/DRAM Kapazität (August/September 2026 coverage)",
+        "url": "https://www.aktiencheck.de/news/Ausland-Wall_Street_s_Micron_Schism_A_400_Gap_Price_Targets_Meets_a_Record_50_Billion_Quarter-20008009"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-7c86e2f29f2df64fcc959e8c",
     "date": "2026-06-30",
     "title": "CoreWeave: Q2‑2026 Backlog und Nvidia‑Partnerschaft bestätigen Neocloud‑Nachfragetreiber",

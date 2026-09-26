@@ -47460,6 +47460,224 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ed3f43018f759b6006ab7211ae4dc87d198555ebfde3a1565"
+    },
+    {
+      "decision": "accepted",
+      "title": "Micron meldet $22bn Kundenanzahlungen und bindende Multi‑Year‑SCAs; HBM‑Kapazität de facto verplant (sold‑out‑Claim)",
+      "fact": "Micron berichtet in den FQ3‑2026 Prepared Remarks (2026-06-24), dass die bis dahin abgeschlossenen 16 Strategic Customer Agreements (SCA) zu ‚cash deposits and related financial commitments of $22 billion‘ führen; 14 der 16 SCAs weisen kumulierte Remaining Performance Obligations (RPO) von ~US$100bn aus. Micron und Folgeberichterstattung stellen HBM/DRAM‑Kapazität als durch langfristige Abnahmevereinbarungen de facto verplant/sold‑out bis mindestens 2027 dar.",
+      "placement": "Globaler HBM/Server‑DRAM‑Markt; betriffend Availability/Contracted supply; kurz- bis mittelfristiger Horizont (bis Ende 2027).",
+      "mechanism": "Mehrjährige, take‑or‑pay/Preisband‑SCAs mit hohen An- bzw. Kautionszahlungen (≈US$18bn in Cash) bindet verfügbare HBM‑Bits an Kunden, reduziert freien Spot‑/qualifizierten Lieferbestand und erzeugt capacity_lock sowie aufwärtsgerichteten Preisdruck.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028; erhöht die Eintrittswahrscheinlichkeit des Engpass‑Szenarios insbesondere für 2027.",
+      "falsifier": "Bis 2026-12-31: Micron veröffentlicht eine aktualisierte Investor‑Disclosure (10‑Q / Earnings Prepared Remarks / Press Release) die entweder (a) bestätigt, dass aggregierte Cash‑Deposits/Commitments für die abgeschlossenen SCAs < US$22bn OR (b) Micron erklärt, dass HBM/DRAM‑Kapazität für 2027 nicht mehr als ‚sold out‘ klassifiziert wird (konkret: veröffentlichte, qualifizierte verfügbare HBM‑Wafer‑Monatskapazität ≥ 20% der Markt‑Bedarfsannahme), oder mehrere große Kunden stornieren/redenoneieren SCAs. Review‑Datum: 2026-12-31.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-06-24",
+      "novelty": "Bestätigt und datiert eine neuartige Vertrags‑/Monetarisierungsstruktur (SCA‑Deposits) im Memory‑Sektor; die Größenordnung (US$22bn Deposits / ~US$100bn RPO) ist material und nicht Teil des Baseline vor Juni 2026.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 60,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/static-files/631b1a32-5537-46ae-8f40-82e42fc79dfe",
+          "label": "Micron – Fiscal Q3 2026 Earnings Call Prepared Remarks (Micron Investor Relations), 2026-06-24",
+          "kind": "primary",
+          "supports": "Prepared remarks: 'we project to receive cash deposits and related financial commitments of $22 billion' and disclosure of ~16 SCAs and ~US$100bn RPO for 14 of 16 SCAs."
+        },
+        {
+          "url": "https://www.aktiencheck.de/news/Ausland-Wall_Street_s_Micron_Schism_A_400_Gap_Price_Targets_Meets_a_Record_50_Billion_Quarter-20008009",
+          "label": "Marktberichterstattung zur SCA‑Größe und 'sold out' HBM/DRAM Kapazität (August/September 2026 coverage)",
+          "kind": "secondary",
+          "supports": "Zusammenfassende Presseberichte bestätigen Marktinterpretation: HBM/DRAM Kapazität durch langfristige Verträge weitgehend verplant ('sold out' through 2027) und wiedergeben Microns $22bn Commitments."
+        }
+      ],
+      "reason": "Der Kandidat beschreibt eine konkrete, datierte und quantifizierbare Unternehmensoffenlegung (Micron Prepared Remarks, 2026-06-24): aggregierte Kundenanzahlungen/Commitments von ~US$22bn und große RPO‑Zahlen (~US$100bn) aus Multi‑Year SCAs. Die behauptete Größenordnung und Vertragsstruktur ist direkt durch Microns Primärdokument belegbar und plausibel kausal für Verknappung/Capacity‑Lock: Kautionszahlungen plus take‑or‑pay‑Mindestvolumina binden verfügbare HBM/DRAM‑Bits langfristig und reduzieren freien Spot‑Output, was die Basisprediktion P-2026-07-11-01 stärkt. Die Behauptung ist ausreichend genau (datum, Zahlen, Mechanismus) und falsifizierbar: eine spätere, firmenseitige Revision der Commitment‑Summen oder ein klarer Nachweis von freier qualifizierter HBM‑Kapazität 2027 würde die Signalwirkung entkräften. Opposing evidence gesucht: Berichte über signifikante Stornierungen, oder veröffentlichte qualifizierte HBM‑Wafer‑Monatskapazitäten, die den ‚sold‑out‘‑Claim widerlegen; bisher keine solche Primärrevision gefunden.",
+      "candidateId": "9332edfdb3080dad91fc",
+      "candidateKey": "7ea2d4dab07159b5ac2f8d0a",
+      "reviewedAt": "2026-09-26T09:54:35.501Z",
+      "priorityScore": 85,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-7ea2d4dab07159b5ac2f8d0a",
+        "title": "Micron meldet $22bn Kundenanzahlungen und bindende Multi‑Year‑SCAs; HBM‑Kapazität de facto verplant (sold‑out‑Claim)",
+        "date": "2026-06-24",
+        "admittedAt": "2026-09-26T09:54:35.501Z",
+        "fact": "Micron berichtet in den FQ3‑2026 Prepared Remarks (2026-06-24), dass die bis dahin abgeschlossenen 16 Strategic Customer Agreements (SCA) zu ‚cash deposits and related financial commitments of $22 billion‘ führen; 14 der 16 SCAs weisen kumulierte Remaining Performance Obligations (RPO) von ~US$100bn aus. Micron und Folgeberichterstattung stellen HBM/DRAM‑Kapazität als durch langfristige Abnahmevereinbarungen de facto verplant/sold‑out bis mindestens 2027 dar.",
+        "placement": "Globaler HBM/Server‑DRAM‑Markt; betriffend Availability/Contracted supply; kurz- bis mittelfristiger Horizont (bis Ende 2027).",
+        "tailInference": "Mehrjährige, take‑or‑pay/Preisband‑SCAs mit hohen An- bzw. Kautionszahlungen (≈US$18bn in Cash) bindet verfügbare HBM‑Bits an Kunden, reduziert freien Spot‑/qualifizierten Lieferbestand und erzeugt capacity_lock sowie aufwärtsgerichteten Preisdruck.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028; erhöht die Eintrittswahrscheinlichkeit des Engpass‑Szenarios insbesondere für 2027.",
+        "falsifier": "Bis 2026-12-31: Micron veröffentlicht eine aktualisierte Investor‑Disclosure (10‑Q / Earnings Prepared Remarks / Press Release) die entweder (a) bestätigt, dass aggregierte Cash‑Deposits/Commitments für die abgeschlossenen SCAs < US$22bn OR (b) Micron erklärt, dass HBM/DRAM‑Kapazität für 2027 nicht mehr als ‚sold out‘ klassifiziert wird (konkret: veröffentlichte, qualifizierte verfügbare HBM‑Wafer‑Monatskapazität ≥ 20% der Markt‑Bedarfsannahme), oder mehrere große Kunden stornieren/redenoneieren SCAs. Review‑Datum: 2026-12-31.",
+        "nextReview": "2026-12-31",
+        "priorityScore": 85,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 17,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 60,
+        "confidence": 75,
+        "markets": [
+          "hbm",
+          "server_dram",
+          "dram",
+          "ai_infrastructure"
+        ],
+        "signal": "capacity_lock",
+        "driverScope": [
+          "availability",
+          "demand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Micron – Fiscal Q3 2026 Earnings Call Prepared Remarks (Micron Investor Relations), 2026-06-24",
+            "url": "https://investors.micron.com/static-files/631b1a32-5537-46ae-8f40-82e42fc79dfe"
+          },
+          {
+            "label": "Marktberichterstattung zur SCA‑Größe und 'sold out' HBM/DRAM Kapazität (August/September 2026 coverage)",
+            "url": "https://www.aktiencheck.de/news/Ausland-Wall_Street_s_Micron_Schism_A_400_Gap_Price_Targets_Meets_a_Record_50_Billion_Quarter-20008009"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028; erhöht die Eintrittswahrscheinlichkeit des Engpass‑Szenarios insbesondere für 2027."
+        },
+        "admissionReviewKey": "7ea2d4dab07159b5ac2f8d0a"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0cc4785dabbf4936006ab79637113c87d0a51679cadf187216"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: CXMT bereitet Einstieg in NAND‑Markt vor (R&D‑Linie, kein belegter Output)",
+      "fact": "Berichte (u. a. Tech4Gamers / Reuters‑Syndikation / TrendForce‑Zusammenfassungen) deuten an, dass ChangXin Memory Technology (CXMT) plant, Forschung-/Entwicklungs‑Produktionskapazitäten für NAND‑Flash an einem neuen Standort in Beijing einzurichten und damit in den NAND/SSD‑Wettbewerb mit Samsung, SK hynix, Micron und YMTC einzutreten.",
+      "placement": "Beijing, China — R&D/Produktions‑Ebene; kein nachgewiesener qualifizierter Output oder Lieferungen (Stand der Meldungen: 2026-09-18 bis 2026-09-21).",
+      "mechanism": "Wenn CXMT von einer R&D‑Linie zu qualifiziertem Volumen‑Fertigungscode (qualified NAND wafers / qualified SSD shipments) hochskaliert, würde dies die weltweite NAND‑Bit‑Verfügbarkeit erhöhen und Druck auf Preise/Allokationen im Enterprise‑SSD/NAND‑Segment ausüben. Der aktuelle Meldungsstand beschreibt jedoch Planungen/early talks und keine bestätigten Shipments oder Kapazitätsziele.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Ein erfolgreicher Übergang von R&D‑Linie zu qualifizierten Volumenlieferungen vor Ende 2027 würde das OUTLOOK-enterprise_ssd‑Szenario (Entspannung der Enterprise‑SSD‑Preise/Erfüllung ab 2027/2028) in Richtung früherer Normalisierung / geringerer Preisauftrieb verschieben. Im aktuellen Meldungsstand ist dieser Effekt aber nicht belegt.",
+      "falsifier": "Bis 2027-12-31: CXMT meldet (a) öffentlich verifizierte, qualifizierte NAND‑Wafer‑Shipments oder (b) von unabhängigen Kunden (named enterprise SSD OEMs) bestätigte qualifizierte Enterprise‑SSD‑Lieferungen, die zu messbarer Verbesserung der Fill‑Rate in einer beobachtbaren Enterprise‑SSD‑Produktklasse (z. B. 3.84TB eSSD P/N) führen; Nachweis: Lieferdokumente, Kunden‑Qualifizierungsreports oder offizielle CXMT‑Shipment‑Mitteilungen mit konkreten Mengen/Terminen. Falls keines dieser Ereignisse eintritt, bleibt die Behauptung unproven.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "CXMT ist bereits als DRAM‑Player bekannt; die Ausweitung auf NAND wird in mehreren Medien erstmals im Berichtzeitraum als Plan/Absicht genannt (R&D‑Linie). Der Claim ist neu in Bezug auf NAND‑Markteintritt, aber nicht neu hinsichtlich CXMTs generellem Expansionstrieb.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/09/18/news-chinas-dram-leader-cxmt-reportedly-plans-nand-rd-line-could-challenge-samsung-sk-hynix-and-ymtc/",
+          "label": "TrendForce — Zusammenfassung des Reuters/Supply‑Chain‑Reporting",
+          "kind": "secondary",
+          "supports": "TrendForce berichtet (Datum veröffentlicht 2026-09-18), dass Reuters‑Quellen CXMTs Pläne für eine NAND‑R&D‑Linie in Beijing nennen; Artikel beschreibt Planungs‑/Finanzierungs‑Gespräche, aber keine Produktions‑ oder Shipment‑Mengen."
+        },
+        {
+          "url": "https://hwbusters.com/news/the-cxmt-nand-plan-is-one-rd-line-in-beijing-and-it-has-no-output-target/",
+          "label": "Hardware Busters — Detailbericht: ‚eine R&D‑Linie ohne Output‑Ziel‘",
+          "kind": "secondary",
+          "supports": "Bericht, der ausdrücklich festhält, dass die gemeldete Initiative als R&D‑Linie dargestellt wird und keine explizite Produktions‑/Output‑Zielsetzung enthält."
+        },
+        {
+          "url": "https://technode.global/2026/09/18/china-cxmt-nand-flash-expansion-ai-memory-shortage/",
+          "label": "TechNode — Kontext zu Marktfolge und AI‑Memory‑Nachfrage",
+          "kind": "secondary",
+          "supports": "Artikel ordnet CXMT‑Meldungen in die breitere Marktlage ein (AI‑Memory‑Nachfrage, Wettbewerber) und bestätigt, dass Meldungen Planungsstatus berichten."
+        },
+        {
+          "url": "https://www.marketscreener.com/news/china-s-cxmt-eyes-flash-memory-push-amid-global-shortage-firm-to-take-on-samsung-ymtc-ce785adad98af32c",
+          "label": "MarketScreener / Reuters‑Syndication (Zusammenfassungen)",
+          "kind": "secondary",
+          "supports": "Syndizierte Kurzfassung des Reuters‑Berichts — nennet Quellenangaben und beschreibt Planungs‑/Vorbereitungsstatus, ohne bestätigte Lieferungen."
+        }
+      ],
+      "reason": "Die eingereichte Candidate‑Meldung (Tech4Gamers via Google News) fasst Berichte zusammen, dass CXMT beabsichtigt, in den NAND‑/SSD‑Bereich vorzudringen. Unsere Überprüfung (Start mit der eingereichten Google‑News‑URL und anschließende Quellensuche) findet mehrere unabhängige Nachberichterstattungen (TrendForce, TechNode, MarketScreener/Reuters‑Syndikate, technische Blogs), die den Claim als Plan/Absicht für eine R&D‑Linie in Beijing wiederholen. Keiner der geprüften Artikel liefert jedoch primäre, direkt verifizierbare Evidenz für: (a) genehmigte Volumenkapazität, (b) qualifizierte NAND‑Wafer‑Shipments oder (c) bestätigte Enterprise‑SSD‑Lieferungen. Folglich fehlen die für Aufnahme als VERIFIED DATA erforderlichen primären Messgrößen (konkrete Mengen, qualifizierte Shipments, beobachtbare Fill‑Rate/Lead‑Time‑Verbesserung).\n\nGegenbelege / Risiken: Einige Quellen (Berichte zu Yield‑Problemen bei CXMT HBM3E, QM‑/Yield‑Diskussionen) deuten auf technische Herausforderungen hin, die eine schnelle Volumenskalierung unwahrscheinlich machen. Andere Berichte betonen, dass die gemeldete Aktivität eine einzelne R&D‑Linie ohne Output‑Ziel ist — das schwächt einen unmittelbaren Markt‑Verfügbarkeitsimpact.\n\nEntscheidung: watchlist — ausreichende Relevanz und potenzieller Impact, aber keine primären Belege für qualifizierten Output oder messbare Marktwirkung. Wir halten die Behauptung offen und fordern klaren, datierten Nachweis (qualifizierte Shipments, Kunden‑Qualifizierungsbestätigungen oder offizielle CXMT‑Ankündigung mit Mengen/Timelines) bis zum Falsifier‑Datum (2027-12-31).",
+      "candidateId": "3282eb130baeb98e8e11",
+      "candidateKey": "be993e7df349abc1f1ccefec",
+      "reviewedAt": "2026-09-26T09:55:08.104Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c6178cb14c806c3006ab7965ba83887d0a41ff2094b227d81"
     }
   ]
 }

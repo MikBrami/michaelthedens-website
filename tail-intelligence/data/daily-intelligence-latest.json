@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-26T01:34:52.155Z",
+  "updatedAt": "2026-09-26T09:55:08.311Z",
   "previousRun": "2026-09-25",
   "executivePulse": {
     "current": 76,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 77,
     "previous": 77,
-    "interpretation": "Datenvertrauen 77/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 91 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 77/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 94 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 91 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 94 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,6 +527,73 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-7ea2d4dab07159b5ac2f8d0a",
+      "title": "Micron meldet $22bn Kundenanzahlungen und bindende Multi‑Year‑SCAs; HBM‑Kapazität de facto verplant (sold‑out‑Claim)",
+      "date": "2026-06-24",
+      "admittedAt": "2026-09-26T09:54:35.501Z",
+      "fact": "Micron berichtet in den FQ3‑2026 Prepared Remarks (2026-06-24), dass die bis dahin abgeschlossenen 16 Strategic Customer Agreements (SCA) zu ‚cash deposits and related financial commitments of $22 billion‘ führen; 14 der 16 SCAs weisen kumulierte Remaining Performance Obligations (RPO) von ~US$100bn aus. Micron und Folgeberichterstattung stellen HBM/DRAM‑Kapazität als durch langfristige Abnahmevereinbarungen de facto verplant/sold‑out bis mindestens 2027 dar.",
+      "placement": "Globaler HBM/Server‑DRAM‑Markt; betriffend Availability/Contracted supply; kurz- bis mittelfristiger Horizont (bis Ende 2027).",
+      "tailInference": "Mehrjährige, take‑or‑pay/Preisband‑SCAs mit hohen An- bzw. Kautionszahlungen (≈US$18bn in Cash) bindet verfügbare HBM‑Bits an Kunden, reduziert freien Spot‑/qualifizierten Lieferbestand und erzeugt capacity_lock sowie aufwärtsgerichteten Preisdruck.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028; erhöht die Eintrittswahrscheinlichkeit des Engpass‑Szenarios insbesondere für 2027.",
+      "falsifier": "Bis 2026-12-31: Micron veröffentlicht eine aktualisierte Investor‑Disclosure (10‑Q / Earnings Prepared Remarks / Press Release) die entweder (a) bestätigt, dass aggregierte Cash‑Deposits/Commitments für die abgeschlossenen SCAs < US$22bn OR (b) Micron erklärt, dass HBM/DRAM‑Kapazität für 2027 nicht mehr als ‚sold out‘ klassifiziert wird (konkret: veröffentlichte, qualifizierte verfügbare HBM‑Wafer‑Monatskapazität ≥ 20% der Markt‑Bedarfsannahme), oder mehrere große Kunden stornieren/redenoneieren SCAs. Review‑Datum: 2026-12-31.",
+      "nextReview": "2026-12-31",
+      "priorityScore": 85,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 60,
+      "confidence": 75,
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "signal": "capacity_lock",
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Micron – Fiscal Q3 2026 Earnings Call Prepared Remarks (Micron Investor Relations), 2026-06-24",
+          "url": "https://investors.micron.com/static-files/631b1a32-5537-46ae-8f40-82e42fc79dfe"
+        },
+        {
+          "label": "Marktberichterstattung zur SCA‑Größe und 'sold out' HBM/DRAM Kapazität (August/September 2026 coverage)",
+          "url": "https://www.aktiencheck.de/news/Ausland-Wall_Street_s_Micron_Schism_A_400_Gap_Price_Targets_Meets_a_Record_50_Billion_Quarter-20008009"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028; erhöht die Eintrittswahrscheinlichkeit des Engpass‑Szenarios insbesondere für 2027."
+      },
+      "admissionReviewKey": "7ea2d4dab07159b5ac2f8d0a"
     }
   ],
   "predictionLogUpdates": [
@@ -641,14 +708,14 @@
     "date": "2026-09-26",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
-    "note": "Evidenzprüfung offen: 91 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 85,
+    "note": "Evidenzprüfung offen: 94 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-26T01:34:52.155Z",
+    "generatedAt": "2026-09-26T09:55:08.311Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-26T01:32:33.850Z",
-    "inboxNewItems": 69,
+    "inboxUpdatedAt": "2026-09-26T09:51:28.076Z",
+    "inboxNewItems": 95,
     "highRelevanceCandidates": [
       {
         "id": "ecb92ab7aa671253220a",
@@ -658,6 +725,15 @@
         "summary": "Aktuelle Meldung von AlphaStreet: Micron (MU): HBM Demand and NAND Pricing Define the Memory Cycle Test",
         "relevanceScore": 100,
         "publishedAt": "2026-09-25T13:43:27.000Z"
+      },
+      {
+        "id": "41c5945a336cb476bb62",
+        "title": "Chinese DRAM Maker CXMT Is Now Worth More Than Intel After Blistering Shanghai Debut: SanDisk, Micron Feel The Heat",
+        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQdW9RTmVobU1ZZU5vU0tZMXZ5MUs1T0JsOXBWR2NhOW1OYklpSjEwaVJEWkRVMldXallpYW9LNXFOSUFfOXRsY0hTbTF6LTIxOEpCazdHT3hEbklXdVFZVExVWnFGaVJ5MDRsLVJYMzJ2cGlyOEdnV0JMNUpqdFE0TnA3a1FCTDgwcTNPa0dWbC1ObVRsVFlOUDhLN2JvejdnS2YyaHYzdkllSjNFbVJYS2hCckwyN2gweGEtVElSb1JJdkRGbjlMSmdrTW1HN2tTVGpBU3loREN4M3RaeG9nN1JpdmVJalczTERlYlBfTzEwTjBfbjBFX2NsVGExdnZiOGVTQUFYVDEwZw?oc=5",
+        "source": "stocktwits.com",
+        "summary": "Aktuelle Meldung von stocktwits.com: Chinese DRAM Maker CXMT Is Now Worth More Than Intel After Blistering Shanghai Debut: SanDisk, Micron Feel The Heat",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-25T04:46:43.000Z"
       },
       {
         "id": "1de0244c1ab4edc30239",
@@ -678,24 +754,6 @@
         "publishedAt": "2026-09-24T13:40:36.000Z"
       },
       {
-        "id": "f53fa31cab67a6059afa",
-        "title": "SK Hynix's Two-Pronged Bet: HBM Dominance at Home, a US NAND Foothold Abroad",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObVRYRHQ5MWIyU29wcFVES281a3k3RF95SjYzdTF3OENXMi15TGlsQW9LYVdHU2VXaGlhTFlsZ3dQLTlBUkc5NmotNGdYdS11V2Y1WWcxVVhyeXl0N2JiNTlYb1VoYzF5NXM0WjFoN0pIWnV3RGZmWUJITkpxM2k3Q2huX2FwN1FCNUotem15RW04dmJFQ0tUbko5bHdJUTRhVWtDUnl4UEh1YVFGRU5jNDR4ZWU5c1ZJOXMza2M4MlVWS3NZM1Zab3JnRkd6LXFnck9RUGh3?oc=5",
-        "source": "AD HOC NEWS",
-        "summary": "SK Hynix's Two-Pronged Bet: HBM Dominance at Home, a US NAND Foothold Abroad AD HOC NEWS",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-24T09:01:26.000Z"
-      },
-      {
-        "id": "130e5bc25bb64ab3ba08",
-        "title": "CXMT gains ground in DRAM as Samsung, SK Hynix shift more capacity to HBM",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdVhneWFPVzc3R2c4SkxXcjdYOUpnc2VOSTVCdjFpb2tQalVYRUpLS3Z0WE9hSFZWMXBXRnJSMDc1Y2lDMi1YUTBzOWFxbjhtcGNyQ1hncDJXUGNoaW5vaDYxaHRodmdqLWdpbnpjZ2ZHQU5KMWNNNUh1WEp6UXlnNXpuMDJwdmNmcW1Ec0EzekxoVW8?oc=5",
-        "source": "digitimes",
-        "summary": "Aktuelle Meldung von digitimes: CXMT gains ground in DRAM as Samsung, SK Hynix shift more capacity to HBM",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-24T07:55:00.000Z"
-      },
-      {
         "id": "c7b3fee28cb82615851b",
         "title": "Micron DDR5 AI Server Memory Faces Netlist ITC Probe; $898M Samsung Deal Sets Bar",
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNU5RWFE2M0ZmdlN3c1FZNUFwXzNyYi1nVVBUUlJwUHhnNW9nWUVFUEIzbGloMTBEX2lRUklZeU1obUk4THlSOEdPU21PTENoX2VfN0p0OVhUMFYwd0JlOU45a2lzV24xQUMtaHBQY1pRY2Zfdl8xTDNtLThLaDlhblVDU3RFMWZtNjFJSkFXbVRyblhRblJoZGtSaVVIUkFmLS1lLThISkpBelN0ZzItWUxzbkN4bl9RYWZsR1hwSDlQd05pNWQ3azZ1cG9ONEk?oc=5",
@@ -705,15 +763,6 @@
         "publishedAt": "2026-09-25T06:10:34.000Z"
       },
       {
-        "id": "93bbdbd007c99bb3dd44",
-        "title": "[News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUmd0SHY3R1Bab2ZrM2haMkJtSnZaTmNiXzRxRmNLT1lWQXUwcGpnZEdzM01nNkdwN05xeXluYnB4ZXRLOWs4WVF4aUxvcm9GVWpvQVdsV0t6b2pGNXFBakJHQ3ZYNVMwRmxZWkU4YWpwUkRSWEpjVUlOOFE1ZC1NT09KWm1tYUxjT2RJT3lRdmhHdXZVTjZkc0x6V0lxZmpOR0xuak5NNmtDcGY4eXI0X2pvbGFWdGRaLWxqZXRxbDdCQlNCcURocWhqZ25NZ3RrSHFRanNmZTl3UQ?oc=5",
-        "source": "TrendForce",
-        "summary": "Aktuelle Meldung von TrendForce: [News] CXMT, YMTC Ramp Memory Capacity, but China’s AI, Cloud Boom Could Soak Up New Supply Through 2027",
-        "relevanceScore": 91,
-        "publishedAt": "2026-09-24T08:40:17.000Z"
-      },
-      {
         "id": "97d5a455a403cc4b7f69",
         "title": "Meta's Muse AI outpaces OpenAI and Anthropic, a...",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOejcxMWR2cGNFOXFzUi1Ib3VzNk02MEtjRzF4RFBWYXVyRDdaN1doRlc3RXVkSmJzeXJ3MWI1aTBUazFLdTNMcVlvcnUwcWpweGZCaElrcTZwd3VQbml2ZkhaVXA3Wk04S2RMdkVXRVlPc3hZSjlBV1VzYlhKbnNQcUFLVms0amxBTU5uTm5qOA?oc=5",
@@ -721,6 +770,24 @@
         "summary": "Aktuelle Meldung von Pluang: Meta's Muse AI outpaces OpenAI and Anthropic, a...",
         "relevanceScore": 88,
         "publishedAt": "2026-09-25T18:45:04.000Z"
+      },
+      {
+        "id": "1e0e7ca8bc3d5de5a1b0",
+        "title": "Microsoft unveils all-in-one Copilot app, taking on Anthropic and OpenAI in new push to boost adoption",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMHk5VWlTZGRDSnh4UVpoMTV4aWxVazJOZ0M2ZlFrM3B4cFBZb0hFeUZSRTctc3ZCejE5QXlPckIxSVQxQUFsTnd2eFVQZ0NFcEdYd2MwZEk0TG5JdVNuUnc1eGh2UEUtcVNuVU1sSFQySmJDTjBHc3BRUllXc1dNOG90QnBiWWdSWHAwQWNZUUhvdEMzM2t1Z1RoSURCeXF4YmpZMDRiWmlwdzhYMkcyNUpaenR6X04yNkhsYVdGSXlQZ2ZsSnpnRWN0czI?oc=5",
+        "source": "GeekWire",
+        "summary": "Aktuelle Meldung von GeekWire: Microsoft unveils all-in-one Copilot app, taking on Anthropic and OpenAI in new push to boost adoption",
+        "relevanceScore": 88,
+        "publishedAt": "2026-09-25T12:00:00.000Z"
+      },
+      {
+        "id": "8ffc6bcf4f9fbd93597a",
+        "title": "Anthropic, OpenAI Keep Expanding the AI Data Center Map — and the Financing Gets Harder",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMWV1VzN5UFl2ODJ2eUREbjRRdmtPTmN4WF91cGdvMENyejNvREUyTklILXVuYzZ1SXhwbHpXOHZTT2R0S2VyYjhDZzU5N19DWVJ5S1E3eGdIYVoxODVlWE5LdXRNUjJOY1lPLXF6SVBUTkI4VGwyQ3RyeHdfUWUwRW9CWjk4eWduODhLMG85Tld3X3Q5R0J3X0xMQU9ncnZiZDFUZUZmaDE1ZlNEMTBDREZhOEppQTIteFdlVENnbTdaR1BKVTMxZmNSNlZTaHFuSUlHMmxKRUtlSUh3TlRjZXBvcDA?oc=5",
+        "source": "Data Center Frontier",
+        "summary": "Aktuelle Meldung von Data Center Frontier: Anthropic, OpenAI Keep Expanding the AI Data Center Map — and the Financing Gets Harder",
+        "relevanceScore": 88,
+        "publishedAt": "2026-09-25T10:51:08.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -806,20 +873,20 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-26T01:34:51.974Z",
-    "inboxUpdatedAt": "2026-09-26T01:32:33.850Z",
+    "checkedAt": "2026-09-26T09:55:08.139Z",
+    "inboxUpdatedAt": "2026-09-26T09:51:28.076Z",
     "status": "pending",
-    "candidates": 155,
-    "reviewed": 66,
-    "accepted": 5,
-    "watchlist": 60,
+    "candidates": 160,
+    "reviewed": 68,
+    "accepted": 6,
+    "watchlist": 61,
     "rejected": 1,
-    "pending": 91,
-    "oldestPendingAt": "2026-09-18T16:58:35.000Z",
-    "lastCompletedReviewAt": "2026-09-26T01:34:51.942Z",
+    "pending": 94,
+    "oldestPendingAt": "2026-09-18T18:07:49.000Z",
+    "lastCompletedReviewAt": "2026-09-26T09:55:08.104Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 387,
+    "rawCandidates": 394,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
@@ -827,8 +894,8 @@
       "groupedDuplicates": 18
     },
     "lastRun": {
-      "startedAt": "2026-09-26T01:33:58.712Z",
-      "completedAt": "2026-09-26T01:34:51.976Z",
+      "startedAt": "2026-09-26T09:53:57.843Z",
+      "completedAt": "2026-09-26T09:55:08.141Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -836,13 +903,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 53,
+      "durationSeconds": 70,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-26",
-    "inputHash": "5bd236edd0b2a32e7f975d64da188d8f368a4fb71db32ad928394752b54d3104",
+    "inputHash": "dafe7312b3c91488b5452562061108a09d6b723af615ad5d19a3bea32d96b654",
     "sourceDataAsOf": "2026-09-21"
   }
 }
