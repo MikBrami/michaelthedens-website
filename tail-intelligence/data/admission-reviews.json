@@ -47810,6 +47810,154 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0e7ef732527da2e9006ab7de3354a887d0a96b2bc485a27a1f"
+    },
+    {
+      "decision": "rejected",
+      "title": "TradingKey-Kommentar zu SanDisk (2026-09-26) — werbender Preis-/Aktienausblick ohne primäre, messbare Beobachtung",
+      "fact": "TradingKey veröffentlichte am 2026-09-26 einen Meinungsartikel mit dem Titel „SanDisk Stock Price Forecast: AI Storage Demand Drives NAND Prices Higher, Can the Stock Break $2,000?“ und vertritt darin eine bullish‑These, dass AI‑Storage‑Nachfrage NAND‑Preise sowie SanDisk‑Aktienkurse deutlich nach oben treiben könne.",
+      "placement": "Global / Aktienmarkt‑Kommentar; keine geographisch‑begrenzte Warenmessung; Publikation: TradingKey (Online‑Marktkommentar).",
+      "mechanism": "Narrativ/Meinungs‑These: Hyperscaler‑AI‑Buildout erhöht eSSD/NAND‑Nachfrage → begrenztes qualifiziertes Angebot → steigende NAND‑ASP und bessere Marge für SanDisk → Aktienkursanstieg (preisgetriebene Bewertungsrally).",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Der Artikel liefert keinen datierten, quantifizierbaren Beobachtungs-Falsifier (z. B. konkrete Kontraktpreis-, Lead‑Time‑ oder Shipment‑Messung mit Schwellenwerten) — folglich ist ein praktischer Falsifizierer nicht enthalten.",
+      "nextReview": "2026-10-26",
+      "eventDate": "2026-09-26",
+      "novelty": "Niedrig — wiederholt etablierte Analysten-/Medien‑These zum AI‑getriebenen NAND‑Upcycle; kein neues Primärevidenzstück.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 4,
+        "novelty": 2,
+        "thesisRelevance": 8,
+        "forecastImpact": 4,
+        "falsifiability": 1,
+        "timeSensitivity": 2
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "aiDemand"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262187578-sandisk-stock-forecast-ai-storage-prices-break-2000-tradingkey",
+          "label": "Originalkandidat: TradingKey Artikel (Publikationsseite)",
+          "kind": "primary",
+          "supports": "Belegt die Existenz des Meinungs-/Prognoseartikels vom 2026-09-26; enthält jedoch keine datierten, messbaren Marktbeobachtungen (kontraktpreise, qualified shipments, lead times etc.)."
+        },
+        {
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/sandisk-to-benefit-from-the-ai-driven-memory-squeeze-as-prices-surge",
+          "label": "Gegenkontext / etablierte Branchenanalyse (S&P Global, März 2026)",
+          "kind": "secondary",
+          "supports": "Zeigt breitere Analystenunterstützung für die These, liefert aber modellbasierte Projektionen (nicht den im Kandidaten behaupteten eindeutigen, neuen Primärbeleg)."
+        },
+        {
+          "url": "https://www.benzinga.com/markets/tech/26/05/52777352/sandisk-rides-ai-storage-supercycle-as-memory-prices-enter-new-normal",
+          "label": "Weiterer Branchenartikel / Medienberichterstattung (Benzinga, Mai 2026)",
+          "kind": "secondary",
+          "supports": "Kontext zu Marktstimmung und Analysten‑Upgrades; bestätigt, dass ähnliche bullish‑Narrative bereits zuvor in der Berichterstattung kursieren."
+        }
+      ],
+      "reason": "Der Kandidat ist ein werbender / prognostischer Aktienkommentar (TradingKey) und stellt eine Meinungs‑These dar, keine neu dokumentierte, datierte Marktbeobachtung. Nach den TAIL‑Aufnahmekriterien ist zulässige Admission nur für atomic, datierte und quantifizierbare Fakten mit Primärquelle (z. B. konkrete Kontraktpreise, qualifizierte Shipments, Lead‑Time‑Messungen, oder ein klarer Index‑Beleg). Der vorliegende Artikel liefert kein solches Primärmaß, bietet keinen überprüfbaren Falsifier und reproduziert eine bereits im Baseline vorhandene These (AI‑getriebene NAND‑Nachfrage / price_up). Zudem fällt das Format in die Kategorie „promotional stock commentary“, die explizit nicht zugelassen wird. Opposing / kontextuelle Quellen (S&P, Benzinga u. a.) zeigen, dass die These weit verbreitet, aber modellbasiert und nicht durch einen neuen Primär‑Beobachtungsdatensatz belegt ist. Daher muss der Kandidat abgelehnt werden (rejected).",
+      "candidateId": "8f9621721531dc2f9c0d",
+      "candidateKey": "d8b42a8381775014aa35547e",
+      "reviewedAt": "2026-09-26T19:53:40.921Z",
+      "priorityScore": 21,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04bb15d02f6c92c2006ab822b14f3087d0a6584c951d5c2596"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Solidigm prüft US‑NAND‑Fab — Bericht, aber kein FID oder qualifizierte Liefermengen",
+      "fact": "Berichte vom 2026-09-18 melden, dass SK hynix’ US‑Tochter Solidigm erwägt, eine NAND‑Fabrik in den USA (Upstate New York als mögliches Ziel) zu errichten, dies befindet sich jedoch in Planungs-/Evaluierungsstadium ohne veröffentlichte Investitionsentscheidung oder Zeitplan für qualifizierte Lieferungen.",
+      "placement": "Geographie: USA (Upstate New York als führende Kandidatin laut Berichten); Domäne/Layer: Frontend NAND‑Waferproduktion / Fab‑Layer; Horizont: Entwicklungs-/Build‑Horizon (potenzielles FID in der Zukunft, kein aktueller Output).",
+      "mechanism": "Wenn Solidigm eine Frontend‑NAND‑Fab in den USA baut, würde dies (1) US‑lokale NAND‑Front‑end‑Kapazität hinzufügen, (2) die Abhängigkeit von der Dalian‑Fertigung verringern und (3) langfristig die Verfügbarkeit von Enterprise‑NAND/SSD‑Volumen für US‑Kunden verbessern. Aktuell ist die Wirkung jedoch nur potentiell, weil kein FID, keine Kapazitätsgröße, kein Fertigstellungstermin und keine zertifizierten Shipments genannt wurden.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Das berichtete Projekt würde, sofern realisiert und termingerecht qualifiziert, gegen die Basishypothese arbeiten, dass Memory (inkl. NAND/Enterprise‑SSD) bis 2027 knapp bleibt; es ist daher relevant für P-2026-07-20-04 (Memory bleibt 2027 knapp).",
+      "falsifier": "Bis 2027-12-31 kein öffentliches FID, keine bestätigte Standortwahl mit klarer Kapazitätsangabe (Wafer‑starts/monat oder N‑Layer/Startjahr) und keine dokumentierten qualifizierten NAND‑Shipments aus einer neuen US‑Solidigm‑Fab. Wird bis 2027-12-31 bestanden: Watchlist kann in Accepted umgewertet werden (bei zusätzlicher primärer Evidenz).",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Trotz vieler Industrie‑Ankündigungen ist ein konkretes US‑Frontend‑NAND‑Bauprojekt von Solidigm neu; es ist jedoch ein Prüfbericht, kein verbindliches Projekt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/sk-hynixs-solidigm-unit-is-weighing-nand-memory-chip-factory-in-us-sources-say-4906708",
+          "label": "Investing.com (Reuters-sourced report summarised)",
+          "kind": "secondary",
+          "supports": "Bericht vom 2026-09-18: Solidigm erwägt Bau einer NAND‑Fabrik in den USA; Upstate New York als möglicher Standort; kein finaler Investitionsentscheid."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/18/sk-hynix-weighs-first-us-nand-plant-as-ai-demand-surges",
+          "label": "Seoul Economic Daily (englische Ausgabe)",
+          "kind": "secondary",
+          "supports": "Artikel vom 2026-09-18 berichtet, Solidigm prüft US‑NAND‑Fabrik und erläutert strategischen Kontext (Reduktion der Abhängigkeit von Dalian; US‑Packaging‑Back‑end‑Aktivitäten existieren bereits)."
+        }
+      ],
+      "reason": "Die vorgelegten Medienberichte (Datum 2026-09-18) deuten auf eine strategische Prüfung von Solidigm hin und sind relevant für die Basishypothese zu NAND/Enterprise‑SSD‑Verfügbarkeit. Es fehlt jedoch eine primäre, verbindliche Quelle (Unternehmensmitteilung, behördliche FDI‑Anmeldung, FID mit Kapazitätszahlen oder erste qualifizierte Shipments). Ohne ein FID oder konkrete, datierte Kapazitätsangaben kann das Ereignis nicht als VERIFIED DATA klassifiziert oder sofort als Availability‑Signal mit Indexwirkung aufgenommen werden. Opposing evidence (keine FID/keine Zeitpläne) wurde nicht ausdrücklich vorgelegt, bleibt aber die zentrale Unsicherheit. Deshalb Einstufung: watchlist — relevante potenzielle Kapazitätsquelle, aber noch nicht verifizierbar; Überprüfung wie oben angegeben. Quellen: Reuters‑basierte Berichterstattung/Investing und Seoul Economic Daily. ",
+      "candidateId": "c0f088193db27a9a8d9f",
+      "candidateKey": "e4fce763391d6516aca2d292",
+      "reviewedAt": "2026-09-26T19:54:15.473Z",
+      "priorityScore": 69,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_00d2bd181e617a1f006ab822c5103087d0ae663a01e0ed26b9"
     }
   ]
 }
