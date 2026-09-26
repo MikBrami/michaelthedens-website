@@ -47678,6 +47678,138 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0c6178cb14c806c3006ab7965ba83887d0a41ff2094b227d81"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Analystenkommentar: Micron‑Earnings könnten 'Teeter‑Totter' sein; Nvidia‑'Rubin' Wirkung erst 2027",
+      "fact": "Dow Jones / aggregierte Finanzberichterstattung zitiert Analystenkommentar (Hosseini) vom 2026-09-26: Der Nvidia‑Rubin‑Produkt‑Ramp werde wahrscheinlich erst im April (Folgejahr) wirkungsvoll und habe in H2 2026 nur minimale Umsatzwirkung; HBM4‑Rampen‑ASPs sollen >50% über HBM3e liegen. (Quelle: Dow Jones‑Wiederveröffentlichung, 2026-09-26).",
+      "placement": "Geographie: global (Micron / Nvidia Kundenverkäufe); Domain: HBM4 / AI‑Accelerator Supply; Layer: Produkt‑Ramp / Absatzquartal; Horizon: 2026–2027 (Zielmonat: April 2027 für signifikanten Ramp‑Effekt).",
+      "mechanism": "Analystenargumentation: Nvidia‑Rubin‑Plattform wird zunächst qualifiziert/abgenommen/verzögert (Lead‑times >30 Wochen für Blackwell), deshalb verschieben sich signifikante HBM4‑Umsätze in spätere Quartale; Folge: kurzfristige Berichtsquartale können 'Teeter‑Totter' (Verschiebungen zwischen Quartalen) zeigen, echte HBM4‑Nachfragewirkung erscheint erst mit großvolumigem Rubin‑Ramp.",
+      "predictionId": "P-2026-07-14-hbm4-cost",
+      "predictionImpact": "Wenn Hosseinis Einschätzung zutrifft, stützt dies P-2026-07-14-hbm4-cost insofern, als erhöhte HBM4‑Kosten/Preise und bevorzugte Packaging‑Kapazität kurzfristig persistieren; konkret impliziert die Aussage eine stärkere Preisdurchsetzung in 2027 statt H2 2026.",
+      "falsifier": "Bis 2027-04-30: Nachweis von qualifizierten, materialisierten HBM4‑Shipments an Nvidia Rubin-Kunden mit dokumentierten Liefervolumina (Wafer/Module) und einem quantifizierbaren Umsatzbeitrag (>X USD oder >Y Wafer/Monat) für Micron in Q1–Q2 2027; alternativ widerspricht die Falsifizierung, wenn Micron in Q4 2026 / Q1 2027 signifikante HBM4‑Umsätze ausweist, die vom Markt als Rubin‑getrieben identifiziert werden.",
+      "nextReview": "2027-05-01",
+      "eventDate": "2026-09-26",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 4,
+        "thesisRelevance": 14,
+        "forecastImpact": 10,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.itiger.com/news/2670269734",
+          "label": "Dow Jones (Wiederveröffentlichung) – 'Micron Investors Should Get Ready for a Seesaw Ride, Analyst Says' (2026-09-26)",
+          "kind": "primary",
+          "supports": "Berichtet den Analystenkommentar von Hosseini, datiert 2026-09-26: Rubin‑Ramp wahrscheinlich verschoben, April (Folgejahr) erwartet; HBM4‑Umsatzwirkung in H2 2026 'minimal'; ASPs für HBM4 >50% über HBM3e."
+        }
+      ],
+      "reason": "Der Kandidat ist ein wiedergegebenes Analystenurteil (Dow Jones / Broker‑Wiederveröffentlichung) vom 2026-09-26, das eine Verschiebung des Nvidia Rubin‑Ramp und damit HBM4‑Umsätzen in das Folgejahr behauptet. Das Material ist eine modellbasierte Prognose/Interpretation (kein nachgewiesenes, direktes Shipment‑ oder Umsatzelement mit Einheiten). Nach TAIL‑Aufnahmekriterien erfordert eine Annahme: (a) eine atomare, datierte und mengenmässig quantifizierte Beobachtung und (b) eine klar prüfbare Falsifikation. Diese Meldung liefert keine qualifizierten Liefervolumina, kontrahierte Liefernachweise oder beobachtete ASP‑Zahlen mit Einheiten, sondern eine Analystenschätzung/Timing‑Einschätzung. Deshalb kann sie nicht als VERIFIED DATA aufgenommen werden. Relevanz für die bestehende Thesenliste ist vorhanden (HBM4 / Rubin Timing), aber der Eintrag ist nicht primär‑belegbar und überschneidet sich mit bereits erfassten Baseline‑Signalen zu HBM4/HBM‑Ramp und Micron‑Capacity (duplizierende Interpretations‑Einschätzung). Empfehlung: Watchlist — verifizieren, ob binnen Review‑Frist (bis 2027-05-01) belastbare, primäre Belege für Rubin‑getriebene HBM4‑Shipments (Wafer‑/Module‑Mengen oder Micron‑Umsatzanteile) auftauchen; bis dahin keine Index‑Impact‑Kondition aktivieren und redPencilPass verweigern (zu prognostisch).",
+      "candidateId": "647752ab4fe4836a0204",
+      "candidateKey": "32d4b07ab2fa0fe9697ccccf",
+      "reviewedAt": "2026-09-26T15:01:07.205Z",
+      "priorityScore": 60,
+      "gateReasons": [
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c8255b0606a282f006ab7de1cd5a887d0b94d07f34c4a1a0f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix prüft US‑NAND‑Fab (Solidigm) — vorläufige Erwägung, kein verbindlicher FID",
+      "fact": "Mehrere Medien berichten (Reuters-Quellen) am 2026-09-18, dass SK hynix/Tochter Solidigm eine NAND‑Fertigung in den USA prüft; Upstate New York wurde als führender Kandidat genannt. Es handelt sich um Sondierungen, keine bestätigte Investitionsentscheidung oder Lieferungen.",
+      "placement": "Geographie: USA (Upstate New York genannt); Domain/Layer: NAND‑Fab / Fertigungs‑Capex (Frontend/back‑end Planung); Horizont: potenzieller Neubau (mehrjährige Bau‑/Qualifizierungsphase).",
+      "mechanism": "Politischer Druck (US‑Administration) und Reshoring‑Incentives erhöhen die Wahrscheinlichkeit, dass SK hynix Investitionsoptionen in den USA prüft; eine US‑Fab würde langfristig die regionale NAND‑Bit‑Kapazität erhöhen und damit Verfügbarkeit/Preisdynamik in Enterprise‑SSD/NAND beeinflussen — jedoch nur bei verbindlichem FID, Bau und qualifizierten Shipments (mehrjährige Latenz).",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Wenn ein verbindlicher FID und anschließende qualifizierte NAND‑Shipments vor Ende 2028 erfolgen, würde dies das Basisszenario der anhaltenden Memory‑Knappheit (P-2026-07-20-04) tendenziell abschwächen (availability → capacity_relief), ansonsten bleibt kein kurzfristiger Effekt.",
+      "falsifier": "Bis 2027-12-31: keine öffentliche, verbindliche Investitionsentscheidung (FID) oder signierte verbindliche Förderung/Lease/Projektfinanzierung seitens SK hynix/Solidigm für eine US‑NAND‑Fab; oder alternativ: bis 2028-12-31: keine qualifizierten, nachprüfbaren NAND‑Shipments (Shipment‑Reporting / Kundenlieferbestätigungen) aus einer neuen US‑Anlage. Ein FID oder qualifizierte Shipments auf oder vor diesen Daten würden das Signal in Richtung 'capacity_relief' updaten.",
+      "nextReview": "2026-10-18",
+      "eventDate": "2026-09-18",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 8,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ebs.publicnow.com/view/1094B8BA41D22213894DCDFE40791E85A713C38C",
+          "label": "Tekedia (via Public): SK Hynix Considers US NAND Factory (09/18/2026)",
+          "kind": "secondary",
+          "supports": "Reproduktion des Reuters‑Berichts in Presseverteilung; keine zusätzliche Primärbestätigung (zitiert Reuters‑Quellen)."
+        }
+      ],
+      "reason": "Der Kandidat berichtet eine signifikante mögliche Verlagerung (potenzielle US‑NAND‑Fab) basierend auf Reuters‑Quellen vom 2026-09-18. Die vorgelegten Berichte beschreiben jedoch nur Prüfungen/Sondierungen ohne FID, Lieferungen oder quantifizierbare Kapazitätsgrößen (keine Tonnen/Bit‑Einheit, kein Produktionsstartdatum, kein verbindlicher Capex‑Wert). Nach TAIL‑Aufnahmekriterien fehlt derzeit die erforderliche atomare, datierte Primärverifikation (FID/Capex/Shipments) mit messbarer Einheit, um die Aufnahme als VERIFIED DATA/accepted zu rechtfertigen. Opposing evidence: zahlreiche Firmennachrichten zu fortgesetzter Knappheit, Reservierungen und kurzfristigen Kapazitätsbindungen (Baseline) zeigen, dass eine bloße Sondierung keine kurzfristige Verfügbarkeitsverbesserung garantiert. Deshalb wird der Kandidat auf watchlist gesetzt — weiter beobachten; falls bis 2027-12-31 kein FID publiziert wird (oder bis 2028-12-31 keine qualifizierten Shipments), bleibt die Aussage unproven und hat keine unmittelbare Indexwirkung.",
+      "candidateId": "30aacfd9ef0ff0dab820",
+      "candidateKey": "0e101b9075732a5270f95a4f",
+      "reviewedAt": "2026-09-26T15:01:23.382Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e7ef732527da2e9006ab7de3354a887d0a96b2bc485a27a1f"
     }
   ]
 }
