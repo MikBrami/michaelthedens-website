@@ -47320,6 +47320,146 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0475c3cde600eefb006ab6da30fba887d1bd05e667a474ee0d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix / Solidigm prüft US‑NAND‑Fab (Berichte, nicht final bestätigt)",
+      "fact": "Mehrere Medien (einschließlich Reuters) meldeten am 2026-09-18, dass SK hynixs Solidigm‑Einheit eine NAND‑Waferfabrik in den USA (Upstate New York als führender Kandidat) prüfe; Quellen bezeichneten den Vorgang als vertraulich untersucht, aber nicht final entschieden.",
+      "placement": "Geographie: USA (Upstate New York als führender Kandidat); Domain/Layer: NAND-Front-End‑Fertigung (Wafer Fabrication); Horizont: kurzfristig bis mittelfristig (Standortentscheidung / FID potenziell 2026–2027).",
+      "mechanism": "Reshoring-Frontend (US‑Fab) würde die geografische Verteilung der NAND‑Front-End‑Produktion verändern und dadurch relative China‑Exponierung reduzieren; potenzieller Einfluss auf Verfügbarkeit und geopolitische Risikoprämien für Enterprise‑SSD/NAND‑Supply.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signal: potenziell availability improvement (negative_supply → reduziert China‑Konzentration), mit mittelfristiger Wirkung auf Enterprise‑SSD‑Erfüllungsraten und Preisvolatilität falls Realisierung erfolgt.",
+      "falsifier": "Bis 2027-12-31 kein bestätigter, durch SK hynix / Solidigm oder durch einen verbindlichen Regierungs-/Förderbescheid dokumentierter Standort, kein FID (Final Investment Decision) oder keine offizielle regulatorische Mitteilung über einen US‑NAND‑Wafer‑Fab für Solidigm.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Die Meldung berichtet über eine neue Standortprüfung (Upstate New York) — nicht über eine bestätigte Fabrik oder FID.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 25,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-pushes-back-intel-112756554.html",
+          "label": "Yahoo Finance – SK hynix weist auf Nicht‑Finalität hin (2026-09-16)",
+          "kind": "secondary",
+          "supports": "Unternehmensäußerung (Sk hynix) vom 2026-09-16: 'no matters have been determined at this stage' — Hinweis, dass Gespräche/Überlegungen stattfinden, aber nichts final ist."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung basiert auf einem Reuters‑Bericht (2026-09-18), der vertrauliche Quellen zitiert und einen möglichen Standort (Upstate New York) nennt. Der Bericht ist relevant für die OUTLOOK‑Enterprise‑SSD/ NAND‑Einschätzung, weil eine US‑Frontend‑Fab die regionale Risikoexposition und langfristig die Verfügbarkeit von qualifiziertem NAND beeinflussen würde. Allerdings fehlt zum Aufnahmezeitpunkt ein bestätigendes Primärdokument von SK hynix/Solidigm (Pressemitteilung, SEC/Finanzmeldung, Regierungszusage oder FID) sowie klare, quantifizierbare Maßeinheiten (z. B. geplante Wafer‑/Bit‑Kapazität, Investitionssumme, Zeitplan). Die Oppositions‑/Adversarial‑Information (SK hynix‑Statement vom 2026-09-16, dass 'nichts finalisiert sei') reduziert die Verlässlichkeit. Nach TAIL‑Regeln erfordert Aufnahme als VERIFIED DATA eine atomare, datierte, quellengeprüfte Beobachtung mit Einheiten und eine belastbare Verknüpfung zu bestehenden Vorhersagen; diese Voraussetzungen sind hier nicht erfüllt. Daher Watchlist: beobachten bis 2026-12-31 auf bestätigende Primärbelege (Firmen-/Regierungsankündigung, FID, konkrete Kapazitäts-/Investitionsangaben).",
+      "candidateId": "20a681fa80ca4f311800",
+      "candidateKey": "4d627aa0eb7ad579a3007a24",
+      "reviewedAt": "2026-09-26T01:34:18.720Z",
+      "priorityScore": 69,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c03594a3e514686006ab7210819ec87d18b71fdc3d34b9de5"
+    },
+    {
+      "decision": "watchlist",
+      "title": "AI Energy Management Alliance (AEMA): Emerald AI, Google, NVIDIA starten Koalition für 'grid‑friendly' flexible AI‑Rechenzentren",
+      "fact": "Emerald AI, Google und NVIDIA gründeten die AI Energy Management Alliance (AEMA) – eine branchenübergreifende Koalition zur Förderung von ‚power‑flexible‘/grid‑freundlichen AI‑Rechenzentren, offiziell lanciert Mitte September 2026 (Ankündigungen und Press Releases datiert 2026‑09‑16/17).",
+      "placement": "Geographie: primär USA (globale Partnernetzwerke möglich); Domäne: ai_infrastructure / grid‑integration; Layer: operative Datenzentrum‑Lastflexibilität & Beschaffungs‑/Kontraktschicht; Horizont: unmittelbar (H2 2026) → mittelfristig (2027–2028).",
+      "mechanism": "Koalitionsmitglieder (Hyperscaler, NVIDIA, Emerald AI, mehrere Versorger und Energieentwickler) beabsichtigen, Software‑ und Referenzdesigns (Emerald Conductor, NVIDIA AI‑Factory-Design) mit Versorgern zu koppeln, um Rechenlasten dynamisch zu verschieben/kurzfristig zu drosseln, formale Flex‑Verträge und Qualifikationspfade zu schaffen und so schnellere Netzanschlüsse/Netzkapazität für AI‑Workloads zu ermöglichen. Dadurch kann vorhandene Netzkapazität (MW) nutzbar gemacht werden, ohne umfassende Netzausbauten — potenziell direkte Wirkung auf verfügbare Datacenter‑IT‑Load (MW) und damit auf kurzfristige Datacenter‑Beschaffungsbarrieren.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Mäßige Entlastung der Verfügbarkeits‑/Kapazitäts‑Knappheit (negative_supply → teilweises capacity_relief) durch schnellere Kommerzialisierung flexibler Netzanschluss‑Modelle; könnte kurz- bis mittelfristig die operative Allokation von Server‑DRAM‑Bits verbessern, ohne sofortige physische Kapazitätserhöhung.",
+      "falsifier": "Bis 2027-03-16 existieren keine öffentlich dokumentierten AEMA‑gestützten, netzgebundenen Flex‑Verträge oder nachweisbaren Versorger‑Interconnect‑Meilensteine (z. B. verbindliche Utility‑Contracts, qualifizierte 'flexible' MW‑Anschlüsse ≥500 MW cumulativ oder dokumentierte grid‑dispatch‑Ereignisse mit Rechenlast‑Drosselungen) — dann ist die behauptete operative Kurzfristwirkung auf Verfügbarkeit schwer zu bestätigen.",
+      "nextReview": "2027-03-16",
+      "eventDate": "2026-09-16",
+      "novelty": "Koalition verbindet große Hyperscaler/Chip‑Fabrikanten (Google, NVIDIA) mit einem spezialisierten Grid‑Orchestrator (Emerald AI) und Energie‑Partnern zur systematischen Kommerzialisierung von Rechenzentrums‑Lastflexibilität; dies ist eine neue, koordinierte Brancheninitiative (AEMA) mit konkreten Partner‑Ankündigungen in Sept. 2026.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+          "label": "NVIDIA Blog — 'Emerald AI, Google and NVIDIA Launch Alliance to Advance Flexible AI Data Centers'",
+          "kind": "primary",
+          "supports": "NVIDIA kündigt die Gründung der AI Energy Management Alliance (AEMA) mit Emerald AI und Google an; Datum und Zweck (flexible, grid‑friendly AI‑Rechenzentren) werden genannt. (Ankündigung datiert Mitte September 2026)."
+        },
+        {
+          "url": "https://www.emeraldai.co/blog/launching-the-first-power-flexible-ai-factory-with-nvidia",
+          "label": "Emerald AI — Firmenblog/Ankündigung",
+          "kind": "primary",
+          "supports": "Emerald AI beschreibt Partnerschaft mit NVIDIA/anderen und das Ziel, ‚power‑flexible AI factory‘ Referenzdesigns zu liefern; technische Mechanik (Emerald Conductor, Orchestrierung) wird erläutert."
+        },
+        {
+          "url": "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers",
+          "label": "Axios — Bericht zur Branchen‑Ankündigung",
+          "kind": "secondary",
+          "supports": "Unabhängiger Nachrichtenbericht (Axios) bestätigt die Koalitionsgründung, nennt Google und NVIDIA als Partner und fasst den angestrebten Effekt auf Strompreise/Netzanschluss/öffentliche Akzeptanz zusammen."
+        }
+      ],
+      "reason": "Primärquellen (NVIDIA Blog; Emerald AI Firmenblog) und unabhängige Medien (Axios u. a.) bestätigen ein datiertes, kohärentes, sektorspezifisches Ereignis: die Gründung der AI Energy Management Alliance (AEMA) Mitte September 2026 mit dem ausdrücklichen Ziel, Rechenzentren als flexible Netzressourcen zu operationalisieren. Das Ereignis ist ausreichend konkret (Datum, beteiligte Organisationen, beabsichtigte Mechanik) und damit verwertbar als Signal. Es ist jedoch kein direkter, quantifizierter Nachweis für sofortige, messbare Improvement‑Metriken (z. B. erhöhte qualifizierte Shipments, Lead‑Time‑Verringerung oder unmittelbare Bit‑Supply‑Effekte). Deshalb bleibt indexImpact false; die beobachtete Wirkung ist plausibel operativ (Availability/Capacity layer) und falsifizierbar innerhalb des angegebenen Review‑Zeitraums.",
+      "candidateId": "32864c90789a457df454",
+      "candidateKey": "8786e4eb3e1ebd69070cbbaf",
+      "reviewedAt": "2026-09-26T01:34:51.942Z",
+      "priorityScore": 82,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ed3f43018f759b6006ab7211ae4dc87d198555ebfde3a1565"
     }
   ]
 }

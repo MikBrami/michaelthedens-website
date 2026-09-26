@@ -2,34 +2,34 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-09-25",
-  "analysisAsOf": "2026-09-25",
+  "dataAsOf": "2026-09-26",
+  "analysisAsOf": "2026-09-26",
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-25T20:32:10.915Z",
-    "inboxUpdatedAt": "2026-09-25T20:28:53.755Z",
+    "checkedAt": "2026-09-26T01:34:51.974Z",
+    "inboxUpdatedAt": "2026-09-26T01:32:33.850Z",
     "status": "pending",
-    "candidates": 152,
-    "reviewed": 64,
+    "candidates": 155,
+    "reviewed": 66,
     "accepted": 5,
-    "watchlist": 58,
+    "watchlist": 60,
     "rejected": 1,
-    "pending": 90,
-    "oldestPendingAt": "2026-09-18T15:29:38.000Z",
-    "lastCompletedReviewAt": "2026-09-25T20:32:10.868Z",
+    "pending": 91,
+    "oldestPendingAt": "2026-09-18T16:58:35.000Z",
+    "lastCompletedReviewAt": "2026-09-26T01:34:51.942Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 383,
+    "rawCandidates": 387,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
-      "archivedOpinions": 11,
+      "archivedOpinions": 12,
       "groupedDuplicates": 18
     },
     "lastRun": {
-      "startedAt": "2026-09-25T20:31:12.971Z",
-      "completedAt": "2026-09-25T20:32:10.917Z",
+      "startedAt": "2026-09-26T01:33:58.712Z",
+      "completedAt": "2026-09-26T01:34:51.976Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 58,
+      "durationSeconds": 53,
       "budgetExhausted": false
     }
   },
@@ -92,13 +92,13 @@
     }
   ],
   "sourceDataAsOf": "2026-09-21",
-  "knowledgeBaseSyncedAt": "2026-09-25T20:32:11.081Z",
+  "knowledgeBaseSyncedAt": "2026-09-26T01:34:52.155Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 4,
-  "lastSuccessfulUpdate": "2026-09-25T20:32:12.496Z",
-  "lastForecastRun": "2026-09-25T20:32:12.496Z",
-  "newlyProcessedArticles": 108,
+  "evidenceAgeDays": 5,
+  "lastSuccessfulUpdate": "2026-09-26T01:34:53.593Z",
+  "lastForecastRun": "2026-09-26T01:34:53.593Z",
+  "newlyProcessedArticles": 69,
   "totalArticles": 188,
   "articleCount": 188,
   "processStatus": "warning",
@@ -154,16 +154,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 90 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 91 Kandidaten ausstehend.",
     "12 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-25T20:28:53.755Z",
-    "newItems": 108,
-    "totalItems": 8066,
+    "updatedAt": "2026-09-26T01:32:33.850Z",
+    "newItems": 69,
+    "totalItems": 8135,
     "duplicateItems": 300,
-    "relevantItems": 2734,
+    "relevantItems": 2749,
     "sourceErrors": []
   },
   "pipeline": {
@@ -173,19 +173,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "64 geprüft · 90 offen · 5 aufgenommen"
+        "detail": "66 geprüft · 91 offen · 5 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "188 Artikel · Sync 2026-09-25 · jüngstes bestätigtes Signal 2026-09-21"
+        "detail": "188 Artikel · Sync 2026-09-26 · jüngstes bestätigtes Signal 2026-09-21"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "8066 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "8135 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -298,7 +298,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 87,
-          "confidence": 43,
+          "confidence": 42,
           "evidenceCount": 5,
           "pressure": 79,
           "relief": 0,
@@ -383,26 +383,26 @@
     },
     {
       "id": "supply_chain",
-      "score": 73,
-      "baseScore": 73,
+      "score": 72,
+      "baseScore": 72,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 73,
+      "indicativeScore": 72,
       "sufficientlyCovered": true,
       "status": "orange",
       "signals": 33,
       "articleSignals": 30,
       "operationalSignals": 3,
-      "confidence": 56,
+      "confidence": 55,
       "coverage": 80,
       "drivers": [
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 67,
+          "score": 66,
           "confidence": 84,
           "evidenceCount": 2,
-          "pressure": 67,
+          "pressure": 66,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -422,7 +422,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 78,
-          "confidence": 55,
+          "confidence": 54,
           "evidenceCount": 5,
           "pressure": 69,
           "relief": 0,
@@ -432,10 +432,10 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 67,
+          "score": 66,
           "confidence": 84,
           "evidenceCount": 2,
-          "pressure": 67,
+          "pressure": 66,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -461,10 +461,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 75,
+          "score": 74,
           "confidence": 91,
           "evidenceCount": 5,
-          "pressure": 75,
+          "pressure": 74,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -523,10 +523,10 @@
         {
           "id": "demand",
           "label": "Nachfrage",
-          "score": 76,
+          "score": 75,
           "confidence": 92,
           "evidenceCount": 5,
-          "pressure": 76,
+          "pressure": 75,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -556,10 +556,10 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 77,
+          "score": 76,
           "confidence": 80,
           "evidenceCount": 5,
-          "pressure": 77,
+          "pressure": 76,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -974,7 +974,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-09-25T20:32:12.490Z"
+      "lastUpdated": "2026-09-26T01:34:53.587Z"
     },
     {
       "id": "hbm",
@@ -1159,7 +1159,7 @@
         "S-AUTO-965c715ae023d058ae2744d3",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-25T20:32:12.490Z"
+      "lastUpdated": "2026-09-26T01:34:53.587Z"
     },
     {
       "id": "nand",
@@ -1245,7 +1245,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-25T20:32:12.490Z"
+      "lastUpdated": "2026-09-26T01:34:53.588Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1326,7 +1326,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-25T20:32:12.491Z"
+      "lastUpdated": "2026-09-26T01:34:53.588Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1635,14 +1635,14 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-25T20:32:12.491Z"
+      "lastUpdated": "2026-09-26T01:34:53.588Z"
     }
   ],
   "indexCalculation": {
-    "asOf": "2026-09-25",
+    "asOf": "2026-09-26",
     "evidenceAsOf": "2026-09-11",
     "formulaRevision": "1.4",
-    "baselineAsOf": "2026-09-25"
+    "baselineAsOf": "2026-09-26"
   },
   "executiveSummary": "TAIL steht auf 76/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 188 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
@@ -1813,7 +1813,7 @@
         "confidence": 76,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-25"
+        "indexAsOf": "2026-09-26"
       },
       {
         "marketId": "enterprise_ssd",
@@ -2252,7 +2252,7 @@
         "confidence": 67,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-25"
+        "indexAsOf": "2026-09-26"
       }
     ]
   }
