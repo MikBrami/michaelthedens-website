@@ -48297,6 +48297,154 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_048f35c935065c50006ab8f1a3c4ac87d09bfa5d14b02ab1c7"
+    },
+    {
+      "decision": "watchlist",
+      "title": "UBS-Research erhöht Micron-Schätzungen; berichtet von anhaltender Memory-/Storage‑Knappheit bis mindestens 2028",
+      "fact": "UBS erhöhte Ende September 2026 seine Gewinn‑ und Umsatzprognosen für Micron und schreibt in seiner Research‑Analyse, dass industry‑weite DRAM/HBM‑Versorgungsengpässe voraussichtlich bis mindestens in die Mitte/zweite Hälfte von 2028 andauern (konkret: Engpass bis mindestens Q2/2028 / bis C2H2028 in mehreren Medienberichten zitiert).",
+      "placement": "globaler Halbleitermarkt — Produktsegmente: HBM, Server‑DRAM, NAND/Enterprise‑SSD; zeitlicher Horizont: bis mindestens 2028; Geographie: global (Angebots‑ und Nachfrageeffekte in USA / Südkorea / China ausdrücklich diskutiert).",
+      "mechanism": "UBS begründet die anhaltende Knappheit mit (a) starkem AI‑/Server‑Bit‑Wachstum (HBM‑Trade‑Ratio steigt), (b) begrenzter kurzfristiger FAB/Packaging‑Skalierbarkeit (Installations‑/Yield‑Limitierungen bei neuen Anbietern wie CXMT/YMTC) und (c) hoher Vorab‑Vertragsnachfrage/Long‑Term‑Agreements plus erwarteten Share‑Buybacks, die verfügbare Markt‑Bits nicht schnell genug erweitern — was Verfügbarkeitsdruck (Allokation) und höhere ASPs nach sich zieht.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Stützt die vorhandene These, dass HBM und Server‑DRAM strukturell knapp bleiben bis mindestens Ende 2028; erhöht kurzfristig die Wahrscheinlichkeit eines Fortbestehens der 'negative_supply'‑Richtung für 2027–2028 im Bereich HBM/Server‑DRAM.",
+      "falsifier": "Messbare Gegentests: Wenn bis 2027-06-30 entweder (A) branchenweite Server‑DRAM/ HB M Kontraktpreise zwei aufeinanderfolgende Quartale in Folge um ≥10% rückläufig sind oder (B) bestätigte Lead‑Times für Server‑DRAM bei mehreren Tier‑1‑Anbietern auf ≤8 Wochen normalisieren (qualifizierte Herstellerangaben/kontraktbasierte Lead‑Time‑Reports), dann widerlegt dies die UBS‑Aussage, dass Knappheit bis mindestens Mitte/zweite Hälfte 2028 besteht.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-24",
+      "novelty": "UBS‑Research fasst Bestandteile zusammen (HBM‑Trade‑Ratio, CXMT/YMTC‑Effekte, Buybacks) und publiziert erhöhte Modellschätzungen; die Kernaussage (Knappheit bis 2028) ist neu als explizite, datierter Research‑These für Micron in Q4‑2026‑Kontext.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 65,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/analyst-ratings/ubs-reiterates-micron-stock-rating-on-widening-supplydemand-gap-93CH-4912732",
+          "label": "Investing.com – Coverage of UBS Micron note (Sep 2026)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass UBS die Prognosen für Micron anhob und erwartet, dass DRAM/HBM‑Knappheit bis mindestens Mitte/2028 andauern könnte; nennt erhöhte EPS/Revenue‑Schätzungen."
+        },
+        {
+          "url": "https://ca.finance.yahoo.com/news/micron-apos-chip-shortage-expected-165525625.html",
+          "label": "Yahoo Finance – Bericht über UBS‑Einschätzung (Sep 23–24, 2026)",
+          "kind": "secondary",
+          "supports": "Zitiert UBS: Micron verschifft nahezu alles, was gefertigt wird; UBS erwartet, dass Engpässe voraussichtlich bis mindestens Mitte 2028 anhalten."
+        },
+        {
+          "url": "https://gmteight.com/content/detail/435679",
+          "label": "GMT EIGHT – Zusammenfassung des UBS‑Research (Sep 26, 2026)",
+          "kind": "secondary",
+          "supports": "Fasst UBS‑Modellannahmen zusammen (CXMT Bit‑Share Entwicklung, HBM ASP‑Expansion, erwartete Buybacks) und nennt Datumsangaben/Prognosehorizont bis Q2/2028."
+        }
+      ],
+      "reason": "Die Kandidatenaussage ist eine klar datierte, dokumentierte Research‑These (UBS), die direkt die existierende Vorhersage P-2026-07-11-01 unterstützt (HBM/Server‑DRAM Knappheit bis Ende 2028). Wir konnten die UBS‑Aussage in mehreren unabhängigen Finanz‑Nachrichten‑Berichten verifizieren (Publikationsdaten: 2026‑09‑23 bis 2026‑09‑26). Die Behauptung ist ausreichend konkret (zeitlicher Horizont 'bis mindestens Mitte/zweite Hälfte 2028', Mechanismus: HBM‑Trade‑Ratio, CXMT/YMTC‑Limitierungen, Long‑term‑Agreements, Buybacks) und besitzt einen prüfbaren Falsifier (kontraktpreis‑ und Lead‑Time‑Messungen bis 2027‑06‑30). Da keine direkte Messung eines Index‑Metrics (z. B. Kontraktpreis‑Korb mit Zahlen) im primären UBS‑Zitiertext veröffentlicht wurde, ist indexImpact false. EvidenceStatus ist 'MODEL ESTIMATE' da die Kernaussage aus einem Research‑Modell (UBS‑Analystenbericht) stammt und die Original‑UBS‑Note nicht als offenes Primary‑PDF im Inbox‑Payload vorlag; mehrere seriöse Medienberichte bestätigen aber Datum, Umfang und Kernaussage.",
+      "candidateId": "cf0df55bb7a77493b0cf",
+      "candidateKey": "e10bca0e6b38013d12f28f19",
+      "reviewedAt": "2026-09-27T15:41:35.643Z",
+      "priorityScore": 80,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0444a4a37e3b3af8006ab9391b0d3c87d2accdf000c957a003"
+    },
+    {
+      "decision": "watchlist",
+      "title": "China's CXMT eyes flash‑memory push amid global shortage; firm to take on Samsung, YMTC",
+      "fact": "Reuters‑Bericht (2026-09-18) meldet, dass CXMT (ChangXin) plant, in den 3D‑NAND/Flash‑Bereich zu expandieren und eine zweite Fab in Peking mit einer R&D‑3D‑NAND‑Produktionslinie zu prüfen; Finanzierungs‑ und Standortgespräche laufen. Dies ist eine Absichts-/Investitionsmeldung, kein Nachweis qualifizierter NAND‑Shipments oder sofortiger Bit‑Output.",
+      "placement": "Geographie: Beijing (China); Domäne: NAND / Enterprise‑SSD / Flash; Layer: Produktions‑R&D und fab‑Erweiterung; Horizont: Bekannt gemacht 2026-09-18, potenzieller Produktionsaufbau in den Folgejahren.",
+      "mechanism": "Kapazitätsaufbau durch Errichtung einer zweiten Fertigungsstätte mit einer dedizierten 3D‑NAND R&D/Produktionslinie; Wirkung auf Markt über zukünftige zusätzliche NAND‑Bit‑Supply, potenziell Preisdruck/Verlagerung von Nachfrage‑Zielen, falls qualifizierte Bits geliefert werden.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Partieller Falsifier/Signalberater: Wenn CXMT die Ankündigung in qualifizierte, qualitätsgeprüfte NAND‑Shipments mit messbarer Bit‑Output umsetzt, würde das die Basissicht (Memory bleibt 2027 knapp) in Richtung nachlassender Knappheit mittelfristig beeinflussen; aktuell ist dies aber nur ein angekündigter Kapazitätsaufbau ohne bestätigte Liefereffekte.",
+      "falsifier": "Bis 2028-06-30: entweder (A) CXMT meldet qualifizierte 3D‑NAND‑Shipments oder einen bestätigten, qualifizierten Bit‑Output (z. B. >100k NAND‑Wafer/Monat äquivalent) — das würde die Meldung in Richtung realer Supply‑Auswirkung bestätigen; oder (B) bis 2028-06-30 gibt es keine veröffentlichten qualifizierten NAND‑Shipments, kein Starttermin für qualifizierte Produktion und keine verbindlichen Finanzierung/FID für eine NAND‑Produktionslinie — das würde die Aussage als nur strategische Diversifikation falsifizieren.",
+      "nextReview": "2028-06-30",
+      "eventDate": "2026-09-18",
+      "novelty": "Moderate — Verbreitet (China‑Memory‑Ausbau) aber neue für CXMT in NAND.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.gulf-times.com/article/733666/business/chinas-cxmt-eyes-flash-memory-push-amid-global-shortage-firm-to-take-on-samsung-ymtc",
+          "label": "Gulf Times (reprinting Reuters)",
+          "kind": "secondary",
+          "supports": "Berichtet am 2026-09-19, dass CXMT plant, in 3D‑NAND/Flash zu expandieren und eine zweite Fab in Beijing prüft."
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/exclusivechinas-cxmt-eyes-flashmemory-push-amid-global-shortage-firm-to-take-on-samsung-ymtc-4906684",
+          "label": "Investing.com (Reuters exclusive repost)",
+          "kind": "secondary",
+          "supports": "Enthält Reuters‑Exklusivtext (2026-09-18) mit Details zu CXMTs Plänen, Finanzierungs‑ und Standortgesprächen sowie dem R&D‑3D‑NAND‑Line‑Plan."
+        }
+      ],
+      "reason": "Der Eingangstext ist eine glaubwürdige Reuters‑Exklusivmeldung (weiterveröffentlicht durch Gulf Times u. a.) über CXMTs Absicht, in 3D‑NAND/Flash zu investieren. Nach TAIL‑Regeln ist eine Ankündigung/Planung für neue Fab‑Kapazität (future fab announcement) allein kein unmittelbarer Beleg für verfügbare Bit‑Supply oder qualifizierte Lieferungen; solche Ankündigungen gelten als 'capacity_relief'‑Signale ohne aktuellen Verfügbarkeits‑Effekt, sofern keine qualifizierten Shipments, Lead‑Time‑Verbesserungen oder Fill‑Rate‑Messungen vorliegen. Die vorgelegten Quellen bestätigen Datum (2026-09-18/19) und Scope (Beijing, R&D‑3D‑NAND‑Line), liefern aber keinen Nachweis von qualifizierten NAND‑Shipments oder konkreten Kapazitätsmengen — damit fehlen die für Admission erforderlichen direkten Messgrößen (Units, Shipments, Lead‑time Effekte). Entsprechend: Watchlist. Adversarial/Red‑Pencil‑Check: kein direkter, primärer Nachweis für echte kurzfristige Versorgungsauswirkung; erforderliche Evidenz (qualifizierte Shipments, FID/Capex‑Bindung in USD/Taiwan‑wafer‑equivalent) fehlt. Review‑Pflicht: Überprüfen am 2028-06-30 auf qualifizierte Produktions‑Shipments oder formale FID/Finanzierungsabschlüsse.",
+      "candidateId": "495a2f5d360d63e5f00b",
+      "candidateKey": "871c1288db4c28a151966295",
+      "reviewedAt": "2026-09-27T15:41:54.336Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02debd3e094f58d9006ab9392fcf2487d293ecfdc5b0167290"
     }
   ]
 }
