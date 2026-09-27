@@ -48161,6 +48161,142 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ea7e45c1d08b604006ab87164e3c887d085934144ae760ddd"
+    },
+    {
+      "decision": "watchlist",
+      "title": "InsiderMonkey-Analyse: 'Will SanDisk (SNDK) Ride the Next Wave of AI-Driven NAND Demand?' (nicht primär verifiziert)",
+      "fact": "Medienanalyse behauptet, SanDisk profitiere strukturell von einer AI-getriebenen, mehrjährigen Enterprise‑NAND/NAND‑SSD‑Nachfragewelle; Artikel stützt sich vorwiegend auf Unternehmensrhetorik und Marktkommentare, nicht auf neue, quantifizierte Primärdaten.",
+      "placement": "Global / NAND / Enterprise SSD / AI‑Infrastructure (Firmensegment: SanDisk); publiziert 2026-09-27.",
+      "mechanism": "These: AI-Inferenz- und Inferenz‑adjacente Storage‑Workloads erhöhen Bedarf an hochperformantem NAND; SanDisk bindet Volumen über mehrjährige LTAs und konvertiert dadurch kurzfristige Knappheit in anhaltende Preis- und Margenstärke.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Unterstützt die Basissicht, dass 'Memory bleibt 2027 knapp' (erhöht kurzfristige Nachfrage‑Argumente für NAND/enterprise SSD), könnte die erwartete Verknappung jedoch nicht direkt falsifizieren oder verifizieren ohne harte Mengen-/Liefernachweise.",
+      "falsifier": "Bis 2026-12-31: Kein belastbarer Nachweis (firmeneingereichte oder auditor‑verifizierte) von bindenden Kundenverträgen/Shipments, die >=50% der erwarteten SanDisk FY2027 NAND‑Output‑Volumina (in TB oder Anzahl qualifizierter Enterprise‑SSD‑Units) abdecken, oder keine signifikante, qualifizierte Anstiegsmessung der Enterprise‑SSD‑Shipments gegenüber Q2‑2026; falls nicht vorhanden, dann These als nicht bewiesen/abgeschwächt.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-27",
+      "novelty": "Gering bis mäßig. Die Artikel fasst und wiederholt die Unternehmens- und Marktargumente (Investor‑Day / Earnings‑Narrative) und ergänzt Meinungsanalyse; keine neue primäre Mengen‑ oder Preis‑Messung.",
+      "duplicateOf": "S-2026-08-06-01",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 7,
+        "thesisRelevance": 15,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.insidermonkey.com/news/will-sandisk-sndk-ride-the-next-wave-of-ai-driven-nand-demand-1843843/?amp=1",
+          "label": "Insider Monkey – Artikel (Medienanalyse, 2026-09-27)",
+          "kind": "secondary",
+          "supports": "Beschreibt die These, zitiert Unternehmensrhetorik und Markthinweise, bietet keine unabhängige, quantitative Primärmessung der von SanDisk gebundenen Output‑Volumina."
+        },
+        {
+          "url": "https://investor.sandisk.com/node/8161/pdf",
+          "label": "SanDisk – Investor Presentation / 'SNDK IN FOCUS' (Unternehmensquelle)",
+          "kind": "primary",
+          "supports": "Unternehmensmaterial und Investor‑Day/In‑conference Aussagen, die AI‑getriebene Nachfrage und langfristige Kundenvereinbarungen thematisieren; jedoch fehlen dort auditorisch verifizierte Volumen‑/Shipmentseinheiten mit klaren Marktanteilsangaben."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist eine sekundäre Meinungs-/Investmentanalyse, die bestehende SanDisk‑Narrative (Investor‑Day / Earnings‑Aussagen) zusammenfasst und daraus eine Bull‑These ableitet. Die TAIL‑Aufnahmekriterien verlangen für Aufnahme als 'accepted' eine atomare, datierte, quantifizierte Primärbeobachtung (z. B. verifizierte kundenspezifische Vertragsvolumina in TB/Units, qualifizierte Schiffungszahlen, oder beobachtete Lead‑Time/Fulfillment‑Verbesserungen) sowie einen klaren, testbaren Falsifier und Verbindung zu einer existierenden Prediction. Diese Meldung liefert keine neue, unabhängige Primärmessung oder eindeutige, auditiere Vertragsdokumente mit Volumenangaben. Außerdem ist der Inhalt faktisch redundant mit bereits aufgenommenem Basissignal S-2026-08-06-01 (Sandisk berichtet großes Volumen/Backlog). Aus diesen Gründen: Watchlist — weitere Primärverifikation (vertragliche Volumina, qualifizierte Shipment‑Daten, oder offizielle regulatorische Einreichungen) erforderlich, bevor eine höhere Evidenzstufe oder 'accepted' möglich ist. Der Red‑Pencil‑Check schlägt fehl (keine unabhängige, datierte Primärverifikation).",
+      "candidateId": "7e312efbd8c4cc53f00a",
+      "candidateKey": "1fe090fe9b542d5159579663",
+      "reviewedAt": "2026-09-27T10:36:19.544Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0274f650e0922c65006ab8f186406887d08b948d5a6cc29c72"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Solidigm prüft US‑NAND‑Fab; keine bindende Entscheidung oder Produktionswirkung nachweisbar",
+      "fact": "Solidigm (SK hynix‑Tochter) prüft laut Reuters/Branchenberichten (Sep 18, 2026) den Bau einer NAND‑Waferfabrik in den USA; Upstate New York wurde als möglicher Kandidat genannt.",
+      "placement": "Geographie: USA (Upstate New York als berichtetem Kandidaten); Domäne/Layer: NAND‑Waferfertigung / Enterprise‑NAND‑Supply; Horizon: kurzfristig (2026–2028) — derzeit Planungs-/Evaluierungsphase.",
+      "mechanism": "Onshoring/Regionalisierung der NAND‑Front‑End‑Produktion zur Verringerung der Abhängigkeit von Dalian/China, Reaktion auf Exportkontrollen und Nachfrage aus Datacenter/Enterprise‑SSD (fähig, künftige Bit‑Supply zu erhöhen, aber aktuell noch keine qualifizierten Shipments).",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Potentiell reduziert eine etablierte US‑NAND‑Waferfertigung mittelfristig Marktdruck auf Enterprise‑SSD‑Preise/Verfügbarkeit (Entspannung ab 2028+ falls FID, Bau und qualifizierter Output erfolgen).",
+      "falsifier": "Kein verbindlicher FID, keine Baugenehmigung, kein Anlagenfinanzierungs‑ oder Ausrüstungsvertrag und kein Baubeginn bis 2027-12-31. Falls bis 2027-12-31 eines dieser Ereignisse öffentlich bestätigt wird, falsifiziert dies die 'nur‑Evaluierung'-Annahme.",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Gering bis mittel — Thema bereits Teil des Memory‑Onshoring‑Narrativs; hier aber neue, berichtete Standortprüfung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260918VL223/solidigm-nand-sk-hynix-manufacturing-fab.html",
+          "label": "DigiTimes: Solidigm weighs first US NAND fab, explores upstate New York",
+          "kind": "secondary",
+          "supports": "Branchenbericht (DigiTimes) vom 2026-09-18 mit vergleichbarer Darstellung der Standortprüfung und Kontext zu SK hynix/Solidigm‑Aktivitäten."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung berichtet eine Planungs-/Evaluierungsstufe (Solidigm prüft eine US‑NAND‑Waferfabrik; Reuters‑Bericht vom 2026-09-18). Das ist relevant für die OUTLOOK‑enterprise_ssd‑These (mögliche zukünftige Kapazitätserhöhung), aber die Quellen dokumentieren derzeit nur eine Prüfung/Standort‑Evaluierung ohne FID, Baubeginn, Ausrüstungsverträge oder qualifizierte Shipments — es fehlt damit die für Aufnahme als VERIFIED DATA erforderliche primäre Verifikation eines bindenden Projektereignisses. Opposierende Hinweise: SK hynix/Unternehmensangaben in jüngeren Earnings/Kommuniqués weisen fortlaufend auf bestehende Dalian‑Produktion und geplante Investitionen (Yongin/M17 etc.), jedoch keine bestätigte US‑Wafer‑FID. Wegen dieses fehlenden Primärnachweises und weil die Meldung eine Wiederaufnahme/Neudarstellung eines bereits bekannten Onshoring‑Narrativs darstellt, wird der Kandidat auf Watchlist gesetzt. Um auf 'accepted' hochgestuft zu werden, ist ein klar datierter, bindender FID/Bau‑/Ausrüstungsvertrag oder erste qualifizierte Shipments erforderlich (konkrete Belege werden in der nächsten Prüfung erwartet).",
+      "candidateId": "0a7b84111eb1e58c0d0c",
+      "candidateKey": "b1f2ca08fddddb74cf846b8f",
+      "reviewedAt": "2026-09-27T10:36:40.581Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_048f35c935065c50006ab8f1a3c4ac87d09bfa5d14b02ab1c7"
     }
   ]
 }
