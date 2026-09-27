@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T19:54:17.154Z",
+  "generatedAt": "2026-09-27T01:29:45.296Z",
   "platform": {
-    "dataAsOf": "2026-09-26",
-    "analysisAsOf": "2026-09-26",
-    "sourceDataAsOf": "2026-09-21",
+    "dataAsOf": "2026-09-27",
+    "analysisAsOf": "2026-09-27",
+    "sourceDataAsOf": "2026-09-26",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-09-26T19:54:15.501Z",
-      "pending": 93,
-      "reviewed": 72,
-      "accepted": 6,
-      "rawCandidates": 401,
+      "checkedAt": "2026-09-27T01:29:44.091Z",
+      "pending": 91,
+      "reviewed": 74,
+      "accepted": 7,
+      "rawCandidates": 403,
       "triage": {
         "archivedOpinions": 12,
         "groupedDuplicates": 18
       },
       "lastRun": {
-        "startedAt": "2026-09-26T19:53:20.136Z",
-        "completedAt": "2026-09-26T19:54:15.504Z",
+        "startedAt": "2026-09-27T01:28:40.719Z",
+        "completedAt": "2026-09-27T01:29:44.092Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,14 +27,14 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 55,
+        "durationSeconds": 63,
         "budgetExhausted": false
       }
     },
     "overdueOperationalReviewCount": 12,
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 189,
+    "articleCount": 190,
     "markets": [
       {
         "id": "server_dram",
@@ -60,7 +60,7 @@
         "score": 80,
         "status": "orange",
         "signals": 20,
-        "confidence": 67,
+        "confidence": 66,
         "coverage": 100
       }
     ]
@@ -73,21 +73,9 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-26; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (93 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-27; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (91 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
-    {
-      "date": "2026-09-26",
-      "title": "Google, OpenAI, and Anthropic just made a move on AI safety",
-      "summary": "Google, OpenAI, and Anthropic just made a move on AI safety thestreet.com",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 84,
-      "relevanceScore": 88,
-      "sourceQuality": 6,
-      "source": "thestreet.com",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR1JZYXJxQW00NGdaRTZzRElZcGxidkd5THdhQzVUQzhiWDdIaWM4WGwwSVBubEVGV3VQVjR3Ykpuc1hKMjhJVkczcWtuazE5cWVtaTVVU1NVZklKbEdQN0lBQ05OanotWGZnSFl6c1Y0R2piaFkyQ3NKTGdJUC1JanhfdWpzeDB5d0FmUHNWRU1KYUdQeFFjR2pURmQwRzA?oc=5",
-      "layer": "news"
-    },
     {
       "date": "2026-09-25",
       "title": "Micron (MU): HBM Demand and NAND Pricing Define the Memory Cycle Test",
@@ -102,14 +90,26 @@
     },
     {
       "date": "2026-09-26",
-      "title": "Micron's Earnings Next Week Could Deliver a Teeter-Totter Quarter; Analyst Says Nvidia Rubin Impact Won't Kick In Until Next Year",
-      "summary": "Aktuelle Meldung von finance.biggo.com: Micron's Earnings Next Week Could Deliver a Teeter-Totter Quarter; Analyst Says Nvidia Rubin Impact Won't Kick In Until Next Year",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 78,
-      "relevanceScore": 83,
+      "title": "Lawsuit alleges Anthropic, OpenAI, SpaceXAI, Google colluded to slow AI development",
+      "summary": "Lawsuit alleges Anthropic, OpenAI, SpaceXAI, Google colluded to slow AI development The North State Journal",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 81,
+      "relevanceScore": 88,
       "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGa3hMVXY2bmhSb3loNERlNVNlWWt2bFpxc2VwSk9mUlExakJ3SmE5UEJmcUJTcVZwd2Z5MVFPN21FMmgxY25RVFJySFNzdU5MMXBpUGczT2tCLVYteDNnNDk5MzNfZFBwb1ZkVTZ4RllRMFVGTmc?oc=5",
+      "source": "The North State Journal",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQmhyWWM2OUlRY1BrQUtQcjU1NW55Z0NXcUtqWUJnV1NUNDRSSTRIN2tJOFRXci1JYjg0RHJxa052QzRKYUtPR1ZKeVh6VXFaLWxVZndwUkVxV3pra0g2Tkd1NjEtbFI0Y2RmVDJsTTJPWWo1S1d2Q0h5b3dwamZkSjlhUHppUXNlQm1oemJ6Smp2REdRRFFpNjhGNERGbzhWc0pNelRaVk1jTDJMNXBndlhEblV3MXZKMmpv?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-26",
+      "title": "Google, OpenAI, and Anthropic just made a move on AI safety",
+      "summary": "Google, OpenAI, and Anthropic just made a move on AI safety thestreet.com",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 81,
+      "relevanceScore": 88,
+      "sourceQuality": 6,
+      "source": "thestreet.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR1JZYXJxQW00NGdaRTZzRElZcGxidkd5THdhQzVUQzhiWDdIaWM4WGwwSVBubEVGV3VQVjR3Ykpuc1hKMjhJVkczcWtuazE5cWVtaTVVU1NVZklKbEdQN0lBQ05OanotWGZnSFl6c1Y0R2piaFkyQ3NKTGdJUC1JanhfdWpzeDB5d0FmUHNWRU1KYUdQeFFjR2pURmQwRzA?oc=5",
       "layer": "news"
     }
   ],
@@ -140,25 +140,13 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "93 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "91 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
-    {
-      "date": "2026-09-26",
-      "title": "Google, OpenAI, and Anthropic just made a move on AI safety",
-      "summary": "Google, OpenAI, and Anthropic just made a move on AI safety thestreet.com",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 84,
-      "relevanceScore": 88,
-      "sourceQuality": 6,
-      "source": "thestreet.com",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR1JZYXJxQW00NGdaRTZzRElZcGxidkd5THdhQzVUQzhiWDdIaWM4WGwwSVBubEVGV3VQVjR3Ykpuc1hKMjhJVkczcWtuazE5cWVtaTVVU1NVZklKbEdQN0lBQ05OanotWGZnSFl6c1Y0R2piaFkyQ3NKTGdJUC1JanhfdWpzeDB5d0FmUHNWRU1KYUdQeFFjR2pURmQwRzA?oc=5",
-      "layer": "news"
-    },
     {
       "date": "2026-09-25",
       "title": "Micron (MU): HBM Demand and NAND Pricing Define the Memory Cycle Test",
@@ -173,21 +161,33 @@
     },
     {
       "date": "2026-09-26",
-      "title": "Micron's Earnings Next Week Could Deliver a Teeter-Totter Quarter; Analyst Says Nvidia Rubin Impact Won't Kick In Until Next Year",
-      "summary": "Aktuelle Meldung von finance.biggo.com: Micron's Earnings Next Week Could Deliver a Teeter-Totter Quarter; Analyst Says Nvidia Rubin Impact Won't Kick In Until Next Year",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 78,
-      "relevanceScore": 83,
+      "title": "Lawsuit alleges Anthropic, OpenAI, SpaceXAI, Google colluded to slow AI development",
+      "summary": "Lawsuit alleges Anthropic, OpenAI, SpaceXAI, Google colluded to slow AI development The North State Journal",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 81,
+      "relevanceScore": 88,
       "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGa3hMVXY2bmhSb3loNERlNVNlWWt2bFpxc2VwSk9mUlExakJ3SmE5UEJmcUJTcVZwd2Z5MVFPN21FMmgxY25RVFJySFNzdU5MMXBpUGczT2tCLVYteDNnNDk5MzNfZFBwb1ZkVTZ4RllRMFVGTmc?oc=5",
+      "source": "The North State Journal",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQmhyWWM2OUlRY1BrQUtQcjU1NW55Z0NXcUtqWUJnV1NUNDRSSTRIN2tJOFRXci1JYjg0RHJxa052QzRKYUtPR1ZKeVh6VXFaLWxVZndwUkVxV3pra0g2Tkd1NjEtbFI0Y2RmVDJsTTJPWWo1S1d2Q0h5b3dwamZkSjlhUHppUXNlQm1oemJ6Smp2REdRRFFpNjhGNERGbzhWc0pNelRaVk1jTDJMNXBndlhEblV3MXZKMmpv?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-26",
+      "title": "Google, OpenAI, and Anthropic just made a move on AI safety",
+      "summary": "Google, OpenAI, and Anthropic just made a move on AI safety thestreet.com",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 81,
+      "relevanceScore": 88,
+      "sourceQuality": 6,
+      "source": "thestreet.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR1JZYXJxQW00NGdaRTZzRElZcGxidkd5THdhQzVUQzhiWDdIaWM4WGwwSVBubEVGV3VQVjR3Ykpuc1hKMjhJVkczcWtuazE5cWVtaTVVU1NVZklKbEdQN0lBQ05OanotWGZnSFl6c1Y0R2piaFkyQ3NKTGdJUC1JanhfdWpzeDB5d0FmUHNWRU1KYUdQeFFjR2pURmQwRzA?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-26T19:54:17.388Z",
+    "generatedAt": "2026-09-27T01:29:45.442Z",
     "count": 3,
-    "candidateCount": 345,
+    "candidateCount": 303,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -280,7 +280,7 @@
         "confidence": 76,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-26"
+        "indexAsOf": "2026-09-27"
       },
       {
         "marketId": "enterprise_ssd",
@@ -377,10 +377,10 @@
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
         "currentScore": 80,
         "currentStatus": "orange",
-        "confidence": 67,
+        "confidence": 66,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-26",
+        "indexAsOf": "2026-09-27",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -401,18 +401,6 @@
   },
   "originalSignals": [
     {
-      "date": "2026-09-26",
-      "title": "Google, OpenAI, and Anthropic just made a move on AI safety",
-      "summary": "Google, OpenAI, and Anthropic just made a move on AI safety thestreet.com",
-      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
-      "score": 84,
-      "relevanceScore": 88,
-      "sourceQuality": 6,
-      "source": "thestreet.com",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR1JZYXJxQW00NGdaRTZzRElZcGxidkd5THdhQzVUQzhiWDdIaWM4WGwwSVBubEVGV3VQVjR3Ykpuc1hKMjhJVkczcWtuazE5cWVtaTVVU1NVZklKbEdQN0lBQ05OanotWGZnSFl6c1Y0R2piaFkyQ3NKTGdJUC1JanhfdWpzeDB5d0FmUHNWRU1KYUdQeFFjR2pURmQwRzA?oc=5",
-      "layer": "news"
-    },
-    {
       "date": "2026-09-25",
       "title": "Micron (MU): HBM Demand and NAND Pricing Define the Memory Cycle Test",
       "summary": "Aktuelle Meldung von AlphaStreet: Micron (MU): HBM Demand and NAND Pricing Define the Memory Cycle Test",
@@ -426,14 +414,26 @@
     },
     {
       "date": "2026-09-26",
-      "title": "Micron's Earnings Next Week Could Deliver a Teeter-Totter Quarter; Analyst Says Nvidia Rubin Impact Won't Kick In Until Next Year",
-      "summary": "Aktuelle Meldung von finance.biggo.com: Micron's Earnings Next Week Could Deliver a Teeter-Totter Quarter; Analyst Says Nvidia Rubin Impact Won't Kick In Until Next Year",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 78,
-      "relevanceScore": 83,
+      "title": "Lawsuit alleges Anthropic, OpenAI, SpaceXAI, Google colluded to slow AI development",
+      "summary": "Lawsuit alleges Anthropic, OpenAI, SpaceXAI, Google colluded to slow AI development The North State Journal",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 81,
+      "relevanceScore": 88,
       "sourceQuality": 6,
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGa3hMVXY2bmhSb3loNERlNVNlWWt2bFpxc2VwSk9mUlExakJ3SmE5UEJmcUJTcVZwd2Z5MVFPN21FMmgxY25RVFJySFNzdU5MMXBpUGczT2tCLVYteDNnNDk5MzNfZFBwb1ZkVTZ4RllRMFVGTmc?oc=5",
+      "source": "The North State Journal",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQmhyWWM2OUlRY1BrQUtQcjU1NW55Z0NXcUtqWUJnV1NUNDRSSTRIN2tJOFRXci1JYjg0RHJxa052QzRKYUtPR1ZKeVh6VXFaLWxVZndwUkVxV3pra0g2Tkd1NjEtbFI0Y2RmVDJsTTJPWWo1S1d2Q0h5b3dwamZkSjlhUHppUXNlQm1oemJ6Smp2REdRRFFpNjhGNERGbzhWc0pNelRaVk1jTDJMNXBndlhEblV3MXZKMmpv?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-26",
+      "title": "Google, OpenAI, and Anthropic just made a move on AI safety",
+      "summary": "Google, OpenAI, and Anthropic just made a move on AI safety thestreet.com",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 81,
+      "relevanceScore": 88,
+      "sourceQuality": 6,
+      "source": "thestreet.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR1JZYXJxQW00NGdaRTZzRElZcGxidkd5THdhQzVUQzhiWDdIaWM4WGwwSVBubEVGV3VQVjR3Ykpuc1hKMjhJVkczcWtuazE5cWVtaTVVU1NVZklKbEdQN0lBQ05OanotWGZnSFl6c1Y0R2piaFkyQ3NKTGdJUC1JanhfdWpzeDB5d0FmUHNWRU1KYUdQeFFjR2pURmQwRzA?oc=5",
       "layer": "news"
     }
   ]

@@ -9953,5 +9953,64 @@
         "url": "https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana-01/"
       }
     ]
+  },
+  {
+    "id": "S-AUTO-ebeb2c9b2e7a81287c66477f",
+    "date": "2026-09-26",
+    "title": "Anthropic verhandelt über bis zu 1 GW direkte Rechenzentrum-Lease bei Apollo/Stream (The Information)",
+    "category": "memory",
+    "markets": [
+      "ai_infrastructure",
+      "server_dram"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "severity": 60,
+    "confidence": 78,
+    "signal": "capacity_lock",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "demand",
+      "availability",
+      "aiDemand"
+    ],
+    "summary": "Anthropic befindet sich in frühen Verhandlungen, bis zu 1 Gigawatt Rechenzentrums‑IT‑Leistung direkt von Stream Data Centers (Mehrheitsbeteiligung: Apollo Global Management) zu mieten.",
+    "tail_analysis": "Anthropic würde als Direktmieter große, langfristige Leases bei einem Apollo‑kontrollierten Datacenter‑Entwickler übernehmen, damit dedizierte Compute‑Kapazität (TPUs/GPU‑Racks) physisch und vertraglich reserviert wird — dies erhöht direkte Endnachfrage nach Server‑DRAM/HBM und bindet IT‑Kapazität (capacity_lock).",
+    "source": "The Information – exklusiver Bericht (Anthropic in talks to lease up to 1 GW from Stream/Apollo)",
+    "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers",
+    "content_hash": "2853965b45c68a03a06b",
+    "origin": "reviewed-inbox",
+    "classification": "Signal",
+    "admittedAt": "2026-09-27T01:29:08.717Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "ebeb2c9b2e7a81287c66477f",
+    "predictionId": "P-2026-07-11-01",
+    "predictionImpact": "Erhöht die Wahrscheinlichkeit eines anhaltenden Server‑DRAM/HBM‑Knappheits‑Basisszenarios durch zusätzliche, langfristig gebundene AI‑Mieter‑Nachfrage; wirkt verstärkend auf 'negative_supply' / 'capacity_lock' im Server‑DRAM‑Layer.",
+    "falsifier": "Bis 2026-10-31 kein unterschriebener Lease, verbindliches Letter‑of‑Intent oder öffentlich bestätigter Umfang/Standort (≥0.5 GW) erscheint; ferner würde die Fälschung eintreten, falls Anthropic öffentlich erklärt, die Gespräche seien nur unverbindliche Explorationsgespräche ohne Absicht zu mieten.",
+    "nextReview": "2026-10-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Erhöht die Wahrscheinlichkeit eines anhaltenden Server‑DRAM/HBM‑Knappheits‑Basisszenarios durch zusätzliche, langfristig gebundene AI‑Mieter‑Nachfrage; wirkt verstärkend auf 'negative_supply' / 'capacity_lock' im Server‑DRAM‑Layer."
+    },
+    "sources": [
+      {
+        "label": "The Information – exklusiver Bericht (Anthropic in talks to lease up to 1 GW from Stream/Apollo)",
+        "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers"
+      },
+      {
+        "label": "Apollo‑Pressemitteilung (kontextualisierend)",
+        "url": "https://www.apollo.com/insights-news/pressreleases/2026/06/apollo-leads-35-billion-capital-solution-for-broadcom-ai-xpv-platform-in-partnership-with-blackstone-and-leading-global-banks-3308896"
+      }
+    ]
   }
 ]

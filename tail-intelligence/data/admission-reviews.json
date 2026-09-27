@@ -47958,6 +47958,209 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_00d2bd181e617a1f006ab822c5103087d0ae663a01e0ed26b9"
+    },
+    {
+      "decision": "accepted",
+      "title": "Anthropic verhandelt über bis zu 1 GW direkte Rechenzentrum-Lease bei Apollo/Stream (The Information)",
+      "fact": "Anthropic befindet sich in frühen Verhandlungen, bis zu 1 Gigawatt Rechenzentrums‑IT‑Leistung direkt von Stream Data Centers (Mehrheitsbeteiligung: Apollo Global Management) zu mieten.",
+      "placement": "Geographisch: hauptsächlich US‑Standorte / Domäne: AI‑Infrastruktur‑Tenanting; Layer: physische Datacenter‑IT‑Last (kritische IT‑MW).",
+      "mechanism": "Anthropic würde als Direktmieter große, langfristige Leases bei einem Apollo‑kontrollierten Datacenter‑Entwickler übernehmen, damit dedizierte Compute‑Kapazität (TPUs/GPU‑Racks) physisch und vertraglich reserviert wird — dies erhöht direkte Endnachfrage nach Server‑DRAM/HBM und bindet IT‑Kapazität (capacity_lock).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit eines anhaltenden Server‑DRAM/HBM‑Knappheits‑Basisszenarios durch zusätzliche, langfristig gebundene AI‑Mieter‑Nachfrage; wirkt verstärkend auf 'negative_supply' / 'capacity_lock' im Server‑DRAM‑Layer.",
+      "falsifier": "Bis 2026-10-31 kein unterschriebener Lease, verbindliches Letter‑of‑Intent oder öffentlich bestätigter Umfang/Standort (≥0.5 GW) erscheint; ferner würde die Fälschung eintreten, falls Anthropic öffentlich erklärt, die Gespräche seien nur unverbindliche Explorationsgespräche ohne Absicht zu mieten.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-26",
+      "novelty": "Anthropic verlagert strategisch signifikante, direkte Tenant‑Leases weg von reinen Cloud‑Providern hin zu eigenständigen, gigawatt‑skalierten Datacenter‑Landlords; Umfang (bis 1 GW) ist neu und maßgeblich.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 60,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers",
+          "label": "The Information – exklusiver Bericht (Anthropic in talks to lease up to 1 GW from Stream/Apollo)",
+          "kind": "primary",
+          "supports": "The Information berichtet exklusiv, Anthropic befinde sich in frühen Verhandlungen, bis zu 1 Gigawatt Rechenzentrumskapazität direkt von Stream Data Centers (mehrheitlich im Besitz von Apollo Global Management) zu mieten."
+        },
+        {
+          "url": "https://www.apollo.com/insights-news/pressreleases/2026/06/apollo-leads-35-billion-capital-solution-for-broadcom-ai-xpv-platform-in-partnership-with-blackstone-and-leading-global-banks-3308896",
+          "label": "Apollo‑Pressemitteilung (kontextualisierend)",
+          "kind": "secondary",
+          "supports": "Apollo dokumentiert Plattform‑Finanzierungen zur Unterstützung von >1 GW Anthropic‑bezogener Compute‑Deployments und bestätigt finanzielle Unterstützung/Instrumente zur Beschleunigung großer AI‑Datacenter‑Projekte (kontextuelle Bestätigung des Plattform‑Engagements)."
+        }
+      ],
+      "reason": "Die eingereichte Meldung beruht auf einem exklusiven The Information‑Bericht, der von mehreren sekundären Nachrichtenaggregatoren und Fachmedien reproduziert wurde. The Information ist als primäre journalistische Quelle für Unternehmens‑Verhandlungsberichte etabliert; Apollo‑Kommunikationen (Juni 2026) liefern sektorspezifische, kontextuelle Bestätigung, dass Apollo‑geführte Finanzierungsplattformen Anthropic‑nahe Capacity‑Ambitionen unterstützen. Die Meldung ist damit ein datierter, atomarer fact‑claim (bis zu 1 GW), relevant für die Basisaussage, dass AI‑Mieter langfristige, gigawatt‑skalierte Leases anstreben — eine direkte Nachfragequelle für Server‑DRAM/HBM. Der Kernnutzen für die TAIL‑Vorhersagen ist, dass ein verbindlicher Lease dieses Signal verstärken würde; deshalb wurde ein klar prüfbares Falsifier‑Kriterium gesetzt (unterschriebener Lease/LoI bis 2026‑10‑31). Opposing evidence: Es gibt bislang kein öffentliches, von Anthropic oder Stream/Apollo unterschriebenes Lease‑Dokument; die Berichte beschreiben 'frühe Gespräche' — daher verbleiben Unsicherheiten über finalen Umfang, Standort und Bindungsgrad. Aufgrund der Primärquelle und der Kontexthilfe durch Apollo akzeptiere ich das Signal (redPencilPass=true).",
+      "candidateId": "06e417a164ca669a729f",
+      "candidateKey": "ebeb2c9b2e7a81287c66477f",
+      "reviewedAt": "2026-09-27T01:29:08.717Z",
+      "priorityScore": 85,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-ebeb2c9b2e7a81287c66477f",
+        "title": "Anthropic verhandelt über bis zu 1 GW direkte Rechenzentrum-Lease bei Apollo/Stream (The Information)",
+        "date": "2026-09-26",
+        "admittedAt": "2026-09-27T01:29:08.717Z",
+        "fact": "Anthropic befindet sich in frühen Verhandlungen, bis zu 1 Gigawatt Rechenzentrums‑IT‑Leistung direkt von Stream Data Centers (Mehrheitsbeteiligung: Apollo Global Management) zu mieten.",
+        "placement": "Geographisch: hauptsächlich US‑Standorte / Domäne: AI‑Infrastruktur‑Tenanting; Layer: physische Datacenter‑IT‑Last (kritische IT‑MW).",
+        "tailInference": "Anthropic würde als Direktmieter große, langfristige Leases bei einem Apollo‑kontrollierten Datacenter‑Entwickler übernehmen, damit dedizierte Compute‑Kapazität (TPUs/GPU‑Racks) physisch und vertraglich reserviert wird — dies erhöht direkte Endnachfrage nach Server‑DRAM/HBM und bindet IT‑Kapazität (capacity_lock).",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit eines anhaltenden Server‑DRAM/HBM‑Knappheits‑Basisszenarios durch zusätzliche, langfristig gebundene AI‑Mieter‑Nachfrage; wirkt verstärkend auf 'negative_supply' / 'capacity_lock' im Server‑DRAM‑Layer.",
+        "falsifier": "Bis 2026-10-31 kein unterschriebener Lease, verbindliches Letter‑of‑Intent oder öffentlich bestätigter Umfang/Standort (≥0.5 GW) erscheint; ferner würde die Fälschung eintreten, falls Anthropic öffentlich erklärt, die Gespräche seien nur unverbindliche Explorationsgespräche ohne Absicht zu mieten.",
+        "nextReview": "2026-10-31",
+        "priorityScore": 85,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 9
+        },
+        "severity": 60,
+        "confidence": 78,
+        "markets": [
+          "ai_infrastructure",
+          "server_dram"
+        ],
+        "signal": "capacity_lock",
+        "driverScope": [
+          "demand",
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "The Information – exklusiver Bericht (Anthropic in talks to lease up to 1 GW from Stream/Apollo)",
+            "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers"
+          },
+          {
+            "label": "Apollo‑Pressemitteilung (kontextualisierend)",
+            "url": "https://www.apollo.com/insights-news/pressreleases/2026/06/apollo-leads-35-billion-capital-solution-for-broadcom-ai-xpv-platform-in-partnership-with-blackstone-and-leading-global-banks-3308896"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit eines anhaltenden Server‑DRAM/HBM‑Knappheits‑Basisszenarios durch zusätzliche, langfristig gebundene AI‑Mieter‑Nachfrage; wirkt verstärkend auf 'negative_supply' / 'capacity_lock' im Server‑DRAM‑Layer."
+        },
+        "admissionReviewKey": "ebeb2c9b2e7a81287c66477f"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bc18e7417efddc1006ab8714a037487d0936bad0c6bc99bd7"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Does Sandisk (SNDK) Risk Losing Ground In AI Memory As New NAND Supply Emerges?",
+      "fact": "Meinungsstück/Analyse: Simply Wall St. fragt, ob SanDisk Marktanteile im AI‑Memory-Bereich verlieren könnte, falls neue NAND‑Kapazität in den Markt kommt.",
+      "placement": "Global / NAND / enterprise_ssd / ai_infrastructure (Hersteller‑/Markt‑Layer).",
+      "mechanism": "Narrative‑These: Zunehmende NAND‑Bit‑Shipments und beschleunigte Fab‑Ramps (neue Anbieter / Kapazitätserweiterungen) würden Angebotsdruck erzeugen, Preisdruck und potenziell geringere Margen für SanDisk — sowie Verschiebung von eSSD‑Budget hin zu konkurrierenden NAND‑Anbietern oder HBM‑Alternativen.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Wenn die These stimmt, erhöht dies das Risiko einer früheren Preis‑Normalisierung in NAND/Enterprise‑SSD und könnte das OUTLOOK-enterprise_ssd Falsifier‑Pfad beschleunigen (siehe P-2026-07-20-04: 'Memory bleibt 2027 knapp... Oversupply‑Risiko 2028').",
+      "falsifier": "Messbar: Bis zum 2026-12-31 müssen qualifizierte, berichtete NAND‑Enterprise‑Shipments (qualified enterprise eSSD shipments) von neuen/erweiterten Lieferanten mindestens 25 % QoQ wachsen und gleichzeitig ein repräsentativer Enterprise‑SSD‑Kontraktkorb zwei Quartale Preisdruck (≥5 % QoQ Preisrückgang) aufweisen. Wenn diese Bedingungen nicht erfüllt sind, ist die These (»schnelle Angebotszunahme«) falsifiziert.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-18",
+      "novelty": "Gering — Wiederverwertung marktweiter Narrative (NAND‑Kapazität vs. AI‑Nachfrage).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_down",
+      "severity": 25,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://simplywall.st/stocks/us/tech/nasdaq-sndk/sandisk/news/does-sandisk-sndk-risk-losing-ground-in-ai-memory-as-new-nan",
+          "label": "Simply Wall St. — Kandidat (Meinungsstück/Analyse).",
+          "kind": "secondary",
+          "supports": "Titel/These: stellt die Frage nach SanDisk's Wettbewerbsposition angesichts neuer NAND‑Kapazität (veröffentlicht ~2026-09-18)."
+        },
+        {
+          "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-13-sandisk-investor-day-2026",
+          "label": "SanDisk Investor Day — Primäre Unternehmensquelle zu HBF, Vertragsbestand und Strategie.",
+          "kind": "primary",
+          "supports": "SanDisk beschreibt HBF/Enterprise‑Strategie und LTAs; liefert Unternehmenssicht auf Nachfrage‑/Produktstrategie, aber keine externen, datierten Shipment‑Messungen zur Entwertung durch neue NAND‑Kapazität."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatmeldung ist ein Meinungs-/Analyse‑Stück, kein einzelnes, atomar belegbares, datiertes Marktobservationselement mit messbaren Einheiten (z. B. qualifizierte Shipments, verifizierte Lead‑Time‑Änderungen oder Kontraktpreis‑Beobachtungen). Ich konnte die Originalquelle (Simply Wall St.) und SanDisks Investor‑Day‑Material verifizieren, jedoch fehlt aus dem Kandidatentext jegliche primäre, quantitative Beobachtung, die direkt belegt, dass 'neue NAND‑Kapazität' bereits eingelaufen ist und SanDisk Marktanteile real verliert. Das TAIL‑Baseline enthält zahlreiche relevante, bereits aufgenommene Signale (z. B. CXMT/YMTC‑Ramps, SK hynix/Micron/Samsung‑Ankündigungen), sodass diese Analyse eine Wiederholung / Synthese bestehender Narrative ist und kein neues, belastbares Beobachtungsereignis liefert. Deshalb wird die Aufnahme auf Watchlist gesetzt: verlangt werden harte, datierte Shipment‑/Preis‑ oder Lead‑Time‑Belege (qualifizierte Enterprise‑eSSD‑Shipments, contract price moves, oder bestätigte große LTAs von Konkurrenten mit quantifiziertem Volumen), bevor ein VERIFIED DATA‑Einstufung möglich ist. Nächste Prüfung vorgeschlagen am 2026-10-15.",
+      "candidateId": "a80bf78f04744f25788c",
+      "candidateKey": "43cf820829bfe347fd33aba3",
+      "reviewedAt": "2026-09-27T01:29:44.072Z",
+      "priorityScore": 45,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ea7e45c1d08b604006ab87164e3c887d085934144ae760ddd"
     }
   ]
 }
