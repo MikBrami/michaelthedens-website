@@ -48445,6 +48445,142 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_02debd3e094f58d9006ab9392fcf2487d293ecfdc5b0167290"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Richter empfehlen Genehmigung eines 366‑MW McCloud‑Gaskraftwerks zur Versorgung von Metas El‑Paso‑Rechenzentrum — mit Bedingung zur Nichtbelastung der Stromkunden",
+      "fact": "Administrative Law Judges empfahlen am 2026-09-24/2026-09-25 die Genehmigung des von El Paso Electric vorgeschlagenen 366‑MW McCloud‑Gaskraftwerks (≈US$551.8M) zur Bedarfsdeckung des Meta‑Rechenzentrums; die Empfehlung enthielt die ausdrückliche Bedingung, dass Netzkunden (ratepayers) nicht für die Kosten haftbar gemacht werden sollen.",
+      "placement": "El Paso County, Texas — Elektrizitätsinfrastruktur / Datacenter‑Versorgungs‑Layer; kurzfristig (Bridge‑Period ab 2027, initialer Versorgungszeitraum 5 Jahre).",
+      "mechanism": "Das geplante McCloud‑Gaswerk (366 MW, modularer Gasgenerator‑Park) bietet dedizierte Erzeugung direkt neben dem Rechenzentrumsstandort; dadurch werden unmittelbare Energie‑Versorgungs‑Kapazitätsengpässe für das Meta‑Projekt gelöst und die wirtschaftliche Durchführbarkeit des Build‑outs erhöht, vorausgesetzt die Kosten werden über vertraglich abgesicherte Zahlungen von Meta gedeckt (keine Umlage an Ratepayers).",
+      "predictionId": "P-2026-07-14-04",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass große Datacenter‑Lasten verstärkt auf dedizierte Energieprojekte und Direktanschlüsse setzen (Bestätigung des 'dedicated energy project'‑Pfads).",
+      "falsifier": "Bis zum 2026-12-31: Wenn die endgültige PUCT‑Entscheidung entweder (a) die Genehmigung zurückweist, (b) die Genehmigung erteilt aber eine Kostenallokation an Netzkunden (ratepayers) vorschreibt, oder (c) das Projekt verworfen/auf unbestimmte Zeit verschoben wird, dann widerspricht das die Bedeutung dieses Signals für die Vorhersage P-2026-07-14-04.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-24",
+      "novelty": "Das Ereignis dokumentiert ein konkretes regulatorisches Zwischenergebnis (ALJ‑Empfehlung) für ein spezifisches 366‑MW Gaskraftwerksprojekt zur direkten Versorgung eines einzelnen Hyperscaler‑Rechenzentrums — neu und spezifisch gegenüber den bisherigen allgemeinen Build‑out‑Meldungen.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://kvia.com/news/top-stories/2026/09/24/el-paso-electrics-application-for-natural-gas-plant-clears-first-hurdle/",
+          "label": "KVIA — El Paso Electric's application for natural gas plant clears first hurdle (published 2026-09-24)",
+          "kind": "primary",
+          "supports": "Bericht über ALJ‑Empfehlung zur Genehmigung des 366‑MW McCloud Gaskraftwerks zur Versorgung des Meta‑Rechenzentrums; nennt Projektgröße (~366 MW) und Bedingung, dass Kosten nicht Netzkunden auferlegt werden sollen."
+        },
+        {
+          "url": "https://theelpaso.org/news/judges-give-proposed-epe-power-plant-for-meta-data-center-support-with-conditions",
+          "label": "The El Paso (KTSM‑Quelle) — Judges give proposed EPE power plant for Meta data center support, with conditions (curation of KTSM story, published 2026-09-25)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung/Kuration der KTSM‑Berichterstattung, bestätigt ALJ‑Empfehlung und namentliche Bedingungen (Ratepayer‑Schutz)."
+        },
+        {
+          "url": "https://insideclimatenews.org/news/24092026/el-paso-electric-only-considered-gas-to-power-meta-data-center/",
+          "label": "Inside Climate News — Texas Electric Utility Only Considered Gas to Power $10 Billion Meta Data Center (analysis, 2026-09-24)",
+          "kind": "secondary",
+          "supports": "Kontext und weitergehende Details zur Entscheidungsfindung und zur Kritik (z. B. Optionen nicht ausreichend geprüft); bestätigt Angaben zur vorgesehenen Gaslösung und regulatorischer Empfehlung."
+        }
+      ],
+      "reason": "Die eingereichten Primärberichte (KVIA; KTSM‑/TheElPaso‑Syndizierung; ergänzende Analysen) belegen ein konkretes, datiertes regulatorisches Zwischenergebnis: Administrative Law Judges empfahlen die Genehmigung des 366‑MW McCloud‑Gaskraftwerks zur Versorgung des Meta‑Rechenzentrums, mit der wichtigen Auflage, dass Netzkunden nicht für die Kosten haften sollen. Das ist eine atomare, überprüfbare Beobachtung mit klarer räumlicher, technischen und zeitlichen Eingrenzung. Sie bestätigt den Mechanismus, dass Hyperscaler‑Lasten dedizierte Energieprojekte zur Absicherung von Build‑outs nutzen — ein direkter Input für Vorhersage P-2026-07-14-04. Gegenbeweise (z. B. endgültige Ablehnung oder eine PUCT‑Entscheidung mit Netzkunden‑Kosten) sind möglich und im Falsifier benannt. Quellen sind lokale/regionale Primärberichte und fachliche Analyse; deshalb wurde die Evidenz als VERIFIED DATA eingestuft und die Aufnahme bestanden die adversarial/Red‑Pencil‑Prüfung.",
+      "candidateId": "a0ff4acd9dcdada43e12",
+      "candidateKey": "9cd67fbd6ccd54a9dd02e1bc",
+      "reviewedAt": "2026-09-27T20:12:06.555Z",
+      "priorityScore": 80,
+      "gateReasons": [
+        "no named existing forecast/outlook"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c2ac4ff2d0c79e9006ab9787ccc5c87d1a4790ee19abb17b9"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Sandisk-Aktienrallye vor S&P‑100‑Aufnahme; NAND‑Preise stehen zur Probe",
+      "fact": "Am 2026-09-18 meldet kobaran.com, dass Sandisk‑Aktien am 2026-09-18 rund 11% zulegten im Vorfeld der S&P‑100‑Aufnahme; der Artikel warnt, dass höhere NAND‑ASP‑Anteile an Q4‑Umsatzzuwächsen die Nachhaltigkeit der Margen bei nachlassender Preisführung gefährden könnten.",
+      "placement": "global / Finanzmärkte & NAND‑Produktmarkt (Enterprise‑NAND, Enterprise‑SSD); kurzfristige Handelswirkung (T+0 bis T+7) mit möglicher Indirekter Relevanz für Q4‑2026 Preis- und Margendynamik.",
+      "mechanism": "Mechanismus ist primär Index‑Rebalance‑Getriebener Nachfrageschub (passive Fonds, Benchmark‑Tracker) plus Markterwartungen über NAND‑ASP‑Sustainability; ökonomische Wirkung entsteht, wenn Index‑Zuflüsse dauerhafte Käuferbasis schaffen, die Preisbildung stützen; Gegenmechanismus ist Nachfragedruck‑Rückgang oder Beschleunigung von Bit‑Supply, die ASPs und Margen reduziert.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signalisiert kurzfristige Risiko‑Erhöhung, die das OUTLOOK‑Enterprise_SSD‑Falsifier‑Set (Preis/Fill‑Rate/Output) informell verschiebt; Effekt derzeit indikativ und nicht quantifiziert.",
+      "falsifier": "Bis 2026-10-31 tritt einer der beiden Fälle ein: (A) Sequenzielle ASP‑Rückgangsbeobachtung — ein verifizierter Rückgang der repräsentativen Enterprise‑NAND/SSD‑Kontrakt‑ASP um ≥5% QoQ (gemessen gegenüber dem relevanten Kontraktkorb) oder (B) Keine anhaltende Premiummarge — Sandisk meldet am Q1‑FY2027‑Bericht (Quarter end 2026‑12‑31) non‑GAAP Bruttomarge unter 70% oder Datacenter‑Revenue‑Wachstum unter Guidance; Eintreten eines dieser Fälle widerlegt die Behauptung, dass Preisstärke nachhaltig ist. Nächste Überprüfung: 2026-10-15.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-18",
+      "novelty": "Gering (Marktreaktion auf Index‑Aufnahme; kein neues technisches Supply‑Ereignis)",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 7,
+        "thesisRelevance": 12,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.kobaran.com/sandisk-stock-jumps-11-ahead-of-sp-100-debut-but-nand-pricing-faces-a-test/",
+          "label": "kobaran.com Artikel (primärer Kandidat)",
+          "kind": "primary",
+          "supports": "Bericht vom 2026-09-18: 'Sandisk shares surged nearly 11% on September 18...' und Diskussion, dass ein erheblicher Anteil des Quartalswachstums aus Preissteigerungen stammt und die Nachhaltigkeit von NAND‑ASPs geprüft werden muss."
+        }
+      ],
+      "reason": "Der Kandidat dokumentiert eine beobachtbare, datierte Aktienbewegung (2026-09-18) und einen plausiblen Markterklärungsansatz (Index‑Rebalance vs. tatsächliche Geschäftsentwicklung). Er erfüllt jedoch nicht die TAIL‑Annahme für direkte Aufnahme als VERIFIED DATA: es fehlt ein eindeutig abgrenzbares, messbares Produktmarkt‑Signal (z. B. verifizierte Kontrakt‑ASP‑Messung, qualifizierte Shipments, Lead‑Time‑Änderung) mit konkreter Einordnung in einen bestehenden Falsifier‑Test. Die Quelle (kobaran.com) ist eine Nachrichten-/Blog‑Seite und stellt Hinweise, nicht primär verifizierte Unternehmens‑ oder Markt‑Metriken, bereit. Deshalb wird die Meldung auf Watchlist gesetzt; es sind weitere Primärdaten (kontraktpreis‑Index, Sandisk Quartalszahlen, verifizierte Enterprise‑SSD‑Kontraktdaten) nötig, um das Signal in eine belastbare TAIL‑Aufnahme zu überführen.",
+      "candidateId": "d22bb1eebea4d5482fc7",
+      "candidateKey": "cca108f8bd5701dab094f99f",
+      "reviewedAt": "2026-09-27T20:12:32.387Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08b533a852e6b6c6006ab97896be4487d1abc0e5cf6c262a9f"
     }
   ]
 }
