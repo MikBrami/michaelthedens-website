@@ -48581,6 +48581,137 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_08b533a852e6b6c6006ab97896be4487d1abc0e5cf6c262a9f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron investors brace for revenue shifts amid Nvidia product ramp",
+      "fact": "Bericht (Crypto Briefing, 2026-09-25) zitiert Analysten, wonach Teile erwarteter Micron‑Umsätze wegen Verzögerungen im Produkt‑Qualifikations‑/Volumenstartzyklus von Nvidia zeitlich von FY2026 in FY2027 verschoben werden könnten.",
+      "placement": "global / Halbleitermarkt / Hersteller‑Umsatz‑Timing (Micron) / Kurzfristig (2026–2027)",
+      "mechanism": "Analystenkommentar: Verschiebung von Liefer-/Qualifikationszeitpunkten bei einem großen Kunden (Nvidia) verschiebt erkannte HBM‑/DRAM‑Abnahmen und damit Micron‑Umsatz aus einem Fiskaljahr in das nächste; wirkt über Timing (Recognition of revenue) und nicht notwendigerweise über strukturelle Nachfrageänderung.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Wenn Teile von Microns erwarteten Umsätzen in FY2027 verschoben werden, könnte das die kurzfristige Kontraktpreis- und Verfügbarkeitsdynamik beeinflussen und damit das Tail‑Outlook „Memory bleibt 2027 knapp“ (P-2026-07-20-04) zeitlich verschieben oder seine Intensität modulieren.",
+      "falsifier": "Bis 2026-12-31: Micron‑Gesamtumsatz für das Fiskaljahr 2026 (offizieller Quartalsbericht bzw. Form 10‑Q/10‑K) zeigt keine signifikante Verschiebung gegenüber den im Artikel zitierten Analystenschätzungen (d.h. gemeldete Umsätze innerhalb ±5% der konsolidierten Erwartung vor dem Artikel).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-25",
+      "novelty": "niedrig — kommentierende Analystenmeldung, nicht ein neu entdecktes, gemessenes Marktereignis.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 3,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://semiconductors.einnews.com/news/nvidia-semiconductor",
+          "label": "Republishing summary (points to Crypto Briefing)",
+          "kind": "secondary",
+          "supports": "Headline und Zusammenfassung, die Analystenkommentar über Umsatz‑Timing zugunsten von 2027 zitiert."
+        },
+        {
+          "url": "https://ranzware.com/micron-investors-brace-for-revenue-shifts-amid-nvidia-product-ramp",
+          "label": "Repost des Crypto Briefing‑Inhalts (2026-09-25)",
+          "kind": "secondary",
+          "supports": "Volltext der Story mit Angaben zu Analystenkommentar, Take‑or‑pay‑Aussagen und behaupteten Performance‑Obligationen."
+        }
+      ],
+      "reason": "Das Candidate‑Item ist eine Sekundärmeldung / Analystenkommentar über mögliches Umsatz‑Timing bei Micron (Quelle: Crypto Briefing, 2026‑09‑25). Für TAIL‑Aufnahme als VERIFIED DATA oder Annahme als belastbares Signal fehlen jedoch primäre, quantifizierbare Messgrößen (z. B. Micron‑Quartalszahlen, offizielle Kunden‑Shipments, vertraglich bestätigte Liefertermine oder ein Einzelkunde‑Disclosure seitens Nvidia) mit eindeutigem Datum, geografischer/Produktabgrenzung und Einheiten. Die Meldung ist eher interpretativ (Revenue‑timing risk) und vielfach reproduziert; sie bringt keinen neuen direkten Nachweis für eine nachweisbare Verfügbarkeits‑ oder Preisverschiebung im Markt. Gegenbelege/Abhängigkeiten: Micron‑Investor Relations und offizielle Quartalsberichte sind die primären Quellen, die den behaupteten Umsatz‑Shift bestätigen oder widerlegen müssten. Ohne solche Primärdaten bleibt die Behauptung unbewiesen für TAIL‑Aufnahme. Was fehlt: (1) Primäre Micron‑Finanzdaten oder offizielle Kunden‑Ship‑/Qualifikationsdaten mit Zeitpunkten; (2) klare Quantifizierung des verschobenen Umsatzvolumens in USD oder % des Quartals; (3) direkte Aussage eines betroffenen Kunden (z. B. Nvidia) oder vertragliche Disclosure. Deshalb Watchlist statt Akzeptanz. Zudem ist das Item thematisch eng mit bereits vorhandenem Baseline‑Signal „Memory bleibt 2027 knapp“ verbunden; es würde nicht hinreichend neues, atomar‑datierbares Evidenzmaterial liefern, um die Vorhersage zu verändern.  \n\nGegenbelege gefunden: Micron‑IR‑Dokumente (Q3/Q4 2026 Präsentationen) und andere Medienberichte (MarketWatch / Susquehanna‑Zitat) deuten auf starke HBM‑Nachfrage und bestehende Mehrjahresverträge; diese Quellen können die Behauptung eines reinen Timing‑Effekts nicht eindeutig bestätigen. Ohne direkte Micron‑Reportage bleibt der Artikel ein sekundärer Analystenkommentar.\n\nEmpfohlene nächste Schritte: Prüfen (1) Micron‑Quartalsbericht für FY2026 (Form 10‑Q/Press Release) auf berichtete Umsätze, sonstige Hinweise zu Kundenliefertiming; (2) direkte Markt‑Ship‑Daten (qualified shipments, HBM‑SKU‑Volumes) oder Nvidia‑Kundenstatements bis 2026‑12‑31. Falls Primärdaten bestätigt werden, kann der Fall re‑evaluiert und eventuell auf ACCEPTED angehoben werden, sofern er die TAIL‑Anforderungen (atomare, datierte Messung mit Einheiten, klarer Mechanismus und falsifizierbare Prognoseverbindung) erfüllt.\n\n",
+      "candidateId": "0259f83d8d2e9edc1397",
+      "candidateKey": "6dddd3b6f28fbef72a3fe287",
+      "reviewedAt": "2026-09-28T01:41:47.976Z",
+      "priorityScore": 53,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_06121dc38c3535bd006ab9c5bc8a7887d08ff0defe33d58a9f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Chinas größter DRAM‑Hersteller (CXMT) plant Einstieg in NAND‑Flash zur Konkurrenz von Samsung und YMTC",
+      "fact": "Berichte (Medienaggregate) stellen dar, dass ChangXin Memory Technologies (CXMT) Pläne prüft, in die NAND‑Flash‑Produktionskette zu expandieren, um Wettbewerber wie Samsung und YMTC anzugreifen.",
+      "placement": "Geographie: China; Domain/Lage: NAND / Enterprise SSD-Fertigung; Layer: Produktions‑Capacity/Produktmix; Horizont: kurz‑ bis mittelfristig (H2 2026–2028).",
+      "mechanism": "CXMT würde vorhandene Finanzkraft (IPO‑Erlös, Fab‑Investitionen) und bestehende Fabs/Integratorbeziehungen nutzen, um zusätzliche NAND‑Frontend/-Back‑end‑Kapazität aufzubauen oder neue Fab‑Projekte zu starten; dies würde die globale NAND‑Bit‑Verfügbarkeit erhöhen und den Preisdruck in NAND‑/Enterprise‑SSD‑Märkten verändern, falls qualifizierte Shipments erfolgen.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Wenn CXMT tatsächlich geprüfte NAND‑Fertigung in H2 2026–2028 qualifiziert ausliefert, würde das Verfügbarkeits‑(availability) und Preis‑(pricing)‑Risiko für Enterprise‑SSD mittelfristig verringern; ohne qualifizierte Shipments bleibt der Einfluss gering.",
+      "falsifier": "Bis zum 2026-12-31: öffentliche Primärquelle (Unternehmensmitteilung, regulatorischer Antrag oder Fabrik‑Finanzierungsvertrag) die CXMTs NAND‑Fab‑Genehmigung, verbindliche Capex‑Zusage mit Betrag (≥US$1Mrd) oder dokumentierten qualifizierten NAND‑Shipments (konkrete Stückzahlen/Bit‑Volumen) bestätigt. Falls bis 2026-12-31 keine solche Primärbestätigung vorliegt, ist die behauptete kurzfristige Verfügbarkeit unwahrscheinlich.",
+      "nextReview": "2026-10-18",
+      "eventDate": "2026-09-18",
+      "novelty": "Moderat — ähnliches Narrativ (China Memory‑Ausbau nach DRAM→NAND) war bereits in der Baseline und in mehreren Medien präsent, aber konkrete CXMT‑NAND‑Pläne sind ein neuer, nicht vollständig verifizierter Behauptungsstrang.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Die Inbox‑Meldung fasst Medienberichte zusammen, wonach ChangXin Memory Technologies (CXMT) erwägt, in NAND‑Flash‑Produktion einzusteigen. Das Narrativ ist plausibel und marktrelevant für OUTLOOK‑enterprise_ssd (Verfügbarkeit/Preis), jedoch fehlen in den vorgelegten Quellen die für eine Aufnahme als VERIFIED DATA nötigen Primärbelege: keine Unternehmensmitteilung, kein regulatorischer Antrag, kein bestätigter Capex‑vertrag, und keine dokumentierten qualifizierten NAND‑Shipments oder konkreten Bit‑Volumina. Mehrere hochqualitative Sekundärberichte (Reuters‑Aggregationen) unterstützen die Aussage, aber sie stützen sich auf anonyme Quellen und Medien‑Aggregatoren. Das beweist noch nicht, dass CXMT kurzfristig qualifizierte NAND‑Kapazität liefern wird. Ohne ein atomisches, datiertes, quantitativen Primärbeleg ist die Behauptung nicht ausreichend verifiziert. Opposing evidence: Baseline‑Daten und andere Quellen zeigen, dass NAND‑Qualifikation, Tooling, Kundenzertifizierung und Yield‑Rampen zeitintensiv sind; frühere Ankündigungen chinesischer Memory‑Player (z. B. YMTC ambitions) haben sich nicht immer in kurzfristiger qualifizierter Bit‑Auslieferung niedergeschlagen. Daher setze ich watchlist: plausibles marktbewegendes Signal, aber primäre Verifikation fehlt. Empfehlung: Nach Primärnachweis (Unternehmens‑Capex‑Ankündigung, regulatorische Einreichung, oder erste qualifizierte NAND‑Shipments mit konkreten Mengen) kann eine erneute Prüfung zur Aufnahme als ACCEPTED vorgenommen werden.",
+      "candidateId": "c608de54b8992bc60876",
+      "candidateKey": "629cd8d9260fb3752d2d78f6",
+      "reviewedAt": "2026-09-28T01:42:17.471Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01fe6c86e0629ec8006ab9c5dc1d3087d08419744b986bb21a"
     }
   ]
 }
