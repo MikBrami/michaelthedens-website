@@ -49039,6 +49039,146 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ab35413d0c874f1006abaebc7832487d0a23bb7d677277915"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung zu NAND-Preis-Spotlight vor Micron-Ergebnissen — Primärquelle nicht verifizierbar",
+      "fact": "Artikel‑Headline: 'Sandisk Stock Heads Into Micron Earnings With NAND Pricing Under the Microscope' (angeblich veröffentlicht via kobaran.com / Google News RSS am 2026-09-29).",
+      "placement": "Globaler NAND-/Enterprise‑SSD‑Markt; kurzfristiger Horizont (vor/um Micron‑Earnings, Q4 2026).",
+      "mechanism": "Marktpreisbildung durch Erwartung von Micron‑Earnings: Anlegerpreise reagieren vor Quartalszahlen auf Hinweise zu ASPs/Vertragsbedingungen; Multiyear LTAs und Datacenter‑NBMs können Floor‑Preise und Nachfrage‑Mix stützen, was spot/vertragliche NAND‑ASPs erhöht.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Wenn die Meldung verifiziert wäre, würde sie den vorhandenen OUTLOOK‑Thesensignalpfad (Memory bleibt 2027 knapp; preisgetriebene Aufwärtsrisiken) kurzfristig unterstützen und die Wahrscheinlichkeit eines fortgesetzten price_up‑Signals für NAND/Enterprise‑SSD erhöhen.",
+      "falsifier": "Bis einschließlich Micron‑Earnings (2026-09-30) liegen keine primären, datierten Belege für eine materialisierte, anhaltende NAND‑Preissteigerung vor (z. B. Micron‑/SanDisk‑Management gibt keine erhöhten Vertrags‑ASPs oder neue qualifizierte NBMs mit laufender Floor‑Preiswirkung an). Nächste Überprüfung: 2026-10-07.",
+      "nextReview": "2026-10-07",
+      "eventDate": "2026-09-29",
+      "novelty": "Gering bis mäßig — Thema (NAND‑Pricing vor Micron‑Earnings) ist bereits in TAIL‑Baseline und breite Finanzmedienabdeckung (Rosenblatt/Analysten, Earnings‑Vorspann) vorhanden.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 6,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investor.sandisk.com/node/8136/pdf",
+          "label": "SanDisk Geschäftsbericht / Investor‑Release (Q4 2026) — Managementkommentare zu Datacenter‑Wachstum und NBM‑Vereinbarungen.",
+          "kind": "primary",
+          "supports": "Offizielle Sandisk‑Release bestätigt starke Datacenter‑Umsätze und langfristige Vereinbarungen; belegt Nachfrage‑Narrativ, liefert aber keine Bestätigung für den spezifischen kobaran.com‑Artikel."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-rises-8-micron-gains-150036400.html",
+          "label": "Finanz‑Berichterstattung (aggregierte Marktartikel) zu Kursbewegungen und Diskussionen um NAND‑Pricing vor Micron‑Earnings.",
+          "kind": "secondary",
+          "supports": "Mehrere Finanzmedien (Yahoo Finance, TipRanks, Benzinga usw.) berichten unabhängig über Anlegerfokus auf Micron‑Earnings und NAND‑Preis‑Themen in den Tagen vor 2026-09-30; sie zeigen breite Aufmerksamkeit, jedoch keine Bestätigung der spezifischen kobaran.com‑Quelle."
+        }
+      ],
+      "reason": "Die eingereichte Kandidaten‑URL zeigt auf einen Google‑News/RSS‑Wrapper (kobaran.com laut Payload). Ich konnte keine verlässliche primäre kobaran.com‑Publikation mit dem vollständigen Artikeltext finden, und die behauptete Originalquelle ist nicht verifizierbar über die verfügbaren Suchtreffer. Die zugrundeliegende These (NAND/Enterprise‑SSD Pricing steht vor Micron‑Earnings im Fokus) ist plausibel und bereits breit durch geprüfte Primärquellen (Sandisk‑Investor‑Release, Reuters, Branchen‑Berichterstattung) gestützt, aber das eingereichte Item liefert keine eigene, datierte Primärbeobachtung mit neuen messbaren Einheiten (z. B. konkrete ASP‑Änderung, Vertrags‑ASPs, oder qualifizierte Shipment‑Zahlen) und kann daher nicht als VERIFIED DATA aufgenommen werden. Außerdem ist der Sachverhalt Teil des bestehenden Baselinesignals (tail-2026-07-14-nand-essd und andere), wodurch die Meldung nicht neu oder eindeutig falsifizierbar ohne zusätzliche, datierte Primärdaten ist. Ohne Primärquellenverifizierung bleibt die Behauptung watchlistpflichtig: wir benötigen die originale kobaran.com‑Seite (voller Artikeltext, Autor, und Veröffentlichungsdatum) oder ein direktes Primärzitat von Sandisk/Micron, das eine konkrete, messbare Preisbewegung dokumentiert. Vorschlag: falls der Nutzer die Original‑kobaran‑URL/diesen Artikeltext nachliefert oder ein Primärzitat (z. B. offizielle Management‑Äußerung oder Vertrags‑ASPs) zur Verfügung stellt, kann die Aufnahme neu bewertet werden.",
+      "candidateId": "3acebbbc288020d0b457",
+      "candidateKey": "2b648bbeae268f8fde8f9946",
+      "reviewedAt": "2026-09-29T02:37:56.471Z",
+      "priorityScore": 50,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e2fdbfc0ab978ff006abb246f4b9c87d0bab90779b59b0774"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Solidigm prüft US‑NAND‑Fab (Berichte, 2026‑09)",
+      "fact": "Berichten zufolge prüft Solidigm (eine US‑Einheit von SK hynix) die Errichtung einer NAND‑Fabrik in den USA; Upstate New York wird als führender Standort genannt (erste Berichterstattung: 2026-09-18/19).",
+      "placement": "USA (Upstate New York als führender Kandidat), Frontend NAND‑Fab / Enterprise NAND‑Supply; horizont: mehrjährig (Capex → qualifizierte Bit‑Supply innerhalb 2–4 Jahren).",
+      "mechanism": "Eine neue Frontend‑NAND‑Fabrik in den USA würde zusätzliche qualifizierte NAND‑Bit‑Kapazität liefern und die lokale Lieferkettendiversifikation erhöhen; die unmittelbare Wirkung hängt von FID, Gerätelieferungen, Qualifikationstempo und politisch/finanziellen Barrieren ab.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Wenn realisiert (FID + qualifizierte Shipments), könnte dies mittelfristig (2028+) den qualifizierten Enterprise‑SSD‑Output erhöhen und somit den Verfügbarkeitsdruck/Preisauftrieb auf Enterprise‑SSD (NAND) abschwächen. Aktuell ist die Wirkung hypothetisch und zeitlich unscharf.",
+      "falsifier": "Bis 2027-12-31: Keine öffentlich belegte FID, Standortauswahl, Bauanzeige oder regulatorische Genehmigung für eine Solidigm/SK hynix‑Frontend‑NAND‑Fab in den USA (keine relevanten Firmenmeldungen oder bestätigten Behördenakten).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.bitgetapp.com/amp/news/detail/12560605845312",
+          "label": "Bitget (RSS/aggregation)",
+          "kind": "secondary",
+          "supports": "Aggregierter Bericht, fasst die Berichterstattung zu Solidigm/ SK hynix zusammen und nennt Kosten- sowie politischen Widerstand als Hindernisse."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/18/sk-hynix-weighs-first-us-nand-plant-as-ai-demand-surges",
+          "label": "Seoul Economic Daily (Korea) — Branchenbericht",
+          "kind": "secondary",
+          "supports": "Lokale Branchenberichterstattung (2026-09-18) bestätigt, dass Solidigm/ SK hynix die Möglichkeit prüft und dass Details noch in Diskussion sind."
+        }
+      ],
+      "reason": "Der Kandidat beruht auf konsistenten Medienberichten (Reuters/South‑Korea‑Press/aggregierte Feeds) vom 18.–19. September 2026, die übereinstimmend melden, Solidigm prüfe eine US‑NAND‑Fab mit Upstate New York als führendem Standortkandidaten. Es fehlt jedoch primäre, firmenbestätigte Evidenz (kein Unternehmens‑Statement mit FID, kein Bauantrag, keine Standortvereinbarung, keine Behördengenehmigung). Nach den TAIL‑Regeln erfordert fehlende Primärverifizierung eine Watchlist‑Einstufung und verhindert VERIFIED DATA / Acceptance. Die Meldung ist relevant für die OUTLOOK‑enterprise_ssd‑Aussage (mögliche zukünftige Entspannung der NAND/Enterprise‑SSD‑Verfügbarkeit), ist aber derzeit hypothetisch, zeitlich unbestimmt und politisch/finanziell angreifbar. Opposing evidence: SK hynix/Solidigm‑Klarstellungen in anderen Kontexten haben 'nichts bestätigt' formuliert; Kosten- und politische Widerstände werden explizit als Hemmnisse genannt, was die Realisierungswahrscheinlichkeit innerhalb 12 Monaten reduziert. Daher Watchlist; nächste Überprüfung 2026-12-31 oder bei konkreten FID/Standortmeldungen earlier.",
+      "candidateId": "f440ea7935a56d67f334",
+      "candidateKey": "6ac639a40163888fa388280d",
+      "reviewedAt": "2026-09-29T02:38:21.543Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ea7cdb9b27bc7a8006abb2484a4e087d0ac39396d521b9027"
     }
   ]
 }
