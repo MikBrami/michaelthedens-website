@@ -49179,6 +49179,213 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ea7cdb9b27bc7a8006abb2484a4e087d0ac39396d521b9027"
+    },
+    {
+      "decision": "accepted",
+      "title": "Samsung warnt, dass HBM‑Wachstum die allgemeine DRAM‑Versorgung 2027 belasten könnte",
+      "fact": "Samsung-Manager (EVP Kim Taewoo / Memory-Führungskräfte) erklärten öffentlich, dass HBM‑Output 2027 einen deutlich höheren Anteil an wafer‑Kapazität einnehmen werde (nahe ~30% laut Presseberichten) und dass die Konkurrenz um dieselbe Wafer‑Kapazität Standard‑DRAM in 2027 weiter verknappen könne.",
+      "placement": "Geografie: global (Industrieweite Wafer‑Kapazität); Domain/Layer: DRAM-Produktions‑Layer (wafer/Foundry + Advanced Packaging); Horizon: 2027 (Kalenderjahr).",
+      "mechanism": "HBM‑Ramp beansprucht fortgeschrittene 12/10/4nm-Waferstunden und Advanced‑Packaging/Kapazitäten, die sonst für Standard‑Server‑DRAM genutzt würden; dadurch verschiebt sich der Produktmix zugunsten höherwertiger HBM‑Produkte und reduziert das verfügbare Angebot an Standard‑DRAM‑Hostbits im Jahr 2027.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben mindestens bis Ende 2028, mit 2027 als wahrscheinlichem Engpass‑Höhepunkt (stärkt die im Forecast formulierte Erwartung).",
+      "falsifier": "Review‑Datum 2027-07-01: Wenn für das erste Halbjahr 2027 Industrie‑Quellen (Samsung / SK hynix / Micron oder konsolidierte Marktstatistiken) zeigen, dass HBM‑Waferanteil <= 25% und gleichzeitig Server‑DRAM‑Kontraktpreise zwei Quartale in Folge rückläufig sind (konträr zur Verknappung), dann widerlegt das die Richtung/Gravität der Warnung.",
+      "nextReview": "2027-07-01",
+      "eventDate": "2026-09-29",
+      "novelty": "Bestätigt & konkretisiert bestehende TAIL‑Baseline‑Themen (liefert Unternehmensbestätigung des HBM‑vs‑DRAM-Konkurrenzpfads für 2027).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 20,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "hbm",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "negative_supply",
+      "severity": 70,
+      "confidence": 85,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://ca.marketscreener.com/news/samsung-electronics-says-hbm-to-account-for-nearly-30-of-industry-dram-capacity-next-year-ce785addd981fe22/",
+          "label": "MarketScreener (Syndicated Reuters copy reporting Samsung EVP Aussage)",
+          "kind": "primary",
+          "supports": "Bericht (Reuters/Syndication) dokumentiert: Samsung EVP sagt HBM werde 'nearly 30%' der DRAM‑Waferkapazität nächstes Jahr einnehmen und HBM konkurriere mit Standard‑DRAM um dieselbe Waferkapazität; Ausbau der HBM‑Produktion könne Standard‑DRAM‑Angebot einschränken."
+        },
+        {
+          "url": "https://stockanalysis.com/quote/krx/005930/transcripts/645485-q2-2026/",
+          "label": "Samsung Q2 2026 Earnings Call / Transkript (Earnings‑Call Auszüge)",
+          "kind": "primary",
+          "supports": "Earnings‑Call‑Transkript/Unternehmenszitat: Samsung‑Management warnte, dass die Versorgungsengpässe 2027 schwerer als 2026 ausfallen könnten und dass HBM‑Abnahmevereinbarungen die verfügbare Kapazität für konventionelles DRAM beeinflussen."
+        }
+      ],
+      "reason": "Die Kandidatenbehauptung ist durch hochwertige Primärberichterstattung (Unternehmensäußerungen in Earnings‑Call plus große Agentur‑Nachberichterstattung) verifiziert. Die Meldung ist direkt relevant für P‑2026‑07‑11‑01 (HBM/Server‑DRAM Knappheit bis Ende 2028 mit 2027 Peak). Die Aussage ist datiert (2026‑09‑29), hat klare Reichweite (wafer‑Kapazitätsanteil ≈30%) und einen plausiblen kausalen Mechanismus (Konkurrenz um limitierte advanced wafer/packaging Ressourcen). Deshalb erfüllt sie die TAIL‑Aufnahmekriterien als Signal mit quantifizierbarer Wirkung. Die Indexwirkung wurde nicht direkt gemessen (keine kontraktpreis‑ oder Fill‑Rate‑Zeitreihe im Primärzitat), daher indexImpact=false. Opposing Evidence: Marktberichte zu späteren Kapazitätsrampen und Hersteller‑Capex‑Plänen (in Baseline) können die Wirkung ab 2H‑2027/2028 abmildern; das Falsifizierungs‑Review ist gesetzt auf 2027‑07‑01, um die praktische Messbarkeit zu erlauben.",
+      "candidateId": "ac2e618fb4257508a5bb",
+      "candidateKey": "a361b39e7d94c8a35895c5ca",
+      "reviewedAt": "2026-09-29T11:25:51.461Z",
+      "priorityScore": 87,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-a361b39e7d94c8a35895c5ca",
+        "title": "Samsung warnt, dass HBM‑Wachstum die allgemeine DRAM‑Versorgung 2027 belasten könnte",
+        "date": "2026-09-29",
+        "admittedAt": "2026-09-29T11:25:51.461Z",
+        "fact": "Samsung-Manager (EVP Kim Taewoo / Memory-Führungskräfte) erklärten öffentlich, dass HBM‑Output 2027 einen deutlich höheren Anteil an wafer‑Kapazität einnehmen werde (nahe ~30% laut Presseberichten) und dass die Konkurrenz um dieselbe Wafer‑Kapazität Standard‑DRAM in 2027 weiter verknappen könne.",
+        "placement": "Geografie: global (Industrieweite Wafer‑Kapazität); Domain/Layer: DRAM-Produktions‑Layer (wafer/Foundry + Advanced Packaging); Horizon: 2027 (Kalenderjahr).",
+        "tailInference": "HBM‑Ramp beansprucht fortgeschrittene 12/10/4nm-Waferstunden und Advanced‑Packaging/Kapazitäten, die sonst für Standard‑Server‑DRAM genutzt würden; dadurch verschiebt sich der Produktmix zugunsten höherwertiger HBM‑Produkte und reduziert das verfügbare Angebot an Standard‑DRAM‑Hostbits im Jahr 2027.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben mindestens bis Ende 2028, mit 2027 als wahrscheinlichem Engpass‑Höhepunkt (stärkt die im Forecast formulierte Erwartung).",
+        "falsifier": "Review‑Datum 2027-07-01: Wenn für das erste Halbjahr 2027 Industrie‑Quellen (Samsung / SK hynix / Micron oder konsolidierte Marktstatistiken) zeigen, dass HBM‑Waferanteil <= 25% und gleichzeitig Server‑DRAM‑Kontraktpreise zwei Quartale in Folge rückläufig sind (konträr zur Verknappung), dann widerlegt das die Richtung/Gravität der Warnung.",
+        "nextReview": "2027-07-01",
+        "priorityScore": 87,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 10,
+          "thesisRelevance": 20,
+          "forecastImpact": 18,
+          "falsifiability": 12,
+          "timeSensitivity": 9
+        },
+        "severity": 70,
+        "confidence": 85,
+        "markets": [
+          "dram",
+          "server_dram",
+          "hbm",
+          "ai_infrastructure"
+        ],
+        "signal": "negative_supply",
+        "driverScope": [
+          "demand",
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "MarketScreener (Syndicated Reuters copy reporting Samsung EVP Aussage)",
+            "url": "https://ca.marketscreener.com/news/samsung-electronics-says-hbm-to-account-for-nearly-30-of-industry-dram-capacity-next-year-ce785addd981fe22/"
+          },
+          {
+            "label": "Samsung Q2 2026 Earnings Call / Transkript (Earnings‑Call Auszüge)",
+            "url": "https://stockanalysis.com/quote/krx/005930/transcripts/645485-q2-2026/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht die Wahrscheinlichkeit, dass HBM und Server‑DRAM strukturell knapp bleiben mindestens bis Ende 2028, mit 2027 als wahrscheinlichem Engpass‑Höhepunkt (stärkt die im Forecast formulierte Erwartung)."
+        },
+        "admissionReviewKey": "a361b39e7d94c8a35895c5ca"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08f18fdb9ab0f7b7006abba0260b4087d0848c0b806f39da67"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung und SK hynixs Memory‑Führerschaft sieht sich wachsendem Druck von CXMT (und Micron) gegenüber",
+      "fact": "Berichte im September 2026 deuten darauf hin, dass ChangXin Memory Technologies (CXMT) durch schnelle Umsatz-/Marktanteilsgewinne und mehrjährige Großverträge Marktanteile von etablierten Anbietern (Samsung, SK hynix, Micron) im Commodity‑DRAM‑Segment gewinnt und damit deren Memory‑Führerschaft strukturell unter Druck setzen könnte.",
+      "placement": "Globaler DRAM‑Markt; Schwerpunkt: Commodity/Server‑DRAM (ex‑HBM) — relevante Region: China/Asien‑Exportmärkte sowie globale Cloud/Hyperscaler‑Nachfrage.",
+      "mechanism": "CXMT nutzt aggressive Kapazitätsausweitung, IPO‑Mittel und Großkunden‑LTAs (mehrjährige Verträge) um preiswirksame Commodity‑DRAM‑Volumina zu liefern; gleichzeitig verschieben Samsung, SK hynix und Micron Kapazität in HBM/High‑end‑Memory, wodurch eine relative Vakanz bei Commodity‑DRAM entsteht, die CXMT füllt — das reduziert kurzfristig Preissetzungsmacht und Marktanteile der Leader im Commodity‑Layer.",
+      "predictionId": "P-2026-07-14-01",
+      "predictionImpact": "Erhöht die Relevanz von P-2026-07-14-01 (CXMT‑IPO / LTAs stärken Mainstream-/Server‑DRAM) — wenn CXMT die behaupteten Großverträge und Umsatzanteilsgewinne bestätigt, erhöht das die Wahrscheinlichkeit, dass Mainstream/Server‑DRAM länger gegen High‑End‑HBM allokiert bleibt und die etablierte Führerschaft relativ geschwächt wird.",
+      "falsifier": "Bis 2026-12-31 bleiben CXMTs nachprüfbare globale DRAM‑Umsatzanteile ≤5% (Q4‑2026 Counterpoint/IDC/SEDaily‑ oder Unternehmenszahlen) ODER vorher publizierte mehrjährige Großverträge werden öffentlich zurückgenommen/annulliert.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-03",
+      "novelty": "Moderat — Thema (Chinas CXMT drängt in DRAM) ist bereits in TAIL‑Baseline/Signals sichtbar, aber September‑Berichte melden beschleunigte, quantifizierbare Marktanteils‑/Vertragsdaten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/international/2026/09/03/cxmt-tops-10-percent-of-global-dram-market-as-us-warns",
+          "label": "SE Daily — CXMT erreicht zweistellige DRAM‑Anteile (Bericht, 2026-09-03)",
+          "kind": "secondary",
+          "supports": "Bericht über CXMTs schnellen Umsatzanstieg und wachsenden Marktanteil, der etablierten Anbietern Marktdruck bereitet."
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/amp/business/tech-science/20260731/is-cxmt-real-threat-to-memory-dominance-of-samsung-sk-hynix",
+          "label": "The Korea Times — Analyse zu CXMTs Marktaufstieg (Bericht, 2026-07-31)",
+          "kind": "secondary",
+          "supports": "Erläuterung, wie CXMT Commodity‑DRAM‑Volumina nutzt und Counterpoint‑Marktanteilszahlen zitiert (Q1/Q2 2026)."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat ist thematisch relevant (CXMT drängt in den DRAM‑Markt) und konsistent mit mehreren Medienberichten vom Sommer/Herbst 2026, die steigende CXMT‑Umsätze, IPO‑Proceeds und Großverträge beschreiben. Er erfüllt jedoch nicht die strengen Aufnahmeanforderungen für eine TAIL‑Aufnahme als VERIFIED DATA oder Akzeptanz: die Einreichung liefert kein einzelnes primäres, direkt verifizierbares Messdatum (z. B. Q‑Quartals‑Umsatz‑Share‑Zahl eines anerkannten Markttrackers oder ein offenkundig veröffentlichtes, unterzeichnendes Großvertrag‑PDF) in atomarer Form mit klaren Einheiten und geographischer/Produktfokus‑Abgrenzung. Außerdem fehlen widerspruchsfreie Primärbelege, die Opposing‑Evidence ausschließen (z. B. Gegenmeldungen zu Yields, Fehlspezifikation von Verträgen, oder Revisionsmeldungen). Basierend auf den vorliegenden sekundären Berichten ist die Aussage plausibel, aber nicht hinreichend primär‑verifiziert für Aufnahme. Empfohlenes weiteres Vorgehen: beschaffe primäre Markttracker‑Zahlen (Counterpoint/IDC/Gartner Q2/Q3 2026 DRAM‑Revenue/Volume‑Share), offizielle Unternehmens‑Earnings‑Zitate zu den behaupteten CXMT‑Verträgen oder veröffentlichte Vertragsdokumente/Regulatory Filings; überprüfe zudem Yield‑/Qualifikationsberichte, die potenziell gegen die Behauptung sprechen (z. B. Berichte zu niedrigen CXMT‑Yields). Ohne diese Primärverifizierung bleibt die Kandidatur auf Watchlist‑Status. Ebenso wurde Opposing Evidence in TAIL‑Inbox gefunden (Berichte zu Yield‑Problemen, HBM‑Priorisierung durch Samsung/SK hynix und schnelle HBM‑Investments), die die Richtung und Materialität der Behauptung in Frage stellen — das muss in der Nachprüfung adressiert werden.",
+      "candidateId": "b6aa47a837d2ae41e9f9",
+      "candidateKey": "b50cc8b895f1e5d7e43d0cd7",
+      "reviewedAt": "2026-09-29T11:26:12.932Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_013fe73ea6939ee6006abba03fb10887d09fe99da6b69df8df"
     }
   ]
 }
