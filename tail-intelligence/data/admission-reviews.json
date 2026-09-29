@@ -49386,6 +49386,145 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_013fe73ea6939ee6006abba03fb10887d09fe99da6b69df8df"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Nvidia vs Micron Ahead of Earnings: Buyback Capacity or HBM Growth?",
+      "fact": "Op-Ed / Marktkommentar über Nvidia vs. Micron vor Quartalszahlen (behaupteter Diskussionspunkt: Rückkäufe vs. HBM‑Wachstum).",
+      "placement": "Global / Equity‑Market‑Narrative; kein präziser geografischer oder Produktbereich (Artikel ist Meinungs-/Analysekommentar, nicht eine beobachtete Lieferung/Shipment/Vertrag).",
+      "mechanism": "These: Aktienreaktion und Earnings‑Erwartungen driven durch entweder Kapitalrückkäufe (Buybacks) bzw. Bilanzstärke oder reale HBM‑Nachfrage/Capacity‑Bindung; hierfür wird aber kein direkt beobachtbarer Primärbeleg (z. B. bestätigte SCA/Qualifizierte Shipments, vertraglich gebundene Wafer‑Volumina, oder offizielle Buyback‑Ankündigung mit Betrag/Datum) im bereitgestellten Kandidatentext verlinkt.",
+      "predictionId": "",
+      "predictionImpact": "Kein passendes existierendes Vorhersage‑ID aus der gelieferten Liste wurde im Artikel als Bezug genannt. (Benötigt ein expliziter Link zu einer der vorhandenen P‑Vorhersagen, z. B. P-2026-07-11-01 oder OUTLOOK-server_dram, inkl. wie das beobachtete Ereignis die Vorhersageänderung auslöst.)",
+      "falsifier": "Nicht definiert im Kandidattext. Vorschlag (zum Nachreichen): 'Wenn Micron bis 2026-12-31 keine verbindlichen, qualifizierten HBM‑Shipments/Contracted‑SCA im Umfang von ≥100k Wafern/Monat nachweist (oder konkrete $‑Volumina für HBM‑LTAs offenlegt), dann widerlegt dies die HBM‑growth‑These des Artikels.' (Benötigt autoritative Primärquelle, Datum, Mengenangaben.)",
+      "nextReview": "2026-10-06",
+      "eventDate": "2026-09-29",
+      "novelty": "Niedrig — Wiederverwertung eines vor Earnings häufigen Vergleichs: Plattform‑/Compute‑vs‑Memory‑Narrativ; kein originärer Primärbeleg.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 6,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 5,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://247wallst.com/investing/2026/06/25/nvidia-vs-micron-which-stock-will-the-market-reward/",
+          "label": "Beispiel für ähnliches Markt‑Narrativ (Medienanalyse, nicht Primärbeleg).",
+          "kind": "secondary",
+          "supports": "Zeigt gängige 'Nvidia vs Micron' Narrative in Finanzmedien; dient nur als kontextuelle Referenz, nicht als Verifikation des behaupteten Primärereignisses."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat ist ein kommentierender Marktbeitrag (verlinkt über Google News RSS) mit der typischen Vor‑Earnings‑Debatte: wird die Marktprämie für Micron von realer HBM‑Kapazitätsbindung getragen oder eher von Finanzmaßnahmen (Buybacks) gestützt? Nach den TAIL‑Aufnahmekriterien ist dies unzureichend, weil:\n\n1) Kein primärer, überprüfbarer Beleg im Kandidaten: Der Artikel liefert keine bestätigten, datierten, quantifizierten Primärbelege (z. B. vertraglich gebundene Wafer‑Mengen, qualifizierte Shipments, offizielle Buyback‑Ankündigung mit Betrag/Datum oder bestätigte SCA‑Volumina). Medienkommentare und Investment‑Meinungen sind Sekundärquellen und genügen nicht für ACCEPT.\n\n2) Fehlende atomare, datierte Faktstruktur: Admission verlangt ein einzelnes, atomar formulierbares, datiertes Fakt (mit Einheiten) — z. B. 'Micron lieferte am 2026-09-15 X qualifizierte HBM‑Wafers/Monat an Nvidia' oder 'Micron kündigte ein $Y Buyback am 2026-09-20 an'. Solche Aussagen fehlen.\n\n3) Keine Verbindung zu einer existierenden Vorhersage‑ID: Der Text nennt nicht, welche TAIL‑Vorhersage konkret betroffen sein soll (z. B. P-2026-07-11-01 'HBM und Server‑DRAM bleiben knapp...'). Ohne diesen Link kann kein messbarer Einfluss auf ein vorhandenes Forecast‑Outcome zugeschrieben werden.\n\n4) Fehlender Falsifizierer: Der Artikel liefert keine klares, testbares zukünftiges Kriterium, das die behauptete Auswirkung widerlegen würde. Admission verlangt ein falsifizierbares Ereignis mit Datum/Bedarf zur späteren Überprüfung.\n\n5) Quellenprüfung: Der Kandidaten‑URL über Google News konnte in dieser Prüfung nicht direkt als primäre techi.com‑Originalseite verifiziert werden (Google‑RSS‑Redirects sind nicht primäre Quellen). Web‑Suche zeigt viele ähnliche Meinungsstücke/Analysen, aber kein identisches Primärstück mit den notwendigen quantitativen Einzelheiten.\n\nDeshalb: Watchlist — der Eintrag bleibt relevant als Früh‑Signal einer market narrative (Relevanz für driverScope demand/aiDemand/availability), aber nicht ausreichend verifiziert. Um eine Aufnahme (ACCEPTED) zu ermöglichen, ist ein oder mehrere der folgenden Nachreichungen erforderlich:\n\n• Direkter Zugriff auf das ursprüngliche techi.com‑Artikel (voller Text), inklusive konkret zitierter Primärbelege (z. B. Firmen‑PR, SEC‑Filing, Kunden‑LTA, Lieferbestätigung) und das exakte Veröffentlichungsdatum (YYYY‑MM‑DD).\n• Ein atomarer, datierter Fakt (z. B. vertraglich bestätigte HBM‑Wafer‑Menge, $‑Volumen einer Buyback‑Ankündigung, oder ein qualifiziertes Shipment/Lead‑Time‑Änderung) mit Quelle.\n• Ein klarer, quantifizierbarer Falsifizierer mit Datum (z. B. 'wenn bis 2026-12-31 kein verifizierter HBM‑Shipment von ≥X Wafern/Monat ausgewiesen wird, dann falsifiziert').\n• Explizite Verbindung zu einer der gelisteten Vorhersagen (z. B. P-2026-07-11-01) mit Beschreibung, wie das Ereignis die Vorhersage verändert.\n\nOhne diese Primärbelege bleibt der Kandidat auf der Watchlist (NOT PROVEN).",
+      "candidateId": "7c09ef2f01c5ea4f6cc0",
+      "candidateKey": "04d8412614ec0add84003907",
+      "reviewedAt": "2026-09-29T21:26:34.422Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fd776603e2f782a006abc2cf0588c87d19823ebdfaa7963ce"
+    },
+    {
+      "decision": "rejected",
+      "title": "Kioxia XL1 CXL (XL‑FLASH) Demo auf FMS 2026 — Produktvorführung, kein belegter Markteffekt",
+      "fact": "ServeTheHome berichtet am 2026-09-18, dass auf der FMS‑Messe ein KIOXIA XL1 E3.S CXL‑Typ‑3 Gerät (512 GB, XL‑FLASH Gen‑2) als NAND‑basierte CXL‑Memory‑Erweiterung gezeigt wurde; Messwerte im Artikel: ≈1 GB/s Durchsatz, ≈755 ns Latenz, ~2M IOPS bei 512B Loads.",
+      "placement": "Geographie: FMS‑Messe (Japan/Japan‑Event) — Domäne: Server Memory / CXL Memory Layer — Layer: Produkt‑Demo (Hardware‑Prototype) — Horizon: kurzfristig (Sept. 2026) — Reichweite: Prototyp / Showfloor‑Gerät, keine ausgewiesenen Serien‑Shipments.",
+      "mechanism": "NAND‑basiertes XL‑FLASH wird per CXL als Type‑3 Memory‑Expansion angeboten; theoretisch ermöglicht dies Substitution von Host‑DRAM‑Bits für kalte/sekundäre Speicherregionen und könnte die Nachfrage nach DRAM‑Host‑Bits marginal reduzieren, falls Gerät in qualifizierte Serienlieferung und breite Systemintegration übergeht.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Beobachtung allein ändert die Vorhersage ‚Memory bleibt 2027 knapp…‘ nicht. Als isolierte Produktdemo ist sie kein belastbarer Falsifier für strukturelle Knappheit 2027; könnte im Szenario eines breiten, qualifizierten Serien‑Ramp (nicht hier dokumentiert) zur Entspannung beitragen.",
+      "falsifier": "Wenn Kioxia oder ein OEM bis 2027-12-31 geprüfte, qualifizierte Serien‑Shipments von CXL XL‑FLASH Type‑3 Devices (≥100k Stück kumuliert) in Server‑Umgebungen nachweist und diese nachweislich >5% Host‑Bit‑Substitution für ausgewählte Workloads ergeben, würde dies die angenommene Nachfrage‑/Versorgungswirkung prüfen.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-09-18",
+      "novelty": "Gering (Produktdemo einer bekannten Techniklinie: Kioxia hat XL‑FLASH/CXL zuvor demonstriert; dieses Ereignis ist eine weitere Messe‑Vorführung, kein Serienstart).",
+      "duplicateOf": "S-AUTO-fb8d49d0e82132264c37322c",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Falsifier",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 3,
+        "thesisRelevance": 8,
+        "forecastImpact": 5,
+        "falsifiability": 5,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "nand",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_down",
+      "severity": 15,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.servethehome.com/kioxia-xl1-cxl-xl-flash-nand-device-shown/",
+          "label": "ServeTheHome — 'Kioxia XL1 CXL XL‑FLASH NAND Device Shown' (Eric Smith, 2026-09-18)",
+          "kind": "primary",
+          "supports": "Bericht über Gerät auf FMS 2026: E3.S Formfactor, CXL Type‑3, 512 GB, Messwerte ~1 GB/s und ~755 ns Latenz; beschreibt XL‑FLASH Gen‑2 und Use‑Case als NAND‑basierte CXL Memory‑Erweiterung."
+        },
+        {
+          "url": "https://americas.kioxia.com/content/dam/kioxia/en-us/business/memory/bics/asset/KIOXIA_CXL_Memory_Solutions_Infographic.pdf",
+          "label": "Kioxia Produkt‑/Marketingmaterial (XL‑FLASH / CXL Memory Solutions)",
+          "kind": "secondary",
+          "supports": "Kioxia‑Dokumentation bestätigt Technologie‑konzept XL‑FLASH und Positionierung als CXL‑Memory‑Tier; belegt technische Absicht, nicht aber Serien‑Shipments oder Marktwirkung."
+        }
+      ],
+      "reason": "Die Einreichung beschreibt eine Produktdemo (FMS‑Showfloor) mit technischen Messwerten, die ServeTheHome dokumentiert. Das Ereignis ist primär eine Hardwarevorführung ohne belegte Serienlieferungen, Volumina oder qualifizierte OEM‑Integrationen — es liefert somit kein atomar-datiertes, quantifizierbares Markt‑Signal, das die TAIL‑Vorhersage zur Memory‑Knappheit 2027 direkt falsifizieren oder signifikant verändern würde. Zusätzlich ist dieser Beobachtungspunkt bereits im Baseline/Corpus als S‑AUTO‑fb8d49d0… (Kioxia kündigt CXL‑NAND Modul (XL1) an) vorhanden – damit handelt es sich um ein Duplikat/Rezirkulation desselben Produktereignisses. Ohne nachweisbare Serien‑Shipments oder messbare Auswirkungen auf DRAM‑Kontraktpreise/Lead‑Times bleibt die Behauptung unqualifiziert; gemäß den Aufnahme‑Standards wird die Kandidatur abgelehnt (Red‑Pencil‑Kriterien erfüllt).",
+      "candidateId": "2baab57104a070c92af6",
+      "candidateKey": "309324fa90c73676f282b2b5",
+      "reviewedAt": "2026-09-29T21:26:56.779Z",
+      "priorityScore": 35,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f408a859fa85ade006abc2d0aa0a487d199f1b7ce49b242a5"
     }
   ]
 }
