@@ -49846,6 +49846,159 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_03b351033e2a165d006abceea0b20487d19f6c312fd5e24e02"
+    },
+    {
+      "decision": "watchlist",
+      "title": "NGEN Mission Critical führt 'Single‑Accountability' Service‑Modell ein (Pressemitteilung)",
+      "fact": "NGEN Mission Critical gab am 2026-09-30 eine Pressemitteilung heraus, in der das Unternehmen sein \"single‑accountability service model\" vorstellt und erklärt, dieses Modell helfe Datenzentrum‑Entwicklern, qualifizierte Fertigungskapazität für Strom‑ und Kühltechnik freizuschalten. (PR Newswire, 2026-09-30).",
+      "placement": "Geographie: global / Domäne: data‑center power & cooling equipment; Layer: supply‑chain & field‑services; Horizon: Ankündigung 2026-09-30.",
+      "mechanism": "Behauptetes Wirkprinzip in der PR: NGEN stellt sich als einziger Verantwortlicher (single accountability) für Beschaffung, US‑/global OEM‑Zugang, Engineering und Lifecycle‑Support dar; dadurch soll Transparenz und Skalierung hergestellt werden, die zu kürzeren Lieferzeiten bei power‑/cooling‑Equipment führen. Die Quelle liefert jedoch nur ein Produkt‑/Geschäftsmodell‑Announcement, keine quantifizierten, geprüften Messgrößen über tatsächlich freigesetzte Fertigungskapazität oder kurzfristige Lieferzeitreduktionen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Potentielle Wirkung (hypothetisch): Wenn NGEN tatsächlich qualifizierte Fertigungs‑ und Lieferkapazität kurzfristig freisetzt, könnte dies die Verfügbarkeit von Datacenter‑Power/Kühl‑Infrastruktur verbessern und damit indirekt Druck auf Server‑DRAM/HBM‑Bereitstellung verringern (relevanter Mechanismus: reduziert Infrastruktur‑Build‑Lead‑Times, erleichtert Deployment‑Schedule von AI‑Rechenzentren und damit physischen Nachfrage‑Flashern). Aktuell ist dies jedoch nur eine Ankündigung ohne gemessene Wirkung.",
+      "falsifier": "Bis zum 2027-03-31: keine nachweisbaren, qualifizierten OEM‑Shipments, keine dokumentierten Lead‑Time‑Verbesserungen (konkret: keine von Dritten bestätigten, qualifizierten Fertigungs‑Shipments von Power/Kühl‑Equipment, die Lead Times um ≥20 % gegenüber Q3 2026 reduzieren) oder keine mindestens zwei unabhängigen Kunden‑Referenzen mit Datum und Liefermengen, die bestätigen, dass NGEN durch sein Modell Lieferengpässe material mindert. Wenn solche Nachweise veröffentlicht werden, falsifiziert das die Watchlist‑Unsicherheit.",
+      "nextReview": "2027-04-15",
+      "eventDate": "2026-09-30",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 13,
+        "forecastImpact": 8,
+        "falsifiability": 12,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/ngen-mission-critical-launches-single-accountability-service-model-helping-data-center-developers-unlock-manufacturing-capacity-for-power-and-cooling-equipment-302893497.html",
+          "label": "PR Newswire – Pressemitteilung NGEN Mission Critical, 2026-09-30",
+          "kind": "primary",
+          "supports": "Pressemitteilung veröffentlicht 2026‑09‑30, beschreibt Einführung des 'single‑accountability service model' und Partnerschaft mit Air2O; behauptet Ziel, Fertigungskapazität freizuschalten, liefert jedoch keine quantifizierten Shipments, Lead‑Time‑Messungen oder unabhängige Kundenbelege."
+        },
+        {
+          "url": "https://www.ngen-mc.com/blog/unlocking-manufacturing-capacity-at-scale-for-data-center-developers",
+          "label": "NGEN Mission Critical – Unternehmensblog (sekundär)",
+          "kind": "secondary",
+          "supports": "Stellt die Geschäftslogik und das Modell dar, wiederholt das Ziel, Fertigungskapazität über ein globales/vetted Lieferanten‑Netz zu erschließen; kein unabhängiger Nachweis für reale Kapazitätsfreisetzung."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist eine Firmen‑Pressemitteilung (PR) vom 2026-09-30, die ein neues Service‑Modell ankündigt und behauptet, damit Fertigungskapazität für Rechenzentrums‑Strom‑ und Kühltechnik freizugeben. Für eine Aufnahme als VERIFIED DATA / accepted fehlt eine primär‑verifizierende Messgröße (z. B. dokumentierte qualifizierte OEM‑Shipments, konkrete Lead‑Time‑Verbesserungen in Wochen/Prozent, unabhängige Kunden‑Referenzen mit Mengen/Terminen), die zeigen würde, dass die Ankündigung tatsächlich kurzfristig Angebot/Verfügbarkeit verändert. Nach den Aufnahme‑Regeln erfordert eine Annahme konkrete, datierte und metrische Beobachtungen sowie eine klare kausale Verbindung zu einer bestehenden Prognose. Diese fehlen hier; deshalb Watchlist mit erforderlichen Nachweisen angegeben. Außerdem besteht ein relevanter Opposing‑Faktor: die Meldung ist selbstdarstellend (Promotional PR) und passt in das Baseline‑Umfeld einer sehr aktiven Finanzierungs‑ und Lieferkettenankündigungsphase (siehe umfangreiche H2‑2026 Datacenter/Memory‑Ankündigungen), wodurch Ankündigungen allein keine verlässliche Indikation für tatsächliche kurzfristige Kapazitätsentlastung sind.  ",
+      "candidateId": "d7d5084da0b637dcf52d",
+      "candidateKey": "3a88f31b48aaf90906d61758",
+      "reviewedAt": "2026-09-30T16:53:21.409Z",
+      "priorityScore": 57,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e5e593dc5cf37f4006abd3e6d64ac87d08a212bb2ac86c5eb"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix erwägt US‑NAND‑Werk über Solidigm",
+      "fact": "Mehrere Medien zitieren einen Reuters‑Bericht (veröffentlicht 2026-09-18/19), wonach SK hynix über seine US‑Tochter Solidigm den Bau einer NAND‑Fabrik in den USA (u.a. Upstate New York als Kandidat) prüfe, um die Abhängigkeit von der Dalian‑Produktion zu reduzieren und Risiken durch Exportkontrollen/Handelsschutz zu mindern.",
+      "placement": "Geographie: USA (Upstate New York als möglicher Standort). Domain/Layer: NAND / Enterprise‑SSD Fertigung (Frontend/Foundry‑ähnlicher Standort). Horizont: mittel (Planungs-/Site‑Evaluierungsphase, keine FID/Shipments gemeldet).",
+      "mechanism": "Ein US‑Werk über Solidigm würde Solidigm/SK hynix front‑end‑Produktion näher an US/West‑Kunden bringen, die Abhängigkeit vom Dalian‑Werk (China) verringern, potenziell US‑Technologie‑Exportbeschränkungen umgehen und Käufervertrags‑Planbarkeit erhöhen. Das kann Verfügbarkeit (availability) regional verbessern und Preisspannungen auf Enterprise‑SSD/NAND beeinflussen.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signalisiert möglichen Verlagerungsdruck auf qualifizierten NAND‑Output in Richtung USA; wenn realisiert, könnte dies die Lieferantenallokation für Enterprise‑SSD verbessern und langfristig Abwärtsdruck auf regionale Allokationsknappheit ausüben (Availability → Entspannung in Zielregion; Pricing → moderater Preisdruck ab Realisierung/HVM‑Shipments).",
+      "falsifier": "Bis zum 2027-12-31 gibt es kein dokumentiertes, öffentliches FID (Final Investment Decision), kein benanntes Fertigungsstandort‑Lease/Grundkauf und keine bestätigten qualifizierten NAND‑Shipments aus einem neuen US‑Werk durch Solidigm/SK hynix. Falls bis 2027-12-31 mindestens eines dieser Ereignisse eintritt, schwächt das die Annahme, dass die Prüfung rein explorativ bleibt.",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-09-19",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 7,
+        "thesisRelevance": 13,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/18/sk-hynix-weighs-first-us-nand-plant-as-ai-demand-surges",
+          "label": "Seoul Economic Daily (engl.)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass SK hynix/Solidigm eine US‑NAND‑Fabrik prüfe; nennt Dalian‑Abhängigkeit und US‑Standortkandidaten."
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/sk-hynixs-solidigm-unit-is-weighing-nand-memory-chip-factory-in-us-sources-say-4906708",
+          "label": "Investing.com (Zitat Reuters)",
+          "kind": "secondary",
+          "supports": "Fasst Reuters‑Bericht zusammen: Solidigm prüft NAND‑Fabrik in den USA; Upstate New York genannt; strategische Motive (Dalian‑Diversifizierung, Exportkontrollen)."
+        },
+        {
+          "url": "https://www.koreajoongangdaily.com/business/sk-hynixs-solidigm-weighs-new-york-nand-factory/12882558",
+          "label": "Korea JoongAng Daily",
+          "kind": "secondary",
+          "supports": "Nennung derselben Prüfung und Nennung von Upstate New York als führendem Kandidaten; zitiert ‚drei mit der Angelegenheit vertraute Personen‘ und verweist auf Reuters."
+        },
+        {
+          "url": "https://www.techmeme.com/260918/p12",
+          "label": "Techmeme (Aggregat, verweist auf Reuters‑Snapshot)",
+          "kind": "secondary",
+          "supports": "Aggregiert Headlines, verweist auf Reuters als ursprüngliche Quelle für die Meldung vom 18./19. September 2026."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist aktuell und relevant für die OUTLOOK‑Enterprise‑SSD‑Dimension, aber sie bleibt in der vorliegenden Form explorativ und nicht‑atomar: Medienberichte verweisen (unter Berufung auf Reuters) auf interne Prüfungen/Quellen, es fehlt jedoch eine primäre, direkt zugängliche Firmenankündigung, ein FID, ein Standortvertrag oder qualifizierte Shipments, die einen messbaren, datierten Effekt auf Verfügbarkeit/Vertragspreise belegen. Die TAIL‑Aufnahmeanforderungen verlangen ein datiertes, quantifizierbares Faktum (mit Einheiten/Scope), eine klar abgegrenzte Platzierung, eine kausale Mechanismusbeschreibung und einen überprüfbaren Falsifier — mehrere dieser Elemente fehlen oder sind unbestätigt. Zudem konnte der (vermuteten) Primärartikel (Reuters) im Adversarial‑Check nicht unmittelbar als offene Primärquelle in diesem Review‑Prozess vollständig verifiziert werden (indirekte Reproduktion in mehreren Sekundärquellen vorhanden). Daher Einordnung auf Watchlist: beobachtenswert, weitere Primärverifikation (Reuters‑Originallink / direkte Firmenbestätigung / FID oder Lease) erforderlich, bevor ein Accepted‑Signal mit VERIFIED DATA möglich wäre.",
+      "candidateId": "1966ee753745977691f3",
+      "candidateKey": "9ecdeec30a0f6beb06a89596",
+      "reviewedAt": "2026-09-30T16:53:57.237Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0755153b61ea53c5006abd3e819fa887d09b863c685f94297b"
     }
   ]
 }

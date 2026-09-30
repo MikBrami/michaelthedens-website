@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T11:12:51.377Z",
+  "generatedAt": "2026-09-30T16:53:59.251Z",
   "platform": {
     "dataAsOf": "2026-09-30",
     "analysisAsOf": "2026-09-30",
@@ -8,18 +8,18 @@
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-09-30T11:12:49.727Z",
-      "pending": 112,
-      "reviewed": 95,
+      "checkedAt": "2026-09-30T16:53:57.272Z",
+      "pending": 116,
+      "reviewed": 97,
       "accepted": 10,
-      "rawCandidates": 502,
+      "rawCandidates": 513,
       "triage": {
         "archivedOpinions": 12,
         "groupedDuplicates": 26
       },
       "lastRun": {
-        "startedAt": "2026-09-30T11:12:04.961Z",
-        "completedAt": "2026-09-30T11:12:49.729Z",
+        "startedAt": "2026-09-30T16:52:59.783Z",
+        "completedAt": "2026-09-30T16:53:57.273Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 44,
+        "durationSeconds": 57,
         "budgetExhausted": false
       }
     },
@@ -73,15 +73,27 @@
     "riskPressure": 83,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-30; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (112 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-30; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (116 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
+    {
+      "date": "2026-09-30",
+      "title": "[News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
+      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 96,
+      "relevanceScore": 91,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOaTFNTlRrbTNLMzhNS2dtTmh4Tmo4N2h2aU9lR0ZXSEJETUdQbnNfU2JXZk9JWVNRSlhqZVNKc1lqNEQ4ZVBxOFA2SkVOeHh0SVJDTVhrOVVzYklCWjdWb3hwLW9yeVFIT1pPTUhtZVQ5ZGcyZVFfdGNmX3Q0T1BEWUxJR2c5Sno4d0FmYVhLYUJVMDZaQlpqQ0hmUWdZNGdjUHJTSzgtd3RpZ042dG1zbkFseFhxWTEtbFFiRDJGd0ZSNi1PaDhHTm5fRi1VQXRrQ1Q3TGFsR1pjRWdC?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-30",
       "title": "Netlist challenges Micron, Nvidia, Broadcom, Google over alleged HBM patent use",
       "summary": "Aktuelle Meldung von digitimes: Netlist challenges Micron, Nvidia, Broadcom, Google over alleged HBM patent use",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 97,
+      "score": 94,
       "relevanceScore": 100,
       "sourceQuality": 10,
       "source": "digitimes",
@@ -90,26 +102,14 @@
     },
     {
       "date": "2026-09-30",
-      "title": "Micron Embroiled in Patent Dispute Again: Netlist Seeks US Import Ban on Memory Involving Nvidia, Google, and Broadcom Products",
-      "summary": "Aktuelle Meldung von TradingKey: Micron Embroiled in Patent Dispute Again: Netlist Seeks US Import Ban on Memory Involving Nvidia, Google, and Broadcom Products",
+      "title": "YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
+      "summary": "Aktuelle Meldung von Pandaily: YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "TradingKey",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQkJTNDVsblFHa0NlMnFmM1FqOGltXzUyOFF0MkxtT2VvaFh1MnZiTXp1THc4VXQyaGJVM2FRbEJfOXR0eXVyZmRLd28yVk91VVp2bDJkRjU2Wl8tNHlCYjVmWmFibEkzaWZFbnhzdTNMUTdfaU1naVdRaGlfSG5qbV8ydkRGdEpmWVktTkI4dUdzQV9lZXhYdkxmSWEzS3lWc1MyZDByNTRxTFJSUjV4SlJqb2NKRjhMYTdQS1owWFJJd1NXZDVOUkNjLTh5dGNock5jUDBOdXdQZFdad2dJbw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-30",
-      "title": "Why TSMC’s capacity crunch opens the door for Samsung’s foundry",
-      "summary": "Aktuelle Meldung von theinvestor.co.kr: Why TSMC’s capacity crunch opens the door for Samsung’s foundry",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 86,
-      "relevanceScore": 90,
-      "sourceQuality": 6,
-      "source": "theinvestor.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBES2p0WmEzVEY5M0Q0YkN3MTdkeWs1TTA5ZnNlMnYycnJTc3pFaFZ4T0Z6S1JBeTQ5cUFOMnZra01vUTN4ci1xZk50NzQ0TE9Gc1hQVlNlekFHUQ?oc=5",
+      "source": "Pandaily",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOTZVNWdia1pPbFZRdlRKaHJUM2dYRVEwbDZ2YTJLVmMxVl9WOWQtWXllVW5VblN1MU1DclBPZzVOaXJ4X0hDVjNLQmlMLXZMaXhfQ2hLdmhqekNzeFRkcTZld2ZtZXhlM0N3VFVfcWpEOTdZcm41dUJ2dVpVb2c?oc=5",
       "layer": "news"
     }
   ],
@@ -144,15 +144,27 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "112 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "116 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
+    {
+      "date": "2026-09-30",
+      "title": "[News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
+      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 96,
+      "relevanceScore": 91,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOaTFNTlRrbTNLMzhNS2dtTmh4Tmo4N2h2aU9lR0ZXSEJETUdQbnNfU2JXZk9JWVNRSlhqZVNKc1lqNEQ4ZVBxOFA2SkVOeHh0SVJDTVhrOVVzYklCWjdWb3hwLW9yeVFIT1pPTUhtZVQ5ZGcyZVFfdGNmX3Q0T1BEWUxJR2c5Sno4d0FmYVhLYUJVMDZaQlpqQ0hmUWdZNGdjUHJTSzgtd3RpZ042dG1zbkFseFhxWTEtbFFiRDJGd0ZSNi1PaDhHTm5fRi1VQXRrQ1Q3TGFsR1pjRWdC?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-09-30",
       "title": "Netlist challenges Micron, Nvidia, Broadcom, Google over alleged HBM patent use",
       "summary": "Aktuelle Meldung von digitimes: Netlist challenges Micron, Nvidia, Broadcom, Google over alleged HBM patent use",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 97,
+      "score": 94,
       "relevanceScore": 100,
       "sourceQuality": 10,
       "source": "digitimes",
@@ -161,33 +173,21 @@
     },
     {
       "date": "2026-09-30",
-      "title": "Micron Embroiled in Patent Dispute Again: Netlist Seeks US Import Ban on Memory Involving Nvidia, Google, and Broadcom Products",
-      "summary": "Aktuelle Meldung von TradingKey: Micron Embroiled in Patent Dispute Again: Netlist Seeks US Import Ban on Memory Involving Nvidia, Google, and Broadcom Products",
+      "title": "YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
+      "summary": "Aktuelle Meldung von Pandaily: YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "TradingKey",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQkJTNDVsblFHa0NlMnFmM1FqOGltXzUyOFF0MkxtT2VvaFh1MnZiTXp1THc4VXQyaGJVM2FRbEJfOXR0eXVyZmRLd28yVk91VVp2bDJkRjU2Wl8tNHlCYjVmWmFibEkzaWZFbnhzdTNMUTdfaU1naVdRaGlfSG5qbV8ydkRGdEpmWVktTkI4dUdzQV9lZXhYdkxmSWEzS3lWc1MyZDByNTRxTFJSUjV4SlJqb2NKRjhMYTdQS1owWFJJd1NXZDVOUkNjLTh5dGNock5jUDBOdXdQZFdad2dJbw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-30",
-      "title": "Why TSMC’s capacity crunch opens the door for Samsung’s foundry",
-      "summary": "Aktuelle Meldung von theinvestor.co.kr: Why TSMC’s capacity crunch opens the door for Samsung’s foundry",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 86,
-      "relevanceScore": 90,
-      "sourceQuality": 6,
-      "source": "theinvestor.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBES2p0WmEzVEY5M0Q0YkN3MTdkeWs1TTA5ZnNlMnYycnJTc3pFaFZ4T0Z6S1JBeTQ5cUFOMnZra01vUTN4ci1xZk50NzQ0TE9Gc1hQVlNlekFHUQ?oc=5",
+      "source": "Pandaily",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOTZVNWdia1pPbFZRdlRKaHJUM2dYRVEwbDZ2YTJLVmMxVl9WOWQtWXllVW5VblN1MU1DclBPZzVOaXJ4X0hDVjNLQmlMLXZMaXhfQ2hLdmhqekNzeFRkcTZld2ZtZXhlM0N3VFVfcWpEOTdZcm41dUJ2dVpVb2c?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-30T11:12:51.622Z",
+    "generatedAt": "2026-09-30T16:53:59.491Z",
     "count": 3,
-    "candidateCount": 453,
+    "candidateCount": 504,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -402,10 +402,22 @@
   "originalSignals": [
     {
       "date": "2026-09-30",
+      "title": "[News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
+      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 96,
+      "relevanceScore": 91,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOaTFNTlRrbTNLMzhNS2dtTmh4Tmo4N2h2aU9lR0ZXSEJETUdQbnNfU2JXZk9JWVNRSlhqZVNKc1lqNEQ4ZVBxOFA2SkVOeHh0SVJDTVhrOVVzYklCWjdWb3hwLW9yeVFIT1pPTUhtZVQ5ZGcyZVFfdGNmX3Q0T1BEWUxJR2c5Sno4d0FmYVhLYUJVMDZaQlpqQ0hmUWdZNGdjUHJTSzgtd3RpZ042dG1zbkFseFhxWTEtbFFiRDJGd0ZSNi1PaDhHTm5fRi1VQXRrQ1Q3TGFsR1pjRWdC?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-09-30",
       "title": "Netlist challenges Micron, Nvidia, Broadcom, Google over alleged HBM patent use",
       "summary": "Aktuelle Meldung von digitimes: Netlist challenges Micron, Nvidia, Broadcom, Google over alleged HBM patent use",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 97,
+      "score": 94,
       "relevanceScore": 100,
       "sourceQuality": 10,
       "source": "digitimes",
@@ -414,26 +426,14 @@
     },
     {
       "date": "2026-09-30",
-      "title": "Micron Embroiled in Patent Dispute Again: Netlist Seeks US Import Ban on Memory Involving Nvidia, Google, and Broadcom Products",
-      "summary": "Aktuelle Meldung von TradingKey: Micron Embroiled in Patent Dispute Again: Netlist Seeks US Import Ban on Memory Involving Nvidia, Google, and Broadcom Products",
+      "title": "YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
+      "summary": "Aktuelle Meldung von Pandaily: YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "TradingKey",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQkJTNDVsblFHa0NlMnFmM1FqOGltXzUyOFF0MkxtT2VvaFh1MnZiTXp1THc4VXQyaGJVM2FRbEJfOXR0eXVyZmRLd28yVk91VVp2bDJkRjU2Wl8tNHlCYjVmWmFibEkzaWZFbnhzdTNMUTdfaU1naVdRaGlfSG5qbV8ydkRGdEpmWVktTkI4dUdzQV9lZXhYdkxmSWEzS3lWc1MyZDByNTRxTFJSUjV4SlJqb2NKRjhMYTdQS1owWFJJd1NXZDVOUkNjLTh5dGNock5jUDBOdXdQZFdad2dJbw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-30",
-      "title": "Why TSMC’s capacity crunch opens the door for Samsung’s foundry",
-      "summary": "Aktuelle Meldung von theinvestor.co.kr: Why TSMC’s capacity crunch opens the door for Samsung’s foundry",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 86,
-      "relevanceScore": 90,
-      "sourceQuality": 6,
-      "source": "theinvestor.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBES2p0WmEzVEY5M0Q0YkN3MTdkeWs1TTA5ZnNlMnYycnJTc3pFaFZ4T0Z6S1JBeTQ5cUFOMnZra01vUTN4ci1xZk50NzQ0TE9Gc1hQVlNlekFHUQ?oc=5",
+      "source": "Pandaily",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOTZVNWdia1pPbFZRdlRKaHJUM2dYRVEwbDZ2YTJLVmMxVl9WOWQtWXllVW5VblN1MU1DclBPZzVOaXJ4X0hDVjNLQmlMLXZMaXhfQ2hLdmhqekNzeFRkcTZld2ZtZXhlM0N3VFVfcWpEOTdZcm41dUJ2dVpVb2c?oc=5",
       "layer": "news"
     }
   ]
