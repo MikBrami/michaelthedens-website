@@ -49999,6 +49999,162 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0755153b61ea53c5006abd3e819fa887d09b863c685f94297b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron beats on earnings und meldet starken Ausblick; Data‑Center‑Umsatz behauptet 11‑fachen Anstieg (unverifiziert)",
+      "fact": "Bericht (angegeben: CNBC) behauptet, Micron habe die Gewinnerwartungen übertroffen, starken Guidance ausgegeben und der Data‑Center‑Umsatz sei um das 11‑fache gestiegen.",
+      "placement": "Global / Unternehmens‑Earnings / Micron (Quarterly earnings release).",
+      "mechanism": "Falls korrekt: Starkes Data‑Center‑Umsatzwachstum steigert kurzfristig die Nachfrage nach HBM/Server‑DRAM und verschärft Verfügbarkeits‑/Allokationsdruck bei hochwertigen Memory‑Produkten, wodurch Vertrags‑ und Spotpreise steigen können.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "demand_up",
+      "falsifier": "Bis 2026-10-31 publizierte, geprüfte Quartalsabschlüsse oder Form‑8/K‑Berichte von Micron zeigen nicht, dass ein Data‑Center‑Umsatzanstieg in der berichteten Größenordnung (≈11x YoY oder klarer 10x+ Sprung) ausgewiesen wird, oder Micron korrigiert/relativiert die Behauptung öffentlich.",
+      "nextReview": "2026-10-07",
+      "eventDate": "2026-09-30",
+      "novelty": "Mittel (behauptet starke, aktuelle Daten‑Center‑Umsatzbeschleunigung über Earnings‑Ankündigung).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "server_dram",
+        "dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx",
+          "label": "Micron Investor Relations — Q3/Fiscal 2026 results (press release) — public company primary source (attempted verification).",
+          "kind": "primary",
+          "supports": "Micron veröffentlicht Quartalsergebnisse und nennt Rekordumsatz; die Pressemitteilungen in 2026 belegen große Umsatzsprünge im Memory‑Bereich, aber die spezifische Formulierung 'data center revenue jumps 11‑fold' sowie das CNBC‑Originalzitat konnten nicht auf der CNBC‑Seite oder in der Form 8/K/10‑Q bestätigt werden."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/a2026q3ex991-pressrelease.htm",
+          "label": "SEC Exhibit (Micron press release) — filing copy of press material.",
+          "kind": "primary",
+          "supports": "SEC‑Archiv enthält Micron‑Pressrelease‑Exhibit mit Quartalsergebnissen. Enthält Umsatzzahlen, jedoch fehlt ein eindeutig verifizierbarer Satz im Wortlaut, der das behauptete 11‑fach‑Wachstum exakt so dokumentiert."
+        }
+      ],
+      "reason": "Der Kandidat verweist auf einen CNBC‑Artikel (angegeben über ein Google News RSS‑Feed). Unsere Erstprüfung fand Micron‑Pressemitteilungen und SEC‑Exhibits mit starken Quartalszahlen und bedeutendem Data‑Center‑Umsatzwachstum (Micron veröffentlicht Rekordergebnisse in 2026), aber ich konnte die behauptete CNBC‑Formulierung und die exakte Metrik 'Data‑Center‑Umsatz springt 11‑fach' nicht eindeutig im Original‑CNBC‑Artikel, in einer verbindlichen Micron‑Form‑8/K‑ oder 10‑Q‑Erklärung oder in der Pressemitteilung mit dem Datum 2026‑09‑30 nachweisen. Ohne direkten Primärnachweis der exakten Zahl und des Publikationsdatums (Quelle: CNBC‑Artikel‑URL / CNBC‑Seite mit Timestamp und zitierbarem Satz), erfüllt die Beobachtung nicht die TAIL‑Annahmekriterien für Verified Data. Außerdem besteht ein Risiko, dass die Kandidat‑URL (Google News RSS) eine aggregierte/umgeschriebene Headline ist oder eine falsche Datumszuordnung enthält. Es gibt kein gegenteiliges, klar widerrufendes Primärdokument, aber die fehlende Primärquelle und der mögliche Datumskonflikt erfordern Watchlist statt Annahme. Nächster Schritt: direkte Erfassung des Original‑CNBC‑Artikels (URL + verifizierbarer Textausschnitt), Micron‑Investor‑PDF mit den ausgewiesenen 'Core Data Center' Zahlen für das fragliche Quartal und (falls vorhanden) US‑SEC‑Einsendung mit definitiven Zahlen und Datum; bis dahin bleibt der Kandidat NOT PROVEN.\n\nOpposing evidence / Kontext: Micron veröffentlichte bereits im Juni 2026 starke Quartalszahlen (Pressrelease vom 2026‑06‑24) mit signifikantem Data‑Center‑Umsatzwachstum in offiziellen Unterlagen; das legt nahe, dass Aussagen über sehr hohes Data‑Center‑Wachstum plausibel sind, aber die exakte 11‑fach‑Formulierung und das behauptete Veröffentlichungsdatum 2026‑09‑30 konnten nicht bestätigt werden. Ohne das Original‑CNBC‑Stück ist die Behauptung nicht vollständig verifizierbar und könnte eine Rekombination älterer Presseangaben sein.\n\nEmpfohlenes Follow‑Up vor endgültiger Aufnahme: Abruf und Archivierung des originalen CNBC‑Artikels (mit URL und timestamp), Vergleich mit Micron‑Q‑Factsheet (Core Data Center Business Unit revenue by quarter) und, falls vorhanden, die offizielle SEC‑Einsendung für das entsprechende Quartal mit den berichteten Segmentzahlen. Falls CNBC‑Zitat korrekt und Primärzahlen in Micron‑Docs übereinstimmen, kann die Beobachtung als VERIFIED DATA und Signal (demand_up) angenommen werden; andernfalls Ablehnung wegen Duplikat/Fehler.",
+      "candidateId": "b0ed5420fd1dae304234",
+      "candidateKey": "163d6818056148fd0b43bd73",
+      "reviewedAt": "2026-09-30T21:29:18.764Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "missing predictionImpact",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02c0787cd0c23eef006abd7f0bc8cc87d285e6059c98b0e76b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: TSMC und Samsung verpflichten sich zu ASML High‑NA (≈$400M) — Primärquelle fehlt",
+      "fact": "Mehrere Nachrichtenartikel berichten, dass TSMC und Samsung sich im September 2026 zur Einführung von ASMLs High‑NA EUV‑Scannern (Preisangaben ~US$380–400 Mio. pro Maschine) verpflichtet haben; Artikel nennen Deploy‑Zeithorizonte (Samsung: 2028 für DRAM; TSMC: Volumenproduktion ab 2030) und eine Branchenvereinbarung zur Umstellung auf 12‑Zoll‑Photomasken.",
+      "placement": "Globale Halbleiterfertigung; relevante Domänen: Advanced Nodes (TSMC), DRAM/Packaging (Samsung); geographische Reichweite: Taiwan und Südkorea (plus globale ASML‑Lieferkette).",
+      "mechanism": "Adoption von ASMLs High‑NA EUV reduziert lithographische Grenzeffekte für extrem dichte AI‑Accelerator‑Dies und ermöglicht direkte Produktion höher transistorendichter Designs (weniger Multi‑Patterning), wodurch technischer Engpass bei feineren Nodes/Chipgrößen adressiert wird. Dies erhöht die benötigte High‑NA‑Tool‑Beschaffung (CapEx/Tool‑Zuteilung) und verknüpft Photomask‑Standards (6\" → 12\") mit längeren Qualifikations‑ und Lieferzeiten.",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Informiert das Risiko, dass Advanced Packaging/CoWoS‑SoIC‑Lead‑Times bis H2 2027 ein zentraler Engpass bleiben. Falls High‑NA‑Adoption früher breit greift, könnte dies mittelfristig Druck auf Advanced‑Packaging‑Knappheit mildern; aktuell fehlt aber ein sofortiger Verfügbarkeitsnachweis.",
+      "falsifier": "Bis 2027-12-31: TSMC und Samsung veröffentlichen keine verbindlichen Bestell‑/Liefer‑ oder Qualifikationsdaten (konkrete Bestellmengen, Lieferfenster oder ASML‑Shipping‑/HVM‑Qualifikationsdaten) für High‑NA; oder ASML meldet, dass keine der beiden Firmen bis zu diesem Datum High‑NA‑Systeme für HVM ausgeliefert/qualifiziert hat.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-19",
+      "novelty": "Moderat — Thema (High‑NA) war in der Branche bekannt; Neu ist die Berichterstattung über koordinierte Commitments und Masken‑Roadmap.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://startupfortune.com/tsmc-and-samsung-just-admitted-they-need-asmls-400-million-machine/",
+          "label": "Startup Fortune — Kandidatenquelle (angegebener Artikel)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass TSMC und Samsung sich zur Einführung von ASML High‑NA verpflichteten; nennt Preisangabe ~US$400M und Zeitachsen."
+        },
+        {
+          "url": "https://arstechnica.com/gadgets/2026/09/top-chipmakers-embrace-asmls-400m-machines-agree-to-crucial-chipmaking-change/",
+          "label": "Ars Technica",
+          "kind": "secondary",
+          "supports": "Fasst Berichte zusammen, dass mehrere große Foundries High‑NA‑EUV einführen und nennt Kostenrahmen; unabhängige Branchen‑Berichterstattung."
+        },
+        {
+          "url": "https://qz.com/tsmc-samsung-asml-high-na-euv-ai-chips-090826",
+          "label": "Quartz",
+          "kind": "secondary",
+          "supports": "Berichtet über Commitments und konkrete Zieljahre (Samsung 2028 für DRAM; TSMC 2030 für HVM)."
+        },
+        {
+          "url": "https://www.taipeitimes.com/News/biz/archives/2026/09/09/2003863914",
+          "label": "Taipei Times",
+          "kind": "secondary",
+          "supports": "Länderspezifische Bestätigung der Zieljahre und des Bedarfs an High‑NA für fortgeschrittene Fertigung."
+        }
+      ],
+      "reason": "Die eingereichte Meldung zitiert korrekte, in der Branche berichtete Commitments zu ASMLs High‑NA EUV und nennt Preisschätzungen und taktische Zeithorizonte. Zur TAIL‑Admission sind jedoch die geforderten Primärverifizierungen nicht vorhanden: es fehlt ein direktes Primärdokument (z. B. ASML‑Pressemitteilung, offizielle Statements/SEC/IR‑Dokumente von TSMC oder Samsung, oder ASML‑Shipping/Order‑Dataset) das die konkreten Bestellungen, Liefermengen, verbindliche Zeitpläne oder qualifizierten HVM‑Shipments belegt. Ohne diese atomic, datierten Primärbelege kann die Aussage nicht als VERIFIED DATA angenommen werden. Risiken/ Gegenbelege: frühere Berichte zeigten TSMC‑Zögerlichkeit gegenüber High‑NA wegen Kosten/Produktivitäts‑Tradeoffs; das legt nahe, dass Medien‑“Commitments” operative Details verschleiern können. Empfehlung: Watchlist — fordere primäre Bestell‑/Liefer‑ oder Qualifikationsnachweise zur Bestätigung (ASML/TSMC/Samsung IR‑Pressemeldung oder ASML Order/Shipment‑Statement, datiert).",
+      "candidateId": "fed56ef720478dd0def6",
+      "candidateKey": "6024c4c4c6d51a8a69814a0e",
+      "reviewedAt": "2026-09-30T21:29:44.466Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_06c77b52e19b8165006abd7f2ef15887d28d721416d123b053"
     }
   ]
 }
