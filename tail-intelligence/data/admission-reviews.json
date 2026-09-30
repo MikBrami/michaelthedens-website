@@ -49525,6 +49525,130 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0f408a859fa85ade006abc2d0aa0a487d199f1b7ce49b242a5"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Netlist reicht ITC‑Beschwerde gegen Micron zu HBM ein; Klageeingang am 2026-09-29 — vor Micron‑Earnings",
+      "fact": "Netlist hat am 2026-09-29 eine neue Beschwerde vor der U.S. International Trade Commission (Section 337) gegen Micron eingereicht, mit Ziel, Importe bestimmter HBM‑Produkte zu sperren; die Meldung erschien unmittelbar vor Microns Fiskal‑Q4/2026‑Earnings (Berichtsdatum 2026-09-30).",
+      "placement": "Geographie: USA (ITC/Importbeschränkung); Domain/Layer: HBM‑Produkt‑Layer in AI‑Server‑Supply‑Chains; Horizont: Kurzfristig (Q4 2026) für Rechtsrisiken, mittelfristig 2027–2028 für eventuelle Handelsverbote oder Lieferunterbrechungen.",
+      "mechanism": "Rechtliche Behinderung des Importpfads (ITC‑Section‑337‑Untersuchung → mögliche Einfuhrverbote / exclusion orders) könnte die Verfügbarkeit bestimmter Micron‑HBM‑Produkte in den USA verzögern; dies wirkt durch Kundenallokation (Nvidia/Google/Broadcom) auf AI‑Server‑HBM‑Supply und damit potenziell auf Server‑DRAM/HBM‑Allokation und Preise.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Signal erhöht kurzfristige Verunsicherung im HBM/Server‑DRAM‑Availability‑Ausblick (P-2026-07-11-01), indem ein juristisches Disruptionsrisiko für Micron‑HBM‑Imports in die USA sichtbar wird; Wirkung ist jedoch unbestätigt und nicht automatisch ein tatsächlicher Lieferausfall.",
+      "falsifier": "Wenn die ITC binnen 180 Tagen (bis 2027-03-28) keine Durchführungsmaßnahme (Investigation eröffnet und späteren Ausschlussbefehl) erlässt oder eine Untersuchung eingestellt wird, reduziert das die Wahrscheinlichkeit, dass die Beschwerde merklich die Verfügbarkeit von HBM‑Produkten in 2027 beeinträchtigt. Konkreter Test: Keine verhängten Import‑Exclusion‑Orders gegen Micron HBM bis 2027-03-28.",
+      "nextReview": "2027-03-29",
+      "eventDate": "2026-09-29",
+      "novelty": "Moderate — es ist ein neues ITC‑Filing (2026-09-29) gegen Micron; Netlist hat aber eine längere Rechtsgeschichte gegen Micron, sodass die Klage‑Taktik nicht neu ist.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 9,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 35,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/micron-s-512gb-memory-feat-meets-a-netlist-import-challenge-as-earnings/70200930",
+          "label": "AD HOC NEWS — 'Micron's 512GB Memory Feat Meets a Netlist Import Challenge as Earnings Loom' (English/German summary)",
+          "kind": "secondary",
+          "supports": "Kontextualisiert die Netlist‑Beschwerde als 'landed on Micron's earnings eve' (wurde am 29.09.2026 publiziert) und berichtet, dass Analysten den Rechtsfall kurzfristig als nicht marktbewegend einordnen."
+        }
+      ],
+      "reason": "Die eingereichte ITC‑Beschwerde ist ein klar datiertes, potenziell marktrelevantes Signal (2026-09-29), das Rechtsrisiken für Microns HBM‑Imports in die USA aufzeigt. Für eine Aufnahme als VERIFIED DATA / Accepted fehlen jedoch direkt nachweisbare, gebundene Marktwirkungen (z. B. ein ITC‑Ausschlussbeschluss, dokumentierte Qualifikations‑/Shipments‑Ausfälle, bestätigte Kunden‑Allokationsänderungen oder ein direkter, quantifizierter Einfluss auf HBM‑Shipments/Lead‑Times). Opposing Evidence (Micron‑/Regulatory‑History) zeigt, dass Netlist und Micron bereits mehrere Rechtsfälle hatten, einige Erfolge und viele Abwehrentscheidungen auf beiden Seiten – das reduziert die unmittelbare Eskalationswahrscheinlichkeit. Deshalb: Watchlist. Wenn die ITC binnen 180 Tagen eine Untersuchung eröffnet und/oder importbezogene Durchführungsmaßnahmen trifft, ist ein Upgrade zu akzeptieren; falls die Beschwerde eingestellt oder vor Gericht zurückgewiesen wird, sollte sie archiviert/abgelehnt werden.",
+      "candidateId": "a7066e3817615e0bd7bd",
+      "candidateKey": "502943f759f3198aed9e5bf5",
+      "reviewedAt": "2026-09-30T02:11:13.160Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a464cf5e880d5f1006abc6fa70c8087d091a2720194f7c0a5"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT plant Einstieg in NAND‑Flash (Bericht: Reuters, 2026‑09‑18) — R&D‑Linie angekündigt, keine qualifizierten Shipments",
+      "fact": "Berichte (Reuters) vom 2026-09-18 melden, dass ChangXin Memory Technologies (CXMT) plant, an seinem neuen Standort in Peking eine Forschungs‑ und Entwicklungs‑Produktionslinie für 3D‑NAND (NAND‑Flash) einzurichten, um in den NAND/SSD‑Markt zu expandieren und mit Samsung & YMTC zu konkurrieren.",
+      "placement": "Geographie: Peking, China; Domäne: NAND / Enterprise‑SSD / Halbleiter‑Fertigung; Layer: Fabrik‑/Front‑End R&D‑Produktionslinie; Horizon: unbestimmte zukünftige Produktionsphase (R&D → Pilot → qualifizierte Produktion).",
+      "mechanism": "Unternehmens‑Fabs in Peking sollen eine R&D‑Produktionslinie für 3D‑NAND aufbauen; bei erfolgreichem Übergang von R&D zu Pilot/Qualifikation würde dies zusätzliche NAND‑Bit‑Output (Enterprise‑SSD relevante NAND‑Wafers/Monat) schaffen und Wettbewerbsdruck auf etablierte Anbieter (Samsung, YMTC) erhöhen.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Dieses Signal könnte das OUTLOOK-enterprise_ssd‑Szenario beeinflussen, weil ein neuer NAND‑Produzent in China die langfristige Bit‑Verfügbarkeit und damit Preise/Fill‑Rates verändern würde — aber der vorliegende Bericht beschreibt nur Pläne/R&D, keine qualifizierten Lieferungen, deshalb ist die Auswirkung derzeit unsicher.",
+      "falsifier": "Bis 2027-06-30 keine nachprüfbare Pilot‑ oder qualifizierte NAND‑Shipment‑Messung (z. B. Ankündigung von ersten qualifizierten NAND‑Wafers/Monat, öffentliche Kunde/Produkt‑Integration mit messbaren Stückzahlen oder offizielle Angabe zu NAND‑Waferoutput/Monat). Falls qualifizierte Shipments/First‑Customer‑Shipments (FCS) für NAND von CXMT vor oder am 2027-06-30 öffentlich bestätigt werden, würde dies den Hinweis entlasten; wenn bis dahin weiterhin nur R&D‑Ankündigungen vorliegen, bleibt der Tipp unbewiesen.",
+      "nextReview": "2027-07-15",
+      "eventDate": "2026-09-18",
+      "novelty": "CXMT wird bislang vorwiegend mit DRAM/Server‑DRAM in Verbindung gebracht; die Berichte über einen konkreten R&D‑NAND‑Plan sind neu und relevant für NAND/Enterprise‑SSD‑Ausblick (aber nicht neu als Gerücht — Primärquelle ist eine Reuters‑Exklusivmeldung).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Die eingereichte Meldung ist eine glaubwürdige, gut‑quellige Nachricht (Reuters) über CXMT‑Pläne zur Forschung/Initialproduktion von NAND in Peking. Sie belegt jedoch kein konkretes, datiertes, qualifiziertes Output‑Signal (Shipment, Wafer/Monat oder bestätigte Kundenlieferung). Nach den TAIL‑Aufnahmeregeln fehlt damit die atomare, datierte Messung mit Einheiten, die für eine Aufnahme als VERIFIED DATA oder direkte Index‑Impact nötig wäre. Deshalb wird die Meldung als Watchlist‑Signal aufgenommen: relevant für Verfügbarkeit (availability) des NAND/Enterprise‑SSD‑Marktes, aber derzeit nicht bewiesen. Opposing Evidence / Risiken: zahlreiche Folgeberichte und Marktdaten zeigen weiterhin, dass NAND‑Knappheit und etablierte Hersteller (Samsung, Kioxia, YMTC, Micron) kurzfristig dominieren; frühe R&D‑Ankündigungen können Jahrzehnte an Realisierungsunsicherheit enthalten. Wir empfehlen erneute Überprüfung nach einem klaren Pilot‑Shipment‑Nachweis oder CXMT‑Offenlegung quantifizierter NAND‑Wafer‑Output‑Zahlen.",
+      "candidateId": "e5effaad59725fca46fc",
+      "candidateKey": "7d4fe320c3a4c4f751ceda2a",
+      "reviewedAt": "2026-09-30T02:11:36.371Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b218684a2904564006abc6fc1771c87d092a1411f2b0c0a1b"
     }
   ]
 }
