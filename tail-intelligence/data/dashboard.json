@@ -7,29 +7,29 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-30T02:11:36.394Z",
-    "inboxUpdatedAt": "2026-09-30T02:06:50.132Z",
+    "checkedAt": "2026-09-30T11:12:49.727Z",
+    "inboxUpdatedAt": "2026-09-30T11:09:41.738Z",
     "status": "pending",
-    "candidates": 198,
-    "reviewed": 93,
-    "accepted": 9,
-    "watchlist": 81,
+    "candidates": 204,
+    "reviewed": 95,
+    "accepted": 10,
+    "watchlist": 82,
     "rejected": 3,
-    "pending": 108,
-    "oldestPendingAt": "2026-09-19T04:58:57.000Z",
-    "lastCompletedReviewAt": "2026-09-30T02:11:36.371Z",
+    "pending": 112,
+    "oldestPendingAt": "2026-09-19T07:05:00.000Z",
+    "lastCompletedReviewAt": "2026-09-30T11:12:49.701Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 490,
+    "rawCandidates": 502,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
       "archivedOpinions": 12,
-      "groupedDuplicates": 25
+      "groupedDuplicates": 26
     },
     "lastRun": {
-      "startedAt": "2026-09-30T02:10:45.412Z",
-      "completedAt": "2026-09-30T02:11:36.397Z",
+      "startedAt": "2026-09-30T11:12:04.961Z",
+      "completedAt": "2026-09-30T11:12:49.729Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 51,
+      "durationSeconds": 44,
       "budgetExhausted": false
     }
   },
@@ -92,15 +92,15 @@
     }
   ],
   "sourceDataAsOf": "2026-09-29",
-  "knowledgeBaseSyncedAt": "2026-09-30T02:11:36.571Z",
+  "knowledgeBaseSyncedAt": "2026-09-30T11:12:49.901Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 1,
-  "lastSuccessfulUpdate": "2026-09-30T02:11:38.035Z",
-  "lastForecastRun": "2026-09-30T02:11:38.035Z",
-  "newlyProcessedArticles": 74,
-  "totalArticles": 192,
-  "articleCount": 192,
+  "lastSuccessfulUpdate": "2026-09-30T11:12:51.375Z",
+  "lastForecastRun": "2026-09-30T11:12:51.375Z",
+  "newlyProcessedArticles": 151,
+  "totalArticles": 193,
+  "articleCount": 193,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -154,16 +154,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 108 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 112 Kandidaten ausstehend.",
     "12 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-09-30T02:06:50.132Z",
-    "newItems": 74,
-    "totalItems": 9908,
+    "updatedAt": "2026-09-30T11:09:41.738Z",
+    "newItems": 151,
+    "totalItems": 10059,
     "duplicateItems": 300,
-    "relevantItems": 3221,
+    "relevantItems": 3268,
     "sourceErrors": []
   },
   "pipeline": {
@@ -173,19 +173,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "93 geprüft · 108 offen · 9 aufgenommen"
+        "detail": "95 geprüft · 112 offen · 10 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "192 Artikel · Sync 2026-09-30 · jüngstes bestätigtes Signal 2026-09-29"
+        "detail": "193 Artikel · Sync 2026-09-30 · jüngstes bestätigtes Signal 2026-09-29"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "9908 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "10059 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -768,7 +768,7 @@
     {
       "name": "Micron",
       "score": 76,
-      "mentions": 16
+      "mentions": 17
     },
     {
       "name": "Intel",
@@ -798,7 +798,7 @@
     {
       "name": "Nvidia",
       "score": 68,
-      "mentions": 25
+      "mentions": 26
     },
     {
       "name": "ZTE",
@@ -976,7 +976,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-09-30T02:11:38.029Z"
+      "lastUpdated": "2026-09-30T11:12:51.369Z"
     },
     {
       "id": "hbm",
@@ -984,7 +984,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 74,
-      "confidenceScore": 83,
+      "confidenceScore": 82,
       "horizon": "2026–2028",
       "direction": "up",
       "keyThesis": "HBM bleibt durch AI-Plattformbindung, Yield, Layer-Komplexität und Packaging der härteste Memory-Engpass.",
@@ -1145,6 +1145,7 @@
         "S-AUTO-7ea2d4dab07159b5ac2f8d0a",
         "S-AUTO-303b216471b2e1ee1e3bea79",
         "S-AUTO-590e3b6e0abcd5843f2d11c7",
+        "S-AUTO-4e44585aae5cd84296963612",
         "S-AUTO-84351dc941259805a65972ee",
         "S-AUTO-28b329255578ff6a8943398e",
         "S-AUTO-2fbda9055add9061096f0742",
@@ -1163,7 +1164,7 @@
         "S-AUTO-965c715ae023d058ae2744d3",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-09-30T02:11:38.030Z"
+      "lastUpdated": "2026-09-30T11:12:51.369Z"
     },
     {
       "id": "nand",
@@ -1249,7 +1250,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-30T02:11:38.030Z"
+      "lastUpdated": "2026-09-30T11:12:51.369Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1330,7 +1331,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-30T02:11:38.030Z"
+      "lastUpdated": "2026-09-30T11:12:51.369Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1338,7 +1339,7 @@
       "status": "orange",
       "momentum": "⬆️⬆️",
       "relevanceScore": 74,
-      "confidenceScore": 83,
+      "confidenceScore": 82,
       "horizon": "2026–2030+",
       "direction": "up",
       "keyThesis": "AI Infrastructure wird durch Power, Datacenter-Kapazität, HBM, DRAM, eSSD und geopolitische Lieferketten begrenzt.",
@@ -1604,6 +1605,7 @@
         "S-AUTO-303b216471b2e1ee1e3bea79",
         "S-2026-08-06-05",
         "S-2026-07-25-04",
+        "S-AUTO-4e44585aae5cd84296963612",
         "S-AUTO-a6c70a747ea255eaf37c4e9a",
         "S-AUTO-1f5416a86dfb05f731ab0757",
         "S-AUTO-64bb30d24aff52312b465626",
@@ -1643,7 +1645,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-09-30T02:11:38.030Z"
+      "lastUpdated": "2026-09-30T11:12:51.369Z"
     }
   ],
   "indexCalculation": {
@@ -1652,7 +1654,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-09-30"
   },
-  "executiveSummary": "TAIL steht auf 76/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 192 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 76/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 193 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",

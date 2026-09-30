@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T02:11:36.571Z",
+  "updatedAt": "2026-09-30T11:12:49.901Z",
   "previousRun": "2026-09-29",
   "executivePulse": {
     "current": 76,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 76,
     "previous": 76,
-    "interpretation": "Datenvertrauen 76/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 108 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 76/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 112 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 83,
     "previous": 83
   },
-  "momentum": "Evidenzprüfung offen: 108 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 112 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,6 +527,72 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-4e44585aae5cd84296963612",
+      "title": "Netlist reicht ITC‑Beschwerde gegen Micron ein und benennt Nvidia, Broadcom, Google als Downstream‑Respondents (HBM‑Patente).",
+      "date": "2026-09-29",
+      "admittedAt": "2026-09-30T11:12:32.486Z",
+      "fact": "Netlist hat eine neue ITC‑Untersuchung eingeleitet und beantragt Ausschluss‑ und Unterlassungsanordnungen gegen Micron Technology, Inc. sowie gegen nachgeschaltete Kunden/Respondents Nvidia, Broadcom und Google wegen angeblicher Verletzung von HBM‑Patenten.",
+      "placement": "Vereinigte Staaten — United States International Trade Commission (ITC); Rechtsverfahren gegen Import/Vertrieb von HBM/Memory‑Produkten; kurzfristige Handels-/Importwirkung erwartet.",
+      "tailInference": "Netlist beantragt formelle ITC‑Exklusions‑ und Cease‑and‑Desist‑Orders; falls gewährt, würden betroffene HBM‑Module oder Systeme mit angeblich verletzenden Komponenten vom US‑Markt ausgeschlossen oder der Import blockiert, was die verfügbare HBM‑Versorgung für US‑Cloud/Hyperscaler kurzfristig reduziert und Allokationen/Qualifikationen beeinträchtigt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Verschärfung der Verfügbarkeits‑/Knappheitsdynamik für HBM und Server‑DRAM bis 2027 (unterstützt das Basispredikat, dass HBM/Server‑DRAM strukturell knapp bleiben).",
+      "falsifier": "Bis 2027-03-31 wird kein ITC‑Ausschluss oder zugehörige Unterlassungsanordnung gegen importierte Micron‑HBM‑Produkte erlassen und/oder die ITC‑Beschwerde wird formell zurückgezogen oder durch schiedsweise Lizenzvereinbarungen ersetzt, die keine Import‑/Vertriebsbeschränkung in den USA erzeugen.",
+      "nextReview": "2027-03-31",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 13,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 55,
+      "confidence": 70,
+      "markets": [
+        "hbm",
+        "server_dram",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "signal": "negative_supply",
+      "driverScope": [
+        "availability"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Netlist press release / PR Newswire: Netlist files new ITC action against Micron involving HBM patents",
+          "url": "https://www.prnewswire.com/news-releases/netlist-files-new-itc-action-against-micron-technology-inc-involving-hbm-patents-for-ai-computing-302892194.html"
+        },
+        {
+          "label": "Netlist Form 10‑Q / SEC (contingencies and litigation disclosures)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926094127/nlst-20260627x10q.htm"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Verschärfung der Verfügbarkeits‑/Knappheitsdynamik für HBM und Server‑DRAM bis 2027 (unterstützt das Basispredikat, dass HBM/Server‑DRAM strukturell knapp bleiben)."
+      },
+      "admissionReviewKey": "4e44585aae5cd84296963612"
     }
   ],
   "predictionLogUpdates": [
@@ -641,15 +707,42 @@
     "date": "2026-09-30",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
-    "note": "Evidenzprüfung offen: 108 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 86,
+    "note": "Evidenzprüfung offen: 112 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-09-30T02:11:36.571Z",
+    "generatedAt": "2026-09-30T11:12:49.901Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-09-30T02:06:50.132Z",
-    "inboxNewItems": 74,
+    "inboxUpdatedAt": "2026-09-30T11:09:41.738Z",
+    "inboxNewItems": 151,
     "highRelevanceCandidates": [
+      {
+        "id": "d1eb4d08d6620f7d128b",
+        "title": "Netlist challenges Micron, Nvidia, Broadcom, Google over alleged HBM patent use",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSmFMc2kxc18zMEVTNHlucE9pb1hFaS1WZU5KWWY4VGJsRWhhdnVsTWE4Y1dVZDE0OS1YdnA3VFJJc1Z0QW9IZUNORE9obnNQVTlDWGRlZjBhQjBwV1RtRnBfNW5uS2VGSTFIc2FlZmp2eFdESF82VGtTdnRxMzFvMExYZGl2Sjktbjl5NQ?oc=5",
+        "source": "digitimes",
+        "summary": "Aktuelle Meldung von digitimes: Netlist challenges Micron, Nvidia, Broadcom, Google over alleged HBM patent use",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-30T08:42:54.000Z"
+      },
+      {
+        "id": "01fd64274218b3d990a9",
+        "title": "Micron Embroiled in Patent Dispute Again: Netlist Seeks US Import Ban on Memory Involving Nvidia, Google, and Broadcom Products",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQkJTNDVsblFHa0NlMnFmM1FqOGltXzUyOFF0MkxtT2VvaFh1MnZiTXp1THc4VXQyaGJVM2FRbEJfOXR0eXVyZmRLd28yVk91VVp2bDJkRjU2Wl8tNHlCYjVmWmFibEkzaWZFbnhzdTNMUTdfaU1naVdRaGlfSG5qbV8ydkRGdEpmWVktTkI4dUdzQV9lZXhYdkxmSWEzS3lWc1MyZDByNTRxTFJSUjV4SlJqb2NKRjhMYTdQS1owWFJJd1NXZDVOUkNjLTh5dGNock5jUDBOdXdQZFdad2dJbw?oc=5",
+        "source": "TradingKey",
+        "summary": "Aktuelle Meldung von TradingKey: Micron Embroiled in Patent Dispute Again: Netlist Seeks US Import Ban on Memory Involving Nvidia, Google, and Broadcom Products",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-30T07:26:15.000Z"
+      },
+      {
+        "id": "8186e416bcaa8fb37594",
+        "title": "Netlist seeks import ban on Micron DRAM, Google, Nvidia, Broadcom products",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQU1oQ2Zvdkp3QWszSmtJaWM2Z0ZWd0NITGt1WF94dU5Hdl9HQU40SG9oeGVRaGFmcmdVVjlIMnBDUkhoa052YURnLUNIMTBBaVVwaUFaaExWWFNZOUJTQTNSRkdwclRqMHNkeU1XZm5XSnZZcFViSUZPaHNUTklyOVhVdjdtc2wwX1NqUDk3TkFUbGxQZXVwZHZEbzlIcXlFTHVETHNwOWJhU3JZR1RN?oc=5",
+        "source": "Communications Today",
+        "summary": "Aktuelle Meldung von Communications Today: Netlist seeks import ban on Micron DRAM, Google, Nvidia, Broadcom products",
+        "relevanceScore": 100,
+        "publishedAt": "2026-09-30T03:08:23.000Z"
+      },
       {
         "id": "7c09ef2f01c5ea4f6cc0",
         "title": "Nvidia vs Micron Ahead of Earnings: Buyback Capacity or HBM Growth?",
@@ -694,33 +787,6 @@
         "summary": "Aktuelle Meldung von Korea IT Times: SK hynix Deepens AI Memory Collaboration with TSMC, Extending Roadmap from HBM4 to HBM5",
         "relevanceScore": 100,
         "publishedAt": "2026-09-29T03:54:01.000Z"
-      },
-      {
-        "id": "62012e71a60ef1f2a431",
-        "title": "SK Hynix tests HBM5 with TSMC as HBM4 enters Nvidia's next platform",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNWdxNDRkWjI1Qy1fN0F0SjJkU19RYmNBN2VQdm5oRXIzVHRPT0hNZ2w2bkgyaEllamd2b2I4UzlSYUFNTHJ4X21sTHduTVdSQzFONG91N25FaU9nSWNGS2JJX1dNbUZxRTcwSUNPYkVHZXhJUUJBZUxKcXZwOXpKR05qUXdBbTJKX25CS2g0TQ?oc=5",
-        "source": "digitimes",
-        "summary": "Aktuelle Meldung von digitimes: SK Hynix tests HBM5 with TSMC as HBM4 enters Nvidia's next platform",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-29T03:23:52.000Z"
-      },
-      {
-        "id": "3acebbbc288020d0b457",
-        "title": "Sandisk Stock Heads Into Micron Earnings With NAND Pricing Under the Microscope",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMVVFby14NXcxbER2ZW9wem5EQktpMk5MSUd4M3hzalJLUV8ta0lzZjFhOWZJT0RCYzlOZHpleURRNUFGdGNJelRpWGg3bllDdU9ER2RCbmMxc1ZsTnZUd0V1Nm9lbmNqbkFiUHdNTWZUcDdJdTNnTkZEckdtTGJIeFN6TWh6c1A1eHp3QlItS0Vfa3JRcUkyZ0w3c2EwWDQ5ckVwcUlJcw?oc=5",
-        "source": "kobaran.com",
-        "summary": "Aktuelle Meldung von kobaran.com: Sandisk Stock Heads Into Micron Earnings With NAND Pricing Under the Microscope",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-29T01:19:58.000Z"
-      },
-      {
-        "id": "d2fd4db4b3a4ee77e6cf",
-        "title": "SK hynix Showcases HBM4 Inside NVIDIA Vera Rubin Superchip",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQR2IwV2szVUVmY29tMEZfSWNSVExRWVRqUTcta3dyVF9iak4tMHlVdTdlSkZCOS1abTVQbE1mYnZMS0F3TXcxVWNHWFpTWnczdzlaUXl4TWdaNi1xcXAwWmw4VW5vcEt4MnU2WkozVHM1a3N5X0dPQ0dDbHZpelpTenkyS0Fsdw?oc=5",
-        "source": "Technetbook",
-        "summary": "Aktuelle Meldung von Technetbook: SK hynix Showcases HBM4 Inside NVIDIA Vera Rubin Superchip",
-        "relevanceScore": 100,
-        "publishedAt": "2026-09-28T22:09:00.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -806,29 +872,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-09-30T02:11:36.394Z",
-    "inboxUpdatedAt": "2026-09-30T02:06:50.132Z",
+    "checkedAt": "2026-09-30T11:12:49.727Z",
+    "inboxUpdatedAt": "2026-09-30T11:09:41.738Z",
     "status": "pending",
-    "candidates": 198,
-    "reviewed": 93,
-    "accepted": 9,
-    "watchlist": 81,
+    "candidates": 204,
+    "reviewed": 95,
+    "accepted": 10,
+    "watchlist": 82,
     "rejected": 3,
-    "pending": 108,
-    "oldestPendingAt": "2026-09-19T04:58:57.000Z",
-    "lastCompletedReviewAt": "2026-09-30T02:11:36.371Z",
+    "pending": 112,
+    "oldestPendingAt": "2026-09-19T07:05:00.000Z",
+    "lastCompletedReviewAt": "2026-09-30T11:12:49.701Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 490,
+    "rawCandidates": 502,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
       "archivedOpinions": 12,
-      "groupedDuplicates": 25
+      "groupedDuplicates": 26
     },
     "lastRun": {
-      "startedAt": "2026-09-30T02:10:45.412Z",
-      "completedAt": "2026-09-30T02:11:36.397Z",
+      "startedAt": "2026-09-30T11:12:04.961Z",
+      "completedAt": "2026-09-30T11:12:49.729Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -836,13 +902,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 51,
+      "durationSeconds": 44,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-09-30",
-    "inputHash": "fe3ead76d61b98e255e8ab97379238209e9f03776b6b0c2272a17f7c7492f8ce",
+    "inputHash": "18526815917a696558639954a5343e9ad60b5b0fbbe03e856928cd9a2c72d7fc",
     "sourceDataAsOf": "2026-09-29"
   }
 }

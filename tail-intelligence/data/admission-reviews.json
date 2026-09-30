@@ -49649,6 +49649,203 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0b218684a2904564006abc6fc1771c87d092a1411f2b0c0a1b"
+    },
+    {
+      "decision": "accepted",
+      "title": "Netlist reicht ITC‑Beschwerde gegen Micron ein und benennt Nvidia, Broadcom, Google als Downstream‑Respondents (HBM‑Patente).",
+      "fact": "Netlist hat eine neue ITC‑Untersuchung eingeleitet und beantragt Ausschluss‑ und Unterlassungsanordnungen gegen Micron Technology, Inc. sowie gegen nachgeschaltete Kunden/Respondents Nvidia, Broadcom und Google wegen angeblicher Verletzung von HBM‑Patenten.",
+      "placement": "Vereinigte Staaten — United States International Trade Commission (ITC); Rechtsverfahren gegen Import/Vertrieb von HBM/Memory‑Produkten; kurzfristige Handels-/Importwirkung erwartet.",
+      "mechanism": "Netlist beantragt formelle ITC‑Exklusions‑ und Cease‑and‑Desist‑Orders; falls gewährt, würden betroffene HBM‑Module oder Systeme mit angeblich verletzenden Komponenten vom US‑Markt ausgeschlossen oder der Import blockiert, was die verfügbare HBM‑Versorgung für US‑Cloud/Hyperscaler kurzfristig reduziert und Allokationen/Qualifikationen beeinträchtigt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Verschärfung der Verfügbarkeits‑/Knappheitsdynamik für HBM und Server‑DRAM bis 2027 (unterstützt das Basispredikat, dass HBM/Server‑DRAM strukturell knapp bleiben).",
+      "falsifier": "Bis 2027-03-31 wird kein ITC‑Ausschluss oder zugehörige Unterlassungsanordnung gegen importierte Micron‑HBM‑Produkte erlassen und/oder die ITC‑Beschwerde wird formell zurückgezogen oder durch schiedsweise Lizenzvereinbarungen ersetzt, die keine Import‑/Vertriebsbeschränkung in den USA erzeugen.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-29",
+      "novelty": "Netlist eskaliert formell auf ITC‑Ebene (Exclusion Orders) und benennt ausdrücklich große Downstream‑Respondents; relevant, da ITC‑Remedies direkten Verfügbarkeitsimpact für US‑Importe erzeugen können.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 13,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "negative_supply",
+      "severity": 55,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/netlist-files-new-itc-action-against-micron-technology-inc-involving-hbm-patents-for-ai-computing-302892194.html",
+          "label": "Netlist press release / PR Newswire: Netlist files new ITC action against Micron involving HBM patents",
+          "kind": "primary",
+          "supports": "Netlist announced initiation of a U.S. ITC investigation seeking exclusion and cease-and-desist orders naming Micron and downstream customers Nvidia, Broadcom and Google."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926094127/nlst-20260627x10q.htm",
+          "label": "Netlist Form 10‑Q / SEC (contingencies and litigation disclosures)",
+          "kind": "primary",
+          "supports": "SEC filings document Netlist's prior and ongoing patent litigations and ITC complaints (June 2026 filing history naming multiple respondents and HBM/DDR5 patent claims), establishing the legal basis and continuity of disputes."
+        }
+      ],
+      "reason": "Die eingereichte ITC‑Beschwerde ist eine atomare, datierte und quellennachweisbare Beobachtung mit direkter kausaler Verbindung zur Verfügbarkeit von HBM‑Produkten in den USA. PR‑Mitteilung und SEC‑Offenlegungen liefern primäre Belege für Einreichung und bezeichnen die betroffenen Gegenparteien. Opposing evidence (Microns parallele deklaratorische Klagehistorie und frühere Netlist‑Streitfälle) ist dokumentiert, ändert jedoch nicht die Feststellung, dass Netlist formell ein ITC‑Verfahren mit Downstream‑Namensnennung initiiert hat. Die Aussage ist relevant für P-2026-07-11-01 (strukturelle Knappheit HBM/Server‑DRAM).",
+      "candidateId": "d1eb4d08d6620f7d128b",
+      "candidateKey": "4e44585aae5cd84296963612",
+      "reviewedAt": "2026-09-30T11:12:32.486Z",
+      "priorityScore": 86,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-4e44585aae5cd84296963612",
+        "title": "Netlist reicht ITC‑Beschwerde gegen Micron ein und benennt Nvidia, Broadcom, Google als Downstream‑Respondents (HBM‑Patente).",
+        "date": "2026-09-29",
+        "admittedAt": "2026-09-30T11:12:32.486Z",
+        "fact": "Netlist hat eine neue ITC‑Untersuchung eingeleitet und beantragt Ausschluss‑ und Unterlassungsanordnungen gegen Micron Technology, Inc. sowie gegen nachgeschaltete Kunden/Respondents Nvidia, Broadcom und Google wegen angeblicher Verletzung von HBM‑Patenten.",
+        "placement": "Vereinigte Staaten — United States International Trade Commission (ITC); Rechtsverfahren gegen Import/Vertrieb von HBM/Memory‑Produkten; kurzfristige Handels-/Importwirkung erwartet.",
+        "tailInference": "Netlist beantragt formelle ITC‑Exklusions‑ und Cease‑and‑Desist‑Orders; falls gewährt, würden betroffene HBM‑Module oder Systeme mit angeblich verletzenden Komponenten vom US‑Markt ausgeschlossen oder der Import blockiert, was die verfügbare HBM‑Versorgung für US‑Cloud/Hyperscaler kurzfristig reduziert und Allokationen/Qualifikationen beeinträchtigt.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Verschärfung der Verfügbarkeits‑/Knappheitsdynamik für HBM und Server‑DRAM bis 2027 (unterstützt das Basispredikat, dass HBM/Server‑DRAM strukturell knapp bleiben).",
+        "falsifier": "Bis 2027-03-31 wird kein ITC‑Ausschluss oder zugehörige Unterlassungsanordnung gegen importierte Micron‑HBM‑Produkte erlassen und/oder die ITC‑Beschwerde wird formell zurückgezogen oder durch schiedsweise Lizenzvereinbarungen ersetzt, die keine Import‑/Vertriebsbeschränkung in den USA erzeugen.",
+        "nextReview": "2027-03-31",
+        "priorityScore": 86,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 13,
+          "thesisRelevance": 18,
+          "forecastImpact": 17,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 55,
+        "confidence": 70,
+        "markets": [
+          "hbm",
+          "server_dram",
+          "semiconductors",
+          "ai_infrastructure"
+        ],
+        "signal": "negative_supply",
+        "driverScope": [
+          "availability"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Netlist press release / PR Newswire: Netlist files new ITC action against Micron involving HBM patents",
+            "url": "https://www.prnewswire.com/news-releases/netlist-files-new-itc-action-against-micron-technology-inc-involving-hbm-patents-for-ai-computing-302892194.html"
+          },
+          {
+            "label": "Netlist Form 10‑Q / SEC (contingencies and litigation disclosures)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926094127/nlst-20260627x10q.htm"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Verschärfung der Verfügbarkeits‑/Knappheitsdynamik für HBM und Server‑DRAM bis 2027 (unterstützt das Basispredikat, dass HBM/Server‑DRAM strukturell knapp bleiben)."
+        },
+        "admissionReviewKey": "4e44585aae5cd84296963612"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_00675baf0808e70b006abcee86525887d1b45a97aa80c24453"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron bestätigt TSMC-Fertigung des HBM4E-Base-Logic-Die — Behauptung 'alle drei großen Memory‑Hersteller an Bord' unbestätigt",
+      "fact": "Micron kommuniziert, dass TSMC die Logik‑Base‑Dies für Microns HBM4E-Familie (Standard und kundenspezifische Varianten) fertigen wird. Es gibt keine verlässliche primäre Bestätigung, dass gleichzeitig alle drei großen HBM‑Anbieter (Micron, Samsung, SK hynix) TSMC als Foundry für ihre Base‑Dies verbindlich beauftragt haben.",
+      "placement": "Global / HBM‑Ecosystem — Foundry/Logic‑Base‑Die / kurzfristig (2026–2027)",
+      "mechanism": "Micron gibt TSMC die Herstellung der HBM4E-Base‑Logic‑Dies in Auftrag. Wenn mehrere große HBM‑Hersteller TSMC für Base‑Dies nutzen, verlagert sich ein Teil der HBM‑Logik‑Die‑Produktion zu einer einzelnen Foundry (TSMC), was Kapazitätsengpässe bei Foundry‑Logic sowie bei nachgelagertem Advanced‑Packaging und Qualifikation verstärken kann und so die Verfügbarkeit von HBM beeinflusst.",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Erhöhtes Risiko für Engpässe im Advanced‑Packaging/Foundry‑Layer, was P-2026-07-13-03 (Advanced Packaging bleibt zentraler AI‑Lieferkettenengpass bis mindestens H2 2027) in Richtung 'negative_supply' / 'capacity_lock' stützen könnte.",
+      "falsifier": "Bis 2026-10-31: Keine primäre, von den jeweiligen Unternehmen (Micron, Samsung, SK hynix) stammende Bestätigung, dass Samsung und SK hynix TSMC verbindlich beauftragt haben, ihre HBM‑Base‑Logic‑Dies (Standard oder kundenspezifisch) bei TSMC fertigen zu lassen. Eine positive Falsifikation wäre eine direkte, datierte Primärquelle (Unternehmens‑Pressemitteilung, 10‑Q/10‑K, oder Earnings‑Call‑Transkript der jeweiligen Unternehmen) mit dem Wortlaut, dass TSMC vertraglich für deren HBM‑Base‑Dies eingesetzt wird.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-19",
+      "novelty": "Moderat — Microns Partnerschaft mit TSMC für HBM4E wurde bereits in Unternehmensunterlagen und Earnings‑Calls thematisiert, die Kandidatenmeldung aggregiert dies und erweitert die Behauptung auf 'alle drei großen Hersteller'.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tomshardware.com/micron-hands-tsmc-the-keys-to-hbm4e",
+          "label": "Tom's Hardware summary",
+          "kind": "secondary",
+          "supports": "Independent reporting summarizing Micron's announcement that TSMC will fabricate Micron's HBM4E base logic die (standard and custom)."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung basiert auf einer aggregierten News‑Headline (Google RSS) und fasst korrekt, dass Micron TSMC als Foundry für seine HBM4E‑Base‑Dies nutzt — dies ist durch Micron‑Investorunterlagen und Earnings‑Call‑Materialien direkt belegbar (Primärquelle vorhanden). Die weitergehende Behauptung in der Headline, dass 'alle drei großen Memory‑Hersteller jetzt an Bord sind', ist hingegen nicht durch gleichwertige primäre Quellen belegt: für Samsung und SK hynix fehlen eindeutige, datierte Primärbestätigungen, dass sie TSMC verbindlich für ihre HBM‑Base‑Dies beauftragt haben. Ohne diese primär bestätigten Zusagen kann die aggregierte Richtung (eine Konsolidierung der Base‑Die‑Fertigung bei TSMC mit systemischer Auswirkung auf Verfügbarkeit/Packaging) nicht als verifizierte Beobachtung zugelassen werden. Deshalb wird die Meldung auf Watchlist gesetzt: Teil‑Primärverifikation (Micron→TSMC) liegt vor, die weiterreichende Schlusssatz‑Behauptung ('alle drei') fehlt. Opposing evidence / Unsicherheitsquellen (keine SK‑Hynix‑/Samsung‑Primärzusage, Berichte über unterschiedliche Base‑Die‑Strategien, mögliche Eigenfertigung) wurden berücksichtigt. Empfehlung: Wenn innerhalb der nächsten sechs Wochen primäre, datierte Statements von Samsung und/oder SK hynix vorliegen, die TSMC‑Fertigung ihrer Base‑Dies bestätigen, kann die Admission überprüft und ggf. auf 'accepted' hochgestuft; fehlt dies, bleibt die Beobachtung unbestätigt und darf nicht als VERIFIED DATA benutzt werden.",
+      "candidateId": "3f87eb5c3be756e8d4d1",
+      "candidateKey": "56d0e3ab32ab4403b0401ae6",
+      "reviewedAt": "2026-09-30T11:12:49.701Z",
+      "priorityScore": 73,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03b351033e2a165d006abceea0b20487d19f6c312fd5e24e02"
     }
   ]
 }
