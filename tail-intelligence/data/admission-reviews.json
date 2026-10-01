@@ -50155,6 +50155,200 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_06c77b52e19b8165006abd7f2ef15887d28d721416d123b053"
+    },
+    {
+      "decision": "accepted",
+      "title": "Micron‑Quartalsergebnis vervierfacht — HBM‑Nachfrage übertrifft die Produktionskapazität",
+      "fact": "Micron meldete ein Quartalsergebnis (fiscal Q3 FY2026) mit nahezu vervierfachtem Umsatz gegenüber dem Vorjahr (rund $41–42 Mrd.) und sagte, die HBM‑Versorgung sei für 2026 faktisch ausverkauft; die Nachfrage übersteige die verfügbare HBM‑Kapazität. (Primärquelle: Micron Investor Relations / Quartalsmeldung, 2026-06-25).",
+      "placement": "Globaler HBM‑/Server‑DRAM‑Markt; Hersteller‑/Supply‑Layer; kurzfristig bis Ende 2027",
+      "mechanism": "Starke AI‑Server‑ und Hyperscaler‑Nachfrage erhöht HBM‑Absatzvolumen; Multi‑Year‑Abnahmeverträge und Kundenanzahlungen binden vorhandene HBM‑Kapazität, wodurch Spot‑/Kontraktangebot die Nachfrage nicht deckt und Preise/Margen stark ansteigen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt die Vorhersage, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben; erhöht Wahrscheinlichkeit, dass 2027 ein Engpasshöhepunkt eintritt.",
+      "falsifier": "Bis 2027-06-30: (a) Zwei aufeinanderfolgende Quartale mit einem Rückgang der HBM‑Kontraktpreise um ≥10 % gegenüber dem Vorquartal ODER (b) bestätigte qualifizierte HBM‑Shipments (von Micron plus zwei anderen Herstellern) steigen so, dass gemeldete verfügbare HBM‑Lieferungen die gemeldete Nachfrage für mindestens zwei Quartale übersteigen (z. B. dokumentierte Fills/Shipments in Kunden‑Reports oder Herstellermeldungen). Wenn eines dieser Ereignisse eintritt, reduziert das die Relevanz dieses Signals für P-2026-07-11-01.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-06-25",
+      "novelty": "Die Meldung bestätigt und quantifiziert einen bereits beobachteten AI‑Memory‑Boom; Neuheit: mittel (kommerzielle Quartalsbestätigung & HBM‑'sold out' Aussage).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 70,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/financials/quarterly-results/default.aspx",
+          "label": "Micron Investor Relations — Quarterly Results / Press Release (Q3 FY2026)",
+          "kind": "primary",
+          "supports": "Micron veröffentlicht Rekordquartalsumsatz (~$41–42B), berichtet, HBM‑Kapazität für 2026 sei verkauft/abgeschlossen und verweist auf starke AI‑getriebene Nachfrage und Multi‑Year‑Kundenverträge. "
+        },
+        {
+          "url": "https://en.sedaily.com/technology/2026/06/25/micron-posts-record-revenue-on-ai-memory-boom-beats-q4-view",
+          "label": "Seoul Economic Daily — Bericht zur Quartalsmeldung (2026-06-25)",
+          "kind": "secondary",
+          "supports": "Sekundärbericht fasst Microns Quartalszahlen zusammen: Umsatz nahezu vervierfacht YoY, Managementkommentar, dass HBM‑Volumen 2026 ausverkauft ist und Nachfrage die Produktion übersteigt."
+        }
+      ],
+      "reason": "Die eingespeiste Kandidatenmeldung (digitaltoday.co.kr RSS) wiederholt ein berichtetes Primärereignis: Microns Quartalsmeldung (2026‑06‑25) dokumentiert einen massiven Umsatzanstieg und explizite Aussagen zur HBM‑Verfügbarkeit. Wir verifizierten die Primärquelle (Micron Investor Relations) und ergänzten verlässliche Sekundärberichterstattung. Die Beobachtung ist atomar (Datums- und Mengennennung in Quartalsmeldung), hat klaren geografischen und Layer‑Scope (globaler HBM/Supply‑Layer) und liefert eine kausale Mechanik (AI‑Server‑Nachfrage + LTAs/Anzahlungen → Angebotsbindung). Das Signal ist direkt relevant für P-2026-07-11-01 (HBM/Server‑DRAM Knappheit bis Ende 2028) — daher Aufnahme als akzeptiertes Signal. Hinweise: Index‑Impact wurde nicht gesetzt, weil keine direkte, standardisierte Messgröße (z. B. kontraktpreis‑Zeitreihe oder qualifizierte Shipments‑Statistik) in der Primärmeldung ausgewiesen wurde. Falls die im Falsifier definierten Messgrößen bis 2027‑06‑30 eintreten, ist eine Neubewertung nötig.",
+      "candidateId": "e3a51fb9224cca981a0b",
+      "candidateKey": "79a22815bb2722d66217ee2a",
+      "reviewedAt": "2026-10-01T02:12:43.102Z",
+      "priorityScore": 86,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-79a22815bb2722d66217ee2a",
+        "title": "Micron‑Quartalsergebnis vervierfacht — HBM‑Nachfrage übertrifft die Produktionskapazität",
+        "date": "2026-06-25",
+        "admittedAt": "2026-10-01T02:12:43.102Z",
+        "fact": "Micron meldete ein Quartalsergebnis (fiscal Q3 FY2026) mit nahezu vervierfachtem Umsatz gegenüber dem Vorjahr (rund $41–42 Mrd.) und sagte, die HBM‑Versorgung sei für 2026 faktisch ausverkauft; die Nachfrage übersteige die verfügbare HBM‑Kapazität. (Primärquelle: Micron Investor Relations / Quartalsmeldung, 2026-06-25).",
+        "placement": "Globaler HBM‑/Server‑DRAM‑Markt; Hersteller‑/Supply‑Layer; kurzfristig bis Ende 2027",
+        "tailInference": "Starke AI‑Server‑ und Hyperscaler‑Nachfrage erhöht HBM‑Absatzvolumen; Multi‑Year‑Abnahmeverträge und Kundenanzahlungen binden vorhandene HBM‑Kapazität, wodurch Spot‑/Kontraktangebot die Nachfrage nicht deckt und Preise/Margen stark ansteigen.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Unterstützt die Vorhersage, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben; erhöht Wahrscheinlichkeit, dass 2027 ein Engpasshöhepunkt eintritt.",
+        "falsifier": "Bis 2027-06-30: (a) Zwei aufeinanderfolgende Quartale mit einem Rückgang der HBM‑Kontraktpreise um ≥10 % gegenüber dem Vorquartal ODER (b) bestätigte qualifizierte HBM‑Shipments (von Micron plus zwei anderen Herstellern) steigen so, dass gemeldete verfügbare HBM‑Lieferungen die gemeldete Nachfrage für mindestens zwei Quartale übersteigen (z. B. dokumentierte Fills/Shipments in Kunden‑Reports oder Herstellermeldungen). Wenn eines dieser Ereignisse eintritt, reduziert das die Relevanz dieses Signals für P-2026-07-11-01.",
+        "nextReview": "2027-06-30",
+        "priorityScore": 86,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 18,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 70,
+        "confidence": 75,
+        "markets": [
+          "hbm",
+          "server_dram",
+          "dram",
+          "ai_infrastructure"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Micron Investor Relations — Quarterly Results / Press Release (Q3 FY2026)",
+            "url": "https://investors.micron.com/financials/quarterly-results/default.aspx"
+          },
+          {
+            "label": "Seoul Economic Daily — Bericht zur Quartalsmeldung (2026-06-25)",
+            "url": "https://en.sedaily.com/technology/2026/06/25/micron-posts-record-revenue-on-ai-memory-boom-beats-q4-view"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Unterstützt die Vorhersage, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben; erhöht Wahrscheinlichkeit, dass 2027 ein Engpasshöhepunkt eintritt."
+        },
+        "admissionReviewKey": "79a22815bb2722d66217ee2a"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0515b462d85d41a9006abdc1844bc487d28542327cd1ab8480"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Gemeldeter Foundry‑Kostenanstieg bei TSMC/AMD — Primärquelle nicht verifizierbar",
+      "fact": "Bericht (fourweekmba über Google News RSS, eingereicht 2026-09-17) behauptet einen berichteten Anstieg der Foundry-/Foundry‑Kosten, der Implikationen für die Fabless‑Versorgungsschicht nahelegt.",
+      "placement": "Globaler Foundry‑/Fabless‑Layer; relevante Märkte: semiconductors, hbm, server_dram; kurz/Medium‑Horizon (2026–2027).",
+      "mechanism": "Wenn Foundry‑Stückkosten (z. B. US$/Wafer oder % pro Wafer) steigen, erhöht sich der Preisdruck auf Downstream‑Fabless‑Player (z. B. AMD), was zu höheren BOM‑Kosten, umverteilter Allokation und potenziell längeren Qualifikations- bzw. Lieferzeiten führen kann (Pricing → Availability via capacity allocation).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Signal würde tendenziell den OUTLOOK-server_dram Preisdruck / negative_supply‑Einschätzung stützen (preisgetriebener Input‑Cost‑Schock, der Vertrags- und Spotpreise stützen könnte), falls der behauptete Kostenanstieg primär, breit und dauerhaft ist.",
+      "falsifier": "Bis 2026-10-15: Veröffentlichung einer Primärquelle (TSMC/AMD/Vertragspartner) mit einem quantifizierten Foundry‑Kostenanstieg ≥5 % für relevante Advanced Nodes (oder eine offizielle Unternehmensretenression), ODER glaubhafte Primärdaten zeigen <5 % oder ein Dementi. Erfolg des Falsifiers ist dokumentiert durch ein Datum (YYYY-MM-DD) und die Primärquelle.",
+      "nextReview": "2026-10-15",
+      "eventDate": "2026-09-17",
+      "novelty": "Behauptung ist thematisch nahe an bestehenden TAIL‑Signalen zu Preisdruck/Capacity Lock; neu wäre eine primär belegte, quantifizierte Foundry‑Kostenveränderung mit breiter Wirkung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 15,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 45,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Der Kandidat stützt sich auf einen berichtenden Artikel (fourweekmba) der über einen Google News‑RSS‑Link referenziert wurde. Ich konnte die behauptete Primärquelle (fourweekmba oder ein direktes TSMC/AMD‑Statement mit quantifizierter Per‑Wafer‑Kostenaussage) nicht direkt mit dem verfügbaren Web‑Abruf verifizieren. Nach den TAIL‑Aufnahmekriterien ist eine Admission (accepted) nur möglich, wenn ein atomarer, datierter, quantifizierter Primärbeleg vorliegt, inklusive klarer geografischer/Domain‑Placement, kausalem Mechanismus und einem konkreten, testbaren Falsifier. Diese Nachweise fehlen; außerdem besteht ein adversarielles Risiko (Recycling von Analyse/Kommentare ohne Primärdaten). Deshalb setze ich die Entscheidung auf watchlist und fordere Primärbelege nach (z. B. TSMC/TSMC‑Investor‑Deck, AMD‑Kostenangabe, ein belastbares Vertragsdokument mit quantifizierten Kostenänderungen). Wenn solche Primärbelege bis zur nächsten Überprüfung (2026-10-15) vorgelegt werden, kann die Aufnahme neu bewertet werden. Hinweise zur wünschenswerten Primärbeweislage: konkretes Datum, betroffene Node(s), Größenordnung der Kostenänderung in US$/Wafer oder Prozent, und Nachweis, dass die Änderung nicht nur ein Einzelfall/Fehlinterpretation eines Analysten ist. Ohne diese Elemente bleibt der Claim NOT PROVEN und wird auf Watchlist gehalten.",
+      "candidateId": "46e090ab2c1f794a9895",
+      "candidateKey": "76c801da48a568b08ef2cee1",
+      "reviewedAt": "2026-10-01T02:13:03.705Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01263d1bf9c19fa2006abdc19b3fd487d29de1a60f68abffa9"
     }
   ]
 }

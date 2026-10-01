@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T21:29:46.133Z",
+  "generatedAt": "2026-10-01T02:13:05.395Z",
   "platform": {
-    "dataAsOf": "2026-09-30",
-    "analysisAsOf": "2026-09-30",
+    "dataAsOf": "2026-10-01",
+    "analysisAsOf": "2026-10-01",
     "sourceDataAsOf": "2026-09-29",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-09-30T21:29:44.501Z",
-      "pending": 115,
-      "reviewed": 99,
-      "accepted": 10,
-      "rawCandidates": 518,
+      "checkedAt": "2026-10-01T02:13:03.728Z",
+      "pending": 118,
+      "reviewed": 100,
+      "accepted": 11,
+      "rawCandidates": 523,
       "triage": {
         "archivedOpinions": 12,
         "groupedDuplicates": 26
       },
       "lastRun": {
-        "startedAt": "2026-09-30T21:28:42.213Z",
-        "completedAt": "2026-09-30T21:29:44.503Z",
+        "startedAt": "2026-10-01T02:12:18.748Z",
+        "completedAt": "2026-10-01T02:13:03.730Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,14 +27,14 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 62,
+        "durationSeconds": 44,
         "budgetExhausted": false
       }
     },
-    "overdueOperationalReviewCount": 12,
+    "overdueOperationalReviewCount": 14,
     "dataFreshness": "current",
     "processStatus": "ok",
-    "articleCount": 193,
+    "articleCount": 194,
     "markets": [
       {
         "id": "server_dram",
@@ -48,7 +48,7 @@
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 68,
+        "score": 67,
         "status": "orange",
         "signals": 31,
         "confidence": 89,
@@ -57,7 +57,7 @@
       {
         "id": "enterprise_ssd",
         "label": "Enterprise SSD",
-        "score": 80,
+        "score": 79,
         "status": "orange",
         "signals": 20,
         "confidence": 65,
@@ -66,28 +66,16 @@
     ]
   },
   "executivePulse": {
-    "current": 76,
+    "current": 75,
     "previous": 76,
     "status": "orange",
     "confidence": 76,
-    "riskPressure": 83,
+    "riskPressure": 82,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-09-30; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (115 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-01; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (118 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
-    {
-      "date": "2026-09-30",
-      "title": "[News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
-      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 91,
-      "sourceQuality": 15,
-      "source": "TrendForce",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOaTFNTlRrbTNLMzhNS2dtTmh4Tmo4N2h2aU9lR0ZXSEJETUdQbnNfU2JXZk9JWVNRSlhqZVNKc1lqNEQ4ZVBxOFA2SkVOeHh0SVJDTVhrOVVzYklCWjdWb3hwLW9yeVFIT1pPTUhtZVQ5ZGcyZVFfdGNmX3Q0T1BEWUxJR2c5Sno4d0FmYVhLYUJVMDZaQlpqQ0hmUWdZNGdjUHJTSzgtd3RpZ042dG1zbkFseFhxWTEtbFFiRDJGd0ZSNi1PaDhHTm5fRi1VQXRrQ1Q3TGFsR1pjRWdC?oc=5",
-      "layer": "news"
-    },
     {
       "date": "2026-09-30",
       "title": "Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold",
@@ -101,23 +89,31 @@
       "layer": "news"
     },
     {
+      "date": "2026-10-01",
+      "title": "Samsung Foundry gets boost from HBM4 as 2nm push continues",
+      "summary": "Aktuelle Meldung von digitimes: Samsung Foundry gets boost from HBM4 as 2nm push continues",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 91,
+      "relevanceScore": 91,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOF8ycEt6VHlFSFNIamRZdWNNcnI2dUVWNnFMWk9YYjlLTm5FZThWcW1hYVNJMmtSNVEySklzREw3Q2FLMEJrMzV4cG1CSG1yYjgycW5CQVg4N2NlLU1MbEowc29qZTV6eVRPcDl0elkwVllueUltV3JWWE9zM2ZodWFHM3E2ZGc3akJGRWxKU3g2Mjk5cEE?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-30",
-      "title": "YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
-      "summary": "Aktuelle Meldung von Pandaily: YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
+      "title": "Micron Import Ban Could Hit Nvidia and Google AI Hardware Supply",
+      "summary": "Aktuelle Meldung von CryptoRank: Micron Import Ban Could Hit Nvidia and Google AI Hardware Supply",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Pandaily",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOTZVNWdia1pPbFZRdlRKaHJUM2dYRVEwbDZ2YTJLVmMxVl9WOWQtWXllVW5VblN1MU1DclBPZzVOaXJ4X0hDVjNLQmlMLXZMaXhfQ2hLdmhqekNzeFRkcTZld2ZtZXhlM0N3VFVfcWpEOTdZcm41dUJ2dVpVb2c?oc=5",
+      "source": "CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMEN5cXFWRXBUMzZzOG5SSlg3Z1p6VHBHVzkxckY1bHRvOEl5dlgxSl9RRDFRTEl6NkpYcVlYSlhKWmowQTU1M2I0ZDludFFCeVFkSnNUQXFnNENXNkFXVjV0X09taXlvWVRFdEllZTM4eVhsTWpPS1VIb0JxZ1h0czRDakFmTEt4U2Rlem1zazFWbnJ4VThJNFA2N25mNmt6Qlp6SA?oc=5",
       "layer": "news"
     }
   ],
   "catalysts": [
-    {
-      "date": "2026-09-30",
-      "event": "Amazon Private Grid"
-    },
     {
       "date": "2026-10-01",
       "event": "Switch IPO: Filing, Bewertung und Kapitalzugang prüfen"
@@ -140,25 +136,13 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-09-30",
+    "date": "2026-10-01",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "115 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "118 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
-    {
-      "date": "2026-09-30",
-      "title": "[News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
-      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 91,
-      "sourceQuality": 15,
-      "source": "TrendForce",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOaTFNTlRrbTNLMzhNS2dtTmh4Tmo4N2h2aU9lR0ZXSEJETUdQbnNfU2JXZk9JWVNRSlhqZVNKc1lqNEQ4ZVBxOFA2SkVOeHh0SVJDTVhrOVVzYklCWjdWb3hwLW9yeVFIT1pPTUhtZVQ5ZGcyZVFfdGNmX3Q0T1BEWUxJR2c5Sno4d0FmYVhLYUJVMDZaQlpqQ0hmUWdZNGdjUHJTSzgtd3RpZ042dG1zbkFseFhxWTEtbFFiRDJGd0ZSNi1PaDhHTm5fRi1VQXRrQ1Q3TGFsR1pjRWdC?oc=5",
-      "layer": "news"
-    },
     {
       "date": "2026-09-30",
       "title": "Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold",
@@ -172,22 +156,34 @@
       "layer": "news"
     },
     {
+      "date": "2026-10-01",
+      "title": "Samsung Foundry gets boost from HBM4 as 2nm push continues",
+      "summary": "Aktuelle Meldung von digitimes: Samsung Foundry gets boost from HBM4 as 2nm push continues",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 91,
+      "relevanceScore": 91,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOF8ycEt6VHlFSFNIamRZdWNNcnI2dUVWNnFMWk9YYjlLTm5FZThWcW1hYVNJMmtSNVEySklzREw3Q2FLMEJrMzV4cG1CSG1yYjgycW5CQVg4N2NlLU1MbEowc29qZTV6eVRPcDl0elkwVllueUltV3JWWE9zM2ZodWFHM3E2ZGc3akJGRWxKU3g2Mjk5cEE?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-30",
-      "title": "YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
-      "summary": "Aktuelle Meldung von Pandaily: YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
+      "title": "Micron Import Ban Could Hit Nvidia and Google AI Hardware Supply",
+      "summary": "Aktuelle Meldung von CryptoRank: Micron Import Ban Could Hit Nvidia and Google AI Hardware Supply",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Pandaily",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOTZVNWdia1pPbFZRdlRKaHJUM2dYRVEwbDZ2YTJLVmMxVl9WOWQtWXllVW5VblN1MU1DclBPZzVOaXJ4X0hDVjNLQmlMLXZMaXhfQ2hLdmhqekNzeFRkcTZld2ZtZXhlM0N3VFVfcWpEOTdZcm41dUJ2dVpVb2c?oc=5",
+      "source": "CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMEN5cXFWRXBUMzZzOG5SSlg3Z1p6VHBHVzkxckY1bHRvOEl5dlgxSl9RRDFRTEl6NkpYcVlYSlhKWmowQTU1M2I0ZDludFFCeVFkSnNUQXFnNENXNkFXVjV0X09taXlvWVRFdEllZTM4eVhsTWpPS1VIb0JxZ1h0czRDakFmTEt4U2Rlem1zazFWbnJ4VThJNFA2N25mNmt6Qlp6SA?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-09-30T21:29:46.373Z",
+    "generatedAt": "2026-10-01T02:13:05.640Z",
     "count": 3,
-    "candidateCount": 544,
+    "candidateCount": 512,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -280,7 +276,7 @@
         "confidence": 75,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-09-30"
+        "indexAsOf": "2026-10-01"
       },
       {
         "marketId": "enterprise_ssd",
@@ -375,12 +371,12 @@
           "Kundenbestand, Stornos und RFQ-Conversion"
         ],
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
-        "currentScore": 80,
+        "currentScore": 79,
         "currentStatus": "orange",
         "confidence": 65,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-09-30",
+        "indexAsOf": "2026-10-01",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -402,18 +398,6 @@
   "originalSignals": [
     {
       "date": "2026-09-30",
-      "title": "[News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
-      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Foundry Loss Reportedly Seen Shrinking 42% YoY in 2026 as HBM4 Base-Die 4nm Demand Rises",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
-      "relevanceScore": 91,
-      "sourceQuality": 15,
-      "source": "TrendForce",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOaTFNTlRrbTNLMzhNS2dtTmh4Tmo4N2h2aU9lR0ZXSEJETUdQbnNfU2JXZk9JWVNRSlhqZVNKc1lqNEQ4ZVBxOFA2SkVOeHh0SVJDTVhrOVVzYklCWjdWb3hwLW9yeVFIT1pPTUhtZVQ5ZGcyZVFfdGNmX3Q0T1BEWUxJR2c5Sno4d0FmYVhLYUJVMDZaQlpqQ0hmUWdZNGdjUHJTSzgtd3RpZ042dG1zbkFseFhxWTEtbFFiRDJGd0ZSNi1PaDhHTm5fRi1VQXRrQ1Q3TGFsR1pjRWdC?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-09-30",
       "title": "Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold",
       "summary": "Aktuelle Meldung von CNBC: Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
@@ -425,15 +409,27 @@
       "layer": "news"
     },
     {
+      "date": "2026-10-01",
+      "title": "Samsung Foundry gets boost from HBM4 as 2nm push continues",
+      "summary": "Aktuelle Meldung von digitimes: Samsung Foundry gets boost from HBM4 as 2nm push continues",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 91,
+      "relevanceScore": 91,
+      "sourceQuality": 10,
+      "source": "digitimes",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOF8ycEt6VHlFSFNIamRZdWNNcnI2dUVWNnFMWk9YYjlLTm5FZThWcW1hYVNJMmtSNVEySklzREw3Q2FLMEJrMzV4cG1CSG1yYjgycW5CQVg4N2NlLU1MbEowc29qZTV6eVRPcDl0elkwVllueUltV3JWWE9zM2ZodWFHM3E2ZGc3akJGRWxKU3g2Mjk5cEE?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-09-30",
-      "title": "YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
-      "summary": "Aktuelle Meldung von Pandaily: YMTC Wins Munich Injunctions Against Micron Over Two 3D NAND Utility Models",
+      "title": "Micron Import Ban Could Hit Nvidia and Google AI Hardware Supply",
+      "summary": "Aktuelle Meldung von CryptoRank: Micron Import Ban Could Hit Nvidia and Google AI Hardware Supply",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Pandaily",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOTZVNWdia1pPbFZRdlRKaHJUM2dYRVEwbDZ2YTJLVmMxVl9WOWQtWXllVW5VblN1MU1DclBPZzVOaXJ4X0hDVjNLQmlMLXZMaXhfQ2hLdmhqekNzeFRkcTZld2ZtZXhlM0N3VFVfcWpEOTdZcm41dUJ2dVpVb2c?oc=5",
+      "source": "CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMEN5cXFWRXBUMzZzOG5SSlg3Z1p6VHBHVzkxckY1bHRvOEl5dlgxSl9RRDFRTEl6NkpYcVlYSlhKWmowQTU1M2I0ZDludFFCeVFkSnNUQXFnNENXNkFXVjV0X09taXlvWVRFdEllZTM4eVhsTWpPS1VIb0JxZ1h0czRDakFmTEt4U2Rlem1zazFWbnJ4VThJNFA2N25mNmt6Qlp6SA?oc=5",
       "layer": "news"
     }
   ]
