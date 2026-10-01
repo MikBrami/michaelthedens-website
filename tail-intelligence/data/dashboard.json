@@ -7,29 +7,29 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-01T11:41:34.089Z",
-    "inboxUpdatedAt": "2026-10-01T11:36:47.354Z",
+    "checkedAt": "2026-10-01T21:54:27.597Z",
+    "inboxUpdatedAt": "2026-10-01T21:49:31.610Z",
     "status": "pending",
-    "candidates": 221,
-    "reviewed": 101,
+    "candidates": 228,
+    "reviewed": 103,
     "accepted": 11,
-    "watchlist": 87,
+    "watchlist": 89,
     "rejected": 3,
-    "pending": 122,
-    "oldestPendingAt": "2026-09-19T16:20:30.000Z",
-    "lastCompletedReviewAt": "2026-10-01T11:41:34.057Z",
+    "pending": 127,
+    "oldestPendingAt": "2026-09-19T17:18:38.000Z",
+    "lastCompletedReviewAt": "2026-10-01T21:54:27.568Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 532,
+    "rawCandidates": 547,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
-      "archivedOpinions": 12,
+      "archivedOpinions": 14,
       "groupedDuplicates": 26
     },
     "lastRun": {
-      "startedAt": "2026-10-01T11:40:50.253Z",
-      "completedAt": "2026-10-01T11:41:34.091Z",
+      "startedAt": "2026-10-01T21:53:38.300Z",
+      "completedAt": "2026-10-01T21:54:27.599Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 43,
+      "durationSeconds": 49,
       "budgetExhausted": false
     }
   },
@@ -100,13 +100,13 @@
     }
   ],
   "sourceDataAsOf": "2026-09-29",
-  "knowledgeBaseSyncedAt": "2026-10-01T11:41:34.266Z",
+  "knowledgeBaseSyncedAt": "2026-10-01T21:54:27.813Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 2,
-  "lastSuccessfulUpdate": "2026-10-01T11:41:35.964Z",
-  "lastForecastRun": "2026-10-01T11:41:35.964Z",
-  "newlyProcessedArticles": 179,
+  "lastSuccessfulUpdate": "2026-10-01T21:54:29.578Z",
+  "lastForecastRun": "2026-10-01T21:54:29.578Z",
+  "newlyProcessedArticles": 214,
   "totalArticles": 194,
   "articleCount": 194,
   "processStatus": "warning",
@@ -162,16 +162,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 122 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 127 Kandidaten ausstehend.",
     "14 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-10-01T11:36:47.354Z",
-    "newItems": 179,
-    "totalItems": 10608,
+    "updatedAt": "2026-10-01T21:49:31.610Z",
+    "newItems": 214,
+    "totalItems": 10822,
     "duplicateItems": 300,
-    "relevantItems": 3450,
+    "relevantItems": 3521,
     "sourceErrors": []
   },
   "pipeline": {
@@ -181,7 +181,7 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "101 geprüft · 122 offen · 11 aufgenommen"
+        "detail": "103 geprüft · 127 offen · 11 aufgenommen"
       },
       {
         "id": "knowledge_base",
@@ -193,7 +193,7 @@
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "10608 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "10822 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -985,7 +985,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-10-01T11:41:35.959Z"
+      "lastUpdated": "2026-10-01T21:54:29.571Z"
     },
     {
       "id": "hbm",
@@ -1174,7 +1174,7 @@
         "S-AUTO-965c715ae023d058ae2744d3",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-10-01T11:41:35.959Z"
+      "lastUpdated": "2026-10-01T21:54:29.571Z"
     },
     {
       "id": "nand",
@@ -1260,7 +1260,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-01T11:41:35.959Z"
+      "lastUpdated": "2026-10-01T21:54:29.571Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1341,7 +1341,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-01T11:41:35.959Z"
+      "lastUpdated": "2026-10-01T21:54:29.572Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1656,7 +1656,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-01T11:41:35.959Z"
+      "lastUpdated": "2026-10-01T21:54:29.572Z"
     }
   ],
   "indexCalculation": {
