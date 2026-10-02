@@ -50920,6 +50920,140 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_088bf75f5da99d5f006abf91351f7087d1b03e1988bb42d716"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Senatorin Warren eröffnet Aufsichtsermittlung zu AI‑bezogenen Steuervorteilen bei Amazon, Alphabet/Google, Meta und Microsoft",
+      "fact": "Am 2026-10-01/2026-10-02 forderte Senatorin Elizabeth Warren in formellen Briefen bzw. Pressemitteilungen die CEOs von Amazon, Alphabet (Google), Meta und Microsoft zur Offenlegung, in welchem Umfang ihre AI‑ und Rechenzentrumsinvestitionen durch neue/retroaktive Steuervergünstigungen (Trump‑Ära/gesetzliche Änderungen) subventioniert wurden; Fristangaben in Begleittexten nennen einen Offenlegungszeitpunkt Anfang bis Mitte Oktober 2026 (z. B. Frist 2026-10-11 laut begleitender Senats-Mitglieder-Mitteilung).",
+      "placement": "Geographie: USA; Domäne: Fiskal‑ und Steueraufsicht / Unternehmenssubventionen; Layer: Politik / Regulierung; Horizon: kurzfristig (Tage–Wochen, unmittelbar nach 2026-10-01).",
+      "mechanism": "Öffentliche Untersuchung und formelle Briefe an Konzerne können kurzfristig Transparenz über die Höhe und Art gewährter Steuervergünstigungen erzwingen; das könnte Unternehmenserklärungen, Lobbyoffenlegungen oder zeitnahe Korrekturen in Steuerberichten auslösen, was politische Reputationskosten erhöht und (indirekt) Entscheidungs‑ und Investitionskommunikation zu Capex/Datacenter‑Ausgaben beeinflussen könnte.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Geringfügig bis moderat; die Ermittlung selbst liefert keinen direkten, quantifizierten Effekt auf Server‑DRAM‑Verfügbarkeit oder Preise, könnte aber politische Debatten auslösen, die steuerliche Anreize und damit Hyperscaler‑Capex‑Signale verändern — ein möglicher Kanal zur Modifikation der Nachfragedimension (demand/aiDemand) im Outlook‑System.",
+      "falsifier": "Bis 2026-10-11 (Frist genannt in begleitender Senats-Mitteilung) veröffentlichen die adressierten Unternehmen keine verpflichtenden Offenlegungen über die Höhe/Art der beanspruchten AI‑/Datacenter‑Steuervorteile und es gibt keine bestätigte öffentliche Reaktion (Letter/Disclosure) an das Büro von Senatorin Warren; oder umgekehrt: falls binnen 30 Tagen ab 2026-10-01 die Unternehmen formell dokumentierte Zahlen/Erklärungen liefern, wäre die kritische Behauptung (dass ein formaler Offenlegungsprozess initiiert wurde) verifiziert — die Falsifizierbarkeit prüft, ob die Ermittlung substantielle, datierte Unternehmensoffenlegungen erzeugt.",
+      "nextReview": "2026-10-11",
+      "eventDate": "2026-10-01",
+      "novelty": "Niedrig bis mittel — Warren hat in der Vergangenheit ähnliche Briefe/Ermittlungen zu Steuervergünstigungen und Big Tech geführt; Neu ist die explizite Fokussierung auf AI-/Datacenter‑Steuervorteile im Kontext der aktuellen Build‑out‑Welle.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 6,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand",
+        "pricing"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/warren-lawmakers-open-investigation-into-republicans-massive-trump-tax-subsidies-for-big-techs-ai-spending/",
+          "label": "Senatorin Elizabeth Warren - Pressemitteilung zur Untersuchung (Warren.senate.gov)",
+          "kind": "primary",
+          "supports": "Bestätigt, dass Senatorin Warren Briefe/Ermittlungen an Amazon, Meta, Alphabet und Microsoft initiiert hat und fordert Transparenz über AI‑/Datacenter‑Steuervorteile."
+        },
+        {
+          "url": "https://www.slotkin.senate.gov/2026/09/29/slotkin-warren-demand-full-accounting-of-trumps-huge-tax-breaks-for-ai-and-tech-companies/",
+          "label": "Senatorin Elissa Slotkin - Begleitmitteilung (Fristangabe)",
+          "kind": "secondary",
+          "supports": "Begleitende Mitteilung von Mitunterzeichnern nennt Forderungen und Frist (z. B. Offenlegung bis 2026-10-11) und liefert Kontext zur Zielsetzung der Briefe."
+        }
+      ],
+      "reason": "Die Kandidatenaussage beschreibt eine konkrete, datierte politische Aufsichtshandlung (Briefe/Ermittlungsanforderung) der US‑Senatorin Elizabeth Warren gegen vier große Technologieunternehmen. Primäre Quelle (Senats‑Pressemitteilung) bestätigt die Existenz der Untersuchung und adressierten Firmen. Für eine volle Aufnahme (accepted) verlangt das TAIL‑Regelwerk jedoch ein klar quantifiziertes, primär‑verifizierbares Marktergebnis (z. B. beobachtete Auswirkungen auf Kontraktpreise, Lieferzeiten, qualifizierte Shipments oder eine konkrete, datierte Unternehmensoffenlegung mit Summen/Einheiten), plus robuste adversariale Gegenprüfung. Diese Inbox‑Prüfung fand die formale Ermittlung, aber keine direkte, quantifizierte Marktwirkung oder eine aus den Briefen resultierende, datierte Unternehmensoffenlegung mit numerischen Einheiten; außerdem ist die Themengeschichte (Warrens wiederholte Steuer‑Anfragen an Big Tech) nicht neu. Deshalb wird der Kandidat aktuell auf Watchlist gesetzt: primäre Wirkung (Eröffnung der Untersuchung) ist verifiziert, aber die für eine Admission erforderlichen messbaren Marktfolgen/Index‑Belege fehlen. Empfohlene nächste Schritte: überprüfe bis 2026-10-11 auf eingegangene Unternehmensantworten/Offenlegungen (Letter‑Responses, SEC‑Filings oder aktualisierte Steuerausweise) und auf marktreaktive Indikatoren (Capex‑Guidance‑Änderungen, unmittelbare Datacenter‑Projekte‑Ankündigungen oder bestätigte steuerliche Rückzahlungen), dann erneute Bewertung.",
+      "candidateId": "7c13b46d7bc2e1c93260",
+      "candidateKey": "190d35a5b04c40d4f65aec76",
+      "reviewedAt": "2026-10-02T16:42:13.783Z",
+      "priorityScore": 62,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0828a0654b30c16d006abfdecb4bec87d083e45a826251d8ca"
+    },
+    {
+      "decision": "watchlist",
+      "title": "AMD Unveils 2023–2027 Data Center Networking Roadmap, Taking Aim at NVIDIA's Supernode Architecture",
+      "fact": "Behauptung: AMD habe eine 2023–2027 Data‑Center‑Networking‑Roadmap vorgestellt, die ausdrücklich darauf abzielt, NVIDIAs 'Supernode'‑Architektur anzugreifen.",
+      "placement": "Geographische Reichweite: globaler Hyperscaler/AI‑Infrastruktur‑Markt; Layer/Domain: Data‑Center Networking / Rack‑Scale Interconnect; Horizont: 2023–2027 Roadmap.",
+      "mechanism": "Gemeldeter Mechanismus: AMD soll durch einen Roadmap‑ und Produktmix (Pensando DPU/AI‑NICs, Ultra Accelerator Link, Helios/Rack‑Scale Systeme, Vulcano/Pollara NICs) Netzwerklatenz, Bandbreite und Rack‑Scale Interconnect‑Funktionalität bereitstellen, die mit NVIDIAs Supernode‑Konzept konkurrieren und damit Kundenallokationen und Priorisierung in AI‑Servern verändern könnten.",
+      "predictionId": "P-2026-07-11-02",
+      "predictionImpact": "Informiert die Einschätzung langfristiger Memory- und Infrastrukturnachfrage (Relevanz: beeinflusst aiDemand- und demand‑Treiber durch Server‑/Rack‑Architekturwahl; könnte Allokation/Lock‑in zwischen Anbieter‑Stacks verstärken).",
+      "falsifier": "Bis 2026-11-30 kein Primärdokument (AMD‑Pressemitteilung, AMD Investor/IR‑Präsentation oder offizieller AMD‑AAI/Financial‑Analyst‑Tag‑Transcript) veröffentlicht, das ausdrücklich und wörtlich formuliert, dass AMDs 2023–2027 Networking‑Roadmap gezielt NVIDIAs 'Supernode'‑Architektur angreift oder als direkten Wettbewerbs‑Zielpunkt nennt. (Wenn ein solches Primärdokument vor diesem Datum erscheint, würde das die Kernbehauptung bestätigen und erfordert Neubewertung.)",
+      "nextReview": "2026-11-30",
+      "eventDate": "2026-09-20",
+      "novelty": "Moderate — Roadmap‑Details zu AMD sind bereits in AMD‑Quellen dokumentiert, die spezifische Formulierung 'taking aim at NVIDIA Supernode' ist jedoch nicht durch ein klares Primärzitat belegt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1266/amd-unveils-strategy-to-lead-the-1-trillion-compute-market-and-accelerate-next-phase-of-growth",
+          "label": "AMD Investor Relations — 'AMD Unveils Strategy...' (Financial Analyst Day, 2025)",
+          "kind": "primary",
+          "supports": "Enthält AMDs roadmap‑Aussagen zu Helios, MI450/MI500, Pensando DPU/AI NICs und Networking‑Initiativen; belegt AMDs Networking‑Roadmap und Rack‑Scale‑Ambitionen, jedoch kein wörtliches Ziel 'NVIDIA Supernode'."
+        }
+      ],
+      "reason": "Admisssion‑Check: Das Kandidatenstück ist ein sekundärer/aggregierter Nachrichten‑RSS‑Eintrag (Google News). Primärquellen von AMD bestätigen, dass AMD eine ausführliche Data‑Center‑Roadmap und neue Networking‑Produkte (Pensando DPU/AI NICs, Rack‑Scale Helios, Ultra Accelerator Link) kommuniziert hat. Allerdings konnte aus den verfügbaren AMD‑Primärdokumenten kein wörtlicher Beleg gefunden werden, der die spezifische Behauptung stützt, AMD habe die Roadmap ausdrücklich als gezielte Angriffslinie gegen NVIDIAs 'Supernode'‑Architektur formuliert. Nach TAIL‑Regeln fehlt damit die notwendige Primärverifikation der Kernformulierung und der direkten wettbewerblichen Zielsetzung. Ohne ein eindeutiges Primärzitat bleibt die Richtung (‚taking aim at Supernode‘) inferenziell und damit nicht als VERIFIED DATA zulässig. Es sind außerdem mögliche Oppositionsquellen (AMD‑Pressetexte, Investor‑PR zeigen kooperative/komplementäre Positionen und vermeiden direkte Nennung von Wettbewerber‑Marken), die die explizite Formulierung infrage stellen. Folgerung: Watchlist — weitere Primärverifikation erforderlich; kein Index‑Impact belegt. Empfehlung: Prüfen, ob ein AMD‑Primärdokument (PR, FAD‑Transcript, AAI‑Keynote) explizit die Supernode‑Formulierung enthält; falls ja, kann der Fall neu bewertet und eventuell angenommen werden, vorausgesetzt alle TAIL‑Kriterien (atomare, datierte, quellbezogene Behauptung mit messbarer Auswirkung und Falsifier) sind erfüllt.\n\nFehlende/benötigte Beweise (Adversarial Check):\n- Direktes Primärzitat von AMD (Pressemitteilung, Transkript, Keynote) mit Datum, das wörtlich oder klar belegt, dass AMD die Roadmap zur direkten Konkurrenz mit NVIDIAs 'Supernode' positioniert. \n- Falls vorhanden, eine begleitende technische Folie oder Roadmap‑Grafik (AMD IR/AAI/Tech Session) die funktional und zeitlich 2023–2027 Networking‑Funktionen mit expliziter Gegenüberstellung zu Supernode zeigt.\n- Alternativ belastbare Zitate von anerkannten Marktteilnehmern/Analysten, die in Primär‑Interviews (nicht nur Aggregatoren) AMDs Roadmap als direkte Antwort auf Supernode einordnen.\n\nWenn diese Primärbelege auftauchen, bitte zur erneuten Prüfung vorlegen. Solange diese fehlen, bleibt die Aufnahme auf Watchlist mit NextReview am 2026-11-30.  \n\nReferenzen (für Aufnahmeprüfung zitiert): AMD Primär‑IR/Newsroom Materialien (s. Quellen). \n",
+      "candidateId": "f9723ef69e88a0631f3b",
+      "candidateKey": "8ae2347709bc01bb5ce89b49",
+      "reviewedAt": "2026-10-02T16:42:45.960Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03c31bac4d0218b7006abfdee5fe4887d08058c7f4932f325e"
     }
   ]
 }
