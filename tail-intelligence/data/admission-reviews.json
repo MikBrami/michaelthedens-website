@@ -50764,6 +50764,162 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_075661a8b79234d8006abf1442a59087d09814cd49cb412459"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Samsung HBM belegt 30 % der DRAM‑Waferkapazität bis 2027 — Primärquelle fehlt",
+      "fact": "Berichte behaupten, Samsung/HBM werde bis Ende 2027 rund 30 % der globalen DRAM‑Waferkapazität beanspruchen.",
+      "placement": "Globaler DRAM‑Wafer‑Layer; Relevanz für DRAM, HBM und Server‑DRAM; kurzfristig horizon 2027 (event date reported 2026-09-30).",
+      "mechanism": "Verschiebung von Wafer‑Allokation zu HBM (stacked HBM-Produktion nutzt dieselben DRAM‑Cleanroom‑Ressourcen), was die verfügbare Kapazität für konventionelle DDR‑Produkte reduziert und damit Angebotsknappheit/Preisaufschub bei Standard‑DRAM begünstigt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt die Vorhersage, dass HBM und Server‑DRAM strukturell knapp bleiben bis mindestens Ende 2028, indem sie einen quantitativen Treiber (verlagerte Wafer‑Input‑Share) für Angebotsreduktion nennen.",
+      "falsifier": "Offizielle, primäre Mengennachweise bis 2026-12-31: wenn Samsung (oder ein gleichwertiger Primärbericht von TrendForce/OEM‑Reporting) keine dokumentierte Wafer‑Allokation oder Branchen‑Bit/wafer‑Verteilung nahe ≥30% HBM‑Input für 2027 veröffentlicht, oder wenn verifizierbare Branchen‑Wafer‑Startdaten zeigen, dass HBM‑Waferanteil ≤22% für das gesamte Jahr 2027.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-30",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 55,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://eastasiabrief.com/semiconductors/samsung-says-hbm-will-take-30-dram-wafer-capacity-451",
+          "label": "East Asia Brief — 'Samsung says HBM will take 30% of DRAM wafer capacity by 2027'",
+          "kind": "secondary",
+          "supports": "Bericht (2026-09-30) zitiert Aussage, dass HBM fast 30 % der DRAM‑Wafer‑Input 2027 beanspruche. "
+        },
+        {
+          "url": "https://thebuildout.ai/intel/96e92b44-f42f-4bde-9217-ceaa98147310",
+          "label": "The Buildout — Zusammenfassung einer Executive‑Aussage (Kim Tae‑woo) über ~30 % HBM‑Waferanteil",
+          "kind": "secondary",
+          "supports": "Artikel fasst eine gemeldete Samsung‑Manager‑Aussage zusammen, wonach HBM bis 2027 rund 30 % der Waferkapazität beanspruchen soll."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/ai-keeping-dram-prices-high-130031963.html",
+          "label": "Yahoo/24/7 Wall St. — 'HBM will consume 30% of total DRAM wafer capacity by 2027' (cites TrendForce)",
+          "kind": "secondary",
+          "supports": "Artikel zitiert TrendForce‑Prognose, dass HBM‑Waferinput 2027 bei ~30 % liegen könnte."
+        },
+        {
+          "url": "https://theinvestor.vn/vietnam-begins-to-benefit-from-race-to-expand-ai-chip-production-d20133.html",
+          "label": "The Investor — wiederholte Erwähnung derselben 30%‑Behauptung",
+          "kind": "secondary",
+          "supports": "Fasst Berichte zusammen, die die 30%‑Prognose für 2027 wiedergeben."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist relevant für die TAIL‑These, weil eine substanzielle Umverteilung von Wafer‑Input zu HBM das verfügbare Angebot an konventionellem DRAM erheblich verringern und damit Preis‑/Versorgungsfolgen stützen würde. Allerdings konnte die zwingend geforderte Primärverifikation (offizielle Samsung‑Mitteilung, Original‑TrendForce‑Report oder ein OEM‑Wafer‑Allokations‑Datensatz) innerhalb des vorgegebenen Web‑Run‑Budgetes nicht direkt beschafft werden. Die gefundenen Artikel sind Sekundärberichterstattung, die TrendForce oder Aussagen von Samsung‑Managern zitiert, aber sie verlinken nicht (in den abgerufenen Kopien) auf einen eindeutig auffindbaren Primärreport mit den exakten, datierten Mengenzahlen. Ohne diese Primärquelle ist die Aussage nicht als VERIFIED DATA aufnehmbar. Daher: WATCHLIST — weiterverfolgen bis Vorliegen einer Primärquelle (z. B. TrendForce‑Report oder Samsung‑IR/Transcript mit expliziten Wafer‑Input‑Zahlen).",
+      "candidateId": "3a17d609f265da434d05",
+      "candidateKey": "b13b041acd72acdc26d9502f",
+      "reviewedAt": "2026-10-02T11:10:44.931Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f3e26fc6e5775a9006abf911c45e887d1a871afab2aa7ddf4"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix hält 90%-Mindest‑Yield für Hybrid‑Bonding fest (Bericht, 2026‑09‑19)",
+      "fact": "Berichten zufolge betonte SK hynix auf einer Branchenkonferenz, dass für den produktiven Einsatz von Hybrid‑Bonding in HBM‑Stacks mindestens eine Ausbeute (yield) von ~90 % erforderlich ist.",
+      "placement": "Geographie: globaler Halbleiter‑Packaging‑/HBM‑Markt; Domain/Layers: Advanced Packaging / HBM-Produktpfad; Horizon: kurzfristig (Q4 2026–2027) für Technologieentscheidungen und Ramp‑Planung.",
+      "mechanism": "SK hynix signalisiert eine technische Schwelle (>=90% Yield) für die Einführung von Face‑to‑Face Hybrid‑Bonding; das erhöht die HBM‑Qualifikationszeit, verzögert breite Hybrid‑Bonding‑Adoption und stützt alternative Lösungswege (z. B. MR‑MUF, TC‑Bonder) — dadurch kann HBM4/HBM4E‑Ramp verschoben werden und bindet bestehende Packaging‑Kapazitäten länger.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Unterstützt die Annahme, dass der breite SK‑hynix‑HBM4‑Ramp stärker in H2/2027 verschoben wird (d.h. das Basisszenario 'breiter SK‑hynix‑HBM4‑Ramp in Q3 2026' wird weniger wahrscheinlich).",
+      "falsifier": "Bis zum 2027-12-31 veröffentlicht SK hynix ein formales Produktions- und Messprotokoll (oder unabhängige Audit/Reporting), das belegt, dass Hybrid‑Bonding in HBM‑Stacks in Serienproduktion eingesetzt wird mit tatsächlichen qualifizierten Yield‑Messungen >=90% über mindestens einen voluminösen Produktionslauf (z. B. ≥100k Packages).",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-09-19",
+      "novelty": "Moderat — bestätigt eine konkrete technische Schwelle (90%) gegenüber vorherigen allgemeineren Aussagen über Hybrid‑Bonding; ändert aber nicht vollständig das bereits vorhandene Basiskonzept, dass Hybrid‑Bonding schwierig ist.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "negative_supply",
+      "severity": 30,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://v.daum.net/v/zcweY8B3Xi",
+          "label": "Daum-Repubikation des Herald Economy Berichtes: 'SK하이닉스 “하이브리드 본딩 수율 90% 포기 못해”' (Koreanisch, berichtsnah, 2026‑09‑19)",
+          "kind": "primary",
+          "supports": "Bericht zitiert SK hynix Aussage auf einer SEMI/Branchenveranstaltung, nannte 90%+ Yield als Bedingung für Hybrid‑Bonding‑Einführung; datiert 2026‑09‑19."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling",
+          "label": "Tom's Hardware – Zusammenfassung/kontextualisierende Berichterstattung (englisch)",
+          "kind": "secondary",
+          "supports": "Kontextquelle: SK hynix verschiebt erwartete Hybrid‑Bonding‑Adoption (Ziel HBM5) und betont, Hybrid‑Bonding für HBM4E nicht bereit – stützt Interpretation, dass SKs 90%‑Schwelle die Adoption verzögern würde."
+        }
+      ],
+      "reason": "Der Kandidat berichtet eine konkrete technische Entscheidungsgrenze (>=90% Yield) von SK hynix, dokumentiert auf einer Branchenveranstaltung am 2026‑09‑19. Ich konnte die Meldung in einer nahe am Original stehenden koreanischen Reproduktion (Daum/헤럴드경제‑Bericht) sowie in Sekundärberichten finden, die SK hynixʼ vorsichtigen Zeitplan für Hybrid‑Bonding bestätigen. Allerdings fehlt derzeit ein direktes, eindeutiges Primärdokument (z. B. Original‑헤럴드경제‑Artikel‑Permalink oder ein offizielles SK‑hynix‑Transkript), das die exakte Wortlautaussage, Messmethode oder eine firmenseitige Veröffentlichung mit gemessenen Yield‑Zahlen liefert. Deshalb ist der Sachverhalt plausibel und relevant für die Vorhersage P-2026-07-13-04 (Verschiebung breiter HBM4‑Ramp), aber nicht als vollständig primär‑verifiziert einzustufen.\n\nGegenläufige / ergänzende Hinweise: mehrere Sekundärquellen berichten, dass SK hynix MR‑MUF/TC‑Bonder‑Pfad weiter genutzt wird und dass Hybrid‑Bonding‑Adoption allgemein als anspruchsvoll angesehen wird (unterstützt die Sicht, dass eine 90%‑Schwelle eine Verzögerung bedingt). Es existieren zugleich Berichte über andere Anbieter (Samsung, Micron) und Brancheninitiativen, die unterschiedliche Timelines nennen – das schafft Rivalhypothesen, ob die 90%‑Hürde langfristig bindend bleibt oder ob Tool‑/Prozessverbesserungen schneller liefern.\n\nAuf Basis der fehlenden direkten Primärquelle, der technisch interpretierbaren Formulierung (\"mindestens 90%\" als Schwelle) und der potenziell variablen Messdefinitionen (welches Yield‑Measurement, welcher Package‑Typ, Stichprobengröße), gebe ich die Aufnahme als watchlist: die Information ist relevant und potenziell marktbeeinflussend, benötigt aber primäre Verifikation (firmeneigene Aussage oder offizielle Konferenz‑Transkripte) und einen robusteren adversarial check, bevor sie als VERIFIED DATA akzeptiert werden kann.",
+      "candidateId": "eeb8473dc413a2a4a665",
+      "candidateKey": "f4a323c3f9ea857d98c0d828",
+      "reviewedAt": "2026-10-02T11:11:03.410Z",
+      "priorityScore": 75,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_088bf75f5da99d5f006abf91351f7087d1b03e1988bb42d716"
     }
   ]
 }
