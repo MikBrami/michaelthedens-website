@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T21:54:29.582Z",
+  "generatedAt": "2026-10-02T02:18:08.687Z",
   "platform": {
-    "dataAsOf": "2026-10-01",
-    "analysisAsOf": "2026-10-01",
+    "dataAsOf": "2026-10-02",
+    "analysisAsOf": "2026-10-02",
     "sourceDataAsOf": "2026-09-29",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-10-01T21:54:27.597Z",
-      "pending": 127,
-      "reviewed": 103,
+      "checkedAt": "2026-10-02T02:18:07.631Z",
+      "pending": 126,
+      "reviewed": 105,
       "accepted": 11,
-      "rawCandidates": 547,
+      "rawCandidates": 550,
       "triage": {
         "archivedOpinions": 14,
-        "groupedDuplicates": 26
+        "groupedDuplicates": 27
       },
       "lastRun": {
-        "startedAt": "2026-10-01T21:53:38.300Z",
-        "completedAt": "2026-10-01T21:54:27.599Z",
+        "startedAt": "2026-10-02T02:17:21.791Z",
+        "completedAt": "2026-10-02T02:18:07.632Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 49,
+        "durationSeconds": 46,
         "budgetExhausted": false
       }
     },
@@ -39,7 +39,7 @@
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 78,
+        "score": 77,
         "status": "orange",
         "signals": 19,
         "confidence": 75,
@@ -60,20 +60,20 @@
         "score": 79,
         "status": "orange",
         "signals": 20,
-        "confidence": 65,
+        "confidence": 64,
         "coverage": 100
       }
     ]
   },
   "executivePulse": {
     "current": 75,
-    "previous": 76,
+    "previous": 75,
     "status": "orange",
     "confidence": 76,
     "riskPressure": 82,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-01; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (127 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-02; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (126 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
@@ -90,18 +90,6 @@
     },
     {
       "date": "2026-10-01",
-      "title": "Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
-      "summary": "Aktuelle Meldung von news.lavx.hu: Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "news.lavx.hu",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYTZlOHp3TmxKTWhtYU12VHlpYUdjZk1BblRiWmNsM2tHR3h2dzY3RURsX05DanhsdzlsREYwVmNNZzB3ZVpiUmU0Mll3Nk5keS1SYjNmZmNIclMxT0xiZXk1Qi0tQ3Vxb2lpb2Q0M1BpZ0M3YlVnRTZPWHhSTGxQUWltZXhLcVdvNFhjRFIxcm9jMnJEZkhkWDZ3LS16STlKVS1ZZFd2YWZVRENXQVp1Y29yS1I3V1RBWGRHeVZB?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-01",
       "title": "Sandisk remains solid as Micron's Q4 results reveal tight NAND supply through 2028: Citi",
       "summary": "Aktuelle Meldung von Seeking Alpha: Sandisk remains solid as Micron's Q4 results reveal tight NAND supply through 2028: Citi",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
@@ -111,13 +99,21 @@
       "source": "Seeking Alpha",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTXNCV2NSZEdPXzE1NFh5RnQ2eHJpeS1OS0pqOWJrVXVoSGZoQ1MxVDVxckRzNFBrUDg4ZXg1OU8xckVMRWVsTWRvTWZyMjRKZmdtS3RtUU5IM1dFeGRLVUNtdUVTM3hDMWwxZGtpTUkwdjZxOTFERndtaXNMVTdwVkRmNHlmdnFmYTJZOXNXVUVyYVR4Umc4RFdZUEhMRDR3elpWZnhVMkV5TmpFTzZqMWxfdUV4STRMaHZNV21fSXh6Zw?oc=5",
       "layer": "news"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
+      "summary": "Aktuelle Meldung von news.lavx.hu: Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 86,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "news.lavx.hu",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYTZlOHp3TmxKTWhtYU12VHlpYUdjZk1BblRiWmNsM2tHR3h2dzY3RURsX05DanhsdzlsREYwVmNNZzB3ZVpiUmU0Mll3Nk5keS1SYjNmZmNIclMxT0xiZXk1Qi0tQ3Vxb2lpb2Q0M1BpZ0M3YlVnRTZPWHhSTGxQUWltZXhLcVdvNFhjRFIxcm9jMnJEZkhkWDZ3LS16STlKVS1ZZFd2YWZVRENXQVp1Y29yS1I3V1RBWGRHeVZB?oc=5",
+      "layer": "news"
     }
   ],
   "catalysts": [
-    {
-      "date": "2026-10-01",
-      "event": "Switch IPO: Filing, Bewertung und Kapitalzugang prüfen"
-    },
     {
       "date": "2026-10-15",
       "event": "Forecast-Review: Advanced Packaging bleibt trotz Chiayi-Ausbau bis mindestens H2 2027 ein zentraler AI-Lieferkettenengpass."
@@ -136,11 +132,11 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "127 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "126 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
     {
@@ -157,18 +153,6 @@
     },
     {
       "date": "2026-10-01",
-      "title": "Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
-      "summary": "Aktuelle Meldung von news.lavx.hu: Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "news.lavx.hu",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYTZlOHp3TmxKTWhtYU12VHlpYUdjZk1BblRiWmNsM2tHR3h2dzY3RURsX05DanhsdzlsREYwVmNNZzB3ZVpiUmU0Mll3Nk5keS1SYjNmZmNIclMxT0xiZXk1Qi0tQ3Vxb2lpb2Q0M1BpZ0M3YlVnRTZPWHhSTGxQUWltZXhLcVdvNFhjRFIxcm9jMnJEZkhkWDZ3LS16STlKVS1ZZFd2YWZVRENXQVp1Y29yS1I3V1RBWGRHeVZB?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-01",
       "title": "Sandisk remains solid as Micron's Q4 results reveal tight NAND supply through 2028: Citi",
       "summary": "Aktuelle Meldung von Seeking Alpha: Sandisk remains solid as Micron's Q4 results reveal tight NAND supply through 2028: Citi",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
@@ -178,12 +162,24 @@
       "source": "Seeking Alpha",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTXNCV2NSZEdPXzE1NFh5RnQ2eHJpeS1OS0pqOWJrVXVoSGZoQ1MxVDVxckRzNFBrUDg4ZXg1OU8xckVMRWVsTWRvTWZyMjRKZmdtS3RtUU5IM1dFeGRLVUNtdUVTM3hDMWwxZGtpTUkwdjZxOTFERndtaXNMVTdwVkRmNHlmdnFmYTJZOXNXVUVyYVR4Umc4RFdZUEhMRDR3elpWZnhVMkV5TmpFTzZqMWxfdUV4STRMaHZNV21fSXh6Zw?oc=5",
       "layer": "news"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
+      "summary": "Aktuelle Meldung von news.lavx.hu: Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 86,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "news.lavx.hu",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYTZlOHp3TmxKTWhtYU12VHlpYUdjZk1BblRiWmNsM2tHR3h2dzY3RURsX05DanhsdzlsREYwVmNNZzB3ZVpiUmU0Mll3Nk5keS1SYjNmZmNIclMxT0xiZXk1Qi0tQ3Vxb2lpb2Q0M1BpZ0M3YlVnRTZPWHhSTGxQUWltZXhLcVdvNFhjRFIxcm9jMnJEZkhkWDZ3LS16STlKVS1ZZFd2YWZVRENXQVp1Y29yS1I3V1RBWGRHeVZB?oc=5",
+      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-10-01T21:54:29.877Z",
+    "generatedAt": "2026-10-02T02:18:08.851Z",
     "count": 3,
-    "candidateCount": 545,
+    "candidateCount": 518,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -271,12 +267,12 @@
           "CSP-CapEx und Hardware-Inbetriebnahme"
         ],
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
-        "currentScore": 78,
+        "currentScore": 77,
         "currentStatus": "orange",
         "confidence": 75,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-10-01"
+        "indexAsOf": "2026-10-02"
       },
       {
         "marketId": "enterprise_ssd",
@@ -373,10 +369,10 @@
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
         "currentScore": 79,
         "currentStatus": "orange",
-        "confidence": 65,
+        "confidence": 64,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-10-01",
+        "indexAsOf": "2026-10-02",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -410,18 +406,6 @@
     },
     {
       "date": "2026-10-01",
-      "title": "Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
-      "summary": "Aktuelle Meldung von news.lavx.hu: Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "news.lavx.hu",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYTZlOHp3TmxKTWhtYU12VHlpYUdjZk1BblRiWmNsM2tHR3h2dzY3RURsX05DanhsdzlsREYwVmNNZzB3ZVpiUmU0Mll3Nk5keS1SYjNmZmNIclMxT0xiZXk1Qi0tQ3Vxb2lpb2Q0M1BpZ0M3YlVnRTZPWHhSTGxQUWltZXhLcVdvNFhjRFIxcm9jMnJEZkhkWDZ3LS16STlKVS1ZZFd2YWZVRENXQVp1Y29yS1I3V1RBWGRHeVZB?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-01",
       "title": "Sandisk remains solid as Micron's Q4 results reveal tight NAND supply through 2028: Citi",
       "summary": "Aktuelle Meldung von Seeking Alpha: Sandisk remains solid as Micron's Q4 results reveal tight NAND supply through 2028: Citi",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
@@ -430,6 +414,18 @@
       "sourceQuality": 2,
       "source": "Seeking Alpha",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTXNCV2NSZEdPXzE1NFh5RnQ2eHJpeS1OS0pqOWJrVXVoSGZoQ1MxVDVxckRzNFBrUDg4ZXg1OU8xckVMRWVsTWRvTWZyMjRKZmdtS3RtUU5IM1dFeGRLVUNtdUVTM3hDMWwxZGtpTUkwdjZxOTFERndtaXNMVTdwVkRmNHlmdnFmYTJZOXNXVUVyYVR4Umc4RFdZUEhMRDR3elpWZnhVMkV5TmpFTzZqMWxfdUV4STRMaHZNV21fSXh6Zw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
+      "summary": "Aktuelle Meldung von news.lavx.hu: Micron sues YMTC, alleging stolen NAND secrets and poached engineers fueled global patent war",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 86,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "news.lavx.hu",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYTZlOHp3TmxKTWhtYU12VHlpYUdjZk1BblRiWmNsM2tHR3h2dzY3RURsX05DanhsdzlsREYwVmNNZzB3ZVpiUmU0Mll3Nk5keS1SYjNmZmNIclMxT0xiZXk1Qi0tQ3Vxb2lpb2Q0M1BpZ0M3YlVnRTZPWHhSTGxQUWltZXhLcVdvNFhjRFIxcm9jMnJEZkhkWDZ3LS16STlKVS1ZZFd2YWZVRENXQVp1Y29yS1I3V1RBWGRHeVZB?oc=5",
       "layer": "news"
     }
   ]

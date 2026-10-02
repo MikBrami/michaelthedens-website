@@ -50627,6 +50627,143 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_045d9b1ef351aab1006abed67b06ec87d1a8cd6c7d03f3f313"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: 'NAND-Preise steigen 30% nach Micron-Quartalszahlen; Citi bleibt bei Buy für SanDisk'",
+      "fact": "Bericht zitiert Citi-Analyse, wonach Microns Quartalsergebnis NAND‑Revenue sequenziell +42% zeigte und Citi Preise für NAND ~30% QoQ angab; Citi bekräftigte eine positive Einschätzung für SanDisk (Buy/Preisziel-Anhebung).",
+      "placement": "Globaler NAND-/Enterprise‑SSD‑Markt (Industrieller Layer); berichteter Zeitraum: Micron FQ4 / Earnings-Release rund Ende September 2026 (Quelle berichtet 2026-10-01).",
+      "mechanism": "Angebots-/Mix-Effekt: Microns Berichtete Bit‑Shipments und Umsatzmix (starke Data‑Center-/NAND‑Mix) kombiniert mit strukturell enger NAND‑Auslastung führten laut Citi zu starken QoQ-ASP‑Zuwächsen (~+30%), was kurzfristig Druck auf verfügbare Enterprise‑SSD‑Supply ausübt und Preise antreibt.",
+      "predictionId": "",
+      "predictionImpact": "keine valide Verknüpfung: Kandidat benennt kein bestehendes PREDICTION‑ID aus dem Depot. (Admission verlangt explizite Zuordnung.)",
+      "falsifier": "Bis 2026-12-31: öffentlicher, überprüfbarer Kontraktpreis‑Index (vergleichbarer Enterprise‑NAND/NAND‑ASP‑Kontraktkorb) weist keinen kumulierten QoQ‑Anstieg von ~30% in Microns Folgequartal aus, oder Citi/primäre Brokerage‑Note mit der behaupteten Zahl wird nicht öffentlich bestätigt.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-30",
+      "novelty": "Niedrig — wiederholt berichtete Marktrichtung nach Micron‑Earnings; überschneidet sich mit bestehenden Baseline‑Signalen zu NAND/enterprise_ssd (price_up).",
+      "duplicateOf": "tail-2026-07-14-nand-essd",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://seekingalpha.com/news/4649104-sandisk-remains-solid-as-microns-q4-results-reveal-tight-nand-supply-through-2028-citi",
+          "label": "Seeking Alpha (quoting Citi analystnote)",
+          "kind": "secondary",
+          "supports": "Bericht zitiert Citi‑Anmerkung: 'Sequentially, NAND revenue +42%, B/S +10% as prices increased ~30% ...'."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sndk-stock-citigroup-sees-sandisk-224850303.html",
+          "label": "Yahoo Finance / Aggregator",
+          "kind": "secondary",
+          "supports": "Berichtet Citi‑Reaktion nach Micron‑Earnings; bestätigt SanDisk‑Aufwertung/Preiszieländerung in Folge der Ergebnisse."
+        }
+      ],
+      "reason": "Die Inbox‑Kandidatenbehauptung beruht offenbar auf einer Broker-/Analysten‑Note (Citi) und auf Microns Quartalsergebnis. Für TAIL‑Aufnahme ist jedoch zwingend: (1) ein primärer, öffentlich zugänglicher Primärbeleg, der atomare, datierte Messungen (z.B. offiziell gemessene NAND‑ASP oder ein standardisierter Kontraktpreisindex mit Einheit und Datum) liefert; (2) eine explizite Verknüpfung zu einer existierenden Vorhersage‑ID im Depot; und (3) einen konkreten, prüfbaren Falsifizierer und Review‑Datum. Diese Inbox‑Einreichung liefert stattdessen eine sekundäre Zusammenfassung (Medienberichte, die Citi zitieren) und wirkt inhaltlich redundant gegenüber bereits im Baseline‑Korpus vorhandenen NAND/enterprise_ssd price_up‑Signalen (tail-2026-07-14-nand-essd). Ich habe die berichteten Zahlen (NAND‑Revenue +42% seq.; Preise ~+30% QoQ) in mehreren Sekundärquellen gefunden, die wiederum Citi‑Kommentare zitieren (Seeking Alpha, Yahoo/TradingView), aber kein öffentliches Citi‑Client‑Note PDF oder ein direktes Micron‑Kommuniqué mit einer klaren ASP‑Zeitreihe wurde im Quellencheck als Primärbeleg verifiziert. Ohne diesen Primärbeleg und ohne explizite Verknüpfung zu einem vorhandenen Prediction‑ID kann die Behauptung nicht als VERIFIED DATA aufgenommen werden. Deshalb Watchlist — bitte nachreichen: (A) die originale Citi‑Analysten‑Note oder ein öffentliches Transkript, das die 30%‑Zahl explizit und datiert zeigt; oder (B) Microns offizielles Earnings‑Release / Form 8‑K mit einer bestätigten ASP/Preis‑Metrik für NAND (mit Datum); und (C) eine klare Zuordnung zu einer Prediction‑ID aus dem Depot (falls Impact beabsichtigt).",
+      "candidateId": "6d15c3018d4b6a5f4065",
+      "candidateKey": "fb100c2c2509f5736a843129",
+      "reviewedAt": "2026-10-02T02:17:38.426Z",
+      "priorityScore": 57,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03ff9414b48b70e3006abf1432eec087d087489c18ed92fb92"
+    },
+    {
+      "decision": "watchlist",
+      "title": "QQQ steigt >1% im Vorfeld von ASML‑/TSMC‑Berichten; Goldman Sachs sieht starke Earnings‑Saison",
+      "fact": "TradingKey meldet, dass der Nasdaq‑100‑ETF (QQQ) intraday um mehr als 1% stieg, während ASML und TSMC ihre Quartalsberichte vorbereiteten, und dass Goldman Sachs eine weitere starke Earnings‑Saison für US‑Aktien erwartet.",
+      "placement": "Marktwirkung (US‑Aktien/Technologiesektor), kurzfr. Preisbeobachtung; geographisch: USA; horizont: event‑/earnings‑window rund um die Berichtswochen.",
+      "mechanism": "Marktpreisbewegung (Kurzfrist‑Rally) getrieben von erwarteten positiven Earnings‑Releases bei großen Halbleiterlieferanten (ASML, TSMC) und einer positiven Institutional‑Narrative von Goldman Sachs; implizite Kausalannahme: positive Earnings‑Erwartungen → Käuferdruck auf Tech‑Benchmarks → QQQ‑Rally.",
+      "predictionId": "",
+      "predictionImpact": "Kein klar verknüpfter TAIL‑Forecast im Inbox‑Set wurde vom Kandidatentext explizit adressiert; die Meldung ist ein kurzfristiges Marktsignal, nicht eine atomare, quantifizierbare Beobachtung mit direktem Bezug auf die vorhandenen Vorhersagen.",
+      "falsifier": "Fehlende Primärverifikation / messbare Gegenprüfung: Wenn weder (a) ein Primär‑Quelle‑Zitat von Goldman Sachs existiert, das die behauptete Erwartung datiert und im Wortlaut belegt ist, noch (b) ein intraday‑Trades‑Protokoll (z. B. Nasdaq/QQQ Pre‑/Post‑Market Candles) das behauptete >1%‑Ansteigen beim angegebenen Event‑Datum liefert, dann ist die Kandidatenbehauptung nicht verifizierbar. Prüffrist: 2026-10-09 — wenn bis dahin keine Primärzitate oder offizielle Marktdaten (Exchange/Level‑1) vorgelegt werden, bleibt die Meldung nicht verifiziert.",
+      "nextReview": "2026-10-09",
+      "eventDate": "2026-09-19",
+      "novelty": "Gering bis moderat — die Meldung fasst eine intraday‑Marktbewegung und eine Kommentaranalyse (Goldman Sachs) zusammen; kein neues strukturelles Marktereignis.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 9,
+        "thesisRelevance": 12,
+        "forecastImpact": 15,
+        "falsifiability": 11,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 15,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262001551-us-stock-financial-report-asml-tsmc-sp500-nasdaq-qqq-tradingkey",
+          "label": "TradingKey — Artikel (aggregator/market‑briefing)",
+          "kind": "secondary",
+          "supports": "Berichtet Intraday‑Anstieg des QQQ und nennt ASML/TSMC Earnings sowie eine positive Sicht von Goldman Sachs (Headline/Analyse)."
+        }
+      ],
+      "reason": "Der Kandidat ist ein kurzer Marktbericht (Headline + Brokerkommentar) ohne direktes Primärzitat von Goldman Sachs oder verlinkbare Exchange‑Marktprotokolle, die die behauptete >1%‑Bewegung zum genannten Datum quantifizieren. Der Inbox‑Auftrag verlangt für Aufnahme in das TAIL‑Baseline ein atomar verifizierbares, datiertes Faktum mit Messwerten, klarer geografischer/produktbezogener Platzierung, kausalem Mechanismus, und einem messbaren Falsifier — diese Anforderungen sind hier nicht vollständig erfüllt. Außerdem ist TradingKey ein sekundärer Markt‑Briefing‑Dienst; die Prüfung benötigt: (1) Primärquelle von Goldman Sachs (Kommentar/Research‑Note/Press‑Zitat) mit Datum und Wortlaut, und (2) offizielle Marktdaten (Exchange/Level‑1/Intraday‑Candles oder Nasdaq/QQQ Tick‑Data) die das behauptete Kurs‑Move an dem genauen Datum belegen. Solange diese Primärbelege fehlen, kann die Meldung nicht als VERIFIED DATA aufgenommen werden. Gegen‑evidence (z. B. intraday‑Charts von Nasdaq) wurde bisher nicht vorgelegt; kurzfristige Indexbewegungen sind in der Regel transiente Marktreaktionen und keine strukturellen Signale für die bestehenden TAIL‑Vorhersagen. Empfehlung: Nachlieferung der beiden Primärbelege (Goldman‑Zitat und Exchange‑Price‑Record) bis 2026-10-09 zur erneuten Bewertung.",
+      "candidateId": "ad4d7b8f1e836d935570",
+      "candidateKey": "bf8516dc7bc46ac2794d382f",
+      "reviewedAt": "2026-10-02T02:18:07.612Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_075661a8b79234d8006abf1442a59087d09814cd49cb412459"
     }
   ]
 }
