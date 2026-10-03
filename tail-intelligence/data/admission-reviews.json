@@ -51776,6 +51776,152 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_000ea6cc25c04681006ac11b916d0887d2a830609b4e28bdee"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron erweitert Aktivitäten an vier Taiwan‑Standorten (Front‑End, HBM‑Packaging, Test) — Primärquellen vorhanden, aber fehlende Vorhersage‑Verknüpfung und falsifizierbare Wirkung",
+      "fact": "Micron betreibt / erweitert simultan vier Produktions‑/Packaging‑/Test‑Standorte in Taiwan (einschließlich Tongluo/Taoyuan/Taichung/Tainan) und plant, die zweite HBM‑Advanced‑Packaging‑Anlage in Taichung Mitte/Ende Oktober 2026 in HBM‑Produktion zu bringen. (Berichtet in Wirtschaftsmedien und von Micron-Statements; Erwerb Tongluo offiziell 2026‑03‑15).",
+      "placement": "Geographie: Taiwan; Domäne: Halbleiter‑Fertigung und Advanced Packaging; Layer: Produktions‑ und Packaging‑Kapazitätsaufbau; Horizon: kurzfristig — erste HBM‑Packaging‑Produktion erwartet 2026‑10 (mid/Oct 2026) und wafer‑output‑Pläne 2H 2027.",
+      "mechanism": "Micron erhöht lokale Frontend‑Waferfläche (über die Akquisition und Inbetriebnahme des Tongluo P5‑Standorts), verlagert oder baut eine zweite Advanced‑Packaging‑Einheit in Taichung für HBM und startet zusätzliche Test/Frontend‑Aktivitäten in Taoyuan und Tainan. Dies erhöht Microns Fähigkeit, HBM‑Pakete zu produzieren und DRAM‑Wafer‑Output zu skalieren, wodurch kurzfristig Angebotsdruck auf AI‑Memory‑Knappheit gedämpft werden könnte — sofern Ausrüstung, Qualifikation und qualifizierte Shipments wie geplant erfolgen.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Kein eindeutiger falsifizierbarer Impact auf eine gelieferte TAIL‑Vorhersage im Kandidatentext. Fehlender formaler Falsifizierer — vorgeschlagen: Sollte Micron bis 2027‑06‑30 keine qualifizierten HBM‑Shipments (confirmed qualified shipments in an HBM product family with declared Gb units per month) von den genannten Taiwan‑Sites melden, würde die operative Wirksamkeit der Expansion als nicht realisiert gelten.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-10-02",
+      "novelty": "Moderat — die Aktivitäten sind Teil einer bereits bekannten, im Quartalsbericht/10‑Q und früheren Micron‑Mitteilungen dokumentierten Expansionsstrategie, aber konkrete Produktions‑Timelines (zweite Taichung Packaging‑Line, Tongluo Inbetriebnahme/Tool‑Einzug, Tainan Tool‑Arrivals) sind neu bestätigt.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 5,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://xenospectrum.com/en/micron-taiwan-memory-expansion-nanya/",
+          "label": "XenoSpectrum (candidate source)",
+          "kind": "secondary",
+          "supports": "Zusammenfassung: Micron expands across four Taiwan sites; Taichung second packaging plant to begin HBM production in October 2026."
+        },
+        {
+          "url": "https://micron.gcs-web.com/news-releases/news-release-details/micron-completes-acquisition-psmcs-tongluo-p5-site-taiwan",
+          "label": "Micron press release: Completion of Tongluo (PSMC P5) acquisition (2026‑03‑15)",
+          "kind": "primary",
+          "supports": "Micron bestätigt den Erwerb des Tongluo P5‑Standorts zur Unterstützung von DRAM/HBM‑Output und nennt Pläne für zusätzliche saubere Raumfläche und Ausbauphasen."
+        },
+        {
+          "url": "https://focustaiwan.tw/business/202610010013",
+          "label": "Focus Taiwan / Taipei (Bericht 2026‑10‑01/02)",
+          "kind": "secondary",
+          "supports": "Berichtet Microns NT$1.6 Bio. Taiwan‑Investment und explizit auf vier Standorte verteilte Expansion; nennt Taichung Packaging‑Line mit erwarteter HBM‑Produktion Mitte/Ende Oktober 2026."
+        }
+      ],
+      "reason": "Primäre und lokaljournalistische Quellen (Micron‑Pressemitteilung, Focus Taiwan, TrendForce) bestätigen, dass Micron in Taiwan mehrere Standorte simultan erweitert und eine zweite HBM‑Packaging‑Line in Taichung für Oktober 2026 geplant ist. Allerdings erfüllt der eingereichte Kandidat nicht die TAIL‑Aufnahmekriterien für eine Akzeptanz: es fehlt eine verbindliche Verknüpfung zu einer bestehenden TAIL‑Vorhersage (keine predictionId angegeben), es fehlt ein konkreter, messbarer Falsifizierer im Text (der Kandidat liefert keine quantifizierbare Auswirkung auf Preise, Lead‑Times oder qualifizierte Shipments), und es fehlen beobachtbare indexierbare Messungen (z. B. bestätigte qualifizierte HBM‑Shipments in Gb/Monat oder konkrete Lead‑Time‑Verbesserungen) zum Nachweis eines tatsächlichen Angebots‑Effekts. Daher Watchlist — die Tatsachenbehauptung ist verifizierbar, aber die Aufnahme als operationaler TAIL‑Evidenzpunkt erfordert: (a) explizite Zuordnung zu einer gelieferten Vorhersage (z. B. Wirkung auf P‑2026-07-11-01 HBM/Server‑DRAM Knappheit), (b) ein quantifizierbarer Falsifizierer (z. B. \"keine qualifizierten HBM‑Shipments ≥ X Gb/Monat bis YYYY‑MM‑DD\"), und (c) Index‑Evidence (qualifizierte Shipments / Lead‑Time / Fill‑Rate) oder eindeutige, auditierbare Produktionsmeldungen. Vorschlag: Nachprüfen am 2027‑06‑30 auf bestätigte qualifizierte HBM‑Shipments von den genannten Taiwan‑Standorten; wenn solche Shipments vorliegen mit dokumentierten Mengen, kann der Signalstatus auf ACCEPTED hochgestuft werden.",
+      "candidateId": "e7108d2c2d9aa0f8ed2b",
+      "candidateKey": "0d0320961acc85418e130c16",
+      "reviewedAt": "2026-10-03T19:54:40.587Z",
+      "priorityScore": 69,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0797d018f240b487006ac15d6f54e087d1872f7d024cedd3a4"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT (长鑫) meldet 2026‑09‑20 Serien‑/Massenproduktion der 5. Generation DRAM (G5) und 24Gb LPDDR5X‑Chips",
+      "fact": "CXMT gab am 2026-09-20 bekannt, dass seine 5. Generation DRAM‑Technologieplattform (G5) in die Massenproduktion eingetreten sei und zwei 24‑Gbit LPDDR5X‑Produkte (496‑Ball und 245‑Ball) in Serienproduktion seien. (Offizielle Unternehmensmeldung und zeitnahe Berichterstattung).",
+      "placement": "Geographie: China (Hefei / Beijing). Domäne/Lieferkette: Mobile DRAM (LPDDR5X) und DRAM‑Fabs; Layer: Fertigung/Produktionsramp; Horizon: sofort / Q4 2026 sichtbar.",
+      "mechanism": "Produktionsabschlüsse für eine neue DRAM‑Plattform erhöhen das nominale Angebot an mobilen DRAM‑Dies (24Gb LPDDR5X). Über mittlere Frist kann dies Angebot und Wettbewerbsdruck auf globale LPDDR‑Märkte erhöhen (Preisdruck und Substitutionswirkung), sofern ausgelieferte, qualifizierte Wafer/Chips tatsächlich in nennenswerten Mengen an Kunden ausgeliefert und qualifiziert werden.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Mittel: Wenn CXMT‑G5‑Massenproduktion zu nachhaltigen, qualifizierten Shipments führt, würde dies das Risiko einer länger andauernden Memory‑Knappe (Forecast P-2026-07-20-04) abschwächen; aktuell ist dieses Signal aber nicht ausreichend belegt.",
+      "falsifier": "Bis 2027-03-31: keine nachprüfbaren, qualifizierten Kunden‑Shipments (signed LTAs oder veröffentlichte qualifizierte Auslieferungs‑/Fill‑Rate‑Messungen) und keine messbare Verbesserung bei relevanten Kontraktpreisen oder Fill‑Rates in einem repräsentativen Server/LPDDR‑Kontraktkorb (dann würde die behauptete verfügbare Produktionswirkung falsifiziert bzw. nicht bestätigt).",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-20",
+      "novelty": "CXMT selbst hatte bereits 2025/2026 Produktrampen kommuniziert; die heute gemeldete formale 'Massenproduktion' der G5‑Plattform mit ausgewiesenen 24Gb LPDDR5X‑Dies ist jedoch ein neuer, operationaler Produktmeilenstein.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.cxmt.com/en/news/info_22.html",
+          "label": "CXMT – Offizielle Mitteilung: \"CXMT Announces Mass Production of 5th-Generation DRAM Technology Platform\" (2026-09-20).",
+          "kind": "primary",
+          "supports": "Unternehmensmeldung nennt G5 'mass production' und zwei 24‑Gbit LPDDR5X‑Produkte in Serienproduktion; nennt Ball‑Counts (496/245) und Zielanwendungen (Smartphones/portable devices)."
+        },
+        {
+          "url": "https://technode.com/2026/09/21/cxmt-announces-mass-production-of-fifth-generation-dram-platform/",
+          "label": "TechNode (engl.): Zusammenfassung und Kontext zur CXMT‑Ankündigung (2026-09-21).",
+          "kind": "secondary",
+          "supports": "Bestätigt Datum und Kerninhalt der CXMT‑Mitteilung in unabhängiger Technologieberichterstattung."
+        }
+      ],
+      "reason": "Die Behauptung, dass CXMTs G5‑Plattform und 24Gb LPDDR5X in Massenproduktion seien, wird direkt durch eine offizielle CXMT‑Meldung vom 2026‑09‑20 belegt. Das Event ist relevant für die TAIL‑These (Memory Verfügbarkeit/Preise), weil zusätzliche chinesische Produktionskapazität die weltweite Angebotslage beeinflussen kann. Allerdings fehlen derzeit unabhängige, quantifizierbare Nachweise für qualifizierte Kunden‑Shipments, bestätigte Liefermengen oder Kontrakt‑Fill‑Rate‑Messungen — und es existieren gleichzeitig Berichte über schwere Yield‑Probleme bei CXMT (insbesondere HBM3‑Versuche), die die effektive, sofortige Erhöhung an verfügbarer Bit‑Supply infrage stellen. Nach den TAIL‑Aufnahmeregeln ist das Material daher nicht ausreichend für eine Aufnahme als VERIFIED DATA oder Accepted Signal, weil ein indexierbares, datierten Messwert (Shipments / qualified shipments / contract volumes / lead‑time change) fehlt. Deshalb setze ich Watchlist: das Ereignis verdient Nachverfolgung; entscheidende Beweise (qualifizierte Auslieferungen, externe Bestätigungen, Preismessungen) müssen vorgelegt werden, um die behauptete Verfügbarkeitswirkung zu bestätigen. Opposing Evidence: mehrere Branchenberichte (Digitimes, WCCFTech/Asian tech press) vom Sep 9–10, 2026 melden HBM‑Yieldprobleme (≈25–30%), was die Aussage einer sofort wirksamen Supply‑Verbesserung schwächt. Die Aufnahme bleibt Watchlist, bis die falsifier‑Prüfung (siehe oben) erfüllt oder widerlegt wird.",
+      "candidateId": "1931993602930e74cbcd",
+      "candidateKey": "ae2ce1f70656a0cd30d267ee",
+      "reviewedAt": "2026-10-03T19:55:09.800Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_024ef5d788e63684006ac15d80c36887d1aaa6335fe758c5d2"
     }
   ]
 }
