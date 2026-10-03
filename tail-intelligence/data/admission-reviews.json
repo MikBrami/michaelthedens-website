@@ -51171,6 +51171,198 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0b3981a558623613006ac020f00d0887d1aa06f999c854b9f6"
+    },
+    {
+      "decision": "accepted",
+      "title": "Samsung setzt Lieferpreis für HBM4 in Verhandlungen deutlich über HBM3E an (Mid‑to‑High $4/Gb)",
+      "fact": "Samsung Electronics hat bei Verhandlungen für die Jahreslieferverträge von HBM4 (nächste HBM‑Generation) einen Angebotspreis im Bereich von 'mid‑to‑high USD 4 pro Gigabit' genannt — mehr als das Dreifache des aktuellen HBM3E‑Niveaus (~USD 1.5/Gb).",
+      "placement": "global AI‑Accelerator / HBM‑Vertragsmarkt; Herstellerverkauf (Samsung) -> Großkunden (GPU/ASIC‑Anbieter), Zeithorizont: Vertragsjahr 2027 (Verhandlungen berichtet am 2026‑10‑02).",
+      "mechanism": "Samsung fordert einen mehr als dreifachen Preisaufschlag für HBM4 gegenüber HBM3E, was direkt die vertragliche ASP‑Basis erhöht. Höhere HBM4‑Vertrags‑ASP erhöht die Stückkosten von AI‑Beschleunigern (Host‑Bill of Materials), schafft stärkeren Preisdruck auf OEMs/Accelerator‑Anbieter und kann vorhandene HBM‑Kapazitätsknappheit (Qualifikation + Packaging) weiter verstärken, da Käufer eher Allokation/Long‑Term‑Agreements bunkern statt Spot‑Logik zu nutzen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt das Basisszenario, dass HBM (und Server‑DRAM) strukturell knapp bleibt bis mindestens Ende 2028 und treibt den Preisdruck 2027 weiter; das beobachtete Angebotspreis‑Signal ist konsistent mit einem anhaltenden 'price_up' und 'negative_supply' Impuls für HBM‑Märkte.",
+      "falsifier": "Bis zum 2027‑03‑31 beobachtet der Markt gewichtete Vertrags‑ASP für HBM4 (aggregierte, verifizierbare Vertragsmeldungen / Hersteller‑Disclosure) im Median unter USD 2.00/Gb oder Samsung veröffentlicht eine offizielle, dokumentierte Listen‑/Vertrags‑ASP‑Klarstellung unter USD 3.00/Gb für Jahreslieferverträge — dann ist die Behauptung in ihrer monetären Größenordnung falsifiziert.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-10-02",
+      "novelty": "Moderate — Preisniveau (mid‑to‑high $4/Gb) ist neue, konkrete monetäre Aussage; Markt hatte bereits preissteigernden Druck erwartet.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 55,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.mk.co.kr/news/business/12167164",
+          "label": "매일경제 — '[단독] 삼성, 내년 HBM4 가격 3배 높인다' (2026-10-02)",
+          "kind": "primary",
+          "supports": "Bericht nennt '1Gb 당 4달러대 중후반' als von Samsung angebotenen Preispunkt in Jahres‑Lieferverhandlungen für HBM4; berichtet außerdem, dass Preisverhandlungen im Oktober 2026 in Abschlussphase sind."
+        },
+        {
+          "url": "https://www.mk.co.kr/en/business/12167435",
+          "label": "Maeil Business (English) — 'Samsung to triple HBM prices next year' (2026-10-02)",
+          "kind": "secondary",
+          "supports": "englische Fassung/Übersetzung des Berichts: 'offering major customers a price in the mid‑to‑high USD 4/Gb range versus around USD 1.5/Gb for HBM3E'."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung zitiert einen klar datierten Primärartikel der südkoreanischen 매일경제 (Maeil Business) vom 2026‑10‑02, der einen konkreten monetären Angebotswert (mid‑to‑high USD 4/Gb) nennt. Das ist ein atomic, datiertes Markt‑Signal mit Einheiten (USD/Gb), das unmittelbar relevant für die TAIL‑These über anhaltende HBM/Server‑DRAM‑Knappheit und Preisdruck ist. Quellenangabe und Zitat sind überprüfbar und primär; der Einwand gegen sofortige 'VERIFIED SUPPLY RELIEF' besteht — es handelt sich um ein Preisangebot / Verhandlungsreadout (keine bestätigten Shipment‑/Fill‑Rate‑Messungen). Daher indexImpact=false. Die vorgeschlagene Falsifizierbarkeit benennt ein konkretes Datum (2027‑03‑31) und eine messbare Bedingung (gewichteter Vertrags‑ASP median < USD 2.00/Gb oder offizielle Samsung‑Klarstellung), damit die Aufnahme testbar ist. Gegenbelege zur Abschwächung des Signals (z. B. Berichte über Kapazitätserweiterungen von Mitbewerbern oder frühe HBM4‑Shipments) wurden geprüft; sie begründen keine unmittelbare Widerspruchsbeweislage gegen das berichtete Verhandlungsangebot, reduziert jedoch die Schwere des Signals. Daher wird das Element als Signal (price_up / availability stress) angenommen und akzeptiert.",
+      "candidateId": "cafb6136a822741abfda",
+      "candidateKey": "54179b1a0b7e58140d31e303",
+      "reviewedAt": "2026-10-03T02:00:55.915Z",
+      "priorityScore": 84,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-54179b1a0b7e58140d31e303",
+        "title": "Samsung setzt Lieferpreis für HBM4 in Verhandlungen deutlich über HBM3E an (Mid‑to‑High $4/Gb)",
+        "date": "2026-10-02",
+        "admittedAt": "2026-10-03T02:00:55.915Z",
+        "fact": "Samsung Electronics hat bei Verhandlungen für die Jahreslieferverträge von HBM4 (nächste HBM‑Generation) einen Angebotspreis im Bereich von 'mid‑to‑high USD 4 pro Gigabit' genannt — mehr als das Dreifache des aktuellen HBM3E‑Niveaus (~USD 1.5/Gb).",
+        "placement": "global AI‑Accelerator / HBM‑Vertragsmarkt; Herstellerverkauf (Samsung) -> Großkunden (GPU/ASIC‑Anbieter), Zeithorizont: Vertragsjahr 2027 (Verhandlungen berichtet am 2026‑10‑02).",
+        "tailInference": "Samsung fordert einen mehr als dreifachen Preisaufschlag für HBM4 gegenüber HBM3E, was direkt die vertragliche ASP‑Basis erhöht. Höhere HBM4‑Vertrags‑ASP erhöht die Stückkosten von AI‑Beschleunigern (Host‑Bill of Materials), schafft stärkeren Preisdruck auf OEMs/Accelerator‑Anbieter und kann vorhandene HBM‑Kapazitätsknappheit (Qualifikation + Packaging) weiter verstärken, da Käufer eher Allokation/Long‑Term‑Agreements bunkern statt Spot‑Logik zu nutzen.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Unterstützt das Basisszenario, dass HBM (und Server‑DRAM) strukturell knapp bleibt bis mindestens Ende 2028 und treibt den Preisdruck 2027 weiter; das beobachtete Angebotspreis‑Signal ist konsistent mit einem anhaltenden 'price_up' und 'negative_supply' Impuls für HBM‑Märkte.",
+        "falsifier": "Bis zum 2027‑03‑31 beobachtet der Markt gewichtete Vertrags‑ASP für HBM4 (aggregierte, verifizierbare Vertragsmeldungen / Hersteller‑Disclosure) im Median unter USD 2.00/Gb oder Samsung veröffentlicht eine offizielle, dokumentierte Listen‑/Vertrags‑ASP‑Klarstellung unter USD 3.00/Gb für Jahreslieferverträge — dann ist die Behauptung in ihrer monetären Größenordnung falsifiziert.",
+        "nextReview": "2027-03-31",
+        "priorityScore": 84,
+        "scoreBreakdown": {
+          "sourceQuality": 16,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 17,
+          "falsifiability": 12,
+          "timeSensitivity": 9
+        },
+        "severity": 55,
+        "confidence": 75,
+        "markets": [
+          "hbm",
+          "server_dram"
+        ],
+        "signal": "price_up",
+        "driverScope": [
+          "pricing",
+          "availability",
+          "demand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "매일경제 — '[단독] 삼성, 내년 HBM4 가격 3배 높인다' (2026-10-02)",
+            "url": "https://www.mk.co.kr/news/business/12167164"
+          },
+          {
+            "label": "Maeil Business (English) — 'Samsung to triple HBM prices next year' (2026-10-02)",
+            "url": "https://www.mk.co.kr/en/business/12167435"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Unterstützt das Basisszenario, dass HBM (und Server‑DRAM) strukturell knapp bleibt bis mindestens Ende 2028 und treibt den Preisdruck 2027 weiter; das beobachtete Angebotspreis‑Signal ist konsistent mit einem anhaltenden 'price_up' und 'negative_supply' Impuls für HBM‑Märkte."
+        },
+        "admissionReviewKey": "54179b1a0b7e58140d31e303"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_044d925986e92a65006ac061c7c06887d0865c9312ee252197"
+    },
+    {
+      "decision": "watchlist",
+      "title": "NVIDIA, Google und Emerald AI gründen AI Energy Management Alliance (AEMA) zur Errichtung netzflexibler AI‑Rechenzentren",
+      "fact": "Am 2026-09-16 kündigten NVIDIA, Google und Emerald AI die Gründung der 'AI Energy Management Alliance' (AEMA) an und meldeten den Start eines Projekts zur Errichtung eines purpose-built, power‑flexible AI‑Rechenzentrums, das seine Netzaufnahme in Echtzeit an Netzbedingungen anpassen soll.",
+      "placement": "Geographie: USA / Domain: AI‑Infrastruktur (Grid‑integrierte Rechenzentren) / Layer: Betriebs‑ und Versorgungsarchitektur / Horizon: kurzfristig (Pilotphase & erste Builds H2 2026–H1 2027).",
+      "mechanism": "Koalition aus Chip‑/Plattformanbietern, Rechenzentrumsbetreibern und Energieunternehmen entwickelt gemeinsame Betriebs‑ und Leistungsmetriken, integriert Laststeuerung (demand‑response), direkte Versorger‑Partnerschaften und Designstandards, um Rechenzentren als kurzfristorientierte, netzstützende flexible Lasten zu betreiben und so die Netzanschluss‑/Erzeugungsbarrièren für AI‑Buildouts abzumildern.",
+      "predictionId": "P-2026-07-24-02",
+      "predictionImpact": "Erhöht Wahrscheinlichkeit, dass NVIDIA‑gebundene US‑Standorte (inkl. Arizona‑Scope wie in P-2026-07-24-02) schneller verbindliche Kapazitäts‑/Power‑Meilensteine erreichen, da AEMA‑Framework regulatorische/utility‑Hürden senken und Zugriff auf flexible Erzeugung/Finanzierungsmodelle erleichtern kann.",
+      "falsifier": "Bis 2027-06-30 keine öffentliche, technisch nachweisbare Pilotimplementierung eines AEMA‑geführten Rechenzentrums mit dokumentierter Lastflexibilität (z. B. Nachweis: kurzfristige Leistungsreduktion ≥20% innerhalb ≤5 Minuten, mehrfach reproduziert) und keine dokumentierte Utility‑Adoption des AEMA‑Betriebsrahmens.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-16",
+      "novelty": "Koalition bündelt Markt‑, Energie‑ und Rechenzentrumsakteure formal und meldet konkretes pilotbares Projekt — unterscheidet sich vom bisherigen dezentralen Ansatz durch ein gemeinsames Betriebs‑ und Metrik‑Framework.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Architecture Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 72,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+          "label": "NVIDIA Blog — Emerald AI, Google, and NVIDIA Launch the AI Energy Management Alliance to Advance Flexible AI Data Centers",
+          "kind": "primary",
+          "supports": "Offizielle Ankündigung der AI Energy Management Alliance (AEMA) und Beschreibung des Ziels, flexible, netzreaktive AI‑Rechenzentren zu entwickeln; Datum 2026-09-16."
+        }
+      ],
+      "reason": "Primärquellen (NVIDIA Blog / Business Wire) und mehrere Nachrichtentexte bestätigen formale Gründung der AEMA und einen konkreten Pilot‑/Build‑Start: das ist ein datiertes, atomic‑taugliches Ereignis mit unmittelbarer Relevanz für Netz‑ und Versorgungsengpässe der AI‑Buildouts. Die Meldung liefert eine eindeutige Mechanik (grid‑flexible Betriebsrahmen + Partnernetzwerk), eine klare räumliche Einordnung (US‑/Hyperscaler‑Infrastruktur) und eine kurzfristig falsifizierbare Bedingung (Pilot‑Nachweis bis 2027‑06‑30). Die Quellen sind primär (NVIDIA) bzw. etablierte Nachrichtensites; gegenteilige Primärbelege (z. B. offizielle Dementis) wurden nicht gefunden. Die Aufnahme stärkt die Basisaussage in P-2026-07-24-02, weil der AEMA‑Rahmen regulatorische/utility‑Barrieren adressiert und damit die Wahrscheinlichkeit erhöht, dass NVIDIA‑verbundene Kapazitäts‑/Qualifikationsmeilensteine in den USA schneller erreicht werden. Score‑Aufschlüsselung folgt dem gelieferten Rubric. Adversarial check: Original Meldungen sind Unternehmens‑/Presse‑Mitteilungen und berichteten Pilot‑Absichten — wir verlangen einen technischen Pilot‑Nachweis (siehe Falsifier) und halten IndexImpact false, bis messbare Leistungsmetriken oder qualifizierte Shipments/Lead‑time‑Effekte vorliegen.",
+      "candidateId": "cac66483d7ca719457a7",
+      "candidateKey": "37c6bce7cc3217adbd21a303",
+      "reviewedAt": "2026-10-03T02:01:17.888Z",
+      "priorityScore": 83,
+      "gateReasons": [
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09f02bb7e3cc2c0d006ac061d8198c87d09e5019ff7e19aa41"
     }
   ]
 }
