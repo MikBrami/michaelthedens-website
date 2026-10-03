@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T10:29:52.422Z",
+  "updatedAt": "2026-10-03T15:13:40.676Z",
   "previousRun": "2026-10-02",
   "executivePulse": {
     "current": 75,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 76,
     "previous": 76,
-    "interpretation": "Datenvertrauen 76/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 76/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 140 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 82,
     "previous": 82
   },
-  "momentum": "Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 140 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -529,6 +529,73 @@
       "date": "2026-08-26"
     },
     {
+      "id": "S-AUTO-c432c33599625b4c3807fc3a",
+      "title": "Samsung erreicht ~80% HBM4‑Yield und verlagert Fokus auf Volumen",
+      "date": "2026-09-20",
+      "admittedAt": "2026-10-03T15:13:40.475Z",
+      "fact": "Samsung Electronics erreichte nach Branchenangaben rund 80% Fertigungs‑Yield für HBM4 und plant, die Produktion in Richtung Volumen zu skalieren (Bericht Seoul Economic Daily; publiziert 2026-09-20; frühere Berichte 2026-08-09/10 deuten auf denselben Yield‑Sprung hin).",
+      "placement": "Global HBM‑Produktionslayer; relevant für HBM‑Marktanteile und Server/HPC/AI‑Accelerator Supply (Geographie: Korea/Global Kunden); kurzfristige Horizon: Q3–Q4 2026 für beschriebene Volumenerhöhung.",
+      "tailInference": "Verbesserte Fertigungs‑ und Backend‑(HBM‑Packaging)‑Yields erhöhen den qualifizierten Output je Waferstart; dadurch steigt verfügbares HBM4‑Angebot für Kunden (mehr qualifizierte Packages pro Wafer → größere auslieferbare Stückzahlen → erhöhte HBM4‑Lieferungen und Preissetzungsmacht).",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Samsung den im Forecast genannten sequenziellen HBM4‑Umsatzanstieg für Q3 2026 erreicht oder übertrifft (direkter Einfluss auf Forecast P-2026-07-30-02, das sequenzielle 2,5×‑Umsatzziel reflektiert).",
+      "falsifier": "Bis 2026-11-15: Samsung veröffentlicht Q3‑Finanz-/Segmentzahlen oder ein verlässliches Disclosure, das ausweist, dass der ausgewiesene HBM4‑Umsatz im Q3 2026 weniger als das 2,5‑fache des Q2‑HBM4‑Umsatzes betrug, oder unabhängige qualifizierte Kundenberichte zeigen, dass HBM4‑Shipments/qualifizierte Auslieferungen für Q3 unterhalb der von Samsung geplanten Volumensteigerung lagen.",
+      "nextReview": "2026-11-16",
+      "priorityScore": 85,
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 13,
+        "timeSensitivity": 9
+      },
+      "severity": 42,
+      "confidence": 78,
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Seoul Economic Daily — 'Samsung Hits 80% Yield on HBM4, Shifts Focus to Volume' (2026-09-20)",
+          "url": "https://en.sedaily.ai/finance/2026/09/20/samsung-hits-80-percent-yield-on-hbm4-shifts-focus-to-volume"
+        },
+        {
+          "label": "Seoul Economic Daily — frühere Berichterstattung ('Samsung Reaches \"Golden Yield\" on HBM4', 2026-08-09/10)",
+          "url": "https://en.sedaily.com/finance/2026/08/09/samsung-hits-golden-yield-on-hbm4-set-to-boost-output"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Samsung den im Forecast genannten sequenziellen HBM4‑Umsatzanstieg für Q3 2026 erreicht oder übertrifft (direkter Einfluss auf Forecast P-2026-07-30-02, das sequenzielle 2,5×‑Umsatzziel reflektiert)."
+      },
+      "admissionReviewKey": "c432c33599625b4c3807fc3a"
+    },
+    {
       "id": "S-AUTO-54179b1a0b7e58140d31e303",
       "title": "Samsung setzt Lieferpreis für HBM4 in Verhandlungen deutlich über HBM3E an (Mid‑to‑High $4/Gb)",
       "date": "2026-10-02",
@@ -773,15 +840,24 @@
     "date": "2026-10-03",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 84,
-    "note": "Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 85,
+    "note": "Evidenzprüfung offen: 140 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-10-03T10:29:52.422Z",
+    "generatedAt": "2026-10-03T15:13:40.676Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-10-03T10:24:26.113Z",
-    "inboxNewItems": 88,
+    "inboxUpdatedAt": "2026-10-03T15:08:23.593Z",
+    "inboxNewItems": 62,
     "highRelevanceCandidates": [
+      {
+        "id": "dbc3dad638de1ce7d2ac",
+        "title": "Kioxia and SanDisk Show BiCS NAND Under the Microscope at FMS 2026",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMDBuazhQX0RfSzQ5WFhxVDVuamNWaVN2aFBkejlGcjR3aXpiME9BcmQ3QTBiTVJLeEh4ZzEydld3YS1iaFR1VDZrZ2tEWFRzZk9uN1NWLVFIb2owZ1AxN0ZEMWNfUG56YUFQaEgwY2FfSEZYUW9rQnNmUjFVU3JLNmdxN3ZIUFNKc1o3cldSVndWdXloTFJVYWE5cw?oc=5",
+        "source": "news.lavx.hu",
+        "summary": "Aktuelle Meldung von news.lavx.hu: Kioxia and SanDisk Show BiCS NAND Under the Microscope at FMS 2026",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-03T08:41:59.000Z"
+      },
       {
         "id": "1822cc5ce3193490222c",
         "title": "This is BiCS NAND Close Up from Kioxia and Sandisk",
@@ -844,15 +920,6 @@
         "summary": "Aktuelle Meldung von asiae.co.kr: Samsung Maintains DRAM Lead as Micron Closes In on SK hynix",
         "relevanceScore": 100,
         "publishedAt": "2026-10-02T02:25:31.000Z"
-      },
-      {
-        "id": "8d467ac6debe107287e9",
-        "title": "Shinhan Asset Launches Global DRAM ETF With Samsung, SK hynix, Micron",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTmVYY2gtVjhDTXNRZm43QURoaXduNWdNSEJUcUdKbXdpZXRqTmpWeUl5WEp3VXIxRFhKUlhVRVhJNE81MWx0SkNLYXRkMjVYbTNSbGVDVlFDd245OFhPSl94R1ljaEU1NXpoSGd4RTBCNWRuakVfeW83Q1pFYWNDd2Z2bHpPeVh0cVU0b2s0THNOdlBZVGVMMjBKaGw?oc=5",
-        "source": "Seoul Economic Daily",
-        "summary": "Shinhan Asset Launches Global DRAM ETF With Samsung, SK hynix, Micron Seoul Economic Daily",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-01T23:59:19.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -938,29 +1005,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-03T10:29:52.270Z",
-    "inboxUpdatedAt": "2026-10-03T10:24:26.113Z",
+    "checkedAt": "2026-10-03T15:13:40.505Z",
+    "inboxUpdatedAt": "2026-10-03T15:08:23.593Z",
     "status": "pending",
     "candidates": 254,
-    "reviewed": 114,
-    "accepted": 13,
-    "watchlist": 98,
+    "reviewed": 116,
+    "accepted": 14,
+    "watchlist": 99,
     "rejected": 3,
-    "pending": 142,
-    "oldestPendingAt": "2026-09-20T09:01:34.000Z",
-    "lastCompletedReviewAt": "2026-10-03T10:29:52.244Z",
+    "pending": 140,
+    "oldestPendingAt": "2026-09-20T09:05:00.000Z",
+    "lastCompletedReviewAt": "2026-10-03T15:13:40.475Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 594,
+    "rawCandidates": 596,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
       "archivedOpinions": 14,
-      "groupedDuplicates": 27
+      "groupedDuplicates": 28
     },
     "lastRun": {
-      "startedAt": "2026-10-03T10:28:52.398Z",
-      "completedAt": "2026-10-03T10:29:52.272Z",
+      "startedAt": "2026-10-03T15:12:54.135Z",
+      "completedAt": "2026-10-03T15:13:40.507Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -968,13 +1035,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 59,
+      "durationSeconds": 46,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-10-03",
-    "inputHash": "d16569da636d7107b4776d06865a27ce72a6b81d482874e8956141bdbba5618e",
+    "inputHash": "24ecd07abadab36a1352816e44b8b8387491db8d9ad2397ce6252a98cb4cabc8",
     "sourceDataAsOf": "2026-10-02"
   }
 }

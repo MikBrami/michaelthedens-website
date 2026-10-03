@@ -51564,6 +51564,218 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0a9557be11629bc4006ac0d909db9087d2b829561dfc45c44f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung HBM4 Pricing Surges More Than Threefold, Starting at $4.50 per Gb; Memory Supply to Remain Tight Through 2027",
+      "fact": "Behauptung (Quelle: finance.biggo.com/Google‑RSS, publiziert 2026-10-03): Samsung habe während Liefervertragsverhandlungen HBM4-Preise im Bereich von ca. $4–$4.50 pro Gigabit angeboten (mehr als dreifach gegenüber HBM3E) und der Memory‑Supply bleibe bis 2027 knapp.",
+      "placement": "Globaler HBM/High‑Bandwidth‑Memory Vertragspreis (Produktebene: HBM4), Markt‑Layer: Halbleiterkontrakte / AI‑Accelerator‑Supply; Zeithorizont: kurzfristig — Wirkung durch 2027.",
+      "mechanism": "Verhandelte Listen-/Vertragsangebote von Samsung für HBM4 (mid‑to‑high ~$4/Gb) würden die Benchmark‑Kontraktpreise anheben; hoher HBM4‑Mix bindet Frontend‑ und Advanced‑Packaging‑Kapazität, reduziert verfügbare Bit‑Supply für HBM3E/Server‑DRAM und drückt die Marktverfügbarkeit bis 2027.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Stützt die bestehende Vorhersage, dass HBM und Server‑DRAM strukturell knapp bleiben bis mindestens Ende 2028; die behaupteten Preise (≈$4/Gb) wären konsistent mit einem stronger price_up‑Signal und erhöhen das Risiko, dass 2027 ein Engpass‑Peak auftritt.",
+      "falsifier": "Bis 2027-03-31: veröffentlichte, belastbare Primärdaten (Samsung Vertragsdokument, offizielle Samsung‑Preisangabe, oder mehrere bestätigende große Kunden‑Earnings‑Transkripte) zeigen durchschnittliche HBM4‑Vertrags‑Preise ≤ $2.50/Gb; ODER marktweite qualifizierte Kontraktpreise für HBM‑Basket fallen zwei Quartale in Folge um ≥10% (Kontraktpreis‑Korbbasis angeben) — beides würde die Behauptung und ihren Preis‑Impact falsifizieren.",
+      "nextReview": "2026-10-10",
+      "eventDate": "2026-10-03",
+      "novelty": "Moderat — verbindet frühere Marktberichte über HBM4‑Aufschläge mit einem konkreten (aber unbestätigten) Startpreis.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 9,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 7,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 60,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tokenpost.com/news/business/26313",
+          "label": "TokenPost — Bericht zu Samsung 'mid-$4 per Gb' Angebotsniveau (sekundär)",
+          "kind": "secondary",
+          "supports": "Berichtet, Samsung habe Preise im mid‑to‑high $4/Gb‑Bereich in Vertragsverhandlungen angeboten (zitiert 'Maeil' / Industriequellen)."
+        },
+        {
+          "url": "https://gpuquant.com/docs/market-data/hbm4-price-estimates",
+          "label": "GPUQuant — Markt‑Preisübersicht & Zitate zu HBM4‑Preisprognosen (Sekundärzusammenfassung)",
+          "kind": "secondary",
+          "supports": "Aggregierte Händler/Analysten‑Schätzungen, verweist auf Berichte (DigiTimes / Seoul Economic Daily) mit HBM4‑Preiserwartungen im $4–5/Gb‑Bereich."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/08/13/news-samsung-sk-hynixs-hbm4-push-puts-hbm-general-memory-pricing-in-the-spotlight-for-2h-earnings/",
+          "label": "TrendForce — HBM4 ASP / Mix und Preisdruck (Marktforschungssynthese)",
+          "kind": "secondary",
+          "supports": "TrendForce‑Analyse, die steigende HBM‑ASP und Berichte über dreifache/mehrfache Preise gegenüber HBM3E erwähnt."
+        }
+      ],
+      "reason": "Die Einreichung fasst mehrere heute kursierende Medien‑/Aggregatorenachrichten zusammen, die einen substantiellen HBM4‑Preisaufschlag (mid‑to‑high ~$4/Gb; >3x HBM3E) behaupten. Ich konnte innerhalb des vorgegebenen Ressourcen‑Budget (max. zwei Web‑Abrufe) keine direkte Primärquelle (z. B. offizielle Samsung‑Pressemitteilung, öffentliches Vertragsdokument oder ein bestätigtes Samsung‑Earnings‑Transkript mit exaktem $/Gb‑Wert) finden, die den konkreten Startpreis von $4.50/Gb datiert und belegt. Ohne ein solches Primärdokument kann die Behauptung nicht als VERIFIED DATA aufgenommen werden. Deshalb Watchlist — benötigte Beweise: ein primärer Unternehmens‑/Kunden‑Nachweis oder mehrere unabhängige Primär‑Earnings‑Transkripte, die denselben konkreten Preis nennen, plus Formulierungen zu Lieferumfang/Skalierung (Start‑SKU, Volumen), oder offizielle Vertragsbestätigungen, die die behauptete Wirkung auf Verfügbarkeit/Lead‑Times quantifizieren. Opposing Evidence gesucht: belastbare Samsung‑Angabe mit niedrigeren Preisen, oder Marktpreisbenchmarks, die Kontraktpreise deutlich unter $3/Gb zeigen.",
+      "candidateId": "4f6191796ab4064680fa",
+      "candidateKey": "8d88e31e669e49a5dc466827",
+      "reviewedAt": "2026-10-03T15:13:21.274Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c7ef84653c45f99006ac11b77a5c487d2bdb5470056561274"
+    },
+    {
+      "decision": "accepted",
+      "title": "Samsung erreicht ~80% HBM4‑Yield und verlagert Fokus auf Volumen",
+      "fact": "Samsung Electronics erreichte nach Branchenangaben rund 80% Fertigungs‑Yield für HBM4 und plant, die Produktion in Richtung Volumen zu skalieren (Bericht Seoul Economic Daily; publiziert 2026-09-20; frühere Berichte 2026-08-09/10 deuten auf denselben Yield‑Sprung hin).",
+      "placement": "Global HBM‑Produktionslayer; relevant für HBM‑Marktanteile und Server/HPC/AI‑Accelerator Supply (Geographie: Korea/Global Kunden); kurzfristige Horizon: Q3–Q4 2026 für beschriebene Volumenerhöhung.",
+      "mechanism": "Verbesserte Fertigungs‑ und Backend‑(HBM‑Packaging)‑Yields erhöhen den qualifizierten Output je Waferstart; dadurch steigt verfügbares HBM4‑Angebot für Kunden (mehr qualifizierte Packages pro Wafer → größere auslieferbare Stückzahlen → erhöhte HBM4‑Lieferungen und Preissetzungsmacht).",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Samsung den im Forecast genannten sequenziellen HBM4‑Umsatzanstieg für Q3 2026 erreicht oder übertrifft (direkter Einfluss auf Forecast P-2026-07-30-02, das sequenzielle 2,5×‑Umsatzziel reflektiert).",
+      "falsifier": "Bis 2026-11-15: Samsung veröffentlicht Q3‑Finanz-/Segmentzahlen oder ein verlässliches Disclosure, das ausweist, dass der ausgewiesene HBM4‑Umsatz im Q3 2026 weniger als das 2,5‑fache des Q2‑HBM4‑Umsatzes betrug, oder unabhängige qualifizierte Kundenberichte zeigen, dass HBM4‑Shipments/qualifizierte Auslieferungen für Q3 unterhalb der von Samsung geplanten Volumensteigerung lagen.",
+      "nextReview": "2026-11-16",
+      "eventDate": "2026-09-20",
+      "novelty": "Der Bericht liefert ein neues, firmennahes Yield‑Messdatum (≈80%) für HBM4, das konkreter und aktueller ist als frühere allgemeine ‚HBM‑Knappheit‘‑Signale.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 13,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 42,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://en.sedaily.ai/finance/2026/09/20/samsung-hits-80-percent-yield-on-hbm4-shifts-focus-to-volume",
+          "label": "Seoul Economic Daily — 'Samsung Hits 80% Yield on HBM4, Shifts Focus to Volume' (2026-09-20)",
+          "kind": "primary",
+          "supports": "Artikel zitiert Branchenquellen: ‚Samsung's HBM4 yield … has recently climbed to around 80%‘ und berichtet, dass das Unternehmen den Fokus auf Volumenausweitung verlagert."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/08/09/samsung-hits-golden-yield-on-hbm4-set-to-boost-output",
+          "label": "Seoul Economic Daily — frühere Berichterstattung ('Samsung Reaches \"Golden Yield\" on HBM4', 2026-08-09/10)",
+          "kind": "secondary",
+          "supports": "Frühere Sedaily‑Artikel (Aug 2026) berichten ähnlich über Yield‑Anstieg auf ~80% und konkrete Ramp‑/Revenue‑Ziele für H2/Q3 2026, was die zeitliche Konsistenz des Yield‑Claims stützt."
+        }
+      ],
+      "reason": "Die Kandidatenbehauptung ist durch direkte Berichterstattung der Seoul Economic Daily belegt (primäre Quelle), die ein konkretes, datiertes Fertigungs‑Yield (≈80%) nennt und explizit eine Volumen‑Skalierung ankündigt. Die Behauptung ist atomar (Yield‑% mit Produktionsfolgen), prüfbar und relevant für das existierende Vorhersageziel P-2026-07-30-02 (sequenzieller HBM4‑Umsatzanstieg Q3 2026). Opposing/Komplementäre Hinweise in der Inbox (z. B. Berichte über HBM4E‑Qualifikationsschwierigkeiten bei Wettbewerbern oder partiell niedrige Yields an anderer Stelle) wurden in der Adversarial‑Check berücksichtigt; sie widersprechen dem Samsung‑Yield‑Claim nicht direkt und treten eher als Markt‑Gegengewicht auf. Weil kein direktes, öffentliches Samsung‑Disclosure die Zahl widerlegt und wir primäre Berichterstattung mit Datum (2026-09-20 und konsistente frühere Berichte im August 2026) gefunden haben, erfüllt der Kandidat die Admissionsanforderungen für Aufnahme als Signal. Hinweise auf tatsächliche Auswirkung auf Index‑Metriken (z. B. qualifizierte Shipments, Lead Times, Vertragspreise) fehlen; deshalb wird indexImpact auf false gesetzt und ein konkrete Falsifier‑Prüfung bis 2026-11-15 vorgesehen.",
+      "candidateId": "237dde726c01c2d892af",
+      "candidateKey": "c432c33599625b4c3807fc3a",
+      "reviewedAt": "2026-10-03T15:13:40.475Z",
+      "priorityScore": 85,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-c432c33599625b4c3807fc3a",
+        "title": "Samsung erreicht ~80% HBM4‑Yield und verlagert Fokus auf Volumen",
+        "date": "2026-09-20",
+        "admittedAt": "2026-10-03T15:13:40.475Z",
+        "fact": "Samsung Electronics erreichte nach Branchenangaben rund 80% Fertigungs‑Yield für HBM4 und plant, die Produktion in Richtung Volumen zu skalieren (Bericht Seoul Economic Daily; publiziert 2026-09-20; frühere Berichte 2026-08-09/10 deuten auf denselben Yield‑Sprung hin).",
+        "placement": "Global HBM‑Produktionslayer; relevant für HBM‑Marktanteile und Server/HPC/AI‑Accelerator Supply (Geographie: Korea/Global Kunden); kurzfristige Horizon: Q3–Q4 2026 für beschriebene Volumenerhöhung.",
+        "tailInference": "Verbesserte Fertigungs‑ und Backend‑(HBM‑Packaging)‑Yields erhöhen den qualifizierten Output je Waferstart; dadurch steigt verfügbares HBM4‑Angebot für Kunden (mehr qualifizierte Packages pro Wafer → größere auslieferbare Stückzahlen → erhöhte HBM4‑Lieferungen und Preissetzungsmacht).",
+        "predictionId": "P-2026-07-30-02",
+        "predictionImpact": "Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Samsung den im Forecast genannten sequenziellen HBM4‑Umsatzanstieg für Q3 2026 erreicht oder übertrifft (direkter Einfluss auf Forecast P-2026-07-30-02, das sequenzielle 2,5×‑Umsatzziel reflektiert).",
+        "falsifier": "Bis 2026-11-15: Samsung veröffentlicht Q3‑Finanz-/Segmentzahlen oder ein verlässliches Disclosure, das ausweist, dass der ausgewiesene HBM4‑Umsatz im Q3 2026 weniger als das 2,5‑fache des Q2‑HBM4‑Umsatzes betrug, oder unabhängige qualifizierte Kundenberichte zeigen, dass HBM4‑Shipments/qualifizierte Auslieferungen für Q3 unterhalb der von Samsung geplanten Volumensteigerung lagen.",
+        "nextReview": "2026-11-16",
+        "priorityScore": 85,
+        "scoreBreakdown": {
+          "sourceQuality": 16,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 17,
+          "falsifiability": 13,
+          "timeSensitivity": 9
+        },
+        "severity": 42,
+        "confidence": 78,
+        "markets": [
+          "hbm",
+          "server_dram",
+          "ai_infrastructure"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "pricing",
+          "demand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Seoul Economic Daily — 'Samsung Hits 80% Yield on HBM4, Shifts Focus to Volume' (2026-09-20)",
+            "url": "https://en.sedaily.ai/finance/2026/09/20/samsung-hits-80-percent-yield-on-hbm4-shifts-focus-to-volume"
+          },
+          {
+            "label": "Seoul Economic Daily — frühere Berichterstattung ('Samsung Reaches \"Golden Yield\" on HBM4', 2026-08-09/10)",
+            "url": "https://en.sedaily.com/finance/2026/08/09/samsung-hits-golden-yield-on-hbm4-set-to-boost-output"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Dieses Ereignis erhöht die Wahrscheinlichkeit, dass Samsung den im Forecast genannten sequenziellen HBM4‑Umsatzanstieg für Q3 2026 erreicht oder übertrifft (direkter Einfluss auf Forecast P-2026-07-30-02, das sequenzielle 2,5×‑Umsatzziel reflektiert)."
+        },
+        "admissionReviewKey": "c432c33599625b4c3807fc3a"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_000ea6cc25c04681006ac11b916d0887d2a830609b4e28bdee"
     }
   ]
 }
