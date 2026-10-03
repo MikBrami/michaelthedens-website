@@ -1,7 +1,7 @@
 name: TAIL Intelligence Platform v2
 
-# RSS collection stays free. Paid evidence review is bounded and only applies to
-# items ingested after the restart cutoff; the historical backlog is preserved but skipped.
+# RSS collection stays free. Paid review is bounded by per-run and local
+# estimated day/month cost limits; historical candidates are eligible again.
 on:
   push:
     branches: [main]
@@ -63,12 +63,11 @@ jobs:
       - name: Install
         working-directory: tail-intelligence
         run: npm install --ignore-scripts
-      - name: Review newly ingested evidence only
+      - name: Review recent and backlog evidence within the cost guard
         working-directory: tail-intelligence
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TAIL_PAID_REVIEW: pilot
-          TAIL_REVIEW_CUTOFF: '2026-09-18T11:40:00Z'
           OPENAI_ANALYST_MODEL: gpt-5-mini
         run: npm run review:inbox
       - name: Rebuild current MT AI snapshot without paid translation
@@ -98,4 +97,4 @@ jobs:
           fi
           git push origin HEAD:main
       - name: Explain bounded review state
-        run: echo 'Paid review is active only for items ingested on/after 2026-09-18T11:40:00Z. Historical backlog is retained but excluded from paid review.' >> "$GITHUB_STEP_SUMMARY"
+        run: echo 'Paid review includes the historical backlog, subject to an estimated MT·AI limit of $0.50/day and $15/month. Check the provider bill separately; these are local estimates, not an account-wide hard cap.' >> "$GITHUB_STEP_SUMMARY"

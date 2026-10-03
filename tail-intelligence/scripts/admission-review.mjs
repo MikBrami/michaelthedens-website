@@ -13,7 +13,9 @@ export function eligibleCandidates(items, asOf) {
   return items.filter(item => {
     const date = Date.parse(item.published_at || '');
     const title = String(item.title || '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
-    const minimumScore = item.source_id === 'manual-tail-inbox' ? 0 : 72;
+    // Let the free triage inspect moderately scored candidates for concrete
+    // memory events before spending on any paid review.
+    const minimumScore = item.source_id === 'manual-tail-inbox' ? 0 : 65;
     if (!item.id || !title || seen.has(title) || Number(item.relevance_score || 0) < minimumScore || !Number.isFinite(date) || date < cutoff || date > Date.parse(asOf)) return false;
     seen.add(title); return true;
   }).sort((a, b) => b.relevance_score - a.relevance_score || a.published_at.localeCompare(b.published_at));
