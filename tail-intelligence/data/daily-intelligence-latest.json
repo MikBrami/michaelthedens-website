@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T02:01:18.091Z",
+  "updatedAt": "2026-10-03T10:29:52.422Z",
   "previousRun": "2026-10-02",
   "executivePulse": {
     "current": 75,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 76,
     "previous": 76,
-    "interpretation": "Datenvertrauen 76/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 137 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 76/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 82,
     "previous": 82
   },
-  "momentum": "Evidenzprüfung offen: 137 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -593,6 +593,72 @@
         "forecastChange": "Unterstützt das Basisszenario, dass HBM (und Server‑DRAM) strukturell knapp bleibt bis mindestens Ende 2028 und treibt den Preisdruck 2027 weiter; das beobachtete Angebotspreis‑Signal ist konsistent mit einem anhaltenden 'price_up' und 'negative_supply' Impuls für HBM‑Märkte."
       },
       "admissionReviewKey": "54179b1a0b7e58140d31e303"
+    },
+    {
+      "id": "S-AUTO-8e632f0dee65bc323234147a",
+      "title": "ASML und TSMC (mit Industriepartnern) starten Initiative zur Umstellung auf größere High‑NA‑EUV‑Photomasken (6×12in / 12‑inch‑Format).",
+      "date": "2026-09-07",
+      "admittedAt": "2026-10-03T10:29:52.244Z",
+      "fact": "Am 2026-09-07 gaben ASML und TSMC eine gemeinsame Brancheninitiative zur Einführung eines größeren Photomaske‑Formats (6×12 inch / 12‑inch‑Reticle) für High‑NA EUV bekannt; TSMC erklärte, High‑NA werde in der High‑Volume‑Fertigung ab 2030 eingesetzt, Samsung nennt DRAM‑High‑NA‑HVM‑Pläne bereits 2028. Die Umstellung zielt darauf ab, Vollfeld‑Belichtung (vermindertes Stitching) für große AI‑Beschleuniger- und Datacenter‑Chips zu ermöglichen und so Produktivität pro Scanner zu erhöhen. Quellen: TSMC/PR und mehrere Branchenberichte (Reuters / Ars Technica / The Register).",
+      "placement": "global; Halbleiter‑Frontend / Foundry & Advanced Logic / Horizon: mittelfristig (2028–2030 für HVM‑Einführung).",
+      "tailInference": "Larger photomasks (6×12in) ermöglichen Full‑field Belichtung auf High‑NA EUV‑Scannern ohne oder mit deutlich reduziertem Mask‑Stitching. Das reduziert Exposure‑Stitches, verringert Prozess‑Komplexität und die Anzahl qualifikationsintensiver Mask‑Iterationen pro Design, erhöht Scanner‑Produktivität (mehr nützliche Fläche pro Belichtung) und senkt Kosten/Schichten‑Durchlaufzeit für sehr große AI‑Accelerator‑Layouts. Dadurch kann effektive Fertigungsrate pro High‑NA‑Scanner steigen und strukturelle Availability‑Spannungen für große Die reduziert werden.",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Reduziert das Risiko, dass Advanced Packaging allein bis mindestens H2 2027 der dominierende Engpass bleibt; signalisiert mittelfristig (bis 2029–2030) partielle Verlagerung des Engpasses vom Packaging/CoWoS‑Stacking hin zu Frontend‑Exposure‑Durchsatz und Maskenqualifikation. Wirkung: availability ↓ (capacity_relief in späterer HVM‑Phase).",
+      "falsifier": "Bis 2028-12-31 keine nachgewiesenen qualifizierten High‑Volume‑Shipments (qualified production shipments) von Chips, die mit 6×12‑inch High‑NA‑EUV‑Masken gefertigt und in breiter Kundenproduktion eingesetzt werden; oder alle Ankündigungen werden offen als reine R&D‑Trials ohne HVM‑Zeithorizont dokumentiert.",
+      "nextReview": "2028-12-31",
+      "priorityScore": 82,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 45,
+      "confidence": 78,
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "classification": "Architecture Update",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "TSMC Pressemitteilung / PR‑Ankündigung (Industry initiative; 6×12 inch masks; High‑NA HVM horizon)",
+          "url": "https://pr.cld.tsmc.com/english/news/3338"
+        },
+        {
+          "label": "ASML / GlobeNewswire (Verbreitete Pressemitteilung)",
+          "url": "https://rss.globenewswire.com/news-release/2026/09/08/3357321/0/en/asml-and-tsmc-announce-initiative-to-pioneer-industry-transition-to-large-format-photomasks-for-high-na-euv.html"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Reduziert das Risiko, dass Advanced Packaging allein bis mindestens H2 2027 der dominierende Engpass bleibt; signalisiert mittelfristig (bis 2029–2030) partielle Verlagerung des Engpasses vom Packaging/CoWoS‑Stacking hin zu Frontend‑Exposure‑Durchsatz und Maskenqualifikation. Wirkung: availability ↓ (capacity_relief in späterer HVM‑Phase)."
+      },
+      "admissionReviewKey": "8e632f0dee65bc323234147a"
     }
   ],
   "predictionLogUpdates": [
@@ -708,13 +774,13 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 84,
-    "note": "Evidenzprüfung offen: 137 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "note": "Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-10-03T02:01:18.091Z",
+    "generatedAt": "2026-10-03T10:29:52.422Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-10-03T01:56:11.318Z",
-    "inboxNewItems": 64,
+    "inboxUpdatedAt": "2026-10-03T10:24:26.113Z",
+    "inboxNewItems": 88,
     "highRelevanceCandidates": [
       {
         "id": "1822cc5ce3193490222c",
@@ -753,6 +819,15 @@
         "publishedAt": "2026-10-02T13:40:44.000Z"
       },
       {
+        "id": "a92ec1d477a87016835d",
+        "title": "Samsung leads SK Hynix and Micron close the DRAM gap",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSjl0T0phTnNOTjdRZ2l1ek9aaU90SXJYMktqNDcyTzZjZkZKWWFXV0VfQVNkNGNLUzM1M0NRb2h5eE1fdHF1T29Kb3VzYjd3SmlFbm5qVjNIZU9ZOVdlVWVGWnBHTmtGT0Eya3V3RFJDWGJHLUxKMW5aSmpzaW5vZDM1THdlbDVWSndhbWRqY0owWWtU0gGaAUFVX3lxTE9MSjNKLURmUTJEZDYxaXdZanM0OXNhZ0RyTWlGVElIQWlIM0tOU3p3cjdRWkR4Z2ZBY0t2ZkpUNjZkS3JDU1RmMl96Z0RkUFdLZGp3OFc4Z2NiQTktS19QQlNaQjJrVl9rMFVXZFNYUE1iYUc3QWU3c2llNHcxU2l2YnROQUtHX2ZCdUpTVFFUQUphNFMyYkN6WVE?oc=5",
+        "source": "Sammy Fans",
+        "summary": "Samsung leads SK Hynix and Micron close the DRAM gap Sammy Fans",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-02T04:34:45.000Z"
+      },
+      {
         "id": "0d492485aa980a78122e",
         "title": "Micron eyes NVHBM profits with TSMC custom HBM push",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSm9xcHM5LUU0dGkwY0dmTHRnem1vam4zamF6NGtWTVBoa3NyQlhwRTlvNy1UMElDTmZGYXRGTVU5a3hUcW80RDh3ZFZfMGNCTEotNVZJNmdFbFc0cjRmd0dqZExzMEQzMWQ3YnRsQk8tSWNaT1N0d2N1bkZ0bmoxNW5rZ0I5eWN6Uk9B?oc=5",
@@ -778,15 +853,6 @@
         "summary": "Shinhan Asset Launches Global DRAM ETF With Samsung, SK hynix, Micron Seoul Economic Daily",
         "relevanceScore": 100,
         "publishedAt": "2026-10-01T23:59:19.000Z"
-      },
-      {
-        "id": "3771171772b9254a89d9",
-        "title": "Micron Blowout Quarter & AI Memory Supercycle (MU, SK hynix, HBM)",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWm5kXzdCbFA0WF80VGRKbU9wa3ZVRGpLVkRDYWprTDhrVkJIWWE0WlpYVnYyMElZUVZQM1dMQ25lQ0RoWFR5M3Nwc0N0cnZaUi1YUWszcV9NNll4STJsT2lJenQ2NHNlTlZiR09BT3FScTdHbFBaTkF0ZXduMm1jU0dfQ1lXQjBzZkhtQlh0eWZRR0Z5WVV5c19HZw?oc=5",
-        "source": "Gotrade",
-        "summary": "Aktuelle Meldung von Gotrade: Micron Blowout Quarter & AI Memory Supercycle (MU, SK hynix, HBM)",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-01T15:30:00.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -872,20 +938,20 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-03T02:01:17.914Z",
-    "inboxUpdatedAt": "2026-10-03T01:56:11.318Z",
+    "checkedAt": "2026-10-03T10:29:52.270Z",
+    "inboxUpdatedAt": "2026-10-03T10:24:26.113Z",
     "status": "pending",
-    "candidates": 247,
-    "reviewed": 112,
-    "accepted": 12,
-    "watchlist": 97,
+    "candidates": 254,
+    "reviewed": 114,
+    "accepted": 13,
+    "watchlist": 98,
     "rejected": 3,
-    "pending": 137,
-    "oldestPendingAt": "2026-09-20T07:00:00.000Z",
-    "lastCompletedReviewAt": "2026-10-03T02:01:17.888Z",
+    "pending": 142,
+    "oldestPendingAt": "2026-09-20T09:01:34.000Z",
+    "lastCompletedReviewAt": "2026-10-03T10:29:52.244Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 585,
+    "rawCandidates": 594,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
@@ -893,8 +959,8 @@
       "groupedDuplicates": 27
     },
     "lastRun": {
-      "startedAt": "2026-10-03T02:00:36.520Z",
-      "completedAt": "2026-10-03T02:01:17.916Z",
+      "startedAt": "2026-10-03T10:28:52.398Z",
+      "completedAt": "2026-10-03T10:29:52.272Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -902,13 +968,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 41,
+      "durationSeconds": 59,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-10-03",
-    "inputHash": "dcdb8e9f49e0930d3323504680caf447c213f8a30c91762c2f5b33fdc2f9dfbb",
+    "inputHash": "d16569da636d7107b4776d06865a27ce72a6b81d482874e8956141bdbba5618e",
     "sourceDataAsOf": "2026-10-02"
   }
 }

@@ -8182,6 +8182,66 @@
     ]
   },
   {
+    "id": "S-AUTO-8e632f0dee65bc323234147a",
+    "date": "2026-09-07",
+    "title": "ASML und TSMC (mit Industriepartnern) starten Initiative zur Umstellung auf größere High‑NA‑EUV‑Photomasken (6×12in / 12‑inch‑Format).",
+    "category": "memory",
+    "markets": [
+      "semiconductors",
+      "hbm",
+      "dram"
+    ],
+    "companies": [
+      "Samsung",
+      "TSMC"
+    ],
+    "severity": 45,
+    "confidence": 78,
+    "signal": "capacity_relief",
+    "indexImpact": false,
+    "indexEvidence": {
+      "metricType": "none",
+      "marketId": "",
+      "observation": ""
+    },
+    "freshShockEligible": false,
+    "driverScope": [
+      "availability",
+      "aiDemand"
+    ],
+    "summary": "Am 2026-09-07 gaben ASML und TSMC eine gemeinsame Brancheninitiative zur Einführung eines größeren Photomaske‑Formats (6×12 inch / 12‑inch‑Reticle) für High‑NA EUV bekannt; TSMC erklärte, High‑NA werde in der High‑Volume‑Fertigung ab 2030 eingesetzt, Samsung nennt DRAM‑High‑NA‑HVM‑Pläne bereits 2028. Die Umstellung zielt darauf ab, Vollfeld‑Belichtung (vermindertes Stitching) für große AI‑Beschleuniger- und Datacenter‑Chips zu ermöglichen und so Produktivität pro Scanner zu erhöhen. Quellen: TSMC/PR und mehrere Branchenberichte (Reuters / Ars Technica / The Register).",
+    "tail_analysis": "Larger photomasks (6×12in) ermöglichen Full‑field Belichtung auf High‑NA EUV‑Scannern ohne oder mit deutlich reduziertem Mask‑Stitching. Das reduziert Exposure‑Stitches, verringert Prozess‑Komplexität und die Anzahl qualifikationsintensiver Mask‑Iterationen pro Design, erhöht Scanner‑Produktivität (mehr nützliche Fläche pro Belichtung) und senkt Kosten/Schichten‑Durchlaufzeit für sehr große AI‑Accelerator‑Layouts. Dadurch kann effektive Fertigungsrate pro High‑NA‑Scanner steigen und strukturelle Availability‑Spannungen für große Die reduziert werden.",
+    "source": "TSMC Pressemitteilung / PR‑Ankündigung (Industry initiative; 6×12 inch masks; High‑NA HVM horizon)",
+    "url": "https://pr.cld.tsmc.com/english/news/3338",
+    "content_hash": "f583362b03311d62be6b",
+    "origin": "reviewed-inbox",
+    "classification": "Architecture Update",
+    "admittedAt": "2026-10-03T10:29:52.244Z",
+    "evidenceStatus": "VERIFIED DATA",
+    "admissionReviewKey": "8e632f0dee65bc323234147a",
+    "predictionId": "P-2026-07-13-03",
+    "predictionImpact": "Reduziert das Risiko, dass Advanced Packaging allein bis mindestens H2 2027 der dominierende Engpass bleibt; signalisiert mittelfristig (bis 2029–2030) partielle Verlagerung des Engpasses vom Packaging/CoWoS‑Stacking hin zu Frontend‑Exposure‑Durchsatz und Maskenqualifikation. Wirkung: availability ↓ (capacity_relief in späterer HVM‑Phase).",
+    "falsifier": "Bis 2028-12-31 keine nachgewiesenen qualifizierten High‑Volume‑Shipments (qualified production shipments) von Chips, die mit 6×12‑inch High‑NA‑EUV‑Masken gefertigt und in breiter Kundenproduktion eingesetzt werden; oder alle Ankündigungen werden offen als reine R&D‑Trials ohne HVM‑Zeithorizont dokumentiert.",
+    "nextReview": "2028-12-31",
+    "public": true,
+    "rank": null,
+    "estimate": null,
+    "red_pencil": {
+      "passed": true,
+      "forecastChange": "Reduziert das Risiko, dass Advanced Packaging allein bis mindestens H2 2027 der dominierende Engpass bleibt; signalisiert mittelfristig (bis 2029–2030) partielle Verlagerung des Engpasses vom Packaging/CoWoS‑Stacking hin zu Frontend‑Exposure‑Durchsatz und Maskenqualifikation. Wirkung: availability ↓ (capacity_relief in späterer HVM‑Phase)."
+    },
+    "sources": [
+      {
+        "label": "TSMC Pressemitteilung / PR‑Ankündigung (Industry initiative; 6×12 inch masks; High‑NA HVM horizon)",
+        "url": "https://pr.cld.tsmc.com/english/news/3338"
+      },
+      {
+        "label": "ASML / GlobeNewswire (Verbreitete Pressemitteilung)",
+        "url": "https://rss.globenewswire.com/news-release/2026/09/08/3357321/0/en/asml-and-tsmc-announce-initiative-to-pioneer-industry-transition-to-large-format-photomasks-for-high-na-euv.html"
+      }
+    ]
+  },
+  {
     "id": "S-AUTO-220050d4a4beaafaeaab1881",
     "date": "2026-09-08",
     "title": "TSMC Joins All Four Chipmakers on ASML High-NA EUV; Eindhoven Campus Breaks Ground",
