@@ -51922,6 +51922,154 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_024ef5d788e63684006ac15d80c36887d1aaa6335fe758c5d2"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SanDisk Slips 4.4% as Toshiba Capacity Talk and Micron's Muted Reception Rattle Memory Stocks",
+      "fact": "Kurznachricht (Headline) — SanDisk-Aktie fiel am 2026-10-03 infolge von Berichten über Toshiba‑Kapazitätspläne und einer verhalteneren Marktaufnahme der Micron‑Meldungen.",
+      "placement": "Global equity market / Memory-sektor / kurzfristiger Handelsreaktions‑Layer (2026-10-03).",
+      "mechanism": "Kursreaktion auf Newsflow: Markterwartungen, dass Toshibas Kapazitätserweiterung (HDD/NAND-Output‑Ankündigung) die kurzfristige Angebotsdynamik verändern könnte, kombiniert mit einer 'muted reception' von Microns Aussage, lösten Gewinnmitnahmen und sektorübergreifende Risk‑repricing bei Memory‑ und Storage‑Titeln aus. Die Meldung dokumentiert einen Preis/Markt‑Sentiment‑Effekt, nicht einen nachgewiesenen physischen Kapazitäts‑ oder Lieferzeit‑Änderungs‑Ereignis mit messbaren Marktfolgen.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Beobachtung mit kurzfristigem Sentiment‑Effekt; liefert keine belastbare, atomic‑datiere Evidenz, um OUTLOOK‑server_dram (anhaltende Lieferengpässe / Preisrichtung) zu verifizieren oder zu widerlegen. Relevanter für Pricing‑Volatilität / Marktstimmung als für strukturelle Kapazitätsänderung.",
+      "falsifier": "Wenn bis 2026-10-11 belastbare Primärdaten erscheinen, die zeigen, dass Toshibas angekündigte Kapazitätserweiterung entweder (a) innerhalb der nächsten 6–12 Monate qualifizierte NAND/DRAM/HDD‑Lieferungen in signifikanter Menge (≥5% des globalen relevanten Bit‑Output für das betreffende Produktsegment) auslöst oder (b) keine nachweisbare Auswirkung auf Angebots-/Vertragsmengen hat (z. B. verbindliche Lieferungen/Shipments veröffentlicht oder verworfen werden), dann würde die beobachtete Kursreaktion als transiente Sentiment‑Bewegung (falsifiziert) gelten. Nächster Review‑Termin: 2026-10-11.",
+      "nextReview": "2026-10-11",
+      "eventDate": "2026-10-03",
+      "novelty": "Niedrig — Schlagzeilenartige Handelsreaktion auf Ankündigungen; ähnliche Episoden (Toshiba/Seagate/WDC‑News → Sektor‑Volatilität) gab es in derselben Woche.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_down",
+      "severity": 25,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/sandisk-slips-4-4-prozent-as-toshiba-capacity-talk-and-micron-s-muted-reception-rattle-memory-stocks/70221269",
+          "label": "AD HOC NEWS — Original Headline (aggregator page)",
+          "kind": "primary",
+          "supports": "Meldet die Schlagzeile und Kursbewegung (SanDisk -4.4%) in Zusammenhang mit Toshiba‑Kapazitätsgesprächen und Micron‑Rezeption. Datum 2026-10-03."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/seagate-tumbles-10-western-digital-125250923.html",
+          "label": "Yahoo Finance (Kontextartikel)",
+          "kind": "secondary",
+          "supports": "Kontext zu sektorweiter Kursbewegung rund um Toshiba‑Kapazitätsankündigungen; zeigt, dass HDD/Storage‑Ankündigungen den Sektor grenzüberschreitend bewegen."
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/10/01/micron-says-memory-supply-will-be-much-tighter-in-2028-sandisk-s-contracts-limit-how-much-it-can-gain/",
+          "label": "The Motley Fool (Kontext zu Micron Aussagen)",
+          "kind": "secondary",
+          "supports": "Berichtet über Micron‑Kommentare zum erwarteten Knappheitszeitraum in 2027–2028; kontextualisiert, dass Microns Aussagen Marktreaktionen beeinflussen können, jedoch keine unmittelbare Widerlegung der strukturellen Angebotsknappheit liefern."
+        }
+      ],
+      "reason": "Die eingesandte Kandidatenmeldung ist eine kurzformatige Headline/Handelsmeldung, die einen intraday/kurzfristigen Kursrückgang von SanDisk am 2026-10-03 dokumentiert. Ich habe die Primärseite (AD HOC NEWS Aggregator) verifiziert und kontextuelle Sekundärquellen (Yahoo Finance, Motley Fool) hinzugezogen. Die Meldung beschreibt eine Markt‑Sentimentreaktion, liefert aber nicht die erforderliche atomare, datierte, quantifizierbare Messgröße (z. B. verifizierte Shipments, kontrahierte Bit‑Volumina, veränderte Lead‑Times oder verlässliche Vertragsmengen) noch einen klaren kausalen Mechanismus mit messbarer Wirkung auf die in den Baseline‑Prognosen verwendeten Indizes. Deshalb kann ich den Kandidaten nicht als VERIFIED DATA aufnehmen; er erfüllt derzeit nicht die Aufnahmeanforderungen (atomare, datierte, messbare Marktwirkung, Platzierung & kausaler Mechanismus). Ich setzte die Aufnahme auf Watchlist und empfehle eine Nachprüfung bis 2026-10-11 auf Primärdaten zu Toshibas Kapazitätsauswirkung (verbindliche Shipments / Schedules / Vertragsmengen) oder auf eine persistente Preisbewegung, die durch tatsächliche Angebotsänderungen erklärbar ist.",
+      "candidateId": "c5162147750fa97ede88",
+      "candidateKey": "affbecc93bfb0ccc2a901a1b",
+      "reviewedAt": "2026-10-04T02:43:14.110Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_00e4ba6a50b452a7006ac1bd275a4087d18e4d73c1daadbd32"
+    },
+    {
+      "decision": "watchlist",
+      "title": "ASML's High-NA Commitments From Samsung and TSMC Cement Revenue Visibility Into the 2030s",
+      "fact": "Mehrere Branchenmeldungen berichten, dass Samsung und TSMC Commitments bzw. geplante Produktionsstarts für ASMLs High‑NA EUV-Systeme angekündigt haben (Samsung Ziel: 2028 für DRAM; TSMC Ziel: 2030 für High‑volume advanced nodes), was ASMLs Revenue‑Sichtbarkeit in die 2030er‑Jahre verbessert.",
+      "placement": "Global / Semiconductor equipment (lithography) / industry horizon 2028–2031.",
+      "mechanism": "Große Kunden‑Commitments an High‑NA (teure, knappe Lithografie‑Tools) schaffen langfristige Bestell‑/Capex‑Signale für ASML, reduzieren Unsicherheit über Nachfrage für High‑NA‑Toolsets und verschieben Investitionsrisiken zu Endkunden; dies erhöht ASMLs Umsatz‑Visibility durch gebundene Kundenpläne und erwartete Serien‑Deployments.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Verstärkt die Wahrscheinlichkeit, dass fortgeschrittene Foundry‑ und High‑density‑Memory‑Pfad‑Investitionen priorisiert werden, was die Versorgung dynamisch in Richtung Advanced‑Node‑Kapazitätsintensität verschiebt und somit mittelfristig Server‑DRAM/HBM‑Verfügbarkeit und Preisdynamik beeinflussen kann.",
+      "falsifier": "Bis 2027-09-30: Entweder (A) ASML, TSMC oder Samsung veröffentlichen eine offizielle Rücknahme der High‑NA‑Commitments oder (B) ASML senkt seine High‑NA Produktions‑/Liefer‑Zieltermine so weit zurück, dass TSMC/Samsung nicht vor 2033 mit High‑NA‑HVM rechnen; oder (C) ASMLs veröffentlichte Umsatz‑Guidance für High‑NA‑relevantes Segment fällt im FY2027 um mehr als 30 % gegenüber dem heutigen Marktkonsens.",
+      "nextReview": "2027-09-30",
+      "eventDate": "2026-09-19",
+      "novelty": "Mehrere Berichte (inkl. AD HOC NEWS) fassen Kundenzeitpläne zusammen; die Kernaussage (Samsung 2028, TSMC 2030) wurde bereits von mehreren Branchen- und Finanzmedien berichtet. Aussage ist relevant, aber nicht neu oder primär‑verifiziert in diesem Eintrag.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 6,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_lock",
+      "severity": 40,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/asml-s-high-na-commitments-from-samsung-and-tsmc-cement-revenue-visibility/70133653",
+          "label": "AD HOC NEWS – ASML's High‑NA Commitments From Samsung and TSMC Cement Revenue Visibility Into the 2030s (Bericht)",
+          "kind": "secondary",
+          "supports": "Berichtet Zusammenfassung von Kunden‑Commitments: Samsung zielt auf High‑NA‑Einsatz 2028 (DRAM), TSMC zielt auf HVM‑Start 2030; stellt daraus ASML‑Revenue‑Visibility‑These ab."
+        },
+        {
+          "url": "https://www.businesstimes.com.sg/startups-tech/technology/asml-extends-chipmaking-dominance-customers-embrace-high-na",
+          "label": "The Business Times – Branchenberichterstattung über mehrere Foundry/Mem‑Commitments",
+          "kind": "secondary",
+          "supports": "Fasst Kundenziele und Industrie‑Interpretation zusammen; namentlich TSMC, Samsung, SK hynix und Intel genannt; verwendet die Commitments als Argument für verlängerte Nachfrage bis in die 2030er."
+        }
+      ],
+      "reason": "Der Kandidat fasst mehrere Medienberichte zusammen, die anzeigen, dass Samsung und TSMC Zeitpläne für die Einführung von ASMLs High‑NA EUV nannten (häufig zitiert: Samsung 2028 für DRAM‑Schichten, TSMC 2030 für High‑volume advanced nodes). Das ist ein relevantes Signal für ASMLs mittelfristige Umsatzsichtbarkeit und für die Knappheits-/Pricing‑Dynamik in Advanced Logic/HBM. Allerdings erfüllt die Einreichung nicht die strengen Aufnahmeanforderungen für eine 'accepted' Admission: sie liefert kein einzelnes primäres Original‑Dokument (z. B. verbindliche Bestell‑ oder Liefervereinbarungen mit Mengen/Terminen) und keine direkte, messbare Index‑/Shipment‑Messung mit Einheiten. Mehrere vertrauenswürdige Sekundärquellen berichten dieselbe Zusammenfassung, doch es fehlt ein eindeutig datiertes Primär‑Beleg (z. B. ein ASML‑Pressrelease mit verbindlichen Bestellmengen oder offizielle Kunden‑Order‑Ankündigung). Zudem bleibt die Kernbehauptung ('cement revenue visibility into the 2030s') interpretativ und ohne eine eng definierte, falsifizierbare Metrik zum heutigen Zeitpunkt. Deshalb: Watchlist. Empfehlungen für Weiterverfolgung: (1) Primärquellen suchen — ASML/TSMC/Samsung Pressemitteilungen oder Earnings‑Transcripts, die explizit Bestellmengen, vertraglich gebundene Lieferfenster oder firmes Delivery‑Timing nennen; (2) wenn solche Primärquellen gefunden werden, wieder prüfen und gegebenenfalls auf 'accepted' hochstufen; (3) prüfen, ob ASMLs FY2027 High‑NA‑revenue‑Guidance oder reale Bestellbestätigungen innerhalb der nächsten 12 Monate die falsifier‑Bedingungen verletzen.",
+      "candidateId": "cd1829108d43396cefe7",
+      "candidateKey": "a9f9733f35913ff859f7c5d8",
+      "reviewedAt": "2026-10-04T02:43:47.325Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0398f54519cc1a95006ac1bd424a4887d1b5ca6abbbe8ca25d"
     }
   ]
 }
