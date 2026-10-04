@@ -52358,6 +52358,146 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_08c3c47314335eb5006ac27676b15c87d2b7da7e206f72f847"
+    },
+    {
+      "decision": "watchlist",
+      "title": "After Micron's Earnings Beat, Eyes Turn to Samsung and SK hynix",
+      "fact": "Bericht (Seoul Economic Daily, 2026-10-04): Nach Micron‑Ergebnissen richtet sich die Marktaufmerksamkeit verstärkt auf Samsung und SK hynix; Implikation: Anleger erwarten, dass Microns Earnings‑Surprise die Perspektive für koreanische Memory‑Konzerne ändert. ",
+      "placement": "Global memory markets; Fokus: Südkorea (Samsung, SK hynix); kurzfristige Marktreaktion (Earnings / Equity‑Preisbewegung).",
+      "mechanism": "Marktstimmungs‑/Anlegerreaktion nach einem unerwartet starken Quartal bei Micron; Signalierung anhaltender AI‑getriebener Memory‑Nachfrage, die Bewertungen und Nachfrage‑Erwartungen für Samsung/SK hynix beeinflussen könnte.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Relevanz für die These, dass 'Memory bleibt 2027 knapp' — die Story könnte unterstützen, aber der Kandidat liefert keine quantifizierte Bit‑, Preis‑ oder Lieferzeit‑Messung zur direkten Falsifikation des Forecasts.",
+      "falsifier": "Messbare Falsifizierung erfordert: (a) zwei aufeinanderfolgende Quartale mit rückläufigen DRAM‑Kontraktpreisen ≥10% QoQ oder (b) bestätigte Lead Times für Server‑DRAM unter 8 Wochen unter nachgewiesenem qualifizierten Outputanstieg. Review‑Datum für Falsifier: 2027-01-31.",
+      "nextReview": "2026-10-18",
+      "eventDate": "2026-10-04",
+      "novelty": "Niedrig–Mittel: Artikel ist marktkommentierend; keine neue, atomare Messung (z. B. Shipments, Preise, Lead Times).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 7,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 6,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/10/04/after-microns-earnings-beat-eyes-turn-to-samsung-and-sk",
+          "label": "Seoul Economic Daily — After Micron's Earnings Beat, Eyes Turn to Samsung and SK hynix",
+          "kind": "primary",
+          "supports": "Originalmeldung datiert 2026-10-04; berichtet, dass Marktteilnehmer nach Micron‑Ergebnis verstärkt Samsung und SK hynix beobachten."
+        }
+      ],
+      "reason": "Der Kandidat ist ein marktkommentierender Artikel (Seoul Economic Daily, 2026-10-04) und wurde als Primärquelle verifiziert. Allerdings erfüllt er nicht die TAIL‑Aufnahmekriterien für eine Annahme: er liefert keine atomare, datierte Messgröße (z. B. konkrete Shipment‑Mengen, vertraglich bestätigte Volumina, spezifische Kontraktpreis‑Beobachtungen oder Lead‑Time‑Messungen) noch ein klar abgrenzbares kausales Ereignis mit Einheiten. Ohne solche quantitativen Messgrößen ist der Beitrag höchstens ein Stimmungs‑/Signal‑Indikator, der die bestehende Vorhersage P-2026-07-20-04 (Memory bleibt 2027 knapp) berührt, aber weder direkt bestätigt noch falsifiziert. Für eine Aufwertung auf 'accepted' würden wir mindestens ein der folgenden primären, prüfbaren Belege benötigen: a) konkrete, datierte HBM/DRAM‑Shipment‑Zahlen oder vertraglich bestätigte Multi‑Year‑LTAs mit Volumenangabe; b) beobachtete Kontraktpreismessung mit Datum und Produktkorb; c) Lead‑Time‑Änderungsmessung in Wochen für Server‑DRAM. Solche Nachweise fehlen im Artikel; deshalb Watchlist und erneute Prüfung, wenn quantifizierte Primärdaten vorliegen. ",
+      "candidateId": "c6c50a289fe1b5db861d",
+      "candidateKey": "3663001e3a12f4c92c3093bb",
+      "reviewedAt": "2026-10-04T20:15:45.643Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09ad8731a5eb6576006ac2b3db664887d1b7333540874e4552"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Ankündigung: CXMT G5‑DRAM angeblich in Massenproduktion (Berichte, keine Primärquelle)",
+      "fact": "Mehrere Sekundärquellen berichten, dass ChangXin Memory Technologies (CXMT) am 2026-09-20 auf der World Manufacturing Convention in Hefei angekündigt habe, die G5‑DRAM‑Plattform (≈11.95 nm / G5) sei in die Massenproduktion übergegangen und werde ohne ASML‑EUV‑Werkzeuge gefertigt.",
+      "placement": "Geographie: China (Hefei). Domäne/Layer: DRAM-Produktions‑Ramp / Foundry‑Process (G5 DRAM, 12‑Zoll Fabs). Horizon: kurzfristig (Q4 2026 Wirkung auf verfügbare Bit‑Supply/Verfügbarkeit).",
+      "mechanism": "CXMT nutzt laut Berichten DUV‑Multi‑patterning / alternative Prozess‑Substitution (Quadruple patterning / erweitertes DUV‑Flow), um kleinere DRAM‑Half‑pitch ohne ASML High‑NA/DUV‑EUV‑Tools zu fertigen; Mass‑Production‑Ramp würde die globale DRAM-Bit‑Verfügbarkeit erhöhen und potenziell Druck auf Preise und Allokation erzeugen, sofern qualifizierte Ausbeuten und Wafer‑Startraten substantiell sind.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Impliziert eine Abschwächung des 'negative_supply' Ausblicks im OUTLOOK-server_dram (mehr verfügbare Bits / geringerer kurzfr. Allokationsdruck). Wirkung ist jedoch unbestätigt: ohne Primärnachweis bleiben Timing, Ausbeuten und qualifizierte Shipment‑Mengen offen.",
+      "falsifier": "Primärdokument (CXMT‑Pressemitteilung, offizielles Unternehmens‑Statement oder ein belastbares Drittquellen‑Earnings/Regulatory Filing mit konkreten Metriken) datiert ≤ 2026-10-31, das Mass‑Production‑Datum, Wafer‑Startraten (WSM/M), und erste qualifizierte Auslieferraten (z. B. ‘qualified wafer shipments’ oder Stückzahlen) entweder bestätigt oder widerlegt.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-20",
+      "novelty": "Die Behauptung wäre relevant und potenziell marktrelevant (neue große Nicht‑EUV‑G5‑Ramp in China), sofern primäre, quantifizierte Bestätigung vorliegt. Sekundärquellen melden das Event, aber es fehlt eine direkt abrufbare Primärquelle (CXMT‑Pressemeldung/Regulatory Filing/Reuters/WSJ‑Exclusive).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 12,
+        "thesisRelevance": 15,
+        "forecastImpact": 15,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.genee.tech/blog/cxmt-g5-dram-production-masse-sans-euv-ia-2026",
+          "label": "Genee (Sekundärbericht, 2026‑09‑21)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass CXMT am 2026-09-20 auf einer Konferenz in Hefei den G5‑DRAM‑Mass‑Production‑Start ohne ASML EUV angekündigt habe; nennt 11.95 nm Half‑pitch / DUV‑Multi‑patterning als Methode."
+        },
+        {
+          "url": "https://insightimes.com/en/articles/cxmt-dram-at-1195nm-what-quadruple-patterning-means-without-euv",
+          "label": "Insight Times (Sekundärbericht)",
+          "kind": "secondary",
+          "supports": "Berichtet über CXMT‑Ankündigung am 20.09.2026, diskutiert technische Implikationen (quadruple patterning statt EUV) und weist auf wahrscheinliche Kost-/Yield‑Einschränkungen hin."
+        },
+        {
+          "url": "https://semiengineering.com/chip-industry-week-in-review-157/",
+          "label": "SemiEngineering (Branchen‑Recap, sekundär)",
+          "kind": "secondary",
+          "supports": "Fasst Branchenberichte zusammen und nennt CXMT‑Ankündigung zur G5‑Massenproduktion (Event‑Datum angegeben)."
+        }
+      ],
+      "reason": "Admissonsprüfung: Der Kandidat benennt ein spezifisches, potenziell marktrelevantes Ereignis (G5‑DRAM Massenproduktion ohne ASML‑EUV) mit exaktem Datum. Die Redaktionserwartung für Aufnahme verlangt aber eine Primärquelle oder ein belastbares, unabhängiges Primär‑Verifizierungsdokument (CXMT‑Pressemitteilung, offizielles Regulatory Filing, oder ein hochwertiger Wire‑Service‑Report [z. B. Reuters/WSJ/Bloomberg] mit direkten Firmenzitaten und quantitativen Metriken). Unsere Web‑Sitzung (eingeschränkte Tool‑Budget) fand mehrere konsistente Sekundärmeldungen, aber keine direkt abrufbare Primärmeldung. Ohne Primärnachweis bleiben Schlüsselfragen offen: qualifizierte Ausbeute (yield), effektive Wafer‑Startrate (WSPM/WSM), und echte erste Shipments — dadurch ist eine genaue Einordnung in OUTLOOK‑Indexmetriken nicht möglich. Deshalb Watchlist statt Akzeptanz. Nächster Prüfpunkt: Verifiziere Primärquelle bis 2026-10-31; falls verfügbar, re‑bewerten und gegebenenfalls umstufen (Accepted→VERIFIED DATA) oder ablehnen, falls Primärquelle widersprüchlich ist.",
+      "candidateId": "6984c3eea1b43bda5d06",
+      "candidateKey": "8486f72adfd6e761cbbad32b",
+      "reviewedAt": "2026-10-04T20:16:12.055Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a4f13a62bfac95c006ac2b3f1dce887d1b6246e859402e373"
     }
   ]
 }
