@@ -52070,6 +52070,150 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0398f54519cc1a95006ac1bd424a4887d1b5ca6abbbe8ca25d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron Q4FY26: Rekordumsatz gemeldet; NAND‑Prozentangabe (526%) nicht primär verifiziert",
+      "fact": "Micron meldet für das Fiskalquartal Q4 FY26 (ended 2026-09-03) einen Quartalsumsatz von $54.229 Mrd. gegenüber $11.315 Mrd. im Vorjahresquartal (Anstieg ~379%).",
+      "placement": "global / Unternehmens‑Ebene; Wirkung auf Memory-Märkte (DRAM/NAND) und AI‑Infrastruktur‑Nachfrage; kurzfristige (Q4 2026) Beobachtung.",
+      "mechanism": "Getriebener Anstieg der Nachfrage nach Memory-Produkten durch AI‑Rechenzentren und mehrjährige Strategic Customer Agreements (SCA) — erhöhtes Bestellvolumen und höhere Preise treiben Umsatz und Margen.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Unterstützt die These, dass Memory‑Nachfrage 2027 knapp bleibt; signalisiert stärkere Nachfragekomponente (demand_up) und Preisdruck (price_up), könnte das Oversupply‑Falsifier‑Zeitfenster nach hinten verschieben.",
+      "falsifier": "Wenn Microns Quartalsbericht oder SEC‑Formulare bis 2026-09-30 keine einzelne Produktzeile oder Segmentangabe belegen, die eine NAND‑Umsatzsteigerung von +526% (YoY) ausweist, ist die spezifische 'NAND +526%'‑Behauptung widerlegt.",
+      "nextReview": "2026-10-10",
+      "eventDate": "2026-09-30",
+      "novelty": "Moderat — Rekordergebnis ist neu, aber Q4‑Reporting ist erwartetes, veröffentlichte Zahlen sind nicht überraschend für Firmen‑Reporting.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 45,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+          "label": "Micron Q4 FY26 Pressemitteilung (Investor Relations) — konsolidierte Quartalszahlen, veröffentlicht 2026-09-30.",
+          "kind": "primary",
+          "supports": "Bestätigt: Quartalsumsatz $54.229 Mrd., Vorjahresquartal $11.315 Mrd.; zeigt starke operative Kennzahlen (GAAP/Non‑GAAP)."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+          "label": "Micron Form 8‑K / EX‑99.1 Earnings Release (SEC) — Q4 FY26 Ergebnismitteilung",
+          "kind": "primary",
+          "supports": "SEC‑Hinterlegung der Earnings‑Pressemitteilung; bestätigt Datum und konsolidierte Zahlen."
+        }
+      ],
+      "reason": "Die eingereichte Inbox‑Meldung zitiert Microns Q4‑Ergebniszahlen (Umsatz $54.23 Mrd) korrekt — die Primärquelle (Micron IR Pressemitteilung / SEC‑EX‑99.1) bestätigt den konsolidierten Quartalsumsatz und den hohen YoY‑Anstieg (~+379%). Allerdings benennt die eingereichte Kurzmeldung zusätzlich eine spezifische Kennzahl 'NAND surges 526%'. Innerhalb des verfügbaren Primärmaterials (Pressemitteilung + SEC‑Filing) sind die konsolidierten Produktsegment‑Breakdowns für NAND‑Umsatz‑YoY‑Prozentwerte nicht eindeutig in dem bereits abgerufenen Teil dokumentiert oder nicht mit der exakten +526%‑Zahl verknüpft. Nach den TAIL‑Aufnahmeregeln ist eine Admission als 'accepted' nur möglich, wenn die atomare, datierte, mit Einheiten versehene Behauptung (hier: +526% NAND) direkt durch die Primärquelle belegt wird zusammen mit klarer Platzierung, Mechanismus, messbarem Falsifier und adversarial check. Unser Web‑Budget konnte die konsolidierten Gesamtzahlen verifizieren, aber nicht die spezifische NAND‑%‑Steigerung und die interne Segment‑Tabelle, die diese Zahl explizit ausweist. Außerdem ist der Kandidat als aggregierte Nachricht (news/rss) eingereicht worden — die Originalquelle ist Microns IR‑Release; die Scanner‑Headline allein genügt nicht als Primärbeleg für die NAND‑Prozentangabe. Daher wird die Aufnahme auf Watchlist gesetzt, bis die spezifische NAND‑Segmentzahl und ihre Berechnungsquelle (tabelle oder Management‑breakout) nachgereicht oder klar aus dem Primärdokument extrahierbar ist. Gegenbelege (z. B. abweichende Segmentangaben) wurden im verfügbaren IR/SEC‑Material nicht gefunden, jedoch fehlen die nötigen Segment‑Nachweise, um die +526%‑Aussage zu verifizieren oder falsifizieren. Ohne diese direkte Segmentbelegführung kann die Aussage zur NAND‑Steigerung nicht als 'VERIFIED DATA' aufgenommen werden.\n\nEmpfohlene nächste Schritte: (1) Einholen der vollständigen Earnings‑Presentation oder des detaillierten Segment‑Tables (Micron earnings slides / Note to consolidated financials), der NAND‑Umsatzline‑items und YoY‑Berechnung offenlegt; (2) Falls die +526%‑Angabe aus einer Drittquelle stammt (Analystenrecon, Trade‑note), diese Primärquelle prüfen und verlinken; (3) Re‑Review bis spätestens 2026-10-10. Bis dahin bleibt der Einzelfall auf Watchlist wegen fehlender primärer Segment‑Verifikation der NAND‑%‑Zahl.\n\nAdversarial check summary: Primärquelle bestätigt Gesamtumsatz und YoY‑Sprung. Kandidat beansprucht eine spezifische Produkt‑%‑Änderung ('NAND +526%') ohne direkt sichtbaren Primärbeleg in den abgerufenen Sektionen. Aufgrund eingeschränkter Web‑Budget‑Aufrufe konnte das Segment‑Breakout‑Tableau nicht vollständig extrahiert; die Aufnahmesvoraussetzungen (atomare, datierte, segmentierte Messung + falsifier + impact mapping) sind deshalb noch nicht erfüllt. Daher Watchlist gemäß TAIL‑Regeln.",
+      "candidateId": "59ac4a85ef3507da1e36",
+      "candidateKey": "845b9c527d7bcade3022ee30",
+      "reviewedAt": "2026-10-04T11:11:30.177Z",
+      "priorityScore": 74,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04a9c8beebf6bc44006ac2343cb15087d0a5f2805b8a42561d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung Electronics plant Verdopplung der HBM4‑Familienproduktion im nächsten Jahr; Volumen für Glass‑Carrier soll 2,5‑fach wachsen",
+      "fact": "Berichte (u. a. Seoul Economic Daily, 2026‑09‑20) behaupten, Samsung Electronics plane, die Produktion der HBM4/HBM4E‑Familie im Jahr 2027 mindestens zu verdoppeln und die ausgelagerte Reinigungsmenge für Glass‑Carrier von ~20.000 auf ~50.000 Einheiten/Monat (2,5×) zu erhöhen.",
+      "placement": "Samsung Electronics — HBM4/HBM4E Produktions- und Packaging‑Layer; globale AI/Server‑HBM‑Lieferkette (Primärstandorte Cheonan / Pyeongtaek; globaler Ausstoß).",
+      "mechanism": "Erhöhung der wafer‑Input‑Menge und Ausweitung ausgelagerter Glass‑Carrier‑Reinigung (mehr Glasträger pro Monat) sowie Hochfahren bestehender HBM4‑Fertigungslinien nach Stabilisierung der HBM4‑Yields (reported ≈80% in anderen Berichten), was zu höherem qualifiziertem HBM4‑Output führen würde.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn bestätigt (produktionell und shipments‑basiert), würde das Signal die befürchtete strukturelle Knappheit bei HBM/Server‑DRAM (Forecast P-2026-07-11-01) zumindest für den HBM‑Layer abschwächen (Verfügbarkeit ↑, Severity ↓). Der Effekt ist jedoch unquantifiziert und zeitlich unscharf; daher nur informativ für die bestehenden Knappheits‑Prognosen.",
+      "falsifier": "Samsung veröffentlicht bis 2027‑12‑31 keine offiziellen Quartals-/Jahreszahlen oder einen geprüften Investor‑Report, der HBM4/HBM4E‑Shipments oder -Umsatz für 2027 mit mindestens dem 2.0×‑Anstieg gegenüber 2026 ausweist; oder Samsung Q4/2027 Earnings/IR‑Dokumentation zeigt, dass 2027 HBM4 Shipments < 2.0× der 2026er HBM4‑Shipments.",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-09-20",
+      "novelty": "Behaupteter kurzfristiger (2027) Volumenanstieg der HBM4‑Familie durch Samsung sowie ein operativer Engpassindikator (Glass‑Carrier‑Reinigungsvolumen 2.5×).",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 12,
+        "thesisRelevance": 17,
+        "forecastImpact": 14,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://dcb0ucee30q2g.cloudfront.net/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+          "label": "Seoul Economic Daily (Sammelbericht / Sekundärquelle) — 'Samsung to Double HBM4 Output Next Year' (2026-09-20)",
+          "kind": "secondary",
+          "supports": "Bericht nennt erwartete mehr als doppelte HBM4/HBM4E‑Produktion 2027 sowie Anstieg des ausgelagerten Glass‑Carrier‑Reinigungsvolumens von ~20,000 auf ~50,000 Stück/Monat (2.5×)."
+        },
+        {
+          "url": "https://news.samsungsemiconductor.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing/",
+          "label": "Samsung Semiconductor Global Newsroom — Massenproduktion/Shipping HBM4 (Samsung Pressemitteilung / Produkt‑Ankündigung)",
+          "kind": "primary",
+          "supports": "Samsung bestätigt Massenproduktion und kommerzielle Auslieferungen von HBM4 sowie, in Q/A/IR‑Material, einen geplanten Ausbau der HBM‑Kapazitäten (allgemeine Kapazitätserweiterung und Erwartung von >3× HBM‑Umsatz 2026 vs 2025), liefert jedoch keinen expliziten, geprüften Zahlenbeweis für eine formale 'Verdopplung der Produktion in 2027' oder die 2.5× Glass‑Carrier‑Reinigungszahl."
+        }
+      ],
+      "reason": "Der Kandidat fasst Berichte zusammen, die eine signifikante Beschleunigung der Samsung HBM4‑Produktion für 2027 behaupten. Bei der Überprüfung fanden sich mehrere sekundäre Medienauswertungen (Seoul Economic Daily u. a.), die explizit 'Verdopplung' und '2,5× Glass‑Carrier‑Volumen' nennen. Samsung‑eigene Mitteilungen bestätigen jedoch nur die Aufnahme der HBM4‑Massenproduktion, eine aggressive Absatzprognose für 2026 und generelle Kapazitätserweiterungsabsichten — nicht aber eine eindeutig verifizierte, veröffentlichte und geprüfte Produktions‑ oder Versandkennzahl, die die hier behauptete Verdopplung und die konkrete Glass‑Carrier‑Zahl belegt.\n\nNach den TAIL‑Aufnahmekriterien fehlt damit die zwingende primäre Verifikation (ein datierter Samsung Investor‑Report / Earnings‑Release oder ein Lieferungsnachweis mit Einheiten/Monaten), die eine admission als VERIFIED DATA erlauben würde. Opposing evidence (Samsung‑IR/Pressemitteilungen) liefert zwar Kontext (Massenproduktion, Ausbauabsichten, starke 2026‑Umsatzprognose für HBM) — sie widerlegt die Behauptung aber nicht eindeutig; sie liefert lediglich nicht die konkreten 2.0×/2.5× Zahlen als geprüfte, unit‑basierte Beobachtung. Deshalb wird die Beobachtung auf Watchlist gesetzt und ein konkreter Falsifier (Shipment/Shipments‑based 2× Test bis 2027‑12‑31) vorgeschlagen.\n\nEmpfehlung: Nachprüfen, ob Samsung in offiziellen Q4/2026 oder Q1/2027 Earnings‑/IR‑Dokumenten explizit 2027 HBM4 Shipments (Wafers oder Stacks/GB) mit einem >=2.0× Anstieg gegenüber 2026 meldet oder ob vertraglich qualifizierte Kundenlieferungen (qualified shipments) diesen Anstieg bestätigen. Falls solche primären, unit‑gebundenen Nachweise auftauchen, ist ein Upgrade auf ACCEPT möglich; solange fehlt die primäre, quantitativen Verifikation und die Beobachtung bleibt auf WATCHLIST.\n\nQuellenlage (Kurz): Sekundärberichte (Seoul Economic Daily u. a.) behaupten die Zahlen; Samsungs eigene Mitteilungen bestätigen Massenproduktion und Ausbauabsichten, liefern jedoch keine geprüften, quantitativen 2.0×/2.5×‑Bestätigung. Daher MODEL ESTIMATE / Watchlist.",
+      "candidateId": "205f744cf2c121178598",
+      "candidateKey": "4aab9174db1e3664466ab137",
+      "reviewedAt": "2026-10-04T11:11:53.473Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_06adf05ebaa31eb6006ac234625bec87d0860fd4a05aa01a76"
     }
   ]
 }
