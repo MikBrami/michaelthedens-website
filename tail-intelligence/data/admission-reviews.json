@@ -52214,6 +52214,150 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_06adf05ebaa31eb6006ac234625bec87d0860fd4a05aa01a76"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron schließt auf SK hynix: Counterpoint‑Report zeigt Micron 24%, Samsung 38% in Q2 2026 (by revenue).",
+      "fact": "Counterpoint Research berichtet, dass Samsung im Q2 2026 38% des weltweiten DRAM‑Umsatzes hielt, SK hynix 25% und Micron 24% — die Lücke zwischen SK hynix und Micron beträgt 1 Prozentpunkt (Q2 2026, nach Umsatz).",
+      "placement": "Global / DRAM (by revenue) / kurzfristiges Quartalsergebnis (Q2 2026).",
+      "mechanism": "Generative‑AI‑Nachfrage verschiebt Umsatzanteile zugunsten von Samsung (HBM‑Frührampen) und Micron (stärkere Server‑DRAM‑Umsatzperformance), wodurch die relative Marktpositionen (Revenue share) geändert wurden.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Diese Marktanteilsverschiebung stützt die Kurzfrist‑Einschätzung, dass Server‑DRAM‑Beschaffungsrisiken 2026–2027 hoch bleiben; ein engeres Wettbewerbs‑Ranking (Micron nähert sich SK hynix) erhöht kurzfristig die Wahrscheinlichkeit, dass knappe, priorisierte Server/HBM‑Volumina Preisdruck und Allokationsrisiken in 2026/2027 verstärken.",
+      "falsifier": "Wenn offizielle oder vergleichbare Marktreports für Q3 2026 (Counterpoint / TrendForce / Trend/Market Tracker) bis 2026-11-15 zeigen, dass Microns Q3‑Umsatzanteil wieder unter 23% fällt oder der Abstand zu SK hynix wieder >3 Prozentpunkte wird, reduziert das die Aussagekraft dieses Q2‑Signals für die anhaltende Server‑DRAM‑Knappheit.",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-08-04",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://counterpointresearch.com/en/insights/ai-demand-reshapes-dram-rankings-in-q2-2026",
+          "label": "Counterpoint Research — 'AI Demand Reshapes DRAM Rankings in Q2 2026' (Published 2026-08-04)",
+          "kind": "primary",
+          "supports": "Counterpoint: \"Published August 4, 2026\" and the Q2 2026 revenue shares (Samsung 38%, SK hynix 25%, Micron 24%)."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/10/02/micron-closes-in-on-sk-hynix-in-dram-after-record-quarter",
+          "label": "Seoul Economic Daily — Bericht zur Aufarbeitung des Counterpoint‑Findings",
+          "kind": "secondary",
+          "supports": "Zusammenfassende Berichterstattung, die die Countepoint‑Zahlen (Samsung 38%, SK hynix 25%, Micron 24%) bestätigt."
+        }
+      ],
+      "reason": "Der Kandidat berichtet eine klar abgegrenzte, datierte Marktanteilsbeobachtung (Q2 2026, nach Umsatz) und verweist auf einen überprüfbaren Primär‑Report von Counterpoint (Publikationsdatum 2026-08-04). Das Signal ist relevant für das bestehende OUTLOOK-server_dram, weil sich Umsatzanteile zwischen führenden DRAM‑Anbietern während einer AI‑getriebenen Nachfragewelle verschieben können und damit kurzfristige Knappheits‑ und Allokationsrisiken beeinflussen. Primärquelle ist verfügbar und zitierbar; ein überprüfbarer Falsifizierer und ein konkreter Next‑Review‑Termin sind gesetzt. Gegenbelege (z.B. leicht abweichende Prozentpunkte aus TrendForce/Yonhap/andere Analysen) wurden geprüft und verändern die Kernaussage nicht in einer Weise, die die Annahmekriterien verletzt.",
+      "candidateId": "803684ce6368b1ec5582",
+      "candidateKey": "19f61dd47cf64f78ab25e430",
+      "reviewedAt": "2026-10-04T15:53:26.547Z",
+      "priorityScore": 84,
+      "gateReasons": [
+        "missing novelty",
+        "duplicate evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0909c03d69db4ca4006ac276664c1487d290e703c048e8b86a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT kündigt G5‑DRAM (11.95 nm half‑pitch) als 'Mass Production' an — Firmenmeldung vorhanden, aber keine unabhängige qualifizierte Versand-/Yield‑Verifikation",
+      "fact": "ChangXin Memory Technologies (CXMT) gab am 2026-09-20 an, seine fünfte DRAM‑Generationsplattform (G5) mit einer aktiven Array‑Half‑Pitch‑Angabe von 11.95 nm habe die Massenproduktion erreicht und erste LPDDR5X‑Produkte würden mit der Plattform gefertigt.",
+      "placement": "Geographie: China (Ankündigung anlässlich World Manufacturing Convention, Hefei); Domain/Layer: DRAM-Frontend / Produktions‑Technologie; Horizont: kurzfristig (ab 2026‑09‑20 in Produktion angekündigt).",
+      "mechanism": "CXMT gibt an, das G5‑Platform‑Design erreiche 11.95 nm aktive Half‑Pitch durch selbst‑ausgerichtetes Quadruple‑Patterning (SAQP), höhere Dies‑pro‑Wafer (≥+50% vs. Vorgänger) und LPDDR5X‑Produktintegration — damit soll die Kosten‑ und Leistungsposition gegenüber etablierten Anbietern verbessert werden. Die Behauptung ist eine Firmenangabe über Prozessschritt, Yield/Shipments werden nicht unabhängig belegt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Eine glaubwürdige, qualifizierte CXMT‑G5‑Massenproduktion würde die Verfügbarkeits‑ und Knappheitsannahmen für Server‑DRAM/HBM mittelfristig verschieben (Availability driver); konkret könnte zusätzliche qualifizierte Bit‑Supply den erwarteten strukturellen Knappheitshöhepunkt 2027 dämpfen, falls qualifizierte Lieferungen und akzeptable Yields nachgewiesen werden.",
+      "falsifier": "Bis 2026-12-31: Keine unabhängigen Belege für qualifizierte Kunden‑Shipments, breiten Serien‑Output oder validierende Drittmessungen (z. B. OEM‑Qualifikationen, Traceable shipment numbers, unabhängige Teardowns / fab‑audit), oder falls Teardowns/Qualifikationen die 11.95 nm‑Angabe oder Mass‑Production‑Status nicht bestätigen.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-20",
+      "novelty": "Die Ankündigung ist neu gegenüber dem TAIL‑Baseline (erstmalige Firmenangabe von G5‑Massenproduktion mit 11.95 nm). Die These, CXMT könne Samsung/SK hynix herausfordern, ist jedoch bereits in Diskussion; reine Firmenmeldungen allein sind noch kein Marktdurchbruch.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "dram",
+        "semiconductors",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.cxmt.com/en/news/info_22.html",
+          "label": "CXMT – Offizielle Pressemitteilung: 'CXMT Announces Mass Production of 5th‑Generation DRAM Technology Platform' (2026‑09‑20)",
+          "kind": "primary",
+          "supports": "Unternehmensmeldung, Datum der Ankündigung (2026-09-20), Angabe G5 Platform, 11.95 nm aktive Half‑Pitch und LPDDR5X‑Produkte in Massenproduktion. ([cxmt.com](https://www.cxmt.com/en/news/info_22.html?utm_source=openai))"
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/21/news-cxmt-g5-dram-enters-mass-production-with-50-higher-dies-per-wafer-saqp-enables-11-95nm-half-pitch/",
+          "label": "TrendForce – Bericht zu CXMT G5 Massenproduktion (sekundär)",
+          "kind": "secondary",
+          "supports": "Fasst Firmenangaben zusammen, nennt 11.95 nm Half‑Pitch und behaupteten ≥50% Dies‑pro‑Wafer‑Vorteil. Weist auf Firmenquelle (CXMT) hin. ([trendforce.com](https://www.trendforce.com/news/2026/09/21/news-cxmt-g5-dram-enters-mass-production-with-50-higher-dies-per-wafer-saqp-enables-11-95nm-half-pitch/?utm_source=openai))"
+        },
+        {
+          "url": "https://technode.com/2026/09/21/cxmt-announces-mass-production-of-fifth-generation-dram-platform/?trk=article-ssr-frontend-pulse_little-text-block",
+          "label": "TechNode – Bericht über CXMT‑Ankündigung (sekundär)",
+          "kind": "secondary",
+          "supports": "Berichtet Ankündigung auf World Manufacturing Convention; wiederholt SAQP / 11.95 nm Angabe, verortet das Ereignis zeitlich und lokal. ([technode.com](https://technode.com/2026/09/21/cxmt-announces-mass-production-of-fifth-generation-dram-platform/?trk=article-ssr-frontend-pulse_little-text-block&utm_source=openai))"
+        }
+      ],
+      "reason": "Die Kandidatenmeldung basiert auf einer klar datierten Firmenankündigung (CXMT Pressemitteilung vom 2026-09-20). Das Team bestätigt, dass die Primärquelle existiert und das Datum/der Claim korrekt wiedergegeben wird. Allerdings fehlt derzeit unabhängige Verifikation für qualifizierte Serien‑Shipments, Yield‑Levels oder Dritt‑Qualifikationen, die nötig wären, um einen echten Markt‑Availability‑Effekt zu belegen. Ohne solche externen, quantifizierbaren Messungen (Shipments, qualifizierte Kunden‑LTA‑Volumina, Lead‑time‑Verbesserungen oder beobachtete Preiswirkung) bleibt die Meldung eine unbestätigte Unternehmensbehauptung. Deshalb wird die Aufnahme auf Watchlist empfohlen: wichtig und relevant für die TAIL‑Thesen (Availability / Preisrisiko), aber derzeit nicht als VERIFIED DATA zu akzeptieren. Opposing evidence / Zweifel bestehen in Branchentexten, die auf fehlende unabhängige Teardowns, mögliche frühe Yield‑Probleme und die Abhängigkeit von SAQP (ohne EUV) hinweisen — diese Risiken müssen vor Index‑Impact‑Zulassung ausgeräumt werden. ([cxmt.com](https://www.cxmt.com/en/news/info_22.html?utm_source=openai))",
+      "candidateId": "88e2129451a0e9c5fd71",
+      "candidateKey": "64f7d4ee3e46cb28ab2ed9b9",
+      "reviewedAt": "2026-10-04T15:53:52.446Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08c3c47314335eb5006ac27676b15c87d2b7da7e206f72f847"
     }
   ]
 }
