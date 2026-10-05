@@ -52846,6 +52846,153 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0bf060df8e8df98d006ac3963c6f9c87d1b83b6e42600b178e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Klage gegen Samsung, SK hynix und Micron wegen angeblicher DRAM‑Versorgungsbeschränkung (US‑Klage 5:26‑cv‑06345)",
+      "fact": "Eine Sammelklage gegen Samsung Electronics, SK hynix und Micron wurde in den USA eingereicht (U.S. District Court, Northern District of California), Aktenzeichen 5:26‑cv‑06345; Klageeinreichung datiert auf 2026‑06‑25 bzw. Einreichungsaktivitäten sichtbar ab 2026‑06‑29 in Gerichtsdokumenten.",
+      "placement": "US‑Bundesgericht (Northern District of California / San Jose); betroffene Produktdomäne: konventionelles DRAM (commodity DRAM / Server‑DRAM), globaler Marktkontext.",
+      "mechanism": "Die Beschwerde behauptet, die Hersteller hätten seit 2022 Kapazität von konventionellem DRAM zu höhermargigem HBM verlagert und dadurch absichtlich konventionelles DRAM‑Angebot eingeschränkt; dies soll Preise und Allokation nach oben getrieben haben (allegierte koordinierte Produktionsumlenkung als kartell‑ähnliches Mittel).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Stützt die Möglichkeit eines anhaltenden Verfügbarkeitsengpasses (negative_supply) bei Server‑DRAM und damit auf Preis‑/Verfügbarkeitsprognosen in P-2026-07-11-01 und dem OUTLOOK-server_dram.",
+      "falsifier": "Bis spätestens 2027-12-31: kein gerichtliches oder regulatorisches Ergebnis (z. B. Prädikat zur Koordination oder wirksame einstweilige Verfügung) und gleichzeitig keine robuste, gerichts‑basierte Evidenz dafür, dass die Beklagten koordinierte Produktionskürzungen durchgeführt haben; oder alternativ: ein rechtskräftiges Gerichtsurteil, das behauptete koordinierte Lieferkürzungen bestätigt und eine messbare, gerichtliche Anordnung zur Änderung der Produktion ausstellt (beides prüft die kausale Behauptung).",
+      "nextReview": "2027-12-31",
+      "eventDate": "2026-06-25",
+      "novelty": "Die Klage ist neu im TAIL‑Kontext (Einreichung Juni 2026). Sie ist eine Anschuldigung über koordinierte Angebotsbeschränkung, liefert aber keine direkten, quantitativen Messungen (z. B. qualifizierte Shipments, Lead‑Time‑Reduktion oder vertraglich gebundene Bit‑Volumes).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://dockets.justia.com/docket/california/candce/5%3A2026cv06345/472931",
+          "label": "Justia / Docket 5:26‑cv‑06345 (Garciaguirre v. Samsung et al.)",
+          "kind": "primary",
+          "supports": "Gerichtsakten zeigen Fallnummer 5:26‑cv‑06345 in Northern District of California mit Einreichungen Ende Juni 2026 (Summons und Clerk Notices datiert 2026‑06‑29)."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/06/29/news-samsung-sk-hynix-micron-face-u-s-class-action-lawsuit-over-alleged-dram-supply-manipulation",
+          "label": "TrendForce Bericht (2026‑06‑29)",
+          "kind": "secondary",
+          "supports": "Bericht zitiert Klageeinreichung (25./29. Juni 2026) und beschreibt die Kernbehauptung: koordinierte Verschiebung hin zu HBM, um konventionelles DRAM‑Angebot zu verknappen."
+        }
+      ],
+      "reason": "Die Meldung beschreibt eine formale Klage (gerichtliche Einreichung ist verifizierbar), bietet aber kein direktes, primäres Mess‑ oder Marktband‑Beweisstück, das die behauptete koordinierte Angebotsreduktion oder einen quantifizierbaren Preis‑/Lieferzeit‑Effekt belegt. Nach TAIL‑Regeln ist eine Aufnahme nur dann akzeptabel, wenn ein atomarer, datierter, mit Einheiten versehener Primärbeleg für den beobachteten Markt‑Effekt vorliegt (z. B. qualifizierte Shipments, Vertragsmengen, Lead‑Time‑Messung). Solche direkten Messungen fehlen hier; die Klage bleibt eine unbelegte Anschuldigung im Early‑Stage‑Prozess. Deshalb: Watchlist — weiter beobachten bis gerichtliche/messbare Ergebnisse vorliegen. ",
+      "candidateId": "b00163c8ac57968fb92c",
+      "candidateKey": "34951f21be328594b27325fc",
+      "reviewedAt": "2026-10-05T23:15:58.794Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01682a76b248a3f6006ac42f96f0e087d19b751d5dce7abccf"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung verlagert DDR5- und SSD‑Fertigung an OSATs, um HBM‑Kapazität zu priorisieren",
+      "fact": "Mehrere Branchenberichte (z. B. TechEdt, TrendForce, TechRadar) melden am 2026-09-16 bis 2026-09-24, dass Samsung zusätzliche DDR5‑Module- und SSD‑Endmontage/Testing-Aufgaben an Outsourced Semiconductor Assembly and Test (OSAT)-Partner verlagert, um hausinterne Kapazität für HBM‑Packaging und HBM‑Volumen zu priorisieren. Die Meldungen nennen Partner (z. B. Dreamtech, Hanyang Digitech, SFA Semicon) und berichten von Investitions-/Expansionserfordernissen bei OSATs; Samsung selbst hat die Strategie laut Berichten nicht formell bestätigt.",
+      "placement": "Geografie: global (Samsung‑Supply‑Chain, Korea + OSAT‑Standorte in Indien, Vietnam, Philippinen); Domain/Layer: Memory Manufacturing — Back‑end Assembly & Packaging; Layer: kurzfristige Produktionsallokation (Q4 2026–H1 2027).",
+      "mechanism": "Samsung soll hausinterne Packaging/Assembly-Flächen und spezialisierte HBM‑Packaging‑Werkzeuge für HBM/High‑value HBM4‑Produkte freihalten. Konventionelle Module/SSDs würden stattdessen in vollem Umfang oder teilweise von OSAT‑Partnern (Outsourced Assembly & Test) fertiggestellt. Dadurch wird internes HBM‑Packaging schneller skaliert, während die Kontrolle über Module/SSD‑Host‑Bit‑Output teilweise in Hände von Outsourcern wandert — was kurzfristig die Verfügbarkeit und Allokation von Host‑DRAM/NAND‑Bits gegenüber HBM priorisieren könnte.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Stärkt das Basisszenario, dass HBM und Server‑DRAM 2027 strukturell knapp bleiben, indem Samsung intern HBM‑Kapazität priorisiert und konventionelle Module outsourct, was die effektive qualifizierte Host‑Bit‑Verfügbarkeit (Server‑DRAM/Enterprise‑SSD) für nicht‑priorisierte Käufer kurzfristig verschärfen könnte.",
+      "falsifier": "Bis zum 2026-11-30 veröffentlicht Samsung eine formelle, primäre Unternehmensmitteilung (IR/Press Release/Regulatory Filing) mit konkreten, quantifizierten Angaben (z. B. % der zusätzlichen DDR5‑Module/SSD‑Units, Linien/Anlagen, Zeitplan) über eine vollständige oder mehrheitliche Auslagerung der DDR5/SSD‑Endmontage; ODER alternative Falsifizierung: unabhängige offizielle Produktions-/Shipment‑Daten (Samsung oder OSAT‑Audits/Customs‑Shipments) zeigen, dass Samsungs hausinterne DDR5/SSD‑Module‑Ausstoß unverändert oder erhöht wurde (keine Kapazitätsverlagerung) bis 2026-11-30. Nächste überprüfung: 2026-12-01.",
+      "nextReview": "2026-12-01",
+      "eventDate": "2026-09-20",
+      "novelty": "Teilweise neu (Spezifikation der vermeintlichen Produktions‑Reallokation an OSATs), aber nahe an bereits bekannten Branchenerzählungen über HBM‑Priorisierung; keine isolierte, zuvor unbekannte Behauptung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "server_dram",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "negative_supply",
+      "severity": 45,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.techedt.com/samsung-shifts-ddr5-and-ssd-production-towards-outsourcing-as-hbm-demand-grows",
+          "label": "TechEdt – Bericht über Outsourcing‑Verschiebung (Sekundärquelle)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Samsung zusätzliche DDR5/SSD‑Endmontage an OSATs verlagert; nennt Dreamtech, Hanyang Digitech, SFA Semicon; erwähnt fehlende formelle Bestätigung durch Samsung."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/16/news-samsung-reportedly-shifts-cheonan-capacity-to-hbm-packaging-outsource-conventional-memory-modules/",
+          "label": "TrendForce – Branchenmeldung (industrielle Quelle)",
+          "kind": "secondary",
+          "supports": "TrendForce dokumentiert Bericht, dass Cheonan‑Packaging‑Kapazität für HBM‑Packaging umgeschichtet wird und konventionelle Module/SSD‑Zulagen an OSATs fließen; gibt Datum/Scope an."
+        },
+        {
+          "url": "https://www.techradar.com/pro/samsung-could-follow-micron-by-outsourcing-ddr5-and-ssd-production-to-third-parties-to-focus-on-more-lucrative-hbm-and-enterprise-products-could-sandisk-follow-suit",
+          "label": "TechRadar – weiterverbreiteter Medienbericht (Sekundär)",
+          "kind": "secondary",
+          "supports": "Berichtet über TheElec/TrendForce‑Quellen und fasst OSAT‑Expansionsaktivitäten zusammen; wiederholt Hinweis, dass Samsung nicht öffentlich formell bestätigt hat."
+        }
+      ],
+      "reason": "Die eingereichten Meldungen konsistentieren einen Branchen‑Narrativ: Samsung richtet sich stärker auf HBM und nutzt OSAT‑Partner für konventionelle Module/SSDs. Allerdings fehlen primäre, direkte Bestätigungen von Samsung (IR/Regulatory/SEC/official press release) mit quantifizierten Maßnahmen oder offiziellen Produktionsdaten. Für eine Aufnahme als VERIFIED DATA oder zur Annahme (accepted) fehlen: (a) eine primäre Samsung‑Quelle mit konkreten, datierten Zahlen/TIMELINE; (b) verifizierte Messdaten (Shipments/Qualified‑Output) die einen messbaren, eingetretenen Effekt auf die Host‑Bit‑Verfügbarkeit belegen. Opposing evidence ist vorhanden in Formulierungen innerhalb der Berichte selbst ('Samsung hat nicht formell bestätigt'), und Samsungs öffentlich verfügbare IR/earnings‑Materialien (frühere IR‑Dokumente) thematisieren HBM‑Priorisierung, aber benennen keine Auslagerungsquote. Deshalb: watchlist — signalistisch relevant für P-2026-07-11-01 (HBM/server‑DRAM Knappheit), aber nicht ausreichend primär verifiziert. Nächster Prüftermin: 2026-12-01; bis dahin ist ein formaler Samsung‑Beleg oder verifizierbare Produktionsdaten erforderlich, um die Einordnung auf VERIFIED DATA anzuheben.",
+      "candidateId": "d76cfc5847989a13d1ea",
+      "candidateKey": "dd530cd92c959f596111344a",
+      "reviewedAt": "2026-10-05T23:16:29.774Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_039c78208488d784006ac42faeff6c87d1a5ed7cefc15ab512"
     }
   ]
 }
