@@ -52498,6 +52498,147 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0a4f13a62bfac95c006ac2b3f1dce887d1b6246e859402e373"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SEC Co. Supplies HBM Inspection Equipment to Micron; Samsung, SK Inline Orders Imminent",
+      "fact": "Öffentliche Vertragsanmeldung berichtet eine Lieferung von HBM Inline-/X‑Ray-Inspektionsgeräten von SEC an Micron (Vertragsmeldung: ~₩1.8bn; Lieferung geplant bis Juli 2026). Behauptete \"Samsung, SK Inline Orders Imminent\" ist nicht durch einen primären, datierten Auftrags- oder Abnahmebeleg verifizierbar.",
+      "placement": "Micron HBM-Produktionslinie, Taiwan (Liefervertrag eingereicht in Südkorea; Auslieferungsziel Juli 2026).",
+      "mechanism": "Lieferung von Inline-X‑Ray-Inspektionsgeräten erlaubt Micron, HBM-Stack-Qualifikation und Inline-Qualitätskontrolle zu erweitern; das könnte qualifizierte HBM-Output-Rate erhöhen (indirekter, lateraler Beitrag zur Angebotsseite), ersetzt aber keine bestätigten Stückzahl‑Shipments.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Geringer, lokaler Entspannungs‑Effekt für HBM-/Server-DRAM‑Verfügbarkeit (wenn die Lieferung wie angekündigt erfolgt und zur Qualifikation beiträgt); reicht aktuell nicht aus, um das Basispanel‑Forecast einer strukturellen Knappheit bis Ende 2028 zu falsifizieren.",
+      "falsifier": "Bis zum 2026-12-31: Veröffentlichung einer datierten, primären Auftragsbestätigung oder Liefermeldung (von Micron, SEC, SK hynix oder Samsung) die explizit bestätigt, dass SEC Inline‑Inspektionsgeräte an Samsung und/oder SK hynix geliefert und in HBM‑Fertigungslinien in Betrieb genommen wurden; oder alternativ ein Micron‑Statement, dass die SEC‑Geräte keine messbare Produktionsqualifikationsverbesserung (keine Steigerung der qualifizierten HBM‑Wafer/Monat um ≥10% gegenüber Vorher) bewirkt haben.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-05-18",
+      "novelty": "Teilweise (primärer Micron-Auftrag bestätigt; zusätzliche Implikationen zu Samsung/SK sind spekulativ).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 8,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://kind.krx.co.kr/external/2026/05/19/000243/20260518002041/70012.htm",
+          "label": "KRX (offizielle Offenlegung) – Liefervertrag HBM-Inspektionsausrüstung (SEC) vom 2026-05-18",
+          "kind": "primary",
+          "supports": "Meldung einer HBM-Inspektionsausrüstungs‑Lieferung/Vertrag (Angabe des Vertragsgegenwerts und Lieferzeitraums)."
+        },
+        {
+          "url": "https://view.asiae.co.kr/en/article/2026020408004004656",
+          "label": "Asiae (Sekundärbericht) – frühere Meldung zu SEC‑HBM X‑ray‑Inspektionslieferungen an Micron",
+          "kind": "secondary",
+          "supports": "Frühere Berichterstattung zur Lieferung/Bestellung von HBM‑Inspektionsausrüstung an Micron und Kontext zu SECs Entwicklung einer Inline X‑Ray‑Lösung."
+        }
+      ],
+      "reason": "Primäre, datierte Offenlegung (KRX‑Filing vom 2026-05-18/19) bestätigt eine konkrete Vertragsanmeldung zwischen SEC und Micron für HBM-Inspektionsausrüstung und damit den Kernteil der Behauptung. Die weitergehende Aussage im Kandidatentext, Samsung und SK hätten unmittelbar bevorstehende Inline‑Bestellungen, konnte in der Primärlage nicht verifiziert werden: es fehlen datierte Auftragsanzeigen oder Lieferbestätigungen von Samsung bzw. SK hynix, oder belastbare Angaben zu Umfang/Zeitpunkt solcher Inline‑Bestellungen. Nach TAIL‑Aufnahmekriterien ist eine teilweise verifizierte, aber in relevanter Hinsicht unvollständige Behauptung nicht ausreichend für eine Aufnahme als VERIFIED DATA oder akzeptierte Signal‑Admission. Deshalb wird die Aufnahme auf Watchlist gesetzt mit einer Prüf‑Frist (2026-12-31) für folgende fehlende Belege: datierte Samsung/SK‑Auftragsmeldungen oder messbare Produktions-/Shipment‑Änderungen infolge der SEC‑Geräte. Opposing evidence (z. B. fehlende Samsung/SK‑Disclosure in KRX/Unternehmensmeldungen bis heute) reduziert Relevanz und verhindert hohe Impact‑Punkte.",
+      "candidateId": "f76eeae4f3986fd3e9d6",
+      "candidateKey": "9cc433f13571a86c6e001563",
+      "reviewedAt": "2026-10-05T02:03:17.202Z",
+      "priorityScore": 52,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e5f3d7d51abe81c006ac30546a1f087d1ab8614c3538554f1"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung prüft Auslagerung konventioneller DRAM‑Module zugunsten von HBM‑Fertigung",
+      "fact": "Mehrere Branchenberichte (16–18 Sep 2026) melden, Samsung prüfe die Auslagerung von konventioneller DRAM‑Module-/SSD‑Montage an Drittpartner (Indien/Vietnam/Philippinen), um interne Kapazität für HBM/HBM4‑Volumen zu priorisieren; die Berichte sind vage hinsichtlich welcher Fertigungsstufen (Module/Assembly vs. Wafer‑Fabs) konkret betroffen sind und liefern kein verifizierbares Samsung‑Statement, das 'DRAM‑Waferfertigung' outsourct.",
+      "placement": "Geographie: global (Samsung‑Produktionsstandorte und Drittlieferanten in Indien, Vietnam, Philippinen); Domain/Layer: Memory supply chain — Montage/Module vs. Frontend/Fab; Horizon: kurzfristig (Sep–Dec 2026) berichtete Pläne.",
+      "mechanism": "Verlagerung von interner Produktionskapazität (insbesondere Backend/Packaging/SMT Assembly) zu HBM/HBM4‑Pack/Advanced‑Packaging führt zu relativer Verringerung der internen Kapazität für konventionelle DRAM/SSD‑Module; ausgelagerte Montage/Module sollen von Drittauftragsfertigern (Dreamtech, Hanyang Digitech, SFA Semicon u. a.) übernommen werden. Die Berichterstattung macht nicht sauber deutlich, ob dies die Siliz‑Wafer‑Fertigung (Front‑end) oder nur Modul/Board‑Assembly betrifft.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert über erhöhtes Risiko für 'negative_supply' bei Server‑DRAM/HBM‑Mix 2027; wenn internere Kapazität dauerhaft auf HBM umgelenkt wird, könnten konventionelle Server‑DRAM‑Lieferungen knapper werden und Lead‑Times steigen, was das Basisszenario einer strukturellen Knappheit stützt.",
+      "falsifier": "Konkrete Samsung‑Primärquelle (offizielle Pressemitteilung oder SEC/IR‑Filing) datiert bis 2026-10-31, die explizit aussagt, dass: a) nur Modul-/SSD‑Assembly (nicht Wafer‑Front‑end‑DRAM) an Dritte ausgelagert wird UND/ODER b) Samsung keine internen Wafer‑DRAM‑Fabriken oder -Waferkapazität an Dritte outsourct. Falls Samsung klarstellt, dass nur Modul/Board‑Assembly betroffen ist, widerspricht das der engeren Formulierung 'outsourcing DRAM production' (wafer fab).",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-16",
+      "novelty": "Moderat — die Berichte fassen einen realen operativen Fokuswechsel (mehr HBM‑Priorität) zusammen, sind aber nicht eindeutig neu gegenüber priorisierten HBM‑Ramps (Samsung‑HBM4‑Mass‑Shipments seit Feb 2026) und ergänzen bestehende Basissignale.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.yugatech.com/news/samsung-shifts-dram-production-outsourcing-prioritizes-hbm/",
+          "label": "YugaTech (Aggregierte Berichterstattung, 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Berichtet, Samsung verlagere Kapazitäten hin zu HBM und prüfe Auslagerung konventioneller DRAM/Module."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/16/news-samsung-reportedly-shifts-cheonan-capacity-to-hbm-packaging-outsource-conventional-memory-modules/",
+          "label": "TrendForce (Branchen‑Curated News, 2026-09-16)",
+          "kind": "secondary",
+          "supports": "Spezifiziert Verlagerung von Cheonan‑Kapazität zu HBM Packaging und Outsourcing konventioneller Module; nannte Zusammenhänge mit HBM‑Ramp."
+        }
+      ],
+      "reason": "Die Inbox‑Kandidatenquelle (TechJuice über Google News) fasst Medienberichte zusammen, wonach Samsung konventionelle DRAM/Module/SSD‑Montage an Drittanbieter auslagern will, um interne Kapazität für HBM zu priorisieren. Unsere Web‑Verifikation fand mehrere sekundäre Branchen‑ und Tech‑Publikationen (TrendForce‑Kurzmeldung, YugaTech, GSMArena u. a.) mit übereinstimmender Berichterstattung aus dem 16–18. Sep 2026‑Fenster. Wichtige Adversarial‑Checks bleiben jedoch offen: keine primäre Samsung‑Pressemitteilung oder verbindliche IR‑Einreichung wurde gefunden, und die Berichte sind uneinheitlich in der technischen Reichweite der Auslagerung (Module/Assembly vs. Wafer‑Front‑end). Ohne eine Samsung‑Primärquelle, die explizit 'outsourcing of DRAM wafer fabrication' oder klarstellt, dass Frontend‑Waferkapazität verlagert wird, ist die Behauptung zu unpräzise, um als VERIFIED DATA aufgenommen zu werden. Außerdem besteht widersprüchliche Interpretation in Branchen‑Kommentaren (einige Quellen betonen Modul‑Assembly‑Outsourcing). Deshalb: Watchlist — aufnehmen als signalgebende Meldung mit hoher Relevanz für Verfügbarkeit, aber fehlende primäre Verifikation und unauflösbare Scope‑Ambiguität verhindern Admission als Verified Signal. Opposing evidence: Samsung IR/earnings‑Archive zeigen HBM‑Ramp und HBM4‑Massshipments, aber keine Bestätigung einer Auslagerung der Wafer‑Fertigung; einige Foren/Analysten kommentieren, die Meldungen meinen Modul‑Assembly, nicht Wafer‑Fabs. Siehe zitierten sekundären Quellen. Abschließendes red‑pencil: nicht bestanden (keine Primärverifikation; unklare Granularität).",
+      "candidateId": "6a605d2fe9019191ca0c",
+      "candidateKey": "abfc06f533f68a8e68540dd5",
+      "reviewedAt": "2026-10-05T02:03:48.189Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e82e378930e0d4f006ac30565616087d1a149ec50962bb661"
     }
   ]
 }
