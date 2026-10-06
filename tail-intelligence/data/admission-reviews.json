@@ -53143,6 +53143,223 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_04330723788a9c29006ac464f4d84c87d1876f394c13d19af5"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK Hynix Retreats as Foreign Money Exits and Samsung Closes the HBM Gap",
+      "fact": "AD HOC NEWS-Bericht (2026-10-06) meldet kurzfristige Anlegerabflüsse bei SK hynix und beschreibt eine sich verengende HBM‑Wettbewerbsposition zugunsten von Samsung.",
+      "placement": "Global / Memory - HBM & Server‑DRAM Markt (Berichts‑Scope: Firmenkommentar, Aktienbewegung), Ereignisdatum 2026-10-06.",
+      "mechanism": "Marktreaktion auf Kapitalflüsse und wahrgenommene Produktions-/Yield‑Fortschritte: Abflüsse aus SK hynix-Aktien plus Berichterstattung über Samsungs HBM‑Yield-/Ramp‑Fortschritte könnten relative HBM‑Lieferanteile und Preisstellung verschieben; aber der Artikel liefert keine direkt qualifizierten Shipments, Lead‑Time‑Messung oder Kontraktpreise.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert die Prognose, dass HBM und Server‑DRAM strukturell knapp bleiben bis Ende 2028 durch Hinweis auf potenzielles Verschieben von Marktanteilen (Veränderung der Kapazitätsverteilung), erhöht aber keine bestätigte Entspannung des Engpasses.",
+      "falsifier": "Bis 2026-12-31: Wenn Samsung keine nachprüfbaren, qualifizierten HBM4‑Shipments oder Umsatzangaben meldet, die Samsungs HBM‑Marktanteil auf ≥30% im Q4 2026 belegen (Quelle: Firmenreporting oder Counterpoint/KB‑Securities Marktbericht), dann widerlegt dies die Behauptung einer unmittelbaren taktischen Verschiebung zugunsten Samsung; alternativ falsifiziert ein SK hynix‑Bericht, der einen stabilen HBM‑Marktanteil >50% für Q4 2026 zeigt, die Implikation.",
+      "nextReview": "2026-10-13",
+      "eventDate": "2026-10-06",
+      "novelty": "gering (Bericht fasst bereits bekannte Marktbewegungen zusammen; kein neuer, atomarer Messwert).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 6,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/sk-hynix-retreats-as-foreign-money-exits-and-samsung-closes-the-hbm-gap/70241722",
+          "label": "AD HOC NEWS — Artikel zum Titel (primäre eingereichte Quelle)",
+          "kind": "primary",
+          "supports": "Bericht publiziert 2026-10-06; beschreibt Anlegerabflüsse bei SK hynix und interpretiert Verbesserungen bei Samsungs HBM‑Position als Marktereignis."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/01/hbm-rivalry-shifts-as-samsung-gains-and-sk-hynix-slides",
+          "label": "Seoul Economic Daily — Gegenbeleg / kontextuelle Marktberichterstattung",
+          "kind": "secondary",
+          "supports": "Berichte im September 2026, die Samsungs HBM‑Zuwächse und eine Neubewertung der HBM‑Marktanteile dokumentieren; liefert gegenteilige/unterstützende Marktsicht, aber keine direkte Messung von qualifizierten Shipments."
+        }
+      ],
+      "reason": "Der Kandidat ist ein marktkommentierender Artikel (AD HOC NEWS) vom 2026-10-06, der bekannte Entwicklungen (Abflüsse, laufende Yield/Ramp‑Debatten zwischen SK hynix und Samsung) zusammenfasst. Die Behauptung bleibt jedoch narrativ und liefert kein atomares, datiertes Messsignal (z. B. qualifizierte HBM‑Shipments, Lead‑Time‑Änderung, kontraktierte Bit‑Mengen oder verifizierte Vertragsabschlüsse) — Anforderungen für sofortige Aufnahme mit VERIFIED DATA sind daher nicht erfüllt. Opposing / kontextuelle Berichterstattung existiert (z. B. Seoul Economic Daily), was die These teilt, aber nicht als eindeutiger, quantifizierbarer Beleg ausreicht. Ohne eine direkte, überprüfbare Messgröße (Shipments, Vertragsvolumen, Lead Time) wird die Aussage als markt‑signalwürdig, aber nicht bewiesen klassifiziert. Nächster Review-Termin gesetzt auf 2026-10-13, um auf mögliche Firmenreports oder Marktstatistiken (Q4‑Shipments / KB Securities / Counterpoint) zu prüfen.",
+      "candidateId": "6aa3278237640f5576c7",
+      "candidateKey": "62d1dc08f1efe872e9197edb",
+      "reviewedAt": "2026-10-06T12:07:17.311Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05f452265fadeac3006ac4e45c0d6487d08731654dc7ffc9f8"
+    },
+    {
+      "decision": "accepted",
+      "title": "Micron: 'HBM sold out through 2026' & Data‑Center‑Umsatz +150% — Primärquelle vorhanden, richtet sich gegen Engpass‑These",
+      "fact": "Micron meldet sich als primäre Quelle, dass (a) seine HBM‑Kapazität für Kalenderjahr 2026 weitgehend verplant/verkauft ist und (b) der Data‑Center-/HBM‑bezogene Umsatz sequenziell/YoY stark stieg (Core Data‑Center revenue mehr als verdoppelte / ~+150%).",
+      "placement": "Global / Produkt‑Layer: HBM (High‑Bandwidth Memory) — Scope: Micron's HBM output calendar 2026; Domain: server/HPC/AI datacenter memory; Horizon: calendar year 2026 (datiert Quelle).",
+      "mechanism": "Kundenverträge und gebuchte Mengen (nicht nur Absichtserklärungen) binden vorhandene HBM‑Outputmengen; dadurch bleibt verfügbare HBM‑Bit‑Supply für offene Marktkäufer knapp und priorisiert Hyperscaler/Vertragspartner, was Verfügbarkeits‑ und Preisdruck in Server‑DRAM/HBM‑Segmenten unterstützt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Erhöht Evidenz für das Szenario, dass HBM und Server‑DRAM strukturell knapp bleiben zumindest bis Ende 2026/2027; stärkt die plausibilität des Engpass‑Peak‑Timing in 2027 in P-2026-07-11-01.",
+      "falsifier": "Bis 2026-12-31: Micron veröffentlicht ein nachprüfbares Update, das entweder (A) gebuchte/contracted HBM‑Volumen für Kalenderjahr 2026 um ≥20% reduziert (z. B. bestätigte Vertragsstornierungen oder Offenlegung von material cancellations) oder (B) Micron weist zwei aufeinanderfolgende Quartale mit einem >15% QoQ Rückgang des Core Data‑Center Umsatzes aus. Wenn eines dieser Ereignisse passiert, widerlegt es die aktuelle Schlussfolgerung.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-20",
+      "novelty": "moderate — Primärmeldung von Micron bestätigt, aber Markt/Analystenbericht rezykliert die Nachricht.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 60,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261930650-micron-mu-hbm-ai-datacenter-sold-out-margin-expansion-fibonacci-breakout-memory-scarcity-guidance-raise-tradingkey",
+          "label": "TradingKey — Candidate article (republishing/analysis of Micron results).",
+          "kind": "secondary",
+          "supports": "Reports claim: 'HBM sold out through 2026' and 'Data Centre revenue +150%'."
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+          "label": "Micron investor relations — Quarterly / FY results (primary company disclosure).",
+          "kind": "primary",
+          "supports": "Micron press release reporting record fiscal results and that HBM production/supply for calendar 2026 is committed/booked and that data‑center related revenues more than doubled (company figures)."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/a2026q3ex991-pressrelease.htm",
+          "label": "Micron SEC / Exhibit — Earnings & accompanying detail (primary filing).",
+          "kind": "primary",
+          "supports": "Supplementary disclosure about HBM ramp, booked agreements and Data‑Center unit revenue growth (company filing/exhibit)."
+        }
+      ],
+      "reason": "Die Einreichung liefert eine klar datierte, primäre Unternehmensquelle (Micron‑Investor‑Release / SEC‑Exhibit), die den Kernbehauptungen direkt entspricht: Micron dokumentiert, dass HBM‑Kapazität für Kalenderjahr 2026 weitgehend verplant/verkauft ist und dass Data‑Center‑Umsatz deutlich zugenommen hat (operative Zahlen liefern die Größenordnung). Die Behauptung ist somit verifizierbar und relevant für die vorhandene Vorhersage P-2026-07-11-01 (HBM/Server‑DRAM Knappheit bis Ende 2028). IndexImpact wurde nicht gesetzt, weil kein direktes, nachprüfbares Markt‑Index‑Metrik (z. B. kontraktpreise, qualified shipments) im Kandidaten angegeben wurde; stattdessen stützt die Meldung die Verfügbarkeits‑/Nachfrage‑These (capacity_lock / negative_supply‑Mechanik). Opposing evidence / Risiken: Micron‑Angaben zeigen gebuchte Kapazität, nicht zwingend faktische Shipments — Vertragsbindung kann durch spätere Stornierung, Preisnachverhandlung oder Yield‑Probleme relativiert werden. Deshalb ist ein konkreter Falsifier (2026‑12‑31) gesetzt, um die gebuchte Sichtbarkeit gegen tatsächliche Lieferung/Rezession zu testen. Die Gesamtscore (82) erreicht das 'accepted'‑Schwellenwert (≥80).",
+      "candidateId": "95d6fd4f3d2ae8a1d9ac",
+      "candidateKey": "2b795a9be3c07f1cc2456505",
+      "reviewedAt": "2026-10-06T12:07:53.581Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-2b795a9be3c07f1cc2456505",
+        "title": "Micron: 'HBM sold out through 2026' & Data‑Center‑Umsatz +150% — Primärquelle vorhanden, richtet sich gegen Engpass‑These",
+        "date": "2026-09-20",
+        "admittedAt": "2026-10-06T12:07:53.581Z",
+        "fact": "Micron meldet sich als primäre Quelle, dass (a) seine HBM‑Kapazität für Kalenderjahr 2026 weitgehend verplant/verkauft ist und (b) der Data‑Center-/HBM‑bezogene Umsatz sequenziell/YoY stark stieg (Core Data‑Center revenue mehr als verdoppelte / ~+150%).",
+        "placement": "Global / Produkt‑Layer: HBM (High‑Bandwidth Memory) — Scope: Micron's HBM output calendar 2026; Domain: server/HPC/AI datacenter memory; Horizon: calendar year 2026 (datiert Quelle).",
+        "tailInference": "Kundenverträge und gebuchte Mengen (nicht nur Absichtserklärungen) binden vorhandene HBM‑Outputmengen; dadurch bleibt verfügbare HBM‑Bit‑Supply für offene Marktkäufer knapp und priorisiert Hyperscaler/Vertragspartner, was Verfügbarkeits‑ und Preisdruck in Server‑DRAM/HBM‑Segmenten unterstützt.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Erhöht Evidenz für das Szenario, dass HBM und Server‑DRAM strukturell knapp bleiben zumindest bis Ende 2026/2027; stärkt die plausibilität des Engpass‑Peak‑Timing in 2027 in P-2026-07-11-01.",
+        "falsifier": "Bis 2026-12-31: Micron veröffentlicht ein nachprüfbares Update, das entweder (A) gebuchte/contracted HBM‑Volumen für Kalenderjahr 2026 um ≥20% reduziert (z. B. bestätigte Vertragsstornierungen oder Offenlegung von material cancellations) oder (B) Micron weist zwei aufeinanderfolgende Quartale mit einem >15% QoQ Rückgang des Core Data‑Center Umsatzes aus. Wenn eines dieser Ereignisse passiert, widerlegt es die aktuelle Schlussfolgerung.",
+        "nextReview": "2026-12-31",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 8,
+          "thesisRelevance": 18,
+          "forecastImpact": 17,
+          "falsifiability": 12,
+          "timeSensitivity": 9
+        },
+        "severity": 60,
+        "confidence": 78,
+        "markets": [
+          "hbm",
+          "server_dram",
+          "dram",
+          "ai_infrastructure"
+        ],
+        "signal": "capacity_lock",
+        "driverScope": [
+          "demand",
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "TradingKey — Candidate article (republishing/analysis of Micron results).",
+            "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261930650-micron-mu-hbm-ai-datacenter-sold-out-margin-expansion-fibonacci-breakout-memory-scarcity-guidance-raise-tradingkey"
+          },
+          {
+            "label": "Micron investor relations — Quarterly / FY results (primary company disclosure).",
+            "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx"
+          },
+          {
+            "label": "Micron SEC / Exhibit — Earnings & accompanying detail (primary filing).",
+            "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/a2026q3ex991-pressrelease.htm"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht Evidenz für das Szenario, dass HBM und Server‑DRAM strukturell knapp bleiben zumindest bis Ende 2026/2027; stärkt die plausibilität des Engpass‑Peak‑Timing in 2027 in P-2026-07-11-01."
+        },
+        "admissionReviewKey": "2b795a9be3c07f1cc2456505"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b6965cf353dd7bb006ac4e4757b4887d0a27ba7a40835a9bc"
     }
   ]
 }

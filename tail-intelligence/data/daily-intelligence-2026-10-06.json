@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T03:03:47.857Z",
+  "updatedAt": "2026-10-06T12:07:53.756Z",
   "previousRun": "2026-10-05",
   "executivePulse": {
     "current": 74,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 75,
     "previous": 75,
-    "interpretation": "Datenvertrauen 75/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 75/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 149 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 82,
     "previous": 82
   },
-  "momentum": "Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 149 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,6 +527,78 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-2b795a9be3c07f1cc2456505",
+      "title": "Micron: 'HBM sold out through 2026' & Data‑Center‑Umsatz +150% — Primärquelle vorhanden, richtet sich gegen Engpass‑These",
+      "date": "2026-09-20",
+      "admittedAt": "2026-10-06T12:07:53.581Z",
+      "fact": "Micron meldet sich als primäre Quelle, dass (a) seine HBM‑Kapazität für Kalenderjahr 2026 weitgehend verplant/verkauft ist und (b) der Data‑Center-/HBM‑bezogene Umsatz sequenziell/YoY stark stieg (Core Data‑Center revenue mehr als verdoppelte / ~+150%).",
+      "placement": "Global / Produkt‑Layer: HBM (High‑Bandwidth Memory) — Scope: Micron's HBM output calendar 2026; Domain: server/HPC/AI datacenter memory; Horizon: calendar year 2026 (datiert Quelle).",
+      "tailInference": "Kundenverträge und gebuchte Mengen (nicht nur Absichtserklärungen) binden vorhandene HBM‑Outputmengen; dadurch bleibt verfügbare HBM‑Bit‑Supply für offene Marktkäufer knapp und priorisiert Hyperscaler/Vertragspartner, was Verfügbarkeits‑ und Preisdruck in Server‑DRAM/HBM‑Segmenten unterstützt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Erhöht Evidenz für das Szenario, dass HBM und Server‑DRAM strukturell knapp bleiben zumindest bis Ende 2026/2027; stärkt die plausibilität des Engpass‑Peak‑Timing in 2027 in P-2026-07-11-01.",
+      "falsifier": "Bis 2026-12-31: Micron veröffentlicht ein nachprüfbares Update, das entweder (A) gebuchte/contracted HBM‑Volumen für Kalenderjahr 2026 um ≥20% reduziert (z. B. bestätigte Vertragsstornierungen oder Offenlegung von material cancellations) oder (B) Micron weist zwei aufeinanderfolgende Quartale mit einem >15% QoQ Rückgang des Core Data‑Center Umsatzes aus. Wenn eines dieser Ereignisse passiert, widerlegt es die aktuelle Schlussfolgerung.",
+      "nextReview": "2026-12-31",
+      "priorityScore": 82,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 17,
+        "falsifiability": 12,
+        "timeSensitivity": 9
+      },
+      "severity": 60,
+      "confidence": 78,
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "signal": "capacity_lock",
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "TradingKey — Candidate article (republishing/analysis of Micron results).",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261930650-micron-mu-hbm-ai-datacenter-sold-out-margin-expansion-fibonacci-breakout-memory-scarcity-guidance-raise-tradingkey"
+        },
+        {
+          "label": "Micron investor relations — Quarterly / FY results (primary company disclosure).",
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx"
+        },
+        {
+          "label": "Micron SEC / Exhibit — Earnings & accompanying detail (primary filing).",
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/a2026q3ex991-pressrelease.htm"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöht Evidenz für das Szenario, dass HBM und Server‑DRAM strukturell knapp bleiben zumindest bis Ende 2026/2027; stärkt die plausibilität des Engpass‑Peak‑Timing in 2027 in P-2026-07-11-01."
+      },
+      "admissionReviewKey": "2b795a9be3c07f1cc2456505"
     }
   ],
   "predictionLogUpdates": [
@@ -641,15 +713,51 @@
     "date": "2026-10-06",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
-    "note": "Evidenzprüfung offen: 142 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 82,
+    "note": "Evidenzprüfung offen: 149 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-10-06T03:03:47.857Z",
+    "generatedAt": "2026-10-06T12:07:53.756Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-10-06T02:57:36.674Z",
-    "inboxNewItems": 55,
+    "inboxUpdatedAt": "2026-10-06T12:01:14.311Z",
+    "inboxNewItems": 187,
     "highRelevanceCandidates": [
+      {
+        "id": "6aa3278237640f5576c7",
+        "title": "SK Hynix Retreats as Foreign Money Exits and Samsung Closes the HBM Gap",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOXpTd2lBUWtzTlphWjl6R1J3eF95T1FTUWpMQzZQZ1d3ZVQya0JNdDFVMHh4UHpYYmtvam5lR2ZrT09PWDJkRk1uNEFtNnFmZDF2cXJfSnE5Zldzd05zZWdTYnBRa1JFMTRIb1Boa0stVGxOM2Q1Z0J3V1Q5U1R5eXVMZS15dHZSQW95M1p3UkdqRmp0ajRyalN6SUFQemg5TlZjSnNVdmVpZ2hZazNSQzEwczB3UnhtM1QtWmFQOGNwdUpsb2hzZUJKMkFOWDNCdW1lRWtqd1pydTA?oc=5",
+        "source": "AD HOC NEWS",
+        "summary": "Aktuelle Meldung von AD HOC NEWS: SK Hynix Retreats as Foreign Money Exits and Samsung Closes the HBM Gap",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-06T11:11:04.000Z"
+      },
+      {
+        "id": "824e702626074d725e14",
+        "title": "Samsung, SK Hynix Experts Join Chinese DRAM Maker CXMT",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTFBsb0xsRFFrbmRIRWVSMDhfRFJJYVh2NUJqNWxsQkh3VXBaZVZHUjh5Y29PNTM5NVJyME1XM3NySUZOdU9mVWhkYXh4Nk9DaHZEalNtNlRyanJua0tvVEhESDQ2d0NQczE2X3RpNWVnbzZpaG1HMVVHNEJSaG8yWW1RbS1uSTZY?oc=5",
+        "source": "조선일보",
+        "summary": "Aktuelle Meldung von 조선일보: Samsung, SK Hynix Experts Join Chinese DRAM Maker CXMT",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-06T09:35:38.000Z"
+      },
+      {
+        "id": "053782a96186809d9e9a",
+        "title": "Samsung steps up HBM cooling as TSMC expands CoWoS",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWnduQXFwMDZtZHBGallSTmV4VC1RWUZ2ampDQUpCd0hjYnVJazg5TXlELVNfVy0xVmxJUkVnTEpuMUduZlBhU3FGakQ2WGd3VnU0eHJHdFlLc3lUWE5QNXhnb2tlNkRoUV9GZE5fejFsNEhjTmtiTHVaQ2U2TTZQbndYdlp1Y2dEa2IzUE5rd0NBREU?oc=5",
+        "source": "digitimes",
+        "summary": "Aktuelle Meldung von digitimes: Samsung steps up HBM cooling as TSMC expands CoWoS",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-06T04:15:08.000Z"
+      },
+      {
+        "id": "1cafd2295a9c0c3dbb2f",
+        "title": "NYC Council Speaker Julie Menin Presses Anthropic, OpenAI, Google, Meta on AI Catastrophic Risks",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOZHd4bkZ6SktfaS1JVnVqWlFta1otdmtvZ1lPdGY1U0FWNUtRMkVhb1p4OWMtbW1IWHJYOFJKVDJqWUd0dGYzUk9TR29hQ2pVWkVJaDZ4RkRMS1FPUGxTOUt1bzFOa1JzN1JkbE4xWTRfR21uMGtQbE5YUkMtOVdvWlFWTUxoU0poV2R6UEN3X2xNbVpwOGtySnBzOUZrQ0tSMjA3ekloMGRzaVByMmVzdHlBd0pHVDUtYUQyLXY1eTlpZlJZcEcyMkgzN0sxQnRsc0dLQ2paYmwwcDlhT0JRN1BiRDVORXRONVE?oc=5",
+        "source": "NewsCord",
+        "summary": "Aktuelle Meldung von NewsCord: NYC Council Speaker Julie Menin Presses Anthropic, OpenAI, Google, Meta on AI Catastrophic Risks",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-06T03:09:41.000Z"
+      },
       {
         "id": "b00163c8ac57968fb92c",
         "title": "Samsung, SK Hynix and Micron Face DRAM Price Manipulation Lawsuit: Is the Memory Market Manipulated?",
@@ -685,42 +793,6 @@
         "summary": "Aktuelle Meldung von qz.com: OpenAI, Anthropic, Google, Meta testify at NYC AI hearing",
         "relevanceScore": 100,
         "publishedAt": "2026-10-05T11:16:36.000Z"
-      },
-      {
-        "id": "dcfa647ba5025755421b",
-        "title": "Meet the Low-Cost Vanguard ETF With 32.4% Invested in Nvidia, Broadcom, Micron, AMD, Intel, and Lam Research, While VOO Has Just 14.8%.",
-        "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOSDJQT3JNRVJ4TGtxOFk2cDJHU2pVWXEySDdselllaUpRQTRwekpFZE5TSXk5bVFZUjdLcEUzUTkxMWs3bG02MjZZUXd5Y1RyM2ZOU3JmOWNLYVNoLW0wSk96Z2xaMExuM2dEVzA4QmxTZWtmem41Qkdpd3hrNGpKYVdBV1ZKeDJoUmpocWdkdXZZbmdWdEtkR25zUVlRVXRFSFZEMF9rVmEzS09DRGJIdHVoN3k3MFBaQ05BdFhiRkpqc2lVSUtLXzZVZHZBNGpNQjhQSWVEMHA1aFpGdS1tWngta3Q2SkxwU011elRBTE1WMkw1dUhXdVBWaW1GQ3A5WkJrdDZvU1lTMGNyaEdObkVqdDBhakhLVkNFNHVSbkVNS3EzeEl5WFl1ZGJuQQ?oc=5",
-        "source": "The Globe and Mail",
-        "summary": "Aktuelle Meldung von The Globe and Mail: Meet the Low-Cost Vanguard ETF With 32.4% Invested in Nvidia, Broadcom, Micron, AMD, Intel, and Lam Research, While VOO Has Just 14.8%.",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-05T11:13:53.000Z"
-      },
-      {
-        "id": "84132fdc82b5d6964050",
-        "title": "Anthropic, OpenAI, Google and Meta execs set to testify at NYC Council hearing on AI risks",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZUIydzZYNjQ4a2RSMEROU0N4RC1NM2JPdXp3RTdtRWVqSjc0Zk5YTU9EWGd2ZEtWSk1JTkZacVkwejgyajZIRlRvMnNsSkkzMFhFbzczNGM4eVVRLXktR19kYjNybkdpVzl4bkpIdHFzRVdYSmlUTjkwR2Z2VjR5cnpSMlRLcEVFSnVlVUN0MTdRLXZERzI1eURTaGxTNllCTndqbtIBqgFBVV95cUxPcVFrM05qVE9lTUtNUUdYV0ZtZ0xNSy1NdGQ2aURSQU1pd3g3ZnA1YlMwbUxPaFZhWlh4bWVwQ3NvalBSajNFZk5DNlA0NjVERUZiLXZ0cmZhMHdRQXo0dVg5elgyTjZsbDR5Sl9KWVJvaVVNZGRKZGFrWlpzak1veGN0Yy1PX3FIWEJCYXl3YlpFMXhnaFg4ZHpkcVMxblp4NTRWM2pRT2FPdw?oc=5",
-        "source": "CNBC",
-        "summary": "Aktuelle Meldung von CNBC: Anthropic, OpenAI, Google and Meta execs set to testify at NYC Council hearing on AI risks",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-05T10:41:41.000Z"
-      },
-      {
-        "id": "9560e5ee97869049a104",
-        "title": "Samsung reportedly seeks more than triple HBM prices for 2027 as HBM4 ramps",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQWVFOW9mN0pIekxrT2VWam5Jem53N1RxdjRzdWt0LW4tSGd3T2JyV0E0WTRTUHBrTVBPcF9ZTnJnOW12VEtWelBzdEFtZ0hnZUNJYVE1WWZtdUxiTmJRQmEzcm9KSFBEYkg5OVZMYVRZTEtlZjViTUZJTUJHdlR6TWJDZzg?oc=5",
-        "source": "digitimes",
-        "summary": "Aktuelle Meldung von digitimes: Samsung reportedly seeks more than triple HBM prices for 2027 as HBM4 ramps",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-05T01:38:13.000Z"
-      },
-      {
-        "id": "f76eeae4f3986fd3e9d6",
-        "title": "SEC Co. Supplies HBM Inspection Equipment to Micron; Samsung, SK Inline Orders Imminent",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5oVXlkbmMwSkFSX1dkdUFpMlhTOXE2RTU1N0tIRGZIX0VES1JyQmpYZnZwaXFEVV9fT1RrY255cGExWEp1eTZHdmFSVE02R1dMbXNUeG9kS3BPSV9Gb01QZy1oZnVLckwxUlUtSXhPcWVMcmUzOFE?oc=5",
-        "source": "finance.biggo.com",
-        "summary": "SEC Co. Supplies HBM Inspection Equipment to Micron; Samsung, SK Inline Orders Imminent finance.biggo.com",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-05T00:55:00.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -806,29 +878,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-06T03:03:47.680Z",
-    "inboxUpdatedAt": "2026-10-06T02:57:36.674Z",
+    "checkedAt": "2026-10-06T12:07:53.610Z",
+    "inboxUpdatedAt": "2026-10-06T12:01:14.311Z",
     "status": "pending",
-    "candidates": 270,
-    "reviewed": 132,
-    "accepted": 15,
-    "watchlist": 114,
+    "candidates": 279,
+    "reviewed": 134,
+    "accepted": 16,
+    "watchlist": 115,
     "rejected": 3,
-    "pending": 142,
-    "oldestPendingAt": "2026-09-20T16:04:05.000Z",
-    "lastCompletedReviewAt": "2026-10-06T03:03:47.642Z",
+    "pending": 149,
+    "oldestPendingAt": "2026-09-20T19:29:44.000Z",
+    "lastCompletedReviewAt": "2026-10-06T12:07:53.581Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 641,
+    "rawCandidates": 654,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
-      "archivedOpinions": 17,
+      "archivedOpinions": 18,
       "groupedDuplicates": 31
     },
     "lastRun": {
-      "startedAt": "2026-10-06T03:02:52.742Z",
-      "completedAt": "2026-10-06T03:03:47.683Z",
+      "startedAt": "2026-10-06T12:06:50.742Z",
+      "completedAt": "2026-10-06T12:07:53.612Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -836,13 +908,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 54,
+      "durationSeconds": 62,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-10-06",
-    "inputHash": "df599a9b1bebc69642423daffd97dd1acd80c6bfabbed48b395bc66981d3c5c6",
+    "inputHash": "2e2c116b017e81a0b732cf05a1fb3ba542325abf9f43bd8bad89b5a98f2ca471",
     "sourceDataAsOf": "2026-10-05"
   }
 }
