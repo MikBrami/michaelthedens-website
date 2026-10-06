@@ -52993,6 +52993,156 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_039c78208488d784006ac42faeff6c87d1a5ed7cefc15ab512"
+    },
+    {
+      "decision": "watchlist",
+      "title": "NVDA prüft offenbar niedrigere HBM‑Konfigurationen für Rubin Ultra — Marktreaktion auf Micron wird berichtet",
+      "fact": "Mehrere Fachmedien berichteten im August 2026, dass NVIDIA intern mindestens drei niedrigere HBM‑Konfigurationen für die Rubin Ultra‑GPU testet (Beispiele: 192 GB, 256 GB, oder Rückfall auf HBM4 statt HBM4E), um HBM‑Kapazitätsengpässe zu entschärfen; Berichte stammen u. a. von The Information und TrendForce (August 2026).",
+      "placement": "Global; Produktschicht: Rubin Ultra GPU (NVIDIA‑Flaggschiff‑Accelerator); Horizont: kurzfristig/Produkt‑Launch‑Cycle (Berichtsdatum August 2026).",
+      "mechanism": "Reduzierte HBM‑Konfigurationen pro Rubin Ultra würden den Bedarf an High‑hi‑Stack HBM4E‑Wafers/Packages pro ausgeliefertem GPU‑Paket senken und damit kurzfristig (Monate–Quartale) die Nachfragedynamik auf dem knappen High‑end‑HBM‑Segment verringern; dies könnte die Priorisierung von HBM4E‑Kapazität beeinflussen und damit Marktpreise und Allokationen bei Anbietern (Micron, SK hynix, Samsung) verändern.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Reduziert die Wahrscheinlichkeit, dass HBM‑Kapazitätsengpässe allein die strukturelle Knappheit von HBM/Server‑DRAM bis Ende 2028 verschärfen — wenn NVIDIA dauerhaft niedrigere Memory‑Configs ausrollt, könnte dies die Peak‑Nachfrage 2027 dämpfen (Teilwirkung auf 'negative_supply' im HBM/Server‑DRAM‑Szenario).",
+      "falsifier": "Bis 2026-12-31: NVIDIA kommuniziert offizielle Rubin Ultra‑Produktkonfigurationen für alle ausgelieferten/gelisteten SKUs und diese zeigen keine Reduktion gegenüber der zuvor öffentlich genannten HBM‑Kapazität (d.h. Rubin Ultra wird mit ≥288 GB pro Paket ausgeliefert) — oder: Marktdaten zeigen, dass die Mehrheit (>50%) der Rubin Ultra‑Shipments in Q4 2026 die ursprünglich geplante höhere HBM‑Konfiguration verwenden.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-08-04",
+      "novelty": "Moderate — bestätigt und verbreitet von mehreren Spezialquellen in Aug 2026, aber nicht neu gegenüber bereits existierenden Engpassmeldungen.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 17,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.theinformation.com/articles/nvidia-weighs-radical-idea-less-rubin-ultra-chip-memory/",
+          "label": "The Information – 'Nvidia Weighs Radical Idea: Less Rubin Ultra Chip Memory'",
+          "kind": "primary",
+          "supports": "Bericht, dass NVIDIA mindestens drei niedrigere Rubin Ultra‑Varianten testet und eine Reduktion der HBM‑Kapazität erwägt (August 2026)."
+        },
+        {
+          "url": "https://www.trendforce.com/presscenter/news/20260804-13166.html",
+          "label": "TrendForce – Branchenanalyse (Press Release, 2026-08-04)",
+          "kind": "primary",
+          "supports": "TrendForce‑Analyse, dass DRAM/HBM‑Knappheit 2027 anhalten und NVIDIA HBM‑Konfigurationen für Rubin Ultra anpasst."
+        }
+      ],
+      "reason": "Der Kandidat fasst Berichte zusammen, wonach NVIDIA intern niedrigere HBM‑Konfigurationen für Rubin Ultra prüft, um einen offensichtlichen HBM‑Kapazitätsengpass abzumildern. Es gibt mehrere spezialisierte Branchenberichte (The Information, TrendForce, Tom's Hardware) aus August 2026, die diesen Sachverhalt nennen. Allerdings fehlen in den vorliegenden Quellen (a) eine direkte offizielle NVIDIA‑Ankündigung zum finalen Produkt‑SKU‑Mix oder quantifizierte Auslieferungsdaten, (b) ein klarer, gemessener Effekt auf HBM‑Liefermengen/Vertragslieferungen (z. B. qualifizierte Shipments, Lead‑Time‑Änderungen oder konkrete volumetrische Reduktionen der Nachfrage), und (c) eine eindeutige, verifizierbare und datierten Verbindung zu Microns Umsatz/Shipments, die die eingereichten Behauptungen in eine beobachtbare Indexmetrik überführt. Damit fehlen die letzten Bausteine für eine vollständige TAIL‑Aufnahme (atomic dated sourced fact mit gemessener Einheit und Indexwirkung). Aus diesen Gründen wird die Meldung auf Watchlist gesetzt und nicht akzeptiert. Empfohlene Aktion: Überwachen auf (1) offizielle NVIDIA‑Produktdaten/Released‑SKUs mit HBM‑Kapazitäten und Lieferterminen; (2) Liefer-/Shipment‑Belege von HBM‑Produzenten (qualifizierte HBM4E‑Shipments in Einheiten/Wafer/Packages) und (3) nachweisbare Auswirkungen auf Microns (oder anderer Hersteller) HBM‑Bestellungen, Preise oder Lead Times. Falls solche Primärbelege vorliegen, kann die Aufnahme überarbeitet werden.",
+      "candidateId": "12e194bf00b67e0fb838",
+      "candidateKey": "1191f1ab226dc6f4b8ddf8af",
+      "reviewedAt": "2026-10-06T03:03:16.677Z",
+      "priorityScore": 74,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01d9ff797da144f0006ac464de2ff487d1977118d5c85b13d6"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Nvidia adressiert das Leistungs-/Netz‑Bottleneck für AI‑Rechenzentren",
+      "fact": "Bericht (The Information, 2026-09-20): Nvidia treibt mehrere Programme (DSX Flex, Vera Rubin AI‑Factory, Partnerschaften mit Emerald AI u.a.) voran, um Rechenzentrumslasten flexibler zu betreiben und nutzbare Netzkapazität für AI‑Buildouts zu erhöhen.",
+      "placement": "global; Domäne: ai_infrastructure; Layer: Facility/Operations; kurzfristige Horizon: H2 2026–H1 2027.",
+      "mechanism": "Kombination aus (a) Software-orchestrierter Lastflexibilität (DSX Flex / Emerald AI Integrationen), (b) Referenz‑AI‑Factory‑Designs (Vera Rubin / DSX) und (c) strategischen Partnerschaften/Investments zur Vorfinanzierung von Energieinfrastruktur — Ziel: temporäre Lastverschiebung, bidirektionale Grid‑Signale und Nutzung von reservefähigen Ressourcen, um unmittelbar verfügbare Datacenter‑MW zu erhöhen.",
+      "predictionId": "",
+      "predictionImpact": "Nicht explizit in der eingereichten Kandidatenbeschreibung verknüpft. Relevante vorhandene Vorhersagen könnten P-2026-07-24-02 (NVIDIA/Amkor Arizona‑Meilenstein) oder Vorhersagen zu 'capacity_relief' / 'ai_infrastructure' sein — eine verbindliche Zuordnung durch den Einreicher fehlt.",
+      "falsifier": "Bis zum 2027-03-31 kein nachprüfbarer kommerzieller Nachweis, dass Nvidia/Partner (DSX Flex / Vera Rubin / AEMA‑Koalition) in kommerziellem Betrieb mindestens 200 MW zusätzlicher nutzbarer Datacenter‑Leistung dauerhaft und messbar freigesetzt haben (Messgrößen: dokumentierte Peak‑Reduction gegenüber Baseline in MW und nachgewiesene Utility‑Genehmigung/Dispatch‑Reports).",
+      "nextReview": "2026-10-20",
+      "eventDate": "2026-09-20",
+      "novelty": "Moderat — Nvidia hat frühere Facility/DSX‑Positionen, aber die Kombination mit AEMA/Partner‑Piloten und konkreten Power‑Flex‑Deployments ist eine aktualisierte, relevante Operativstufe.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://info-reader-production.herokuapp.com/newsletters/ai-infrastructure/nvidia-trying-solve-data-center-power-bottleneck",
+          "label": "The Information (Artikel-Spiegel / gecrawlter Reader) — 'How Nvidia Is Trying to Solve the Data Center Power Bottleneck' (veröffentlicht 2026-09-20).",
+          "kind": "primary",
+          "supports": "Beschreibt Nvidias Programme (DSX Flex, Vera Rubin) und operative Schritte zur Erhöhung nutzbarer Datacenter‑Leistung; datierter Bericht 2026-09-20."
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+          "label": "NVIDIA Blog — AEMA / NVIDIA‑Pressemitteilung (2026-09‑16)",
+          "kind": "secondary",
+          "supports": "Nvidia nennt Partnerschaft mit Emerald AI und Google zur Daten‑Center‑Lastflexibilität; technische Programme zur Grid‑Integration werden genannt."
+        },
+        {
+          "url": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
+          "label": "TechCrunch (Berichterstattung über AEMA / Emerald AI, 2026-09-17)",
+          "kind": "secondary",
+          "supports": "Unabhängige Medienbestätigung der Koalition und Hinweise auf Grenzen heutiger Netzlösungen — nützlich als Gegenprüfung."
+        },
+        {
+          "url": "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers",
+          "label": "Axios — Bericht zur Gründung einer Flexible‑Power‑Koalition (2026-09-16)",
+          "kind": "secondary",
+          "supports": "Bestätigt AEMA‑Mitglieder und Ziel, Grid‑Expressibilität für Datacenter zu verbessern; weist aber zugleich auf praktikable Grenzen hin."
+        }
+      ],
+      "reason": "The Information‑Artikel und offizielle Nvidia‑Kommunikation dokumentieren, dass Nvidia aktiver an Power‑Flex‑Lösungen arbeitet (DSX Flex, Vera Rubin, Partnerschaften mit Emerald AI, AEMA). Das Material liefert einen datierten, relevanten Signal‑Update zur Availability‑Dimension des AI‑Buildouts. Allerdings fehlen im eingereichten Kandidaten (a) eine klare, atomare, quantifizierte Beobachtung (z. B. MW‑Zahl tatsächlich freigewordener Kapazität oder eine Utility‑Dispatch‑Messung), (b) eine explizite Verknüpfung zu einer bestehenden Vorhersage aus dem Vorhersage‑Set und (c) ein belegter kommerzieller Deployment‑Nachweis, der direkt einen der in den Vorhersagen definierten Index‑Metriken (Lead Time / qualified shipments / contract_price / fill_rate / observed_demand) beeinflusst. Ohne diese Elemente kann die Meldung das TAIL‑Aufnahme‑Kriterium nicht vollständig erfüllen — wir setzen Watchlist und fordern die fehlenden, prüfbaren Belege (siehe 'Needed evidence'). Opposing evidence / Einschränkungen: mehrere Berichte (TechCrunch, Axios) weisen darauf hin, dass Grid‑Flexibilität allein nicht alle Netzinfrastruktur‑Limits aufhebt; praktische Limits der Dispatch‑Mechanismen, regulatorische Genehmigungen und fehlende kommerzielle Messungen schwächen die sofortige Verallgemeinerbarkeit des Signals. Deshalb 'NOT PROVEN' und Watchlist statt Acceptance oder Rejection. Empfehlungen: Einreicher soll nachliefern (1) konkreten kommerziellen Deploy‑Nachweis (z. B. Utility‑Dispatch/Agreement oder dokumentierte Peak‑Reduktion in MW), (2) klaren Impact‑Link auf eine existierende Vorhersage (z. B. die Auswirkung auf P-2026-07-24-02 oder auf OUTLOOK ai_infrastructure metrics) und (3) eine prüfbare Messgröße und Deadline (z. B. 'bis 2027-03-31 zusätzliche 200 MW nutzbar'). Sobald diese atomaren Belege vorliegen, kann die Aufnahme neu bewertet werden und ggf. auf 'accepted' hochgestuft werden.  \n\nBenötigte Evidenz (minimal):\n- Verifizierbarer Deployment‑Beleg: Utility‑Protokoll, Dispatch‑Report oder Kunden‑PPA‑Anhang, der X MW kurzfristig freigibt; oder annoncierte kommerzielle Inbetriebnahme eines DSX‑Flex Programms mit Messwerten.\n- Explizite Verbindung zu einer spezifischen Vorhersage im Katalog (PredictionId). \n- Messbare Metrik (MW, Prozent Peak‑Reduction, Anzahl Stunden/Tag der Flex‑Verfügbarkeit) und ein Falsifizierbarer Schwellenwert (siehe oben). \n\nOpposing evidence (Beispiel): Berichte in TechCrunch/Axios warnen, dass Software‑Orchestrierung und Pilotkoalitionen zwar notwendig sind, aber nicht sofort Netzanschluss-, Genehmigungs- oder Kapazitäts‑Engpässe beseitigen; dies senkt die Plausibilität eines schnellen, messbaren Availability‑Effekts ohne zusätzliche physische Infrastruktur- oder Utility‑Zustimmungen.  \n\nEmpfohlene nächste Schritte: Fordere vom Einreicher die oben genannten Nachweise bis 2026-10-20; falls geliefert, erneute Bewertung möglich.  \n\n(Quellen: The Information Artikel 2026-09-20; NVIDIA Blog/AEMA 2026-09-16; TechCrunch 2026-09-17; Axios 2026-09-16.)",
+      "candidateId": "24b1e287d880327db0b6",
+      "candidateKey": "c9a64185319768a6fdf1b05b",
+      "reviewedAt": "2026-10-06T03:03:47.642Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04330723788a9c29006ac464f4d84c87d1876f394c13d19af5"
     }
   ]
 }
