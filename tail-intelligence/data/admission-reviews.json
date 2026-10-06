@@ -53360,6 +53360,196 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0b6965cf353dd7bb006ac4e4757b4887d0a27ba7a40835a9bc"
+    },
+    {
+      "decision": "accepted",
+      "title": "Black Hills kündigt US$1.8 Mrd.-Erzeugungsinvestition zur Versorgung von Googles geplantem Rechenzentrum in Cheyenne, WY an",
+      "fact": "Black Hills Corp. hat definitive Vereinbarungen zur Ausführung einer 1.8‑Gigawatt/US$1.8‑Milliarden Erzeugungs‑ und Infrastrukturinvestition zur Versorgung eines geplanten Google‑Rechenzentrums in Cheyenne, Wyoming, ausgeführt (Pressemitteilung 2026‑10‑06).",
+      "placement": "Geografie: Cheyenne, Wyoming, USA; Domain/Layer: AI‑Rechenzentren / Energieerzeugung & Grid‑Integration; Horizont: kurzfristig bis mittelfristig (Projektfinanzierung und Bau 2026–2028 vorgesehen).",
+      "mechanism": "Black Hills plant, langfristige Erzeugungsressourcen zu beschaffen und zu koordinieren (Microgrid‑/MGMF‑Einnahmen, Direktfinanzierung durch Projektcashflow, Fremdkapital und sonstige Finanzierungsformen). Die Investition soll lokale verfügbare Energieerzeugung erhöhen und somit ermöglichen, dass Googles geplanter 1.8‑GW‑Rechenzentrums-Load tatsächlich ans Netz angeschlossen und bedient werden kann — dadurch steigert sich die konkrete kurzfristige AI‑Rechenzentrums‑Nachfrage in der Region (direkter Nachfrageanstieg für Strom und angeschlossene IT‑Load).",
+      "predictionId": "P-2026-07-17-03",
+      "predictionImpact": "Erhöht plausibel das kurzfristige Hyperscaler-/Neocloud-Capex- und Rechenzentrums‑Buildout (verstärkt die nachfrageseitige Komponente hinter der Vorhersage, dass Hyperscaler‑Capex 2027 weiter wächst, wenn auch verlangsamend).",
+      "falsifier": "Wenn bis zum 2027-06-30 weder (a) konkrete Baugenehmigungen/Permit‑Filing für die Erzeugungsanlagen vorliegen noch (b) Black Hills verbindliche Finanzierungstranchen initiiert hat und keine substantiellen Bauaufträge vergeben wurden, wäre die behauptete effektive Investitionsumsetzung falsifiziert.",
+      "nextReview": "2027-07-01",
+      "eventDate": "2026-10-06",
+      "novelty": "Dieses Ereignis dokumentiert eine konkrete, großvolumige Versorgungsinvestition (US$1.8 Mrd./1.8 GW) zur Bedienung eines klar benannten Hyperscaler‑Rechenzentrums (Google) — neue, projektbezogene Primärbeobachtung, nicht bloße IPO-/Finanzmarkt‑Rhetorik.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 35,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/06/3376007/10381/en/black-hills-corp-executes-definitive-agreements-to-serve-google-s-planned-data-center-in-cheyenne-wyoming.html",
+          "label": "Black Hills Corp. — GlobeNewswire: \"Black Hills Corp. Executes Definitive Agreements to Serve Google's Planned Data Center in Cheyenne, Wyoming\" (2026-10-06)",
+          "kind": "primary",
+          "supports": "Pressemitteilung nennt \"definitive agreements\" und die beabsichtigte US$1.8‑Milliarden/1.8‑GW Erzeugungsinvestition zur Versorgung des geplanten Google‑Rechenzentrums in Cheyenne."
+        },
+        {
+          "url": "https://ir.blackhillscorp.com/news-releases/news-release-details/black-hills-corp-provides-update-18-gigawatt-project-cheyenne",
+          "label": "Black Hills IR — Projekt‑Update (Cheyenne 1.8 GW)",
+          "kind": "primary",
+          "supports": "Investorenseite und frühere Firmen‑Mitteilungen bestätigen das 1.8‑GW‑Projekt, die April‑2026 Beschaffung von Long‑lead‑Erzeugungsausrüstung und die Finanzierungsaussage."
+        }
+      ],
+      "reason": "Primärquelle vorhanden: Black Hills hat am 2026‑10‑06 eine Pressemitteilung veröffentlicht, die definitive Vereinbarungen und einen konkret benannten Kunden (Google) sowie den Umfang (1.8 GW / US$1.8 Mrd.) nennt. Das ist eine atomare, datierte Projektbeobachtung mit klaren Einheiten (GW, US$) und geografischer Zuordnung (Cheyenne, WY). Relevanz zum TAIL‑Baseline: Dieses Ereignis stärkt die kurzfristige Nachfragekomponente für AI‑Rechenzentren (demand_up) und trägt damit direkt zu Hyperscaler‑Capex‑ und AI‑Infrastruktur‑Signalen in der Baseline bei. Index‑Bezug fehlt (keine gehandelten Kontraktpreise/Shipments), daher indexImpact false. Falsifizierbar: setze einen klaren Bau‑/Finanzierungs‑Check‑Termin (2027‑06‑30) und prüfe Genehmigungen / Finanzierungstranches / Bauaufträge. Gegenbeweise: kein belastbarer Primärbeleg gefunden, der den Google‑Bezug komplett bestreitet; frühere Black Hills‑Mitteilungen sprachen bislang von einem \"prospective customer\", die neue Meldung nennt jedoch \"definitive agreements\" — die Diskrepanz wurde in den Quellen dokumentiert und geprüft. Deshalb passt die Aufnahme als VERIFIED DATA mit hoher Relevanz für Nachfrage‑Prognosen und als direkter Projekt‑Evidenzpunkt für die AI‑Infrastruktur‑Aufnahme. Weitere Prüfung empfohlen zum nächsten Review‑Datum.",
+      "candidateId": "56a9ab2f90bc8ec933db",
+      "candidateKey": "e127ba6c66773101f29ca57e",
+      "reviewedAt": "2026-10-06T21:42:59.074Z",
+      "priorityScore": 86,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-e127ba6c66773101f29ca57e",
+        "title": "Black Hills kündigt US$1.8 Mrd.-Erzeugungsinvestition zur Versorgung von Googles geplantem Rechenzentrum in Cheyenne, WY an",
+        "date": "2026-10-06",
+        "admittedAt": "2026-10-06T21:42:59.074Z",
+        "fact": "Black Hills Corp. hat definitive Vereinbarungen zur Ausführung einer 1.8‑Gigawatt/US$1.8‑Milliarden Erzeugungs‑ und Infrastrukturinvestition zur Versorgung eines geplanten Google‑Rechenzentrums in Cheyenne, Wyoming, ausgeführt (Pressemitteilung 2026‑10‑06).",
+        "placement": "Geografie: Cheyenne, Wyoming, USA; Domain/Layer: AI‑Rechenzentren / Energieerzeugung & Grid‑Integration; Horizont: kurzfristig bis mittelfristig (Projektfinanzierung und Bau 2026–2028 vorgesehen).",
+        "tailInference": "Black Hills plant, langfristige Erzeugungsressourcen zu beschaffen und zu koordinieren (Microgrid‑/MGMF‑Einnahmen, Direktfinanzierung durch Projektcashflow, Fremdkapital und sonstige Finanzierungsformen). Die Investition soll lokale verfügbare Energieerzeugung erhöhen und somit ermöglichen, dass Googles geplanter 1.8‑GW‑Rechenzentrums-Load tatsächlich ans Netz angeschlossen und bedient werden kann — dadurch steigert sich die konkrete kurzfristige AI‑Rechenzentrums‑Nachfrage in der Region (direkter Nachfrageanstieg für Strom und angeschlossene IT‑Load).",
+        "predictionId": "P-2026-07-17-03",
+        "predictionImpact": "Erhöht plausibel das kurzfristige Hyperscaler-/Neocloud-Capex- und Rechenzentrums‑Buildout (verstärkt die nachfrageseitige Komponente hinter der Vorhersage, dass Hyperscaler‑Capex 2027 weiter wächst, wenn auch verlangsamend).",
+        "falsifier": "Wenn bis zum 2027-06-30 weder (a) konkrete Baugenehmigungen/Permit‑Filing für die Erzeugungsanlagen vorliegen noch (b) Black Hills verbindliche Finanzierungstranchen initiiert hat und keine substantiellen Bauaufträge vergeben wurden, wäre die behauptete effektive Investitionsumsetzung falsifiziert.",
+        "nextReview": "2027-07-01",
+        "priorityScore": 86,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 18,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 35,
+        "confidence": 80,
+        "markets": [
+          "ai_infrastructure",
+          "supply_chain"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "availability"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Black Hills Corp. — GlobeNewswire: \"Black Hills Corp. Executes Definitive Agreements to Serve Google's Planned Data Center in Cheyenne, Wyoming\" (2026-10-06)",
+            "url": "https://www.globenewswire.com/news-release/2026/10/06/3376007/10381/en/black-hills-corp-executes-definitive-agreements-to-serve-google-s-planned-data-center-in-cheyenne-wyoming.html"
+          },
+          {
+            "label": "Black Hills IR — Projekt‑Update (Cheyenne 1.8 GW)",
+            "url": "https://ir.blackhillscorp.com/news-releases/news-release-details/black-hills-corp-provides-update-18-gigawatt-project-cheyenne"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöht plausibel das kurzfristige Hyperscaler-/Neocloud-Capex- und Rechenzentrums‑Buildout (verstärkt die nachfrageseitige Komponente hinter der Vorhersage, dass Hyperscaler‑Capex 2027 weiter wächst, wenn auch verlangsamend)."
+        },
+        "admissionReviewKey": "e127ba6c66773101f29ca57e"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03f2331253a97995006ac56b4d05a087d2bffc2bb783d11c0c"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Nvidia/Google/Emerald‑Koalition für 'grid‑friendly' Rechenzentren — nicht ausreichend primär verifiziert / Duplikat",
+      "fact": "Bericht (Asianet Newsable / Google News RSS, 2026-09-20) behauptet, Nvidia habe mit Google und Emerald AI eine Allianz zur Entwicklung 'grid‑friendly' bzw. flexibel abschaltbarer Rechenzentrumsarchitekturen gestartet, die auf Netzbedingungen reagieren kann.",
+      "placement": "Global; dominanter Fokus auf Hyperscaler‑/AI‑Datacenter‑Layer (Angebots-/Versorgungs‑/Energielayer).",
+      "mechanism": "Zusammenarbeit/Koalition soll Rechenzentren mit Lastflexibilität, Energiemanagement‑Schnittstellen und grid‑friendly Betriebsmodi ermöglichen; implizit wird erwartet, dass Betreiber Last reduzieren oder verschieben können, um Netzstress zu mindern.",
+      "predictionId": "",
+      "predictionImpact": "Kein belastbarer direkter Link zu einem der in der Inbox gelieferten Vorhersagen; die Meldung ist thematisch relevant für ai_infrastructure‑Verfügbarkeits-/capacity/price‑Treiber, liefert aber keine datierten, messbaren Änderung an einer konkreten Vorhersage in der Liste.",
+      "falsifier": "Bis 2027-03-31 kein öffentlich dokumentiertes, datiertes FID/vertragliches Liefer‑/Garantie‑Commitment, keine veröffentlichten qualifizierten Benchmark‑Messungen (z. B. nachgewiesene MW‑abschaltbare Kapazität, PPA/Contracts) oder knappes technisches Pilot‑Deployment mit messbarer Lead‑Time/Fill‑Rate‑Auswirkung.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-20",
+      "novelty": "Gering — Dieselbe Behauptung/Koalition (AEMA / 'AI Energy Management Alliance') ist bereits in der Inbox (S‑AUTO‑ea9f635ee89b1529b699dd3b, Datum 2026-09-16) dokumentiert; der Kandidat bringt kein neues, eigenständiges primäres Beweisdokument.",
+      "duplicateOf": "S-AUTO-ea9f635ee89b1529b699dd3b",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 2,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 20,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Der eingereichte Kandidat ist thematisch relevant (grid‑friendly Rechenzentren / Lastflexibilität) und stimmt mit bereits im Baseline/Inbox vorhandenen Berichten über eine Koalition (AEMA) überein. Die Aufnahmesschwelle für 'accepted' verlangt jedoch ein einzelnes, datiertes, primäres Beweisdokument mit konkreten, überprüfbaren Einheiten (z. B. MW‑Commitment, vertragliche Garantiesumme, FID/contract text, messbare Lead‑time/Fill‑Rate‑Effekt) sowie einen klaren, benannten Einfluss auf eine vorhandene Vorhersage. Dieser Kandidat ist entweder ein Repost/Weiterverbreitung (Duplicate) der bereits dokumentierten AEMA‑Meldung (S-AUTO-ea9f635...) oder eine sekundäre Nachricht ohne neues primäres Beweismaterial. Gegenbelege oder widersprechende Informationen wurden in der Inbox nicht gefunden; es fehlt jedoch ein primärer Originär‑Nachweis (Pressemitteilung der beteiligten Unternehmen mit quantifizierbaren Angaben). Deshalb wird der Kandidat auf Watchlist gesetzt, nicht akzeptiert. Empfehlung: Falls ein originales Firmen‑Presskit, ein datierter Kooperationsvertrag, eine Pressemitteilung von Nvidia/Google/Emerald AI mit MW/Vertragslaufzeiten oder ein offizielles Pilot‑Report vorgelegt werden kann (oder eine Primärquelle wie Reuters/NVIDIA/Google Pressemitteilung mit quantifizierten Commitments), bitte zur Nachprüfung einreichen. Wenn ein konkreter existierender Vorhersage‑ID in der Inbox gezielt betroffen sein soll, nennen Sie diese explizit; momentan besteht kein zulässiger direkten Verknüpfungs‑Beleg.",
+      "candidateId": "9412a93537bbaccd69ef",
+      "candidateKey": "58b47f7fbef7fb5993eb5417",
+      "reviewedAt": "2026-10-06T21:43:43.961Z",
+      "priorityScore": 46,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07ce5de214d19a71006ac56b633f8487d2a9bdc35ea794d345"
     }
   ]
 }

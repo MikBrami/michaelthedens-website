@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T12:07:53.756Z",
+  "updatedAt": "2026-10-06T21:43:44.160Z",
   "previousRun": "2026-10-05",
   "executivePulse": {
     "current": 74,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 75,
     "previous": 75,
-    "interpretation": "Datenvertrauen 75/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 149 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 75/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 151 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 82,
     "previous": 82
   },
-  "momentum": "Evidenzprüfung offen: 149 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 151 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -529,6 +529,71 @@
       "date": "2026-08-26"
     },
     {
+      "id": "S-AUTO-e127ba6c66773101f29ca57e",
+      "title": "Black Hills kündigt US$1.8 Mrd.-Erzeugungsinvestition zur Versorgung von Googles geplantem Rechenzentrum in Cheyenne, WY an",
+      "date": "2026-10-06",
+      "admittedAt": "2026-10-06T21:42:59.074Z",
+      "fact": "Black Hills Corp. hat definitive Vereinbarungen zur Ausführung einer 1.8‑Gigawatt/US$1.8‑Milliarden Erzeugungs‑ und Infrastrukturinvestition zur Versorgung eines geplanten Google‑Rechenzentrums in Cheyenne, Wyoming, ausgeführt (Pressemitteilung 2026‑10‑06).",
+      "placement": "Geografie: Cheyenne, Wyoming, USA; Domain/Layer: AI‑Rechenzentren / Energieerzeugung & Grid‑Integration; Horizont: kurzfristig bis mittelfristig (Projektfinanzierung und Bau 2026–2028 vorgesehen).",
+      "tailInference": "Black Hills plant, langfristige Erzeugungsressourcen zu beschaffen und zu koordinieren (Microgrid‑/MGMF‑Einnahmen, Direktfinanzierung durch Projektcashflow, Fremdkapital und sonstige Finanzierungsformen). Die Investition soll lokale verfügbare Energieerzeugung erhöhen und somit ermöglichen, dass Googles geplanter 1.8‑GW‑Rechenzentrums-Load tatsächlich ans Netz angeschlossen und bedient werden kann — dadurch steigert sich die konkrete kurzfristige AI‑Rechenzentrums‑Nachfrage in der Region (direkter Nachfrageanstieg für Strom und angeschlossene IT‑Load).",
+      "predictionId": "P-2026-07-17-03",
+      "predictionImpact": "Erhöht plausibel das kurzfristige Hyperscaler-/Neocloud-Capex- und Rechenzentrums‑Buildout (verstärkt die nachfrageseitige Komponente hinter der Vorhersage, dass Hyperscaler‑Capex 2027 weiter wächst, wenn auch verlangsamend).",
+      "falsifier": "Wenn bis zum 2027-06-30 weder (a) konkrete Baugenehmigungen/Permit‑Filing für die Erzeugungsanlagen vorliegen noch (b) Black Hills verbindliche Finanzierungstranchen initiiert hat und keine substantiellen Bauaufträge vergeben wurden, wäre die behauptete effektive Investitionsumsetzung falsifiziert.",
+      "nextReview": "2027-07-01",
+      "priorityScore": 86,
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 35,
+      "confidence": 80,
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "signal": "demand_up",
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Black Hills Corp. — GlobeNewswire: \"Black Hills Corp. Executes Definitive Agreements to Serve Google's Planned Data Center in Cheyenne, Wyoming\" (2026-10-06)",
+          "url": "https://www.globenewswire.com/news-release/2026/10/06/3376007/10381/en/black-hills-corp-executes-definitive-agreements-to-serve-google-s-planned-data-center-in-cheyenne-wyoming.html"
+        },
+        {
+          "label": "Black Hills IR — Projekt‑Update (Cheyenne 1.8 GW)",
+          "url": "https://ir.blackhillscorp.com/news-releases/news-release-details/black-hills-corp-provides-update-18-gigawatt-project-cheyenne"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöht plausibel das kurzfristige Hyperscaler-/Neocloud-Capex- und Rechenzentrums‑Buildout (verstärkt die nachfrageseitige Komponente hinter der Vorhersage, dass Hyperscaler‑Capex 2027 weiter wächst, wenn auch verlangsamend)."
+      },
+      "admissionReviewKey": "e127ba6c66773101f29ca57e"
+    },
+    {
       "id": "S-AUTO-2b795a9be3c07f1cc2456505",
       "title": "Micron: 'HBM sold out through 2026' & Data‑Center‑Umsatz +150% — Primärquelle vorhanden, richtet sich gegen Engpass‑These",
       "date": "2026-09-20",
@@ -713,15 +778,24 @@
     "date": "2026-10-06",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 82,
-    "note": "Evidenzprüfung offen: 149 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 86,
+    "note": "Evidenzprüfung offen: 151 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-10-06T12:07:53.756Z",
+    "generatedAt": "2026-10-06T21:43:44.160Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-10-06T12:01:14.311Z",
-    "inboxNewItems": 187,
+    "inboxUpdatedAt": "2026-10-06T21:37:04.037Z",
+    "inboxNewItems": 225,
     "highRelevanceCandidates": [
+      {
+        "id": "8bc55bb27d6028c846e7",
+        "title": "YMTC Warns NAND Supply Crunch Could Last Until 2029 as AI Infrastructure Crowds Out Consumer-Grade Capacity",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBISUhXTE9yZEJ3dFhnR3VaQTBQUEpRS0o2dE14XzVJYTlzRnY4Z0JlMEliNmpsOW5BUWhnOGxvLUZINHJ5V1lSdDVySWZDRk9hdTRiTjZXdVdyN2lTZWFjQlNseFhWTTBxTllIdk9YVXZtY09vVnc?oc=5",
+        "source": "BigGo Finance",
+        "summary": "Aktuelle Meldung von BigGo Finance: YMTC Warns NAND Supply Crunch Could Last Until 2029 as AI Infrastructure Crowds Out Consumer-Grade Capacity",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-06T14:55:00.000Z"
+      },
       {
         "id": "6aa3278237640f5576c7",
         "title": "SK Hynix Retreats as Foreign Money Exits and Samsung Closes the HBM Gap",
@@ -784,15 +858,6 @@
         "summary": "Aktuelle Meldung von Fox News: Google, Meta, OpenAI, Anthropic among tech companies to testify in AI safety hearing",
         "relevanceScore": 100,
         "publishedAt": "2026-10-05T17:49:30.000Z"
-      },
-      {
-        "id": "0fb7df199fc29d6797fa",
-        "title": "OpenAI, Anthropic, Google, Meta testify at NYC AI hearing",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBDdlNFRDVPMWE3TS1iLVdKZlo2NUlSR3YyQXpGRmVaQzJ6bTlWZlFOMHRIMHhKcUFSbGpSSjNFWjQwRWFFMHNBX0VmVHlQYXl1LXlJQTROYU9WTTg1ODg5R0U1NUtKdGNYTFNaNTNqUk9zXzJxVzB3LUNYcU1QUQ?oc=5",
-        "source": "qz.com",
-        "summary": "Aktuelle Meldung von qz.com: OpenAI, Anthropic, Google, Meta testify at NYC AI hearing",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-05T11:16:36.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -878,29 +943,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-06T12:07:53.610Z",
-    "inboxUpdatedAt": "2026-10-06T12:01:14.311Z",
+    "checkedAt": "2026-10-06T21:43:43.985Z",
+    "inboxUpdatedAt": "2026-10-06T21:37:04.037Z",
     "status": "pending",
-    "candidates": 279,
-    "reviewed": 134,
-    "accepted": 16,
-    "watchlist": 115,
+    "candidates": 283,
+    "reviewed": 136,
+    "accepted": 17,
+    "watchlist": 116,
     "rejected": 3,
-    "pending": 149,
-    "oldestPendingAt": "2026-09-20T19:29:44.000Z",
-    "lastCompletedReviewAt": "2026-10-06T12:07:53.581Z",
+    "pending": 151,
+    "oldestPendingAt": "2026-09-20T23:56:48.000Z",
+    "lastCompletedReviewAt": "2026-10-06T21:43:43.961Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 654,
+    "rawCandidates": 663,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
-      "archivedOpinions": 18,
+      "archivedOpinions": 20,
       "groupedDuplicates": 31
     },
     "lastRun": {
-      "startedAt": "2026-10-06T12:06:50.742Z",
-      "completedAt": "2026-10-06T12:07:53.612Z",
+      "startedAt": "2026-10-06T21:42:35.338Z",
+      "completedAt": "2026-10-06T21:43:43.987Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -908,13 +973,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 62,
+      "durationSeconds": 68,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-10-06",
-    "inputHash": "2e2c116b017e81a0b732cf05a1fb3ba542325abf9f43bd8bad89b5a98f2ca471",
-    "sourceDataAsOf": "2026-10-05"
+    "inputHash": "a1a02ff720490c09ff02dec7febe12b61d00ff842f2774a48b9ee5c4ac185090",
+    "sourceDataAsOf": "2026-10-06"
   }
 }
