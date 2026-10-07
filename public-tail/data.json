@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T11:53:34.263Z",
+  "generatedAt": "2026-10-07T22:04:44.867Z",
   "platform": {
-    "dataAsOf": "2026-10-07",
-    "analysisAsOf": "2026-10-07",
+    "dataAsOf": "2026-10-08",
+    "analysisAsOf": "2026-10-08",
     "sourceDataAsOf": "2026-10-06",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-10-07T11:53:33.123Z",
-      "pending": 161,
-      "reviewed": 140,
+      "checkedAt": "2026-10-07T22:04:43.501Z",
+      "pending": 169,
+      "reviewed": 142,
       "accepted": 18,
-      "rawCandidates": 688,
+      "rawCandidates": 703,
       "triage": {
         "archivedOpinions": 20,
-        "groupedDuplicates": 31
+        "groupedDuplicates": 33
       },
       "lastRun": {
-        "startedAt": "2026-10-07T11:52:48.697Z",
-        "completedAt": "2026-10-07T11:53:33.124Z",
+        "startedAt": "2026-10-07T22:03:49.793Z",
+        "completedAt": "2026-10-07T22:04:43.503Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 44,
+        "durationSeconds": 53,
         "budgetExhausted": false
       }
     },
@@ -39,7 +39,7 @@
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 77,
+        "score": 76,
         "status": "orange",
         "signals": 19,
         "confidence": 74,
@@ -73,43 +73,43 @@
     "riskPressure": 82,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-07; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (161 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-08; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (169 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
       "date": "2026-10-07",
-      "title": "Data center SSDs now drive over 70% of Micron's NAND revenue, boosting growth and margins.",
-      "summary": "Aktuelle Meldung von Pluang: Data center SSDs now drive over 70% of Micron's NAND revenue, boosting growth and margins.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pluang",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBWblV4bnFoTmlwVXBuVnk2NGpzMW4xaTcxR29kQXg4eDI3VGU4bFJyMFlMNHZzcjB2dWw4UTJQM05uekpFZjJpbTJsQTlXOHBTVkYydVVOdWg0Um9lYW0zbTlRaDdRUFlKTTRsOGpyNFdJWEU?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "AMD CEO Meets Samsung, SK hynix Chiefs in Seoul",
-      "summary": "Aktuelle Meldung von Businesskorea: AMD CEO Meets Samsung, SK hynix Chiefs in Seoul",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Businesskorea",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FaXNDV1g1NzRvOWhjZTdGT0Z2RDViX2lzcVN3RVMzQjFCME5xMGhyUXYwUFN5RUZvbDdXYTJzdzhaUWh6N0ktZUwzMUh5WXpSSG9aVjk0TkkzQ3BCNGNMMGdLbDlyREdWVTlGN0prVmo4NEtf?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "AMD CEO Lisa Su: Samsung and SK Hynix Are Core Partners, HBM Cooperation to Span Multiple Generations",
-      "summary": "Aktuelle Meldung von news.sbs.co.kr: AMD CEO Lisa Su: Samsung and SK Hynix Are Core Partners, HBM Cooperation to Span Multiple Generations",
+      "title": "SK Hynix Stocks Drop 2.8% Despite AMD's Multi-Generation HBM Plan",
+      "summary": "SK Hynix Stocks Drop 2.8% Despite AMD's Multi-Generation HBM Plan Yahoo Finance",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44NWJXLUpPa2JJdTQ1eW5Oa29oeVh0eldVSlptczhNVzFINllvaVBHNWctVWlFVksyVW5kLTh2WVpodDVXVDJSQ1Bwbm5rNGpQdDRQMTJKOV9ManJ0a2FqSFJkNlVHTGlCWTlWeUFR?oc=5",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbUhPdDRHZmYzd2ozN3NhME5BcW82amxLNGNQV0RSYmxTMWN2WkRYcWt5Qmk1OVZRbWh2QndIaGdUX1BfcDNjZmw5eGREWVpUTmJMMDJ6SS1URHh2TXc0ZWFqZEgtSGJnV1VXOGFWYTB2am8xU1UyTDlFb0tKdVkwX2hrSUNqeHRLMGxiQ2FNbEw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "SK hynix Reportedly Faces Difficulties in HBM Hybrid Bonding, Trailing Samsung",
+      "summary": "Aktuelle Meldung von TechPowerUp: SK hynix Reportedly Faces Difficulties in HBM Hybrid Bonding, Trailing Samsung",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "TechPowerUp",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcXRRVlg0MG9jNG9YanZ3ekdjTkZqUG1nU0Zsb1BCa1ZzY0VCcG5aVUFQaV9NNEp2WkVNM3ZwMVAtdGRrWWZDRm9xMldoSDVYUzZRQlByZGNPenA0ZUpJdDZXNUU2WE5nVGRSWjJmY0R2eTg0TXc0T3pWUExNQXFNUk1lQnlxaVdGZUo5eDhZNEs3ZUsydU15cXBJVElvOEFLb0hwR18wT1l4U0xUenhqeEdB0gG3AUFVX3lxTE93NFVqXzdLVm1ya2pzWjhwU3ZhcW5EQkQwZ3BkVFJUQ1dhR3ZidmN4enM1NTRsbkg1T1N4VW43anhZdVVnUEc0LXI4Tl9HVVEyamEwOThVS2V0OWNBUmx1SGJKNmhKclVhR2tSOW94dHY4d2Nna00tS19haEtZTmNpdlhKeGF3eEJ1VWRvWHpiLXNXTjVWUHduZ2x4ckQ3cVgwbVI2R0o2V2trQVRic3NWVm1POG5FRQ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Memory Stocks Slip: Micron Strike Risk, Softer NAND Prices, Toshiba Capacity Bet",
+      "summary": "Aktuelle Meldung von Tech Times: Memory Stocks Slip: Micron Strike Risk, Softer NAND Prices, Toshiba Capacity Bet",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 87,
+      "relevanceScore": 91,
+      "sourceQuality": 6,
+      "source": "Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOc0lqNlRndlU5bllvTmVnNGtHOEwtQnNwdnNuaWRzWXFLN21CRlBfcFN5YWNjcG85UlNmRFZUYWNKbGc3S1B2MnpxQUI0YTBYOU10UGh0LWZ3aUdVRUVpRjUyR0cxY3lWUG5pTy0yUFZnYWtyTExkZmJnMHRwbnFvNkZjb2JGR0hQTnVXaElGY3JCWlA3bFIyVDJIeUV2a3E1RjFCZTNtU0NLS3haeU5DTmpDWUg4UTJZMHh0SE9CRGpyNUtVcTBISllkclU?oc=5",
       "layer": "news"
     }
   ],
@@ -132,54 +132,54 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-10-07",
+    "date": "2026-10-08",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "161 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "169 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
     {
       "date": "2026-10-07",
-      "title": "Data center SSDs now drive over 70% of Micron's NAND revenue, boosting growth and margins.",
-      "summary": "Aktuelle Meldung von Pluang: Data center SSDs now drive over 70% of Micron's NAND revenue, boosting growth and margins.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pluang",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBWblV4bnFoTmlwVXBuVnk2NGpzMW4xaTcxR29kQXg4eDI3VGU4bFJyMFlMNHZzcjB2dWw4UTJQM05uekpFZjJpbTJsQTlXOHBTVkYydVVOdWg0Um9lYW0zbTlRaDdRUFlKTTRsOGpyNFdJWEU?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "AMD CEO Meets Samsung, SK hynix Chiefs in Seoul",
-      "summary": "Aktuelle Meldung von Businesskorea: AMD CEO Meets Samsung, SK hynix Chiefs in Seoul",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Businesskorea",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FaXNDV1g1NzRvOWhjZTdGT0Z2RDViX2lzcVN3RVMzQjFCME5xMGhyUXYwUFN5RUZvbDdXYTJzdzhaUWh6N0ktZUwzMUh5WXpSSG9aVjk0TkkzQ3BCNGNMMGdLbDlyREdWVTlGN0prVmo4NEtf?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "AMD CEO Lisa Su: Samsung and SK Hynix Are Core Partners, HBM Cooperation to Span Multiple Generations",
-      "summary": "Aktuelle Meldung von news.sbs.co.kr: AMD CEO Lisa Su: Samsung and SK Hynix Are Core Partners, HBM Cooperation to Span Multiple Generations",
+      "title": "SK Hynix Stocks Drop 2.8% Despite AMD's Multi-Generation HBM Plan",
+      "summary": "SK Hynix Stocks Drop 2.8% Despite AMD's Multi-Generation HBM Plan Yahoo Finance",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44NWJXLUpPa2JJdTQ1eW5Oa29oeVh0eldVSlptczhNVzFINllvaVBHNWctVWlFVksyVW5kLTh2WVpodDVXVDJSQ1Bwbm5rNGpQdDRQMTJKOV9ManJ0a2FqSFJkNlVHTGlCWTlWeUFR?oc=5",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbUhPdDRHZmYzd2ozN3NhME5BcW82amxLNGNQV0RSYmxTMWN2WkRYcWt5Qmk1OVZRbWh2QndIaGdUX1BfcDNjZmw5eGREWVpUTmJMMDJ6SS1URHh2TXc0ZWFqZEgtSGJnV1VXOGFWYTB2am8xU1UyTDlFb0tKdVkwX2hrSUNqeHRLMGxiQ2FNbEw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "SK hynix Reportedly Faces Difficulties in HBM Hybrid Bonding, Trailing Samsung",
+      "summary": "Aktuelle Meldung von TechPowerUp: SK hynix Reportedly Faces Difficulties in HBM Hybrid Bonding, Trailing Samsung",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "TechPowerUp",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcXRRVlg0MG9jNG9YanZ3ekdjTkZqUG1nU0Zsb1BCa1ZzY0VCcG5aVUFQaV9NNEp2WkVNM3ZwMVAtdGRrWWZDRm9xMldoSDVYUzZRQlByZGNPenA0ZUpJdDZXNUU2WE5nVGRSWjJmY0R2eTg0TXc0T3pWUExNQXFNUk1lQnlxaVdGZUo5eDhZNEs3ZUsydU15cXBJVElvOEFLb0hwR18wT1l4U0xUenhqeEdB0gG3AUFVX3lxTE93NFVqXzdLVm1ya2pzWjhwU3ZhcW5EQkQwZ3BkVFJUQ1dhR3ZidmN4enM1NTRsbkg1T1N4VW43anhZdVVnUEc0LXI4Tl9HVVEyamEwOThVS2V0OWNBUmx1SGJKNmhKclVhR2tSOW94dHY4d2Nna00tS19haEtZTmNpdlhKeGF3eEJ1VWRvWHpiLXNXTjVWUHduZ2x4ckQ3cVgwbVI2R0o2V2trQVRic3NWVm1POG5FRQ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Memory Stocks Slip: Micron Strike Risk, Softer NAND Prices, Toshiba Capacity Bet",
+      "summary": "Aktuelle Meldung von Tech Times: Memory Stocks Slip: Micron Strike Risk, Softer NAND Prices, Toshiba Capacity Bet",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 87,
+      "relevanceScore": 91,
+      "sourceQuality": 6,
+      "source": "Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOc0lqNlRndlU5bllvTmVnNGtHOEwtQnNwdnNuaWRzWXFLN21CRlBfcFN5YWNjcG85UlNmRFZUYWNKbGc3S1B2MnpxQUI0YTBYOU10UGh0LWZ3aUdVRUVpRjUyR0cxY3lWUG5pTy0yUFZnYWtyTExkZmJnMHRwbnFvNkZjb2JGR0hQTnVXaElGY3JCWlA3bFIyVDJIeUV2a3E1RjFCZTNtU0NLS3haeU5DTmpDWUg4UTJZMHh0SE9CRGpyNUtVcTBISllkclU?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-10-07T11:53:34.443Z",
+    "generatedAt": "2026-10-07T22:04:45.079Z",
     "count": 3,
-    "candidateCount": 449,
+    "candidateCount": 513,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -267,12 +267,12 @@
           "CSP-CapEx und Hardware-Inbetriebnahme"
         ],
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
-        "currentScore": 77,
+        "currentScore": 76,
         "currentStatus": "orange",
         "confidence": 74,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-10-07"
+        "indexAsOf": "2026-10-08"
       },
       {
         "marketId": "enterprise_ssd",
@@ -372,7 +372,7 @@
         "confidence": 63,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-10-07",
+        "indexAsOf": "2026-10-08",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -394,38 +394,38 @@
   "originalSignals": [
     {
       "date": "2026-10-07",
-      "title": "Data center SSDs now drive over 70% of Micron's NAND revenue, boosting growth and margins.",
-      "summary": "Aktuelle Meldung von Pluang: Data center SSDs now drive over 70% of Micron's NAND revenue, boosting growth and margins.",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Pluang",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBWblV4bnFoTmlwVXBuVnk2NGpzMW4xaTcxR29kQXg4eDI3VGU4bFJyMFlMNHZzcjB2dWw4UTJQM05uekpFZjJpbTJsQTlXOHBTVkYydVVOdWg0Um9lYW0zbTlRaDdRUFlKTTRsOGpyNFdJWEU?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "AMD CEO Meets Samsung, SK hynix Chiefs in Seoul",
-      "summary": "Aktuelle Meldung von Businesskorea: AMD CEO Meets Samsung, SK hynix Chiefs in Seoul",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 93,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Businesskorea",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FaXNDV1g1NzRvOWhjZTdGT0Z2RDViX2lzcVN3RVMzQjFCME5xMGhyUXYwUFN5RUZvbDdXYTJzdzhaUWh6N0ktZUwzMUh5WXpSSG9aVjk0TkkzQ3BCNGNMMGdLbDlyREdWVTlGN0prVmo4NEtf?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "AMD CEO Lisa Su: Samsung and SK Hynix Are Core Partners, HBM Cooperation to Span Multiple Generations",
-      "summary": "Aktuelle Meldung von news.sbs.co.kr: AMD CEO Lisa Su: Samsung and SK Hynix Are Core Partners, HBM Cooperation to Span Multiple Generations",
+      "title": "SK Hynix Stocks Drop 2.8% Despite AMD's Multi-Generation HBM Plan",
+      "summary": "SK Hynix Stocks Drop 2.8% Despite AMD's Multi-Generation HBM Plan Yahoo Finance",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44NWJXLUpPa2JJdTQ1eW5Oa29oeVh0eldVSlptczhNVzFINllvaVBHNWctVWlFVksyVW5kLTh2WVpodDVXVDJSQ1Bwbm5rNGpQdDRQMTJKOV9ManJ0a2FqSFJkNlVHTGlCWTlWeUFR?oc=5",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbUhPdDRHZmYzd2ozN3NhME5BcW82amxLNGNQV0RSYmxTMWN2WkRYcWt5Qmk1OVZRbWh2QndIaGdUX1BfcDNjZmw5eGREWVpUTmJMMDJ6SS1URHh2TXc0ZWFqZEgtSGJnV1VXOGFWYTB2am8xU1UyTDlFb0tKdVkwX2hrSUNqeHRLMGxiQ2FNbEw?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "SK hynix Reportedly Faces Difficulties in HBM Hybrid Bonding, Trailing Samsung",
+      "summary": "Aktuelle Meldung von TechPowerUp: SK hynix Reportedly Faces Difficulties in HBM Hybrid Bonding, Trailing Samsung",
+      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 90,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "TechPowerUp",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcXRRVlg0MG9jNG9YanZ3ekdjTkZqUG1nU0Zsb1BCa1ZzY0VCcG5aVUFQaV9NNEp2WkVNM3ZwMVAtdGRrWWZDRm9xMldoSDVYUzZRQlByZGNPenA0ZUpJdDZXNUU2WE5nVGRSWjJmY0R2eTg0TXc0T3pWUExNQXFNUk1lQnlxaVdGZUo5eDhZNEs3ZUsydU15cXBJVElvOEFLb0hwR18wT1l4U0xUenhqeEdB0gG3AUFVX3lxTE93NFVqXzdLVm1ya2pzWjhwU3ZhcW5EQkQwZ3BkVFJUQ1dhR3ZidmN4enM1NTRsbkg1T1N4VW43anhZdVVnUEc0LXI4Tl9HVVEyamEwOThVS2V0OWNBUmx1SGJKNmhKclVhR2tSOW94dHY4d2Nna00tS19haEtZTmNpdlhKeGF3eEJ1VWRvWHpiLXNXTjVWUHduZ2x4ckQ3cVgwbVI2R0o2V2trQVRic3NWVm1POG5FRQ?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Memory Stocks Slip: Micron Strike Risk, Softer NAND Prices, Toshiba Capacity Bet",
+      "summary": "Aktuelle Meldung von Tech Times: Memory Stocks Slip: Micron Strike Risk, Softer NAND Prices, Toshiba Capacity Bet",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 87,
+      "relevanceScore": 91,
+      "sourceQuality": 6,
+      "source": "Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOc0lqNlRndlU5bllvTmVnNGtHOEwtQnNwdnNuaWRzWXFLN21CRlBfcFN5YWNjcG85UlNmRFZUYWNKbGc3S1B2MnpxQUI0YTBYOU10UGh0LWZ3aUdVRUVpRjUyR0cxY3lWUG5pTy0yUFZnYWtyTExkZmJnMHRwbnFvNkZjb2JGR0hQTnVXaElGY3JCWlA3bFIyVDJIeUV2a3E1RjFCZTNtU0NLS3haeU5DTmpDWUg4UTJZMHh0SE9CRGpyNUtVcTBISllkclU?oc=5",
       "layer": "news"
     }
   ]
