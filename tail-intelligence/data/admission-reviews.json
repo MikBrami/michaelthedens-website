@@ -53550,6 +53550,221 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_07ce5de214d19a71006ac56b633f8487d2a9bdc35ea794d345"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Tokyo Electron peilt operativen Gewinn von 1 Bio. Yen wegen Investitionen von Samsung / SK hynix an",
+      "fact": "BusinessKorea-sourced Meldung (via Google News) behauptet, Tokyo Electron (TEL) sehe wegen hoher Ausgaben von Samsung und SK hynix einen möglichen operativen Gewinn von 1.000.000.000.000 JPY an.",
+      "placement": "Global / Halbleiterausrüstungsanbieter (Tokyo Electron); Wirtschafts-/Firmenniveau; kurzfristig (H2 2026).",
+      "mechanism": "If true: Stärkerer CAPEX‑Ausbau der großen Memory‑Kunden (Samsung, SK hynix) treibt Nachfrage nach Fertigungsanlagen und damit TEL‑Aufträge/Mar­gen – was zu deutlich höheren operativen Gewinnen für TEL führen würde.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn TEL tatsächlich einen so hohen operativen Gewinn (1 Bio. JPY) in Aussicht stellt und dies primär aus Memory/HBM‑Investments resultiert, würde das die These stützen, dass HBM/Server‑DRAM‑Nachfrage strukturell knapp bleibt und die Knappheit bis 2027 anhält (verstärktes demand_up / negative_supply für server_dram/hbm).",
+      "falsifier": "Bis zum 2026-12-31 veröffentlicht Tokyo Electron keine offizielle Finanzprognose (IR, Earnings Release oder regulatorische Einreichung) mit einem expliziten operativen Gewinn ≥1,000,000,000,000 JPY, der ausdrücklich auf CAPEX‑Plänen von Samsung und SK hynix als direkten Treibern basiert; oder Tokyo Electron gibt eine klar abweichende, quantifizierte Guidance (z. B. operativer Gewinn deutlich <1 Bio. JPY) mit Datum.",
+      "nextReview": "2026-10-14",
+      "eventDate": "2026-10-07",
+      "novelty": "Behauptet ein neues, sehr großes, quantitatives Gewinnziel für TEL, das über zuletzt veröffentlichter Guidance liegt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 12,
+        "thesisRelevance": 17,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tel.com/ir/library/ar/g4alje00000000pq-att/ir2026_all_en.pdf",
+          "label": "Tokyo Electron — Integrated Report / IR (Beispiel: TEL Integrated Report 2026)",
+          "kind": "primary",
+          "supports": "TEL veröffentlicht integrierten Bericht / Guidance; in den abgerufenen TEL‑Quellen wird ein operativer Gewinn für Halbjahre/Yearly guidance genannt, aber kein unmissverständlicher Beleg für eine explizite 1.000.000.000.000 JPY‑Prognose zum angegebenen Datum."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung referenziert eine Google News/RSS‑Headline (BusinessKorea). Bei begrenztem Web‑Budget konnte die angegebene BusinessKorea‑Primärmeldung nicht verlässlich als originäre, datierte und wörtlich belegte Quelle verifiziert werden. Die von Tokyo Electron selbst öffentlich verfügbaren IR/Guidance‑Dokumente (Integrated Report / Earnings Guidance) zeigen erhöhte Profitabilitätserwartungen und erhöhte Guidance für H1 FY2027, aber ich fand kein direktes, primäres TEL‑Statement, das ein operatives Gewinnziel von 1 Bio. JPY exakt so ausweist und es ausdrücklich Samsung/SK hynix‑Spending als quantifizierten Treiber nennt. Unter den TAIL‑Zulassungskriterien fehlt damit die erforderliche primäre, datierte, direkte Beobachtung mit messbaren Einheiten (operativer Gewinn in JPY) und klarer Scope‑Festlegung. Aus diesem Grund wird die Kandidatur auf Watchlist gesetzt — weitere Verifikation (Original‑BusinessKorea‑Artikel oder eine TEL‑Earnings‑/Regulatory‑Mitteilung, die die 1 Bio. JPY‑Zahl ausdrücklich nennt) ist erforderlich, bevor eine Aufnahme als VERIFIED DATA möglich ist. Zusätzlich wäre ein adversarial check nötig (Gegenbelege, frühere TEL‑Guidance, oder unmittelbare Widersprüche durch TEL‑IR). Die aktuelle Evidenzlage ist unvollständig und lässt die Forderungen der Admission‑Regeln (primäre Quelle, eindeutige Zahl, mechanismische Verknüpfung) ungeprüft. Deshalb kein redPencilPass und indexImpact=false (kein direktes Markt‑Metrik‑Beleg).",
+      "candidateId": "464517e1421305e56b38",
+      "candidateKey": "e86e08e8e8a3a7bd0cbbc090",
+      "reviewedAt": "2026-10-07T02:26:40.929Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b75573a39720e90006ac5adca1f2487d0bb6bc3f9e82b6d30"
+    },
+    {
+      "decision": "accepted",
+      "title": "HanmiGlobal übernimmt PM‑Rolle beim SK hynix ~US$4 Mrd. HBM‑Packaging‑Projekt in West Lafayette, IN",
+      "fact": "HanmiGlobal wurde vom Unternehmen als Project‑Manager für den Bau des SK hynix HBM (Advanced Packaging) Standorts in West Lafayette, Indiana benannt; das Projekt ist Teil eines über ~US$4 Mrd. Investitionsplans und zielt auf Eröffnung des Cleanrooms bis 2028 / Serienproduktion 2029 ab.",
+      "placement": "Geographie: West Lafayette, Indiana, USA; Domain/Layer: HBM advanced packaging / Packaging & Test (Frontend‑zu‑package Übergang); Horizont: Cleanroom‑Fertigstellung 2028, Serienproduktion H2/2029.",
+      "mechanism": "Durch Projektmanagement‑Services (Bau‑PM, Koordination Design/Contractors/Equipment‑Lieferanten) unterstützt HanmiGlobal die planmäßige Fertigstellung der HBM‑Packaging‑Anlage. Fertigstellung und anschließende Qualifikation der Packaging‑Lines sind notwendige Vorstufen für volumetrische HBM‑Shipments aus der US‑Produktion; das Projekt erhöht in der mittleren Frist die verfügbare qualifizierte HBM‑Packaging‑Kapazität und reduziert damit strukturelle Verknappungsrisiken, sobald qualifizierte Shipments stattfinden.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Moderate Reduktion der mittelfristigen Knappheits‑These für HBM/Server‑DRAM (P-2026-07-11-01): Die bestätigte Bau‑PM‑Vergabe erhöht die Wahrscheinlichkeit, dass SK hynix US‑Packaging‑Kapazität fristgerecht in Betrieb nimmt und damit die Geografie der HBM‑Lieferkette diversifiziert; Wirkung entsteht erst mit nachgewiesenen qualifizierten Shipments (nicht sofort).",
+      "falsifier": "Bis 2028-10-31: Kein nachweisbarer Fortschritt im Bau (keine Baubewilligung/keine in situ‑Bauaktivität/Vertrag mit HanmiGlobal öffentlich widerrufen) ODER bis 2029-12-31: kein qualifizierter HBM‑Shipment‑Nachweis aus der Indiana‑Anlage (keine Serien‑Shipment‑Meldung oder Cleanroom‑Abnahme durch SK hynix).",
+      "nextReview": "2028-11-15",
+      "eventDate": "2026-09-21",
+      "novelty": "Bestätigung einer konkreten, bereits laufenden PM‑Vergabe für ein zuvor angekündigtes US‑HBM‑Packaging‑Projekt; kein reines IPO/Market‑Gerücht mehr.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Layer Update",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 80,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.koreatimes.co.kr/amp/business/companies/20260921/hanmiglobal-manages-sk-hynix-hbm-plant-construction-in-indiana",
+          "label": "The Korea Times — HanmiGlobal manages SK hynix HBM plant construction in Indiana (2026-09-21)",
+          "kind": "primary",
+          "supports": "Bericht, dass HanmiGlobal Bau‑Projektmanagement (PM) für SK hynix' HBM‑Packaging‑Anlage in West Lafayette, Indiana übernimmt; nennt Projektumfang >US$4 Mrd. und PM‑Involvierung seit Pre‑Con Aug 2024."
+        },
+        {
+          "url": "https://en.asiatoday.co.kr/view.php?key=20260921000956128",
+          "label": "AsiaToday (English) — HanmiGlobal to provide PM services for SK Hynix’s Indiana HBM plant (2026-09-21)",
+          "kind": "primary",
+          "supports": "Unternehmensmeldung vom 21. Sept. 2026: HanmiGlobal bestätigt PM‑Rolle und angestrebte Bau‑/Cleanroom‑Fertigstellung bis 2028."
+        },
+        {
+          "url": "https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana",
+          "label": "SK hynix Newsroom — Groundbreaking ceremony for HBM production base in Indiana (2026-08-27)",
+          "kind": "primary",
+          "supports": "SK hynix bestätigt >US$4 Mrd. Projekt in West Lafayette, Zeitplan: Cleanroom bis Okt. 2028, Mass Production H2 2029; damit belegt es Projektumfang und Zeitrahmen."
+        },
+        {
+          "url": "https://www.purdue.edu/newsroom/2026/Q3/sk-hynix-breaks-ground-on-4-billion-advanced-packaging-production-facility-in-purdue-research-park/",
+          "label": "Purdue University News — SK hynix breaks ground on $4 billion advanced packaging production facility (2026-08-27)",
+          "kind": "primary",
+          "supports": "Lokalquelle bestätigt Groundbreaking in West Lafayette, dokumentiert Projektumfang und Partnerschaften mit Purdue/Indiana."
+        }
+      ],
+      "reason": "Primärquellen (SK hynix, Purdue) bestätigen den grundlegenden Projektumfang (>US$4 Mrd.) und den Zeitplan; unabhängige Medien (Korea Times, AsiaToday, BusinessKorea) melden explizit die Vergabe der Bau‑PM‑Rolle an HanmiGlobal (Veröffentlichungsdatum 2026-09-21). Diese Meldung ist ein datenreicher Layer‑Update (konkrete Lieferketten‑/Bau‑Relation), das die Plausibilität erhöht, dass SK hynix' US‑HBM‑Packaging‑Anlage fristgerecht gebaut werden kann — die auslieferungsrelevante Kapazitätswirkung tritt jedoch erst mit qualifizierten Shipments ein. Entsprechend ist indexImpact hier false (keine beobachteten Shipments/kontraktierten Liefermengen zum Berichtstermin). Die Aufnahme besteht den adversarial check: gegenteilige Belege (z. B. Widerruf der PM‑Vereinbarung oder Stornierung des Projekts) wurden nicht gefunden; es gibt direkte Primärstatements des Projektträgers (SK hynix) und lokale Institutionen (Purdue).",
+      "candidateId": "6bced70adac15634aee3",
+      "candidateKey": "247dc6f0ea13e5adf0e6d183",
+      "reviewedAt": "2026-10-07T02:27:10.972Z",
+      "priorityScore": 84,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-247dc6f0ea13e5adf0e6d183",
+        "title": "HanmiGlobal übernimmt PM‑Rolle beim SK hynix ~US$4 Mrd. HBM‑Packaging‑Projekt in West Lafayette, IN",
+        "date": "2026-09-21",
+        "admittedAt": "2026-10-07T02:27:10.972Z",
+        "fact": "HanmiGlobal wurde vom Unternehmen als Project‑Manager für den Bau des SK hynix HBM (Advanced Packaging) Standorts in West Lafayette, Indiana benannt; das Projekt ist Teil eines über ~US$4 Mrd. Investitionsplans und zielt auf Eröffnung des Cleanrooms bis 2028 / Serienproduktion 2029 ab.",
+        "placement": "Geographie: West Lafayette, Indiana, USA; Domain/Layer: HBM advanced packaging / Packaging & Test (Frontend‑zu‑package Übergang); Horizont: Cleanroom‑Fertigstellung 2028, Serienproduktion H2/2029.",
+        "tailInference": "Durch Projektmanagement‑Services (Bau‑PM, Koordination Design/Contractors/Equipment‑Lieferanten) unterstützt HanmiGlobal die planmäßige Fertigstellung der HBM‑Packaging‑Anlage. Fertigstellung und anschließende Qualifikation der Packaging‑Lines sind notwendige Vorstufen für volumetrische HBM‑Shipments aus der US‑Produktion; das Projekt erhöht in der mittleren Frist die verfügbare qualifizierte HBM‑Packaging‑Kapazität und reduziert damit strukturelle Verknappungsrisiken, sobald qualifizierte Shipments stattfinden.",
+        "predictionId": "P-2026-07-11-01",
+        "predictionImpact": "Moderate Reduktion der mittelfristigen Knappheits‑These für HBM/Server‑DRAM (P-2026-07-11-01): Die bestätigte Bau‑PM‑Vergabe erhöht die Wahrscheinlichkeit, dass SK hynix US‑Packaging‑Kapazität fristgerecht in Betrieb nimmt und damit die Geografie der HBM‑Lieferkette diversifiziert; Wirkung entsteht erst mit nachgewiesenen qualifizierten Shipments (nicht sofort).",
+        "falsifier": "Bis 2028-10-31: Kein nachweisbarer Fortschritt im Bau (keine Baubewilligung/keine in situ‑Bauaktivität/Vertrag mit HanmiGlobal öffentlich widerrufen) ODER bis 2029-12-31: kein qualifizierter HBM‑Shipment‑Nachweis aus der Indiana‑Anlage (keine Serien‑Shipment‑Meldung oder Cleanroom‑Abnahme durch SK hynix).",
+        "nextReview": "2028-11-15",
+        "priorityScore": 84,
+        "scoreBreakdown": {
+          "sourceQuality": 18,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 14,
+          "falsifiability": 12,
+          "timeSensitivity": 10
+        },
+        "severity": 30,
+        "confidence": 80,
+        "markets": [
+          "hbm",
+          "ai_infrastructure",
+          "semiconductors"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Layer Update",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "The Korea Times — HanmiGlobal manages SK hynix HBM plant construction in Indiana (2026-09-21)",
+            "url": "https://www.koreatimes.co.kr/amp/business/companies/20260921/hanmiglobal-manages-sk-hynix-hbm-plant-construction-in-indiana"
+          },
+          {
+            "label": "AsiaToday (English) — HanmiGlobal to provide PM services for SK Hynix’s Indiana HBM plant (2026-09-21)",
+            "url": "https://en.asiatoday.co.kr/view.php?key=20260921000956128"
+          },
+          {
+            "label": "SK hynix Newsroom — Groundbreaking ceremony for HBM production base in Indiana (2026-08-27)",
+            "url": "https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana"
+          },
+          {
+            "label": "Purdue University News — SK hynix breaks ground on $4 billion advanced packaging production facility (2026-08-27)",
+            "url": "https://www.purdue.edu/newsroom/2026/Q3/sk-hynix-breaks-ground-on-4-billion-advanced-packaging-production-facility-in-purdue-research-park/"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Moderate Reduktion der mittelfristigen Knappheits‑These für HBM/Server‑DRAM (P-2026-07-11-01): Die bestätigte Bau‑PM‑Vergabe erhöht die Wahrscheinlichkeit, dass SK hynix US‑Packaging‑Kapazität fristgerecht in Betrieb nimmt und damit die Geografie der HBM‑Lieferkette diversifiziert; Wirkung entsteht erst mit nachgewiesenen qualifizierten Shipments (nicht sofort)."
+        },
+        "admissionReviewKey": "247dc6f0ea13e5adf0e6d183"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08895b095bffe921006ac5ade1296c87d0af4fdddcc3c32eee"
     }
   ]
 }

@@ -2,25 +2,25 @@
   "schemaVersion": 3,
   "platformVersion": "3.2",
   "sourceOfTruth": "TAIL Knowledge Base",
-  "dataAsOf": "2026-10-06",
-  "analysisAsOf": "2026-10-06",
+  "dataAsOf": "2026-10-07",
+  "analysisAsOf": "2026-10-07",
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-06T21:43:43.985Z",
-    "inboxUpdatedAt": "2026-10-06T21:37:04.037Z",
+    "checkedAt": "2026-10-07T02:27:11.010Z",
+    "inboxUpdatedAt": "2026-10-07T02:22:33.200Z",
     "status": "pending",
-    "candidates": 283,
-    "reviewed": 136,
-    "accepted": 17,
-    "watchlist": 116,
+    "candidates": 287,
+    "reviewed": 138,
+    "accepted": 18,
+    "watchlist": 117,
     "rejected": 3,
-    "pending": 151,
-    "oldestPendingAt": "2026-09-20T23:56:48.000Z",
-    "lastCompletedReviewAt": "2026-10-06T21:43:43.961Z",
+    "pending": 156,
+    "oldestPendingAt": "2026-09-21T00:55:00.000Z",
+    "lastCompletedReviewAt": "2026-10-07T02:27:10.972Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 663,
+    "rawCandidates": 671,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1220,
     "triage": {
@@ -28,8 +28,8 @@
       "groupedDuplicates": 31
     },
     "lastRun": {
-      "startedAt": "2026-10-06T21:42:35.338Z",
-      "completedAt": "2026-10-06T21:43:43.987Z",
+      "startedAt": "2026-10-07T02:26:15.900Z",
+      "completedAt": "2026-10-07T02:27:11.013Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 68,
+      "durationSeconds": 54,
       "budgetExhausted": false
     }
   },
@@ -100,15 +100,15 @@
     }
   ],
   "sourceDataAsOf": "2026-10-06",
-  "knowledgeBaseSyncedAt": "2026-10-06T21:43:44.160Z",
+  "knowledgeBaseSyncedAt": "2026-10-07T02:27:11.189Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 0,
-  "lastSuccessfulUpdate": "2026-10-06T21:43:45.688Z",
-  "lastForecastRun": "2026-10-06T21:43:45.688Z",
-  "newlyProcessedArticles": 225,
-  "totalArticles": 200,
-  "articleCount": 200,
+  "evidenceAgeDays": 1,
+  "lastSuccessfulUpdate": "2026-10-07T02:27:12.736Z",
+  "lastForecastRun": "2026-10-07T02:27:12.736Z",
+  "newlyProcessedArticles": 82,
+  "totalArticles": 201,
+  "articleCount": 201,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -162,16 +162,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 151 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 156 Kandidaten ausstehend.",
     "14 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-10-06T21:37:04.037Z",
-    "newItems": 225,
-    "totalItems": 12789,
+    "updatedAt": "2026-10-07T02:22:33.200Z",
+    "newItems": 82,
+    "totalItems": 12871,
     "duplicateItems": 300,
-    "relevantItems": 4056,
+    "relevantItems": 4084,
     "sourceErrors": []
   },
   "pipeline": {
@@ -181,19 +181,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "136 geprüft · 151 offen · 17 aufgenommen"
+        "detail": "138 geprüft · 156 offen · 18 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "200 Artikel · Sync 2026-10-06 · jüngstes bestätigtes Signal 2026-10-06"
+        "detail": "201 Artikel · Sync 2026-10-07 · jüngstes bestätigtes Signal 2026-10-06"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "12789 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "12871 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -244,8 +244,8 @@
       {
         "id": "availability",
         "name": "Verfügbarkeit / Allocation",
-        "score": 80,
-        "absoluteSeverity": 80,
+        "score": 79,
+        "absoluteSeverity": 79,
         "delta": 0,
         "weight": 0.4,
         "coverage": 100,
@@ -306,7 +306,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 87,
-          "confidence": 36,
+          "confidence": 35,
           "evidenceCount": 5,
           "pressure": 78,
           "relief": 0,
@@ -368,7 +368,7 @@
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
           "score": 86,
-          "confidence": 48,
+          "confidence": 47,
           "evidenceCount": 5,
           "pressure": 77,
           "relief": 0,
@@ -491,10 +491,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 64,
+          "score": 63,
           "confidence": 88,
           "evidenceCount": 5,
-          "pressure": 64,
+          "pressure": 63,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -515,13 +515,13 @@
     },
     {
       "id": "ai_infrastructure",
-      "score": 65,
-      "baseScore": 65,
+      "score": 64,
+      "baseScore": 64,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 65,
+      "indicativeScore": 64,
       "sufficientlyCovered": true,
-      "status": "orange",
+      "status": "yellow",
       "signals": 90,
       "articleSignals": 88,
       "operationalSignals": 2,
@@ -553,10 +553,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 60,
+          "score": 59,
           "confidence": 85,
           "evidenceCount": 5,
-          "pressure": 60,
+          "pressure": 59,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -564,10 +564,10 @@
         {
           "id": "aiDemand",
           "label": "AI-Nachfrage",
-          "score": 75,
+          "score": 74,
           "confidence": 78,
           "evidenceCount": 5,
-          "pressure": 75,
+          "pressure": 74,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -577,11 +577,11 @@
     },
     {
       "id": "semiconductors",
-      "score": 62,
-      "baseScore": 62,
+      "score": 61,
+      "baseScore": 61,
       "freshShock": 0,
       "freshShockSignalId": null,
-      "indicativeScore": 62,
+      "indicativeScore": 61,
       "sufficientlyCovered": true,
       "status": "yellow",
       "signals": 31,
@@ -615,10 +615,10 @@
         {
           "id": "availability",
           "label": "Verfügbarkeit / Allocation",
-          "score": 54,
+          "score": 53,
           "confidence": 86,
           "evidenceCount": 5,
-          "pressure": 54,
+          "pressure": 53,
           "relief": 0,
           "operationalFloor": 0,
           "formula": "max(pressure - relief × reliefOffset, operationalFloor)"
@@ -764,14 +764,14 @@
   ],
   "manufacturers": [
     {
-      "name": "SK hynix",
-      "score": 78,
-      "mentions": 29
-    },
-    {
       "name": "NVIDIA",
       "score": 78,
       "mentions": 1
+    },
+    {
+      "name": "SK hynix",
+      "score": 77,
+      "mentions": 30
     },
     {
       "name": "Intel",
@@ -993,7 +993,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-10-06T21:43:45.682Z"
+      "lastUpdated": "2026-10-07T02:27:12.729Z"
     },
     {
       "id": "hbm",
@@ -1107,6 +1107,12 @@
           "score": 12
         },
         {
+          "id": "S-AUTO-247dc6f0ea13e5adf0e6d183",
+          "title": "HanmiGlobal übernimmt PM‑Rolle beim SK hynix ~US$4 Mrd. HBM‑Packaging‑Projekt in West Lafayette, IN",
+          "signal": "Kapazitätsentlastung",
+          "score": 12
+        },
+        {
           "id": "S-AUTO-c606575af5eb0035a69fcb7f",
           "title": "AMD MI400 ships with 432 GB HBM4 (MI455X) — Produkt-Launch / erste Lieferungen",
           "signal": "Kapazitätsentlastung",
@@ -1193,12 +1199,13 @@
         "S-AUTO-2bffa1eabe150381d9d44714",
         "S-AUTO-4026d51f6952ba6f76e4f0eb",
         "S-AUTO-86f57c9ce4968b9706cd3a6f",
+        "S-AUTO-247dc6f0ea13e5adf0e6d183",
         "S-AUTO-c606575af5eb0035a69fcb7f",
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-965c715ae023d058ae2744d3",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-10-06T21:43:45.682Z"
+      "lastUpdated": "2026-10-07T02:27:12.729Z"
     },
     {
       "id": "nand",
@@ -1284,7 +1291,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-06T21:43:45.682Z"
+      "lastUpdated": "2026-10-07T02:27:12.729Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1365,7 +1372,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-06T21:43:45.682Z"
+      "lastUpdated": "2026-10-07T02:27:12.730Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1501,6 +1508,12 @@
           "title": "Yonhap (Industriequelle): Micron peilt ~100.000 HBM‑Wafer/Monat bis Ende 2026 an",
           "signal": "Kapazitätsentlastung",
           "score": 13
+        },
+        {
+          "id": "S-AUTO-247dc6f0ea13e5adf0e6d183",
+          "title": "HanmiGlobal übernimmt PM‑Rolle beim SK hynix ~US$4 Mrd. HBM‑Packaging‑Projekt in West Lafayette, IN",
+          "signal": "Kapazitätsentlastung",
+          "score": 12
         },
         {
           "id": "S-AUTO-c606575af5eb0035a69fcb7f",
@@ -1678,6 +1691,7 @@
         "S-AUTO-526457c32de6318fc815c9a0",
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-4026d51f6952ba6f76e4f0eb",
+        "S-AUTO-247dc6f0ea13e5adf0e6d183",
         "S-AUTO-c606575af5eb0035a69fcb7f",
         "S-AUTO-bb182d23358d88b6a532ac80",
         "S-AUTO-39fce5d99087a695658f9de8",
@@ -1690,16 +1704,16 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-06T21:43:45.682Z"
+      "lastUpdated": "2026-10-07T02:27:12.730Z"
     }
   ],
   "indexCalculation": {
-    "asOf": "2026-10-06",
+    "asOf": "2026-10-07",
     "evidenceAsOf": "2026-09-11",
     "formulaRevision": "1.4",
-    "baselineAsOf": "2026-10-06"
+    "baselineAsOf": "2026-10-07"
   },
-  "executiveSummary": "TAIL steht auf 74/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 200 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 74/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 201 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
@@ -1868,7 +1882,7 @@
         "confidence": 74,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-10-06"
+        "indexAsOf": "2026-10-07"
       },
       {
         "marketId": "enterprise_ssd",
@@ -2307,7 +2321,7 @@
         "confidence": 63,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-10-06"
+        "indexAsOf": "2026-10-07"
       }
     ]
   }
