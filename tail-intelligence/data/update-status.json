@@ -1,26 +1,41 @@
 {
-  "status": "ok",
-  "last_attempt": "2026-10-08T02:41:34.581Z",
-  "last_successful_update": "2026-10-08T02:41:34.581Z",
-  "newly_processed_articles": 97,
-  "collected_articles": 528,
+  "status": "warning",
+  "last_attempt": "2026-10-08T12:01:23.282Z",
+  "last_successful_update": "2026-10-08T12:01:23.282Z",
+  "newly_processed_articles": 1,
+  "collected_articles": 32,
   "sources_checked": 9,
-  "deduplicated_articles": 431,
-  "inbox_size": 13344,
-  "source_errors": [],
-  "message": "TAIL Inbox erfolgreich aktualisiert.",
-  "daily_analyst_generated_at": "2026-10-08T02:46:12.455Z",
-  "daily_analyst_date": "2026-10-08",
-  "daily_analyst_file": "daily-intelligence-2026-10-08.json",
-  "daily_analyst_candidates": 8,
-  "knowledge_base_sync_at": "2026-10-08T02:46:13.580Z",
-  "knowledge_base_signals_promoted": 49,
-  "knowledge_base_total_articles": 201,
-  "knowledge_base_latest_daily_file": "daily-intelligence-2026-10-08.json",
-  "knowledge_base_latest_daily_at": "2026-10-08T02:46:12.455Z",
-  "knowledge_base_daily_files_processed": 80,
-  "freshness_guard_at": "2026-10-08T02:46:15.357Z",
-  "freshness_guard_expected": "daily-intelligence-2026-10-08.json",
-  "freshness_guard_latest": "daily-intelligence-2026-10-08.json",
-  "freshness_guard_status": "ok"
+  "deduplicated_articles": 31,
+  "inbox_size": 13345,
+  "source_errors": [
+    {
+      "source": "micron-news",
+      "message": "HTTP 503"
+    },
+    {
+      "source": "news-memory-storage",
+      "message": "HTTP 503"
+    },
+    {
+      "source": "news-equipment-foundry",
+      "message": "HTTP 503"
+    },
+    {
+      "source": "news-packaging-capacity",
+      "message": "HTTP 503"
+    },
+    {
+      "source": "news-ai-compute",
+      "message": "HTTP 503"
+    },
+    {
+      "source": "news-datacenter-power",
+      "message": "HTTP 503"
+    },
+    {
+      "source": "news-geopolitics-supply",
+      "message": "HTTP 503"
+    }
+  ],
+  "message": "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
 }
