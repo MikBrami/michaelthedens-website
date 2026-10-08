@@ -54174,6 +54174,159 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0b4250ff9b804341006ac703daad5087d29aa883f86297ed0b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Lisa Su fordert erhöhte HBM4‑Lieferung bei Samsung; Tür für Foundry‑Zusammenarbeit offen",
+      "fact": "AMD‑CEO Lisa Su traf am 2026-10-07 Führungskräfte von Samsung in Seoul und forderte eine Ausweitung der HBM4‑Belieferung; sie ließ zugleich eine mögliche Foundry‑Kooperation offen.",
+      "placement": "Geographie: Südkorea (Seoul) / Domain: HBM4‑Supply für AMD AI‑Acceleratoren / Layer: kurzfristige Lieferzuteilung; Horizon: Q4 2026–H1 2027",
+      "mechanism": "Direkte strategische Nachfrage (AMD fordert mehr HBM4‑Zuteilung); Verhandlungsspielraum erhöht Wahrscheinlichkeit für Allokationsverschiebung zugunsten AMD, potenziell gegen Foundry‑Aufträge oder andere Kunden.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Dieses Ereignis signalisiert zunehmenden Druck auf HBM‑Zuteilungen, unterstützt die Basissicht, dass HBM/Server‑DRAM knapp bleiben; es liefert jedoch kein nachweisliches, quantifizierbares Kapazitäts‑ oder Shipment‑Änderungsereignis, daher vorerst nur beobachtendes Signal für die Vorhersage 'strukturelle Knappheit bis Ende 2028'.",
+      "falsifier": "Bis 2026-11-30 muss eine der beiden Bedingungen eintreten, sonst schwächt sich das Gewicht dieses Signals: (A) öffentlicher, verbindlicher Liefervertrag oder offizielle Ankündigung von Samsung mit quantifizierter, zusätzlicher HBM4‑Zuteilung an AMD (z. B. >100.000 HBM‑Wafern/Monat oder klar ausgewiesene zusätzliche HBM4‑GB‑Lieferungen), ODER (B) Samsung veröffentlicht eine formelle Erklärung, dass keine zusätzlichen HBM4‑Zuteilungen an AMD erfolgen. Wenn bis 2026-11-30 keines der beiden eintritt, bleibt der Fall nur ein indikatives Meeting‑Signal ohne bestätigten Versorgungs‑Impact.",
+      "nextReview": "2026-11-30",
+      "eventDate": "2026-10-07",
+      "novelty": "Ergänzt bestehende TAIL‑Berichte über HBM‑Nachfrage und -Priorisierung; bestätigt laufende Verhandlungen, ist aber keine Primärbestätigung von Shipment/Capex.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 13,
+        "falsifiability": 9,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/10/07/amds-lisa-su-visits-samsung-pledges-broader-partnership",
+          "label": "Seoul Economic Daily — 'AMD's Lisa Su Visits Samsung, Signals Broader Partnership' (2026-10-07)",
+          "kind": "primary",
+          "supports": "Bericht dokumentiert Treffen am 7. Oktober; Gespräche über Ausweitung von HBM4‑Supply und mögliche Foundry‑Kooperation."
+        },
+        {
+          "url": "https://en.yna.co.kr/view/AEN20261007008300320",
+          "label": "Yonhap News Agency — 'AMD CEO says S. Korea key partner in AI chips' (2026-10-07)",
+          "kind": "primary",
+          "supports": "Yonhap zitiert Lisa Su: Kooperation in Memory und Foundry sei kritisch; Treffen am 7. Oktober bestätigt."
+        },
+        {
+          "url": "https://en.bloomingbit.io/feed/news/121812",
+          "label": "Bloomingbit — 'Lisa Su Asks Samsung to Boost HBM4 Output...' (2026-10-07)",
+          "kind": "secondary",
+          "supports": "Aggregate/Headline‑Syndication der Meldung; liefert keine zusätzliche Primärdaten."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung beschreibt ein real datiertes Management‑Treffen (2026-10-07) mit klarer inhaltlicher Richtung (Anfrage nach mehr HBM4‑Output; Offenhalten von Foundry‑Kooperation). Primärquellen (Seoul Economic Daily, Yonhap) bestätigen Begegnung und Zitat‑Ton, liefern aber keine quantifizierten oder verbindlichen Liefer‑/Shipment‑Daten. Nach TAIL‑Aufnahmekriterien fehlt hier die atomare, messbare Beobachtung (z. B. bestätigte zusätzliche Wafer‑Shipments, vertraglich zugesicherte Volumina, oder berichtete Lead‑time‑Verbesserung), weshalb die Evidenz nicht als VERIFIED DATA aufgenommen werden kann. Die Meldung ist relevant für die HBM‑Knappheitsthese (P-2026-07-11-01) und wird daher auf die Watchlist gesetzt, mit einem klaren Falsifier und einem nächsten Review‑Datum am 2026-11-30. Opposing Evidence/Checks: viele TAIL‑Quellen dokumentieren bereits starke HBM‑Nachfrage, 'sold out'‑Aussagen und priorisierte Halbleiter‑Allokationen (siehe Baseline / S‑AUTO‑Einträge), weshalb ein einzelnes Treffen ohne quantifizierbare Zusage nicht ausreicht, um die Vorhersage zu verändern. Sollte Samsung innerhalb des Review‑Fensters verbindliche, quantifizierte Lieferzusagen veröffentlichen, ist ein Upgrade auf ACCEPTED prüfbar; fehlt dies, verbleibt die Meldung als indikatives, aber unbestätigtes Signal.",
+      "candidateId": "45f3309b51bfdf73f8a9",
+      "candidateKey": "ffd3090c1269bbb975be94a2",
+      "reviewedAt": "2026-10-08T12:08:41.966Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0436ade13d32e9c7006ac787b1008c87d087601e2df24a2f49"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Digitimes‑Bericht: Samsung plant Verdoppelung der HBM4‑Produktion 2027",
+      "fact": "DIGITIMES berichtet am 2026-09-21, Samsung plane, die HBM4‑Produktion im Kalenderjahr 2027 mindestens zu verdoppeln (Bericht auf Basis anonymer Branchenquellen).",
+      "placement": "Samsung Electronics — globale HBM4‑Produktion / Memory‑Layer; horizon: Kalenderjahr 2027; Geographie: global (Fertigung/Shipments aus Südkorea und globaler Kundenlieferkette).",
+      "mechanism": "Bericht nennt erhöhte Produktionspläne (höhere Wafer-/Stack‑Output‑Ziele, mehr Bestellungen für Glas/Carrier und Verlagerung auf höherwertige HBM4/HBM4E‑SKUs), also Angebotsausweitung durch interne Produktionsramp/CapEx‑Reallokation.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn Samsung tatsächlich die HBM4‑Outputmenge in 2027 verdoppelt, würde dies die Basisannahme eines strukturellen HBM-/Server‑DRAM‑Engpasses für 2027 moderat schwächen (verringert negative_supply‑Schwere → tendenziell niedrigere Lieferknappheit), könnte aber Preise kurzfristig stützen, falls Nachfrage weiter steigt.",
+      "falsifier": "Konkretes, überprüfbares Kriterium: Samsung veröffentlicht bis 2027-12-31 ein offizielles Produktions-/Versand‑Statement oder Financial‑Disclosure, das qualifizierte HBM4‑Wafer‑Shipments (oder äquivalente Stück/GB‑Metrik) für 2027 ausweist, die im Jahresmittel ≥ 2.0× des entsprechenden Monatsdurchschnitts von 2026 liegen; oder alternativ: Samsung veröffentlicht eine formale Abkehr/Verzögerung der Ramp (z. B. Produktionspläne zurückgenommen) bis 2027-06-30. Falls weder Dokumentation noch öffentliche Verifikation von Shipments/qualifizierten Volumina bis 2027-12-31 vorliegt, ist die Meldung nicht verifizierbar.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-21",
+      "novelty": "Bericht fügt eine konkrete Planangabe (Verdoppelungs‑Ziel 2027) zu bereits bekannten Ramp‑Narrativen hinzu; aber keine Primärzahl für Wafer/GB im öffentlichen Samsung‑Disclosure.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 50,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260921VL206/samsung-2027-hbm4-production-hbm.html?q=server",
+          "label": "DIGITIMES — Artikel 'Samsung reportedly plans to double HBM4 output in 2027 as memory supply stays tight' (published 2026-09-21)",
+          "kind": "primary",
+          "supports": "Bericht nennt Plan, HBM4‑Produktion in 2027 mindestens zu verdoppeln; basiert auf anonymer Branchen‑Info."
+        },
+        {
+          "url": "https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing",
+          "label": "Samsung Newsroom — Samsung: HBM4‑Produkte, HBM‑Verkaufs-/Ramp‑Statements (kontextuell)",
+          "kind": "secondary",
+          "supports": "Samsung bestätigt HBM4‑Mass Product shipments und dass HBM‑Verkäufe 2026 stark ausgebaut werden; keine explizite, geprüfte 2×‑Output‑Zahl für 2027 im Firmen‑Release."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+          "label": "Seoul Economic Daily — unabhängige Branchenberichterstattung (corroborating media report)",
+          "kind": "secondary",
+          "supports": "Berichtet ebenfalls über Quellen, die eine mehr als doppelte Ausweitung der HBM4‑Produktion 2027 nennen."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat ist ein tagesaktueller Medienbericht (DIGITIMES, 2026-09-21) mit einer spezifischen, marktrelevanten Behauptung (Verdoppelung der HBM4‑Produktion 2027). Ich habe den Original‑DIGITIMES‑Eintrag überprüft und korroborierende Medienmeldungen (Seoul Economic Daily) sowie Samsungs offizielle Produkt‑/Ramp‑Kommunikation als Kontext gefunden. Allerdings fehlt eine direkte Primärbestätigung von Samsung (konkretes, geprüftes Volumen in Wafern/GB oder offizielle Disclosure, die die 2×‑Zahl belegt). Damit erfüllt die Meldung nicht die TAIL‑Annahme für eine VERIFIED DATA‑Aufnahme (kein verifizierbarer, atomarer, quantifizierter Observationsbeleg). Opposing Evidence/Context: mehrere Marktquellen und Firmendaten (z. B. Aussagen zu 'HBM sold out through 2026' oder enge Bestände bei Wettbewerbern) zeigen weiterhin Knappheit und priorisierte Abdeckung — das ändert jedoch nicht die Notwendigkeit einer Primärverifikation der behaupteten 2×‑Outputzahl. Ergebnis: Watchlist — weitere Verifikation (offizielle Samsung‑Shipments/qualified volume disclosure oder klarer gegenteiliger Firmenbeleg) erforderlich, bevor Admission als VERIFIED DATA möglich ist.",
+      "candidateId": "981bca2a5a8a5f53d4cc",
+      "candidateKey": "03fe7e916bfd2c57a1dbe250",
+      "reviewedAt": "2026-10-08T12:09:02.409Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_032455181cb52d5b006ac787ca3b0c87d08da8198bc95ca35a"
     }
   ]
 }

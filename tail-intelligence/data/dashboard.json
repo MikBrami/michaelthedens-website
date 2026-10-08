@@ -7,29 +7,29 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-08T02:46:12.279Z",
-    "inboxUpdatedAt": "2026-10-08T02:41:34.581Z",
+    "checkedAt": "2026-10-08T12:09:02.451Z",
+    "inboxUpdatedAt": "2026-10-08T12:01:23.282Z",
     "status": "pending",
     "candidates": 308,
-    "reviewed": 144,
+    "reviewed": 146,
     "accepted": 18,
-    "watchlist": 123,
+    "watchlist": 125,
     "rejected": 3,
-    "pending": 172,
-    "oldestPendingAt": "2026-09-21T03:09:14.000Z",
-    "lastCompletedReviewAt": "2026-10-08T02:46:12.248Z",
+    "pending": 170,
+    "oldestPendingAt": "2026-09-21T03:35:00.000Z",
+    "lastCompletedReviewAt": "2026-10-08T12:09:02.409Z",
     "error": null,
     "batchErrors": [],
     "rawCandidates": 712,
     "reviewCutoff": "2026-09-18T11:40:00Z",
-    "historicalCandidatesSkipped": 1220,
+    "historicalCandidatesSkipped": 1221,
     "triage": {
       "archivedOpinions": 20,
       "groupedDuplicates": 34
     },
     "lastRun": {
-      "startedAt": "2026-10-08T02:45:18.122Z",
-      "completedAt": "2026-10-08T02:46:12.281Z",
+      "startedAt": "2026-10-08T12:08:15.592Z",
+      "completedAt": "2026-10-08T12:09:02.453Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 54,
+      "durationSeconds": 46,
       "budgetExhausted": false
     }
   },
@@ -100,13 +100,13 @@
     }
   ],
   "sourceDataAsOf": "2026-10-06",
-  "knowledgeBaseSyncedAt": "2026-10-08T02:46:12.455Z",
+  "knowledgeBaseSyncedAt": "2026-10-08T12:09:02.619Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 2,
-  "lastSuccessfulUpdate": "2026-10-08T02:46:14.166Z",
-  "lastForecastRun": "2026-10-08T02:46:14.166Z",
-  "newlyProcessedArticles": 97,
+  "lastSuccessfulUpdate": "2026-10-08T12:09:04.247Z",
+  "lastForecastRun": "2026-10-08T12:09:04.247Z",
+  "newlyProcessedArticles": 1,
   "totalArticles": 201,
   "articleCount": 201,
   "processStatus": "warning",
@@ -162,17 +162,47 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 172 Kandidaten ausstehend.",
-    "14 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
+    "Evidenzprüfung offen: 170 Kandidaten ausstehend.",
+    "14 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung.",
+    "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
   ],
   "inbox": {
-    "status": "ok",
-    "updatedAt": "2026-10-08T02:41:34.581Z",
-    "newItems": 97,
-    "totalItems": 13344,
+    "status": "warning",
+    "updatedAt": "2026-10-08T12:01:23.282Z",
+    "newItems": 1,
+    "totalItems": 13345,
     "duplicateItems": 300,
-    "relevantItems": 4245,
-    "sourceErrors": []
+    "relevantItems": 4246,
+    "sourceErrors": [
+      {
+        "source": "micron-news",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-memory-storage",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-equipment-foundry",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-packaging-capacity",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-ai-compute",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-datacenter-power",
+        "message": "HTTP 503"
+      },
+      {
+        "source": "news-geopolitics-supply",
+        "message": "HTTP 503"
+      }
+    ]
   },
   "pipeline": {
     "status": "warning",
@@ -181,7 +211,7 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "144 geprüft · 172 offen · 18 aufgenommen"
+        "detail": "146 geprüft · 170 offen · 18 aufgenommen"
       },
       {
         "id": "knowledge_base",
@@ -192,8 +222,8 @@
       {
         "id": "inbox",
         "label": "TAIL Inbox",
-        "status": "ok",
-        "detail": "13344 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "status": "warning",
+        "detail": "13345 Inbox-Items · 300 Duplikate · 7 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -993,7 +1023,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-10-08T02:46:14.160Z"
+      "lastUpdated": "2026-10-08T12:09:04.241Z"
     },
     {
       "id": "hbm",
@@ -1205,7 +1235,7 @@
         "S-AUTO-965c715ae023d058ae2744d3",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-10-08T02:46:14.160Z"
+      "lastUpdated": "2026-10-08T12:09:04.241Z"
     },
     {
       "id": "nand",
@@ -1291,7 +1321,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-08T02:46:14.160Z"
+      "lastUpdated": "2026-10-08T12:09:04.241Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1372,7 +1402,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-08T02:46:14.160Z"
+      "lastUpdated": "2026-10-08T12:09:04.242Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1704,7 +1734,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-08T02:46:14.160Z"
+      "lastUpdated": "2026-10-08T12:09:04.242Z"
     }
   ],
   "indexCalculation": {
