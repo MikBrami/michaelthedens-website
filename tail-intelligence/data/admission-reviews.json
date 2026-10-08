@@ -54327,6 +54327,149 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_032455181cb52d5b006ac787ca3b0c87d08da8198bc95ca35a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "AMD-CEO Lisa Su besucht Samsung (Berichte über HBM‑Liefergespräche; Samsung soll Foundry‑Orders anstreben)",
+      "fact": "Meldungen (Seoul Economic Daily, Yonhap, Tom's Hardware u.a.) berichten, dass AMD‑CEO Lisa Su am 2026-10-07 in Seoul Samsung‑Führungskräfte traf, Gespräche über erweiterte HBM‑Lieferungen (HBM4) führten und koreanische Medien angeben, Samsung habe Interesse, die Lieferbeziehung in Foundry‑Aufträge (Logik/Foundry) für AMD umzuwandeln.",
+      "placement": "Geographie: Seoul, Südkorea; Domäne/Lieferkette: HBM (High‑Bandwidth Memory) und Foundry/Logic; Layer: Lieferanten‑Partnerschaften / Vertragsverhandlungen; Horizon: kurzfristig (Oktober 2026, laufende Verhandlungen).",
+      "mechanism": "Kausaler Mechanismus (behauptet/reported): Samsung offeriert priorisierte HBM‑Allocation an strategische Kunden im Austausch für gestützte oder direkte Foundry‑Produkte/Bestellungen von AMD — damit würde Samsung versuchen, Foundry‑Auslastung und langfristige Umsatzpfade zu sichern, während AMD versucht, HBM‑Volumen für seine AI‑Beschaffung zu sichern.",
+      "predictionId": "P-2026-07-30-06",
+      "predictionImpact": "Eventualer Indikator für wahrscheinliche Abschlüsse mehrjähriger Memory‑LTAs durch Samsung; relevant für P-2026-07-30-06 (Schluss der fünf ausstehenden Samsung‑Memory‑LTAs bis 2026-12-31). Der Bericht selbst dokumentiert aber nur Verhandlungen/Interessenbekundungen, keinen Vertragsabschluss, daher kein sofortiger Erfüllungsbeleg.",
+      "falsifier": "Bis 2026-11-21 (45 Tage nach dem berichteten Treffen) werden keine formalen, von Samsung oder AMD bestätigten Foundry‑Bestellungen von AMD (angegebene Volumina oder verbindliche Bestellmengen) oder keine konkreten HBM‑Lieferverträge/Bindungen mit quantifizierten Volumina öffentlich bekanntgegeben. Falls Samsung oder AMD am oder vor 2026-11-21 formell bestätigen, dass Foundry‑Orders vereinbart wurden oder spezifische HBM‑Liefermengen/Verträge abgeschlossen sind, widerlegt das die Nicht‑Abschluss‑Variante.",
+      "nextReview": "2026-11-21",
+      "eventDate": "2026-10-07",
+      "novelty": "Gering bis mäßig — bestätigt laufende Industriegerüchte und frühere Statements über AMD‑HBM‑Beziehungen, aber bringt keine neue, quantifizierte Vertragsinformation.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 14,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/10/07/amds-lisa-su-visits-samsung-pledges-broader-partnership",
+          "label": "Seoul Economic Daily — 'AMD's Lisa Su Visits Samsung, Signals Broader Partnership' (2026-10-07)",
+          "kind": "primary",
+          "supports": "Berichtet Treffen am 2026-10-07; nennt Diskussionen über erweiterte HBM‑Lieferungen (HBM4) und mögliche Foundry‑Kooperation."
+        },
+        {
+          "url": "https://en.yna.co.kr/view/AEN20261007008300320",
+          "label": "Yonhap — 'AMD CEO says S. Korea key partner in AI chips' (2026-10-07)",
+          "kind": "secondary",
+          "supports": "Bestätigt Besuch von AMD‑CEO in Seoul und Berichte über Gespräche mit Samsung zu HBM und mögliche Foundry‑Kooperation."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/amd-seeks-broader-partnership-with-samsung-as-it-looks-to-secure-memory-supply-samsung-reportedly-hopes-to-turn-its-memory-supply-relationship-with-amd-into-foundry-orders-for-logic-chips",
+          "label": "Tom's Hardware — Branchenbericht (2026-10-08)",
+          "kind": "secondary",
+          "supports": "Fasst koreanische Berichte zusammen: AMD sichert HBM, Samsung strebt Foundry‑Orders an; bleibt jedoch berichts‑/gerüchtbasiert."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist ein konsolidierter Medienbericht über ein hochrelevantes Führungstreffen (AMD CEO — Samsung) mit potenziell marktrelevanten Implikationen für HBM‑Zuteilung und Samsung‑Foundry‑Nachfrage. Für die TAIL‑Aufnahmepolitik ist entscheidend: Admission verlangt eine atomare, datierte und quantifizierbare Beobachtung (z. B. bestätigter Vertragsabschluss, spezifizierte Volumina, ausgewiesene Shipments, oder ein beobachteter Index‑Effekt). Die vorliegenden Quellen berichten aber nur über Gespräche, Interessenbekundungen und mögliche Tauschmechanismen — keine verbindlichen Bestellungen, Volumina oder qualifizierten Shipments. Deshalb kann die Meldung das Baseline‑Thesenbild informativ ergänzen (Signal für mögliche Capacity_Lock‑Entwicklung), erfüllt aber nicht die strengeren Anforderungen für 'accepted' (VERIFIED DATA). \n\nAdversarial‑Check: Wir suchten nach primären, von den beteiligten Firmen (AMD oder Samsung) ausgegebenen Pressemitteilungen, SEC/IR‑Ankündigungen oder definitive Vertragsdokumente datiert auf oder vor 2026-10-07, die ein formelles Foundry‑Order‑Abkommen oder einen HBM‑Liefervertrag mit quantifizierten Einheiten bestätigen. Solche primären Belege wurden nicht gefunden; die Berichterstattung bleibt auf mediengestützten Aussagen und anonymeren Industriequellen. Daher: Watchlist. \n\nEmpfohlene nächste Schritte: Beobachten, ob Samsung oder AMD formelle Bestätigungen (Pressemitteilung, Investor‑Release, Vorstandskommentar) mit quantifizierten Volumina, Lieferfristen oder einem verbindlichen Foundry‑Auftrag veröffentlichen bis zum 2026-11-21 (Falsifier‑Datum). Falls solche Primärbelege auftauchen, wäre ein Upgrade auf 'accepted' möglich, sofern die Belege die Anforderungen an Atomicity (Datum, Menge/Monate/GB/Gb, geografische/produktbezogene Klarheit) erfüllen.",
+      "candidateId": "9bf899ba14371a5f1fa5",
+      "candidateKey": "44bdbe51b988b68fb608d57e",
+      "reviewedAt": "2026-10-08T22:09:58.907Z",
+      "priorityScore": 56,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c294bff0c7de62c006ac814a317b887d2b67d2142db31620c"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK Hynix: „We Won't Use HBM Hybrid Bonding Unless It Achieves 90% Yield and 3-Year Lifespan”",
+      "fact": "Behauptung, SK hynix habe erklärt, Hybrid‑Bonding für HBM nur zu verwenden, wenn es ≥90% Fertigungs‑Yield und eine Produktlebensdauer von 3 Jahren erreicht.",
+      "placement": "Scope: SK hynix unternehmensinterne Produktionsentscheidungen für HBM/HBF‑Advanced‑Packaging; Geographie: global (Südkorea‑zentriert) ; Layer: HBM/HBF Produktionsqualifikation; Horizont: near‑term Produkt‑Adoption (2026–2028).",
+      "mechanism": "Die Behauptung beschreibt eine formale Technologieschwelle (qualitative Akzeptanzbedingung) — d.h. SK hynix würde Hybrid‑Bonding nicht in die HBM‑Produktion einführen, solange die Technologie nicht die genannten quantitativen Qualitäts- und Zuverlässigkeitskriterien (Yield ≥90%, Lebensdauer ≥3 Jahre) erfüllt. Das hätte Einfluss auf HBM‑Supply (verzögerte Kapazitätserweiterung oder anhaltende Abhängigkeit von bisherigen Bonding‑Methoden) und damit auf Verfügbarkeit/Preise von HBM/Server‑DRAM.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn SK hynix tatsächlich eine solche formale Ablehnungsbedingung durchsetzt, würde das die Wahrscheinlichkeit erhöhen, dass HBM‑Versorgung knapp bleibt und die in P-2026-07-11-01 angenommene strukturelle Knappheit (bis Ende 2028) verstärkt oder verlängert; die Meldung ist damit relevant für Availability‑Dimensionen des Baseline‑Forecasts.",
+      "falsifier": "Konkrete Primärquelle: SK hynix Pressemitteilung, CEO/EVP‑Zitat oder offizielles Investor‑/IR‑Dokument mit wörtlicher Aussage, dass das Unternehmen Hybrid‑Bonding nur einsetzt, wenn Yield ≥90% und 3‑Jahres‑Reliability nachgewiesen ist; ODER nachprüfbare Produktionsfreigabe (Qualified Shipments) eines HBM‑Produkts von SK hynix mit Hybrid‑Bonding, das veröffentlichten Testdaten zufolge Yield ≥90% und 3‑Jahres‑Reliability‑Qualifikation erfüllt. Überprüfungsfrist: 2027-03-21. Bei Nichterfüllung dieser Nachweise bis 2027-03-21 bleibt die Behauptung unbestätigt.",
+      "nextReview": "2027-03-21",
+      "eventDate": "2026-09-21",
+      "novelty": "Moderat — Die technische Zurückhaltung gegenüber Hybrid‑Bonding ist konsistent mit bekannten Yield‑Risiken, aber die konkreten numerischen Schwellen (90% Yield, 3 Jahre) sind eine neue, spezifische Behauptung, die eine Primärquelle verlangt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 20,
+        "falsifiability": 8,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.skhynix.com/en/tech-note-series-ep2/",
+          "label": "SK hynix Tech Note: 'Hybrid Bonding: Evolving into a Foundational Technology' (Tech Note, SK hynix Newsroom, 2026‑08‑25)",
+          "kind": "primary",
+          "supports": "SK hynix veröffentlicht technische Erläuterungen zu Hybrid Bonding und Advanced Packaging, nennt Herausforderungen und Entwicklungsziele, liefert jedoch kein wörtliches Management‑Zitat, das die exakten numerischen Sperrwerte (90% Yield und 3‑Jahres‑Lebensdauer) als verbindliche Bedingung bestätigt."
+        }
+      ],
+      "reason": "Admissonsprüfung: Die eingereichte Meldung zitiert eine sehr spezifische und entscheidungsrelevante numerische Bedingung (≥90% Yield und 3‑Jahre Lebensdauer) für den Einsatz von Hybrid‑Bonding durch SK hynix. Unsere verifizierende Web‑Suche fand nur sekundäre Blogs/Trade‑Summaries (z. B. unabhängige Tech‑Blogs) die diese Behauptung wiedergeben, sowie offizielle SK hynix Tech‑Notes und Pressebeiträge, die technische Risiken und Forschungs‑/Qualifikationsbemühungen für Hybrid‑Bonding beschreiben, aber kein Primär‑Zitat, keine Pressemitteilung oder kein Investor‑Dokument, das die behauptete formale Schwelle in den exakten Zahlen bestätigt. Nach den TAIL‑Regeln ist das Fehlen einer Primärbestätigung für eine konkrete, operationalisierte Aussage entscheidend: ohne eine verlässliche Primärquelle (Management‑Zitat, offizielle PR/IR‑Aussage oder qualifizierte Shipping/Qualification‑Messung), kann die Behauptung nicht als VERIFIED DATA angenommen werden. \n\nGegenevidenz/Context: SK hynix‑Materialien (Tech Note, Newsroom, IR) zeigen, dass das Unternehmen aktiv an Hybrid‑Bonding arbeitet und die Technologie‑Risiken offen benennt; sie fordern hohe Yield‑ und Zuverlässigkeitsstandards, nennen aber keine fixen numerischen Akzeptanzschwellen in einer öffentlich verfügbaren Primärquelle. Daher ist die Kandidatenaussage derzeit nicht verifizierbar. \n\nEntscheidung: Watchlist — der Claim bleibt relevant für Baseline‑Prognosen (Verfügbarkeit HBM/Server‑DRAM) und ist potentiell hoch‑impactvoll, verlangt aber eine Primärbestätigung. Wir behalten die Meldung zur Überprüfung (NextReview: 2027-03-21).",
+      "candidateId": "ed3d5904d6d573cd53dd",
+      "candidateKey": "a4087ecb19ed214830381510",
+      "reviewedAt": "2026-10-08T22:10:21.406Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0565147997b2928e006ac814b7169c87d2a45d5a126d7cf258"
     }
   ]
 }
