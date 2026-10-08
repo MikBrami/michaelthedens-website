@@ -54033,6 +54033,147 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_078ca8ac915b8026006ac6c1e38da887d19bbaeadd1d10c22c"
+    },
+    {
+      "decision": "watchlist",
+      "title": "AMD lobt SK hynix HBM4; SK‑hynix ADR fällt ~2.8% (Medienbericht)",
+      "fact": "Mehrere Finanz‑Nachrichten berichten, dass AMD‑CEO Lisa Su SK hynix’ HBM4‑Leistung gelobt und über mehrjährige Lieferzusammenarbeit gesprochen habe; gleichzeitig sanken SK‑hynix‑ADR‑Kurse um etwa 2.8 % in den gemeldeten Handelsstunden.",
+      "placement": "Geographie: global (Korea / US‑ADR‑Handel); Domäne: halbleiter / HBM (High‑Bandwidth‑Memory); Layer: Supply / Produkt‑Ramp; Horizont: kurzfristig (Tage–Wochen nach Berichterstattung).",
+      "mechanism": "Marktreaktion wurde laut den Berichten durch positive Technologiebewertung (HBM4‑Performance) kombiniert mit Ungewissheit über konkrete Abnahmevolumina/Preise; die Kursreaktion reflektiert damit kurzfristige Neuinterpretation der Liefer‑/Nachfrage‑Erwartungen für HBM4 und mögliche Allokations‑Unsicherheit in HBM vs. konventionellem DRAM.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Dieses Signal würde (wenn verifiziert) den bestehenden TAIL‑Forecast P-2026-07-13-04 (‚HBM3E bleibt Q3 2026 länger dominant; breiter SK‑hynix‑HBM4‑Ramp verschiebt sich in H2‘) potenziell gegenläufig bestätigen oder präzisieren: ein Lob ohne verbindliche Abnahme reduziert die Wahrscheinlichkeit eines sofortigen breiten HBM4‑Ramp‑Impacts und stützt die Annahme einer späteren, verschobenen SK‑hynix‑HBM4‑Breitrampe.",
+      "falsifier": "Wenn SK‑hynix bis 2026-11-30 einen offiziellen Bericht/PR oder Roh‑Shipment‑Datensatz veröffentlicht, der dokumentiert, dass HBM4‑skalierte, qualifizierte Shipments in signifikantem Volumen (≥100k HBM‑Packages oder ein klar ausgewiesener, quantifizierter HBM4‑Umsatzbetrag) bereits laufen, dann würde dies die Interpretation umkehren. Review‑Datum für Falsifier: 2026-12-01.",
+      "nextReview": "2026-12-01",
+      "eventDate": "2026-10-08",
+      "novelty": "geringfügig (bestätigt laufende Berichterstattung über HBM4‑Diskusssionen; kein neuer technologischer Fakt)",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tradingview.com/news/tradingview%3A9b56c417d177f%3A0-key-facts-amd-praises-sk-hynix-000660-hbm4-adr-falls-2-8/",
+          "label": "TradingView: Key facts: AMD Praises SK hynix HBM4; ADR Falls 2.8%",
+          "kind": "secondary",
+          "supports": "Bericht, dass AMD SK hynix HBM4 lobte und Kursrückgang der ADR ~2.8% berichtet wird."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-drop-2-171942358.html",
+          "label": "Yahoo Finance: SK Hynix Stocks Drop 2.8% Despite AMD's Multi-Generation HBM Plan",
+          "kind": "secondary",
+          "supports": "Weitere Marktberichterstattung über Lisa Su‑Kommentare und Kursbewegung; jedoch kein AMD‑Primärzitat oder verbindliche Mengen/Preise."
+        }
+      ],
+      "reason": "Die eingereichte Candidate‑Meldung ist ein kurzer Trading/News‑Schnipsel, der mehrere sekundäre Finanzmedienberichte zusammenfasst. Ich konnte die Meldung in mehreren Sekundärquellen (TradingView, Yahoo Finance u.a.) verifizieren, fand aber kein verlinkbares Primärdokument (z. B. AMD‑Pressemitteilung, vollständiges Transkript einer öffentlichen Ansprache oder ein SK‑hynix‑Shipment‑Report), das die behauptete, datums‑ und mengenbezogene, überprüfbare Beobachtung (z. B. konkrete HBM4‑Shipments, Volumina, Preise oder ein direktes AMD‑Zitat mit Zitatquelle) liefert. Nach den TAIL‑Regeln erfordert eine Aufnahme (Akzeptanz) eine atomare, datierte, mit Einheiten belegbare Primär‑Beobachtung plus eine belastbare Falsifizierbarkeit und den erfolgreichen Adversarial‑Check; beides fehlt hier. Gegenbelege/kontextreiche Faktoren in der TAIL‑Baseline (z. B. mehrere Q2/Q3‑Berichte zu HBM‑Auslastung, Firmenankündigungen über 'sold out' oder widersprüchliche Yield‑Berichte) erhöhen die Notwendigkeit für Primärverifikation. Ergebnis: Watchlist — weitere Primärquellen (AMD‑Originalzitat, Meeting‑Transcript, SK‑hynix‑Shipment‑Report oder offizielle Kurs‑Erklärung) erforderlich, Review geplant 2026-12-01.",
+      "candidateId": "64ae3b2d589a03de22ab",
+      "candidateKey": "251b1aa3e07e5b3884e00305",
+      "reviewedAt": "2026-10-08T02:45:46.511Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_06c14244ff2d80ba006ac703bfcae087d28751958c8c28747a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung verringert Q3‑2026‑HBM‑Marktanteilslücke zu SK hynix auf 17 Prozentpunkte (Seoul Economic Daily, 2026‑09‑21) — Watchlist",
+      "fact": "Am 2026-09-21 berichtet die Seoul Economic Daily, dass Samsungs HBM‑Anteil auf etwa 33 % gestiegen sei und SK hynix bei rund 50 % liege, womit sich die Lücke von zuvor ~37 Prozentpunkten auf etwa 17 Prozentpunkte verengte.",
+      "placement": "Globaler HBM‑Markt auf Basis Quartals‑Marktanteile (Q3/2026), berichteter Scope: HBM-Bit‑/Umsatzanteile (Quelle: Seoul Economic Daily, Counterpoint/Analystenzitate).",
+      "mechanism": "Angebotsseitig wird Samsungs HBM4‑Yield‑Verbesserung (aus Berichten: Steigerung auf ~80 %) und eine schnellere Skalierung der HBM4‑Produktion als Ursache für steigenden Marktanteil angegeben; das verschiebt relative Lieferanteile zwischen Anbietern, ohne automatisch die absolute HBM‑Knappheit zu beenden.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert die Basissicht zur strukturellen Knappheit von HBM/Server‑DRAM bis Ende 2028: ein schneller Anstieg von Samsungs HBM‑Share reduziert zwar die Konzentrations‑Risiken, eliminiert aber nicht notwendigerweise die Verknappung — somit signalisiert diese Beobachtung eine mögliche Abschwächung des Engpass‑Risikos, falsifiziert die Vorhersage P-2026-07-11-01 aber nicht derzeit.",
+      "falsifier": "Bis 2027-06-30 muss es entweder (a) bestätigte, veröffentlichte Quartals‑Marktanteils- und Shipment‑Daten (Counterpoint/KB/IDC/Unternehmens‑Earnings) geben, die Samsungs HBM‑Anteil dauerhaft auf ≥41 % anheben UND gleichzeitig qualifizierte HBM‑Lead‑Times/Fill‑Rates in einem repräsentativen Server/HPC‑Kontraktkorb auf <12 Wochen normalisieren; oder (b) SK hynix behält/erweitert seinen HBM‑Anteil so, dass die Lücke wieder ≥30 Prozentpunkte beträgt (dann ist die beobachtete Verengung entkräftet). Review‑Datum für die Falsifikation: 2027-06-30.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-21",
+      "novelty": "Moderate — aktuellere Quantifizierung einer Marktanteilsverschiebung, aber Teil einer längeren Folge von HBM‑Share‑Berichten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 15,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.ai/finance/2026/09/21/samsung-narrows-hbm-gap-with-sk-hynix-to-17-points",
+          "label": "Seoul Economic Daily — 'Samsung Narrows HBM Gap With SK hynix to 17 Points' (2026-09-21)",
+          "kind": "primary",
+          "supports": "Bericht mit Datum 2026-09-21, nennt Samsung HBM‑Anteil ~33% und SK hynix ~50% und verweist auf Yield‑/Shipment‑Dynamik; dies ist die berichtete Primärquelle für die 17 Prozentpunkte Lücke."
+        },
+        {
+          "url": "https://rdata.kbsec.com/pdf_data/20250925084734760E.pdf",
+          "label": "KB Securities (frühere Marktanteils‑Daten / Vergleichsreferenz)",
+          "kind": "secondary",
+          "supports": "Ältere/komparative Marktanteilszahlen (Beispielreferenz), zeigen divergierende historischen Marktanteilsverteilungen — dient als gegengewichtige Referenz bei der adversarial check."
+        }
+      ],
+      "reason": "Primärquelle (Seoul Economic Daily, 2026-09-21) dokumentiert eine datierte, quantifizierbare Veränderung der HBM‑Marktanteile (Lücke von ~17 Punkten). Die Meldung ist relevant für TAILs Basisszenario über strukturelle HBM/Server‑DRAM‑Knappheit (P-2026-07-11-01) weil Marktanteilsverschiebungen die Verfügbarkeits‑ und Allokationsdynamiken beeinflussen. Allerdings fehlen im Candidate‑Text saubere, unabhängige, primärstatistische Bestätigungen (z. B. Counterpoint/IDC/KB/Unternehmens‑Shipments mit identischem Messrahmen) und ein klarer, messbarer Einfluss auf Lead‑Times oder Fill‑Rates. Gegenevidenz/Frühere Analysen zeigen unterschiedliche Basisanteile und legen nahe, dass die berichtete Verengung teilweise auf kurzfristige Yield‑Verbesserungen oder unterschiedliche Messmethoden zurückgeführt werden kann. Damit erfüllt die Einreichung nicht die strengen Annahmen für eine sofortige Aufnahme als VERIFIED DATA / accepted (fehlende vollständige primäre Verifikation der Metrik im selben Messrahmen, keine direktemessbare Indexwirkung nach TAIL‑Definition). Empfehlung: Watchlist — überwachen bis 2027-06-30 auf unabhängige Shipment/lead‑time/Fill‑Rate‑Daten, oder widersprechende offizielle Quartalszahlen, die die berichtete Marktanteilsveränderung bestätigen oder widerlegen.",
+      "candidateId": "6ca560425450cadded82",
+      "candidateKey": "73dc138edf77a8c7e1b7bbad",
+      "reviewedAt": "2026-10-08T02:46:12.248Z",
+      "priorityScore": 75,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b4250ff9b804341006ac703daad5087d29aa883f86297ed0b"
     }
   ]
 }
