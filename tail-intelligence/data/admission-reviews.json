@@ -54470,6 +54470,149 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0565147997b2928e006ac814b7169c87d2a45d5a126d7cf258"
+    },
+    {
+      "decision": "watchlist",
+      "title": "[News] NVIDIA’s NVHBM verändert Base‑Die‑Strategien: Micron, Samsung beauftragen TSMC",
+      "fact": "TrendForce berichtet am 2026-10-09, dass NVIDIA‑spezifische NVHBM‑Designs Hersteller dazu veranlassen, Base‑Dies (logic/base die) für HBM4/NVHBM bei externen Foundries zu fertigen; namentlich nennt der Artikel, dass Micron und Samsung TSMC für bestimmte Base‑Die‑Volumina/Customer‑customizations einsetzen bzw. prüfen.",
+      "placement": "Global — HBM4 / NVHBM Supply Chain; Layer: Base‑die (logic die) für HBM Packages; Geographie: global (TSMC, Samsung Foundry, Micron → Hauptfabriken in Taiwan / Südkorea / USA‑gekoppelte Supply‑Chains).",
+      "mechanism": "NVHBM verschiebt den Memory‑Controller in den HBM‑Base‑Die (logic die). Das erhöht Nachfrage nach fortgeschrittenen-node‑Foundry‑Kapazität (TSMC/4/3/5/12nm‑Klasse) für Base‑Dies, wodurch HBM‑Supply nun zusätzlich von Foundry‑Waferkapazität und Foundry‑Priorisierung abhängig wird. Folge: Priorisierung/Allokation auf Foundry‑Knoten kann HBM‑Verfügbarkeit und Lead‑Times beeinflussen (capacity_lock / negative_supply pressure für HBM‑stapeltechnologien).",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Erhöht Risiko, dass Advanced Packaging/Foundry‑Base‑Die‑Allokation H2‑2026 bis H2‑2027 als zentraler AI‑Lieferkettenengpass (Advanced Packaging / base‑die Foundry constraint) bestehen bleibt oder sich verschärft; konkret stärkt dies den Thesis‑Pfad, dass Advanced Packaging/Foundry‑Limits Engpässe bis mindestens H2 2027 stützen.",
+      "falsifier": "Bis 2027-06-30: nachweisbar keine materialisierte zusätzliche Abhängigkeit von Foundry‑Base‑Die‑Kapazität für HBM (z. B. veröffentlichtes, qualifiziertes HBM4‑Shipments/Vertragsschemen zeigen >80 % der relevanten Base‑Dies weiterhin aus internen Foundry/Memory‑Fabs von Samsung/Micron, oder Lead Times / Fill Rates für qualifizierte HBM‑Produkte normalisieren sich deutlich und bleiben stabil). Review‑Datum: 2027-07-15.",
+      "nextReview": "2027-07-15",
+      "eventDate": "2026-10-09",
+      "novelty": "Die Meldung dokumentiert eine breite, aktuelle Verlagerung/Kooperation (memory makers → foundry) im Kontext NVHBM; bestätigt und konkretisiert bereits bekannte Trends (TSMC als Base‑Die‑Fertiger) mit neuen, konkreten Unternehmensnennungen.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 9,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 13,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 55,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries/",
+          "label": "TrendForce — 'NVIDIA’s NVHBM Reshapes Base Die Strategies' (published 2026-10-09)",
+          "kind": "primary",
+          "supports": "Direkte Aussage (2026-10-09) that Micron and Samsung are turning to/exploiting TSMC for certain HBM base‑dies in the NVHBM/Custom HBM context; documents NVHBM moving controller into base die and foundry dependence."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20261002PD216/micron-hbm-dram-bandwidth-design.html",
+          "label": "DigiTimes / Digitimes report (industry corroboration)",
+          "kind": "secondary",
+          "supports": "Independent industry reporting that Micron is using externally manufactured base dies for NVHBM and that memory vendors are coordinating with foundries."
+        },
+        {
+          "url": "https://www.anandtech.com/show/21395/tsmc-readies-hbm4-base-dies-at-12nm-and-5nm",
+          "label": "AnandTech (foundry role in base dies)",
+          "kind": "secondary",
+          "supports": "Technical/foundry‑level reporting that TSMC readies base dies for HBM4 on specific nodes, corroborating the mechanism (foundry manufacturing of base dies)."
+        }
+      ],
+      "reason": "TrendForce (2026-10-09) liefert eine zeitnah datierte, überprüfbare Meldung, die eine klare, actionable Markterklärung macht: NVHBM‑Designentscheidungen verschieben Base‑Die‑Fertigung teils zu TSMC, was die HBM‑Wertschöpfung stärker an Foundry‑Kapazität bindet. Das ist relevant für die existierende Vorhersage P-2026-07-13-03 (Advanced Packaging bleibt Engpass bis mind. H2 2027) weil es den Engpass‑Mechanismus (Foundry/Packaging Allokation) konkretisiert. Quellenlage: primärer TrendForce‑Artikel plus mehrere unabhängige Branchenberichte bestätigen die Kernaussage. Es fehlt noch ein direktes quantifiziertes, beobachtbares Maß (z. B. konkrete qualifizierte Shipments von Base‑Dies aus TSMC mit Stückzahlen), deshalb: EVIDENCE STATUS = MODEL ESTIMATE, indexImpact = false. Adversarial check: keine Wiedergabe historischer oder bereits‑bewiesener Basisaussage, liefert neue konkrete Unternehmensnennung und Datum; Falsifier und Review‑Datum gesetzt.",
+      "candidateId": "60a73cbb1d679c805a18",
+      "candidateKey": "1cd620481f055caf973e7f78",
+      "reviewedAt": "2026-10-09T03:00:50.692Z",
+      "priorityScore": 83,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05721415b19bedec006ac858cd513487d1aa75db7089c88856"
+    },
+    {
+      "decision": "watchlist",
+      "title": "QQQ steigt >1%: TradingKey-Marktbericht (Headline)",
+      "fact": "TradingKey veröffentlichte einen Marktbericht mit der Headline, dass der Nasdaq‑ETF QQQ mehr als 1% stieg, während ASML und TSMC vor Ergebnisberichten standen und Goldman Sachs eine weitere starke Ergebnis­saison für US‑Aktien erwartete.",
+      "placement": "Globales Finanzmarkt‑Headline‑Signal; keine eng begrenzte Geographie, kein spezifischer Produktmarkt, kein Layer (Macro/Equity‑Market Headline).",
+      "mechanism": "Nicht beschrieben. Die Meldung ist ein Markt‑Headline/Wall‑of‑news‑Kommentar, der Kursbewegung (QQQ +1% intraday) als beobachtete Marktreaktion berichtet, nennt aber keine konkrete, datierten Unternehmensereignisse (z. B. bestätigte Earnings‑Releases, verbindliche LTAs, Shipments) mit direkten Lieferketten‑/Kapazitätsauswirkungen.",
+      "predictionId": "",
+      "predictionImpact": "keine — Kandidat verknüpft kein existierendes Vorhersage‑ID und liefert keine quantifizierbare Änderung an einer der in der Inbox gelisteten Prognosen.",
+      "falsifier": "Kein testbarer Falsifier angegeben. Zur Aufnahme als akzeptierte TAIL‑Evidence wäre ein falsifizierbares Testkriterium nötig (z. B. 'Wenn QQQ innerhalb 5 Handelstagen nicht >1% bleibt oder Goldman Sachs kein aktualisiertes Research herausgibt bis YYYY‑MM‑DD').",
+      "nextReview": "2026-10-23",
+      "eventDate": "2026-06-30",
+      "novelty": "Niedrig — reine Marktheadsline ohne neue, für die TAIL‑Vorhersagen relevante, atomare Messgröße.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 2,
+        "thesisRelevance": 6,
+        "forecastImpact": 5,
+        "falsifiability": 2,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 15,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262001551-us-stock-financial-report-asml-tsmc-sp500-nasdaq-qqq-tradingkey",
+          "label": "TradingKey: QQQ Rises More Than 1% as ASML and TSMC Prepare to Report",
+          "kind": "primary",
+          "supports": "Artikel-Headline und ein kurzer Marktkommentar, veröffentlicht auf TradingKey; berichtet intraday Bewegungen (QQQ +1%) und zitiert Anlagebankkommentare zu Earnings‑Ausblick (Goldman Sachs)."
+        },
+        {
+          "url": "https://www.tradingkey.com/de/analysis/stocks/us-stocks/262001557-us-stock-financial-report-asml-tsmc-sp500-nasdaq-qqq-tradingkey",
+          "label": "TradingKey (deutsche Version) — Veröffentlichungsdatum in Metadaten: 2026-06-30",
+          "kind": "secondary",
+          "supports": "Metadaten der Handelsmeldung zeigen Datum 2026‑06‑30, was in Konflikt steht mit der Inbox‑Angabe 2026‑09‑19."
+        }
+      ],
+      "reason": "Die Kandidaten‑Inbox meldet eine TradingKey‑Headline mit published_at 2026‑09‑19, die primäre Quelle (TradingKey) zeigt jedoch Metadaten/Publikationszeitpunkt 2026‑06‑30. Das Item ist eine allgemeine Markt‑Headline (QQQ intraday Bewegung) ohne die für TAIL‑Aufnahme erforderlichen Eigenschaften: kein atomarer, datierter Messwert mit Einheiten in einer relevanten Produkt‑/Markt‑dimension (z. B. verifizierte Shipments, Vertragsabschlüsse, Lead‑Time‑Messungen), keine eingeordnete Platzierung (Geographie/Layer/Horizont), keine kausale Mechanismus‑Belegung für eine der gelisteten Vorhersagen und kein Verweis auf eine existierende Prediction‑ID. Außerdem fehlt ein klar prüfbarer Falsifier. Opposing evidence: Publikationsdatum‑Inkonsistenz zwischen Inbox‑Metadatum (2026‑09‑19) und primärer Quelle (2026‑06‑30) reduziert die Vertrauenswürdigkeit des Kandidaten als zeit‑sensitives TAIL‑Signal. Aufgrund dieser Mängel erreicht der Kandidat nicht die Anforderungen für VERIFIED DATA oder eine Annahme; er verbleibt auf WATCHLIST für mögliche später relevante Kontexte, sollte er mit zusätzlicher, direkt relevanter, datierter Primär‑Beobachtung (Shipments, LTA, Lead‑Time, konkrete Earnings‑Belege mit Datum) verknüpft werden.",
+      "candidateId": "ad4d7b8f1e836d935570",
+      "candidateKey": "bf8516dc7bc46ac2794d382f",
+      "reviewedAt": "2026-10-09T03:01:08.345Z",
+      "priorityScore": 28,
+      "gateReasons": [
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02193a5017ee130e006ac858e2eedc87d182e5c36eb3c25c4d"
     }
   ]
 }

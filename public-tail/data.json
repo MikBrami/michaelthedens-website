@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T22:10:23.009Z",
+  "generatedAt": "2026-10-09T03:01:10.084Z",
   "platform": {
     "dataAsOf": "2026-10-09",
     "analysisAsOf": "2026-10-09",
@@ -8,18 +8,18 @@
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-10-08T22:10:21.431Z",
-      "pending": 180,
-      "reviewed": 148,
+      "checkedAt": "2026-10-09T03:01:08.377Z",
+      "pending": 183,
+      "reviewed": 149,
       "accepted": 18,
-      "rawCandidates": 734,
+      "rawCandidates": 737,
       "triage": {
         "archivedOpinions": 20,
         "groupedDuplicates": 35
       },
       "lastRun": {
-        "startedAt": "2026-10-08T22:09:37.232Z",
-        "completedAt": "2026-10-08T22:10:21.432Z",
+        "startedAt": "2026-10-09T03:00:27.775Z",
+        "completedAt": "2026-10-09T03:01:08.379Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 44,
+        "durationSeconds": 40,
         "budgetExhausted": false
       }
     },
@@ -73,15 +73,27 @@
     "riskPressure": 82,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-09; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (180 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-09; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (183 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
+    {
+      "date": "2026-10-09",
+      "title": "[News] NVIDIA’s NVHBM Reshapes Base Die Strategies: How Micron, Samsung Are Bringing TSMC Into the Fold",
+      "summary": "Aktuelle Meldung von TrendForce: [News] NVIDIA’s NVHBM Reshapes Base Die Strategies: How Micron, Samsung Are Bringing TSMC Into the Fold",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 100,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWU1LOE91MnBaN2lTbEpwNEhmdkFZY2pHSDMtSjlHdTVOLVQ0X21VS2VQc2lXMWtMbFlfZDhZMGt3alllcnlFNExCZUpDZmlZUVdKNnM2cXVUNFZSSGQzckhwaVhCZEJXWm5pRE5ueW9wd05XSG5SOGZJamg2a1BfcFd3eG1kN3hsNjZZLWVpenRINFAxbjU4MEdHRWFJTDBtcGJvZ0o2aVJGdlc4dFV2MWFHMjJEYm0yTUZ2V01zTUNITDJtNm5xcWI2TjVFbzJNVHgtOVF5dlh6SGc0ejBMQUpUZTE?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-10-08",
       "title": "AMD CEO Visits Samsung for HBM, Samsung Wants Foundry Orders in Return",
       "summary": "Aktuelle Meldung von TechPowerUp: AMD CEO Visits Samsung for HBM, Samsung Wants Foundry Orders in Return",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "TechPowerUp",
@@ -93,23 +105,11 @@
       "title": "Samsung’s $80B Quarterly Profit Tops Nvidia, AMD’s Lisa Su Shops In Seoul",
       "summary": "Aktuelle Meldung von TradingView: Samsung’s $80B Quarterly Profit Tops Nvidia, AMD’s Lisa Su Shops In Seoul",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "TradingView",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVDlacVFRRlJpVl9RdEpUdWxQbmV3TjFmcnVYNWZ3TVY1LWdhUGJRNjBreHZVSWtfSUZhcVhnVmxMSWhlSGNRUWhpR3owVUNIVVdMek1EM0tESzRONzFLcnhHNVdFZTRPMEZNUVNsRTN6M1dUSWZrNFl4b0V6dmF3R3hLN3VhY3lxM2RQRXljV0M0U2pzc0RYdlRwcHhSSFQ4dnN4aHVqRDcxN2gtRXBnQ1pVbUNKZ3h0SkZuNTFNUDVUVWR3OXNNellB?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-08",
-      "title": "AMD, Samsung Discuss Broader Partnership as HBM4 Demand Rises",
-      "summary": "Aktuelle Meldung von TOKENPOST: AMD, Samsung Discuss Broader Partnership as HBM4 Demand Rises",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "TOKENPOST",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5wV1l3WVRjQnZHTXpnZ0hXQ0Y0dU5WdVl0WDRLbEUxdlZWQ1N6ejVzNDZrVFNFcjVhY0FlWWNRVkdJOEwyY2stcFk4NDhRM0pDOE5oQnNubDA?oc=5",
       "layer": "news"
     }
   ],
@@ -136,15 +136,27 @@
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "180 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "183 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
+    {
+      "date": "2026-10-09",
+      "title": "[News] NVIDIA’s NVHBM Reshapes Base Die Strategies: How Micron, Samsung Are Bringing TSMC Into the Fold",
+      "summary": "Aktuelle Meldung von TrendForce: [News] NVIDIA’s NVHBM Reshapes Base Die Strategies: How Micron, Samsung Are Bringing TSMC Into the Fold",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 100,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWU1LOE91MnBaN2lTbEpwNEhmdkFZY2pHSDMtSjlHdTVOLVQ0X21VS2VQc2lXMWtMbFlfZDhZMGt3alllcnlFNExCZUpDZmlZUVdKNnM2cXVUNFZSSGQzckhwaVhCZEJXWm5pRE5ueW9wd05XSG5SOGZJamg2a1BfcFd3eG1kN3hsNjZZLWVpenRINFAxbjU4MEdHRWFJTDBtcGJvZ0o2aVJGdlc4dFV2MWFHMjJEYm0yTUZ2V01zTUNITDJtNm5xcWI2TjVFbzJNVHgtOVF5dlh6SGc0ejBMQUpUZTE?oc=5",
+      "layer": "news"
+    },
     {
       "date": "2026-10-08",
       "title": "AMD CEO Visits Samsung for HBM, Samsung Wants Foundry Orders in Return",
       "summary": "Aktuelle Meldung von TechPowerUp: AMD CEO Visits Samsung for HBM, Samsung Wants Foundry Orders in Return",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "TechPowerUp",
@@ -156,30 +168,18 @@
       "title": "Samsung’s $80B Quarterly Profit Tops Nvidia, AMD’s Lisa Su Shops In Seoul",
       "summary": "Aktuelle Meldung von TradingView: Samsung’s $80B Quarterly Profit Tops Nvidia, AMD’s Lisa Su Shops In Seoul",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "TradingView",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVDlacVFRRlJpVl9RdEpUdWxQbmV3TjFmcnVYNWZ3TVY1LWdhUGJRNjBreHZVSWtfSUZhcVhnVmxMSWhlSGNRUWhpR3owVUNIVVdMek1EM0tESzRONzFLcnhHNVdFZTRPMEZNUVNsRTN6M1dUSWZrNFl4b0V6dmF3R3hLN3VhY3lxM2RQRXljV0M0U2pzc0RYdlRwcHhSSFQ4dnN4aHVqRDcxN2gtRXBnQ1pVbUNKZ3h0SkZuNTFNUDVUVWR3OXNNellB?oc=5",
       "layer": "news"
-    },
-    {
-      "date": "2026-10-08",
-      "title": "AMD, Samsung Discuss Broader Partnership as HBM4 Demand Rises",
-      "summary": "Aktuelle Meldung von TOKENPOST: AMD, Samsung Discuss Broader Partnership as HBM4 Demand Rises",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "TOKENPOST",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5wV1l3WVRjQnZHTXpnZ0hXQ0Y0dU5WdVl0WDRLbEUxdlZWQ1N6ejVzNDZrVFNFcjVhY0FlWWNRVkdJOEwyY2stcFk4NDhRM0pDOE5oQnNubDA?oc=5",
-      "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-10-08T22:10:23.229Z",
+    "generatedAt": "2026-10-09T03:01:10.351Z",
     "count": 3,
-    "candidateCount": 442,
+    "candidateCount": 413,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -393,11 +393,23 @@
   },
   "originalSignals": [
     {
+      "date": "2026-10-09",
+      "title": "[News] NVIDIA’s NVHBM Reshapes Base Die Strategies: How Micron, Samsung Are Bringing TSMC Into the Fold",
+      "summary": "Aktuelle Meldung von TrendForce: [News] NVIDIA’s NVHBM Reshapes Base Die Strategies: How Micron, Samsung Are Bringing TSMC Into the Fold",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 100,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWU1LOE91MnBaN2lTbEpwNEhmdkFZY2pHSDMtSjlHdTVOLVQ0X21VS2VQc2lXMWtMbFlfZDhZMGt3alllcnlFNExCZUpDZmlZUVdKNnM2cXVUNFZSSGQzckhwaVhCZEJXWm5pRE5ueW9wd05XSG5SOGZJamg2a1BfcFd3eG1kN3hsNjZZLWVpenRINFAxbjU4MEdHRWFJTDBtcGJvZ0o2aVJGdlc4dFV2MWFHMjJEYm0yTUZ2V01zTUNITDJtNm5xcWI2TjVFbzJNVHgtOVF5dlh6SGc0ejBMQUpUZTE?oc=5",
+      "layer": "news"
+    },
+    {
       "date": "2026-10-08",
       "title": "AMD CEO Visits Samsung for HBM, Samsung Wants Foundry Orders in Return",
       "summary": "Aktuelle Meldung von TechPowerUp: AMD CEO Visits Samsung for HBM, Samsung Wants Foundry Orders in Return",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 93,
+      "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "TechPowerUp",
@@ -409,23 +421,11 @@
       "title": "Samsung’s $80B Quarterly Profit Tops Nvidia, AMD’s Lisa Su Shops In Seoul",
       "summary": "Aktuelle Meldung von TradingView: Samsung’s $80B Quarterly Profit Tops Nvidia, AMD’s Lisa Su Shops In Seoul",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 86,
       "relevanceScore": 100,
       "sourceQuality": 6,
       "source": "TradingView",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVDlacVFRRlJpVl9RdEpUdWxQbmV3TjFmcnVYNWZ3TVY1LWdhUGJRNjBreHZVSWtfSUZhcVhnVmxMSWhlSGNRUWhpR3owVUNIVVdMek1EM0tESzRONzFLcnhHNVdFZTRPMEZNUVNsRTN6M1dUSWZrNFl4b0V6dmF3R3hLN3VhY3lxM2RQRXljV0M0U2pzc0RYdlRwcHhSSFQ4dnN4aHVqRDcxN2gtRXBnQ1pVbUNKZ3h0SkZuNTFNUDVUVWR3OXNNellB?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-08",
-      "title": "AMD, Samsung Discuss Broader Partnership as HBM4 Demand Rises",
-      "summary": "Aktuelle Meldung von TOKENPOST: AMD, Samsung Discuss Broader Partnership as HBM4 Demand Rises",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 86,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "TOKENPOST",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5wV1l3WVRjQnZHTXpnZ0hXQ0Y0dU5WdVl0WDRLbEUxdlZWQ1N6ejVzNDZrVFNFcjVhY0FlWWNRVkdJOEwyY2stcFk4NDhRM0pDOE5oQnNubDA?oc=5",
       "layer": "news"
     }
   ]

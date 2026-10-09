@@ -7,20 +7,20 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-08T22:10:21.431Z",
-    "inboxUpdatedAt": "2026-10-08T22:03:37.810Z",
+    "checkedAt": "2026-10-09T03:01:08.377Z",
+    "inboxUpdatedAt": "2026-10-09T02:56:12.955Z",
     "status": "pending",
-    "candidates": 320,
-    "reviewed": 148,
+    "candidates": 323,
+    "reviewed": 149,
     "accepted": 18,
-    "watchlist": 127,
+    "watchlist": 128,
     "rejected": 3,
-    "pending": 180,
+    "pending": 183,
     "oldestPendingAt": "2026-09-21T03:41:45.000Z",
-    "lastCompletedReviewAt": "2026-10-08T22:10:21.406Z",
+    "lastCompletedReviewAt": "2026-10-09T03:01:08.345Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 734,
+    "rawCandidates": 737,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1221,
     "triage": {
@@ -28,8 +28,8 @@
       "groupedDuplicates": 35
     },
     "lastRun": {
-      "startedAt": "2026-10-08T22:09:37.232Z",
-      "completedAt": "2026-10-08T22:10:21.432Z",
+      "startedAt": "2026-10-09T03:00:27.775Z",
+      "completedAt": "2026-10-09T03:01:08.379Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 44,
+      "durationSeconds": 40,
       "budgetExhausted": false
     }
   },
@@ -100,13 +100,13 @@
     }
   ],
   "sourceDataAsOf": "2026-10-06",
-  "knowledgeBaseSyncedAt": "2026-10-08T22:10:21.579Z",
+  "knowledgeBaseSyncedAt": "2026-10-09T03:01:08.552Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
-  "evidenceAgeDays": 2,
-  "lastSuccessfulUpdate": "2026-10-08T22:10:23.006Z",
-  "lastForecastRun": "2026-10-08T22:10:23.006Z",
-  "newlyProcessedArticles": 323,
+  "evidenceAgeDays": 3,
+  "lastSuccessfulUpdate": "2026-10-09T03:01:10.081Z",
+  "lastForecastRun": "2026-10-09T03:01:10.081Z",
+  "newlyProcessedArticles": 83,
   "totalArticles": 201,
   "articleCount": 201,
   "processStatus": "warning",
@@ -162,16 +162,16 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 180 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 183 Kandidaten ausstehend.",
     "14 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-10-08T22:03:37.810Z",
-    "newItems": 323,
-    "totalItems": 13668,
+    "updatedAt": "2026-10-09T02:56:12.955Z",
+    "newItems": 83,
+    "totalItems": 13751,
     "duplicateItems": 300,
-    "relevantItems": 4347,
+    "relevantItems": 4368,
     "sourceErrors": []
   },
   "pipeline": {
@@ -181,19 +181,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "148 geprüft · 180 offen · 18 aufgenommen"
+        "detail": "149 geprüft · 183 offen · 18 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "201 Artikel · Sync 2026-10-08 · jüngstes bestätigtes Signal 2026-10-06"
+        "detail": "201 Artikel · Sync 2026-10-09 · jüngstes bestätigtes Signal 2026-10-06"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "13668 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "13751 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -993,7 +993,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-10-08T22:10:23.000Z"
+      "lastUpdated": "2026-10-09T03:01:10.076Z"
     },
     {
       "id": "hbm",
@@ -1205,7 +1205,7 @@
         "S-AUTO-965c715ae023d058ae2744d3",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-10-08T22:10:23.000Z"
+      "lastUpdated": "2026-10-09T03:01:10.076Z"
     },
     {
       "id": "nand",
@@ -1291,7 +1291,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-08T22:10:23.000Z"
+      "lastUpdated": "2026-10-09T03:01:10.076Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1372,7 +1372,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-08T22:10:23.001Z"
+      "lastUpdated": "2026-10-09T03:01:10.076Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1704,7 +1704,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-08T22:10:23.001Z"
+      "lastUpdated": "2026-10-09T03:01:10.076Z"
     }
   ],
   "indexCalculation": {
