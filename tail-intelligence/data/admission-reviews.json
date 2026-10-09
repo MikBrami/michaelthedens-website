@@ -54613,6 +54613,149 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_02193a5017ee130e006ac858e2eedc87d182e5c36eb3c25c4d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK Hynix Charts Gwangju Expansion as HBM4 Pricing Clouds Near-Term Outlook",
+      "fact": "Ad-hoc-News berichtet am 2026-10-09, SK hynix skizziert Erweiterungspläne in Gwangju und nennt HBM4-Preisunsicherheit als naheliegenden kurzfristigen Risiko-Faktor.",
+      "placement": "Geographie: Gwangju, Südkorea; Domäne: HBM / High‑Performance Memory; Layer: Supply / Pricing; Horizon: near-term (next 6–12 months).",
+      "mechanism": "Bericht verbindet geplante Frontend-/Packaging‑Kapazitätserweiterung in Gwangju mit Marktknappheit bei HBM4; daraus folgt höherer Preisdruck für HBM‑Kontrakte und potenzielle Verlagerung von Kapazitätszuteilungen weg von Commodity‑DRAM hin zu HBM‑Prioritäten.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert und tendenziell stärkt die Vorhersage, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben; der Bericht erhöht kurzfristig die plausibilität eines Preisdruck‑/Allokations‑Pfades in Richtung 2027.",
+      "falsifier": "Bis 2027-06-30: veröffentlichte, qualifizierte SK‑hynix‑Shipments oder vertraglich dokumentierte HBM4‑Mengen (mit Stückzahlen/Monat) UND gleichzeitig dreimonatige kontraktbasierte HBM4‑Kontraktpreise, die sequenziell um ≥15 % fallen (zeigt, dass Gwangju‑Ausbau und Preis‑Annahme nicht zu einem kurzfristigen Knappheits‑Preisperspektiv führen).",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-10-09",
+      "novelty": "Die Meldung fasst bestehende Färbung der Marktlage zusammen (Erweiterungspläne + HBM4‑Preisdiskussion) — kein belegter Primärbeleg für neue geprüfte Produktions-Shipments.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 9
+      },
+      "markets": [
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 50,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/sk-hynix-charts-gwangju-expansion-as-hbm4-pricing-clouds-near-term-outlook/70276841",
+          "label": "Ad-hoc-News: SK Hynix Charts Gwangju Expansion as HBM4 Pricing Clouds Near-Term Outlook",
+          "kind": "secondary",
+          "supports": "Original eingereichte Candidate‑Meldung (Titel, Publikationsdatum 2026-10-09); berichtet über Gwangju‑Erweiterungspläne und HBM4‑Preisunsicherheit, liefert aber keine firmenseitige Primärdokumentation von Shipments oder konkreten Kapazitätszahlen."
+        },
+        {
+          "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+          "label": "SK hynix Newsroom: Q2 2026 business results (Unternehmenskommunikation, Q2-Bericht)",
+          "kind": "primary",
+          "supports": "SK hynix bestätigte im Q2‑Bericht starke AI‑Memory‑Nachfrage, Beginn massenhafter HBM4‑Shipments und laufende Kapazitätserweiterungen; der Q2‑Satz liefert kontextuelle Unterstützung für die Knappheits‑Argumentation, enthält aber keine exakten, qualifizierten Gwangju‑Startdaten oder verifizierte HBM4‑Kontrakt‑ASPs in dem hier behaupteten near‑term‑Umfang."
+        }
+      ],
+      "reason": "Begründung (Deutsch):\n- Vorgegebene Inbox‑Quelle ist ein sekundärer Branchenbericht (Ad‑hoc-News, 2026-10-09). Wir haben Primär‑Unternehmensangaben (SK hynix Q2‑2026 Newsroom) gefunden, die HBM4‑Massenlieferungen und geplante Kapazitätsausweitungen bestätigen, jedoch keine direkten, datierten Primärbelege für einen spezifischen Gwangju‑Fabrikausbau‑Starttermin, konkrete qualifizierte HBM4‑Shipments aus Gwangju oder vertraglich bestätigte 2026/2027 HBM4‑ASPs mit Stückzahlen/Monat.  \n- Die TAIL‑Aufnahmebedingungen verlangen eine atomare, datierte, quantifizierbare Aussage mit Primärnachweis für Akzeptanz. Der Candidate ist interpretativ (\"charts expansion\" + \"pricing clouds outlook\") ohne das erforderliche, verifizierbaren Primär‑Messsignal (z. B. firmengerichtete CapEx‑Genehmigung mit Datum für Gwangju, veröffentlichte qualified shipment‑Mengen, oder ein konkreter verifizierter Kontrakt‑ASP mit Kunde und Menge).  \n- Es existiert relevante Gegen‑/Kontext‑evidence im Baseline (z. B. Q2‑Berichte, Marktschätzungen zu HBM‑Shares und Preisanfragen), die die These stützt, aber nicht die notwendige Primärverifikation liefert.  \n- Wegen fehlender primärer, datengetriebener Beobachtungen (Shipments/kontraktierte Volumen/konkrete CapEx‑Freigabe mit Datum) kann die Meldung nicht als VERIFIED DATA aufgenommen werden; stattdessen wird der Datensatz auf Watchlist gesetzt, bis ein eng begründetes Primärbeleg (firm announcement, regulator filing, oder qualifizierter Vertragsbeleg mit Datum und Mengen) vorliegt.\n\nBenötigte Nachweise zur Erhöhung der Aufnahmewahrscheinlichkeit:\n1) Firmenseitige, datierte Bekanntmachung (SK hynix oder offizielle koreanische Behörde) mit CapEx‑Genehmigung für Gwangju (KRW / US$ Betrag), Baubeginn‑Datum oder vertraglich festgelegtes Inbetriebnahmedatum für die betreffende Anlage/Line.  \n2) Verifizierte, qualifizierte HBM4‑Shipments (z. B. firmierte Lieferscheine/earnings call disclosure mit Stücken/Monat oder bestätigter Kunden‑Abnahme) aus Gwangju oder expliziter Zuordnung der neuen Kapazität zu HBM4.  \n3) Datiertes Kontrakt‑ASP (Primärvertrag oder Kunde‑Bestätigung) für HBM4 mit Mengen/Zeitraum, oder offizielle Beobachtung eines repräsentativen Kontraktpreiskorbs, die den behaupteten 'pricing cloud'‑Effekt belegt.\n\nAdversarial check & Opposing evidence:\n- Gegenbeleg/Ergänzung: SK hynix‑Q2‑2026‑Kommunikation (Quelle in 'sources') bestätigt HBM4‑Massenshipments allgemein, aber enthält keine Gwangju‑Spezifika; mehrere Branchenberichte (zitiert in Background) weisen auf starke HBM‑Nachfrage und erhöhte Preisanfragen, was die Interpretation stützt, aber nicht primär verifiziert.  \n- Ergebnis: fehlende primäre, spezifische Belegung zur in der Candidate‑Formulierung behaupteten, datierten Gwangju‑Aktion. Deshalb Watchlist statt Annahme.\n\nFazit: Watchlist (fehlende Primärverifikation). Nächste Überprüfung geplant am 2027-06-30 (Falsifier‑Horizon).",
+      "candidateId": "e89492df2387069bb6b9",
+      "candidateKey": "e17d6e06fb6d17c06dddb0e0",
+      "reviewedAt": "2026-10-09T12:00:15.637Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f0a778b9f354b97006ac8d732436c87d084a5437b41bec5e0"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung will HBM4‑Output verdoppeln (Berichte, 2026‑09‑21) — primäre Bestätigung fehlt, starke Überschneidung mit bestehenden TAIL‑Signalen",
+      "fact": "Mehrere Nachrichtenberichte (Seoul Economic Daily, Newsbytes u.a.) melden, Samsung plane, die Produktion von HBM4/HBM4E im Jahr 2027 gegenüber 2026 mindestens zu verdoppeln; Angaben stützen sich auf Lieferketten‑Quellen (Glass‑carrier‑Bestellungen, höhere Wafer‑Input‑Pläne, Yield‑Verbesserungen ~80% in Berichten).",
+      "placement": "Global / Samsung Manufacturing (HBM4 Produktfamilie); horizont: Produktionssteigerung in Kalenderjahr 2027 mit Fokus auf Server‑/AI‑Accelerator‑Supply.",
+      "mechanism": "Erhöhte Wafer‑Input‑Planung und Vorbestellungen (u.a. Glas‑Carrier 2.5×), verbesserte HBM4‑Yields und Umschichtung von Foundry/Packaging‑Kapazität zugunsten von HBM4 führen zu mehr qualifiziertem Output; Kunden‑Abnahmeverträge und Priorisierung für AI‑Acceleratoren treiben Nachfrageseite.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Wenn Samsung die HBM4‑Produktion in 2027 mindestens verdoppelt, würde dies direkt die Annahmen zu Samsung‑HBM4‑Umsatz-/Shipments in P-2026-07-30-02 beeinflussen (größerer Quarter‑to‑Quarter‑Output und Erfüllungsgrad).",
+      "falsifier": "Bis 2028-01-31 liegen keine verifizierten, qualifizierten HBM4‑Shipments oder ausgewiesenen HBM4‑Umsätze von Samsung vor, die für Kalenderjahr 2027 mindestens 2.0× (jahr‑über‑jahr gegenüber 2026) nachweisbar sind; oder Samsung veröffentlicht offizielle Produktions-/Shipments‑Daten, die <2.0× ausweisen.",
+      "nextReview": "2028-01-31",
+      "eventDate": "2026-09-21",
+      "novelty": "Moderate — meldet konkrete Verdopplungsabsicht für 2027, aber viele vorangehende TAIL‑Signale bereits thematisch ähnlich (HBM‑Priorisierung, Yield‑Berichte, Produktionspläne).",
+      "duplicateOf": "S-AUTO-c432c33599625b4c3807fc3a (Berichte 2026‑09‑20/21 zu Samsung HBM4‑Yield und Volumenfokus) — starke Überschneidung mit bestehenden Quellen im Baseline.",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 45,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.newsbytesapp.com/news/science/samsung-to-double-hbm4-output-as-ai-chip-demand-surges/story",
+          "label": "Newsbytes: 'Samsung to double HBM4 output as AI chip demand surges' (2026-09-21)",
+          "kind": "secondary",
+          "supports": "Berichtet, Samsung plane die HBM4/HBM4E‑Produktion im nächsten Jahr deutlich zu erhöhen; nennt Glass‑carrier Bedarf und Lieferketten‑Quellen."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/20/samsung-hits-80-percent-yield-on-hbm4-shifts-focus-to-volume",
+          "label": "Seoul Economic Daily: 'Samsung Locks In HBM4 Yields, Prepares Volume Push' (2026-09-20)",
+          "kind": "secondary",
+          "supports": "Berichtet über angebliche ~80% HBM4‑Yields und geplanten Volumenfokus; erwähnt erhöhter Wafer‑Input ab 2027."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist konsistent mit mehreren Branchenberichten vom 20.–21. September 2026, die eine geplante Produktionsausweitung von Samsung für HBM4/HBM4E melden. Allerdings fehlt eine klare primäre Bestätigung durch Samsung (kein direktes Samsung‑Statement mit quantifizierten, zeitgebundenen Produktions‑ oder Shipments‑Kennzahlen wurde in den geprüften Quellen gefunden). Zudem überschneidet sich der Inhalt stark mit bereits im Baseline vorhandenen TAIL‑Signalen (Yield‑Verbesserungen, Volumenverlagerung, Priorisierung von HBM), sodass die Meldung größtenteils eine Wiederholung/Vertiefung bekannter Themen ist. Nach TAIL‑Aufnahmekriterien fehlt derzeit eine atomic, datierte, mengen‑/einheitsgetriebene Primärbeobachtung (z. B. Samsung‑verifizierte HBM4‑Shipment‑Mengen oder ausgewiesene Umsatzzahlen für 2027), die eine sofortige Aufnahme als VERIFIED DATA oder vollständige Annahme rechtfertigen würde. Deshalb wird der Kandidat auf WATCHLIST gesetzt mit einem klaren Falsifizierer (konkrete 2×‑Shipments‑Messung bis 2028‑01‑31) und Aufforderung zur Primärverifikation (z. B. Samsung SEC/IR‑Release, offizielle Q‑Berichterstattung mit HBM4‑Units oder firmeneigene Produktionspläne mit absoluten Einheiten).",
+      "candidateId": "a9480382dac68fa00933",
+      "candidateKey": "4f254675c328ed83f7e1822f",
+      "reviewedAt": "2026-10-09T12:00:37.199Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0707dbecdc6a9195006ac8d74fd4a887d09c5867f00388f0ec"
     }
   ]
 }
