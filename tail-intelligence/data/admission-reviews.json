@@ -54756,6 +54756,212 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0707dbecdc6a9195006ac8d74fd4a887d09c5867f00388f0ec"
+    },
+    {
+      "decision": "accepted",
+      "title": "Black Hills unterzeichnet Vereinbarungen zur Versorgung von Googles geplantem Rechenzentrum in Cheyenne (564 MW Gas + Verwaltung von 2,1 GW Microgrid)",
+      "fact": "Black Hills Corporation führte definitive Vereinbarungen aus (wirksam 2026-09-30) zur Versorgung von Googles geplantem Data‑Center in Cheyenne, Wyoming; Black Hills plant, 564 MW nameplate neuer Erdgeneration (Teil eines 590 MW grid‑connected Angebots) zu bauen und die Leistung von ca. 2.1 GW an Drittressourcen durch ein privat verwaltetes Microgrid zu koordinieren.",
+      "placement": "Geographie: Cheyenne, Wyoming, USA; Domain/Layer: ai_infrastructure / Datacenter‑Versorgung; Horizont: mittelfristig (Bau 2027–2029; operative Management‑Vereinbarung bis 2048).",
+      "mechanism": "Konkrete Kapazitäts- und Vertrags‑Bindung: Black Hills investiert in firmeneigene Gas‑Erzeugung (564 MW nameplate) und übernimmt Microgrid‑Coordinations‑Services (Verwaltung von ~2.1 GW drittbeauftragter, in Wyoming lokalisierter Ressourcen) unter seinem Large Power Contract Service (LPCS)‑Tarif. Das schafft dedizierte, vertraglich gebundene Energie‑Versorgungsressourcen für Googles geplannten Campus, erhöht kurz- bis mittelfristig die Nachfrage nach zuverlässiger Energieinfrastruktur für Hyperscaler‑Rechenzentren und stützt die anhaltende Ai‑Infrastructure‑Nachfrage (z. B. Bedarf an Server‑DRAM und HBM durch Ausbau von Rechenkapazität).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Dieses Ereignis stärkt das Basissignal für erhöhte ai_infrastructure‑Nachfrage (demand_up) und damit indirekt Druck auf Server‑DRAM/Memory‑Verfügbarkeit kurz bis mittelfristig, indem es einen weiteren großen, langfristig kontrahierten Datacenter‑Load (Teil eines 2.7 GW Ressourcenmix inkl. 590 MW grid‑connected) bestätigt.",
+      "falsifier": "Die Wirkung auf die ai_infrastructure‑Nachfrage wäre falsifiziert, falls Black Hills bis 2028-12-31 keine nachprüfbaren Konstruktions‑/Permitting‑Akten (z. B. eingereichte/erteilte Baugenehmigungen, regulatorische Zulassungen oder zugesagte Kapitalausgabenbeginne) für die 564 MW firmeneigene Erzeugung vorlegt ODER Google bis 2028-12-31 öffentlich erklärt, das Projekt in Cheyenne nicht weiter zu verfolgen bzw. die Vertragsbeziehung beendet hat. (Review‑Datum/Fälligkeitsdatum: 2028-12-31).",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-10-06",
+      "novelty": "neu (definitive agreements / 8‑K filing; bislang nicht in Baseline dokumentiert)",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 15,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 50,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://ir.blackhillscorp.com/news-releases/news-release-details/black-hills-corp-executes-definitive-agreements-serve-googles",
+          "label": "Black Hills Corp. – Pressemitteilung: Executes Definitive Agreements to Serve Google’s Planned Data Center in Cheyenne, Wyoming",
+          "kind": "primary",
+          "supports": "Pressemitteilung benennt 564 MW nameplate neue firmeneigene Gas‑Erzeugung (Teil eines 590 MW grid‑connected Angebots), Management von ~2.1 GW drittbeauftragter Ressourcen via privat verwaltetes Microgrid, Investitionsrahmen US$1.8 Mrd. (2027–2029) und Vertragslaufzeit bis 2048."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1130464/000119312526415597/bkh-ex99_1.htm",
+          "label": "SEC Exhibit (8‑K) – Black Hills Corp. (Exhibit describing agreement)",
+          "kind": "primary",
+          "supports": "8‑K Exhibit dokumentiert dieselben vertraglichen Eckdaten: 564 MW nameplate, ~2.1 GW Microgrid‑Portfolio, LPCS‑Tarif‑Betriebsrahmen und Zeitplan/nahezu‑definitive Vereinbarungen (wirksam 2026‑09‑30)."
+        }
+      ],
+      "reason": "Der Kandidat ist eine atomare, datierte und quantifizierte Unternehmens‑/Regulatory‑Angabe mit primären Dokumenten (Unternehmensmeldung + SEC‑Exhibit). Die Beobachtung liefert konkreten, datierten Nachweis für einen weiteren großen, vertraglich gebundenen Datacenter‑Versorgungsfall in den USA (Google/Cheyenne) und unterstützt das TAIL‑Thesis‑Signal eines andauernden Nachfragedrucks auf ai_infrastructure und damit verbundenen Memory‑Märkten. Opposing evidence gesucht: keine primären Gegenbelege in Unternehmens‑ oder Regulierungsarchiven gefunden; Risiken bleiben (Permits, Bauverzögerungen, Projektstreichung).",
+      "candidateId": "83b32ef6e196a7632204",
+      "candidateKey": "1c1ce4d71a78d51420d94f64",
+      "reviewedAt": "2026-10-09T21:47:15.289Z",
+      "priorityScore": 89,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-1c1ce4d71a78d51420d94f64",
+        "title": "Black Hills unterzeichnet Vereinbarungen zur Versorgung von Googles geplantem Rechenzentrum in Cheyenne (564 MW Gas + Verwaltung von 2,1 GW Microgrid)",
+        "date": "2026-10-06",
+        "admittedAt": "2026-10-09T21:47:15.289Z",
+        "fact": "Black Hills Corporation führte definitive Vereinbarungen aus (wirksam 2026-09-30) zur Versorgung von Googles geplantem Data‑Center in Cheyenne, Wyoming; Black Hills plant, 564 MW nameplate neuer Erdgeneration (Teil eines 590 MW grid‑connected Angebots) zu bauen und die Leistung von ca. 2.1 GW an Drittressourcen durch ein privat verwaltetes Microgrid zu koordinieren.",
+        "placement": "Geographie: Cheyenne, Wyoming, USA; Domain/Layer: ai_infrastructure / Datacenter‑Versorgung; Horizont: mittelfristig (Bau 2027–2029; operative Management‑Vereinbarung bis 2048).",
+        "tailInference": "Konkrete Kapazitäts- und Vertrags‑Bindung: Black Hills investiert in firmeneigene Gas‑Erzeugung (564 MW nameplate) und übernimmt Microgrid‑Coordinations‑Services (Verwaltung von ~2.1 GW drittbeauftragter, in Wyoming lokalisierter Ressourcen) unter seinem Large Power Contract Service (LPCS)‑Tarif. Das schafft dedizierte, vertraglich gebundene Energie‑Versorgungsressourcen für Googles geplannten Campus, erhöht kurz- bis mittelfristig die Nachfrage nach zuverlässiger Energieinfrastruktur für Hyperscaler‑Rechenzentren und stützt die anhaltende Ai‑Infrastructure‑Nachfrage (z. B. Bedarf an Server‑DRAM und HBM durch Ausbau von Rechenkapazität).",
+        "predictionId": "OUTLOOK-server_dram",
+        "predictionImpact": "Dieses Ereignis stärkt das Basissignal für erhöhte ai_infrastructure‑Nachfrage (demand_up) und damit indirekt Druck auf Server‑DRAM/Memory‑Verfügbarkeit kurz bis mittelfristig, indem es einen weiteren großen, langfristig kontrahierten Datacenter‑Load (Teil eines 2.7 GW Ressourcenmix inkl. 590 MW grid‑connected) bestätigt.",
+        "falsifier": "Die Wirkung auf die ai_infrastructure‑Nachfrage wäre falsifiziert, falls Black Hills bis 2028-12-31 keine nachprüfbaren Konstruktions‑/Permitting‑Akten (z. B. eingereichte/erteilte Baugenehmigungen, regulatorische Zulassungen oder zugesagte Kapitalausgabenbeginne) für die 564 MW firmeneigene Erzeugung vorlegt ODER Google bis 2028-12-31 öffentlich erklärt, das Projekt in Cheyenne nicht weiter zu verfolgen bzw. die Vertragsbeziehung beendet hat. (Review‑Datum/Fälligkeitsdatum: 2028-12-31).",
+        "nextReview": "2028-12-31",
+        "priorityScore": 89,
+        "scoreBreakdown": {
+          "sourceQuality": 20,
+          "novelty": 15,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 50,
+        "confidence": 78,
+        "markets": [
+          "ai_infrastructure",
+          "supply_chain"
+        ],
+        "signal": "demand_up",
+        "driverScope": [
+          "demand",
+          "availability"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "Black Hills Corp. – Pressemitteilung: Executes Definitive Agreements to Serve Google’s Planned Data Center in Cheyenne, Wyoming",
+            "url": "https://ir.blackhillscorp.com/news-releases/news-release-details/black-hills-corp-executes-definitive-agreements-serve-googles"
+          },
+          {
+            "label": "SEC Exhibit (8‑K) – Black Hills Corp. (Exhibit describing agreement)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1130464/000119312526415597/bkh-ex99_1.htm"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Dieses Ereignis stärkt das Basissignal für erhöhte ai_infrastructure‑Nachfrage (demand_up) und damit indirekt Druck auf Server‑DRAM/Memory‑Verfügbarkeit kurz bis mittelfristig, indem es einen weiteren großen, langfristig kontrahierten Datacenter‑Load (Teil eines 2.7 GW Ressourcenmix inkl. 590 MW grid‑connected) bestätigt."
+        },
+        "admissionReviewKey": "1c1ce4d71a78d51420d94f64"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_080b76a7255eae49006ac960d0849c87d2a1cd420c1e6d03b6"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT behauptet DRAM G5‑Plattform sei in Serien-/Mass Production; keine primären Liefer-/Shipment‑Belege",
+      "fact": "CXMT (ChangXin / 长鑫) erklärte am 2026-09-20/21, seine fünfte DRAM‑Technologieplattform (G5) habe die 'Mass Production' erreicht und liege \"on par with the most advanced mass‑produced nodes\".",
+      "placement": "Geographie: China (Hefei / Beijing‑Fabs); Domäne: DRAM / Server-DRAM / HBM‑vorgelagertes Bit‑Layer; Layer: Produktion/Ramp (Fab‑level); Horizon: kurzfristig (Q4 2026).",
+      "mechanism": "Unternehmensangabe über interne Prozess‑/Node‑Verbesserung (G5 HKMG / reduzierte Zell‑Pitch), angebliche Start‑der Massenfertigung in bestehenden CXMT‑Fabs; implizite Wirkung: potenziell erhöhte Heimproduktion/Bit‑Output in China und Preisdruck auf global dominante Lieferanten, falls qualifizierte Lieferungen außerhalb China folgen.",
+      "predictionId": "P-2026-07-14-01",
+      "predictionImpact": "Wenn CXMT tatsächlich qualifizierte, volumenrelevante DRAM‑Shipments liefert, würde dies die Vorannahme in P-2026-07-14-01 (CXMT‑Listing/­Mittel und LTAs stärken Mainstream/Server‑DRAM) unterstützen und könnte den erwarteten Zeitpunkt bzw. Stärke der Marktwirkung vorziehen; aktuell ist die Aussage unbestätigt und verändert die Vorhersage nicht messbar.",
+      "falsifier": "Bis 2026-12-31 muss CXMT belegen: (a) qualifizierte, kundenvalidierte DRAM‑Shipments in definierter Stückzahl (z. B. ≥10k wafers/month oder ≥X GB host‑tested modules) mit Kunden-/Third‑party‑Verifikationsbeleg; oder (b) regulatorische Einträge/Filing mit konkreten ausgelieferten Volumina. Fehlen solche Belege bis 2026-12-31 → Watchlist bleibt, ansonsten prüfe Acceptance/Upgrade.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-20",
+      "novelty": "Announce­ment of internal G5 mass‑production claim; nicht zuvor im Baseline als mass‑production‑erwähnt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 35,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://technode.global/2026/09/21/cxmt-fifth-generation-dram-platform-mass-production/",
+          "label": "TechNode – Bericht zur CXMT‑Ankündigung (fünfte Generation, mass production claim, 2026-09-21).",
+          "kind": "primary",
+          "supports": "Berichtet das Unternehmensstatement, Datum der Aussage und Zitat von CXMT‑VP Luo Xiaodong, dass die Plattform 'entered mass production' und 'on par with the most advanced mass‑produced nodes'."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/articles/china-cxmt-says-reached-advanced-041453764.html",
+          "label": "Yahoo Finance / aggregierte Meldung (21 Sep 2026) – Zusammenfassung der Ankündigung.",
+          "kind": "secondary",
+          "supports": "Fasst die Meldung zusammen und nennt Datum/Behauptung; keine unabhängige Bestätigung von Liefervolumen."
+        },
+        {
+          "url": "https://aistockwire.com/blog/cxmt-fifth-generation-dram-mass-production-lpddr5x-september-2026",
+          "label": "Firms/Filings‑Bericht (verweist auf Shanghai‑Filing): CXMT gibt an, Produkte hätten noch nicht 'volume sales'.",
+          "kind": "secondary",
+          "supports": "Berichtet, dass CXMT in einer Einreichung an die Börse / Shanghai Stock Exchange schrieb, die Produkte hätten 'not yet reached volume sales' und würden kurzfristig die Ergebnisse nicht materially beeinflussen — Gegenbeleg gegen sofortigen Markt‑Supply‑Impact."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist eine unternehmensseitige Behauptung (Mass‑Production / G5) mit klarer datierter Ankündigung (2026-09-20/21) und wird breit in Branchenmedien zitiert. Für TAIL‑Aufnahme als ACCEPTED wäre aber eine atomare, datierte, messbare Beobachtung nötig (z. B. verifizierte, qualifizierte Shipments/Wafer‑Volumes, beobachtete Lead‑time/Fill‑Rate‑Änderung oder kontraktierte multi‑year LTAs mit volumetrischer Offenlegung). Solche primären Liefer‑/Shipment‑Belege liegen zurzeit nicht vor; einige Quellen zitieren sogar CXMT‑Filing, das explizit festhält, Produkte hätten noch keine Volume‑Sales. Deshalb erfüllt die Meldung die Beweisanforderungen nicht und wird auf Watchlist gesetzt. Widersprüchliche/limitierende Informationen (keine Volume‑Sales, fehlende Drittkundennachweise, Yield‑/Qualifikationsrisiken in anderen Berichten) wurden berücksichtigt. Falls bis 2026-12-31 dokumentierte, qualifizierte Lieferungen oder nachweisbare Fill‑Rate/Lead‑Time‑Effekte vorliegen, kann das Review auf ACCEPTED hochgestuft werden; andernfalls bleibt Watchlist oder wird abgelehnt.",
+      "candidateId": "9d7a2f589ffb1f1a5d79",
+      "candidateKey": "f5966508b7cace5fc81c85b3",
+      "reviewedAt": "2026-10-09T21:47:33.265Z",
+      "priorityScore": 64,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0010e6682dbacc51006ac960e3798487d28edef76a4de33a79"
     }
   ]
 }

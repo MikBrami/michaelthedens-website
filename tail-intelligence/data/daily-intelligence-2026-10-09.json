@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T12:00:37.402Z",
+  "updatedAt": "2026-10-09T21:47:33.451Z",
   "previousRun": "2026-10-08",
   "executivePulse": {
     "current": 74,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 75,
     "previous": 75,
-    "interpretation": "Datenvertrauen 75/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 185 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 75/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 188 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 82,
     "previous": 82
   },
-  "momentum": "Evidenzprüfung offen: 185 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 188 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,6 +527,71 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-1c1ce4d71a78d51420d94f64",
+      "title": "Black Hills unterzeichnet Vereinbarungen zur Versorgung von Googles geplantem Rechenzentrum in Cheyenne (564 MW Gas + Verwaltung von 2,1 GW Microgrid)",
+      "date": "2026-10-06",
+      "admittedAt": "2026-10-09T21:47:15.289Z",
+      "fact": "Black Hills Corporation führte definitive Vereinbarungen aus (wirksam 2026-09-30) zur Versorgung von Googles geplantem Data‑Center in Cheyenne, Wyoming; Black Hills plant, 564 MW nameplate neuer Erdgeneration (Teil eines 590 MW grid‑connected Angebots) zu bauen und die Leistung von ca. 2.1 GW an Drittressourcen durch ein privat verwaltetes Microgrid zu koordinieren.",
+      "placement": "Geographie: Cheyenne, Wyoming, USA; Domain/Layer: ai_infrastructure / Datacenter‑Versorgung; Horizont: mittelfristig (Bau 2027–2029; operative Management‑Vereinbarung bis 2048).",
+      "tailInference": "Konkrete Kapazitäts- und Vertrags‑Bindung: Black Hills investiert in firmeneigene Gas‑Erzeugung (564 MW nameplate) und übernimmt Microgrid‑Coordinations‑Services (Verwaltung von ~2.1 GW drittbeauftragter, in Wyoming lokalisierter Ressourcen) unter seinem Large Power Contract Service (LPCS)‑Tarif. Das schafft dedizierte, vertraglich gebundene Energie‑Versorgungsressourcen für Googles geplannten Campus, erhöht kurz- bis mittelfristig die Nachfrage nach zuverlässiger Energieinfrastruktur für Hyperscaler‑Rechenzentren und stützt die anhaltende Ai‑Infrastructure‑Nachfrage (z. B. Bedarf an Server‑DRAM und HBM durch Ausbau von Rechenkapazität).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Dieses Ereignis stärkt das Basissignal für erhöhte ai_infrastructure‑Nachfrage (demand_up) und damit indirekt Druck auf Server‑DRAM/Memory‑Verfügbarkeit kurz bis mittelfristig, indem es einen weiteren großen, langfristig kontrahierten Datacenter‑Load (Teil eines 2.7 GW Ressourcenmix inkl. 590 MW grid‑connected) bestätigt.",
+      "falsifier": "Die Wirkung auf die ai_infrastructure‑Nachfrage wäre falsifiziert, falls Black Hills bis 2028-12-31 keine nachprüfbaren Konstruktions‑/Permitting‑Akten (z. B. eingereichte/erteilte Baugenehmigungen, regulatorische Zulassungen oder zugesagte Kapitalausgabenbeginne) für die 564 MW firmeneigene Erzeugung vorlegt ODER Google bis 2028-12-31 öffentlich erklärt, das Projekt in Cheyenne nicht weiter zu verfolgen bzw. die Vertragsbeziehung beendet hat. (Review‑Datum/Fälligkeitsdatum: 2028-12-31).",
+      "nextReview": "2028-12-31",
+      "priorityScore": 89,
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 15,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 50,
+      "confidence": 78,
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "signal": "demand_up",
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "Black Hills Corp. – Pressemitteilung: Executes Definitive Agreements to Serve Google’s Planned Data Center in Cheyenne, Wyoming",
+          "url": "https://ir.blackhillscorp.com/news-releases/news-release-details/black-hills-corp-executes-definitive-agreements-serve-googles"
+        },
+        {
+          "label": "SEC Exhibit (8‑K) – Black Hills Corp. (Exhibit describing agreement)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1130464/000119312526415597/bkh-ex99_1.htm"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Dieses Ereignis stärkt das Basissignal für erhöhte ai_infrastructure‑Nachfrage (demand_up) und damit indirekt Druck auf Server‑DRAM/Memory‑Verfügbarkeit kurz bis mittelfristig, indem es einen weiteren großen, langfristig kontrahierten Datacenter‑Load (Teil eines 2.7 GW Ressourcenmix inkl. 590 MW grid‑connected) bestätigt."
+      },
+      "admissionReviewKey": "1c1ce4d71a78d51420d94f64"
     }
   ],
   "predictionLogUpdates": [
@@ -641,14 +706,14 @@
     "date": "2026-10-09",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
-    "note": "Evidenzprüfung offen: 185 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 89,
+    "note": "Evidenzprüfung offen: 188 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-10-09T12:00:37.402Z",
+    "generatedAt": "2026-10-09T21:47:33.451Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-10-09T11:53:25.952Z",
-    "inboxNewItems": 139,
+    "inboxUpdatedAt": "2026-10-09T21:40:14.230Z",
+    "inboxNewItems": 164,
     "highRelevanceCandidates": [
       {
         "id": "e7f3da56846406ae8f22",
@@ -660,6 +725,15 @@
         "publishedAt": "2026-10-09T09:00:00.000Z"
       },
       {
+        "id": "dc3e2da6ecb3acf49953",
+        "title": "Samsung seeks to convert AMD from HBM buyer to foundry client",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVmhOWXQ1a3VqdmJ4Z0stWnVLNklrbDNBLU14SEI0X3lfVHhWdnY4VE1DeFNTalowN0VocUljYnNOWE00V0NuSEN3ZTlSZHZmemtrTy1jMVQ2S1hLVl9IVXlaeEtlS0hoMHlzRGszNVAyZU91cHVlWVRLY0l1UEdfM2ZZMEZRcGFKaGpLWE5EQ2VkS0FOU2RwWkJNT1gtOGpsVXBicmp3cHR2U1VyQ1RwN0s1b05uOVRUXzlnM2FhenJSc3plQTFn?oc=5",
+        "source": "Global Sources",
+        "summary": "Samsung seeks to convert AMD from HBM buyer to foundry client Global Sources",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-09T07:50:18.000Z"
+      },
+      {
         "id": "b3aa6d191a568aa1b731",
         "title": "SK hynix, Samsung push 16-layer HBM4 as Rubin favors 12",
         "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1UNFZSQnNwQlpIZ1JBTlhtZmFndHpiM1BBYmU5aXpKQ3lyOVBjbUhCSFpMUmlHaVFheFBoS00yTVJ1TXVBM3k3Q2Rsc0ZvbGczaE5JSVJOQQ?oc=5",
@@ -667,6 +741,15 @@
         "summary": "SK hynix, Samsung push 16-layer HBM4 as Rubin favors 12 The Korea Herald",
         "relevanceScore": 100,
         "publishedAt": "2026-10-09T02:51:45.000Z"
+      },
+      {
+        "id": "5cc30927cc20f21f9c45",
+        "title": "AMD Samsung HBM Partnership Widens as Memory Supply Meets a Foundry Test",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPc2trOUUwUWJ2NURtMVhFWW5jWjljMkI1aDhMRTBPRkdpWDRuMnNzWGdlcU8tSHBkeTY1V1lWVVJoREFYM25SdDJ0cmFTZUdKVGRCbTN1czBwbDFnQTAxRHdJanhWLVM4RmktWS1JaGJBY3YzdEFvUXlfeFotOEdBWW5CQ1lkV19kUTJoLXdIY19fLWZEQS1fXzFPbE5CeWM?oc=5",
+        "source": "remio",
+        "summary": "Aktuelle Meldung von remio: AMD Samsung HBM Partnership Widens as Memory Supply Meets a Foundry Test",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-09T02:21:03.000Z"
       },
       {
         "id": "60a73cbb1d679c805a18",
@@ -703,24 +786,6 @@
         "summary": "Aktuelle Meldung von TradingView: Samsung’s $80B Quarterly Profit Tops Nvidia, AMD’s Lisa Su Shops In Seoul",
         "relevanceScore": 100,
         "publishedAt": "2026-10-08T12:34:56.000Z"
-      },
-      {
-        "id": "a6826b0fe47c58b0a71d",
-        "title": "AMD, Samsung Discuss Broader Partnership as HBM4 Demand Rises",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5wV1l3WVRjQnZHTXpnZ0hXQ0Y0dU5WdVl0WDRLbEUxdlZWQ1N6ejVzNDZrVFNFcjVhY0FlWWNRVkdJOEwyY2stcFk4NDhRM0pDOE5oQnNubDA?oc=5",
-        "source": "TOKENPOST",
-        "summary": "Aktuelle Meldung von TOKENPOST: AMD, Samsung Discuss Broader Partnership as HBM4 Demand Rises",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-08T07:58:55.000Z"
-      },
-      {
-        "id": "d2a7d02074a7a17bc224",
-        "title": "Samsung Q3 Operating Profit Surges Nearly 8-Fold to Record High: What Is the Outlook for Micron, Nvidia, and Memory Stocks?",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR2drdFk1d3hSOHhXYURMV0M2UVhWWHFCRUx2a3RfdmtPOHNiZnRjV182cjlTNko1akJqS2g0eC1Dem1Lb1FBYVhFX2trY0lndExqMjJkd3NUUmxpaHNIaG9YLWhxUnFtTzZmOU4yNmlRZUFZQnVfZUV1MTA5SGNLaWJkbXRJZXdRQVlnRjRHMTFKT2hqV3Y3UnZPZ2p0LTZWVnVIaFg4TF94dw?oc=5",
-        "source": "TradingKey",
-        "summary": "Aktuelle Meldung von TradingKey: Samsung Q3 Operating Profit Surges Nearly 8-Fold to Record High: What Is the Outlook for Micron, Nvidia, and Memory Stocks?",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-08T06:01:56.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -806,20 +871,20 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-09T12:00:37.224Z",
-    "inboxUpdatedAt": "2026-10-09T11:53:25.952Z",
+    "checkedAt": "2026-10-09T21:47:33.294Z",
+    "inboxUpdatedAt": "2026-10-09T21:40:14.230Z",
     "status": "pending",
-    "candidates": 327,
-    "reviewed": 151,
-    "accepted": 18,
-    "watchlist": 130,
+    "candidates": 332,
+    "reviewed": 153,
+    "accepted": 19,
+    "watchlist": 131,
     "rejected": 3,
-    "pending": 185,
-    "oldestPendingAt": "2026-09-21T04:14:00.000Z",
-    "lastCompletedReviewAt": "2026-10-09T12:00:37.199Z",
+    "pending": 188,
+    "oldestPendingAt": "2026-09-21T04:38:19.000Z",
+    "lastCompletedReviewAt": "2026-10-09T21:47:33.265Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 745,
+    "rawCandidates": 753,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1221,
     "triage": {
@@ -827,8 +892,8 @@
       "groupedDuplicates": 35
     },
     "lastRun": {
-      "startedAt": "2026-10-09T11:59:44.892Z",
-      "completedAt": "2026-10-09T12:00:37.227Z",
+      "startedAt": "2026-10-09T21:46:55.071Z",
+      "completedAt": "2026-10-09T21:47:33.295Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -836,13 +901,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 52,
+      "durationSeconds": 38,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
     "asOf": "2026-10-09",
-    "inputHash": "4b244bd78fb29862087c900c245f7a81beabb8fda0803552d7779fde028e7526",
+    "inputHash": "46a485fc53d09d4217de525178f4f6869bdb31c0c93cef5b4ac105f64aaa8230",
     "sourceDataAsOf": "2026-10-06"
   }
 }
