@@ -55093,6 +55093,147 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_006ec902d52285ac006ac9a1cd82f487d0a4326ce95196af52"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: „Samsung & SK hynix setzen Zyklen hoher Margen durch, die bis zu Zulieferern wie ASML durchsickern“",
+      "fact": "Meinungs-/Analyseartikel (Wccftech) behauptet, hohe Memory-Margen bei Samsung und SK hynix führten zu Preis-/Margenansprüchen bei Zulieferern (z. B. ASML) und zu breit wirkender 'Greed cycle'.",
+      "placement": "Globaler Halbleiter‑Wertschöpfungsbogen; Primärbetroffene: Frontend‑Equipment & Packaging‑Zulieferer; Reichweite: Industrieweit (global); Layer: Supply‑Chain / Pricing; Horizont: kurzfristig bis H2 2026.",
+      "mechanism": "These: Überhöhte Endkundenmargen (Memory) erhöhen Marktmacht und Verhandlungsposition der Hersteller, die über Preissteigerungen und Vertragskonditionen die Margen entlang der Lieferkette zu replizieren versuchen; wirkt über direkte Preiserhöhungen für Teile/Equipment und Vorauszahlungs-/Kapex‑Verträge.",
+      "predictionId": "P-NULL-NONE",
+      "predictionImpact": "Kein spezifischer bestehender PREDICTION‑ID in der Liste betroffen — die Behauptung ist allgemein‑analytisch und fügt keine atomare, messbare Änderung an einem der gelisteten Prognosen hinzu.",
+      "falsifier": "Notwendig: Primäre, datierte Messung eines Zulieferers, die zeigt, dass dessen vertraglich realisierte Verkaufspreise oder ausgewiesene Bruttomargen sich innerhalb eines definierten Produktsegmentes (z. B. ASML EUV‑Masken oder ein spezifisches Substrate‑Bauteil) um ≥10 Prozent gegenüber dem Vorquartal erhöhten und explizit mit Memory‑Kundenverhandlungen begründet wurden. Review‑Datum zur Überprüfung: 2027-01-15.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-10-09",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 6,
+        "thesisRelevance": 14,
+        "forecastImpact": 8,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://wccftech.com/samsung-sk-hynix-greed-asml-euv-duv-parts-price-hike/",
+          "label": "Wccftech Meinungs/Analyseartikel",
+          "kind": "primary",
+          "supports": "Originalbehauptung/Analyse, die von erhöhten Memory‑Margen ausgeht und nahelegt, Zulieferer wollten Margen angleichen."
+        },
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/07/13/FEBFZOJX7FHS5FUJAWGKZWATR4/?outputType=amp",
+          "label": "ChosunBiz: Bericht zu Margendruck bei koreanischen Zulieferern",
+          "kind": "secondary",
+          "supports": "Berichtet, dass große Memory‑Player hohe Profite erzielen, während viele Materialien/Teilezulieferer deutlich geringere Margen sehen — widerspricht pauschaler These, dass Zulieferer pauschal Margen angleichen konnten."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist ein tagesaktuelles Meinungs-/Analysestück (Wccftech) und stellt eine breit formulierte These ohne atomare, datierte, messbare Beobachtung (z. B. konkrete Vertrags‑ oder Preisänderung mit Zahlen, Datum, Produkt) dar. Die TAIL‑Aufnahmekriterien verlangen für Annahme: eine klar datierte, messbare, primär belegte Faktenbehauptung mit geografischer/Produkt‑Platzierung, kausalem Mechanismus, explizitem Einfluss auf eine vorhandene Prognose‑ID und einem überprüfbaren Falsifizierer. Diese Inbox‑Kandidatur liefert kein solches Primär‑Evidenzstück — stattdessen Meinung, Folgerungen und selektive Beispiele. Zudem ist die Idee thematisch bereits in der Baseline/Signal‑Sammlung vertreten (Preis‑/Versorgungs‑Signale, Margenverschiebungen, supplier margin squeeze) und droht, ein bereits vorhandenes Narrativ ohne neue, belastbare Messung zu duplizieren.\n\nGegenbelege: Berichte (z. B. ChosunBiz und andere Marktreports) zeigen, dass viele MPE‑Zulieferer weiterhin deutlich niedrigere operative Margen als Memory‑Hersteller aufweisen; einige Quellen melden, dass Zulieferer Margen nicht in gleichem Maße anwachsen konnten. Damit ist die kausale Behauptung (Zulieferer 'wollen' und 'können' Margen jetzt matchen) unbewiesen.\n\nEmpfehlung: Watchlist — fordere primäre, datierte Messungen (z. B. ASML‑Verkaufspreis‑Änderung mit Datum/Produkt und Aussage, dass Preisänderung direkt mit Memory‑Kundenverhandlungen begründet wurde; oder veröffentlichte Quartalszahlen eines Zulieferers mit erklärtem Margensprung ≥10% verbunden mit Memory‑Kundenverträgen). Falls diese primären Belege bis zur Review‑Deadline am 2027-01-15 bereitgestellt werden, kann die Aufnahme neu bewertet werden.",
+      "candidateId": "14b4546ba09b0c592ab6",
+      "candidateKey": "d20746c347d2a4e02c2cca6c",
+      "reviewedAt": "2026-10-10T11:15:51.475Z",
+      "priorityScore": 52,
+      "gateReasons": [
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0902fd3e44841a14006aca1e59eb5487d1a2f3f5f8859efe6a"
+    },
+    {
+      "decision": "rejected",
+      "title": "HBM- und Preisfokus vor Micron‑Earnings (The Economic Times, 2026-09-21) — Duplikat / nicht‑atomar",
+      "fact": "The Economic Times berichtete am 2026-09-21, dass HBM‑Nachfrage und Preisentwicklung im Vorfeld der Micron‑Quartalszahlen im Fokus stehen (Artikel: \"Global Market: Micron earnings test looms as AI memory demand stays strong\").",
+      "placement": "Global / Halbleiter‑Memory (HBM, DRAM) — Markt‑Signal vor Micron‑Q4‑Earnings (Zeithorizont: 2026‑09‑30 Earnings‑Datum).",
+      "mechanism": "Marktbericht/Analystensichtung: Starke AI‑Demand verschiebt Bit‑Allokation zu HBM/Server‑DRAM, unterstützt Durchschnittsverkaufspreise (ASP) und Margen; Unternehmens‑Guidance und konkrete HBM‑Shipments werden als unmittelbare Bestätigungsmechanismen genannt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt die bereits im Baseline dokumentierte These, dass HBM und Server‑DRAM bis mindestens Ende 2028 strukturell knapp bleiben (demand/availability pressure → price_up / negative_supply signal).",
+      "falsifier": "Wenn Micron in seiner 2026-09-30 Earnings‑Mitteilung für die kommenden Quartale materialisierbare Daten liefert, die HBM/Server‑DRAM‑Verträge, Lead‑Times oder Vertragspreise signifikant entkräften (z. B. zwei aufeinanderfolgende Quartale mit fallenden Kontraktpreisen oder Lead Times < 8 Wochen), wäre dies ein Falsifier für die Knappheits‑Erzählung.",
+      "nextReview": "2026-10-13",
+      "eventDate": "2026-09-21",
+      "novelty": "NIEDRIG — berichtet eine bereits breit dokumentierte Marktentwicklung (HBM/DRAM‑Knappheit und Preisauftrieb) und ist im Baseline mehrfach vorhanden.",
+      "duplicateOf": "tail-2026-07-14-hbm4-cost; tail-2026-07-14-dram-prices; S-2026-07-23-01; S-AUTO-2b795a9be3c07f1cc2456505",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "dram",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "price_up",
+      "severity": 35,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-micron-earnings-test-looms-as-ai-memory-demand-stays-strong/slideshow/134382491.cms",
+          "label": "The Economic Times — Global Market: Micron earnings test looms as AI memory demand stays strong (2026-09-21)",
+          "kind": "primary",
+          "supports": "Artikel vom 2026-09-21 identifiziert HBM‑Nachfrage und DRAM‑Preise als Fokus vor Micron‑Earnings; nennt HBM‑Shipments, Pricing und Margen als Beobachtungspunkte."
+        }
+      ],
+      "reason": "Die Meldung berichtet eine breit bereits dokumentierte und im Baseline mehrfach erfasste Marktentwicklung (starke HBM/DRAM‑Nachfrage und anhaltender Preisauftrieb) ohne ein neues, atomar datiertes, quantifiziertes Beobachtungsstatement (z. B. konkrete Shipments‑Zahlen, verifizierte Kontraktpreise, qualifizierte Fill‑Rate‑Messungen). Damit erfüllt die Kandidatur nicht die TAIL‑Aufnahmekriterien (atomare, datierte Messung mit eindeutiger Impact‑Mechanik). Außerdem ist dies ein inhaltliches Duplikat vorhandener Baseline‑Signale; daher Ablehnung.",
+      "candidateId": "a8f4bd29275a2c2d156c",
+      "candidateKey": "358efb86a3beec689aa8af36",
+      "reviewedAt": "2026-10-10T11:16:09.735Z",
+      "priorityScore": 59,
+      "gateReasons": [
+        "invalid review date",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_031471da664641c6006aca1e67a43487d1bc03e11653a5eb00"
     }
   ]
 }
