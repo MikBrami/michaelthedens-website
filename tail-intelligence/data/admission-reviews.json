@@ -55234,6 +55234,149 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_031471da664641c6006aca1e67a43487d1bc03e11653a5eb00"
+    },
+    {
+      "decision": "watchlist",
+      "title": "ASML erhöht Preise für Ersatzteile in Südkorea um 10% (Berichte) — begrenzte Primärverifikation und kein klarer Markeneffekt",
+      "fact": "Mehrere Nachrichtenberichte (The Elec, TradingKey, Sina u.a.) melden, dass ASML die Verkaufspreise für Ersatzteile (EUV und DUV Lithographie‑Teile) in Südkorea einheitlich um 10% anheben soll; die Berichte nennen ein Wirksamkeitsdatum für Lieferungen ab Januar 2027 und verweisen auf Verhandlungen mit Samsung Electronics und SK hynix.",
+      "placement": "Geographie: Südkorea; Domain/Lieferketten‑Layer: Lithographie Aftermarket / Ersatzteile (EUV & DUV); Horizon: Preisänderung gilt ab Lieferungen beginnend Januar 2027.",
+      "mechanism": "ASML soll über seine lokale Niederlassung Preisvorschläge an Kunden (Samsung, SK hynix) übermittelt und danach eine pauschale Preiserhöhung auf regelmäßig beschaffte Verbrauchsteile und größere Austauschkomponenten durchgesetzt haben. Das würde unmittelbar die Aftermarket‑Erlöse von ASML erhöhen und mittelbar die Wartungs-/Betriebskosten der betroffenen Foundry/Memory‑Produzenten anheben, sofern Kunden die Mehrkosten nicht anderweitig kompensieren.",
+      "predictionId": "",
+      "predictionImpact": "Kein expliziter Verweis auf eine der gelieferten Vorhersage‑IDs in der Inbox; mögliche indirekte Relevanz für Preis- und Kostenpfade (z.B. OUTLOOK‑Preis‑und‑Availability‑Szenarien und baseline‑Signals zu price_up/negative_supply), aber kein datiertes, quantifizierbares Markt‑Outcome angegeben, das eine direkte Verknüpfung zu einer vorhandenen Vorhersage ermöglicht.",
+      "falsifier": "Einer der folgenden öffentlichen Ereignisse bis 2027-01-31 bestätigt, dass die berichtete Maßnahme nicht umgesetzt wurde: (a) ASML veröffentlicht eine offizielle Stellungnahme/Preislisten, die keine landesspezifische 10%-Erhöhung für Südkorea ausweisen; oder (b) Samsung Electronics oder SK hynix veröffentlichen in ihren regulatory filings/earnings calls dokumentierte OPEX‑Erhöhungen für Ersatzteile in 2027, die mit einer flächendeckenden 10%-Anhebung in Einklang stehen (wenn solche Einträge fehlen), oder (c) Lieferdokumentation bzw. fakturierte Ersatzteilpreise an relevante Kunden zeigen keine Erhöhung für Lieferungen ab 2027-01-01. Falls ASML eine offizielle Mitteilung veröffentlicht, die die Berichte bestätigt und Preislisten liefert, würde das die Aufnahme in den Signalpool erneut prüfen.",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-10-10",
+      "novelty": "Moderat — die Meldung ist neu (Berichte vom 2026-10-10), aber der Mechanismus (Aftermarket‑Preise als Wachstumsquelle) ist bekannt und bereits in früheren ASML/Branchendiskussionen erwähnt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 9,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 25,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262210024-asml-lithography-parts-price-hike-10-korea-samsung-sk-hynix-tradingkey",
+          "label": "TradingKey — Aggregierter Bericht (zitiert The Elec)",
+          "kind": "secondary",
+          "supports": "Berichtet einen einheitlichen 10%-Aufschlag für Ersatzteile in Südkorea; nennt Januar 2027 als Wirksamkeitsdatum."
+        },
+        {
+          "url": "https://www.thelec.kr/news/articleView.html?idxno=63515",
+          "label": "The Elec — koreanischer Primärbericht (Medienbericht)",
+          "kind": "secondary",
+          "supports": "Originalmeldung in koreanischer Fachpresse, berichtet über Preisvorschlag/Verhandlungen und 10%-Erhöhung für Wartungs‑/Ersatzteile in Südkorea."
+        },
+        {
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-10/doc-iniutcvq0650310.shtml",
+          "label": "Sina Finance — chinesische Finanzseite",
+          "kind": "secondary",
+          "supports": "Wiederholung des Berichts über 10%-Erhöhung in Südkorea; keine ASML‑Primärmitteilung verlinkt."
+        }
+      ],
+      "reason": "Die Inbox‑Kandidatenmeldung ist konsistent in mehreren Medien (The Elec, TradingKey, Sina u.a.) und beschreibt eine spezifische, datierte Preisänderung (10% für Ersatzteile, Lieferungen ab Januar 2027) in einer klar abgegrenzten geografischen Domäne (Südkorea, ASML Aftermarket). Für eine Aufnahme als VERIFIED DATA / accepted wäre jedoch erforderlich: ein primärer, direkt zitierbarer ASML‑Kommuniqué (Pressemitteilung, Kunden‑Anschreiben oder öffentlich zugängliche Preislisten), oder dokumentierte, messbare Marktfolgen (z. B. berichtete 2027 OPEX‑Buchungen bei Samsung/SK hynix oder beobachtete Index‑/Vertragsmessgrößen), sowie eine explizite Verknüpfung zu einer der vorhandenen Vorhersagen in der Inbox. Diese Primärnachweise fehlen in den berichtenden Artikeln; die Quellen sind Medienwiederholungen desselben Marktberichts (The Elec als Ursprung), ohne ASML‑Statement oder kundenseitige Bestätigung. Daher ist die Behauptung derzeit nicht hinreichend verifiziert, und ein direkter Einfluss auf die angegebenen Vorhersagen kann nicht sauber quantifiziert werden.\n\nAdversarial / Opposing Evidence Check: kein ASML‑Statement oder regulatorisches Filing gefunden, das die Erhöhung bestätigt; ASML‑Investor/IR‑Seiten (Q‑Präsentationen) zeigen regelmäßig Aftermarket‑Umsatzanteile, aber keine länderspezifischen Preislisten. Mehrere Nachrichtenaggregatoren reproduzieren denselben The Elec‑Bericht; das Fehlen einer ASML‑Primärquelle erhöht das Risiko von Gerüchten/Fehlinterpretationen. Deshalb Entscheidung: watchlist — behalte für Primärverifikation und Messdaten bis 2027-01-31 unter Beobachtung.",
+      "candidateId": "8da2589e42fc94f97e1a",
+      "candidateKey": "e13191889894537bddc12cfd",
+      "reviewedAt": "2026-10-10T16:20:33.910Z",
+      "priorityScore": 61,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_06b03c308cc0d066006aca65c03adc87d1a20ab7fd4dda7283"
+    },
+    {
+      "decision": "watchlist",
+      "title": "'Samsung and SK Hynix Stocks Surge' — Marktreaktion dokumentiert; kein primärer Beleg für ein datiertes, messbares Verschärfungs‑Event der AI‑Memory‑Verfügbarkeit",
+      "fact": "Am 2026-09-21/22 berichteten mehrere Medien über starke Kursgewinne von Samsung und SK hynix, die in Artikeln mit einer angeblich sich \"vertiefenden\" AI‑Memory‑Knappheit verknüpft wurden; der vorliegende Kandidatenartikel (Startup Fortune) datiert 2026-09-21. Es fehlt jedoch ein primärer, quantifizierbaren Nachweis (z. B. Vertrags‑Shipments, qualifizierte Lead‑Time‑Messung oder Fill‑Rate‑Änderung) der tatsächlichen Verschärfung der Verfügbarkeit zu dem Datum.",
+      "placement": "Globaler Memory‑Markt; relevanter Layer: HBM / Server‑DRAM / Kapitalmärkte; horizontale Einordnung: kurzfristig (Tage/Wochen) um 2026-09-21/22.",
+      "mechanism": "Behaupteter Mechanismus im Kandidatentext: erhöhte Hyperscaler‑/Neocloud‑Nachfrage für HBM/Server‑DRAM treibt Marktpreise und bindet verfügbare Bit‑Kapazität, was Anleger zu Kursgewinnen bei Memory‑Anbietern veranlasst. Der Kandidatentext liefert jedoch keine harte, direkte Messung (z. B. bestätigte qualifizierte Shipments, Lead‑Time‑Erfassung oder Vertragsspezifikation), die diese kausale Behauptung stützt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert die Vorhersage, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben; wenn die behauptete Knappheit primär und andauernd wäre, würde sie die Wahrscheinlichkeit für das Forecast‑Outcome erhöhen.",
+      "falsifier": "Bis 2026-12-31: nachweisbare, primärquellenbasierte Messungen (mindestens zwei unabhängige Hersteller/Markt‑Reports) zeigen entweder (a) kontrakt‑/Spot‑Kontraktpreise, die für zwei aufeinanderfolgende Quartale ≥10% rückläufig sind, oder (b) bestätigte Lead Times für Server‑DRAM/HBM ≤8 Wochen, oder (c) veröffentlichte qualifizierte Shipments/Fill‑Rates, die eine marktweite Angebotsverbesserung zeigen. Wenn eine dieser Bedingungen bis 2026-12-31 erfüllt ist, widerspricht das die Kandidatenbehauptung einer sich \"vertiefenden\" Knappheit zum Berichtsdatum.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-21",
+      "novelty": "Niedrig — zeigt Marktreaktion, keine neue strukturelle Beobachtung; größtenteils Bericht über Aktienbewegungen.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://startupfortune.com/samsung-and-sk-hynix-stocks-surge-as-ai-memory-shortage-deepens/",
+          "label": "Startup Fortune — Kandidatenartikel (veröffentlicht 2026-09-21)",
+          "kind": "primary",
+          "supports": "Bericht über Kursgewinne von Samsung und SK hynix am ~2026-09-21 und die Darstellung, dass Marktkommentare dies mit einer sich vertiefenden AI‑Memory‑Knappheit verbinden."
+        }
+      ],
+      "reason": "Der Kandidat ist im Kern ein Kapitalmarkt‑/Nachrichtenbericht über Aktienbewegungen (Datum 2026-09-21). Für eine TAIL‑Aufnahme als VERIFIED DATA / Accepted ist ein atomarer, datierter, messbarer Beleg erforderlich (z. B. qualifizierte Shipments, Lead‑Time‑Messung, Fill‑Rate‑Änderung oder verbindliche Vertragslieferung), der die Behauptung einer sich \"vertiefenden\" Knappheit explizit zeigt. Der vorgelegte Artikel liefert nur Marktstimmung und keine solche primäre Messung. Opposing/nuancierende Quellen (z. B. Reuters/Bloomberg‑Berichte derselben Tage) bestätigen die Kursgewinne, liefern aber ebenfalls keine direkten Angebotsmetriken. Deshalb ist die Aussage derzeit nicht als verifizierte Beobachtung aufnehmenswürdig; sie bleibt ein marktreporting‑Signal, das die bestehende Prognose P-2026-07-11-01 potenziell beeinflusst, aber nicht hinreichend belegt ist. Empfehlung: Watchlist — sammle primäre, quantifizierbare Angebots‑/Lieferdaten (Shipments, Lead Times, Fill Rates, oder Hersteller‑Shipment‑Ankündigungen) bevor die Beobachtung als VERIFIED DATA akzeptiert werden kann.",
+      "candidateId": "0e4b8174b7e2c13e6626",
+      "candidateKey": "86e0c33188c353023cee6020",
+      "reviewedAt": "2026-10-10T16:20:50.871Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0435a1b7c851f7e9006aca65d218b887d18d58a306b0c9b948"
     }
   ]
 }
