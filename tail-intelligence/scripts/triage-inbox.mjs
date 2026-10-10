@@ -18,6 +18,13 @@ const coreScope = s => /\b(hbm\d*|high bandwidth memory|server[- ]?dram|\bdram\b
 const materialEvent = s => /\b(price|pricing|asp|contract|agreement|\blta\b|shipment|shipments|ship|allocation|lead[- ]?time|fill[- ]?rate|inventory|inventories|capacity|wafer starts?|yield|production|mass production|qualification|qualified|shortage|constraint|bottleneck|delay|strike|export controls?|sanctions?|tariffs?|capex|investment|invests?|factory|plant|fab|cleanroom|megawatt|gigawatt|\bmw\b|\bgw\b|revenue|earnings|guidance|orders?|backlog|supply|demand|utilization|utilisation)\b/i.test(s);
 const architectureFalsifier = s => /\b(inference|training|agentic|frontier model|context window|kv cache|distillation|memory efficiency|compute efficiency|tokens? per|latency|throughput)\b/i.test(s) && /\b(memory|dram|hbm|ssd|nand|gpu|compute|power|energy|cost|capacity|demand)\b/i.test(s);
 const genericNoise = s => /\b(opinion|podcast|interview|what to know|explained|explainer|review|roundup|top picks?|best stocks?|market wrap|weekly wrap|daily wrap|rumou?r)\b/i.test(s);
+// Headline-level exceptions to the numeric relevance score. A score below 72
+// must not silently discard a measurable memory supply or product event.
+const measurableMemoryEvent = s =>
+  (/\b(ymtc)\b/i.test(s) && /\b(micron)\b/i.test(s) && /\b(patent|injunction|court|ruling)\b/i.test(s)) ||
+  /\b(micron|samsung|sk hynix|cxmt|ymtc|kioxia|sandisk)\b/i.test(s) &&
+  /\b(dram|ddr5|rdimm|hbm\d*|nand|enterprise[- ]?ssd|memory|wafer)\b/i.test(s) &&
+  /\b(mass production|enters production|shipment|shipments|output|capacity|fab|wafer|yield|contract prices?|allocation|shortage|qualified|qualif(?:y|ication)|injunction|patent (?:fight|battle|ruling)|dies per wafer|module)\b/i.test(s);
 
 const anchorWords = ['micron','samsung','hynix','kioxia','sandisk','cxmt','ymtc','nvidia','amd','tsmc','asml','openai','anthropic','microsoft','meta','amazon','google','huawei','hbm','hbm4','dram','rdimm','mrdimm','nand','essd','ssd','cxl','cowos','datacenter','hyperscaler'];
 const anchors = s => {
@@ -36,11 +43,11 @@ function prefilter(item) {
   if (item.source_id === 'manual-tail-inbox') return null;
   const score=Number(item.relevance_score||0);
   const text=`${item.title||''} ${item.summary||''}`;
-  if (score < 72) return {decision:'archive-low-relevance',reason:'Free prefilter: relevance score below 72.'};
+  if (score < 72 && !measurableMemoryEvent(item.title)) return {decision:'archive-low-relevance',reason:'Free prefilter: relevance score below 72 without a measurable memory event in the headline.'};
   if (opinion(item.title) && !factual(item.title)) return {decision:'archive-opinion',reason:'Explicit investment recommendation / stock commentary without a concrete operating event in the headline.'};
   if (genericNoise(item.title) && score < 90) return {decision:'archive-generic-news',reason:'Generic commentary/roundup without exceptional relevance.'};
   if (!coreScope(text) && !architectureFalsifier(text) && score < 90) return {decision:'archive-out-of-scope',reason:'No direct Memory/Storage/AI-infrastructure scope or measurable architecture falsifier.'};
-  if (!materialEvent(text) && !architectureFalsifier(text) && score < 85) return {decision:'archive-no-material-event',reason:'Relevant topic, but no concrete price/supply/demand/capacity/contract/infrastructure event.'};
+  if (!materialEvent(text) && !architectureFalsifier(text) && !measurableMemoryEvent(item.title) && score < 85) return {decision:'archive-no-material-event',reason:'Relevant topic, but no concrete price/supply/demand/capacity/contract/infrastructure event.'};
   return null;
 }
 
@@ -61,7 +68,7 @@ function sameEvent(a,b) {
 
   const na=numberSet(a.title), nb=numberSet(b.title);
   const conflictingNumbers=na.size&&nb.size&&!sharesAny(na,nb);
-  if (conflictingNumbers) return titleSimilarity>=0.76 || combinedSimilarity>=0.68;
+  if (conflictingNumbers) return false;
   return titleSimilarity>=0.58 || (commonTitle>=4 && combinedSimilarity>=0.46);
 }
 
