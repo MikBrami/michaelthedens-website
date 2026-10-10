@@ -55377,6 +55377,152 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0435a1b7c851f7e9006aca65d218b887d18d58a306b0c9b948"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: CXMT bringt DDR5 RDIMM mit 4F²-Architektur vor Jahresende 2026 (Wccftech-Bericht)",
+      "fact": "Bericht (Wccftech) besagt, CXMT kündigte an, eine DDR5 RDIMM-Serverproduktlinie auf Basis einer 4F²-Speicherzellen‑Architektur bis spätestens 2026-12-31 auf den Markt zu bringen und damit Samsung um ~2 Jahre vorauszueilen.",
+      "placement": "Geographie: China (CXMT/Bezug auf chinesischen Markt und Server‑RDIMM). Domain/Layer: server_dram / RDIMM (Enterprise/Server‑Memory). Horizon: bis 2026-12-31.",
+      "mechanism": "Wenn CXMT tatsächlich eine qualifizierte DDR5 RDIMM‑Produktlinie mit 4F²‑Zellen bis 2026-12-31 ausliefert, erhöht dies das verfügbare qualifizierte Host‑Bit‑Angebot für Server‑DRAM (Verfügbarkeit), vermindert strukturellen Knappheit‑Druck und könnte kurzfristig Allokationen/Preise im Server‑Segment dämpfen. Die beobachtbare Kausalspur: (Ankündigung → qualifizierte Muster/Validierungen → Kunden‑Tape‑ins → dokumentierte Shipments / LT‑Verbesserung → messbare Veränderung in Fill‑Rates/Lead‑Times / Kontraktpreisen).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "directional: availability_relief (verfügbarkeit verbessert) — würde das Basisszenario 'HBM und Server‑DRAM bleiben strukturell knapp bis mindestens Ende 2028' (P-2026-07-11-01) in Richtung weniger knapp verschieben, falls CXMT‑Produkte qualifiziert und in nennenswerten Mengen shipped werden.",
+      "falsifier": "Bis 2026-12-31 keine Primärquelle von CXMT (Pressemitteilung, Konferenzprotokoll oder Produkt‑/Qualifizierungsdokument) die: a) ein veröffentlichtes DDR5 RDIMM‑Produkt mit 4F²‑Architektur spezifiziert und datiert; oder b) berichtete, qualifizierte Shipments (kundenbestätigte Auslieferungen, OEM/ODM‑Validierung oder offizielle Kunden‑Tapes) mit mindestens einmaliger, belegbarer Lieferung von RDIMM‑Einheiten. Falls bis 2026-12-31 ein qualifizierter Produktlaunch oder dokumentierte Shipments vorliegen, wird die Aussage als VERIFIABLE geprüft; falls nicht, wird die Behauptung als falsifiziert für den behaupteten Zeitrahmen betrachtet.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-10-10",
+      "novelty": "moderat (CHINA‑surge im Server‑Memory ist bekannt, aber 4F²‑RDIMM‑Claim für Year‑End ist spezifisch)",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://wccftech.com/cxmt-to-leapfrog-samsung-by-2-years-as-it-gears-up-to-introduce-a-ddr5-rdimm-product-that-leverages-the-4f%C2%B2-memory-cell-architecture-before-year-end/",
+          "label": "Wccftech — Originalartikel im Kandidaten‑Thread (sekundäre Newsquelle, berichtet CXMT‑Ankündigung)",
+          "kind": "secondary",
+          "supports": "Wccftech berichtet, CXMT habe auf einer Branchenveranstaltung angekündigt, ein DDR5 RDIMM‑Produkt auf Basis der 4F²‑Zellenarchitektur noch 2026 liefern zu wollen."
+        },
+        {
+          "url": "https://www.kucoin.com/news/flash/cxmt-announces-ddr5-rdimm-product-based-on-4f-architecture-expected-by-year-end",
+          "label": "KuCoin News — sekundäre Bestätigung (Kurzmeldung)",
+          "kind": "secondary",
+          "supports": "Kurzmeldung wiederholt die Behauptung, nennt die Conference als Ursprung."
+        },
+        {
+          "url": "https://www.cnbeta.com.tw/articles/tech/1581574.htm",
+          "label": "cnBeta (taiwanesische Tech‑Site) — weitere Sekundär‑Berichterstattung",
+          "kind": "secondary",
+          "supports": "Bericht erwähnt CXMT‑Plan, bis Jahresende 2026 4F²‑basierte DDR5 RDIMM‑Servermodule einzuführen."
+        }
+      ],
+      "reason": "Die vorgelegte Kandidatenquelle ist eine sekundäre Medienberichterstattung (Wccftech) über eine angebliche CXMT‑Ankündigung auf einer Branchenveranstaltung. Ich konnte sekundäre Nachberichterstattung (KuCoin, cnBeta u.a.) finden, jedoch keine Primärquelle von CXMT (offizielle Pressemitteilung, Konferenz‑Transcript, Produktdatenblatt) oder bestätigte qualifizierte Shipments/ODM‑Validierungen, die die Kernbehauptung (besonders der Zeitrahmen 'vor Jahresende 2026' und der technologische Vergleich 'Leapfrog Samsung um ~2 Jahre') direkt stützt. Nach TAIL‑Regeln ist ohne Primärverifikation oder messbare Shipment/Qualifikationsdaten die Aufnahme in VERIFIED DATA nicht zulässig — deshalb Watchlist. Relevanz zum Baseline: Wenn bestätigt, würde dies die Verfügbarkeits‑/Knappheitsannahmen für Server‑DRAM (P-2026-07-11-01; OUTLOOK-server_dram) material beeinflussen; deswegen verknüpft mit P-2026-07-11-01. Offene Gegenbelege / Zweifel: Marktanalysten, TechInsights‑Quellen und frühere Assessments setzen CXMT technologisch mehrere Jahre hinter dem Stand von Samsung/SK‑hynix; Yield‑ und Qualifikationsrisiken sind regelmäßig berichtet worden. Ohne direkte CXMT‑Primärquelle bleiben Zeitrahmen, Lieferfähigkeit und tatsächliche Produktreife unbewiesen. Empfehlung: Beobachten bis 2026-12-31; verlangen Primärbelege (CXMT‑Pressemitteilung, OEM/ODM‑Validierung, Kunden‑Shipments, Produkt‑Datenblatt mit Seriennummern/Tracking) bevor Update auf ACCEPTED (VERIFIED DATA).",
+      "candidateId": "a01c13e1cf53d7465b05",
+      "candidateKey": "8d22d074de42ad2b719d3a7e",
+      "reviewedAt": "2026-10-10T20:40:13.979Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_040e374132c4a49c006acaa29a33a487d1b35bb250c91d069f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung plant HBM4/HBM4E‑Output 2027 zu verdoppeln; Mix von ~40% → ~80%",
+      "fact": "Berichten zufolge könnte Samsung die Produktion der HBM4‑Familie (HBM4 / HBM4E) im Jahr 2027 gegenüber 2026 mindestens verdoppeln; mehrere Medien führen eine Prognose an, dass der Anteil der HBM4‑Familie an Samsungs HBM‑Auslieferungen von etwa 40 % in 2026 auf rund 80 % in 2027 steigen könnte.",
+      "placement": "Geographie: global (Samsungs HBM‑Supply); Domain/Layer: HBM‑Produktmix (HBM4/HBM4E) innerhalb der Memory‑Supply‑Kette; Horizon: Kalenderjahr 2027.",
+      "mechanism": "Begründet wird der Bericht mit Branchenindikatoren (u. a. Berichte über steigende externe Glas‑Carrier‑Cleaning‑Aufträge und Analysten‑Schätzungen höherer HBM‑Wafer‑Inputs), was — falls verifiziert — zu deutlich mehr qualifiziertem HBM4/HBM4E‑Output führt und damit die verfügbare HBM‑Kapazität für AI‑Accelerator‑Bedarf erhöht; gleichzeitig verschiebt diese Mix‑Verlagerung knappe Advanced‑Frontend‑ und Packaging‑Ressourcen in Richtung HBM4, was die Verfügbarkeit anderer DRAM‑Produkte relativ verschärfen kann.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert das Forecast‑Zitat, dass HBM (als Teil der Memory‑Schicht) strukturell knapp bleibt bis Ende 2028: ein verifizierter massiver HBM4‑Ramp (verdoppelter Output und 80% Mix) würde das HBM‑Knappheits‑Signal abschwächen (downward pressure on negative_supply for HBM) oder zumindest die Engpass‑Zeitachse modifizieren; derzeit ist das Ereignis aber nicht primär verifiziert.",
+      "falsifier": "Bis 2027-12-31 muss Samsung (oder ein verifizierter Primärbericht von Samsung) einen belegbaren Produktions‑ oder Auslieferungsnachweis veröffentlichen, der entweder a) HBM4/HBM4E‑Waferinput oder qualifizierte HBM4‑Shipments mindestens +100% gegenüber 2026 ausweist, oder b) einen offiziellen Produktionsplan mit konkreten Monats‑/Quartals‑Waferzahlen (z. B. wafers/month) sowie die HBM4‑Familienanteils‑Metrik (in Prozent) für 2027 nennt. Falls bis 2027-12-31 weder ein offizieller Samsung‑Nachweis noch verifizierbare qualifizierte Shipment‑Daten diese Verdopplung bestätigen, wird die Aussage als widerlegt gewertet.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-09-21",
+      "novelty": "Moderat — behauptet eine materialverschiebende Mix‑Änderung für 2027, aber basiert auf berichteten Branchenindikatoren/Analystenaussagen statt auf einem Samsung‑Primärstatement.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 11,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 12,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/07/30/samsung-to-mass-produce-next-gen-hbm4e-next-year-eyes",
+          "label": "Seoul Economic Daily (engl.) – Bericht zu HBM4/HBM4E‑Mass Production und Mix‑Aussage",
+          "kind": "primary",
+          "supports": "Bericht nennt Mass‑Production‑Plan für HBM4E nächstes Jahr und verweist auf Output‑/Mix‑Prognosen (HBM4‑Familienanteil steigend von ~40% auf ~80%)."
+        },
+        {
+          "url": "https://stockhub.kr/en/news/news_596ce8b9cd97",
+          "label": "StockHub / Nachberichterstattung (engl.)",
+          "kind": "secondary",
+          "supports": "Fasst dieselbe Behauptung zusammen: Branchenquelle/Analystenschätzungen sehen Verdopplung des HBM4‑Outputs und Mix‑Anstieg auf ~80% in 2027."
+        }
+      ],
+      "reason": "Die eingereichte Inbox‑Meldung ist thematisch relevant für das bestehende Baseline‑Signal (HBM/Server‑DRAM‑Knappheit). Allerdings fehlt eine klare Primärverifikation durch Samsung (offizielle Produktionszahlen, Wafer‑Input‑Kennzahlen, oder qualifizierte Shipment‑Metriken mit Datum und Einheiten). Die derzeit verfügbaren Artikel sind Repor­tagen/Analystenzusammenfassungen, die auf Branchenindikatoren (z. B. steigende Glas‑Carrier‑Cleaning‑Orders) und nicht‑öffentlichen Quellen beruhen. Nach den TAIL‑Regeln ist das ungenügend, um VERIFIED DATA oder direkte Index‑Impact‑Zuweisung zu geben. Deshalb wird die Meldung auf Watchlist gesetzt und nicht akzeptiert: wir fordern einen Samsung‑Primärnachweis (konkrete Wafer/Monat, qualifizierte Shipments oder offizielle Guidance) oder beobachtbare, qualifizierte Lieferdaten, bevor eine Annahme erfolgen kann.\n\nGegenbelege / Adversarial Check: Es existieren mehrere Berichte über starke HBM‑Nachfrage und „sold out“‑Aussagen (z. B. frühere Samsung‑Kommentare zu HBM4‑Sold‑Out, Micron/SK‑Hy­nx‑Ankündigungen über Kapazitätserweiterungen). Diese Quellen können die Interpretation (verstärkter Wettbewerb um Packaging/Frontend) stützen, zeigen aber auch, dass andere Hersteller (Micron, SK hynix, CXMT) ebenfalls Kapazitätsbewegungen melden — ein klares Opposing‑Evidence‑Argument ist, dass ohne Samsung‑offiziellen Produktionsnachweis die behauptete Verdoppelung plausibel, aber nicht verifiziert ist. Zudem unterscheiden viele Berichte zwischen Indikatoren (Glas‑Carrier‑Cleaning, Wafer‑input‑Schätzungen) und qualifizierten, auslieferbaren Shipments: nur Letzteres rechtfertigt Index‑Impact‑Zuweisung.\n\nEmpfohlene nächste Schritte: Überwachen auf (1) ein offizielles Samsung‑Statement mit Monats/Quartal‑Waferzahlen oder HBM4‑Shipment‑Prozentangaben; (2) verifizierte, qualifizierte Shipment‑Daten (z. B. Kundenbestätigungen, Rechnungen, offizielle Samsung‑Earnings/IR‑Slides mit Zahlen) — wenn gefunden, bitte Re‑Submission zur Neubewertung (erforderlich für Acceptance). Falls Samsung in einem Earnings‑Release oder offiziellen IR‑Dokument konkretes Wafer‑Input‑ oder Shipment‑Volumen (z. B. wafers/month, GB oder Stück) angibt, wird dies als Primärquelle akzeptiert und kann zu einer Annahme mit indexImpact=True (wenn die Messgröße direkt ein Index‑Metric ist) führen.\n\nScore‑Kommentar: Die Teilwerte reflektieren moderate Quellenqualität (Primärquelle fehlt), hohe Relevanz für die Thesen (HBM‑Knappheit), aber begrenzte derzeitige Auswirkung auf Index‑Metriken, mittlere Falsifizierbarkeit (klares, datierbares Testkriterium definiert) und moderate Zeitkritikalität (Plan für 2027).",
+      "candidateId": "b156f6e259215b0141af",
+      "candidateKey": "915c0533ceb94b8f3fb7a646",
+      "reviewedAt": "2026-10-10T20:40:34.283Z",
+      "priorityScore": 71,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_095894884044c67b006acaa2ae388c87d1b076a850dd442baf"
     }
   ]
 }
