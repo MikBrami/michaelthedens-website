@@ -54962,6 +54962,137 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0010e6682dbacc51006ac960e3798487d28edef76a4de33a79"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Samsung habe HBM4‑Versorgungsmonopol genutzt, um AMD zu Foundry‑Gesprächen zu zwingen",
+      "fact": "TechTimes‑Artikel (2026‑10‑09) berichtet, Samsung habe angeblich seine HBM4‑Lieferposition als Hebel eingesetzt, um AMD in Gespräche über Foundry‑Fertigung zu drängen.",
+      "placement": "Global / Halbleiter‑Supply‑Chain / Unternehmens‑Verhandlungsebene (Samsung ↔ AMD).",
+      "mechanism": "Narrativ/Behauptung: Angebliche marktbezogene Hebelwirkung durch priorisierte HBM4‑Allokation (präferenzielle Lieferzuweisung an AMD) als Verhandlungsdruck, verbunden mit Angeboten von Foundry‑Aufträgen im Gegenzug. Der Kandidat behauptet Kausalität (Lieferknappheit → erzwungene Foundry‑Gespräche).",
+      "predictionId": "P-2026-07-30-06",
+      "predictionImpact": "Wenn bewiesen, würde die Behauptung die Annahme stützen, dass Samsung seine Memory‑Verträge und Kapazitätssteuerung strategisch nutzt, um Foundry‑Orders/Bindungen zu generieren — relevant für die Vorhersage, dass Samsung bis 2026 fünf mehrjährige Memory‑LTAs abschließt und danach >60% Werks‑Volumen bindet (Auswirkung auf Marktmacht/Vertragsdynamik).",
+      "falsifier": "Öffentliche, primär‑quellenbasierte Widerlegung oder Bestätigung eines der beiden Punkte bis 2027-01-31: (A) AMD oder Samsung veröffentlicht eine detaillierte, datierbare Primärquelle (vertragliche Bestätigung / regulatorische Offenlegung / CEO‑Statement) die explizit belegt, dass Samsung HBM4‑Liefermengen bedingt an Foundry‑Aufträge geknüpft hat; ODER (B) AMD veröffentlicht ein Statement/Vertrag, das zeigt, dass Foundry‑Gespräche unabhängig von HBM4‑Allokation und ohne Lieferdruck stattfanden. Fehlen solche Primärbelege bis 2027-01-31 falsifiziert die behauptete kausale Behauptung.",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-10-09",
+      "novelty": "Moderat — verbindet bekannte MOU/Versorgungs‑Fakten mit einer interpretativen Hebel‑These, die neu und entschiedener formuliert ist.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 15,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.techtimes.com/articles/328853/20261009/samsung-used-hbm4-memory-supply-monopoly-force-amd-foundry-talks.htm",
+          "label": "TechTimes — 'Samsung Used HBM4 Memory Supply Monopoly to Force AMD Into Foundry Talks' (article)",
+          "kind": "secondary",
+          "supports": "Hauptbehauptung/Interpretation, datiert 2026-10-09; stellt dar, Samsung habe HBM4‑Lieferposition als Verhandlungshebel genutzt."
+        }
+      ],
+      "reason": "Der Kandidat basiert auf einem aktuellen TechTimes‑Artikel (2026‑10‑09), der eine interpretative Behauptung aufstellt: Samsung habe seine HBM4‑Lieferposition genutzt, um AMD zu Foundry‑Gesprächen zu zwingen. Primärquellen (AMD und Samsung) bestätigen eine MOU‑Partnerschaft zur Ausrichtung von HBM4‑Lieferungen (März 18, 2026), aber sie dokumentieren nicht die behauptete kausale Transaktion (‚HBM4 als Gegenleistung für Foundry‑Aufträge‘) noch bringen sie ein datiertes, vertraglich belegbares Dokument, das die behauptete Form von Zwang/Lotseffekt beweist. Ohne solche primären, direkten Belege bleibt die Behauptung interpretativ und adversarial (mögliche Motiv‑/Absichtszuschreibung). Zusätzlich gibt es mehrere Branchenartikel/Analysen, die nahelegen, Samsung nutze integrierte Angebote (one‑stop‑shop) strategisch — das ist jedoch kein Beweis für erzwungene Foundry‑Zugeständnisse. Nach TAIL‑Aufnahmekriterien ist das keine atomare, datierte, messbare Beobachtung mit Einheiten; daher kann die Meldung nicht als VERIFIED DATA aufgenommen werden. Es fehlen direkte, datierbare Vertragstexte, regulatorische Offenlegungen oder CEO‑Aussagen, die die behauptete kausale Verbindung belegen. Deshalb wird der Kandidat auf Watchlist gesetzt und eine klare Liste fehlender Belege angegeben; ohne Primärverifikation ist die Aufnahme nicht gerechtfertigt.\n\nGegenbelege: offizielle AMD und Samsung MOU‑Mitteilungen (2026‑03‑18) beschreiben Kooperation und HBM4‑Lieferausrichtung, aber lehnen die Härteformulierung ('Zwang'/'Monopoly‑Einsatz') nicht ab; es fehlt jedoch jede Beweiskette, die eine erzwungene Bedingung dokumentiert.\n\nEmpfohlenes Follow‑up (Next Review 2027‑01‑31): Suche nach primären, datierten Dokumenten (vertraglicher Auszug, regulatorische Einreichung, CEO/Aufsichtsrat‑Protokoll oder AMD/Samsung‑Erklärung), die explizit zeigen, dass HBM4‑Liefermengen formell an Foundry‑Verpflichtungen gebunden wurden — oder eine explizite Widerrufs-/Gegenaussage von AMD/Samsung, die das Narrativ klar widerlegt. Fehlt diese Primärverifikation bis zum Review‑Datum, bleibt die Behauptung nicht bewiesen und erhält keine höhere Aufnahme.",
+      "candidateId": "6358298c21c7157ccfec",
+      "candidateKey": "5307b2bb37f93a29f65d0fdf",
+      "reviewedAt": "2026-10-10T02:24:13.330Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b8c830fd6842db1006ac9a1b2b19487d0b4736bd6e846de25"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix‑Tochter Solidigm prüft US‑NAND‑Werk (Medienberichte, keine Firmenankündigung)",
+      "fact": "Mehrere Medien berichten, dass die SK hynix‑Tochter Solidigm erwägt, ein NAND‑Fertigungswerk in den USA zu bauen; Upstate New York wird in Berichten als führender Kandidat genannt. (Erste Meldungen publiziert 2026-09-18 / 2026-09-21).",
+      "placement": "Geographie: USA (berichtet: Upstate New York). Domäne/Lage: Frontend NAND‑Fab (Greenfield/Neubau). Horizon: potenzieller Projektstart / Standortentscheidung (nicht datiert, Planungsphase).",
+      "mechanism": "Ein US‑Fab würde Solidigm/SK hynix helfen, Abhängigkeit von Dalian (China) zu reduzieren, US‑Regelungs-/Tarifrisiken zu mindern und langfristig zusätzliche NAND‑Bit‑Ausbringung in den USA zu liefern — potenziell dämpfend auf regionale NAND‑Versorgungsrisiken, sofern geplantem Werk echte Investitions‑ und Produktionsmeilensteine folgen.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Wenn bestätigt (Bau‑FID + qualifizierte Produktion mit messbaren Bit‑Output), würde dies das Basisszenario des fortgesetzten Memory‑Knappheitsdrucks für NAND/Enterprise‑SSD in 2027–2028 (P-2026-07-20-04) teilweise verringern; derzeit ist die Wirkung hypothetisch.",
+      "falsifier": "Bis 2026-12-31 kein formeller Firmen-/Investor‑Ankündigungstext (SK hynix oder Solidigm) mit konkretem FID‑Datum, keine staatlichen Incentive‑Anträge/Einreichungen für einen US‑Standort und keine bau‑ oder landwirtschaftlichen Genehmigungs‑/Incentive‑dokumente für einen New‑York‑Standort. Wenn ein solches offizielles Paket (Ankündigung + Incentive‑filing + FID) vorliegt, bestätigt das die Nachricht; falls bis 2026-12-31 nichts vorliegt, ist der Bericht nicht verifizierbar.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Die Meldung ist neu in Bezug auf einen möglichen US‑NAND‑Greenfield durch Solidigm; ähnliche Baseline‑Themen (SK hynix Investitionspläne, HBM/NAND‑Ausbau) existieren, die Meldung aber konkretisiert eine US‑Standortoption.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 6,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.thelec.net/news/articleView.html?idxno=14040",
+          "label": "The Elec – 'SK hynix Subsidiary Solidigm Considers US NAND Plant' (2026-09-18/21)",
+          "kind": "secondary",
+          "supports": "Fasst Meldungen zusammen, nennt Solidigm als prüfendes Unternehmen und erörtert Zusammenhang mit Dalian‑Abhängigkeit und strategischer Ausrichtung."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung basiert auf Medienberichten (Reuters, The Elec u. a.) über interne Erwägungen von Solidigm/SK hynix. Diese Berichte sind relevant für die TAIL‑Thesen zu NAND/Enterprise‑SSD‑Verfügbarkeit, erfüllen jedoch nicht die Aufnahmeanforderung für 'VERIFIED DATA': es fehlt ein formaler Primärbeleg (Unternehmensankündigung, FID, behördliche Einreichung, Incentive‑Filing oder messbare Produktionsangaben in Einheiten). Opposing Evidence: bis dato keine offizielle SK‑hynix/Solidigm‑Pressemitteilung mit FID/Spatenstich gefunden. Deshalb Watchlist — weiteres Monitoring nötig, bis konkrete, datierte Investitions- und Produktions‑Ereignisse (mit Einheiten/Outputs) vorliegen.",
+      "candidateId": "2ee7fce4c78a52fdf1b0",
+      "candidateKey": "b539fcb397ef85a2a7b94509",
+      "reviewedAt": "2026-10-10T02:24:29.972Z",
+      "priorityScore": 60,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_006ec902d52285ac006ac9a1cd82f487d0a4326ce95196af52"
     }
   ]
 }
