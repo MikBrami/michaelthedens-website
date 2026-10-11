@@ -55523,6 +55523,159 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_095894884044c67b006acaa2ae388c87d1b076a850dd442baf"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Humanoid-Roboter treiben DRAM-/HBM‑Nachfrage? (Chosunbiz‑Bericht)",
+      "fact": "Chosunbiz berichtet, Humanoid‑Roboter könnten die DRAM/HBM‑Nachfrage erhöhen und Samsung sowie SK hynix würden davon profitieren.",
+      "placement": "Geographie: global / Schwerpunkt: Korea‑zentrierte Lieferanten (Samsung, SK hynix); Layer: Memory (DRAM, HBM) und Advanced Packaging; Horizon: kurz‑ bis mittelfristig (2026–2028).",
+      "mechanism": "These im Artikel: Kommerzielle Humanoid‑Rollouts erhöhen die Nachfrage nach High‑Performance Inferenz‑Chips und damit nach HBM/Server‑DRAM sowie zugehörigen Komponenten (Sensoren, Power‑ICs, Packaging), wodurch Anbieter mit integrierten Memory‑ und Packaging‑Stacks (z. B. Samsung, SK hynix) Nachfrage‑ und Preisvorteile erzielen könnten.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt die Basissicht, dass HBM und Server‑DRAM bis mindestens Ende 2028 strukturell knapp bleiben; signalisiert Nachfrage_up für dram/hbm, somit erhöhtes Risiko für 'negative_supply' und 'price_up' im Baseline OUTLOOK-server_dram.",
+      "falsifier": "Konkreter Falsifizierer (prüfbar bis 2027-12-31): Wenn bis 2027‑12‑31 keine berichteten, zahlungswirksamen Humanoid‑Serienshipments oder verbindlichen Großaufträge (≥10.000 Einheiten oder ≥US$500M aggregierter Auftragswert) von Industriekunden existieren, die in Lieferverträgen Memory‑Volumina (GB/Jahr) nennen, dann ist die Kausalbehauptung (Humanoids → signifikante zusätzliche DRAM/HBM‑Nachfrage) nicht bestätigt.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-06-02",
+      "novelty": "Moderat — verbindet bestehende HBM/DRAM‑Nachfrageerzählung mit einem neuen Nachfragetreiber (Humanoide).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/06/02/RB76PUICGRBIDGEERT45HOQAQI/?outputType=amp",
+          "label": "Chosunbiz – 'Humanoid boom spurs Samsung Foundry ...' (Englisch, 2026-06-02)",
+          "kind": "primary",
+          "supports": "Bericht formuliert, dass Humanoid‑Robotik die Nachfrage nach AI‑Chips und damit nach halbleiterspezifischen Komponenten (sensors, power semiconductors, MCUs) steigern könnte; nennt Samsung als potenziellen Profiteur wegen Memory/HBM/Packaging‑Stack."
+        },
+        {
+          "url": "https://prod.chosunbiz.com/en/en-it/2026/07/29/OEZE4PT2OFB5ZLEQG7DIZJI654/",
+          "label": "Chosunbiz – SK hynix Kommentar (2026-07-29)",
+          "kind": "secondary",
+          "supports": "SK hynix zitiert, dass AI‑Investitionen Nachfrage über HBM bis Server‑DRAM ausweiten; stärkt Plausibilität einer breiteren Memory‑Nachfrage durch AI‑Anwendungen."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist thematisch relevant (verknüpft Humanoid‑Roboter mit Memory‑Nachfrage) und stützt damit Basishypothesen über anhaltende Knappheit bei HBM/Server‑DRAM. Sie liefert jedoch keine primären, quantitativen Messgrößen (keine konkreten Shipments, GB‑Volumina, vertragliche Memory‑Abnahmengen, Preise oder Lead‑Time‑Änderungen). Nach den TAIL‑Aufnahmekriterien erfordert eine Annahme/Aufnahme einen atomaren, datierten, belegbaren Fakt mit Einheiten und eine klare, prüfbare Kausalverknüpfung. Der vorliegende Artikel ist analytisch/qualitativ und eher Meinung/Marktkommentar als Primärbeobachtung; außerdem fehlen widersprechende oder bestätigende Gegenbelege (z. B. konkrete Auftragssummen von Humanoid‑OEMs, deklarierte Memory‑Volumina in LTAs). Daher kann der Kandidat nicht als VERIFIED DATA angenommen werden und wird auf Watchlist gesetzt mit präzisen Hinweisen, welche ergänzenden Belege nötig wären, um eine Aufnahme zu erlauben. Opposing evidence: starke, dokumentierte HBM‑Reservierungen und Hyperscaler‑LTAs (aus Baseline) sprechen bereits für Knappheit, aber sie belegen nicht, dass Humanoide der Treiber sind; alternativ könnten Datacenter/Neoclouds die Hauptursache bleiben. Die vorgeschlagene Falsifizierbarkeit ist konkret und datiert (bis 2027‑12‑31).",
+      "candidateId": "f0f53621810ad15ddb36",
+      "candidateKey": "a7cae5b7bb391c56938452ba",
+      "reviewedAt": "2026-10-11T01:56:42.322Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d56b8b0f5a3561e006acaeccc36b487d0ba3790cf1c316b2b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron Q2 NAND‑Umsatz +99.2% (TradingView) + Mediationsdatum 2026‑10‑22 — primäre NAND‑Zahl nicht verifizierbar",
+      "fact": "Behauptung: Micron (MU) meldet für Fiscal Q2 2026 einen NAND‑Umsatz von $11.85 Milliarden, sequenziell +99.2%; zusätzlich: Gewerkschaftsmediation terminiert am 2026‑10‑22.",
+      "placement": "Globale Unternehmens‑/Finanzberichterstattung; relevant für NAND- und Enterprise‑SSD‑Markt (NAND, enterprise_ssd); horizontale Relevanz: Q2‑2026 (Earnings/SEC‑Filings) und Taichung/Taoyuan (Taiwan) Arbeitsstreit‑Zeitplan.",
+      "mechanism": "Ein sehr hoher sequenzieller NAND‑Umsatz (wenn korrekt) würde die Verfügbarkeits‑ und Preisdynamik im NAND/Enterprise‑SSD‑Markt kurzfristig verstärken (Verknappungssignal → price_up / negative_supply in Teilmärkten), weil erhöhte ASPs und Auslastung die Liefersituation verschärfen. Die Mediationsankündigung signalisiert zusätzlich ein arbeitsbedingtes Versorgungsrisiko in Microns taiwanesischen Produktionsstätten (Verfügbarkeitsrisiko, availability).",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Stärkt kurzfristig das 'price_up' / 'structural_shortage' Argument für Enterprise‑SSD und NAND; erhöhte Wahrscheinlichkeitsmasse Richtung kurzzeitiger Preisdruck/Allokation bis H2‑2026/2027.",
+      "falsifier": "Bis 2026‑10‑22 veröffentlicht Micron in einer primären SEC‑Einreichung (8‑K/10‑Q/Press‑Release) oder klaren Quartalsaufstellungen eine explizite, belegbare Zahlenangabe für Fiscal Q2 2026 NAND‑Umsatz ≥ $11.85 Milliarden (und/oder sequenziell ≥ +99.2%). Falls die offizielle Micron‑Quelle den NAND‑Umsatz unter $11.85 Milliarden ausweist oder eine andere QoQ‑Rate dokumentiert, wird die Claim‑Richtung als unbestätigt verworfen. Überprüfungstermin: 2026‑10‑22.",
+      "nextReview": "2026-10-22",
+      "eventDate": "2026-03-18",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://micron.gcs-web.com/news-releases/news-release-details/micron-technology-inc-reports-results-second-quarter-fiscal-2026",
+          "label": "Micron – Q2 Fiscal 2026 Earnings Release / Unternehmens‑Website (press release, primary SEC exhibit referenced).",
+          "kind": "primary",
+          "supports": "Micron veröffentlicht Q2‑FY2026 Results (Press Release / 8‑K / Exhibit 99.1). Die offiziellen Unternehmensdokumente enthalten Konsolidierte Umsatzzahlen, aber in den abrufbaren Micron‑Quellen (Press Release / SEC‑Exhibit) ist die im Kandidatentext genannte explizite NAND‑Zahl $11.85B / QoQ +99.2% nicht eindeutig als primäre Firmenangabe reproduzierbar."
+        },
+        {
+          "url": "https://es.tradingview.com/news/tradingview%3A5e1021a62c175%3A0-key-facts-micron-mu-q2-nand-revenue-99-2-union-mediation-oct-22/",
+          "label": "TradingView Kurz‑Headline (Candidate original aggregator).",
+          "kind": "secondary",
+          "supports": "Quelle behauptet explizit: 'Micron (MU) Q2 FY2026 NAND revenue rose 99.2% sequentially to $11.85 billion.' Dies ist die unmittelbare Ursprungsaussage des Kandidaten, wird jedoch nicht als primäre Micron‑Angabe validiert."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000004/a2026q2ex991-pressrelease.htm",
+          "label": "Micron Exhibit 99.1 (8‑K / Press Release) im SEC‑Archiv.",
+          "kind": "primary",
+          "supports": "Offizielle SEC‑Exhibit zu Q2‑FY2026. Die Exhibit dokumentiert konsolidierte Quartalszahlen und Segmentdiskussion; eine explizite Bestätigung des behaupteten $11.85B NAND‑Werts mit +99.2% QoQ fehlt in der hier zitierten offiziellen Einreichung."
+        },
+        {
+          "url": "https://focustaiwan.tw/business/202610070021",
+          "label": "Focus Taiwan – Bericht über Mediationstermin (lokale Berichterstattung).",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Micron‑Taichung/‑Taoyuan Gewerkschaften/Management eine Mediation für den 2026‑10‑22 Termin vorbereiten; bestätigt somit die Mediationszeithorizont‑Komponente des Kandidaten."
+        }
+      ],
+      "reason": "Die Kandidaten‑Meldung kombiniert zwei atomare Behauptungen: (A) eine präzise, numerische Führungsaussage zum NAND‑Umsatz ($11.85B; +99.2% QoQ) und (B) ein Mediationsdatum (2026‑10‑22) für Gewerkschaftsgespräche. Für (B) gibt es sekundäre lokale Medienbestätigung (Focus Taiwan). Für (A) fehlt jedoch eine primäre, überprüfbare Quelle: die offiziellen Micron‑Dokumente/SEC‑Exhibits, die Microns Q2‑Ergebnis veröffentlichen, zeigen konsolidierte Umsatzzahlen und Segmentkommentare, liefern aber nicht die behauptete $11.85B NAND‑Angabe in der geprüften Form. Zusätzlich existieren Dritt‑Berichte (TrendForce/Market‑Research‑Syndicates, Reddit/Media‑Summaries, TradingView) mit abweichenden NAND‑Werten (z.B. andere Aggregatoren berichten $5.0B NAND oder andere QoQ/YoY‑Raten). Wegen des Fehlens eines klaren primären Micron‑Belegs für die spezifische Zahl und QoQ‑Rate kann die Behauptung nicht als VERIFIED DATA aufgenommen werden. Deshalb wird der Kandidat auf Watchlist gesetzt: die Mediationskomponente ist akzeptiert/teilweise verifiziert, die zentrale quantifizierende NAND‑Aussage bleibt unbestätigt und benötigt primäre Bestätigung (Micron 8‑K/10‑Q oder ein gleichwertig primäres Unternehmens‑/Regulierungsdokument, das exakt die $11.85B / +99.2% QoQ ausweist).",
+      "candidateId": "ebc658443e93fbfbd012",
+      "candidateKey": "229528e532be148afa47b541",
+      "reviewedAt": "2026-10-11T01:57:02.429Z",
+      "priorityScore": 62,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ed50becc2927b62006acaecda914887d0af486a7d655d0d2b"
     }
   ]
 }
