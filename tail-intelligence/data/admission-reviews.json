@@ -55676,6 +55676,138 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ed50becc2927b62006acaecda914887d0af486a7d655d0d2b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "\"Demand to Surge 20-Fold in Four Years, Samsung and SK hynix Find New Growth Engine\" (아시아경제)",
+      "fact": "Behauptung in einem Google‑News‑RSS‑Eintrag (verweist auf 아시아경제): Nachfrage werde sich binnen vier Jahren 20‑fach erhöhen; Samsung und SK hynix identifizieren dies als 'dritten Wachstumstreiber' nach AI und Rechenzentren.",
+      "placement": "unpräzise — kein klarer geografischer oder Produkt‑Scope im eingereichten Kandidat; mutmaßlich Korea / globale Memory‑Nachfrage; horizont: 'in vier Jahren' (nicht genau datiert).",
+      "mechanism": "nicht ausreichend belegt in der gelieferten Inbox‑Metadaten — es fehlt ein Primärzitat, methodische Herleitung (z. B. Baseline‑Mb/Year, Treiber, Kundensegmente) und eine Messgröße (Bits, $ oder Einheiten pro Jahr).",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "informiert potenziell 'Memory bleibt 2027 knapp...' (OUTLOOK‑server_dram / P-2026-07-20-04), falls die behauptete 20x‑Nachfrage real, quantifiziert und auf Host‑Bits oder HBM/DRAM‑Absatz anwendbar wäre. Allerdings ist der eingereichte Kandidat nicht ausreichend verifiziert, sodass keine endgültige Impact‑Anpassung möglich ist.",
+      "falsifier": "Konkreter, prüfbarer Falsifier fehlt in der Einreichung. Ein mögliche falsifizierbare Bedingung wäre: 'Wenn bis 2030 kein bestätigter Anstieg der qualifizierten Memory‑Host‑Bits, Contract‑Nachfrage oder vereinbarter Abnahmeverträge um >=20× gegenüber Referenzjahr X (mit dokumentierter Metrik) nachweisbar ist, wird die Behauptung als falsch bewertet.' — derzeit nicht implementierbar ohne Primärdaten.",
+      "nextReview": "2026-11-11",
+      "eventDate": "2026-10-11",
+      "novelty": "moderate",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 3,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Die Inbox‑Einreichung referenziert einen Google‑News‑RSS‑Eintrag, der eine starke, numerische Behauptung (20‑facher Nachfrageanstieg in vier Jahren) und eine Zuordnung zu Samsung und SK hynix nennt. Als TAIL‑Evidence‑Reviewer sind wir angewiesen, Primärquelle, exakte Veröffentlichungs‑/Event‑Datumangaben, messbare Einheiten (Bits, $ oder Vertragsvolumina) und eine klar prüfbare Falsifizierbarkeit zu verlangen. Die eingereichte URL führt nur zum Google‑News‑RSS‑Verweis (sekundär) — ich konnte mit dem eingesetzten Web‑Abruf das ursprüngliche 아시아경제‑Artikel nicht direkt verifizieren oder seinen Text extrahieren. Ohne Zugriff auf den Primärartikel und ohne dass die Behauptung durch ein messbares, datiertes, quantifiziertes Primär‑Statement oder ein Unternehmens‑Release belegt ist, kann die Meldung nicht als VERIFIED DATA oder als akzeptiertes Signal zu einer Index‑Auswirkung zugelassen werden. Zudem fehlt ein explizites, existierendem Vorhersage‑ID zugeordnetes, prüfbares Falsifizierbarkeitskriterium in der Einreichung. Opposing evidence: umfangreiche Primärmeldungen und Marktindikatoren in der Inbox‑Baseline zeigen starke, aber graduelle Nachfrage‑ und Kapazitätsverschiebungen (z. B. HBM‑Kapazitätsengpässe, LTAs, Firmen‑Capex und Multi‑year LTAs), keine einzelne Primärquelle, die einen sofortigen, verifizierten 20×‑Anstieg in 4 Jahren dokumentiert. Deshalb: Watchlist — primäre Verifikation erforderlich (Original 아시아경제‑Artikel mit Datum, exaktem Zitat und quantifizierter Basis) bevor höhere Einstufung möglich ist. \n\nEmpfehlung/To‑Do für Aufnahme: 1) Liefern Sie den Originalartikel von 아시아경제 (Primärquelle) oder ein direktes Unternehmens‑Statement mit exakter Zahl (20×), Bezugsjahr, Methode und Scope (z. B. HBM‑GB/Year, Server‑DRAM‑Host‑Bits). 2) Wenn verfügbar, fügen Sie unterstützende Primärbelege hinzu (Samsung und SK hynix Statements, verschriftlichte Investor‑Slides, Vertragsankündigungen, Kunden‑LTAs) und eine messbare Metrik (Bits, $ contracted, Wafer‑Äquivalent/Monat). 3) Definieren Sie einen konkreten Falsifier mit Kalenderdatum (z. B. bis 2030‑MM‑TT) und die zu messende Metrik. Ohne diese Primärverifikation bleibt der Kandidat auf Watchlist (Admission‑Score unter Schwelle).",
+      "candidateId": "c98f0df1f2ffb629b6b9",
+      "candidateKey": "b1b1fcd65781a02148b6b4ae",
+      "reviewedAt": "2026-10-11T11:31:07.078Z",
+      "priorityScore": 55,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c6d141154318958006acb736e13cc87d18ae9aad364a33d8b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: CXMT verengt DRAM‑Technologie‑Lücke zu Samsung/SK hynix ohne EUV",
+      "fact": "Nach einer Reihe von Medienberichten (u.a. TechWireAsia, SCMP, Reuters‑Syndikate) kündigte CXMT eine fünfte Generations‑DRAM‑Plattformentwicklung an und behauptete, die Lücke zu Samsung und SK hynix deutlich zu verringern, obwohl CXMT keinen Zugang zu EUV‑Lithographie hat.",
+      "placement": "globale DRAM‑Produktion / Hersteller‑Technologie‑Ranking (China vs Südkorea), berichteter Zeitraum: September 2026 (Quellen publiziert im Sept. 2026).",
+      "mechanism": "CXMT behauptet kleinere aktiven Bereich/Halb‑Pitch, höhere Dies‑pro‑Wafer und Prozessschritte basierend auf Multi‑Patterning/fortgeschrittener DUV‑Technik statt EUV; dadurch verbesserte Kosteneffizienz und Produktspezifikationen, die in gewissen Legacy‑/Mainstream‑DRAM‑Segments Wettbewerbsfähigkeit erzeugen.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Wenn CXMT tatsächlich technologisch und kapazitiv signifikant näher an Samsung/SK hynix rückt, könnte dies die Shortage‑/capacity‑Lock‑Narrative für Server‑DRAM (OUTLOOK‑server_dram) abschwächen, indem zusätzliche qualifizierte Bit‑Supply und Wettbewerbsdruck die Verknappung reduzieren.",
+      "falsifier": "Bis 2026-11-15: keine unabhängige Primärbestätigung (z.B. Test‑House‑Validierung, qualifizierte Großkunden‑Shipments mit klarer SKU‑/Volumenangabe, oder verifizierte Yield‑/Die‑per‑Wafer‑Messung), oder konkurrierende Primärdaten zeigen, dass CXMT‑Yields/qualifizierte Bit‑Shipments < 30% der von Samsung/SK hynix gemeldeten vergleichbaren Produktfamilien.",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-09-21",
+      "novelty": "moderat",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://techwireasia.com/2026/09/cxmt-dram-g5-samsung-sk-hynix-without-euv/",
+          "label": "TechWireAsia – 'CXMT’s new DRAM closes in on Samsung, SK hynix without EUV'",
+          "kind": "secondary",
+          "supports": "Bericht über CXMTs Aussage, G5‑Plattform in Mass Production und Behauptung, die Lücke zu Samsung und SK hynix verengen zu können."
+        },
+        {
+          "url": "https://www.scmp.com/tech/article/3368154/chinas-cxmt-touts-new-chip-manufacturing-platform-close-worlds-most-advanced",
+          "label": "South China Morning Post – CXMT gibt Produktionsplattform in Mass Production an",
+          "kind": "secondary",
+          "supports": "SCMP‑Bericht bestätigt CXMT‑Ankündigung einer fünften Generation und beschreibt die Behauptung, technologisch näher an Samsung/SK hynix zu rücken."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist ein thematisch relevantes Signal (potentielle Ausweitung der qualifizierten DRAM‑Supply durch CXMT) für die OUTLOOK‑server_dram‑Hypothese. Allerdings erfüllt die eingereichte Behauptung nicht die TAIL‑Anforderungsbedingungen für Aufnahme als VERIFIED DATA oder 'accepted':\n\n- Fehlende Primär‑/qualifizierte Messgröße: Die präsentierten Artikel zitieren CXMT‑Behauptungen und Analystenschätzungen (Marktanteile, Yield‑Aussagen), liefern aber keine prüfbaren, primären Messwerte (z. B. verifizierte qualifizierte Shipments in Stück/GB, exakte Dies‑pro‑Wafer‑Steigerung in Prozent mit Test‑House‑Bericht, oder unabhängige Yield‑Reports). Ohne solche Zahlen bleibt die Feststellung un‑/halb‑quantitativ und nicht direkt in Index‑Metriken konvertierbar.\n\n- Adversarial check / Gegenbelege: Es existieren widersprechende oder einschränkende Berichte (z.B. Berichte über Yield‑Probleme bei CXMT bzw. weiter hohe HBM‑Priorisierung und Volumenbindung bei Samsung/SK hynix) in der Medienlage; damit ist die Behauptung nicht eindeutig belastbar.\n\n- Anspruch auf 'ohne EUV' ist technisch plausibel (Multi‑Patterning‑Workarounds), aber dies allein ist kein Beleg dafür, dass CXMT in Gesamtleistung/Qualifikation mit Samsung/SK hynix gleichzieht. Die Kandidatennachricht bleibt eine beobachtete Unternehmensbehauptung kombiniert mit Analystenkommentaren — ausreichend für Watchlist, nicht für Admission.\n\nDeshalb: watchlist. Nächste Prüfung wird auf Primär‑Belege abzielen (unabhängige Test‑House‑Reports, qualifizierte Großkunden‑Shipments mit Volumenangabe, oder verifizierte Yield/Die‑per‑Wafer‑Messungen) bis 2026-11-15. Falls solche Primärdaten vorliegen und die Behauptung eine klar datierte, atomare Messung (z.B. 'CXMT lieferte X TB qualifizierter Server‑DRAM‑Shipments am Datum Y' oder 'Yield auf Produktklasse Z ≥ 70% ab 2026‑10‑01') enthält, kann eine erneute Aufnahme als VERIFIED DATA geprüft werden.\n\nEmpfohlene nächste Schritte: Beschaffe primäre Validierung (Test‑House‑Report, Kunden‑Q‑Ship‑Nachweis, offizielle CXMT‑Produkt‑Qualification‑Report) und überprüfe konkurrierende Yield‑/Shipment‑Daten von Samsung/SK hynix für die gleiche Produktklasse und Zeitspanne. Wenn nicht auffindbar, verbleibt der Signalstatus auf Watchlist und wird bei Fehlen primärer Verifikation abgelehnt/archiviert.\n",
+      "candidateId": "d6100d195ea08b848013",
+      "candidateKey": "5c4c5e401f4e0a9b9904fcdc",
+      "reviewedAt": "2026-10-11T11:31:22.838Z",
+      "priorityScore": 63,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08daf3bd41d974b0006acb737b3f6087d1a10975cf8ad61edb"
     }
   ]
 }
