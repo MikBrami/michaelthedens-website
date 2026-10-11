@@ -55808,6 +55808,133 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_08daf3bd41d974b0006acb737b3f6087d1a10975cf8ad61edb"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Humanoid‑Memory‑Markt — Samsung und SK hynix profitieren; Nachfrage durch Roboter soll stark wachsen (medienbericht)",
+      "fact": "Berichte (z. B. Seoul Economic Daily, 2026-10-11) berichten, dass Nachfrageprognosen für DRAM/HBM aus dem erwarteten Humanoid‑Roboter‑Markt stark ansteigen sollen (Counterpoint Research zitiert: DRAM‑Bedarf von ~8,300 Tb in 2026 auf ~172,000 Tb in 2030).",
+      "placement": "Geographie: globaler Memory‑Markt mit Schwerpunkt Südkorea (Samsung, SK hynix); Domain/Layer: HBM/Server‑DRAM Verfügbarkeit und Preise; Horizon: bis 2030 (Projektion).",
+      "mechanism": "Zunehmende Serienproduktion und Einsatz humanoider Roboter (Inference/Agentic‑Workloads) erhöht Host‑Memory‑ und HBM‑Bedarf pro Deployment; HBM‑Priorisierung reduziert verfügbare Bit‑Supply für allgemeine Server‑DRAM und treibt Vertrags-/Spotpreise.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Unterstützt die Basissicht, dass Memory 2027 knapp bleibt und Preis-/Renditedynamiken vor einer materielle Kapazitätswelle ansteigen (verstärkt 'negative_supply' / 'price_up' Risiko für 2027).",
+      "falsifier": "Bis 2027-12-31: keine bestätigte, qualifizierte Erhöhung des HBM/Server‑DRAM‑Absatzvolumens um mindestens 50% gegenüber 2026 in mehreren (≥2) validierten Hersteller‑Berichten (Quartals‑Shipments/Qualified Shipments), oder Marktforschungs‑Prognosen für humanoide Roboter‑Memory bleiben unter +30% YoY.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-10-11",
+      "novelty": "Mittel — verbindet bereits beobachtete AI/HBM‑Nachfrage mit humanoider Robotik als spezifischem Nachfragetreiber; nicht völlig neu gegenüber bestehenden TAIL‑Baselines.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 9,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 35,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.ai/finance/2026/10/11/robots-emerge-as-next-growth-driver-for-samsung-sk-hynix",
+          "label": "Seoul Economic Daily — 'Robots Emerge as Next Growth Driver for Samsung, SK hynix' (2026-10-11)",
+          "kind": "primary",
+          "supports": "Berichtet, dass Marktforscher (Counterpoint Research) prognostizieren, dass DRAM‑Nachfrage vom humanoiden Roboter‑Sektor bis 2030 stark ansteigen könnte (Zahlenangabe: ~8,300 Tb auf ~172,000 Tb)."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat ist ein journalistischer Nachrichtenkopf ohne direkt zitierte primäre Messung von qualifizierten Shipments, Vertragsvolumen oder beobachteten Liefereffekten. Ich habe die verlinkte Google‑RSS‑URL geprüft und über Web‑Suche ein auf den Bericht hinweisendes Primärstück (Seoul Economic Daily, 2026‑10‑11) gefunden, das Prognosen und Marktforschungszahlen zitiert. Diese Berichterstattung liefert Hinweise, dass Marktakteure Samsung und SK hynix als Profiteure sehen, aber sie erfüllt nicht die TAIL‑Annahme für eine akzeptierte Aufnahme: es fehlt ein direktes, verifizierbares, datiertes, quantifiziertes Primär‑Signal (z. B. qualifizierte Shipments, Vertrags‑LTAs mit Volumina, offizielle Quartals‑Umsatzangabe nach Produktkategorie) das eine eindeutige Änderung der Verfügbarkeit oder Kontraktpreise heute belegt. Ohne solche primären Messungen bleibt die Behauptung prognostisch und teilbar mit bereits vorhandenen Basissignalen (AI‑getriebene Memory‑Nachfrage, HBM‑Priorisierung). Deshalb Watchlist: brauchbare Relevanz für P-2026-07-20-04 (Memory 2027 knapp), aber es fehlen die erforderlichen quantitativen Primärbelege und ein sauberer, prüfbarer Index‑Messpunkt. Empfehlung: Nachreichen eines Primärbelegs (Hersteller‑Shipment‑Satz, Quartals‑Produktumsatz nach HBM/HBM4, bindende LTAs mit Volumenangabe oder offizielle Counterpoint‑/Gartner‑Report‑Seite mit Methodik und Zahlen) oder ein direkter Vertragsnachweis würde die Aufnahme ermöglichen. Opposing evidence: zahlreiche TAIL‑Quellen in der Baseline (z. B. Micron/Samsung/SK‑Finanzberichte, Marktberichte) zeigen bereits Kapazitäts‑ und Priorisierungsdruck; ohne konkrete Shipments ist die humanoid‑Spezifizierung anfällig, Nachfrage von anderen AI‑Segments zu duplizieren.",
+      "candidateId": "67b3e1d2a01096716b60",
+      "candidateKey": "56360dc4c153feea1b7e39c6",
+      "reviewedAt": "2026-10-11T21:05:08.392Z",
+      "priorityScore": 72,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0afc7ad34473d46c006acbf9efc96087d1a060e33ed30e8f40"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT‑Rampage als kurzfristiger Preisdruck‑Narrativ, aber ohne primäre qualifizierte Lieferevidenz",
+      "fact": "Kommentarbericht (Invezz, 2026-09-21) behauptet, dass CXMTs Hochlauf der 5.‑Gen‑DRAM‑Produktion verstärkten Preis‑ und Margendruck auf Micron und SanDisk auslöst.",
+      "placement": "Globaler DRAM/NAND‑Markt; Marktwirkung vor allem auf server_dram und nand; kurzfristige (Q4 2026) Horizont für Preiswirkung.",
+      "mechanism": "Erhöhte chinesische Produktionskapazität (CXMT Mass‑Production / höhere Wafer‑Durchsätze) erhöht effektives Angebot und senkt Margen/Vertrags‑Preissetzung; Übersetzung in Preise setzt voraus: (a) qualifizierte Shipments, (b) signifikante Wafer‑Menge pro Monat und (c) Wettbewerbsfähige Kosten/Tech‑Parity.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Wenn CXMT‑Massproduktion zu materialisierten, qualifizierten zusätzlichen Bit‑Shipments führt, reduziert dies die Wahrscheinlichkeit und Schwere des P-2026-07-20-04‑Basisszenarios (Memory bleibt 2027 knapp).",
+      "falsifier": "Bis 2026-11-30 liegen keine unabhängigen Primärbelege für qualifizierte CXMT‑Shipments: kein dokumentierter, qualifizierter CXMT‑DRAM‑Output ≥ 100k wafers/month oder ≥ X GiB/Monat an ausgeliefertem, von Kunden qualifiziertem DRAM/NAND (beides messbare Metriken). Erfolgt bis 2026-11-30 eine Bestätigung solcher Shipments, reduziert das die Relevanz des Engpass‑Basisszenarios; bleibt diese Evidenz aus, stützt das die Watchlist‑Einstufung.",
+      "nextReview": "2026-11-30",
+      "eventDate": "2026-09-21",
+      "novelty": "Niedrig bis moderat — Wiederverpackung mehrerer früherer CXMT‑Skalierungsmeldungen, keine neue Primärevidenz.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "nand",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_down",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Die eingereichte Meldung ist ein Meinungs/Marktkommentar (Invezz, 2026-09-21) der plausibel darlegt, dass CXMTs Hochlauf preiswirksam sein könnte. Allerdings fehlt eine direkte, überprüfbare Primärbeobachtung (konkrete, qualifizierte Shipments oder vertraglich bestätigte, sofort wirksame zusätzliche Wafermengen mit Einheitenangabe), die nötig wäre, um den Sachverhalt als VERIFIED DATA aufzunehmen oder die Basissicht (Memory bleibt 2027 knapp) substanziell zu verändern. Gegenbelege bestehen: etablierte Berichte über CXMT‑Verträge und hohe Margen belegen erhöhte Wettbewerbsfähigkeit, aber nicht notwendigerweise sofortige, weltweite Entspannung von Knappheit/Preisen. Deshalb Watchlist — zusätzliche, quantifizierbare Primärevidenz erforderlich. Konkretes Fehlen: kein unabhängiger Nachweis von qualifizierten CXMT‑Shipments ≥ 100k wafers/month oder einer messbaren Änderung der Vertrags‑DRAM‑Kontraktpreise seit 2026-09-21, die den behaupteten Markt‑Impact belegt (siehe Falsifier). Referenzen oben prüfen Rahmen und Datum (Invezz 2026-09-21; Reuters 2026-07-24).",
+      "candidateId": "7b80c2ecd3236d869e9f",
+      "candidateKey": "8f879abb15d637296c013946",
+      "reviewedAt": "2026-10-11T21:05:29.236Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_075254e28ddeeda7006acbfa04960887d1b3bc5afad8a9dcca"
     }
   ]
 }
