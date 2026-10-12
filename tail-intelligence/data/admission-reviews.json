@@ -56222,6 +56222,138 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0c97f13c74166fb7006accdddae0c887d181f44714a8b21351"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Marktreaktion auf CXMT‑Ankündigung: Kurzfristiger Kursrückgang bei Micron/SK Hynix, keine belastbare Versorgungsaussage",
+      "fact": "Am 2026-10-12 berichteten mehrere Finanzmedien (u.a. Yahoo Finance) über einen intraday‑Rückgang der Kurse von Micron und SK hynix, verbunden mit Meldungen, dass ChangXin Memory Technologies (CXMT) Fortschritte an einer 'next‑gen DRAM'‑Architektur und Server‑DRAM‑Zielen für 2026 signalisiert habe (Berichtsdatum 2026-10-12). ([finance.yahoo.com](https://finance.yahoo.com/markets/stocks/articles/micron-sk-hynix-stocks-slip-070149660.html?utm_source=openai))",
+      "placement": "global (Finanzmärkte), Produkt‑Layer: Server‑DRAM/commodity DRAM; kurzfristiger Horizont (Tage–Wochen)",
+      "mechanism": "Marktpreise reagierten auf Medienberichte, wonach CXMT technologische Fortschritte und ein beschleunigtes Produktziel für Server‑DRAM angekündigt habe — Marktteilnehmer preisten dadurch verstärkte künftige Wettbewerbs‑/Bit‑Zunahme ein, was kurzfristig Aktienkurse der etablierten Speicherhersteller belastete. Die Meldung dokumentiert Kursbewegung und behauptete technologische Fortschritte, liefert jedoch keinen verifizierten Nachweis qualifizierter Produktions‑Shipments oder bestätigter Bit‑Output‑Zahlen.",
+      "predictionId": "P-2026-07-14-01",
+      "predictionImpact": "Informiert P-2026-07-14-01 (CXMT‑Listing und mögliche Markteinflussnahme). Falls CXMT tatsächlich qualifizierte Server‑DRAM‑Shipments vor Ende 2026 erreicht, würde das die Annahme in P-2026-07-14-01 (Mittel und LTAs stärken Mainstream/Server‑DRAM) unterstützen und könnte Verfügbarkeits‑ und Preisdruck auf etablierte Anbieter erhöhen. Die vorliegende Meldung liefert jedoch nur Marktreaktionen, nicht den erforderlichen nachweisbaren Liefereffekt.",
+      "falsifier": "Innerhalb von 50 Tagen (bis 2026-11-30) sollte mindestens ein primärer Produktionsnachweis von CXMT vorliegen, der quantifiziert: (a) qualifizierte Server‑DRAM‑Shipments (in Wafern/GB oder qualifizierten Module‑Volumen) mit Datum und Empfänger-Kunde, ODER (b) ein verifizierter Anstieg des globalen Server‑DRAM‑Angebotsanteils von CXMT um ≥3 Prozentpunkte in offiziellen Q4‑Marktberichten. Fehlen diese Nachweise bis 2026-11-30, ist die behauptete kurzfristige Versorgungswirkung falsifiziert.",
+      "nextReview": "2026-11-30",
+      "eventDate": "2026-10-12",
+      "novelty": "Recycelt Beobachtung von CXMT‑Fortschritt und Marktreaktion; nicht neu gegenüber bestehenden TAIL‑Signalen über CXMT‑Rampen und DRAM‑Marktdynamik.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 6,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_down",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-sk-hynix-stocks-slip-070149660.html",
+          "label": "Yahoo Finance: 'Micron, SK Hynix Stocks Slip Overnight: China’s CXMT Advances Next‑Gen DRAM Technology' (2026-10-12)",
+          "kind": "primary",
+          "supports": "Berichtet Kursrückgänge bei Micron und SK hynix und zitiert CXMT‑Kommentare zu Fortschritten an einer neuen DRAM‑Architektur sowie Zielsetzungen für Server‑DRAM in 2026, liefert aber keine verifizierten Shipments oder quantifizierte Bit‑Output‑Daten."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung dokumentiert eine echte, datierte Marktreaktion auf Berichterstattung über CXMT‑Technologiefortschritt (primäre Quelle: Yahoo Finance, 2026-10-12). Allerdings fehlt ein direkter, primär‑quelliger Nachweis qualifizierter Shipments, bits‑pro‑Monat‑Output oder verbindlicher Großverträge, die eine belastbare Verfügbarkeits‑ oder Preiswirkung belegen würden. Die Beobachtung ist damit relevant für die TAIL‑Thesen über DRAM‑Wettbewerb und Preisrisiken, bietet aber keine atomare, messbare Versorgungseinheit (Wafer/GB/Lead‑Time) — eine Voraussetzung für Aufnahme als VERIFIED DATA/accepted. Deshalb setze ich den Kandidaten auf Watchlist und fordere die oben definierte Falsifier‑Prüfung (Nachweis bis 2026-11-30).",
+      "candidateId": "d0cb88e8fca20db8a269",
+      "candidateKey": "6d4ca7b88a3d3e3cfafc8385",
+      "reviewedAt": "2026-10-12T23:45:57.108Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_04e171ea7fe77168006acd711eb84c87d08716bbe35453cdce"
+    },
+    {
+      "decision": "watchlist",
+      "title": "TrendForce: 'eSSD Demand is Reshaping NAND Supply' — eSSD-Lead‑Time‑Lücke dokumentiert",
+      "fact": "TrendForce berichtet am 2026-09-21, dass Enterprise‑SSD (eSSD) Lead‑Times bei ~16 Wochen liegen gegenüber einem 'balanced' Benchmark von 8 Wochen und dass NAND‑Lieferanten Kapazität in Richtung eSSD umschichten.",
+      "placement": "Globaler NAND‑Markt; Produkt‑Layer: Enterprise SSD (eSSD); Zeithorizont: laufende Marktveränderung beobachtet zum Datum 2026-09-21.",
+      "mechanism": "Wachsende eSSD‑Bestellungen (CSP/Enterprise‑KV/QLC‑Use‑Cases) priorisieren Fertigungs- und Packaging‑Kapazität für Enterprise‑SKUs; dadurch erhöht sich die Zuteilung gegenüber Consumer/Nearline‑NAND und verschiebt effektive Lieferfenster (Lead‑Times) für eSSD nach oben.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Unterstützt die OUTLOOK‑Erklärung, dass der Enterprise‑SSD‑Marktdruck hoch bleibt und ein dauerhaft steigender Enterprise‑SSD‑Preispfad das Basisszenario nicht ausschließt; erhöht die Wahrscheinlichkeit, dass Verfügbarkeit und Preise in der Enterprise‑Schicht kurzfristig angespannt bleiben.",
+      "falsifier": "Bis einschließlich 2027-03-31: beobachtete eSSD Lead‑Times fallen auf ≤8 Wochen (balanced) und Lieferanten melden keine Kapazitätsumverteilung hin zu eSSD (z. B. öffentliche Ankündigungen/Produktionsmixe), womit die berichtete Umverlagerung hinfällig wäre.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-21",
+      "novelty": "Das Detail (explizite 16‑Wochen eSSD‑Lead‑Time vs. 8‑Wochen Benchmark und explizite Kapazitätsumverteilung zugunsten eSSD) ist neu gegenüber dem Baseline‑Inventar, das bereits allgemeine eSSD‑Nachfragetrends und Preisstärke notiert hatte.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 19,
+        "novelty": 10,
+        "thesisRelevance": 19,
+        "forecastImpact": 14,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 45,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://insights.trendforce.com/p/weekly-radar-002",
+          "label": "TrendForce — Weekly Radar 002: eSSD Demand is Reshaping NAND Supply (published 2026-09-21)",
+          "kind": "primary",
+          "supports": "Artikeltext: 'With demand picking up, NAND suppliers are reallocating capacity toward enterprise SSDs, though eSSD lead times remain elevated at 16 weeks against a balanced 8 ...' (TrendForce, 2026-09-21)."
+        },
+        {
+          "url": "https://www.trendforce.com/research/download/RP260916TQ",
+          "label": "TrendForce — NAND Flash Market Bulletin (2026-09-16)",
+          "kind": "secondary",
+          "supports": "Frühere TrendForce‑Bulletin‑Notizen (2026-09-16) zeigen eine Divergenz: Vertrags-/eSSD‑Preisunterstützung trotz schwachem Spot‑Markt, was die Interpretation stützt, dass Engpässe selektiv (Enterprise‑vs‑Consumer) sind."
+        }
+      ],
+      "reason": "Primärquelle (TrendForce Weekly Radar 002) liegt vor und dokumentiert eine quantifizierte Lead‑Time‑Lücke (16 vs. 8 Wochen) sowie eine beobachtete Kapazitätsumverteilung hin zu Enterprise‑SSDs. Das Item ist relevant für die OUTLOOK‑enterprise_ssd‑Bewertung: es liefert eine datierte, produkt‑spezifische Beobachtung mit klaren Einheiten (Wochen Lead‑Time) und erklärt mechanistisch, wie Nachfrage (CSPs/Enterprise) Kapazitätsallokation und damit Verfügbarkeit/Preisniveau beeinflusst. Opposing nuance: TrendForce‑Bulletin vom 2026-09-16 weist auf einen schwachen Spot‑markt insgesamt hin, was die Aussage präzisiert — das Signal beschreibt eine selektive, nicht uniform‑breite Knappheit. Aufnahmekriterien erfüllt (datiertes, atomisches Faktum mit Quelle); Index‑Impact nicht ausgewiesen (kein direkter qualifizierter Shipment/Fill‑Rate‑Beleg).",
+      "candidateId": "c3e1ef671f9ca04bca19",
+      "candidateKey": "40dea0039bbb79fbef9c3440",
+      "reviewedAt": "2026-10-12T23:46:16.337Z",
+      "priorityScore": 82,
+      "gateReasons": [
+        "unverified evidence"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0fa82f52da1dcbef006acd713550c087d0a682603752036b6c"
     }
   ]
 }
