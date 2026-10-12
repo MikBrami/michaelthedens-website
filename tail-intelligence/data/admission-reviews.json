@@ -55935,6 +55935,152 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_075254e28ddeeda7006acbfa04960887d1b3bc5afad8a9dcca"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT zielt auf 2026‑Debüt einer 4F²‑DDR5‑RDIMM; Primärnachweis unvollständig",
+      "fact": "DIGITIMES berichtet, CXMT (ChangXin Memory Technologies) peilt die Markteinführung eines Server‑DDR5‑RDIMM auf Basis der 4F²‑Zellenarchitektur bis Ende 2026 an (Artikelüberschrift und Lead).",
+      "placement": "Geographie: globaler Server‑DRAM/Server‑Memory‑Markt; Domäne: server_dram / dram; Layer: Produkt‑Launch / Qualifikation; Horizon: kurzfristig (Debüt bis 2026‑12‑31).",
+      "mechanism": "Produktions‑ und Prozess‑Upgrade (4F²-Zellenarchitektur) → potenziell höhere Bit‑Dichte / günstigere Kosten pro Bit → Ausweitung konkurrenzfähiger Server‑DRAM‑Angebote aus China, womit etablierte Lieferanten in Preis/Volumen unter Druck geraten könnten.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert die Basisprediktion, dass HBM und Server‑DRAM mindestens bis Ende 2028 strukturell knapp bleiben; ein glaubwürdiger, termingerechter CXMT‑Server‑RDIMM‑Ramp könnte das Angebotsbild und damit die Engpass‑Prognose (Verfügbarkeit/Lead‑Times/Kontraktpreise) relativieren.",
+      "falsifier": "Bis 2026‑12‑31 muss ein primärer Hersteller‑Nachweis vorliegen, der QUANTIFIZIERTE, qualifizierte Lieferungen oder zertifizierte OEM‑Designwins für die 4F² DDR5‑RDIMM ausweist (z. B. offizielle Produktseite, Herstellerspezifikation mit Seriennummern/Part‑Numbers, oder OEM‑Validierungs‑/Shipment‑Ankündigung). Fehlt dieser Nachweis, bleibt der Claim ungeprüft.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-09-08",
+      "novelty": "Mittel (CXMT beansprucht ersten Server‑RDIMM‑Launch mit 4F²‑Zelle; technologisch bedeutsam, aber nicht vollständig bewiesen).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 11,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitimes.com/news/a20260908VL204/cxmt-dram-demand-capacity-2026.html?q=memory",
+          "label": "DIGITIMES – 'CXMT sees tight DRAM supply through 2H26, accelerates server memory and China-made tool validation' (paywalled)",
+          "kind": "primary",
+          "supports": "Artikel‑Lead und Datumszeile: 'Sep 8, 2026 ... Chinese DRAM maker ChangXin Memory Technologies (CXMT) expects ...' — berichtet Ziel für server‑orientierte 4F²‑DDR5‑Produkte bis Jahr‑Ende 2026 (paywalled; der Text verlangt Subscription für Vollzugriff)."
+        },
+        {
+          "url": "https://technews.tw/2026/10/11/cxmt-dram-memory-4f%C2%B2-ddr5/",
+          "label": "TechNews (zweite Bestätigung/News‑Syndikation)",
+          "kind": "secondary",
+          "supports": "Bericht fasst DIGITIMES/andere Berichte zusammen: Ziel 'Ende 2026' für 4F² DDR5 RDIMM. Unterstützt Existenz der Meldung, liefert aber keinen qualifizierten Liefernachweis."
+        }
+      ],
+      "reason": "Die eingesandte Candidate‑Kurzmeldung stimmt mit einem paywalled DIGITIMES‑Artikel (Datum 2026‑09‑08) überein, der CXMTs Anspruch auf ein 4F²‑DDR5‑RDIMM‑Debüt bis Ende 2026 nennt. Bei der TAIL‑Aufnahme werden jedoch höhere Beweisanforderungen verlangt: ein akzeptabler Eintrag muss ein atomares, datiertes, direkt überprüfbares Beobachtungsereignis sein (z. B. qualifizierte OEM‑Shipments, Produkt‑Spezifikation mit Part‑Numbers, offizielle Hersteller‑Produktseite mit Launch‑Datum oder OEM‑Validierung). Das DIGITIMES‑Stück ist paywalled und zitiert Aussagen/Pläne, liefert aber keinen verifizierbaren Primärnachweis für ausgelieferte/qualifizierte Server‑RDIMM‑Shipments oder für OEM‑Validierung. Sekundärquellen (TechNews, TweakTown, Meme‑Syndication, Foren) wiederholen die Behauptung, ändern aber den Mangel an Primärbeleg nicht. Zudem fehlt eine explizite, klar abgegrenzte Auswirkungseinheit (z. B. Volumen in Wafern/Module/MTD) und ein unmittelbar messbarer Index‑Beleg. Deshalb: Watchlist — weiter beobachten bis 2026‑12‑31; falls bis dahin ein verifizierter, quantifizierter Primärnachweis vorliegt, kann die Aufnahme in den Basissatz mit EvidenceStatus VERIFIED DATA geprüft werden. Hinweis: Diese Candidate kann die P‑2026‑07‑11‑01 (Server‑DRAM‑Knappheit) informativ beeinflussen, aber ohne qualifizierten Shipment‑Nachweis ist kein Index‑Impact zuerkennbar.",
+      "candidateId": "c98cc4ed3d19244121bd",
+      "candidateKey": "bb40b21674eeeb24c5e3ef0b",
+      "reviewedAt": "2026-10-12T02:28:14.427Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_00954d36fc0ec28e006acc45ada0c087d18b47730101cfc625"
+    },
+    {
+      "decision": "watchlist",
+      "title": "HanmiGlobal übernimmt PM‑Rolle für SK hynix HBM‑Packaging‑Projekt in Indiana (Ankündigung, 2026‑09‑21)",
+      "fact": "HanmiGlobal wurde am 2026-09-21 als externer Projektmanager (Project Management, PM) für das SK hynix HBM‑Packaging‑/Advanced‑Packaging‑Projekt in West Lafayette, Indiana, benannt.",
+      "placement": "West Lafayette, Indiana, USA — HBM advanced packaging / Produktions‑ und Qualifikations‑Layer; Horizon: Bau/Qualifikation 2026–2029",
+      "mechanism": "Angekündigte PM‑Beauftragung beschreibt ein Bau‑/Qualifikations‑ und Packaging‑Projektmanagement (Planung, Bauaufsicht, Termin‑ und Kostensteuerung). Als PM‑Ankündigung ist dies eine organisatorische/contractual‑Layer‑Entscheidung, die Baufortschritt und Zeitplan beeinflusst, liefert jedoch keine direkten Belege für qualifizierte HBM‑Shipments, Lead‑Time‑Verbesserungen oder kurzfristige Versorgungseffekte.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Potentiell reduzierend auf die erwartete strukturelle Knappheit von HBM/Server‑DRAM (P-2026-07-11-01) wenn der US‑Packaging‑Standort vorzeitig qualifizierte HBM‑Shipments liefert; zum Zeitpunkt der Ankündigung fehlen jedoch datenbasierte Messgrößen (Shipments, qualifizierte Output, Lead‑Time‑Veränderungen), sodass der effektive Einfluss auf die Vorhersage unbestimmt bleibt.",
+      "falsifier": "Wenn SK hynix oder unabhängige Prüfberichte bis zum 2029-12-31 bestätigte, qualifizierte HBM‑Shipments (nach Kundenqualifikation) aus dem West‑Lafayette‑Standort melden oder SK hynix explizit berichtet, dass die US‑Facility Lead Times/Fulfillment für HBM messbar um ≥25% gegenüber H2‑2028 verbessert hat, würde dies die Annahme 'HBM bleibt strukturell knapp bis Ende 2028' materialisieren/falsifizieren. Fehlen solche Messwerte bis 2029-12-31 bestätigt das Watchlist‑Risiko.",
+      "nextReview": "2027-03-21",
+      "eventDate": "2026-09-21",
+      "novelty": "Projekt‑Management‑Beauftragung für ein angekündigtes SK‑hynix‑HBM‑Packaging‑Projekt in Indiana; keine früher dokumentierte PM‑Rolle desselben Anbieters für diesen Standort.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.asiatoday.co.kr/view.php?key=20260921000956128",
+          "label": "AsiaToday (englisch) – Meldung zur PM‑Beauftragung HanmiGlobal für SK hynix Indiana",
+          "kind": "secondary",
+          "supports": "Berichtet am 2026-09-21, dass HanmiGlobal PM‑Services für das SK hynix HBM‑Packaging‑Projekt in West Lafayette, Indiana erbringt."
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/amp/business/companies/20260921/hanmiglobal-manages-sk-hynix-hbm-plant-construction-in-indiana",
+          "label": "The Korea Times – 'HanmiGlobal manages SK hynix HBM plant construction in Indiana' (2026-09-21)",
+          "kind": "secondary",
+          "supports": "Koreanische Presse bestätigt am 2026-09-21, dass HanmiGlobal die Bau‑/PM‑Rolle für das HBM‑Packaging‑Projekt in West Lafayette übernimmt."
+        },
+        {
+          "url": "https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana-01/",
+          "label": "SK hynix Newsroom – Groundbreaking Ceremony for HBM Production Base in Indiana (2026-08-28)",
+          "kind": "primary",
+          "supports": "SK hynix bestätigt den Standort West Lafayette, Indiana, das Ziel HBM/Advanced‑Packaging und einen geplanten Produktions‑/Qualifikationszeitraum (Bau/Operation Ziel: nach 2028). Die PM‑Beauftragung selbst wird hier nicht als PM‑Kontrakt im Detail genannt, liefert aber den offiziellen Projektrahmen und geplanten Zeitpfad."
+        }
+      ],
+      "reason": "Die eingereichte Meldung ist eine bestätigte Unternehmens‑/Medienankündigung (HanmiGlobal PM‑Beauftragung, Datum 2026-09-21) und gilt als relevant für die Verfügbarkeitsschicht (availability) des HBM‑Marktes. Allerdings fehlt aktuell jede direkte, quantifizierbare Messgröße, die für eine Index‑Wirksamkeit oder ein Verified Supply Relief erforderlich wäre (keine qualifizierten Shipments, keine Lead‑Time‑Messung, kein Fill‑Rate‑Signal). Gemäß der TAIL‑Aufnahmekriterien sind Bau/PM‑Ankündigungen zukünftige Kapazitätsindikatoren ohne unmittelbare Verfügbarkeitswirkung; deshalb wird der Kandidat auf Watchlist genommen mit klar formuliertem Falsifier (qualifizierte HBM‑Shipments oder messbare Lead‑Time‑Verbesserung bis 2029-12-31). Opposing evidence berücksichtigt, dass SK hynix erst am 2026-08-28 den Groundbreaking‑Event meldete (Projektrahmen) und dass Ankündigungen zu Capex/Buildouts alleine in der Vergangenheit noch keine kurzfristige Entspannung der Knappheit gezeigt haben. Deshalb: NOT PROVEN / Watchlist.",
+      "candidateId": "6b71939fe17e1ca72851",
+      "candidateKey": "44982527ba75854333d98b77",
+      "reviewedAt": "2026-10-12T02:28:37.641Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08e8187347751c77006acc45be978c87d1a44459f234c14c60"
     }
   ]
 }
