@@ -56081,6 +56081,147 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_08e8187347751c77006acc45be978c87d1a44459f234c14c60"
+    },
+    {
+      "decision": "watchlist",
+      "title": "US‑Memory‑Aktien vorbörslich schwächer; TradingKey schreibt CXMT‑Fortschritt als Auslöser",
+      "fact": "Am 2026-10-12 meldet TradingKey, dass US‑Memory‑Aktien (u. a. Micron, SanDisk, Western Digital) im vorbörslichen Handel am 2026-10-12 um mehr als ~2% nachgaben, und führt dies auf CXMT‑Ankündigungen zu Fortschritten in einer 4F²‑DRAM‑Zelle und zu erwarteten DDR5/Server‑Produkten bis Ende 2026 zurück.",
+      "placement": "Global / US‑Equities; Markt‑Layer: Memory‑Equity/Preis‑Reaktion im vorbörslichen Handel; Datum/Horizont: 2026-10-12 (EASTERN TIME, vorbörslich).",
+      "mechanism": "Marktreaktion auf ein Wettbewerbs‑/Supply‑Narrativ: CXMT‑R&D‑Fortschritte erhöhen Erwartungen zusätzlicher wettbewerblicher DRAM‑Kapazität und Preisdruck; Händler realisieren Gewinne bei vorher stark gestiegenen Memory‑Titeln, was vorbörsliche Kursverluste auslöst.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Dieses Signal erhöht die kurzfristige Wahrscheinlichkeit, dass Marktpreise und Anlegervertrauen in etablierte Memory‑Anbieter volatil bleiben, und schwächt tendenziell die Preis‑Rückstellungs‑These (OUTLOOK‑server_dram) indem es kurzfristig Gegenkräfte zu einem reinen \"price_up\"‑Basisszenario anzeigt.",
+      "falsifier": "Prüfbar bis 2026-10-16: Wenn intraday/Schlusskurse der genannten US‑Memory‑Aktien (Micron, SanDisk, Western Digital) an den nächsten drei Handelstagen (2026-10-13 bis 2026-10-15) keinen kumulierten negativen Vorzeichen‑Effekt >3% zeigen und wenn kein bestätigter CXMT‑Produkt‑Announcement oder validierte Tech‑Release (Primary‑Quelle/Company‑Disclosure) vorliegt, dann ist die Kausalzuweisung 'CXMT‑Fortschritt verursacht nachhaltigen Preisdruck' als widerlegt zu betrachten.",
+      "nextReview": "2026-10-16",
+      "eventDate": "2026-10-12",
+      "novelty": "gering bis mittel (Marktreaktion auf Wettbewerbsnachricht; kein neuer technologischer Beleg)",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 8,
+        "thesisRelevance": 12,
+        "forecastImpact": 6,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_down",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262211327-us-memory-stocks-premarket-micron-sandisk-wd-drop-cxmt-competition-tradingkey",
+          "label": "TradingKey — Originalmeldung (vorbörsliche Marktreaktion, Attribution an CXMT‑Fortschritt)",
+          "kind": "primary",
+          "supports": "Bericht zur vorbörslichen Kursreaktion der US‑Memory‑Aktien und Attribution an CXMT‑Ankündigung vom 2026-10-12."
+        },
+        {
+          "url": "https://www.tipranks.com/news/micron-sandisk-and-sk-hynix-stocks-are-falling-in-premarket-today-october-12-whats-behind-the-sell-off",
+          "label": "TipRanks — Bestätigende Marktzusammenfassung",
+          "kind": "secondary",
+          "supports": "Kurzbericht über vorbörsliche Rückgänge und Nennung von CXMT‑Fortschritten als Treiber."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist eine kurzfristige Marktbeobachtung (vorbörsliche Kursbewegung) mit Attribution an eine CXMT‑Ankündigung. Die Aufnahmevoraussetzungen der TAIL‑Papers verlangen eine atomare, datierte, messbare Beobachtung mit belastbarer Primärquelle und eine saubere adversariale Prüfung. Hier liegt zwar eine Primärmeldung (TradingKey) und mehrere Bestätigungen (TipRanks, Broker‑Seiten) vor, aber: (a) TradingKey ist kein marktordentlicher Primär‑Regulator/Exchange‑Feed — die exakte >2%‑Schwelle und Handelsvolumen‑Messung sind nicht an einem offiziellen Tape/Exchange‑Quote dokumentiert; (b) die kausale Attribution an CXMT‑Technologiefortschritt ist derzeit eine Marktinterpretation, nicht ein verifizierter Firmen‑Disclosure mit quantifizierbaren Kapazitäts‑/Timing‑Angaben; (c) es fehlen widersprechende/kontextualisierende Marktdaten (z. B. Reuters/DowJones/Exchange‑Level Bestätigungen der prozentualen Bewegungen und Handelsvolumina) die die Einmalwirkung versus breitere Sektorbewegung auseinanderhalten. Deshalb kann die Behauptung nicht als VERIFIED DATA aufgenommen werden. \n\nEmpfehlung: Watchlist aufnehmen und binnen kurzer Frist (nächster Review: 2026-10-16) die folgenden fehlenden Belege einholen: 1) offizieller Exchange‑Feed / Level‑1‑Quote (Börsenclose/Pre‑market Tape) zur Bestätigung der prozentualen Vorbörse‑Bewegung für jede genannten Aktie am 2026-10-12; 2) eine primäre Firmenquelle/PR von CXMT, die den behaupteten Technologie‑Fortschritt mit konkreten produktionstauglichen Meilensteinen datiert; 3) unabhängige Newswire‑Bestätigung (Reuters, Bloomberg, Dow Jones) der gleichen Attribution oder gegenteilige Statements von betroffenen Firmen (Micron, WD, Western Digital) zur Ursache des Kursrückgangs. Falls eines dieser Elemente nicht geliefert wird, bleibt die Aufnahme als VERIFIED DATA unzulässig. ",
+      "candidateId": "490d0c3219cf8630e388",
+      "candidateKey": "24a1f9e7468de4cfa1e1b400",
+      "reviewedAt": "2026-10-12T13:17:14.724Z",
+      "priorityScore": 54,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_083266024cc90096006accddc7353887d19640c50debbb126b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron (MU) and SK Hynix Confront Growing Challenge from China's CXMT DRAM Expansion",
+      "fact": "Blockonomi berichtet am 2026-09-21, dass ChangXin Memory Technologies (CXMT) die Volumenproduktion einer fünften DRAM‑Generation gestartet habe und diese Plattform angeblich ≥50% höhere funktionale Die‑Ausbeute pro Wafer gegenüber der Vorgängergeneration liefere.",
+      "placement": "China / globaler Standard‑DRAM‑Markt (Mobile & konventionelle DRAM‑Layer) / kurzfristig (Horizon: Q4 2026–H1 2027)",
+      "mechanism": "Eine echte 50%-Erhöhung der Die‑Ausbeute pro Wafer würde die effektiven Stückkosten senken und die bit‑Supply für konventionelle und mobile DRAM‑Segmente vergrößern — was Wettbewerbsdruck auf Anbieter wie Micron und SK hynix erhöht; der Effekt auf Server‑DRAM/HBM hängt hingegen von CXMTs Produkt‑Portfolio (mobile vs. server/HBM) und Qualifikationspfad ab.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Falls verifiziert (CXMT qualifiziert Server‑DRAM oder HBM): availability -> capacity_relief / negative_supply (erhöhte conventional DRAM‑Supply könnte den Druck auf Preis- und Verfügbarkeitsengpässe für Standard-DRAM reduzieren; wenn nur Mobile, begrenzte Wirkung auf Server/HBM).",
+      "falsifier": "Bis zum 2027-06-30 müssen primäre, qualifizierte Messgrößen vorliegen: entweder (a) CXMT meldet geprüfte, qualifizierte Server‑DRAM‑Shipments (konkrete Kunden, SKU‑IDs, Ship‑Volumen in Stück oder GB) oder (b) TrendForce/Counterpoint/IDC ausgewiesene globale DRAM‑Revenue‑Anteile zeigen, dass CXMTs Anteil für Server/Standard‑DRAM (nicht nur Mobile) auf ≥5% im H1 2027 steigt. Fehlen diese Messgrößen bis 2027-06-30 → Falsifier erfüllt (Behauptung nicht hinreichend verifiziert).",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-21",
+      "novelty": "CXMT‑Volumenankündigungen und Marktanteilszahlen waren bereits in TAIL‑Feeds dokumentiert; dieser Bericht beschreibt technische Ausbeuteverbesserungen (50%) als neues operatives Detail, aber er ist bisher sekundär berichtet.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://blockonomi.com/micron-mu-and-sk-hynix-confront-growing-challenge-from-chinas-cxmt-dram-expansion/",
+          "label": "Blockonomi — 'Micron (MU) and SK Hynix Confront Growing Challenge from China's CXMT DRAM Expansion' (2026-09-21)",
+          "kind": "secondary",
+          "supports": "Bericht über CXMT‑Volumenproduktion der fünften DRAM‑Generation mit angeblich ≥50% höherer Die‑Ausbeute; nennt TrendForce Marktanteilszahlen."
+        },
+        {
+          "url": "https://chainswap.io/index.php/crypto-news/micron-mu-and-sk-hynix-confront-growing-challenge-from-chinas-cxmt-dram-expansion",
+          "label": "Syndiziertes Repost (ChainSwap) des Blockonomi‑Artikels",
+          "kind": "secondary",
+          "supports": "Repost des Blockonomi‑Inhalts; bestätigt Publikationsdatum und Kernaussage in sekundären Kanälen."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung beruht auf einem sekundären Branchenartikel (Blockonomi, publiziert 2026-09-21). Die Behauptung enthält eine quantifizierbare operative Größe (»≥50% höhere Die‑Ausbeute pro Wafer«) und nennt Marktanteilszahlen — beides wären potenziell admitierbare, belastbare Signale, wenn sie von primären Quellen (TrendForce/Counterpoint direkt, CXMT‑Pressemitteilung mit technischen Messgrößen, oder überprüfbare Kunden‑Shipments/Qualifikationsdaten) bestätigt würden. Ich konnte mit dem gegebenen Beleg nur den Blockonomi‑Artikel (und Reposts) nachweisen — das ist keine primär‑technische Quelle und nennt keine verifizierbaren, gebundenen Messungen (z. B. qualifizierte Server‑DRAM‑Shipments, offizielle TrendForce‑Tabelle oder CXMT‑Produkt‑Spezifikationsblätter mit Prüfprotokollen). Daher: Watchlist — zusätzliche Primärverifikation benötigt (TrendForce/Counterpoint/IDC‑Report oder offizielle CXMT‑Mitteilung mit technischen Prüf- und Lieferdaten). Falls solche Primärbelege auftauchen und CXMT nachweislich in Server/HBM zuführt oder reale Shipments/Revenue für Server‑DRAM erhöht, ist das ein relevanter Signal‑Faktor für die OUTLOOK/Memory‑Prognosen; momentan ist die Behauptung nicht hinreichend belegt.",
+      "candidateId": "7df16a1ef77c12528492",
+      "candidateKey": "de79861c9be55ee8ea7111d1",
+      "reviewedAt": "2026-10-12T13:17:38.000Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c97f13c74166fb7006accdddae0c887d181f44714a8b21351"
     }
   ]
 }
