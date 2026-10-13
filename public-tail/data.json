@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T12:48:17.867Z",
+  "generatedAt": "2026-10-13T22:00:51.058Z",
   "platform": {
-    "dataAsOf": "2026-10-13",
-    "analysisAsOf": "2026-10-13",
+    "dataAsOf": "2026-10-14",
+    "analysisAsOf": "2026-10-14",
     "sourceDataAsOf": "2026-10-06",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-10-13T12:48:16.079Z",
-      "pending": 229,
-      "reviewed": 174,
+      "checkedAt": "2026-10-13T22:00:49.537Z",
+      "pending": 233,
+      "reviewed": 176,
       "accepted": 19,
-      "rawCandidates": 881,
+      "rawCandidates": 892,
       "triage": {
-        "archivedOpinions": 21,
+        "archivedOpinions": 24,
         "groupedDuplicates": 40
       },
       "lastRun": {
-        "startedAt": "2026-10-13T12:47:22.223Z",
-        "completedAt": "2026-10-13T12:48:16.082Z",
+        "startedAt": "2026-10-13T21:59:59.868Z",
+        "completedAt": "2026-10-13T22:00:49.539Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 53,
+        "durationSeconds": 49,
         "budgetExhausted": false
       }
     },
@@ -39,7 +39,7 @@
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 76,
+        "score": 75,
         "status": "orange",
         "signals": 19,
         "confidence": 73,
@@ -48,8 +48,8 @@
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 65,
-        "status": "orange",
+        "score": 64,
+        "status": "yellow",
         "signals": 31,
         "confidence": 89,
         "coverage": 100
@@ -60,7 +60,7 @@
         "score": 78,
         "status": "orange",
         "signals": 20,
-        "confidence": 60,
+        "confidence": 59,
         "coverage": 100
       }
     ]
@@ -73,7 +73,7 @@
     "riskPressure": 82,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-13; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (229 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-14; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (233 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
@@ -81,7 +81,7 @@
       "title": "[News] Samsung Showcases CXL Memory Expansion With AMD at OCP 2026, Expands AI Memory Push Beyond HBM",
       "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Showcases CXL Memory Expansion With AMD at OCP 2026, Expands AI Memory Push Beyond HBM",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 100,
+      "score": 95,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "TrendForce",
@@ -90,26 +90,26 @@
     },
     {
       "date": "2026-10-13",
-      "title": "CXMT's server DRAM push raises margin concerns for Samsung, SK Hynix",
-      "summary": "Aktuelle Meldung von digitimes: CXMT's server DRAM push raises margin concerns for Samsung, SK Hynix",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 97,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRmh5TDE3YTVsYlI2LWxfMmZfUWcwbDJ0U3poR0REb1ZQSTRibzdsNlJyUEduQjBabVBJMVFBZVJ2SDJVY1lpYVBocTY2bUJzdkxXanpDZnNMeENXb3JQOW94a0NSLWF0eVhRalpOY2VWSmhRWTdvTURHeUIyalB3VzdPSHVsTm1MVnJ1Z1JYcUprZw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix",
-      "summary": "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix Analytics India Magazine",
+      "title": "Analyst lists 7 reasons why China CXMT’s claims don’t threaten Micron and Sandisk",
+      "summary": "Aktuelle Meldung von StreetInsider: Analyst lists 7 reasons why China CXMT’s claims don’t threaten Micron and Sandisk",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Analytics India Magazine",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdXpJeGMzUFdlaVFwT3FTaFhVbW14LWRmSlplUVMxTjJrZENGaW9kV2hoRXpiYnpqdEdzRFU0dzVGaVlWYlJTZ0FZT211VFBGOWFjR1pNaDZyUVBycUhPcTQzRFBxOFFtX2o4R3kxUXFiX0l2QjRBVlVzQ0xweEs4TGRhZnBJMzVrazZJbHdTTjlsd2ZYZ3A2Q1R2Mks5b3JsdzNveFZOdUt3RGQ5aGc?oc=5",
+      "source": "StreetInsider",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNGZNMXlMRUdYWEw1MVJlWkNUQ3B0dW9WQ3pnWDIzdGRveS1yQnphYW5wbDlmZThhR3RCbmNOdTRXU0U4U1N2NWREZ0FCakVNVGQxWnNoanB5WXFZQ0FkZUFFZV9DbUEwRFdTX1BuVTFjN0NtMzZNV0dwVnFNWURGdTVzM2ZPaE1WQ2x4S1BodEFLbkV5aGpNZ2d0aGxSd2hmVmNuSTkwTGxTX3dzNy1uU3hfOWc1QzJaYjczSEE1NGxXcm43cDhjdlZLNnpXa3JFY0pwVjF1eFcycXhsRTFFa0lfTUFHVGdFQnc?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Why are Micron, SK Hynix and Samsung stocks falling? China’s CXMT sparks chip sell-off | Hindustan Times",
+      "summary": "Aktuelle Meldung von Hindustan Times: Why are Micron, SK Hynix and Samsung stocks falling? China’s CXMT sparks chip sell-off | Hindustan Times",
+      "analysis": "Das ist ein Lieferketten- und Geopolitiksignal. Es kann Verfügbarkeit, Transportkosten, Beschaffungswege oder die regionale Allokation von Halbleiter- und Memory-Produkten verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Hindustan Times",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOai1lQ1FJamRraXAweElJR0EtUHZ5QUhYV2NoMzhlbVJBRVo4cVF0SF9CNlhMUVRpX0d6Z1EzR1hSdmxwRzZNOUNRWFBWMDkzXzVuTDRsSUJLLURVTzUyRVpQZ1ZOTTBEWTBWVWFlRm5NSklCTUlUQWd2eHVhWWgzNFVsZ0ZfUnlwMVRNcDRVYkpYcTRxSHM3NWlHcnpGa29FcDRtTHU5MGcxbUVKZUFnQXpOZXQzZmpWQTRzZTlVMTZkWmlzd1NmcEYxS0JiYi1maFpGUmd6d3ppVXAyYy1WbndVdjF2VlBFbkHSAe8BQVVfeXFMTXFCQ3Jrenh6czdscEllZlZDd0o1MUpOT2FOMjlScXRXYVF2MkF3cGlyYnRYSGw4Nm1TU3ZTal96alpnbDlsb0NMaEFYeWNXN2dhcEVmcjBnZmVBQVRHUmhOMlo0bGVoc3dDaFZtT1M0MVNKdVZ0cW1ONDhUbFJkZXBJVXNWcFZQYW5qa1ZaXzl1S1JrRjMzQWVmQllYMl9BdzhFdVBEbXdrN2k0OE40VGduMHpjOHdNSW81M2xQTlYzRWI0ZTg5b2NUMHpDSGI1QlJEVDVVLWQ1cHJ5RzlxV0JqNGg0WW9BcjF5X0RSQkU?oc=5",
       "layer": "news"
     }
   ],
@@ -132,11 +132,11 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-10-13",
+    "date": "2026-10-14",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "229 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "233 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
     {
@@ -144,7 +144,7 @@
       "title": "[News] Samsung Showcases CXL Memory Expansion With AMD at OCP 2026, Expands AI Memory Push Beyond HBM",
       "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Showcases CXL Memory Expansion With AMD at OCP 2026, Expands AI Memory Push Beyond HBM",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 100,
+      "score": 95,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "TrendForce",
@@ -153,33 +153,33 @@
     },
     {
       "date": "2026-10-13",
-      "title": "CXMT's server DRAM push raises margin concerns for Samsung, SK Hynix",
-      "summary": "Aktuelle Meldung von digitimes: CXMT's server DRAM push raises margin concerns for Samsung, SK Hynix",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 97,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRmh5TDE3YTVsYlI2LWxfMmZfUWcwbDJ0U3poR0REb1ZQSTRibzdsNlJyUEduQjBabVBJMVFBZVJ2SDJVY1lpYVBocTY2bUJzdkxXanpDZnNMeENXb3JQOW94a0NSLWF0eVhRalpOY2VWSmhRWTdvTURHeUIyalB3VzdPSHVsTm1MVnJ1Z1JYcUprZw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix",
-      "summary": "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix Analytics India Magazine",
+      "title": "Analyst lists 7 reasons why China CXMT’s claims don’t threaten Micron and Sandisk",
+      "summary": "Aktuelle Meldung von StreetInsider: Analyst lists 7 reasons why China CXMT’s claims don’t threaten Micron and Sandisk",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Analytics India Magazine",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdXpJeGMzUFdlaVFwT3FTaFhVbW14LWRmSlplUVMxTjJrZENGaW9kV2hoRXpiYnpqdEdzRFU0dzVGaVlWYlJTZ0FZT211VFBGOWFjR1pNaDZyUVBycUhPcTQzRFBxOFFtX2o4R3kxUXFiX0l2QjRBVlVzQ0xweEs4TGRhZnBJMzVrazZJbHdTTjlsd2ZYZ3A2Q1R2Mks5b3JsdzNveFZOdUt3RGQ5aGc?oc=5",
+      "source": "StreetInsider",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNGZNMXlMRUdYWEw1MVJlWkNUQ3B0dW9WQ3pnWDIzdGRveS1yQnphYW5wbDlmZThhR3RCbmNOdTRXU0U4U1N2NWREZ0FCakVNVGQxWnNoanB5WXFZQ0FkZUFFZV9DbUEwRFdTX1BuVTFjN0NtMzZNV0dwVnFNWURGdTVzM2ZPaE1WQ2x4S1BodEFLbkV5aGpNZ2d0aGxSd2hmVmNuSTkwTGxTX3dzNy1uU3hfOWc1QzJaYjczSEE1NGxXcm43cDhjdlZLNnpXa3JFY0pwVjF1eFcycXhsRTFFa0lfTUFHVGdFQnc?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Why are Micron, SK Hynix and Samsung stocks falling? China’s CXMT sparks chip sell-off | Hindustan Times",
+      "summary": "Aktuelle Meldung von Hindustan Times: Why are Micron, SK Hynix and Samsung stocks falling? China’s CXMT sparks chip sell-off | Hindustan Times",
+      "analysis": "Das ist ein Lieferketten- und Geopolitiksignal. Es kann Verfügbarkeit, Transportkosten, Beschaffungswege oder die regionale Allokation von Halbleiter- und Memory-Produkten verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Hindustan Times",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOai1lQ1FJamRraXAweElJR0EtUHZ5QUhYV2NoMzhlbVJBRVo4cVF0SF9CNlhMUVRpX0d6Z1EzR1hSdmxwRzZNOUNRWFBWMDkzXzVuTDRsSUJLLURVTzUyRVpQZ1ZOTTBEWTBWVWFlRm5NSklCTUlUQWd2eHVhWWgzNFVsZ0ZfUnlwMVRNcDRVYkpYcTRxSHM3NWlHcnpGa29FcDRtTHU5MGcxbUVKZUFnQXpOZXQzZmpWQTRzZTlVMTZkWmlzd1NmcEYxS0JiYi1maFpGUmd6d3ppVXAyYy1WbndVdjF2VlBFbkHSAe8BQVVfeXFMTXFCQ3Jrenh6czdscEllZlZDd0o1MUpOT2FOMjlScXRXYVF2MkF3cGlyYnRYSGw4Nm1TU3ZTal96alpnbDlsb0NMaEFYeWNXN2dhcEVmcjBnZmVBQVRHUmhOMlo0bGVoc3dDaFZtT1M0MVNKdVZ0cW1ONDhUbFJkZXBJVXNWcFZQYW5qa1ZaXzl1S1JrRjMzQWVmQllYMl9BdzhFdVBEbXdrN2k0OE40VGduMHpjOHdNSW81M2xQTlYzRWI0ZTg5b2NUMHpDSGI1QlJEVDVVLWQ1cHJ5RzlxV0JqNGg0WW9BcjF5X0RSQkU?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-10-13T12:48:18.161Z",
+    "generatedAt": "2026-10-13T22:00:51.303Z",
     "count": 3,
-    "candidateCount": 420,
+    "candidateCount": 485,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -267,12 +267,12 @@
           "CSP-CapEx und Hardware-Inbetriebnahme"
         ],
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
-        "currentScore": 76,
+        "currentScore": 75,
         "currentStatus": "orange",
         "confidence": 73,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-10-13"
+        "indexAsOf": "2026-10-14"
       },
       {
         "marketId": "enterprise_ssd",
@@ -369,10 +369,10 @@
         "methodologyNote": "Marktdruckindex und Preisforecast bleiben getrennt. Szenariogewichte 50/20/30 sind HEURISTIC, keine statistisch kalibrierten Ereignishäufigkeiten. Fehlende Daten sind kein Entspannungssignal; korrelierte Evidenz wird nicht doppelt gezählt.",
         "currentScore": 78,
         "currentStatus": "orange",
-        "confidence": 60,
+        "confidence": 59,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-10-13",
+        "indexAsOf": "2026-10-14",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -397,7 +397,7 @@
       "title": "[News] Samsung Showcases CXL Memory Expansion With AMD at OCP 2026, Expands AI Memory Push Beyond HBM",
       "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Showcases CXL Memory Expansion With AMD at OCP 2026, Expands AI Memory Push Beyond HBM",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 100,
+      "score": 95,
       "relevanceScore": 100,
       "sourceQuality": 15,
       "source": "TrendForce",
@@ -406,26 +406,26 @@
     },
     {
       "date": "2026-10-13",
-      "title": "CXMT's server DRAM push raises margin concerns for Samsung, SK Hynix",
-      "summary": "Aktuelle Meldung von digitimes: CXMT's server DRAM push raises margin concerns for Samsung, SK Hynix",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 97,
-      "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRmh5TDE3YTVsYlI2LWxfMmZfUWcwbDJ0U3poR0REb1ZQSTRibzdsNlJyUEduQjBabVBJMVFBZVJ2SDJVY1lpYVBocTY2bUJzdkxXanpDZnNMeENXb3JQOW94a0NSLWF0eVhRalpOY2VWSmhRWTdvTURHeUIyalB3VzdPSHVsTm1MVnJ1Z1JYcUprZw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix",
-      "summary": "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix Analytics India Magazine",
+      "title": "Analyst lists 7 reasons why China CXMT’s claims don’t threaten Micron and Sandisk",
+      "summary": "Aktuelle Meldung von StreetInsider: Analyst lists 7 reasons why China CXMT’s claims don’t threaten Micron and Sandisk",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Analytics India Magazine",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdXpJeGMzUFdlaVFwT3FTaFhVbW14LWRmSlplUVMxTjJrZENGaW9kV2hoRXpiYnpqdEdzRFU0dzVGaVlWYlJTZ0FZT211VFBGOWFjR1pNaDZyUVBycUhPcTQzRFBxOFFtX2o4R3kxUXFiX0l2QjRBVlVzQ0xweEs4TGRhZnBJMzVrazZJbHdTTjlsd2ZYZ3A2Q1R2Mks5b3JsdzNveFZOdUt3RGQ5aGc?oc=5",
+      "source": "StreetInsider",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNGZNMXlMRUdYWEw1MVJlWkNUQ3B0dW9WQ3pnWDIzdGRveS1yQnphYW5wbDlmZThhR3RCbmNOdTRXU0U4U1N2NWREZ0FCakVNVGQxWnNoanB5WXFZQ0FkZUFFZV9DbUEwRFdTX1BuVTFjN0NtMzZNV0dwVnFNWURGdTVzM2ZPaE1WQ2x4S1BodEFLbkV5aGpNZ2d0aGxSd2hmVmNuSTkwTGxTX3dzNy1uU3hfOWc1QzJaYjczSEE1NGxXcm43cDhjdlZLNnpXa3JFY0pwVjF1eFcycXhsRTFFa0lfTUFHVGdFQnc?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Why are Micron, SK Hynix and Samsung stocks falling? China’s CXMT sparks chip sell-off | Hindustan Times",
+      "summary": "Aktuelle Meldung von Hindustan Times: Why are Micron, SK Hynix and Samsung stocks falling? China’s CXMT sparks chip sell-off | Hindustan Times",
+      "analysis": "Das ist ein Lieferketten- und Geopolitiksignal. Es kann Verfügbarkeit, Transportkosten, Beschaffungswege oder die regionale Allokation von Halbleiter- und Memory-Produkten verändern.",
+      "score": 93,
+      "relevanceScore": 100,
+      "sourceQuality": 6,
+      "source": "Hindustan Times",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOai1lQ1FJamRraXAweElJR0EtUHZ5QUhYV2NoMzhlbVJBRVo4cVF0SF9CNlhMUVRpX0d6Z1EzR1hSdmxwRzZNOUNRWFBWMDkzXzVuTDRsSUJLLURVTzUyRVpQZ1ZOTTBEWTBWVWFlRm5NSklCTUlUQWd2eHVhWWgzNFVsZ0ZfUnlwMVRNcDRVYkpYcTRxSHM3NWlHcnpGa29FcDRtTHU5MGcxbUVKZUFnQXpOZXQzZmpWQTRzZTlVMTZkWmlzd1NmcEYxS0JiYi1maFpGUmd6d3ppVXAyYy1WbndVdjF2VlBFbkHSAe8BQVVfeXFMTXFCQ3Jrenh6czdscEllZlZDd0o1MUpOT2FOMjlScXRXYVF2MkF3cGlyYnRYSGw4Nm1TU3ZTal96alpnbDlsb0NMaEFYeWNXN2dhcEVmcjBnZmVBQVRHUmhOMlo0bGVoc3dDaFZtT1M0MVNKdVZ0cW1ONDhUbFJkZXBJVXNWcFZQYW5qa1ZaXzl1S1JrRjMzQWVmQllYMl9BdzhFdVBEbXdrN2k0OE40VGduMHpjOHdNSW81M2xQTlYzRWI0ZTg5b2NUMHpDSGI1QlJEVDVVLWQ1cHJ5RzlxV0JqNGg0WW9BcjF5X0RSQkU?oc=5",
       "layer": "news"
     }
   ]

@@ -56502,6 +56502,138 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_04d5ce675f9a9ff4006ace2875423487d09ad52924138c9868"
+    },
+    {
+      "decision": "rejected",
+      "title": "SanDisk Stock Price Forecast: ChangXin Memory’s New DRAM Architecture Collaterally Hits NAND, HBF High-Bandwidth Flash Key to Turnaround",
+      "fact": "Meinungs-/Analyseartikel (TradingKey, 2026-10-13) behauptet, CXMTs neue DRAM‑Architektur habe 'sekundäre' Auswirkungen auf NAND/Enterprise‑SSD-Preise und dass HBF (High‑Bandwidth Flash) der 'Schlüssel' zur Erholung sei.",
+      "placement": "Global memory markets; Produkt‑Layer: NAND / Enterprise‑SSD / HBF; Geographie: global (marktbasiert); Event‑Datum: 2026-10-13.",
+      "mechanism": "These des Artikels: CXMTs angekündigte Fortschritte an einer nächsten DRAM‑Architektur (4F²/Server‑DDR5‑RDIMM) verschieben Anleger‑Erwartungen, führen zu Risiko‑Aversion gegenüber NAND‑Werten und erhöhen die Bedeutung von HBF‑Produkten als Near‑compute‑Substitut für Inference‑Workloads. Dies ist eine Marktmeinung, kein beobachtetes, gemessenes Lieferschock‑Signal.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Wenn die These stimmte, würde sie das OUTLOOK-enterprise_ssd‑Szenario (Preis‑/Erfüllungsdruck bei Enterprise‑SSD) kurzfristig verstärken (mehr Upside‑Preisdruck). Der Beitrag des Artikels ist jedoch ein Interpretations‑/Sentiment‑Signal und liefert keinen direkten, quantifizierten Beleg für veränderte Kontraktpreise, Shipments oder Fill‑Rates.",
+      "falsifier": "Bis 2026-12-31: beobachtete Kennziffern (kontraktbasierter Enterprise‑SSD‑Preisindex oder qualifizierte Enterprise‑SSD‑Shipments) zeigen keine signifikante Verschlechterung gegenüber dem Stand vom 2026-10-13 (z. B. kein Anstieg der Enterprise‑SSD‑Kontraktpreise um >5 % QoQ und keine Reduktion qualifizierter Lieferungen/Fill‑Rate um >10 %).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-10-13",
+      "novelty": "niedrig — wiederholte Marktkommentar‑These (DRAM‑Tech‑News beeinflusst NAND‑/SSD‑Sentiment); keine neue, messbare Primärbeobachtung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 6,
+        "thesisRelevance": 10,
+        "forecastImpact": 8,
+        "falsifiability": 4,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "hbm"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 20,
+      "confidence": 30,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://sandisk.gcs-web.com/node/7716/pdf",
+          "label": "SanDisk — Unternehmensunterlagen / Q2 2026 Results (Belegt HBF‑Marketing/Produktfokus von SanDisk und existierende LTAs).",
+          "kind": "secondary",
+          "supports": "SanDisk kommuniziert HBF/Produktfokus und langfristige Verträge, was die Marktposition von SanDisk unabhängig von CXMT‑DRAM‑Ankündigungen stützt."
+        }
+      ],
+      "reason": "Ablehnung — Der Kandidat ist ein Meinungs-/Analyseartikel (TradingKey, 2026-10-13), kein atomarer, datierter Primärbeleg mit messbaren Einheiten (z. B. verifizierte Shipments, kontraktierte Preise, Lead‑Time‑Änderung). Die TAIL‑Aufnahmekriterien verlangen eine konkrete, überprüfbare Beobachtung (Datum, metrische Einheit, räumliche/produktbezogene Abgrenzung) plus einen prüfbaren Falsifizierer, um als Accepted/VERIFIED DATA aufgenommen zu werden. Dieser Artikel liefert stattdessen eine Marktinterpretation und ein Investment‑Thesensignal — nützlich für Sentiment‑Tracking, aber nicht ausreichend als belastbare, einklagbare Evidenz zur Änderung der OUTLOOK‑Indikatoren. Gegenbelege im Informationsraum (z. B. SanDisk‑Kommunikation zu HBF und bestehende LTAs sowie Berichte über HBM‑Knappheit und verkaufte HBM‑Kapazitäten) zeigen, dass die behauptete 'sekundäre' Preiswirkung auf NAND nicht als unmittelbar bewiesen angesehen werden kann. Ohne direkte Messungen (kontraktpreise, qualifizierte Shipments oder Fill‑Rates) bleibt die Behauptung NOT_PROVEN; daher Reject.",
+      "candidateId": "fd4c2c995b1a6b412e39",
+      "candidateKey": "50f721b61d43adc17c3d402d",
+      "reviewedAt": "2026-10-13T22:00:29.800Z",
+      "priorityScore": 39,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a648c851b516645006acea9e1ed1487d09a117fda39f7a1c4"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung Might Boost HBM4 Chip Production 2.5x by 2027 as Redhot AI Chip Demand Continues",
+      "fact": "Bericht (Wccftech, 2026-09-21) zitiert südkoreanische Industriequellen, wonach Samsung die HBM4‑Produktion bis 2027 um das 2,5‑fache steigern könnte.",
+      "placement": "Global / HBM‑Produktionsvolumen (HBM4) / Horizon: bis 2027-12-31.",
+      "mechanism": "Erhöhte Wafer‑/Glass‑Carrier‑Durchsatzkapazität und Dedizierung neuer Fertigungs‑/Packaging‑Lines bei Samsung, um HBM4- und HBM4E‑Volumen zu skalieren (laut Bericht: mehr Glas‑Carrier und zusätzliche Linien).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Milderung des prognostizierten strukturellen HBM-/Server‑DRAM‑Engpasses bis 2027 (partial negation of 'HBM und Server‑DRAM bleiben knapp bis mindestens Ende 2028').",
+      "falsifier": "Entscheidend falsifizierbar, falls Samsung bis 2027-12-31 keine qualifizierten, berichteten HBM4‑Shipments oder ausgewiesene HBM4‑Glass‑Carrier/wafer‑Durchsatz‑Metrik veröffentlicht, die das 2,5‑fache des 2026‑Basisniveaus erreichen (z. B. Samsung‑Earnings/MD&A, Quartalsbericht oder offizielles Produktions‑/Versand‑Volumen mit klarer, quantifizierbarer Basiseinheit). Review‑Datum: 2028-01-31.",
+      "nextReview": "2028-01-31",
+      "eventDate": "2026-09-21",
+      "novelty": "Bericht fügt eine spezifische Skala (2,5×) und ein datiertes Zieljahr (2027) zur laufenden Narrative über HBM‑Ramps hinzu.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://tbreak.com/samsung-hbm4-output-2027-ai-demand/",
+          "label": "TBreak / Sekundärberichterstattung (zusammenfassend dieselbe Behauptung)",
+          "kind": "secondary",
+          "supports": "Zusammenfassende Berichterstattung, die die Wccftech‑Behauptung und Angabe von 'Seoul Economic Daily / Korean industry sources' wiedergibt."
+        }
+      ],
+      "reason": "Der Kandidat melde eine spezifische, marktrelevante Quantifizierung (2,5× bis 2027) — das ist relevant für die TAIL‑Forecast P-2026-07-11-01. Der Vorfall ist jedoch nicht als Primärquelle (Samsung‑Statement oder verifizierbare Produktions-/Shipment‑Metrik) belegt; die vorgelegten URLs sind Sekundärberichte, die koreanische Industriequellen bzw. 'Seoul Economic Daily' zitieren. Auf Grundlage der Entscheidungsregeln erfordert Aufnahme in die TAIL‑Datenbank primäre, datierte, quantifizierbare Nachweise (z. B. Samsung‑Investor‑Mitteilung, Earnings‑MD&A mit HBM4‑Shipment/wafer‑Durchsatz‑Angaben oder offizielle Produktions‑/Versandstatistik). Solange diese Primärverifikation fehlt, kann das Signal die Aufnahme‑schwelle nicht sicher überschreiten. Außerdem gibt es widersprüchliche / gegensätzliche Indikatoren in der Baseline (z. B. 'Micron sold out through 2026', SK hynix/Yields‑Reports, persistierende Knappheits‑Narrative), die eine einfache Entspannung der Knappheit nicht belegen. Daher: watchlist (NOT PROVEN).",
+      "candidateId": "43302166a11205008def",
+      "candidateKey": "b398f20ad13f2631250d7160",
+      "reviewedAt": "2026-10-13T22:00:49.512Z",
+      "priorityScore": 72,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a83bdb3b7325760006acea9fdff6087d09b9dc76cc0703858"
     }
   ]
 }
