@@ -56634,6 +56634,135 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0a83bdb3b7325760006acea9fdff6087d09b9dc76cc0703858"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Analyst lists 7 reasons why China CXMT’s claims don’t threaten Micron and Sandisk",
+      "fact": "Bericht/Kommentar eines Analysten (Mizuho / Jordan Klein, zitiert in StreetInsider/Investing.com) listet sieben Argumente, warum CXMT‑Ankündigungen die Wettbewerbsposition von Micron und SanDisk kurzfristig nicht bedrohen.",
+      "placement": "Global / Memory‑Markt (DRAM, Server‑DRAM, NAND); Short‑term market commentary, keine qualifizierte Messung des Angebots/Preiseffekts. Datiert im Artikel: 2026-10-13.",
+      "mechanism": "Narrative / Analystenmeinung: technische Reife, Qualifikation, Yield‑Risiken, Kunden‑Qualifikation und vorhandene vertragliche Bindungen sollen verhindern, dass CXMT kurzfristig Marktanteile in den wertvolleren Server/HBM‑Segmenten wegnimmt. Kein primärer Lieferschafts‑ oder Preisindikator wird angegeben.",
+      "predictionId": "P-2026-07-14-01",
+      "predictionImpact": "Kurzfristig reduziert die Note die Marktnervosität gegenüber der P-2026-07-14-01‑These (CXMT‑IPO / LTAs stärken Mainstream‑/Server‑DRAM) — aber das ist eine interpretative, nicht gemessene Wirkung.",
+      "falsifier": "Bis 2026-12-31: veröffentlichte, qualifizierte Produktions- und Auslieferungsdaten von CXMT (qualifizierte RDIMM/Retail/Server‑RDIMM‑Shipments mit Nennmengen in Wafern/Skus) oder bestätigte Großkunden‑LTAs, die zeigen, dass CXMT innerhalb von 3 Monaten nach 2026-10-13 >5% globaler Server‑DRAM‑Lieferungen (Qualifizierte Shipments) erreicht. Falls solche Daten erscheinen, widerspricht das Analystenargument.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-10-13",
+      "novelty": "Niedrig — Analystenkommentar/Meinungsstück, keine neue Primärmessung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 8,
+        "thesisRelevance": 12,
+        "forecastImpact": 18,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "price_down",
+      "severity": 20,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://in.investing.com/news/stock-market-news/analyst-lists-7-reasons-why-china-cxmts-claims-dont-threaten-micron-and-sandisk-5630728",
+          "label": "Investing.com (republishing analyst summary)",
+          "kind": "secondary",
+          "supports": "Republished summary of the analyst's seven‑point view; confirms coverage across multiple news aggregators on 2026-10-13."
+        }
+      ],
+      "reason": "Der Kandidat ist ein sekundärer, analystischen Kommentar (Mizuho / Jordan Klein via Finanzmedien) und liefert keine primäre, datierten Messung (z. B. qualifizierte Shipments, Vertragsvolumina in Einheiten, beobachtete Lead‑Time‑Verbesserungen oder tatsächliche Preis-/Fill‑Rate‑Änderungen). Die Einreichung erfüllt nicht die TAIL‑Annahmekriterien für eine akzeptierte Aufnahme, weil sie keine atomare, datierte, mit Einheiten versehene Beobachtung enthält, keine klar abgegrenzte Platzierung (Geographie/Layer/Zeithorizont) quantifiziert und kein direkt testbarer Index‑Beleg vorlegt. Opposing evidence: Marktreaktionen und frühere Berichte zeigen, dass CXMT Marktanteile gewinnt (Counterpoint/Reuters/Statements), weshalb die Analystenaussage eine interpretative Einschätzung ist, nicht ein belastbarer Primärbeleg. Deshalb: watchlist – weiterer Beleg (qualifizierte Shipments/konkrete LTAs oder Messungen der Marktwirkung) erforderlich, bevor die Meldung als VERIFIED DATA oder Aufnahme in die Basissignale zugelassen werden kann.",
+      "candidateId": "296f7b489c3e71854170",
+      "candidateKey": "1fd0c7696d433abc78863e48",
+      "reviewedAt": "2026-10-14T02:02:32.019Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_00a257a89934f725006acee2a3cb1887d1a53076c70aa9283a"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT (长鑫) kündigt 2026-09-20 Mass Production des 5.‑Gen DRAM‑'G5'‑Plattform an (Firmenmitteilung)",
+      "fact": "2026-09-20: CXMT (ChangXin / 长鑫存储) gab auf der World Manufacturing Convention in Hefei bekannt, dass seine fünfte DRAM‑Technologieplattform (\"G5 Platform\") in die Serien-/Massenproduktion gegangen sei und zeigte darauf basierende 24‑Gigabit LPDDR5X‑Produkte. (Unternehmensmeldung und chinesische Medienberichterstattung).",
+      "placement": "Geographie: China (Hefei); Domäne/Layer: DRAM‑Produkt‑/Fertigungsplattform (LPDDR5X) — kurzfristiger Produktramptest / Firmenskalierung (horizon: near term commercial ramping, months).",
+      "mechanism": "CXMT behauptet Micro‑scaling/Prozessdurchbruch, der laut Firmenangaben die Anzahl an Rohchips pro Wafer gegenüber der 4. Generation um ≥50% steigern soll; effektiver Verfügbarkeitseinfluss würde über erhöhte qualifizierte Wafer‑Ausbringung (qualified wafer output) und preisliche Wettbewerbsfähigkeit laufen. Der Mechanismus ist eine firmenseitige Produktions‑ und Yield‑Skalierung (nicht ein nachgewiesener Markt‑Shipment‑Effekt).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Mögliche Richtung: availability → capacity_relief (potentiell dämpfend auf die Basisszenario‑Knappheit von HBM/Server‑DRAM). Warum verknüpft: eine erfolgreiche, qualifizierte Produktionsskalierung von CXMT kann die verfügbare DRAM‑Bit‑Supply erhöhen; aktuell ist das aber nur ein Unternehmensanspruch ohne unabhängige, quantifizierte, qualifizierte Shipments oder beobachtbare Lead‑Time/Fill‑Rate‑Effekte.",
+      "falsifier": "Bis 2026-12-31 muss CXMT einen extern prüfbaren, qualifizierten Ausstoß berichten: mindestens X = 50.000 qualifizierte DRAM‑Wafers/Monat (oder äquivalente qualifizierte LPDDR5X‑Chip‑Shipments ≥Y Stück/Monat) mit dokumentierter Kundenzertifizierung; oder alternativ müssen Markt‑Lead‑Times für vergleichbare Server/LPDDR5X‑SKUs in wichtigen Channel‑Indizes (z. B. verifizierte Kontrakt‑Lead‑Times oder Fill‑Rates) nachhaltig um ≥20% gegenüber dem Quartalsdurchschnitt Q3‑2026 fallen. Fehlen diese Belege bis 2026-12-31 falsifiziert die praktische Marktwirkung (d.h. kein erkennbarer availability‑relief).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-20",
+      "novelty": "G5 Plattform‑Mass‑Production‑Ankündigung durch CXMT ist neu gegenüber Baseline (produkt‑/technologieanzahl), aber nicht allein ausreichend als Nachweis für Markt‑wirksame Bit‑Zunahme.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.chinanews.com/cj/2026/09-20/10700064.shtml",
+          "label": "ChinaNews (中新社) Bericht: '长鑫存储第五代技术平台正式量产' (2026-09-20).",
+          "kind": "secondary",
+          "supports": "Unabhängige nationale Medienberichterstattung vom 2026-09-20 über dieselbe Unternehmensankündigung (bestätigt Datum und präsentierte Produkte)."
+        }
+      ],
+      "reason": "Die Candidate‑Aussage ist durch firmeneigene Pressemitteilungen und chinesische Medienberichte datiert und verifizierbar (2026-09-20). Sie ist relevant für die TAIL‑These, weil CXMT als wachsender chinesischer DRAM‑Player potenziell Bit‑Supply verändern kann. Die Ankündigung ist jedoch ein Unternehmensanspruch über 'Massenproduktion' und Produkt‑Displays (LPDDR5X/24Gb) — es fehlen in der öffentlichen Aussage quantifizierte, unabhängige Maße (qualifizierte Shipments in Stück/Wafer, belegte Kundenzertifizierungen, beobachtbare Lead‑Time‑/Fill‑Rate‑Änderungen). Baseline‑Material enthält gegenüberläufige Signale (Berichte über Yield‑Probleme / Test‑Failures für CXMT‑HBM‑/HBM‑ähnliche Produkte), was die praktische Marktwirkung weiter unsicher macht. Deshalb fällt die Aufnahme nur auf Watchlist: genug Neuigkeit und Relevanz, aber ohne den erforderlichen, direkt messbaren Index‑Beleg oder unabhängige Shipment‑Daten ist 'VERIFIED DATA' nicht gegeben und die red‑pencil Adversarial‑Check schlägt fehl. Empfohlenes Follow‑up: überprüfbare CXMT‑Shipment/wafer‑Output‑Zahlen, Kundenqualifizierungen oder Index‑Lead‑Time‑Beobachtungen bis 2026-12-31; falls vorhanden, kann die Aufnahme auf 'accepted' mit indexImpact=true und angepasster Severity/Confidence erhöht werden.",
+      "candidateId": "0d4d11d8691dcf3808d2",
+      "candidateKey": "505347e533639bf6f0b82d05",
+      "reviewedAt": "2026-10-14T02:02:52.454Z",
+      "priorityScore": 66,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ae3cd7719e08be7006acee2b840bc87d1bfd200be7c694c67"
     }
   ]
 }
