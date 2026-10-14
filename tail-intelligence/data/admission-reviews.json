@@ -56763,6 +56763,153 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ae3cd7719e08be7006acee2b840bc87d1bfd200be7c694c67"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Vorbörslicher Kursrückgang gemeldet; behauptete HBM4‑Ausrüstungs‑Bestellverzögerung nicht primär verifiziert",
+      "fact": "TradingKey meldet am 2026-10-14 einen vorbörslichen Kursrückgang von SK hynix (>3 %) und behauptet, dass Verzögerungen bei HBM4‑Ausrüstungsbestellungen Expansionssorgen auslösten.",
+      "placement": "Global / Aktienmarkt (US‑Vorbörse); firmenspezifisch SK hynix; berichteter Zeithorizont: 2026-10-14.",
+      "mechanism": "Kurzfristige Marktreaktion (Aktienkurs) auf Berichte über angebliche Verschiebungen von Back‑End‑/Packaging‑Equipment‑Bestellungen für HBM4, was als Hinweis auf eine verlangsamte HBM4‑Ramp und damit auf verzögerte Kapazitätserweiterung interpretiert wird.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Stützt kurzfristig die These, dass SK hynixs breiter HBM4‑Ramp später/kleiner ausfallen könnte — damit eine kurzfristige Verschiebung des in P-2026-07-13-04 formulierten 'breiten SK‑hynix‑HBM4‑Ramp' in H2 (weniger Materialisierung im ursprünglich erwarteten Zeitfenster).",
+      "falsifier": "Bis 2026-12-31: SK hynix veröffentlicht eine offizielle, datierte Bestätigung, dass relevante HBM4‑Back‑End/Packaging‑Equipment‑Bestellungen für 2026 verschoben wurden oder nicht; oder unabhängige Primärquellen (SK hynix Ankündigung, offizielle Lieferanten‑Orderbestätigung, oder Firmen‑SEC/Regulatory Filing) bestätigen, dass die betreffenden Bestellungen verschoben wurden. Wenn bis 2026-12-31 eine solche Primärbestätigung nicht vorliegt, ist die Claim‑Richtung (Verzögerung → Expansion‑Sorge) falsifiziert.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-10-14",
+      "novelty": "Niedrig‑mittel — der Inhalt (HBM4‑Ramp‑Risiken, Ausrüstungsverzögerungen) wiederholt bestehende Marktdiskussionen über HBM4‑Ramps; die konkrete Meldung der heutigen vorbörslichen Kursreaktion ist aktuell.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 6,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 12,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262215953-sk-hynix-drops-pre-market-hbm4-equipment-order-delays-tradingkey",
+          "label": "TradingKey — Artikel (Bericht über vorbörslichen Kursrückgang und behauptete Ausrüstungsverzögerungen)",
+          "kind": "secondary",
+          "supports": "Berichtet den vorbörslichen Kursrückgang und behauptet, Verzögerungen bei HBM4‑Ausrüstungsbestellungen würden Expansionssorgen auslösen. Veröffentlichung 2026-10-14."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20261014VL213/equipment-hbm4-sk-hynix-2027-investment.html?chid=10",
+          "label": "Digitimes — Bericht (eingrenzende/zusätzliche Berichterstattung zu möglichen Verschiebungen bei HBM4‑Ausrüstungsinstallationen)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass gewisse Back‑End‑Ausrüstungsbestellungen für HBM4 von H2 2026 in 2027 verschoben werden könnten. Veröffentlichung 2026-10-14; liefert kontextuelle, aber nicht von SK hynix stammende Bestätigung."
+        }
+      ],
+      "reason": "Die Inbox‑Kandidatenmeldung ist eine sekundärquellenbasierte Berichterstattung (TradingKey) über eine vorbörsliche Aktienreaktion und verweist auf angebliche Verzögerungen bei HBM4‑Ausrüstungsbestellungen. Ich habe versucht, die Behauptung gegen Primärquellen zu verifizieren: es fehlt eine direkte Bestätigung von SK hynix (Unternehmensmitteilung, regulatorische Einreichung) oder eine eindeutige Lieferanten‑Orderbestätigung. Digitimes und andere Sekundärmedien berichten von möglichen Verschiebungen, liefern aber keine Primärquelle, die die behauptete Bestellverzögerung eindeutig belegt. Entgegengesetzte/kontextualisierende Hinweise (z. B. frühere Firmen‑Aussagen zu HBM4‑Orders, Berichte über 'HBM sold out through 2026' oder konkrete Lieferverträge/Ankündigungen) deuten darauf hin, dass die Engpass‑These weiterhin streitbar ist. Daher erfülle die Einreichung nicht die Anforderungen für eine verifizierte, datierte, atomare Aufnahme (fehlende Primärverifikation). Empfehlung: watchlist bis Primärnachweis vorliegt; namentlich fehlt eine SK‑Hynix‑Bestätigung der angeblichen Bestellverzögerung oder ein entsprechendes offizielles Lieferantendokument. ",
+      "candidateId": "877bb6e597d5ba1a311e",
+      "candidateKey": "172ee19d061e2aa48ec0baa1",
+      "reviewedAt": "2026-10-14T10:16:00.647Z",
+      "priorityScore": 57,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b9b4038063f9198006acf564e5fc887d1a52d7d5cda607962"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Samsung verdoppelt HBM4/HBM4E‑Kapazität 2027 — nicht primär verifiziert",
+      "fact": "Berichte von Branchenmedien und koreanischen Wirtschaftszeitungen melden, dass Samsung seine HBM4‑/HBM4E‑Produktion 2027 signifikant ausbauen will; eine beweisfähige, von Samsung selbst datierte Primärquelle, die eine explizite Verdopplung (z. B. wafers/Monat oder GB/Quartal) für das Kalenderjahr 2027 nennt, konnte in den geprüften Original‑Quellen nicht gefunden werden.",
+      "placement": "Geographie: global (Samsung‑Produktion, Kernfertigung Südkorea); Domain/Layer: HBM‑Produktion / Advanced Memory / Packaging; Horizon: Kalenderjahr 2027 (genauer: \"im Jahr 2027\").",
+      "mechanism": "Gemeldete Mechanismen in Sekundärquellen: Erhöhung von Foundry‑4nm‑Base‑Die‑Output, Ausbau von Advanced‑Packaging (Glass carrier / TSV / Bonding), höhere Einkäufe von Glass‑Carrier‑Volumen, Umverteilung von Fertigungscapex zu HBM‑High‑Value‑Produkten. Diese Mechanismen sind in Branchenberichten genannt, wurden aber in den geprüften Primärunterlagen von Samsung nicht in der Form mit konkreten Kapazitätszahlen bestätigt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn die gemeldete Kapazitätserhöhung realisiert wird, könnte dies den prognostizierten Engpassdruck bei HBM/Server‑DRAM für 2027 abschwächen (Verfügbarkeit → Verknappungsdruck reduziert). Umgekehrt, falls nicht realisiert, bleibt das Basisszenario Knappheit. (Dieser TAIL‑Bezug testet die 'negative_supply' / Engpass‑Prognose).",
+      "falsifier": "Bis zum 2027-06-30: Samsung veröffentlicht in einem offiziellen Earnings‑Release, einer verbindlichen regulatorischen Einreichung (z. B. 8‑K / DART/IR) oder einem klaren Management‑Statement einen quantitativen Produktionsplan (z. B. wafers/Monat oder GB/Quartal) für HBM4/HBM4E, der eine Verdopplung gegenüber dem dokumentierten 2026‑Basiswert nachweist. Fehlen solche Primärbelege bis 2027-06-30 würde die Behauptung als nicht verifiziert gelten.",
+      "nextReview": "2027-07-01",
+      "eventDate": "2026-09-21",
+      "novelty": "Moderate — mehrere Sekundär‑Berichte der Branche/Handelsmedien wiederholen dieselbe Behauptung, aber Primärbeleg fehlt.",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing",
+          "label": "Samsung Newsroom – HBM4 Mass Production / Verkäufe (Samsung selbst: Massenfertigung, Ausbau angekündigt; keine explizite \"Verdopplungs\"-Zahl für 2027 genannt).",
+          "kind": "primary",
+          "supports": "Samsung bestätigt Massenproduktion von HBM4 und erklärt, man expandiere proaktiv HBM4‑Kapazität; keine firmeneigene Angabe, die eine quantitative Verdopplung für 2027 angibt."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260921VL206/samsung-2027-hbm4-production-hbm.html?q=server",
+          "label": "Digitimes – Branchenbericht (Berichtet: Samsung bereitet vor, HBM4‑Output 2027 zu verdoppeln; Quelle: Industriequellen/Seoul Economic Daily).",
+          "kind": "secondary",
+          "supports": "Berichtet über Pläne und Materialbestellungen, nennt Verdopplungsbehauptung, stützt sich jedoch auf anonyme Branchenquellen."
+        },
+        {
+          "url": "https://dcb0ucee30q2g.cloudfront.net/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+          "label": "Seoul Economic Daily / verteilte Berichterstattung (Industry press synopsis)",
+          "kind": "secondary",
+          "supports": "Gibt eine Zahlennennung in der Berichterstattung (Monats‑wafers Schätzungen in einigen Zusammenfassungen variieren), ist aber keine offizielle Samsung‑Quelle."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung zitiert Branchen‑/Aggregationsartikel, die eine signifikante Kapazitätserhöhung für Samsung HBM4/HBM4E in 2027 behaupten. Bei der Admisssionsprüfung fehlt jedoch ein eindeutig verifizierbarer Primärnachweis von Samsung, der die exakte Ziel‑Kapazität (z. B. wafers/Monat oder GB/Quartal) und das Datum der verbindlichen Ankündigung nennt. Sekundärquellen (Digitimes, Seoul Economic Daily, Branchen‑Aggregatoren) berichten übereinstimmend über Pläne, doch die berichteten Zahlen variieren (z. B. \"mehr als verdoppeln\" vs. Modelle, die nur ~40% Zuwachs auf ~250k wafers/Monat nennen). Ohne eine klar datierte Primärquelle, die die atomare, datierte Aussage (\"verdoppeln in 2027\" mit Einheit) belegt, kann die Behauptung nicht als VERIFIED DATA aufgenommen werden. Opposing evidence/Unschärfe: einige Berichte nennen nur 40%‑Zuwachs; Micron/Sonstige melden 'sold out through 2026' und Samsung‑Yield‑Berichte variieren — solche Widersprüche machen eine sofortige Annahme nicht vertretbar.",
+      "candidateId": "b0cbe0427570bb4e6c93",
+      "candidateKey": "4a7fd94e1f5bb12015a6a836",
+      "reviewedAt": "2026-10-14T10:16:21.173Z",
+      "priorityScore": 76,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d9368bb63a184b2006acf5660cca887d1a0c7583f58ebea4d"
     }
   ]
 }
