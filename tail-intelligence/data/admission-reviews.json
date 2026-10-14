@@ -56910,6 +56910,149 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0d9368bb63a184b2006acf5660cca887d1a0c7583f58ebea4d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Gerücht über SK hynix‑Priorisierung von DRAM vor HBM4 — keine primäre Bestätigung für verschobene Backend‑Bestellungen",
+      "fact": "Wccftech berichtet (14.10.2026), SK hynix priorisiere konventionelles DRAM und speichere Back‑end‑Equipment‑Bestellungen für HBM4 teilweise bis 2027; die Meldung stützt sich auf Branchengerüchte/SoMe‑Hinweise und Sekundärberichte (Digitimes).",
+      "placement": "globale Halbleiterlieferkette; Unternehmens‑/Fertigungs‑Layer; kurzfristig (H2 2026 → 2027 Verschiebung).",
+      "mechanism": "Reallokation von Capex/Equipment‑Bestellungen weg von HBM4‑Back‑end‑Ausbau hin zu höhermargigem konventionellem DRAM; Folge wäre Verzögerung von HBM4‑qualifizierten Shipments/Volumina bis 2027, erhöhtes Ausführungsrisiko für HBM4‑Ramp.",
+      "predictionId": "P-2026-07-14-04",
+      "predictionImpact": "Wenn wahr, verstärkt dies die in P-2026-07-14-04 angenommene Verschiebung des breiten SK‑hynix‑HBM4‑Ramps weiter in H2/2027; wirkt als kurzfristiger 'ramp‑delay'‑Falsifizierer für ein frühes, breites HBM4‑Ramp.",
+      "falsifier": "SK hynix veröffentlicht bis 2026-12-31 eine offizielle Ankündigung oder ein Eingangs/PO‑Statement von Back‑end‑Equipment‑Lieferanten, das zeigt, dass HBM4‑Back‑end‑Bestellungen für H2 2026 nicht verschoben wurden (konkrete Bestell‑/Liefertermine und Volumenangaben).",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-10-14",
+      "novelty": "Gerücht/sekundärer Report — kein primärer Beleg in Unternehmens‑Statements gefunden.",
+      "duplicateOf": "",
+      "evidenceStatus": "INFERENCE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 9,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 7,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://wccftech.com/sk-hynix-dram-priority-hbm4-backend-equipment-orders-2027/amp/",
+          "label": "Wccftech — Artikel (Gerücht/Analyse)",
+          "kind": "secondary",
+          "supports": "Bericht vom 2026-10-14, der spekulative Branchenhinweise anführt, wonach SK hynix Back‑end‑Equipment für HBM4 teilweise in 2027 verschiebt."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20261014VL213/equipment-hbm4-sk-hynix-2027-investment.html?mod=3&q=dram+nand",
+          "label": "DigiTimes — Produktions/Equipment‑Bericht (sekundär)",
+          "kind": "secondary",
+          "supports": "Bericht vom 2026-10-14, der deferrale Hinweise für HBM4‑Back‑end‑Bestellungen nennt; bleibt ein Branchenbericht ohne direkte SK hynix‑Bestätigung."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatennachricht ist im Kern ein branchenweiter Gerüchte/Medien‑Report (Wccftech) vom 2026-10-14, der behauptet, SK hynix verschiebe Teile der HBM4‑Back‑end‑Equipmentbestellungen in 2027 zugunsten höhermargigem DRAM. Unsere Überprüfung (Primärquellencheck) fand keine direkte, primäre Bestätigung von SK hynix, den betroffenen Equipment‑Lieferanten (konkrete PO‑Nennung) oder geprüften Lieferterminen. Ein relevanter Sekundärbericht (DigiTimes, 2026-10-14) wiederholt ähnliche Hinweise, was die Gerüchtbasis stützt, aber beide Quellen sind nicht primäre Unternehmens‑Belege. Gegenbelege: frühere Unternehmensmeldungen und Analystenberichte (im TAIL‑Baseline) zeigen fortlaufende HBM‑Bindungen, Kapazitätsplanung und Aussagen über HBM‑Ramps (z. B. SK hynix Projektankündigungen und Fab‑Investitionspläne in der Baseline), die das Ausführungsrisiko nicht eindeutig bestätigen. Wegen fehlender primärer Bestätigung der behaupteten Bestellverschiebung erfüllen die Anforderungen an eine VERIFIED DATA‑Aufnahme nicht. Empfehlung: Watchlist — überwachen bis 2027-01-31 auf direkte SK hynix/Equipment‑Vendor PO‑ oder Lieferbestätigungen; falls solche Primärbelege auftauchen, erneute Bewertung für Aufnahme als VERIFIZIERTE EVIDENZ möglich.",
+      "candidateId": "80ed3795136b3bd6526f",
+      "candidateKey": "3e5c256f0d4ce811a9c70365",
+      "reviewedAt": "2026-10-14T20:50:01.216Z",
+      "priorityScore": 58,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0b19b89ade74e06a006acfeae5866c87d29a20f5d07945008e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Samsung will HBM4‑Produktion nächstes Jahr stark ausweiten — Primärquelle fehlt",
+      "fact": "Berichte (Sep 2026) melden, Samsung plane, die HBM4‑Produktion in 2027 mindestens zu verdoppeln bzw. die Glass‑Carrier‑Reinigung auf ~50.000 Sheets/Monat zu steigern.",
+      "placement": "global / HBM‑Produktion (Wafer‑Input & Packaging) / Produktions‑Ramp / Zielhorizont: 2027‑H1 (konkret prüfbar per 2027‑06‑30).",
+      "mechanism": "Erhöhung des monatlichen Wafer‑Inputs und der Outsourcing‑Reinigungskapazität für Glass‑Carrier (von rund 20k → ~50k Sheets/Monat) zur Verdopplung/mehrfachen Steigerung der HBM4‑Outputkapazität.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn bestätigt, würde eine deutliche HBM4‑Outputsteigerung 2027 Verfügbarkeitsdruck auf die HBM‑Knappheit abschwächen und damit die Basissicht eines anhaltenden strukturellen HBM/Server‑DRAM‑Engpasses (bis ≥2028) relativieren.",
+      "falsifier": "Bis 2027‑06‑30 legt Samsung eine überprüfbare Metrik offen (z. B. offiziell gemeldeter HBM4‑monatlicher Wafer‑Input, HBM4‑Shipments oder eine verbindliche Aussage in einem Samsung‑IR‑Dokument/earnings call), die eine ≥2.0× Steigerung der HBM4‑Wafer‑Inputs oder HBM4‑Shipments gegenüber dem Durchschnittsmonat 2026 verifiziert. Gelingt das nicht, ist die Meldung widerlegt/unerfüllt.",
+      "nextReview": "2026-12-01",
+      "eventDate": "2026-09-21",
+      "novelty": "teilweise neu (Industrie‑Ramp‑Gerüchte, nicht offiziell bestätigt).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 45,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://news.samsungsemiconductor.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing/",
+          "label": "Samsung Semiconductor — HBM4 mass production / product shipment (company newsroom)",
+          "kind": "primary",
+          "supports": "Samsung bestätigt HBM4‑Massenproduktion und erste Auslieferungen (Qualität/Yield‑Hinweise), aber gibt keine offiziell quantifizierte Ankündigung zur Verdreifachung/ Verdopplung der HBM4‑Produktion für 2027 an."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say?trk=article-ssr-frontend-pulse_little-text-block",
+          "label": "Seoul Economic Daily — 'Samsung to Double HBM4 Output Next Year' (Industriequellen)",
+          "kind": "secondary",
+          "supports": "Wiederholt Industry‑Sources‑Claim: mehr als doppelte HBM4‑Ausbringung 2027; nennt Details zu Glass‑Carrier‑Reinigungssteigerung."
+        }
+      ],
+      "reason": "Die Inbox‑Kandidatenmeldung zitiert einen Google‑RSS‑Feed (Zamin.uz) vom 2026‑09‑21, der offenbar auf Presse‑/Branchenberichten basiert. Web‑Prüfung zeigt: Samsung selbst hat HBM4‑Massenproduktion und erste Shipments bestätigt (Samsung Newsroom), jedoch keine explizite, quantifizierte Aussage veröffentlicht, die eine 'scharfe' / ≥2× Produktionssteigerung für 2027 als firm bestätigt. Die weiterreichende Behauptung stützt sich auf Berichte von Branchenmedien und 'Industriequellen' (DigiTimes, Seoul Economic u. a.), nicht auf ein Samsung‑Primärdokument oder ein verbindliches Samsung‑IR‑Commitment. Nach den TAIL‑Aufnahmebedingungen ist das Fehlen einer primären, direkt belegenden Quelle ein disqualifizierender Mangel für Voll‑Zulassung (VERIFIED DATA). Deshalb wird die Meldung auf Watchlist gesetzt; es besteht ein konkreter, prüfbarer falsifier (Samsung‑offizielle Wafer‑Input/Shipment‑Metrik bis 2027‑06‑30). Gegenbelege / Gegensignale: frühere Samsung‑Kommunikation nennt zwar HBM4‑Massenproduktion (Feb/2026) und Samsung/Analystenkommentare sehen starke HBM‑Nachfrage, doch keine offizielle 2×‑Kapazitätszusage. Ohne primäre Bestätigung bleibt die Aussage zeitkritisch, potenziell marktrelevant, aber nicht verifiziert.",
+      "candidateId": "52dbe1065a06552f590b",
+      "candidateKey": "338a916e95cf40ed69c3cbca",
+      "reviewedAt": "2026-10-14T20:50:24.260Z",
+      "priorityScore": 71,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_09cb664e2bdd6275006acfeaf9684887d29461b0dcdb02a391"
     }
   ]
 }
