@@ -57331,6 +57331,152 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ee6af76509e320c006ad0a48f33f087d08a2faf89f636397b"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht über mögliche Verzögerung von HBM4‑Ausrüstungsbestellungen bei SK hynix — unvollständige Primärverifizierung",
+      "fact": "Berichten zufolge sollen Teillieferungen von Back‑End‑Ausrüstung für SK hynix' HBM4‑Ausbau, ursprünglich für H2 2026 geplant, in das Jahr 2027 verschoben worden sein (Medienbericht veröffentlicht 2026-10-14/15).",
+      "placement": "global / HBM‑Produktion / SK hynix / kurzfristig (H2 2026 → 2027)",
+      "mechanism": "Verschobene Ausrüstungsbestellungen für Post‑Processing/Back‑End (Lieferterminverschiebung) könnten die Geschwindigkeit des HBM4‑Kapazitätsausbaus verlangsamen und damit die qualifizierten HBM4‑Shipments in H2 2026 reduzieren.",
+      "predictionId": "P-2026-07-13-04",
+      "predictionImpact": "Unterstützt die These, dass der breite SK‑hynix‑HBM4‑Ramp sich stärker in H2 verschiebt (erhöht Wahrscheinlichkeit einer rollierenden Ramp-Verzögerung gegenüber Basisszenario).",
+      "falsifier": "SK hynix bestätigt in den am 2026-10-27 veröffentlichten Q3/2026‑Ergebnissen (oder begleitender Management‑Praxis) entweder (a) dass die relevanten HBM4‑Back‑End‑Ausrüstungsbestellungen weiterhin 2026 geliefert und installiert wurden und materialisierte HBM4‑Shipments in H2 2026 zeigen, ODER (b) dass Bestellungen klar in 2027 verschoben wurden und dies quantifiziert (bestätigte Bestelldaten/Termine).",
+      "nextReview": "2026-10-27",
+      "eventDate": "2026-10-14",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 9,
+        "novelty": 6,
+        "thesisRelevance": 17,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 35,
+      "confidence": 62,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/sk-hynix-drops-as-hbm4-equipment-orders-slip-to-2027-and-27-engineers-defect-to-china-s-cxmt/70324180",
+          "label": "Ad‑hoc‑News / boerse‑global.de — Artikel über mögliche Verschiebung von HBM4‑Ausrüstungsbestellungen (veröffentlicht 2026-10-14/15).",
+          "kind": "primary",
+          "supports": "Bericht nennt, dass einige Back‑End‑Ausrüstungsbestellungen für HBM4 von H2 2026 in 2027 verschoben werden könnten; erwähnt außerdem den anstehenden 27.10.2026 Ergebnistermin von SK hynix."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-delays-hbm4-equipment-124539129.html",
+          "label": "Yahoo Finance — Zusammenfassender Marktbericht (Oct 14, 2026) über verschobene Ausrüstungsbestellungen",
+          "kind": "secondary",
+          "supports": "Sorgt für unabhängige Bestätigung, dass mehrere Medien dieselbe Verzögerungsmeldung berichteten; bleibt ein Sekundäraggregat ohne Lieferantenbestätigung."
+        },
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/sk-hynix-startet-hbm4-produktion-und-setzt-auf-neue-verpackungstechnik/68631894",
+          "label": "Ad‑hoc‑News — Frühere Meldung (2026-03-03) zu SK hynix HBM4 Serienproduktion",
+          "kind": "secondary",
+          "supports": "Gegengleiche/kontextuelle Evidenz: frühere Berichte dokumentieren, dass SK hynix HBM4‑Serienproduktion begonnen hat (März 2026) — zeigt widersprüchliche Signale zwischen Produktionsstart und nun gemeldeten Ausrüstungs‑Lieferterminen."
+        }
+      ],
+      "reason": "Der Kandidat berichtet eine potenzielle Lieferterminverschiebung für HBM4‑Back‑End‑Ausrüstung, was relevant für die Vorhersage P-2026-07-13-04 (Verschiebung des SK‑hynix‑HBM4‑Ramps) ist. Allerdings fehlt eine primäre, direkt bestätigende Quelle: weder SK hynix selbst noch ein benannter Ausrüster/Bestellbeleg wurde zitiert. Mehrere Markenzeitschriften und Aggregatoren (Ad‑hoc‑News, Yahoo, Digitimes‑Synopsen) berichten die Story, doch die Kernaussage bleibt ein unbestätigtes Medienleck/Analystenbericht ohne dokumentierte Bestelldaten, Volumen oder konkrete Liefertermine mit Einheiten (z. B. Anzahl Maschinen, Lieferwochen). Baseline‑Quellen enthalten zudem ältere/parallel laufende Signale, die HBM4‑Mass‑Shipments bzw. Produktionsstarts melden (konkurrierende Information). Damit ist die Beobachtung zwar relevant, erreicht aber nicht die Admission‑Schwelle für VERIFIED DATA. Eine Watchlist‑Aufnahme ist angemessen; die nächste klare Verifizierungschance ist SK hynix' Q3/2026‑Ergebnisveröffentlichung am 2026-10-27, die Managementkommentare oder bestätigte Bestell‑/Lieferdaten liefern könnte.",
+      "candidateId": "e918c9115e06c77224c8",
+      "candidateKey": "2cfef24886e9657f697fd6c1",
+      "reviewedAt": "2026-10-15T15:44:15.090Z",
+      "priorityScore": 61,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08d5e364bb4269cd006ad0f4b620cc87d0a6e6eaadaec47ad7"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Sandisk Stock Jumps 11% Ahead of S&P 100 Debut, But NAND Pricing Faces a Test",
+      "fact": "SanDisk-Aktie stieg am 2026-09-18 um etwa 11% vor dem wirksamen Eintritt in den S&P 100 am 2026-09-21; die berichtetе Interpretation, dass «NAND‑Pricing nun vor einem Test» stehe, wird ohne konkrete Kontraktpreis‑ oder Shipment‑Messwerte behauptet.",
+      "placement": "Global / NAND & Enterprise‑SSD Markt / Market‑pricing signal / Near‑term (Sept 2026)",
+      "mechanism": "Kurzfristige Index‑Inklusions‑Positionierung (Forced/anticipatory buying durch S&P‑Tracking‑Fonds) erklärt den Kursanstieg; die Story postuliert sekundär einen fundamentalen Pricing‑Test, liefert jedoch keine direkten Messgrößen (Contract Prices, qualified shipments, lead times oder fill‑rates) die den behaupteten Preisimpuls stützen.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Beobachtung liefert bestenfalls kurzfristigen Preissupport‑Beleg; sie ändert nicht konsistent die Basiserwartung, dass Memory 2027 knapp bleibt. Ohne Beobachtungen zu Kontraktpreisen, Fill‑Rates oder qualifizierten Shipments ist kein belastbarer Downstream‑Falsifikator für die Memory‑Knappheits‑These gegeben.",
+      "falsifier": "Bis 2026-12-31: Wenn ein repräsentativer NAND/Enterprise‑SSD‑Kontraktkorb (siehe definierte Benchmark‑SKU‑Gruppe) zwei aufeinanderfolgende Quartale (Q3 & Q4 2026) fallende Kontraktpreise ≥5% QoQ zeigt oder qualifizierte Enterprise‑SSD‑Fill‑Rates messbar um ≥10 Prozentpunkte steigen, dann falsifiziert das die Interpretation, dass der Kursanstieg fundamentalen und anhaltenden Pricing‑Druck erwartet.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Nicht-unique: Kursbewegung und Index‑Inklusion wurden breit berichtet; die Schlussfolgerung zu NAND‑Preisriskos ist spekulativ und wiederholt bereits bekannte Debatten.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 9,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-jumped-11-p-042846231.html",
+          "label": "Yahoo Finance — SanDisk stock jumped 11% on S&P 100 inclusion (2026-09-18)",
+          "kind": "primary",
+          "supports": "Berichtet Schlusskursanstieg ~11% am 2026-09-18 und bestätigt S&P‑100‑Eintrittsdatum (wirksam 2026-09-21)."
+        },
+        {
+          "url": "https://www.kobaran.com/sandisk-stock-jumps-11-ahead-of-sp-100-debut-but-nand-pricing-faces-a-test/",
+          "label": "kobaran.com — ursprüngliche Kandidatenmeldung (RSS‑Quelle)",
+          "kind": "secondary",
+          "supports": "Wiederholt Kursanstieg und argumentiert, NAND‑Preise stünden vor einem Test, liefert aber keine primären Kontraktpreis‑ oder Shipment‑Daten."
+        }
+      ],
+      "reason": "Die Einreichung mischt ein sauber verifizierbares, eng zeitlich eingegrenztes Marktereignis (SNDK Kursanstieg am 2026-09-18 vor S&P‑100‑Eintritt am 2026-09-21) mit einer interpretativen Behauptung über NAND‑Pricing. Der belegte Teil (Aktienrally) ist durch zuverlässige Finanzberichte verifizierbar; die kausale Aussage zu NAND‑Kontraktpreisen fehlt jedoch an den erforderlichen, quantifizierten Primärmessgrößen (Kontraktpreise, qualifizierte Shipments, Fill‑Rates). Damit erfüllt der Kandidat nicht die TAIL‑Aufnahmekriterien für eine Annahme (atomare, datierte, quellverifizierte Marktmessung mit klarer Mechanismus‑Kette und einem falsifizierbaren Auswirkungstest). Es gibt auch keine neue, primäre Evidenz, die die bestehende Basissicht (Memory‑Knappheit 2027) nachhaltig widerlegt. Empfehlung: Watchlist bis eindeutige Kontrakt‑/Shipment‑Belege vorgelegt werden.",
+      "candidateId": "d22bb1eebea4d5482fc7",
+      "candidateKey": "cca108f8bd5701dab094f99f",
+      "reviewedAt": "2026-10-15T15:44:39.517Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ffd2bfd771ab20e006ad0f4cf61b087d0ae2d0425ed05913c"
     }
   ]
 }
