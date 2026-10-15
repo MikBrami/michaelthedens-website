@@ -57053,6 +57053,134 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_09cb664e2bdd6275006acfeaf9684887d29461b0dcdb02a391"
+    },
+    {
+      "decision": "watchlist",
+      "title": "6 Big Intel, AMD And Nvidia AI Data Center Announcements At OCP 2026",
+      "fact": "CRN sammelt und berichtet zu sechs Produkt- und Rack‑Ankündigungen von Intel, AMD und NVIDIA auf dem OCP Global Summit 2026 (Bericht veröffentlicht 2026-10-14).",
+      "placement": "OCP Global Summit 2026 (San Jose, CA) — Veranstaltungsberichterstattung; keine präzise geografische Marktwirkung angegeben.",
+      "mechanism": "Zusammenfassung von Hersteller‑Ankündigungen (Produkt-, Rack‑Referenzdesigns und Partnerschaften). Der Artikel beschreibt Produktvorstellungen, aber liefert keine quantifizierbaren, datierten Messgrößen (Shipments, Vertragssummen, Lead‑Time‑Änderungen oder beobachtete Lieferverbesserungen).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Indirekt relevant: OCP‑Ankündigungen erhöhen Sichtbarkeit und potenziellen Nachfrage‑Impuls für Server‑DRAM/HBM, könnten die Knappheits‑Narrative stützen, liefern aber keine direkten Messgrößen, um die Vorhersage über strukturelle Knappheit bis Ende 2028 zu verifizieren oder zu falsifizieren.",
+      "falsifier": "Innerhalb 90 Tagen (bis 2027-01-12) müssten belastbare, quantifizierte Liefer- oder Preisdaten vorliegen, die aus diesen spezifischen Ankündigungen direkt resultieren (z. B. öffentlich verifizierte Shipments mit Stückzahlen oder verbindliche Multi‑Year‑LTAs, die klar auf die in der CRN‑Zusammenfassung genannten Produkte zurückzuführen sind). Fehlen solche direkten Messgrößen, bleibt die Beobachtung unbestätigt.",
+      "nextReview": "2027-01-12",
+      "eventDate": "2026-10-12",
+      "novelty": "Niedrig — Bericht ist eine thematische Zusammenfassung mehrerer Firmenankündigungen auf einer öffentlichen Branchenkonferenz; keine einzelne neuartige, marktbindende Enthüllung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 5,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.crn.com/news/components-peripherals/2026/6-big-intel-amd-and-nvidia-ai-data-center-announcements-at-ocp-2026",
+          "label": "CRN — '6 Big Intel, AMD And Nvidia AI Data Center Announcements At OCP 2026' (article)",
+          "kind": "primary",
+          "supports": "Artikel‑Zusammenfassung der Ankündigungen von Intel, AMD und NVIDIA auf dem OCP Global Summit 2026; liefert keine quantifizierten Liefer-, Preis- oder Vertragsdaten."
+        },
+        {
+          "url": "https://www.datacenterfrontier.com/hyperscale/article/55411534/ocp-2026-agentic-ai-pushes-the-data-center-from-chip-to-grid",
+          "label": "Data Center Frontier — OCP 2026 Berichterstattung",
+          "kind": "secondary",
+          "supports": "Bestätigt, dass OCP 2026 mehrere Herstellerankündigungen (rack designs, reference architectures) enthalten hat; ebenfalls kein direkter quantifizierter Markt‑Impact."
+        }
+      ],
+      "reason": "Der Kandidat ist eine redaktionelle Zusammenfassung (CRN) mehrerer Firmenankündigungen am OCP Global Summit 2026. Für TAIL‑Aufnahme als belastbares Signal sind gemäß Aufnahmeanforderung ein einzelner, datierter, quantifizierbarer Markeneffekt (z. B. Shipments, Vertrags‑USD, beobachtete Lead‑Time‑Änderung, Fill‑Rate‑Verbesserung) sowie eine klar abgegrenzte Mechanismusbeschreibung erforderlich. Diese Meldung liefert weder eine solche messbare Einordnung noch ein direktes, belegbares Verhältnis zu einer bestehenden Vorhersage (z. B. konkreter HBM‑Shipments oder Verträge mit Mengenangaben). Deshalb setze ich die Entscheidung auf watchlist und fordere spezifische, primäre Nachweise (verifizierte Shipments/LTAs/Preisnotierungen), bevor eine Aufnahme als VERIFIED DATA möglich ist. Opposing evidence: Es gibt keine direkte Widerlegung, aber zahlreiche Sekundärberichte (u. a. DatacenterFrontier, Tom's Hardware) bestätigen, dass die Ankündigungen vornehmlich architektur‑ und designorientiert waren und bisher keine quantifizierten Supply‑Signale lieferten. Ohne diese bleibt der Beitrag nicht-indexwirksam (indexImpact=false).",
+      "candidateId": "4f1ed81ef7e3fd30a201",
+      "candidateKey": "39e7a697bcaf2a8855a294d4",
+      "reviewedAt": "2026-10-15T01:36:34.685Z",
+      "priorityScore": 51,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_00755f66903e5889006ad02e120ad887d198fcd81783a45292"
+    },
+    {
+      "decision": "watchlist",
+      "title": "AMD and TSMC: What a Reported Foundry Cost Rise Reveals About the Fabless Supply Layer",
+      "fact": "Bericht (fourweekmba, via Google News) meldet einen Anstieg der Foundry-/Foundry‑Kosten, der Implikationen für die Fabless‑Supply‑Layer‑Pricing- und Verfügbarkeitsdynamik haben soll.",
+      "placement": "global / semiconductors (fabless → foundry layer) / kurzfristig (H2 2026)",
+      "mechanism": "Erhobene Foundry‑Kosten würden die End‑Produktfertigungskosten von Fabless‑Designern erhöhen und damit Druck auf Verkaufspreise/BOMs ausüben; das könnte entweder Margenverlagerungen (Preise ↑) oder Verzögerte Produktion (Verfügbarkeit ↓) auslösen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn Foundry‑Kosten signifikant und dauerhaft steigen, würde dies Druck auf Server‑DRAM/HBM‑Preise und Verfügbarkeit ausüben und damit die Erwartung verstärken, dass HBM/Server‑DRAM bis mindestens Ende 2028 strukturell knapp bleiben.",
+      "falsifier": "Primärquelle (Foundry/TSMC- oder AMD‑Offizielle oder geprüfte Foundry‑Kostenmatrix) zeigt bis zur nächsten Überprüfung kein material messbares Anziehen von Foundry‑Einzelpreisen oder bestätigt, dass berichtete Kostenänderungen gedeckt/neutralisiert wurden (z. B. durch Vorauszahlungen/Contract‑Offsets).",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-09-17",
+      "novelty": "moderat — Thema (Foundry‑Kostenwirkung auf Fabless) ist bekannt, aber ein neuer berichteter Kostenanstieg wäre relevant, falls primär belegt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 6,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 35,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Die eingereichte Kandidatenmeldung verweist auf einen vierweekmba‑Artikel (via Google News RSS, 2026-09-17). Ich konnte den vierweekmba‑Primary‑Artikel nicht direkt verifizieren mit der verfügbaren Webabrufantwort (Google‑News‑Feed aufgerufen, aber kein direktes, belastbares Primärdokument der Quelle fourweekmba abrufbar). Ohne direkte Primär‑Bestätigung (TSMC/AMD offizielle Daten, Foundry‑Kostenmatrix oder ein archiviertes fourweekmba‑Original mit konkreten, datierten Einzelzahlen) fehlen die notwendigen atomaren, datierten und quantifizierbaren Belege, die für eine Aufnahme als VERIFIED DATA oder zur Unterstützung eines Index‑Impacts erforderlich sind. Opposing evidence (z. B. offizielle TSMC‑Statements, AMD‑Earnings‑Notes oder kontextualisierende Foundry‑Berichte) konnte nicht nachgewiesen werden; deshalb ist die Meldung derzeit nicht verifizierbar und wird auf Watchlist gesetzt. Empfehlung: primäre Quelle (fourweekmba‑Artikel‑URL oder ein TSMC/AMD‑Statement mit konkreten Kostenmetriken und Zeitstempel) nachreichen bis 2026-11-15; falls vorhanden, kann das Item nach Review auf Accepted hochgestuft werden.",
+      "candidateId": "46e090ab2c1f794a9895",
+      "candidateKey": "76c801da48a568b08ef2cee1",
+      "reviewedAt": "2026-10-15T01:36:51.434Z",
+      "priorityScore": 50,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03374c4a3e4d34a6006ad02e22d44c87d19c57ba75a0eaeae3"
     }
   ]
 }
