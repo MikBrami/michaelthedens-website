@@ -57181,6 +57181,156 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_03374c4a3e4d34a6006ad02e22d44c87d19c57ba75a0eaeae3"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: \"Big Tech Moves Away from Nvidia: Chance for Samsung, SK hynix?\" (BusinessKorea, 2026-10-15)",
+      "fact": "Nachricht/Headline, dass \"Big Tech sich von Nvidia abwendet\" und dies eine Chance für Samsung und SK hynix darstelle.",
+      "placement": "Geografie: global (Big Tech / Hyperscaler); Domain/L_layer: ai_infrastructure / semiconductors; Horizon: kurzfristig (Q4 2026–H1 2027).",
+      "mechanism": "Behauptete kausale Kette: Hyperscaler reduzieren Beschaffung von NVIDIA-GPUs (direkte Nachfrage nach HBM/DRAM/GPU-Subsystemen), wodurch Big‑Tech‑Nachfrage zu inländischen Speicherherstellern (Samsung, SK hynix) verschoben wird; daraus resultierende Nachfrage‑/Preisverschiebungen würden DRAM/HBM‑Allokation und Vertragsverhandlungen zugunsten lokaler Hersteller verändern.",
+      "predictionId": "P-2026-07-11-02",
+      "predictionImpact": "Potentiell erhöhtes Verhandlungspotential (demand_up) für Samsung/SK hynix im HBM/server_dram‑Segment; könnte die Bedeutung von Buy‑European/Regional‑Sourcing (OUTLOOK-Relation) erhöhen.",
+      "falsifier": "Bis 2026-12-31: Zwei oder mehr große Hyperscaler (z. B. Microsoft, Google, Amazon, Meta) veröffentlichen öffentlich zugängliche, quantifizierbare Statements/Filings, die dokumentieren, dass ihre jährlichen NVIDIA‑GPU‑Käufe für Q4‑2026 versus Q4‑2025 um ≥30% zurückgehen und dass sie >30% der vorher von NVIDIA bezogenen HBM/Memory-Volumina auf alternative Lieferanten dauerhaft umschichten. (Datum für Review: 2026-12-31).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-10-15",
+      "novelty": "niedrig/mittel — Thema wiederholt sich (Big‑Tech ASIC‑Trends gegen Nvidia sind seit 2026 präsent), aber spezifische Headline ist aktuell.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 15,
+        "forecastImpact": 13,
+        "falsifiability": 12,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.scmp.com/tech/tech-trends/article/3370739/why-samsung-sk-hynix-and-cxmt-shares-are-under-pressure-despite-strong-ai-demand",
+          "label": "South China Morning Post — Marktreaktionen in Südkorea auf Big‑Tech‑ASIC‑Trends.",
+          "kind": "secondary",
+          "supports": "Berichtet über Anlegerreaktionen und Differenzierung zwischen Speicherherstellern vs. GPU‑Anbietern."
+        },
+        {
+          "url": "https://www.axios.com/2026/10/13/big-tech-ai-chips-nvidia-rivals",
+          "label": "Axios — Überblick über Big‑Tech‑Eigenchip‑Programme.",
+          "kind": "secondary",
+          "supports": "Beschreibt konkrete Fälle (z. B. Microsoft Maia) aber kein dokumentiertes, breites Reduktionsmaß an NVIDIA‑GPU‑Käufen."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/10/12/samsung-sk-hynix-left-behind-in-global-chip-rally",
+          "label": "Seoul Economic Daily — Marktberichte zu Kursbewegungen von Samsung/SK hynix.",
+          "kind": "secondary",
+          "supports": "Marktbewegungen stützen, dass Anleger Big‑Tech‑Signale als relevant wahrnehmen, ersetzen aber keine Primärveröffentlichung über Beschaffungsänderungen."
+        }
+      ],
+      "reason": "Admissonsprüfung: Die Inbox‑Candidate‑Quelle ist ein Google‑News‑RSS‑Verweis, der eine BusinessKorea‑Headline zusammenfasste, aber der originale BusinessKorea‑Artikel konnte über den RSS‑Redirect nicht als primäre, vollständig zitierbare Quelle geöffnet/verifiziert werden (siehe Primärquelle in Sources). Die Behauptung \"Big Tech moves away from Nvidia\" ist ein breit angelegtes Narrativ, das eine Vielzahl einzelner Unternehmensentscheidungen und Messgrößen erfordern würde (konkrete Reduktionen in NVIDIA‑GPU‑Käufen, bestätigte Umverteilung von HBM/DRAM‑Volumen, oder dokumentierte langfristige Lieferverträge). Aktuelle, seriöse Sekundärquellen (Reuters, SCMP, Axios etc.) belegen den Trend zu eigenen ASICs und dokumentieren, dass größere Hyperscaler in eigene Chips investieren; sie liefern jedoch kein dokumentiertes, quantifiziertes, datumgebundenes Primärereignis, das die starke, universelle Abkehr von Nvidia bestätigt. Opposing evidence / kontextuelle Widersprüche liegen in gleichzeitigen Meldungen über anhaltend starke NVIDIA‑Verkäufe/Leases, weiterlaufende NVIDIA‑Partnerschaften und Firmenreports, die NVIDIA‑Nachfrage nicht signifikant fallen sehen. Weil die TAIL‑Admission hohe Standards verlangt (datiertes, atomares Faktum mit Mess‑Units und Primärquelle), kann diese Kandidatur derzeit nicht als VERIFIED DATA akzeptiert werden. Es fehlt die Primärverifikation und ein eindeutiger, quantifizierbarer Mechanismus — daher Watchlist. Empfohlen: Beibehaltung als Watchlist bis konkrete, primäre Belege vorliegen (z. B. Unternehmensfilings, bestätigte Einkaufsstatements, oder dokumentierte Vertragsänderungen mit Mengen/Zeiträumen).",
+      "candidateId": "b3dfefc4af06f47bd754",
+      "candidateKey": "264ec89185f7c942a5146459",
+      "reviewedAt": "2026-10-15T10:01:51.024Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_00024bc5320f665e006ad0a47badd887d09b3f72a02e976618"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: \"Sandisk (SNDK) verliert Marktanteile im AI‑Memory, weil neue NAND‑Supply erscheint\"",
+      "fact": "Medienanalyse (Simply Wall St / Reposts) stellt die Risiko‑These auf, dass zunehmendes NAND‑Angebot Sandisks AI‑Memory‑Position relativ schwächen könnte.",
+      "placement": "Globaler NAND/Enterprise‑SSD‑Markt; Wirkungspotential auf Sandisk (Ticker SNDK) und Enterprise‑SSD‑/AI‑Storage‑Segment; kurzfristig (H2 2026–H1 2027).",
+      "mechanism": "Marktökonomisch: Höheres qualifiziertes NAND‑Bit‑Shipments oder günstigere QLC/TLC‑NAND‑Auslieferungen (China/Global) würden Angebotsdruck auf Enterprise‑SSD‑Preise und LTAs erzeugen, wodurch NAND‑reine Anbieter wie Sandisk Margendruck und Marktanteilsverschiebungen erleben könnten.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Wenn substanzielle, qualifizierte NAND‑Shipments und niedrigere Enterprise‑SSD‑Kontraktpreise in Q4‑2026–Q1‑2027 auftreten, erhöht dies das Falsifizierungsrisiko des Baseline‑Outlooks (Entspannung des Preisdrucks ab 2027 wird wahrscheinlicher).",
+      "falsifier": "Bis 2027-03-31: Nachweis von mindestens zwei unabhängigen, primären Lieferantenberichten (Hersteller‑Finanzbericht/SEC Filing oder offizielle Produktions‑Shipping‑Statistik) über eine kumulierte, qualifizierte NAND‑Erhöhung >=20% globaler Enterprise‑SSD‑bit‑Shipments versus H1‑2026; bzw. ein referenzierbarer Kontraktkorb‑Preisindex für Enterprise‑SSD fällt zwei aufeinanderfolgende Quartale ≥10% (QoQ).",
+      "nextReview": "2027-04-01",
+      "eventDate": "2026-09-18",
+      "novelty": "niedrig (Marktkommentar/Meinung; bereits breit diskutierte Supply‑Risiken und -Chancen im NAND‑Sektor).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 4,
+        "thesisRelevance": 12,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "price_down",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.webull.com/news/15600792473699328",
+          "label": "Repost / News aggregator (Simply Wall St piece referenced)",
+          "kind": "secondary",
+          "supports": "Aggregierte Medienausgabe/Meinungsartikel, keine primäre Produktions‑/Shipment‑Messung."
+        },
+        {
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/sandisk-to-benefit-from-the-ai-driven-memory-squeeze-as-prices-surge",
+          "label": "S&P Global (Branchenanalyse)",
+          "kind": "secondary",
+          "supports": "Analytische Einschätzung zur Nachfrage nach NAND und Sandisk‑Position; kein direkter Primärnachweis über neue qualifizierte Lieferungen oder veränderte Enterprise‑SSD‑Kontrakte."
+        }
+      ],
+      "reason": "Die Kandidatenaussage ist primär ein Meinungs-/Analyseartikel (Simply Wall St), der ein plausibles Thesis‑Risiko formuliert — nämlich dass steigendes NAND‑Angebot Sandisk relativ schwächen könnte. Gemäß TAIL‑Aufnahmekriterien fehlt jedoch ein atomarer, datierter Primärbeleg (z. B. offizielle Hersteller‑Shipment‑Statistik, SEC‑Filing mit bestätigten Liefermengen, oder ein definierter Enterprise‑SSD‑Kontraktpreisindex) der die behauptete Angebotsveränderung und unmittelbare Marktwirkung konkret belegt. Ohne solche direkten, quantifizierbaren Messungen kann die Behauptung nicht als VERIFIED DATA aufgenommen werden. Zusätzlich besteht das Risiko der Überschneidung mit bereits bekannter Baseline‑Diskussion über NAND‑Kapazität (Recycling von Marktkommentar), weshalb die Aufnahmespflicht streng ist.\n\nOpposing evidence / Adversarial‑Check: Branchendienste und Unternehmenskommunikationen (S&P, Sandisk‑Investor‑Material) unterstützen zwar die Existenz starker AI‑getriebener NAND‑Nachfrage und Sandisk‑Stärke, liefern aber keinen Primärbeleg, dass kurzfristig (H2 2026–Q1 2027) eine materialisierte neue NAND‑Supply‑Welle Sandisk Marktanteile tatsächlich reduziert. Daher sind entscheidende Primärdaten (Hersteller‑Shipments nach Bit, qualifizierte Enterprise‑SSD‑Fill‑Rates, oder offizielle Langfrist‑Vertragsmengen von Wettbewerbern) erforderlich, um die Behauptung zu verifizieren. \n\nEmpfohlenes Vorgehen: Watchlist. Fordere primäre Quellen: (a) Hersteller‑Shipment‑Berichte (SEC/Investor‑Releases) mit datierten, qualifizierten Enterprise‑NAND‑Bit‑Shipments; (b) ein verifizierbarer Enterprise‑SSD‑Kontraktpreisindex oder Korridor (zwei Quartale) und (c) direkte Kundenaussagen/Disclosure über signifikante Substitution von HBM/HBF‑Budgets zu QLC/NAND. Bis zum Vorliegen eines dieser Primärbelege bleibt die Behauptung nicht verifiziert und zu unspezifisch für Admission. \n\nQuellenprüfung: Die angegebene URL war ein Google‑News‑RSS‑Link (2026-09-18) zu einem Simply Wall St‑Kommentar; Reposts/Aggregatoren (z. B. Webull) listen denselben Meinungsartikel. Branchenanalysen (z. B. S&P Global) bestätigen die Relevanz der These, liefern aber keine direkten, quantitativen Primärdaten. ([webull.com](https://www.webull.com/news/15600792473699328?utm_source=openai))",
+      "candidateId": "a80bf78f04744f25788c",
+      "candidateKey": "43cf820829bfe347fd33aba3",
+      "reviewedAt": "2026-10-15T10:02:12.326Z",
+      "priorityScore": 51,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ee6af76509e320c006ad0a48f33f087d08a2faf89f636397b"
     }
   ]
 }
