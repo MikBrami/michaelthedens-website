@@ -57477,6 +57477,213 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ffd2bfd771ab20e006ad0f4cf61b087d0ae2d0425ed05913c"
+    },
+    {
+      "decision": "rejected",
+      "title": "Meet the Low-Cost Vanguard ETF With Taiwan Semiconductor, Samsung Electronics, SK Hynix, and ASML as Its 4 Largest Holdings",
+      "fact": "The Motley Fool article (2026-10-15) reports that a Vanguard ETF's largest holdings include Taiwan Semiconductor, Samsung Electronics, SK hynix and ASML.",
+      "placement": "global / ETF-holdings disclosure (no geographic market impact stated)",
+      "mechanism": "descriptive report of ETF portfolio composition; no causal mechanism linking the holding composition to semiconductor market supply, pricing, or availability is provided in the candidate.",
+      "predictionId": "",
+      "predictionImpact": "keine direkte Auswirkung auf die gelisteten P‑Vorhersagen; kein verknüpfter bestehender Forecast im Inbox-Set.",
+      "falsifier": "Kein prüfbarer, zeitgebundener Falsifizierer möglich — die Aussage ist ein statischer Bestandsbericht über Fonds-Holdings. (Wenn gewünscht: Falsifier wäre ein widersprechendes Vanguard-Holdings-Statement mit exaktem Datumsstempel.)",
+      "nextReview": "2026-11-15",
+      "eventDate": "2026-10-15",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 4,
+        "thesisRelevance": 6,
+        "forecastImpact": 2,
+        "falsifiability": 3,
+        "timeSensitivity": 2
+      },
+      "markets": [],
+      "driverScope": [],
+      "signal": "price_up",
+      "severity": 10,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.fool.com/investing/2026/10/15/meet-the-low-cost-vanguard-etf-with-taiwan-semicon//",
+          "label": "The Motley Fool — article (primary candidate source)",
+          "kind": "primary",
+          "supports": "Artikelüberschrift und Textbericht über ETF‑Holdings (veröffentlicht 2026-10-15)."
+        }
+      ],
+      "reason": "Der Kandidat ist ein journalistischer Bestandsbericht über ETF‑Holdings (Motley Fool, 2026-10-15), primäre Quelle verifizierbar. Er liefert jedoch kein atomar-datiertes Marktobservabel mit Einheiten (z. B. gemessene Lieferzeit, Vertragspreis, qualifizierte Shipments), keine geographisch/produktbezogene Platzierung mit einem Kausalmechanismus und keine explizite Verbindung zu einem der vorhandenen Vorhersage-IDs im Inbox‑Set. Nach den TAIL‑Aufnahmekriterien erfordert eine Aufnahme: (1) ein messbares, datiertes Faktum mit Einheiten; (2) eindeutige Platzierung (Geographie/Layer/Produkt/Horizont); (3) kausale Wirkungsmechanik auf Angebot/Nachfrage/Preis/Verfügbarkeit; (4) Verknüpfung zu einer existierenden Vorhersage und einen prüfbaren Falsifizierer. Diese Elemente fehlen. Deshalb wird die Kandidatur abgelehnt. Falls das Reviewer‑Ziel eine Aufnahme in die TAIL‑Datenbank wäre, bitte eine klar begründete Verbindung zu einer der Voraussagen angeben (z. B. wie ein signifikanter ETF‑Shift Kaufdruck auf Spot‑DRAM/ HBMe‑Preise erzeugt) plus ein messbares Index‑ oder Vertragskennzeichen als Beleg. Ohne diese Ergänzung bleibt der Eintrag für die Forecast‑Engine irrelevanter Journalismus und wird abgelehnt.",
+      "candidateId": "7e63b22fbc0a19150053",
+      "candidateKey": "12cbb2b67308c21ab7dc5083",
+      "reviewedAt": "2026-10-15T20:29:24.208Z",
+      "priorityScore": 29,
+      "gateReasons": [
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "invalid markets",
+        "invalid drivers",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f504a71f6e6bc67006ad137952c7887d2818c52adaee7fa94"
+    },
+    {
+      "decision": "accepted",
+      "title": "Samsung investiert in Euclyd (Serie‑A) — Diversifizierung weg von reinem HBM‑Pfad",
+      "fact": "Samsung co‑leadet eine Serie‑A‑Finanzierungsrunde für das niederländische AI‑Inference‑Startup Euclyd (auch geschrieben EUCLYD), Runde >€200M; Pressemitteilung/Euclyd‑Ankündigung datiert 2026-09-15.",
+      "placement": "Geographisch: Eindhoven, Niederlande (Euclyd HQ); Domänen/Lieferkette: AI‑Inference‑Hardware / Rechenzentrum‑Infrastruktur; Layer: Technologie‑Stack (Inference‑Accelerator) und strategische Kapitalallokation von Samsung; Horizont: kurzfristig (Q3–Q4 2026) für strategische Positionierung, mittelfristig (2028+) für mögliche System‑Ramps.",
+      "mechanism": "Samsung beteiligt sich als strategischer Co‑Investor in einer großen Serie‑A (>€200M). Dies signalisiert eine aktive Risikodiversifizierung: statt exklusiver Fokussierung auf HBM‑basiertes Beschleuniger‑Ökosystem (HBM4E/HBM4 für GPU‑Accelerators) kann Samsung Kapital, Engineering‑Support und Supply‑Chain‑Zugänge in ein alternatives Inference‑Stack einbringen. Mechanismen: (1) Kapitalallokation verringert marginal verfügbares Investitionsbudget für kurzfristige HBM‑Frontends oder Packaging‑Sprints; (2) Samsung kann künftig HBM‑Priorisierung in bestimmten Kundenverhandlungen gegen Kooperationen in nicht‑HBM Inference‑Architekturen tauschen; (3) technischer Know‑how‑Transfer (Packaging, Base‑Die, Integration) kann Euclyd schneller zur Systemvalidierung verhelfen und damit die Nachfrage nach HBM‑geparkten Lösungen relativ dämpfen.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Potentiell reduziert dieser strategische Schwenk Samsungs Fokus/Verfügbarkeitspriorität für HBM4‑Volumen im Q3 2026 bis Ende 2026, was das in P-2026-07-30-02 angenommene HBM4‑Umsatz‑Upside (>=2.5× Q2→Q3) schwieriger machen könnte. Das Signal ist jedoch indirekt und zeitlich gestreckt; Einflussgröße moderat.",
+      "falsifier": "Bis zum Samsung‑Q3‑Ergebnis (Samsung Earnings Release für Q3 2026, erwartet Anfang November 2026) zeigt Samsung einen bestätigten HBM4‑Umsatz, der das in P-2026-07-30-02 definierte Kriterium erfüllt (Samsung ausgewiesener HBM4‑Umsatz im Q3 2026 ≥2.5× Q2 2026). Falls diese HBM4‑Umsatz‑Skalierung realisiert wird, reduziert das die Aussagekraft der Investition als kurzfristiger Supply‑/Revenue‑Bremser. Review‑Datum für den Falsifier: 2026-11-05.",
+      "nextReview": "2026-11-05",
+      "eventDate": "2026-09-15",
+      "novelty": "Samsung als strategischer Co‑Lead in einer >€200M Serie‑A für ein non‑GPU Inference‑Stack (Euclyd) ist neu und erhöht die Relevanz der These, dass Speicherhersteller in System‑Alternativen investieren.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 35,
+      "confidence": 72,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://www.euclyd.ai/press-release",
+          "label": "EUCLYD press release: 'EUCLYD Raises Over €200 Million'",
+          "kind": "primary",
+          "supports": "Pressemitteilung EUCLYD datiert 2026-09-15: Serie‑A >€200M, Co‑Leads inklusive Samsung; benennt strategische Absicht, Inference‑Stack zu bauen und Samsung als Co‑Investor."
+        },
+        {
+          "url": "https://en.sedaily.com/international/2026/09/16/samsung-joins-investment-in-dutch-ai-chip-startup-euclyd",
+          "label": "Seoul Economic Daily (engl.) — Samsung invests in AI inference chip startup Euclyd (2026-09-16)",
+          "kind": "secondary",
+          "supports": "Bericht bestätigt Samsung‑Beteiligung am Euclyd Serie‑A, nennt Datum/Umfang und führt Samsung‑Kommentare zu strategischem Mehrwert an."
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260916VL208/samsung-dutch-startup-ai-chip-funding.html?mod=3&q=dell",
+          "label": "DigiTimes / Branchenbericht (2026-09-16)",
+          "kind": "secondary",
+          "supports": "Branchencoverage: Rundensumme (~€200M / US$230M), Samsung als Investor, Kontext zu Wettbewerb mit GPU‑basierten Beschleunigern."
+        }
+      ],
+      "reason": "Die eingereichte Meldung (bloomingbit/Google‑RSS) berichtet korrekt über Samsungs Investment in Euclyd; primäre Verifikation liegt in der Euclyd‑Pressemitteilung vom 2026-09-15 und mehreren nachfolgenden Berichten (Seoul Economic Daily, DigiTimes u.a.). Die Beobachtung ist ein sauberes, datiertes, belegbares Ereignis (VERIFIED DATA). Relevanz ergibt sich, weil Samsung als ein bedeutender HBM‑Lieferant und Packaging‑Player Kapital in ein non‑HBM Inference‑Stack steckt — ein strategisches Signal, das die Annahmen über Samsungs absolute Priorisierung von HBM‑Volumen kurzfristig relativiert. Allerdings ist der Kausalpfad zu realen HBM‑Liefermengen/Produkteinnahmen indirekt und zeitlich verzögert; deshalb moderate Severity und Confidence. Das Ticket verknüpft das Signal mit einer bestehenden Vorhersage (P-2026-07-30-02) und liefert einen konkreten, testbaren Falsifier (Samsung Q3‑HBM‑Umsatz >=2.5× Q2 → Review 2026-11-05). Adversarial Check: Primärquelle ist die Unternehmens‑Pressemitteilung (Euclyd) plus konsistente, unabhängige Medienberichterstattung; kein Widerspruch gefunden, daher redPencilPass = true.",
+      "candidateId": "cd3a97cf5f6f5ba29aec",
+      "candidateKey": "95f3f8987b58ed009ea5f09f",
+      "reviewedAt": "2026-10-15T20:29:43.176Z",
+      "priorityScore": 82,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-95f3f8987b58ed009ea5f09f",
+        "title": "Samsung investiert in Euclyd (Serie‑A) — Diversifizierung weg von reinem HBM‑Pfad",
+        "date": "2026-09-15",
+        "admittedAt": "2026-10-15T20:29:43.176Z",
+        "fact": "Samsung co‑leadet eine Serie‑A‑Finanzierungsrunde für das niederländische AI‑Inference‑Startup Euclyd (auch geschrieben EUCLYD), Runde >€200M; Pressemitteilung/Euclyd‑Ankündigung datiert 2026-09-15.",
+        "placement": "Geographisch: Eindhoven, Niederlande (Euclyd HQ); Domänen/Lieferkette: AI‑Inference‑Hardware / Rechenzentrum‑Infrastruktur; Layer: Technologie‑Stack (Inference‑Accelerator) und strategische Kapitalallokation von Samsung; Horizont: kurzfristig (Q3–Q4 2026) für strategische Positionierung, mittelfristig (2028+) für mögliche System‑Ramps.",
+        "tailInference": "Samsung beteiligt sich als strategischer Co‑Investor in einer großen Serie‑A (>€200M). Dies signalisiert eine aktive Risikodiversifizierung: statt exklusiver Fokussierung auf HBM‑basiertes Beschleuniger‑Ökosystem (HBM4E/HBM4 für GPU‑Accelerators) kann Samsung Kapital, Engineering‑Support und Supply‑Chain‑Zugänge in ein alternatives Inference‑Stack einbringen. Mechanismen: (1) Kapitalallokation verringert marginal verfügbares Investitionsbudget für kurzfristige HBM‑Frontends oder Packaging‑Sprints; (2) Samsung kann künftig HBM‑Priorisierung in bestimmten Kundenverhandlungen gegen Kooperationen in nicht‑HBM Inference‑Architekturen tauschen; (3) technischer Know‑how‑Transfer (Packaging, Base‑Die, Integration) kann Euclyd schneller zur Systemvalidierung verhelfen und damit die Nachfrage nach HBM‑geparkten Lösungen relativ dämpfen.",
+        "predictionId": "P-2026-07-30-02",
+        "predictionImpact": "Potentiell reduziert dieser strategische Schwenk Samsungs Fokus/Verfügbarkeitspriorität für HBM4‑Volumen im Q3 2026 bis Ende 2026, was das in P-2026-07-30-02 angenommene HBM4‑Umsatz‑Upside (>=2.5× Q2→Q3) schwieriger machen könnte. Das Signal ist jedoch indirekt und zeitlich gestreckt; Einflussgröße moderat.",
+        "falsifier": "Bis zum Samsung‑Q3‑Ergebnis (Samsung Earnings Release für Q3 2026, erwartet Anfang November 2026) zeigt Samsung einen bestätigten HBM4‑Umsatz, der das in P-2026-07-30-02 definierte Kriterium erfüllt (Samsung ausgewiesener HBM4‑Umsatz im Q3 2026 ≥2.5× Q2 2026). Falls diese HBM4‑Umsatz‑Skalierung realisiert wird, reduziert das die Aussagekraft der Investition als kurzfristiger Supply‑/Revenue‑Bremser. Review‑Datum für den Falsifier: 2026-11-05.",
+        "nextReview": "2026-11-05",
+        "priorityScore": 82,
+        "scoreBreakdown": {
+          "sourceQuality": 16,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 35,
+        "confidence": 72,
+        "markets": [
+          "hbm",
+          "server_dram",
+          "ai_infrastructure",
+          "semiconductors"
+        ],
+        "signal": "capacity_lock",
+        "driverScope": [
+          "availability",
+          "aiDemand",
+          "demand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "EUCLYD press release: 'EUCLYD Raises Over €200 Million'",
+            "url": "https://www.euclyd.ai/press-release"
+          },
+          {
+            "label": "Seoul Economic Daily (engl.) — Samsung invests in AI inference chip startup Euclyd (2026-09-16)",
+            "url": "https://en.sedaily.com/international/2026/09/16/samsung-joins-investment-in-dutch-ai-chip-startup-euclyd"
+          },
+          {
+            "label": "DigiTimes / Branchenbericht (2026-09-16)",
+            "url": "https://www.digitimes.com/news/a20260916VL208/samsung-dutch-startup-ai-chip-funding.html?mod=3&q=dell"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Potentiell reduziert dieser strategische Schwenk Samsungs Fokus/Verfügbarkeitspriorität für HBM4‑Volumen im Q3 2026 bis Ende 2026, was das in P-2026-07-30-02 angenommene HBM4‑Umsatz‑Upside (>=2.5× Q2→Q3) schwieriger machen könnte. Das Signal ist jedoch indirekt und zeitlich gestreckt; Einflussgröße moderat."
+        },
+        "admissionReviewKey": "95f3f8987b58ed009ea5f09f"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d7bd9010ee21c7e006ad137a45b1487d2b67ad20c4c2b3cb4"
     }
   ]
 }

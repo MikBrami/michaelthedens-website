@@ -7,20 +7,20 @@
   "indexEvidenceAsOf": "2026-09-11",
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-15T15:44:39.538Z",
-    "inboxUpdatedAt": "2026-10-15T15:35:21.828Z",
+    "checkedAt": "2026-10-15T20:29:43.215Z",
+    "inboxUpdatedAt": "2026-10-15T20:19:52.135Z",
     "status": "pending",
-    "candidates": 429,
-    "reviewed": 185,
-    "accepted": 19,
-    "watchlist": 161,
-    "rejected": 5,
-    "pending": 259,
-    "oldestPendingAt": "2026-09-19T00:34:12.000Z",
-    "lastCompletedReviewAt": "2026-10-15T15:44:39.517Z",
+    "candidates": 432,
+    "reviewed": 186,
+    "accepted": 20,
+    "watchlist": 160,
+    "rejected": 6,
+    "pending": 260,
+    "oldestPendingAt": "2026-09-21T22:06:25.000Z",
+    "lastCompletedReviewAt": "2026-10-15T20:29:43.176Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 962,
+    "rawCandidates": 967,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1221,
     "triage": {
@@ -28,8 +28,8 @@
       "groupedDuplicates": 47
     },
     "lastRun": {
-      "startedAt": "2026-10-15T15:43:48.703Z",
-      "completedAt": "2026-10-15T15:44:39.540Z",
+      "startedAt": "2026-10-15T20:29:07.254Z",
+      "completedAt": "2026-10-15T20:29:43.217Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -37,7 +37,7 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 50,
+      "durationSeconds": 35,
       "budgetExhausted": false
     }
   },
@@ -100,15 +100,15 @@
     }
   ],
   "sourceDataAsOf": "2026-10-06",
-  "knowledgeBaseSyncedAt": "2026-10-15T15:44:39.661Z",
+  "knowledgeBaseSyncedAt": "2026-10-15T20:29:43.403Z",
   "dataFreshness": "current",
   "dataAgeDays": 0,
   "evidenceAgeDays": 9,
-  "lastSuccessfulUpdate": "2026-10-15T15:44:40.673Z",
-  "lastForecastRun": "2026-10-15T15:44:40.673Z",
-  "newlyProcessedArticles": 213,
-  "totalArticles": 202,
-  "articleCount": 202,
+  "lastSuccessfulUpdate": "2026-10-15T20:29:45.053Z",
+  "lastForecastRun": "2026-10-15T20:29:45.053Z",
+  "newlyProcessedArticles": 131,
+  "totalArticles": 203,
+  "articleCount": 203,
   "processStatus": "warning",
   "methodology": {
     "version": "3.1",
@@ -162,17 +162,17 @@
   },
   "error": null,
   "warnings": [
-    "Evidenzprüfung offen: 259 Kandidaten ausstehend.",
+    "Evidenzprüfung offen: 260 Kandidaten ausstehend.",
     "14 operative Beobachtungen sind zur Nachprüfung fällig; keine automatische Entwarnung.",
     "Jüngste aufgenommene Quellenbeobachtung: 2026-10-06."
   ],
   "inbox": {
     "status": "ok",
-    "updatedAt": "2026-10-15T15:35:21.828Z",
-    "newItems": 213,
-    "totalItems": 16478,
+    "updatedAt": "2026-10-15T20:19:52.135Z",
+    "newItems": 131,
+    "totalItems": 16609,
     "duplicateItems": 300,
-    "relevantItems": 5143,
+    "relevantItems": 5173,
     "sourceErrors": []
   },
   "pipeline": {
@@ -182,19 +182,19 @@
         "id": "admission_review",
         "label": "Evidenzprüfung",
         "status": "warning",
-        "detail": "185 geprüft · 259 offen · 19 aufgenommen"
+        "detail": "186 geprüft · 260 offen · 20 aufgenommen"
       },
       {
         "id": "knowledge_base",
         "label": "TAIL Knowledge Base",
         "status": "ok",
-        "detail": "202 Artikel · Sync 2026-10-15 · jüngstes bestätigtes Signal 2026-10-06"
+        "detail": "203 Artikel · Sync 2026-10-15 · jüngstes bestätigtes Signal 2026-10-06"
       },
       {
         "id": "inbox",
         "label": "TAIL Inbox",
         "status": "ok",
-        "detail": "16478 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
+        "detail": "16609 Inbox-Items · 300 Duplikate · 0 Quellenfehler"
       },
       {
         "id": "forecast_engine",
@@ -787,7 +787,7 @@
     {
       "name": "Samsung",
       "score": 74,
-      "mentions": 38
+      "mentions": 39
     },
     {
       "name": "Sandisk",
@@ -994,7 +994,7 @@
         "S-AUTO-4463e0ea1a29b160b3a1ab39",
         "S-AUTO-8a5701d057f8b4f60e46ba88"
       ],
-      "lastUpdated": "2026-10-15T15:44:40.669Z"
+      "lastUpdated": "2026-10-15T20:29:45.046Z"
     },
     {
       "id": "hbm",
@@ -1186,6 +1186,7 @@
         "S-AUTO-4e44585aae5cd84296963612",
         "S-AUTO-54179b1a0b7e58140d31e303",
         "S-AUTO-84351dc941259805a65972ee",
+        "S-AUTO-95f3f8987b58ed009ea5f09f",
         "S-AUTO-28b329255578ff6a8943398e",
         "S-AUTO-2fbda9055add9061096f0742",
         "S-AUTO-598f3d05ff5134fd19fc52f8",
@@ -1206,7 +1207,7 @@
         "S-AUTO-965c715ae023d058ae2744d3",
         "S-AUTO-71c3683003af3ba1b1c73a28"
       ],
-      "lastUpdated": "2026-10-15T15:44:40.669Z"
+      "lastUpdated": "2026-10-15T20:29:45.047Z"
     },
     {
       "id": "nand",
@@ -1292,7 +1293,7 @@
         "S-AUTO-fb8d49d0e82132264c37322c",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-15T15:44:40.669Z"
+      "lastUpdated": "2026-10-15T20:29:45.047Z"
     },
     {
       "id": "enterprise_ssd",
@@ -1373,7 +1374,7 @@
         "S-AUTO-187e0074ddff73d87b471af4",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-15T15:44:40.669Z"
+      "lastUpdated": "2026-10-15T20:29:45.047Z"
     },
     {
       "id": "ai_infrastructure",
@@ -1670,6 +1671,7 @@
         "S-AUTO-d25873b789efc5ec1a7f41d3",
         "S-AUTO-bc9a657a2bbda3388ee045b3",
         "S-AUTO-58c7a1ee1cfcd267a61c81f1",
+        "S-AUTO-95f3f8987b58ed009ea5f09f",
         "S-AUTO-7c86e2f29f2df64fcc959e8c",
         "S-AUTO-598f3d05ff5134fd19fc52f8",
         "S-AUTO-e127ba6c66773101f29ca57e",
@@ -1706,7 +1708,7 @@
         "S-TAIL-DAILY-HEARTBEAT",
         "S-AUTO-cf8223b527b2aa7b2cbc326a"
       ],
-      "lastUpdated": "2026-10-15T15:44:40.669Z"
+      "lastUpdated": "2026-10-15T20:29:45.047Z"
     }
   ],
   "indexCalculation": {
@@ -1715,7 +1717,7 @@
     "formulaRevision": "1.4",
     "baselineAsOf": "2026-10-15"
   },
-  "executiveSummary": "TAIL steht auf 73/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 202 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
+  "executiveSummary": "TAIL steht auf 73/100. Enterprise SSD, Server DRAM / RDIMM, Supply Chain sind die kritischsten Felder. Die Plattform liest 203 Knowledge-Base-Artikel und erzeugt 5 Forecasts aus referenzierten Signalen statt statischen Dashboard-Werten.",
   "topSignals": [
     {
       "id": "S-2026-08-15-01",
