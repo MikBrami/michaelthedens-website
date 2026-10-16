@@ -57949,6 +57949,138 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0e81eb330a831340006ad1f425e83c87d0b944b59f1d37e520"
+    },
+    {
+      "decision": "watchlist",
+      "title": "ASML prüft Produktion von >110 Low‑NA/EUV‑Systemen für 2028 (JPMorgan‑Bericht)",
+      "fact": "JPMorgan‑Analysten berichteten nach einem Treffen mit ASML‑Finanzvorstand, dass ASML untersucht, wie es 2028 mehr als 110 EUV‑Chipbelichtungssysteme (Low‑NA/0.33 NA EUV) pro Jahr produzieren könnte; die Zahl wurde in Presseberichten am 2026-09-14 gemeldet.",
+      "placement": "global / Halbleiterausrüstung (EUV‑Lithographie, Low‑NA) / Fertigungs‑Kapazitätserweiterung / Horizont: Kalenderjahr 2028 (Zieljahr).",
+      "mechanism": "ASML untersucht interne Fertigungs-, Montage‑ und Supply‑Chain‑Schritte (Endmontage, Lichtquellen, Optiklieferketten, Service‑Ingenieure) zur Steigerung der Jahresausbringung von Low‑NA‑EUV‑Systemen; Treiber sind erhöhte AI‑Chip‑Bestellungen (Logik/HBM) von großen Foundry‑ und IDM‑Kunden wie TSMC und Nvidia laut Analystenmeeting.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn ASML tatsächlich >110 EUV‑Systeme in 2028 liefern könnte, würde das die Verfügbarkeit von Leading‑Edge‑Lithographiekapazität erhöhen und tendenziell die Verknappung von Advanced‑Memory (HBM) / Server‑DRAM reduzieren oder den Engpass verschieben; Einfluss auf P-2026-07-11-01 (HBM und Server‑DRAM Knappheit bis Ende 2028) wäre moderat‑negativ für die 'dauerhafte Knappheit' These (erhöhte Supply‑Upside).",
+      "falsifier": "Bis zum 2028-12-31 berichtet ASML in seinen geprüften Jahreszahlen oder offiziellen Geschäftsberichten (oder in verbindlichen Auslieferungsstatements) eine tatsächliche Summe ausgelieferter Low‑NA/Low‑NA‑EUV‑Systeme für 2028 ≤ 110 (oder ASML veröffentlicht eine verbindliche, datierte Ziel‑/Lieferplanung, die <110 ausweist). Review‑Datum zur Überprüfung: 2028-12-31.",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-09-14",
+      "novelty": "Moderat — JPMorgan‑Zahl ergänzt bekannte ASML‑Ramp‑Absichten, ist aber nicht ein zuvor bestätigtes, verbindliches Produktionscommitment.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 8,
+        "thesisRelevance": 18,
+        "forecastImpact": 15,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://coinpaper.com/37410/asml-targets-over-110-euv-machines-annually-by-2028-as-nvidia-and-tsmc-drive-chip-equipment-demand",
+          "label": "Coinpaper (eingereichte Inbox‑Quelle) — Nachrichtenfassung (2026-10-16).",
+          "kind": "secondary",
+          "supports": "Wiederholt die Aussage, nennt Nvidia und TSMC als Nachfrage‑Treiber; jedoch ist Coinpaper kein Primärbericht zur Verifizierung des firmeninternen Commitments."
+        }
+      ],
+      "reason": "Die Inbox‑Meldung fasst Berichte (JPMorgan/Analystentreffen) zusammen, die Reuters und andere seriöse Medien am 2026-09-14 dokumentiert haben. Das Signal ist relevant für die TAIL‑These zur Memory/Server‑DRAM‑Knappheit (Platzierung: Halbleiterausrüstung → mögliche Erhöhung des Herstellungsdurchsatzes). Allerdings fehlt derzeit ein primärer, verbindlicher ASML‑Commitment‑Nachweis (z. B. ein von ASML veröffentlichter, datierter Produktionsplan oder nachprüfbare Auslieferungszahlen für 2028). Nach den von Ihnen vorgegebenen Aufnahme‑Regeln erfordert fehlende Primärverifikation eine Watchlist‑Einstufung. Zusätzlich wurde die gleiche Beobachtung bereits breit von Medien wiedergegeben — keine unabhängige Messung von Auslieferungen/Shipments liegt bisher vor. Opposing evidence: kein offizielles ASML‑Statement, das >110 verbindlich festlegt; ASML‑öffentliche Präsentationen sprechen von 'Untersuchungen' / 'Prüfungen' und High‑NA/Low‑NA Ramp‑Ambitionen, nicht von bestätigten Auslieferungszahlen. Empfehlung: Überprüfen auf ASML‑Jahresbericht / Q4‑/FY2028‑Auslieferungszahlen und auf ASML‑Offenlegungen zur Low‑NA Produktionskapazität; validen Index‑Bezug (z. B. bestätigte 2028 Shipments) hinzufügen, dann möglichen Upgrade auf 'accepted' prüfen.",
+      "candidateId": "5cc31bc68c9ce509e601",
+      "candidateKey": "771b8db4933b7a5babc60453",
+      "reviewedAt": "2026-10-16T15:27:38.970Z",
+      "priorityScore": 75,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a61abb213e39336006ad24253621887d0af3d12e9f4a71b6e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "TradingView‑Recap: 'HBM4 an Rubin' und 'Wafer‑Kapazität verdoppeln ₩1,100 trillion' (nicht primär belegt)",
+      "fact": "TradingView‑Zusammenfassung (veröffentlicht 2026-09-21) berichtet, SK hynix beginne in Q3/2026 mit Massensendungen einer 48‑GB‑HBM4‑Module an Nvidias Rubin‑Plattform und kündige Pläne an, die Wafer‑Kapazität in den nächsten fünf Jahren grob zu verdoppeln mit einem langfristigen Investitionsziel von ₩1,100 trillion (~US$797 Mrd.).",
+      "placement": "Global / Halbleiter‑Supply‑Chain / HBM/DRAM‑Layer / 5‑Jahres‑Horizont (2026–2031).",
+      "mechanism": "Falls belegt: prioritäre Abnahme und fokussierte HBM‑Ramp (Massensendungen an Nvidia) würden HBM‑Bit‑Allokation zu Lasten breiterer Server‑DRAM/Kommando‑Channels verschieben (Verstärkung von capacity_lock/negative_supply). Die behauptete ₩1,100 trillion‑Investitionsabsicht würde potenziell signifikante, multi‑jährliche Kapazitätsausweitungen signalisieren, ist aber extrem groß und benötigt Primärbelege (Firmendokumente, verbindliche Capex‑Pläne, Regulierungs‑/Board‑Entscheidung).",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn vollständig verifiziert, würde die Meldung die Knappheitsannahme für HBM/Server‑DRAM (P-2026-07-11-01) eher stützen kurzfristig (capacity_lock durch priorisierte Lieferungen), könnte aber mittelfristig (mehrere Jahre) das Oversupply‑Risiko mindern — die Richtung hängt von Realisierungstempo und Umfang ab. Aktuell nicht hinreichend belegt, deshalb kein positiver Admissions‑Entscheid für Index‑Evidenz.",
+      "falsifier": "Bis 2026-10-31 fehlen primäre, überprüfbare Unternehmensnachweise (z. B. SK hynix Form 8‑K/Investor‑Presentation, offizielle Pressemitteilung oder verbindliche Board/Regierungs‑Genehmigung) für (a) Start von 'mass shipping' 48‑GB‑HBM4 an Nvidia mit zugehörigen ausgelieferten Stückzahlen oder (b) einen bestätigten, quantifizierten Capex‑Plan bzw. Beschluss zur Investitionssumme von ₩1,100,000,000,000,000; wenn beide bis zu diesem Datum nicht dokumentiert sind, widerspricht das der Behauptung.",
+      "nextReview": "2026-11-30",
+      "eventDate": "2026-09-21",
+      "novelty": "Elevated (behauptet große Capex‑Ankündigung plus First‑Ship‑Claim; primär‑prüfpflichtig)",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 7,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "dram",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.tradingview.com/news/tradingview%3A3013c68c351e4%3A0-weekly-recap-hbm4-to-rubin-ai-and-wafer-capacity-to-double-1-100-trillion/",
+          "label": "TradingView — Weekly Recap (Aggregat / AI‑summary), 2026-09-21",
+          "kind": "secondary",
+          "supports": "Berichtet die beiden Kernbehauptungen: (1) '48GB HBM4 mass shipping to Nvidia Rubin in Q3 2026' und (2) 'Plan, Wafer‑Kapazität in ~5 Jahren grob zu verdoppeln; langfristiges Investitionsziel ₩1,100 trillion'."
+        }
+      ],
+      "reason": "Die eingereichte Inbox‑Kandidatenmeldung ist eine sekundäre, aggregierende TradingView‑Zusammenfassung (verweist intern auf Benzinga/andere Quellen). Für eine Aufnahme als VERIFIED DATA oder Akzeptanz ist zwingend ein primärer, überprüfbarer Beleg erforderlich: offizielle SK hynix‑Mitteilung, regulatorische Einreichung, verifizierbare Vertriebsliste/Shipment‑Zahlen oder ein belastbares Board/Capex‑Dokument. Unsere Web‑Überprüfung fand nur die TradingView‑Zusammenfassung als identifizierbaren Beleg innerhalb des Tool‑Budgetes; die extrem hohe ₩1,100 trillion Zahl erscheint aussergewöhnlich (≈US$797 Mrd.) und braucht unmittelbare Primärverifikation. Außerdem gibt es Gegenbelege / kontextuelle Widersprüche in der breiten TAIL‑Datenbank (z. B. bestätigte 'HBM sold out through 2026' und separate Firmen‑Q2/2026‑Berichte, die HBM‑Yields/Shipments unterschiedlich quantifizieren), weshalb wir zusätzliche primäre Bestätigung und quantifizierte Shipment‑Zahlen verlangen. Ohne diese bleibt die Meldung unproven — Watchlist empfohlen. Nächste Prüfung bis 2026-11-30; wenn bis dahin Primärquellen (SK hynix Pressemitteilung, SEC/Financial‑Filing, Nvidia Bestätigungen oder offizielle Capex‑Beschlussdokumente) vorgelegt werden, kann Status neu bewertet werden.",
+      "candidateId": "29427021f0f4a7c6bc75",
+      "candidateKey": "62edd05f1e08cb2c873fdbaf",
+      "reviewedAt": "2026-10-16T15:28:01.025Z",
+      "priorityScore": 58,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_05af536ca4e7d6af006ad2426b297887d0bcac67228546b13d"
     }
   ]
 }
