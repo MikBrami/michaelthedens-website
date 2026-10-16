@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T20:29:43.403Z",
-  "previousRun": "2026-10-14",
+  "updatedAt": "2026-10-16T01:27:50.304Z",
+  "previousRun": "2026-10-15",
   "executivePulse": {
     "current": 73,
     "previous": 73,
@@ -25,8 +25,8 @@
       {
         "id": "pricing",
         "name": "Preisdynamik",
-        "score": 68,
-        "absoluteSeverity": 68,
+        "score": 67,
+        "absoluteSeverity": 67,
         "delta": 0,
         "weight": 0.2,
         "coverage": 100,
@@ -45,8 +45,8 @@
       {
         "id": "aiDemand",
         "name": "AI-Nachfrage",
-        "score": 68,
-        "absoluteSeverity": 68,
+        "score": 67,
+        "absoluteSeverity": 67,
         "delta": 0,
         "weight": 0.15,
         "coverage": 100,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 74,
     "previous": 74,
-    "interpretation": "Datenvertrauen 74/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 260 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 74/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 262 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 82,
     "previous": 82
   },
-  "momentum": "Evidenzprüfung offen: 260 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 262 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,78 +527,6 @@
         }
       ],
       "date": "2026-08-26"
-    },
-    {
-      "id": "S-AUTO-95f3f8987b58ed009ea5f09f",
-      "title": "Samsung investiert in Euclyd (Serie‑A) — Diversifizierung weg von reinem HBM‑Pfad",
-      "date": "2026-09-15",
-      "admittedAt": "2026-10-15T20:29:43.176Z",
-      "fact": "Samsung co‑leadet eine Serie‑A‑Finanzierungsrunde für das niederländische AI‑Inference‑Startup Euclyd (auch geschrieben EUCLYD), Runde >€200M; Pressemitteilung/Euclyd‑Ankündigung datiert 2026-09-15.",
-      "placement": "Geographisch: Eindhoven, Niederlande (Euclyd HQ); Domänen/Lieferkette: AI‑Inference‑Hardware / Rechenzentrum‑Infrastruktur; Layer: Technologie‑Stack (Inference‑Accelerator) und strategische Kapitalallokation von Samsung; Horizont: kurzfristig (Q3–Q4 2026) für strategische Positionierung, mittelfristig (2028+) für mögliche System‑Ramps.",
-      "tailInference": "Samsung beteiligt sich als strategischer Co‑Investor in einer großen Serie‑A (>€200M). Dies signalisiert eine aktive Risikodiversifizierung: statt exklusiver Fokussierung auf HBM‑basiertes Beschleuniger‑Ökosystem (HBM4E/HBM4 für GPU‑Accelerators) kann Samsung Kapital, Engineering‑Support und Supply‑Chain‑Zugänge in ein alternatives Inference‑Stack einbringen. Mechanismen: (1) Kapitalallokation verringert marginal verfügbares Investitionsbudget für kurzfristige HBM‑Frontends oder Packaging‑Sprints; (2) Samsung kann künftig HBM‑Priorisierung in bestimmten Kundenverhandlungen gegen Kooperationen in nicht‑HBM Inference‑Architekturen tauschen; (3) technischer Know‑how‑Transfer (Packaging, Base‑Die, Integration) kann Euclyd schneller zur Systemvalidierung verhelfen und damit die Nachfrage nach HBM‑geparkten Lösungen relativ dämpfen.",
-      "predictionId": "P-2026-07-30-02",
-      "predictionImpact": "Potentiell reduziert dieser strategische Schwenk Samsungs Fokus/Verfügbarkeitspriorität für HBM4‑Volumen im Q3 2026 bis Ende 2026, was das in P-2026-07-30-02 angenommene HBM4‑Umsatz‑Upside (>=2.5× Q2→Q3) schwieriger machen könnte. Das Signal ist jedoch indirekt und zeitlich gestreckt; Einflussgröße moderat.",
-      "falsifier": "Bis zum Samsung‑Q3‑Ergebnis (Samsung Earnings Release für Q3 2026, erwartet Anfang November 2026) zeigt Samsung einen bestätigten HBM4‑Umsatz, der das in P-2026-07-30-02 definierte Kriterium erfüllt (Samsung ausgewiesener HBM4‑Umsatz im Q3 2026 ≥2.5× Q2 2026). Falls diese HBM4‑Umsatz‑Skalierung realisiert wird, reduziert das die Aussagekraft der Investition als kurzfristiger Supply‑/Revenue‑Bremser. Review‑Datum für den Falsifier: 2026-11-05.",
-      "nextReview": "2026-11-05",
-      "priorityScore": 82,
-      "scoreBreakdown": {
-        "sourceQuality": 16,
-        "novelty": 12,
-        "thesisRelevance": 18,
-        "forecastImpact": 16,
-        "falsifiability": 12,
-        "timeSensitivity": 8
-      },
-      "severity": 35,
-      "confidence": 72,
-      "markets": [
-        "hbm",
-        "server_dram",
-        "ai_infrastructure",
-        "semiconductors"
-      ],
-      "signal": "capacity_lock",
-      "driverScope": [
-        "availability",
-        "aiDemand",
-        "demand"
-      ],
-      "classification": "Signal",
-      "indexEvidence": {
-        "metricType": "none",
-        "marketId": "",
-        "observation": ""
-      },
-      "evidenceStatus": "VERIFIED DATA",
-      "indexImpact": false,
-      "freshShockEligible": false,
-      "public": true,
-      "origin": "reviewed-inbox",
-      "admissionGate": {
-        "Evidence": true,
-        "Materiality": true,
-        "Causality": true,
-        "Falsifiability": true
-      },
-      "sources": [
-        {
-          "label": "EUCLYD press release: 'EUCLYD Raises Over €200 Million'",
-          "url": "https://www.euclyd.ai/press-release"
-        },
-        {
-          "label": "Seoul Economic Daily (engl.) — Samsung invests in AI inference chip startup Euclyd (2026-09-16)",
-          "url": "https://en.sedaily.com/international/2026/09/16/samsung-joins-investment-in-dutch-ai-chip-startup-euclyd"
-        },
-        {
-          "label": "DigiTimes / Branchenbericht (2026-09-16)",
-          "url": "https://www.digitimes.com/news/a20260916VL208/samsung-dutch-startup-ai-chip-funding.html?mod=3&q=dell"
-        }
-      ],
-      "redPencil": {
-        "passed": true,
-        "forecastChange": "Potentiell reduziert dieser strategische Schwenk Samsungs Fokus/Verfügbarkeitspriorität für HBM4‑Volumen im Q3 2026 bis Ende 2026, was das in P-2026-07-30-02 angenommene HBM4‑Umsatz‑Upside (>=2.5× Q2→Q3) schwieriger machen könnte. Das Signal ist jedoch indirekt und zeitlich gestreckt; Einflussgröße moderat."
-      },
-      "admissionReviewKey": "95f3f8987b58ed009ea5f09f"
     }
   ],
   "predictionLogUpdates": [
@@ -710,18 +638,27 @@
     "manualOverlayPolicy": "Public signals require evidence and admission-gate review. Approved manual index signals are written to the Knowledge Base and scored mechanically; private channel intelligence remains excluded until quantified."
   },
   "dailyStatus": {
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 82,
-    "note": "Evidenzprüfung offen: 260 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 0,
+    "note": "Evidenzprüfung offen: 262 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-10-15T20:29:43.403Z",
+    "generatedAt": "2026-10-16T01:27:50.304Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-10-15T20:19:52.135Z",
-    "inboxNewItems": 131,
+    "inboxUpdatedAt": "2026-10-16T01:19:37.560Z",
+    "inboxNewItems": 86,
     "highRelevanceCandidates": [
+      {
+        "id": "3984e84049118a347386",
+        "title": "China's YMTC Becomes No. 3 in NAND Shipments, Narrowing Gap With Samsung, SK",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQUVYWFlkaG5ldllCaHlZSW9DSzg2OC1CRHVHb185a29iNFRreEtSaTQwdkxvSy1YaVZFTDhuSUVSTDlFM2V4LUxJaTdDbGhVRUVoT2ZScU1JbzduSW9ZRU5Fc1RuTThJRzF1ZGQ2Q3poTTlJSU9RT085aWV2T1JucTBLNmFtT2NLdFdKMkRObmZsVUFmNGFNRENZdG9BeVU?oc=5",
+        "source": "Seoul Economic Daily",
+        "summary": "China's YMTC Becomes No. 3 in NAND Shipments, Narrowing Gap With Samsung, SK Seoul Economic Daily",
+        "relevanceScore": 100,
+        "publishedAt": "2026-10-15T22:54:22.000Z"
+      },
       {
         "id": "b3dfefc4af06f47bd754",
         "title": "Big Tech Moves Away from Nvidia: Chance for Samsung, SK hynix?",
@@ -784,15 +721,6 @@
         "summary": "CXMT’s 4F² DRAM Plan Sends Samsung and SK hynix Shares Sliding Technology Org",
         "relevanceScore": 100,
         "publishedAt": "2026-10-14T07:51:00.000Z"
-      },
-      {
-        "id": "21a00baf1c9f337d029a",
-        "title": "Chinese memory company CXMT announced it will release DDR5 RDIMMs for data centers with a 4F² design by the end of 2026, a breakthrough that caused shares of rivals Micron, SK Hynix, and Samsung to plummet.",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tV2w0RHBjSEU2RVhLSGNXdTNLUE85dWQ1cVJWSE9lZDd1ams3QWlSUDBLeG9jajlDYkxNZU1PVVdTR2V5Q0M4bEpVQ1EzMEowTzYyU1VVazVTNkdYMUw5M2dMNHpSdkt6?oc=5",
-        "source": "GIGAZINE",
-        "summary": "Aktuelle Meldung von GIGAZINE: Chinese memory company CXMT announced it will release DDR5 RDIMMs for data centers with a 4F² design by the end of 2026, a breakthrough that caused shares of rivals Micron, SK Hynix, and Samsung to plummet.",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-14T07:47:49.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -878,29 +806,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-15T20:29:43.215Z",
-    "inboxUpdatedAt": "2026-10-15T20:19:52.135Z",
+    "checkedAt": "2026-10-16T01:27:50.154Z",
+    "inboxUpdatedAt": "2026-10-16T01:19:37.560Z",
     "status": "pending",
-    "candidates": 432,
-    "reviewed": 186,
+    "candidates": 434,
+    "reviewed": 187,
     "accepted": 20,
-    "watchlist": 160,
+    "watchlist": 161,
     "rejected": 6,
-    "pending": 260,
+    "pending": 262,
     "oldestPendingAt": "2026-09-21T22:06:25.000Z",
-    "lastCompletedReviewAt": "2026-10-15T20:29:43.176Z",
+    "lastCompletedReviewAt": "2026-10-16T01:27:50.126Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 967,
+    "rawCandidates": 974,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1221,
     "triage": {
-      "archivedOpinions": 25,
+      "archivedOpinions": 26,
       "groupedDuplicates": 47
     },
     "lastRun": {
-      "startedAt": "2026-10-15T20:29:07.254Z",
-      "completedAt": "2026-10-15T20:29:43.217Z",
+      "startedAt": "2026-10-16T01:27:11.753Z",
+      "completedAt": "2026-10-16T01:27:50.156Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -908,13 +836,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 35,
+      "durationSeconds": 38,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
-    "asOf": "2026-10-15",
-    "inputHash": "6e107c5ec9db6d02b7214fcf62d1d193ec0f339d6ab9c0781e8ae1d0fe7f1fd6",
+    "asOf": "2026-10-16",
+    "inputHash": "8fb6fe706002ae93c19df67106292f043a5cdd9e89c45e0ab0373bc154c46b88",
     "sourceDataAsOf": "2026-10-06"
   }
 }

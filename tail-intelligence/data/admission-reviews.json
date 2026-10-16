@@ -57684,6 +57684,146 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0d7bd9010ee21c7e006ad137a45b1487d2b67ad20c4c2b3cb4"
+    },
+    {
+      "decision": "watchlist",
+      "title": "TSMC supply bottleneck raises questions over AI infrastructure investment, opening for Samsung and Intel",
+      "fact": "Medienbericht (DigitalToday) vom 2026-10-15 stellt fest, dass TSMC‑Kapazitätsengpässe die AI‑Infrastruktur‑Investitionen in Frage stellen und dies angeblich Chancen für Samsung und Intel eröffne.",
+      "placement": "Global / Foundry & Advanced Packaging / Near‑term (H2 2026–2027)",
+      "mechanism": "Bericht ist eine journalistische Synthese: beschreibt Angebotsengpässe bei TSMC (Foundry/Advanced Packaging) und argumentiert, dass verknappte führende Fertigung/Lösungen Marktanteile oder Aufträge an konkurrierende Anbieter (Samsung, Intel) verschieben könnten. Kein einzelnes, quantifiziertes Ereignis (z. B. Vertrag, Shipment, Lead‑Time‑Messung) wird als Primärbeleg angegeben.",
+      "predictionId": "P-2026-07-16-01",
+      "predictionImpact": "Das Signal würde, falls verifiziert, das Basisszenario für Node‑/HPC‑Umsatzanteile in P-2026-07-16-01 berühren (HPC-Anteil von TSMC‑Umsatz in Q3), indem es eine mögliche Verschiebung der Produktions‑/Umsatzanteile zwischen Foundries andeutet.",
+      "falsifier": "Konkreter, überprüfbarer Falsifier fehlt im Artikel. Vorschlag zur Überprüfung: Bis 2027-03-31 sollten dokumentierte, qualifizierte Vertrags‑ oder Produktions‑Transfers (vertraglich bestätigte Kunden‑Tapeouts oder Volumen‑Shipments) von bedeutenden AI‑SoC‑Kunden von TSMC zu Samsung oder Intel nachgewiesen werden; oder TSMC‑gemeldete Lead‑Times/kapazitätsbezogene Kennzahlen normalisieren sich (z. B. N3/N4 Auslastung <90% mit bestätigter Kapazitätserweiterung).",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-10-15",
+      "novelty": "niedrig",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 4,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 6,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.digitaltoday.co.kr/en/view/115375/tsmc-supply-bottleneck-raises-questions-over-ai-infrastructure-investment-opening-for-samsung-intel",
+          "label": "DigitalToday — English edition article (primary inbox candidate)",
+          "kind": "primary",
+          "supports": "Original berichtender Artikel, datiert 2026-10-15, liefert journalistische Analyse, aber keine eindeutigen, quantifizierbaren Primärdaten (z. B. verifizierte Shipments, Vertrags‑Volumen oder Lead‑Time‑Messungen)."
+        },
+        {
+          "url": "https://www.eetimes.com/tsmc-will-struggle-to-meet-ai-demand-for-years-analysts-say/",
+          "label": "EE Times — Analystenkommentar zu anhaltenden TSMC‑Kapazitätsengpässen",
+          "kind": "secondary",
+          "supports": "Unterstützt die allgemeine These, dass TSMC‑Kapazitätsengpässe anhalten; jedoch analytisch und nicht als Nachweis für Kunden‑Transfers zu Samsung/Intel."
+        }
+      ],
+      "reason": "Der eingesandte Candidate ist eine journalistische Zusammenfassung/Analyse (DigitalToday vom 2026-10-15), die eine plausible Marktthese beschreibt (TSMC‑Engpass könnte Wettbewerbern Chancen eröffnen). Für TAIL‑Aufnahme ist jedoch ein atomarer, datierter Primärbeleg mit messbarer Einheit erforderlich (z. B. vertraglich bestätigte Tapeouts/Shipments, konkrete Lead‑Time‑Messungen, qualifizierte Supply‑Verschiebungen oder deklarierte, verifizierbare Umsatzanteilsänderungen). Solche direkten Belege fehlen in der vorgelegten Meldung. Außerdem ist die Aussage eher ein Interpretations‑/Prognose‑Narrativ statt ein beobachtetes, quantifizierbares Faktum. Es wurden Gegenbelege / Kontextfakten gefunden (TSMC‑Capex‑Erhöhungen, fortgesetzte Auslastung; Berichte über Samsung‑Preissteigerungen und selektive Kundenmigrationen), die die These weder klar verifizieren noch dauerhaft falsifizieren. Deshalb: watchlist — weitere Primärverifikation (z. B. vertraglich belegte Kundenverlagerungen, konkrete Lead‑Time‑Daten oder bestätigte Produktions‑Shipments) erforderlich, bevor eine Annahme möglich ist.",
+      "candidateId": "ec15bccd54f56992eabd",
+      "candidateKey": "73e70dbf717af0ef782c64e9",
+      "reviewedAt": "2026-10-16T01:27:32.159Z",
+      "priorityScore": 46,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a23f9b1182dc513006ad17d715f1087d0b00c95bed66cf5e2"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht über angebliche 10%-Chip‑Preis‑Erhöhung (AMD/TSMC) — unbestätigt",
+      "fact": "Medienberichte (u.a. Yahoo Finance / TradingView am 2026-09-18) zitieren ChannelGate/Wccftech‑Relay, das behauptet, TSMC habe Kunden über eine etwa 10%-ige Erhöhung der Foundry‑Sätze informiert und AMD habe daraufhin Teilepreise für Q4 angekündigt. Es liegt keine primäre Bestätigung durch TSMC oder AMD vor.",
+      "placement": "global / Halbleiter‑Foundry‑Pricing / Markt‑Headline (Kurzfristig, Q4 2026).",
+      "mechanism": "Vorgegebene Foundry‑Kostenerhöhung (wafer/Foundry‑quotations) würde Vorlieferanten‑Preise auf Kundenseite erhöhen; Hersteller (z. B. AMD) könnten die höheren Fertigungskosten an Abnehmer weiterreichen und damit Vertrags‑ und Channel‑Verkaufspreise für GPUs/AI‑Beschleuniger erhöhen.",
+      "predictionId": "tail-2026-07-14-dram-prices",
+      "predictionImpact": "Unterstützt baseline‑Signal 'price_up' für Halbleiter/Memory‑adjacent Produkte durch einen kostengesteuerten Preisdruck; falls bestätigt, würde dies kurzfristig Vertrags- und Spotpreise nach oben treiben.",
+      "falsifier": "Bis 2026-10-31: keine primäre Bestätigung (keine offizielle Mitteilung von TSMC, AMD oder belastbare Vertragsdokumente) und keine beobachtbaren, transaktionsbasierten Preissteigerungen in einem repräsentativen Vertragskorb (Kontraktpreise) für Q4‑Lieferungen (dann ist die Meldung als Falschmeldung oder Gerücht zu werten).",
+      "nextReview": "2026-10-23",
+      "eventDate": "2026-09-18",
+      "novelty": "low",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 5,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-rises-premarket-report-092213707.html",
+          "label": "Yahoo Finance — 'AMD Stock Rises Premarket: Report Flags Chip Price Hike Linked To TSMC Costs' (Aggregierter Bericht, 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Berichtet über einen Relay‑Artikel, zitiert ChannelGate/Wccftech als Ursprung der Behauptung, nennt eine angebliche ~10% Foundry‑Preissteigerung und dass AMD Aktienbewegungen vorbörslich zeigte."
+        },
+        {
+          "url": "https://in.tradingview.com/news/stocktwits%3Ada07b5b8d094b%3A0-amd-stock-rises-premarket-report-flags-chip-price-hike-linked-to-tsmc-costs/",
+          "label": "TradingView (Mirrored news item, 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Mirroring des Market‑Headline Textes, nennt dieselbe Behauptung/Relay; keine primäre Quelle oder Firmenbestätigung."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat ist thematisch relevant (Preissteigerungssignal für Halbleiterprodukte) und betrifft die baseline‑These 'price_up'. Allerdings fehlt die notwendige Primärverifikation (keine direkte Bestätigung durch TSMC oder AMD, keine transaktionsbasierten Kontraktdaten oder offizielle Kundenmitteilungen). Die Berichterstattung stützt sich auf Sekundär‑Relay (ChannelGate/Wccftech via News‑Aggregatoren). Ohne primäre, datierten Nachweis (z.B. offizielle Mitteilung von TSMC/AMD oder dokumentierte Vertrags‑/Kontraktpreise für Q4 2026) kann die Meldung nicht als VERIFIED DATA aufgenommen werden. Deshalb Watchlist — wir behalten die Beobachtung und verlangen explizite Primärbelege. Weitere Oppositions‑Evidenz: bisherige Unternehmens‑ und Foundry‑Kommunikationen (TSMC/AMD Earnings/IR) enthielten keine Q4‑Preisanpassungsmeldung zum 2026-09-18; Markt‑Reaktionen sind konsistent mit Gerüchten, nicht mit bestätigten Kontraktdaten. Empfehlung: erbitte Primärquelle(n) (TSMC/AMD Release oder offizielle Kunden‑Mitteilungen) bis zur nächsten Revision (2026-10-23).",
+      "candidateId": "2adc242307b1039bf3d1",
+      "candidateKey": "ddcd8b6925ffbfbfae76b18a",
+      "reviewedAt": "2026-10-16T01:27:50.126Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing novelty",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0dea79c7772a959b006ad17d844b8c87d0bd3c6b2b3fa7fa67"
     }
   ]
 }
