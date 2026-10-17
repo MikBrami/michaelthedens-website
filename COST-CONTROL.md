@@ -1,5 +1,29 @@
 # TAIL cost pause — 2026-09-16
 
+## 25 September 2026: bounded resumption proposal
+
+The active workflow now uses GPT-5 mini with four sequential candidate reviews per
+scheduled run, four scheduled runs daily. A workflow-local estimated cost guard
+stops new requests above $0.50/day or $15/month (UTC); it reserves $0.10 for an
+unknown or in-flight request and records token/search-call estimates afterward.
+This is **not** a hard API account spending cap: the provider's project spend
+limit and invoice remain authoritative, and other applications using the same
+key are outside this ledger. The prior two-item pilot measured about $0.047 for
+two reviews, making 16 reviews/day about $11.30/month if that sample holds.
+Actual usage must be checked after the first production runs.
+
+The ingestion cutoff is removed: previously skipped historical candidates can
+enter the same free triage and bounded review queue. Fresh and old candidates
+share the review slots. The public snapshot explicitly shows the index evidence
+date, pending count and any remaining cutoff exclusions.
+
+An offline sample of the existing free-triage decisions identified false
+negatives: CXMT G5 DRAM mass production (69 relevance), Micron 512GB DDR5
+modules (69), Samsung HBM4 output doubling (83) and the YMTC/Micron patent
+decision (83). The free triage now preserves such concrete headlines while
+stock opinion remains excluded. This sample does not establish a measured
+false-negative rate for all excluded items.
+
 Owner authorized pausing paid automatic reviews/translations, auditing costs and a bounded pilot.
 
 ## Production
