@@ -58218,6 +58218,136 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_09f3e9062a29f056006ad283b3b26c87d1b839098ed0db5a31"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: SK hynix braucht eine «Trump 2027»-Zusage, um Dalian-Mod‑B mit mehr US‑Tools auszustatten",
+      "fact": "Asia Times berichtet (17.10.2026), dass SK hynix laut Reuters-Verweisen versucht, US‑Genehmigungen für die Lieferung weiterer US‑Chipfertigungsgeräte an das Dalian‑NAND‑Werk (Mod B) für 2027 zu erhalten und diese Erlaubnis mit US‑Investitionen/Neufabrik‑Versprechen in den USA zu verknüpfen; die für 2026 erteilte Jahresgenehmigung läuft Ende 2026 aus und für 2027 war zum Zeitpunkt der Berichterstattung keine Genehmigung veröffentlicht. ([asiatimes.com](https://asiatimes.com/2026/10/sk-hynix-needs-a-trump-2027-deal-to-expand-its-dalian-nand-fab/))",
+      "placement": "Geographie: Dalian (VR China). Domäne/Layer: NAND/enterprise_ssd Produktionsausstattung (Export‑Kontrollen / Tool‑Lieferungen). Horizont: kurzfristig (Lizenzentscheidung für Kalenderjahr 2027; Beobachtungszeitraum bis Ende 2026).",
+      "mechanism": "Wenn das US‑Handelsministerium keine Lizenz für den Export hochentwickelter US‑Werkzeuge nach Dalian für 2027 erteilt, kann SK hynix die Inbetriebnahme des unbestückten Mod‑B‑Bereichs verzögern und den schnellen Zusatzoutput dort nicht erreichen; als Folge bleibt qualifizierte NAND‑Host‑Bit‑Verfügbarkeit knapper, was Verfügbarkeitspreise/Allokationen bei Enterprise‑SSD/NAND kurzfristig verschärft. (Mechanismus in Artikel als Interpretation dargelegt; keine offizielle Behörde bestätigt die Bedingung). ([asiatimes.com](https://asiatimes.com/2026/10/sk-hynix-needs-a-trump-2027-deal-to-expand-its-dalian-nand-fab/))",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Wenn die 2027‑Lizenz nicht gewährt oder stark eingeschränkt wird, erhöht sich kurzfristig das Risiko eines engeren qualifizierten NAND‑Outputs und beschleunigt das in OUTLOOK-enterprise_ssd beschriebene Knappheits‑/Preisszenario; umgekehrt würde eine 2027‑Genehmigung das Risiko einer Entspannung erhöhen.",
+      "falsifier": "Bis 2026-12-31 veröffentlicht das US‑Commerce Department eine formelle, konkrete Entscheidung (Genehmigung mit Umfang/Quantität oder Ablehnung) zur Ausgabe von US‑Werkzeugen/Equipment‑Mengen an SK hynix/Solidigm für Dalian für das Kalenderjahr 2027. Wenn eine solche amtliche Mitteilung bis zu diesem Datum vorliegt, überprüfe: (a) Genehmigungsumfang (erlaubte Tool‑Menge), (b) expliziter Vermerk, dass die Erlaubnis Erweiterungen/Mod‑B‑Ausstattung einschließt oder ausschließt. (Datum der nächsten Überprüfung: 2026-12-31).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-10-17",
+      "novelty": "Das Stück ist eine journalistische Interpretation/Analyse einer Reuters‑Exklusivmeldung; es liefert keine neue offizielle Lizenzentscheidung und stellt die politische Verknüpfung (US‑Investment vs. China‑Ausbau) als Dealmacher‑Narrativ dar.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 16,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 45,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://asiatimes.com/2026/10/sk-hynix-needs-a-trump-2027-deal-to-expand-its-dalian-nand-fab/",
+          "label": "Asia Times — Artikel von Jeff Pao, 17 October 2026",
+          "kind": "secondary",
+          "supports": "Berichtet, dass SK hynix laut Reuters versucht, 2027‑Genehmigung für mehr US‑Werkzeuge zu erhalten; interpretiert das Fehlen einer 2027‑Genehmigung als Verhandlungshebel."
+        }
+      ],
+      "reason": "Beurteilung: Watchlist. Die eingereichte Kandidatenmeldung ist eine mediale Interpretation (Asia Times) auf Basis einer Reuters‑Quelle, die berichtet, dass SK hynix eine Erlaubnis für 2027 noch nicht erhalten hat und offenbar versucht, Zusagen in den USA mit erweiterten Exportgenehmigungen nach China zu verknüpfen. Für eine Annahme (ACCEPTED / VERIFIED DATA) fehlt ein klar nachweisbares primäres Regierungs‑Dokument (z. B. ein BIS/Commerce‑Bescheid oder ein offizielles SK hynix/Commerce‑Statement mit quantifizierten Genehmigungsumfängen) sowie ein direkt beobachtbares, datiertes, meßbares Marktereignis (z. B. *tatsächliche* zusätzliche qualifizierte Tool‑Lieferungen und Inbetriebnahme von Mod‑B mit Stückzahlen/Datum). Gegen‑/Evidenz: Reuters‑Bericht stützt die Kernbeobachtung (kein 2027‑Lizenz‑Eintrag zum Zeitpunkt der Recherche), doch es gibt kein offizielles BIS/Commerce‑Dokument oder eine formelle Firmenmitteilung, die die behauptete Bedingung (nur bei US‑Fabrikversprechen genehmigt) eindeutig belegt. Deshalb ist die Meldung wertvoll als Frühsignal (geopolitische Hebelwirkung auf Tool‑Exports und potenzielle kurzfristige NAND‑Verfügbarkeit), aber noch nicht verifizierbar genug für vollständige Aufnahme. Weitere primäre Bestätigung (Commerce‑Entscheidung oder klar quantifizierte Firmenzusage) wird innerhalb des Falsifier‑Fristdatums benötigt.",
+      "candidateId": "714b1c7dbf2baeb864fd",
+      "candidateKey": "38ee50cc6381fcb88cd1c0a1",
+      "reviewedAt": "2026-10-17T01:28:06.389Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ade6ee2bed6a8bd006ad2cf06f2ac87d097f55ad3801cbb36"
+    },
+    {
+      "decision": "watchlist",
+      "title": "King Charles mahnt AI-Führungskräfte zu Kontrolle; keine belastbare Markt‑/index‑Messung",
+      "fact": "Am 2026-09-17 sprach König Charles III. bei einem Treffen in Dumfries House mit Führungskräften von Nvidia, Google DeepMind, OpenAI und Anthropic und forderte sie auf, KI \"unter menschlicher Kontrolle\" zu halten und vor den 'existentiellen Gefahren' zu warnen, falls die Technologie in die falschen Hände gerät.",
+      "placement": "Geographie: Dumfries House, Schottland; Domain/Layer: politische / öffentliche Einflussnahme auf AI‑Governance; Horizon: unmittelbar/kurzfristig (Ereignisdatum 2026-09-17).",
+      "mechanism": "Verbaler Appell des Staatsoberhaupts (Moral‑/Reputationsdruck) an Führungsfiguren großer KI‑Firmen; erwartet wird ein koordinierter öffentlicher Diskurs und mögliche PR‑, Governance‑ oder Selbstregulierungsmaßnahmen seitens der Unternehmen, die mittelbar politische Debatten und Regulierungsentscheidungen beeinflussen könnten.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Kein direkter, quantifizierbarer Markt‑ oder Lieferketteneffekt ist im Primärbericht dokumentiert. Für spätere Bewertung: Falls bis 2026-12-17 (90 Tage nach dem Treffen) keine öffentlich dokumentierte, konkrete Branchen‑Selbstverpflichtung, regulatorische Initiative oder nachweisbare Veränderung in relevanten Marktmessgrößen (z. B. Ankündigung verbindlicher technischer Governance‑Standards durch beteiligte Firmen oder eine messbare Veränderung in AI‑Infrastruktur‑Beschaffungsaktivität) veröffentlicht wird, bleibt die Aussage rein politisch‑rhetorisch und verändert keine unserer Vorhersagen.",
+      "nextReview": "2026-12-17",
+      "eventDate": "2026-09-17",
+      "novelty": "Niedrig — mehrere etablierte Medien berichteten über dieselbe Rede/Veranstaltung.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 8,
+        "forecastImpact": 6,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 20,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://apnews.com/article/0765bee1e338cf65846a046fb5825a4a",
+          "label": "AP News - The king and AI: King Charles meets AI leaders (2026-09-17)",
+          "kind": "secondary",
+          "supports": "Bestätigung des Treffens am 17.09.2026 und der Aufforderung, KI unter Kontrolle und zum Dienst der Menschen zu halten."
+        }
+      ],
+      "reason": "Der Kandidat beschreibt korrekt ein politisches Ereignis (König Charles’ Mahnung an KI‑Führungskräfte) und ist medial gut belegt. Er erfüllt jedoch nicht die TAIL‑Aufnahmekriterien für eine Annahme: es fehlt eine atomare, datierte, messbare Markt‑ oder Lieferkettenwahrnehmung (z. B. Vertrags‑Shipments, Preis‑ oder Lead‑Time‑Beobachtung) mit klarer räumlicher/produktbezogener Platzierung und einem verbundenen, testbaren Einfluss auf eine vorhandene Vorhersage in der Baseline. Deshalb wird die Meldung als geopolitisch‑politisches Signal in die Watchlist aufgenommen, mit einem definierten Falsifier und nächster Überprüfung am 2026-12-17. Opposing‑Evidence‑Check: es gibt keine Berichte, die das Ereignis selbst bestreiten; jedoch fehlt Beleg dafür, dass die Ansprache unmittelbare wirtschaftliche Auswirkungen hatte — das ist der Grund für das Watchlist‑Urteil.",
+      "candidateId": "5bfd593b2e795d00dafa",
+      "candidateKey": "3b0cb779da9ee2f87504d94b",
+      "reviewedAt": "2026-10-17T01:28:20.113Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bdc9011b68abdc2006ad2cf26958c87d08e15bbf763f53d75"
     }
   ]
 }
