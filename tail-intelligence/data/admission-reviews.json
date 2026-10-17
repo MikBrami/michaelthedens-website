@@ -58480,6 +58480,141 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0b7ae36bc5227ff6006ad340053c5487d0909502ee7936a354"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK Hynix Faces HBM4 Order Timing Questions as Analysts Dismiss CXMT Threat Ahead of Quarterly Result",
+      "fact": "Bericht (ad-hoc-news) meldet Unsicherheit im Timing von HBM4‑Bestellungen bei SK hynix und gleichzeitig Analystenkommentare, die CXMT‑Wettbewerbsrisiken für HBM/High‑End‑DRAM als übertrieben zurückweisen.",
+      "placement": "Global / HBM & Server‑DRAM / Technologielayer / kurzfristig (vor Quartalsbericht).",
+      "mechanism": "Bericht kombiniert zwei Beobachtungen: (1) operative Unsicherheit (Liefer-/Order‑Timing) bei SK hynixs HBM4‑Ramp, die kurzfristig die verfügbare HBM‑Bit‑Auslieferung verschieben könnte (Availability‑Impact); (2) Analystenkommentare, die CXMT als nicht unmittelbar wettbewerbsbedrohlich einstufen, was die Marktnachfrage‑/Preiswahrnehmung stützen kann (Demand/Perception‑Impact).",
+      "predictionId": "P-2026-07-14-01",
+      "predictionImpact": "Informiert die Aufnahmewahrscheinlichkeit eines kurzfristen HBM‑Supply‑Shock (P-2026-07-14-01: HBM/Server‑DRAM bleiben strukturell knapp bis Ende 2028). Die Meldung liefert schwaches Evidenzgewicht für kurzfristige Verzögerungen (verstärkt negative_supply‑Risiko), während Analystenkommentare das Gegenargument (begrenzter CXMT‑Supply‑Impact) stützen.",
+      "falsifier": "SK hynix Q3/2026 (Quartalsbericht und Earnings Call, voraussichtliches Datum um 2026-10-28) liefert konkrete, quantifizierbare Angaben: falls das Unternehmen HBM4‑Shipments oder qualifizierte Kundenauslieferungen in Q3 2026 mit einem gewichteten Volumen ≥ 50k HBM‑Wafern/Monat (oder expliziten Kunden‑LTA‑Liefermengen mit Datumsangaben) bestätigt, würde die Relevanz der berichteten Order‑Timing‑Unsicherheit stark abnehmen und die Meldung als Marktrauschen klassifiziert werden. Umgekehrt: Bestätigte Verschiebungen der HBM4‑Orders in 2027 mit konkreten Mengen/Terminen stützen die Meldung.",
+      "nextReview": "2026-10-28",
+      "eventDate": "2026-10-17",
+      "novelty": "Gering bis mäßig — kombiniert neue Marktmeldungen (Timing‑Gerüchte) mit bereits kursierenden Analystenreaktionen; kein nachweislich neues, atomares Messereignis (keine firmenseitigen bestätigten Versandmengen).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 7,
+        "thesisRelevance": 15,
+        "forecastImpact": 18,
+        "falsifiability": 10,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/sk-hynix-faces-reported-hbm4-order-delays-october-27-results-will-test-sk-hynix-stock/70328186",
+          "label": "ad-hoc-news.de (Artikel mit Headline/Kommentar zu SK hynix HBM4‑Timing und Analystenreaktionen)",
+          "kind": "secondary",
+          "supports": "Berichtet über Zweifel am Timing von HBM4‑Bestellungen bei SK hynix und zitiert Analystenreaktionen, die CXMT‑Risiken als überzeichnet bewerten. Veröffentlichungstag in der Suche: 2026-10-15 / 2026-10-17 (multiple ad-hoc-pages)."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/07/29/sk-hynix-sees-accelerating-earnings-on-hbm4-ramp-up-in",
+          "label": "Seoul Economic Daily (SK hynix Aussagen zur HBM4‑Lieferung und Samples)",
+          "kind": "secondary",
+          "supports": "Unternehmenszitate in Q2‑Call/Reporting Kontext: SK hynix erwähnt HBM4‑Sampling und Ziel für Mass Production 2027; widerspricht direkt einer klaren, unmittelbar massiven HBM4‑Lieferung in Q3 2026."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist ein zusammengesetzter Marktkommentar (Timing‑Gerücht + Analystenreaktion). Ich habe die bereitgestellte Originalquelle (Google News RSS → ad-hoc‑news) geprüft und sekundäre Querverweise zu SK hynix‑Kommunikationen gefunden. Die Aufnahme als VERIFIED DATA erfordert ein atomares, datiertes Primärbeleg (z. B. von SK hynix oder einem HBM‑Kunden bestätigte, quantifizierbare Shipments/Orders mit Einheiten/Zeitfenster). Solche primären, mengen‑ und datumsgebundenen Aussagen fehlen in der vorgelegten Quelle. Es existiert zugleich widersprechende/kontextualisierende Evidenz: öffentliche SK hynix‑Aussagen (Q2/2026) und Analystenberichte, die die HBM4‑Ramp als kontrolliert oder in H2/2026–2027 geplant darstellen. Deshalb wird die Meldung in den Watchlist‑Status gesetzt — relevant für P-2026-07-14-01, aber nicht ausreichend verifiziert, um eine Annahme zu rechtfertigen.\n\nFehlende Primärnachweise (notwendig für Upgrade auf ACCEPTED / VERIFIED DATA):\n- Direkte SK hynix‑Feststellung mit konkreten HBM4‑Order‑/Shipment‑Mengen und Datumsangaben, oder\n- Offizielle Kundenauskunft (z. B. Nvidia oder anderer LTA‑Kunde) über verschobene HBM4‑Liefertermine mit Mengen, oder\n- Beobachtete und verifizierbare qualifizierte HBM4‑Shipments (Wafer‑/Package‑Counts) in einem benannten Monat/Quartal.\n\nOpposing evidence gefunden: SK hynix selbst und mehrere Analysten/Research‑Berichte signalisieren, dass HBM4‑Ramp/Shipments entweder in H2/2026–2027 erwartet oder durch LTAs abgesichert sind; diese Quellen reduzieren die Aussagekraft des Gerüchts, dass CXMT aktuell HBM‑Marktanteile oder HBM4‑Orders unmittelbar bedroht. Beispiele: Seoul Economic Daily (SK hynix statements) und mehrere ad-hoc/analysten‑Summaries. (Quellen oben.)\n\nEmpfohlene nächste Schritte / Prüfungsplan:\n1) Nächster Review nach SK hynix Q3/2026 Earnings (geplant/erwartet um 2026-10-28) — prüfen, ob Management konkrete HBM4‑Shipment‑/Order‑Zahlen nennt. (Wenn ja: mögliches Upgrade oder Rejection je nach Richtung und Granularität.)\n2) Suche nach primären Kunden‑Kommuniqués (NVIDIA, große Hyperscaler) zu HBM4‑Lieferplänen; falls gefunden, nochmals bewerten.\n3) Falls innerhalb 14 Tagen keine Primärdaten erscheinen, Kandidat verwerfen (recycled market rumor) oder als dauerhaft schwach (low‑impact signal) einstufen.\n\nZusammenfassung der Entscheidung: Watchlist (NOT_PROVEN). Die Meldung ist relevant für die HBM/Server‑DRAM Versorgungsthese, aber es fehlen primäre, atomare Messdaten (Mengennachweis, Kundenauslieferungstermine). Die vorhandenen Sekundärquellen unterstützen eher ein uneinheitliches Bild; daher keine Annahme heute.\n",
+      "candidateId": "978dfd7685bcf95d9c4c",
+      "candidateKey": "8b94e43a26616bc06953564b",
+      "reviewedAt": "2026-10-17T14:21:33.873Z",
+      "priorityScore": 70,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ad2e4467350d2a3006ad38450489487d0a5b0b86c1c5c3862"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kioxia Advances NAND-Based CXL Memory to Supplement DRAM in AI Systems",
+      "fact": "EE Times Asia-Bericht (2026-09-22) dokumentiert Kioxias Ankündigung einer CXL‑angeschlossenen, NAND‑basierten Memory‑Erweiterung (XL/XL‑Flash / 'XL1'), die nach Unternehmensangaben Teile des DRAM‑Bedarfs in AI‑Servern ergänzen bzw. substituieren soll.",
+      "placement": "Global — AI-Server / Memory‑Stack (Host‑Memory-Schicht, kurz- bis mittelfristig 2026–2027).",
+      "mechanism": "Kioxia beschreibt CXL‑Module mit optimiertem NAND (XL‑Flash) und On‑module‑Processing (nahe am Compute), die bei bestimmten AI‑Workloads hostseitige DRAM‑Kapazität durch kostengünstigere, größere NAND‑Pools ersetzen können; behauptete Effekte: bis zu 2× nutzbare Kapazität bei ähnlichen Kosten und ~30% Performance‑Verbesserung in firmennahen Simulationen.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Dieses Signal würde, falls es zu validierten, qualifizierten Shipments und breiter Systemvalidierung führt, das Basisszenario für strukturelle Server‑DRAM‑Knappheit (P-2026-07-11-01) abschwächen oder verzögern; momentan ist die Auswirkung hypothetisch und nicht beweisbar.",
+      "falsifier": "Bis 2027-03-31 müssen verifizierbare, qualifizierte Kundenshipments oder OEM‑Validierungen vorliegen, die (a) dokumentierte Latenz-/TTFT‑Benchmarks zeigen (byte‑adressierbarer Zugriff oder latenznaher CXL‑Pfade) und (b) mindestens eine große Hyperscaler/OEM‑Referenz nennen, die ≥25% der üblichen Host‑DRAM‑Bits für einen validierten Server‑SKU durch Kioxia‑CXL‑Module ersetzt. Fehlen diese Belege bis 2027-03-31, gilt die Kioxia‑Ankündigung als nicht‑qualifizierte Produktankündigung und schwächt die behauptete marktbewegende Relevanz ab.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-22",
+      "novelty": "Neue Produktankündigung / Technologiebehauptung von Kioxia, aber ohne öffentlich verifizierte qualifizierte Shipments.",
+      "duplicateOf": "",
+      "evidenceStatus": "HEURISTIC",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "pricing"
+      ],
+      "signal": "demand_down",
+      "severity": 40,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.eetimes.com/kioxias-flash-for-dram-initiative-eyes-ai-workloads/",
+          "label": "EE Times (Asia) — Kioxia's Flash-for-DRAM Initiative Eyes AI Workloads",
+          "kind": "primary",
+          "supports": "Bericht über Kioxias Ankündigung einer CXL‑angeschlossenen NAND‑Memory‑Erweiterung (XL/XL‑Flash / XL1) mit Firmenangaben zu Kapazitäts- und Performance‑Simulationen. ([eetimes.com](https://www.eetimes.com/kioxias-flash-for-dram-initiative-eyes-ai-workloads/?utm_source=openai))"
+        }
+      ],
+      "reason": "Die Eingangskandidatur fasst eine EE Times Asia‑Berichterstattung über Kioxias technische Ankündigung zusammen. Das Dokument ist relevant für die TAIL‑These (mögliche Substitution bzw. Ergänzung von Host‑DRAM durch CXL‑NAND) und deshalb aufzunehmen — aber es fehlt aktuell die von den Aufnahmeanforderungen geforderte primäre, datierten, quantifizierbare Evidenz (qualifizierte Shipments, gemessene Lead‑Times, dokumentierte Latenzbenchmarks oder OEM‑Validierungen). Ohne diese nachweisbaren Messwerte bleibt die Behauptung ein unternehmensgesteuertes Produktversprechen/Simulationsergebnis. Deshalb Watchlist statt Akzeptanz: es ist zeitkritisch und prüfenswert (nächste Review‑Deadline 2027-03-31).",
+      "candidateId": "4419551d15f937b10661",
+      "candidateKey": "d45bc20c6efd0613c48c8e07",
+      "reviewedAt": "2026-10-17T14:22:26.264Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0cc4dfb3a6c325f4006ad3846e0b3c87d08a1b9b8d9f38d481"
     }
   ]
 }
