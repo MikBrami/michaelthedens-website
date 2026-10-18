@@ -58753,6 +58753,214 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_01fb3ea629660e71006ad3ccb496f887d1b9b59ac36b997b12"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Micron’s Edge Inference Memory (EIM) — Produktanspruch mit unbestätigter Massenproduktions‑Zeitleiste (2028)",
+      "fact": "Wccftech berichtet am 2026-10-17 über einen Micron‑Bericht, wonach Micron an einer «Edge Inference Memory (EIM)»‑Lösung arbeitet, die die Energieeffizienz‑Schwäche von HBM für Edge/Robotics‑Inference adressieren soll; ein konkretes, primäres Micron‑Commit zur Massenproduktion mit Zieljahr 2028 wurde in der Primärquelle nicht nachgewiesen.",
+      "placement": "Global / Memory‑Layer (Edge‑Inference HBM/LPDDR‑Hybrid) / Produkt‑Layer / kurzfristiger Horizont: 2026–2028",
+      "mechanism": "Technologie‑These: Ein speziell auf Edge‑Inference optimiertes Memory‑Package (EIM) kombiniert HBM‑ähnliche Bandbreite mit erheblich niedrigerer Energie/Token (Vergleichsgröße: Energieeffizienz pro Token bzw. W/Gb/s) und würde so den Energie- und Thermik‑Limitationspfad auf robotischen Edge‑Plattformen verringern; aktuell ist diese Mechanismusbeschreibung jedoch aus den berichtenden Sekundärquellen abgeleitet, nicht durch einen Micron‑Produkt-Qualifikations‑ oder Liefernachweis belegt.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Wenn EIM tatsächlich 2028 in Massenproduktion und in relevanter Menge verfügbar würde, könnte dies das Risiko einer strukturellen HBM/Server‑DRAM‑Knappheit (negative_supply) auf bestimmten Inference‑Use‑Cases abmildern; der aktuelle Bericht liefert dafür jedoch keine quantifizierten Mengen, Qualifikationsdaten oder Liefertermine.",
+      "falsifier": "Bis zum 2028-12-31 keine von Micron selbst stammende, primäre Ankündigung mit verbindlicher Massenproduktions‑Zeitleiste oder keine nachprüfbaren qualifizierten Shipments/Serienlieferungen (>100k EIM‑Units oder >X GB qualifiziert) an einen Design‑Win‑Partner wird festgestellt; das Vorliegen solcher primären Belege (Datum, Volumen, Partner) würde die These bestätigen.",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-10-17",
+      "novelty": "Die Kombination HBM‑Leistung mit edge‑gerechter Energieeffizienz ist thematisch neuartig in der öffentlichen Berichterstattung, aber mehrere Branchenakteure und Whitepapers hatten bereits 2026 ähnliche Edge‑Memory‑Pfadideen gezeichnet; die konkrete 2028‑Massenproduktions‑Zeithypothese ist neu und unbestätigt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 10,
+        "falsifiability": 9,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://wccftech.com/micron-edge-inference-memory-hbm-power-efficiency-ai-robots/amp/",
+          "label": "Wccftech (Sekundärbericht über Micron EIM; nennt 2028 Massenproduktion als Ziel)",
+          "kind": "secondary",
+          "supports": "Berichtet am 2026-10-17 über Microns angebliche EIM‑Initiative und erwähnt eine 2028‑Massenproduktions‑Zielsetzung; Artikel ist sekundär und zitiert keine bindende Micron‑Primärankündigung."
+        },
+        {
+          "url": "https://www.itechguides.com/microns-edge-inference-memory-strategy-targets-power-efficient-ai-robots-but-2028-mass-production-is-unverified/",
+          "label": "iTechGuides (Gegencheck / Sekundäranalyse)",
+          "kind": "secondary",
+          "supports": "Unabhängige Zusammenfassung/Adversarial‑Check vom 2026-10-17, die festhält, dass die gesammelten Micron‑Materialien Edge‑AI‑Use‑Cases unterstützen, aber keine verifizierbare, datierte Roadmap mit verbindlicher 2028‑Massenproduktion liefern."
+        }
+      ],
+      "reason": "Der Kandidat ist relevant für die TAIL‑Baseline (Memory‑Availability / HBM‑Path) und könnte—falls verifiziert—Materialauswirkung auf die Verfügbarkeit und Nachfrage von HBM/Edge‑Memory haben. Die eingereichte Meldung stammt aus einem Sekundärmedium (Wccftech) vom 2026-10-17, das eine 2028‑Massenproduktions‑Zielangabe berichtet. Wir konnten jedoch kein primäres Micron‑Statement, Produkt‑Qualifikationsdokument, SEC‑Filing oder belegte Partner‑Shipment‑Ankündigung finden, die die 2028‑Mass‑Production‑Behauptung eindeutig belegt. Ohne einen Primärbeleg (Micron‑Pressemitteilung, Unternehmens‑Investor‑Dokument mit expliziter Datums‑ und Volumenangabe oder verifizierbare qualifizierte Shipments) bleibt die Behauptung unbestätigt. Deshalb wird der Kandidat auf Watchlist gesetzt; benötigte zusätzliche Evidenz sind: (1) Micron‑Primärankündigung mit genauem Produktionszeitplan und Volumen, oder (2) Nachweis qualifizierter Serien‑Shipments / Design‑Wins mit Datumsstempel. Opposing Evidence: sekundäre Prüfungen (z. B. iTechGuides) heben das Fehlen solcher Primärbelege hervor. Empfehlung: Nach weiteren Primärbelegen erneut prüfen (nächster Review 2028-12-31).",
+      "candidateId": "ee709079b17ddd7abd52",
+      "candidateKey": "3a1813ebdf43f883a5b23058",
+      "reviewedAt": "2026-10-18T01:08:16.287Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_00c46933370ecf1a006ad41bd0378887d193a1068821c6d6ef"
+    },
+    {
+      "decision": "accepted",
+      "title": "Microsoft- und OpenAI‑Interne Dokumente bezeichnen Web‑Scraping/Training als \"largest theft of labor\" (NYT / unredacted court filing)",
+      "fact": "Am 2026-09-17 wurde in einer unredacted Summary‑Judgment‑Einreichung im Verfahren The New York Times v. OpenAI & Microsoft ein internes Microsoft‑Memo (Brent Hecht, Director of Applied Science) aus Januar 2023 zitiert, in dem die großflächige Kopie von Online‑Inhalten für Modelltraining als \"an astonishing theft of unprecedented proportions\" bzw. als \"the largest theft of labor in human history\" bezeichnet wird; die Einreichung wurde am 2026-09-17/2026-09-18 öffentlich und in der New York Times berichtet. ([monorepo-sample1.nyt.net](https://monorepo-sample1.nyt.net/2026/09/17/technology/microsoft-openai-publishing-industry.html?utm_source=openai))",
+      "placement": "United States; District Court for the Southern District of New York; unredacted Summary‑Judgment motion (Plaintiffs' filing) vom 2026-09-17/2026-09-18",
+      "mechanism": "Die Einreichung dokumentiert interne Anerkennung, dass das großflächige Erfassen, Kopieren und Verwenden professioneller Nachrichteninhalte zur Erstellung und Feinabstimmung großer Sprachmodelle (acquire → train → ground → output) die ökonomische Grundlage der Content‑Lieferanten untergräbt (Versorgungs‑/Einnahmenkanal), erhöht regulatorisches und zivilrechtliches Risiko für AI‑Anbieter und kann Finanzierungskosten, Vertragsrisiken und Marktsentiment gegen AI‑Infrastrukturunternehmen verschlechtern.",
+      "predictionId": "P-2026-07-24-04",
+      "predictionImpact": "Erhöhtes juristisches und regulatorisches Risiko für große AI‑Anbieter erhöht die Wahrscheinlichkeit, dass AI‑ und Halbleiteraktien (insbesondere Akteure mit hoher AI‑Exposure) kurzfristig unter Druck geraten und dass diese höheren rechtlichen Kosten und Unsicherheiten Capex‑Finanzierungen und Anleihe‑/Kreditbedingungen belasten.",
+      "falsifier": "Bis zum 2027-03-31: (A) Ein gerichtliches Summary‑Judgment oder verbindliche Berufungsentscheidung, die substantiiert zugunsten der Beklagten (OpenAI/Microsoft) entscheidet und die im unredacted Filing zitierten internen Aussagen entweder als nicht beweisrelevant einstuft oder angreift; ODER (B) ein belastbarer, öffentliche Dokumentation zeigender Sachbeleg, dass die Kläger keine materiellen finanziellen Forderungen/Schäden aus diesem Fall durchsetzen konnten (z. B. Abweisung der Anspruchsgrundlagen mit Präzedenzwirkung).",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-09-17",
+      "novelty": "Neu: erstmals unredacted Zitate interner Microsoft/AI‑Kommunikation öffentlich gemacht und gerichtlich eingebracht.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 13,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing",
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "geopolitical_split",
+      "severity": 40,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://monorepo-sample1.nyt.net/2026/09/17/technology/microsoft-openai-publishing-industry.html",
+          "label": "New York Times — unredacted summary‑judgment reporting (NYT article summarizing unredacted filing)",
+          "kind": "primary",
+          "supports": "Berichtet, dass die unredacted Summary‑Judgment‑Einreichung am 17.–18. Sep 2026 Microsoft‑Interne Memos zitiert, darunter Brent Hechts Formulierung 'largest theft of labor in human history'."
+        },
+        {
+          "url": "https://www.the-ledger.net/events/news-plaintiffs-unredacted-summary-judgment-brief-openai-microsoft",
+          "label": "The Ledger / CourtListener pointer to unredacted plaintiffs' brief (Court dkt ID referenced)",
+          "kind": "primary",
+          "supports": "Dokumentiert die Freigabe der unredacted Summary‑Judgment‑Motion (Plaintiffs) am 2026-09-17 und verweist auf das gerichtsbezogene Archiv (CourtListener) mit dem Primärdokument."
+        }
+      ],
+      "reason": "Primärquelle (unredacted plaintiffs' summary‑judgment filing, 2026-09-17) wurde verifiziert; die New York Times veröffentlichte am 2026-09-17/18 einen Bericht mit direkten Zitaten aus den intern zitierten Microsoft‑Memos (Brent Hecht). Gegenbelege (Microsoft‑Stellungnahme, die die zitierten internen Memos als persönliche/umstrittene Perspektiven darstellt) sind vorhanden und wurden in der Einreichung bzw. Presseberichten dokumentiert; diese laufende Rechtslage schafft kurzfristig ein erhöhtes Regulierungs‑/Reputations‑ und Finanzierungsrisiko für AI‑Infrastrukturanbieter, welches das verlinkte Vorhersageziel P-2026-07-24-04 (Marktdruck auf AI/ Halbleiteraktien) beeinflussen kann. Die Einreichung ist ein atomarer, datierter, gerichtsbezogener Befund; Index‑Belege (konkrete Preis‑/Lieferzeit‑Messungen) fehlen, daher indexImpact=false.",
+      "candidateId": "39dba28f647a04fa0b98",
+      "candidateKey": "4f560570cc5d125482ed7516",
+      "reviewedAt": "2026-10-18T01:08:49.824Z",
+      "priorityScore": 89,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-4f560570cc5d125482ed7516",
+        "title": "Microsoft- und OpenAI‑Interne Dokumente bezeichnen Web‑Scraping/Training als \"largest theft of labor\" (NYT / unredacted court filing)",
+        "date": "2026-09-17",
+        "admittedAt": "2026-10-18T01:08:49.824Z",
+        "fact": "Am 2026-09-17 wurde in einer unredacted Summary‑Judgment‑Einreichung im Verfahren The New York Times v. OpenAI & Microsoft ein internes Microsoft‑Memo (Brent Hecht, Director of Applied Science) aus Januar 2023 zitiert, in dem die großflächige Kopie von Online‑Inhalten für Modelltraining als \"an astonishing theft of unprecedented proportions\" bzw. als \"the largest theft of labor in human history\" bezeichnet wird; die Einreichung wurde am 2026-09-17/2026-09-18 öffentlich und in der New York Times berichtet. ([monorepo-sample1.nyt.net](https://monorepo-sample1.nyt.net/2026/09/17/technology/microsoft-openai-publishing-industry.html?utm_source=openai))",
+        "placement": "United States; District Court for the Southern District of New York; unredacted Summary‑Judgment motion (Plaintiffs' filing) vom 2026-09-17/2026-09-18",
+        "tailInference": "Die Einreichung dokumentiert interne Anerkennung, dass das großflächige Erfassen, Kopieren und Verwenden professioneller Nachrichteninhalte zur Erstellung und Feinabstimmung großer Sprachmodelle (acquire → train → ground → output) die ökonomische Grundlage der Content‑Lieferanten untergräbt (Versorgungs‑/Einnahmenkanal), erhöht regulatorisches und zivilrechtliches Risiko für AI‑Anbieter und kann Finanzierungskosten, Vertragsrisiken und Marktsentiment gegen AI‑Infrastrukturunternehmen verschlechtern.",
+        "predictionId": "P-2026-07-24-04",
+        "predictionImpact": "Erhöhtes juristisches und regulatorisches Risiko für große AI‑Anbieter erhöht die Wahrscheinlichkeit, dass AI‑ und Halbleiteraktien (insbesondere Akteure mit hoher AI‑Exposure) kurzfristig unter Druck geraten und dass diese höheren rechtlichen Kosten und Unsicherheiten Capex‑Finanzierungen und Anleihe‑/Kreditbedingungen belasten.",
+        "falsifier": "Bis zum 2027-03-31: (A) Ein gerichtliches Summary‑Judgment oder verbindliche Berufungsentscheidung, die substantiiert zugunsten der Beklagten (OpenAI/Microsoft) entscheidet und die im unredacted Filing zitierten internen Aussagen entweder als nicht beweisrelevant einstuft oder angreift; ODER (B) ein belastbarer, öffentliche Dokumentation zeigender Sachbeleg, dass die Kläger keine materiellen finanziellen Forderungen/Schäden aus diesem Fall durchsetzen konnten (z. B. Abweisung der Anspruchsgrundlagen mit Präzedenzwirkung).",
+        "nextReview": "2027-03-31",
+        "priorityScore": 89,
+        "scoreBreakdown": {
+          "sourceQuality": 20,
+          "novelty": 13,
+          "thesisRelevance": 18,
+          "forecastImpact": 16,
+          "falsifiability": 12,
+          "timeSensitivity": 10
+        },
+        "severity": 40,
+        "confidence": 70,
+        "markets": [
+          "ai_infrastructure",
+          "semiconductors",
+          "supply_chain"
+        ],
+        "signal": "geopolitical_split",
+        "driverScope": [
+          "demand",
+          "pricing",
+          "availability",
+          "aiDemand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "New York Times — unredacted summary‑judgment reporting (NYT article summarizing unredacted filing)",
+            "url": "https://monorepo-sample1.nyt.net/2026/09/17/technology/microsoft-openai-publishing-industry.html"
+          },
+          {
+            "label": "The Ledger / CourtListener pointer to unredacted plaintiffs' brief (Court dkt ID referenced)",
+            "url": "https://www.the-ledger.net/events/news-plaintiffs-unredacted-summary-judgment-brief-openai-microsoft"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Erhöhtes juristisches und regulatorisches Risiko für große AI‑Anbieter erhöht die Wahrscheinlichkeit, dass AI‑ und Halbleiteraktien (insbesondere Akteure mit hoher AI‑Exposure) kurzfristig unter Druck geraten und dass diese höheren rechtlichen Kosten und Unsicherheiten Capex‑Finanzierungen und Anleihe‑/Kreditbedingungen belasten."
+        },
+        "admissionReviewKey": "4f560570cc5d125482ed7516"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07e8ab5769c8092b006ad41c00856c87d1867dc180c362e6ef"
     }
   ]
 }

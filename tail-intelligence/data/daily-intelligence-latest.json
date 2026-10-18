@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T19:30:16.366Z",
-  "previousRun": "2026-10-16",
+  "updatedAt": "2026-10-18T01:08:50.047Z",
+  "previousRun": "2026-10-17",
   "executivePulse": {
     "current": 72,
-    "previous": 73,
+    "previous": 72,
     "status": "orange",
-    "confidence": 74,
+    "confidence": 73,
     "riskPressure": 82,
     "riskFormula": "60% critical segment peak + 40% critical availability peak",
     "coverage": 100,
@@ -15,8 +15,8 @@
       {
         "id": "demand",
         "name": "Nachfrage",
-        "score": 70,
-        "absoluteSeverity": 70,
+        "score": 69,
+        "absoluteSeverity": 69,
         "delta": 0,
         "weight": 0.25,
         "coverage": 100,
@@ -53,18 +53,18 @@
         "rawMetric": "Gewicht im Segmentindex: 15%"
       }
     ],
-    "interpretation": "Der MT·AI Executive Pulse liegt bei 72/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (74/100) und Risikodruck (82/100) werden separat ausgewiesen."
+    "interpretation": "Der MT·AI Executive Pulse liegt bei 72/100. Er ist die feste gewichtete Summe aus 3 Segmentindizes; Datenvertrauen (73/100) und Risikodruck (82/100) werden separat ausgewiesen."
   },
   "confidence": {
-    "current": 74,
+    "current": 73,
     "previous": 74,
-    "interpretation": "Datenvertrauen 74/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 273 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 74/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 280 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 82,
     "previous": 82
   },
-  "momentum": "Evidenzprüfung offen: 273 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 280 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,6 +527,74 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-4f560570cc5d125482ed7516",
+      "title": "Microsoft- und OpenAI‑Interne Dokumente bezeichnen Web‑Scraping/Training als \"largest theft of labor\" (NYT / unredacted court filing)",
+      "date": "2026-09-17",
+      "admittedAt": "2026-10-18T01:08:49.824Z",
+      "fact": "Am 2026-09-17 wurde in einer unredacted Summary‑Judgment‑Einreichung im Verfahren The New York Times v. OpenAI & Microsoft ein internes Microsoft‑Memo (Brent Hecht, Director of Applied Science) aus Januar 2023 zitiert, in dem die großflächige Kopie von Online‑Inhalten für Modelltraining als \"an astonishing theft of unprecedented proportions\" bzw. als \"the largest theft of labor in human history\" bezeichnet wird; die Einreichung wurde am 2026-09-17/2026-09-18 öffentlich und in der New York Times berichtet. ([monorepo-sample1.nyt.net](https://monorepo-sample1.nyt.net/2026/09/17/technology/microsoft-openai-publishing-industry.html?utm_source=openai))",
+      "placement": "United States; District Court for the Southern District of New York; unredacted Summary‑Judgment motion (Plaintiffs' filing) vom 2026-09-17/2026-09-18",
+      "tailInference": "Die Einreichung dokumentiert interne Anerkennung, dass das großflächige Erfassen, Kopieren und Verwenden professioneller Nachrichteninhalte zur Erstellung und Feinabstimmung großer Sprachmodelle (acquire → train → ground → output) die ökonomische Grundlage der Content‑Lieferanten untergräbt (Versorgungs‑/Einnahmenkanal), erhöht regulatorisches und zivilrechtliches Risiko für AI‑Anbieter und kann Finanzierungskosten, Vertragsrisiken und Marktsentiment gegen AI‑Infrastrukturunternehmen verschlechtern.",
+      "predictionId": "P-2026-07-24-04",
+      "predictionImpact": "Erhöhtes juristisches und regulatorisches Risiko für große AI‑Anbieter erhöht die Wahrscheinlichkeit, dass AI‑ und Halbleiteraktien (insbesondere Akteure mit hoher AI‑Exposure) kurzfristig unter Druck geraten und dass diese höheren rechtlichen Kosten und Unsicherheiten Capex‑Finanzierungen und Anleihe‑/Kreditbedingungen belasten.",
+      "falsifier": "Bis zum 2027-03-31: (A) Ein gerichtliches Summary‑Judgment oder verbindliche Berufungsentscheidung, die substantiiert zugunsten der Beklagten (OpenAI/Microsoft) entscheidet und die im unredacted Filing zitierten internen Aussagen entweder als nicht beweisrelevant einstuft oder angreift; ODER (B) ein belastbarer, öffentliche Dokumentation zeigender Sachbeleg, dass die Kläger keine materiellen finanziellen Forderungen/Schäden aus diesem Fall durchsetzen konnten (z. B. Abweisung der Anspruchsgrundlagen mit Präzedenzwirkung).",
+      "nextReview": "2027-03-31",
+      "priorityScore": 89,
+      "scoreBreakdown": {
+        "sourceQuality": 20,
+        "novelty": 13,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 12,
+        "timeSensitivity": 10
+      },
+      "severity": 40,
+      "confidence": 70,
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "signal": "geopolitical_split",
+      "driverScope": [
+        "demand",
+        "pricing",
+        "availability",
+        "aiDemand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "New York Times — unredacted summary‑judgment reporting (NYT article summarizing unredacted filing)",
+          "url": "https://monorepo-sample1.nyt.net/2026/09/17/technology/microsoft-openai-publishing-industry.html"
+        },
+        {
+          "label": "The Ledger / CourtListener pointer to unredacted plaintiffs' brief (Court dkt ID referenced)",
+          "url": "https://www.the-ledger.net/events/news-plaintiffs-unredacted-summary-judgment-brief-openai-microsoft"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Erhöhtes juristisches und regulatorisches Risiko für große AI‑Anbieter erhöht die Wahrscheinlichkeit, dass AI‑ und Halbleiteraktien (insbesondere Akteure mit hoher AI‑Exposure) kurzfristig unter Druck geraten und dass diese höheren rechtlichen Kosten und Unsicherheiten Capex‑Finanzierungen und Anleihe‑/Kreditbedingungen belasten."
+      },
+      "admissionReviewKey": "4f560570cc5d125482ed7516"
     }
   ],
   "predictionLogUpdates": [
@@ -638,17 +706,17 @@
     "manualOverlayPolicy": "Public signals require evidence and admission-gate review. Approved manual index signals are written to the Knowledge Base and scored mechanically; private channel intelligence remains excluded until quantified."
   },
   "dailyStatus": {
-    "date": "2026-10-17",
+    "date": "2026-10-18",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
-    "note": "Evidenzprüfung offen: 273 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 89,
+    "note": "Evidenzprüfung offen: 280 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-10-17T19:30:16.366Z",
+    "generatedAt": "2026-10-18T01:08:50.047Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-10-17T19:22:57.891Z",
-    "inboxNewItems": 75,
+    "inboxUpdatedAt": "2026-10-18T01:01:11.750Z",
+    "inboxNewItems": 47,
     "highRelevanceCandidates": [
       {
         "id": "3e4fd0ea06baeb2ce7e3",
@@ -714,13 +782,13 @@
         "publishedAt": "2026-10-16T09:26:00.000Z"
       },
       {
-        "id": "3984e84049118a347386",
-        "title": "China's YMTC Becomes No. 3 in NAND Shipments, Narrowing Gap With Samsung, SK",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQUVYWFlkaG5ldllCaHlZSW9DSzg2OC1CRHVHb185a29iNFRreEtSaTQwdkxvSy1YaVZFTDhuSUVSTDlFM2V4LUxJaTdDbGhVRUVoT2ZScU1JbzduSW9ZRU5Fc1RuTThJRzF1ZGQ2Q3poTTlJSU9RT085aWV2T1JucTBLNmFtT2NLdFdKMkRObmZsVUFmNGFNRENZdG9BeVU?oc=5",
-        "source": "Seoul Economic Daily",
-        "summary": "China's YMTC Becomes No. 3 in NAND Shipments, Narrowing Gap With Samsung, SK Seoul Economic Daily",
-        "relevanceScore": 100,
-        "publishedAt": "2026-10-15T22:54:22.000Z"
+        "id": "555584e86ce4d2634dc7",
+        "title": "AI Chip Earnings Soared—Why Micron, TSMC And ASML Shares May Fall",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPd2FzM29rXzRDWVIwTTRKdUN5Y0o5c1hqbTFpeVBQcjBqWkZsTjBNOFVleVVVZzczTlk5WE15dE84RGY4Nno5TjB0dGszbkMzY1RPSzUwaFhJNlNOV2R6NGNpaTQ0dEhfM0VNWjBRNjl4aU9oX2xaTFpwd05PT1BrTktVcmpiUXNHM1dWTV9YTUphY1NVbFRYYW5YZGJ4Wk43NVhIYjYtQUNRbkJMYmQ4RWZKZlA?oc=5",
+        "source": "Forbes",
+        "summary": "Aktuelle Meldung von Forbes: AI Chip Earnings Soared—Why Micron, TSMC And ASML Shares May Fall",
+        "relevanceScore": 97,
+        "publishedAt": "2026-10-16T17:42:00.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -806,29 +874,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-17T19:30:16.192Z",
-    "inboxUpdatedAt": "2026-10-17T19:22:57.891Z",
+    "checkedAt": "2026-10-18T01:08:49.858Z",
+    "inboxUpdatedAt": "2026-10-18T01:01:11.750Z",
     "status": "pending",
-    "candidates": 458,
-    "reviewed": 199,
-    "accepted": 20,
+    "candidates": 459,
+    "reviewed": 200,
+    "accepted": 21,
     "watchlist": 173,
     "rejected": 6,
-    "pending": 273,
-    "oldestPendingAt": "2026-09-22T09:37:25.000Z",
-    "lastCompletedReviewAt": "2026-10-17T19:30:16.156Z",
+    "pending": 280,
+    "oldestPendingAt": "2026-09-18T07:18:30.000Z",
+    "lastCompletedReviewAt": "2026-10-18T01:08:49.824Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 1027,
+    "rawCandidates": 1032,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1221,
     "triage": {
       "archivedOpinions": 26,
-      "groupedDuplicates": 49
+      "groupedDuplicates": 50
     },
     "lastRun": {
-      "startedAt": "2026-10-17T19:29:17.488Z",
-      "completedAt": "2026-10-17T19:30:16.195Z",
+      "startedAt": "2026-10-18T01:07:26.404Z",
+      "completedAt": "2026-10-18T01:08:49.861Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -836,13 +904,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 58,
+      "durationSeconds": 83,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
-    "asOf": "2026-10-17",
-    "inputHash": "41197d3d7c763d4d90c61ee8c25656b67a9b69fe4657db707cac304df43422a7",
+    "asOf": "2026-10-18",
+    "inputHash": "db41beb11614d9927a9e52abc935ec1166bf9fa7448924504064c525d51bfa27",
     "sourceDataAsOf": "2026-10-06"
   }
 }
