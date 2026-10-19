@@ -59106,6 +59106,143 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0878e919946a3c4b006ad571954a6487d0815399bc3279183b"
+    },
+    {
+      "decision": "rejected",
+      "title": "Samsung arbeitet mit TSMC an Basis‑Dies für NVIDIAs kundenspezifische NVHBM‑Chips (Berichtsaufnahme)",
+      "fact": "Mehrere Medienberichte (u. a. Seoul Economic Daily, TrendForce, Indian Express) berichteten am 18–19.10.2026, Samsung habe zugestimmt, für NVIDIAs kundenspezifische NVHBM‑Base‑Dies TSMCs 3‑nm‑Prozess zu nutzen bzw. mit TSMC zu kooperieren.",
+      "placement": "global / HBM‑Produkt‑Layer / Foundry‑&‑Memory‑Supply (Base‑Die für NVHBM).",
+      "mechanism": "NVIDIA verlangt einen einheitlichen Base‑Die‑Prozess (TSMC 3nm) für NVHBM; Samsung (als HBM‑Stack‑Assembler/Memory‑Anbieter) würde TSMCs 3nm‑Logikprozess für die Base‑Die fertigen lassen bzw. technische Kooperation mit TSMC eingehen, um NVHBM‑Specs zu erfüllen.",
+      "predictionId": "P-2026-07-30-02",
+      "predictionImpact": "Kurzfristig relevant für die Validierung von Samsung‑HBM‑Supply‑Pfaden und damit für die Messung des Q3‑HBM‑Umsatzoutputs, der in P-2026-07-30-02 direkt adressiert wird.",
+      "falsifier": "Wenn Samsung oder TSMC bis 2026-10-26 eine explizite Gegendarstellung veröffentlicht, die den TSMC‑3nm‑Base‑Die‑Einsatz für NVHBM verneint, oder wenn Samsung in seinen Q3/Q4‑Reporting‑Belegen nachweislich bestätigt, dass alle NVHBM‑Base‑Dies ausschließlich auf Samsungs eigenen Foundry‑Nodes produziert wurden.",
+      "nextReview": "2026-10-26",
+      "eventDate": "2026-10-19",
+      "novelty": "Gering — mehrere heute veröffentlichte Berichte wiederholen dieselbe Behauptung; ähnliche Meldungen sind bereits im Baseline‑Set vorhanden.",
+      "duplicateOf": "S-AUTO-9904",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Falsifier",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
+          "label": "Seoul Economic Daily — 'Samsung to Use TSMC for Base Die in Nvidia's Custom HBM' (2026-10-18)",
+          "kind": "primary",
+          "supports": "Bericht, dass Samsung TSMC's 3nm‑Prozess für NVHBM Base‑Dies nutzen soll."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/10/19/news-nvidia-reportedly-pushes-tsmc-3nm-nvhbm-base-dies-for-samsung-sk-hynix-micron-in-unlikely-foundry-tie-up/",
+          "label": "TrendForce — 'NVIDIA Reportedly Pushes TSMC 3nm NVHBM Base Dies' (2026-10-19)",
+          "kind": "secondary",
+          "supports": "Bestätigung durch weitere Branchenberichte, Kontext zu TSMC‑3nm‑Kapazität und branchenweiter Nachfrage."
+        }
+      ],
+      "reason": "Die eingereichte Inbox‑Meldung fasst aktuelle Medienberichte korrekt zusammen, jedoch handelt es sich um eine wiederholte Berichterstattung eines Sachverhalts, der bereits als Baseline‑Signal (S-AUTO-9904 — 'Samsung nutzt TSMC‑Prozesse für HBM‑Base‑Die (Bericht)') dokumentiert ist. Die Behauptung wird derzeit von mehreren Handelsmedien verbreitet, es fehlt allerdings ein offizielles Bestätigungsdokument von Samsung oder TSMC mit konkreten, datierten Produktions‑/Liefermengen (atomare, datierte Messgrößen). Nach den TAIL‑Aufnahmekriterien ist dies eine Replikation eines bereits im Baseline vorhandenen Berichts/Signals und damit kein neues, eigenständiges Admissionsignal. Außerdem enthält die Meldung keine unmittelbare, quantifizierbare Messgröße (z. B. bestätigte Wafer‑Mengen, Liefertermine, qualifizierte Shipments) und ist damit ungeeignet, ein bestehendes Prognosefalsifier‑Event zu ersetzen oder zu aktualisieren. Deshalb wird der Kandidat abgewiesen (rejected).",
+      "candidateId": "92c5be1adba8bda48ab6",
+      "candidateKey": "8a4bb7a8f0981d4c98111388",
+      "reviewedAt": "2026-10-19T10:53:10.627Z",
+      "priorityScore": 54,
+      "gateReasons": [
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0dd1d2f7911583ae006ad5f682617487d1b4e3833f002f59c2"
+    },
+    {
+      "decision": "watchlist",
+      "title": "China’s top AI models generate just 10% of OpenAI, Anthropic revenue — Bericht (SCMP)",
+      "fact": "Bericht (South China Morning Post) zitiert Rhodium Group: Die führenden chinesischen Modelle erzielten geschätzte US$10.7 Mrd Annual Recurring Revenue (März–August 2026), ~10% der kombinierten >US$100 Mrd von OpenAI und Anthropic.",
+      "placement": "Global, Vergleich chinesische AI-Vendors vs. US‑Frontfirmen; Sektor: AI‑Model‑Monetarisierung (ARR); Zeitpunkt der Beobachtung: 2026-03 bis 2026-08.",
+      "mechanism": "Revenue‑Share‑Vergleich (ARR) aus Sekundärauswertung durch SCMP, basierend auf einem nicht (in der SCMP‑Story) verlinkten Rhodium‑Group‑Report. Implizite kausale Behauptung: US‑Frontfirmen monetarisieren Modelle deutlich stärker als die genannten chinesischen Anbieter, was auf kommerzielle Führerschaft und damit höhere US‑AI‑Nachfrage hindeutet.",
+      "predictionId": "P-2026-07-23-02",
+      "predictionImpact": "Wenn sich der berichtete RAZIO (China ~10% vs. OpenAI/Anthropic ~90%) als robust erweist, stützt dies die Erwartung hoher US‑zentrierter AI‑Build‑out‑Nachfrage (z.B. Camellia‑/OpenAI‑Projekte) und reduziert die Wahrscheinlichkeit einer kurzfristigen, China‑getriebenen Verschiebung der globalen AI‑Infrastruktur‑Last (Nachfrageseite).",
+      "falsifier": "Rhodium Group veröffentlicht das zitierte Primärdokument (vollständiger Report oder Datensatz) mit: a) klarer Methodik; b) zeitlicher Aufschlüsselung (März–Aug 2026) und c) Aufschlüsselung der geschätzten ARR pro gelisteter chinesischer Firma sowie der ARR‑Schätzungen für OpenAI und Anthropic — oder unabhängige Primärquellen (z.B. Firmen‑Financials, regulatorisch bestätigte Umsatzzahlen) zeigen, dass chinesische Anbieter ≥30% der kombinierten ARR erzielen. Prüfungstermin: 2026-10-31.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-18",
+      "novelty": "gering (recycelt aus einem berichteten Dritten; kein bisher unbekanntes Ereignis)",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 3,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 12,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://internationly.com/news/chinas-top-ai-models-generate-just-10-of-openai-anthropic-revenue-report-south-china",
+          "label": "Aggregierter Repost der SCMP‑Story (Internationly mirror)",
+          "kind": "secondary",
+          "supports": "Zitiert Rhodium Group: geschätzte US$10.7 Mrd ARR für chinesische Top‑Modelle vs. >US$100 Mrd für OpenAI+Anthropic; Datum 2026-09-18."
+        },
+        {
+          "url": "https://www.scmp.com/topics/artificial-intelligence?pgtype=topic",
+          "label": "South China Morning Post — AI Topic index (SCMP)",
+          "kind": "secondary",
+          "supports": "SCMP‑Headline und Kurztext (18 Sep 2026) berichten die Rhodium‑Group‑Schätzung; SCMP selbst verlinkt nicht auf einen offenen Primär‑Datensatz in der sichtbaren Kurzansicht."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung beruht auf einer SCMP‑Zusammenfassung eines Rhodium‑Group‑Berichts, behauptet einen konkreten, marktrelevanten Messwert (geschätzte ARR‑Summen und ein ~10%‑Verhältnis). TAIL‑Aufnahmekriterien verlangen Primärverifizierung (Primärbericht, Methodik, direkte Zahlen/Units) und eine belastbare adversarielle Prüfung vor Annahme als VERIFIED DATA oder Akzeptanz. Mit dem verfügbaren Material konnten wir das Rhodium‑Originaldokument (Datasets oder Methodik) nicht auffinden; SCMP gibt in der Kurzfassung keine Primärquelle oder Download‑URL an. Ohne die zugrundeliegende Methodik (Definition von ARR, Währungs-/Zeitraumkonsistenz, Abgrenzung zahlender Kunden vs. geschätzte Monetarisierung) bleibt die Aussage anfällig für Sampling‑, Definitions‑ oder Rechenfehler. Zudem besteht Gegenbeleg‑Risiko: andere Quellen berichten über schnell wachsende chinesische Vertragsumsätze und strategische LTAs (z.B. ByteDance/Alibaba‑Deals), was die Robustheit des 10%‑Claims infrage stellt. Deshalb erfüllte der Kandidat die Anforderungen für Watchlist — es ist ein potenziell relevantes Signal, aber ohne Primärverifikation und mit erkennbaren Gegenquellen kann es nicht als verifizierte, indexwirksame Beobachtung aufgenommen werden.\n\nEmpfohlene Schritte: 1) Primärbericht (Rhodium Group) beschaffen und Methodik/Datensatz prüfen; 2) prüfen, ob OpenAI/Anthropic‑Umsatzanteile als öffentlich geprüfte/filing‑bestätigte Zahlen vorliegen; 3) Widersprüchliche Schätzungen (andere Analysten/Firmenreports) sammeln. Falls Primärdaten die SCMP‑Behauptung stützen, kann die Aufnahme als ACCEPTED mit indexImpact=true geprüft werden. Andernfalls Rückstufung auf REJECTED aufgrund Recyceln/Fehlerhaftigkeit möglich.",
+      "candidateId": "d002bca104ca6bdc5483",
+      "candidateKey": "46743f21c4fa5f4ba18b8f68",
+      "reviewedAt": "2026-10-19T10:53:43.351Z",
+      "priorityScore": 57,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0272b5d5ea6255e8006ad5f696da4487d1922d0e1de7e5dd49"
     }
   ]
 }
