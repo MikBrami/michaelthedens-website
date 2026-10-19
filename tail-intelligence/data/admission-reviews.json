@@ -58961,6 +58961,151 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_07e8ab5769c8092b006ad41c00856c87d1867dc180c362e6ef"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung nutzt TSMC 3nm für Nvidia‑Custom‑HBM (SEDaily 2026‑10‑18) — mögliche Wiederholung/Bestätigung früherer Berichte",
+      "fact": "Laut einem Bericht der Seoul Economic Daily vom 2026-10-18 soll Samsung Electronics TSMC's 3‑Nanometer‑Logikprozess zur Fertigung der Base‑Dies für NVIDIAs kundenspezifische NVHBM‑Speicher verwenden.",
+      "placement": "Geographie: global / Domäne: HBM‑Supply‑Chain / Layer: Foundry‑to‑Memory Base‑Die (Logik‑Base die unter DRAM‑Stacks) / Horizont: kurzfristig (Q4 2026 – Q1 2027) ",
+      "mechanism": "NVHBM designt den Base‑Die (die Logik/Router‑Schicht unter den DRAM‑Stapeln) auf einem TSMC‑3nm‑Logic‑Process, so dass Samsung die Base‑Die nicht auf eigenen 4nm/4nm‑Klasse Foundry‑Prozessen, sondern auf TSMC‑3nm fertigen würde; das reduziert Samsung‑Foundry‑Exklusivität und verschiebt führende Logik‑Kapazitätsnachfrage auf TSMC‑3nm.",
+      "predictionId": "P-2026-07-11-03",
+      "predictionImpact": "Erhöht kurzfristig die Verfügbarkeitsspannung für HBM‑spezifische Kapazitäten (negative_supply / capacity_lock) durch Verlagerung hochspezialisierter Base‑Die‑Fertigung auf TSMC; könnte die Prognose, dass HBM/Server‑DRAM bis Ende 2028 knapp bleibt, sowohl entkräften (wenn TSMC‑Kapazität merklich entlastet) als auch verschärfen (wenn TSMC‑3nm‑Allokation limitiert bleibt), abhängig von bestätigter Produktionsmenge.",
+      "falsifier": "Wenn bis zum 2027-03-31 keine technische Bestätigung eines Tape‑out, einer qualifizierten Produktion (qualified shipments) oder offizielles Kunden‑/Lieferketten‑Statement (Samsung/TSMC/Nvidia) vorliegt, das die Nutzung von TSMC‑3nm für NVHBM‑Base‑Dies belegt, spricht das gegen die Behauptung; eine positive Falsifizierung wäre dagegen: dokumentierte Serienlieferungen (qualified shipments) von NVHBM‑Base‑Dies aus TSMC‑3nm bis 2027-03-31.",
+      "nextReview": "2027-03-31",
+      "eventDate": "2026-10-18",
+      "novelty": "Niedrig — mehrere Berichte/Briefings zuvor deuteten bereits auf TSMC‑3nm‑Nutzung für HBM‑Base‑Dies hin (siehe Baseline S‑AUTO‑9904f14 / 2026‑09‑15 und weitere Einträge).",
+      "duplicateOf": "S-AUTO-9904f14",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 5,
+        "thesisRelevance": 18,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "hbm",
+        "semiconductors",
+        "ai_infrastructure",
+        "dram"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 65,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
+          "label": "Seoul Economic Daily — Hauptbericht (2026-10-18)",
+          "kind": "primary",
+          "supports": "Bericht nennt, dass Samsung TSMC's 3nm‑Prozess für die Base‑Dies von NVIDIAs NVHBM nutzen wird (SEDaily, 2026‑10‑18)."
+        },
+        {
+          "url": "https://www.techmeme.com/261018/p9",
+          "label": "Techmeme Aggregation / Branchen‑Weiterberichterstattung (2026‑10‑18)",
+          "kind": "secondary",
+          "supports": "Sammelt mehrere Sekundärmeldungen, bestätigt weite Verbreitung der SEDaily‑Berichterstattung in der Tech‑Meldungsvielfalt."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat ist eine aktuelle Meldung (SEDaily, 2026‑10‑18) mit klarer, atomarer Behauptung (TSMC‑3nm für Samsung gefertigte NVHBM‑Base‑Dies). Web‑Überprüfung hat eine primäre Quelle (Seoul Economic Daily) sowie zahlreiche Sekundärnachrichten gefunden, die den Bericht wiederholen. Allerdings liegt ein relevanter früherer Eintrag im Baseline (S-AUTO-9904f14, 2026‑09‑15) vor, der dieselbe Richtung (Samsung nutzt TSMC‑Prozesse für HBM‑Base‑Dies) bereits dokumentiert — das reduziert Neuigkeitswert und verhindert Annahme zur Aufnahme in die TAIL‑Datenbank als neue, einzigartige belastbare Beobachtung. Zusätzlich fehlt (Stand heute) eine unabhängige technische Bestätigung durch Samsung, TSMC oder Nvidia (Tape‑out, qualifizierte Shipments oder öffentliches technisches Statement), weshalb die Behauptung noch nicht als VERIFIED DATA zugelassen werden kann. Deshalb Watchlist: dokumentiert, aber nicht neu und ohne bestätigende Produktionsdaten. Opposing evidence: frühere Baseline‑Einträge mit ähnlicher Behauptung (2026‑09‑15) und das Fehlen offizieller Bestätigungen/qualified shipments erhöhen die Wahrscheinlichkeit, dass dies eine wiederholte Branchenmeldung ohne neuen Produktionsnachweis ist.",
+      "candidateId": "1a1538e9a29ea45d869e",
+      "candidateKey": "6340e311e7437608b46fbbc3",
+      "reviewedAt": "2026-10-19T01:25:41.134Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0011d1c4425bfc5b006ad5717f113887d0929ba95bab19fee4"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT plant NAND‑R&D‑Line in Beijing — frühe Ankündigung, keine qualifizierten Shipments",
+      "fact": "Berichte (Reuters/TrendForce/StratNews) vom 2026-09-18 melden, dass ChangXin Memory Technologies (CXMT) plant, an seinem neuen Standort in Peking eine Forschungs‑und Entwicklungs‑Produktionslinie für 3D‑NAND/Flash aufzusetzen. Es handelt sich um Planungs-/R&D‑Absichten, nicht um bestätigte kommerzielle Produktion oder Shipments.",
+      "placement": "Geographie: Beijing, China; Domain/Layer: NAND/enterprise_ssd (Produkt‑Schicht), horizontale Wirkung: langfristig (R&D → potenzielle spätere Produktion).",
+      "mechanism": "CXMT diversifiziert von DRAM zu NAND durch Errichtung einer R&D‑Produktionseinheit; falls R&D in qualifizierte Fertigung überführt wird, erhöht das künftiges NAND‑Bitangebot und könnte Druck auf NAND/Enterprise‑SSD‑Preise und Markenteilnahmen ausüben. Der beobachtete Effekt ist derzeit nur ein potenzieller Kapazitäts‑Pipeline‑Input (nicht gelieferte Bit‑Menge).",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Informiert das OUTLOOK/P-2026-07-20-04 (Memory bleibt 2027 knapp ... Oversupply‑Risiko 2028 steigt). Die Nachricht ist ein Hinweis auf potenzielle spätere Kapazitätserweiterung (tail‑risk für Oversupply 2028+), aber nicht ein unmittelbarer Falsifikator für die 2027‑Knappheitsthese.",
+      "falsifier": "Bis 2027-12-31 müssen qualifizierte, kommerzielle CXMT‑NAND‑Shipments (nach Hersteller‑Release/Customer‑validation) auftreten, dokumentiert durch mindestens zwei unabhängige Primärquellen (Hersteller‑Earnings/SEC/qualifizierte Kunden‑Statements) mit konkreten Volumina (WPM, Gigabit oder SSD‑Einheiten). Fehlen solche Nachweise bis 2027-12-31 würde die Aussage (dass CXMT kurzfristig NAND‑Markt‑Expansion verursacht) entkräften.",
+      "nextReview": "2027-01-15",
+      "eventDate": "2026-09-18",
+      "novelty": "CXMT erweitert offiziell die strategische Ambition über DRAM hinaus (R&D‑NAND). Neuigkeitsgrad: moderat — mehrere Medien berichteten am selben Datum über dieselbe Planung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 10,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/09/18/news-chinas-dram-leader-cxmt-reportedly-plans-nand-rd-line-could-challenge-samsung-sk-hynix-and-ymtc/",
+          "label": "TrendForce — 'China’s DRAM Leader CXMT Reportedly Plans NAND R&D Line' (2026-09-18)",
+          "kind": "secondary",
+          "supports": "TrendForce nennt explizit eine geplante R&D‑Produktionslinie für 3D‑NAND bei CXMT am neuen Peking‑Standort (publiziert 2026-09-18)."
+        },
+        {
+          "url": "https://stratnewsglobal.com/technology/cxmt-nand-memory-plans/",
+          "label": "StratNews Global — 'CXMT NAND Memory Plans Signal Market Expansion' (2026-09-18)",
+          "kind": "secondary",
+          "supports": "Der ursprünglich eingereichte Kandidatstext; fasst R&D‑Line‑Berichte vom 2026-09-18 zusammen (keine Shipments/Volumina genannt)."
+        }
+      ],
+      "reason": "Primärquelle für eine Änderung des tatsächlichen NAND‑Angebots (qualifizierte Shipments, bestätigte WPM oder Lead‑Time‑Verbesserung) fehlt. Die Meldung dokumentiert Planungsabsichten (R&D/Produktionslinie), nicht ausgelieferte Kapazität oder messbare Fill‑Rate/Lead‑Time‑Änderungen. Damit erfüllt die Beobachtung nicht die TAIL‑Annahmekriterien für VERIFIED DATA oder direkte Index‑Evidenz. Es besteht widersprüchliche/gegenläufige Evidenz in der Baseline (z. B. Berichte über Yield‑Probleme bei einigen chinesischen Herstellern sowie zahlreiche Hinweise auf weiterhin enge HBM/DRAM‑Märkte), die den kurzfristigen Impact abschwächt. Wegen fehlender quantifizierter, primär verifizierter Shipments/Leadtimes ordne ich die Kandidatbeobachtung als Watchlist ein und empfehle Überprüfung auf Primärnachweise (Earnings‑Release, SEC/CSRC‑Filing oder qualifizierte Kunden‑Shipments) bis 2027-12-31.",
+      "candidateId": "0a7c1915addc6d8f07ca",
+      "candidateKey": "a9e56e08bc11077b196e7490",
+      "reviewedAt": "2026-10-19T01:26:02.658Z",
+      "priorityScore": 67,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0878e919946a3c4b006ad571954a6487d0815399bc3279183b"
     }
   ]
 }
