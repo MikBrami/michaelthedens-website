@@ -59391,6 +59391,202 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0d8831a6428c8db4006ad6cab9f6a487d0a6c4df79534ee88a"
+    },
+    {
+      "decision": "accepted",
+      "title": "NVIDIA nimmt Samsung Electro‑Mechanics in Substrat‑Lieferkette auf; gemeinsame Kapazitätserweiterungen in Südkorea angekündigt",
+      "fact": "Am 2026-10-21 kündigte NVIDIA an, Samsung Electro‑Mechanics in seine Substrat‑(package‑substrate)‑Lieferkette aufzunehmen und gemeinsam Produktions‑/Erweiterungsmaßnahmen in Südkorea (Sejong und Busan) zu verfolgen; NVIDIA nennt eine Zielvergrößerung der Substratkapazität um ~2.5× über drei Jahre (Ankündigung GTC Berlin / Unternehmensmeldung 2026-10-21).",
+      "placement": "Geographie: Südkorea (Sejong, Busan); Domain/Lieferketten‑Layer: package substrates / advanced substrate supply chain; Layer/Horizon: kurzfristig bis mittelfristig (wirksamer Kapazitätsaufbau 2026–2028).",
+      "mechanism": "NVIDIA erweitert unmittelbar die Anzahl qualifizierter Substratlieferanten durch eine formelle Partnerschaft und Investitions-/Kapazitätsreservierungs‑/Kooperationsvereinbarungen; dadurch wird zusätzliche qualifizierte Substrat‑Produktion für NVIDIA‑geführte AI‑Beschaffungen freigesetzt, was bei Umsetzung den Advanced‑Packaging‑Knappheitseffekt (Engpass bei substrate/interposer/packaging) teilweise mindern kann.",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Reduziert die Wahrscheinlichkeit, dass Advanced Packaging bis H2 2027 ein bindender, nicht‑reliefbarer Engpass bleibt — signalisiert möglichen Kapazitätsaufbau, der das Risiko und die Schwere der Engpass‑These verringern könnte, sofern die angekündigten Linien 2027–2028 qualifiziert liefern.",
+      "falsifier": "Bis zum 2028-12-31 gibt es keine überprüfbare, öffentliche Qualifikations- oder Shipment‑Meldung (Produktionsfreigabe, offizielle Stückzahlen oder qualifizierte Lieferungen) aus den angekündigten Samsung Electro‑Mechanics Sejong/Busan‑Linien an NVIDIA; oder die aggregierte qualifizierte Substrat‑Kapazität für NVIDIA bleibt unverändert gegenüber dem Stand vor 2026-10-21.",
+      "nextReview": "2028-12-31",
+      "eventDate": "2026-10-21",
+      "novelty": "Die Meldung dokumentiert eine neue, konkrete Partnerschaftserweiterung (Samsung Electro‑Mechanics neu in NVIDIAs Substrat‑Programm) und namentlich lokalisierte Fabriklinien (Sejong/Busan), nicht bloße Gerüchte oder Analysten‑Wiedergabe.",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 40,
+      "confidence": 75,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/",
+          "label": "NVIDIA newsroom — 'NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout' (2026-10-21)",
+          "kind": "primary",
+          "supports": "NVIDIA‑Meldung (2026-10-21) nennt Samsung Electro‑Mechanics als neu beigetretenen Substrat‑Partner, lokale Kapazität in Südkorea sowie eine Zielvergrößerung der Substratcapacities um ~2.5× über die nächsten drei Jahre."
+        },
+        {
+          "url": "https://www.sem.samsung.com/kr/newsroom/news/view.do?id=10613",
+          "label": "Samsung Electro‑Mechanics Pressemitteilung (Korea) — Partnerschaft mit NVIDIA (2026-10-21)",
+          "kind": "primary",
+          "supports": "Samsung Electro‑Mechanics bestätigt am 2026-10-21 die strategische Partnerschaft mit NVIDIA, nennt Ausbau dedizierter Produktionslinien in Sejong und Busan und erhöhten Substrat‑Output zugunsten langfristiger Liefervereinbarungen."
+        }
+      ],
+      "reason": "Primärquellen (NVIDIA und Samsung Electro‑Mechanics Pressemitteilungen, beide datiert 2026-10-21) belegen die behauptete, neue Aufnahme von Samsung Electro‑Mechanics in NVIDIAs Substrat‑Lieferkette sowie konkrete, lokal benannte Ausbaupläne in Südkorea. Die Meldung ist relevant für die TAIL‑These, dass Advanced Packaging/Substrat‑Kapazität ein Engpass für AI‑Memory/Server‑Compute bleiben könnte: wenn die angekündigten Investitionen und Linien qualifiziert und in den genannten Zeitfenstern produzieren, sind sie ein materialer Kapazitätsaufschlag (capacity_relief). Die Entscheidung lautet ACCEPTED, weil die Ankündigung ein klar datiertes, überprüfbares, primäres Ereignis darstellt, das eine direkte Ursache (Partnerschaft + Investitions/Capacity‑Commitments) für veränderte Verfügbarkeitsaussichten liefert. Der vorgeschlagene Falsifier (keine qualifizierten Shipments/Produktion bis 2028-12-31) ist messbar und überprüfbar; ein Follow‑up zum angegebenen Datum ist erforderlich, um den tatsächlichen Markt‑Impact (Qualified Supply Relief vs. nur angekündigte Pläne) zu bestätigen.",
+      "candidateId": "27fa007359e0d701b861",
+      "candidateKey": "74612fc98d1a3b7b3c7e24a7",
+      "reviewedAt": "2026-10-21T16:03:34.776Z",
+      "priorityScore": 85,
+      "gateReasons": [],
+      "acceptedSignal": {
+        "id": "S-AUTO-74612fc98d1a3b7b3c7e24a7",
+        "title": "NVIDIA nimmt Samsung Electro‑Mechanics in Substrat‑Lieferkette auf; gemeinsame Kapazitätserweiterungen in Südkorea angekündigt",
+        "date": "2026-10-21",
+        "admittedAt": "2026-10-21T16:03:34.776Z",
+        "fact": "Am 2026-10-21 kündigte NVIDIA an, Samsung Electro‑Mechanics in seine Substrat‑(package‑substrate)‑Lieferkette aufzunehmen und gemeinsam Produktions‑/Erweiterungsmaßnahmen in Südkorea (Sejong und Busan) zu verfolgen; NVIDIA nennt eine Zielvergrößerung der Substratkapazität um ~2.5× über drei Jahre (Ankündigung GTC Berlin / Unternehmensmeldung 2026-10-21).",
+        "placement": "Geographie: Südkorea (Sejong, Busan); Domain/Lieferketten‑Layer: package substrates / advanced substrate supply chain; Layer/Horizon: kurzfristig bis mittelfristig (wirksamer Kapazitätsaufbau 2026–2028).",
+        "tailInference": "NVIDIA erweitert unmittelbar die Anzahl qualifizierter Substratlieferanten durch eine formelle Partnerschaft und Investitions-/Kapazitätsreservierungs‑/Kooperationsvereinbarungen; dadurch wird zusätzliche qualifizierte Substrat‑Produktion für NVIDIA‑geführte AI‑Beschaffungen freigesetzt, was bei Umsetzung den Advanced‑Packaging‑Knappheitseffekt (Engpass bei substrate/interposer/packaging) teilweise mindern kann.",
+        "predictionId": "P-2026-07-13-03",
+        "predictionImpact": "Reduziert die Wahrscheinlichkeit, dass Advanced Packaging bis H2 2027 ein bindender, nicht‑reliefbarer Engpass bleibt — signalisiert möglichen Kapazitätsaufbau, der das Risiko und die Schwere der Engpass‑These verringern könnte, sofern die angekündigten Linien 2027–2028 qualifiziert liefern.",
+        "falsifier": "Bis zum 2028-12-31 gibt es keine überprüfbare, öffentliche Qualifikations- oder Shipment‑Meldung (Produktionsfreigabe, offizielle Stückzahlen oder qualifizierte Lieferungen) aus den angekündigten Samsung Electro‑Mechanics Sejong/Busan‑Linien an NVIDIA; oder die aggregierte qualifizierte Substrat‑Kapazität für NVIDIA bleibt unverändert gegenüber dem Stand vor 2026-10-21.",
+        "nextReview": "2028-12-31",
+        "priorityScore": 85,
+        "scoreBreakdown": {
+          "sourceQuality": 17,
+          "novelty": 12,
+          "thesisRelevance": 18,
+          "forecastImpact": 18,
+          "falsifiability": 12,
+          "timeSensitivity": 8
+        },
+        "severity": 40,
+        "confidence": 75,
+        "markets": [
+          "hbm",
+          "server_dram",
+          "ai_infrastructure",
+          "semiconductors",
+          "supply_chain"
+        ],
+        "signal": "capacity_relief",
+        "driverScope": [
+          "availability",
+          "demand"
+        ],
+        "classification": "Signal",
+        "indexEvidence": {
+          "metricType": "none",
+          "marketId": "",
+          "observation": ""
+        },
+        "evidenceStatus": "VERIFIED DATA",
+        "indexImpact": false,
+        "freshShockEligible": false,
+        "public": true,
+        "origin": "reviewed-inbox",
+        "admissionGate": {
+          "Evidence": true,
+          "Materiality": true,
+          "Causality": true,
+          "Falsifiability": true
+        },
+        "sources": [
+          {
+            "label": "NVIDIA newsroom — 'NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout' (2026-10-21)",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/"
+          },
+          {
+            "label": "Samsung Electro‑Mechanics Pressemitteilung (Korea) — Partnerschaft mit NVIDIA (2026-10-21)",
+            "url": "https://www.sem.samsung.com/kr/newsroom/news/view.do?id=10613"
+          }
+        ],
+        "redPencil": {
+          "passed": true,
+          "forecastChange": "Reduziert die Wahrscheinlichkeit, dass Advanced Packaging bis H2 2027 ein bindender, nicht‑reliefbarer Engpass bleibt — signalisiert möglichen Kapazitätsaufbau, der das Risiko und die Schwere der Engpass‑These verringern könnte, sofern die angekündigten Linien 2027–2028 qualifiziert liefern."
+        },
+        "admissionReviewKey": "74612fc98d1a3b7b3c7e24a7"
+      },
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0f1455f71565fff2006ad8e23f144087d2ba66246a1c61d131"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Solidigm (SK hynix) prüft US‑NAND‑Fabrik — New York als Kandidat",
+      "fact": "Nach mehreren Sekundärberichten prüft Solidigm, die NAND‑Tochter von SK hynix, die Errichtung einer NAND‑Fabrik in den USA; Upstate New York wurde als führender Kandidat genannt (Meldungsdatum im Inbox‑Metadatum: 2026-09-18).",
+      "placement": "Geographie: USA (Upstate New York); Domain/Layer: NAND‑Front‑End‑Fertigung; Horizon: potenzielle Fabriksentscheidung/Standortprüfung (no binding FID im Bericht).",
+      "mechanism": "Kapazitätsausweitung durch Standortverlagerung/Neuaufbau einer Frontend‑NAND‑Fabrik in den USA könnte die geopolitisch motivierte Diversifikation der Produktionsbasis erhöhen und mittelfristig (Jahre) die US‑NAND‑Verfügbarkeit verbessern; aktuell jedoch nur Prüfungs-/Sondierungsstadium ohne bestätigte Investitionsentscheidung oder Liefer-/Shipment‑Belege.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Informiert das OUTLOOK Memory/NAND‑Versorgungsbild: wenn bestätigt und gebaut, würde dies den strukturellen Knappheitsdruck auf NAND/Enterprise‑SSD langfristig verringern (reduziert shortfall‑Tail).",
+      "falsifier": "Bis 2027-12-31 kein verbindlicher Fabrik-FID, kein bestätigter Bauzeitpunkt und keine qualifizierten Produktions‑Shipments; oder alternative unmittelbare Gegenbelege: verbindliche Aussagen von SK hynix/Solidigm, die Standortpläne verneinen, oder Primärquelle (z.B. Reuters/Company‑Press Release) datiert vor 2026-09-30, die den New‑York‑Standort als ausgeschlossen benennt.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Mittel — Thema (Reshoring/US‑Fabs) ist bereits breit in der Baseline und den S‑AUTO Einträgen vertreten, der spezifische New‑York‑Kandidat ist jedoch neu für diese Inbox‑Meldung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Die Inbox‑Meldung verweist auf einen Google‑News RSS‑Eintrag (brandiconimage.com laut Zusammenfassung). Bei Überprüfung mit dem hier verfügbaren Toolsatz tauchen mehrere Medienberichte (u.a. Reuters‑Berichte, gemäß Sekundäraggregation) mit Datum 2026-09-18 auf, die das Thema behandeln. Allerdings konnte die primäre, direkt zitierbare Primärquelle (z. B. der originale Reuters‑Artikel oder eine offizielle Pressemitteilung von SK hynix / Solidigm) innerhalb des vorgegebenen Web‑Tool‑Budgets nicht verifiziert bzw. vollständig geöffnet werden. Die Aufnahme als 'admissible' Signal verlangt nach einem atomaren, datierten Primärbeleg (z. B. Reuters oder Unternehmensmitteilung) mit expliziter Aussage über: a) verbindliche Absicht/FID oder b) bestätigten Standort oder c) erste qualifizierte Shipments. Solche Primärnachweise fehlen derzeit in den unter Budget gefundenen sekundären Aggregaten. Außerdem gibt es in der Baseline und S‑AUTO Sammlung bereits zahlreiche eng verwandte Capacity/Reshoring‑Signale; ohne Primärbestätigung besteht ein hohes Risiko, dass dies eine wiederholte Berichterstattung desselben Gerüchts ist. Deshalb wird 'watchlist' empfohlen mit Anforderung der fehlenden Primär‑Evidence (verbindliche Firmenmeldung oder Reuters‑Primärartikel) und eines klaren, datierten Falsifiers (siehe oben). Adversarial check: es liegt ein Risiko von Re‑reporting/Redundanz vor; kein direktes widersprechendes Primärdokument wurde im geprüften Set gefunden, aber Primärverifikation ist unvollständig — deshalb keine 'VERIFIED DATA' und kein Red‑Pencil‑Pass. Empfehlung: Bei Erhalt des Reuters‑Originalartikels oder einer SK hynix/Solidigm‑Pressemitteilung mit expliziten Aussagen über Standort, Zeitplan oder FID (Datum und Zitat) kann die Aufnahme neu bewertet werden; andernfalls verbleibt die Beobachtung bis 2026-12-31, um eindeutige Primärbelege oder ein FID/Shipment‑Falsifier zu prüfen.",
+      "candidateId": "c14724b9eb9fcdd25425",
+      "candidateKey": "d7662c531914c5dde31e8d6c",
+      "reviewedAt": "2026-10-21T16:04:03.486Z",
+      "priorityScore": 62,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_06368aeb38783aeb006ad8e256f9d087d2ba52d3d3f3d3d2df"
     }
   ]
 }

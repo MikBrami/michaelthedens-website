@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T01:58:42.445Z",
-  "previousRun": "2026-10-19",
+  "updatedAt": "2026-10-21T16:04:03.695Z",
+  "previousRun": "2026-10-20",
   "executivePulse": {
     "current": 72,
     "previous": 72,
@@ -58,13 +58,13 @@
   "confidence": {
     "current": 73,
     "previous": 73,
-    "interpretation": "Datenvertrauen 73/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 315 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "interpretation": "Datenvertrauen 73/100 aus dem produktiven MT·AI-Index; Prüfstatus siehe Evidenzprüfung. Evidenzprüfung offen: 342 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "riskPressure": {
     "current": 82,
     "previous": 82
   },
-  "momentum": "Evidenzprüfung offen: 315 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
+  "momentum": "Evidenzprüfung offen: 342 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft.",
   "admissionGate": [
     "Freshness",
     "Evidence",
@@ -527,6 +527,74 @@
         }
       ],
       "date": "2026-08-26"
+    },
+    {
+      "id": "S-AUTO-74612fc98d1a3b7b3c7e24a7",
+      "title": "NVIDIA nimmt Samsung Electro‑Mechanics in Substrat‑Lieferkette auf; gemeinsame Kapazitätserweiterungen in Südkorea angekündigt",
+      "date": "2026-10-21",
+      "admittedAt": "2026-10-21T16:03:34.776Z",
+      "fact": "Am 2026-10-21 kündigte NVIDIA an, Samsung Electro‑Mechanics in seine Substrat‑(package‑substrate)‑Lieferkette aufzunehmen und gemeinsam Produktions‑/Erweiterungsmaßnahmen in Südkorea (Sejong und Busan) zu verfolgen; NVIDIA nennt eine Zielvergrößerung der Substratkapazität um ~2.5× über drei Jahre (Ankündigung GTC Berlin / Unternehmensmeldung 2026-10-21).",
+      "placement": "Geographie: Südkorea (Sejong, Busan); Domain/Lieferketten‑Layer: package substrates / advanced substrate supply chain; Layer/Horizon: kurzfristig bis mittelfristig (wirksamer Kapazitätsaufbau 2026–2028).",
+      "tailInference": "NVIDIA erweitert unmittelbar die Anzahl qualifizierter Substratlieferanten durch eine formelle Partnerschaft und Investitions-/Kapazitätsreservierungs‑/Kooperationsvereinbarungen; dadurch wird zusätzliche qualifizierte Substrat‑Produktion für NVIDIA‑geführte AI‑Beschaffungen freigesetzt, was bei Umsetzung den Advanced‑Packaging‑Knappheitseffekt (Engpass bei substrate/interposer/packaging) teilweise mindern kann.",
+      "predictionId": "P-2026-07-13-03",
+      "predictionImpact": "Reduziert die Wahrscheinlichkeit, dass Advanced Packaging bis H2 2027 ein bindender, nicht‑reliefbarer Engpass bleibt — signalisiert möglichen Kapazitätsaufbau, der das Risiko und die Schwere der Engpass‑These verringern könnte, sofern die angekündigten Linien 2027–2028 qualifiziert liefern.",
+      "falsifier": "Bis zum 2028-12-31 gibt es keine überprüfbare, öffentliche Qualifikations- oder Shipment‑Meldung (Produktionsfreigabe, offizielle Stückzahlen oder qualifizierte Lieferungen) aus den angekündigten Samsung Electro‑Mechanics Sejong/Busan‑Linien an NVIDIA; oder die aggregierte qualifizierte Substrat‑Kapazität für NVIDIA bleibt unverändert gegenüber dem Stand vor 2026-10-21.",
+      "nextReview": "2028-12-31",
+      "priorityScore": 85,
+      "scoreBreakdown": {
+        "sourceQuality": 17,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "severity": 40,
+      "confidence": 75,
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure",
+        "semiconductors",
+        "supply_chain"
+      ],
+      "signal": "capacity_relief",
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "classification": "Signal",
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "evidenceStatus": "VERIFIED DATA",
+      "indexImpact": false,
+      "freshShockEligible": false,
+      "public": true,
+      "origin": "reviewed-inbox",
+      "admissionGate": {
+        "Evidence": true,
+        "Materiality": true,
+        "Causality": true,
+        "Falsifiability": true
+      },
+      "sources": [
+        {
+          "label": "NVIDIA newsroom — 'NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout' (2026-10-21)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/"
+        },
+        {
+          "label": "Samsung Electro‑Mechanics Pressemitteilung (Korea) — Partnerschaft mit NVIDIA (2026-10-21)",
+          "url": "https://www.sem.samsung.com/kr/newsroom/news/view.do?id=10613"
+        }
+      ],
+      "redPencil": {
+        "passed": true,
+        "forecastChange": "Reduziert die Wahrscheinlichkeit, dass Advanced Packaging bis H2 2027 ein bindender, nicht‑reliefbarer Engpass bleibt — signalisiert möglichen Kapazitätsaufbau, der das Risiko und die Schwere der Engpass‑These verringern könnte, sofern die angekündigten Linien 2027–2028 qualifiziert liefern."
+      },
+      "admissionReviewKey": "74612fc98d1a3b7b3c7e24a7"
     }
   ],
   "predictionLogUpdates": [
@@ -638,89 +706,89 @@
     "manualOverlayPolicy": "Public signals require evidence and admission-gate review. Approved manual index signals are written to the Knowledge Base and scored mechanically; private channel intelligence remains excluded until quantified."
   },
   "dailyStatus": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
-    "impactScore": 0,
-    "note": "Evidenzprüfung offen: 315 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
+    "impactScore": 85,
+    "note": "Evidenzprüfung offen: 342 Kandidaten ausstehend. Der Index beruht auf der zuletzt aufgenommenen Evidenz; eine materielle Richtungsänderung ist noch nicht abschließend geprüft."
   },
   "automatedDaily": {
-    "generatedAt": "2026-10-20T01:58:42.445Z",
+    "generatedAt": "2026-10-21T16:04:03.695Z",
     "mode": "evidence-reviewed",
-    "inboxUpdatedAt": "2026-10-20T01:49:14.975Z",
-    "inboxNewItems": 294,
+    "inboxUpdatedAt": "2026-10-21T15:57:14.026Z",
+    "inboxNewItems": 429,
     "highRelevanceCandidates": [
       {
-        "id": "f07e859b52dfa92f4c11",
-        "title": "Micron: CXMT Sparks Fear, HBM Fuels Higher Margins (NASDAQ:MU)",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWGFqNmhVRVJ3alJqZnhodXNjOXJpMkVNMTQxY1U5SjdjMTZzQlIyTHBjdGFWZXJRc1U3bDQwUW9uQklOVUVtOU1hX0N6Z2U4Q2lhTHpkTFNNanE4UjJZUEVJQ1pITjlZMmNkdDRsTmhWaWp1d2plbURCZEZFMlAzZExnT3lOM3NhVWlxemNWaVQ4M00?oc=5",
-        "source": "Seeking Alpha",
-        "summary": "Micron: CXMT Sparks Fear, HBM Fuels Higher Margins (NASDAQ:MU) Seeking Alpha",
+        "id": "6b7911ad86fdfbd36ecb",
+        "title": "Nvidia's Vera Rubin Enters Full Production: HBM4 Landscape Could Split Fortunes for Samsung and SK Hynix",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE04RVFaOXEtekc3UWRWSkhmSGlaT0pIcnloTlltVVJURnliWXlxTFBkZXhFQU4wSWxLQVIySU9IZGVmTHNHMkVaLXJXMmxDanZWTVBZdURpZXlHcXhKZjRER3JQN1pPTi1SeDREQVBFZWt1dzBaNlE?oc=5",
+        "source": "BigGo Finance",
+        "summary": "Aktuelle Meldung von BigGo Finance: Nvidia's Vera Rubin Enters Full Production: HBM4 Landscape Could Split Fortunes for Samsung and SK Hynix",
         "relevanceScore": 100,
-        "publishedAt": "2026-10-19T16:16:44.000Z"
+        "publishedAt": "2026-10-21T15:05:00.000Z"
       },
       {
-        "id": "636036a5c62983d6bc74",
-        "title": "Nvidia reportedly asks Samsung, SK Hynix, Micron to use TSMC 3nm",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWDdXdlRQM2FmelE1NUNKVTRvbUcyRGtMRVZDTG5USTROUXFVVEJhSE1PczNUNjdxWXBpdWh6NUhCSnJXQ3pvemdfc2ExdERqb1JfWkF4SXE0MTE3NENVeXdQNDBmcktpMDV1Szk1RXQwVER5MUljUkFNcExJNC16bGdjdmQwTktaaWc?oc=5",
-        "source": "The Next Web",
-        "summary": "Nvidia reportedly asks Samsung, SK Hynix, Micron to use TSMC 3nm The Next Web",
+        "id": "b189a135ca9e85254ec7",
+        "title": "Samsung and SK Hynix are upgrading Chinese NAND plants as local rival YMTC closes in",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNODhNUWNJUUJWMTF1X20xdzFXYXp2d05tU1VEYWdzRUI0M1BqNjNvX3pXbGJvZnZWU2ZWOWxpUFdRUUpaUGxKaW5QVFRJSlJUbTRHeThBZjFWa3UwZG56bExWd0hSamN3WkZaTEZlRHVqTWd4SjA3cXZHY2VuMk5fb0VPVmVmaFZ1Qk1BYzA4akZ0OEoxRDJXRkRFR25KNGxMYlpERTNob3U3bjEtcUtxRUNLaVhDTUZyT3pFNTYzQU90WGprWkk1QUFSNEtGdw?oc=5",
+        "source": "TweakTown",
+        "summary": "Aktuelle Meldung von TweakTown: Samsung and SK Hynix are upgrading Chinese NAND plants as local rival YMTC closes in",
         "relevanceScore": 100,
-        "publishedAt": "2026-10-19T16:16:21.000Z"
+        "publishedAt": "2026-10-21T14:35:10.000Z"
       },
       {
-        "id": "515e17775ecd385f9541",
-        "title": "Samsung Works with TSMC on Nvidia’s Custom HBM",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA1eTcyTTJPZ0gzbFJWd0lERG9yUzlEaFpkdXdtbnQ2QnVmMkl0bVFRdzd0R0FobGFCbjJqZWRMdERUc0puQ2dkOUp0S2ZBQWN0eU5KMTliNG1aak1PRmN1RnlUeW1xbm45OExIZjlaLUprLTJVa2c?oc=5",
-        "source": "SammyGuru",
-        "summary": "Aktuelle Meldung von SammyGuru: Samsung Works with TSMC on Nvidia’s Custom HBM",
+        "id": "2a5ec3616d08e3b3579e",
+        "title": "Samsung, SK Hynix Modernise China Plants To Produce Advanced NAND Chips",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbHBsaS1oY01wV3BpMFFCZDI0SE90Q2J1d2ZSN0xCU1E0T1E1ay1fNmVHaWM0QV9QajNUN0xiME1yYWlodUFGNHJPcmNoZWVUdUtzdjFMazR3MUpEMWZmV252T2YtdGU5SmRtTnEtNk9qaGV0LWFadThUdFpzVDZ4OFkza3JPdkpPQ3l0eGQ3MmQtR1lSbTBr?oc=5",
+        "source": "Arise News",
+        "summary": "Samsung, SK Hynix Modernise China Plants To Produce Advanced NAND Chips Arise News",
         "relevanceScore": 100,
-        "publishedAt": "2026-10-19T09:21:42.000Z"
+        "publishedAt": "2026-10-21T13:49:32.000Z"
       },
       {
-        "id": "92c5be1adba8bda48ab6",
-        "title": "Samsung collaborates with TSMC for Nvidia’s custom HBM chips",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNUJGN3M0UWNpdUxuN1BEaHJ5WWRVcG5VcEc0NFdfR3ItalNCVmtDSDlPS054ZU5PcDd4X0E4N3M0N0Y1alFDcWNndmxOU2x0RU5IX0RnUGxBTXpfaTFRMDN0ZEJBVWNDWnBTcC1La0lKcU1PZ0RFTmZiMURaN3NMZEMzMW9hamtuUXo4LUhR?oc=5",
-        "source": "Yahoo Finance",
-        "summary": "Samsung collaborates with TSMC for Nvidia’s custom HBM chips Yahoo Finance",
+        "id": "7b13ae1a1834052e2cc1",
+        "title": "YMTC overtakes Samsung in China’s NAND flash market",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41b1Zrenh5eGsxaWUtSlBYRS1LNGtEZnV4SGZuazJDY3REbXZPeW1Ka01WdEdiQ0toaDN3VGlNVGpOcXg5MVpWc3hDQkhVOUtIZ0xLZmE1U1VOd2VCem12dGZDNGxHUW5melctSkJlYUhsMTN4bWp3?oc=5",
+        "source": "KED Global",
+        "summary": "YMTC overtakes Samsung in China’s NAND flash market KED Global",
         "relevanceScore": 100,
-        "publishedAt": "2026-10-19T09:06:30.000Z"
+        "publishedAt": "2026-10-21T13:36:17.000Z"
       },
       {
-        "id": "68eba95018cc0f02c758",
-        "title": "Samsung taps rival TSMC's 3nm lines for Nvidia's custom HBM base die",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNY1FydGNTY2RTM1NJQTFFTWpLUmd0d19XYTBYNGp6VmNDT3UzNkpZWHFkdjNEWHZEMkhycXllMUdIVER6d3BILXdfb2JnUVVuRmFKUF9PTW96V3ZEMkF0UWJHT1pqSWVvbUFPY3J2aUN0WW1pT0ZQOGlRbHRuOUhqcFpYSXVtNDNmVVYzNUlmQzZtTFd6Z3gxcVd4SXZwY1NMcnhvbw?oc=5",
-        "source": "Dealroom",
-        "summary": "Aktuelle Meldung von Dealroom: Samsung taps rival TSMC's 3nm lines for Nvidia's custom HBM base die",
+        "id": "756cbeca27abe878fa7d",
+        "title": "Samsung, SK Hynix upgrade China fabs to advanced NAND",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQzJBMzdtaThaY19DNEtqZmRZOVpVRFdVYWxWQVRkeF93em0xTGl6UmtxR3AtX1NZb0xITHVrVjNuUHJRZFZfbFEtbUUxa3pBOGxEVnBEVEd6UmhKSzR5bG5hNy1Wd1Rna2ZpYzJwUHpWbndQUmZ6ZV9DNmVKdGpzag?oc=5",
+        "source": "Cryptopolitan",
+        "summary": "Aktuelle Meldung von Cryptopolitan: Samsung, SK Hynix upgrade China fabs to advanced NAND",
         "relevanceScore": 100,
-        "publishedAt": "2026-10-19T08:20:47.000Z"
+        "publishedAt": "2026-10-21T12:44:28.000Z"
       },
       {
-        "id": "456d20a582bdf1bdf75e",
-        "title": "Samsung partners with TSMC for NVIDIA's next-gen chips",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQelkzekdWb2pFY09FV2F3X1FONHdLQl9tX2c1MzEzbzRfSHZVX2o2VEhidm4xNnFnRnY5d3lMdzhYYUVYeG05NlZuUmlhZE85eXpvU1FfTlYzb1ludWM1TDItNmNkcWtvdVktbDhLdHZGOUFJcjhhQUFyMjlKR1BoV1hIYVFHYnlJOVFCSXVrd2xSWGtHM09NUWdHUmZVcDk3STdMdF81aw?oc=5",
-        "source": "NewsBytes",
-        "summary": "Aktuelle Meldung von NewsBytes: Samsung partners with TSMC for NVIDIA's next-gen chips",
+        "id": "b68767259ab129ba7454",
+        "title": "Samsung and SK Hynix are upgrading Chinese factories to produce advanced RAM chips as AI data center competition ramps up — big players move to fight off the threat from CXMT and co.",
+        "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNTjQtNUtfdjBfYVlVQVZZSnZXTl9pWnliTmVPc01oUDh2SlY5Zk1RVXk1anIxMTRTRU1MUFdDUkl0RFBrMHFoa1diaVp4ektVR21YYnA5aEdjeXJuMVo3X2tVekxmanlZajhfM1J3X3JfbW4tUGE3NE0wSHlXalRPQ001M2pZNDRFVVNIRUl0c0hYMTFUbkNVNmx2UTBBWG9EaEJjeVhHMmxCcG5oR25hVjlReHNJUjM2NHlyd0Fxc0VpRWR2cjY0UGxGSjZQNU1YVTFNcGU5MjVfam8yano2QTBNQkg3RThKUHg2LThtM0J6SmJJbXVqLVVfOFQtc3lYaGxjTHdpZnN6OU5tUTJxN2tnRWI3ajNBXzdEWnhnTlVDeTZoaHUySGR1OWIyY3I3UEtSYnZSV1doRW1DQ21NYzhGWTJTWFI4UDNj?oc=5",
+        "source": "Tom's Hardware",
+        "summary": "Aktuelle Meldung von Tom's Hardware: Samsung and SK Hynix are upgrading Chinese factories to produce advanced RAM chips as AI data center competition ramps up — big players move to fight off the threat from CXMT and co.",
         "relevanceScore": 100,
-        "publishedAt": "2026-10-19T08:08:03.000Z"
+        "publishedAt": "2026-10-21T11:49:44.000Z"
       },
       {
-        "id": "a1babe9a0c8f22d708e5",
-        "title": "Samsung to use TSMC’s 3nm technology for Nvidia’s next-gen AI memory chips",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRm1POXYzYnpxTTI1TklUQi1SYVhuVURoTXFQWms3R3pqbU9wUnRmeHlGdFNHcHUyZmprMkw4R1F5SGVGYWdSTi1YVnA4N25BZFpGaVdtWHhyQzU1RmdfRVhSN1FwUjBQRDUydDBvbWxETDUyRjZsdE01MnZERXVON0YtcHU3bF83Um1tVmRYYWZYVnl5YktoZGt5dkthZFRJVElpWEhn?oc=5",
-        "source": "YugaTech",
-        "summary": "Aktuelle Meldung von YugaTech: Samsung to use TSMC’s 3nm technology for Nvidia’s next-gen AI memory chips",
+        "id": "f0ca9931990883308cef",
+        "title": "Samsung, SK hynix Upgrade China NAND Plants to Counter Rising YMTC",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94NS1iaVlKcGh0bVlyemZCNmFCSklyd2ZfOVpGZ0ZlMmZwWGZFblhzaWU2T0prNkNtMVBfckxhdkN0OUlLSkFWYlVXUjRFRVQtYVBjZGl5TVVfcUhTMXU0ME1fc21pekpLdlJZZ3hNMTFyXzdS?oc=5",
+        "source": "Businesskorea",
+        "summary": "Aktuelle Meldung von Businesskorea: Samsung, SK hynix Upgrade China NAND Plants to Counter Rising YMTC",
         "relevanceScore": 100,
-        "publishedAt": "2026-10-19T07:17:33.000Z"
+        "publishedAt": "2026-10-21T11:40:58.000Z"
       },
       {
-        "id": "593b158d9e2fdb9f8a1b",
-        "title": "Samsung to Use TSMC’s 3-Nanometer Process for Nvidia’s NVHBM Base Dies",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WVXNSTFNWMVVKUWdSSGFVX1FBMHpfaTlhWGU2bExEd0NDcXBZQ3IxaDNzNjdHcmFzVy1oaWtDNDFrODZQT0FOMGx4VjBGU1F0VzNJNHpSRm5mOVE?oc=5",
-        "source": "TOKENPOST",
-        "summary": "Aktuelle Meldung von TOKENPOST: Samsung to Use TSMC’s 3-Nanometer Process for Nvidia’s NVHBM Base Dies",
+        "id": "8d762a4410adb41fb55d",
+        "title": "Samsung and SK Hynix upgrade China NAND operations amid U.S. export curbs",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR3J4QlN3YjRXdFNGcWhwcENGTGJSbEZ3SnhHZ3hUSjB1eVZ1UFhuLUhtZ2I4YkFSYkZWSnFGQ25oR0dLZ0Q4ZGp0UXdrQ1JsbTNpRG1HVVBIc3RRX0stRUF0S1NQUHR1NWo5NmpjWnJ3d3I1Ymg5TzdROFhhajF6ZHdmTnpNVUhiUWh2Y21CZ2tKTVk?oc=5",
+        "source": "Traders Union",
+        "summary": "Aktuelle Meldung von Traders Union: Samsung and SK Hynix upgrade China NAND operations amid U.S. export curbs",
         "relevanceScore": 100,
-        "publishedAt": "2026-10-19T07:14:18.000Z"
+        "publishedAt": "2026-10-21T11:25:29.000Z"
       }
     ],
     "canonicalMetricsSource": "dashboard.json executivePulse",
@@ -806,29 +874,29 @@
   ],
   "admissionReview": {
     "schemaVersion": 1,
-    "checkedAt": "2026-10-20T01:58:42.285Z",
-    "inboxUpdatedAt": "2026-10-20T01:49:14.975Z",
+    "checkedAt": "2026-10-21T16:04:03.513Z",
+    "inboxUpdatedAt": "2026-10-21T15:57:14.026Z",
     "status": "pending",
-    "candidates": 498,
-    "reviewed": 203,
-    "accepted": 21,
+    "candidates": 526,
+    "reviewed": 204,
+    "accepted": 22,
     "watchlist": 175,
     "rejected": 7,
-    "pending": 315,
-    "oldestPendingAt": "2026-09-18T12:37:00.000Z",
-    "lastCompletedReviewAt": "2026-10-20T01:58:42.239Z",
+    "pending": 342,
+    "oldestPendingAt": "2026-09-18T18:07:49.000Z",
+    "lastCompletedReviewAt": "2026-10-21T16:04:03.486Z",
     "error": null,
     "batchErrors": [],
-    "rawCandidates": 1118,
+    "rawCandidates": 1171,
     "reviewCutoff": "2026-09-18T11:40:00Z",
     "historicalCandidatesSkipped": 1221,
     "triage": {
       "archivedOpinions": 27,
-      "groupedDuplicates": 62
+      "groupedDuplicates": 66
     },
     "lastRun": {
-      "startedAt": "2026-10-20T01:57:45.792Z",
-      "completedAt": "2026-10-20T01:58:42.288Z",
+      "startedAt": "2026-10-21T16:03:08.620Z",
+      "completedAt": "2026-10-21T16:04:03.516Z",
       "selected": 2,
       "reviewed": 2,
       "concurrency": 1,
@@ -836,13 +904,13 @@
       "limit": 2,
       "rateLimitRetries": 0,
       "timeoutRetries": 0,
-      "durationSeconds": 56,
+      "durationSeconds": 54,
       "budgetExhausted": false
     }
   },
   "indexCalculation": {
-    "asOf": "2026-10-20",
-    "inputHash": "dc55f6588ee4fe294eef6121b0fea0cc42ea981206ee3ff4f861920c6b6e574b",
-    "sourceDataAsOf": "2026-10-06"
+    "asOf": "2026-10-21",
+    "inputHash": "68cbcae3064605201401f8803af8d896ef40d19bde0fee754b8903c7587b624d",
+    "sourceDataAsOf": "2026-10-21"
   }
 }
