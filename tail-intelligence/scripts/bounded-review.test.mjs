@@ -13,7 +13,7 @@ async function setup(t, fetchImpl) {
   const auditPath=path.join(dir,'usage.jsonl');
   return {auditPath,request:createBoundedReviewer({cacheDir:path.join(dir,'cache'),auditPath,fetchImpl})};
 }
-test('Pilot enforces two attempts, bounded tools/output and exact response reuse',async t=>{
+test('Pilot enforces four attempts, bounded tools/output and exact response reuse',async t=>{
   let calls=0;
   const {request}=await setup(t,async (_,o)=>{
     calls++;const b=JSON.parse(o.body);
@@ -24,8 +24,18 @@ test('Pilot enforces two attempts, bounded tools/output and exact response reuse
   assert.equal((await request(endpoint,options('a'),control)).id,'r1');
   assert.equal((await request(endpoint,options('a'),control)).id,'r1');
   await request(endpoint,options('b'),control);
-  await assert.rejects(request(endpoint,options('c'),control),/budget exhausted/);
-  assert.equal(calls,2);
+  await request(endpoint,options('c'),control);
+  await request(endpoint,options('d'),control);
+  await assert.rejects(request(endpoint,options('e'),control),/budget exhausted/);
+  assert.equal(calls,4);
+});
+test('Daily estimated spend stops paid requests before the next call',async t=>{
+  let calls=0;
+  const {request,auditPath}=await setup(t,async()=>{calls++;return {ok:true,json:async()=>({id:'r',status:'completed',output:[],usage:{input_tokens:10,output_tokens:5}})};});
+  const today=new Date().toISOString();
+  await fs.writeFile(auditPath,JSON.stringify({at:today,key:'earlier',status:'completed',startedAt:today,estimatedCostUsd:0.45})+'\n');
+  await assert.rejects(request(endpoint,options('new'),{deadline:Date.now()+600000}),/estimated API budget exhausted/);
+  assert.equal(calls,0);
 });
 test('A timeout is recorded as unknown cost and never automatically repeated',async t=>{
   let calls=0;

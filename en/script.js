@@ -142,7 +142,8 @@ function renderDashboard(snapshot) {
   const isCurrent = platform.dataFreshness === "current" && platform.processStatus === "ok";
   document.querySelector(".status-dot").classList.toggle("stale", !isCurrent);
   const review = platform.admissionReview || {};
-  document.getElementById("freshness-text").textContent = `Calculated ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Evidence ${formatDate(platform.indexEvidenceAsOf || platform.sourceDataAsOf)} · ${review.status === 'complete' ? 'Review complete' : 'Evidence review pending'}`;
+  const excluded = Number(review.historicalCandidatesSkipped || 0);
+  document.getElementById("freshness-text").textContent = `Calculated ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · latest index evidence ${formatDate(platform.indexEvidenceAsOf || platform.sourceDataAsOf)} · ${review.pending ?? '–'} pending${excluded ? ` · ${excluded} older candidates excluded` : ''}`;
   indexLabel.textContent = review.status === 'complete' ? 'REVIEWED' : 'REVIEW PENDING';
   document.getElementById("signal-freshness").textContent = `News published ${formatDate((snapshot.signals || []).map(s => s.date).sort().at(-1))} · ${platform.articleCount ?? '–'} records in the knowledge base`;
 
