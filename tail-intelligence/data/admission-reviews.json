@@ -59711,6 +59711,75 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0eac2a5e28ce90ef006ada332efdac87d0b6ca5503e2212dae"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Goldman Sachs: US$500M‑Commitment und Gründung 'Small Business AI Institute' mit OpenAI, Google, Anthropic und Meta (datiert 2026-10-22)",
+      "fact": "Goldman Sachs kündigte am 2026-10-22 eine US$500 Millionen Erweiterung seines 10,000 Small Businesses‑Programms an und gründete das „Goldman Sachs Small Business AI Institute“, mit angekündigten Partnern OpenAI, Google, Anthropic und Meta. Quellen: Goldman Sachs Pressemitteilung und CityBiz‑Meldung. ([goldmansachs.com](https://www.goldmansachs.com/pressroom/press-releases/2026/goldman-sachs-commits-500-million-to-launch-small-business-ai-institute?utm_source=openai))",
+      "placement": "Geographie: USA; Domäne: Small Business / Unternehmerförderung; Layer: Nachfrage‑/Adoptionslayer (AI‑Adoption bei KMU); Horizont: kurzfristig bis mittelfristig (12 Monate Sicht).",
+      "mechanism": "Goldman Sachs stellt Kapital und organisatorische Infrastruktur bereit (US$500M) und koordiniert Partnerschaften mit führenden AI‑Anbietern, um Trainings, Tools und Zugang für US‑Kleinunternehmen bereitzustellen. Erwarteter Kanal: erhöhte AI‑Adoption bei KMU durch subsidierte Schulungen, technische Integrationen und Plattformzugang, was marginal aiDemand (aiDemand driver) erhöhen kann; keine sofortige Wirkung auf Halbleiter‑Shipments oder Preise nachgewiesen.",
+      "predictionId": "P-2026-07-12-03",
+      "predictionImpact": "Informiert P-2026-07-12-03 (\"AI‑Inputinflation verbreitert sich 2026; Memory, Software, Strom und Energieprodukte sind Hauptkanäle\"). Diese Ankündigung erhöht die Wahrscheinlichkeit, dass AI‑Adoption sich auch auf KMU‑Ebenen ausweitet und damit Software‑ und Dienstleistungs‑Nachfrage (aiDemand) verbreitert, aber der direkten Hebel auf Memory/Server‑DRAM/NAND‑Nachfrage bleibt begrenzt und inkrementell.",
+      "falsifier": "Bis 2027-10-22 wird die Wirkung des Instituts quantitativ geprüft: die Beobachtungs‑Falsifizierbedingung ist, dass weniger als 5.000 KMU innerhalb 12 Monaten nach Ankündigung mithilfe des Instituts oder den angekündigten Partnerprogrammen tatsächlich AI‑Integrationen implementieren (definiert als nachgewiesene Nutzung von Partner‑APIs/Deployments zur Automatisierung von betrieblichen Kernprozessen). Wenn ≥5.000 KMU nachweisbar implementiert haben, unterstützt das die These, dass die Maßnahme materielle aiDemand‑Breite erzeugt; andernfalls ist der marktrelevante Impact schwach/fehlend.",
+      "nextReview": "2027-10-22",
+      "eventDate": "2026-10-22",
+      "novelty": "Die Summe (US$500M) und die konkrete Instituteinrichtung mit direkten Partnerschaften der vier großen AI‑Player ist neu gegenüber Baseline; einzelne Partnerschaften wurden zuvor nicht als koordinierte KMU‑Initiative dokumentiert.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "supply_chain"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 70,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.goldmansachs.com/pressroom/press-releases/2026/goldman-sachs-commits-500-million-to-launch-small-business-ai-institute",
+          "label": "Goldman Sachs – Pressemitteilung: 'Goldman Sachs Commits $500 Million to Launch Small Business AI Institute and Expand 10,000 Small Businesses' (2026-10-22)",
+          "kind": "primary",
+          "supports": "Direkte Bestätigung der US$500M‑Verpflichtung, Name des Instituts, und die genannten Partner OpenAI, Google, Anthropic und Meta. ([goldmansachs.com](https://www.goldmansachs.com/pressroom/press-releases/2026/goldman-sachs-commits-500-million-to-launch-small-business-ai-institute?utm_source=openai))"
+        },
+        {
+          "url": "https://www.citybiz.co/article/922773/goldman-sachs-commits-500-million-to-expand-small-business-program-launches-ai-institute-with-openai-google-anthropic-and-meta/",
+          "label": "citybiz – Meldung zur Ankündigung (2026-10-22)",
+          "kind": "secondary",
+          "supports": "Journalistische Zusammenfassung der Pressemitteilung mit Datum und Zusammenfassung; bestätigt Umfang und Partnerliste. ([citybiz.co](https://www.citybiz.co/article/922773/goldman-sachs-commits-500-million-to-expand-small-business-program-launches-ai-institute-with-openai-google-anthropic-and-meta/?utm_source=openai))"
+        }
+      ],
+      "reason": "Primärquelle (Goldman Sachs Pressemitteilung, 2026-10-22) dokumentiert klar eine US$500 Mio. Verpflichtung und die Gründung eines Small Business AI Institute in Partnerschaft mit OpenAI, Google, Anthropic und Meta. Das Ereignis ist ein sauberes, datiertes, atomarer Fakt (Finanzbetrag, Institution, benannte Partner) und daher aufnehmenswert als Signal. Allerdings erfüllt die Meldung nicht die Aufnahme‑Schwelle für 'accepted' in Bezug auf Marktauswirkung: sie liefert keinen direkten beobachtbaren Effekt auf quantifizierbare Index‑Metriken (Shipments, Preise, Lead‑Times) in einem relevanten Halbleitermarkt; der kausale Pfad zum Baseline‑Forecast (z.B. Memory/Server‑DRAM‑Nachfrage) ist plausibel, aber inkrementell und nicht unmittelbar messbar. Deshalb watchlist (Widerspruchsprüfung / Beobachtungsnachweis erforderlich). Opposing evidence gesucht: keine Quellen gefunden, die die Ankündigung als zurückgezogen oder anders datiert darstellen; mögliche Gegenargumente sind, dass KMU‑Adoption slow rollout ist und keinen nennenswerten Einfluss auf Memory/Enterprise‑SSD/Server‑DRAM‑Nachfrage zeigt. Weitere Evidenz nötig: Nachweis über tatsächliche Implementierungen/Integrationen, Teilnehmerzahlen und konkrete Nutzung von Partner‑Services innerhalb 12 Monaten.",
+      "candidateId": "efc98cd6b492d57ecedd",
+      "candidateKey": "697ee73aeb34f0a4fda22487",
+      "reviewedAt": "2026-10-23T10:10:32.041Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0984c0d2f0f79001006adb327dcdc887d0ab9e5ab3bb5ccd8d"
     }
   ]
 }
