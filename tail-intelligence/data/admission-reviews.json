@@ -59780,6 +59780,154 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0984c0d2f0f79001006adb327dcdc887d0ab9e5ab3bb5ccd8d"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: OpenAI plant Kauf von Googles TPU‑AI‑Chips zur Erweiterung der Rechenkapazität",
+      "fact": "Am 2026-10-27 berichtete The Information (weit rezipiert durch Reuters/Bloomberg u. a.), dass OpenAI plane, Tensor Processing Units (TPUs) von Google zu kaufen, um seine AI‑Rechenkapazität zu erweitern; keine Primärbestätigung von OpenAI oder Google gefunden (Stand 2026-10-28).",
+      "placement": "Global / AI‑Infrastruktur / Hardware‑Layer / kurzfristig (H2 2026)",
+      "mechanism": "Reported: Direkter Erwerb oder vertraglich gesicherter Zugang zu Googles TPU‑Hardware würde OpenAI zusätzliche, von Nvidia unabhängige Rechenleistung bereitstellen und damit die Nachfrage nach Googles TPU‑Supply erhöhen sowie OpenAIs Lieferkettenabhängigkeit von Nvidia reduzieren.",
+      "predictionId": "P-2026-07-21-04",
+      "predictionImpact": "Mässiger Einfluss: Wenn bestätigt, würde die Meldung die Marktstruktur für KI‑Serverchips verändern (mehr Anbieter für Großkunden), was das Umfeld für Googles Server‑Chip‑Strategie (z. B. 'Frozen v2') und damit die Annahme in P-2026-07-21-04 (Google bestätigt/pilottet Gemini‑spezifischen Serverchip) teilweise stützt oder verändert; die genaue mengen‑/zeitliche Wirkung bleibt unbestätigt.",
+      "falsifier": "Bis 2026-11-30 keine Primärquelle (offizielle Pressemitteilung, vertragliche Offenlegung mit Mengen/Zeitrahmen, SEC/Regulatory‑Filing, oder von Google/OpenAI unmittelbar bestätigtes Statement) die einen physischen Kauf/Bindung für TPUs durch OpenAI belegt.",
+      "nextReview": "2026-11-30",
+      "eventDate": "2026-10-27",
+      "novelty": "Die Meldung kombiniert existierende Themen (Hyperscaler/Trittfelder bei TPU‑Verkäufen) mit einem neuen (OpenAI kauft Google‑TPUs) — berichtete Neuigkeit, keine Primärbestätigung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.theinformation.com/articles/openai-longtime-nvidia-customer-plans-buy-googles-ai-chips",
+          "label": "The Information — Originating report (2026-10-27)",
+          "kind": "primary",
+          "supports": "Artikel berichtet, OpenAI plane TPUs von Google zu kaufen (Personen mit Kenntnis der Angelegenheit)."
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/openai-plans-buy-google-chips-011946561.html",
+          "label": "Bloomberg (via Yahoo Finance) — Reprise (2026-10-28)",
+          "kind": "secondary",
+          "supports": "Bloomberg‑Bericht (via Aggregator) berichtet denselben Kernpunkt und nennt Personen mit Kenntnis; keine offizielle Bestätigung."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist relevant für die TAIL‑Thesen zu AI‑Infrastruktur und Chip‑Versorgungsdynamiken. Unsere Adversarial‑Prüfung verlangt Primärverifikation (offizielle Bestätigung, Vertragsdokumente, SEC‑/Regulatory‑Filings oder direkte Unternehmens­aussagen mit Liefermengen/Zeitrahmen). Zum Prüfzeitpunkt (2026-10-28) liegt nur ein Bericht von The Information und zahlreiche Sekundärmeldungen vor; weder OpenAI noch Google haben den physischen Kauf oder einen bindenden Vertrag öffentlich bestätigt. Gegenbelege: es fehlt jede Primärbestätigung; frühere Muster zeigen, dass solche Berichte ohne Vertragsdetails oft erst später (oder nie) verifiziert werden. Deshalb kann die Meldung nicht als VERIFIED DATA aufgenommen werden. Empfehlung: Watchlist — prüfe erneut bis 2026-11-30 oder bei Veröffentlichung einer Primärquelle. Falls eine Primärquelle erscheint, ist eine Nachbewertung notwendig; fehlt sie, bleibt die Meldung als ungeprüfter Markt‑Gerücht‑Signalfall.",
+      "candidateId": "1a24a75a71ee4002b153",
+      "candidateKey": "90aba03dc0c5624dd6579ab5",
+      "reviewedAt": "2026-10-28T11:29:02.263Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0635ef5e280dc6e3006ae1dc638d7487d1a305afe3460e9829"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht über geplante ~10% Chip‑Preiserhöhung bei AMD (gerüchtebasiert)",
+      "fact": "Mehrere Marktberichte (z. B. TradingView / Yahoo Finance) melden, dass AMD Partner über eine etwa 10%ige Preisanpassung für bestimmte Chips ab Q4/2026 informiert haben soll, verknüpft mit höheren Waferkosten bei TSMC.",
+      "placement": "Global / Halbleiter-Lieferkette; betroffene Produktgruppen: AI‑Acceleratoren, GPUs, ausgewählte CPU/Chipsets; Datum der ursprünglichen Meldung: 2026-09-18.",
+      "mechanism": "Gemeldete Kausalität: TSMC erhöht Herstellungspreise (höhere Wafer-/Foundry‑Quotierungen) → AMD gibt gestiegene Herstellkosten anteilig an Abnehmer weiter (listenpreisliche oder vertragliche Preisanpassungen), um Margen zu schützen.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "price_up — signalisiert zusätzlichen aufwärtsgerichteten Preisdruck für Speicher- und AI-Server-Subsysteme durch Herstellerweitergabe von Foundry‑Kosten.",
+      "falsifier": "Bis 2026-10-31: kein formal veröffentlichter Preisanpassungs‑Nachweis von AMD (öffentliche AMD‑Mitteilung, SEC‑Filing oder namentlich dokumentierte Kundenvereinbarung/Angebotsblatt) und keine bestätigende TSMC‑Kommunikation über verbindliche, datierte Foundry‑Preislisten, die eine sofortige kundenseitige Weitergabe um ~10% nachweisen. Falls solche Primärdokumente vorliegen, falsifiziert das Watchlist‑Verdikt in Richtung admissibel/verified.",
+      "nextReview": "2026-10-31",
+      "eventDate": "2026-09-18",
+      "novelty": "gerüchtebasiert; keine Primärbestätigung",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 40,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://in.tradingview.com/news/stocktwits%3Ada07b5b8d094b%3A0-amd-stock-rises-premarket-report-flags-chip-price-hike-linked-to-tsmc-costs/",
+          "label": "TradingView (relay) — ursprüngliche Headline/Story",
+          "kind": "secondary",
+          "supports": "Berichtet, dass AMD‑Aktien vorbörslich stiegen, nachdem Supply‑Chain‑Berichte eine ~10% Preisanpassung ab Q4/2026 nannten."
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-rises-premarket-report-092213707.html",
+          "label": "Yahoo Finance — Markets page",
+          "kind": "secondary",
+          "supports": "Fasst mehrere Medien‑Relays zusammen: Meldung über eine angebliche AMD‑Mitteilung an Kunden über Preiserhöhung im Zusammenhang mit TSMC‑Kosten."
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-is-reportedly-hiking-prices-for-all-advanced-nodes-accounting-for-74-percent-of-the-companys-wafer-business-nvidia-amd-apple-qualcomm-and-others-will-face-higher-wafer-costs",
+          "label": "Tom's Hardware — Kontext zu TSMC‑Preisgerüchten",
+          "kind": "secondary",
+          "supports": "Berichtet unabhängig über Gerüchte/Analysen, dass TSMC Preiserhöhungen plant, welche die Kostenbasis für Firmen wie AMD erhöhen würden."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist ein marktweites Relay mehrerer Business‑News‑Desks, nicht aber ein Primärbeleg. Es existieren aktuell keine direkten Primärquellen (AMD‑Pressemitteilung, SEC‑Filing, TSMC‑Bekanntmachung oder namentlich datierte Kundenverträge), die die behauptete, konkrete 10%ige Weitergabe als faktischen, datierten und quantifizierbaren Marktcode belegen. Ohne solchen Primärnachweis kann die Beobachtung zwar kurzfristig relevant sein (Marktreaktion, Preisdruck‑These), erfüllt aber nicht die TAIL‑Aufnahmekriterien für VERIFIED DATA oder unmittelbare Admission. Opposing evidence/Unschärfen: mehrere Berichte zitieren dieselben Supply‑Chain‑Leaks/Relays; es fehlt Bestätigung durch AMD oder TSMC; diverse Folgemeldungen deuten auf Spekulationen und mögliche spätere Staffelungen statt einer sofortigen, pauschalen 10%-Weitergabe. Empfehlung: Watchlist bis 2026-10-31; suche nach Primärdokumenten (AMD‑Kundenmitteilung/SEC‑Disclosure, TSMC formale Preisliste, oder namentlich belegte Kundenvertragsänderungen).",
+      "candidateId": "2adc242307b1039bf3d1",
+      "candidateKey": "ddcd8b6925ffbfbfae76b18a",
+      "reviewedAt": "2026-10-28T11:29:40.060Z",
+      "priorityScore": 64,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0075629771096b6e006ae1dc7e7f2487d1ba96dc36ac0ad5a3"
     }
   ]
 }
