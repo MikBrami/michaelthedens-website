@@ -59928,6 +59928,148 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0075629771096b6e006ae1dc7e7f2487d1ba96dc36ac0ad5a3"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kurzfristiger Kursrückgang bei Sandisk & Micron nach Samsung‑Miss — unzureichende Beweislage für TAIL‑Aufnahme",
+      "fact": "24/7 Wall St. berichtete am 2026-10-29, dass Sandisk (SNDK) und Micron (MU) rund 5 % fielen, SK hynix etwa 3 % und Western Digital ebenfalls nachließ, angrenzend an einen von Samsung berichteten Ergebnisrückschlag, der die Memory‑Rallye dämpfte. ",
+      "placement": "Globales Finanzmarkt‑Headline‑Signal; relevanter Produktmarkt: DRAM / NAND / Server‑Memory; geografische Reichweite: global/Marktmärkte (Aktienkurse).",
+      "mechanism": "Aktienkursreaktion auf ein Unternehmens‑Earnings/Guidance‑Miss (Samsung) und damit verbundene Sentiment‑/Repricing‑Effekte für Peer‑Memory‑Werte; kurzfristige Risikoaversion bei Anlegern drückt Spot/Equity‑Preise, aber kein direkter gemessener Kontraktpreis oder Lieferkennwert wird berichtet.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Wenn in den nächsten 14 Kalendertagen kein korrespondierender, datierter beobachtbarer Kontraktpreis‑ oder Lieferzeit‑Effekt (z. B. ein bestätigter DRAM‑Kontraktpreis‑Rückgang ≥5 % in einem standardisierten Kontraktkorb oder Lead‑Time‑Normalisierung unter einer klaren Schwelle) eintritt, bleibt diese Meldung ein rein sentimentgetriebenes Kursereignis und falsifiziert nicht strukturelle Knappheits‑Aussagen.",
+      "nextReview": "2026-11-13",
+      "eventDate": "2026-10-29",
+      "novelty": "Gering — Bericht beschreibt erwartbare Peer‑Aktienreaktionen auf ein Earnings/Miss‑Ereignis; kein neuer, atomarer Lieferketten‑ oder Mengennachweis.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 3,
+        "thesisRelevance": 8,
+        "forecastImpact": 5,
+        "falsifiability": 4,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "nand",
+        "server_dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_down",
+      "severity": 20,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://247wallst.com/investing/2026/10/29/sandisk-and-micron-slide-5-as-samsung-miss-cools-memory-rally-ahead-of-sandisk-earnings-sk-hynix-falls-3-western-digital-dips/",
+          "label": "24/7 Wall St. — Artikel 'Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips' (Published 2026-10-29)",
+          "kind": "primary",
+          "supports": "Bericht dokumentiert prozentuale Aktienrückgänge (≈5% für Sandisk & Micron; ≈3% SK hynix) datiert 2026-10-29 und verknüpft diese mit einem Ergebnis‑/Guidance‑Miss bei Samsung, das die Memory‑Rallye dämpfte."
+        }
+      ],
+      "reason": "Die Kandidatenmeldung ist eine tagesaktuelle Markt‑/Sentiment‑Headline (Aktienkurse fallen nach einem Samsung‑Miss). Für TAIL‑Aufnahme wird jedoch ein atomarer, datierter und quantifizierter Marktfakt (z. B. bestätigte Kontraktpreis‑Beobachtung, qualifizierte Liefermenge/Shipments, Lead‑Time‑Änderung oder ein klares, belegbares Lieferkettenereignis) verlangt, das eine Aussage in den bestehenden Vorhersagen beeinflusst. Diese Meldung liefert nur Kursbewegungen und keine direkten Mengen‑ oder Kontraktpreis‑Messwerte oder einen klaren kausalen Nachweis, der eine der aufgeführten Vorhersagen (z. B. zur strukturellen Knappheit von Server‑DRAM/HBM oder zur Preisdynamik 2027/2028) konkret ändern würde. Außerdem überlappt das Signal thematisch mit bereits im Baseline‑Corpus erfassten Preis‑ und Nachfrage‑Indikatoren (z. B. tail-2026-07-14-dram-prices, tail-2026-07-14-nand-essd), weshalb die Neuheit gering ist. Deshalb: watchlist — es fehlt die erforderliche primäre, messbare Evidenz und der explizite Bezug zu einer vorhandenen Vorhersage (predictionId).",
+      "candidateId": "2c110f7e4062142df32e",
+      "candidateKey": "afe8d34721a87fc34aabb281",
+      "reviewedAt": "2026-10-30T02:44:58.917Z",
+      "priorityScore": 36,
+      "gateReasons": [
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0db79171a5fe22a5006ae40490e5a887d0b37531f2159d26b9"
+    },
+    {
+      "decision": "rejected",
+      "title": "Michael Burry bezeichnet AI‑Verlangsamungsaufrufe als „self‑serving“ (Meinungsäußerung, keine quantifizierbare Marktbeobachtung)",
+      "fact": "Michael Burry veröffentlichte Mitte September 2026 einen öffentlichen Kommentar (X / zitiert 2026-09-14), in dem er die von OpenAI, Anthropic und anderen geäußerten Aufrufe zu einer Verlangsamung der KI‑Entwicklung als „self‑serving“ kritisierte.",
+      "placement": "global / Kommentar‑ bzw. Meinungsäußerung; keine direkte Messung eines Markt- oder Lieferkettenparameters",
+      "mechanism": "Rhetorische/PR‑Motivation: Burry behauptet, Führungskräfte nutzten Verlangsamungsaufrufe, um regulatorische oder IPO‑Vorteile zu erzielen; das ist eine qualitative These über Motivation und Kommunikationswirkung, nicht ein nachweisbarer Lieferketten‑ oder Preismechanismus.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Primärbeleg für Markt‑ oder Lieferkettenwirkung fehlt. Falsifizierbar wäre die These, falls bis 2026-12-31 OpenAI und Anthropic substantielle, bestätigte operative/Finanzentscheidungen melden, die ausdrücklich als Reaktion auf ‚Verlangsamungs‑PR‘ genannt werden (z. B. sofortige IPO‑Stornierung aus PR‑Gründen, drastische CapEx‑Kürzungen ohne sonstige betriebliche Ursache).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-14",
+      "novelty": "niedrig — wiederholt bekannte Marktdebatte über Motive hinter Safety/Slowdown‑Rhetorik; viele Medien zitierten denselben X‑Post.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 5,
+        "thesisRelevance": 6,
+        "forecastImpact": 3,
+        "falsifiability": 2,
+        "timeSensitivity": 1
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand"
+      ],
+      "signal": "demand_down",
+      "severity": 20,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/michael-burry-says-openai-anthropic-113347769.html",
+          "label": "Yahoo Finance — Bericht über Burry‑Kommentar (zitiert X‑Post)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass Michael Burry am 2026-09-14 auf X bzw. öffentlich schrieb, die Verlangsamungsaufrufe seien 'self‑serving'."
+        },
+        {
+          "url": "https://www.theguardian.com/business/live/2026/sep/14/ai-stocks-fall-development-slowdown-anthropic-openai-investors-latest-news-updates?page=with%3Ablock-6aa783598f081c4c8451697a",
+          "label": "The Guardian — Liveberichterstattung zitiert Burry‑Aussage",
+          "kind": "secondary",
+          "supports": "Nennt Burry‑Zitat und datiert die Reaktion Mitte September 2026 (zitiert 2026-09-14)."
+        },
+        {
+          "url": "https://www.inc.com/sam-blum/michael-burry-calls-ai-apocalypse-warnings-a-self-serving-ipo-strategy/91406253",
+          "label": "Inc. — Kontextbericht zum Kommentar",
+          "kind": "secondary",
+          "supports": "Fasst Burry‑Äußerung als Meinungsäußerung zusammen und verortet sie in breiterer Medienberichterstattung über AI‑Slowdown‑Debatte."
+        }
+      ],
+      "reason": "Dieser Kandidat ist primär ein persönlicher/öffentlicher Kommentar (Meinungsäußerung) zu den Motiven von AI‑Unternehmensführern. Er liefert keine atomare, datierte Messung (z. B. Mengen, Vertragswerte, Shipments, Preise, Lead‑Times) und verlinkt keine Primärquelle, die einen messbaren, unmittelbaren Effekt auf eine der in der TAIL‑Baseline gelisteten Vorhersagen beweist. Die Aufnahme in den TAIL‑Korpus verlangt ein konkretes, belegbares, datiertes Marktereignis mit Einheiten, eine klar abgegrenzte Platzierung (Geographie/Layer/Horizon), eine Kausalmechanik und eine messbare Falsifizierbarkeit gegenüber einer vorhandenen Prognose — all das fehlt hier. Es gibt außerdem bereits umfangreiche Medien‑Wiederberichterstattung desselben X‑Posts (Duplikationsrisiko). Deshalb wird der Kandidat abgelehnt.",
+      "candidateId": "b7cded7b4a9c3c55aa16",
+      "candidateKey": "9aaf8ea2e344ae078ccbfaca",
+      "reviewedAt": "2026-10-30T02:45:26.263Z",
+      "priorityScore": 25,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bacd8cc0b794a01006ae404ab13f887d09dbfcb5f06cc5867"
     }
   ]
 }

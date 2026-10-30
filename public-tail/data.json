@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T11:29:41.961Z",
+  "generatedAt": "2026-10-30T02:45:28.310Z",
   "platform": {
-    "dataAsOf": "2026-10-28",
-    "analysisAsOf": "2026-10-28",
+    "dataAsOf": "2026-10-30",
+    "analysisAsOf": "2026-10-30",
     "sourceDataAsOf": "2026-10-21",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-10-28T11:29:40.098Z",
-      "pending": 400,
-      "reviewed": 206,
+      "checkedAt": "2026-10-30T02:45:26.307Z",
+      "pending": 428,
+      "reviewed": 207,
       "accepted": 22,
-      "rawCandidates": 1301,
+      "rawCandidates": 1346,
       "triage": {
         "archivedOpinions": 28,
-        "groupedDuplicates": 75
+        "groupedDuplicates": 77
       },
       "lastRun": {
-        "startedAt": "2026-10-28T11:28:33.313Z",
-        "completedAt": "2026-10-28T11:29:40.101Z",
+        "startedAt": "2026-10-30T02:44:30.772Z",
+        "completedAt": "2026-10-30T02:45:26.311Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 66,
+        "durationSeconds": 54,
         "budgetExhausted": false
       }
     },
@@ -42,13 +42,13 @@
         "score": 73,
         "status": "orange",
         "signals": 19,
-        "confidence": 72,
+        "confidence": 71,
         "coverage": 100
       },
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 61,
+        "score": 60,
         "status": "yellow",
         "signals": 31,
         "confidence": 89,
@@ -66,50 +66,50 @@
     ]
   },
   "executivePulse": {
-    "current": 71,
-    "previous": 72,
+    "current": 70,
+    "previous": 71,
     "status": "orange",
     "confidence": 72,
     "riskPressure": 81,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-28; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (400 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bei Memory und AI-Infrastruktur bleibt angespannt. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-10-30; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (428 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
-      "date": "2026-10-28",
-      "title": "Samsung beats SK Hynix in Q3 HBM revenue, Q4 to change market landscape",
-      "summary": "Samsung beats SK Hynix in Q3 HBM revenue, Q4 to change market landscape Sammy Fans",
+      "date": "2026-10-29",
+      "title": "[News] Samsung Says HBM Share Matches DRAM Standing as HBM4 Sales Triple; DS Margin Hits 72%, 10 LTA Clients Signed",
+      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Says HBM Share Matches DRAM Standing as HBM4 Sales Triple; DS Margin Hits 72%, 10 LTA Clients Signed",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 95,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdnRmTk12TXJpOVN6M25tWksxNTROT0l0TklOelZ3YU04RVotVi1Wa2JrOU5TRi1pblpseU53YjBfZFM4SnVkbmVWX2VhNUNldWgzajc2TUkzWXNnREljVWYta0tXbDdZRnphLXJwQk1LakJYNUJOVkJYWUtKTVliT1hLS25DZTBoSy1laGhpbmlpQVMwaHZiTlVSdjN2cHl5eGtmRnZhTlZRZFZNWFFxQ19qbF9yek5ONUI2c2h5Mkd1Ni1MdjdKSUtFNk52eUdoX3FRMERyWkkwTkZ6LW9MZGRSNTlYSnp4c1E?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips",
+      "summary": "Aktuelle Meldung von 24/7 Wall St.: Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Sammy Fans",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZllWRDdTNGItbVNjZ0xFUTAwYlppdEtKQ2xZLXpvMm1XTU13N19iSzRCMC04NDEzeVBvbzYtTlk5UjF5bFFncllNdk9qWHVGZXBnbmVlRkExMmQ1ektDMmlDdDFNOHk2UXJlX2hiNkU0dTBpWWZaSGZjVTI2WGtfbmlnQ1nSAYoBQVVfeXFMTWJpZC1sd2I1eUV1VXJqdDBKeU9FcnhMb1JaT09JZmlma0p5SnBNcG1aNmhxSWxzRThTdFh5UFVDNGRxNzdqZWFyZ3FETEtGSENBbnhBOEZNOVN1T29DUWRCRVBSZGNCcDNvQTdmV3pJYTVtSnhET1VKMEpYSTkzblFvMUtTSlFmanF3?oc=5",
+      "source": "24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUTVoOHM3cGRfOTVDVENWV3cza09ETURab0FjUEhxVm0zMUVjU0txVWJodFktb2czT21aS29KUThnMHRzN1d5YUE3VFV0NDU5LXYxclVGTEtydzhGZEhZdVhQZ2hPYUsxM3p4ZE83SU56VTM4N1BaQzUzRG9HbGZnRzVURThXVUJsYUpoWmdhdlctVmNUZkRjQThyNTY3aS1lVTVJdm1QMTVfQ0xTY1Jrd3ZleW10c1AwYndnYjVkNm5qRHRCZDM1SThnbEx4YVcyNUY4RzBfNTg5QjZVcXJ1VmxXcUw0TWYtbG0zTUxTZlZvM1dabnMyN2NoYnd3QQ?oc=5",
       "layer": "news"
     },
     {
-      "date": "2026-10-27",
-      "title": "TSMC reportedly weighs 20% CoWoS price increase as Nvidia Blackwell and Rubin chips put pressure on packaging capacity — equipment lead times stretch to eight months",
-      "summary": "Aktuelle Meldung von Tom's Hardware: TSMC reportedly weighs 20% CoWoS price increase as Nvidia Blackwell and Rubin chips put pressure on packaging capacity — equipment lead times stretch to eight months",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 90,
+      "date": "2026-10-29",
+      "title": "Nvidia, AMD Commit $4B to Meta AI Buildout",
+      "summary": "Nvidia, AMD Commit $4B to Meta AI Buildout Data Center Knowledge",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 86,
       "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNeC1ucXhWbmlMd2ZsUDZzZ1FxUTBkTXhUTUphc0FtbVo3aFo2WkpsQ2pTZ3V1eGNnVkNhTzE4bXlGcmJFd3FDLVc3bXRON0huRVJoSjBianhnOHhxLXh1cmJSeUl1Vk9uamoyYjhmNzEyVkJCeGotdW5HSW55WnVXUl9XMzcxOFEwMUdDblQwN1hYMHVEWS1oR0xqOEVwUGtPdlpuNlJ5SlVMSjk5ZVdLWG9kb05jU2lvNGdlZTdVc1JHVlFPX19wM3FteTh5NmxZUkRILVpUVW54eVdoVk44eTk1X3ZBNVhIRTBZU0RWdi1wSDEtX1VQTjJzcllzQkN0OTJOMFFBTlZlWE9DR0R0aThKWDNrNVBTeklpZ0s4WnNoNEZtNHRwb0tjSmFaOG5ZXzVRTTdfckNwc1M5NkUyTFB0NjdycW9sNVpVaw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-28",
-      "title": "SK Hynix's Solidigm ties US$45B US NAND fab to Washington nod on China tool upgrade",
-      "summary": "Aktuelle Meldung von digitimes: SK Hynix's Solidigm ties US$45B US NAND fab to Washington nod on China tool upgrade",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 88,
-      "relevanceScore": 91,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPa2k1bEtZWUVSem5IZEMwclN1ZlpDcXdVY0d5V1lBSDhDM25waUFnWkJrRDdVXzJGZndyeS1FaDBFTk9adFZVTzJFQ21ZZkdqSFhwMGhCek5nOUF0YjViZHhMNFBDMEVIYXkydC0tdG5EZ0RLUFRrMGFwTWpaUnlycndkVERzdFh5NHIySEN1VzI?oc=5",
+      "sourceQuality": 6,
+      "source": "Data Center Knowledge",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWWJDMFY0dTdienA3a19xTU9PdzhSUnNDSkdxWFdXRXF1NUdkdDV1UkFrRHpnTFFuYkFlTmNzUF8yUmx6U3VITWFIWmhTTGRtZk52eUh4Wk9zZi1lQXNvU1FBdWMyeGY2bE4zNkRfcXZXanhKaV9lcElNMnRiQ3RYTTVsS2lvM1RKRk1hUnRNRHpLRl9WVnhGRlBR?oc=5",
       "layer": "news"
     }
   ],
@@ -128,54 +128,54 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-10-28",
+    "date": "2026-10-30",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "400 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "428 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
     {
-      "date": "2026-10-28",
-      "title": "Samsung beats SK Hynix in Q3 HBM revenue, Q4 to change market landscape",
-      "summary": "Samsung beats SK Hynix in Q3 HBM revenue, Q4 to change market landscape Sammy Fans",
+      "date": "2026-10-29",
+      "title": "[News] Samsung Says HBM Share Matches DRAM Standing as HBM4 Sales Triple; DS Margin Hits 72%, 10 LTA Clients Signed",
+      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Says HBM Share Matches DRAM Standing as HBM4 Sales Triple; DS Margin Hits 72%, 10 LTA Clients Signed",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 95,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdnRmTk12TXJpOVN6M25tWksxNTROT0l0TklOelZ3YU04RVotVi1Wa2JrOU5TRi1pblpseU53YjBfZFM4SnVkbmVWX2VhNUNldWgzajc2TUkzWXNnREljVWYta0tXbDdZRnphLXJwQk1LakJYNUJOVkJYWUtKTVliT1hLS25DZTBoSy1laGhpbmlpQVMwaHZiTlVSdjN2cHl5eGtmRnZhTlZRZFZNWFFxQ19qbF9yek5ONUI2c2h5Mkd1Ni1MdjdKSUtFNk52eUdoX3FRMERyWkkwTkZ6LW9MZGRSNTlYSnp4c1E?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips",
+      "summary": "Aktuelle Meldung von 24/7 Wall St.: Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Sammy Fans",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZllWRDdTNGItbVNjZ0xFUTAwYlppdEtKQ2xZLXpvMm1XTU13N19iSzRCMC04NDEzeVBvbzYtTlk5UjF5bFFncllNdk9qWHVGZXBnbmVlRkExMmQ1ektDMmlDdDFNOHk2UXJlX2hiNkU0dTBpWWZaSGZjVTI2WGtfbmlnQ1nSAYoBQVVfeXFMTWJpZC1sd2I1eUV1VXJqdDBKeU9FcnhMb1JaT09JZmlma0p5SnBNcG1aNmhxSWxzRThTdFh5UFVDNGRxNzdqZWFyZ3FETEtGSENBbnhBOEZNOVN1T29DUWRCRVBSZGNCcDNvQTdmV3pJYTVtSnhET1VKMEpYSTkzblFvMUtTSlFmanF3?oc=5",
+      "source": "24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUTVoOHM3cGRfOTVDVENWV3cza09ETURab0FjUEhxVm0zMUVjU0txVWJodFktb2czT21aS29KUThnMHRzN1d5YUE3VFV0NDU5LXYxclVGTEtydzhGZEhZdVhQZ2hPYUsxM3p4ZE83SU56VTM4N1BaQzUzRG9HbGZnRzVURThXVUJsYUpoWmdhdlctVmNUZkRjQThyNTY3aS1lVTVJdm1QMTVfQ0xTY1Jrd3ZleW10c1AwYndnYjVkNm5qRHRCZDM1SThnbEx4YVcyNUY4RzBfNTg5QjZVcXJ1VmxXcUw0TWYtbG0zTUxTZlZvM1dabnMyN2NoYnd3QQ?oc=5",
       "layer": "news"
     },
     {
-      "date": "2026-10-27",
-      "title": "TSMC reportedly weighs 20% CoWoS price increase as Nvidia Blackwell and Rubin chips put pressure on packaging capacity — equipment lead times stretch to eight months",
-      "summary": "Aktuelle Meldung von Tom's Hardware: TSMC reportedly weighs 20% CoWoS price increase as Nvidia Blackwell and Rubin chips put pressure on packaging capacity — equipment lead times stretch to eight months",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 90,
+      "date": "2026-10-29",
+      "title": "Nvidia, AMD Commit $4B to Meta AI Buildout",
+      "summary": "Nvidia, AMD Commit $4B to Meta AI Buildout Data Center Knowledge",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 86,
       "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNeC1ucXhWbmlMd2ZsUDZzZ1FxUTBkTXhUTUphc0FtbVo3aFo2WkpsQ2pTZ3V1eGNnVkNhTzE4bXlGcmJFd3FDLVc3bXRON0huRVJoSjBianhnOHhxLXh1cmJSeUl1Vk9uamoyYjhmNzEyVkJCeGotdW5HSW55WnVXUl9XMzcxOFEwMUdDblQwN1hYMHVEWS1oR0xqOEVwUGtPdlpuNlJ5SlVMSjk5ZVdLWG9kb05jU2lvNGdlZTdVc1JHVlFPX19wM3FteTh5NmxZUkRILVpUVW54eVdoVk44eTk1X3ZBNVhIRTBZU0RWdi1wSDEtX1VQTjJzcllzQkN0OTJOMFFBTlZlWE9DR0R0aThKWDNrNVBTeklpZ0s4WnNoNEZtNHRwb0tjSmFaOG5ZXzVRTTdfckNwc1M5NkUyTFB0NjdycW9sNVpVaw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-28",
-      "title": "SK Hynix's Solidigm ties US$45B US NAND fab to Washington nod on China tool upgrade",
-      "summary": "Aktuelle Meldung von digitimes: SK Hynix's Solidigm ties US$45B US NAND fab to Washington nod on China tool upgrade",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 88,
-      "relevanceScore": 91,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPa2k1bEtZWUVSem5IZEMwclN1ZlpDcXdVY0d5V1lBSDhDM25waUFnWkJrRDdVXzJGZndyeS1FaDBFTk9adFZVTzJFQ21ZZkdqSFhwMGhCek5nOUF0YjViZHhMNFBDMEVIYXkydC0tdG5EZ0RLUFRrMGFwTWpaUnlycndkVERzdFh5NHIySEN1VzI?oc=5",
+      "sourceQuality": 6,
+      "source": "Data Center Knowledge",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWWJDMFY0dTdienA3a19xTU9PdzhSUnNDSkdxWFdXRXF1NUdkdDV1UkFrRHpnTFFuYkFlTmNzUF8yUmx6U3VITWFIWmhTTGRtZk52eUh4Wk9zZi1lQXNvU1FBdWMyeGY2bE4zNkRfcXZXanhKaV9lcElNMnRiQ3RYTTVsS2lvM1RKRk1hUnRNRHpLRl9WVnhGRlBR?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-10-28T11:29:42.283Z",
+    "generatedAt": "2026-10-30T02:45:28.683Z",
     "count": 3,
-    "candidateCount": 275,
+    "candidateCount": 229,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -265,10 +265,10 @@
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
         "currentScore": 73,
         "currentStatus": "orange",
-        "confidence": 72,
+        "confidence": 71,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-10-28"
+        "indexAsOf": "2026-10-30"
       },
       {
         "marketId": "enterprise_ssd",
@@ -368,7 +368,7 @@
         "confidence": 56,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-10-28",
+        "indexAsOf": "2026-10-30",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -389,39 +389,39 @@
   },
   "originalSignals": [
     {
-      "date": "2026-10-28",
-      "title": "Samsung beats SK Hynix in Q3 HBM revenue, Q4 to change market landscape",
-      "summary": "Samsung beats SK Hynix in Q3 HBM revenue, Q4 to change market landscape Sammy Fans",
+      "date": "2026-10-29",
+      "title": "[News] Samsung Says HBM Share Matches DRAM Standing as HBM4 Sales Triple; DS Margin Hits 72%, 10 LTA Clients Signed",
+      "summary": "Aktuelle Meldung von TrendForce: [News] Samsung Says HBM Share Matches DRAM Standing as HBM4 Sales Triple; DS Margin Hits 72%, 10 LTA Clients Signed",
       "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
+      "score": 95,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdnRmTk12TXJpOVN6M25tWksxNTROT0l0TklOelZ3YU04RVotVi1Wa2JrOU5TRi1pblpseU53YjBfZFM4SnVkbmVWX2VhNUNldWgzajc2TUkzWXNnREljVWYta0tXbDdZRnphLXJwQk1LakJYNUJOVkJYWUtKTVliT1hLS25DZTBoSy1laGhpbmlpQVMwaHZiTlVSdjN2cHl5eGtmRnZhTlZRZFZNWFFxQ19qbF9yek5ONUI2c2h5Mkd1Ni1MdjdKSUtFNk52eUdoX3FRMERyWkkwTkZ6LW9MZGRSNTlYSnp4c1E?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips",
+      "summary": "Aktuelle Meldung von 24/7 Wall St.: Sandisk and Micron Slide 5% as Samsung Miss Cools Memory Rally Ahead of Sandisk Earnings; SK Hynix Falls 3%, Western Digital Dips",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 90,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Sammy Fans",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZllWRDdTNGItbVNjZ0xFUTAwYlppdEtKQ2xZLXpvMm1XTU13N19iSzRCMC04NDEzeVBvbzYtTlk5UjF5bFFncllNdk9qWHVGZXBnbmVlRkExMmQ1ektDMmlDdDFNOHk2UXJlX2hiNkU0dTBpWWZaSGZjVTI2WGtfbmlnQ1nSAYoBQVVfeXFMTWJpZC1sd2I1eUV1VXJqdDBKeU9FcnhMb1JaT09JZmlma0p5SnBNcG1aNmhxSWxzRThTdFh5UFVDNGRxNzdqZWFyZ3FETEtGSENBbnhBOEZNOVN1T29DUWRCRVBSZGNCcDNvQTdmV3pJYTVtSnhET1VKMEpYSTkzblFvMUtTSlFmanF3?oc=5",
+      "source": "24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUTVoOHM3cGRfOTVDVENWV3cza09ETURab0FjUEhxVm0zMUVjU0txVWJodFktb2czT21aS29KUThnMHRzN1d5YUE3VFV0NDU5LXYxclVGTEtydzhGZEhZdVhQZ2hPYUsxM3p4ZE83SU56VTM4N1BaQzUzRG9HbGZnRzVURThXVUJsYUpoWmdhdlctVmNUZkRjQThyNTY3aS1lVTVJdm1QMTVfQ0xTY1Jrd3ZleW10c1AwYndnYjVkNm5qRHRCZDM1SThnbEx4YVcyNUY4RzBfNTg5QjZVcXJ1VmxXcUw0TWYtbG0zTUxTZlZvM1dabnMyN2NoYnd3QQ?oc=5",
       "layer": "news"
     },
     {
-      "date": "2026-10-27",
-      "title": "TSMC reportedly weighs 20% CoWoS price increase as Nvidia Blackwell and Rubin chips put pressure on packaging capacity — equipment lead times stretch to eight months",
-      "summary": "Aktuelle Meldung von Tom's Hardware: TSMC reportedly weighs 20% CoWoS price increase as Nvidia Blackwell and Rubin chips put pressure on packaging capacity — equipment lead times stretch to eight months",
-      "analysis": "Das Signal liegt upstream in der Halbleiter-Lieferkette. Erst wenn Investitionen in installierte und qualifizierte Tools, stabile Yields und zusätzliche Wafer übergehen, entsteht echte Angebotsentlastung.",
-      "score": 90,
+      "date": "2026-10-29",
+      "title": "Nvidia, AMD Commit $4B to Meta AI Buildout",
+      "summary": "Nvidia, AMD Commit $4B to Meta AI Buildout Data Center Knowledge",
+      "analysis": "Die Meldung verändert den Ausbaupfad von AI- und Datacenter-Infrastruktur. Mehr produktive Compute-Kapazität zieht Server-Memory, Enterprise-Storage, Netzwerk und Stromversorgung mit.",
+      "score": 86,
       "relevanceScore": 100,
-      "sourceQuality": 10,
-      "source": "Tom's Hardware",
-      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNeC1ucXhWbmlMd2ZsUDZzZ1FxUTBkTXhUTUphc0FtbVo3aFo2WkpsQ2pTZ3V1eGNnVkNhTzE4bXlGcmJFd3FDLVc3bXRON0huRVJoSjBianhnOHhxLXh1cmJSeUl1Vk9uamoyYjhmNzEyVkJCeGotdW5HSW55WnVXUl9XMzcxOFEwMUdDblQwN1hYMHVEWS1oR0xqOEVwUGtPdlpuNlJ5SlVMSjk5ZVdLWG9kb05jU2lvNGdlZTdVc1JHVlFPX19wM3FteTh5NmxZUkRILVpUVW54eVdoVk44eTk1X3ZBNVhIRTBZU0RWdi1wSDEtX1VQTjJzcllzQkN0OTJOMFFBTlZlWE9DR0R0aThKWDNrNVBTeklpZ0s4WnNoNEZtNHRwb0tjSmFaOG5ZXzVRTTdfckNwc1M5NkUyTFB0NjdycW9sNVpVaw?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-10-28",
-      "title": "SK Hynix's Solidigm ties US$45B US NAND fab to Washington nod on China tool upgrade",
-      "summary": "Aktuelle Meldung von digitimes: SK Hynix's Solidigm ties US$45B US NAND fab to Washington nod on China tool upgrade",
-      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 88,
-      "relevanceScore": 91,
-      "sourceQuality": 10,
-      "source": "digitimes",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPa2k1bEtZWUVSem5IZEMwclN1ZlpDcXdVY0d5V1lBSDhDM25waUFnWkJrRDdVXzJGZndyeS1FaDBFTk9adFZVTzJFQ21ZZkdqSFhwMGhCek5nOUF0YjViZHhMNFBDMEVIYXkydC0tdG5EZ0RLUFRrMGFwTWpaUnlycndkVERzdFh5NHIySEN1VzI?oc=5",
+      "sourceQuality": 6,
+      "source": "Data Center Knowledge",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWWJDMFY0dTdienA3a19xTU9PdzhSUnNDSkdxWFdXRXF1NUdkdDV1UkFrRHpnTFFuYkFlTmNzUF8yUmx6U3VITWFIWmhTTGRtZk52eUh4Wk9zZi1lQXNvU1FBdWMyeGY2bE4zNkRfcXZXanhKaV9lcElNMnRiQ3RYTTVsS2lvM1RKRk1hUnRNRHpLRl9WVnhGRlBR?oc=5",
       "layer": "news"
     }
   ]
