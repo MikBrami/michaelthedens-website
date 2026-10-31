@@ -60070,6 +60070,145 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0bacd8cc0b794a01006ae404ab13f887d09dbfcb5f06cc5867"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix – Käufer reduzieren HBM-Stapel von 12‑Hi auf 8‑Hi; Bestellungen >2× verfügbare Kapazität (Earnings‑Call 2026‑10‑28)",
+      "fact": "Während des SK hynix Q3/2026 Earnings‑Calls am 2026-10-28 sagte das Management explizit, dass einige HBM‑Kunden ihre Spezifikation von 12‑Layer auf 8‑Layer reduzieren und dass nachgefragte Volumina mehr als doppelt so hoch sind wie die aktuell verfügbare HBM‑Kapazität.",
+      "placement": "Global / HBM‑Layer für AI‑Accelerator‑Module (HBM4/HBM4E); Bemerkung bezieht sich auf Kunden großer Hyperscaler und AI‑Cloud‑Plattformen; Ereignisdatum: 2026-10-28.",
+      "mechanism": "Physische Knappheit an qualifiziertem HBM‑Output + Priorisierung hoher‑margin/vertraglich gebundener Abnehmer zwingt Kunden, Stack‑Höhen (Layer‑Anzahl) zu reduzieren, um Menge/GB pro GPU‑Package zu optimieren; Folge: kurzfristig geringere HBM‑Bit‑Nachfrage pro Modul, aber anhaltender Engpass bei Gesamt‑HBM‑Kapazität und Pricing‑Druck.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Unterstützt die Basissicht, dass HBM und Server‑DRAM strukturell knapp bleiben bis mindestens Ende 2028 (signal: negative_supply). Die Beobachtung belegt akute Allokationsknappheit und Capacity‑Lock; sie verschiebt das Risiko eines länger andauernden Engpasses nicht in die Entspannungsrichtung.",
+      "falsifier": "Bis zum 2027-06-30 muss eines der folgenden Ereignisse eintreten, um diese Aufnahme zu falsifizieren: (a) SK hynix oder ein vergleichbarer primärer HBM‑Lieferant veröffentlicht verifizierbare, qualifizierte HBM‑Shipments, die nachweisbar die Nachfragedeckungs­lücke schließen (d.h. angegebene HBM‑Shipments/Quartal ≥ 100% der zuvor berichteten Bestellungen), oder (b) mehrere große OEM/Cloud‑Kunden bestätigen öffentlich, dass sie wieder dauerhaft auf 12‑Layer‑HBM zurückgehen und SK hynix/Marktbestätigungen zeigen Lead Times ≤ 12 Wochen; Falls bis 2027‑06‑30 weder Shipment‑Normalisierung noch Rückkehr zu 12‑Layer bei mehreren großen Abnehmern nachgewiesen wird, bleibt die Beobachtung gültig.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-10-28",
+      "novelty": "Moderat — bestätigt und konkretisiert bereits bekannte Knappheit (neu: explizite Erwähnung von Layer‑Reduktion durch Kunden + 2× Bestellüberhang).",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 18,
+        "novelty": 10,
+        "thesisRelevance": 20,
+        "forecastImpact": 18,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "pricing",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 60,
+      "confidence": 78,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": true,
+      "sources": [
+        {
+          "url": "https://fourweekmba.com/ai-sk-hynix-some-buyers-cut-hbm-to-8-layers-as-orders-top-2x/",
+          "label": "FourWeekMBA – Bericht zur SK hynix Earnings‑Aussage (Kurzmeldung)",
+          "kind": "secondary",
+          "supports": "Zitiert die Earnings‑Call‑Aussage: einige Kunden verschieben HBM auf 8‑high; angefragte Volumina übersteigen die Lieferkapazität >2×."
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/10/28/sk-hynix-says-hbm-orders-exceed-twice-its-supply-capacity",
+          "label": "Seoul Economic Daily – Zusammenfassung der Earnings‑Aussage (2026‑10‑28)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass SK hynix Bestellungen als mehr als doppelt so groß wie verfügbare HBM‑Kapazität einstufte und dass Käufer Layer‑Zahlen reduzieren."
+        }
+      ],
+      "reason": "Primärquelle (Earnings‑Call‑Transkript, 2026‑10‑28) dokumentiert klar und zeitnah die beobachtete Kundenreaktion (12→8 Layer) sowie den quantifizierten Bestell‑Überhang (>2×). Die Meldung ist direkt relevant für die bestehende Prognose P-2026-07-11-01 (strukturelle Knappheit HBM/Server‑DRAM). Es fehlen jedoch direkte indexierbare Messgrößen (z. B. qualifizierte Shipments‑Zahlen, Lead‑Time‑Metriken), daher ist indexImpact=false. Die Aufnahme enthält eine prüfbare Falsifizierbarkeit (konkreter Review‑Termin 2027‑06‑30 und messbare Bedingungen). Opposing evidence gesucht: Berichte, die eine Normalisierung der Lead Times oder verifizierte skalierte Shipments zeigen, würden die Beobachtung entkräften; bis zum nächsten Review‑Datum sind solche Belege nicht vorhanden.",
+      "candidateId": "7cfa81a8ddd25394ee3f",
+      "candidateKey": "898b8405aff4d21baf11c28b",
+      "reviewedAt": "2026-10-31T16:14:59.668Z",
+      "priorityScore": 86,
+      "gateReasons": [
+        "primary source not retrieved"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0a1d2a217bbbf32d006ae613f032c087d19cff7614513b50a6"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CHOSUNBIZ‑Bericht: OpenAI und Anthropic erzielen rund zehnfach höheren Jahresumsatz gegenüber chinesischen KI‑Modellen (Berichterstattung über Rhodium‑Schätzung)",
+      "fact": "Die CHOSUNBIZ‑Berichterstattung vom 2026-09-14 fasst eine Schätzung zusammen, wonach OpenAI und Anthropic zusammen deutlich höhere jährliche Erlöse erzielen als führende chinesische KI‑Modelle — in der Berichterstattung wird das Verhältnis als ungefähr zehnfach dargestellt (Quelle: CHOSUNBIZ, Zusammenfassung einer Rhodium‑Analyse).",
+      "placement": "Global / AI‑Infrastruktur‑Markt (Revenue‑Vergleich zwischen US‑Frontfirmen und chinesischen Modellanbietern), berichtetes Datum der Meldung: 2026-09-14.",
+      "mechanism": "Konzentration von ARR (annual recurring revenue) bei OpenAI/Anthropic erhöht die finanzielle Fähigkeit dieser US‑Unternehmen, Rechenkapazität (Datacenter, HBM/DRAM, Storage) zu kaufen bzw. langfristig zu binden – das verstärkt die relative Nachfrage nach AI‑Infrastruktur in den USA und kann Allokationseffekte gegenüber China verursachen.",
+      "predictionId": "P-2026-07-12-03",
+      "predictionImpact": "Stärkt die Annahme in P-2026-07-12-03 (AI‑Inputinflation verbreitert sich 2026; Memory, Software, Strom und Energieprodukte sind Hauptkanäle) durch Evidenz höherer, US‑zentrierter Einnahmepower bei Frontier‑Anbietern, was Nachfrage‑Druck auf Memory/Infrastructure erhöhen könnte.",
+      "falsifier": "Wenn unabhängige, primäre geprüfte Umsatzangaben (regelpflichtige SEC‑Dokumente, Unternehmens‑Earnings mit klaren ARR‑Zahlen oder ein aktualisierter Rhodium‑Report) bis 2026-12-31 zeigen, dass das kombinierte ARR‑Verhältnis (OpenAI+Anthropic) zu führenden chinesischen Modellanbietern ≤ 3:1, dann widerspricht das hier berichtete ~10x‑Verhältnis und die Aussage verliert ihre Kernaussage.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-14",
+      "novelty": "Bericht über eine modellbasierte Umsatzschätzung (Rhodium) — nicht ein primär geprüfter Umsatznachweis; inhaltlich relevant, aber nicht neu gegenüber bereits kursierenden Analysen im Sept. 2026.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 14,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 8,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://biz.chosun.com/en/en-it/2026/09/14/DPE7ACFT3RH4DL6U7IOA2GYMTI/?outputType=amp",
+          "label": "CHOSUNBIZ: Anthropic posts second straight operating profit as revenue surges 14-fold (summary of Rhodium/market estimates)",
+          "kind": "secondary",
+          "supports": "Bericht (2026-09-14) fasst Schätzungen zusammen, wonach OpenAI/Anthropic deutlich höhere Erlöse haben als chinesische Modellanbieter; stellt Verhältnis in Berichterstattung dar."
+        },
+        {
+          "url": "https://www.theinformation.com/newsletters/ai-agenda/openai-raises-safety-bar-anthropic-anthropic-expands-revenue-lead/",
+          "label": "The Information: Follow‑up reporting on revenue growth at OpenAI/Anthropic (context, September 2026 coverage)",
+          "kind": "secondary",
+          "supports": "Kontextualisiert und berichtete ähnliche RHODIUM‑/Markt‑Zahlen zur Umsatzkonzentration; zeigt, dass die Meldung aus Sekundärquellen hervorgeht."
+        }
+      ],
+      "reason": "Die eingereichte Inbox‑Meldung ist eine Überschrift/Zusammenfassung einer modell‑ bzw. schätzungsbasierten Analyse (Rhodium), die korrekt als Marktsignal interpretiert werden kann: Konzentration von Umsatz bei OpenAI/Anthropic deutet auf stärkere US‑gezentrierte Nachfrage nach AI‑Infrastruktur. Allerdings fehlen damit kritische Anforderungen für Aufnahme als VERIFIED DATA: es gibt keinen primären, prüfbaren, datierten Erlösbeleg (audited ARR oder formales Unternehmens‑Disclosure) mit konkreten, verifizierbaren Einheiten und es fehlt ein klar abgegrenzter geographischer/produktbezogener Messwert. Weiterhin liefert die Meldung selbst keine dezidierte, falsifizierbare Messgröße für direkte Indexwirkung (z. B. qualifizierte Lieferungen, Lead‑Times oder Vertragspreise) — deshalb ist die Aussage derzeit als modellbasierter Signalhinweis nützlich, aber nicht ausreichend zur Volleingabe. Vorschlag: Watchlist bis 2026-12-31; prüfe dann primäre Unternehmensangaben (SEC/registrierte Finanzdaten oder ein direkt verlinkbares, ausführliches Rhodium‑Report‑PDF) oder offizielle ARR‑Offenlegungen, die das berichtete ~10x‑Verhältnis bestätigen oder falsifizieren.",
+      "candidateId": "a727ec8356b906a26c30",
+      "candidateKey": "ba816bb75dce082dea55abd1",
+      "reviewedAt": "2026-10-31T16:15:23.974Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_01fe5a2cb054550e006ae61403ddc887d182cea5a6c65a5757"
     }
   ]
 }
