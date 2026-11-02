@@ -60209,6 +60209,139 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_01fe5a2cb054550e006ae61403ddc887d182cea5a6c65a5757"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Kommentar/Marktmeinung — kein primärer, qualifizierter Nachweis für einen neuen, atomaren NAND‑Lieferungs- oder Preis‑Ereignisfakt",
+      "fact": "Medienkommentar: 'Sandisk stock forecast: Kioxia’s 11% Tokyo slide tests NAND growth' (Techi); berichtet einen Kursrückgang von Kioxia in Tokyo und interpretiert dies als Test der NAND‑Wachstumsdynamik.",
+      "placement": "Global / Kapitalmarkt‑Kommentar; Bezug: NAND / Enterprise SSD Markt (allgemein), keine konkrete geographische Beschränkung außer 'Tokyo' für den Kurs.",
+      "mechanism": "Narrative‑Kommentar: Ein Kursrutsch bei Kioxia reflektiere enttäuschte Guidance/Markterwartungen und könnte Anleger‑ bzw. Vertragsverhalten sowie Preisbildungs‑Erwartungen für NAND/Enterprise‑SSD beeinflussen. Es wird kein primärer, messbarer Lieferungs‑ oder Erfüllungsbefund (Shipments, Lead‑Time, Fill‑Rate) berichtet.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Signal liefert kontextuelle Support‑Information zur bestehenden OUTLOOK-enterprise_ssd These (preis- und Nachfrage‑Druck), ändert die Basissicht jedoch nicht hinreichend: Kommentar ist interpretativ und unbestätigt durch primäre Operative/Vertragsdaten.",
+      "falsifier": "Innerhalb von 30 Tagen (bis 2026-12-02) werden entweder (A) klare, primäre Messgrößen veröffentlicht, die die Techi‑Behauptung stützen (z. B. bestätigte, qualifizierte Enterprise‑SSD‑Kontraktpreise, die sequentiell zwei positive Quartale zeigen, oder veröffentlichte, qualifizierte Allokationskürzungen/Shipments mit Einheiten) — ODER (B) veröffentlichte Kontrakt‑/Spot‑NAND‑Preisdaten und Fill‑Rate‑Messungen zeigen keine signifikante Verschlechterung (keine zwei positiven Preisquartale bzw. keine verschlechterte Fill‑Rate); falls (B) eintritt, ist die Techi‑Narrative widerlegt.",
+      "nextReview": "2026-12-02",
+      "eventDate": "2026-11-02",
+      "novelty": "Gering — wiederholt Basissignale zu NAND‑Preis/Marktrisiken und Aktienreaktionen; keine neue, atomare Beobachtung.",
+      "duplicateOf": "tail-2026-07-14-nand-essd",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 2,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 25,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.techi.com/sandisk-stock-forecast-kioxia-tokyo-nand-growth/",
+          "label": "Techi — Artikel 'Sandisk stock forecast: Kioxia’s 11% Tokyo slide tests NAND growth'",
+          "kind": "secondary",
+          "supports": "Berichtet Kioxia‑Aktienrückgang und interpretiert Marktreaktion als Test für NAND‑Wachstum; stellt keine primären Shipment/Lead‑Time/Fill‑Rate‑Messungen bereit."
+        },
+        {
+          "url": "https://links.sgx.com/FileOpen/Earnings-Release-FY2026-2Q-EN.ashx?App=Announcement&FileID=909911",
+          "label": "Kioxia — 'Consolidated Financial Results for the Six Months Ended September 30, 2026' (Firmenmeldung / Earnings PDF)",
+          "kind": "primary",
+          "supports": "Primäre Firmenangaben zur Ergebnislage und Guidance (Q2 FY2026 Ergebnisdokument). Das Dokument liefert operative Kennzahlen und Guidance, aber keine bestätigten Marktweiten Shipping‑ oder Fill‑Rate‑Messungen, die die Markterzählung als atomar verifizieren."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung ist ein journalistischer Marktkommentar (Techi) über eine Aktienreaktion (Kioxia Kursrückgang) und interpretiert diese kursinduzierten Signale für NAND/Enterprise‑SSD. Die TAIL‑Aufnahmekriterien verlangen für eine Annahme eine atomare, datierte, primär belegte Beobachtung mit Einheiten (z. B. qualifizierte Shipments, Lead‑Time, Kontraktpreis‑Beobachtung oder fill‑rate Änderung), eine klar abgegrenzte Geografie/Domain/Layer und eine falsifizierbare Wirkung auf eine bestehende Vorhersage. Der Artikel liefert keine solche primäre Messung — nur Interpretation von Kursbewegungen und Guidance. Zudem wiederholt die Meldung bereits im Baseline vorhandene NAND/Enterprise‑SSD‑Signale (tail-2026-07-14-nand-essd und viele Sekundärmeldungen). Aus dem Adversarial‑Check ergibt sich: kein neues, verifizierbares Supply/Price‑Datum, daher kann die Meldung nicht als VERIFIED DATA angenommen werden. Wegen fehlender primärer, messbarer Evidence wird die Kandidatur als 'watchlist' eingeordnet; eine Follow‑up‑Prüfung ist in zwei bis vier Wochen vorgesehen, um zu sehen, ob primäre Liefer- oder Kontraktdaten publiziert werden, die die Erzählung quantifizieren würden. Red‑Pencil‑Kriterien (promotionaler Marktkommentar, nicht‑atomare Behauptung) sind erfüllt — deshalb redPencilPass=false.",
+      "candidateId": "a7e81c654a507c8a48b4",
+      "candidateKey": "a9618a2a3f744a406c775057",
+      "reviewedAt": "2026-11-02T02:37:47.806Z",
+      "priorityScore": 44,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0d6b0a6cfcd1f62c006ae7f76276c887d0a1773cd7d7eff858"
+    },
+    {
+      "decision": "watchlist",
+      "title": "China’s top AI models generate just 10% of OpenAI, Anthropic revenue: report",
+      "fact": "Laut einem Bericht der South China Morning Post (berichtet 2026-09-18) kombinieren chinesische AI‑Modelle von sieben großen Entwicklern nur rund 10 % der berichteten Umsätze von OpenAI und Anthropic; die SCMP zitiert dabei eine Analyse der Rhodium Group (ARR-Angaben u.a.: ByteDance US$4bn im Juli; Alibaba US$2.4bn im August).",
+      "placement": "Geographie: China vs. USA; Domäne: AI‑Modelle / Unternehmensumsatz; Layer: Marktrevenue-Vergleich; Horizon: Stand 2026-09-18.",
+      "mechanism": "Die beobachtete geringe konsolidierte Umsatzbasis chinesischer Entwickler (gegenüber OpenAI/Anthropic) entsteht laut Bericht durch geringere Monetarisierung im Enterprise‑/Exportmarkt, Regulierungs- und Vertrauensbarrieren bei Auslandskunden sowie unterschiedliche Monetarisierungsmodelle (plattform- vs. enterprise‑vertragsgetriebene Umsätze).",
+      "predictionId": "P-2026-07-21-04",
+      "predictionImpact": "Wenn die berichtete 10%-Relation korrekt ist, würde dies das Basisszenario stützen, dass Chinas internationale AI‑Ausfuhren und Modellmonetarisierung deutlich hinter US‑Spitzenakteuren zurückbleiben und damit die Wahrscheinlichkeit erhöhen, dass China WAICO‑/inländische Pfade primär auf Eigenversorgung und Parallelmärkte stützt (verminderte aiDemand‑Wirkung international).",
+      "falsifier": "Rhodium Group oder ein anderes Primär‑Datenpublikum veröffentlicht bis 2026-12-31 eine detaillierte, nach Unternehmen aufgeschlüsselte Revenue‑Tabelle, aus der entweder (a) die kombinierte ARR/Umsatz der sieben genannten chinesischen Entwickler ≥30 % der kombinierten OpenAI+Anthropic‑Umsätze für den gleichen Berichtszeitraum ergibt (Falsifizierung der 10%-These), oder (b) die Primärdaten den SCMP‑Bericht und seine 10%-Angabe direkt bestätigen. Überprüfungstermin: 2026-12-15.",
+      "nextReview": "2026-12-15",
+      "eventDate": "2026-09-18",
+      "novelty": "Niedrig bis mittel — die Kernaussage (China hinter US‑Leadern) ist bereits Teil des Baselinesignal‑Korpus, aber die konkrete 10%-Zahl wäre neu und quantitativ relevant wenn verifiziert.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 14,
+        "forecastImpact": 12,
+        "falsifiability": 10,
+        "timeSensitivity": 7
+      },
+      "markets": [
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "aiDemand"
+      ],
+      "signal": "demand_down",
+      "severity": 30,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.scmp.com/tech/big-tech/article/3367991/top-chinese-ai-models-make-10-openai-anthropic-revenue-despite-high-valuations-report?module=latest&pgtype=homepage",
+          "label": "South China Morning Post (Artikel, 2026-09-18)",
+          "kind": "secondary",
+          "supports": "SCMP berichtet, dass eine Analyse der Rhodium Group ergeben habe, dass die kombinierten Umsätze von sieben großen chinesischen Modellentwicklern nur rund 10 % der berichteten Umsätze von OpenAI und Anthropic erreichen; nennt ByteDance ARR US$4bn (Juli) und Alibaba US$2.4bn (August)."
+        }
+      ],
+      "reason": "Der eingereichte Kandidat stützt sich auf einen veröffentlichten Zeitungsbericht (SCMP) mit einer quantitativen Behauptung, die auf einer Fremdanalyse (Rhodium Group) beruht. Für die TAIL‑Aufnahme als VERIFIED DATA wäre jedoch ein Primärnachweis (die Rhodium‑Analyse mit firmenspezifischen Umsatzdaten oder eine Primärquelle mit nachprüfbarem Rechnungszeitraum und Methodik) erforderlich, außerdem muss Gegenevidenz geprüft werden (z.B. alternative Marktanalysen, Unternehmens‑Releases, oder nachträgliche Richtigstellungen). Ich konnte das SCMP‑Stück (Primär‑Berichtskopie) verifizieren, aber die zugrundeliegende Rhodium‑Primärquelle konnte mit dem verfügbaren Prüfungsbudget nicht direkt bestätigt. Damit fehlen die für eine Annahme geforderten Primärdaten, die genaue Reichweite/Definition der sieben Entwickler, und eine belastbare Gegenprüfung — deshalb Watchlist statt Annahme.\n\nEmpfohlene nächste Schritte: (1) Beschaffe und zitiere die Originalanalyse der Rhodium Group (Primärquelle) oder offizielle Unternehmensangaben mit Umsatz/ARR; (2) suche nach konkurrierenden Marktanalysen (z. B. Counterpoint, IDC, Bloomberg Intelligence), die dieselbe Periode quantifizieren; (3) führe den Falsifier‑Check zum genannten Review‑Datum 2026-12-15 durch und aktualisiere den Status auf VERIFIED DATA (bei Bestätigung) oder REJECTED (bei klarer Widerspruchs‑/Korrekturquelle).",
+      "candidateId": "d002bca104ca6bdc5483",
+      "candidateKey": "46743f21c4fa5f4ba18b8f68",
+      "reviewedAt": "2026-11-02T02:38:11.966Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_02e2876ca911666c006ae7f77c0bc487d0afb1fe243702be61"
     }
   ]
 }
