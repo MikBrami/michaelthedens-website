@@ -60342,6 +60342,157 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_02e2876ca911666c006ae7f77c0bc487d0afb1fe243702be61"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behaupteter Kursrutsch bei Lattice, Applied Materials, AMD, Intel und KLA — Primärquelle nicht verifiziert",
+      "fact": "Nachrichtensegment (The Globe and Mail via Google News RSS) meldet, dass die Aktien von Lattice Semiconductor, Applied Materials, AMD, Intel und KLA Corporation fallen (veröffentlicht 2026-11-05T22:09:38.000Z).",
+      "placement": "Global / Aktienmärkte / Halbleiter‑/AI‑Cluster (Schwerpunkt USA & Korea).",
+      "mechanism": "Kurzfristige Marktpreis‑Repricing (Aktienkursrückgänge) — plausibel vermittelt durch gestiegene regulatorische/Politik‑Sorgen nach den US‑Midterms und damit verbundene AI‑Regulierungsrisiken sowie Gewinnmitnahmen im Sektor.",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Primärverifikation: eine eindeutige Original‑Globe-and‑Mail‑Artikel‑URL mit Datum 2026-11-05, die die behaupteten Kursbewegungen (mit genannten Titeln) dokumentiert, oder ein anderes primäres Qualitätsmedium (z. B. Reuters/AP/Bloomberg) mit gleichen Kernaussagen und Handelspreisen für die genannten Titel; Prüfungstermin: 2026-11-12.",
+      "nextReview": "2026-11-12",
+      "eventDate": "2026-11-05",
+      "novelty": "Niedrig — routinäre Sektor‑Sell‑Off‑Meldung, kein neues strukturelles Signal.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 3,
+        "thesisRelevance": 8,
+        "forecastImpact": 8,
+        "falsifiability": 10,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_down",
+      "severity": 25,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://stockstory.org/us/stocks/nasdaq/lscc/news/why-up-down/lattice-semiconductor-applied-materials-amd-intel-and-kla-corporation-shares-are-falling-what-you-need-to-know",
+          "label": "Sekundäre Nachberichterstattung / Crawled Mirror (StockStory) mit Datum 2026-11-05",
+          "kind": "secondary",
+          "supports": "Sekundärseiten berichten über generische Sektor‑Verluste am 2026-11-05, nennen dieselben Titel; kein direktes Globe‑and‑Mail‑Original ersichtlich."
+        }
+      ],
+      "reason": "Die Inbox‑Kandidatenmeldung verweist auf einen Google News RSS‑Eintrag (The Globe and Mail). Ich konnte innerhalb der Web‑Suche keine direkte, abrufbare Globe‑and‑Mail‑Primärseite mit dem behaupteten Artikeltext und dem angegebenen Veröffentlichungszeitstempel finden. Mehrere Sekundärquellen und Mirrors berichten über einen breitflächigen Chip‑/AI‑Sell‑Off am 2026-11-05 (Preisrückgänge bei AMD, Intel, Applied Materials u. a.), was den inhaltlichen Kern plausibel macht — das macht die Meldung relevant für die TAIL‑Aufnahme. Allerdings erfüllt die vorgelegte Inbox‑Belegkette nicht die TAIL‑Annahmeanforderung: ein verifizierbarer Primärnachweis (die originale Globe‑and‑Mail‑Seite oder ein gleichwertiger Primärnachweis wie Reuters/Bloomberg mit identischem Kernaussageumfang und quantitativen Kursangaben) fehlt. Ohne diesen Primärnachweis kann die Behauptung nicht als VERIFIED DATA aufgenommen werden. Deshalb Watchlist: wir fordern Primärverifikation (Original‑Artikel oder ein gleichwertiger Primärbeleg) bis zum nächsten Review, andernfalls Ablehnung/Archivierung. Score wurde nach Rubrik bewertet; die Teile wurden nicht künstlich angehoben, sondern reflektieren: (a) moderater Quellenvertrauensabzug wegen fehlender Primärquelle, (b) geringe Neuheit und begrenzte Vorhersagewirkung gegenüber bestehender Baseline (Sektor‑Verluste sind wiederkehrend).",
+      "candidateId": "75ac1f58f3682d929875",
+      "candidateKey": "b986f66622f1c7890288e92e",
+      "reviewedAt": "2026-11-06T03:35:50.266Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0bece3a97553bd7f006aed4afd6d3887d19bd2436ff1cd9857"
+    },
+    {
+      "decision": "watchlist",
+      "title": "AMD‑Meldung über angebliche 10%-Preiserhöhung (Berichte, 2026-09-18) — keine Primärverifikation",
+      "fact": "Mehrere Finanz‑News‑Relays (z. B. Yahoo Finance, TrendForce) berichteten am 2026-09-18 über einen nicht verifizierten Lieferketten‑Report, der behauptet, AMD habe seine Abnehmer über eine etwa 10%ige Preiserhöhung für GPUs/AI‑Beschleuniger/Chips ab Q4 2026 informiert.",
+      "placement": "Global / Produkt‑Layer: GPU-, AI‑Accelerator‑ und Mainboard‑Chip‑Verkaufspreise; kurzfristige (Q4 2026) Wirkung",
+      "mechanism": "Weitergabe erhöhter Foundry-/Waferkosten (angeführt: TSMC) durch AMD an OEMs/Board‑Partner in Form von list/contract price hikes, um Margen zu verteidigen; Wirkung über höhere Endkunden‑/Vertrags‑Preise und damit potenziellen Aufwärtsdruck auf Vertrags‑DRAM/SSD‑Beschaffungskosten.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Wenn verifiziert (10%+ Preisaufschlag auf GPU/Accelerator‑Preise ab Q4 2026), würde dies die Basiserwartung stützen, dass Halbleiter‑/AI‑Infrastruktur‑Preise weiter steigen (OUTLOOK-server_dram — signal: price_up/negative_supply).",
+      "falsifier": "Bis 2026-10-15 veröffentlicht AMD eine offizielle Mitteilung (Pressemitteilung, Form 8‑K / 6‑K, oder verbindliches Kundenanschreiben) die eine 10% (±2%) Preiserhöhung für die benannten Produktkategorien mit einem klaren Inkrafttretensdatum (z. B. 2026-10-01 oder später) bestätigt. Alternativ wird die Behauptung falsifiziert, falls AMD/TSMC öffentlich bestreiten, dass eine derartige Preisanpassung kommuniziert wurde.",
+      "nextReview": "2026-11-09",
+      "eventDate": "2026-09-18",
+      "novelty": "Bericht ist neu für das TAIL‑Corpus (september 2026) aber basiert auf sekundären Lieferketten‑Relays; kein Primär‑Beleg (AMD/TSMC) gefunden.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 6,
+        "thesisRelevance": 12,
+        "forecastImpact": 8,
+        "falsifiability": 5,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 30,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-rises-premarket-report-092213707.html",
+          "label": "Yahoo Finance — 'AMD Stock Rises Premarket: Report Flags Chip Price Hike Linked To TSMC Costs' (2026-09-18)",
+          "kind": "secondary",
+          "supports": "Berichtet über Relay/lieferkettenbasierte Behauptung, dass AMD eine etwa 10%ige Preiserhöhung für Q4 2026 kommuniziert habe; nennt weitere Relays (Wccftech/ChannelGate/Stocktwits)."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/18/news-amd-reportedly-plans-10-price-hike-for-gpus-ai-chips-chipsets-in-4q26-as-tsmc-costs-rise/",
+          "label": "TrendForce — 'AMD Reportedly Plans 10% Price Hike...' (2026-09-18)",
+          "kind": "secondary",
+          "supports": "Fasst Supply‑Chain‑Berichte zusammen, nennt angebliche 10% Erhöhung und verweist auf steigende TSMC‑Kosten; kein AMD‑Zitat."
+        },
+        {
+          "url": "https://alphaos.finance/news/amd-stock-rises-premarket-report-flags-chip-price-hike-linked-to-tsmc-costs",
+          "label": "AlphaOS / Market relay (aggregator) — 2026-09-18",
+          "kind": "secondary",
+          "supports": "Weiterer Relay‑Artikel, der die Yahoo/TrendForce‑Meldung wiedergibt; zeigt weite Verbreitung des unbestätigten Reports."
+        },
+        {
+          "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/0000002488-26-000123.pdf",
+          "label": "AMD SEC‑Filing (10‑Q, 2026‑08) — Firmenpflichten gegenüber TSMC (Primärquelle zur Abhängigkeit)",
+          "kind": "primary",
+          "supports": "Unterstreicht AMDs Abhängigkeit von TSMC (Kontrakt/Produktion/Preisrisiken) aber enthält keine Bestätigung einer Q4‑2026 Preiserhöhung; zeigt, dass AMD von TSMC‑Preisänderungen betroffen sein kann."
+        }
+      ],
+      "reason": "Die Candidate‑Meldung ist breit von Finanz‑News‑Relays wiedergegeben und nennt eine konkrete Zahl (≈10%) sowie Datum (Q4 2026). TAIL‑Aufnahme verlangt jedoch eine datierte, primäre, überprüfbare Beobachtung (z. B. AMD‑Pressemitteilung, verbindliches Kundenanschreiben, Form‑8K/6‑K, ein glaubwürdiges OEM‑Statement oder ein TSMC‑Filing), die die behauptete Preiserhöhung belegt. In den geprüften Primärquellen (AMD‑SEC‑Filing, Unternehmensseiten) und in offiziellen AMD/TSMC‑Kanälen wurde keine Bestätigung dieser spezifischen 10%‑Ankündigung gefunden. Mehrere Aggregatoren/Relays zitieren Supply‑Chain‑Kanäle, aber kein direktes AMD/TSMC‑Statement. Ohne Primärverifikation bleibt die Meldung unbestätigt; deshalb Watchlist statt Annahme. Opposing evidence: AMD/SEC‑Dokumente begründen zwar Preissetzungsrisiken, verifizieren aber nicht die konkrete Preisänderung. Die Aufnahme auf Watchlist fordert explizit die fehlende Primärverifikation (AMD/TSMC‑Bestätigung) als Einreichergebnis. Eintrittswahrscheinlichkeit (confidence) und Severity sind deshalb moderat reduziert; Index‑Impact wird nicht gesetzt, da keine beobachtete Messgröße in einem benannten Vertragsmarkt vorliegt.",
+      "candidateId": "2adc242307b1039bf3d1",
+      "candidateKey": "ddcd8b6925ffbfbfae76b18a",
+      "reviewedAt": "2026-11-06T03:36:23.243Z",
+      "priorityScore": 45,
+      "gateReasons": [
+        "invalid review date",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0beb149cfb110190006aed4b16740087d198a3510f9c66feb1"
     }
   ]
 }
