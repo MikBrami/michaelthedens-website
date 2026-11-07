@@ -60493,6 +60493,136 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0beb149cfb110190006aed4b16740087d198a3510f9c66feb1"
+    },
+    {
+      "decision": "watchlist",
+      "title": "TSMC erwägt 3D‑DRAM‑Planung auf Anfrage von NVIDIA — Bericht unbestätigt",
+      "fact": "Nach mehreren Nachrichtenberichten begann TSMC Berichten zufolge Ende 2026 mit Planungen für die Fertigung von 3D‑DRAM auf Anfrage von NVIDIA. Es liegen nur sekundäre Medienzitate vor; keine primäre, direkt verifizierbare TSMC‑ oder The‑Information‑Originalquelle mit vollständigem Text und klar datiertem Umfang wurde aus den übermittelten Daten bestätigt.",
+      "placement": "Geographie: global (Taiwan / Foundry‑Layer); Domain: advanced memory/DRAM; Layer: Manufacturing & supply (Post‑2026 / strategische Planung, kein nachgewiesener Produktionsstart).",
+      "mechanism": "Kausalmechanismus (behauptet): NVIDIA hat erhöhte Nachfrage/Specs für AI‑Memory (HBM/3D‑Stacks) und hat TSMC um Unterstützung gebeten; TSMC prüft daraufhin eine Ausweitung von Foundry‑/Packaging‑Kapazität hin zu vertikal gestapeltem 3D‑DRAM, was langfristig zusätzliche Bit‑Supply liefern könnte und damit Verfügbarkeit und Preisdruck in DRAM/HBM beeinflussen würde.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Signal würde, falls verifiziert als Produktions‑/Shipment‑Event, die Verfügbarkeit (availability) in server_DRAM/HBM mittelfristig entlasten und damit das Risiko struktureller Knappheit bis Ende 2028 vermindern; im aktuellen Planungsstadium ist die Wirkung unbestätigt.",
+      "falsifier": "Bis 2027-06-30 keine primäre Bestätigung von TSMC (Pressemitteilung, SEC/Investor‑Release oder offizielles TSMC‑Statement) über formelle Projekt‑Freigabe, FID, Standort‑Scope oder qualifizierte Musterversandungen; alternativ: wenn The Information (Originalartikel) veröffentlicht wurde und die zitierten Quellen dort klar als \"only internal discussion / early planning\" klassifiziert sind, würde das die Behauptung auf 'nur frühe Prüfung' zurückstufen.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-11-06",
+      "novelty": "TSMC als Foundry betritt explizit die 3D‑DRAM‑Produktionsplanung; neu für TSMC‑Scope (nicht bestätigt).",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 12,
+        "thesisRelevance": 18,
+        "forecastImpact": 14,
+        "falsifiability": 11,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "capacity_relief",
+      "severity": 35,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.fidelity.com/news/article/company-news/202611061045RTRSNEWSCOMBINED_KCN3WH27X-OUSBS_1",
+          "label": "Fidelity (Reuters‑aggregate) — Verweis auf The Information / 2026-11-06",
+          "kind": "secondary",
+          "supports": "Berichte, dass TSMC Planungen für 3D‑DRAM begunnen habe, zitiert 'The Information' und anonyme Quellen."
+        },
+        {
+          "url": "https://www.igorslab.de/en/tsmc-3d-dram-nvidia-memory-chips/",
+          "label": "Igor's Lab (Tech‑Blog) — Nachberichterstattung",
+          "kind": "secondary",
+          "supports": "Wiederholung der Kernaussage: TSMC prüft 3D‑DRAM nach angeblicher Nvidia‑Anfrage; keine TSMC‑Primärzitat."
+        }
+      ],
+      "reason": "Die eingesandte Inbox‑Kandidatur bezieht sich auf einen aktuellen Medienbericht (veröffentlicht um 2026‑11‑06) über TSMC‑Planungen für 3D‑DRAM auf Anfrage von NVIDIA. Unsere Überprüfung fand mehrere Sekundärberichterstattungen, die auf einen The‑Information‑Artikel verweisen. Der Schlüsselanforderung des Admissions‑Prozesses — eine primäre, direkt verifizierbare Quelle (TSMC‑Pressemitteilung, offizielles Firmenstatement, regulatorische Veröffentlichung oder der Originalartikel von The Information mit dokumentiertem Zitatumfang) — fehlt in den abgerufenen Belegen. Ohne eine primäre Quelle oder ein eindeutig datiertes, quantifizierbares Ereignis (z. B. FID, Capex‑Zusage, Standortwahl, Bandbreite/GB‑Angabe, erste qualifizierte Musterlieferung mit Datum) erfüllt die Einsendung nicht die Aufnahmekriterien für 'accepted'.\n\nGegenbelege: TSMC‑Öffentlichkeitsarbeit in der jüngeren Vergangenheit betont weiterhin Fokus auf Foundry‑Kerngeschäft; in mehreren Erwiderungen in Branchenmedien sind Aussagen von TSMC (wenn zitiert) neutral/ablehnend gegenüber einem Wechsel zur Direktfertigung von DRAM zu lesen. Das Fehlen eines TSMC‑Statements schafft erhebliches Risiko, dass die Meldung frühe interne Studien oder Wunschdenken Dritter wiedergibt und nicht ein verifizierbares Projektereignis darstellt.\n\nBewertungsschluss: watchlist — behalten und erneut prüfen (nächste Überprüfung 2027‑06‑30) sobald eine primäre Bestätigung (TSMC/The‑Information Full‑Text/Regulatory‑Filing) vorliegt oder wir klare gegenteilige Primär‑Widerlegungen finden.",
+      "candidateId": "8500b7f29636545cbd41",
+      "candidateKey": "b82bc68819d6ceb097ce9f43",
+      "reviewedAt": "2026-11-07T11:51:14.470Z",
+      "priorityScore": 73,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0c5fd14f18a13fd8006aef109cd9a487d08c0bdf0f00fee3cf"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Bericht: Samsung erwägt Outsourcing von DRAM‑Fertigung zugunsten von HBM‑Priorisierung",
+      "fact": "Nach einem TechJuice/News‑Feed‑Bericht (veröffentlicht 2026-09-18) wird berichtet, dass Samsung prüfen könnte, Teile der DRAM‑Fertigung auszulagern und Produktpriorität sowie Kapazitätsallokation verstärkt auf HBM (High‑Bandwidth Memory) zu legen.",
+      "placement": "Global — Unternehmens‑/Produkt‑Layer (Samsung Memory: HBM vs. commodity DRAM); kurz‑ bis mittelfristiger Horizont (2026–2028).",
+      "mechanism": "Wenn Samsung tatsächliche Wafer‑/Bit‑Allokation und Produktionskapazität von konventionellem Server‑DRAM hin zu HBM verschiebt (oder DRAM‑Fertigung extern vergibt), reduziert das verfügbare qualifizierte Server‑DRAM‑Bit‑Output kurzfristig und erhöht Allokationsdruck auf Server/Hyperscaler; zugleich bindet es Packaging/Frontend‑Kapazität für HBM, verschiebt Preisdynamik zugunsten höherpreisiger HBM‑SKU und verstärkt Verknappungsrisiken für Server‑DRAM.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Stärkt die Basissicht, dass HBM und Server‑DRAM bis mindestens Ende 2028 strukturell knapp bleiben (P-2026-07-11-01).",
+      "falsifier": "Bis 2027-06-30: öffentlich verifizierbare primäre Belege, die den Claim falsifizieren müssen: (a) Samsung veröffentlicht eine offizielle Geschäftsmitteilung/Earnings‑Transcript/SEC‑Filing, in dem es bestätigt, dass keine relevante DRAM‑Outsourcing‑Umsetzung stattfindet und interne Server‑DRAM‑Bit‑Allokation für 2027 ≥ 90 % des 2026‑Niveaus bleibt; ODER (b) Samsung oder ein von Samsung benannter externer Auftragsfertiger meldet qualifizierte, wiederholbare Shipments (verifizierbare Versanddaten oder Customer‑LTA‑Anerkennung) von zuvor ausgelagertem Samsung‑DRAM im Umfang ≥ 10% der relevanten Werkskapazität vor dem 2027‑06‑30. Wenn eines der obigen Ereignisse eintritt, wird die beobachtete Richtung (Outsourcing → kurzfristige negative Verfügbarkeit) abgeschwächt/falsifiziert.",
+      "nextReview": "2027-06-30",
+      "eventDate": "2026-09-18",
+      "novelty": "niedrig — Wiederholung/Detail‑Update zu bereits existierenden Basissignalen über HBM‑Priorisierung.",
+      "duplicateOf": "tail-2026-07-14-hbm4-cost, tail-2026-07-14-hbm4-cost (HBM Priorisierung und Kapazitätsbindung) / S-2026-07-30-02 (Samsung rollierende Fünfjahresverträge und HBM‑Fokus).",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 12,
+        "forecastImpact": 10,
+        "falsifiability": 6,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "server_dram"
+      ],
+      "driverScope": [
+        "availability",
+        "aiDemand"
+      ],
+      "signal": "negative_supply",
+      "severity": 40,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Der Candidate ist eine sekundäre/News‑Feed‑Meldung (veröffentlicht 2026-09-18) ohne direktes primäres Samsung‑Statement, verbindliche Vertragsdaten oder beobachtete qualifizierte Shipments, die den behaupteten Outsourcing‑Entscheid belegen. Die Aussage wiederholt und konkretisiert teilweise bereits im Baseline vorhandene Signals (HBM‑Priorisierung, Kapazitätsbindung, Preisaufwärtsdruck). Nach der TAIL‑Aufnahmerichtlinie fehlt ein primärer bestätigender Beleg (z. B. Samsung‑Earnings, SEC‑Filing, valide Shipment‑/LTA‑Angabe), weshalb die Behauptung nicht als VERIFIED DATA aufgenommen werden kann. Es besteht Risiko von Gerüchten/Insider‑Berichtswiederholung; gegenteilige/oppose­rende Hinweise in Baseline (Samsung‑Earnings‑Dokumente, frühere Statements zu Fünfjahresverträgen, und Berichte über Samsung‑HBM‑Yield/Volumenausbau) sind vorhanden und müssen geprüft werden. Deshalb Einstufung: WATCHLIST — sinnvoll für weiteres Monitoring und verlangt primäre Verifikation vor Admission. Empfehlung: Suche nach Samsung‑Primärquellen (Earnings‑Transcript, Form‑Dokumente, offizielle Pressemitteilung), Kunden‑LTA‑Bekräftigungen oder verifizierbaren Shipment‑Daten; bis dahin kein Index‑Impact.",
+      "candidateId": "6a605d2fe9019191ca0c",
+      "candidateKey": "abfc06f533f68a8e68540dd5",
+      "reviewedAt": "2026-11-07T11:51:39.568Z",
+      "priorityScore": 42,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "duplicate evidence",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07ad5e7ad12193b7006aef10b307e087d0ac64bba00d66e16e"
     }
   ]
 }
