@@ -7,9 +7,11 @@ for (const [page,data,en] of [['index.html','data.json',false],['en/index.html',
   const snapshot = JSON.parse(fs.readFileSync(path.join(root,'public-tail',data),'utf8'));
   const p = snapshot.platform, pulse = snapshot.executivePulse;
   let html = fs.readFileSync(path.join(root,page),'utf8');
+  const review = p.admissionReview || {};
+  const excluded = Number(review.historicalCandidatesSkipped || 0);
   const freshness = en
-    ? `Calculated ${p.analysisAsOf || p.dataAsOf} · Evidence ${p.indexEvidenceAsOf || p.sourceDataAsOf || 'unknown'} · ${p.admissionReview?.status === 'complete' ? 'Review complete' : 'Evidence review pending'}`
-    : `Berechnet ${p.analysisAsOf || p.dataAsOf} · Evidenz ${p.indexEvidenceAsOf || p.sourceDataAsOf || 'unbekannt'} · ${p.admissionReview?.status === 'complete' ? 'Prüfung abgeschlossen' : 'Evidenzprüfung offen'}`;
+    ? `Calculated ${p.analysisAsOf || p.dataAsOf} · latest index evidence ${p.indexEvidenceAsOf || p.sourceDataAsOf || 'unknown'} · ${review.pending ?? '–'} pending${excluded ? ` · ${excluded} older candidates excluded` : ''}`
+    : `Berechnet ${p.analysisAsOf || p.dataAsOf} · jüngste Index-Evidenz ${p.indexEvidenceAsOf || p.sourceDataAsOf || 'unbekannt'} · ${review.pending ?? '–'} offen${excluded ? ` · ${excluded} ältere Kandidaten ausgenommen` : ''}`;
   const replaceText = (id,text) => { html=html.replace(new RegExp(`(<[^>]+id="${id}"[^>]*>)[\\s\\S]*?(<\\/[^>]+>)`),(_,a,b)=>a+escape(text)+b); };
   replaceText('tail-index',Number.isFinite(pulse.current)?pulse.current:'–');
   replaceText('index-summary',pulse.interpretation);
