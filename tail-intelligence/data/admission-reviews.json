@@ -60623,6 +60623,136 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_07ad5e7ad12193b7006aef10b307e087d0ac64bba00d66e16e"
+    },
+    {
+      "decision": "rejected",
+      "title": "Marktkommentar zu Kursbewegungen von AI‑Aktien (Yahoo Finance) — nicht qualifiziertes TAIL‑Signal",
+      "fact": "Artikel (Yahoo Finance) berichtet über einen akuten Rückgang von AI‑bezogenen Aktien (z. B. Nvidia, Micron, SanDisk) und gibt Investment‑Meinungen / Bewertungskommentare wieder.",
+      "placement": "global / Finanzmärkte / Equity‑Sentiment (Kurzfristig); keine belegte Auswirkung auf physische Memory‑Lieferungen, Preise mit Einheiten oder qualifizierte Shipments.",
+      "mechanism": "Medialer Markt‑Sentiment‑Schock und Re‑Pricing von AI‑Aktien; kein Primärbeleg für Änderungen in Produktions‑, Lieferketten‑ oder Vertrags‑Ebenen (keine beobachteten Änderungen bei Kontraktpreisen, Lead‑Times oder qualifizierten Shipments).",
+      "predictionId": "",
+      "predictionImpact": "",
+      "falsifier": "Nicht anwendbar — Artikel liefert keine atomare, datierte Messung, die mit einem zukünftigen, testbaren Falsifizierer verknüpft werden könnte.",
+      "nextReview": "2026-11-11",
+      "eventDate": "2026-11-08",
+      "novelty": "Niedrig — wiederholt öffentliches Markt‑Sentiment über Kursroutings; keine neue, primäre Messung für Supply/Demand/Price in Tail‑Dimensionen.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 6,
+        "novelty": 3,
+        "thesisRelevance": 5,
+        "forecastImpact": 4,
+        "falsifiability": 2,
+        "timeSensitivity": 3
+      },
+      "markets": [
+        "dram",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "demand",
+        "pricing"
+      ],
+      "signal": "price_down",
+      "severity": 15,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://sg.finance.yahoo.com/news/ai-stocks-like-nvidia-micron-and-sandisk-have-been-blown-up-but-keep-this-in-mind-110000652.html",
+          "label": "Yahoo Finance (Artikelseite gecrawlt 2026-11-08)",
+          "kind": "secondary",
+          "supports": "Originalmeldung: Marktrückgang und Investment‑Kommentar zu Nvidia, Micron, SanDisk; kein Primärbeleg zu physischen Lieferungen, Kontraktpreisen oder Lead‑Times."
+        }
+      ],
+      "reason": "Abgelehnt — Der eingereichte Kandidat ist ein Finanzmarktkommentar/Meinungsartikel über Aktienkursbewegungen. Er liefert keine atomare, datierte, quantifizierbare Beobachtung mit Einheiten (z. B. Kontraktpreis in US$/GB, qualifizierte Shipments, Lead‑Time in Wochen) und kann daher die TAIL‑Aufnahmekriterien nicht erfüllen. Solche Artikelformate sind in der Regel sekundär/kommentierend und wiederholen bereits vorhandene Basissignale (Preis‑/Sentiment‑Volatilität) aus der Medienlage. Die TAIL‑Admission verlangt primäre, verifizierbare Messungen mit klarer Platzierung (Geographie/Layer/Horizon), kausalem Mechanismus und einem konkreten, falsifizierbaren Prognose‑Impact — das fehlt hier. Zusätzlich ist dies ein typischer Fall von promotinaler/marktreaktiver Berichterstattung, die keine direkte Aussage über physische Verfügbarkeit, Vertrags‑ oder Lieferzeit‑Messungen macht. Gegenbelege: umfangreiche TAIL‑Baseline‑Einträge dokumentieren bereits strukturelle Nachfrage‑ und Preisaufwärts‑Signale im Memory/AI‑Bereich (u. a. tail‑2026-07-14‑dram‑prices, tail‑2026-07-14‑nand‑essd), womit dieser Artikel keine neue, belastbare Observation hinzufügt. Ohne Primärverifizierung (qualifizierte Shipments, Kontraktpreis‑Nennung mit Datum/Einheit, Lead‑Time‑Messung) ist Aufnahme nicht möglich.",
+      "candidateId": "7de548a1276626b4b1b6",
+      "candidateKey": "419834c0e89a2fb8dcd5a211",
+      "reviewedAt": "2026-11-08T12:04:28.893Z",
+      "priorityScore": 23,
+      "gateReasons": [
+        "primary source not retrieved",
+        "missing predictionImpact",
+        "no named existing forecast/outlook",
+        "invalid review date",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_08d48c43ef822665006af0653c6d0087d19198040c24752949"
+    },
+    {
+      "decision": "watchlist",
+      "title": "CXMT (Chinas größter DRAM‑Hersteller) plant offenbar Einstieg in NAND‑Fertigung",
+      "fact": "Berichte (ursprünglich über TweakTown/News‑Aggregator) melden, dass ChangXin Memory Technologies (CXMT) eine Forschungs‑/Pilot‑NAND‑Produktionslinie in Peking plant, um in den NAND/Enterprise‑Flash‑Markt neben Samsung und YMTC vorzustoßen.",
+      "placement": "geografisch: China (Beijing); Markt/Layer: NAND / Enterprise‑SSD / NAND‑Fertigung; Horizont: kurzfristig (R&D/Pilot 2026–2027), kommerzieller Ramp‑Effekt erst 2027+",
+      "mechanism": "CXMT richtet eine NAND‑Forschungs‑ und Pilotproduktionslinie am neuen Peking‑Standort ein; falls die Linie in qualifizierte Serienproduktion und kundenseitige Qualifizierung übergeht, erhöht sich das globale NAND‑Angebot und konkurriert mit etablierten Anbietern (Samsung, YMTC). Aktuell ist das aber ein Plan/Ankündigungs‑/Berichtsereignis ohne belegte qualifizierte Shipments oder offiziell bestätigte kommerzielle Rampen.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Potentiell dämpfend auf Enterprise‑SSD‑Preis‑ und Verfügbarkeitsdruck ab dem Zeitpunkt qualifizierter Serienlieferungen (Capacity_relief), falls CXMT reale qualifizierte Volumina liefert.",
+      "falsifier": "Bis 2027-12-31 keine von CXMT offiziell bestätigten, qualifizierten NAND‑Shipments (Pilot oder Serien) an Drittkunden; oder keine öffentliche Bestätigung eines konkreten Startdatums für kommerzielle NAND‑Massenauslieferungen bis 2027-12-31. Wenn CXMT bis zu diesem Datum nachweisbar qualifizierte NAND‑Lieferungen (mit SKU, Kundenreferenz und Auslieferungsmenge) meldet, falsifiziert das Watchlist‑Status (Beleg führt zur Neubewertung).",
+      "nextReview": "2027-03-01",
+      "eventDate": "2026-09-18",
+      "novelty": "moderate — berichtetes Market‑Crossover (DRAM->NAND) ist neu, aber Gerüchte/Pläne wurden bereits in mehreren Quellen wiederholt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 12,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "nand",
+        "enterprise_ssd"
+      ],
+      "driverScope": [
+        "availability"
+      ],
+      "signal": "capacity_relief",
+      "severity": 30,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://uk.investing.com/news/stock-market-news/cxmt-plans-flash-memory-chip-expansion-amid-global-shortage-reuters-93CH-4874101",
+          "label": "Investing.com (Reuters‑Nachrichtenagenturbasierte Kopie)",
+          "kind": "secondary",
+          "supports": "Wiederholung der Reuters‑Berichterstattung: CXMT soll eine NAND‑Forschungs‑/Pilotlinie in Peking planen. Keine direkte CXMT‑Bestätigung oder Nachweis qualifizierter Shipments."
+        }
+      ],
+      "reason": "Die eingereichte Meldung basiert auf eine Nachrichten‑Headline (TweakTown/News‑Aggregator), die offenbar auf einer Reuters‑Exklusivmeldung fußt, welche von mehreren Sekundärquellen aufgegriffen wurde. Die TAIL‑Aufnahmekriterien verlangen für eine Aufnahme (Accepted) jedoch eine atomare, datierte, primär belegte Beobachtung — z. B. eine offizielle CXMT‑Ankündigung mit konkretem Scope/Daten oder ein Reuters‑Artikel mit klarer Primärquelle/Datum und Beleg für qualifizierte Shipments/Startdatum. Unser Web‑Suchbudget hat Sekundärverbreitungen (Marketscreener, Investing.com etc.) gefunden, aber wir konnten die direkte primäre Quelle (original Reuters‑URL oder eine offizielle CXMT‑Pressemitteilung mit bestätigten Lieferdaten) innerhalb des verfügbaren Prüfungsbudgets nicht sicherstellen. Ohne diese Primärbestätigung bleibt der Claim unproven; deshalb Watchlist statt Annahme. Empfehlungen: 1) Für Aufnahme späterer Revision: besorgen Sie die originale Reuters‑Story‑URL oder eine offizielle CXMT‑Mitteilung mit konkreten Terminen/Produktklassen/Kunden oder einen nachweisbaren ersten qualifizierten NAND‑Shipment‑Beleg. 2) Überwachen bis 2027-03-01 auf bestätigte Pilot‑Shipments, Serienqualifikationen oder offizielle CAPEX‑/Fab‑Genehmigungen — diese würden die Einstufung in Richtung Accepted (bei Vorliegen aller weiteren Aufnahmeanforderungen: Datum, Platzierung, Mechanismus, Messgröße, Falsifier) ermöglichen.",
+      "candidateId": "c608de54b8992bc60876",
+      "candidateKey": "629cd8d9260fb3752d2d78f6",
+      "reviewedAt": "2026-11-08T12:05:01.008Z",
+      "priorityScore": 73,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_07fcf940a8cbd8a2006af0654d6a1c87d1a6d921d61e3b4d86"
     }
   ]
 }
