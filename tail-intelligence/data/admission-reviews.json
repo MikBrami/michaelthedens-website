@@ -60753,6 +60753,153 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_07fcf940a8cbd8a2006af0654d6a1c87d1a6d921d61e3b4d86"
+    },
+    {
+      "decision": "rejected",
+      "title": "SanDisk's Eight-for-One Split Looms as NAND Price Worries and a Wall Street Downgrade Weigh on the Stock",
+      "fact": "Ad-hoc‑News und andere Marktberichte dokumentieren einen angekündigten 8‑für‑1 Forward‑Aktiensplit von SanDisk (Split‑Record‑Date/Issuance: 2026‑11‑09 / 2026‑11‑19 laut Unternehmens‑Formular) und gleichzeitige Marktkommentare, die fallende NAND‑Preis‑Erwartungen und Analysten‑Downgrades als Treiber eines Kursrückgangs nennen.",
+      "placement": "Global / Public‑equity market reaction; relevant für NAND-Preisdiskussionen und Enterprise‑SSD Marktstimmung (enterprise_ssd, nand).",
+      "mechanism": "Unternehmensankündigung (8‑für‑1 Forward Split) ist ein mechanischer Kapitalvorgang; gleichzeitige Analystenkommentare und Kontraktmarkt‑Berichterstattung erzeugen Investor Sentiment und kurzfristige Kursbewegungen. Die Meldung dokumentiert keine quantifizierbaren Änderungen an qualifiziertem NAND‑Output, Lieferzeiten oder vertraglicher Erfüllung.",
+      "predictionId": "OUTLOOK-enterprise_ssd",
+      "predictionImpact": "Kein direkter Index‑/Lieferungs‑Impact nachgewiesen; die Meldung betrifft Marktstimmung und Corporate‑Ereignisse, nicht beobachtete qualifizierte Shipments, Fill‑Rates oder Kontraktpreise, und ändert damit die Basisannahmen des OUTLOOK‑Enterprise‑SSD‑Falsifiers nicht.",
+      "falsifier": "Wenn innerhalb von 30 Tagen (bis 2026-12-11) belastbare, primärquellen‑gestützte Kontrakt‑Preis‑ oder Fill‑Rate‑Beobachtungen erscheinen (z. B. öffentliche Vertragsmeldungen mit expliziten Preis-/Fill‑Rate‑Zahlen oder zertifizierte Liefermengen), die die Behauptung von persistierenden NAND‑Preisrisiken widerlegen, reduziert sich die Relevanz dieser Meldung als kurzfristiger Signal‑Treiber.",
+      "nextReview": "2026-12-11",
+      "eventDate": "2026-10-29",
+      "novelty": "low",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 6,
+        "falsifiability": 8,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "enterprise_ssd",
+        "nand"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_down",
+      "severity": 20,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/sandisk-s-8-for-1-split-lands-november-20-as-guidance-and-a-downgrade-pull-in-opposite-directions/70486619",
+          "label": "ad-hoc-news.de — Artikel ’SanDisk's 8‑for‑1 Split Lands November 20…’",
+          "kind": "secondary",
+          "supports": "Berichtet 8‑für‑1‑Split‑Ankündigung und Marktkommentare zu NAND‑Preis‑Sorgen und Analysten‑Downgrade, veröffentlicht 2026‑11‑10."
+        },
+        {
+          "url": "https://investor.sandisk.com/static-files/c31aa9f9-d8e1-43e5-8642-360f5d0dad15",
+          "label": "SanDisk Investor Form / 10‑Q (Company filing)",
+          "kind": "primary",
+          "supports": "Formular/Investor‑Mitteilung: Board genehmigte 8‑für‑1 Forward Stock Split; Record Date 2026‑11‑09; Ausgabe nach Börsenschluss 2026‑11‑19."
+        }
+      ],
+      "reason": "Die eingereichte Kandidatenmeldung fasst korrekte, aber nicht‑neuartige Marktereignisse zusammen (Forward Split + negative Marktstimmung wegen NAND‑Preis‑Sorgen und Analysten‑Downgrade). Ich habe das Unternehmens‑Formular geprüft (primäre Bestätigung des Splits) und Ad‑hoc‑News/Marktartikel als sekundäre Quellen. Die Meldung liefert kein neues, atomar datiertes, messbares Markt‑Outcome (z. B. qualifizierte Shipments, Kontraktpreise mit Werten, Lead‑Time‑Änderungen oder Fill‑Rates), ist damit redundant gegenüber bereits im Baseline‑Set vorhandenen NAND/Enterprise‑SSD‑Signalen und erfüllt nicht die Anforderungen für eine TAIL‑Aufnahme (keine direkte Index‑Messung, mangelnde Neuheit, keine kausale, quantifizierbare Lieferkettenwirkung). Wegen Replikation vorhandener Narrative und fehlender primärer, quantitativer Messgrößen lehne ich die Aufnahme ab.",
+      "candidateId": "adc742623912627c0656",
+      "candidateKey": "bef75599332b477b1591e58d",
+      "reviewedAt": "2026-11-11T02:55:50.738Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "missing novelty",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ecf297c84fd7acc006af3d91597e887d096878204e977bfe9"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Unbestätigte Berichte über ~10% Preiserhöhung bei AMD (verbreitet 2026-09-18)",
+      "fact": "Mehrere sekundäre Medienberichte (veröffentlicht 2026-09-18) berichten, dass AMD Kunden über eine geplante Preiserhöhung von rund 10% für GPUs/AI‑Beschleuniger und ausgewählte Chip‑SKUs ab Q4 2026 informiert habe; als treibende Ursache wird ein angeblicher Kostenanstieg bei TSMC genannt.",
+      "placement": "Globaler Halbleitermarkt — GPU/AI‑Accelerator & Systemkomponenten (Hersteller‑/Listenpreise, Vertrags‑/Spot‑Pricing); betroffene Horizon‑Periode: Q4 2026 (angegeben in den Berichten).",
+      "mechanism": "Kostenweitergabe (foundry cost pass‑through): Gemeldete TSMC‑Stückkostensteigerungen führen laut Berichten dazu, dass AMD Listen‑/Vertragspreise um ~10% erhöht, wodurch Herstellerpreise, OEM‑Verträge und Hyperscaler‑Instance‑Preise nach oben gedrückt würden.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Unterstützt eine upside‑Risiko‑These für Komponenten‑ und Systempreise (price_up) im AI‑Infrastruktur‑Ökosystem; würde die Basissicht, dass Beschaffungskosten und Kontraktpreise weiter anziehen, verstärken.",
+      "falsifier": "Bis 2026-12-31 liegt eines der beiden Ergebnisse vor: (A) AMD veröffentlicht eine offizielle Preisliste / Presseerklärung / Securities‑Filing, die eine mittlere Preiserhöhung ≥8% für die betroffenen GPU/AI‑SKUs mit Wirkung Q4 2026 bestätigt; ODER (B) mindestens zwei große OEMs/Hyperscaler (z. B. AWS, Microsoft, Google) veröffentlichen oder bestätigen vertraglich dokumentierte Preisanpassungen für AMD‑basierte Instanzen/Module mit durchschnittlich ≥8% Erhöhung für den angegebenen Zeitraum. Falls keines eintritt, wird die beobachtete Berichterstattung als nicht‑validiert eingestuft.",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-18",
+      "novelty": "Berichte behaupten einen unmittelbaren, konzernweiten Preisauftrieb (cost pass‑through) bei AMD auf Q4 2026 — eine Richtung, die nicht bereits durch primäre Unternehmensverlautbarungen in der TAIL‑Baseline belegt ist.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 10,
+        "novelty": 10,
+        "thesisRelevance": 15,
+        "forecastImpact": 10,
+        "falsifiability": 12,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "semiconductors",
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "demand"
+      ],
+      "signal": "price_up",
+      "severity": 40,
+      "confidence": 45,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-rises-premarket-report-092213707.html",
+          "label": "Yahoo Finance — \"AMD Stock Rises Premarket: Report Flags Chip Price Hike Linked To TSMC Costs\" (Sekundärbericht, 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Berichtet, dass unbestätigte Meldungen eine ~10%ige Preiserhöhung ab Q4 2026 für AMD‑Chips erwähnen und Aktienbewegungen in der Pre‑Market‑Phase beschreiben."
+        },
+        {
+          "url": "https://www.trendforce.com/news/2026/09/18/news-amd-reportedly-plans-10-price-hike-for-gpus-ai-chips-chipsets-in-4q26-as-tsmc-costs-rise/",
+          "label": "TrendForce — \"AMD Reportedly Plans 10% Price Hike...\" (Sekundärquelle, 2026-09-18)",
+          "kind": "secondary",
+          "supports": "Wiederholt die Kernbehauptung: AMD plane eine ~10%‑Preiserhöhung für GPUs/AI‑Chips in Q4 2026 und führt TSMC‑Kostendruck als Ursache an."
+        },
+        {
+          "url": "https://alphaos.finance/news/amd-stock-rises-premarket-report-flags-chip-price-hike-linked-to-tsmc-costs",
+          "label": "AlphaOS / aggregierte Finanzseiten (Sekundärwiedergabe)",
+          "kind": "secondary",
+          "supports": "Weitere Re‑Publikationen der ursprünglichen Schlagzeile und Hinweise darauf, dass die Meldung breit über Finanz‑ und Tech‑Newsfeeds zirkulierte."
+        }
+      ],
+      "reason": "Nach Überprüfung der eingereichten Kandidatenquelle (Google News / TradingView‑Headline) konnten wir die Behauptung nicht gegen eine primäre Originalquelle verifizieren. Die untersuchten Treffer (Yahoo Finance, TrendForce, aggregierende Finanzseiten) sind Sekundärberichte, die ein angebliches AMD‑Kundenschreiben bzw. Supply‑Chain‑Leck zusammenfassen, liefern jedoch keine AMD‑Pressemitteilung, SEC‑Filing oder ein verifizierbares OEM/TSMC‑Statement, das die behauptete konzernweite ~10%ige Preiserhöhung dokumentiert. Opposing evidence / Unsicherheitsfaktoren: keine offizielle Bestätigung von AMD oder TSMC auffindbar; Aktienbewegungen traten teils bereits vor der Berichts‑Verbreitung auf, was auf Gerüchte‑/Marktbewegungen hindeutet. Wegen fehlender Primärverifikation wird die Behauptung als NOT PROVEN eingestuft. Empfohlenes Vorgehen: Behalte Kandidat auf Watchlist bis zum Falsifier‑Datum (2026-12-31) und prüfe auf: offizielle AMD‑/OEM‑/TSMC‑Erklärungen, SEC‑Filings, oder bestätigte vertragliche Anpassungen durch große Cloud‑Provider. Wenn eine Primärquelle erscheint, kann die Einstufung aktualisiert werden; ohne Primärbeleg bleibt das Signal indikativ, aber nicht bestätigt. Quellenbasis der Prüfung: Yahoo Finance (Sekundärbericht) und TrendForce (Sekundärbericht), keine primären Unternehmensdokumente gefunden. ",
+      "candidateId": "2adc242307b1039bf3d1",
+      "candidateKey": "ddcd8b6925ffbfbfae76b18a",
+      "reviewedAt": "2026-11-11T02:56:27.373Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0ba0322347ed7641006af3d936ed4487d09009c0546656940e"
     }
   ]
 }
