@@ -60900,6 +60900,136 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0ba0322347ed7641006af3d936ed4487d09009c0546656940e"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Alphabet klettert 3% nach Nvidia-Führungs‑Schocker; Artikel interpretiert TPUs/Google‑Chips als kurzfristigen Gewinner",
+      "fact": "Am 2026-11-12 berichtete 24/7 Wall St., dass Alphabet an diesem Handelstag rund +3% stieg, nachdem die Unsicherheit um die Führung von NVIDIA die Debatte über alternative AI‑Chiplieferanten (u. a. Googles TPUs) in den Fokus rückte. (Artikel publiziert 2026-11-12.)",
+      "placement": "Global / Equity‑Marktreaktion; Short‑term (Intraday bis Tage); Domain: AI‑Infrastruktur‑Nachfragedynamik; Layer: Marktstimmung / Kapitalallokation",
+      "mechanism": "Marktreaktion auf Führungskriminalität/Unsicherheit bei NVIDIA, die kurzfristig Kapitalzuflüsse in Wettbewerber und vertically‑integrated Cloud‑Chips (z. B. Googles TPU‑Stack) verursachen könnte. Die Aussage ist jedoch journalistische Interpretation eines Intraday‑Preisbewegungsereignisses, nicht ein direkter belegter Lieferschock, Vertragsabschluss oder Shipment.",
+      "predictionId": "",
+      "predictionImpact": "Kein belegter, klarer Einfluss auf die im Baseline/Predictions‑Set enthaltenen quantitativen Vorhersagen (z. B. Verfügbarkeit oder Lieferzeiten bei HBM/Server‑DRAM). Die Kandidatennachricht ist Marktkommentar, nicht ein atomic, datiertes Supply/Capacity‑Beleg. Deshalb fehlt ein verbindlicher Bezug zu einem bestehenden Prediction‑ID; weitere Primärbelege wären nötig, um z. B. P-2026-07-21-04 (Google bestätigt Gemini‑Serverchip) zu beeinflussen.",
+      "falsifier": "Innerhalb 7 Handelstagen (bis 2026-11-19) bestätigt oder widerlegt: (A) Alphabet‑Aktien stellen den Intraday‑Anstieg von ~3% nicht durchgehend über mehrere Handelstage hinweg wieder her (Bestätigung, dass Bewegung transiente Sentiment‑Reaktion war), oder (B) es erscheint ein Primärnachweis (Unternehmens‑Ankündigung, Kundenvertrag oder offizielle Roadmap) dass Google kurzfristig zusätzliche TPU‑Aufträge oder signifkante GPU‑Substitute aktiviert hat (Widerlegung der Annahme, dass die Nachricht nur Marktsentiment war).",
+      "nextReview": "2026-11-19",
+      "eventDate": "2026-11-12",
+      "novelty": "niedrig — Marktreaktion/Kommentar, kein neuer Primärnachweis.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 5,
+        "thesisRelevance": 10,
+        "forecastImpact": 8,
+        "falsifiability": 3,
+        "timeSensitivity": 4
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 20,
+      "confidence": 40,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://247wallst.com/investing/2026/11/12/alphabet-climbs-3-as-nvidias-leadership-shake-up-puts-googles-ai-chips-in-the-spotlight-microsoft-gains-2-amazon-ticks-up/",
+          "label": "24/7 Wall St. — Artikel zum Intraday‑Marktreaktionsbericht (Publ. 2026-11-12)",
+          "kind": "secondary",
+          "supports": "Bericht über Alphabet‑Kursanstieg (~+3%) und Interpretation, dass NVIDIAs Führungs‑Unsicherheit Google/TPU ins Rampenlicht rückt."
+        }
+      ],
+      "reason": "Die Einlieferung ist ein journalistischer Marktkommentar (Intraday‑Preisbewegung und Interpretation). Die TAIL‑Aufnahmekriterien verlangen für Annahme als VERIFIED DATA eine atomic, datierte Primärquelle mit messbarer Auswirkung (z. B. Shipment, Vertrag, Lead‑Time‑Änderung, qualifizierte Liefermengen). Dies fehlt: der Artikel interpretiert Marktstimmung, liefert aber keine Primärbelege für veränderte Verfügbarkeit oder Lieferketten‑Mechanik. Opposing/confirming Berichte (z. B. Reuters/AP) bestätigen den Auslöser (NVIDIA‑Führungsereignis) und zeigen, dass Kursausschläge breit gestreute Sentiment‑Reaktionen sind. Daher: Watchlist — behalten für Beobachtung; zusätzlicher Primärnachweis (Unternehmensankündigung, dokumentierter Kundenwechsel, bestätigte TPU‑Shipments oder formaler Vertragsabschluss) ist erforderlich, bevor eine Admission als VERIFIED DATA oder eine Verknüpfung zu einer konkreten Prediction erfolgen kann.",
+      "candidateId": "7b566486d673febf62a1",
+      "candidateKey": "a57ac98a8d4058c2eca38b0e",
+      "reviewedAt": "2026-11-12T22:52:24.317Z",
+      "priorityScore": 38,
+      "gateReasons": [
+        "primary source not retrieved",
+        "no named existing forecast/outlook",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0e2cc3afc1da1772006af6430ee79487d08e75230a8ae7da1c"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Samsung, SK Hynix’s memory lead faces growing pressure from CXMT, Micron",
+      "fact": "Meldungen (aggregierte Nachrichten/Kommentare) behaupten, dass CXMT und Micron den Memory-Vorsprung von Samsung und SK hynix zunehmend unter Druck setzen (Berichtsfenster Mitte–Ende September 2026).",
+      "placement": "Global / Halbleiter‑Market (DRAM, HBM, NAND), Industrie‑Layer (Fab‑/Packaging‑Kapazität), kurzfristiges Horizont: Q4 2026–H2 2027.",
+      "mechanism": "Wachsende Produktionserlöse und Kapazitätsausweitungen (CXMT‑IPO, zweite Fab‑Pläne, Micron‑Ausbau) plus starke AI-/Mobile‑Nachfrage erhöhen verfügbare Host‑Bits und Wettbewerbsdruck; dies wirkt über höhere Angebotswachstumsraten und potenziell niedrigere Preise bzw. veränderte Allokationsdynamiken auf Samsungs/SK‑HBM‑Marktposition.",
+      "predictionId": "P-2026-07-20-04",
+      "predictionImpact": "Wenn die Behauptung stimmt, reduziert das strukturelle Upside‑Risiko für einen mehrjährigen Memory‑Knappheitspfad (Forecast P-2026-07-20-04: \"Memory bleibt 2027 knapp...\")—insbesondere die Wahrscheinlichkeit, dass Preise und Bit‑Knappheit bis 2028/2029 andauern. Es ist damit ein potenzieller Falsifier / Partial‑Mitteleinfluss für die Basissicht auf 2027 Knappheit.",
+      "falsifier": "Konkreter, prüfbarer Grenztest: Bis 2027-06-30 zeigen unabhängige Marktmessungen (z.B. TrendForce/Couterpoint/IC Insights oder Anbieter‑Earnings) für DRAM/NAND einen kumulierten globalen Bit‑Zuwachs (qualified wafer starts/Wafer‑equivalent oder QTD qualifizierte HBM/Wafer‑Shipments) ≥15 % YoY, verbunden mit mindestens zwei Quartalen stabiler oder fallender kontraktpreisindizes für Server‑DRAM (jeweils dokumentiert).",
+      "nextReview": "2026-12-31",
+      "eventDate": "2026-09-19",
+      "novelty": "Behauptung fasst mehrere bekannte Marktbewegungen zusammen; keine einzelne neue Primärbeobachtung.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 13,
+        "novelty": 8,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 9,
+        "timeSensitivity": 10
+      },
+      "markets": [
+        "dram",
+        "hbm",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "demand",
+        "availability"
+      ],
+      "signal": "demand_up",
+      "severity": 40,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.sammyfans.com/2026/09/18/samsung-sk-hynixs-memory-lead-faces-growing-pressure-from-cxmt-micron/",
+          "label": "Aggregierter Article Mirror (SammyFans) — verlinkt in der Kandidaten‑Inbox",
+          "kind": "secondary",
+          "supports": "Statement/Headline über wachsenden Druck auf Samsung und SK hynix; keine Primärdaten (nur Aggregation/Kommentar)."
+        }
+      ],
+      "reason": "Die Einsendung ist thematisch relevant für die TAIL‑Outlooks (Memory‑Knappheit 2027) und plausibel — jedoch erfüllt sie nicht die strengen Zulassungskriterien für eine Accepted‑Admission: die Kandidaten‑URL ist ein aggregierter Google/Site‑Feed-Eintrag, keine Primärquelle. Die von uns aufgefundenen Sekundär‑Berichte (z.B. Reuters‑Syndication / Marketscreener) unterstützen die Richtung der Behauptung, liefern aber kein einzelnes, datiertes, quantitatives Primär‑Messdatum (z. B. qualifizierte HBM‑Shipments in Pb/Gb, vertraglich gebundene Bit‑Volumina mit Datum, oder ein Hersteller‑Earnings‑Zitat mit exakten Einheiten) das zur direkten Verifikation und Index‑Anbindung erforderlich wäre. Zudem existieren widersprüchliche/gegenläufige Indikatoren im Baseline‑Corpus (z. B. mehrere Meldungen über \"HBM sold out through 2026\" und SK‑/Samsung‑Kapazitätsankündigungen), so dass ein Adversarial‑Check nicht abgeschlossen werden kann. Deshalb 'watchlist' mit Aufforderung zur primärevidente Verifikation (earnings call Zitat, offizielle Produktions‑Shipment‑Tabellen oder regulatorische Einreichungen mit Einheiten).",
+      "candidateId": "b6aa47a837d2ae41e9f9",
+      "candidateKey": "b50cc8b895f1e5d7e43d0cd7",
+      "reviewedAt": "2026-11-12T22:53:03.965Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0dfc799b7033204c006af643288b9087d0933c82c08b15c9f7"
     }
   ]
 }
