@@ -61030,6 +61030,144 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_0dfc799b7033204c006af643288b9087d0933c82c08b15c9f7"
+    },
+    {
+      "decision": "watchlist",
+      "title": "SK hynix, Samsung, Micron: AI‑Boom statt Kartell — Firmen weisen Preis‑/Versorgungs‑Verschwörungsbehauptung zurück",
+      "fact": "Fachartikel/Reportagen berichten, dass Samsung Electronics, SK hynix und Micron argumentieren, die jüngsten Up‑Shifts im DRAM‑Markt seien vorwiegend durch die AI‑Nachfrage (HBM/Server‑DRAM) verursacht und nicht das Ergebnis eines Preisabspaltungs‑Konsortiums.",
+      "placement": "Globaler DRAM‑Markt; Hersteller‑Statements (Südkorea / USA) in MLex/Antitrust‑Berichterstattung; kurz‑ bis mittelfristiger Markt‑Horizont (2026).",
+      "mechanism": "Unternehmen geben an, dass erhöhte AI‑Spezialnachfrage (HBM, Server‑DRAM) und vermehrte Multiyear‑LTAs die Angebots‑/Preisentwicklung erklären; dies ist ein Nachfrage‑getriebener Preisdruckmechanismus (Verlagerung des Mix hin zu profitableren AI‑Produkten und vertraglicher Vorbindung von Kapazität).",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "Diese Meldung stützt die OUTLOOK‑Annahme, dass kurzfristiges Beschaffungsrisiko und Angebotsknappheit in Server‑DRAM durch AI‑Nachfrage (HBM‑Priorisierung, LTAs) getrieben sind; sie ist kein direkter Falsifier für das Basisszenario, reduziert aber die Plausibilität von Erklärungen, die allein ein illegales Kartell (price‑fixing) als Ursache anführen.",
+      "falsifier": "Bis 2027-03-31: Gerichtliche Entscheidung oder belastbare Primärquelle, die beweist, dass Hersteller koordinierte, absichtliche Produktionskürzungen oder Preisabsprachen (nicht marktgetriebene Mix‑/LTA‑Entscheidungen) vorgenommen haben; oder unabhängige Liefer‑/Preisindizes zeigen, dass Vertrags‑/Spot‑Preise ohne korrelierende AI‑Nachfrageindikatoren (z. B. HBM‑Shipments, LTA‑Volumina) um ≥10 % über zwei aufeinanderfolgenden Quartalen steigen.",
+      "nextReview": "2026-11-28",
+      "eventDate": "2026-09-03",
+      "novelty": "Gering bis moderat — das Thema (AI‑getriebene Nachfrage vs. Kartellbehauptungen) war bereits zuvor Gegenstand von Unternehmens‑ und Medien‑Äußerungen im Sommer/Herbst 2026; die Meldung fasst Stellungnahmen in einem neuen Rechtskontext zusammen.",
+      "duplicateOf": "",
+      "evidenceStatus": "MODEL ESTIMATE",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 6,
+        "thesisRelevance": 16,
+        "forecastImpact": 12,
+        "falsifiability": 5,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "dram",
+        "server_dram",
+        "hbm"
+      ],
+      "driverScope": [
+        "demand",
+        "availability",
+        "pricing",
+        "aiDemand"
+      ],
+      "signal": "demand_up",
+      "severity": 35,
+      "confidence": 60,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.mlex.com/mlex/articles/2521308/samsung-sk-hynix-micron-move-to-dismiss-us-dram-price-fixing-claims",
+          "label": "MLex: Samsung, SK Hynix, Micron move to dismiss US DRAM price‑fixing claims (Sep 3, 2026)",
+          "kind": "primary",
+          "supports": "Bericht über Bewegungen der drei Hersteller, eine US‑Klage abzuweisen; Firmen argumentieren, Marktverschiebung Richtung AI/HBM erklärt Preisanstieg statt krimineller Absprache."
+        },
+        {
+          "url": "https://www.mlex.com/mlex/antitrust/articles/2521453/samsung-sk-hynix-micron-say-us-antitrust-claims-over-dram-repackaged",
+          "label": "MLex Insight: Samsung, SK hynix, Micron say US antitrust claims over DRAM repackaged (Sep 3, 2026)",
+          "kind": "secondary",
+          "supports": "Analyse/Einordnung, dass die Unternehmen die Klage als Wiederholung früherer abgewiesener Vorwürfe bezeichnen und AI‑Nachfrage als nicht‑kriminelle Erklärung hervorheben."
+        }
+      ],
+      "reason": "Primärquelle (MLex) bestätigt, dass die drei großen Hersteller in einem Gerichts‑/Presskontext die AI‑getriebene Nachfrage als Hauptursache der Marktbewegung anführen und kartellrechtliche Vorwürfe zurückweisen. Dennoch erfüllt die Kandidateneinreichung nicht die TAIL‑Aufnahmekriterien für 'accepted': es fehlt eine atomare, datierte, messbare Beobachtung (z. B. konkrete Shipment‑/Lead‑Time‑Änderung mit Einheiten), eine klar abgegrenzte geografische/Produktskopierung mit messbarem Impact auf eine vorhandene Vorhersage, sowie ein unmittelbar prüfbarer Falsifier mit eindeutigen Messgrößen. Ohne solche quantitativen Primärbelege kann die Meldung lediglich als kontextuelles Signal auf Watchlist‑Stufe aufgenommen werden. Weiteres Anforderungsprofil zur Erhebung auf 'accepted': primäre Messung (z. B. HBM‑Shipments in Stk./Monat oder vertraglich gebundene Bit‑Volumina mit Datum) und eine deklarierte Wirkung auf ein spezifisches Vorhersage‑ID‑Outcome.",
+      "candidateId": "dd7945b280aab0c0e5e0",
+      "candidateKey": "80b5d50dd353d489f8a69720",
+      "reviewedAt": "2026-11-14T03:23:44.023Z",
+      "priorityScore": 59,
+      "gateReasons": [
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0346a6cd48f65bb4006af7d426e75087d0babfefc77be9b60f"
+    },
+    {
+      "decision": "watchlist",
+      "title": "Behauptung: Micron bestätigt TSMC als Hersteller der Next‑Gen HBM-Base‑Dies; alle drei großen Memory‑Hersteller angebunden",
+      "fact": "Bericht (angegeben 2026-09-19) behauptet, Micron habe bestätigt, dass TSMC die Base‑Dies für nächste HBM‑Generationen fertigt und dass nun alle drei großen Speicherhersteller (Micron, Samsung, SK hynix) einbezogen sind.",
+      "placement": "Global — HBM‑Produktlayer (Base logic die), relevante Wirkung auf HBM- und Server‑DRAM‑Verfügbarkeit (Halbleiter‑Foundry/Memory‑Layer).",
+      "mechanism": "Wenn die Base‑Dies für HBM‑Produkte auf einem Foundry‑Logic‑Node (TSMC 3nm/fortgeschrittene Logik) gefertigt werden, verschiebt das PPA (Power/Performance/Area) der Base‑Die und kann Knappheit/Allokation in Foundry‑Capex und Advanced‑Packaging auslösen; zusätzlich bindet ein gemeinsames Foundry‑Manufacturing Nachfrage-/Kapazitätsstress zwischen Foundry‑Nodes und Memory‑Stacks, was die kurzfristige Verfügbarkeit (Lead‑Times) von HBM/Server‑DRAM verschlechtern kann.",
+      "predictionId": "P-2026-07-11-01",
+      "predictionImpact": "Informiert Availability-Risiko (unterstützt Annahme, dass HBM/Server‑DRAM bis mindestens Ende 2028 strukturell knapp bleiben können), da Foundry‑Abhängigkeiten und zusätzliche Priorisierung der HBM‑Base‑Dies Kapazitätsengpässe verschärfen könnten.",
+      "falsifier": "Bis 2026-12-31 gibt es keine primäre, öffentlich zugängliche Primärquelle (Micron‑Pressemitteilung, Micron‑Earnings‑Transcript, TSMC‑Ankündigung oder ein verbindliches Vertragsdokument) die explizit bestätigt, dass: a) Micron am genannten Datum (oder vorher) TSMC als Hersteller der Next‑Gen HBM‑Base‑Dies bestätigt hat; und b) dass Samsung und SK hynix formell denselben TSMC‑Foundry‑Fertigungs‑Scope bestätigt haben. Wenn eine solche Primärquelle bis 2026-12-31 vorliegt, widerlegt das die Watchlist‑Notiz.",
+      "nextReview": "2026-12-01",
+      "eventDate": "2026-09-19",
+      "novelty": "Moderate — bestätigt eine bereits seit 2025/2026 vorhandene industrielle Verschiebung hin zu Foundry‑gefertigten HBM‑Base‑Dies, behauptet aber eine spezifische Koalition (alle drei Hersteller) zu einem konkreten Zeitpunkt.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 10,
+        "thesisRelevance": 18,
+        "forecastImpact": 16,
+        "falsifiability": 7,
+        "timeSensitivity": 5
+      },
+      "markets": [
+        "hbm",
+        "server_dram",
+        "semiconductors",
+        "ai_infrastructure"
+      ],
+      "driverScope": [
+        "availability",
+        "demand"
+      ],
+      "signal": "negative_supply",
+      "severity": 35,
+      "confidence": 55,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://www.trendforce.com/news/2026/05/22/news-micron-turns-more-upbeat-on-outlook-reportedly-sets-2027-hbm4e-ramp-with-tsmc-for-standard-and-custom-logic-dies/",
+          "label": "TrendForce (2026) — Bericht, dass Micron einen Ramp mit TSMC plante",
+          "kind": "secondary",
+          "supports": "Analysten-/Branchenberichte aus 2026 referenzieren eine TSMC‑Fertigung für Microns HBM‑Base‑Die, stützen aber nicht eine konzertierte Dreier‑Bestätigung am behaupteten Datum."
+        }
+      ],
+      "reason": "Die Behauptung enthält zwei unterscheidbare Teilbehauptungen: 1) Micron hat bestätigt, TSMC werde die Base‑Dies für (next‑gen) HBM fertigen — für diese Teilbehauptung gibt es bereits frühere primäre Unternehmensvermerke (Micron Investor Presentation / Earnings‑Statements aus 2025/2026), die Microns Partnerschaft mit TSMC für HBM4E‑Base‑Dies nennen. 2) \"Alle drei großen Memory‑Hersteller sind jetzt an Bord\" (Implikation: Samsung und SK hynix haben dieselbe formelle Bestätigung/vereinbarung) — hierfür fehlt eine klare Primärquelle zum angegebenen Datum. Zusätzliche Medienberichte (Oktober 2026) wiedergeben, dass NVIDIA laut Branchenquellen TSMC‑Fertigung für NVHBM‑Base‑Dies von allen drei Lieferanten verlangt habe; diese Berichte datieren jedoch nach dem in der Inbox angegebenen 2026-09-19‑Zeitpunkt und sind Sekundärquellen/Branchenberichte, nicht formelle Vertrags- oder Firmenankündigungen. Weil die Aufnahmeanforderungen verlangen, dass ein admitted Fact durch eine primäre, datierten Quelle direkt belegt ist und außerdem eine klare, testbare Auswirkung beschreibt, kann ich das Candidate‑Signal derzeit nicht als VERIFIED DATA annehmen. Deshalb Watchlist: brauch primäre Bestätigung für die vollständige Dreier‑Koalition und expliziten Wortlaut/Datum. \n\nGegenbelege / Risiken: a) Micron‑Unterlagen aus 2025–2026 zeigen bereits eine TSMC‑Partnerschaft für HBM4E‑Base‑Dies (unterstützt Teilbehauptung). b) spätere Branchenberichte (Okt 2026) sprechen von Nvidia‑Anfrage an alle drei Lieferanten, aber das ist Sekundär‑Reporting und post‑dates das Inbox‑Datum; c) kein öffentliches TSMC‑Statement oder Reuters/AP‑Meldung mit einem formellen Vertragsnamen zum 2026-09-19‑Datum gefunden — fehlende Primärverifikation verhindert volle Aufnahme.\n\nEmpfohlene nächste Schritte: 1) Primärquelle prüfen: Micron Earnings‑Transcript (Q4 FY2026 call, 2026-09‑30) und jede Micron‑Pressemitteilung / TSMC‑Pressemitteilung zwischen 2026-09-01 und 2026-10-31 auf exakte Formulierungen und Vertragsdaten; 2) Falls verfügbar, die konkrete Samsung‑/SK hynix‑Bestätigung (Pressemitteilungen oder Q3/Q4‑Earnings) einholen; 3) Falls eine formelle Bestätigung vorliegt, neu bewerten und ggf. als accepted umstufen mit direkt zitierter Primärquelle und einem gemessenen Falsifier (z. B. beobachtete Lead‑Time oder qualifizierte Shipment‑Zahlen verändert sich nicht bis X Datum).",
+      "candidateId": "3f87eb5c3be756e8d4d1",
+      "candidateKey": "56d0e3ab32ab4403b0401ae6",
+      "reviewedAt": "2026-11-14T03:24:24.899Z",
+      "priorityScore": 68,
+      "gateReasons": [
+        "primary source not retrieved",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_03279fb5d903a124006af7d440c8f087d09214477ef9b3659d"
     }
   ]
 }
