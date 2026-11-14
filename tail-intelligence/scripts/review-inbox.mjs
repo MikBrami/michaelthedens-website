@@ -68,7 +68,7 @@ const latestReviews = new Map(journal.reviews.map(r => [r.candidateKey,r]));
 const reviewedKeys = new Set([...latestReviews.values()].filter(r => r.decision !== 'watchlist' || r.nextReview > now.slice(0,10)).map(r => r.candidateKey));
 const pending = candidates.filter(c => !reviewedKeys.has(reviewKey(c)));
 // Bounded catch-up: older high-relevance evidence must not starve behind headlines.
-const limit = 2; // Pilot only: cannot be increased through workflow variables.
+const limit = 4; // Hard cap per run; daily/monthly estimated spend guard lives in bounded-review.
 const concurrency = 1;
 const startedAt = Date.now();
 const deadline = startedAt + Math.min(600000,Math.max(1000,Number(process.env.TAIL_REVIEW_BUDGET_MS)||600000));
@@ -147,7 +147,8 @@ for (let i=0;!blockingError && i<selected.length && Date.now()+180000<=deadline;
     if(response.status==='rejected') {
       error=`Candidates ${wave[responseIndex].map(c=>c.id).join(',')}: ${String(response.reason?.message||response.reason)}`;
       batchErrors.push(error);
-      blockingError=/Analyst HTTP (401|403|429)/.test(error);
+      blockingError=/Analyst HTTP (401|403|429)|estimated API budget exhausted/.test(error);
+      if (/estimated API budget exhausted/.test(error)) error = null; // Deliberate pause, not a failed evidence review.
       console.warn(`Analyst batch deferred: ${error}`);
       continue;
     }

@@ -142,7 +142,8 @@ function renderDashboard(snapshot) {
   const isCurrent = platform.dataFreshness === "current" && platform.processStatus === "ok";
   document.querySelector(".status-dot").classList.toggle("stale", !isCurrent);
   const review = platform.admissionReview || {};
-  document.getElementById("freshness-text").textContent = `Berechnet ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Evidenz ${formatDate(platform.indexEvidenceAsOf || platform.sourceDataAsOf)} · ${review.status === 'complete' ? 'Prüfung abgeschlossen' : 'Evidenzprüfung offen'}`;
+  const excluded = Number(review.historicalCandidatesSkipped || 0);
+  document.getElementById("freshness-text").textContent = `Berechnet ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · jüngste Index-Evidenz ${formatDate(platform.indexEvidenceAsOf || platform.sourceDataAsOf)} · ${review.pending ?? '–'} offen${excluded ? ` · ${excluded} ältere Kandidaten ausgenommen` : ''}`;
   indexLabel.textContent = review.status === 'complete' ? 'GEPRÜFT' : 'PRÜFUNG OFFEN';
   document.getElementById("signal-freshness").textContent = `Nachrichtenstand ${formatDate((snapshot.signals || []).map(s => s.date).sort().at(-1))} · ${platform.articleCount ?? '–'} Einträge in der Wissensbasis`;
 
