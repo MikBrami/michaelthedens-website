@@ -1,0 +1,86 @@
+{
+  "asOf": "2026-11-17",
+  "baselineEvidenceThrough": "2026-09-11",
+  "methodology": "1.3",
+  "baselineScore": 68,
+  "screened": 593,
+  "shortlisted": 81,
+  "score": 67,
+  "segments": {
+    "server_dram": 71,
+    "hbm": 62,
+    "enterprise_ssd": 66
+  },
+  "sensitivity": [
+    66,
+    68
+  ],
+  "evidence": [
+    {
+      "id": "rdimm-contracts",
+      "date": "2026-11-04",
+      "market": "server_dram",
+      "signal": "price_up",
+      "driver": "pricing",
+      "severity": 78,
+      "confidence": 90,
+      "summary": "TrendForce: Server-DRAM-Vertragspreise steigen je RDIMM-Kapazität unterschiedlich.",
+      "url": "https://www.trendforce.com/research/download/RP261104XL"
+    },
+    {
+      "id": "hbm-orders",
+      "date": "2026-10-28",
+      "market": "hbm",
+      "signal": "demand_up",
+      "driver": "demand",
+      "severity": 95,
+      "confidence": 90,
+      "summary": "SK hynix meldet HBM-Kundenanfragen von mehr als dem Doppelten seiner Lieferkapazität.",
+      "url": "https://dcb0ucee30q2g.cloudfront.net/business/2026/10/28/sk-hynix-says-hbm-orders-exceed-twice-its-supply-capacity"
+    },
+    {
+      "id": "hbm-booked",
+      "date": "2026-11-04",
+      "market": "hbm",
+      "signal": "negative_supply",
+      "driver": "availability",
+      "severity": 90,
+      "confidence": 87,
+      "summary": "TrendForce meldet gebundene HBM-Kapazität für 2027 bei den betrachteten Anbietern.",
+      "url": "https://www.trendforce.com/research/download/RP261104XL"
+    },
+    {
+      "id": "hbm-micron-price",
+      "date": "2026-09-30",
+      "market": "hbm",
+      "signal": "price_up",
+      "driver": "pricing",
+      "severity": 83,
+      "confidence": 88,
+      "summary": "Micron meldet deutlich höhere Preise für das bereits großteils verkaufte HBM-Volumen 2027.",
+      "url": "https://dcb0ucee30q2g.cloudfront.net/finance/2026/10/01/hbm-prices-to-more-than-double-next-year-as-shortage"
+    },
+    {
+      "id": "ssd-csp-orders",
+      "date": "2026-11-17",
+      "market": "enterprise_ssd",
+      "signal": "demand_down",
+      "driver": "demand",
+      "severity": 78,
+      "confidence": 83,
+      "summary": "Laut TrendForce kompensieren die Kürzungen chinesischer CSPs bei eSSD-Bestellungen für 2027 die höheren Abrufe nordamerikanischer CSPs.",
+      "url": "https://www.trendforce.com/research/download/RP261116WI"
+    },
+    {
+      "id": "ssd-samsung-demand",
+      "date": "2026-10-29",
+      "market": "enterprise_ssd",
+      "signal": "demand_up",
+      "driver": "demand",
+      "severity": 67,
+      "confidence": 87,
+      "summary": "Samsung meldet wachsende Nachfrage nach Server-SSDs in seinem Q3-Geschäft.",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+    }
+  ]
+}
