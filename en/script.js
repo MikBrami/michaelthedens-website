@@ -171,6 +171,14 @@ function renderDashboard(snapshot, datedScore) {
     <article class="market-card"><div class="market-head"><h3>${escapeHtml(marketNames[i])}</h3>${useDatedScore && Number.isFinite(datedScore.segments?.[marketIds[i]]) ? `<span class="market-score">${datedScore.segments[marketIds[i]]}</span>` : ""}</div><p>${escapeHtml(note)}</p></article>`
   ).join("");
 
+  const riskPressure = useDatedScore ? datedScore.riskPressure : isCurrent ? pulse.riskPressure : null;
+  if (Number.isFinite(riskPressure)) {
+    const risk = document.createElement("article");
+    risk.className = "market-card";
+    risk.innerHTML = `<div class="market-head"><h3>Risk Pressure</h3><span class="market-score">${riskPressure}</span></div><p>Combines peak pressure across critical markets with peak availability pressure.</p>`;
+    document.getElementById("market-grid").append(risk);
+  }
+
   renderMarketOutlook(snapshot.marketOutlook);
 
   document.getElementById("signal-grid").innerHTML = EDITORIAL_SIGNALS.map((signal) => `
@@ -182,12 +190,14 @@ function renderDashboard(snapshot, datedScore) {
       <p><a href="${escapeHtml(signal.url)}" rel="noopener noreferrer" target="_blank">DIGITIMES source</a></p>
     </article>`).join("");
 
+  document.getElementById("market-evidence")?.remove();
   if (useDatedScore) {
     const [title, intro, strength, confidence, source, additional] = ["Market evidence and scoring assumptions","Evidence summaries are in German. Strength and confidence are scored out of 100.","Strength","Confidence","Source","Additional observations"];
-    const details = document.createElement("details");
+    const details = document.createElement("section");
     details.className = "market-card";
-    details.style.gridColumn = "1 / -1";
-    const heading = document.createElement("summary");
+    details.id = "market-evidence";
+    details.style.marginTop = "1rem";
+    const heading = document.createElement("h3");
     heading.textContent = title;
     const explanation = document.createElement("p");
     explanation.textContent = intro;
@@ -220,7 +230,7 @@ function renderDashboard(snapshot, datedScore) {
       addEvidence(datedScore.contextReview.observations, (entry) =>
         `${entry.observation} ${entry.interpretation}`);
     }
-    document.getElementById("market-grid").append(details);
+    document.getElementById("market-grid").after(details);
   }
   renderWatchpoints();
 }
