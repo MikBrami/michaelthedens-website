@@ -61168,6 +61168,133 @@
       "contractVersion": 3,
       "model": "gpt-5-mini",
       "responseId": "resp_03279fb5d903a124006af7d440c8f087d09214477ef9b3659d"
+    },
+    {
+      "decision": "rejected",
+      "title": "Behauptung: „$5 Mrd. Blackstone‑Deal entspricht etwa fünf Tagen Amazon‑Capex“ — arithmetisch falsch / irreführend",
+      "fact": "Blackstone Digital Infrastructure Trust (BXDC) gab am 2026-11-16 einen Deal im Umfang von etwa US$5,0 Mrd. für eine mehrheitliche Übernahme (75.1%) von AWS‑Rechenzentrums‑Assets bekannt. Amazon hingegen leitete für 2026 ein Cash‑CapEx‑Leitbild von etwa US$220 Mrd. (Guidance).",
+      "placement": "global / Unternehmens‑Kapex‑Vergleich (Amazon, US‑zentriert)",
+      "mechanism": "Fehlerhafte Relation: Autor nimmt deal‑Cashwert (US$5 Mrd.) und teilt ihn fälschlich durch einen Tages‑CapEx, der Amazon‑Guidance zufolge deutlich höher ist. Mathematische Folge: bei US$220 Mrd. Jahres‑CapEx entspricht US$5 Mrd. ≈ 8.3 Tage, nicht ≈5 Tage.",
+      "predictionId": "P-2026-07-17-03",
+      "predictionImpact": "keine Änderung des Forecasts — die zugrundeliegende Behauptung ist rechnerisch falsch und reduziert nicht die Relevanz der Hyperscaler‑Capex‑Prognosen.",
+      "falsifier": "Wenn Amazon in einem verlässlichen SEC‑Filing oder Earnings Release für das Kalenderjahr 2026 eine veröffentlichte Cash‑CapEx‑Guidance von ≤ US$220 Mrd. bestätigt (z. B. Amazon Q3/2026 Earnings Release vom 2026‑10‑29), dann ergibt US$5 Mrd. einen Tagesäquivalent‑Wert ≥ ~8 Tage und widerlegt die Aussage 'etwa fünf Tage'. Überprüfungstermin: 2027-01-31 (prüfen, ob Amazon nachträglich CapEx‑Guidance revidiert hat).",
+      "nextReview": "2027-01-31",
+      "eventDate": "2026-11-16",
+      "novelty": "gering (transaktion berichtigt; kein neuer Mechanismus für Kapazität oder Verfügbarkeit)",
+      "duplicateOf": "",
+      "evidenceStatus": "VERIFIED DATA",
+      "classification": "Falsifier",
+      "scoreBreakdown": {
+        "sourceQuality": 8,
+        "novelty": 3,
+        "thesisRelevance": 10,
+        "forecastImpact": 4,
+        "falsifiability": 12,
+        "timeSensitivity": 6
+      },
+      "markets": [
+        "ai_infrastructure",
+        "server_dram"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability",
+        "demand"
+      ],
+      "signal": "capacity_lock",
+      "severity": 20,
+      "confidence": 90,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [],
+      "reason": "Die Kernbehauptung kombiniert zwei verifizierbare Primärdaten (Deal‑Wert US$5,0 Mrd. und Amazons 2026‑CapEx‑Guidance). Die arithmetische Relation in der Kandidatenformulierung ('etwa fünf Tage') ist nicht haltbar: bei Amazon‑Guidance von ~US$220 Mrd. entspricht US$5 Mrd. ungefähr 8.3 Tagen CapEx (US$220B/365 ≈ US$0.603B pro Tag; US$5B/US$0.603B ≈ 8.3). Quellenlage: Primärquelle für den Deal (BXDC‑8‑K/Company Release) ist vorhanden und verifizierbar; ebenso die Amazon‑CapEx‑Guidance (Earnings Release/Q3‑2026). Weil die Kandidatenbehauptung eine spezifische, datierte arithmetische Beziehung behauptet und diese durch die Primärdaten direkt widerlegt wird, lehne ich die Aufnahme ab (rejected).",
+      "candidateId": "2d053013dde2c6c8a682",
+      "candidateKey": "6760c3a679349730f25bb670",
+      "reviewedAt": "2026-11-17T00:57:41.499Z",
+      "priorityScore": 43,
+      "gateReasons": [
+        "primary source not retrieved",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_068d90b4d9e7603f006afba66cf27c87d1b7d4956a47d10d71"
+    },
+    {
+      "decision": "watchlist",
+      "title": "AMD and TSMC: What a Reported Foundry Cost Rise Reveals About the Fabless Supply Layer",
+      "fact": "Medienberichte (FourWeekMBA / zitiert: Commercial Times) melden, dass TSMC/Foundry‑Packaging‑Preise für CoWoS/Advanced‑Packaging um zweistellige Prozentbeträge (Berichtsspanne 10–20 %) steigen könnten; Artikel datiert/gefunden im September 2026.",
+      "placement": "globale Foundry/Advanced‑Packaging‑Layer (CoWoS/SoIC), relevant für AI/HPC‑Accelerator‑Produkte (Geographie: weltweite Foundry‑Kunden; Horizon: kurzfristig – Q4 2026–Q1 2027).",
+      "mechanism": "Steigende Foundry‑ und Advanced‑Packaging‑Kosten (Tool‑Lead‑Times, Kapazitätsengpässe, erhöhte Feature‑Anforderungen und mögliche 'Sovereignty' Aufschläge) würden Herstellkosten pro Package erhöhen und so Preisdruck auf Fabless‑Kunden (z. B. AMD) erzeugen; Folge: Weitergabe von Mehrkosten an OEMs/Cloud‑Käufer oder Margenkompression.",
+      "predictionId": "OUTLOOK-server_dram",
+      "predictionImpact": "price_up (erhöhter Kostendruck auf Advanced‑Packaging/CoWoS könnte die Endprodukt‑/Systempreise und Vertragskosten für AI/HPC‑Plattformen erhöhen).",
+      "falsifier": "Bis 2026-11-15 keine offizielle Kundenmitteilung oder regulatorische Einreichung von TSMC, AMD oder einem relevanten Packaging‑Partner, die eine bestätigte Preiserhöhung ≥10% für CoWoS/Advanced‑Packaging mit wirksamem Datum und quantifizierter Volumenauswirkung ausweist. (Wenn eine solche offizielle Mitteilung vorliegt, würde die Meldung empirisch verifiziert und Signal aufgewertet.)",
+      "nextReview": "2026-11-20",
+      "eventDate": "2026-09-17",
+      "novelty": "Bericht fasst mehrere bereits kursierende Hinweise (Commercial Times / Branchenquellen) zusammen; kein neues Primärbeleg‑Release.",
+      "duplicateOf": "",
+      "evidenceStatus": "NOT PROVEN",
+      "classification": "Signal",
+      "scoreBreakdown": {
+        "sourceQuality": 12,
+        "novelty": 9,
+        "thesisRelevance": 16,
+        "forecastImpact": 14,
+        "falsifiability": 6,
+        "timeSensitivity": 8
+      },
+      "markets": [
+        "ai_infrastructure",
+        "semiconductors"
+      ],
+      "driverScope": [
+        "pricing",
+        "availability"
+      ],
+      "signal": "price_up",
+      "severity": 40,
+      "confidence": 50,
+      "indexImpact": false,
+      "indexEvidence": {
+        "metricType": "none",
+        "marketId": "",
+        "observation": ""
+      },
+      "redPencilPass": false,
+      "sources": [
+        {
+          "url": "https://fourweekmba.com/ai-tsmc-is-said-to-prepare-cowos-price-rises-of-up-to-20/",
+          "label": "FourWeekMBA – \"TSMC Is Said to Prepare CoWoS Price Rises of Up to 20%\"",
+          "kind": "secondary",
+          "supports": "Artikel fasst Commercial Times‑Bericht und Branchenhinweise zusammen und nennt eine gemeldete Spanne von ca. 10–20% für CoWoS/Packaging‑Quotes; keine offizielle TSMC/AMD Primärmitteilung."
+        },
+        {
+          "url": "https://static1.squarespace.com/static/63cbf7ce669ae77113521fa9/t/696addc5e874872425948f1f/1768611269960/TSM%2B2025%2BQ4%2BEarnings%2BTranscript%2B%28Blue%2BRoom%29%2B%281%29.pdf",
+          "label": "TSMC Q4 2025 (Earnings transcript) — Kostenherausforderungen (Primärunternehmens‑Kontext)",
+          "kind": "primary",
+          "supports": "TSMC‑Earnings Dokument verweist auf steigende Herstellkosten für führende Nodes; liefert kontextuelle, aber keine bestätigende Kundenpreisnotiz für CoWoS‑Erhöhungen."
+        }
+      ],
+      "reason": "Der eingereichte Signaltext bezieht sich auf ein Branchen‑/Medienstück (FourWeekMBA) das wiederum einen Commercial Times‑Bericht und anonyme Branchenquellen zusammenfasst. Für TAIL‑Aufnahme als VERIFIED DATA / Akzeptanz ist ein atomarer, datierter Primärbeleg nötig (z. B. offizielle Kundenmitteilung von TSMC oder AMD mit Prozentangabe, Gültigkeitsdatum und Volumen/Scope). Solche Primärnachweise fehlen im vorgelegten Kandidaten. Die Meldung ist relevant für unsere Preis‑ und Verfügbarkeits‑Thesen (Pricing/Availability für AI‑Memory/Packaging), hat aber derzeit unbestätigten Charakter und könnte auf Gerüchte/Übersetzungsfehler beruhen. Deshalb Watchlist: wert, weiter zu beobachten und nach offizieller Bestätigung zu prüfen. Opposing evidence: TSMC‑Earnings dokumentieren zwar Kostensteigerungen, aber liefern keine bestätigte Preiserhöhung an Kunden; das schwächt die unmittelbare Verifizierbarkeit der Meldung. Falls bis 2026-11-15 offizielle Kundenmitteilungen oder regulatorische Offenlegungen (TSMC/AMD/Amkor etc.) mit klaren Preiserhöhungen ≥10% erscheinen, sollte das Signal neu bewertet (mögliche Aufnahme) werden.",
+      "candidateId": "46e090ab2c1f794a9895",
+      "candidateKey": "76c801da48a568b08ef2cee1",
+      "reviewedAt": "2026-11-17T00:58:13.079Z",
+      "priorityScore": 65,
+      "gateReasons": [
+        "invalid review date",
+        "unverified evidence",
+        "red-pencil check incomplete",
+        "below admission threshold"
+      ],
+      "contractVersion": 3,
+      "model": "gpt-5-mini",
+      "responseId": "resp_0cf86ba775deda11006afba685b0c887d19ca4c1bf195115e9"
     }
   ]
 }

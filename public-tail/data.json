@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T03:24:26.581Z",
+  "generatedAt": "2026-11-17T00:58:15.156Z",
   "platform": {
-    "dataAsOf": "2026-11-14",
-    "analysisAsOf": "2026-11-14",
+    "dataAsOf": "2026-11-17",
+    "analysisAsOf": "2026-11-17",
     "sourceDataAsOf": "2026-10-21",
     "indexEvidenceAsOf": "2026-09-11",
     "admissionReview": {
       "status": "pending",
-      "checkedAt": "2026-11-14T03:24:24.947Z",
-      "pending": 565,
-      "reviewed": 215,
+      "checkedAt": "2026-11-17T00:58:13.121Z",
+      "pending": 593,
+      "reviewed": 216,
       "accepted": 22,
-      "rawCandidates": 1615,
+      "rawCandidates": 1666,
       "triage": {
         "archivedOpinions": 34,
-        "groupedDuplicates": 84
+        "groupedDuplicates": 99
       },
       "lastRun": {
-        "startedAt": "2026-11-14T03:23:16.920Z",
-        "completedAt": "2026-11-14T03:24:24.950Z",
+        "startedAt": "2026-11-17T00:57:14.569Z",
+        "completedAt": "2026-11-17T00:58:13.127Z",
         "selected": 2,
         "reviewed": 2,
         "concurrency": 1,
@@ -27,7 +27,7 @@
         "limit": 2,
         "rateLimitRetries": 0,
         "timeoutRetries": 0,
-        "durationSeconds": 67,
+        "durationSeconds": 57,
         "budgetExhausted": false
       }
     },
@@ -39,7 +39,7 @@
       {
         "id": "server_dram",
         "label": "Server DRAM / RDIMM",
-        "score": 71,
+        "score": 70,
         "status": "orange",
         "signals": 19,
         "confidence": 71,
@@ -48,7 +48,7 @@
       {
         "id": "hbm",
         "label": "HBM",
-        "score": 57,
+        "score": 56,
         "status": "yellow",
         "signals": 31,
         "confidence": 89,
@@ -73,43 +73,43 @@
     "riskPressure": 80,
     "coverage": 100,
     "methodologyVersion": "1.3",
-    "interpretation": "Die Lage bleibt gemischt und erfordert selektive Beobachtung. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-11-14; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (565 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
+    "interpretation": "Die Lage bleibt gemischt und erfordert selektive Beobachtung. Server DRAM / RDIMM, HBM, Enterprise SSD zählen aktuell zu den angespanntesten Bereichen. Berechnung vom 2026-11-17; Quellenstand 2026-09-11. Die Evidenzprüfung ist noch nicht abgeschlossen (593 Kandidaten offen). Der unveränderte Wert bestätigt daher keine unveränderte Marktlage. Neue Kapazitäten und bessere Yields können entlasten, erreichen den Markt aber erst mit Zeitverzug. Für Käufer bleiben Lieferabsicherung, Alternativ-BOMs und frühzeitige Beschaffung entscheidend."
   },
   "signals": [
     {
-      "date": "2026-11-14",
-      "title": "SK hynix, Samsung, Micron say AI boom, not conspiracy, affected DRAM market",
-      "summary": "Aktuelle Meldung von MLex: SK hynix, Samsung, Micron say AI boom, not conspiracy, affected DRAM market",
+      "date": "2026-11-16",
+      "title": "[News] U.S. Judge Rejects Samsung, SK hynix, Micron’s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
+      "summary": "Aktuelle Meldung von TrendForce: [News] U.S. Judge Rejects Samsung, SK hynix, Micron’s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 95,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdy1KM1ZISG9aaEJOMDdnZk5uaVRQbjlDNVlWdlp2VjFWeExRbnpxakJPU3VRTE44clZmQ0dHd0pTcVJPZlVwTHVSU0JYRjhERV9GRXoxaTAwa2dVMDM1RFlyVV9GaktqdjJ5ZmVLakJUelhiVlJBVjdjZUNYTFZUZGVkVUJnQ0JXVFVWSEtHclJYYS1UeThBWk5TM3hBYk9qbzh0NnFDeXRmODQ1TGRtd2lSa005ZnM3R21SSllyTGNseFUzUFhULXp3dVc0SEVwblZBcHh6OUl4NUo0N2prZzhVYWo?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "CPI | Samsung, SK Hynix and Micron Lose Bid to Dismiss US DRAM Antitrust Suit",
+      "summary": "Aktuelle Meldung von PYMNTS.com: CPI | Samsung, SK Hynix and Micron Lose Bid to Dismiss US DRAM Antitrust Suit",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "MLex",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LakZ1YkhYSHBtN1FzTzNIczNBVUdaeXZaelpyWjVZdjdXZWg4TGZaaW5uelJLNVNYbDhjRG1COG51WGp5N1pIMjFjb3ZmSGVVZDk3eUw1bU9Dd9IBWkFVX3lxTE1LakZ1YkhYSHBtN1FzTzNIczNBVUdaeXZaelpyWjVZdjdXZWg4TGZaaW5uelJLNVNYbDhjRG1COG51WGp5N1pIMjFjb3ZmSGVVZDk3eUw1bU9Ddw?oc=5",
+      "source": "PYMNTS.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM3daenA2SGhsS09yeDlBRV9qaklMZTBoM1g2Z1p0RE1IOFpsejhZUmpPNmZvQzUtVVVhTmFROEVjZTJVXzlmVTc3OWtBYnRNTk9kcjBTSGxNOEpxS1RSa21ITnVmWDVMOFhuZXBKRXBQZkxRbzgzWWVqS0U2LXlIWERnZENhQktfYVVOdklNZ2dMSXFYcTY3Z3JBSXF1S0VzVWZJa3VnOA?oc=5",
       "layer": "news"
     },
     {
-      "date": "2026-11-13",
-      "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
-      "summary": "Aktuelle Meldung von Yahoo Finance: SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMnhfdHhLNjdwZmdJVjJ4X01kTVZjWTd1aWViLVR4Uk4tZ2gwT0VocGpubXhOSmZNTHFOZWZhVWFvZjlSbjA1Y3NYdGlRdjZudGdfS0JFM3lwNTNzYWpIWmxTeG1iWjBRYzh5VWlCY3BUVGNoM3IybkIwX0VoOURQZlBLYllkR1JJT1U1RzZrM2o?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-11-13",
-      "title": "Why are Micron, SK Hynix, and SanDisk stocks falling on Friday?",
-      "summary": "Aktuelle Meldung von Invezz: Why are Micron, SK Hynix, and SanDisk stocks falling on Friday?",
+      "date": "2026-11-16",
+      "title": "Judge Refuses to Dismiss DRAM Lawsuit Against Samsung, SK hynix, and Micron",
+      "summary": "Aktuelle Meldung von eTeknix: Judge Refuses to Dismiss DRAM Lawsuit Against Samsung, SK hynix, and Micron",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Invezz",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOT1AtR2lzLXRZdkUwZkxnbVV4Y1RRQ1ZmRkZSTTUwWTBNc0ZRaDU5dUctQnFoOWxXQ00wbmJUMnRhcHo2eWNUVlZHS3FOVTJkcUlTdU1HVE5CdWw5WnBNWE0ydVlsbjRFYkdRUDBiT2VIYUQzWU1KenhUbkJQOTB4Ty1sRC1HMTRYQUtDYXVobUZYNjJtdFFrTWVETnc?oc=5",
+      "source": "eTeknix",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRU9TamRDNkRBM0tJUG1FRzNfMEZfWDcxeVdHS3NValAtZnJJckg5QXJFci1sOHBmZU02ZGxrQVVVWGY5MmtRZVlJZkNkOTN3c2FWdXF2MzVmcnE5aGZqeG1MWElQRENUakZLWmFnbmdzcG1oa1F5WDhmUkF2eTgzMVZMZWxJSXJhLXdRMDBFd2RvdE4wZ0R1b2FSa3F2Zlk?oc=5",
       "layer": "news"
     }
   ],
@@ -124,54 +124,54 @@
     }
   ],
   "dailyStatus": {
-    "date": "2026-11-14",
+    "date": "2026-11-17",
     "type": "review-pending",
     "title": "Evidenzprüfung noch offen",
     "impactScore": 0,
-    "note": "565 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
+    "note": "593 Kandidaten warten auf die abgeschlossene Evidenzprüfung. Unveränderter Index ist keine bestätigte Entwarnung."
   },
   "news": [
     {
-      "date": "2026-11-14",
-      "title": "SK hynix, Samsung, Micron say AI boom, not conspiracy, affected DRAM market",
-      "summary": "Aktuelle Meldung von MLex: SK hynix, Samsung, Micron say AI boom, not conspiracy, affected DRAM market",
+      "date": "2026-11-16",
+      "title": "[News] U.S. Judge Rejects Samsung, SK hynix, Micron’s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
+      "summary": "Aktuelle Meldung von TrendForce: [News] U.S. Judge Rejects Samsung, SK hynix, Micron’s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 95,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdy1KM1ZISG9aaEJOMDdnZk5uaVRQbjlDNVlWdlp2VjFWeExRbnpxakJPU3VRTE44clZmQ0dHd0pTcVJPZlVwTHVSU0JYRjhERV9GRXoxaTAwa2dVMDM1RFlyVV9GaktqdjJ5ZmVLakJUelhiVlJBVjdjZUNYTFZUZGVkVUJnQ0JXVFVWSEtHclJYYS1UeThBWk5TM3hBYk9qbzh0NnFDeXRmODQ1TGRtd2lSa005ZnM3R21SSllyTGNseFUzUFhULXp3dVc0SEVwblZBcHh6OUl4NUo0N2prZzhVYWo?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "CPI | Samsung, SK Hynix and Micron Lose Bid to Dismiss US DRAM Antitrust Suit",
+      "summary": "Aktuelle Meldung von PYMNTS.com: CPI | Samsung, SK Hynix and Micron Lose Bid to Dismiss US DRAM Antitrust Suit",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "MLex",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LakZ1YkhYSHBtN1FzTzNIczNBVUdaeXZaelpyWjVZdjdXZWg4TGZaaW5uelJLNVNYbDhjRG1COG51WGp5N1pIMjFjb3ZmSGVVZDk3eUw1bU9Dd9IBWkFVX3lxTE1LakZ1YkhYSHBtN1FzTzNIczNBVUdaeXZaelpyWjVZdjdXZWg4TGZaaW5uelJLNVNYbDhjRG1COG51WGp5N1pIMjFjb3ZmSGVVZDk3eUw1bU9Ddw?oc=5",
+      "source": "PYMNTS.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM3daenA2SGhsS09yeDlBRV9qaklMZTBoM1g2Z1p0RE1IOFpsejhZUmpPNmZvQzUtVVVhTmFROEVjZTJVXzlmVTc3OWtBYnRNTk9kcjBTSGxNOEpxS1RSa21ITnVmWDVMOFhuZXBKRXBQZkxRbzgzWWVqS0U2LXlIWERnZENhQktfYVVOdklNZ2dMSXFYcTY3Z3JBSXF1S0VzVWZJa3VnOA?oc=5",
       "layer": "news"
     },
     {
-      "date": "2026-11-13",
-      "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
-      "summary": "Aktuelle Meldung von Yahoo Finance: SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMnhfdHhLNjdwZmdJVjJ4X01kTVZjWTd1aWViLVR4Uk4tZ2gwT0VocGpubXhOSmZNTHFOZWZhVWFvZjlSbjA1Y3NYdGlRdjZudGdfS0JFM3lwNTNzYWpIWmxTeG1iWjBRYzh5VWlCY3BUVGNoM3IybkIwX0VoOURQZlBLYllkR1JJT1U1RzZrM2o?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-11-13",
-      "title": "Why are Micron, SK Hynix, and SanDisk stocks falling on Friday?",
-      "summary": "Aktuelle Meldung von Invezz: Why are Micron, SK Hynix, and SanDisk stocks falling on Friday?",
+      "date": "2026-11-16",
+      "title": "Judge Refuses to Dismiss DRAM Lawsuit Against Samsung, SK hynix, and Micron",
+      "summary": "Aktuelle Meldung von eTeknix: Judge Refuses to Dismiss DRAM Lawsuit Against Samsung, SK hynix, and Micron",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Invezz",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOT1AtR2lzLXRZdkUwZkxnbVV4Y1RRQ1ZmRkZSTTUwWTBNc0ZRaDU5dUctQnFoOWxXQ00wbmJUMnRhcHo2eWNUVlZHS3FOVTJkcUlTdU1HVE5CdWw5WnBNWE0ydVlsbjRFYkdRUDBiT2VIYUQzWU1KenhUbkJQOTB4Ty1sRC1HMTRYQUtDYXVobUZYNjJtdFFrTWVETnc?oc=5",
+      "source": "eTeknix",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRU9TamRDNkRBM0tJUG1FRzNfMEZfWDcxeVdHS3NValAtZnJJckg5QXJFci1sOHBmZU02ZGxrQVVVWGY5MmtRZVlJZkNkOTN3c2FWdXF2MzVmcnE5aGZqeG1MWElQRENUakZLWmFnbmdzcG1oa1F5WDhmUkF2eTgzMVZMZWxJSXJhLXdRMDBFd2RvdE4wZ0R1b2FSa3F2Zlk?oc=5",
       "layer": "news"
     }
   ],
   "newsLayer": {
-    "generatedAt": "2026-11-14T03:24:26.900Z",
+    "generatedAt": "2026-11-17T00:58:15.556Z",
     "count": 3,
-    "candidateCount": 353,
+    "candidateCount": 223,
     "freshnessWindowHours": 36,
     "ranking": "TAIL scope + freshness + relevance + source quality",
     "source": "TAIL Inbox",
@@ -259,12 +259,12 @@
           "CSP-CapEx und Hardware-Inbetriebnahme"
         ],
         "methodologyNote": "Die Szenariogewichte sind subjektive, evidenzgestützte Einschätzungen und keine statistisch geschätzten Eintrittshäufigkeiten.",
-        "currentScore": 71,
+        "currentScore": 70,
         "currentStatus": "orange",
         "confidence": 71,
         "coverage": 100,
         "asOf": "2026-09-04",
-        "indexAsOf": "2026-11-14"
+        "indexAsOf": "2026-11-17"
       },
       {
         "marketId": "enterprise_ssd",
@@ -364,7 +364,7 @@
         "confidence": 54,
         "coverage": 100,
         "asOf": "2026-09-05",
-        "indexAsOf": "2026-11-14",
+        "indexAsOf": "2026-11-17",
         "researchReferenceScore": 83,
         "researchReferenceNote": "83 ist der im Astra-Audit bestätigte Marktdruck-Referenzwert, kein Preisziel und keine Knappheitswahrscheinlichkeit für 2029. Der operative Live-Index wird weiterhin ausschließlich durch das MT·AI-Indexmodell berechnet.",
         "commercialDecision": {
@@ -385,39 +385,39 @@
   },
   "originalSignals": [
     {
-      "date": "2026-11-14",
-      "title": "SK hynix, Samsung, Micron say AI boom, not conspiracy, affected DRAM market",
-      "summary": "Aktuelle Meldung von MLex: SK hynix, Samsung, Micron say AI boom, not conspiracy, affected DRAM market",
+      "date": "2026-11-16",
+      "title": "[News] U.S. Judge Rejects Samsung, SK hynix, Micron’s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
+      "summary": "Aktuelle Meldung von TrendForce: [News] U.S. Judge Rejects Samsung, SK hynix, Micron’s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
+      "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
+      "score": 95,
+      "relevanceScore": 100,
+      "sourceQuality": 15,
+      "source": "TrendForce",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdy1KM1ZISG9aaEJOMDdnZk5uaVRQbjlDNVlWdlp2VjFWeExRbnpxakJPU3VRTE44clZmQ0dHd0pTcVJPZlVwTHVSU0JYRjhERV9GRXoxaTAwa2dVMDM1RFlyVV9GaktqdjJ5ZmVLakJUelhiVlJBVjdjZUNYTFZUZGVkVUJnQ0JXVFVWSEtHclJYYS1UeThBWk5TM3hBYk9qbzh0NnFDeXRmODQ1TGRtd2lSa005ZnM3R21SSllyTGNseFUzUFhULXp3dVc0SEVwblZBcHh6OUl4NUo0N2prZzhVYWo?oc=5",
+      "layer": "news"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "CPI | Samsung, SK Hynix and Micron Lose Bid to Dismiss US DRAM Antitrust Suit",
+      "summary": "Aktuelle Meldung von PYMNTS.com: CPI | Samsung, SK Hynix and Micron Lose Bid to Dismiss US DRAM Antitrust Suit",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
       "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "MLex",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LakZ1YkhYSHBtN1FzTzNIczNBVUdaeXZaelpyWjVZdjdXZWg4TGZaaW5uelJLNVNYbDhjRG1COG51WGp5N1pIMjFjb3ZmSGVVZDk3eUw1bU9Dd9IBWkFVX3lxTE1LakZ1YkhYSHBtN1FzTzNIczNBVUdaeXZaelpyWjVZdjdXZWg4TGZaaW5uelJLNVNYbDhjRG1COG51WGp5N1pIMjFjb3ZmSGVVZDk3eUw1bU9Ddw?oc=5",
+      "source": "PYMNTS.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM3daenA2SGhsS09yeDlBRV9qaklMZTBoM1g2Z1p0RE1IOFpsejhZUmpPNmZvQzUtVVVhTmFROEVjZTJVXzlmVTc3OWtBYnRNTk9kcjBTSGxNOEpxS1RSa21ITnVmWDVMOFhuZXBKRXBQZkxRbzgzWWVqS0U2LXlIWERnZENhQktfYVVOdklNZ2dMSXFYcTY3Z3JBSXF1S0VzVWZJa3VnOA?oc=5",
       "layer": "news"
     },
     {
-      "date": "2026-11-13",
-      "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
-      "summary": "Aktuelle Meldung von Yahoo Finance: SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
-      "analysis": "HBM bleibt ein zentraler Engpass für AI-Beschleuniger. Änderungen bei Produktion, Qualifikation oder Nachfrage wirken direkt auf verfügbare GPU-Systeme und die Preisgestaltung im AI-Infrastrukturmarkt.",
-      "score": 90,
-      "relevanceScore": 100,
-      "sourceQuality": 6,
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMnhfdHhLNjdwZmdJVjJ4X01kTVZjWTd1aWViLVR4Uk4tZ2gwT0VocGpubXhOSmZNTHFOZWZhVWFvZjlSbjA1Y3NYdGlRdjZudGdfS0JFM3lwNTNzYWpIWmxTeG1iWjBRYzh5VWlCY3BUVGNoM3IybkIwX0VoOURQZlBLYllkR1JJT1U1RzZrM2o?oc=5",
-      "layer": "news"
-    },
-    {
-      "date": "2026-11-13",
-      "title": "Why are Micron, SK Hynix, and SanDisk stocks falling on Friday?",
-      "summary": "Aktuelle Meldung von Invezz: Why are Micron, SK Hynix, and SanDisk stocks falling on Friday?",
+      "date": "2026-11-16",
+      "title": "Judge Refuses to Dismiss DRAM Lawsuit Against Samsung, SK hynix, and Micron",
+      "summary": "Aktuelle Meldung von eTeknix: Judge Refuses to Dismiss DRAM Lawsuit Against Samsung, SK hynix, and Micron",
       "analysis": "Die Meldung ist für Datacenter-Storage relevant: Sie kann Preise, verfügbare Kapazitäten oder die Beschaffungsstrategie für Enterprise-SSDs verändern.",
-      "score": 90,
+      "score": 93,
       "relevanceScore": 100,
       "sourceQuality": 6,
-      "source": "Invezz",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOT1AtR2lzLXRZdkUwZkxnbVV4Y1RRQ1ZmRkZSTTUwWTBNc0ZRaDU5dUctQnFoOWxXQ00wbmJUMnRhcHo2eWNUVlZHS3FOVTJkcUlTdU1HVE5CdWw5WnBNWE0ydVlsbjRFYkdRUDBiT2VIYUQzWU1KenhUbkJQOTB4Ty1sRC1HMTRYQUtDYXVobUZYNjJtdFFrTWVETnc?oc=5",
+      "source": "eTeknix",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRU9TamRDNkRBM0tJUG1FRzNfMEZfWDcxeVdHS3NValAtZnJJckg5QXJFci1sOHBmZU02ZGxrQVVVWGY5MmtRZVlJZkNkOTN3c2FWdXF2MzVmcnE5aGZqeG1MWElQRENUakZLWmFnbmdzcG1oa1F5WDhmUkF2eTgzMVZMZWxJSXJhLXdRMDBFd2RvdE4wZ0R1b2FSa3F2Zlk?oc=5",
       "layer": "news"
     }
   ]
