@@ -159,7 +159,7 @@ function renderDashboard(snapshot, datedScore) {
   const label = document.getElementById("index-label");
   label.textContent = useDatedScore ? "DATED CALCULATION" : isCurrent ? "MT·AI" : "INDEX UNDER REVIEW";
   label.className = "state-chip";
-  document.getElementById("index-summary").textContent = useDatedScore ? "Established model, updated with six selected market observations. The full review is still open." : isCurrent && pulse.interpretation
+  document.getElementById("index-summary").textContent = useDatedScore ? "Server DRAM contract prices are rising while the RDIMM spot market remains quiet. HBM demand exceeds available supply. For enterprise SSDs, TrendForce reports that cuts to 2027 orders by Chinese cloud providers offset higher orders in North America." : isCurrent && pulse.interpretation
     ? pulse.interpretation : "Some server buyers source memory separately. Phison reports early NAND procurement for 2027. SK hynix reports a high concentration of US sales. These are procurement signals whose effect on the index is still under review.";
   document.querySelector(".status-dot").classList.toggle("stale", !isCurrent);
   document.getElementById("freshness-text").textContent = useDatedScore ? `Score evidence through ${formatDate(datedScore.asOf)}` : `Calculation run ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Index evidence through ${formatDate(evidence)}`;
