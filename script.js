@@ -159,7 +159,7 @@ function renderDashboard(snapshot, datedScore) {
   const label = document.getElementById("index-label");
   label.textContent = useDatedScore ? "DATIERTER RECHENSTAND" : isCurrent ? "MT·AI" : "INDEX IN PRÜFUNG";
   label.className = "state-chip";
-  document.getElementById("index-summary").textContent = useDatedScore ? "Bestehendes Modell mit sechs ausgewählten Marktbelegen aktualisiert. Die vollständige Prüfung läuft weiter." : isCurrent && pulse.interpretation
+  document.getElementById("index-summary").textContent = useDatedScore ? "Die Vertragspreise für Server-DRAM steigen, während der RDIMM-Spotmarkt ruhig bleibt. Bei HBM übersteigt die Nachfrage die verfügbaren Mengen. Bei Enterprise-SSDs gleichen gekürzte Bestellungen chinesischer Cloudanbieter für 2027 laut TrendForce die höheren Bestellungen in Nordamerika aus." : isCurrent && pulse.interpretation
     ? pulse.interpretation : "Einige Serverkäufer beschaffen RAM separat. Phison meldet frühe NAND-Mengenbindung für 2027. SK hynix berichtet eine hohe US-Umsatzkonzentration. Die Signale geben Hinweise für die Beschaffung. Ihre Wirkung auf den Index ist noch offen.";
   document.querySelector(".status-dot").classList.toggle("stale", !isCurrent);
   document.getElementById("freshness-text").textContent = useDatedScore ? `Score-Evidenz bis ${formatDate(datedScore.asOf)}` : `Rechenlauf ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Index-Evidenz bis ${formatDate(evidence)}`;
