@@ -1,5 +1,29 @@
 const PUBLIC_DATA_URL = "/public-tail/data.json";
 
+const EDITORIAL_SIGNALS = [
+  {
+    "date": "2026-11-10",
+    "title": "Serverkäufer beschaffen Speicher teils separat",
+    "summary": "Der Bauteiledistributor Smith beobachtet bei einzelnen Kunden, dass sie konventionelle Serversysteme ohne Speicher anfragen und DRAM separat beschaffen.",
+    "analysis": "Bestellungen von Komplettsystemen bilden den Bedarf an Server-RAM nur teilweise ab.",
+    "url": "https://www.digitimes.com/news/a20261110VL216/barebones-component-production-chairman-32gb.html"
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Phison meldet frühe NAND-Absicherung für 2027",
+    "summary": "Phison hat nach eigenen Angaben mehr als 70 Prozent seines NAND-Beschaffungsziels für 2027 bereits abgesichert.",
+    "analysis": "Frühe Mengenbindung ist ein Signal für die Beschaffungsplanung. Die Angabe bezieht sich auf Phison.",
+    "url": "https://www.digitimes.com/news/a20261109PD258/phison-demand-nand-2027-ceo.html"
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Supermicro beginnt Auslieferung von Vera-Rubin-Racks",
+    "summary": "Supermicro meldet erste Auslieferungen von Systemen auf Basis von Nvidias Vera Rubin NVL72.",
+    "analysis": "Die Plattform erreicht erste Kunden. Für das Tempo des breiteren Rollouts sind die künftigen Stückzahlen entscheidend.",
+    "url": "https://www.digitimes.com/news/a20260924VL200/supermicro-nvidia-rubin-shipping-infrastructure.html"
+  }
+];
+
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
   .replaceAll("<", "&lt;")
@@ -144,7 +168,7 @@ function renderDashboard(snapshot) {
   const review = platform.admissionReview || {};
   document.getElementById("freshness-text").textContent = `Berechnet ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Evidenz ${formatDate(platform.indexEvidenceAsOf || platform.sourceDataAsOf)} · ${review.status === 'complete' ? 'Prüfung abgeschlossen' : 'Evidenzprüfung offen'}`;
   indexLabel.textContent = review.status === 'complete' ? 'GEPRÜFT' : 'PRÜFUNG OFFEN';
-  document.getElementById("signal-freshness").textContent = `Nachrichtenstand ${formatDate((snapshot.signals || []).map(s => s.date).sort().at(-1))} · ${platform.articleCount ?? '–'} Einträge in der Wissensbasis`;
+  document.getElementById("signal-freshness").textContent = `Nachrichtenstand ${formatDate([...EDITORIAL_SIGNALS, ...(snapshot.signals || [])].map(s => s.date).sort().at(-1))} · ${platform.articleCount ?? '–'} Einträge in der Wissensbasis`;
 
   const markets = Array.isArray(platform.markets) ? platform.markets.slice(0, 6) : [];
   const indexMarketIds = ["server_dram", "hbm", "enterprise_ssd"];
@@ -173,13 +197,16 @@ function renderDashboard(snapshot) {
 
   renderMarketOutlook(snapshot.marketOutlook);
 
-  const signals = Array.isArray(snapshot.signals) ? snapshot.signals : [];
+  const feed = Array.isArray(snapshot.signals) ? snapshot.signals : [];
+  const editorialUrls = new Set(EDITORIAL_SIGNALS.map((signal) => signal.url));
+  const signals = [...EDITORIAL_SIGNALS, ...feed.filter((signal) => !editorialUrls.has(signal.url))];
   document.getElementById("signal-grid").innerHTML = signals.map((signal, index) => `
     <article class="signal-card">
-      <div class="signal-meta"><span>Signal ${String(index + 1).padStart(2, "0")} · ${escapeHtml(formatDate(signal.date))}</span><span class="signal-score">${Number(signal.score) || "–"}/100</span></div>
+      <div class="signal-meta"><span>Signal ${String(index + 1).padStart(2, "0")} · ${escapeHtml(formatDate(signal.date))}</span><span class="signal-score">${(Number(signal.score) ? `${Number(signal.score)}/100` : "Redaktion")}</span></div>
       <h3>${escapeHtml(signal.title)}</h3>
       <p>${escapeHtml(signal.summary)}</p>
       <p class="signal-impact"><span>Warum es zählt</span>${escapeHtml(signal.analysis || "Die Marktwirkung wird im nächsten MT·AI-Lauf weiter geprüft.")}</p>
+      ${editorialUrls.has(signal.url) ? `<p><a href="${escapeHtml(signal.url)}" rel="noopener noreferrer" target="_blank">Quelle bei DIGITIMES</a></p>` : ""}
     </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Signale verfügbar.</article>';
 
   renderCatalysts(snapshot.catalysts);
