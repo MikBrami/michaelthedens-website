@@ -1,6 +1,6 @@
 import { next } from '@vercel/functions';
 
-const PRIVATE_ORIGIN = 'https://michaelthedens-website-git-mtai-private-mikbramis-projects.vercel.app';
+const PRIVATE_ORIGIN = 'https://mtai-daily-intelligence.mth.chatgpt.site';
 const PRIVATE_PATHS = [
   '/tail-daily-intelligence',
   '/tail-intelligence',
@@ -31,11 +31,11 @@ export default function middleware(request) {
   if (!isProtectedRequest(url)) return next();
 
   // Preview deployments are protected by Vercel Authentication. Production
-  // never serves private files directly; it redirects into that protected gate.
+  // never serves private files directly; it redirects to the private MTAI dashboard.
   if (process.env.VERCEL_ENV === 'preview' || process.env.VERCEL_ENV === 'development') return next();
   if (!PRIVATE_ORIGIN) return closedResponse();
 
-  const target = new URL(`${url.pathname}${url.search}`, `${PRIVATE_ORIGIN}/`);
+  const target = new URL('/', PRIVATE_ORIGIN);
   return new Response(null, {
     status: 307,
     headers: {
