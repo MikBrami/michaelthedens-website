@@ -82,5 +82,31 @@
       "summary": "Samsung meldet wachsende Nachfrage nach Server-SSDs in seinem Q3-Geschäft.",
       "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
     }
-  ]
+  ],
+  "contextReview": {
+    "asOf": "2026-11-17",
+    "decision": "Beobachtung ergänzt. Der Score bleibt bei 67/100.",
+    "observations": [
+      {
+        "market": "server_dram",
+        "date": "2026-11-16",
+        "observation": "TrendForce meldet vereinzelte RDIMM-Spotanfragen zu niedrigen Geboten und wenig Einigung zwischen Käufern und Verkäufern.",
+        "interpretation": "Ein Spotmarkttag ist ein Gegenindikator zur Kontraktpreisentwicklung. Für eine Indexänderung wird eine Bestätigung anhand weiterer Handelstage oder vergleichbarer Kontrakt-, Lieferzeit- oder Allokationsdaten benötigt.",
+        "url": "https://www.trendforce.com/presscenter/analysis"
+      },
+      {
+        "market": "server_dram",
+        "date": "2026-09-23",
+        "observation": "Akamai meldet langfristige Zahlungsverpflichtungen von Anthropic für dedizierte Cloud-Kapazität, abhängig von Lieferung und Verfügbarkeit.",
+        "interpretation": "Der Vertrag stützt die Nachfrageperspektive für Cloud-Hosts. Angaben zu RAM-Bestückung und RDIMM-Mengen fehlen.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/d288154d8k.htm"
+      }
+    ],
+    "sensitivityTest": {
+      "assumption": "Einmalige RDIMM-Spotbeobachtung versuchsweise als Nachfragerückgang mit Stärke 35 und Konfidenz 65 gewertet.",
+      "executiveScore": 66,
+      "serverDramScore": 68,
+      "applied": false
+    }
+  }
 }
