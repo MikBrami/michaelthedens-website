@@ -2,6 +2,13 @@ const PUBLIC_DATA_URL = "/public-tail/data.json";
 
 const EDITORIAL_SIGNALS = [
   {
+    "date": "2026-11-17",
+    "title": "SK hynix erzielt 62,5 % seines Umsatzes in den USA",
+    "summary": "Laut DIGITIMES entfielen in den ersten neun Monaten 62,5 % des Umsatzes auf die USA. Der separat berichtete Nvidia-Anteil ist eine Branchenschätzung.",
+    "analysis": "Die Zahlen zeigen geografische Konzentration. Sie belegen weder den Umsatzanteil von Nvidia noch verfügbare HBM- oder RDIMM-Mengen.",
+    "url": "https://www.digitimes.com/news/a20261117VL211/sk-hynix-memory-nvidia-revenue-sales-2026.html"
+  },
+  {
     "date": "2026-11-10",
     "title": "Serverkäufer beschaffen Speicher teils separat",
     "summary": "Der Bauteiledistributor Smith beobachtet bei einzelnen Kunden, dass sie konventionelle Serversysteme ohne Speicher anfragen und DRAM separat beschaffen.",
@@ -14,14 +21,26 @@ const EDITORIAL_SIGNALS = [
     "summary": "Phison hat nach eigenen Angaben mehr als 70 Prozent seines NAND-Beschaffungsziels für 2027 bereits abgesichert.",
     "analysis": "Frühe Mengenbindung ist ein Signal für die Beschaffungsplanung. Die Angabe bezieht sich auf Phison.",
     "url": "https://www.digitimes.com/news/a20261109PD258/phison-demand-nand-2027-ceo.html"
-  },
-  {
-    "date": "2026-09-24",
-    "title": "Supermicro beginnt Auslieferung von Vera-Rubin-Racks",
-    "summary": "Supermicro meldet erste Auslieferungen von Systemen auf Basis von Nvidias Vera Rubin NVL72.",
-    "analysis": "Die Plattform erreicht erste Kunden. Für das Tempo des breiteren Rollouts sind die künftigen Stückzahlen entscheidend.",
-    "url": "https://www.digitimes.com/news/a20260924VL200/supermicro-nvidia-rubin-shipping-infrastructure.html"
   }
+];
+const WATCHPOINTS = [
+  [
+    "Server-DRAM",
+    "Lieferzeiten und verbindliche RDIMM-Zuteilungen für vergleichbare Bestückungen."
+  ],
+  [
+    "Enterprise-SSDs",
+    "Zugesagte TLC- und QLC-Mengen für 2027 sowie Änderungen bei Lieferfenstern."
+  ],
+  [
+    "HBM und AI-Infrastruktur",
+    "Bestätigte Kundenabrufe, Serienauslieferungen und die Inbetriebnahme von Rechenzentren."
+  ]
+];
+const MARKET_NOTES = [
+  "Separate RAM-Beschaffung kann Nachfrage in andere Vertriebskanäle verlagern.",
+  "Die US-Umsatzquote bei SK hynix liefert einen Hinweis auf Konzentration. Verfügbare HBM-Mengen gehen daraus nicht hervor.",
+  "Frühe NAND-Mengenbindung bei Phison macht verbindliche Zuteilungen für Enterprise-TLC und -QLC zum Prüfpunkt."
 ];
 
 const escapeHtml = (value = "") => String(value)
@@ -40,16 +59,6 @@ const formatDate = (value) => {
   }).format(date);
 };
 
-const marketExplanation = {
-  server_dram: "AI-Server und steigende Speicherkapazität treffen auf begrenzte Wafer-Allokation.",
-  dram: "HBM-Verdrängung und Servernachfrage halten die Angebotslage angespannt.",
-  hbm: "Plattformspezifische Qualifizierung bindet Frontend- und Packaging-Kapazität.",
-  enterprise_ssd: "AI-Datenpipelines und High-Capacity-Systeme stützen die Nachfrage.",
-  risk_pressure: "Verdichtet Spitzenrisiken bei Verfügbarkeit, Preis und kritischen Lieferketten.",
-  nand: "Festere Preise, aber mittelfristig mehr Entlastungspotenzial als bei DRAM.",
-  ai_infrastructure: "Power, Datacenter-Kapazität und Memory bestimmen das Ausbautempo."
-};
-
 const marketLabel = {
   server_dram: "Server DRAM / RDIMM",
   hbm: "HBM",
@@ -58,26 +67,10 @@ const marketLabel = {
   ai_infrastructure: "AI Infrastructure"
 };
 
-function renderCatalysts(catalystInput) {
-  const grid = document.getElementById("catalyst-grid");
-  const startOfToday = new Date();
-  startOfToday.setHours(0, 0, 0, 0);
-  const catalysts = (Array.isArray(catalystInput) ? catalystInput : [])
-    .map((catalyst) => ({ ...catalyst, timestamp: new Date(`${catalyst.date}T00:00:00`).getTime() }))
-    .filter((catalyst) => Number.isFinite(catalyst.timestamp) && catalyst.timestamp >= startOfToday.getTime())
-    .sort((a, b) => a.timestamp - b.timestamp)
-    .slice(0, 4);
-
-  grid.innerHTML = catalysts.map((catalyst, index) => {
-    const daysUntil = Math.max(0, Math.ceil((catalyst.timestamp - startOfToday.getTime()) / 86_400_000));
-    const timing = daysUntil === 0 ? "Heute" : daysUntil === 1 ? "Morgen" : `In ${daysUntil} Tagen`;
-    return `
-      <article class="catalyst-card${index === 0 ? " next" : ""}">
-        <div class="catalyst-date"><time datetime="${escapeHtml(catalyst.date)}">${escapeHtml(formatDate(catalyst.date))}</time><span>${timing}</span></div>
-        <h3>${escapeHtml(catalyst.event)}</h3>
-        <p>${index === 0 ? "Nächster MT·AI-Prüfpunkt" : "Beobachtungstermin im aktuellen Lagebild"}</p>
-      </article>`;
-  }).join("") || '<article class="loading-card">Derzeit sind keine zukünftigen Katalysatoren eingetragen.</article>';
+function renderWatchpoints() {
+  document.getElementById("catalyst-grid").innerHTML = WATCHPOINTS.map(([title, detail]) => `
+    <article class="catalyst-card"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(detail)}</p></article>`
+  ).join("");
 }
 
 function renderMarketOutlook(outlookInput) {
@@ -90,7 +83,6 @@ function renderMarketOutlook(outlookInput) {
     const timeline = Array.isArray(outlook.timeline) ? outlook.timeline : [];
     const changeRules = Array.isArray(outlook.changeRules) ? outlook.changeRules : [];
     const watchSignals = Array.isArray(outlook.watchSignals) ? outlook.watchSignals : [];
-    const status = ["red", "orange", "yellow", "green"].includes(outlook.currentStatus) ? outlook.currentStatus : "orange";
     const researchAsOf = outlook.evidenceAsOf || outlook.asOf;
 
     return `
@@ -108,9 +100,6 @@ function renderMarketOutlook(outlookInput) {
               <span>Confidence ${Number.isFinite(Number(outlook.confidence)) ? Number(outlook.confidence) : "–"}/100</span>
               <span>Abdeckung ${Number.isFinite(Number(outlook.coverage)) ? Number(outlook.coverage) : "–"}%</span>
             </div>
-          </div>
-          <div class="outlook-score ${status}" aria-label="Aktueller Segmentindex">
-            <strong>${outlook.currentScore !== null && Number.isFinite(Number(outlook.currentScore)) ? Number(outlook.currentScore) : "–"}</strong><span>heute /100</span>
           </div>
         </div>
 
@@ -156,60 +145,41 @@ function renderMarketOutlook(outlookInput) {
 function renderDashboard(snapshot) {
   const platform = snapshot.platform || {};
   const pulse = snapshot.executivePulse || {};
-  document.getElementById("tail-index").textContent = pulse.current ?? "–";
-  const indexLabel = document.getElementById("index-label");
-  const indexStatus = String(pulse.status || "live").toLowerCase();
-  indexLabel.textContent = indexStatus.toUpperCase();
-  indexLabel.className = `state-chip ${["red", "orange", "yellow", "green"].includes(indexStatus) ? indexStatus : "green"}`;
-  document.getElementById("index-summary").textContent = pulse.interpretation || "MT·AI bewertet die aktuelle Marktlage.";
-
-  const isCurrent = platform.dataFreshness === "current" && platform.processStatus === "ok";
-  document.querySelector(".status-dot").classList.toggle("stale", !isCurrent);
   const review = platform.admissionReview || {};
-  document.getElementById("freshness-text").textContent = `Berechnet ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Evidenz ${formatDate(platform.indexEvidenceAsOf || platform.sourceDataAsOf)} · ${review.status === 'complete' ? 'Prüfung abgeschlossen' : 'Evidenzprüfung offen'}`;
-  indexLabel.textContent = review.status === 'complete' ? 'GEPRÜFT' : 'PRÜFUNG OFFEN';
-  document.getElementById("signal-freshness").textContent = `Nachrichtenstand ${formatDate([...EDITORIAL_SIGNALS, ...(snapshot.signals || [])].map(s => s.date).sort().at(-1))} · ${platform.articleCount ?? '–'} Einträge in der Wissensbasis`;
-
-  const markets = Array.isArray(platform.markets) ? platform.markets.slice(0, 6) : [];
-  const indexMarketIds = ["server_dram", "hbm", "enterprise_ssd"];
-  const indexMarkets = indexMarketIds.map((id) => markets.find((market) => market.id === id)).filter(Boolean);
-  const riskPressure = Number(pulse.riskPressure);
-  const pressureCards = Number.isFinite(riskPressure)
-    ? [...indexMarkets, {
-        id: "risk_pressure",
-        label: "Risk Pressure",
-        score: riskPressure,
-        status: riskPressure >= 82 ? "red" : riskPressure >= 70 ? "orange" : riskPressure >= 55 ? "yellow" : "green"
-      }]
-    : indexMarkets;
-  document.getElementById("mini-markets").innerHTML = indexMarkets.map((market) => `
-    <div class="mini-market">
-      <span>${escapeHtml(market.label)}</span><strong>${Number(market.score) || 0}</strong>
-      <div><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
-    </div>`).join("");
-
-  document.getElementById("market-grid").innerHTML = pressureCards.map((market) => `
-    <article class="market-card ${escapeHtml(market.status || "orange")}">
-      <div class="market-head"><h3>${escapeHtml(market.label)}</h3><span class="market-score">${Number(market.score) || 0}</span></div>
-      <div class="market-track"><i style="width:${Math.min(100, Math.max(0, Number(market.score) || 0))}%"></i></div>
-      <p>${escapeHtml(marketExplanation[market.id] || `${market.signals || 0} relevante Signale im aktuellen Lagebild.`)}</p>
-    </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Marktdaten verfügbar.</article>';
+  const evidence = platform.indexEvidenceAsOf || platform.sourceDataAsOf;
+  const latest = EDITORIAL_SIGNALS[0].date;
+  const isCurrent = review.status === "complete" && platform.dataFreshness === "current" &&
+    platform.processStatus === "ok" && Boolean(evidence && evidence >= latest) &&
+    Number.isFinite(pulse.current);
+  const index = document.getElementById("tail-index");
+  index.textContent = isCurrent ? pulse.current : "–";
+  if (index.nextElementSibling) index.nextElementSibling.hidden = !isCurrent;
+  const label = document.getElementById("index-label");
+  label.textContent = isCurrent ? "MT·AI" : "INDEX IN PRÜFUNG";
+  label.className = "state-chip";
+  document.getElementById("index-summary").textContent = isCurrent && pulse.interpretation
+    ? pulse.interpretation : "Einige Serverkäufer beschaffen RAM separat. Phison meldet frühe NAND-Mengenbindung für 2027. SK hynix berichtet eine hohe US-Umsatzkonzentration. Die Signale geben Hinweise für die Beschaffung. Ihre Wirkung auf den Index ist noch offen.";
+  document.querySelector(".status-dot").classList.toggle("stale", !isCurrent);
+  document.getElementById("freshness-text").textContent = `Rechenlauf ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Index-Evidenz bis ${formatDate(evidence)}`;
+  document.getElementById("signal-freshness").textContent = `Neueste ausgewählte Quelle ${formatDate(latest)}`;
+  document.getElementById("mini-markets").replaceChildren();
+  const marketNames = ["Server DRAM / RDIMM", "HBM", "Enterprise SSD"];
+  document.getElementById("market-grid").innerHTML = MARKET_NOTES.map((note, i) => `
+    <article class="market-card"><div class="market-head"><h3>${escapeHtml(marketNames[i])}</h3></div><p>${escapeHtml(note)}</p></article>`
+  ).join("");
 
   renderMarketOutlook(snapshot.marketOutlook);
 
-  const feed = Array.isArray(snapshot.signals) ? snapshot.signals : [];
-  const editorialUrls = new Set(EDITORIAL_SIGNALS.map((signal) => signal.url));
-  const signals = [...EDITORIAL_SIGNALS, ...feed.filter((signal) => !editorialUrls.has(signal.url))];
-  document.getElementById("signal-grid").innerHTML = signals.map((signal, index) => `
+  document.getElementById("signal-grid").innerHTML = EDITORIAL_SIGNALS.map((signal) => `
     <article class="signal-card">
-      <div class="signal-meta"><span>Signal ${String(index + 1).padStart(2, "0")} · ${escapeHtml(formatDate(signal.date))}</span><span class="signal-score">${(Number(signal.score) ? `${Number(signal.score)}/100` : "Redaktion")}</span></div>
+      <div class="signal-meta"><span>${escapeHtml(formatDate(signal.date))}</span><span>Redaktionell ausgewählt</span></div>
       <h3>${escapeHtml(signal.title)}</h3>
       <p>${escapeHtml(signal.summary)}</p>
-      <p class="signal-impact"><span>Warum es zählt</span>${escapeHtml(signal.analysis || "Die Marktwirkung wird im nächsten MT·AI-Lauf weiter geprüft.")}</p>
-      ${editorialUrls.has(signal.url) ? `<p><a href="${escapeHtml(signal.url)}" rel="noopener noreferrer" target="_blank">Quelle bei DIGITIMES</a></p>` : ""}
-    </article>`).join("") || '<article class="loading-card">Derzeit sind keine öffentlichen Signale verfügbar.</article>';
+      <p class="signal-impact"><span>Warum es zählt</span>${escapeHtml(signal.analysis)}</p>
+      <p><a href="${escapeHtml(signal.url)}" rel="noopener noreferrer" target="_blank">Quelle bei DIGITIMES</a></p>
+    </article>`).join("");
 
-  renderCatalysts(snapshot.catalysts);
+  renderWatchpoints();
 }
 
 function renderDataError() {
