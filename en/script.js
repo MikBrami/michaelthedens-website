@@ -142,7 +142,7 @@ function renderMarketOutlook(outlookInput) {
   }).join("") || '<article class="loading-card outlook-empty">No public deep-research outlook has been released yet.</article>';
 }
 
-function renderDashboard(snapshot) {
+function renderDashboard(snapshot, datedScore) {
   const platform = snapshot.platform || {};
   const pulse = snapshot.executivePulse || {};
   const review = platform.admissionReview || {};
@@ -152,20 +152,23 @@ function renderDashboard(snapshot) {
     platform.processStatus === "ok" && Boolean(evidence && evidence >= latest) &&
     Number.isFinite(pulse.current);
   const index = document.getElementById("tail-index");
-  index.textContent = isCurrent ? pulse.current : "–";
-  if (index.nextElementSibling) index.nextElementSibling.hidden = !isCurrent;
+  const useDatedScore = Number.isFinite(datedScore?.score) && (!isCurrent || evidence <= datedScore.asOf);
+  const showScore = useDatedScore || isCurrent;
+  index.textContent = useDatedScore ? datedScore.score : isCurrent ? pulse.current : "–";
+  if (index.nextElementSibling) index.nextElementSibling.hidden = !showScore;
   const label = document.getElementById("index-label");
-  label.textContent = isCurrent ? "MT·AI" : "INDEX UNDER REVIEW";
+  label.textContent = useDatedScore ? "DATED CALCULATION" : isCurrent ? "MT·AI" : "INDEX UNDER REVIEW";
   label.className = "state-chip";
-  document.getElementById("index-summary").textContent = isCurrent && pulse.interpretation
+  document.getElementById("index-summary").textContent = useDatedScore ? "Established model, updated with six selected market observations. The full review is still open." : isCurrent && pulse.interpretation
     ? pulse.interpretation : "Some server buyers source memory separately. Phison reports early NAND procurement for 2027. SK hynix reports a high concentration of US sales. These are procurement signals whose effect on the index is still under review.";
   document.querySelector(".status-dot").classList.toggle("stale", !isCurrent);
-  document.getElementById("freshness-text").textContent = `Calculation run ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Index evidence through ${formatDate(evidence)}`;
+  document.getElementById("freshness-text").textContent = useDatedScore ? `Score evidence through ${formatDate(datedScore.asOf)}` : `Calculation run ${formatDate(platform.analysisAsOf || platform.dataAsOf)} · Index evidence through ${formatDate(evidence)}`;
   document.getElementById("signal-freshness").textContent = `Latest selected source ${formatDate(latest)}`;
   document.getElementById("mini-markets").replaceChildren();
   const marketNames = ["Server DRAM / RDIMM", "HBM", "Enterprise SSD"];
+  const marketIds = ["server_dram", "hbm", "enterprise_ssd"];
   document.getElementById("market-grid").innerHTML = MARKET_NOTES.map((note, i) => `
-    <article class="market-card"><div class="market-head"><h3>${escapeHtml(marketNames[i])}</h3></div><p>${escapeHtml(note)}</p></article>`
+    <article class="market-card"><div class="market-head"><h3>${escapeHtml(marketNames[i])}</h3>${useDatedScore && Number.isFinite(datedScore.segments?.[marketIds[i]]) ? `<span class="market-score">${datedScore.segments[marketIds[i]]}</span>` : ""}</div><p>${escapeHtml(note)}</p></article>`
   ).join("");
 
   renderMarketOutlook(snapshot.marketOutlook);
@@ -179,6 +182,14 @@ function renderDashboard(snapshot) {
       <p><a href="${escapeHtml(signal.url)}" rel="noopener noreferrer" target="_blank">DIGITIMES source</a></p>
     </article>`).join("");
 
+  if (useDatedScore) {
+    const link = document.createElement("a");
+    link.href = "/public-tail/market-score-2026-11-17.json";
+    link.textContent = "Underlying market evidence (German)";
+    const evidenceLink = document.createElement("p");
+    evidenceLink.append(link);
+    document.getElementById("market-grid").append(evidenceLink);
+  }
   renderWatchpoints();
 }
 
@@ -196,7 +207,10 @@ async function loadDashboard() {
   try {
     const response = await fetch(`${PUBLIC_DATA_URL}?v=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    renderDashboard(await response.json());
+    const score = await fetch("/public-tail/market-score-2026-11-17.json")
+      .then((response) => response.ok ? response.json() : null)
+      .catch(() => null);
+    renderDashboard(await response.json(), score);
   } catch (error) {
     console.error("MT·AI English public dashboard failed:", error);
     renderDataError();
