@@ -183,12 +183,44 @@ function renderDashboard(snapshot, datedScore) {
     </article>`).join("");
 
   if (useDatedScore) {
-    const link = document.createElement("a");
-    link.href = "/public-tail/market-score-2026-11-17.json";
-    link.textContent = "Marktbelege und Bewertungsannahmen";
-    const evidenceLink = document.createElement("p");
-    evidenceLink.append(link);
-    document.getElementById("market-grid").append(evidenceLink);
+    const [title, intro, strength, confidence, source, additional] = ["Marktbelege und Bewertungsannahmen","Stärke und Konfidenz der Belege sind jeweils auf einer Skala von 0 bis 100 bewertet.","Stärke","Konfidenz","Quelle","Ergänzende Beobachtungen"];
+    const details = document.createElement("details");
+    details.className = "market-card";
+    details.style.gridColumn = "1 / -1";
+    const heading = document.createElement("summary");
+    heading.textContent = title;
+    const explanation = document.createElement("p");
+    explanation.textContent = intro;
+    details.append(heading, explanation);
+
+    const addEvidence = (entries, describe) => {
+      const list = document.createElement("ul");
+      for (const entry of entries || []) {
+        const item = document.createElement("li");
+        item.textContent = `${formatDate(entry.date)} · ${describe(entry)} `;
+        if (typeof entry.url === "string" && entry.url.startsWith("https://")) {
+          const link = document.createElement("a");
+          link.href = entry.url;
+          link.textContent = source;
+          link.rel = "noopener noreferrer";
+          link.target = "_blank";
+          item.append(link);
+        }
+        list.append(item);
+      }
+      details.append(list);
+    };
+
+    addEvidence(datedScore.evidence, (entry) =>
+      `${entry.summary} ${strength} ${entry.severity}/100 · ${confidence} ${entry.confidence}/100.`);
+    if (datedScore.contextReview?.observations?.length) {
+      const subtitle = document.createElement("h3");
+      subtitle.textContent = additional;
+      details.append(subtitle);
+      addEvidence(datedScore.contextReview.observations, (entry) =>
+        `${entry.observation} ${entry.interpretation}`);
+    }
+    document.getElementById("market-grid").append(details);
   }
   renderWatchpoints();
 }
