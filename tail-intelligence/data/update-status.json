@@ -1,26 +1,17 @@
 {
-  "status": "ok",
-  "last_attempt": "2026-11-14T03:13:19.807Z",
-  "last_successful_update": "2026-11-14T03:13:19.807Z",
-  "newly_processed_articles": 306,
-  "collected_articles": 423,
+  "status": "warning",
+  "last_attempt": "2026-11-17T00:47:38.839Z",
+  "last_successful_update": "2026-11-17T00:47:38.839Z",
+  "newly_processed_articles": 356,
+  "collected_articles": 414,
   "sources_checked": 9,
-  "deduplicated_articles": 117,
-  "inbox_size": 22848,
-  "source_errors": [],
-  "message": "TAIL Inbox erfolgreich aktualisiert.",
-  "daily_analyst_generated_at": "2026-11-14T03:24:25.111Z",
-  "daily_analyst_date": "2026-11-14",
-  "daily_analyst_file": "daily-intelligence-2026-11-14.json",
-  "daily_analyst_candidates": 8,
-  "knowledge_base_sync_at": "2026-11-14T03:24:25.984Z",
-  "knowledge_base_signals_promoted": 49,
-  "knowledge_base_total_articles": 205,
-  "knowledge_base_latest_daily_file": "daily-intelligence-2026-11-14.json",
-  "knowledge_base_latest_daily_at": "2026-11-14T03:24:25.111Z",
-  "knowledge_base_daily_files_processed": 105,
-  "freshness_guard_at": "2026-11-14T03:24:27.696Z",
-  "freshness_guard_expected": "daily-intelligence-2026-11-14.json",
-  "freshness_guard_latest": "daily-intelligence-2026-11-14.json",
-  "freshness_guard_status": "ok"
+  "deduplicated_articles": 58,
+  "inbox_size": 23204,
+  "source_errors": [
+    {
+      "source": "news-equipment-foundry",
+      "message": "HTTP 429"
+    }
+  ],
+  "message": "Einige Quellen konnten nicht gelesen werden; vorhandene Daten bleiben verfügbar."
 }
